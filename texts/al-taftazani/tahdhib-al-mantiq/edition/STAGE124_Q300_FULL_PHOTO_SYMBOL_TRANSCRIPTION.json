@@ -1,0 +1,468 @@
+{
+  "stage": 124,
+  "date": "2026-11-13",
+  "description": "Complete one-print source-photographic transcription of 32 shorthand verdict codes, with exact English interpretations; not independently two-print-certified",
+  "sourceUrl": "https://ablibrary.net/book_content/b/12170/300?lang=ar",
+  "photo": "source-table-excerpts/print1405_Q300_table_excerpt.png",
+  "sourcePrint": "H1405, H later marginal glosses, printed Qum p.300",
+  "columnsRightToLeft": [
+    [
+      "اللاضرورة الذاتية",
+      "Intrinsic non-necessity"
+    ],
+    [
+      "اللاضرورة الوصفية",
+      "Description-relative non-necessity"
+    ],
+    [
+      "اللادوام الذاتي",
+      "Intrinsic non-permanence"
+    ],
+    [
+      "اللادوام الوصفي",
+      "Description-relative non-permanence"
+    ]
+  ],
+  "rows": [
+    [
+      "الضرورية المطلقة",
+      "Absolute necessity"
+    ],
+    [
+      "المشروطة العامة",
+      "General conditioned necessity"
+    ],
+    [
+      "الوقتية المطلقة",
+      "Unqualified time-restricted necessity"
+    ],
+    [
+      "المنتشرة المطلقة",
+      "Unqualified dispersed-time necessity"
+    ],
+    [
+      "الدائمة المطلقة",
+      "Absolute permanence"
+    ],
+    [
+      "العرفية العامة",
+      "General description-relative permanence"
+    ],
+    [
+      "المطلقة العامة",
+      "General actuality"
+    ],
+    [
+      "الممكنة العامة",
+      "General possibility"
+    ]
+  ],
+  "legend": {
+    "غ ص": [
+      "غير صحيح",
+      "Invalid combination"
+    ],
+    "ص م": [
+      "صحيح معتبر",
+      "Valid and accepted"
+    ],
+    "ص غ م": [
+      "صحيح غير معتبر",
+      "Valid but not accepted"
+    ]
+  },
+  "counts": {
+    "invalid": 9,
+    "validAccepted": 7,
+    "validUnaccepted": 16
+  },
+  "cells": [
+    {
+      "id": "Q300-R01-C01",
+      "row": 1,
+      "column": 1,
+      "originalForm": "الضرورية المطلقة",
+      "translationForm": "Absolute necessity",
+      "qualification": "اللاضرورة الذاتية",
+      "qualificationTranslation": "Intrinsic non-necessity",
+      "printedSymbol": "غ ص",
+      "classificationArabic": "غير صحيح",
+      "classificationEnglish": "Invalid combination"
+    },
+    {
+      "id": "Q300-R01-C02",
+      "row": 1,
+      "column": 2,
+      "originalForm": "الضرورية المطلقة",
+      "translationForm": "Absolute necessity",
+      "qualification": "اللاضرورة الوصفية",
+      "qualificationTranslation": "Description-relative non-necessity",
+      "printedSymbol": "غ ص",
+      "classificationArabic": "غير صحيح",
+      "classificationEnglish": "Invalid combination"
+    },
+    {
+      "id": "Q300-R01-C03",
+      "row": 1,
+      "column": 3,
+      "originalForm": "الضرورية المطلقة",
+      "translationForm": "Absolute necessity",
+      "qualification": "اللادوام الذاتي",
+      "qualificationTranslation": "Intrinsic non-permanence",
+      "printedSymbol": "غ ص",
+      "classificationArabic": "غير صحيح",
+      "classificationEnglish": "Invalid combination"
+    },
+    {
+      "id": "Q300-R01-C04",
+      "row": 1,
+      "column": 4,
+      "originalForm": "الضرورية المطلقة",
+      "translationForm": "Absolute necessity",
+      "qualification": "اللادوام الوصفي",
+      "qualificationTranslation": "Description-relative non-permanence",
+      "printedSymbol": "غ ص",
+      "classificationArabic": "غير صحيح",
+      "classificationEnglish": "Invalid combination"
+    },
+    {
+      "id": "Q300-R02-C01",
+      "row": 2,
+      "column": 1,
+      "originalForm": "المشروطة العامة",
+      "translationForm": "General conditioned necessity",
+      "qualification": "اللاضرورة الذاتية",
+      "qualificationTranslation": "Intrinsic non-necessity",
+      "printedSymbol": "ص غ م",
+      "classificationArabic": "صحيح غير معتبر",
+      "classificationEnglish": "Valid but not accepted"
+    },
+    {
+      "id": "Q300-R02-C02",
+      "row": 2,
+      "column": 2,
+      "originalForm": "المشروطة العامة",
+      "translationForm": "General conditioned necessity",
+      "qualification": "اللاضرورة الوصفية",
+      "qualificationTranslation": "Description-relative non-necessity",
+      "printedSymbol": "غ ص",
+      "classificationArabic": "غير صحيح",
+      "classificationEnglish": "Invalid combination"
+    },
+    {
+      "id": "Q300-R02-C03",
+      "row": 2,
+      "column": 3,
+      "originalForm": "المشروطة العامة",
+      "translationForm": "General conditioned necessity",
+      "qualification": "اللادوام الذاتي",
+      "qualificationTranslation": "Intrinsic non-permanence",
+      "printedSymbol": "ص م",
+      "classificationArabic": "صحيح معتبر",
+      "classificationEnglish": "Valid and accepted"
+    },
+    {
+      "id": "Q300-R02-C04",
+      "row": 2,
+      "column": 4,
+      "originalForm": "المشروطة العامة",
+      "translationForm": "General conditioned necessity",
+      "qualification": "اللادوام الوصفي",
+      "qualificationTranslation": "Description-relative non-permanence",
+      "printedSymbol": "غ ص",
+      "classificationArabic": "غير صحيح",
+      "classificationEnglish": "Invalid combination"
+    },
+    {
+      "id": "Q300-R03-C01",
+      "row": 3,
+      "column": 1,
+      "originalForm": "الوقتية المطلقة",
+      "translationForm": "Unqualified time-restricted necessity",
+      "qualification": "اللاضرورة الذاتية",
+      "qualificationTranslation": "Intrinsic non-necessity",
+      "printedSymbol": "ص غ م",
+      "classificationArabic": "صحيح غير معتبر",
+      "classificationEnglish": "Valid but not accepted"
+    },
+    {
+      "id": "Q300-R03-C02",
+      "row": 3,
+      "column": 2,
+      "originalForm": "الوقتية المطلقة",
+      "translationForm": "Unqualified time-restricted necessity",
+      "qualification": "اللاضرورة الوصفية",
+      "qualificationTranslation": "Description-relative non-necessity",
+      "printedSymbol": "ص غ م",
+      "classificationArabic": "صحيح غير معتبر",
+      "classificationEnglish": "Valid but not accepted"
+    },
+    {
+      "id": "Q300-R03-C03",
+      "row": 3,
+      "column": 3,
+      "originalForm": "الوقتية المطلقة",
+      "translationForm": "Unqualified time-restricted necessity",
+      "qualification": "اللادوام الذاتي",
+      "qualificationTranslation": "Intrinsic non-permanence",
+      "printedSymbol": "ص م",
+      "classificationArabic": "صحيح معتبر",
+      "classificationEnglish": "Valid and accepted"
+    },
+    {
+      "id": "Q300-R03-C04",
+      "row": 3,
+      "column": 4,
+      "originalForm": "الوقتية المطلقة",
+      "translationForm": "Unqualified time-restricted necessity",
+      "qualification": "اللادوام الوصفي",
+      "qualificationTranslation": "Description-relative non-permanence",
+      "printedSymbol": "ص غ م",
+      "classificationArabic": "صحيح غير معتبر",
+      "classificationEnglish": "Valid but not accepted"
+    },
+    {
+      "id": "Q300-R04-C01",
+      "row": 4,
+      "column": 1,
+      "originalForm": "المنتشرة المطلقة",
+      "translationForm": "Unqualified dispersed-time necessity",
+      "qualification": "اللاضرورة الذاتية",
+      "qualificationTranslation": "Intrinsic non-necessity",
+      "printedSymbol": "ص غ م",
+      "classificationArabic": "صحيح غير معتبر",
+      "classificationEnglish": "Valid but not accepted"
+    },
+    {
+      "id": "Q300-R04-C02",
+      "row": 4,
+      "column": 2,
+      "originalForm": "المنتشرة المطلقة",
+      "translationForm": "Unqualified dispersed-time necessity",
+      "qualification": "اللاضرورة الوصفية",
+      "qualificationTranslation": "Description-relative non-necessity",
+      "printedSymbol": "ص غ م",
+      "classificationArabic": "صحيح غير معتبر",
+      "classificationEnglish": "Valid but not accepted"
+    },
+    {
+      "id": "Q300-R04-C03",
+      "row": 4,
+      "column": 3,
+      "originalForm": "المنتشرة المطلقة",
+      "translationForm": "Unqualified dispersed-time necessity",
+      "qualification": "اللادوام الذاتي",
+      "qualificationTranslation": "Intrinsic non-permanence",
+      "printedSymbol": "ص م",
+      "classificationArabic": "صحيح معتبر",
+      "classificationEnglish": "Valid and accepted"
+    },
+    {
+      "id": "Q300-R04-C04",
+      "row": 4,
+      "column": 4,
+      "originalForm": "المنتشرة المطلقة",
+      "translationForm": "Unqualified dispersed-time necessity",
+      "qualification": "اللادوام الوصفي",
+      "qualificationTranslation": "Description-relative non-permanence",
+      "printedSymbol": "ص غ م",
+      "classificationArabic": "صحيح غير معتبر",
+      "classificationEnglish": "Valid but not accepted"
+    },
+    {
+      "id": "Q300-R05-C01",
+      "row": 5,
+      "column": 1,
+      "originalForm": "الدائمة المطلقة",
+      "translationForm": "Absolute permanence",
+      "qualification": "اللاضرورة الذاتية",
+      "qualificationTranslation": "Intrinsic non-necessity",
+      "printedSymbol": "ص غ م",
+      "classificationArabic": "صحيح غير معتبر",
+      "classificationEnglish": "Valid but not accepted"
+    },
+    {
+      "id": "Q300-R05-C02",
+      "row": 5,
+      "column": 2,
+      "originalForm": "الدائمة المطلقة",
+      "translationForm": "Absolute permanence",
+      "qualification": "اللاضرورة الوصفية",
+      "qualificationTranslation": "Description-relative non-necessity",
+      "printedSymbol": "ص غ م",
+      "classificationArabic": "صحيح غير معتبر",
+      "classificationEnglish": "Valid but not accepted"
+    },
+    {
+      "id": "Q300-R05-C03",
+      "row": 5,
+      "column": 3,
+      "originalForm": "الدائمة المطلقة",
+      "translationForm": "Absolute permanence",
+      "qualification": "اللادوام الذاتي",
+      "qualificationTranslation": "Intrinsic non-permanence",
+      "printedSymbol": "غ ص",
+      "classificationArabic": "غير صحيح",
+      "classificationEnglish": "Invalid combination"
+    },
+    {
+      "id": "Q300-R05-C04",
+      "row": 5,
+      "column": 4,
+      "originalForm": "الدائمة المطلقة",
+      "translationForm": "Absolute permanence",
+      "qualification": "اللادوام الوصفي",
+      "qualificationTranslation": "Description-relative non-permanence",
+      "printedSymbol": "غ ص",
+      "classificationArabic": "غير صحيح",
+      "classificationEnglish": "Invalid combination"
+    },
+    {
+      "id": "Q300-R06-C01",
+      "row": 6,
+      "column": 1,
+      "originalForm": "العرفية العامة",
+      "translationForm": "General description-relative permanence",
+      "qualification": "اللاضرورة الذاتية",
+      "qualificationTranslation": "Intrinsic non-necessity",
+      "printedSymbol": "ص غ م",
+      "classificationArabic": "صحيح غير معتبر",
+      "classificationEnglish": "Valid but not accepted"
+    },
+    {
+      "id": "Q300-R06-C02",
+      "row": 6,
+      "column": 2,
+      "originalForm": "العرفية العامة",
+      "translationForm": "General description-relative permanence",
+      "qualification": "اللاضرورة الوصفية",
+      "qualificationTranslation": "Description-relative non-necessity",
+      "printedSymbol": "ص غ م",
+      "classificationArabic": "صحيح غير معتبر",
+      "classificationEnglish": "Valid but not accepted"
+    },
+    {
+      "id": "Q300-R06-C03",
+      "row": 6,
+      "column": 3,
+      "originalForm": "العرفية العامة",
+      "translationForm": "General description-relative permanence",
+      "qualification": "اللادوام الذاتي",
+      "qualificationTranslation": "Intrinsic non-permanence",
+      "printedSymbol": "ص م",
+      "classificationArabic": "صحيح معتبر",
+      "classificationEnglish": "Valid and accepted"
+    },
+    {
+      "id": "Q300-R06-C04",
+      "row": 6,
+      "column": 4,
+      "originalForm": "العرفية العامة",
+      "translationForm": "General description-relative permanence",
+      "qualification": "اللادوام الوصفي",
+      "qualificationTranslation": "Description-relative non-permanence",
+      "printedSymbol": "غ ص",
+      "classificationArabic": "غير صحيح",
+      "classificationEnglish": "Invalid combination"
+    },
+    {
+      "id": "Q300-R07-C01",
+      "row": 7,
+      "column": 1,
+      "originalForm": "المطلقة العامة",
+      "translationForm": "General actuality",
+      "qualification": "اللاضرورة الذاتية",
+      "qualificationTranslation": "Intrinsic non-necessity",
+      "printedSymbol": "ص م",
+      "classificationArabic": "صحيح معتبر",
+      "classificationEnglish": "Valid and accepted"
+    },
+    {
+      "id": "Q300-R07-C02",
+      "row": 7,
+      "column": 2,
+      "originalForm": "المطلقة العامة",
+      "translationForm": "General actuality",
+      "qualification": "اللاضرورة الوصفية",
+      "qualificationTranslation": "Description-relative non-necessity",
+      "printedSymbol": "ص غ م",
+      "classificationArabic": "صحيح غير معتبر",
+      "classificationEnglish": "Valid but not accepted"
+    },
+    {
+      "id": "Q300-R07-C03",
+      "row": 7,
+      "column": 3,
+      "originalForm": "المطلقة العامة",
+      "translationForm": "General actuality",
+      "qualification": "اللادوام الذاتي",
+      "qualificationTranslation": "Intrinsic non-permanence",
+      "printedSymbol": "ص م",
+      "classificationArabic": "صحيح معتبر",
+      "classificationEnglish": "Valid and accepted"
+    },
+    {
+      "id": "Q300-R07-C04",
+      "row": 7,
+      "column": 4,
+      "originalForm": "المطلقة العامة",
+      "translationForm": "General actuality",
+      "qualification": "اللادوام الوصفي",
+      "qualificationTranslation": "Description-relative non-permanence",
+      "printedSymbol": "ص غ م",
+      "classificationArabic": "صحيح غير معتبر",
+      "classificationEnglish": "Valid but not accepted"
+    },
+    {
+      "id": "Q300-R08-C01",
+      "row": 8,
+      "column": 1,
+      "originalForm": "الممكنة العامة",
+      "translationForm": "General possibility",
+      "qualification": "اللاضرورة الذاتية",
+      "qualificationTranslation": "Intrinsic non-necessity",
+      "printedSymbol": "ص م",
+      "classificationArabic": "صحيح معتبر",
+      "classificationEnglish": "Valid and accepted"
+    },
+    {
+      "id": "Q300-R08-C02",
+      "row": 8,
+      "column": 2,
+      "originalForm": "الممكنة العامة",
+      "translationForm": "General possibility",
+      "qualification": "اللاضرورة الوصفية",
+      "qualificationTranslation": "Description-relative non-necessity",
+      "printedSymbol": "ص غ م",
+      "classificationArabic": "صحيح غير معتبر",
+      "classificationEnglish": "Valid but not accepted"
+    },
+    {
+      "id": "Q300-R08-C03",
+      "row": 8,
+      "column": 3,
+      "originalForm": "الممكنة العامة",
+      "translationForm": "General possibility",
+      "qualification": "اللادوام الذاتي",
+      "qualificationTranslation": "Intrinsic non-permanence",
+      "printedSymbol": "ص غ م",
+      "classificationArabic": "صحيح غير معتبر",
+      "classificationEnglish": "Valid but not accepted"
+    },
+    {
+      "id": "Q300-R08-C04",
+      "row": 8,
+      "column": 4,
+      "originalForm": "الممكنة العامة",
+      "translationForm": "General possibility",
+      "qualification": "اللادوام الوصفي",
+      "qualificationTranslation": "Description-relative non-permanence",
+      "printedSymbol": "ص غ م",
+      "classificationArabic": "صحيح غير معتبر",
+      "classificationEnglish": "Valid but not accepted"
+    }
+  ],
+  "secondPrintChecked": false,
+  "manuscriptCollated": false,
+  "modalSemanticsIndependentlyProved": false
+}
