@@ -1,0 +1,63 @@
+name: Sīrah research edition content and browser acceptance
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'research/seerah/**'
+      - '.github/workflows/seerah-research-reader-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: seerah-qa-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  parity:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify chapter/manuscript/static parity, older editions and editorial apparatus
+        run: |
+          node research/seerah/tests/verify.mjs
+          node research/seerah/tests/verify-restoration.mjs
+  browser:
+    needs: parity
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Playwright and browser
+        run: |
+          npm install --no-save --no-package-lock --prefix research/seerah/qa playwright@1.56.1
+          cd research/seerah/qa
+          npx playwright install --with-deps ${{ matrix.browser }}
+      - name: Run real mobile and desktop default restored reader acceptance
+        env:
+          GNAMMA_BROWSER: ${{ matrix.browser }}
+          GNAMMA_REPORT_DIR: /tmp/seerah-reader-${{ matrix.browser }}
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/seerah-http.log 2>&1 &
+          sleep 3
+          node research/seerah/qa/reader-browser-qa.mjs
+      - name: Keep QA evidence (reports and screenshots)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seerah-reader-${{ matrix.browser }}-qa-evidence
+          path: /tmp/seerah-reader-${{ matrix.browser }}
+          if-no-files-found: warn
+          retention-days: 15
