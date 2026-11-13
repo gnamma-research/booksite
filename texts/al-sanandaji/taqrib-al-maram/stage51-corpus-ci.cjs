@@ -26,7 +26,7 @@ assert(pages.find(u=>u.page===54).english.includes('relative'),'II:54 newer mixt
 assert(pages.find(u=>u.page===55).english.includes('external'),'II:55 expanded relative balance source reading loaded');
 assert(pages.find(u=>u.page===56).english.includes('fourth clime'),'II:56 clime debate source reading loaded');
 assert(pages.find(u=>u.page===57).english.includes('animal'),'II:57 classification source reading loaded');
-assert(pages.find(u=>u.page===58).english.includes('attractive'),'II:58 nutrition's attractive power');
+assert(pages.find(u=>u.page===58).english.includes('attractive'),"II:58 nutrition\u0027s attractive power");
 assert(pages.find(u=>u.page===59).english.includes('four stages'),'II:59 stages of digestion');
 assert(pages.find(u=>u.page===60).english.includes('three dimensions'),'II:60 proportionate growth');
 assert(pages.find(u=>u.page===61).english.includes('reproductive'),'II:61 generative faculty');
@@ -36,5 +36,6 @@ for(const file of scripts.slice(1))vm.runInContext(fs.readFileSync(path.join(dir
 const after=book.units.filter(u=>u.volume==='II'&&u.page>=15&&u.page<=314&&u.id==='P2.'+String(u.page).padStart(3,'0'));
 assert.equal(after.length,300,'Idempotent source imports');
 assert.equal(after.reduce((n,u)=>n+(u.layers?.margins?.length||0),0),firstCount,'No duplicated glosses after reload');
-for(const f of ['index.html','cumulative.html']){const html=fs.readFileSync(path.join(dir,f),'utf8');const ids=scripts.slice(1).map(x=>html.indexOf('src="'+x+'"'));assert(ids.every((k,i)=>k>=0&&(i===0||k>ids[i-1])),'Correct chronological script order in '+f);}
+for(const f of ['cumulative.html']){const html=fs.readFileSync(path.join(dir,f),'utf8');const ids=scripts.slice(1).map(x=>html.indexOf('src="'+x+'"'));assert(ids.every((k,i)=>k>=0&&(i===0||k>ids[i-1])),'Correct chronological script order in '+f);}
+for(const f of ['index.html','stage84-reader.html']){const html=fs.readFileSync(path.join(dir,f),'utf8');for(let i=1;i<=11;i++){const n=String(i).padStart(2,'0');assert(html.includes('stage84-data/records-'+n+'.js'),'Stage84 record shard '+n+' in '+f)}assert(html.includes('reader.js'),'Clean study reader script in '+f);assert(!html.includes('sanandaji-project-progress'),'No public editorial progress banner in '+f)}
 console.log('Sanandajī Stage51/52 PASS: 300 page units, 100 attempted full-span upper drafts, 200 provisional, 66 lower page spans, 97 joined notes, 4 Wasīm preface leaves, no duplicated margins.');
