@@ -247,7 +247,7 @@ function crossreaderPanel(){
    '<small>'+esc(x.toUnit)+' · conceptual comparison · not a direct quotation</small>'+
    '<p><a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">Open exact GNAMMA passage</a></p></div>').join('')+'</section>').join('');
  show('Across GNAMMA', '<p class="gn-help">Reviewed thematic comparisons with exact target passage IDs. Similarity of an argument is not proof that Ibn Turka cites Qūnawī. Each target opens in a separate reader tab so your reading position is preserved.</p>'+
- (sections.join('')||'<p class="gn-help">No independently reviewed cross-reader passages are available.</p>')+
+ (sections||'<p class="gn-help">No independently reviewed cross-reader passages are available.</p>')+
  '<div class="gn-menu-footer"><button data-open-study="references">Source quotations</button><button data-open-study="subjects">Subject index</button></div>');
 }
 function sourcePanel(id){
