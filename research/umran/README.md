@@ -1,19 +1,25 @@
 # Work, Vocation & ʿUmrān — Research subsite
 
 **Location:** `/research/umran/` (listed in the Gnamma Research index).
-**Stage:** public-facing research draft v3, 13 November 2026. The journal and fundraiser content remains a preliminary, source-attributed research corpus.
+**Stage:** public-facing research architecture v4, 13 November 2026. The journal and fundraiser content remains a preliminary, source-attributed research corpus.
 **Project:** a traditional account of human purpose, communal obligations, social sufficiency, and differentiated forms of contribution. Islam is the most fully articulated tradition in this edition; other traditions are not treated as interchangeable.
 
 ## Pages
 
 - `index.html`: editorial landing page and starting paths
+- `framework.html`: six-layer relation between ultimate ends, law, formation, civilizational renewal, communal duties and vocation
+- `maqasid.html`: five classical essentials, three levels, cultivation/protection axes, and explicitly labelled broader aims
+- `renewal.html`: tajdīd/iḥyāʾ/iṣlāḥ, scholarly transmission, curricula and institutional limitations, including IIUM research
+- `programmes.html`: twelve searchable research agendas connected to needs, source aims and vocational capabilities
+- `vision.json`: 10 labelled higher aims, 12 programmes, source pointers, and distinctions between normative objectives and strategic proposals
+- `vision.css`: higher-purpose architecture, programme and navigation styles
 - `principles.html`: human end, farḍ kifāya, seven-test research method
 - `needs.html`: fourteen searchable communal-need and capacity dossiers
 - `needs.json`: machine-readable draft need records with unknown actual sufficiency status
 - `vocations.html`: twelve introductory field and vocation studies
 - `guide.html`: five-part decision guide and browser-local exploratory worksheet
 - `pathways.html`: modes of contribution, opportunity publishing standard, no invented job listings
-- `malaysia.html`: nine annotated Malaysian and Malaysia-associated juristic, educational and institutional research sources
+- `malaysia.html`: twelve annotated Malaysian and Malaysia-associated juristic, educational and institutional research sources
 - `malaysia.json`: source provenance and qualifications
 - `projects.html`: ten source-linked LaunchGood campaign observations as community-needs leads, not verified shortages
 - `projects.json`: structured campaign leads with source dates, claimed interventions and verification questions
@@ -35,9 +41,22 @@ Four worked examples show distinct epistemic positions:
 
 `assessments.json` stores the source provenance, date, population, evidence type, normative question and data limitations for each observation. The assessment studio does not store or transmit input. It only evaluates whether the **investigator has described** the necessary fields, not whether facts or legal rulings are independently correct.
 
+## Higher-order distinctions
+
+The site now organises the enquiry in six distinct but interacting dimensions:
+
+1. The ultimate human end (Islamic account: knowledge and nearness to God, worship and moral purification).
+2. The higher purposes and commands of law; the five classical necessities are only part of the total theological and ethical account.
+3. Positive cultivation of virtues, learning and household life alongside protection from harm.
+4. Civilizational renewal and the formation of scholarly, occupational and public institutions.
+5. Concrete obligations and contextual empirical sufficiency.
+6. Particular capacities, institutional programmes and vocational opportunities.
+
+The legal classification of a function, its current supply adequacy, and its placement in a strategic programme are **separate claims**. A goal tag is analytic metadata, not a fatwa or a measurable score of spiritual merit. The additional aims in `vision.json` are not presented as universally agreed classical additions to the five necessities. Knowledge formation and intellectual renewal have their own affirmative logic beyond emergency relief and fundraising.
+
 ## Editorial safeguards
 
-A proposed communal duty is not a claim of an actual shortage. Likewise, a LaunchGood campaign is an organiser narrative, not an independent finding that a community has a legal obligation or an unmet service threshold. The sample is purposive and non-representative; fundraising totals must not be used to rank duties. Ḥadd al-kifāyah in household welfare/zakat assessments is different from farḍ kifāya. Need records are provisional, with actual sufficiency status **unknown**. No automated assignment of personal duties or spiritual rankings. No live job opportunities are displayed unless source, validity date, and other essential details are verified. This is a research site, not a religious ruling or career placement service.
+A proposed communal duty is not a claim of an actual shortage. Likewise, a LaunchGood campaign is an organiser narrative, not an independent finding that a community has a legal obligation or an unmet service threshold. The sample is purposive and non-representative; fundraising totals must not be used to rank duties. The full framework also includes positive educational and civilizational aims that might never appear in crowdfunding campaigns. Ḥadd al-kifāyah in household welfare/zakat assessments is different from farḍ kifāya. Need records are provisional, with actual sufficiency status **unknown**. No automated assignment of personal duties or spiritual rankings. No live job opportunities are displayed unless source, validity date, and other essential details are verified. This is a research site, not a religious ruling or career placement service.
 
 ## Maintainer checklist
 
