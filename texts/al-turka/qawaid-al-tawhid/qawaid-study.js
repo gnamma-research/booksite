@@ -255,7 +255,7 @@ function sourcePanel(id){
   '<h3 class="gn-subheading">Passages in this book</h3><div class="gn-locations">'+(locs||'<p>No passage anchor supplied.</p>')+'</div>'+
   '<button class="gn-source-return" data-study-close type="button">Return to reading</button>'+
   '<div class="gn-menu-footer"><button data-open-study="references">All sources</button>'+
-  '<button data-open-study="parallels">Parallels & reports</button></div>');
+  '<button data-open-study="parallels">Parallels & reports</button><button data-open-study="pdf">PDF editions</button></div>');
 }
 async function pdfPanel(){
  show('PDF editions','<p class="gn-help">Reading, Study, and Reference have separate contents and notes. Opening a PDF on iPhone may use the browser preview.</p><p>Looking up the published editions…</p>');
