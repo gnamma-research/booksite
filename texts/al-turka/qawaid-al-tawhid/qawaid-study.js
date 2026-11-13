@@ -247,7 +247,7 @@ function sourcePanel(id){
   ?'<p class="gn-help"><strong>Editorial synopsis, not a complete translation:</strong> '+esc(quote.english)+'</p>'
   :'<blockquote>'+esc(quote.english)+'</blockquote>'):'';
  const caution=citationPolicy.records?.[id]==='unverified-attribution'
-  ?'<p class="gn-help"><strong>Unverified attribution.</strong> Do not treat this as an authenticated Prophetic report.</p>':'';
+  ?'<p class="gn-help"><strong>Evidence status: unverified attribution.</strong> Do not treat this as an authenticated Prophetic report.</p>':'';
  const external=localUrl?'<p><a href="'+esc(localUrl)+'" target="_blank" rel="noopener noreferrer">'+linkText+'</a></p>':'';
  const warnings=(r.note?'<p>'+esc(r.note)+'</p>':'')+(quote.warning?'<p>'+esc(quote.warning)+'</p>':'');
  const locs=units.map(id=>'<a data-study-goto="'+esc(id)+'" href="'+unitURL(id)+'">'+esc(id)+' · '+esc(byId.get(id)?.section||byId.get(id)?.title||'Open passage')+'</a>').join('');
