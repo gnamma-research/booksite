@@ -1,8 +1,8 @@
 # Sīrah and the Making of Islamic Civilization · Gnamma Research
 
-Public URL: `/research/seerah/` · source edition 1.4; retained edition 1.4.1; retained integrated edition 1.5.0; current scholarly research edition 1.7.0 · 46 matns + 46 shurūḥ.
+Public URL: `/research/seerah/` · source edition 1.4; retained edition 1.4.1; retained integrated edition 1.5.0; current scholarly research edition 1.8.0 (restored metaphysical baseline) · 46 matns + 46 shurūḥ.
 
-The Research landing, reader, visual atlas and dossiers are four separate presentations of one work. **The canonical content is `data/chapters.json` and `data/dossiers.json`**, based on the preserved `editorial/source-edition-1.4.md`; the current fully synchronized manuscript is `editorial/current-edition-1.7.0-generative.md`. This is a working *research edition*, not a completed critical collation of original Sīrah manuscripts.
+The Research landing, reader, visual atlas and dossiers are four separate presentations of one work. **The canonical content is `data/chapters.json` and `data/dossiers.json`**, restored from the preserved 1.4.1 scholarly-metaphysical edition (`editorial/archive-20261112-preintegrated-chapters-1.4.1.json`); the current fully synchronized manuscript is `editorial/current-edition-1.8.0-metaphysical-restoration.md`. This is a working *research edition*, not a completed critical collation of original Sīrah manuscripts.
 
 ## Reader contract
 
@@ -73,3 +73,7 @@ A [source-controlled historical synthesis](tables-vi-vii.html) compares the nine
 ## Sīrah 1.7.0 · Generative Muhammadan explanation · 13 November 2026
 
 The [governing explanatory framework](framework.html) links the comprehensive Muhammadan reality, the valid but limited disciplinary traces, living prophetic encounters and the independent material causes of historical ʿumrān. Every one of the 46 shurūḥ contains a different substantial interpretive revision, documented in the [46-chapter ledger](editorial/CHAPTER_NEXUS_PLAN_1_7_20261113.json). All 46 matns remain identical to 1.6.2. The former chapter JSON, static reader and [complete 1.6.2 manuscript](editorial/current-edition-1.6.2-targeted-fidelity.md) are preserved. [Read the complete 1.7.0 manuscript](editorial/current-edition-1.7.0-generative.md). Source-critical verification remains incomplete.
+
+## Current edition 1.8.0 · Original metaphysical axis restored · 13 November 2026
+
+The explanatory matn of Ādam, Iblīs, the Garden and the Fall has been recovered through the earlier 1.4.1 edition and the deeper working manuscript. The [restored first lesson](read.html#ch-01), [governing method](framework.html) and [complete 1.8.0 edition](editorial/current-edition-1.8.0-metaphysical-restoration.md) present that foundation with expansion into Muhammadan comprehensiveness and differentiated human sciences. Eight further chapters (2, 10, 11, 13, 28, 33, 44, 45) incorporate selected source-led repairs and extensions. The remaining 37 chapters retain the 1.4.1 wording as a deliberate restoration baseline for substantive re-development. This release replaces the 1.7 explanatory architecture as the main reader. [Previous 1.7 reader](read-1.7.0.html), [archived 1.7 JSON](editorial/archived-1.7.0-pre-restoration-chapters.json), and [1.7 full manuscript](editorial/current-edition-1.7.0-generative.md) remain intact. The 138-claim ledger and original nine dossiers are preserved; their verification statuses remain unchanged. Neither the 1.8 restoration nor its code parity constitutes a completed critical edition.
