@@ -1,3 +1,15 @@
+# Stage 87 — selected lower and upper source proof (13 November 2026)
+
+**This newest note supersedes the Stage86 counts, not its retained historical dossier.** Ten existing text records were revised against the original Būlāq 1318 AH facsimile on printed **I:6, I:7, I:16 and I:17**. Seven previously anchor-only records now contain bounded, actual Arabic and matching literal English. This raises records with *some* Arabic from 1,171 to **1,178/1,401** (84.1%). **223** corpus records still have no typed Arabic, **including one editorial paraphrase now recognized as a non-source record**; **222 genuine printed-source records** remain for transcription, predominantly lower commentaries. Source positions containing at least some Arabic remain **279/279**. Complete, independently second-proofed all-register pages remain **0/279**.
+
+**Source corrections:** The I:6 lower text about why this is the *kalām* division of a logic-and-kalām book is now represented by a sustained Arabic–English source span; the short middle-ruled I:6 words signed Faraj Allāh Zakī are separate, not attributed to Wasīm. The printed opening of the introduction on I:7 is restored to the **upper** stream and its independent-ruled gloss paraphrase (record `I007.ruled.01`) is retained archivally but hidden from normal reading and searching. New selections on I:16 clarify firm/nonfirm, true/false and stable/unstable assent; the I:17 ruled note describes the soul's motion among intelligibles as a similitude.
+
+**Proof and reader:** see [Stage87 bilingual source readings](STAGE87_BOUNDED_AR_EN_I006_I017.md) and [Stage87 proof / browser audit](STAGE87_PROOF_AND_READER_AUDIT.md). Original PDF SHA-256: `4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134`; source page p corresponds to PDF physical p+13. The source witness is unchanged. The public reader's clean study interface is unchanged, and the prior 1,401 stable IDs are preserved. A single-witness critical *working* edition is still not a completed critical edition; source words throughout the upper, ruled and lower streams and the independent second proof remain open. The two-volume merger with Taftāzānī is still deferred.
+
+---
+
+## Previous checkpoints (archival)
+
 # Stage 86 — Volume I source-position coverage (13 November 2026)
 
 **This checkpoint supersedes Stage 85's numerical summary below.** The public study reader remains deliberately unchanged in appearance, with no stage history in the continuous reading screen.
