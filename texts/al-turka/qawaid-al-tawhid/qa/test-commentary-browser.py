@@ -47,9 +47,19 @@ with sync_playwright() as playwright:
         ck('contents include all 110 sections',page.locator('#sheet-content [data-jump]').count()==110)
         page.locator('#sheet-close').click()
         page.locator('#search-button').click()
-        page.locator('#commentary-query').fill('existence')
-        ck('full-text search returns linked results',page.locator('#commentary-results [data-jump]').count()>5)
-        page.locator('#sheet-close').click()
+        if page.locator('#qt-research-dialog').is_visible():
+            # The Daruri-family research overlay supersedes the older, simpler
+            # commentary-only field in the live reader; the old field remains
+            # available in older self-contained exports.
+            page.locator('#qt-query').fill('existence')
+            page.wait_for_timeout(420)
+            ck('full-text search returns linked results',page.locator('#qt-results .qt-result').count()>=6)
+            ck('research search includes original and commentary',page.evaluate('window.GnammaQawaidSearch.sourceUnits().matn')==61)
+            page.locator('#qt-close').click()
+        else:
+            page.locator('#commentary-query').fill('existence')
+            ck('legacy full-text search returns linked results',page.locator('#commentary-results [data-jump]').count()>5)
+            page.locator('#sheet-close').click()
         page.locator('#save-button').click()
         ck('bookmark persisted locally',bool(page.evaluate("JSON.parse(localStorage.getItem('gnamma:tamhid:commentary:v1')).bookmarks.length")))
         page.locator('#continuous-reading').click()
