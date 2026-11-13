@@ -1,0 +1,24 @@
+name: Qawtaw21 internal reader crosswork audit
+on:
+  push:
+    branches: [feature/qawtaw21-expanded-source-index-20261113]
+    paths:
+      - '.github/workflows/qawtaw21-crosswork-audit.yml'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/qawtaw21_crosswork_audit.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  crosswork:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect published Qūnawī and Tajrīd source units and disputed Qawāʿid quotations
+        run: node texts/al-turka/qawaid-al-tawhid/qa/qawtaw21_crosswork_audit.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawtaw21-crosswork-candidates
+          path: texts/al-turka/qawaid-al-tawhid/qa/qawtaw21-crosswork-candidates.json
+          retention-days: 21
