@@ -126,6 +126,11 @@ body[data-mode="sharh"][data-focus="3"] #reading .reading-block .text-pair{borde
  #controlbar #save-button{display:none}
  #controlbar .reader-status{display:none}
 }
+@media(max-width:720px){
+ body.standalone-commentary #controlbar{grid-template-columns:auto minmax(0,1fr) auto auto}
+ body.standalone-commentary #controlbar > a.text-btn{grid-column:2;grid-row:1;justify-self:center;white-space:nowrap;padding:5px 3px;font-size:12px;min-width:0}
+ body.standalone-commentary #controlbar #save-button{display:inline-flex;grid-column:4;grid-row:1;min-width:34px;width:34px;height:35px;justify-self:end}
+}
 @media(max-width:440px){
  #controlbar #focus-label{display:none}
  #controlbar #focus-button{height:35px;width:35px;justify-content:center}
