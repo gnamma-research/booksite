@@ -6,10 +6,12 @@
 <meta name="theme-color" content="#fbf9f4">
 <meta name="description" content="Gnamma bilingual reader: Abū Ḥāmid Turka's Qawāʿid al-Tawḥīd and Ṣāʾin al-Dīn Ibn Turka's Tamhīd commentary, in two independently switchable text layers.">
 <title>Qawāʿid al-Tawḥīd · Matn and Commentary · Gnamma</title>
-<link rel="icon" href="../../../assets/gnamma-mark.svg" type="image/svg+xml">
+<link rel="icon" href="qawaid-emblem.svg" type="image/svg+xml">
 <link rel="stylesheet" href="reader.css">
 <link rel="stylesheet" href="layered-reader.css">
 <link rel="stylesheet" href="qawaid-study.css">
+<link rel="stylesheet" href="qawaid-reading-refinement.css">
+<link rel="stylesheet" href="qawaid-research-search.css">
 </head>
 <body data-mode="paired" data-focus="0" data-language="both" data-show-notes="false" data-background="native">
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
@@ -27,7 +29,7 @@
 </svg>
 <a class="skip-link" href="#reading">Skip to reading</a>
 <header id="topbar" aria-label="Book toolbar">
- <div class="left"><button class="icon-btn" id="menu-button" type="button" aria-label="Open contents and reading desk" title="Contents"><svg><use href="#ic-menu"/></svg></button><a class="brand-link" href="../../../" title="Gnamma Research home"><img src="../../../assets/gnamma-mark.svg" alt=""><strong>GNAMMA</strong></a></div>
+ <div class="left"><button class="icon-btn" id="menu-button" type="button" aria-label="Open contents and reading desk" title="Contents"><svg><use href="#ic-menu"/></svg></button><a class="brand-link" href="../../../" title="Gnamma Research home"><img src="qawaid-emblem.svg" alt=""><strong>GNAMMA</strong></a></div>
  <div class="book-title">Qawāʿid al-Tawḥīd<small>Matn &amp; Tamhīd Commentary</small></div>
  <div class="right"><button class="icon-btn" id="search-button" type="button" aria-label="Search both texts" title="Search"><svg><use href="#ic-search"/></svg></button><button class="icon-btn" id="theme-button" type="button" aria-label="Change theme" title="Change theme"><svg><use href="#ic-theme"/></svg></button><button class="icon-btn" id="settings-button" type="button" aria-label="Display and reading settings" title="Display settings"><svg><use href="#ic-settings"/></svg></button></div>
 </header>
@@ -45,6 +47,7 @@
 <main id="main">
  <section class="book-intro" id="book-home">
   <span class="eyebrow">GNAMMA RESEARCH · BILINGUAL SCHOLARLY READER</span>
+  <div class="qawaid-frontispiece"><img src="qawaid-frontispiece.svg" alt="Geometric meditation on unity and manifestation: luminous centre, interlacing circles, eightfold star and gold manuscript lines." width="1120" height="420" loading="eager" decoding="async"></div>
   <h1>Qawāʿid al-Tawḥīd</h1>
   <div class="ar-title" lang="ar" dir="rtl">قواعد التوحيد</div>
   <p class="lede">A bilingual reading of Abū Ḥāmid Turka’s early fourteenth-century <em>Qawāʿid al-Tawḥīd</em> and Ṣāʾin al-Dīn Ibn Turka’s early fifteenth-century <em>Tamhīd al-Qawāʿid</em>, arranged as the original matn and its commentary.</p>
@@ -77,10 +80,16 @@
 <script src="data/commentary-conclusion.js"></script>
 <script src="data/commentary-main-001-019.js"></script>
 <script src="data/commentary-main-020-060.js"></script>
+<script src="data/commentary-introduction-1.js"></script>
+<script src="data/commentary-introduction-2.js"></script>
+<script src="data/commentary-introduction-3.js"></script>
+<script src="data/commentary-introduction-4.js"></script>
+<script src="data/commentary-corpus.js"></script>
 <script src="layered-reader.js"></script>
 <script src="data/linked-lexicon.js"></script>
 <script src="data/primary-reference-register.js"></script>
 <script src="qawaid-historical-lexicon.js"></script>
 <script src="qawaid-study.js"></script>
 <script src="qawaid-inline-references.js"></script>
+<script src="qawaid-research-search.js"></script>
 </body></html>
