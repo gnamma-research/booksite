@@ -1,0 +1,494 @@
+{
+  "version": "1.0-20261113",
+  "notes": "Dates before and during the prophetic mission, especially the Miʿrāj, have varying traditional reconstructions. Approximate dates are explicitly marked. Institutional and legal dates draw on the existing Sīrah dossiers; exact event-level claims remain subject to specialist verification.",
+  "eras": [
+    {
+      "id": "prophetic",
+      "name": "The Prophetic mission and its setting",
+      "scope": "570–632 CE (approximate where stated)"
+    },
+    {
+      "id": "postprophetic",
+      "name": "Institutions and regional civilizations",
+      "scope": "632–1492 CE"
+    },
+    {
+      "id": "modern",
+      "name": "Maritime, colonial and modern transformations",
+      "scope": "1498–present"
+    }
+  ],
+  "events": [
+    {
+      "id": "birth",
+      "date": "c. 570 CE",
+      "title": "Birth and early life of the Prophet",
+      "description": "The Prophet's early life unfolds within the protected but socially stratified world of the Meccan sanctuary.",
+      "chapters": [
+        7,
+        8
+      ],
+      "era": "prophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "khadija",
+      "date": "c. 595 CE",
+      "title": "Marriage to Khadījah",
+      "description": "The household formed through this marriage later becomes the first place of shelter and recognition after revelation.",
+      "chapters": [
+        8
+      ],
+      "era": "prophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "revelation",
+      "date": "c. 610 CE",
+      "title": "Beginning of revelation",
+      "description": "The first revealed words reach the Prophet at Ḥirāʾ; the household and first believers become the initial teaching circle.",
+      "chapters": [
+        8
+      ],
+      "era": "prophetic",
+      "certainty": "traditional chronology"
+    },
+    {
+      "id": "aksum",
+      "date": "c. 615 CE",
+      "title": "Early migration to Aksum",
+      "description": "Groups of believers cross the Red Sea and receive protection under a Christian ruler.",
+      "chapters": [
+        10
+      ],
+      "era": "prophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "loss",
+      "date": "c. 619 CE",
+      "title": "Khadījah and Abū Ṭālib die",
+      "description": "Household loss and weakened clan protection precede a period of searching for support beyond Makkah.",
+      "chapters": [
+        11
+      ],
+      "era": "prophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "miraj",
+      "date": "Before 622 CE; precise date disputed",
+      "title": "Night Journey and Ascension",
+      "description": "The Qurʾān recounts the Night Journey; reports of the ascent and the five daily prayers require separate chronological and textual comparison.",
+      "chapters": [
+        11
+      ],
+      "era": "prophetic",
+      "certainty": "date disputed"
+    },
+    {
+      "id": "aqaba",
+      "date": "c. 621–622 CE",
+      "title": "The pledges at al-ʿAqabah",
+      "description": "People of Yathrib commit to worship, ethical conduct and protection of the Prophet.",
+      "chapters": [
+        11
+      ],
+      "era": "prophetic",
+      "certainty": "traditional chronology"
+    },
+    {
+      "id": "hijrah",
+      "date": "622 CE · 1 AH",
+      "title": "Hijrah to Madinah",
+      "description": "Migration gives the emerging religious community a setting for common worship and public obligations.",
+      "chapters": [
+        11,
+        12
+      ],
+      "era": "prophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "badr",
+      "date": "624 CE · 2 AH",
+      "title": "Battle of Badr",
+      "description": "Victory brings obligations concerning captives and the distribution of goods.",
+      "chapters": [
+        14
+      ],
+      "era": "prophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "uhud",
+      "date": "625 CE · 3 AH",
+      "title": "Battle of Uḥud",
+      "description": "The archers' departure and the deaths of companions raise questions of discipline and communal responsibility.",
+      "chapters": [
+        15
+      ],
+      "era": "prophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "trench",
+      "date": "627 CE · 5 AH",
+      "title": "Trench and the siege of Madinah",
+      "description": "The community relies upon coordinated defensive labour under the pressure of a confederate coalition.",
+      "chapters": [
+        15
+      ],
+      "era": "prophetic",
+      "certainty": "conventional chronology"
+    },
+    {
+      "id": "hudaybiyyah",
+      "date": "628 CE · 6 AH",
+      "title": "Truce at al-Ḥudaybiyyah",
+      "description": "A difficult agreement with Quraysh opens new opportunities for contact, pledges and future action.",
+      "chapters": [
+        16
+      ],
+      "era": "prophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "khaybar",
+      "date": "628 CE · 7 AH",
+      "title": "Khaybar campaign and settlement",
+      "description": "Agricultural and property arrangements follow military control of the oasis.",
+      "chapters": [
+        17
+      ],
+      "era": "prophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "conquest",
+      "date": "630 CE · 8 AH",
+      "title": "Conquest of Makkah",
+      "description": "The sanctuary's worship is restored and former opponents encounter a victorious Prophet.",
+      "chapters": [
+        18
+      ],
+      "era": "prophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "hunayn",
+      "date": "630 CE · 8 AH",
+      "title": "Battle of Ḥunayn",
+      "description": "Expanded alliances face a military test; questions of gifts and reconciliation follow.",
+      "chapters": [
+        18
+      ],
+      "era": "prophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "tabuk",
+      "date": "630–631 CE · 9 AH",
+      "title": "Tabūk and the wider Arabian mission",
+      "description": "Northern expedition and dealings with diverse delegations bring expanded responsibilities.",
+      "chapters": [
+        19
+      ],
+      "era": "prophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "farewell",
+      "date": "632 CE · 10 AH",
+      "title": "Farewell Pilgrimage",
+      "description": "Rites and public obligations are communicated to pilgrims from many regions.",
+      "chapters": [
+        19
+      ],
+      "era": "prophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "death",
+      "date": "632 CE · 11 AH",
+      "title": "Death of the Prophet and succession debates",
+      "description": "The community must carry its obligations through differentiated political, legal and spiritual responsibilities.",
+      "chapters": [
+        19,
+        20
+      ],
+      "era": "prophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "rashidun",
+      "date": "632–661 CE",
+      "title": "Early caliphal rule and expansion",
+      "description": "Succession, military leadership, tax assessment and scholarly instruction extend beyond Arabia.",
+      "chapters": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "era": "postprophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "first-fitna",
+      "date": "656–661 CE",
+      "title": "First civil war",
+      "description": "Competing claims to authority and redress become matters of armed and legal dispute.",
+      "chapters": [
+        23
+      ],
+      "era": "postprophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "karbala",
+      "date": "680 CE",
+      "title": "Killing of al-Ḥusayn at Karbalāʾ",
+      "description": "The tragedy becomes central to divergent memories of rightful leadership and the Prophet's household.",
+      "chapters": [
+        24
+      ],
+      "era": "postprophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "abbasid",
+      "date": "750 CE",
+      "title": "Abbasid revolution",
+      "description": "Power shifts from Umayyad rule through a movement rooted especially in Khurāsān.",
+      "chapters": [
+        25
+      ],
+      "era": "postprophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "baghdad",
+      "date": "762 CE",
+      "title": "Baghdad founded",
+      "description": "The new Abbasid capital develops into a major centre of administration and learning.",
+      "chapters": [
+        25,
+        26
+      ],
+      "era": "postprophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "madrasa",
+      "date": "c. 1067 CE",
+      "title": "Niẓāmiyyah school in Baghdad",
+      "description": "An endowed college exemplifies the durability and selective focus of scholarly patronage.",
+      "chapters": [
+        29
+      ],
+      "era": "postprophetic",
+      "certainty": "commonly cited date"
+    },
+    {
+      "id": "cairo",
+      "date": "969 CE",
+      "title": "Fatimid foundation of Cairo",
+      "description": "The city becomes a new centre of government and learned institutions.",
+      "chapters": [
+        34
+      ],
+      "era": "postprophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "jerusalem",
+      "date": "1187 CE",
+      "title": "Jerusalem recovered by Ṣalāḥ al-Dīn",
+      "description": "Changes in military and political authority reshape religious institutions and urban life.",
+      "chapters": [
+        34
+      ],
+      "era": "postprophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "mongols",
+      "date": "1258 CE",
+      "title": "Mongol capture of Baghdad",
+      "description": "Destruction of the Abbasid ruling centre reshapes political and intellectual networks.",
+      "chapters": [
+        37
+      ],
+      "era": "postprophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "ghazan",
+      "date": "1295 CE",
+      "title": "Ghāzān's adoption of Islam",
+      "description": "Court religious policy changes within the broader Ilkhanid and Iranian world.",
+      "chapters": [
+        37
+      ],
+      "era": "postprophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "mansa",
+      "date": "1324 CE",
+      "title": "Mansa Mūsā's pilgrimage",
+      "description": "The ruler of Mali visits the central Islamic lands and brings wider notice to West African connections.",
+      "chapters": [
+        38
+      ],
+      "era": "postprophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "ottoman",
+      "date": "1453 CE",
+      "title": "Ottoman conquest of Constantinople",
+      "description": "The city becomes the centre of a growing empire connecting the Balkans and Anatolia.",
+      "chapters": [
+        41
+      ],
+      "era": "postprophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "granada",
+      "date": "1492 CE",
+      "title": "Fall of Granada",
+      "description": "The end of the Nasrid emirate transforms the circumstances of Muslims in Iberia.",
+      "chapters": [
+        35
+      ],
+      "era": "postprophetic",
+      "certainty": "approximate"
+    },
+    {
+      "id": "portuguese",
+      "date": "1498 CE",
+      "title": "Portuguese maritime arrival in India",
+      "description": "European maritime expansion enters established Indian Ocean trading networks.",
+      "chapters": [
+        43
+      ],
+      "era": "modern",
+      "certainty": "approximate"
+    },
+    {
+      "id": "company",
+      "date": "1600 CE",
+      "title": "English East India Company founded",
+      "description": "A chartered company becomes one actor in the changing trade and eventual territorial politics of South Asia.",
+      "chapters": [
+        43,
+        44
+      ],
+      "era": "modern",
+      "certainty": "approximate"
+    },
+    {
+      "id": "diwani",
+      "date": "1765 CE",
+      "title": "Company obtains the Bengal dīwānī",
+      "description": "Company authority over revenue administration develops into wider political and judicial power.",
+      "chapters": [
+        44
+      ],
+      "era": "modern",
+      "certainty": "approximate"
+    },
+    {
+      "id": "hastings",
+      "date": "1772 CE",
+      "title": "Company judicial reforms in Bengal",
+      "description": "New colonial courts reorganize the administration and interpretation of inherited legal traditions.",
+      "chapters": [
+        44
+      ],
+      "era": "modern",
+      "certainty": "approximate"
+    },
+    {
+      "id": "waqf-deed",
+      "date": "21 December 1868",
+      "title": "Sylhet family endowment deed",
+      "description": "A family property settlement provides for descendants with a later charitable destination.",
+      "chapters": [
+        44
+      ],
+      "era": "modern",
+      "certainty": "documented date"
+    },
+    {
+      "id": "waqf-privy",
+      "date": "15 December 1894",
+      "title": "Privy Council waqf decision",
+      "description": "The family's endowment is rejected as too remote in its ultimate charitable purpose.",
+      "chapters": [
+        44
+      ],
+      "era": "modern",
+      "certainty": "documented date"
+    },
+    {
+      "id": "wakf-1913",
+      "date": "1913 CE",
+      "title": "Mussalman Wakf Validating Act",
+      "description": "Legislation recognizes qualifying Muslim family endowments under conditions specified by law.",
+      "chapters": [
+        44
+      ],
+      "era": "modern",
+      "certainty": "approximate"
+    },
+    {
+      "id": "ottoman-end",
+      "date": "1924 CE",
+      "title": "Ottoman caliphate abolished",
+      "description": "Political institutions inherited from the Ottoman state are reorganized after the First World War.",
+      "chapters": [
+        46
+      ],
+      "era": "modern",
+      "certainty": "approximate"
+    },
+    {
+      "id": "wakf-1930",
+      "date": "1930 CE",
+      "title": "Retrospective wakf validating legislation",
+      "description": "The 1913 principles are extended to earlier qualifying endowments, subject to protections for acquired rights.",
+      "chapters": [
+        44
+      ],
+      "era": "modern",
+      "certainty": "approximate"
+    },
+    {
+      "id": "partition",
+      "date": "1947 CE",
+      "title": "Partition of British India",
+      "description": "New states and borders reshape the lives of Muslim communities and their institutions.",
+      "chapters": [
+        45,
+        46
+      ],
+      "era": "modern",
+      "certainty": "approximate"
+    },
+    {
+      "id": "digital",
+      "date": "21st century",
+      "title": "Digital access and dispersed scholarly life",
+      "description": "Digital collections and communication alter the conditions of source verification, study and communal learning.",
+      "chapters": [
+        46
+      ],
+      "era": "modern",
+      "certainty": "ongoing process"
+    }
+  ]
+}
