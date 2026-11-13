@@ -1,0 +1,248 @@
+{
+  "project": "Work, Vocation & Umran",
+  "version": "2026-11-13-draft-1",
+  "notice": "Not personal legal guidance, an actual shortage assessment, or an assertion of spiritual rank",
+  "classification_basis": "Provisional juristic research; consult sources and scholars",
+  "sufficiency_status": "unknown for every profile",
+  "needs": [
+    {
+      "id": "religious-teaching",
+      "title": "Religious teaching and scholarly succession",
+      "category": "knowledge",
+      "scope": "Local · regional · transnational",
+      "status": "Established duty in necessary forms",
+      "level": "established_duty",
+      "purpose": "Provide reliable basic religious instruction and sustain qualified future teachers and jurists.",
+      "tests": [
+        "Access to reliable instruction",
+        "Competence and supervision of teachers",
+        "Advanced training and scholarly succession"
+      ],
+      "roles": [
+        "Teacher",
+        "Scholar and mentor",
+        "Translator",
+        "Administrator",
+        "Endowment organiser"
+      ],
+      "sources": [
+        "Al-Ghazālī, Iḥyāʾ",
+        "Al-Nawawī, al-Majmūʿ",
+        "IIFA Resolution 164"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft"
+    },
+    {
+      "id": "contemporary-curricula",
+      "title": "Curricula for contemporary intellectual discourse",
+      "category": "knowledge",
+      "scope": "Regional · transnational",
+      "status": "Context-dependent derivation",
+      "level": "context_dependent",
+      "purpose": "Develop the intellectual competence needed to understand and respond responsibly to contemporary scientific, philosophical and technical debates.",
+      "tests": [
+        "Specify missing learner competencies",
+        "Assess existing teaching and curricula",
+        "Evaluate actual learning and teacher formation"
+      ],
+      "roles": [
+        "Curriculum developer",
+        "Researcher",
+        "Teacher",
+        "Translator",
+        "Educational evaluator"
+      ],
+      "sources": [
+        "Al-Nawawī, Rawḍat al-Ṭālibīn",
+        "IIFA Resolution 164"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft"
+    },
+    {
+      "id": "medical-care",
+      "title": "Necessary medical care",
+      "category": "care",
+      "scope": "Local · city · regional",
+      "status": "Strong classical foundation; details disputed",
+      "level": "established_duty",
+      "purpose": "Ensure clinically significant medical needs can be addressed through competent, accessible treatment.",
+      "tests": [
+        "Relevant clinical needs and waiting periods",
+        "Qualified treatment capacity and access",
+        "Quality and continuity of care"
+      ],
+      "roles": [
+        "Clinician",
+        "Clinical educator",
+        "Health IT specialist",
+        "Hospital administrator",
+        "Medical logistics"
+      ],
+      "sources": [
+        "Al-Ghazālī, Iḥyāʾ",
+        "Al-Nawawī, al-Majmūʿ"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft"
+    },
+    {
+      "id": "water-sanitation",
+      "title": "Safe water, sanitation and infrastructure",
+      "category": "infrastructure",
+      "scope": "Neighbourhood · city · region",
+      "status": "Context-dependent obligation",
+      "level": "context_dependent",
+      "purpose": "Sustain indispensable water, waste handling, roads and civil infrastructure where reliable provision is required.",
+      "tests": [
+        "Service safety and reliability",
+        "Waste collection and pollution indicators",
+        "Maintenance capacity and interruption risk"
+      ],
+      "roles": [
+        "Sanitation worker",
+        "Engineer",
+        "Technician",
+        "Municipal administrator",
+        "Infrastructure planner"
+      ],
+      "sources": [
+        "Classical discussions of necessary crafts and utilities",
+        "Contextual assessment required"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft"
+    },
+    {
+      "id": "food-access",
+      "title": "Secure food access",
+      "category": "livelihood",
+      "scope": "Household · city · nation · transnational",
+      "status": "Context-dependent obligation",
+      "level": "context_dependent",
+      "purpose": "Ensure reliable, affordable access to essential food without presuming that local production is always necessary where trade suffices.",
+      "tests": [
+        "Household food security and affordability",
+        "Stability of supply and alternatives",
+        "Access under disruption"
+      ],
+      "roles": [
+        "Farmer",
+        "Trader",
+        "Logistics specialist",
+        "Community organiser",
+        "Supply analyst"
+      ],
+      "sources": [
+        "Al-Ghazālī, Iḥyāʾ",
+        "Ibn Taymiyya, Majmūʿ al-Fatāwā"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft"
+    },
+    {
+      "id": "ai-safety",
+      "title": "Safety and accountable governance of advanced AI",
+      "category": "technology",
+      "scope": "National · transnational · humanity-wide",
+      "status": "Plausible but disputed derivation",
+      "level": "plausible_disputed",
+      "purpose": "Investigate credible grave harms from advanced AI to life, justice, institutions and human moral agency, and identify effective safeguards.",
+      "tests": [
+        "A specified risk mechanism and its evidence",
+        "Independent evaluation of proposed safeguards",
+        "Existing institutional response and remaining gaps"
+      ],
+      "roles": [
+        "AI evaluation specialist",
+        "Security researcher",
+        "Governance analyst",
+        "Independent auditor",
+        "Educator and institution-builder"
+      ],
+      "sources": [
+        "General duties to prevent grave harms",
+        "80,000 Hours AI problem profile (empirical argument)"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft"
+    },
+    {
+      "id": "dependent-care",
+      "title": "Care for dependent and vulnerable people",
+      "category": "care",
+      "scope": "Household · neighbourhood · city",
+      "status": "Mixed personal and collective obligations",
+      "level": "context_dependent",
+      "purpose": "Prevent neglect and grave harm to vulnerable dependants through family, community and appropriate institutional arrangements.",
+      "tests": [
+        "Existing personal obligations identified",
+        "Care needs and safety",
+        "Access to respite and adequate support"
+      ],
+      "roles": [
+        "Family caregiver",
+        "Care worker",
+        "Social worker",
+        "Respite organiser",
+        "Institutional coordinator"
+      ],
+      "sources": [
+        "Classical treatment of family and communal duties",
+        "Contextual legal review required"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft"
+    },
+    {
+      "id": "funerals",
+      "title": "Funeral rites and burial provision",
+      "category": "religious-practice",
+      "scope": "Local · regional",
+      "status": "Established classical communal duty",
+      "level": "established_duty",
+      "purpose": "Ensure competent and accessible performance of obligatory funeral rites and burial arrangements.",
+      "tests": [
+        "Qualified practitioners and access",
+        "Appropriate facilities and coordination"
+      ],
+      "roles": [
+        "Community volunteer",
+        "Burial coordinator",
+        "Funeral practitioner",
+        "Administrator"
+      ],
+      "sources": [
+        "Al-Nawawī, al-Majmūʿ",
+        "Classical funeral law"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft"
+    }
+  ]
+}
