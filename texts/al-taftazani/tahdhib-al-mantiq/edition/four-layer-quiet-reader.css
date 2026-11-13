@@ -1,0 +1,25 @@
+/* Tahdhīb: quiet source-layer reading without editorial prose in body */
+#main>.source-note{display:none}.gn-quiet-about{margin:12px 0 16px;max-width:900px;color:var(--muted,#66766b);font-size:.86em}
+.gn-quiet-about>summary,.gn-quiet-footer>summary{cursor:pointer;color:inherit;font-size:.92em;padding:8px 0;list-style:disclosure-closed}
+.gn-quiet-about[open]>.gn-quiet-about-body{max-height:45vh;overflow:auto;border:1px solid #d7ddd7;border-radius:10px;padding:14px;background:var(--paper,#fafaf6)}
+.gn-quiet-about .source-note{font-size:.9em;margin:8px 0;line-height:1.55}.gn-quiet-footer{font-size:.8em;color:#778578;margin:8px auto}
+.gn-h-trigger{border:1px solid currentColor;border-radius:8px;font-size:13px;padding:7px 11px;cursor:pointer;background:transparent;color:inherit;white-space:nowrap;letter-spacing:0;font-weight:500}
+.gn-h-trigger[aria-expanded="true"]{background:#285f46;color:white}
+.gn-h-panel[hidden]{display:none!important}
+.gn-h-panel{position:fixed;z-index:1000;top:0;right:0;width:min(650px,46vw);height:100dvh;display:flex;flex-direction:column;box-shadow:-6px 0 32px rgba(0,0,0,.17);background:#f9f8f2;color:#23392f;line-height:1.55;font-family:system-ui,-apple-system,sans-serif}
+.gn-h-head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #d9ded5;gap:12px;padding:15px 18px;background:#fffef8}
+.gn-h-head strong{font-family:Georgia,serif;font-size:23px;font-weight:500}.gn-h-head small{display:block;font:12px system-ui;color:#627769}.gn-h-close{font:29px/1 system-ui;border:0;background:transparent;cursor:pointer;color:inherit;padding:5px}
+.gn-h-controls{padding:12px 16px;border-bottom:1px solid #d9ded5;display:flex;flex-direction:column;gap:8px}
+.gn-h-tabs{display:flex;gap:4px}.gn-h-tab{background:transparent;border:1px solid #d9ded5;border-radius:7px;padding:7px 10px;font:12px system-ui;cursor:pointer;color:inherit}
+.gn-h-tab[aria-pressed="true"]{background:#285f46;color:white}
+.gn-h-select,.gn-h-search{width:100%;border:1px solid #c4cec3;border-radius:8px;padding:9px;background:#fff;color:#23392f;font:14px system-ui}
+.gn-h-counter{font:12px system-ui;color:#728477}.gn-h-scroll{overflow:auto;flex:1;overscroll-behavior:contain;padding:4px 18px 20px}
+.gn-h-entry{border-bottom:1px solid #dfe5d9;padding:20px 2px}.gn-h-entry-top{display:flex;justify-content:space-between;gap:10px;font:12px system-ui;color:#65796b;align-items:center}.gn-h-entry-id{font-weight:700}
+.gn-h-lemma{font:22px/1.9 "Amiri","Noto Naskh Arabic",serif;direction:rtl;text-align:right;margin:9px 0;color:#263d2e}
+.gn-h-english{font:17px/1.74 Georgia,serif;color:#2a392f}.gn-h-english p{margin:8px 0 14px}
+.gn-h-entry-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;font:12px system-ui;color:#64776b;margin-top:9px}
+.gn-h-entry-bottom a{color:#285f46}.gn-h-save{background:transparent;color:inherit;border:1px solid #d2dcd2;border-radius:7px;padding:6px 10px;cursor:pointer}
+.gn-h-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;border-top:1px solid #d9ded5;padding:12px 17px;background:#fffef8;font:13px system-ui}
+.gn-h-page{border:1px solid #cbd6cb;background:transparent;border-radius:7px;padding:7px 12px;color:inherit;cursor:pointer}.gn-h-page:disabled{opacity:.35;cursor:default}.gn-h-empty{padding:18px;color:#768579}
+@media(max-width:850px){.gn-h-panel{width:min(100%,550px)}.gn-h-trigger{padding:6px 8px;font-size:12px}.gn-h-english{font-size:17px}}
+@media(prefers-color-scheme:dark){.gn-h-panel{background:#1c2922;color:#eaf0e9}.gn-h-head,.gn-h-foot{background:#23352a;border-color:#496050}.gn-h-controls,.gn-h-entry{border-color:#496050}.gn-h-head small,.gn-h-entry-top,.gn-h-counter,.gn-h-entry-bottom{color:#afc8b2}.gn-h-select,.gn-h-search{background:#20382b;color:#eaf0e9;border-color:#58715f}.gn-h-lemma,.gn-h-english{color:#eaf0e9}.gn-h-tab,.gn-h-save,.gn-h-page{border-color:#58715f;color:#eaf0e9}}
