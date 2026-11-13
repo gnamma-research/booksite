@@ -77,7 +77,14 @@ function render(){
    const save=el('button','gn-h-save','☆ Save');save.type='button';const key=NS+':'+r.id;
    try{if(localStorage.getItem(key)==='1')save.textContent='★ Saved'}catch(e){}
    save.addEventListener('click',()=>{try{if(localStorage.getItem(key)==='1'){localStorage.removeItem(key);save.textContent='☆ Save'}else{localStorage.setItem(key,'1');save.textContent='★ Saved'}}catch(e){}});
-   meta.append(save);card.append(meta);scroller.append(card);
+   meta.append(save);card.append(meta);
+   if(r.englishOriginal){
+      const old=el('details','gn-h-older-english');
+      old.append(el('summary',null,'Earlier English (preserved)'));
+      old.append(el('p',null,r.englishOriginal));
+      card.append(old);
+   }
+   scroller.append(card);
  });
  prev.disabled=app.index===0;next.disabled=start+12>=app.filtered.length;
  page.textContent=(app.filtered.length?app.index+1:0)+' / '+Math.ceil(app.filtered.length/12);
@@ -90,7 +97,26 @@ async function load(){
    if(!r.ok)throw Error('HTTP '+r.status);
    const data=await r.json();
    if(!Array.isArray(data.records)||data.records.length!==1090)throw Error('Unexpected corpus shape');
-   app.records=data.records;render();
+   // English-only Stage130 overlays never replace canonical source records.
+   // The prior first-pass English remains available in a collapsed comparison.
+   let revisions=new Map();
+   try{
+    const overlayResponse=await fetch('stage130-h-english-overrides.json?v=20261113-s130',{cache:'force-cache'});
+    if(overlayResponse.ok){
+      const overlay=await overlayResponse.json();
+      if(overlay.schema==='gnamma.tahdhib.stage130.h-english-preferred.v1'
+        &&Array.isArray(overlay.records)&&overlay.records.length===21)
+        revisions=new Map(overlay.records.map(x=>[x.id,x]));
+    }
+   }catch(e){/* Retain the complete older public reading if the optional layer fails. */}
+   app.stage130EnglishRevisions=0;
+   app.records=data.records.map(note=>{
+    const update=revisions.get(note.id);
+    if(!update||typeof update.english!=='string'||!update.english.trim())return note;
+    app.stage130EnglishRevisions++;
+    return {...note,englishOriginal:note.english,english:update.english,stage130Review:true};
+   });
+   render();
  }catch(error){
   app.loadError=true;
   scroller.replaceChildren();const p=el('p','gn-h-empty','The historic gloss data could not be loaded here.');scroller.append(p);
