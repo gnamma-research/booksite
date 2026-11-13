@@ -1,5 +1,7 @@
 # Stage 84 — public Volume I text-first working reader (13 November 2026)
 
+> **Reader architecture decision · 13 November 2026:** Keep *Tahdhīb al-Kalām* and *Taqrīb al-Marām* as separate public readers until both commentary volumes are complete and checked. A future unified matn–sharḥ interface is described in [the deferred reader design](FUTURE_TAHDHIB_TAQRIB_UNIFIED_READER.md). The matched-phrase concordance remains an inactive editorial asset; do not expose a combined menu item yet.
+
 **Public repository update:** `stage84-reader.html` and eleven `stage84-data/records-NN.js` modules are now committed to the Gnamma booksite GitHub repository. The new text reader indexes all **280** Volume I printed page positions and all **1,401** provisional records. Stage 83's offline-only status below is now historical. The **facsimile image files and original combined PDF are not yet hosted on the public site**; they remain in the separate Stage 84 offline research package. Browser Pages deployment and actual mobile Safari must be verified separately.
 
 **Increment this stage:** 12 selected, source-image-reread Arabic/English records on printed pages **I:8–12**, with text and translation linked by ID. Those passages cover the definition of kalām; distinctions between doctrinal and practical knowledge; certain proofs; the Companions' early discipline labels; and the knowable as theological subject. Previous interpretive English overviews remain in hidden reading apparatus. See [Stage 84 source rereads](STAGE84_I008_I012_SOURCE_REREADS.md).
