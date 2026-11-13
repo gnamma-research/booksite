@@ -12,6 +12,7 @@
  padding:0!important;font:700 13px/1 ui-sans-serif,system-ui!important;
  text-decoration:none!important;cursor:pointer;white-space:nowrap
 }
+#reading .gn-source-inline::before{content:'✧';font:inherit;pointer-events:none}
 #reading .gn-source-inline:hover,#reading .gn-source-inline:focus-visible{
  background:var(--accent-soft)!important;outline-offset:1px
 }
