@@ -323,7 +323,8 @@
       ],
       "type": "summa_commentary",
       "status": "canonical",
-      "translation": "priority_B"
+      "translation": "selection_translated_v5",
+      "evidence_note": "Original-language TAFT95/TAFT96 excerpt anchors and full 17 passage v5 working reader; not complete text"
     },
     {
       "id": "isfahani_tasdid",
@@ -945,6 +946,24 @@
       "title": "Lāhījī, Shawāriq al-ilhām, I:48",
       "kind": "Primary text; mental existence",
       "url": "https://ablibrary.net/book_content/b/9309/48?lang=ar"
+    },
+    {
+      "id": "TAFT95",
+      "title": "al-Taftāzānī, Sharḥ al-Maqāṣid I:95 — direct source text",
+      "kind": "Primary text; thought/report distinction; truth about impossibles",
+      "url": "https://usul.ai/ar/t/sharh-maqasid/95"
+    },
+    {
+      "id": "TAFT96",
+      "title": "al-Taftāzānī, Sharḥ al-Maqāṣid I:96 — direct source text",
+      "kind": "Primary text; direct critique and possible replies to Active-Intellect identification",
+      "url": "https://almntqim.com/%D9%A4%D9%A5%D9%A0%D9%A1_%D8%B4%D8%B1%D8%AD-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B5%D8%AF-%D9%81%D9%8A-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%AA%D9%81%D8%AA%D8%A7%D8%B2%D8%A7%D9%86%D9%8A-%D8%AC-%D9%A1/%D9%A9%D9%A6_%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9"
+    },
+    {
+      "id": "TAFT2025",
+      "title": "The Metaphysics of Reality and Objective Truth: al-Taftāzānī on Nafs al-Amr",
+      "kind": "2025 specialist secondary study; interpretive literature",
+      "url": "https://jupidi.um.edu.my/index.php/ALBASIRAH/article/view/66834"
     }
   ],
   "anchors": [
@@ -1024,6 +1043,103 @@
       "english": "What is present in the mind is only a form, differing [from the external thing] in many of its concomitants.",
       "note": "Cognitive possession of the form of heat does not heat the mind.",
       "url": "https://ablibrary.net/book_content/b/9309/48?lang=ar"
+    },
+    {
+      "id": "ta-95-03",
+      "author": "Saʿd al-Dīn al-Taftāzānī",
+      "work": "Sharḥ al-Maqāṣid",
+      "loc": "I:95",
+      "problems": [
+        "P02",
+        "P05",
+        "P10"
+      ],
+      "status": "New directly sourced translation; passage unit TA95-03",
+      "arabic": "ومعناه ما يفهم من قولنا هذا الأمر كذا في نفسه أو ليس كذا، أي في حد ذاته وبالنظر إليه مع قطع النظر عن إدراك المدرك وإخبار المخبر.",
+      "english": "Its meaning is what we understand when we say, “This matter is thus in itself,” or “It is not thus”: that is, considering it in itself, apart from the apprehension of the knower and the report of the reporter.",
+      "note": "A semantic distinction: not outside every possible intellect, but independent of the particular person's assertion.",
+      "url": "https://usul.ai/ar/t/sharh-maqasid/95"
+    },
+    {
+      "id": "ta-95-04",
+      "author": "al-Taftāzānī",
+      "work": "Sharḥ al-Maqāṣid",
+      "loc": "I:95",
+      "problems": [
+        "P08",
+        "P09",
+        "P10"
+      ],
+      "status": "New directly sourced translation; passage unit TA95-04",
+      "arabic": "أنا نعلم قطعا أن قولنا باجتماع الضدين مستحيل مطابق لما في نفس الأمر، وقولنا أنه ممكن غير مطابق.",
+      "english": "We know with certainty that saying “the conjunction of contraries is impossible” corresponds to nafs al-amr, whereas saying “it is possible” does not.",
+      "note": "A true judgment may concern what has no external existence; this does not give the impossibility a concrete extra-mental instance.",
+      "url": "https://usul.ai/ar/t/sharh-maqasid/95"
+    },
+    {
+      "id": "ta-95-05",
+      "author": "al-Taftāzānī",
+      "work": "Sharḥ al-Maqāṣid",
+      "loc": "I:95",
+      "problems": [
+        "P01",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "status": "New directly sourced translation; passage unit TA95-05",
+      "arabic": "فتلك النسبة من حيث أنها نتيجة الضرورة أو البرهان بالنظر إلى نفس ذلك المعقول من غير خصوصية المدرك والمخبر هي المراد بالواقع وما في نفس الأمر.",
+      "english": "That relation, as determined by necessity or demonstration and as pertaining to the meanings themselves apart from any particular knower or reporter, is what is meant by reality and nafs al-amr.",
+      "note": "The relation warranted by necessity/demonstration is distinct from Zayd or ʿAmr's act of judging it.",
+      "url": "https://usul.ai/ar/t/sharh-maqasid/95"
+    },
+    {
+      "id": "ta-95-07",
+      "author": "al-Taftāzānī reporting a philosophical theory",
+      "work": "Sharḥ al-Maqāṣid",
+      "loc": "I:95",
+      "problems": [
+        "P05",
+        "P06"
+      ],
+      "status": "Report of others, translated; TA95-07",
+      "arabic": "فسر بعضهم ما في نفس الأمر بما في العقل الفعال.",
+      "english": "Some therefore explained what obtains in nafs al-amr as what is in the Active Intellect.",
+      "note": "Reporting voice, NOT al-Taftazani's own conclusion.",
+      "url": "https://usul.ai/ar/t/sharh-maqasid/95"
+    },
+    {
+      "id": "ta-96-02",
+      "author": "al-Taftāzānī",
+      "work": "Sharḥ al-Maqāṣid",
+      "loc": "I:96",
+      "problems": [
+        "P02",
+        "P05",
+        "P06"
+      ],
+      "status": "New directly sourced translation; passage unit TA96-02",
+      "arabic": "ثم القول بأن المراد بما في نفس الأمر ما في العقل الفعال باطل قطعا، لأن كل أحد من العقلاء يعرف أن قولنا الواحد نصف الاثنين مطابق لما في نفس الأمر مع أنه لم يتصور العقل الفعال أصلا.",
+      "english": "To say that what is meant by nafs al-amr is what is in the Active Intellect is categorically false, for everyone capable of reason recognizes that one is half of two corresponds to nafs al-amr even without ever having conceived of the Active Intellect.",
+      "note": "A forceful objection to identification; not by itself a disproof of all theories of metaphysical grounding.",
+      "url": "https://almntqim.com/%D9%A4%D9%A5%D9%A0%D9%A1_%D8%B4%D8%B1%D8%AD-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B5%D8%AF-%D9%81%D9%8A-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%AA%D9%81%D8%AA%D8%A7%D8%B2%D8%A7%D9%86%D9%8A-%D8%AC-%D9%A1/%D9%A9%D9%A6_%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9"
+    },
+    {
+      "id": "ta-96-04",
+      "author": "al-Taftāzānī registering objections",
+      "work": "Sharḥ al-Maqāṣid",
+      "loc": "I:96",
+      "problems": [
+        "P05",
+        "P06",
+        "P07",
+        "P12"
+      ],
+      "status": "New directly sourced translation; passage unit TA96-04",
+      "arabic": "وقد يقال لو أريد بما في نفس الأمر ما في العقل الفعال امتنع اعتبار المطابقة لما في نفس الأمر في علم العقل الفعال لعدم الاثنينية.",
+      "english": "One might also object that, if nafs al-amr meant what is in the Active Intellect, the Active Intellect's own knowledge could not be said to correspond to it, since the required twofoldness would be absent.",
+      "note": "First of three new problems; other objections concern divine knowledge and particular events.",
+      "url": "https://almntqim.com/%D9%A4%D9%A5%D9%A0%D9%A1_%D8%B4%D8%B1%D8%AD-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B5%D8%AF-%D9%81%D9%8A-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%AA%D9%81%D8%AA%D8%A7%D8%B2%D8%A7%D9%86%D9%8A-%D8%AC-%D9%A1/%D9%A9%D9%A6_%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9"
     }
   ]
 }
