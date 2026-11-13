@@ -8,6 +8,8 @@ window.GNAMMA_QAWAID_CITATION_POLICY = Object.freeze({
   defaultInlineMode: "normal-only",
   referenceSources: "Existing 18-card source register; independently reviewed direct Arabic spans only.",
   exactExternalReaderDestinations: [],
+  /* Exact spacing in the received SH-017 quoted Qur'anic wording: the conjunction وَ is separated. */
+  phraseOverrides: {"q-112-3-4":{"SH-017":["لَمْ يَلِدْ وَ لَمْ يُولَدْ"]}},
   grades: {
     "quran-verse": {
       group: "direct",
