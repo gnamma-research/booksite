@@ -34,7 +34,7 @@ with sync_playwright() as p:
   page.wait_for_function('()=>!!window.GnammaQawaidCitations')
   pol=page.evaluate("() => {const p=window.GNAMMA_QAWAID_CITATION_POLICY;return {total:Object.keys(p.records).length,direct:Object.values(p.records).filter(t=>p.grades[t].group==='direct').length,comparison:Object.values(p.records).filter(t=>p.grades[t].group==='comparison').length,verifiedInternal:p.exactExternalReaderDestinations.length}}")
   ck('evidence policy accounts for all 18 existing cards',pol=={'total':18,'direct':12,'comparison':6,'verifiedInternal':0})
-  ck('71+ source data not invented and source reader loaded',page.evaluate("window.GNAMMA_QAWAID_MATN.units.length") == 61)
+  ck('canonical matn source data preserved and source reader loaded',page.evaluate("window.GNAMMA_QAWAID_MATN.units.length") == 61)
   marker='#SH-029 .gn-source-inline[data-open-source="q-8-17"]'
   page.wait_for_selector(marker,timeout=16000)
   ck('exact Quran words acquire a small marker',page.locator(marker).count()==1)
@@ -97,7 +97,7 @@ with sync_playwright() as p:
   ck('standalone unverified report has warning','Not authenticated' in page.locator('#gn-citation-standalone').inner_text())
   page.locator('[data-citation-return]').click()
   page.goto('https://gnamma.test'+PREFIX+'commentary.html#SH-INTRO-030',wait_until='networkidle')
-  ck('independent intro contains source policy and text',page.evaluate("window.GNAMMA_QAWAID_CITATION_POLICY.records['ibn-arabi-dawair']")==='quoted-in-tamhid')
+  ck('independent intro contains source policy and text',page.evaluate("window.GNAMMA_QAWAID_CITATION_POLICY.records['ibn-arabi-dawair']") == 'quoted-in-tamhid')
   for width in [320,390,768,1280]:
    page.set_viewport_size({'width':width,'height':844})
    page.wait_for_timeout(80)
