@@ -1,12 +1,9 @@
-# Tahdhīb — latest handoff: Stage124 (13 November 2026)
+# Tahdhīb — latest scholarly handoff: Stage125 (13 November 2026)
 
-**Reader and source-critical verification work continues. Volume I is not yet an unabridged, critically verified edition.**
+**Volume I is available in a cleaner T/Y/H reader, but its translation remains a carefully marked working edition, not a fully photographed or manuscript-collated final critical text.**
 
-Read [Stage124 source-critical completion gate](STAGE124_CRITICAL_VERIFICATION_GATE.md) for current T/Y/H counts, the stage 124 private-workbench feature audit, exact gaps, publication rights and final acceptance standards.
+Read the [complete Stage125 source and four-layer reader handoff](HANDOFF_STAGE125.md). The [Stage124 critical completion gate](STAGE124_CRITICAL_VERIFICATION_GATE.md), [Stage123 original handoff](HANDOFF_STAGE123.md), earlier source records, source photographs, first-pass English drafts, the 1,090 historical H numbered records and all source-critical corrections remain unchanged.
 
-The complete previous [Stage123 immutable handoff](HANDOFF_STAGE123.md) preserves its original 1,090-source-unit inventory, working English repairs, Q258 source correction, eleven SHA gaps and status counts. Earlier handoffs Stage113–122, original Stage114 H corpus, all cumulative records and all printed-table photo apparatus remain unchanged.
+New: full digital Arabic reproducibility against the recovered corpus (1,090 of 1,090); Q258 complete 49-location selected-phrase audit (37 substantive cells still not diplomatically translated); Q294 104 of 105 working first-print shorthand cores, one unsettled; Q309 D05 first-print adverb correction; 46 conditional source-rule proof trees (zero new fully historical-strength semantic certifications); one public reading shell with T/Y and same-page searchable H pane, dictionary, source links and hidden scholarly apparatus.
 
-## Next binding steps
-Complete source-by-source, clause-by-clause bilingual alignment and photography/witness checks; resolve Q258/Q294/Q300/Q309 tables and eleven digital-source digests; complete historical modal proof obligations; integrate the T/Y/H reader, dictionary and scholarly apparatus without contaminating continuous reading; rigorously test the public edition and PDFs. Move to Volume II publication only after Volume I's stated completion gate passes.
-
-**Do not relabel 1,029 first-pass H renderings as 1,029 source-certified literal translations. Do not present the 57 modern editorial reference positions as historical notes. Do not restart Concepts36 or invent post-Q395 glosses.**
+**Required completion:** genuine source/translation clause audit, 37 Q258 full verdicts, Q294 second-print and qualifier strokes, Q309 four provisional scopes and two witness differences, 11 old source SHA discrepancies, authenticated manuscripts, historical-strength 46 modal proofs, rights review for private printed-source Arabic, and exhaustive browser/mobile audit. Preserve old work; do not silently call first-pass translations final or invent later H text beyond Q395.
