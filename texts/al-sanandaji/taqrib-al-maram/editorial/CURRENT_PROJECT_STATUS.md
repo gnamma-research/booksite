@@ -1,3 +1,19 @@
+# Stage 85 — Volume I text corrections and source-integrity checkpoint (13 November 2026)
+
+**The public study reader remains visually unchanged.** Forty-three first-pass, source-positioned Arabic–English readings were added on **36 printed pages I:13–48**, replacing selected interpretive overviews with bounded literal excerpts. Earlier summaries are preserved as source-record metadata but are not inserted into continuous reading. See [source readings, I:13–48](STAGE85_SOURCE_READINGS_I013_I048.md).
+
+**What has changed:** the working corpus still contains **1,401 unique records**. **250/279 body pages** now contain *some typed Arabic* (Stage84: 214); **1,126/1,401** records contain some typed Arabic (Stage84: 1,083). **29/279 body pages** still lack typed Arabic (I:49–72 and I:74–78). These are **not** percentages of text completely translated. English working passages occur on all 279 body-page positions but remain summary or incomplete on many pages. Whole-page multi-register Arabic/English critically accepted: **0/279**; second independent proof: **0/279**; manuscript collation: **0**.
+
+**Source witness:** 1318 AH Būlāq two-volume scan (632 PDF pages), SHA-256 `4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134`. All 280 Volume I source PNGs retain the Stage81 SHA-256 values; the combined PDF checksum matches. Original printed I:p = physical combined PDF p+13.
+
+**Publication implementation:** `stage85-source-delta.js` loads after the eleven inherited records shards and before the clean `reader.js` in both the book landing page and historical alias. It only updates pre-existing stable IDs; it does not introduce a combined Tahdhīb/Taqrīb reader or a new menu item. Source/QA history remains outside the reader UI. Desktop/tablet/mobile sized checks passed on embedded Chromium, confirming 1,401 loaded records, revised passages and no JS errors; live-site iOS Safari acceptance remains outstanding.
+
+**Next strict proof requirement:** resolve the 29 anchor-only pages; then do complete line-by-line transcription and literal translation for all upper, ruled and lower commentary throughout 279 body pages. Do not convert source-page presence into completed critical pages.
+
+---
+
+## Earlier Stage 84 and prior checkpoints
+
 # Stage 84 — public Volume I text-first working reader (13 November 2026)
 
 > **Reader architecture decision · 13 November 2026:** Keep *Tahdhīb al-Kalām* and *Taqrīb al-Marām* as separate public readers until both commentary volumes are complete and checked. A future unified matn–sharḥ interface is described in [the deferred reader design](FUTURE_TAHDHIB_TAQRIB_UNIFIED_READER.md). The matched-phrase concordance remains an inactive editorial asset; do not expose a combined menu item yet.
