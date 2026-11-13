@@ -1,6 +1,6 @@
 {
   "project": "Work, Vocation & Umran",
-  "version": "2026-11-13-draft-3",
+  "version": "2026-11-13-v4-maqasid-and-renewal",
   "notice": "Candidate need/function catalogue, not a finding of actual local shortage, assignment of personal religious obligation, or spiritual ranking. Project data are organiser claims, not independent verification.",
   "classification_basis": "Provisional juristic research; consult sources and scholars",
   "sufficiency_status": "unknown for every profile",
@@ -42,6 +42,19 @@
       ],
       "evidence_case_ids": [
         "bangi-education-campaign"
+      ],
+      "higher_aim_ids": [
+        "din",
+        "aql",
+        "tazkiya",
+        "tajdid"
+      ],
+      "renewal_programme_ids": [
+        "scholarly-succession",
+        "critical-texts",
+        "curriculum-pathways",
+        "spiritual-ethical-formation",
+        "civilizational-learning"
       ]
     },
     {
@@ -80,6 +93,19 @@
       "evidence_case_ids": [
         "malaysia-learning",
         "bangi-education-campaign"
+      ],
+      "higher_aim_ids": [
+        "din",
+        "aql",
+        "tajdid"
+      ],
+      "renewal_programme_ids": [
+        "scholarly-succession",
+        "critical-texts",
+        "curriculum-pathways",
+        "contemporary-intellectual-dialogue",
+        "knowledge-technology",
+        "civilizational-learning"
       ]
     },
     {
@@ -118,6 +144,13 @@
       ],
       "evidence_case_ids": [
         "malaysia-mental-health"
+      ],
+      "higher_aim_ids": [
+        "nafs",
+        "umran"
+      ],
+      "renewal_programme_ids": [
+        "trustworthy-institutions"
       ]
     },
     {
@@ -153,7 +186,15 @@
         "sudan-water",
         "refugee-support"
       ],
-      "evidence_case_ids": []
+      "evidence_case_ids": [],
+      "higher_aim_ids": [
+        "nafs",
+        "umran",
+        "khalq"
+      ],
+      "renewal_programme_ids": [
+        "stewardship-resilience"
+      ]
     },
     {
       "id": "food-access",
@@ -188,7 +229,16 @@
         "sudan-basic",
         "tanzania-care"
       ],
-      "evidence_case_ids": []
+      "evidence_case_ids": [],
+      "higher_aim_ids": [
+        "mal",
+        "umran",
+        "khalq"
+      ],
+      "renewal_programme_ids": [
+        "crafts-livelihood",
+        "stewardship-resilience"
+      ]
     },
     {
       "id": "ai-safety",
@@ -220,7 +270,16 @@
       "reviewed": "2026-11-13",
       "publication": "research_draft",
       "example_project_ids": [],
-      "evidence_case_ids": []
+      "evidence_case_ids": [],
+      "higher_aim_ids": [
+        "aql",
+        "adl"
+      ],
+      "renewal_programme_ids": [
+        "contemporary-intellectual-dialogue",
+        "legal-discernment",
+        "knowledge-technology"
+      ]
     },
     {
       "id": "dependent-care",
@@ -255,7 +314,16 @@
         "tanzania-care",
         "orphan-education"
       ],
-      "evidence_case_ids": []
+      "evidence_case_ids": [],
+      "higher_aim_ids": [
+        "nafs",
+        "nasl",
+        "tazkiya"
+      ],
+      "renewal_programme_ids": [
+        "spiritual-ethical-formation",
+        "family-household"
+      ]
     },
     {
       "id": "funerals",
@@ -285,7 +353,11 @@
       "reviewed": "2026-11-13",
       "publication": "research_draft",
       "example_project_ids": [],
-      "evidence_case_ids": []
+      "evidence_case_ids": [],
+      "higher_aim_ids": [
+        "din"
+      ],
+      "renewal_programme_ids": []
     },
     {
       "id": "household-sufficiency",
@@ -324,6 +396,17 @@
       "publication": "research_draft",
       "evidence_case_ids": [
         "penang-household"
+      ],
+      "higher_aim_ids": [
+        "nasl",
+        "mal",
+        "adl"
+      ],
+      "renewal_programme_ids": [
+        "legal-discernment",
+        "family-household",
+        "trustworthy-institutions",
+        "crafts-livelihood"
       ]
     },
     {
@@ -360,6 +443,13 @@
       "publication": "research_draft",
       "evidence_case_ids": [
         "penang-household"
+      ],
+      "higher_aim_ids": [
+        "aql",
+        "mal"
+      ],
+      "renewal_programme_ids": [
+        "crafts-livelihood"
       ]
     },
     {
@@ -394,7 +484,18 @@
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
       "publication": "research_draft",
-      "evidence_case_ids": []
+      "evidence_case_ids": [],
+      "higher_aim_ids": [
+        "mal",
+        "adl",
+        "umran",
+        "tajdid"
+      ],
+      "renewal_programme_ids": [
+        "legal-discernment",
+        "spiritual-ethical-formation",
+        "trustworthy-institutions"
+      ]
     },
     {
       "id": "mental-health",
@@ -430,7 +531,11 @@
       "publication": "research_draft",
       "evidence_case_ids": [
         "malaysia-mental-health"
-      ]
+      ],
+      "higher_aim_ids": [
+        "nafs"
+      ],
+      "renewal_programme_ids": []
     },
     {
       "id": "emergency-response",
@@ -465,7 +570,15 @@
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
       "publication": "research_draft",
-      "evidence_case_ids": []
+      "evidence_case_ids": [],
+      "higher_aim_ids": [
+        "nafs",
+        "umran",
+        "khalq"
+      ],
+      "renewal_programme_ids": [
+        "stewardship-resilience"
+      ]
     },
     {
       "id": "displaced-shelter",
@@ -499,7 +612,14 @@
       "personal_duty_status": "not_assessed",
       "reviewed": "2026-11-13",
       "publication": "research_draft",
-      "evidence_case_ids": []
+      "evidence_case_ids": [],
+      "higher_aim_ids": [
+        "nasl"
+      ],
+      "renewal_programme_ids": [
+        "family-household",
+        "stewardship-resilience"
+      ]
     }
   ],
   "research_sources": [
@@ -507,5 +627,7 @@
     "projects.html"
   ],
   "evidence_record_source": "assessments.json",
-  "evidence_policy": "A research example may document an outcome, a provider activity or a source-defined capacity gap. None automatically certifies complete sufficiency, a legal obligation or individual duty."
+  "evidence_policy": "A research example may document an outcome, a provider activity or a source-defined capacity gap. None automatically certifies complete sufficiency, a legal obligation or individual duty.",
+  "aim_framework": "vision.json",
+  "relationship_policy": "All aim and programme links are analytic hypotheses. They do not determine priority scores, legal obligations, actual local deficits, or spiritual rank."
 }

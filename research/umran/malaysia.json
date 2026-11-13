@@ -1,8 +1,8 @@
 {
   "title": "Malaysia and related scholarship on farḍ kifāya, formation, institutions and ḥadd al-kifāyah",
-  "version": "2026-11-13",
+  "version": "2026-11-13-v4",
   "status": "annotated preliminary scholarly reading room",
-  "scope_note": "Includes Malaysian scholarship, Malaysian-published articles with non-Malaysian contributors, and an international academy resolution adopted in Putrajaya; not all are Malaysian-authored.",
+  "scope_note": "Includes Malaysian researchers, Malaysian-published studies, case studies of Malaysian institutions by international scholars, a Putrajaya international resolution, and IAIS Malaysia-associated scholarship. They are different source types.",
   "distinction": "ḥadd al-kifāyah is a welfare/zakat adequacy threshold and is different from farḍ kifāya, a collective legal duty.",
   "studies": [
     {
@@ -152,6 +152,65 @@
       "review_date": "2026-11-13",
       "full_text_collated": false,
       "empirical_sufficiency_conclusion": "not established"
+    },
+    {
+      "id": "iium-curriculum-2020",
+      "title": "Reasserting the Maqāṣid of Islamic Revealed Knowledge Curricula",
+      "category_and_year": "Intellectual renewal and curriculum · 2020",
+      "authors_and_venue": "Khairil Husaini Bin Jamil · IIUM, al-Burhān",
+      "research_contribution": "Describes an educational effort to integrate the higher aims of Qurʾān and Sunnah learning with programme outcomes, traditional scholarship, critical engagement and spiritual formation.",
+      "qualification_or_limit": "An account of curricular design and educational philosophy, not an independently demonstrated improvement in graduates' competence or a general legal ruling.",
+      "method": "Programme and conceptual study",
+      "related_need_ids": [
+        "contemporary-curricula",
+        "religious-teaching"
+      ],
+      "source_url": "https://journals.iium.edu.my/al-burhan/index.php/al-burhan/article/view/196",
+      "review_date": "2026-11-13",
+      "full_text_collated": false,
+      "empirical_sufficiency_conclusion": "not established"
+    },
+    {
+      "id": "iium-knowledge-2021",
+      "title": "From Streamlining to Mainstreaming Islamization of Knowledge: The Case of IIUM",
+      "category_and_year": "Institutional critique · 2021",
+      "authors_and_venue": "Sari Hanafi · American Journal of Islam and Society; IIUM case study",
+      "research_contribution": "Analyses IIUM's shift towards mainstreamed knowledge integration through maqāṣid and evaluates tensions among professional training, religious formation and pluralism.",
+      "qualification_or_limit": "This critical case study is not a proof of the success or failure of every Islamic university, and its author is not Malaysian merely because the university examined is.",
+      "method": "Critical institutional study",
+      "related_need_ids": [
+        "contemporary-curricula",
+        "community-institutions"
+      ],
+      "source_url": "https://ajis.org/index.php/ajiss/article/view/1086",
+      "review_date": "2026-11-13",
+      "full_text_collated": false,
+      "empirical_sufficiency_conclusion": "not established"
+    },
+    {
+      "id": "kamali-civilizational-renewal-2018",
+      "title": "Tajdīd, Iṣlāḥ and Civilisational Renewal in Islam",
+      "category_and_year": "Civilizational renewal · 2018",
+      "authors_and_venue": "Mohammad Hashim Kamali · IIIT and IAIS Malaysia",
+      "research_contribution": "Connects renewal and reform to living interpretation, ijtihād, civilizational aims and public cooperation, rather than to an occupational or fundraising checklist.",
+      "qualification_or_limit": "A normative intellectual work, not a comprehensive evidence survey of unmet communal needs. The public abstract and contents were examined; the full text has not been critically collated here.",
+      "method": "Scholarly conceptual monograph",
+      "related_need_ids": [
+        "contemporary-curricula",
+        "religious-teaching",
+        "community-institutions"
+      ],
+      "source_url": "https://doi.org/10.2307/j.ctvkc66vh",
+      "review_date": "2026-11-13",
+      "full_text_collated": false,
+      "empirical_sufficiency_conclusion": "not established"
     }
+  ],
+  "study_domains": [
+    "Legal theory of communal obligations",
+    "Maqāṣid and household sufficiency",
+    "Institutional and educational formation",
+    "Intellectual and civilizational renewal",
+    "Community development case studies"
   ]
 }
