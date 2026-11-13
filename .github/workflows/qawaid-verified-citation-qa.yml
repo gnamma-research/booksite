@@ -11,6 +11,10 @@ on:
       - 'texts/al-turka/qawaid-al-tawhid/index.html'
       - 'texts/al-turka/qawaid-al-tawhid/commentary.html'
       - 'texts/al-turka/qawaid-al-tawhid/qa/test-linked-source-cards.py'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/check-study-ui.py'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/check-layered-reader.py'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/test-commentary-browser.py'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/audit-linked-citation-coverage.py'
   workflow_dispatch:
 permissions:
   contents: read
