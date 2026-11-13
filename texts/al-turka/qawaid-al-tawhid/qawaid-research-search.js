@@ -121,7 +121,7 @@ if(!validModes.includes(settings.mode))settings.mode='words';
 function remember(){try{sessionStorage.setItem(K,JSON.stringify(settings))}catch{}}
 function matchRoot(q){
  const folded=norm(q).replace(/[\s-]/g,'');
- return families.find(f=>f.root===folded||norm(f.label).includes(folded)||f.label.toLowerCase().startsWith(String(q).toLowerCase().trim()))||null;
+ return families.find(f=>f.root===folded||norm(f.label.split(' / ')[0]).replace(/[^a-z]/g,'')===folded||norm(f.label).includes(folded))||null;
 }
 function matchTerm(q){
  const v=norm(q);
