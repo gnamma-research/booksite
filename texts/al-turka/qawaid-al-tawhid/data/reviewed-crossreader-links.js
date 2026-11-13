@@ -1,6 +1,6 @@
 window.GNAMMA_QAWAID_CROSSREADER_LINKS = {
   "schema": "gnamma-qawtaw21-reviewed-crossreader-v1",
-  "scope": "Five editorial conceptual parallels to exact extant Qūnawī al-Nuṣūṣ passage IDs. Never direct quotations or stemmatic dependencies.",
+  "scope": "Seven reviewed conceptual parallels: five exact Qūnawī al-Nuṣūṣ passages plus two exact Ṭūsī Tajrīd matn lemmata. Not direct quotations or stemmatic dependencies.",
   "items": [
     {
       "id": "qunawi-absolute-001a",
@@ -71,6 +71,34 @@ window.GNAMMA_QAWAID_CROSSREADER_LINKS = {
       "reviewedDate": "2026-11-13",
       "evidence": "Source/target Arabic passages inspected in the published GNAMMA working source readers; not an independently manuscript-collated textual dependency.",
       "sourceGrade": "printed bilingual source-scoped working edition"
+    },
+    {
+      "id": "tajrid-being-qt005",
+      "from": "QT-005",
+      "toWork": "tusi_tajrid",
+      "toUnit": "4",
+      "toTitle": "Tajrīd al-Iʿtiqād · A common concept of existence",
+      "linkType": "editorial-conceptual-parallel",
+      "targetArabic": "وتردد الذهن حال الجزم بمطلق الوجود واتحاد مفهوم نقيضه وقبوله القسمة يعطي اشتراكه",
+      "relationship": "Abū Ḥāmid Turka's QT-005 argues for semantic commonality of existence rather than mere verbal equivocity. Ṭūsī's corresponding Tajrīd lemma argues for a shared concept, but neither the further ontological thesis nor direct borrowing follows from that similarity.",
+      "url": "https://gnamma-research.github.io/booksite/research/tajrid/#matn/4",
+      "reviewedDate": "2026-11-13",
+      "evidence": "Actual published Tajrīd Arabic matn lemma and Qawāʿid/Tamhīd Arabic working passage inspected; conceptual parallel only, not confirmed historical dependency.",
+      "sourceGrade": "Printed bilingual source-scoped working reader"
+    },
+    {
+      "id": "tajrid-gradation-sh015",
+      "from": "SH-015",
+      "toWork": "tusi_tajrid",
+      "toUnit": "38",
+      "toTitle": "Tajrīd al-Iʿtiqād · Predication by tashkīk",
+      "linkType": "editorial-conceptual-parallel",
+      "targetArabic": "ويتكثر بتكثر الموضوعات ويقال بالتشكيك على عوارضها",
+      "relationship": "Ṭūsī's Tajrīd lemma invokes gradated predication and the multiplication of existence with its subjects. Ibn Turka's SH-015 examines the philosophical limits of such reasoning; this is a direct conceptual comparison between distinct argumentative standpoints, not a verbatim citation.",
+      "url": "https://gnamma-research.github.io/booksite/research/tajrid/#matn/38",
+      "reviewedDate": "2026-11-13",
+      "evidence": "Actual published Tajrīd Arabic matn lemma and Qawāʿid/Tamhīd Arabic working passage inspected; conceptual parallel only, not confirmed historical dependency.",
+      "sourceGrade": "Printed bilingual source-scoped working reader"
     }
   ]
 };
