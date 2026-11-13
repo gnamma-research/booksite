@@ -68,6 +68,14 @@ with sync_playwright() as p:
             page.locator('#search-field').fill('SH-028')
             page.locator('[data-result-id="SH-028"]').click()
         page.wait_for_selector('#SH-028')
+        page.wait_for_timeout(350)
+        state_after_search=page.evaluate("""() => ({
+          url:location.href,mode:document.body.dataset.mode,
+          sharhOpen:document.querySelector('#SH-028')?.open,
+          detailVisible:!!document.querySelector('#SH-028 .sharh-content')?.getClientRects().length,
+          sourceLayer:document.querySelector('#layer-sharh')?.getAttribute('aria-checked')
+        })""")
+        print('SEARCH_LAYER_DIAGNOSTIC',state_after_search,flush=True)
         check('search reveals hidden commentary in place',page.url.endswith('#SH-028') and page.locator('#SH-028 .sharh-content').is_visible())
         page.evaluate("s=JSON.parse(localStorage.getItem('gnamma:qawaid:reading:v2'));s.bookmarks=['QT-007'];s.personal={'QT-007':'Retained note'};s.legacyField='retain';localStorage.setItem('gnamma:qawaid:reading:v2',JSON.stringify(s))")
         page.reload(wait_until='networkidle');page.locator('#layer-sharh').click();page.locator('#layer-sharh').click()
