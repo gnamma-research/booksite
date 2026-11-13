@@ -379,15 +379,25 @@
         "commentary",
         "philosophy"
       ],
-      "status": "working-draft-and-selected-commentary",
+      "status": "volume-I-280-page-working-text-online-needs-complete-transcription-and-proof",
       "language": [
-        "ar-selections",
-        "en-selections"
+        "ar-selected",
+        "en-first-pass"
       ],
       "url": "texts/al-sanandaji/taqrib-al-maram/",
       "related_matn_id": "taftazani-tahdhib-kalam",
-      "note": "50-page source-following English draft I:13–62 recovered; Arabic–English selected commentary through I:80, with main text and ḥāshiya distinguished. Next requested 100-page translation I:81–180 is not started as matn remains unfinished.",
-      "cumulative_text": "texts/al-sanandaji/taqrib-al-maram/2026-10-31_parallel_selected_commentary.md"
+      "note": "Volume I: every original printed page position I:1–280 indexed in the publicly committed Stage84 text-first working reader, with 1,401 provisional source-linked units. 214/279 body pages have some typed Arabic (65 anchors-only); many upper and marginal passages remain untranslated or paraphrased; 0 complete critically certified pages. Original 280 facsimiles and combined PDF are held in the offline research release, not hosted on the website. Volume II is separately provisional.",
+      "cumulative_text": "texts/al-sanandaji/taqrib-al-maram/2026-10-31_parallel_selected_commentary.md",
+      "volume_i_reader_url": "texts/al-sanandaji/taqrib-al-maram/stage84-reader.html",
+      "volume_i_reader_status": "provisional-complete-page-index-not-complete-translation",
+      "source_images_publicly_hosted": false,
+      "body_page_positions": 279,
+      "body_pages_with_any_english": 279,
+      "body_pages_with_some_typed_arabic": 214,
+      "working_records": 1401,
+      "records_with_some_typed_arabic": 1083,
+      "critically_complete_pages": 0,
+      "last_editorial_update": "2026-11-13"
     },
     {
       "id": "taftazani-tahdhib-logic",
@@ -434,7 +444,12 @@
       "printed_witness_comparisons": 7,
       "later_gloss_stage116_source_photography": {
         "status": "four historical printed tables photographed, not independently manuscript-collated",
-        "table_source_pages": [258, 294, 300, 309],
+        "table_source_pages": [
+          258,
+          294,
+          300,
+          309
+        ],
         "printed_editions_inspected": 2,
         "q300_status_codes_photo_checked": 32,
         "q258_definition_verdicts_still_to_translate": 49,
