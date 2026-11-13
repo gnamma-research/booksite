@@ -39,6 +39,11 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Verify citation markers, comparative notes and mobile return navigation
         run: python texts/al-turka/qawaid-al-tawhid/qa/test-linked-source-cards.py
+      - name: Recheck original source-parity and Darūrī-family study reader
+        run: |
+          python texts/al-turka/qawaid-al-tawhid/qa/check-study-ui.py
+          python texts/al-turka/qawaid-al-tawhid/qa/check-layered-reader.py
+          python texts/al-turka/qawaid-al-tawhid/qa/test-commentary-browser.py
       - name: Save citation QA report and screenshot
         uses: actions/upload-artifact@v4
         if: always()
@@ -48,4 +53,7 @@ jobs:
             texts/al-turka/qawaid-al-tawhid/qa/linked-source-cards-browser-acceptance.json
             texts/al-turka/qawaid-al-tawhid/qa/qawaid-citation-mobile.png
             texts/al-turka/qawaid-al-tawhid/qa/qawaid-citation-error.png
+            texts/al-turka/qawaid-al-tawhid/qa/study-ui-report.json
+            texts/al-turka/qawaid-al-tawhid/qa/layered-browser-results/
+            texts/al-turka/qawaid-al-tawhid/qa/commentary-browser-acceptance.json
           retention-days: 21
