@@ -1,0 +1,62 @@
+{
+  "schema": "gnamma.tahdhib.stage131.h-definition-english-patches.v1",
+  "date": "2026-11-15",
+  "scope": "English-only selected source-facing precision patches for 11 of the 29 H definition notes, prior English and private Arabic not overwritten",
+  "records": [
+    {
+      "id": "HWN-DEFINITION-019",
+      "old": "[The searchable page announces the table here, but the retrieved text does not contain the table itself.]",
+      "new": "[The original forty-nine-cell definition matrix is preserved and indexed in the optional printed-table apparatus. Twelve entries simply say “See [the related case]”; the other thirty-seven require full cell-level diplomatic comparison.]"
+    },
+    {
+      "id": "HWN-DEFINITION-020",
+      "old": "a common accident alone cannot define, not that it cannot form part of a definiens.",
+      "new": "a common accident alone cannot serve as the defining expression, not that it cannot be a constituent of one. —Mīrzā Muḥammad ʿAlī"
+    },
+    {
+      "id": "HWN-DEFINITION-021",
+      "old": "Its plural is khafāfīsh.",
+      "new": "Its plural is khafāfīsh. —Mīrzā Muḥammad ʿAlī"
+    },
+    {
+      "id": "HWN-DEFINITION-022",
+      "old": "but is recognised by the investigators and the earlier authorities.",
+      "new": "but is recognised by the investigating logicians and the earlier authorities. —Muḥammad ʿAlī"
+    },
+    {
+      "id": "HWN-DEFINITION-023",
+      "old": "calling it a polygonal figure distinguishes it from the circle, though not from all other polygons.",
+      "new": "calling it a polygonal figure distinguishes it from the circle, though not from all other polygons. —Mīrzā Muḥammad ʿAlī"
+    },
+    {
+      "id": "HWN-DEFINITION-024",
+      "old": "Reflect.",
+      "new": "Reflect. —Mīrzā Muḥammad ʿAlī"
+    },
+    {
+      "id": "HWN-DEFINITION-025",
+      "old": "The qualification concerning narrower accidental terms cannot simply be omitted.",
+      "new": "Permission for a broader incomplete definition and for a narrower incomplete definition need not be assumed to have exactly the same scope. —Mīrzā Muḥammad ʿAlī"
+    },
+    {
+      "id": "HWN-DEFINITION-026",
+      "old": "so why investigate its properties?",
+      "new": "so why investigate its characteristics here? —Mīrzā Muḥammad ʿAlī"
+    },
+    {
+      "id": "HWN-DEFINITION-027",
+      "old": "apart from kha zʿāl and qahqār except in reduplicated words.",
+      "new": "apart from khazʿāl and qahqār, except among reduplicated words. —Mīrzā Muḥammad ʿAlī"
+    },
+    {
+      "id": "HWN-DEFINITION-028",
+      "old": "does not constitute the circle objectionable in a real definition.",
+      "new": "does not constitute the vicious circle objectionable in a real definition. —Shaykh ʿAbd al-Raḥīm"
+    },
+    {
+      "id": "HWN-DEFINITION-029",
+      "old": "Understand.",
+      "new": "Understand. —Mīrzā Muḥammad ʿAlī"
+    }
+  ]
+}
