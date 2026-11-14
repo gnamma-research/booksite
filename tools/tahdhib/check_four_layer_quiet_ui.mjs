@@ -23,6 +23,18 @@ for(const [engine,type] of [['chromium',chromium],['webkit',webkit]]){
     check(await overlay.isVisible(),'Historical H companion did not open');
     check(await page.evaluate(()=>window.GnammaTahdhibFourLayers.counts().stage130EnglishRevisions)===21,
       'Expected all 21 preferred Stage130 H English overlays; baseline Arabic and previous draft must remain intact');
+    const coverage=await page.evaluate(()=>window.GnammaTahdhibFourLayers.counts());
+    check(coverage.stage131DefinitionCorrections===11,
+      'All 11 Stage131 definition English corrections must be applied, got '+coverage.stage131DefinitionCorrections);
+    check(coverage.stage131SkippedPatches.length===0,
+      'Every Stage131 source English snippet must match its old baseline: '+coverage.stage131SkippedPatches.join(', '));
+    await page.locator('#gn-h-panel .gn-h-select').selectOption('H-DEFINITION');
+    await page.locator('#gn-h-panel .gn-h-search').fill('HWN-DEFINITION-019');
+    const defined=await page.locator('#gn-h-HWN-DEFINITION-019 .gn-h-english').innerText();
+    check(defined.includes('forty-nine-cell definition matrix'),'Stage131 Q258 table apparatus reference missing');
+    check(await page.locator('#gn-h-HWN-DEFINITION-019 .gn-h-older-english').count()===1,
+      'Stage131 original definition English must be preserved in a closed note');
+    await page.locator('#gn-h-panel .gn-h-search').fill('');
     await page.locator('#gn-h-panel .gn-h-select').selectOption('H-PREFACE');
     await page.locator('#gn-h-panel .gn-h-search').fill('HWN-047');
     check(await page.locator('#gn-h-HWN-047 .gn-h-english').innerText().then(t=>t.includes('ʿiṣma')&&t.includes('Luṭf')),
