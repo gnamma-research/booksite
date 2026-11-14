@@ -31,13 +31,13 @@
       "4.563",
       "4.577"
     ],
-    "lastContinuouslyTranslatedSection": "4.820",
-    "lastCompletePrintedPage": 509,
-    "translatedCompletePageCount": 507,
-    "translationPercent": 70.4167,
-    "nextSection": "4.821",
-    "nextPrintedPage": 510,
-    "targetPage540_percent75": "not-reached",
+    "lastContinuouslyTranslatedSection": "4.950",
+    "lastCompletePrintedPage": 542,
+    "translatedCompletePageCount": 540,
+    "translationPercent": 75,
+    "nextSection": "4.951",
+    "nextPrintedPage": 543,
+    "targetPage540_percent75": "reached",
     "r12NewSections": [
       "4.578",
       "4.610"
@@ -49,15 +49,19 @@
     "r14NewSections": [
       "4.649",
       "4.820"
+    ],
+    "r15NewSections": [
+      "4.821",
+      "4.950"
     ]
   },
   "readerImport": {
     "firstSection": "4.538",
-    "lastSection": "4.820",
-    "units": 283,
+    "lastSection": "4.950",
+    "units": 413,
     "completeReaderFromFirstPage": false,
     "previousSectionsNotImported": "1.1–4.537",
-    "readerUnitCoverageRelativeToFullTranslation": "partial late segment only: 283 bilingual passages (4.538–4.820); earlier 1.1–4.537 not yet imported",
+    "readerUnitCoverageRelativeToFullTranslation": "partial late segment only: 413 bilingual passages §§4.538–4.950; earlier 1.1–4.537 remain outside the reader",
     "files": [
       "r10.json",
       "r11a.json",
@@ -74,7 +78,12 @@
       "r14f.json",
       "r14g.json",
       "r14h.json",
-      "r14i.json"
+      "r14i.json",
+      "r15a.json",
+      "r15b.json",
+      "r15c.json",
+      "r15d.json",
+      "r15e.json"
     ],
     "expectedSequence": "contiguous",
     "additionProtocol": "Append one new increment JSON filename here, update units/lastSection and translationProgress; reader discovers it automatically."
@@ -159,10 +168,35 @@
       "path": "texts/al-fanari/misbah-al-uns/r14i.json",
       "gitBlobSha": "2622e7d91e86f55b584163588f55778027087c6c",
       "records": 20
+    },
+    {
+      "path": "texts/al-fanari/misbah-al-uns/r15a.json",
+      "gitBlobSha": "a6e957afba0069cdcd51bd1757a9769f0a8b486f",
+      "records": 25
+    },
+    {
+      "path": "texts/al-fanari/misbah-al-uns/r15b.json",
+      "gitBlobSha": "9f7a20702fae8625c15683726edaa9b9fab148c0",
+      "records": 30
+    },
+    {
+      "path": "texts/al-fanari/misbah-al-uns/r15c.json",
+      "gitBlobSha": "db787833b2b0c25ca8e4bd2a0a9401da9ca61559",
+      "records": 25
+    },
+    {
+      "path": "texts/al-fanari/misbah-al-uns/r15d.json",
+      "gitBlobSha": "36936b1b980dc5a09677bf82c00bedb6c6e5fc55",
+      "records": 25
+    },
+    {
+      "path": "texts/al-fanari/misbah-al-uns/r15e.json",
+      "gitBlobSha": "9cccc213f3ce00d6a32e8f66246db509fff5b12e",
+      "records": 25
     }
   ],
   "checks": {
-    "sectionSequence": "continuous 4.538–4.820",
+    "sectionSequence": "continuous 4.538–4.950",
     "allEntriesArabic": true,
     "allEntriesEnglish": true,
     "arabicWitness": "OpenITI text aligned by printed page tags",
@@ -187,9 +221,13 @@
     "r14BoundaryException": "§4.733 marker is in an OCR continuation line; recovered as separate section in r14e",
     "r14IndependentWitnessesCollated": 0,
     "r14AdditionalSections": "R14f 751–775 (25), R14g 776–790 (15), R14h 791–800 (10), R14i 801–820 (20)",
-    "r14EvidentiaryStatus": "Pinned OpenITI first pass, not print/manuscript collated; attributed authors and verse source flags in R14_EDITORIAL_APPARATUS.md"
+    "r14EvidentiaryStatus": "Pinned OpenITI first pass, not print/manuscript collated; attributed authors and verse source flags in R14_EDITORIAL_APPARATUS.md",
+    "r15NewSectionCount": 130,
+    "r15PageFullyCovered": "510–542; §4.950 extends through p.543, §4.951 begins p.543",
+    "r15IndependentWitnessesCollated": 0,
+    "r15SourceStatus": "Arabic from pinned OpenITI; first-pass English, print and manuscript verification pending"
   },
-  "handoff": "NOT FULLY CUMULATIVE: earlier original binary English-first master through §4.537 not losslessly imported. R10–R14 provide 283 consecutive working bilingual sections §4.538–4.820. Consult HANDOFF.md and R14_EDITORIAL_APPARATUS.md.",
+  "handoff": "NOT FULLY CUMULATIVE: earlier master through §4.537 not losslessly imported. R10–R15 provide 413 consecutive bilingual first-pass passages §§4.538–4.950, through complete source page 542 (540/720 = 75%).",
   "entries": [
     {
       "id": "4.538",
@@ -3020,7 +3058,1307 @@
       "arabicChars": 337,
       "fnv1a32": "1cf8a335",
       "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.821",
+      "pageStart": 510,
+      "pageEnd": 510,
+      "group": "R15a",
+      "englishChars": 456,
+      "arabicChars": 257,
+      "fnv1a32": "ba4b002d",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.822",
+      "pageStart": 510,
+      "pageEnd": 510,
+      "group": "R15a",
+      "englishChars": 297,
+      "arabicChars": 161,
+      "fnv1a32": "b327799d",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.823",
+      "pageStart": 510,
+      "pageEnd": 511,
+      "group": "R15a",
+      "englishChars": 812,
+      "arabicChars": 486,
+      "fnv1a32": "70de1bef",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.824",
+      "pageStart": 511,
+      "pageEnd": 511,
+      "group": "R15a",
+      "englishChars": 666,
+      "arabicChars": 395,
+      "fnv1a32": "aac48d15",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.825",
+      "pageStart": 511,
+      "pageEnd": 511,
+      "group": "R15a",
+      "englishChars": 144,
+      "arabicChars": 91,
+      "fnv1a32": "c23098f2",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.826",
+      "pageStart": 511,
+      "pageEnd": 511,
+      "group": "R15a",
+      "englishChars": 527,
+      "arabicChars": 322,
+      "fnv1a32": "91717748",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.827",
+      "pageStart": 511,
+      "pageEnd": 512,
+      "group": "R15a",
+      "englishChars": 858,
+      "arabicChars": 514,
+      "fnv1a32": "61bf64f1",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.828",
+      "pageStart": 512,
+      "pageEnd": 512,
+      "group": "R15a",
+      "englishChars": 293,
+      "arabicChars": 174,
+      "fnv1a32": "3229b772",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.829",
+      "pageStart": 512,
+      "pageEnd": 512,
+      "group": "R15a",
+      "englishChars": 171,
+      "arabicChars": 110,
+      "fnv1a32": "92646d2a",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.830",
+      "pageStart": 512,
+      "pageEnd": 512,
+      "group": "R15a",
+      "englishChars": 1105,
+      "arabicChars": 707,
+      "fnv1a32": "5eb4380e",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.831",
+      "pageStart": 512,
+      "pageEnd": 513,
+      "group": "R15a",
+      "englishChars": 567,
+      "arabicChars": 344,
+      "fnv1a32": "836e2083",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.832",
+      "pageStart": 513,
+      "pageEnd": 513,
+      "group": "R15a",
+      "englishChars": 46,
+      "arabicChars": 35,
+      "fnv1a32": "f792e720",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.833",
+      "pageStart": 513,
+      "pageEnd": 513,
+      "group": "R15a",
+      "englishChars": 278,
+      "arabicChars": 155,
+      "fnv1a32": "851e3d60",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.834",
+      "pageStart": 513,
+      "pageEnd": 513,
+      "group": "R15a",
+      "englishChars": 115,
+      "arabicChars": 82,
+      "fnv1a32": "7f30c6b2",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.835",
+      "pageStart": 513,
+      "pageEnd": 513,
+      "group": "R15a",
+      "englishChars": 783,
+      "arabicChars": 446,
+      "fnv1a32": "84c335be",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.836",
+      "pageStart": 513,
+      "pageEnd": 513,
+      "group": "R15a",
+      "englishChars": 308,
+      "arabicChars": 186,
+      "fnv1a32": "c7f64902",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.837",
+      "pageStart": 513,
+      "pageEnd": 513,
+      "group": "R15a",
+      "englishChars": 353,
+      "arabicChars": 192,
+      "fnv1a32": "ebfbe473",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.838",
+      "pageStart": 513,
+      "pageEnd": 514,
+      "group": "R15a",
+      "englishChars": 537,
+      "arabicChars": 296,
+      "fnv1a32": "cedb8563",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.839",
+      "pageStart": 514,
+      "pageEnd": 514,
+      "group": "R15a",
+      "englishChars": 322,
+      "arabicChars": 186,
+      "fnv1a32": "7fd54a99",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.840",
+      "pageStart": 514,
+      "pageEnd": 514,
+      "group": "R15a",
+      "englishChars": 997,
+      "arabicChars": 516,
+      "fnv1a32": "b5e9c727",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.841",
+      "pageStart": 514,
+      "pageEnd": 514,
+      "group": "R15a",
+      "englishChars": 915,
+      "arabicChars": 556,
+      "fnv1a32": "ec05a84f",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.842",
+      "pageStart": 514,
+      "pageEnd": 515,
+      "group": "R15a",
+      "englishChars": 945,
+      "arabicChars": 594,
+      "fnv1a32": "bdfdb62d",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.843",
+      "pageStart": 515,
+      "pageEnd": 515,
+      "group": "R15a",
+      "englishChars": 953,
+      "arabicChars": 638,
+      "fnv1a32": "5b793775",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.844",
+      "pageStart": 515,
+      "pageEnd": 516,
+      "group": "R15a",
+      "englishChars": 1368,
+      "arabicChars": 772,
+      "fnv1a32": "e242ad6c",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.845",
+      "pageStart": 516,
+      "pageEnd": 516,
+      "group": "R15a",
+      "englishChars": 1011,
+      "arabicChars": 561,
+      "fnv1a32": "e82c09c5",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.846",
+      "pageStart": 516,
+      "pageEnd": 516,
+      "group": "R15b",
+      "englishChars": 1230,
+      "arabicChars": 844,
+      "fnv1a32": "bbd3d1ea",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.847",
+      "pageStart": 516,
+      "pageEnd": 517,
+      "group": "R15b",
+      "englishChars": 863,
+      "arabicChars": 537,
+      "fnv1a32": "cb35ac94",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.848",
+      "pageStart": 517,
+      "pageEnd": 517,
+      "group": "R15b",
+      "englishChars": 899,
+      "arabicChars": 561,
+      "fnv1a32": "fcb5d600",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.849",
+      "pageStart": 517,
+      "pageEnd": 518,
+      "group": "R15b",
+      "englishChars": 1022,
+      "arabicChars": 648,
+      "fnv1a32": "7a7144d1",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.850",
+      "pageStart": 518,
+      "pageEnd": 518,
+      "group": "R15b",
+      "englishChars": 270,
+      "arabicChars": 119,
+      "fnv1a32": "b2495596",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.851",
+      "pageStart": 518,
+      "pageEnd": 518,
+      "group": "R15b",
+      "englishChars": 1054,
+      "arabicChars": 746,
+      "fnv1a32": "270fbc0f",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.852",
+      "pageStart": 518,
+      "pageEnd": 518,
+      "group": "R15b",
+      "englishChars": 179,
+      "arabicChars": 101,
+      "fnv1a32": "cd8f7da8",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.853",
+      "pageStart": 518,
+      "pageEnd": 519,
+      "group": "R15b",
+      "englishChars": 511,
+      "arabicChars": 345,
+      "fnv1a32": "6f41af19",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.854",
+      "pageStart": 519,
+      "pageEnd": 519,
+      "group": "R15b",
+      "englishChars": 78,
+      "arabicChars": 57,
+      "fnv1a32": "cafd1a4a",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.855",
+      "pageStart": 519,
+      "pageEnd": 519,
+      "group": "R15b",
+      "englishChars": 263,
+      "arabicChars": 167,
+      "fnv1a32": "b5b5928a",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.856",
+      "pageStart": 519,
+      "pageEnd": 519,
+      "group": "R15b",
+      "englishChars": 240,
+      "arabicChars": 155,
+      "fnv1a32": "b820ba13",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.857",
+      "pageStart": 519,
+      "pageEnd": 519,
+      "group": "R15b",
+      "englishChars": 331,
+      "arabicChars": 208,
+      "fnv1a32": "6d315afe",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.858",
+      "pageStart": 519,
+      "pageEnd": 519,
+      "group": "R15b",
+      "englishChars": 693,
+      "arabicChars": 497,
+      "fnv1a32": "b6ea99ef",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.859",
+      "pageStart": 519,
+      "pageEnd": 520,
+      "group": "R15b",
+      "englishChars": 147,
+      "arabicChars": 101,
+      "fnv1a32": "ce1b83ab",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.860",
+      "pageStart": 520,
+      "pageEnd": 520,
+      "group": "R15b",
+      "englishChars": 750,
+      "arabicChars": 469,
+      "fnv1a32": "60f020de",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.861",
+      "pageStart": 520,
+      "pageEnd": 520,
+      "group": "R15b",
+      "englishChars": 953,
+      "arabicChars": 620,
+      "fnv1a32": "df5171e6",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.862",
+      "pageStart": 520,
+      "pageEnd": 520,
+      "group": "R15b",
+      "englishChars": 344,
+      "arabicChars": 234,
+      "fnv1a32": "bc67c66a",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.863",
+      "pageStart": 520,
+      "pageEnd": 521,
+      "group": "R15b",
+      "englishChars": 456,
+      "arabicChars": 264,
+      "fnv1a32": "0188a8fe",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.864",
+      "pageStart": 521,
+      "pageEnd": 521,
+      "group": "R15b",
+      "englishChars": 706,
+      "arabicChars": 388,
+      "fnv1a32": "aa8602aa",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.865",
+      "pageStart": 521,
+      "pageEnd": 521,
+      "group": "R15b",
+      "englishChars": 839,
+      "arabicChars": 500,
+      "fnv1a32": "48a74b7a",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.866",
+      "pageStart": 521,
+      "pageEnd": 521,
+      "group": "R15b",
+      "englishChars": 95,
+      "arabicChars": 69,
+      "fnv1a32": "04743b89",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.867",
+      "pageStart": 521,
+      "pageEnd": 521,
+      "group": "R15b",
+      "englishChars": 290,
+      "arabicChars": 175,
+      "fnv1a32": "bfd42f2e",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.868",
+      "pageStart": 521,
+      "pageEnd": 522,
+      "group": "R15b",
+      "englishChars": 361,
+      "arabicChars": 216,
+      "fnv1a32": "92c720c3",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.869",
+      "pageStart": 522,
+      "pageEnd": 522,
+      "group": "R15b",
+      "englishChars": 104,
+      "arabicChars": 78,
+      "fnv1a32": "2ae82445",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.870",
+      "pageStart": 522,
+      "pageEnd": 522,
+      "group": "R15b",
+      "englishChars": 1373,
+      "arabicChars": 852,
+      "fnv1a32": "2ac801dc",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.871",
+      "pageStart": 522,
+      "pageEnd": 522,
+      "group": "R15b",
+      "englishChars": 371,
+      "arabicChars": 226,
+      "fnv1a32": "5df46f33",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.872",
+      "pageStart": 522,
+      "pageEnd": 523,
+      "group": "R15b",
+      "englishChars": 801,
+      "arabicChars": 571,
+      "fnv1a32": "41c48bac",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.873",
+      "pageStart": 523,
+      "pageEnd": 523,
+      "group": "R15b",
+      "englishChars": 145,
+      "arabicChars": 87,
+      "fnv1a32": "9d2e4f41",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.874",
+      "pageStart": 523,
+      "pageEnd": 523,
+      "group": "R15b",
+      "englishChars": 383,
+      "arabicChars": 227,
+      "fnv1a32": "faa5ccaf",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.875",
+      "pageStart": 523,
+      "pageEnd": 523,
+      "group": "R15b",
+      "englishChars": 852,
+      "arabicChars": 499,
+      "fnv1a32": "a93fdac9",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.876",
+      "pageStart": 523,
+      "pageEnd": 524,
+      "group": "R15c",
+      "englishChars": 676,
+      "arabicChars": 412,
+      "fnv1a32": "2e4dafcd",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.877",
+      "pageStart": 524,
+      "pageEnd": 524,
+      "group": "R15c",
+      "englishChars": 779,
+      "arabicChars": 490,
+      "fnv1a32": "b6d25a4a",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.878",
+      "pageStart": 524,
+      "pageEnd": 524,
+      "group": "R15c",
+      "englishChars": 715,
+      "arabicChars": 481,
+      "fnv1a32": "13709efa",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.879",
+      "pageStart": 524,
+      "pageEnd": 524,
+      "group": "R15c",
+      "englishChars": 614,
+      "arabicChars": 455,
+      "fnv1a32": "2447f047",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.880",
+      "pageStart": 524,
+      "pageEnd": 525,
+      "group": "R15c",
+      "englishChars": 310,
+      "arabicChars": 206,
+      "fnv1a32": "703ab10c",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.881",
+      "pageStart": 525,
+      "pageEnd": 525,
+      "group": "R15c",
+      "englishChars": 163,
+      "arabicChars": 113,
+      "fnv1a32": "d3b8031e",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.882",
+      "pageStart": 525,
+      "pageEnd": 525,
+      "group": "R15c",
+      "englishChars": 268,
+      "arabicChars": 188,
+      "fnv1a32": "a77385a1",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.883",
+      "pageStart": 525,
+      "pageEnd": 525,
+      "group": "R15c",
+      "englishChars": 531,
+      "arabicChars": 303,
+      "fnv1a32": "d58357da",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.884",
+      "pageStart": 525,
+      "pageEnd": 526,
+      "group": "R15c",
+      "englishChars": 1452,
+      "arabicChars": 852,
+      "fnv1a32": "7c8cd50a",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.885",
+      "pageStart": 526,
+      "pageEnd": 526,
+      "group": "R15c",
+      "englishChars": 195,
+      "arabicChars": 100,
+      "fnv1a32": "47560c4b",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.886",
+      "pageStart": 526,
+      "pageEnd": 526,
+      "group": "R15c",
+      "englishChars": 213,
+      "arabicChars": 110,
+      "fnv1a32": "3b1d0113",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.887",
+      "pageStart": 526,
+      "pageEnd": 526,
+      "group": "R15c",
+      "englishChars": 983,
+      "arabicChars": 633,
+      "fnv1a32": "1a1a0a87",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.888",
+      "pageStart": 526,
+      "pageEnd": 527,
+      "group": "R15c",
+      "englishChars": 495,
+      "arabicChars": 326,
+      "fnv1a32": "1c07f568",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.889",
+      "pageStart": 527,
+      "pageEnd": 527,
+      "group": "R15c",
+      "englishChars": 172,
+      "arabicChars": 106,
+      "fnv1a32": "40e4dacc",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.890",
+      "pageStart": 527,
+      "pageEnd": 527,
+      "group": "R15c",
+      "englishChars": 547,
+      "arabicChars": 332,
+      "fnv1a32": "e59ef807",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.891",
+      "pageStart": 527,
+      "pageEnd": 527,
+      "group": "R15c",
+      "englishChars": 930,
+      "arabicChars": 613,
+      "fnv1a32": "a5842eb5",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.892",
+      "pageStart": 527,
+      "pageEnd": 528,
+      "group": "R15c",
+      "englishChars": 1001,
+      "arabicChars": 563,
+      "fnv1a32": "4d905a5a",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.893",
+      "pageStart": 528,
+      "pageEnd": 529,
+      "group": "R15c",
+      "englishChars": 1666,
+      "arabicChars": 1109,
+      "fnv1a32": "d0bb9865",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.894",
+      "pageStart": 529,
+      "pageEnd": 529,
+      "group": "R15c",
+      "englishChars": 302,
+      "arabicChars": 184,
+      "fnv1a32": "5180759b",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.895",
+      "pageStart": 529,
+      "pageEnd": 529,
+      "group": "R15c",
+      "englishChars": 942,
+      "arabicChars": 559,
+      "fnv1a32": "e0aca886",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.896",
+      "pageStart": 529,
+      "pageEnd": 529,
+      "group": "R15c",
+      "englishChars": 718,
+      "arabicChars": 396,
+      "fnv1a32": "97939f59",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.897",
+      "pageStart": 529,
+      "pageEnd": 530,
+      "group": "R15c",
+      "englishChars": 1638,
+      "arabicChars": 953,
+      "fnv1a32": "8e4c1828",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.898",
+      "pageStart": 530,
+      "pageEnd": 530,
+      "group": "R15c",
+      "englishChars": 892,
+      "arabicChars": 614,
+      "fnv1a32": "2cc56438",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.899",
+      "pageStart": 530,
+      "pageEnd": 531,
+      "group": "R15c",
+      "englishChars": 1682,
+      "arabicChars": 1169,
+      "fnv1a32": "e2f8df56",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.900",
+      "pageStart": 531,
+      "pageEnd": 532,
+      "group": "R15c",
+      "englishChars": 271,
+      "arabicChars": 181,
+      "fnv1a32": "b4770b0c",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.901",
+      "pageStart": 532,
+      "pageEnd": 532,
+      "group": "R15d",
+      "englishChars": 1209,
+      "arabicChars": 753,
+      "fnv1a32": "fc83a900",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.902",
+      "pageStart": 532,
+      "pageEnd": 533,
+      "group": "R15d",
+      "englishChars": 859,
+      "arabicChars": 599,
+      "fnv1a32": "fb637f79",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.903",
+      "pageStart": 533,
+      "pageEnd": 533,
+      "group": "R15d",
+      "englishChars": 542,
+      "arabicChars": 345,
+      "fnv1a32": "38e7abd6",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.904",
+      "pageStart": 533,
+      "pageEnd": 533,
+      "group": "R15d",
+      "englishChars": 1223,
+      "arabicChars": 818,
+      "fnv1a32": "f008b368",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.905",
+      "pageStart": 533,
+      "pageEnd": 534,
+      "group": "R15d",
+      "englishChars": 906,
+      "arabicChars": 683,
+      "fnv1a32": "55ee6c1e",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.906",
+      "pageStart": 534,
+      "pageEnd": 534,
+      "group": "R15d",
+      "englishChars": 655,
+      "arabicChars": 396,
+      "fnv1a32": "fd1c38bb",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.907",
+      "pageStart": 534,
+      "pageEnd": 534,
+      "group": "R15d",
+      "englishChars": 1187,
+      "arabicChars": 767,
+      "fnv1a32": "bb5e5125",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.908",
+      "pageStart": 534,
+      "pageEnd": 535,
+      "group": "R15d",
+      "englishChars": 277,
+      "arabicChars": 166,
+      "fnv1a32": "2d9cbb7a",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.909",
+      "pageStart": 535,
+      "pageEnd": 535,
+      "group": "R15d",
+      "englishChars": 238,
+      "arabicChars": 110,
+      "fnv1a32": "3619ab3c",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.910",
+      "pageStart": 535,
+      "pageEnd": 535,
+      "group": "R15d",
+      "englishChars": 224,
+      "arabicChars": 109,
+      "fnv1a32": "70e6e8c1",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.911",
+      "pageStart": 535,
+      "pageEnd": 535,
+      "group": "R15d",
+      "englishChars": 194,
+      "arabicChars": 101,
+      "fnv1a32": "b1f02a06",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.912",
+      "pageStart": 535,
+      "pageEnd": 535,
+      "group": "R15d",
+      "englishChars": 592,
+      "arabicChars": 324,
+      "fnv1a32": "dc4ee5d1",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.913",
+      "pageStart": 535,
+      "pageEnd": 535,
+      "group": "R15d",
+      "englishChars": 460,
+      "arabicChars": 227,
+      "fnv1a32": "3420eb17",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.914",
+      "pageStart": 535,
+      "pageEnd": 535,
+      "group": "R15d",
+      "englishChars": 490,
+      "arabicChars": 245,
+      "fnv1a32": "e1046a47",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.915",
+      "pageStart": 535,
+      "pageEnd": 536,
+      "group": "R15d",
+      "englishChars": 306,
+      "arabicChars": 162,
+      "fnv1a32": "367ed3bd",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.916",
+      "pageStart": 536,
+      "pageEnd": 536,
+      "group": "R15d",
+      "englishChars": 208,
+      "arabicChars": 135,
+      "fnv1a32": "ebe4493d",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.917",
+      "pageStart": 536,
+      "pageEnd": 536,
+      "group": "R15d",
+      "englishChars": 175,
+      "arabicChars": 121,
+      "fnv1a32": "d86b855e",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.918",
+      "pageStart": 536,
+      "pageEnd": 536,
+      "group": "R15d",
+      "englishChars": 157,
+      "arabicChars": 84,
+      "fnv1a32": "84b8fd1e",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.919",
+      "pageStart": 536,
+      "pageEnd": 536,
+      "group": "R15d",
+      "englishChars": 218,
+      "arabicChars": 99,
+      "fnv1a32": "649cc3a7",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.920",
+      "pageStart": 536,
+      "pageEnd": 536,
+      "group": "R15d",
+      "englishChars": 857,
+      "arabicChars": 470,
+      "fnv1a32": "ede33a67",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.921",
+      "pageStart": 536,
+      "pageEnd": 536,
+      "group": "R15d",
+      "englishChars": 204,
+      "arabicChars": 120,
+      "fnv1a32": "80aa4132",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.922",
+      "pageStart": 536,
+      "pageEnd": 537,
+      "group": "R15d",
+      "englishChars": 169,
+      "arabicChars": 92,
+      "fnv1a32": "b315d8d6",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.923",
+      "pageStart": 537,
+      "pageEnd": 537,
+      "group": "R15d",
+      "englishChars": 564,
+      "arabicChars": 322,
+      "fnv1a32": "5d97540b",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.924",
+      "pageStart": 537,
+      "pageEnd": 537,
+      "group": "R15d",
+      "englishChars": 284,
+      "arabicChars": 167,
+      "fnv1a32": "4478d56a",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.925",
+      "pageStart": 537,
+      "pageEnd": 537,
+      "group": "R15d",
+      "englishChars": 600,
+      "arabicChars": 316,
+      "fnv1a32": "d3c68f85",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.926",
+      "pageStart": 537,
+      "pageEnd": 537,
+      "group": "R15e",
+      "englishChars": 725,
+      "arabicChars": 377,
+      "fnv1a32": "64e04c49",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.927",
+      "pageStart": 537,
+      "pageEnd": 538,
+      "group": "R15e",
+      "englishChars": 651,
+      "arabicChars": 380,
+      "fnv1a32": "fb58fbdd",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.928",
+      "pageStart": 538,
+      "pageEnd": 538,
+      "group": "R15e",
+      "englishChars": 651,
+      "arabicChars": 377,
+      "fnv1a32": "aba07f7f",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.929",
+      "pageStart": 538,
+      "pageEnd": 538,
+      "group": "R15e",
+      "englishChars": 99,
+      "arabicChars": 34,
+      "fnv1a32": "81ce20f9",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.930",
+      "pageStart": 538,
+      "pageEnd": 538,
+      "group": "R15e",
+      "englishChars": 67,
+      "arabicChars": 35,
+      "fnv1a32": "c3e72dd0",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.931",
+      "pageStart": 538,
+      "pageEnd": 538,
+      "group": "R15e",
+      "englishChars": 55,
+      "arabicChars": 29,
+      "fnv1a32": "7f8dadc7",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.932",
+      "pageStart": 538,
+      "pageEnd": 538,
+      "group": "R15e",
+      "englishChars": 97,
+      "arabicChars": 52,
+      "fnv1a32": "018be4a6",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.933",
+      "pageStart": 538,
+      "pageEnd": 538,
+      "group": "R15e",
+      "englishChars": 556,
+      "arabicChars": 383,
+      "fnv1a32": "436a4112",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.934",
+      "pageStart": 538,
+      "pageEnd": 539,
+      "group": "R15e",
+      "englishChars": 476,
+      "arabicChars": 259,
+      "fnv1a32": "a4848094",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.935",
+      "pageStart": 539,
+      "pageEnd": 539,
+      "group": "R15e",
+      "englishChars": 197,
+      "arabicChars": 120,
+      "fnv1a32": "253fb8c6",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.936",
+      "pageStart": 539,
+      "pageEnd": 539,
+      "group": "R15e",
+      "englishChars": 1688,
+      "arabicChars": 934,
+      "fnv1a32": "c0bb9fad",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.937",
+      "pageStart": 539,
+      "pageEnd": 539,
+      "group": "R15e",
+      "englishChars": 355,
+      "arabicChars": 200,
+      "fnv1a32": "5cd7277b",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.938",
+      "pageStart": 539,
+      "pageEnd": 540,
+      "group": "R15e",
+      "englishChars": 330,
+      "arabicChars": 163,
+      "fnv1a32": "fc99cdcf",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.939",
+      "pageStart": 540,
+      "pageEnd": 540,
+      "group": "R15e",
+      "englishChars": 264,
+      "arabicChars": 122,
+      "fnv1a32": "e97b3352",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.940",
+      "pageStart": 540,
+      "pageEnd": 540,
+      "group": "R15e",
+      "englishChars": 205,
+      "arabicChars": 90,
+      "fnv1a32": "4f4b5c85",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.941",
+      "pageStart": 540,
+      "pageEnd": 540,
+      "group": "R15e",
+      "englishChars": 607,
+      "arabicChars": 344,
+      "fnv1a32": "c55fa8c6",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.942",
+      "pageStart": 540,
+      "pageEnd": 540,
+      "group": "R15e",
+      "englishChars": 1208,
+      "arabicChars": 607,
+      "fnv1a32": "e5c59d4f",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.943",
+      "pageStart": 540,
+      "pageEnd": 541,
+      "group": "R15e",
+      "englishChars": 1369,
+      "arabicChars": 676,
+      "fnv1a32": "db9e7ca8",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.944",
+      "pageStart": 541,
+      "pageEnd": 541,
+      "group": "R15e",
+      "englishChars": 360,
+      "arabicChars": 172,
+      "fnv1a32": "5413641b",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.945",
+      "pageStart": 541,
+      "pageEnd": 541,
+      "group": "R15e",
+      "englishChars": 850,
+      "arabicChars": 555,
+      "fnv1a32": "d7eaa836",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.946",
+      "pageStart": 541,
+      "pageEnd": 541,
+      "group": "R15e",
+      "englishChars": 500,
+      "arabicChars": 299,
+      "fnv1a32": "014cf1f1",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.947",
+      "pageStart": 541,
+      "pageEnd": 542,
+      "group": "R15e",
+      "englishChars": 1105,
+      "arabicChars": 562,
+      "fnv1a32": "9f96b87b",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.948",
+      "pageStart": 542,
+      "pageEnd": 542,
+      "group": "R15e",
+      "englishChars": 893,
+      "arabicChars": 445,
+      "fnv1a32": "736e816e",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.949",
+      "pageStart": 542,
+      "pageEnd": 542,
+      "group": "R15e",
+      "englishChars": 307,
+      "arabicChars": 155,
+      "fnv1a32": "a618e8b9",
+      "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.950",
+      "pageStart": 542,
+      "pageEnd": 543,
+      "group": "R15e",
+      "englishChars": 463,
+      "arabicChars": 242,
+      "fnv1a32": "c3ee1486",
+      "status": "uncritically-collated-working-translation"
     }
   ],
-  "updated": "2026-11-09"
+  "updated": "2026-11-14"
 }
