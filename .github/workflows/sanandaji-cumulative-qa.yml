@@ -35,6 +35,9 @@ jobs:
           node --check texts/al-sanandaji/taqrib-al-maram/stage87-corpus-ci.cjs
           node --check texts/al-sanandaji/taqrib-al-maram/stage88-source-delta.js
           node --check texts/al-sanandaji/taqrib-al-maram/stage88-corpus-ci.cjs
+          node --check texts/al-sanandaji/taqrib-al-maram/stage89-source-delta.js
+          node --check texts/al-sanandaji/taqrib-al-maram/stage89-corpus-ci.cjs
+          node --check texts/al-sanandaji/taqrib-al-maram/reader.js
       - name: Validate source-page joins, coverage and reader order
         run: node texts/al-sanandaji/taqrib-al-maram/stage51-corpus-ci.cjs
       - name: Validate Volume I source positions, stable IDs and absence of false completion claims
@@ -43,3 +46,5 @@ jobs:
         run: node texts/al-sanandaji/taqrib-al-maram/stage87-corpus-ci.cjs
       - name: Validate Volume I Stage88 additions, stable IDs and zero false certification
         run: node texts/al-sanandaji/taqrib-al-maram/stage88-corpus-ci.cjs
+      - name: Verify Stage89 bounded Arabic, stable IDs and source-proof gates
+        run: node texts/al-sanandaji/taqrib-al-maram/stage89-corpus-ci.cjs
