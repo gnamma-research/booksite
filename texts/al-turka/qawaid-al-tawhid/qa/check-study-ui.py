@@ -25,7 +25,7 @@ with sync_playwright() as p:
  try:
   page.goto('https://gnamma.test'+PREFIX,wait_until='networkidle')
   ck('82 dictionary entries',page.evaluate('window.GNAMMA_QAWAID_TERMS.terms.length')==82)
-  ck('18 sourced primary and contextual reference cards',page.evaluate('window.GNAMMA_QAWAID_REFERENCES.items.length')==18)
+  ck('18 canonical + 11 supplementary source cards presented separately',page.evaluate("window.GNAMMA_QAWAID_REFERENCES.items.length===29 && window.GNAMMA_QAWAID_QAWTAW21_EXTENSION.originalSourceCards===18 && window.GNAMMA_QAWAID_QAWTAW21_EXTENSION.supplementarySourceCards===11"))
   ck('public intro has no process log',not 'manuscript-established critical edition' in page.locator('.book-intro').inner_text().lower())
   page.locator('#menu-button').click()
   ck('daruri-family menu opens',page.locator('#gn-study-dialog').is_visible())

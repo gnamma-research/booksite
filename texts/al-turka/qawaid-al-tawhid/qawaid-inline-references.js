@@ -8,6 +8,7 @@
 'use strict';
 const references=window.GNAMMA_QAWAID_REFERENCES?.items||[];
 const policy=window.GNAMMA_QAWAID_CITATION_POLICY||{};
+const reviewedCrosslinks=window.GNAMMA_QAWAID_CROSSREADER_LINKS?.items||[];
 const grades=policy.grades||{}, classified=policy.records||{};
 const reading=document.getElementById('reading-list');
 if(!reading||!references.length)return;
@@ -112,6 +113,46 @@ function addMarker(section,phrase,r){
    texts.push(n);
   }
   for(const node of texts)if(insertAfter(node,phrase,r))return true;
+  // Inline dictionary terms can divide an otherwise exact Arabic quotation
+  // into several DOM text nodes. Compare the joined text of each PARAGRAPH,
+  // but never search across paragraph boundaries or infer a paraphrase.
+  for(const paragraph of block.querySelectorAll('p')){
+   const nodes=[],offsets=[];
+   let joined='';
+   const w=document.createTreeWalker(paragraph,NodeFilter.SHOW_TEXT);
+   for(let n=w.nextNode();n;n=w.nextNode()){
+    if(n.parentElement?.closest('a,script,style,.text-label,.gn-source-inline'))continue;
+    offsets.push({node:n,begin:joined.length,end:joined.length+n.nodeValue.length});
+    joined+=n.nodeValue;
+    nodes.push(n);
+   }
+   if(!joined)continue;
+   const map=normalizeWithPositions(joined);
+   const needle=normalizeWithPositions(phrase).text;
+   if(!needle||needle.length<8)continue;
+   const i=map.text.indexOf(needle);
+   if(i<0)continue;
+   const after=map.end[i+needle.length-1];
+   const loc=offsets.find(x=>x.begin<after&&x.end>=after);
+   if(!loc)continue;
+   const local=after-loc.begin;
+   const sup=document.createElement('sup');
+   sup.className='gn-inline-source-marker';
+   const button=document.createElement('button');
+   button.className='gn-source-inline';button.type='button';
+   button.dataset.openSource=r.id;button.dataset.sourceGrade=classified[r.id];
+   button.setAttribute('aria-haspopup','dialog');
+   button.setAttribute('aria-label','Read reference: '+r.title);
+   button.setAttribute('title',r.title+' · '+gradeFor(r).label);
+   button.textContent='';sup.append(button);
+   const term=loc.node.parentElement?.closest('.gn-term-inline');
+   if(term){term.after(sup)}
+   else if(local>=loc.node.nodeValue.length){loc.node.after(sup)}
+   else if(local<=0){loc.node.before(sup)}
+   else{const endNode=loc.node.splitText(local);endNode.before(sup)}
+   markerCount++;
+   return true;
+  }
  }
  return false;
 }
@@ -202,7 +243,11 @@ function renderIndex(){
  references.filter(r=>gradeFor(r).group===kind).map(r=>
   '<button data-citation-open="'+esc(r.id)+'"><strong>'+esc(r.title)+'</strong><small>'+esc(gradeFor(r).label)+'</small></button>'
  ).join('')+'</section>').join('');
- d.querySelector('#gn-citation-body').innerHTML='<p class="gn-citation-caution">Only individually attested Arabic passages have inline markers. Interpretive comparisons and unverified reports are never disguised as quotations.</p>'+groups;
+ const cross=reviewedCrosslinks.length?'<section class="gn-source-index-group"><h3>Across GNAMMA · reviewed comparisons</h3>'+
+  '<p class="gn-citation-caution">These are conceptual parallels, not identified literal quotations from Qūnawī.</p>'+
+  reviewedCrosslinks.map(x=>'<a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer"><strong>'+esc(x.from)+' ↔ '+esc(x.toTitle)+'</strong><small>'+esc(x.relationship)+'</small></a>').join('')+
+  '</section>':'';
+ d.querySelector('#gn-citation-body').innerHTML='<p class="gn-citation-caution">Only individually attested Arabic passages have inline markers. Interpretive comparisons and unverified reports are never disguised as quotations.</p>'+groups+cross;
  d.querySelector('[data-citation-back]').hidden=true;
  currentlyOpen=null;showDialog();
 }

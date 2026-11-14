@@ -7,6 +7,7 @@ const terms=window.GNAMMA_QAWAID_TERMS?.terms||[],references=window.GNAMMA_QAWAI
 const citationPolicy=window.GNAMMA_QAWAID_CITATION_POLICY||{grades:{},records:{}};
 const referenceGrade=r=>citationPolicy.grades?.[citationPolicy.records?.[r.id]]||{group:'comparison',label:'Contextual source',explanation:'The relationship has not been independently established as a direct quotation.'};
 const matn=window.GNAMMA_QAWAID_MATN?.units||[];
+const reviewedCrosslinks=window.GNAMMA_QAWAID_CROSSREADER_LINKS?.items||[];
 const sharh=[...new Map([...(window.GNAMMA_TAMHID_SHARH?.units||[]),...(window.GNAMMA_TAMHID_MAIN||[]),...(window.GNAMMA_TAMHID_CONCLUSION||[])].map(u=>[u.id,u])).values()];
 const byId=new Map([...matn,...sharh].map(u=>[u.id,u]));
 const $=s=>document.querySelector(s),$$=(s,p=document)=>[...p.querySelectorAll(s)];
@@ -146,6 +147,7 @@ function openPanel(panel,param){
   groupButton('Subject index','subjects','index','Grouped themes and source locations'),
   groupButton('Citations & sources','references','sources','Attested wording, primary texts and exact passage references'),
   groupButton('Parallels & reports','parallels','sources','Editorial comparisons, named works and unverified reports'),
+  groupButton('Across GNAMMA','crossreader','sources','Reviewed conceptual parallels in another reader'),
   groupButton('Search terms & sources','search','search','Find technical terms and source-reference cards'),
   groupButton('PDF editions','pdf','pdf','Reading, Study and Reference'),
    groupButton('Editorial & textual notes','apparatus-notes','sources','Source variants and editorial notes, outside the reading text'),
@@ -159,6 +161,7 @@ function openPanel(panel,param){
  if(panel==='subjects')return subjectsPanel(param);
  if(panel==='references')return referencePanel(param);
  if(panel==='parallels')return referencePanel(param,'comparison');
+ if(panel==='crossreader')return crossreaderPanel();
  if(panel==='pdf')return pdfPanel();
  if(panel==='about')return aboutPanel();
  if(panel==='appearance')return appearancePanel();
@@ -232,6 +235,20 @@ function referencePanel(q='',filter=null){
   (markup||'<p class="gn-help">No matches in the selected source category.</p>')+
   '<div class="gn-menu-footer">'+(filter?'<button data-open-study="references">All sources</button>':'<button data-open-study="parallels">Parallels & reports</button>')+
   '<button data-open-study="dictionary">Dictionary</button></div>');
+}
+function crossreaderPanel(){
+ const arr=reviewedCrosslinks;
+ const group=new Map();
+ for(const link of arr){if(!group.has(link.from))group.set(link.from,[]);group.get(link.from).push(link);}
+ const sections=[...group].map(([unit,links])=>'<section class="gn-reference-group"><h3>'+
+  esc(unit)+' · '+esc(byId.get(unit)?.section||byId.get(unit)?.title||'Original passage')+'</h3>'+
+  links.map(x=>'<div class="gn-crossreader-item"><b>'+esc(x.toTitle)+'</b>'+
+   '<p>'+esc(x.relationship)+'</p>'+
+   '<small>'+esc(x.toUnit)+' · conceptual comparison · not a direct quotation</small>'+
+   '<p><a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">Open exact GNAMMA passage</a></p></div>').join('')+'</section>').join('');
+ show('Across GNAMMA', '<p class="gn-help">Reviewed thematic comparisons with exact target passage IDs. Similarity of an argument is not proof that Ibn Turka cites Qūnawī. Each target opens in a separate reader tab so your reading position is preserved.</p>'+
+ (sections||'<p class="gn-help">No independently reviewed cross-reader passages are available.</p>')+
+ '<div class="gn-menu-footer"><button data-open-study="references">Source quotations</button><button data-open-study="subjects">Subject index</button></div>');
 }
 function sourcePanel(id){
  const r=citationMap.get(id);if(!r)return;

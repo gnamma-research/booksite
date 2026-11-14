@@ -33,7 +33,7 @@ with sync_playwright() as p:
   page.goto('https://gnamma.test'+P,wait_until='networkidle')
   page.wait_for_function('()=>!!window.GnammaQawaidSearch')
   n=page.evaluate('window.GnammaQawaidSearch.sourceUnits()')
-  check('canonical source inventory available to research',n=={'matn':61,'commentary':110,'terms':82,'references':18})
+  check('canonical source inventory available to research',n=={'matn':61,'commentary':110,'terms':82,'references':29})
   check('distinct emblem and frontispiece image',page.locator('.brand-link img').get_attribute('src')=='qawaid-emblem.svg' and page.locator('.qawaid-frontispiece img').evaluate('(e)=>e.complete && e.naturalWidth > 0'))
   check('source-reading layers present',page.locator('#reading-list .matn-layer').count()>0 and page.locator('#reading-list .sharh-layer').count()>0)
   check('scholarly textual notes not in running reader',page.locator('#reading-list .source-notes:visible').count()==0)
