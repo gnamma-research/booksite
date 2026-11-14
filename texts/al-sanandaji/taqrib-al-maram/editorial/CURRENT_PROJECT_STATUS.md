@@ -1,3 +1,19 @@
+# Stage 88 — bounded lower and upper text recovery (14 November 2026)
+
+**This is the newest checked checkpoint.** The public reading interface remains study-first and unchanged in structure; stage notes below are for editors, not inserted in the continuous reading view.
+
+Nine previously Arabic-blank working records acquired *selected* source-image-checked Arabic passages with aligned English on printed **I:8, I:9, I:10, I:11, I:17, I:18, I:19, and I:22**. The source is the Būlāq 1318 AH print. The former interpretive English summaries are preserved in each record's `stage88_prior_working_overview` rather than silently treated as word-for-word translation. See [bounded excerpts](STAGE88_BOUNDED_AR_EN_READINGS.md).
+
+**Counters (not completeness estimates):** 1,401 unique stable records; **1,187** contain *some* typed Arabic, **214** have none (one is a historically retired non-source editorial record, leaving **213 genuine source-oriented entries** for transcription). All **279 Volume I body pages** have at least one Arabic quotation and some English, but many printed words and entire lower ḥawāshī remain untranslated. **0/279 all-register pages independently second-proofed and accepted as critically complete.** No manuscript collation claimed, nor required for the agreed single-print Būlāq critical-reading edition.
+
+**Source and tests:** combined physical 632-page PDF SHA-256 `4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134`; printed I:p → physical PDF p+13. Original 280 facsimile images preserved. [Audit](STAGE88_PROOF_AND_READER_AUDIT.md), [machine metrics](STAGE88_METRICS.json), and [remaining untranscribed record queue](STAGE88_UNTRANSCRIBED_RECORD_QUEUE.csv). Local corpus checks and phone/tablet/desktop-sized rendering passed; real mobile Safari and independent philological proof remain open.
+
+**Priority:** full source-word transcription of the 213 still Arabic-blank source records, plus complete upper and marginal text inside the already partially entered records, then literal bilingual verification and separate page-by-page proof. Keep the reader free of editorial-stage clutter. Keep the combined Tahdhīb/Taqrīb interface deferred until both commentary volumes have been completed.
+
+---
+
+## Archived Stage 87 and earlier updates
+
 # Stage 87 — selected lower and upper source proof (13 November 2026)
 
 **This newest note supersedes the Stage86 counts, not its retained historical dossier.** Ten existing text records were revised against the original Būlāq 1318 AH facsimile on printed **I:6, I:7, I:16 and I:17**. Seven previously anchor-only records now contain bounded, actual Arabic and matching literal English. This raises records with *some* Arabic from 1,171 to **1,178/1,401** (84.1%). **223** corpus records still have no typed Arabic, **including one editorial paraphrase now recognized as a non-source record**; **222 genuine printed-source records** remain for transcription, predominantly lower commentaries. Source positions containing at least some Arabic remain **279/279**. Complete, independently second-proofed all-register pages remain **0/279**.
