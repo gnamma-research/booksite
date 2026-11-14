@@ -3,8 +3,8 @@
   "created": "2026-11-08",
   "targetWebsite": "NAMA",
   "actualWritableStaging": "gnamma-research/booksite",
-  "stageBranch": "research/misbah-tasawwuf-reader-20261108",
-  "mergeState": "review-branch; not published on NAMA; not merged to GNAMMA master",
+  "stageBranch": "research/misbah-r16-85pct-20261114",
+  "mergeState": "isolated GNAMMA review branch; not published on NAMA; not merged to master",
   "identityCaveat": "NAMA and GNAMMA are distinct. This is a GNAMMA/portable implementation intended for later NAMA integration.",
   "source": {
     "work": "Shams al-Dīn al-Fanārī, Miṣbāḥ al-uns",
@@ -16,7 +16,8 @@
     "pagination": "Printed page markers PageV00P",
     "totalSourcePages": 720,
     "sourceStartPage": 3,
-    "sourceEndPage": 722
+    "sourceEndPage": 722,
+    "pageCountingConvention": "Inherited stage convention: last preceding PageV00P tag labels the current span; count only labels fully cleared before the next untranslated unit. Physical print-page mapping has not been independently collated."
   },
   "translationProgress": {
     "priorMasterCompleteThroughSection": "4.537",
@@ -31,12 +32,12 @@
       "4.563",
       "4.577"
     ],
-    "lastContinuouslyTranslatedSection": "4.950",
-    "lastCompletePrintedPage": 542,
-    "translatedCompletePageCount": 540,
-    "translationPercent": 75,
-    "nextSection": "4.951",
-    "nextPrintedPage": 543,
+    "lastContinuouslyTranslatedSection": "5.60",
+    "lastCompletePrintedPage": 614,
+    "translatedCompletePageCount": 612,
+    "translationPercent": 85,
+    "nextSection": "5.61",
+    "nextPrintedPage": 615,
     "targetPage540_percent75": "reached",
     "r12NewSections": [
       "4.578",
@@ -53,15 +54,24 @@
     "r15NewSections": [
       "4.821",
       "4.950"
-    ]
+    ],
+    "r15RecoveredSections": [
+      "4.951",
+      "4.1035"
+    ],
+    "r16NewSections": [
+      "4.1036",
+      "5.60"
+    ],
+    "r16NewSectionCount": 166
   },
   "readerImport": {
     "firstSection": "4.538",
-    "lastSection": "4.950",
-    "units": 413,
+    "lastSection": "5.60",
+    "units": 664,
     "completeReaderFromFirstPage": false,
     "previousSectionsNotImported": "1.1–4.537",
-    "readerUnitCoverageRelativeToFullTranslation": "partial late segment only: 413 bilingual passages §§4.538–4.950; earlier 1.1–4.537 remain outside the reader",
+    "readerUnitCoverageRelativeToFullTranslation": "partial late segment only: 664 bilingual passages §§4.538–4.1141 and §§5.1–5.60; earlier §§1.1–4.537 remain outside the reader",
     "files": [
       "r10.json",
       "r11a.json",
@@ -83,10 +93,24 @@
       "r15b.json",
       "r15c.json",
       "r15d.json",
-      "r15e.json"
+      "r15e.json",
+      "r15f.json",
+      "r15g.json",
+      "r15h.json",
+      "r15i.json",
+      "r16a.json",
+      "r16b.json",
+      "r16c.json",
+      "r16d.json",
+      "r16e.json",
+      "r16f.json",
+      "r16g.json"
     ],
     "expectedSequence": "contiguous",
-    "additionProtocol": "Append one new increment JSON filename here, update units/lastSection and translationProgress; reader discovers it automatically."
+    "additionProtocol": "Append one new increment JSON filename here, update units/lastSection and translationProgress; reader discovers it automatically.",
+    "chapterEndSections": {
+      "4": 1141
+    }
   },
   "fileSha": [
     {
@@ -193,10 +217,65 @@
       "path": "texts/al-fanari/misbah-al-uns/r15e.json",
       "gitBlobSha": "9cccc213f3ce00d6a32e8f66246db509fff5b12e",
       "records": 25
+    },
+    {
+      "path": "texts/al-fanari/misbah-al-uns/r15f.json",
+      "gitBlobSha": "0b61efd92bc7251027230b88d4e6bf7032266463",
+      "records": 25
+    },
+    {
+      "path": "texts/al-fanari/misbah-al-uns/r15g.json",
+      "gitBlobSha": "a0bd6170f8ec412a7eccf9b9730e297b22cb0385",
+      "records": 20
+    },
+    {
+      "path": "texts/al-fanari/misbah-al-uns/r15h.json",
+      "gitBlobSha": "061671f4c9be60982b2b5613da47fc94a73cf028",
+      "records": 20
+    },
+    {
+      "path": "texts/al-fanari/misbah-al-uns/r15i.json",
+      "gitBlobSha": "6fb3039c586321144bb70d7356ff13141d04e8e9",
+      "records": 20
+    },
+    {
+      "path": "texts/al-fanari/misbah-al-uns/r16a.json",
+      "gitBlobSha": "ce8cae5a1e17cc8a47a635392bd5c0871cef4a79",
+      "records": 25
+    },
+    {
+      "path": "texts/al-fanari/misbah-al-uns/r16b.json",
+      "gitBlobSha": "e3d203b3a17c02f745a3d267e4634609ba473100",
+      "records": 25
+    },
+    {
+      "path": "texts/al-fanari/misbah-al-uns/r16c.json",
+      "gitBlobSha": "03c998c1a8e844a4754175b4d61acf8aced5a874",
+      "records": 25
+    },
+    {
+      "path": "texts/al-fanari/misbah-al-uns/r16d.json",
+      "gitBlobSha": "61968212fe88de3a7876d0225e4072642e859dba",
+      "records": 25
+    },
+    {
+      "path": "texts/al-fanari/misbah-al-uns/r16e.json",
+      "gitBlobSha": "5618d99823a0d7c18a61e84795d63a368964c926",
+      "records": 25
+    },
+    {
+      "path": "texts/al-fanari/misbah-al-uns/r16f.json",
+      "gitBlobSha": "94c71ba8c069996f81825f9d619adf2ae42c0974",
+      "records": 25
+    },
+    {
+      "path": "texts/al-fanari/misbah-al-uns/r16g.json",
+      "gitBlobSha": "3ddbd9d4cb580e4c14e0f8dd0650dd7e34388561",
+      "records": 16
     }
   ],
   "checks": {
-    "sectionSequence": "continuous 4.538–4.950",
+    "sectionSequence": "continuous 4.538–4.1141, then 5.1–5.60",
     "allEntriesArabic": true,
     "allEntriesEnglish": true,
     "arabicWitness": "OpenITI text aligned by printed page tags",
@@ -225,9 +304,22 @@
     "r15NewSectionCount": 130,
     "r15PageFullyCovered": "510–542; §4.950 extends through p.543, §4.951 begins p.543",
     "r15IndependentWitnessesCollated": 0,
-    "r15SourceStatus": "Arabic from pinned OpenITI; first-pass English, print and manuscript verification pending"
+    "r15SourceStatus": "Arabic from pinned OpenITI; first-pass English, print and manuscript verification pending",
+    "r16NewSectionCount": 166,
+    "r16RecoveredPreviouslyUnregisteredCount": 85,
+    "r16PreservedPreviouslyRegisteredCount": 413,
+    "r16ArabicChars": 69621,
+    "r16EnglishWords": 16933,
+    "r16SourceNormalization": "OpenITI continuation prefixes, ms tokens and page tags removed; whitespace collapsed; all Arabic lexical readings and parenthetical note calls preserved.",
+    "r16SourceMarkerRepairs": {
+      "5.4": "4 split from - 5 by newline and continuation prefix",
+      "5.20": "electronic 520 - 5",
+      "5.21": "electronic 521 - 5"
+    },
+    "r16EditorialRegister": "R16_EDITORIAL_APPARATUS.md",
+    "r16CriticalVerification": "first-pass source alignment only; no independent print/manuscript collation"
   },
-  "handoff": "NOT FULLY CUMULATIVE: earlier master through §4.537 not losslessly imported. R10–R15 provide 413 consecutive bilingual first-pass passages §§4.538–4.950, through complete source page 542 (540/720 = 75%).",
+  "handoff": "NOT FULLY CUMULATIVE: all 498 previously available reader passages preserved, 166 new passages added, total 664 through §5.60; earlier original master through §4.537 remains separately identified and not imported. Recorded source-page draft reach 612/720 = 85%.",
   "entries": [
     {
       "id": "4.538",
@@ -4358,6 +4450,2516 @@
       "arabicChars": 242,
       "fnv1a32": "c3ee1486",
       "status": "uncritically-collated-working-translation"
+    },
+    {
+      "id": "4.951",
+      "pageStart": 543,
+      "pageEnd": 543,
+      "group": "R15f",
+      "englishChars": 752,
+      "arabicChars": 401,
+      "fnv1a32": "5080d2dd",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.952",
+      "pageStart": 543,
+      "pageEnd": 543,
+      "group": "R15f",
+      "englishChars": 519,
+      "arabicChars": 324,
+      "fnv1a32": "27b6e6bd",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.953",
+      "pageStart": 543,
+      "pageEnd": 543,
+      "group": "R15f",
+      "englishChars": 764,
+      "arabicChars": 404,
+      "fnv1a32": "b05f154f",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.954",
+      "pageStart": 543,
+      "pageEnd": 544,
+      "group": "R15f",
+      "englishChars": 1616,
+      "arabicChars": 949,
+      "fnv1a32": "83b1fc3d",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.955",
+      "pageStart": 544,
+      "pageEnd": 544,
+      "group": "R15f",
+      "englishChars": 262,
+      "arabicChars": 115,
+      "fnv1a32": "349d2efb",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.956",
+      "pageStart": 544,
+      "pageEnd": 544,
+      "group": "R15f",
+      "englishChars": 215,
+      "arabicChars": 103,
+      "fnv1a32": "8b841306",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.957",
+      "pageStart": 544,
+      "pageEnd": 545,
+      "group": "R15f",
+      "englishChars": 1069,
+      "arabicChars": 635,
+      "fnv1a32": "b66b9f62",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.958",
+      "pageStart": 545,
+      "pageEnd": 545,
+      "group": "R15f",
+      "englishChars": 1311,
+      "arabicChars": 827,
+      "fnv1a32": "713a2a27",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.959",
+      "pageStart": 545,
+      "pageEnd": 545,
+      "group": "R15f",
+      "englishChars": 139,
+      "arabicChars": 61,
+      "fnv1a32": "1bd967e8",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.960",
+      "pageStart": 545,
+      "pageEnd": 546,
+      "group": "R15f",
+      "englishChars": 706,
+      "arabicChars": 414,
+      "fnv1a32": "54680caf",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.961",
+      "pageStart": 546,
+      "pageEnd": 546,
+      "group": "R15f",
+      "englishChars": 568,
+      "arabicChars": 313,
+      "fnv1a32": "01d544ea",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.962",
+      "pageStart": 546,
+      "pageEnd": 546,
+      "group": "R15f",
+      "englishChars": 147,
+      "arabicChars": 86,
+      "fnv1a32": "bb90b9eb",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.963",
+      "pageStart": 546,
+      "pageEnd": 546,
+      "group": "R15f",
+      "englishChars": 600,
+      "arabicChars": 358,
+      "fnv1a32": "620e132e",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.964",
+      "pageStart": 546,
+      "pageEnd": 546,
+      "group": "R15f",
+      "englishChars": 366,
+      "arabicChars": 165,
+      "fnv1a32": "8571dc53",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.965",
+      "pageStart": 546,
+      "pageEnd": 547,
+      "group": "R15f",
+      "englishChars": 315,
+      "arabicChars": 180,
+      "fnv1a32": "78fcc89a",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.966",
+      "pageStart": 547,
+      "pageEnd": 547,
+      "group": "R15f",
+      "englishChars": 1616,
+      "arabicChars": 1097,
+      "fnv1a32": "037467ec",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.967",
+      "pageStart": 547,
+      "pageEnd": 547,
+      "group": "R15f",
+      "englishChars": 361,
+      "arabicChars": 193,
+      "fnv1a32": "17bda0a9",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.968",
+      "pageStart": 547,
+      "pageEnd": 547,
+      "group": "R15f",
+      "englishChars": 376,
+      "arabicChars": 249,
+      "fnv1a32": "eef7bfac",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.969",
+      "pageStart": 547,
+      "pageEnd": 548,
+      "group": "R15f",
+      "englishChars": 627,
+      "arabicChars": 362,
+      "fnv1a32": "89035b4b",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.970",
+      "pageStart": 548,
+      "pageEnd": 548,
+      "group": "R15f",
+      "englishChars": 919,
+      "arabicChars": 491,
+      "fnv1a32": "2790c596",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.971",
+      "pageStart": 548,
+      "pageEnd": 548,
+      "group": "R15f",
+      "englishChars": 319,
+      "arabicChars": 187,
+      "fnv1a32": "07339af0",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.972",
+      "pageStart": 548,
+      "pageEnd": 548,
+      "group": "R15f",
+      "englishChars": 756,
+      "arabicChars": 432,
+      "fnv1a32": "4912ae90",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.973",
+      "pageStart": 548,
+      "pageEnd": 549,
+      "group": "R15f",
+      "englishChars": 812,
+      "arabicChars": 483,
+      "fnv1a32": "96711dd0",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.974",
+      "pageStart": 549,
+      "pageEnd": 549,
+      "group": "R15f",
+      "englishChars": 643,
+      "arabicChars": 376,
+      "fnv1a32": "b69cafce",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.975",
+      "pageStart": 549,
+      "pageEnd": 550,
+      "group": "R15f",
+      "englishChars": 1308,
+      "arabicChars": 790,
+      "fnv1a32": "584f5922",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.976",
+      "pageStart": 550,
+      "pageEnd": 550,
+      "group": "R15g",
+      "englishChars": 947,
+      "arabicChars": 575,
+      "fnv1a32": "06ef7825",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.977",
+      "pageStart": 550,
+      "pageEnd": 550,
+      "group": "R15g",
+      "englishChars": 486,
+      "arabicChars": 273,
+      "fnv1a32": "73d8c138",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.978",
+      "pageStart": 550,
+      "pageEnd": 550,
+      "group": "R15g",
+      "englishChars": 823,
+      "arabicChars": 389,
+      "fnv1a32": "0c6142d9",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.979",
+      "pageStart": 550,
+      "pageEnd": 551,
+      "group": "R15g",
+      "englishChars": 874,
+      "arabicChars": 560,
+      "fnv1a32": "fa54de45",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.980",
+      "pageStart": 551,
+      "pageEnd": 551,
+      "group": "R15g",
+      "englishChars": 1325,
+      "arabicChars": 927,
+      "fnv1a32": "d9206d42",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.981",
+      "pageStart": 551,
+      "pageEnd": 552,
+      "group": "R15g",
+      "englishChars": 408,
+      "arabicChars": 224,
+      "fnv1a32": "ef1ee6f8",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.982",
+      "pageStart": 552,
+      "pageEnd": 552,
+      "group": "R15g",
+      "englishChars": 399,
+      "arabicChars": 282,
+      "fnv1a32": "803650d8",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.983",
+      "pageStart": 552,
+      "pageEnd": 552,
+      "group": "R15g",
+      "englishChars": 1113,
+      "arabicChars": 737,
+      "fnv1a32": "2ea14d15",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.984",
+      "pageStart": 552,
+      "pageEnd": 552,
+      "group": "R15g",
+      "englishChars": 472,
+      "arabicChars": 275,
+      "fnv1a32": "efafdbe2",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.985",
+      "pageStart": 552,
+      "pageEnd": 553,
+      "group": "R15g",
+      "englishChars": 633,
+      "arabicChars": 373,
+      "fnv1a32": "a4b7d4b1",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.986",
+      "pageStart": 553,
+      "pageEnd": 553,
+      "group": "R15g",
+      "englishChars": 746,
+      "arabicChars": 449,
+      "fnv1a32": "77103500",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.987",
+      "pageStart": 553,
+      "pageEnd": 553,
+      "group": "R15g",
+      "englishChars": 1054,
+      "arabicChars": 665,
+      "fnv1a32": "afe39ab2",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.988",
+      "pageStart": 553,
+      "pageEnd": 554,
+      "group": "R15g",
+      "englishChars": 627,
+      "arabicChars": 341,
+      "fnv1a32": "9e491d49",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.989",
+      "pageStart": 554,
+      "pageEnd": 554,
+      "group": "R15g",
+      "englishChars": 187,
+      "arabicChars": 114,
+      "fnv1a32": "be300654",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.990",
+      "pageStart": 554,
+      "pageEnd": 554,
+      "group": "R15g",
+      "englishChars": 155,
+      "arabicChars": 94,
+      "fnv1a32": "f879e031",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.991",
+      "pageStart": 554,
+      "pageEnd": 554,
+      "group": "R15g",
+      "englishChars": 236,
+      "arabicChars": 164,
+      "fnv1a32": "2d906abc",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.992",
+      "pageStart": 554,
+      "pageEnd": 554,
+      "group": "R15g",
+      "englishChars": 304,
+      "arabicChars": 158,
+      "fnv1a32": "4207a125",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.993",
+      "pageStart": 554,
+      "pageEnd": 554,
+      "group": "R15g",
+      "englishChars": 438,
+      "arabicChars": 206,
+      "fnv1a32": "a7c78135",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.994",
+      "pageStart": 554,
+      "pageEnd": 554,
+      "group": "R15g",
+      "englishChars": 378,
+      "arabicChars": 199,
+      "fnv1a32": "d87cd006",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.995",
+      "pageStart": 554,
+      "pageEnd": 555,
+      "group": "R15g",
+      "englishChars": 697,
+      "arabicChars": 460,
+      "fnv1a32": "e2976c5d",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.996",
+      "pageStart": 555,
+      "pageEnd": 555,
+      "group": "R15h",
+      "englishChars": 1044,
+      "arabicChars": 562,
+      "fnv1a32": "7d343155",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.997",
+      "pageStart": 555,
+      "pageEnd": 556,
+      "group": "R15h",
+      "englishChars": 1038,
+      "arabicChars": 661,
+      "fnv1a32": "b086c2af",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.998",
+      "pageStart": 556,
+      "pageEnd": 556,
+      "group": "R15h",
+      "englishChars": 1665,
+      "arabicChars": 975,
+      "fnv1a32": "e2915d66",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.999",
+      "pageStart": 556,
+      "pageEnd": 557,
+      "group": "R15h",
+      "englishChars": 1291,
+      "arabicChars": 728,
+      "fnv1a32": "2887d83d",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1000",
+      "pageStart": 557,
+      "pageEnd": 557,
+      "group": "R15h",
+      "englishChars": 389,
+      "arabicChars": 229,
+      "fnv1a32": "92b0aef8",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1001",
+      "pageStart": 557,
+      "pageEnd": 557,
+      "group": "R15h",
+      "englishChars": 523,
+      "arabicChars": 320,
+      "fnv1a32": "e686e70e",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1002",
+      "pageStart": 557,
+      "pageEnd": 557,
+      "group": "R15h",
+      "englishChars": 719,
+      "arabicChars": 443,
+      "fnv1a32": "75457bdf",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1003",
+      "pageStart": 557,
+      "pageEnd": 557,
+      "group": "R15h",
+      "englishChars": 697,
+      "arabicChars": 435,
+      "fnv1a32": "75e57dae",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1004",
+      "pageStart": 557,
+      "pageEnd": 558,
+      "group": "R15h",
+      "englishChars": 448,
+      "arabicChars": 290,
+      "fnv1a32": "5629c93e",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1005",
+      "pageStart": 558,
+      "pageEnd": 558,
+      "group": "R15h",
+      "englishChars": 515,
+      "arabicChars": 313,
+      "fnv1a32": "a74e32e0",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1006",
+      "pageStart": 558,
+      "pageEnd": 558,
+      "group": "R15h",
+      "englishChars": 199,
+      "arabicChars": 89,
+      "fnv1a32": "f05c16fe",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1007",
+      "pageStart": 558,
+      "pageEnd": 558,
+      "group": "R15h",
+      "englishChars": 684,
+      "arabicChars": 381,
+      "fnv1a32": "a577ee70",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1008",
+      "pageStart": 558,
+      "pageEnd": 558,
+      "group": "R15h",
+      "englishChars": 353,
+      "arabicChars": 215,
+      "fnv1a32": "22394132",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1009",
+      "pageStart": 558,
+      "pageEnd": 559,
+      "group": "R15h",
+      "englishChars": 733,
+      "arabicChars": 361,
+      "fnv1a32": "19b83b6b",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1010",
+      "pageStart": 559,
+      "pageEnd": 559,
+      "group": "R15h",
+      "englishChars": 1113,
+      "arabicChars": 678,
+      "fnv1a32": "d307bf0c",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1011",
+      "pageStart": 559,
+      "pageEnd": 559,
+      "group": "R15h",
+      "englishChars": 497,
+      "arabicChars": 239,
+      "fnv1a32": "35ed0006",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1012",
+      "pageStart": 559,
+      "pageEnd": 560,
+      "group": "R15h",
+      "englishChars": 1198,
+      "arabicChars": 679,
+      "fnv1a32": "69294759",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1013",
+      "pageStart": 560,
+      "pageEnd": 560,
+      "group": "R15h",
+      "englishChars": 371,
+      "arabicChars": 197,
+      "fnv1a32": "f95da619",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1014",
+      "pageStart": 560,
+      "pageEnd": 560,
+      "group": "R15h",
+      "englishChars": 1350,
+      "arabicChars": 862,
+      "fnv1a32": "518fe395",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1015",
+      "pageStart": 560,
+      "pageEnd": 561,
+      "group": "R15h",
+      "englishChars": 447,
+      "arabicChars": 253,
+      "fnv1a32": "471219b7",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1016",
+      "pageStart": 561,
+      "pageEnd": 561,
+      "group": "R15i",
+      "englishChars": 1112,
+      "arabicChars": 814,
+      "fnv1a32": "f6521928",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1017",
+      "pageStart": 561,
+      "pageEnd": 561,
+      "group": "R15i",
+      "englishChars": 440,
+      "arabicChars": 331,
+      "fnv1a32": "8c291b2c",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1018",
+      "pageStart": 561,
+      "pageEnd": 562,
+      "group": "R15i",
+      "englishChars": 625,
+      "arabicChars": 410,
+      "fnv1a32": "6279f8c0",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1019",
+      "pageStart": 562,
+      "pageEnd": 562,
+      "group": "R15i",
+      "englishChars": 1022,
+      "arabicChars": 614,
+      "fnv1a32": "92b88a3e",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1020",
+      "pageStart": 562,
+      "pageEnd": 562,
+      "group": "R15i",
+      "englishChars": 376,
+      "arabicChars": 198,
+      "fnv1a32": "9b4e20b6",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1021",
+      "pageStart": 562,
+      "pageEnd": 563,
+      "group": "R15i",
+      "englishChars": 710,
+      "arabicChars": 411,
+      "fnv1a32": "18ecdfa4",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1022",
+      "pageStart": 563,
+      "pageEnd": 563,
+      "group": "R15i",
+      "englishChars": 724,
+      "arabicChars": 459,
+      "fnv1a32": "241e1368",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1023",
+      "pageStart": 563,
+      "pageEnd": 563,
+      "group": "R15i",
+      "englishChars": 357,
+      "arabicChars": 206,
+      "fnv1a32": "10aad5c5",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1024",
+      "pageStart": 563,
+      "pageEnd": 563,
+      "group": "R15i",
+      "englishChars": 546,
+      "arabicChars": 350,
+      "fnv1a32": "79c47962",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1025",
+      "pageStart": 563,
+      "pageEnd": 564,
+      "group": "R15i",
+      "englishChars": 1062,
+      "arabicChars": 597,
+      "fnv1a32": "e97be588",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1026",
+      "pageStart": 564,
+      "pageEnd": 564,
+      "group": "R15i",
+      "englishChars": 741,
+      "arabicChars": 389,
+      "fnv1a32": "a0ad6281",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1027",
+      "pageStart": 564,
+      "pageEnd": 564,
+      "group": "R15i",
+      "englishChars": 521,
+      "arabicChars": 291,
+      "fnv1a32": "12c51d50",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1028",
+      "pageStart": 564,
+      "pageEnd": 564,
+      "group": "R15i",
+      "englishChars": 737,
+      "arabicChars": 487,
+      "fnv1a32": "42080093",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1029",
+      "pageStart": 564,
+      "pageEnd": 565,
+      "group": "R15i",
+      "englishChars": 573,
+      "arabicChars": 351,
+      "fnv1a32": "96528713",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1030",
+      "pageStart": 565,
+      "pageEnd": 565,
+      "group": "R15i",
+      "englishChars": 1043,
+      "arabicChars": 602,
+      "fnv1a32": "4d4d4538",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1031",
+      "pageStart": 565,
+      "pageEnd": 565,
+      "group": "R15i",
+      "englishChars": 521,
+      "arabicChars": 275,
+      "fnv1a32": "30861ed8",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1032",
+      "pageStart": 565,
+      "pageEnd": 566,
+      "group": "R15i",
+      "englishChars": 784,
+      "arabicChars": 389,
+      "fnv1a32": "f5567dc3",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1033",
+      "pageStart": 566,
+      "pageEnd": 566,
+      "group": "R15i",
+      "englishChars": 571,
+      "arabicChars": 331,
+      "fnv1a32": "325d1a71",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1034",
+      "pageStart": 566,
+      "pageEnd": 566,
+      "group": "R15i",
+      "englishChars": 279,
+      "arabicChars": 161,
+      "fnv1a32": "7f18770b",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1035",
+      "pageStart": 566,
+      "pageEnd": 566,
+      "group": "R15i",
+      "englishChars": 831,
+      "arabicChars": 574,
+      "fnv1a32": "67f55c97",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1036",
+      "pageStart": 566,
+      "pageEnd": 566,
+      "group": "R16a",
+      "englishChars": 307,
+      "arabicChars": 168,
+      "fnv1a32": "a8beb16a",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1037",
+      "pageStart": 566,
+      "pageEnd": 567,
+      "group": "R16a",
+      "englishChars": 403,
+      "arabicChars": 255,
+      "fnv1a32": "ac0f733e",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1038",
+      "pageStart": 567,
+      "pageEnd": 567,
+      "group": "R16a",
+      "englishChars": 112,
+      "arabicChars": 44,
+      "fnv1a32": "2742a3b9",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1039",
+      "pageStart": 567,
+      "pageEnd": 567,
+      "group": "R16a",
+      "englishChars": 353,
+      "arabicChars": 212,
+      "fnv1a32": "c2f3a8aa",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1040",
+      "pageStart": 567,
+      "pageEnd": 567,
+      "group": "R16a",
+      "englishChars": 511,
+      "arabicChars": 315,
+      "fnv1a32": "adaf64fe",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1041",
+      "pageStart": 567,
+      "pageEnd": 568,
+      "group": "R16a",
+      "englishChars": 1377,
+      "arabicChars": 856,
+      "fnv1a32": "31eabde1",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1042",
+      "pageStart": 568,
+      "pageEnd": 568,
+      "group": "R16a",
+      "englishChars": 512,
+      "arabicChars": 342,
+      "fnv1a32": "83d56a68",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1043",
+      "pageStart": 568,
+      "pageEnd": 568,
+      "group": "R16a",
+      "englishChars": 252,
+      "arabicChars": 145,
+      "fnv1a32": "d1e2dda7",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1044",
+      "pageStart": 568,
+      "pageEnd": 568,
+      "group": "R16a",
+      "englishChars": 207,
+      "arabicChars": 136,
+      "fnv1a32": "ff660fd1",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1045",
+      "pageStart": 568,
+      "pageEnd": 568,
+      "group": "R16a",
+      "englishChars": 687,
+      "arabicChars": 427,
+      "fnv1a32": "4ad6b2a3",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1046",
+      "pageStart": 568,
+      "pageEnd": 569,
+      "group": "R16a",
+      "englishChars": 1053,
+      "arabicChars": 681,
+      "fnv1a32": "7e095e07",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1047",
+      "pageStart": 569,
+      "pageEnd": 569,
+      "group": "R16a",
+      "englishChars": 830,
+      "arabicChars": 552,
+      "fnv1a32": "1dae197b",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1048",
+      "pageStart": 569,
+      "pageEnd": 569,
+      "group": "R16a",
+      "englishChars": 917,
+      "arabicChars": 613,
+      "fnv1a32": "fd50f76f",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1049",
+      "pageStart": 569,
+      "pageEnd": 570,
+      "group": "R16a",
+      "englishChars": 787,
+      "arabicChars": 510,
+      "fnv1a32": "b3cb4983",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1050",
+      "pageStart": 570,
+      "pageEnd": 570,
+      "group": "R16a",
+      "englishChars": 1204,
+      "arabicChars": 757,
+      "fnv1a32": "d36d044d",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1051",
+      "pageStart": 570,
+      "pageEnd": 570,
+      "group": "R16a",
+      "englishChars": 632,
+      "arabicChars": 441,
+      "fnv1a32": "fc4ed99e",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1052",
+      "pageStart": 570,
+      "pageEnd": 571,
+      "group": "R16a",
+      "englishChars": 499,
+      "arabicChars": 327,
+      "fnv1a32": "1b2676b0",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1053",
+      "pageStart": 571,
+      "pageEnd": 571,
+      "group": "R16a",
+      "englishChars": 755,
+      "arabicChars": 489,
+      "fnv1a32": "fd2ec045",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1054",
+      "pageStart": 571,
+      "pageEnd": 572,
+      "group": "R16a",
+      "englishChars": 862,
+      "arabicChars": 514,
+      "fnv1a32": "31206a9a",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1055",
+      "pageStart": 572,
+      "pageEnd": 572,
+      "group": "R16a",
+      "englishChars": 1650,
+      "arabicChars": 1004,
+      "fnv1a32": "8be53212",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1056",
+      "pageStart": 572,
+      "pageEnd": 573,
+      "group": "R16a",
+      "englishChars": 631,
+      "arabicChars": 392,
+      "fnv1a32": "7012ef96",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1057",
+      "pageStart": 573,
+      "pageEnd": 573,
+      "group": "R16a",
+      "englishChars": 640,
+      "arabicChars": 375,
+      "fnv1a32": "ef5fa223",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1058",
+      "pageStart": 573,
+      "pageEnd": 573,
+      "group": "R16a",
+      "englishChars": 582,
+      "arabicChars": 326,
+      "fnv1a32": "f59729fc",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1059",
+      "pageStart": 573,
+      "pageEnd": 574,
+      "group": "R16a",
+      "englishChars": 1090,
+      "arabicChars": 696,
+      "fnv1a32": "5ec06af5",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1060",
+      "pageStart": 574,
+      "pageEnd": 574,
+      "group": "R16a",
+      "englishChars": 508,
+      "arabicChars": 327,
+      "fnv1a32": "cfc98c07",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1061",
+      "pageStart": 574,
+      "pageEnd": 574,
+      "group": "R16b",
+      "englishChars": 377,
+      "arabicChars": 240,
+      "fnv1a32": "848dfcfe",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1062",
+      "pageStart": 574,
+      "pageEnd": 575,
+      "group": "R16b",
+      "englishChars": 715,
+      "arabicChars": 404,
+      "fnv1a32": "b913e67c",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1063",
+      "pageStart": 575,
+      "pageEnd": 575,
+      "group": "R16b",
+      "englishChars": 1463,
+      "arabicChars": 843,
+      "fnv1a32": "576b340f",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1064",
+      "pageStart": 575,
+      "pageEnd": 575,
+      "group": "R16b",
+      "englishChars": 736,
+      "arabicChars": 476,
+      "fnv1a32": "cd74d619",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1065",
+      "pageStart": 575,
+      "pageEnd": 576,
+      "group": "R16b",
+      "englishChars": 508,
+      "arabicChars": 292,
+      "fnv1a32": "fcd2b9d5",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1066",
+      "pageStart": 576,
+      "pageEnd": 576,
+      "group": "R16b",
+      "englishChars": 1064,
+      "arabicChars": 613,
+      "fnv1a32": "ad73f223",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1067",
+      "pageStart": 576,
+      "pageEnd": 576,
+      "group": "R16b",
+      "englishChars": 167,
+      "arabicChars": 113,
+      "fnv1a32": "d3f5d3fe",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1068",
+      "pageStart": 576,
+      "pageEnd": 576,
+      "group": "R16b",
+      "englishChars": 330,
+      "arabicChars": 173,
+      "fnv1a32": "e4329c1d",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1069",
+      "pageStart": 576,
+      "pageEnd": 576,
+      "group": "R16b",
+      "englishChars": 387,
+      "arabicChars": 252,
+      "fnv1a32": "b481932a",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1070",
+      "pageStart": 576,
+      "pageEnd": 577,
+      "group": "R16b",
+      "englishChars": 1184,
+      "arabicChars": 774,
+      "fnv1a32": "f45c2a7d",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1071",
+      "pageStart": 577,
+      "pageEnd": 578,
+      "group": "R16b",
+      "englishChars": 1446,
+      "arabicChars": 1003,
+      "fnv1a32": "38a94bf4",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1072",
+      "pageStart": 578,
+      "pageEnd": 579,
+      "group": "R16b",
+      "englishChars": 1586,
+      "arabicChars": 1099,
+      "fnv1a32": "23f552a9",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1073",
+      "pageStart": 579,
+      "pageEnd": 579,
+      "group": "R16b",
+      "englishChars": 1058,
+      "arabicChars": 781,
+      "fnv1a32": "49777cd1",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1074",
+      "pageStart": 579,
+      "pageEnd": 580,
+      "group": "R16b",
+      "englishChars": 1501,
+      "arabicChars": 875,
+      "fnv1a32": "4dc66a11",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1075",
+      "pageStart": 580,
+      "pageEnd": 580,
+      "group": "R16b",
+      "englishChars": 1100,
+      "arabicChars": 694,
+      "fnv1a32": "072eaa81",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1076",
+      "pageStart": 580,
+      "pageEnd": 580,
+      "group": "R16b",
+      "englishChars": 776,
+      "arabicChars": 592,
+      "fnv1a32": "ffef374d",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1077",
+      "pageStart": 580,
+      "pageEnd": 581,
+      "group": "R16b",
+      "englishChars": 515,
+      "arabicChars": 359,
+      "fnv1a32": "fa8280a9",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1078",
+      "pageStart": 581,
+      "pageEnd": 581,
+      "group": "R16b",
+      "englishChars": 746,
+      "arabicChars": 504,
+      "fnv1a32": "20be5237",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1079",
+      "pageStart": 581,
+      "pageEnd": 581,
+      "group": "R16b",
+      "englishChars": 789,
+      "arabicChars": 501,
+      "fnv1a32": "8b191ee1",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1080",
+      "pageStart": 581,
+      "pageEnd": 581,
+      "group": "R16b",
+      "englishChars": 135,
+      "arabicChars": 99,
+      "fnv1a32": "edbfdc59",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1081",
+      "pageStart": 581,
+      "pageEnd": 582,
+      "group": "R16b",
+      "englishChars": 768,
+      "arabicChars": 494,
+      "fnv1a32": "3590d7cb",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1082",
+      "pageStart": 582,
+      "pageEnd": 582,
+      "group": "R16b",
+      "englishChars": 592,
+      "arabicChars": 396,
+      "fnv1a32": "4d458598",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1083",
+      "pageStart": 582,
+      "pageEnd": 583,
+      "group": "R16b",
+      "englishChars": 1232,
+      "arabicChars": 769,
+      "fnv1a32": "ce25a3e6",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1084",
+      "pageStart": 583,
+      "pageEnd": 583,
+      "group": "R16b",
+      "englishChars": 853,
+      "arabicChars": 561,
+      "fnv1a32": "2f0e0501",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1085",
+      "pageStart": 583,
+      "pageEnd": 583,
+      "group": "R16b",
+      "englishChars": 860,
+      "arabicChars": 629,
+      "fnv1a32": "1132ea96",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1086",
+      "pageStart": 583,
+      "pageEnd": 583,
+      "group": "R16c",
+      "englishChars": 197,
+      "arabicChars": 120,
+      "fnv1a32": "dc9b54ff",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1087",
+      "pageStart": 583,
+      "pageEnd": 584,
+      "group": "R16c",
+      "englishChars": 624,
+      "arabicChars": 422,
+      "fnv1a32": "86fc0960",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1088",
+      "pageStart": 584,
+      "pageEnd": 584,
+      "group": "R16c",
+      "englishChars": 603,
+      "arabicChars": 411,
+      "fnv1a32": "5c83b0e3",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1089",
+      "pageStart": 584,
+      "pageEnd": 584,
+      "group": "R16c",
+      "englishChars": 606,
+      "arabicChars": 327,
+      "fnv1a32": "c2b62da4",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1090",
+      "pageStart": 584,
+      "pageEnd": 585,
+      "group": "R16c",
+      "englishChars": 1173,
+      "arabicChars": 742,
+      "fnv1a32": "e183e5d1",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1091",
+      "pageStart": 585,
+      "pageEnd": 585,
+      "group": "R16c",
+      "englishChars": 488,
+      "arabicChars": 293,
+      "fnv1a32": "d184e4c4",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1092",
+      "pageStart": 585,
+      "pageEnd": 585,
+      "group": "R16c",
+      "englishChars": 45,
+      "arabicChars": 22,
+      "fnv1a32": "3b1a744c",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1093",
+      "pageStart": 585,
+      "pageEnd": 585,
+      "group": "R16c",
+      "englishChars": 347,
+      "arabicChars": 212,
+      "fnv1a32": "20e67c1c",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1094",
+      "pageStart": 585,
+      "pageEnd": 586,
+      "group": "R16c",
+      "englishChars": 1061,
+      "arabicChars": 740,
+      "fnv1a32": "798ae13c",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1095",
+      "pageStart": 586,
+      "pageEnd": 586,
+      "group": "R16c",
+      "englishChars": 919,
+      "arabicChars": 625,
+      "fnv1a32": "9f946247",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1096",
+      "pageStart": 586,
+      "pageEnd": 586,
+      "group": "R16c",
+      "englishChars": 663,
+      "arabicChars": 395,
+      "fnv1a32": "2c07b133",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1097",
+      "pageStart": 586,
+      "pageEnd": 587,
+      "group": "R16c",
+      "englishChars": 1236,
+      "arabicChars": 818,
+      "fnv1a32": "e45f7206",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1098",
+      "pageStart": 587,
+      "pageEnd": 587,
+      "group": "R16c",
+      "englishChars": 860,
+      "arabicChars": 470,
+      "fnv1a32": "809c9a68",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1099",
+      "pageStart": 587,
+      "pageEnd": 587,
+      "group": "R16c",
+      "englishChars": 171,
+      "arabicChars": 81,
+      "fnv1a32": "72790118",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1100",
+      "pageStart": 587,
+      "pageEnd": 587,
+      "group": "R16c",
+      "englishChars": 135,
+      "arabicChars": 83,
+      "fnv1a32": "402bd6a3",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1101",
+      "pageStart": 587,
+      "pageEnd": 587,
+      "group": "R16c",
+      "englishChars": 182,
+      "arabicChars": 116,
+      "fnv1a32": "46360f2c",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1102",
+      "pageStart": 587,
+      "pageEnd": 587,
+      "group": "R16c",
+      "englishChars": 234,
+      "arabicChars": 122,
+      "fnv1a32": "4142a425",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1103",
+      "pageStart": 587,
+      "pageEnd": 588,
+      "group": "R16c",
+      "englishChars": 841,
+      "arabicChars": 608,
+      "fnv1a32": "bbcfb4aa",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1104",
+      "pageStart": 588,
+      "pageEnd": 588,
+      "group": "R16c",
+      "englishChars": 811,
+      "arabicChars": 529,
+      "fnv1a32": "e153ac74",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1105",
+      "pageStart": 588,
+      "pageEnd": 588,
+      "group": "R16c",
+      "englishChars": 695,
+      "arabicChars": 483,
+      "fnv1a32": "1bc3595c",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1106",
+      "pageStart": 588,
+      "pageEnd": 589,
+      "group": "R16c",
+      "englishChars": 294,
+      "arabicChars": 197,
+      "fnv1a32": "36a04e45",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1107",
+      "pageStart": 589,
+      "pageEnd": 589,
+      "group": "R16c",
+      "englishChars": 427,
+      "arabicChars": 281,
+      "fnv1a32": "d2b98942",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1108",
+      "pageStart": 589,
+      "pageEnd": 589,
+      "group": "R16c",
+      "englishChars": 530,
+      "arabicChars": 248,
+      "fnv1a32": "54524901",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1109",
+      "pageStart": 589,
+      "pageEnd": 589,
+      "group": "R16c",
+      "englishChars": 54,
+      "arabicChars": 34,
+      "fnv1a32": "e9e3c9a3",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1110",
+      "pageStart": 589,
+      "pageEnd": 589,
+      "group": "R16c",
+      "englishChars": 436,
+      "arabicChars": 264,
+      "fnv1a32": "42476286",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1111",
+      "pageStart": 589,
+      "pageEnd": 589,
+      "group": "R16d",
+      "englishChars": 381,
+      "arabicChars": 242,
+      "fnv1a32": "20a00c2a",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1112",
+      "pageStart": 589,
+      "pageEnd": 590,
+      "group": "R16d",
+      "englishChars": 432,
+      "arabicChars": 235,
+      "fnv1a32": "fd3b6689",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1113",
+      "pageStart": 590,
+      "pageEnd": 590,
+      "group": "R16d",
+      "englishChars": 632,
+      "arabicChars": 375,
+      "fnv1a32": "355fd17b",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1114",
+      "pageStart": 590,
+      "pageEnd": 590,
+      "group": "R16d",
+      "englishChars": 349,
+      "arabicChars": 204,
+      "fnv1a32": "9b2964f6",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1115",
+      "pageStart": 590,
+      "pageEnd": 590,
+      "group": "R16d",
+      "englishChars": 901,
+      "arabicChars": 557,
+      "fnv1a32": "463162cc",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1116",
+      "pageStart": 590,
+      "pageEnd": 591,
+      "group": "R16d",
+      "englishChars": 1258,
+      "arabicChars": 764,
+      "fnv1a32": "9560bb05",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1117",
+      "pageStart": 591,
+      "pageEnd": 591,
+      "group": "R16d",
+      "englishChars": 1859,
+      "arabicChars": 1199,
+      "fnv1a32": "6f8d2392",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1118",
+      "pageStart": 591,
+      "pageEnd": 592,
+      "group": "R16d",
+      "englishChars": 728,
+      "arabicChars": 378,
+      "fnv1a32": "6e44c215",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1119",
+      "pageStart": 592,
+      "pageEnd": 592,
+      "group": "R16d",
+      "englishChars": 424,
+      "arabicChars": 253,
+      "fnv1a32": "7a145f48",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1120",
+      "pageStart": 592,
+      "pageEnd": 592,
+      "group": "R16d",
+      "englishChars": 409,
+      "arabicChars": 307,
+      "fnv1a32": "b2c51571",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1121",
+      "pageStart": 592,
+      "pageEnd": 592,
+      "group": "R16d",
+      "englishChars": 898,
+      "arabicChars": 631,
+      "fnv1a32": "1018186e",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1122",
+      "pageStart": 592,
+      "pageEnd": 593,
+      "group": "R16d",
+      "englishChars": 751,
+      "arabicChars": 529,
+      "fnv1a32": "cf6762e5",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1123",
+      "pageStart": 593,
+      "pageEnd": 594,
+      "group": "R16d",
+      "englishChars": 1723,
+      "arabicChars": 1167,
+      "fnv1a32": "048e578b",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1124",
+      "pageStart": 594,
+      "pageEnd": 594,
+      "group": "R16d",
+      "englishChars": 956,
+      "arabicChars": 695,
+      "fnv1a32": "63d07e65",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1125",
+      "pageStart": 594,
+      "pageEnd": 594,
+      "group": "R16d",
+      "englishChars": 1205,
+      "arabicChars": 820,
+      "fnv1a32": "bc3166c8",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1126",
+      "pageStart": 594,
+      "pageEnd": 595,
+      "group": "R16d",
+      "englishChars": 711,
+      "arabicChars": 432,
+      "fnv1a32": "105aa20d",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1127",
+      "pageStart": 595,
+      "pageEnd": 595,
+      "group": "R16d",
+      "englishChars": 1214,
+      "arabicChars": 734,
+      "fnv1a32": "81ae2036",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1128",
+      "pageStart": 595,
+      "pageEnd": 596,
+      "group": "R16d",
+      "englishChars": 801,
+      "arabicChars": 515,
+      "fnv1a32": "fad55e7c",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1129",
+      "pageStart": 596,
+      "pageEnd": 596,
+      "group": "R16d",
+      "englishChars": 399,
+      "arabicChars": 254,
+      "fnv1a32": "ba3e673b",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1130",
+      "pageStart": 596,
+      "pageEnd": 596,
+      "group": "R16d",
+      "englishChars": 265,
+      "arabicChars": 158,
+      "fnv1a32": "80dd5bae",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1131",
+      "pageStart": 596,
+      "pageEnd": 596,
+      "group": "R16d",
+      "englishChars": 733,
+      "arabicChars": 514,
+      "fnv1a32": "dd8d643c",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1132",
+      "pageStart": 596,
+      "pageEnd": 596,
+      "group": "R16d",
+      "englishChars": 568,
+      "arabicChars": 398,
+      "fnv1a32": "f28a15f9",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1133",
+      "pageStart": 596,
+      "pageEnd": 597,
+      "group": "R16d",
+      "englishChars": 1775,
+      "arabicChars": 1187,
+      "fnv1a32": "2c1e8fe0",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1134",
+      "pageStart": 597,
+      "pageEnd": 598,
+      "group": "R16d",
+      "englishChars": 961,
+      "arabicChars": 589,
+      "fnv1a32": "ecbae22d",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1135",
+      "pageStart": 598,
+      "pageEnd": 598,
+      "group": "R16d",
+      "englishChars": 653,
+      "arabicChars": 461,
+      "fnv1a32": "0b1e175d",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1136",
+      "pageStart": 598,
+      "pageEnd": 598,
+      "group": "R16e",
+      "englishChars": 835,
+      "arabicChars": 597,
+      "fnv1a32": "2b1d095e",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1137",
+      "pageStart": 598,
+      "pageEnd": 599,
+      "group": "R16e",
+      "englishChars": 160,
+      "arabicChars": 103,
+      "fnv1a32": "e473df02",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1138",
+      "pageStart": 599,
+      "pageEnd": 599,
+      "group": "R16e",
+      "englishChars": 319,
+      "arabicChars": 188,
+      "fnv1a32": "c3c9a68b",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1139",
+      "pageStart": 599,
+      "pageEnd": 599,
+      "group": "R16e",
+      "englishChars": 1191,
+      "arabicChars": 721,
+      "fnv1a32": "ac000aac",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1140",
+      "pageStart": 599,
+      "pageEnd": 599,
+      "group": "R16e",
+      "englishChars": 528,
+      "arabicChars": 348,
+      "fnv1a32": "d18a3d31",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "4.1141",
+      "pageStart": 599,
+      "pageEnd": 600,
+      "group": "R16e",
+      "englishChars": 613,
+      "arabicChars": 394,
+      "fnv1a32": "10d12eb3",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.1",
+      "pageStart": 600,
+      "pageEnd": 600,
+      "group": "R16e",
+      "englishChars": 385,
+      "arabicChars": 219,
+      "fnv1a32": "1fe9d560",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.2",
+      "pageStart": 600,
+      "pageEnd": 600,
+      "group": "R16e",
+      "englishChars": 184,
+      "arabicChars": 143,
+      "fnv1a32": "181b54d1",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.3",
+      "pageStart": 600,
+      "pageEnd": 601,
+      "group": "R16e",
+      "englishChars": 625,
+      "arabicChars": 440,
+      "fnv1a32": "32637017",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.4",
+      "pageStart": 601,
+      "pageEnd": 601,
+      "group": "R16e",
+      "englishChars": 395,
+      "arabicChars": 238,
+      "fnv1a32": "530126fd",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.5",
+      "pageStart": 601,
+      "pageEnd": 601,
+      "group": "R16e",
+      "englishChars": 824,
+      "arabicChars": 491,
+      "fnv1a32": "64e06bf2",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.6",
+      "pageStart": 601,
+      "pageEnd": 601,
+      "group": "R16e",
+      "englishChars": 458,
+      "arabicChars": 307,
+      "fnv1a32": "34358523",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.7",
+      "pageStart": 601,
+      "pageEnd": 601,
+      "group": "R16e",
+      "englishChars": 122,
+      "arabicChars": 80,
+      "fnv1a32": "5893e058",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.8",
+      "pageStart": 601,
+      "pageEnd": 602,
+      "group": "R16e",
+      "englishChars": 1089,
+      "arabicChars": 744,
+      "fnv1a32": "0057d905",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.9",
+      "pageStart": 602,
+      "pageEnd": 602,
+      "group": "R16e",
+      "englishChars": 738,
+      "arabicChars": 483,
+      "fnv1a32": "f2e44696",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.10",
+      "pageStart": 602,
+      "pageEnd": 603,
+      "group": "R16e",
+      "englishChars": 1079,
+      "arabicChars": 658,
+      "fnv1a32": "58204d67",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.11",
+      "pageStart": 603,
+      "pageEnd": 603,
+      "group": "R16e",
+      "englishChars": 1177,
+      "arabicChars": 828,
+      "fnv1a32": "788c4d62",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.12",
+      "pageStart": 603,
+      "pageEnd": 604,
+      "group": "R16e",
+      "englishChars": 1054,
+      "arabicChars": 627,
+      "fnv1a32": "7db848b6",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.13",
+      "pageStart": 604,
+      "pageEnd": 604,
+      "group": "R16e",
+      "englishChars": 382,
+      "arabicChars": 239,
+      "fnv1a32": "330560d4",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.14",
+      "pageStart": 604,
+      "pageEnd": 605,
+      "group": "R16e",
+      "englishChars": 1535,
+      "arabicChars": 1019,
+      "fnv1a32": "a9efae7d",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.15",
+      "pageStart": 605,
+      "pageEnd": 605,
+      "group": "R16e",
+      "englishChars": 894,
+      "arabicChars": 567,
+      "fnv1a32": "08ca46d7",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.16",
+      "pageStart": 605,
+      "pageEnd": 605,
+      "group": "R16e",
+      "englishChars": 898,
+      "arabicChars": 581,
+      "fnv1a32": "3ebddf88",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.17",
+      "pageStart": 605,
+      "pageEnd": 605,
+      "group": "R16e",
+      "englishChars": 443,
+      "arabicChars": 283,
+      "fnv1a32": "282350f2",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.18",
+      "pageStart": 605,
+      "pageEnd": 606,
+      "group": "R16e",
+      "englishChars": 1018,
+      "arabicChars": 659,
+      "fnv1a32": "68076f43",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.19",
+      "pageStart": 606,
+      "pageEnd": 606,
+      "group": "R16e",
+      "englishChars": 728,
+      "arabicChars": 434,
+      "fnv1a32": "ddf10f31",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.20",
+      "pageStart": 606,
+      "pageEnd": 606,
+      "group": "R16f",
+      "englishChars": 235,
+      "arabicChars": 153,
+      "fnv1a32": "f8171476",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.21",
+      "pageStart": 606,
+      "pageEnd": 607,
+      "group": "R16f",
+      "englishChars": 717,
+      "arabicChars": 466,
+      "fnv1a32": "90830ecd",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.22",
+      "pageStart": 607,
+      "pageEnd": 607,
+      "group": "R16f",
+      "englishChars": 84,
+      "arabicChars": 62,
+      "fnv1a32": "7df33bab",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.23",
+      "pageStart": 607,
+      "pageEnd": 607,
+      "group": "R16f",
+      "englishChars": 350,
+      "arabicChars": 213,
+      "fnv1a32": "41f1b2a3",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.24",
+      "pageStart": 607,
+      "pageEnd": 607,
+      "group": "R16f",
+      "englishChars": 198,
+      "arabicChars": 123,
+      "fnv1a32": "d80d6a7f",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.25",
+      "pageStart": 607,
+      "pageEnd": 607,
+      "group": "R16f",
+      "englishChars": 135,
+      "arabicChars": 65,
+      "fnv1a32": "820b0579",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.26",
+      "pageStart": 607,
+      "pageEnd": 607,
+      "group": "R16f",
+      "englishChars": 147,
+      "arabicChars": 111,
+      "fnv1a32": "466a91a4",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.27",
+      "pageStart": 607,
+      "pageEnd": 607,
+      "group": "R16f",
+      "englishChars": 202,
+      "arabicChars": 119,
+      "fnv1a32": "e11b08a8",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.28",
+      "pageStart": 607,
+      "pageEnd": 607,
+      "group": "R16f",
+      "englishChars": 51,
+      "arabicChars": 16,
+      "fnv1a32": "4c552c25",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.29",
+      "pageStart": 607,
+      "pageEnd": 607,
+      "group": "R16f",
+      "englishChars": 69,
+      "arabicChars": 38,
+      "fnv1a32": "2fe102c0",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.30",
+      "pageStart": 607,
+      "pageEnd": 607,
+      "group": "R16f",
+      "englishChars": 118,
+      "arabicChars": 69,
+      "fnv1a32": "f1187e30",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.31",
+      "pageStart": 607,
+      "pageEnd": 607,
+      "group": "R16f",
+      "englishChars": 129,
+      "arabicChars": 71,
+      "fnv1a32": "fa2da9e8",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.32",
+      "pageStart": 607,
+      "pageEnd": 607,
+      "group": "R16f",
+      "englishChars": 164,
+      "arabicChars": 92,
+      "fnv1a32": "533e24ea",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.33",
+      "pageStart": 607,
+      "pageEnd": 607,
+      "group": "R16f",
+      "englishChars": 59,
+      "arabicChars": 31,
+      "fnv1a32": "44e5bf9b",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.34",
+      "pageStart": 607,
+      "pageEnd": 608,
+      "group": "R16f",
+      "englishChars": 179,
+      "arabicChars": 98,
+      "fnv1a32": "1d80ff43",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.35",
+      "pageStart": 608,
+      "pageEnd": 608,
+      "group": "R16f",
+      "englishChars": 434,
+      "arabicChars": 303,
+      "fnv1a32": "fa8ac027",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.36",
+      "pageStart": 608,
+      "pageEnd": 608,
+      "group": "R16f",
+      "englishChars": 166,
+      "arabicChars": 102,
+      "fnv1a32": "b199755a",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.37",
+      "pageStart": 608,
+      "pageEnd": 608,
+      "group": "R16f",
+      "englishChars": 51,
+      "arabicChars": 36,
+      "fnv1a32": "f964a05b",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.38",
+      "pageStart": 608,
+      "pageEnd": 608,
+      "group": "R16f",
+      "englishChars": 104,
+      "arabicChars": 74,
+      "fnv1a32": "f73d611c",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.39",
+      "pageStart": 608,
+      "pageEnd": 608,
+      "group": "R16f",
+      "englishChars": 494,
+      "arabicChars": 316,
+      "fnv1a32": "20dde680",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.40",
+      "pageStart": 608,
+      "pageEnd": 608,
+      "group": "R16f",
+      "englishChars": 673,
+      "arabicChars": 440,
+      "fnv1a32": "b9f7ee30",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.41",
+      "pageStart": 608,
+      "pageEnd": 609,
+      "group": "R16f",
+      "englishChars": 171,
+      "arabicChars": 103,
+      "fnv1a32": "8660b962",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.42",
+      "pageStart": 609,
+      "pageEnd": 609,
+      "group": "R16f",
+      "englishChars": 1315,
+      "arabicChars": 805,
+      "fnv1a32": "eaba23e8",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.43",
+      "pageStart": 609,
+      "pageEnd": 609,
+      "group": "R16f",
+      "englishChars": 579,
+      "arabicChars": 308,
+      "fnv1a32": "5aaa5465",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.44",
+      "pageStart": 609,
+      "pageEnd": 609,
+      "group": "R16f",
+      "englishChars": 585,
+      "arabicChars": 348,
+      "fnv1a32": "d36617ee",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.45",
+      "pageStart": 609,
+      "pageEnd": 610,
+      "group": "R16g",
+      "englishChars": 1487,
+      "arabicChars": 930,
+      "fnv1a32": "74aae1ba",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.46",
+      "pageStart": 610,
+      "pageEnd": 610,
+      "group": "R16g",
+      "englishChars": 709,
+      "arabicChars": 452,
+      "fnv1a32": "25c38c66",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.47",
+      "pageStart": 610,
+      "pageEnd": 611,
+      "group": "R16g",
+      "englishChars": 1207,
+      "arabicChars": 829,
+      "fnv1a32": "a0a291bb",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.48",
+      "pageStart": 611,
+      "pageEnd": 611,
+      "group": "R16g",
+      "englishChars": 51,
+      "arabicChars": 41,
+      "fnv1a32": "2444ac51",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.49",
+      "pageStart": 611,
+      "pageEnd": 611,
+      "group": "R16g",
+      "englishChars": 440,
+      "arabicChars": 267,
+      "fnv1a32": "fd993e02",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.50",
+      "pageStart": 611,
+      "pageEnd": 611,
+      "group": "R16g",
+      "englishChars": 187,
+      "arabicChars": 127,
+      "fnv1a32": "5fc48d62",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.51",
+      "pageStart": 611,
+      "pageEnd": 611,
+      "group": "R16g",
+      "englishChars": 203,
+      "arabicChars": 142,
+      "fnv1a32": "d02fa341",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.52",
+      "pageStart": 611,
+      "pageEnd": 612,
+      "group": "R16g",
+      "englishChars": 1154,
+      "arabicChars": 725,
+      "fnv1a32": "ebc00366",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.53",
+      "pageStart": 612,
+      "pageEnd": 612,
+      "group": "R16g",
+      "englishChars": 700,
+      "arabicChars": 386,
+      "fnv1a32": "312e07f3",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.54",
+      "pageStart": 612,
+      "pageEnd": 612,
+      "group": "R16g",
+      "englishChars": 455,
+      "arabicChars": 320,
+      "fnv1a32": "3653c408",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.55",
+      "pageStart": 612,
+      "pageEnd": 612,
+      "group": "R16g",
+      "englishChars": 172,
+      "arabicChars": 96,
+      "fnv1a32": "92a8bc53",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.56",
+      "pageStart": 612,
+      "pageEnd": 612,
+      "group": "R16g",
+      "englishChars": 189,
+      "arabicChars": 104,
+      "fnv1a32": "1985ca2d",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.57",
+      "pageStart": 612,
+      "pageEnd": 612,
+      "group": "R16g",
+      "englishChars": 137,
+      "arabicChars": 98,
+      "fnv1a32": "3ce75cdc",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.58",
+      "pageStart": 612,
+      "pageEnd": 613,
+      "group": "R16g",
+      "englishChars": 1469,
+      "arabicChars": 834,
+      "fnv1a32": "70ae2699",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.59",
+      "pageStart": 613,
+      "pageEnd": 614,
+      "group": "R16g",
+      "englishChars": 574,
+      "arabicChars": 370,
+      "fnv1a32": "31ca1f7f",
+      "status": "source-aligned-first-pass-not-print-collated"
+    },
+    {
+      "id": "5.60",
+      "pageStart": 614,
+      "pageEnd": 615,
+      "group": "R16g",
+      "englishChars": 1970,
+      "arabicChars": 1266,
+      "fnv1a32": "5f2e9d62",
+      "status": "source-aligned-first-pass-not-print-collated"
     }
   ],
   "updated": "2026-11-14"

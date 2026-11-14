@@ -12,7 +12,7 @@ function setView(v){st.view=v;saveUI();render()}
 function setMode(v){st.mode=v;saveUI();render()}
 function setFocus(v){st.focus=(v+4)%4;saveUI();render()}
 function applyVisual(){document.body.classList.toggle('dark',st.theme==='dark');document.body.dataset.palette=st.palette;document.body.dataset.view=st.view;document.body.dataset.mode=st.mode;document.body.dataset.focus=String(st.focus);document.documentElement.style.setProperty('--font',st.font+'px');document.documentElement.style.setProperty('--arabic',st.arabic+'px');$('#focus-level').textContent=String(st.focus);$$('[data-tab]').forEach(b=>b.classList.toggle('chosen',b.dataset.tab===st.mode));$$('[data-lang]').forEach(b=>b.classList.toggle('chosen',b.dataset.lang===st.view))}
-function render(){const e=entry();if(!e)return;applyVisual();st.section=e.id;$('#section-name').textContent='§'+e.id;$('#location').textContent='Khvājavī pp. '+e.pageStart+(e.pageEnd!==e.pageStart?'–'+e.pageEnd:'');const article=$('#entry');article.replaceChildren();const grid=el('div','passage-grid');const ar=el('div','arabic');ar.dir='rtl';ar.lang='ar';ar.append(el('p',null,e.arabic));const en=el('div','english');en.lang='en';en.append(el('p',null,e.english));grid.append(ar,en);article.append(grid);
+function render(){const e=entry();if(!e)return;applyVisual();st.section=e.id;$('#section-name').textContent='§'+e.id;$('#location').textContent='Khvājavī pp. '+e.pageStart+(e.pageEnd!==e.pageStart?'–'+e.pageEnd:'');const article=$('#entry');article.replaceChildren();const grid=el('div','passage-grid');const ar=el('div','arabic');ar.dir='rtl';ar.lang='ar';ar.append(el('p',null,e.arabic));const en=el('div','english');en.lang='en';e.english.split(/\n\n/).forEach(p=>en.append(el('p',null,p)));grid.append(ar,en);article.append(grid);
 const apparatus=$('#entry-notes');apparatus.hidden=st.mode==='read';const nd=$('#note-body');nd.replaceChildren();nd.append(el('p',null,e.notes||'No separate editor note for this unit. The source is the OpenITI transcription aligned to Khvājavī pagination.'));nd.append(el('p','muted','Grade: '+(e.grade||'working translation; critical collation outstanding')));$('#research-pane').hidden=st.mode!=='research';
 $('#bookmark').setAttribute('aria-pressed',st.bookmarks[e.id]?'true':'false');$('#prev').disabled=index()===0;$('#next').disabled=index()===st.entries.length-1;document.body.classList.toggle('highlighted',Boolean(st.highlights[e.id]));$('#readmode small').textContent=st.mode==='read'?'Read':st.mode==='study'?'Study':'Research';document.title='§'+e.id+' · Miṣbāḥ al-Uns · GNAMMA';history.replaceState(null,'','?section='+encodeURIComponent(e.id));write('last',e.id)}
 function navigate(delta){const i=index()+delta;if(i>=0&&i<st.entries.length){st.section=st.entries[i].id;render();window.scrollTo({top:0,behavior:'instant'});closePanel()}}
@@ -71,8 +71,13 @@ async function load(){
    groups=await Promise.all(meta.readerImport.files.map(readJSON));
   }
   const all=groups.flatMap(d=>d.entries||[]);
-  all.sort((a,b)=>a.number-b.number);
-  for(let i=1;i<all.length;i++)if(all[i].number!==all[i-1].number+1)throw Error('Missing section between '+all[i-1].id+' and '+all[i].id);
+  const parts=e=>e.id.split('.').map(Number);
+  all.sort((a,b)=>{const [ad,an]=parts(a),[bd,bn]=parts(b);return ad-bd||an-bn});
+  for(let i=1;i<all.length;i++){
+   const [pd,pn]=parts(all[i-1]),[d,n]=parts(all[i]);
+   const continuous=d===pd?n===pn+1:(d===pd+1&&n===1&&pn===meta.readerImport?.chapterEndSections?.[pd]);
+   if(!continuous)throw Error('Missing or duplicate section between '+all[i-1].id+' and '+all[i].id);
+  }
   const cfg=meta.readerImport||{};
   if(all.length!==cfg.units||all[0]?.id!==cfg.firstSection||all.at(-1)?.id!==cfg.lastSection)
    throw Error('Reader manifest mismatch: '+all.length+' sections, final '+all.at(-1)?.id);

@@ -1,0 +1,14 @@
+{
+  "sequence": "pass: 4.538–4.1141 → 5.1–5.60",
+  "arabicSourceAlignment": "pass: all 166 new units exact after documented markup normalization",
+  "previousJSONBytes": "pass: 25 earlier files unchanged",
+  "previousManifestEntries": "pass: all 413 registered entries unchanged",
+  "portableParity": "pass: 664 units and manifest match modular files",
+  "sourceBlob": "pass",
+  "newUnitHashes": "pass",
+  "pageArithmetic": "pass: 612/720=85%",
+  "markerRepairs": "pass: 5.4, 5.20, 5.21 separately retained with raw markers",
+  "javascriptSyntax": "manually inspected; automated parser unavailable",
+  "interactivePreview": "not completed: local file preview blocked by browser URL policy; local HTTP bind unavailable",
+  "criticalGrade": "first-pass; no print/manuscript collation"
+}

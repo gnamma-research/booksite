@@ -1,0 +1,196 @@
+{
+  "baseRegisteredCommit": "0ad98659e4fbecf932d70275f70ab6217560bec0",
+  "recoveredCommit": "440b974d8c966fe5f2cbfb0b6f9737cd4039d9f5",
+  "baseTree": "63db64132d4a57889d1f4ca055025241c9629e0d",
+  "unchangedRegisteredUnits": 413,
+  "unchangedRecoveredUnits": 85,
+  "newUnits": 166,
+  "readerUnits": 664,
+  "sourceGitBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "priorDataFilesPreserved": [
+    {
+      "file": "r10.json",
+      "sha256": "cd3b0a1f8a9b965ae450fd76c2588ebf661aaba96d015b231b76ad809e380afb",
+      "gitBlobSha": "d81814bb21128ad7a9b5e3031407cd0be15cd06b"
+    },
+    {
+      "file": "r11a.json",
+      "sha256": "78a80bde723e8df446ae5f7274a985b83fce01d005504f9660c0723911ce378e",
+      "gitBlobSha": "249f501751ffda4b8a28f0ce117a8b55b67185d6"
+    },
+    {
+      "file": "r11b.json",
+      "sha256": "2078028147bfea3afc1878aee6d2669f2bbbfb106fbb7eb0dcebfd62464344f4",
+      "gitBlobSha": "69a63499f503d4761e0ea2dd935358a158db309a"
+    },
+    {
+      "file": "r12a.json",
+      "sha256": "dfaf123134aa3688bd8bc99030fcc7a6114f8716606a02bb26520dcc2f0af914",
+      "gitBlobSha": "c7ffbcfb3c8dcabd0146d9208e4107f94ef7cc58"
+    },
+    {
+      "file": "r12b.json",
+      "sha256": "463b55a3505f7af9ac810a38ccd39ba4ebc345ef00ed57ab315f63aac83420ad",
+      "gitBlobSha": "3a3d054e41bba9ca2089e8ab4e011497b8d876cc"
+    },
+    {
+      "file": "r13a.json",
+      "sha256": "8cfbe30a0ab2bdd503e11e0891ef4de9befbc5531a4e2b7771cfa939e85518f3",
+      "gitBlobSha": "87ce6fe6b6f6f58aafaa4241c79dd55dc0bc21ea"
+    },
+    {
+      "file": "r13b.json",
+      "sha256": "288025398f24c061c11d586945d61f3d6a9a0cf7d3f0f0bf80ff3eeeef4c4ce3",
+      "gitBlobSha": "82d579ea3856a85ac100f834d67c0f7c6e19beed"
+    },
+    {
+      "file": "r14a.json",
+      "sha256": "df3e9702a714bd14cd45188e8d2562ded2c5e0e8138e98493c54d23c7b0b24dd",
+      "gitBlobSha": "a800ba2511175916156b4186a68ab80a11ccc7e6"
+    },
+    {
+      "file": "r14b.json",
+      "sha256": "ae8dc674b85ab8ca6a518b0d888e5bcddd6a0a56ad36fb7e02bc27245b425dac",
+      "gitBlobSha": "b68d88bfd173c262ff13693ac9ca630c72e19d22"
+    },
+    {
+      "file": "r14c.json",
+      "sha256": "cf4c2ecb891aa9893935b2722131c538ad562026a0f65d8c89b5cacb52372be1",
+      "gitBlobSha": "d57648cafdc1a230a4657152846a08a351658e71"
+    },
+    {
+      "file": "r14d.json",
+      "sha256": "daf78b154c76dcb5318762c8da42153494eb0de3a3e39c5d9884e670f3376f5f",
+      "gitBlobSha": "855b4050a7740f28b7597bf7d927934e161ffd4f"
+    },
+    {
+      "file": "r14e.json",
+      "sha256": "36dd179e697af123cb2f914a70b8d3ae7515ded2dbe668ed5aaf887a465e84b6",
+      "gitBlobSha": "5a51d4a9b62c4fd4f34149e21d4fc279383193d3"
+    },
+    {
+      "file": "r14f.json",
+      "sha256": "b12fcbeb136e02e97eea28cd5f0dc09e8d4f834ec7c5eeae5b81d712ce0fcb2f",
+      "gitBlobSha": "16be0fe385bfa0eb657a9c3e78c3b38afd64aedf"
+    },
+    {
+      "file": "r14g.json",
+      "sha256": "ac50e1e816254f5bbdf85f40ccda11bd919768bf49ad2d34e30c98dc6c9a2272",
+      "gitBlobSha": "734dbe3e08985a52d6c94d848e6a64663d7c1c65"
+    },
+    {
+      "file": "r14h.json",
+      "sha256": "fffa4e24bcbe4f2e51f50fa232bdabd822d651687f2ef7b66abcf0fb89a58fc1",
+      "gitBlobSha": "33f966fa7edc2ed52af8690ac4111174d16fe2cb"
+    },
+    {
+      "file": "r14i.json",
+      "sha256": "2b9521ced5e791ca2546edb6902eb3d6877ca681a6d129ddd683158f8f3c3206",
+      "gitBlobSha": "2622e7d91e86f55b584163588f55778027087c6c"
+    },
+    {
+      "file": "r15a.json",
+      "sha256": "031dc1954d7d6eefc0e41a40716a9def3e5ade1354c63560b083d6e8fdaf2bba",
+      "gitBlobSha": "a6e957afba0069cdcd51bd1757a9769f0a8b486f"
+    },
+    {
+      "file": "r15b.json",
+      "sha256": "32ae2a57a204e306e57216b50690a2260a9f4ab18eed12823600675c711130c6",
+      "gitBlobSha": "9f7a20702fae8625c15683726edaa9b9fab148c0"
+    },
+    {
+      "file": "r15c.json",
+      "sha256": "00612b593c8303e5db99e39105fe6e4263be3b85d671712128c98ad249c78d17",
+      "gitBlobSha": "db787833b2b0c25ca8e4bd2a0a9401da9ca61559"
+    },
+    {
+      "file": "r15d.json",
+      "sha256": "68fa9d49136946d1cbd89d0d3ecb31cfb26c6d9aaa7dbc6a48720754551c66bb",
+      "gitBlobSha": "36936b1b980dc5a09677bf82c00bedb6c6e5fc55"
+    },
+    {
+      "file": "r15e.json",
+      "sha256": "ca76104a3349343fc5f9aed67ae93020501fa640284aeea617ab306f53a842e5",
+      "gitBlobSha": "9cccc213f3ce00d6a32e8f66246db509fff5b12e"
+    },
+    {
+      "file": "r15f.json",
+      "sha256": "79b80e8b6df2245da77859804fe0fc43fb1d756069e039c33f889eef9f84b4da",
+      "gitBlobSha": "0b61efd92bc7251027230b88d4e6bf7032266463"
+    },
+    {
+      "file": "r15g.json",
+      "sha256": "b0996525106b4b5ff0b071d39d00965f2aa214612f49efd39c77711ac6d942ec",
+      "gitBlobSha": "a0bd6170f8ec412a7eccf9b9730e297b22cb0385"
+    },
+    {
+      "file": "r15h.json",
+      "sha256": "f9807710206192cf5ce4e96402972d174bebca4e9741ae5c040cb83bf004563c",
+      "gitBlobSha": "061671f4c9be60982b2b5613da47fc94a73cf028"
+    },
+    {
+      "file": "r15i.json",
+      "sha256": "c3ec0bb57f8e2cbedab9bdf92e8b043b0bcf53c4b8d309520bb406b58ce4eef1",
+      "gitBlobSha": "6fb3039c586321144bb70d7356ff13141d04e8e9"
+    }
+  ],
+  "newArabicChars": 69621,
+  "newEnglishWords": 16933,
+  "nextSection": {
+    "id": "5.61",
+    "number": 61,
+    "division": 5,
+    "rawSourceMarker": "61 - 5",
+    "rawSourceNumber": 61,
+    "pageStart": 615,
+    "pageEnd": 615,
+    "arabic": "ومن نتائج هذا الكشف الكامل معرفة صاحبه غاية ما أدرك كل مفكر بفكره ومعرفة سبب تخطئة الناظرين بعضهم بعضا، ومن أي وجه أصابوا وأخطأوا، ومعرفة مراتب الذائقين والمقلدة ومن له الحكم عليهم والمقامات التي أوجب تعشقهم وتقيدهم، ومعرفة من له أهلية الترقي ومن ليس له، فيفهم اعذار الخلائق أجمعين وهم له منكرون وبمكانته جاهلون. فهذا يا اخوانى حال المتمكنين من أهل الله في كشفهم التام ولا تظنوها الغاية التامة، فما من طامة الا وفوقها طامة.",
+    "sourceCharStart": 849523,
+    "sourceCharEnd": 849968
+  },
+  "previousSection": {
+    "id": "5.60",
+    "number": 60,
+    "division": 5,
+    "rawSourceMarker": "60 - 5",
+    "rawSourceNumber": 60,
+    "pageStart": 614,
+    "pageEnd": 615,
+    "arabic": "ثم قال قدس سره: وسر ذلك ان الانسان برزخ بين الحضرة الإلهية والكونية ونسخة جامعة لهما، ولما اشتملتا عليه فليس شئ من الأشياء الا وهو مرسم في مرتبته التي هي عبارة عن جمعيته، والمتعين بما اشتملت عليه نسخة وجوده في كل وقت وحال ونشأة و موطن انما هو ما يستدعيه حكم المناسبة التي بينه وبنى هذه الأشياء، كما هو سنة الحق من حيث تعلقه بالعالم وتعلق العالم به، فما لم يتخلص الانسان من رتبة قيود الاحكام الكونية يكون ادراكه مقيدا بحسب الصفة الجزئية الحاكمة عليه فلا يدرك الا ما يقابلها، وإذا تحرر من احكام القيود والمجاذبات الانحرافية الاطرافية الجزئية وانتهى إلى هذا المقام الجمعي الوسطى الذي هو نقطة المسامتة الكلية ومركز الدائرة الكبرى الجامعة لمراتب الاعتدالات كلها: المعنوية والروحانية والمثالية والحسية، قام للحضرتين في مقام محاذاته المعنوية البرزخية فواجههما بذاته، كحال النقطة مع كل جزء من اجزاء المحيط، وقابل كل حقيقة من الحقائق الإلهية والكونية بما فيه منها، من كونه نسخة من جملتها، فأدرك فرد من افراد نسخة وجوده ما يقابلها من الحقائق في الحضرتين، فحصل له العلم بحقائق الأشياء وأصولها ومباديها، لأدركه لها في مقام تجريدها، ثم يدركها من حيث جملتها وجمعيتها بجملته وجمعيته، فلم يختلف عليه أمر ولم ينتقض عليه حال ولا حكم، ولولا القيود الآتي ذكرها لاستمر حكم هذا الشهود، ولكن الجمعية الكمالية تمنع من ذلك، لأنها تقتضى الاستيعاب المستلزم للظهور بكل وصف والتلبس بكل حال وحكم.",
+    "sourceCharStart": 848193,
+    "sourceCharEnd": 849523,
+    "english": "He then says: ‘Its secret is that the human being is an isthmus between the divine and cosmic Presences and a copy gathering them and all they contain. Nothing is absent from its inscription within his rank, which is his gatheredness. What becomes determined from the contents of the copy of his existence at each time, state, constitution and abode is only what the affinity between him and those things calls forth, as is the Real’s wont in His relation to the world and the world’s relation to Him. So long as the human being has not escaped the degree of restrictions imposed by cosmic rulings, his apprehension is restricted according to the particular attribute governing him, and he apprehends only what corresponds to it. Once freed from the rulings of restrictions and the divergent, peripheral, particular attractions, and once he reaches this comprehensive middle station—the point of universal alignment and centre of the great circle gathering all degrees of equilibrium, intelligible, spiritual, imaginal and sensory—he stands before both Presences in his intelligible isthmic alignment, confronting them through his essence, like the centre-point in relation to each part of the circumference. He meets every divine and cosmic reality through what of it lies within him, being a copy of their totality. Each constituent of the copy of his existence apprehends the corresponding realities in both Presences. He thereby knows the realities of things, their roots and principles, apprehending them in their state of abstraction. Then he apprehends their totality and gatheredness through his own totality and gatheredness. No matter becomes confused for him, and no state or ruling is contradicted. Were it not for the qualifications to be mentioned, this witnessing’s ruling would continue. But perfect gatheredness prevents that, since it requires comprehensiveness entailing appearance through every attribute and being clothed in every state and ruling.’",
+    "notes": "The source itself qualifies continuous witnessing through the requirement of comprehensive manifestation. This entire unit is translated, although it reaches the following source-page label; that following page is not counted complete because §5.61 also occupies it.",
+    "grade": "source-aligned first-pass; printed-image/manuscript collation pending",
+    "sourceArabicSha256": "61bd6de0afaf27cd481cc741cd0c57d65e4aac2d22ff797c1861da202d236ed5",
+    "translationSha256": "253966e829167f23c6398a6aa032ba929b67ab239e9e79cf6a9f41ddf22620aa"
+  },
+  "missingEarlierMaster": {
+    "library_file_id": "libfile_f5e835f5ad4c8191888b1bf5bcd5aef4",
+    "file_id": "file_00000000c7148208bf32df13c1af79f8",
+    "filename": "Misbah_Cumulative_Master_English_First.docx",
+    "version_id": "1",
+    "bytes": 908705,
+    "status": "Resolved in Library; byte retrieval failed; not imported; previous content not replaced"
+  },
+  "originalSourceMarkerExceptions": [
+    {
+      "id": "5.4",
+      "rawSourceMarker": "4\n~~- 5",
+      "sourceCharStart": 828390,
+      "sourceCharEnd": 828645
+    },
+    {
+      "id": "5.20",
+      "rawSourceMarker": "520 - 5",
+      "sourceCharStart": 837104,
+      "sourceCharEnd": 837272
+    },
+    {
+      "id": "5.21",
+      "rawSourceMarker": "521 - 5",
+      "sourceCharStart": 837272,
+      "sourceCharEnd": 837781
+    }
+  ]
+}
