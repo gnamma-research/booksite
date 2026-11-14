@@ -1,6 +1,6 @@
 {
   "schema": "umran-vision-v1",
-  "version": "2026-11-13",
+  "version": "2026-11-15",
   "status": "Research architecture, not an automatic legal decision engine",
   "separation": [
     "Ultimate human end",
@@ -216,7 +216,8 @@
         "Track sustained teaching and supervision",
         "Document the limits of accreditation and self-reported achievements"
       ],
-      "status": "Research programme proposal; no national shortage demonstrated"
+      "status": "Research programme proposal; no national shortage demonstrated",
+      "primary_project_id": "knowledge"
     },
     {
       "id": "critical-texts",
@@ -255,7 +256,8 @@
         "Distinguish critical collation from working edition",
         "Test whether readers genuinely improve understanding"
       ],
-      "status": "Research programme proposal; priority depends on demonstrated textual and educational need"
+      "status": "Research programme proposal; priority depends on demonstrated textual and educational need",
+      "primary_project_id": "knowledge"
     },
     {
       "id": "curriculum-pathways",
@@ -294,7 +296,8 @@
         "Assess whether programmes remain faithful to their subject",
         "Monitor unintended professional or sectarian effects"
       ],
-      "status": "Research programme proposal; Malaysian IIUM studies give models and critical cautions"
+      "status": "Research programme proposal; Malaysian IIUM studies give models and critical cautions",
+      "primary_project_id": "knowledge"
     },
     {
       "id": "contemporary-intellectual-dialogue",
@@ -333,7 +336,8 @@
         "Check claims with field specialists",
         "Record unresolved issues and competing interpretations"
       ],
-      "status": "Proposed cross-disciplinary intellectual-renewal programme"
+      "status": "Proposed cross-disciplinary intellectual-renewal programme",
+      "primary_project_id": "knowledge"
     },
     {
       "id": "legal-discernment",
@@ -374,7 +378,8 @@
         "Distinguish fatwā from research hypothesis",
         "Assess whether solutions are socially and legally viable"
       ],
-      "status": "Research agenda requiring qualified juristic review"
+      "status": "Research agenda requiring qualified juristic review",
+      "primary_project_id": "institutions"
     },
     {
       "id": "spiritual-ethical-formation",
@@ -414,7 +419,8 @@
         "Avoid coercive spirituality or intrusive personal data",
         "Attend to burdens on carers and workers"
       ],
-      "status": "Formative programme, not a measure of spiritual rank"
+      "status": "Formative programme, not a measure of spiritual rank",
+      "primary_project_id": "formation"
     },
     {
       "id": "family-household",
@@ -455,7 +461,8 @@
         "Avoid confusing income data with benefit adequacy",
         "Identify unintended dependency or exclusion"
       ],
-      "status": "Institutional programme; specific location evidence required"
+      "status": "Institutional programme; specific location evidence required",
+      "primary_project_id": "formation"
     },
     {
       "id": "trustworthy-institutions",
@@ -495,7 +502,8 @@
         "Compare organisational arrangements",
         "Record tradeoffs and contested mandates"
       ],
-      "status": "Applied capacity-building programme"
+      "status": "Applied capacity-building programme",
+      "primary_project_id": "institutions"
     },
     {
       "id": "knowledge-technology",
@@ -535,7 +543,8 @@
         "Avoid equating adoption with progress",
         "Assess epistemic independence and effects on attention"
       ],
-      "status": "Research programme, with contested normative and empirical questions"
+      "status": "Research programme, with contested normative and empirical questions",
+      "primary_project_id": "institutions"
     },
     {
       "id": "crafts-livelihood",
@@ -575,7 +584,8 @@
         "Test livelihood viability",
         "Do not require every profession to carry a grand civilizational slogan"
       ],
-      "status": "Research and programme proposal"
+      "status": "Research and programme proposal",
+      "primary_project_id": "provision"
     },
     {
       "id": "stewardship-resilience",
@@ -617,7 +627,8 @@
         "Include external and long-term harms",
         "Separate relief appeals from independently verified deficits"
       ],
-      "status": "Context-sensitive provision programme"
+      "status": "Context-sensitive provision programme",
+      "primary_project_id": "provision"
     },
     {
       "id": "civilizational-learning",
@@ -657,7 +668,8 @@
         "Distinguish historical evidence from metaphysical interpretation",
         "Seek independent critique of major claims"
       ],
-      "status": "Research programme proposal"
+      "status": "Research programme proposal",
+      "primary_project_id": "knowledge"
     }
   ],
   "sources": [
@@ -738,5 +750,7 @@
       "url": "https://www.cambridge.org/core/journals/journal-of-law-and-religion/article/islamic-normative-legal-theory-framework-and-applications/2FD4C0E512D8AABA4FD73EB15B8B4192",
       "note": "Explains classical levels and wider social objectives in legal theory."
     }
-  ]
+  ],
+  "architecture": "four great projects / twelve subordinate programmes / fourteen communal functions",
+  "major_projects_reference": "major-projects.json"
 }

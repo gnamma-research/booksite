@@ -1,6 +1,6 @@
 {
   "project": "Work, Vocation & Umran",
-  "version": "2026-11-13-v4-maqasid-and-renewal",
+  "version": "2026-11-15-four-great-projects",
   "notice": "Candidate need/function catalogue, not a finding of actual local shortage, assignment of personal religious obligation, or spiritual ranking. Project data are organiser claims, not independent verification.",
   "classification_basis": "Provisional juristic research; consult sources and scholars",
   "sufficiency_status": "unknown for every profile",
@@ -55,7 +55,8 @@
         "curriculum-pathways",
         "spiritual-ethical-formation",
         "civilizational-learning"
-      ]
+      ],
+      "primary_project_id": "knowledge"
     },
     {
       "id": "contemporary-curricula",
@@ -106,7 +107,8 @@
         "contemporary-intellectual-dialogue",
         "knowledge-technology",
         "civilizational-learning"
-      ]
+      ],
+      "primary_project_id": "knowledge"
     },
     {
       "id": "medical-care",
@@ -151,7 +153,8 @@
       ],
       "renewal_programme_ids": [
         "trustworthy-institutions"
-      ]
+      ],
+      "primary_project_id": "provision"
     },
     {
       "id": "water-sanitation",
@@ -194,7 +197,8 @@
       ],
       "renewal_programme_ids": [
         "stewardship-resilience"
-      ]
+      ],
+      "primary_project_id": "provision"
     },
     {
       "id": "food-access",
@@ -238,7 +242,8 @@
       "renewal_programme_ids": [
         "crafts-livelihood",
         "stewardship-resilience"
-      ]
+      ],
+      "primary_project_id": "provision"
     },
     {
       "id": "ai-safety",
@@ -279,7 +284,8 @@
         "contemporary-intellectual-dialogue",
         "legal-discernment",
         "knowledge-technology"
-      ]
+      ],
+      "primary_project_id": "institutions"
     },
     {
       "id": "dependent-care",
@@ -323,7 +329,8 @@
       "renewal_programme_ids": [
         "spiritual-ethical-formation",
         "family-household"
-      ]
+      ],
+      "primary_project_id": "formation"
     },
     {
       "id": "funerals",
@@ -357,7 +364,8 @@
       "higher_aim_ids": [
         "din"
       ],
-      "renewal_programme_ids": []
+      "renewal_programme_ids": [],
+      "primary_project_id": "formation"
     },
     {
       "id": "household-sufficiency",
@@ -407,7 +415,8 @@
         "family-household",
         "trustworthy-institutions",
         "crafts-livelihood"
-      ]
+      ],
+      "primary_project_id": "formation"
     },
     {
       "id": "livelihood-training",
@@ -450,7 +459,8 @@
       ],
       "renewal_programme_ids": [
         "crafts-livelihood"
-      ]
+      ],
+      "primary_project_id": "provision"
     },
     {
       "id": "community-institutions",
@@ -495,7 +505,8 @@
         "legal-discernment",
         "spiritual-ethical-formation",
         "trustworthy-institutions"
-      ]
+      ],
+      "primary_project_id": "institutions"
     },
     {
       "id": "mental-health",
@@ -535,7 +546,8 @@
       "higher_aim_ids": [
         "nafs"
       ],
-      "renewal_programme_ids": []
+      "renewal_programme_ids": [],
+      "primary_project_id": "provision"
     },
     {
       "id": "emergency-response",
@@ -578,7 +590,8 @@
       ],
       "renewal_programme_ids": [
         "stewardship-resilience"
-      ]
+      ],
+      "primary_project_id": "provision"
     },
     {
       "id": "displaced-shelter",
@@ -619,7 +632,8 @@
       "renewal_programme_ids": [
         "family-household",
         "stewardship-resilience"
-      ]
+      ],
+      "primary_project_id": "provision"
     }
   ],
   "research_sources": [
@@ -629,5 +643,6 @@
   "evidence_record_source": "assessments.json",
   "evidence_policy": "A research example may document an outcome, a provider activity or a source-defined capacity gap. None automatically certifies complete sufficiency, a legal obligation or individual duty.",
   "aim_framework": "vision.json",
-  "relationship_policy": "All aim and programme links are analytic hypotheses. They do not determine priority scores, legal obligations, actual local deficits, or spiritual rank."
+  "relationship_policy": "All aim and programme links are analytic hypotheses. They do not determine priority scores, legal obligations, actual local deficits, or spiritual rank. Each need has one primary research home for navigation, not an exclusive normative classification.",
+  "major_projects_reference": "major-projects.json"
 }

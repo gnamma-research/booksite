@@ -1,12 +1,33 @@
 # Work, Vocation & ʿUmrān — Research subsite
 
 **Location:** `/research/umran/` (listed in the Gnamma Research index).
-**Stage:** public-facing research architecture v4, 13 November 2026. The journal and fundraiser content remains a preliminary, source-attributed research corpus.
+**Stage:** concise four-project architecture v5, 15 November 2026. The journal and fundraiser content remains a preliminary, source-attributed research corpus.
 **Project:** a traditional account of human purpose, communal obligations, social sufficiency, and differentiated forms of contribution. Islam is the most fully articulated tradition in this edition; other traditions are not treated as interchangeable.
+
+## Top-level organisation (v5)
+
+The public site now begins with **four great projects** rather than presenting twelve diverse initiatives as peers.
+
+1. Formation of persons and households
+2. Renewal of knowledge and education
+3. Justice and institutional renewal
+4. Livelihood, essential provision and stewardship
+
+The original twelve research programmes are subordinate workstreams with one primary parent each. The fourteen communal functions also have one navigational parent (not an exclusive legal one). `major-projects.json` is the canonical map. The full old programme descriptions remain in `programme-dossiers.html`; the expanded original maqāṣid commentary remains in `maqasid-notes.html`.
+
+**Purpose and maqāṣid** are cross-cutting norms, **farḍ kifāya** is a context-sensitive juridical classification of specific duties, **evidence** measures actual provision, and **vocation** concerns situated capacities and responsibilities. None is a fifth great project. Technology, including AI safety, is studied across the four projects and assigned a primary research home only for editorial clarity.
+
+Two explicit conceptual passes and boundary tests are recorded in `FOUR_PROJECTS_ANALYSIS.md`. This taxonomy is an editorial synthesis, not a canonical list derived directly from one historical text.
+
+The visible navigation is now six sections: Overview, Great projects, Purpose & maqāṣid, Communal needs, Your vocation, and Research. In-depth arguments and evidence remain accessible through Research.
 
 ## Pages
 
-- `index.html`: editorial landing page and starting paths
+- `index.html`: concise public introduction to the four projects
+- `major-projects.json`: all four projects with subordinate programme and communal-function mappings
+- `programme-dossiers.html`: the preserved complete earlier twelve-programme catalogue
+- `maqasid-notes.html`: preserved extended maqāṣid research
+- `research-hub.html`: source-based research directory
 - `framework.html`: six-layer relation between ultimate ends, law, formation, civilizational renewal, communal duties and vocation
 - `maqasid.html`: five classical essentials, three levels, cultivation/protection axes, and explicitly labelled broader aims
 - `renewal.html`: tajdīd/iḥyāʾ/iṣlāḥ, scholarly transmission, curricula and institutional limitations, including IIUM research
