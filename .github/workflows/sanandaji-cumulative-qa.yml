@@ -33,9 +33,13 @@ jobs:
           node --check texts/al-sanandaji/taqrib-al-maram/stage86-corpus-ci.cjs
           node --check texts/al-sanandaji/taqrib-al-maram/stage87-source-delta.js
           node --check texts/al-sanandaji/taqrib-al-maram/stage87-corpus-ci.cjs
+          node --check texts/al-sanandaji/taqrib-al-maram/stage88-source-delta.js
+          node --check texts/al-sanandaji/taqrib-al-maram/stage88-corpus-ci.cjs
       - name: Validate source-page joins, coverage and reader order
         run: node texts/al-sanandaji/taqrib-al-maram/stage51-corpus-ci.cjs
       - name: Validate Volume I source positions, stable IDs and absence of false completion claims
         run: node texts/al-sanandaji/taqrib-al-maram/stage86-corpus-ci.cjs
       - name: Validate Volume I Stage87 source layers and proof gates
         run: node texts/al-sanandaji/taqrib-al-maram/stage87-corpus-ci.cjs
+      - name: Validate Volume I Stage88 additions, stable IDs and zero false certification
+        run: node texts/al-sanandaji/taqrib-al-maram/stage88-corpus-ci.cjs
