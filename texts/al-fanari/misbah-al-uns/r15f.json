@@ -1,0 +1,262 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R15f",
+  "date": "2026-11-14",
+  "startSection": "4.951",
+  "endSection": "4.975",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.951",
+      "number": 951,
+      "pageStart": 543,
+      "pageEnd": 543,
+      "arabic": "قال في النفحات: ليس في المقام توحيد ينافيه شرك جلى أو خفى، ولا وحدة تقابلها كثرة، بل الشأن عبارة عن أمر تنبعث منه الوحدة والكثرة المعقولتان - بل والمشروعتان أيضا والمشهودتان - فوحدة الامر نفس كثرته وبساطته عين تركيبه، والظهور والبطون حالتان للامر يتعينان لمداركنا بحسب الأحوال والتنوع على اختلاف ضروبه ذاتي لا ينفصل عنه، والثبات صفة الأحوال من حيث حقائقها - لا من حيث من ظهر بها وتعين بها - هذا كلامه.",
+      "english": "He said in al-Nafaḥāt: At this station there is no tawḥīd opposed by manifest or hidden association, nor any unity opposed by multiplicity. Rather, the matter is that from which intelligible unity and multiplicity proceed—as do the unity and multiplicity acknowledged in the revealed Law and witnessed in experience. The unity of the matter is identical with its multiplicity, and its simplicity with its composition. Manifestation and concealment are two states of the matter distinguished for our faculties of apprehension according to circumstances; diversity in its different forms belongs inseparably to it. Stability belongs to the states considered as realities, not to that which appears and becomes determined through them. Thus far his words.",
+      "notes": "Explicit quotation from Qūnawī's al-Nafaḥāt; paradox is perspective-qualified, not denial of law or moral discrimination.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.952",
+      "number": 952,
+      "pageStart": 543,
+      "pageEnd": 543,
+      "arabic": "ولما كان كل من الاعتبارين مقتضاها (1)، وجب على المحقق المتحقق بخلافته تعالى ان يوفى كل ذي حقه حقه (2)، ويقول مصلحة التكليف من جانب الحق والحقيقة ليظهر مرتبة معبوديته، ومن جانب المظهر والخليقة ليظهر لهم عند العلم باختيارهم الضروري وعجزهم الحقيقي: ان (3) عملهم الصوري وكما لهم النسبي وجزائهم الأخروي من محض حقيقة الجود الإلهي.",
+      "english": "Because both considerations are required, the realised knower who truly carries out God's vicegerency must give everyone their due. He should affirm the wisdom of moral obligation on the side of the Real and of Reality, that the degree of His being worshipped may appear, and on the side of the locus and creation, that people may know—despite their necessary choice and real incapacity—that their outward action, relational perfection, and recompense in the Hereafter arise from the sheer reality of divine generosity.",
+      "notes": "The apparent paradox of «اختيارهم الضروري» requires both the legal/moral and metaphysical levels, not unqualified determinism.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.953",
+      "number": 953,
+      "pageStart": 543,
+      "pageEnd": 543,
+      "arabic": "وكان الشيخ الكبير رضي الله عنه إلى هذا أشار في تلك الديباجة بقوله بعد ذلك (4): واشكره شكر من تحقق ان بالتكليف ظهر الاسم المعبود بوجود حقيقة لا حول ولا قوة الا بالله ظهرت صفة الجود، والا فإذا جعلت الجنة جزاء لما عملت فأين الجود الإلهي الذي عقلت؟ فأنت عن العلم بأنك لذاتك موهوب وعن العلم بأصل نفسك محجوب، فإذا كان ما تطلب به الجزاء ليس لك فكيف ترى عملك؟ فاترك الأشياء وخالقها والمرزوقات ورازقها. هذا كلامه.",
+      "english": "The Great Shaykh, may God be pleased with him, pointed to this in that preface when he said: 'I thank Him with the thanks of one who has realised that through obligation the Name \"the Worshipped\" becomes manifest, and through the truth of \"There is no power or strength except through God\" the attribute of generosity appears. Otherwise, if Paradise is made a recompense for what you yourself have done, where is the divine generosity you thought you understood? You have not realised that your very self is a gift and are veiled from knowing the origin of your soul. If even that by which you seek recompense does not belong to you, how do you regard your deed as yours? Leave things to their Creator and those provided for to their Provider.' Thus far his words.",
+      "notes": "Quoted from the Great Shaykh's preface, exact work must be identified; preserves relation between taklīf and generosity.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.954",
+      "number": 954,
+      "pageStart": 543,
+      "pageEnd": 544,
+      "arabic": "وأقول: وإلى الجمع بين الاعتبارين ينظر قول من أسند العمل إلى الحق خلقا، وإلى الخلق كسبا، وفسر الكسب بنسبته إلى قابله باختيار وإن كان ضروريا، كاهل السنة لا سيما الحنفية الماتريدية (1) - كثر الله أمثالهم - فذلك مطابق ظاهر عرف العرب من جعل اسناد الافعال إلى القوابل حقيقة (2)، فيصح التكليف ويترتب الأجزئة الظاهرة عليها - كالقصاص - مع أن الميت (3) مقتول بأجله، ويوافق باطن عرف الحقيقة بان اختياره ذلك شعاع أو اثر لازم للاختيار الكلى الاحدى الذي للحق، بل رقيقة من رقائقه وهو معنى ضروريته المعنوية لا الصورية ومعنى انه مقتول بأجله، لكن ظهور حكم كل حقيقة في محل على حسب استعداده وحاله المعينة له، وكذا الأجزئة الأخروية للأعمال لاختيارية المظهرية ظاهرا ومن محض لطف الحق وجوده باطنا، إن كانت الأجزئة ملائمة ومن عدله المبنى على قصور قابليته المظهر لخير منه إن كانت الأجزئة غير ملائمة، وهذا معنى قوله صلى الله عليه وآله: الناس مجزيون بأعمالهم... الحديث، وقوله: فمن وجد خيرا فليحمد الله ومن لا، فلا يلومن الا نفسه، وقوله: الخير كله بيديك والشر ليس إليك وأمثالها.",
+      "english": "I say: The conjunction of both considerations underlies the account that attributes the creation of acts to the Real and their acquisition [kasb] to creatures. It explains acquisition as an act's attribution to its receptive subject through choice, even when that choice is necessary, as held by the people of the Sunna and especially the Ḥanafī Māturīdīs—may God multiply their like. This accords with outward Arabic usage, which truly attributes acts to their recipients, making obligation valid and its evident consequences operative, such as retaliation [qiṣāṣ], though one killed has died at his appointed term. It also accords with the inward usage of the people of Reality: the creature's choice is a ray, or necessary effect, of the Real's all-comprehensive unitary Choice, indeed a subtle connection [raqīqa] of it. Its necessity is spiritual, not the compulsion of an outward form; that is also the sense of being killed at one's appointed term. Yet the ruling of each reality appears in each locus according to that locus's readiness and defining state. So too the recompense of the next world attaches outwardly to acts through the creaturely locus's choice, while inwardly favourable recompense is entirely from the Real's grace and bounty, and unfavourable recompense proceeds from His justice in relation to the locus's incapacity to receive something better. This is the sense of 'People are recompensed for their deeds', 'Whoever finds good should praise God; whoever finds otherwise should blame none but himself', 'All good is in Your hands and evil is not attributed to You', and related reports.",
+      "notes": "Critical distinction of creation (khalq), acquisition (kasb), and 'necessary choice' in Fanārī's Māturīdī framework. Verify citations and precise juridical sense of qiṣāṣ; this is not a general rejection of responsibility.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.955",
+      "number": 955,
+      "pageStart": 544,
+      "pageEnd": 544,
+      "arabic": "واما القول بالجبر: فليس فيه اعتبار المظهرية (4) الامكانية الانسانية أصلا ويبطله ضرورة الفرق بين نحو السقوط والهبوط.",
+      "english": "The doctrine of compulsion [jabr], on the other hand, takes no account whatsoever of the human being as a possible locus of manifestation. It is refuted by the necessarily apprehended difference between, for example, an involuntary fall and a deliberate descent.",
+      "notes": "Source contrasts «السقوط والهبوط», involuntary falling versus intentional moving down.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.956",
+      "number": 956,
+      "pageStart": 544,
+      "pageEnd": 544,
+      "arabic": "واما القول بالقدرة المستقلة فليس فيه اعتبار جهة الأحدية الحقيقية والوجه الخاص، هذا ما عندي، والله أعلم.",
+      "english": "And the doctrine of an independently operative creaturely power does not take into account the Real's true Oneness and the particular face [al-wajh al-khāṣṣ]. This is how I understand the matter, and God knows best.",
+      "notes": "Fanārī rejects both jabr and independently creative human power.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.957",
+      "number": 957,
+      "pageStart": 544,
+      "pageEnd": 545,
+      "arabic": "ثم نقول: فمن علامات من عرف هذه الأصول المحققة لأحدية الذات والفعل في الكل كشفا لا عن فطنة، انه يجد حيرة لا يتوقع رفعها ولا يشك فيها ولا يمكنه دفعها، لان الكشف يفيد شهود الأحدية والوجه الخاص، فإذا صار ذلك الشهود ملكة راسخة وذلك هو المراد، لا يمكن رفع الحيرة من احكام التعدد، كالتكليف بالتعبد كما مر في نظم الشيخ الكبير قدس سره (1). ومتى لم يجد ذلك المذكور من الحيرة فليس علم هذه الأصول ذوقيا - بل من وراء الحجاب المظهري - ومن علاماته أيضا تحقيق ان ليس لشئ في نفس الامر صورة معقولة أو محسوسة محققة، بل بالنسبة إلى مرتبة ما أو حال أو مدرك بحسب قوة أو صفة أو آلة، يدلك على ذلك ان الصور المعقولة يتفاوت بتفاوت العقول قوة وحدة ودقة واستقامة.",
+      "english": "We further say: One mark of a person who knows through unveiling, and not merely through intelligence, these principles which establish the oneness of Essence and action in everything is an irresolvable bewilderment [ḥayra]—one which he does not expect to be removed, does not doubt, and cannot dispel. Unveiling grants witnessing of Oneness and the particular face. Once that witnessing becomes an established habitus—and this is the intention—bewilderment in the face of the rulings of multiplicity cannot be removed, as with the obligation of worship previously mentioned in the Great Shaykh's verse. Whoever does not experience this bewilderment does not know these principles by spiritual taste but from beyond the veil of manifestation. Another sign is realising that nothing possesses a determinate intelligible or sensible form in itself, apart from its relation to some degree, state, or perceiver endowed with a certain power, attribute, or instrument. Intelligible forms differ with the differing strength, sharpness, subtlety, and correctness of intellects.",
+      "notes": "Epistemological perspectivism is expressly paired with a real unitary source, not mere relativism; ḥayra remains after unveiling.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.958",
+      "number": 958,
+      "pageStart": 545,
+      "pageEnd": 545,
+      "arabic": "فمنها ما لا يقدر الأوهام على معارضتها، ومنها ما تعارضه، وهذا التفاوت هو منشأ الاختلاف في المعقولات، واما المحسوسات فلان الجواهر لا يدركها الحس الا بواسطة احساس الاعراض والحكم العقلي بان لها محلا، فربما يكون الجوهرية نسبة جمعية الاعراض كما ذهب إليه الاشراقية، ومن المتكلمين من قال بتجانس الجواهر الفردة، إذ اختلاف حقائق الأجسام حينئذ يكون باختلاف الاعراض، واما الاعراض فلانا لا تبقى زمانين، فلا يتناولها الإشارة الحسية لا سيما غير القارة، وذلك لان الاعراض على قاعدة التحقيق صور النسب المتعينة التابعة للنسب الجوهرية، ولا شك ان لكل آن مدخلا في تعينها كما قال تعالى: كل يوم هو في شأن (29 - الرحمن) أي كل آن كما مر، والنسبة تتجدد الانات فكذا صورتها بل وكذلك نسبة الجوهرية لا سيما إذا تقومت بالنسبة العرضية، وإلى ذلك الإشارة بقوله تعالى: بل هم في لبس من خلق جديد (15 - ق) وإذا تجددت كل آن لا يضبطها الإشارة الحسية فلا يدركها الحواس.",
+      "english": "Some intelligible forms cannot be contradicted by imagination; others can, and this difference is a source of disagreement concerning intelligibles. As for sensible things, the senses apprehend substances only through accidents and an intellectual judgement that those accidents have a substratum. Substantiality may even be a collective relation of accidents, as the Illuminationists hold; some theologians say that indivisible atoms are homogeneous, so that the differences among bodily things arise from different accidents. As for accidents, they do not endure for two instants and therefore elude a stable sensory indication, especially non-abiding accidents. According to the realised principle they are forms of determinate relations subordinate to substantial relations; each instant plays a part in determining them, as in 'Every day He is upon an affair' [Qurʾān 55:29], that is, each instant, as already explained. The relation is renewed at each instant, and so is its form; even substantiality as a relation undergoes such renewal, especially when constituted through accidental relations. This is indicated by 'Yet they are in confusion concerning a new creation' [Qurʾān 50:15]. Renewed at every instant, these forms cannot be fixed by sensory reference and thus escape stable sensory perception.",
+      "notes": "Distinguish Suhrawardian analysis of substance, kalām atomism, and Akbarian renewal of accidents; these are presented as arguments, not experimentally verified theories.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.959",
+      "number": 959,
+      "pageStart": 545,
+      "pageEnd": 545,
+      "arabic": "ثم نقول: فان قيل: فيما يتعلق نفس الامر وما الواقع المحقق فيه؟",
+      "english": "We further say: If it is asked, 'To what does the thing as it is in itself [nafs al-amr] pertain, and what reality is established therein?'",
+      "notes": "Marker «959 ms415 - 4» interrupts the page transcription; recovered as distinct §4.959.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.960",
+      "number": 960,
+      "pageStart": 545,
+      "pageEnd": 546,
+      "arabic": "قلت: مجموع الأمور والاحكام التي شأنها الاختلاف بحسب اختلاف الادراكات العقلية إن كانت معنوية، وبحسب اختلاف الادراكات المشهودة إن كانت حسية، سواء كانت واقعة بالنسبة أو غير واقعة بالنسبة، وذاك هو مراد العارف بالله إذا سأل ما مراد الحق من الخلق فيما قال ما هم عليه، وهذا يظنه أكثر العالم انه واضح وليس كذلك، لاستيناسهم بعد المثل المتجددة بقاء للأول ولا سيما في الأجسام، فتأنيس العقل لذلك بما مر بيانه في الجوهر والعرض.",
+      "english": "I reply: It is the totality of matters and rulings whose character allows variation according to differing intellectual apprehensions when intelligible and according to differing acts of witnessing when sensible, whether those matters obtain relationally or without an additional relation. This is what the knower of God means when he asks about the Real's intention in creating beings 'as they are'. Most people think that expression is obvious, but it is not, because they have become accustomed, after each renewal of similar forms, to suppose the first one still remains, especially with bodies. The intellect's habitual interpretation of this was explained in the discussion of substance and accident.",
+      "notes": "This account of nafs al-amr is condensed and open to source collation; the renewed likeness is not numerically the first.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.961",
+      "number": 961,
+      "pageStart": 546,
+      "pageEnd": 546,
+      "arabic": "ويؤيد هذا المذهب شبه السوفسطائية المنكرة لحقائق الأشياء مما هي مذكورة في العلوم النظرية، غير أن غلطهم في انكار الذات، فان هذه النسب من الجوهرية والعرضية والفلكية والعنصرية وغيرها صفات ذات التجلي الاحدى الوجودي الأزلي الأبدي المتجدد نسبها مع كل قابل كما تحقق، وتلك النسب هي الحقائق الأسمائية باعتبار والكونية بآخر.",
+      "english": "The familiar sceptical arguments of the Sophists, who deny the realities of things, lend support to this position as studied in the theoretical sciences; their error, however, consists in denying the underlying Essence. These relations—substantial, accidental, celestial, elemental, and the rest—are attributes of the Essence of the one existential self-disclosure, eternal and everlasting, whose relations are renewed with every receptive locus, as established. Considered one way these relations are the realities of the Names; another way they are cosmic realities.",
+      "notes": "The author appropriates an epistemic argument without accepting global denial of reality.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.962",
+      "number": 962,
+      "pageStart": 546,
+      "pageEnd": 546,
+      "arabic": "ثم نقول: ومن علامات هذا الذوق - أي ذوق النظر إلى أحدية ذات الوجود والوجه الخاص - أمور:",
+      "english": "We further say: There are several marks of this spiritual taste—the taste of beholding the Oneness of the Essence of Being and the particular face.",
+      "notes": "Introduces eight practical marks of recognition.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.963",
+      "number": 963,
+      "pageStart": 546,
+      "pageEnd": 546,
+      "arabic": "أحدها: ان لا يتأسف صاحبها على فوات أمر، وإن كان الواقع مرجوح الامرين بحسب نظره أو مزاجه أو حاله أو موطنه أو مرتبته، علما (1) منه بان سببه اللائح أمر اعتباري، فلعل المرجوح هو الراجح باعتبار آخر أو اعتبارات أخرى كما قال تعالى: فعسى ان تكرهوا شيئا وهو خير لكم... الآية (216 - البقرة). وقال: خف إذا أصبحت ترجو، وارج ان أصبحت خائف * * رب مكروه مخوف فيه خير ولطائف",
+      "english": "First, its possessor does not grieve over the loss of any matter, even when what occurs seems the less favourable of two possibilities from the standpoint of his judgment, temperament, state, place, or rank. He knows that the apparent reason for preferring one is a matter of consideration: the seemingly worse might be the better from another perspective or several, as God says, 'Perhaps you dislike something while it is good for you' [Qurʾān 2:216]. Hence the verse: 'Fear when you awake in hope, and hope when you awake afraid; often what is feared and disliked contains good and subtle graces.'",
+      "notes": "No denial of ordinary moral distinctions follows from relative preference. Preserve Qurʾān and poetic source distinctions.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.964",
+      "number": 964,
+      "pageStart": 546,
+      "pageEnd": 546,
+      "arabic": "أو لأنه محض فعل الحق الذي هو مبدأ كل خير، ولخير ما اختاره، أو لان خلاف الواقع ممتنع ولا تأسف على فوات الممتنع، بل نقول كما قال النبي صلى الله عليه وآله: لو قدر لكان.",
+      "english": "Or he does not grieve because what happens is entirely an act of the Real, the principle of every good, who has chosen it for a good purpose; or because what contradicts the actual occurrence is impossible, and one does not grieve over what could never occur. Instead, as the Prophet is reported to have said, one says: 'Had it been decreed, it would have happened.'",
+      "notes": "Alternative reasons belonging to the first mark, not a separate item; verify reported wording.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.965",
+      "number": 965,
+      "pageStart": 546,
+      "pageEnd": 547,
+      "arabic": "الثاني: ان لا يندم ولا يقول على شئ بعينه كما قال تعالى: ولا تقولن لشئ انى فاعل ذلك غدا الا ان يشاء الله (23 - 24 - الكهف) لان الامر بيد الله فيحتمل ان يكون المقدر بخلافه ويمتنع هو.",
+      "english": "Second, he does not repent in regret or confidently pronounce upon any individual future matter, as God says: 'Do not say of a thing, \"I shall do that tomorrow,\" except if God wills' [Qurʾān 18:23–24]. For the matter lies in God's hand, and what is decreed may be the opposite, making the proposed thing impossible.",
+      "notes": "The source's «لا يندم» denotes regretful self-reproach, not negation of repentance as a religious obligation; interpretation must respect broader law.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.966",
+      "number": 966,
+      "pageStart": 547,
+      "pageEnd": 547,
+      "arabic": "الثالث: ان لا يتشوق لتحصيل مطلب معين شريف بالنسبة أو غير شريف بالنسبة ولا يتعمل لحصوله، ففي التعمل دعوى المكنة لنفسه وينافيه رؤية الأحدية والوجه الخاص، الا ان عينه الوقت، أي عينه الوارد الإلهي بحسب الأمور المذكورة بعد، والاستثناء منقطع، بمعنى لكن، لو عين ذلك المطلب وقته كوقت النوم لطلب مبيت ما أو حاله كارادة التوضئ لطلب ماء ليصلح له أو الجوع لما يسد به جوعته أو مزاجه كمعالجة ما ولو بأكل وشرب أو استراحة أو موطنه، فان شأن المساجد ان يطلب فيها العبادات لا المبايعات، أو مرتبته التي أقيم فيها، كطلب رتبة المرشدية ما به اصلاح حال المريدين، وبهذا المعنى يكون الصوفي ابن وقته - وإن كان الكامل أبا وقته - وهذا - أعني العمل بما عينه الوارد الإلهي - مرتبة قرب النوافل على ما قال: فبي يسمع وبي يبصر وبي يبطش، وإن كان عند أهل الظاهر محمولا على أن يكون الملحوظ في كل فعل من أفعاله جنب الله تعالى، كما ذكره القاضي عياض في الشفاء: أي جهة من جهات العبادة وإن كان في المباحات كالاكل بنية القوة على الطاعة، والنكاح بنية غض البصر وتكثير العابدين، والخروج عن البيت بنية نظر العبرة أو بنية الامر بالمعروف والنهى عن المنكر أو بنية طلب ما به يتمكن من الطاعة والعود إلى البيت بنية صلة الرحم أو الانزواء للطاعة ونحوها.",
+      "english": "Third, he does not yearn for or contrive the acquisition of a determinate object, whether relatively noble or otherwise. To contrive for it implies a claim of independent capacity, contrary to witnessing Oneness and the particular face—unless the present moment itself determines that object. That is, if a divine incoming inspiration [wārid] specifies it in accordance with the conditions to be mentioned, the exception is disconnected, meaning 'but rather'. Thus the particular moment may determine the need for a place to sleep when sleep is due; a state may determine water for ablution or food when hungry; temperament may call for treatment by eating, drinking, or rest; location may require worship rather than commerce in a mosque; or one's station as a guide may require means for rectifying disciples' states. In this sense the Sufi is the child of his moment, though the perfected one is its father. Acting upon what the divine incoming event determines is, in this respect, the station of the nearness of supererogatory works, according to 'Through Me he hears, through Me he sees, and through Me he grasps.' Scholars of the outward sciences interpret this instead as keeping the aspect of God's service in view in every action, as al-Qāḍī ʿIyāḍ explained in al-Shifāʾ: an act of worship is intended even in permissible acts, such as eating for strength to obey, marrying to restrain the gaze and multiply worshippers, leaving home to observe lessons or enjoin right and forbid wrong or to obtain the means of obedience, and returning home to strengthen kinship or withdraw for worship, and similar acts.",
+      "notes": "Critical: exception for divinely specified needs prevents reading this as universal inactivity. Hadith-qudsī wording requires independent checking. The 'child/father of moment' contrast recurs later.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.967",
+      "number": 967,
+      "pageStart": 547,
+      "pageEnd": 547,
+      "arabic": "الرابع: ان لا ينفعل بكليته لأمر معين، بل لو انفعل فببعض الوجوه لبعض الوقائع، إذ لعل ذلك الامر لا يتسبب لذلك أو يعرض ما يدفعه، أو لان نظر الأحدية يجعله من نفسه لنفسه لا من غيره، وهذا أولي وأليق.",
+      "english": "Fourth, he is not wholly overwhelmed by any single occurrence. If moved by it, he is moved only in some respect by some events, since the expected consequence may not follow, or something may arise to prevent it; or, more fittingly, because witnessing Oneness makes him view the matter as proceeding from himself toward himself, not from something alien to him.",
+      "notes": "Avoid construing metaphysical identity as denial of other persons' rights.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.968",
+      "number": 968,
+      "pageStart": 547,
+      "pageEnd": 547,
+      "arabic": "الخامس: ان لا يرى في الكون تفاوتا لا في نفسه ولا فيما خرج عنه، إذ لا تفاوت في مقتضى الحقيقة الواحدة من حيث هو مقتضاها، أو لان التفاوت من التعددات المستهلكة في نظره، بل يرى نسبة جميع الصور الواقعة إلى الذات الأحدية كنسبة أعضاء زيد إلى حقيقته المعينة.",
+      "english": "Fifth, he perceives no disparity in the cosmos, either within himself or outside himself, since what follows from a single reality, insofar as it follows from that reality, contains no disparity; or because multiplicities disappear within his gaze. Rather, the relation of all occurring forms to the one Essence is like the relation of Zayd's limbs to his determinate reality.",
+      "notes": "Perspective of Oneness, not the claim that no individual distinctions are valid in law.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.969",
+      "number": 969,
+      "pageStart": 547,
+      "pageEnd": 548,
+      "arabic": "السادس: ان لا يحكم على المراتب بأنها موجودة محققة، بل نسبية لا عبرة بها، لذا قلنا: نخاف من صاحب هذا الذوق ترك تعظيم المراتب ولا يحكم على الوجود بان مرتبته كذا، فان ذلك في نظره فربما يكون أعلى أو أدنى، ومنه ما ورد في الشرع انه لا ينبغي ان يحكم على أحد بأنه من أهل الجنة أو أهل النار، الا على من نص عليه الرسول صلى الله عليه وآله - كالعشرة المبشرة - أو وارثوه (1).",
+      "english": "Sixth, he does not judge the degrees to be independently established existents; they are relational determinations without separate weight. For this reason we have warned that a possessor of this taste may neglect proper reverence for the degrees. Nor does he assert that a given existent necessarily belongs to this or that rank; this may be only how it appears to him, while its rank may be higher or lower. Accordingly, the revealed Law forbids declaring a particular person an inhabitant of Paradise or the Fire unless the Messenger expressly identified that person—as in the ten promised Paradise—or his inheritors did so.",
+      "notes": "Preserve the author's caution about neglecting distinctions. The added exception for inheritors requires theological and historical verification.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.970",
+      "number": 970,
+      "pageStart": 548,
+      "pageEnd": 548,
+      "arabic": "السابع: ان يتحقق ان حكم الحق وتجلياته في وجوده واختياراته في كل زمان وحال يختص بهما، والحكم بالاستمرار بحجاب المثل، أي نظر المحجوب ان الثابت عين الزائل، والحال انه مثله لا عينه، لذا قلنا: التجلي لا يتكرر، ثم إن السنة الإلهية وقعت برعاية الحجاب وأهله، تهمما بالأعم الأغلب، فاستأنسوا به وحكموا بموجبه وسرى حكم الان والشأن الإلهيين في المقيدين بحكمهما قهرا لا اختيارا، وصاحب هذا الذوق لا يحكم بشئ من ماض أو حال أو مستقبل على الآخرين، بل يقول: ما مضى فات والمؤمل غيب * * فلك الساعة التي أنت فيها",
+      "english": "Seventh, he realises that the Real's ruling, His self-disclosures within his own existence, and the choices made in every time and state are specific to those moments. Belief in uninterrupted sameness comes from the veil of recurring likenesses: the veiled person sees what is stable as identical to what has passed away, though it is a likeness rather than the same entity. Hence we have said that a self-disclosure never repeats. Divine custom nevertheless accommodates this veil and those within it, in consideration of the great majority, who grow familiar with it and judge accordingly. The rulings of each divine instant and affair extend over those bound to them by necessity, not their own unrestricted choosing. The possessor of this taste does not judge another by past, present, or future events, but says: 'What has passed is gone, and what you hope for is unseen; yours is the hour in which you now dwell.'",
+      "notes": "A state of epistemic care in temporal judgement, not an invitation to disregard observed evidence or jurisprudential procedure.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.971",
+      "number": 971,
+      "pageStart": 548,
+      "pageEnd": 548,
+      "arabic": "ويكون كما مر ابن وقته الذي هو نفسه - بفتح الفاء - وهذا قبل التحقق بمقام الكمال، والا فيصير أبا للانفاس والأحوال والأوقات والأرواح والصور والمواطن وغيرها، منه ينتشئ كل ذلك وبه يتعين ويظهر.",
+      "english": "He is therefore, as already explained, the child of his moment, which is his very breath [nafas]. This holds before he attains the station of perfection; afterward he becomes father of breaths, states, times, spirits, forms, locations, and more, for these proceed from him and are determined and manifested through him.",
+      "notes": "The later causal attribution is in the author's realised-human metaphysics; do not understand as independent divine creative power.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.972",
+      "number": 972,
+      "pageStart": 548,
+      "pageEnd": 548,
+      "arabic": "الثامن: ان لا يمزج حكم مرتبة بأخرى، كأن يكون المريد مطيعا والمراد مطاعا لا بالعكس، وحاصله ان يسند حكم كل حقيقة إليها لا إلى غيرها، وكل جزئي إلى كلية على موجب التمايز العلمي الذي يشهدها هذا الذائق في الحضرة العلمية، وذلك لان الوجود الواحد إذا انسحب على الحقائق والمراتب بأحديته وبالتوجه والاقتضاء الاحدى الشامل - لكن بحسب كل شأن من تلك الشؤون والأسماء المتعينة بها - لا يترتب عليه الاحكام الا بموجب التمايز العلمي الذي بينها ولوازمه.",
+      "english": "Eighth, he does not mix the ruling of one degree with another: for example, the seeker [murīd] should obey and the one sought [murād] should be obeyed, not the reverse. In short, he attributes the ruling of each reality to that reality alone, and every particular to its corresponding universal, in accordance with the differentiation of knowledge that the person of spiritual taste witnesses in the Presence of Knowledge. When the one Being extends across realities and degrees through its Oneness and its comprehensive, unitary orientation and demand, but according to each state and Name becoming determined therein, the resulting rulings arise only through the differentiation among them already established in Knowledge and its necessary consequences.",
+      "notes": "Preserves differentiated obligations and stations under ontological unity.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.973",
+      "number": 973,
+      "pageStart": 548,
+      "pageEnd": 549,
+      "arabic": "فمن شهد ذلك على ما هي عليه لا يحجبه حكم الوجود الواحد عن شهود التميز الأصلي ولم يخلط بين احكام المراتب، بل كان عارفا بها وبلوازمها التفصيلية، فكان مصيبا في حكمه، ولهذا يفتقر إلى الحضور الذي هو ملاك الامر بعد معرفة ما يحضر معه من المعلومات والمشهودات، متيقنا ان الحضور مع المجموع، وكذا الغفلة عن المجموع غير ممكن، فيتعين حكمها بحسب ما يعينه العلم الوقتي و الحالي والموطني والمزاجي والمرتبي، إذا ترجح شئ منها على موجب الغفلة، ففي كل حال حضور من وجه وغفلة من آخر، فكل حاضر غائب وبالعكس.",
+      "english": "Whoever witnesses the realities as they are is not veiled from their original distinctions by the ruling of one Being and does not confuse the rulings of the degrees. He knows them and their differentiated concomitants and therefore judges rightly. This requires presence [ḥuḍūr], the foundation of the matter, in addition to knowing the objects of knowledge and witnessing with which one is present. Such a person knows that being present with the totality, or absent-minded regarding the totality, is impossible. Presence and heedlessness are therefore determined by what the knowledge of that time, state, location, temperament, or rank specifies, whichever predominates. In every condition one is present in one respect and absent in another: every present one is in a certain respect absent, and conversely.",
+      "notes": "The author denies complete attention to all aspects at once, not principled possibility of realised knowledge.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.974",
+      "number": 974,
+      "pageStart": 549,
+      "pageEnd": 549,
+      "arabic": "ثم الحضور عبارة عن استجلاء المعقولات والاشتمال على المحسوسات بجمعية الآثار الحاصلة من العلم والشهود في صاحبها بحسب الرابطة التي بينه وبينها، ومن ثمراته تميز احكام ظاهر الشريعة عن احكام باطن الطريقة واحكام مطلع الحقيقة واحكام الأحدية التي هي ما بعد المطلع، كل في مرتبته ولأهله لمن ساعده فضل الله العظيم. الفصل الخامس من فصول الباب يتضمن ضابطا عزيزا عام الفائدة للمبتدى والمنتهى",
+      "english": "Presence is the clarified apprehension of intelligibles and the encompassing of sensibles through the gathering of the effects of knowledge and witnessing in their possessor, according to the connection linking the person with them. Among its fruits is discrimination between the rulings of the outward Sacred Law [sharīʿa], those of the inward spiritual path [ṭarīqa], those of the unveiling of Reality [ḥaqīqa], and those of Oneness beyond that unveiling—each at its own degree and for those properly qualified, through God's great grace. **Fifth Section of the Chapter: A precious and generally useful rule for beginners and the advanced.**",
+      "notes": "Fifth section heading occurs in this unit after prose, and should become a reader navigational heading.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    },
+    {
+      "id": "4.975",
+      "number": 975,
+      "pageStart": 549,
+      "pageEnd": 550,
+      "arabic": "في بيان البراءة عن التخليط المذكور والتنبيه على الحضور في الحقائق، مع ما يختص بالرتبة الإلهية وما ينضاف إلى الرتبة الكونية، محصلة مع ما سبق نقله غير مرة: ان لكل أحد بل كل موجود نسبة ذاتية إلى الرتبة الإلهية ونسبة كونية من حيث إنه سوى وعالم، وكذا لكل أمر يصدر منه بكسبه أو يرد عليه بلا كسبه تلك النسبتان، فينبغي لكل أحد ان يحضر مع ما يختص بكل من المرتبتين في نفسه وفيما يصدر منه أو يرد عليه ويخلص نسبته إلى تلك المرتبة، ولا يعمل اسناد حكم إلى مرتبة بتحكمه بحيث يسرى اثره في الخارج ويعمل بموجب اسناده التعملي، بل لا بد ان يحذر من التعمل مطلقا في كل أمر وحال وشر وخير، اللهم الا من حيث مرتبتي الشرع والطبع وبلسانهما ويديهما، فله التعمل من حيثيتهما، لكن مع عدم غيبته عما تحققه من نسبة الأصلية إلى المرتبة الإلهية الأحدية، والا فلا فرق بين هذا السالك أو العارف وبين العالم بظاهر الشريعة في زعمه.",
+      "english": "On freedom from the preceding confusion and awareness of realities: the matter involves what is distinctive of the divine degree and what pertains to the cosmic degree. Summarising what has often been transmitted already, every person—indeed every existent—has an intrinsic relation to the divine rank and a cosmic relation insofar as it is 'other' and part of the world. Likewise every action acquired by that person and every event that comes upon him without acquisition bears both relations. Everyone must therefore remain aware of what belongs to each of the two degrees, in himself and in what proceeds from or comes upon him, and assign the relation purely to the appropriate degree. He must not arbitrarily impute a ruling to a rank and then act as though his contrived attribution produced an outward effect. Rather, he must beware of self-willed contrivance in every matter and circumstance, good and evil alike—except insofar as the revealed Law and natural disposition, each in its own language and mode of operation, legitimately require effort. From those two standpoints he may act, provided he does not forget his realisation of the original relation to the divine rank of Oneness. Otherwise this wayfarer or knower differs in no real respect from an outward legal scholar as he imagines him.",
+      "notes": "The author does **not** abolish effort, law or action: the exception for sharʿ and ṭabʿ is explicit; separate ontological assertion from legal obligation.",
+      "grade": "source-aligned first-pass; print/manuscript collation pending"
+    }
+  ]
+}
