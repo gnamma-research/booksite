@@ -1,0 +1,212 @@
+{
+  "schema": "gnamma-misbah-increment-v1",
+  "stage": "R15g",
+  "date": "2026-11-14",
+  "startSection": "4.976",
+  "endSection": "4.995",
+  "sourceRepo": "OpenITI/0850AH",
+  "sourceCommit": "e2715c62fb458ce3ddc43b962cd55677cdd7bc35",
+  "sourceBlob": "7dc10e1d6db58ff524d05e820139dc1aa4ef8a07",
+  "entries": [
+    {
+      "id": "4.976",
+      "number": 976,
+      "pageStart": 550,
+      "pageEnd": 550,
+      "arabic": "مثال تخليص النسبتين إلى المرتبتين (1) في نفسه ان يسند في ذاته الوجود والكمالات المترتبة عليه من أصل العلم والقدرة وكل ما يتعلق بالتأثير والنزاهة من النقائص والرذائل إلى الألوهة، فيقي نفسه بالله من ادعاء نوع من الربوبية، ومن ثمراته التحقق بقولنا: لا حول عن معصية الله ولا قوة على طاعة الله، بل على كل ما يتعلق بتأثير ما وخير ما الا بتوفيق الله، ويستند الامكان العدمي ووجوه الامكان عن النقائص والرذائل وكلما يتعلق بمرتبة الامكان من الطاعة والعبودية والعجز والجهل إلى كونيته، فيقي جناب الحق بنفسه من نسبة وجه من وجوه العبودية والشين إليه، فالمتقى الحقيقي هو الجامع بين النسبتين.",
+      "english": "An example of assigning the two relations to their proper degrees within oneself is to ascribe to Divinity one's very existence and all perfections that follow from it—including the foundations of knowledge and power, everything pertaining to efficacy, and freedom from deficiencies and vices. In this way one protects oneself through God from claiming any manner of lordship. One fruit is the realised meaning of 'There is no power to turn away from disobedience of God, nor strength for obedience to Him', nor indeed for anything involving efficacy and goodness, except through God's enabling grace. One ascribes to one's cosmic condition privative possibility, its faces of defect and vice, and whatever pertains to possibility—obedience, servanthood, inability, and ignorance. Thus one safeguards the divine Presence through oneself against ascribing any creaturely servility or blemish to it. The truly godfearing one combines both relations.",
+      "notes": "Key paired attribution: ontological perfections to God and defects/servanthood to one's creaturely mode. Technical «لا حول ولا قوة» paraphrased by source.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.977",
+      "number": 977,
+      "pageStart": 550,
+      "pageEnd": 550,
+      "arabic": "ومثال تخليص النسبتين إلى المرتبتين في الأمور الصادرة ضرب اليتيم للتأديب الإلهي فيثاب عليه وللتعذيب الكوني فيعاقب عليه، والطاعات المشروعة والخيرات المعروفة لحسبة الهية يثاب عليها، وللرياء ولان يقال: جواد وقارئ وزاهد وعالم ومجاهد وعابد لا يثاب، بل يعاقب - كما ورد في الحديث -",
+      "english": "An example of assigning the two relations correctly in acts is the striking of an orphan: done as a divinely warranted act of discipline, it may merit reward; done as creaturely torment, it incurs punishment. Likewise, prescribed acts of devotion and acknowledged good works performed for God's sake are rewarded; performed for ostentation, to be called generous, a reciter, an ascetic, a scholar, a fighter, or a worshipper, they receive no reward but punishment, as the report states.",
+      "notes": "Historical moral example is not advice authorising physical punishment of a child; its function is to contrast intention and character of acts. Verify reports.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.978",
+      "number": 978,
+      "pageStart": 550,
+      "pageEnd": 550,
+      "arabic": "ومنه الفرق بين المهاجر لله ورسوله ومهاجر أم قيس، ومثال التعمل في أمر والعمل بموجبه ان يعتقدان وجوه الخيرات ولو بانفاق المال الحرام يفيد الثواب فيحج به، فقد روى أن مثله إذا قال لبيك لبيك، يجاب بلا لبيك ولا سعديك، وقد قيل: سمعتك تبنى مسجدا عن جباية * * وأنت بحمد الله غير موفق كمطعمة الجيعان من كسب فرجها * * جرت مثلا للخائن المتصدق فقال لها أهل الدراية والتقى * * لك الويل لا تزني ولا تتصدق",
+      "english": "Hence also the distinction between one who emigrates for God and His Messenger and the emigrant of Umm Qays. An example of contriving an act and acting on the supposed result is to imagine that apparent good works, even when financed with unlawfully obtained money, earn reward, and therefore to make pilgrimage with such money. It is related that when such a pilgrim pronounces 'At Your service', the answer is 'No service of yours is accepted, nor any happiness for you'. The poet says, in effect: 'I hear you build a mosque from unjust exactions, but God has not granted you success; like the woman who fed the hungry from the proceeds of her illicit relations, becoming a proverb for a faithless donor. Those of discernment and godfearingness told her: Woe to you! Neither fornicate nor give charity from its proceeds.'",
+      "notes": "Preserve rhyme/sense provisionally, distinguish poetry, report and legal ruling. The source's phrase «مهاجر أم قيس» points to an early migration anecdote.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.979",
+      "number": 979,
+      "pageStart": 550,
+      "pageEnd": 551,
+      "arabic": "واما التعمل مطلقا فيتضمن دعوى القدرة وهى ربوبية، فينبغي ان يحترز عنها بالكلية لأنها مما يختص بالألوهية، وقد قال تعالى: ويحذركم الله نفسه (28 - آل عمران) لكن إذا كان من حيث مرتبة الشرع كالسعي في امتثال الأوامر والامر بها واجتناب المناهي والنهى عنها بالحكمة الحسنة ثم بالمجادلة حسب الطاعة يدا ولسانا وقلبا، أو من حيث مرتبة الطبع كالسعي في تحصيل الكفاية لنفسه ولمن يعوله، فذلك لا بأس به لكن مع عدم الغيبة عن انه لأمر الله بذلك أو ندبه أو اباحته، فعند اعتبار ذلك ولو في الأكل والشرب أو الجماع يثاب عليها كما نطق به الحديث الصحيح أشار إليه الشيخ قدس سره في التفسير.",
+      "english": "Self-willed contrivance considered absolutely entails laying claim to power, a claim of lordship; one must therefore guard against this inasmuch as absolute power belongs exclusively to Divinity. God says, 'God warns you concerning Himself' [Qurʾān 3:28]. But when effort is undertaken from the degree of the revealed Law—seeking to fulfil commands, enjoining them, refraining from prohibitions, and forbidding them through sound wisdom, then discussion, and as required through hand, tongue, and heart—or from the degree of natural constitution, such as seeking sufficiency for oneself and one's dependants, there is no objection. One must simply not be heedless that God commanded, recommended, or permitted it. With that intention even eating, drinking, and marital intercourse may be rewarded, as the sound report indicates and as the Shaykh mentioned in his commentary.",
+      "notes": "The prohibition concerns independent self-assertion, NOT effort to fulfil obligations or provide for family; this is the source's explicit limitation.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.980",
+      "number": 980,
+      "pageStart": 551,
+      "pageEnd": 551,
+      "arabic": "ثم نقول: ومثل هذا المستخلص من كل جميعة ذاتية أو صفاتية أو فعلية روحانية أو طبيعية شرعية أو عادية، ما يختص بكل من الحقائق الكونية والإلهية التي ظهر حكم الجمعية وروحها وصورتها منها ليلحق كل فرع بأصله، برئ من التخليط المذكور، فهو المتحقق بمقام الاخلاص الذي ليس للشيطان عليه سلطان، واصلها تحرير حكم الأحدية التي هي مرتبة ربك الاعلى الذي امرت بتسبيح اسمه عن حكم الكثرة التي انصبغ كل كون به عابدا كان أو عبادة، ولذلك السر شرع التكبير حال الانتقال في أحوال العبادة الصلواتية الجامعة لاختلاف الشؤون المشتملة على التوجه الروحاني الباطني والبدني الظاهري القولي والفعلي في المرتبة الانسانية (1) ثم الحيوانية (2) ثم النباتية (3) إلى أن يفضى إلى الشهود مع الله حالة التشهد، لذلك صارت معراج المؤمن، وذلك لان معنى التكبير تنزيهه عن قيد الجهات المختلفة والتحولات وعن قيد التعينات العلمية والاعتقادية المتنوعة بحسب المراتب وسائر احكام الحصر الظاهرة والباطنة، فمعنى كل تكبير صلواتي: الله أكبر من أن يتقيد بهذه التحولات العبودية والمراتب الكونية.",
+      "english": "We further say: Someone who extracts, from every essential, attributive, active, spiritual, natural, legally prescribed, or customary gathering, what belongs specifically to the divine and cosmic realities from which the gathering's ruling, spirit, and form appear—thereby returning each branch to its origin—is free from the confusion described above. He attains the station of sincerity [ikhlāṣ] over which Satan holds no authority. Its basis is to free the ruling of Oneness, the degree of your Lord Most High whose Name you are commanded to glorify, from multiplicity, by which every cosmic thing is coloured, whether worshipper or act of worship. This is the mystery underlying the prescribed takbīr at transitions between postures in ritual prayer, which gathers differing states: inward spiritual orientation and outward bodily speech and action at the human, animal and vegetal levels, until one arrives at witnessing with God in the tashahhud. Thus prayer becomes the believer's ascent. For takbīr declares Him beyond restriction by different directions, transformations, and diverse conceptual and doctrinal determinations tied to degrees, or by any outward or inward limitation. Every takbīr in prayer therefore means: God is greater than being delimited by these transformations of servanthood and cosmic degrees.",
+      "notes": "A philosophical exposition of prayer; ensure the user-facing reader distinguishes ritual obligation from esoteric explanation. Verse alludes to 87:1.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.981",
+      "number": 981,
+      "pageStart": 551,
+      "pageEnd": 552,
+      "arabic": "ثم نقول: في سر اشتراط أحدية التوجه وعدم التخليط في كل قصد يترتب عليه المقصود حتى في الدعاء، الذي ذكره الشيخ قدس سره في شرح الحديث: ان معنى استجابته أحدية التوجه بظاهره وباطنه وباستحضار الامر المطلوب، وسيجئ إن شاء الله تعالى.",
+      "english": "We further say: Concerning the mystery of requiring a unified orientation and freedom from confusion in every intentional act that is to attain its purpose—even in supplication—the Shaykh explained in his commentary on the report that the meaning of a prayer's response is unity of orientation outwardly and inwardly, while making the requested matter present to oneself. This will be explained, God willing.",
+      "notes": "Orientation and proper conception of goal as condition for duʿāʾ; source is quoted indirectly.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.982",
+      "number": 982,
+      "pageStart": 552,
+      "pageEnd": 552,
+      "arabic": "اعلم أن كل فرد من الموجودات الظاهرة والباطنة من حيث هو ليس الا واحدا، والواحد لا يقابل الا بالواحد مثله ولا يلحق الا بأصله الاحدى، مع لحوق مشاكله في الواحدية والتفرع على ذلك الأصل بأصله ذلك، وهذا الأصل شامل لرجوع كل من الافراد إلى النوع الواحد ولرجوع كل من الأنواع إلى الجنس الواحد.",
+      "english": "Know that each individual existent, whether apparent or inward, is, considered as itself, one alone. One thing corresponds only to another one like it, and returns only to its unitary origin—together with its correspondences in the degree of unity and its branching from that origin. This principle encompasses every individual's return to its one species and every species' return to its one genus.",
+      "notes": "Technical genus/species/individual hierarchy; no implication individual creatures have numerically one essence.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.983",
+      "number": 983,
+      "pageStart": 552,
+      "pageEnd": 552,
+      "arabic": "اما النوع: فلانه تمام حقيقة كل فرد، واما الجنس: فلانه تمام حصة كل نوع، والرجوع إلى الجنس لتلك الحصة، وإذا كان المقابلة والمحاذاة واللحوق انما هما بين المتماثلين في الوحدة، فمتى توجهت بقصد واحد كالدعاء إلى أمرين والمتشاكلين في التفرع عن أصل واحد أو بعمل واحد كالصلاة إلى أمرين كالعبادة والمراياة أو طلبت ان يحصل بذلك القصد أو العمل من حيث أحديته غرضين كالدنيوي والأخروي وقد مر أمثلته، أو أضفت فرعا إلى أصلين، كما أضفت إلى غير أصله، وذلك كان تتوجه بأحد الوجوه الخمسة السالفة إلى وجهين منها أو إلى غير أصله، كان تقصد العمل بمقتضى روحانيتك وجسمانيتك في حال واحد، كالوضوء بنية التقرب والتبرد، أو أضفت جزء واحدا إلى كلين، كان تضيف مرتبتك إلى حضرة الوجوب وحضرة الامكان دفعة من حيث هما اثنان، بل من حيث العماء أو مقام الجمع الاحدى الجامع بينهما.",
+      "english": "A species constitutes the complete reality of each of its individual instances, and a genus the complete share possessed by each species; a species returns to its genus in virtue of that share. If correspondence, facing, and return occur only between things which correspond in unity, then whenever one turns with a single intention—for example supplication—toward two objects, even ones akin in branching from a common origin; or performs one work, such as prayer, for two aims, worship and display; or seeks through that one intention or act two aims, one worldly and one otherworldly; or attaches a branch to two origins rather than its own; or faces two of the five aspects previously described, or an aspect other than its origin; or intends to act simultaneously under the rulings of spirit and body, like making ablution with the two intentions of nearness to God and bodily cooling; or attributes one part to two wholes, such as attributing one's rank at the same time to the Presences of Necessity and Possibility considered as two, instead of to the Cloud or the unitary gathering that comprehends them—",
+      "notes": "A lengthy conditional whose consequence is §4.984. Whether all double intentions invalidate acts is a contested fiqh matter; this text discusses spiritual orientation, not a universal juristic ruling.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.984",
+      "number": 984,
+      "pageStart": 552,
+      "pageEnd": 552,
+      "arabic": "دخل عليك الحكم الشيطاني وارتفع الاخلاص الرحماني بتشتت الهمة وتفريق الجمعية والتخليط بين متنافي الاحكام وتغير التوجه الطلبي الكلى للانحراف عن المقابلة من بعض الوجوه، حرمت العلم الصحيح المميز لكل حقيقة مع احكامها، فحرمت اجتناء ثمرة علمك الذي هو التوجه التام وهى الفوز بالمطلوب.",
+      "english": "—then the satanic ruling enters and the sincerity belonging to the Merciful is withdrawn, because aspiration is scattered, gathering is divided, incompatible rulings are mixed together, and the total orientation of desire is diverted from direct correspondence in some respects. One is thus deprived of sound knowledge distinguishing each reality and its rulings, and so deprived of the fruit of that knowledge, complete orientation, which is attainment of the sought end.",
+      "notes": "This completes the conditional in §4.983; maintain difference between spiritual sincerity and formal legal validity.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.985",
+      "number": 985,
+      "pageStart": 552,
+      "pageEnd": 553,
+      "arabic": "وذلك كما قال الشيخ قدس سره في شرح الحديث: ان الإجابة بعد أحدية التوجه المذكور تابعة للتصور، فالأصح تصورا للحق يكون ادعيته مستجابة، وصحة التصور تابعة للعلم المحقق والشهود الصحيح كما قال عليه وآله السلام: لو عرفتم الله حق معرفته لزالت بدعائكم الجبال، وهؤلاء هم الموعودون بالإجابة في قوله تعالى: ادعوني استجب لكم (60 - غافر) إذ من لم يعرف لم يدع الحق، فلا يستجيب له، تم كلامه.",
+      "english": "As the Shaykh said in his commentary on the report: After the unified orientation mentioned, response depends upon the conception. Those whose conception of the Real is soundest have the most readily answered supplications. Sound conception follows verified knowledge and correct witnessing, as it is reported: 'If you knew God as He deserves to be known, mountains would move through your prayers.' These, he says, are those promised an answer in 'Call upon Me; I shall respond to you' [Qurʾān 40:60]. One who does not know Him does not truly address the Real in prayer and therefore does not obtain that answer. Thus far his words.",
+      "notes": "Quoted report requires independent isnād checking. Source's «فلا يستجيب له» is a specific mystical account, not a denial of ordinary divine mercy to others.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.986",
+      "number": 986,
+      "pageStart": 553,
+      "pageEnd": 553,
+      "arabic": "ومتى أيدك الله سبحانه بالهام الاحتراز مما ذكر ليتحقق أحدية التوجه المذكور مع اتقان الأصول السالفة المحققة لأحدية المتوجه إليه علما ذوقيا محققا، لا نظريا من وراء حجاب النظر أو تقليديا مشتبها، سلمت من التخليط والتشتيت واسلم الشيطان على يدك بعجزه عن صرفك عن جهة الواحد الاحد، وأفضى بك الحال والامر إلى أن تأخذ جميع ما يرد عليك من معدنه وعلى وجه وروده من أي مرتبة يرد وعلى يد من يرد من المظاهر المتوسطة أو تجلى الوجه الخاص الذي لا واسطة فيه ولا تعين له.",
+      "english": "When God supports you with inspiration to avoid these confusions, enabling the unity of orientation described, and with mastery of the earlier principles establishing the Oneness of the One toward whom you turn—through verified spiritual tasting, not merely theory behind the veil of reason or uncertain imitation—you will be safe from confusion and dispersion. Satan will submit at your hands, being unable to divert you from the direction of the One alone. Your state will bring you to receive everything that comes to you from its own source and according to its mode of coming: whatever rank it comes from, whether through an intermediate locus or through the particular face of self-disclosure, which has no intermediary or determinate form.",
+      "notes": "«أسلم الشيطان على يدك» may echo a hadith but this is not established without checking. Contrasts mediated causes and unmediated particular face.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.987",
+      "number": 987,
+      "pageStart": 553,
+      "pageEnd": 553,
+      "arabic": "اما المظاهر سواء كانت شروطا لتمام استعداد القابل لقبول اثر الحق سبحانه كما هو عندنا، أو واسطة في ايصال اثره كما عند أهل النظر، ولذلك لم يعرفوا اثر الوجه الخاص، فاما من نفس التوجه - وذلك هو الامر المنبعث منه العائد اثره عليه على غير وجه الانبعاث وإليه ينظر قوله تعالى: ولا يحيق المكر السيئ الا باهله (43 - فاطر) - واما من غيره، وذلك الغير إن كان من حضرة المعاني فهو الاسم الملحوظ المتعين من أسماء الله تعالى، وإن كان من حضرة الأرواح فهو الحقيقية الملكوتية، فالخير المحض الملك والشرير المحض الشيطان، والمتردد بينهما الجن، وإن كان من حضرة المثال فالحقيقة الممثلة وإن كان من الخيال المقيد فالحقيقة المتمثلة فقد يؤثر التخيل ما لا يؤثر التعقل، علم ذلك في إشارات ابن سينا.",
+      "english": "As for the intermediate loci, they may be conditions that complete the recipient's preparedness to receive the Real's influence, as in our account, or intermediaries conveying His influence, as held by speculative thinkers, who for that reason do not recognise the effect of the particular face. An incoming matter may arise from a person's own orientation, whereupon its effect returns upon the person in a mode other than its initial emergence—this is indicated by 'Evil plotting encompasses only those who practise it' [Qurʾān 35:43]. Or it may come from another. If that other belongs to the Presence of Meanings, it is a particular divine Name; if to the Presence of Spirits, it is a spiritual reality: in its purely good mode an angel, in its purely evil mode a devil, and when between the two a jinn. If it belongs to the imaginal Presence, it is the reality represented there; if to the individual imagination, it is a reality assuming a form within it. Indeed imagining may effect what intellection cannot, as indicated in Ibn Sīnā's al-Ishārāt.",
+      "notes": "Source's taxonomy of origins of incoming effects is historical philosophical/sufi theory. Reference to Ibn Sīnā must be identified in Ishārāt and verify the angel/jinn descriptions.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.988",
+      "number": 988,
+      "pageStart": 553,
+      "pageEnd": 554,
+      "arabic": "وإن كان من عالم الحس: فاما البشر أو غيره، والبشر اما نفسه - سواء كان متروحنا كالخضر وعيسى عليهما السلام أو غير متروحن - واما قوة توجهه، وهى الهمة المرسلة على ما قيل: همة الرجال تقلع الجبال، والهمة لغة نوع من القصد، واصطلاحا الباعث الطلبي المنبعث من النفوس والأرواح لمطالب كمالية ومقاصد غائية، ويتنوع بحسب تنوع أهلها واختلاف مداركهم ومراتبهم.",
+      "english": "If it comes from the sensory world, it proceeds from a human being or from something else. In the human case, it may arise from the person's very self, whether spiritualised, like al-Khiḍr and Jesus—peace be upon them—or not; or from the force of that person's orientation, the directed aspiration [himma mursala]. Hence the saying 'The aspiration of men uproots mountains'. In ordinary language himma is a kind of intention; technically it is the force of seeking that issues from souls and spirits toward perfective objects and final ends. It varies according to the diversity of its possessors and their faculties and ranks.",
+      "notes": "Supernatural effects ascribed to himma are from the text's esoteric framework; the saying requires attribution.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.989",
+      "number": 989,
+      "pageStart": 554,
+      "pageEnd": 554,
+      "arabic": "فمنهم من يهتم بأمور الدنيا المذكورة أصولها في قوله تعالى: زين للناس حب الشهوات من النساء... الآية (14 - آل عمران).",
+      "english": "Some direct their aspiration to matters of this world, the chief forms of which are mentioned in God's words: 'Made attractive to people is love of the desires of women...' [Qurʾān 3:14].",
+      "notes": "A three-stage classification of himma begins.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.990",
+      "number": 990,
+      "pageStart": 554,
+      "pageEnd": 554,
+      "arabic": "ومنهم من يهتم بأمور الآخرة والكمالات الروحانية، وللآخرة أكبر درجات وأكبر تفضيلا (21 - الاسراء)",
+      "english": "Others direct their aspiration toward the Hereafter and spiritual perfections, and 'the Hereafter is greater in degrees and in distinction' [Qurʾān 17:21].",
+      "notes": "Distinguish worldly and otherworldly aspiration.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.991",
+      "number": 991,
+      "pageStart": 554,
+      "pageEnd": 554,
+      "arabic": "ومنهم من يتعلق همته بما عند الله وفي الله، وفي ذلك فليتنافس المتنافسون (26 - المطففين) ويتفاوت بحسب حظوظهم من الله تعالى وبحسب مقاماتهم ومراتبهم الكمالية والأكملية.",
+      "english": "Others attach their aspiration to what is with God and in God: 'For this let competitors compete' [Qurʾān 83:26]. Even they differ according to their portions from God and their stations and degrees of perfection and supreme perfection.",
+      "notes": "Highest focus is in/on God, but rankings persist.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.992",
+      "number": 992,
+      "pageStart": 554,
+      "pageEnd": 554,
+      "arabic": "ومن تعلق همته بأمر منها فهو مطلبه الغائي وإليه غاية وصوله ان قدر له، والأكمل منهم لا تعلق لهمته غير الحق الخالص من غير التفات عشقي إلى ما ذكر، كذا قال الجندي.",
+      "english": "For anyone whose aspiration attaches to one of those things, it is the final goal sought and, if allotted to him, the limit of his attainment. The most perfect, however, attach their aspiration to nothing besides the Real alone, without any passionate turning toward those other ends. Thus al-Jandī said.",
+      "notes": "Explicit attributed source al-Jandī; mark closure.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.993",
+      "number": 993,
+      "pageStart": 554,
+      "pageEnd": 554,
+      "arabic": "واما غير البشر فقوة سماوية علوية منجذبة إلى من ورد عليه بنسبة روحانية ومناسبة لذلك الفلك يقتضيها تعين روحه، أو بنسبة مولدية يقتضيها طالع مسقط نطفته بحسب باطنه أو طالع ولادته بحسب ظاهره. هذا كله في مفاريدها.",
+      "english": "If the influence is not from a human being, it may be a higher heavenly power drawn toward the recipient through an affinity of spirit and correspondence to a sphere, as required by the determination of his spirit; or through a generative affinity required by the ascendant at the descent of his seed, relative to his inward aspect, or by the ascendant of his birth, relative to his outward aspect. All this concerns their separate kinds.",
+      "notes": "Premodern natal astrological doctrine, not established causal science. «مسقط نطفته» should be interpreted literally as timing of seminal descent, not assumed fertilisation moment.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.994",
+      "number": 994,
+      "pageStart": 554,
+      "pageEnd": 554,
+      "arabic": "واما مركباتها: فاما مركب من كلها أو بعضها - مع انضمام حكم تجلى الوجه الخاص إلى الكل - فهذه حاصرة لطرق التنزلات الإلهية والواردات الربانية والتلقيات المتنوعة والالقاءات المتفرقة لا خارج عن هذا الضابط.",
+      "english": "As for combinations, they are composed from all or some of these influences, together with the ruling of the self-disclosure of the particular face that reaches them all. This classification encompasses the paths by which divine descents, lordly incoming influences, diverse receptions, and different kinds of casting into the soul occur; nothing lies outside the stated scheme.",
+      "notes": "The author claims exhaustiveness for his own taxonomy; independent verification not claimed.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    },
+    {
+      "id": "4.995",
+      "number": 995,
+      "pageStart": 554,
+      "pageEnd": 555,
+      "arabic": "واعلم أن صورة الدعاء المشروعة دليل أحدية التوجه بالمعنى المذكور، فقد قال الشيخ قدس سره في شرح الحديث: اليد الواحدة تترجم عن ظاهر الداعي والاخرى عن باطنه واللسان عن جملته، ومسح الوجه تنبيه على الرجوع إلى الحقيقة الجامعة بين الروح والبدن، وهى كناية عن عينه الثابتة في علم الحق أزلا، فان وجه الشئ حقيقته وهذا الوجه مظهر تلك الحقيقة، وبهذا عرف معنى: كل شئ هالك الا وجهه (88 - قصص) وعرف سر آخر يتعذر إفشائه. تم كلامه. الفصل السادس من فصول الباب في بيان التوجه الحبى",
+      "english": "Know that the prescribed form of supplication exemplifies unified orientation in this sense. The Shaykh said in explaining the report: 'One hand expresses the supplicant's outward being and the other his inward being; the tongue expresses his whole. Wiping the face indicates a return to the reality gathering spirit and body, symbolising one's fixed entity eternally present in the Real's Knowledge. For the face of a thing is its reality, and the physical face manifests that reality.' This reveals the meaning of 'Everything perishes except His Face' [Qurʾān 28:88], and another mystery which cannot be disclosed. Thus far his words. **Sixth Section of the Chapter: On the loving orientation.**",
+      "notes": "Hadith about the gestures of supplication and wiping the face requires independent authenticity and legal review; following heading must be separately navigable.",
+      "grade": "source-aligned first-pass; printed-image/manuscript collation pending"
+    }
+  ]
+}
