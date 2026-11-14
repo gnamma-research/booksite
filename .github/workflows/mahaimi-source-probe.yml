@@ -1,0 +1,19 @@
+name: Mahaimi one-off public-source connectivity probe
+on:
+  push:
+    paths:
+      - tools/mahaimi_page_probe.py
+      - .github/workflows/mahaimi-source-probe.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python tools/mahaimi_page_probe.py

@@ -1,0 +1,88 @@
+name: GNAMMA Atlas current publication and historical-download integrity
+
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - 'research/intellectual-atlas/**'
+      - '.github/workflows/atlas-release-artifacts.yml'
+  push:
+    branches: [master]
+    paths:
+      - 'research/intellectual-atlas/**'
+      - '.github/workflows/atlas-release-artifacts.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: intellectual-atlas-publication-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  current-atlas-release-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Current 404-node atlas integrity and pinned corpus
+        run: |
+          node --check research/intellectual-atlas/atlas-app.js
+          node --check research/intellectual-atlas/corpora/corpora.js
+          python research/intellectual-atlas/build.py
+      - name: Reject stale generated web and publication data
+        run: git diff --exit-code -- research/intellectual-atlas/index.html research/intellectual-atlas/publication.json
+      - name: Verify current metadata and frozen historic downloads
+        run: |
+          python - <<'PY'
+          import hashlib, json, re, zipfile
+          from pathlib import Path
+          p = Path('research/intellectual-atlas')
+          d = json.loads((p/'downloads/intellectual-atlas-data.json').read_text())
+          m = json.loads((p/'publication.json').read_text())
+          registry = json.loads((p/'corpora/registry.json').read_text())
+          assert (len(d['nodes']),len(d['edges']),len(d['sources']),len(d['textual_families'])) == (404,377,374,21)
+          assert (m['entries'],m['textual_relationships'],m['sources'],m['textual_family_routes']) == (404,377,374,21)
+          assert {'Books by century (default)','geographical map','source and reception network'} <= set(m['visual_modes'])
+          assert 'fiqh-research-2026-11-10' in m['ui_revision']
+          assert m['researched_fiqh']['distinct_works']==431 and m['researched_fiqh']['relationships']==247
+          assert m['hanafi_atlas_benchmark']['catalogue_entries']==84
+          assert m['hanafi_atlas_benchmark']['contextual_relations_kept_separate']==18
+          assert m['chronology_enrichment']['alreq_records_with_sourced_author_death_anchor']==764
+          assert m['chronology_enrichment']['alreq_records_still_without_author_death_anchor']==3393
+          assert len(registry['books']) == 30 and len(registry['relationships']) == 5
+          fiqh = [b for b in registry['books'] if 'fiqh' in b['disciplines']]
+          assert len(fiqh) == 10
+          assert sorted(b['madhhab'] for b in fiqh).count('comparative') == 1
+          html = (p/'index.html').read_text(encoding='utf8')
+          embedded = json.loads(re.search(r'<script type="application/json" data-atlas>(.*?)</script>',html,re.S).group(1))
+          assert embedded == d
+          assert 'atlas-geo.js' in html and 'atlas-hanafi.css' in html
+          assert (p/'corpora/geo-events.json').is_file() and (p/'atlas-geo.js').is_file()
+          assert (p/'corpora/discipline-atlas.js').is_file()
+          assert (p/'corpora/canonical-synopsis.js').is_file()
+          assert (p/'corpora/early-jurists.json').is_file()
+          assert m['bibliography_map']['registered_early_historical_authorities']>=16
+          assert (p/'corpora/expansion.html').is_file()
+          assert (p/'corpora/expanded-bibliography.json').is_file()
+          assert (p/'corpora/manuscript-shortlist.json').is_file()
+          assert (p/'corpora/manuscript-full.json').is_file()
+          assert (p/'corpora/bibliography-map.js').is_file()
+          assert m['geography']['geocoded_events']>=41 and m['geography']['author_events']>=30
+          assert m['bibliography_map']['alreq_source_linked_entries']==4157
+          assert m['bibliography_map']['openiti_primary_work_candidates']>=1800
+          archive = p/'downloads/Gnamma_Intellectual_Atlas_Offline_Revision8.zip'
+          assert archive.is_file()
+          with zipfile.ZipFile(archive) as z:
+              assert z.testzip() is None
+          print('PASS current web atlas + historical revision-8 ZIP integrity')
+          print('NOTE: revision-8 offline ZIP is a frozen predecessor and does not include the new online source-map UI.')
+          print('NOTE: obsolete 7.2 PDF builder is intentionally NOT run or republished; upgrading the PDF/offline edition is a separate release task.')
+          PY

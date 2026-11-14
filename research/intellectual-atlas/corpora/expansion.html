@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Expanded Bibliography · GNAMMA Islamic Sciences</title>
+<meta name="description" content="Browse source-linked works in the four Sunni fiqh schools, usul al-fiqh, Arabic grammar and balagha. OpenITI digital version catalogues and manuscript-only bibliographic records are distinguished.">
+<link rel="icon" href="../../../assets/gnamma-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="expansion.css?v=20261107-2">
+<script defer src="expansion.js?v=20261107-2"></script>
+</head>
+<body>
+<a class="skip" href="#results">Skip to books</a>
+<header class="top">
+  <a class="identity" href="../../../"><img alt="" src="../../../assets/gnamma-mark.svg"><span>gnamma <small>RESEARCH</small></span></a>
+  <nav><a href="../">Historical atlas</a><a href="index.html">Source reader</a><a href="../../">Research</a></nav>
+</header>
+<main class="layout">
+  <header class="page-header">
+    <div class="eyebrow">Islamic intellectual sciences · Source-linked bibliography</div>
+    <h1>Expanded work bibliography</h1>
+    <p class="lead">Fiqh and uṣūl in the four Sunni madhhabs; grammatical works and commentary families; balāgha, including <i>maʿānī, bayān</i> and <i>badīʿ</i>.</p>
+    <p class="notice"><strong>Catalogue ≠ acquired Arabic text.</strong> A pinned GNAMMA version can be read in the source library; an OpenITI discovery record identifies a digital version but its Arabic contents have not been separately checked by GNAMMA; a manuscript-catalogue record links to bibliographic evidence, not a supplied scan or full text.</p>
+  </header>
+  <section class="browse" aria-label="Filter the bibliography">
+    <div class="quick">
+      <label class="search">Find a work or author <input id="q" type="search" autocomplete="off" placeholder="Arabic or Latin title, author, source ID"></label>
+      <label>Science <select id="science">
+        <option value="fiqh">Fiqh</option>
+        <option value="usul">Uṣūl al-fiqh</option>
+        <option value="nahw">Naḥw</option>
+        <option value="sarf">Ṣarf</option>
+        <option value="balagha">Balāgha</option>
+        <option value="lugha">Lexicography</option>
+        <option value="all">All catalogued subjects</option>
+      </select></label>
+    </div>
+    <details id="more">
+      <summary>Schools, lineages and source status <span aria-hidden="true">⌄</span></summary>
+      <div class="more-grid">
+        <label id="school-wrap">Madhhab / attribution <select id="school">
+          <option value="all">All schools and unassigned</option>
+          <option value="hanafi">Ḥanafī</option>
+          <option value="maliki">Mālikī</option>
+          <option value="shafii">Shāfiʿī</option>
+          <option value="hanbali">Ḥanbalī</option>
+          <option value="unassigned">Unassigned / comparative</option>
+        </select></label>
+        <label id="lineage-wrap">Commentarial line / association <select id="lineage"><option value="all">All lines and unassigned</option></select></label>
+        <label>Bibliographic evidence <select id="provenance">
+          <option value="all">All levels</option>
+          <option value="gnamma">Available in GNAMMA reader</option>
+          <option value="openiti">OpenITI metadata candidate</option>
+          <option value="manuscript">Manuscript catalogue reference</option>
+        </select></label>
+        <label>Sort <select id="sort">
+          <option value="earliest">Earliest recorded author first</option>
+          <option value="alpha">Arabic title A–Z</option>
+          <option value="manuscripts">More reported manuscript witnesses first</option>
+        </select></label>
+      </div>
+      <button id="clear" type="button" class="secondary">Reset filters</button>
+    </details>
+  </section>
+  <div class="stats" id="stats" role="status" aria-live="polite">Loading source registers…</div>
+  <section id="results" aria-label="Works">
+    <div class="grid" id="books"></div>
+    <p id="empty" class="empty" hidden>No records match those filters. Try a broader school, science or source status.</p>
+    <div class="pagination" id="pagination" hidden>
+      <button type="button" id="previous">Previous</button>
+      <span id="pages" aria-live="polite"></span>
+      <button type="button" id="next">Next</button>
+    </div>
+  </section>
+  <section class="method">
+    <h2>How to read the catalogue</h2>
+    <p>These are research leads, not a definitive or exhaustive inventory of the four madhhabs or the Arabic linguistic traditions. The raw OpenITI extraction uses work-level deduplication and inherited metadata tags. Historical grammar-lineage labels and balāgha pathways are optional, overlapping search routes. The manuscript shortlist is drawn only from publicly visible bibliographic tables, with each original catalogue record linked. School assignments inferred from the author rather than the individual book are explicitly weaker.</p>
+    <p>Do not take a book's presence under a school as evidence of the school's settled doctrine; do not turn a shared text-title keyword into an assertion of commentary or influence. Multi-volume completeness, manuscripts, physical holdings, printed editions, translations and passage alignment still require examination.</p>
+    <p><a href="CORPUS_VERIFICATION.md">Existing 30-version verification record</a> · <a href="expanded-bibliography.json">OpenITI-derived research data</a> · <a href="manuscript-shortlist.json">Selected manuscript bibliography</a> · <a href="https://kitab-project.org/explore/" target="_blank" rel="noopener">KITAB corpus explorer</a> · <a href="https://app.alreq.com/ar/Categories" target="_blank" rel="noopener">Original manuscript categories</a></p>
+  </section>
+</main>
+<footer>GNAMMA Research · Bibliographic discovery, not verified critical editions · Source and rights notices accompany the registers.</footer>
+</body>
+</html>

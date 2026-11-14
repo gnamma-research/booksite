@@ -1,5 +1,9 @@
 # Darūrī release coordination — 20 October 2026
 
+## Canonical editorial source and PDFs — 24 October 2026
+
+**Latest reading-PDF revision:** `daruri13-lesson12-method-20261024`. [PR #172](https://github.com/gnamma-research/booksite/pull/172) merged at [`271e733`](https://github.com/gnamma-research/booksite/commit/271e73364daf29b64feabe9626e61131f0fbbc0c), following a [successful five-PDF and companion release build](https://github.com/gnamma-research/booksite/actions/runs/40118546982). The authoritative translation is `daruri/edition-r3-20261020.js`; do not restore a prior ZIP or older PDF map. §2 translates `sibār` as “method of examination” and `iʿtiqād` as “assent”; §4 emphasizes validation by induction; §7 translates `al-mutakallimīn` as “practitioners of kalām.” Matching glossary, source-controlled lexicon and study lessons are published together. Five canonical PDF totals are 243/131/97/72/68 pages (scholarly/study/English/Arabic/vowelled); the study-guide companion is 85 pages. All 565 static and 259 dynamic scholarly PDF references and current Editions fallback links were regenerated; source-preserving PDF maps and versioned assets are in `pdf-editions-manifest.json`. Existing reader themes, three reading modes, personal data and the latest Editions interface were preserved.
+
 ## AR vowel spacing — publisher claim released, 23 October 2026
 
 Matched the toolbar and both Editions AR/EN labels to one shared 600-weight, 14px, single-line font rule. All place the curved overbar at -4px (3px closer to the letters than before), so the visible gap no longer varies with the former 11–14px toolbar versus 15px Editions font metrics. Button dimensions and language-state behavior are unchanged. Runtime/cache revision: `20261023-ar-spacing1`; preserved concurrent backup, Hadith and PDF work.

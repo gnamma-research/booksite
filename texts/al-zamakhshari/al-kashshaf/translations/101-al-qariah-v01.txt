@@ -1,0 +1,144 @@
+AL-KASHSHAF / FUTUH AL-GHAYB — C07 REVIEWED
+10 November 2026
+
+All 277 existing passages have undergone electronic comparison. This is a revised working edition, not a definitive critical edition. Draft coverage: 19 Kashshāf sūrahs, 18 Ṭībī sūrahs and Fātiḥa I:677–686 only. I:687–770 remains untranslated. One Arabic gap, conflicting readings, complete page-image collation and final scholarly approval remain outstanding.
+
+SURAH 101 — al-Qāriʿah
+
+﴿بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ ٱلْقَارِعَةُ﴾ (101:1)
+The Calamity
+
+﴿مَا ٱلْقَارِعَةُ﴾ (101:2)
+What is the Calamity
+
+﴿وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ﴾ (101:3)
+Ah, what will convey unto thee what the Calamity is
+
+﴿يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ﴾ (101:4)
+A day wherein mankind will be as thickly-scattered moths
+
+﴿وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ﴾ (101:5)
+And the mountains will become as carded wool
+
+﴿فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ﴾ (101:6)
+Then, as for him whose scales are heavy (with good works)
+
+﴿فَهُوَ فِى عِيشَةٍ رَّاضِيَةٍ﴾ (101:7)
+He will live a pleasant life
+
+﴿وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ﴾ (101:8)
+But as for him whose scales are light
+
+﴿فَأُمُّهُۥ هَاوِيَةٌ﴾ (101:9)
+A bereft and Hungry One will be his mother
+
+﴿وَمَآ أَدْرَىٰكَ مَا هِيَهْ﴾ (101:10)
+Ah, what will convey unto thee what she is
+
+﴿نَارٌ حَامِيَةٌۢ﴾ (101:11)
+Raging Fire
+
+K101.01 — Heading and verses [IV:789]
+
+Meccan; eleven verses. [The DKA heading additionally places its revelation after Quraysh.]
+In the name of God, the All-Merciful, the Merciful.
+
+The striking calamity! (1) What is the striking calamity? (2) And what will make you know what the striking calamity is? (3) On the day when people will be like scattered moths, (4) and the mountains like carded wool. (5) As for one whose scales are heavy, (6) he will be in a life of contentment. (7) But as for one whose scales are light, (8) his mother will be an abyss. (9) And what will make you know what it is? (10) A blazing fire. (11)
+
+K101.02 — The day, the moths, and the mountains [IV:789–790]
+
+The adverbial “on the day” is accusative through an omitted verb indicated by al-qāriʿa (القارعة): “It strikes on the day when people will be like scattered moths.” He likens them to moths in their multitude, dispersal, weakness, abasement, and flight toward the summoner from every direction, as moths fly toward a fire. Jarīr says:
+“Al-Farazdaq, so far as I have known, and his people
+are like moths that swarm the fire of one warming himself.”
+
+Among their proverbs are “weaker than a moth,” “more abased,” and “more ignorant.” They are called farāsh (فراش) because they spread out and disperse. He likens the mountains to ʿihn (عِهْن), wool dyed in different colours, because the mountains are variously coloured; and to carded wool because their parts separate. Ibn Masʿūd read ka-l-ṣūf (كالصوف), “like wool.”
+
+T101.01 — Jarīr’s comparison [XVI:554–555]
+
+Meccan; ten verses. In the name of God, the All-Merciful, the Merciful. [The source’s count is retained; the verse text above uses the eleven-verse numbering.]
+
+On the line beginning “Al-Farazdaq”: mā (ما) ʿalimtu (علمت) means “what I have known,” and is parenthetical. He satirizes al-Farazdaq and his people: they are weak, abased, and ignorant, like moths which ghashīna (غشين)—that is, came in the covering darkness of night—to the fire at which the poet, Jarīr, warms himself. It is also said that ghashīna (غشين) means “plunged into.” Another explanation takes mā (ما) in mā (ما) ʿalimtu (علمت) as introducing a verbal noun, with a period of time understood: throughout the duration of my knowledge of them, al-Farazdaq and his people have been weak.
+
+K101.03 — Heavy and light scales [IV:790]
+
+Mawāzīn is the plural of mawzūn (موزون), something weighed: the deed that possesses weight and importance with God. Or it is the plural of mīzān (ميزان), a scale; their heaviness is their outweighing.
+
+An example is Abū Bakr’s report in his testament to ʿUmar, God be pleased with them both: “The scales of those whose scales are heavy on the Day of Resurrection are heavy only because they followed the truth and because of their weight in this world. A scale into which nothing but good deeds is placed rightly becomes heavy. The scales of those whose scales are light are light only because they followed falsehood and because of their lightness in this world. A scale into which nothing but evil deeds is placed rightly becomes light.”
+
+K101.04 — “His mother will be an abyss” [IV:790]
+
+“His mother will be an abyss” derives from their expression when invoking destruction upon a man: hawat ummuhu (هوت أمّه), “May his mother fall!” For when he hawā (هوى)—falls and perishes—his mother falls through bereavement and grief. The poet says:
+“May his mother fall! What a man the morning rouses to set out,
+and what a man the night brings back when he returns!”
+
+It is thus as though He said: “As for one whose scales are light, he has perished.”
+
+It is also said that Hāwiya (هاوية) is one of the names of the Fire. It is as though it were the deep Fire, so called because its people fall within it to a great depth, as in the report, “He falls in it for seventy autumns.” That is, his abode is the Fire. An abode is metaphorically called a mother because the mother is the child’s refuge and place of recourse.
+
+From Qatāda: “His mother will be an abyss” means that the crown of his head will fall into the bottom of Jahannam, because he is cast into it headfirst.
+
+T101.02 — The testament and the elegy [XVI:555–556]
+
+On “an example is Abū Bakr’s report”: the author of Jāmiʿ al-Uṣūl transmits the report from Razīn al-ʿAbdarī. We have given it in full under al-Aʿrāf.
+
+On the line “May his mother fall!”: its author is Kaʿb ibn Saʿd al-Ghanawī, lamenting his brother. Yabʿathu means rouses from sleep; al-ghādī (الغادي) is one who sets out in the morning and is circumstantial. Hawat ummuhu is an imprecation whose occurrence is not intended; rather, it expresses wonder and praise. That is: what a man the morning sends forth from him when he sets out, and what a man the night returns from him when he comes back! “From him” is omitted in both places because the discourse indicates it, just as it is omitted in “The clarified butter: two minas for a dirham.” This involves abstraction, tajrīd (تجريد): the morning sends forth from him a raider, and the night a man returning with booty.
+
+T101.03 — Seventy autumns [XVI:556]
+
+On “seventy autumns”: according to some, autumn stands for the year because fruits and crops develop in this season. The final portion of a period is used to designate the whole.
+
+T101.04 — Destruction, life, and the parallel expressions [XVI:556]
+
+On “on the first interpretation”: that is, if “his mother will be an abyss” is explained as an imprecation, from their saying “May his mother fall!” The pronoun is made to refer to calamity because, when a person falls and perishes and his mother becomes bereaved and disgraced, a calamity has befallen him. On the second interpretation, “his mother” means his abode, and Hāwiya (هاوية) is one of the names of the Fire.
+
+The first interpretation is the more evident, because “his mother will be an abyss” stands opposite “he will be in a life of contentment.” Destruction corresponds more aptly to ʿaysh (عيش), since this is the life peculiar to animate creatures. Just as the second paired clause is intensified by what follows it, the first is intensified by figurative predication.
+
+Al-Rāghib says: “ʿAysh is life peculiar to animate creatures, and is narrower than ḥayāt (حياة), ‘life,’ because ḥayāt (حياة) is said of animate creatures, the Creator Most High, and the angel. From it is derived maʿīsha (معيشة), that by which one lives. God Most High says, ‘We have apportioned among them their livelihood in the life of this world’ [43:32]. Of the people of Paradise He says, ‘He will be in a life of contentment.’ And the Prophet says in the report, ‘There is no life but the life of the hereafter.’”
+
+K101.05 — The pronoun and the pausal hāʾ [IV:790–791]
+
+In hiya-h (هِيَهْ), the pronoun refers to the calamity indicated by “his mother will be an abyss” on the first interpretation; or it refers to Hāwiya (هاوية). The final hāʾ (ه) is for pausing. When the reciter connects the reading, he omits it. It is also said that one ought not to connect here, lest connection cause its omission, since it is written in the codex. Retaining it in connected recitation has also been permitted.
+
+T101.05 — The stopping point [XVI:557]
+
+On “the hāʾ (ه) is for pausing; when the reciter connects, he omits it”: al-Murshid says that mā (ما) hiya-h (هِيَهْ) is a sufficient stopping point. Abū Ḥātim calls it a good stopping point. He then explains it with “a blazing fire.” God knows best.
+
+End of the sūrah.
+
+K101.06 — Closing report [IV:791]
+
+From God’s Messenger: “Whoever recites Sūrat al-Qāriʿah, God will make his scale heavy through it on the Day of Resurrection.”
+
+al-Qāriʿah · source and review notes · inherited record
+
+INHERITED C06 RECORD. Earlier scan claims have not been independently reconfirmed in this pass. Current corrections supersede provisional renderings below; consult the C07 review register.
+
+TEXTUAL NOTES
+T101-U1: The Ṭībī chapter heading says ten verses, while the DKA heading says eleven. This difference has not been silently regularized.
+K101-U1: The poetic imprecation is rendered literally in the base text, with its actual force of astonished praise explained in Ṭībī’s layer. The embedded base has yathūb, “returns,” where DKA has yaʾūb; the sense is the same.
+T101-U2: Printed XVI:556 confirms khuzyā, “disgraced,” against the electronic transcription’s defective خِزْيا form. The season explanation and the author’s preference for the first interpretation are retained without editorial reconciliation.
+
+
+Tanzil Quran Text
+Copyright (C) 2007-2021 Tanzil Project
+License: Creative Commons Attribution 3.0
+
+This copy of the Quran text is carefully produced, highly
+verified and continuously monitored by a group of specialists
+in Tanzil Project.
+
+TERMS OF USE:
+
+- Permission is granted to copy and distribute verbatim copies
+  of this text, but CHANGING IT IS NOT ALLOWED.
+
+- This Quran text can be used in any website or application,
+  provided that its source (Tanzil Project) is clearly indicated,
+  and a link is made to tanzil.net to enable users to keep
+  track of changes.
+
+- This copyright notice shall be included in all verbatim copies
+  of the text, and shall be reproduced appropriately in all files
+  derived from or containing substantial portion of this text.
+
+Please check updates at: http://tanzil.net/updates/

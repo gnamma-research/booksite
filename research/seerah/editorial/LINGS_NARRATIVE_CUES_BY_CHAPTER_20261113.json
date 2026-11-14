@@ -1,0 +1,384 @@
+{
+  "edition": "v1-20261113",
+  "source": "Martin Lings, Muhammad: His Life Based on the Earliest Sources, 1983/1991 editions; chapter titles cross-checked against SDSU Humanities Hub catalogue and a searchable PDF contents. Sample direct readings: XV The First Revelations, XXXI–XXXII Year of Sadness, LXVI–LXVIII Hudaybiyyah. Chapter titles and thematic cues guide original narrative composition, not verbal imitation. Specific historical details require primary hadith/Sīrah verification.",
+  "source_urls": [
+    "https://humanitieshub.sdsu.edu/omeka/items/show/1182",
+    "https://www.simonandschuster.com/books/Muhammad/Martin-Lings/9781594771538"
+  ],
+  "rule": "Refer to Lings in research footnotes, never matn or continuous sharh. Use scene selection, narrative pacing and emotionally apt spiritual themes. Do not reproduce copyrighted passages or mistake literary interpretation for independent early witnesses.",
+  "mappings": [
+    {
+      "chapter": 1,
+      "source": [
+        [
+          "I",
+          "The House of God"
+        ],
+        [
+          "V",
+          "The Vow to Sacrifice a Son"
+        ]
+      ],
+      "mood": "Primordial trust, worship, the House and transmitted promise; prophetic history as a living orientation",
+      "scene": "Ādamic vocation and Ibrāhīm's household as the spiritual setting; Lings is relevant mainly to the sanctuary tradition rather than Adamic metaphysics",
+      "verification": "TOC and project-research level"
+    },
+    {
+      "chapter": 2,
+      "source": [
+        [
+          "I",
+          "The House of God"
+        ],
+        [
+          "III",
+          "Quraysh of the Hollow"
+        ]
+      ],
+      "mood": "The sacred centre amid the ordinary demands of settlement and provision",
+      "scene": "Show how natural resources, inherited worship and the obligations of human settlement give a world for guidance to enter",
+      "verification": "TOC and broad historical theme"
+    },
+    {
+      "chapter": 3,
+      "source": [],
+      "mood": "Communal memory, loss and the continuing promise",
+      "scene": "Carry sacred narrative gravity through historically separate Israelite sources",
+      "verification": "No direct Lings chapter"
+    },
+    {
+      "chapter": 4,
+      "source": [],
+      "mood": "The plurality of paths of learning and revelation in differing historical worlds",
+      "scene": "Use the story's own witnesses, not imported scenes from the Prophet's biography",
+      "verification": "No direct Lings chapter"
+    },
+    {
+      "chapter": 5,
+      "source": [],
+      "mood": "Prophetic compassion and the reception of a difficult message",
+      "scene": "Use Qurʾānic ʿĪsā and Maryam narratives and distinct first-century history",
+      "verification": "No direct Lings chapter"
+    },
+    {
+      "chapter": 6,
+      "source": [
+        [
+          "VI",
+          "The Need for a Prophet"
+        ],
+        [
+          "VII",
+          "The Year of the Elephant"
+        ]
+      ],
+      "mood": "The approaching mission within a political world that cannot foresee it",
+      "scene": "Give the anticipation surrounding the sanctuary its own narrative gravity before describing frontiers",
+      "verification": "TOC and broad chapter theme"
+    },
+    {
+      "chapter": 7,
+      "source": [
+        [
+          "III",
+          "Quraysh of the Hollow"
+        ],
+        [
+          "XI",
+          "A Pact of Chivalry"
+        ],
+        [
+          "XIV",
+          "The Rebuilding of the Ka’bah"
+        ]
+      ],
+      "mood": "Trustworthiness expressed in a material dispute, kin protection and sanctuary service",
+      "scene": "Let the Black Stone settlement embody a visible intelligence coordinating competing clans",
+      "verification": "Passage read in PDF for Black Stone dispute"
+    },
+    {
+      "chapter": 8,
+      "source": [
+        [
+          "XII",
+          "Questions of Marriage"
+        ],
+        [
+          "XIII",
+          "The Household"
+        ],
+        [
+          "XV",
+          "The First Revelations"
+        ],
+        [
+          "XVI",
+          "Worship"
+        ]
+      ],
+      "mood": "Interior awe and the shelter of a household; an unseen call received with trembling and recognition",
+      "scene": "Move through retreat, the first revelation, return to Khadījah and the trustworthy testimony of her intimate knowledge",
+      "verification": "First Revelations episode read directly"
+    },
+    {
+      "chapter": 9,
+      "source": [
+        [
+          "XVII",
+          "Warn Thy Family"
+        ],
+        [
+          "XVIII",
+          "Quraysh Take Action"
+        ],
+        [
+          "XXIII",
+          "Wonderment and Hope"
+        ],
+        [
+          "XXV",
+          "The Hour"
+        ],
+        [
+          "XXX",
+          "Paradise and Eternity"
+        ]
+      ],
+      "mood": "A summons to conscience, courage and hope under growing social strain",
+      "scene": "Put named believers' fears, choices and generosity into the order of revealed accountability",
+      "verification": "TOC; close reading for each scene pending"
+    },
+    {
+      "chapter": 10,
+      "source": [
+        [
+          "XXVII",
+          "Abyssinia"
+        ],
+        [
+          "XXIX",
+          "The Ban and its Annulment"
+        ]
+      ],
+      "mood": "Exile, vulnerable fidelity and the dignity of speech before unfamiliar authority",
+      "scene": "Let the exiles' actual dependence and the king's decision become the story's human centre",
+      "verification": "TOC; exact speeches require variant checks"
+    },
+    {
+      "chapter": 11,
+      "source": [
+        [
+          "XXXI",
+          "The Year of Sadness"
+        ],
+        [
+          "XXXII",
+          "The Light of Thy Countenance"
+        ],
+        [
+          "XXXIII",
+          "After the Year of Sadness"
+        ],
+        [
+          "XXXIV",
+          "Yathrib Responsive"
+        ],
+        [
+          "XXXV",
+          "Many Emigrations"
+        ],
+        [
+          "XXXVII",
+          "The Hijrah"
+        ]
+      ],
+      "mood": "Bereavement opening onto trust, prayer, ascent and new public responsibility",
+      "scene": "The emotional movement passes from loss and supplication through new hearers and committed protection",
+      "verification": "Year of Sadness and Light of Thy Countenance inspected"
+    },
+    {
+      "chapter": 12,
+      "source": [
+        [
+          "XXXVII",
+          "The Hijrah"
+        ],
+        [
+          "XXXVIII",
+          "The Entry into Medina"
+        ],
+        [
+          "XXXIX",
+          "Harmony and Discord"
+        ],
+        [
+          "XL",
+          "The New Household"
+        ]
+      ],
+      "mood": "Arrival, hospitality, difficult reconciliation and the making of a home",
+      "scene": "Give migrants, hosts and kin their distinct claims in the developing common life",
+      "verification": "TOC; close reading pending"
+    },
+    {
+      "chapter": 13,
+      "source": [
+        [
+          "XL",
+          "The New Household"
+        ],
+        [
+          "XLVIII",
+          "The People of the Bench"
+        ],
+        [
+          "LXX",
+          "Whom Lovest Thou Most?"
+        ]
+      ],
+      "mood": "Divine worship as it becomes visible in small gestures, private loyalties and care for dependants",
+      "scene": "Prioritize reported encounters with a child, a mother, a penitent and a household member; retain juridical severity where present",
+      "verification": "TOC; specific hadith sources examined separately"
+    },
+    {
+      "chapter": 14,
+      "source": [
+        [
+          "XLI",
+          "The Threshold of War"
+        ],
+        [
+          "XLII",
+          "The March to Badr"
+        ],
+        [
+          "XLIII",
+          "The Battle of Badr"
+        ],
+        [
+          "XLV",
+          "The Captives"
+        ]
+      ],
+      "mood": "Vulnerability, resolve and the sober obligations following victory",
+      "scene": "Present the lived fear, divine reliance and subsequent responsibility for prisoners and property",
+      "verification": "TOC; close reading pending"
+    },
+    {
+      "chapter": 15,
+      "source": [
+        [
+          "LI",
+          "The March to Uhud"
+        ],
+        [
+          "LII",
+          "The Battle of Uhud"
+        ],
+        [
+          "LIV",
+          "The Burial of the Martyrs"
+        ],
+        [
+          "LIX",
+          "The Trench"
+        ],
+        [
+          "LX",
+          "The Siege"
+        ],
+        [
+          "LXI",
+          "Bani Qurayzah"
+        ]
+      ],
+      "mood": "Loss, perseverance, disciplined cooperation, care for the wounded and tested alliances",
+      "scene": "Allow named households, leaders and the sequence of decisions to show the cost of public protection",
+      "verification": "TOC; source comparisons pending"
+    },
+    {
+      "chapter": 16,
+      "source": [
+        [
+          "LXVI",
+          "The Dilemma of Quraysh"
+        ],
+        [
+          "LXVII",
+          "A Clear Victory"
+        ],
+        [
+          "LXVIII",
+          "After Hudaybiyah"
+        ]
+      ],
+      "mood": "Apparent loss and extraordinary patience, counsel, obedience and confidence in the unseen outcome",
+      "scene": "Introduce Suhayl and Abū Jandal before the treaty clause bites; follow Umm Salamah's counsel and the response to revelation",
+      "verification": "Dilemma/Clear Victory passages inspected"
+    },
+    {
+      "chapter": 17,
+      "source": [
+        [
+          "LXIX",
+          "Khaybar"
+        ],
+        [
+          "LXXI",
+          "After Khaybar"
+        ],
+        [
+          "LXXII",
+          "The Lesser Pilgrimage and its Aftermath"
+        ]
+      ],
+      "mood": "The renewal of obligations beyond conflict; reliable promises and material provision",
+      "scene": "Differentiate the military settlement, cultivation agreement, and ʿUmar's endowment example",
+      "verification": "TOC; source-based rewriting required"
+    },
+    {
+      "chapter": 18,
+      "source": [
+        [
+          "LXXIV",
+          "A Breach of the Armistice"
+        ],
+        [
+          "LXXV",
+          "The Conquest of Mecca"
+        ],
+        [
+          "LXXVI",
+          "The Battle of Hunayn and the Siege of Ta’if"
+        ],
+        [
+          "LXXVII",
+          "Reconciliations"
+        ]
+      ],
+      "mood": "The return to the sacred centre, restraint under victory and difficult reconciliation",
+      "scene": "Follow the changing choices of particular former adversaries and those entrusted with teaching them",
+      "verification": "TOC and broad narrative theme"
+    },
+    {
+      "chapter": 19,
+      "source": [
+        [
+          "LXXXIII",
+          "The Farewell Pilgrimage"
+        ],
+        [
+          "LXXXIV",
+          "The Choice"
+        ],
+        [
+          "LXXXV",
+          "The Succession and the Burial"
+        ]
+      ],
+      "mood": "Fulfilment, universal instruction, tenderness, mortality and the weight of succeeding responsibility",
+      "scene": "Move from embodied rites and public obligations to the Companions' differentiated reception after the Prophet's death",
+      "verification": "TOC; detailed witness comparison pending"
+    }
+  ]
+}

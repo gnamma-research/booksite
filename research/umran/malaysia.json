@@ -1,0 +1,216 @@
+{
+  "title": "Malaysia and related scholarship on farḍ kifāya, formation, institutions and ḥadd al-kifāyah",
+  "version": "2026-11-13-v4",
+  "status": "annotated preliminary scholarly reading room",
+  "scope_note": "Includes Malaysian researchers, Malaysian-published studies, case studies of Malaysian institutions by international scholars, a Putrajaya international resolution, and IAIS Malaysia-associated scholarship. They are different source types.",
+  "distinction": "ḥadd al-kifāyah is a welfare/zakat adequacy threshold and is different from farḍ kifāya, a collective legal duty.",
+  "studies": [
+    {
+      "id": "putrajaya-2007",
+      "title": "Human Resource Development in the Muslim World",
+      "category_and_year": "Institutional resolution · 2007",
+      "authors_and_venue": "International Islamic Fiqh Academy · 18th session, Putrajaya, Malaysia",
+      "research_contribution": "Establishes a comprehensive model of human capacities—physical, intellectual, psychological and spiritual—and calls for competent leadership, integrated curricula, research, and useful sciences connected to communal needs.",
+      "qualification_or_limit": "A resolution of an international academy meeting in Malaysia, not an independently authored Malaysian empirical study; broad collective principles do not establish any particular local deficiency.",
+      "method": "Official institutional resolution",
+      "related_need_ids": [
+        "contemporary-curricula",
+        "religious-teaching"
+      ],
+      "source_url": "https://iifa-aifi.org/en/33618.html",
+      "review_date": "2026-11-13",
+      "full_text_collated": false,
+      "empirical_sufficiency_conclusion": "not established"
+    },
+    {
+      "id": "badron-2009",
+      "title": "The Delights of Knowledge",
+      "category_and_year": "Worldview and knowledge · 2009",
+      "authors_and_venue": "Mohd Sani Badron · Institute of Islamic Understanding Malaysia (IKIM)",
+      "research_contribution": "Explains al-Ghazālī’s range of essential sciences and reports al-Attas’s extension of communal learning to the human sciences, technical sciences, comparative religion and civilisational studies.",
+      "qualification_or_limit": "An explanatory institutional essay, not a new fatwa or proof that every listed discipline is presently undersupplied.",
+      "method": "Interpretive essay",
+      "related_need_ids": [
+        "contemporary-curricula",
+        "religious-teaching"
+      ],
+      "source_url": "https://www.ikim.gov.my/the-delights-of-knowledge/",
+      "review_date": "2026-11-13",
+      "full_text_collated": false,
+      "empirical_sufficiency_conclusion": "not established"
+    },
+    {
+      "id": "nugraha-2017",
+      "title": "Konsep Ilmu Fardu Ain dan Fardu Kifayah dan Kepentingan Amalannya dalam Kurikulum Pendidikan Islam",
+      "category_and_year": "Curricular formation · 2017",
+      "authors_and_venue": "Mukhlas Nugraha · TAFHIM, IKIM Journal of Islam and the Contemporary World",
+      "research_contribution": "Studies the relation between personally obligatory and communally obligatory knowledge in educational curricula, including human purpose and the changing practical requirements of knowledge.",
+      "qualification_or_limit": "Published in a Malaysian journal but authored by a scholar affiliated with an Indonesian university; its abstract does not establish the effectiveness of a particular new curriculum.",
+      "method": "Conceptual scholarly article",
+      "related_need_ids": [
+        "contemporary-curricula"
+      ],
+      "source_url": "https://tafhim.ikim.gov.my/index.php/tafhim/article/view/115",
+      "review_date": "2026-11-13",
+      "full_text_collated": false,
+      "empirical_sufficiency_conclusion": "not established"
+    },
+    {
+      "id": "food-2023",
+      "title": "The Importance of Agriculture and Its Role in Food Sovereignty",
+      "category_and_year": "Work and food sovereignty · 2023",
+      "authors_and_venue": "Rizky Febrian and Sarif Hidayatullah · TAFHIM (IKIM)",
+      "research_contribution": "Examines al-Ḥubayshī on agricultural work, self-reliance and food sovereignty, presenting an argument for agriculture’s communal importance.",
+      "qualification_or_limit": "This is a textual argument about agriculture, not evidence that every locality is obliged to produce all its own food; compare alternative supply and trade arguments.",
+      "method": "Textual analysis",
+      "related_need_ids": [
+        "food-access"
+      ],
+      "source_url": "https://tafhim.ikim.gov.my/index.php/tafhim/article/view/211",
+      "review_date": "2026-11-13",
+      "full_text_collated": false,
+      "empirical_sufficiency_conclusion": "not established"
+    },
+    {
+      "id": "eletrebi-2023",
+      "title": "National Collective Responsibility (Farḍ Kifāyah) and Its Relationship with the Purposes of Shariah",
+      "category_and_year": "Collective duty and maqāṣid · 2023",
+      "authors_and_venue": "Mahamed Fathy Eletrebi, Hassan Suleiman, Walīd Mohamed Abdelrahman · IIUM repository",
+      "research_contribution": "Directly examines how collective responsibilities relate to Islamic legal objectives and national organisation; it can inform the identification of responsible institutions.",
+      "qualification_or_limit": "Repository access to the full paper is restricted; only catalogue metadata and abstract were checked for this edition.",
+      "method": "Scholarly article; abstract reviewed",
+      "related_need_ids": [
+        "community-institutions"
+      ],
+      "source_url": "https://irep.iium.edu.my/105307/",
+      "review_date": "2026-11-13",
+      "full_text_collated": false,
+      "empirical_sufficiency_conclusion": "not established"
+    },
+    {
+      "id": "bustan-2024",
+      "title": "Lifelong Learning Education for Fardhu ʿAyn Skill and Knowledge: The Bustan ʿIlm Project",
+      "category_and_year": "Lifelong religious learning · 2024",
+      "authors_and_venue": "Raudlotul Firdaus Fatah Yasin · Al-Turath / CENTRIS IIUM",
+      "research_contribution": "Studies continuing education for older Muslims through a specific IIUM programme and argues for learning that serves spiritual preparation across the life course.",
+      "qualification_or_limit": "The learners’ knowledge is principally farḍ ʿayn; provision of teaching capacity is a separate institutional question. The study does not itself show a widespread teacher shortage.",
+      "method": "Qualitative study; interviews and thematic analysis",
+      "related_need_ids": [
+        "religious-teaching"
+      ],
+      "source_url": "https://doi.org/10.17576/turath-2024-0901-07",
+      "review_date": "2026-11-13",
+      "full_text_collated": false,
+      "empirical_sufficiency_conclusion": "not established"
+    },
+    {
+      "id": "mosques-2024",
+      "title": "Empowering Mosque Institutions as Local Economic Aid Centers in Malaysia",
+      "category_and_year": "Local economic institutions · 2024",
+      "authors_and_venue": "Muhammad Najib Abd Wakil, Azman Ab Rahman, Ahmad Syukran Baharuddin · Journal of Fatwa Management and Research",
+      "research_contribution": "Uses documents and interviews to investigate how mosques facilitate economic support, including zakat, waqf and other resources, and proposes a locally administered assistance model.",
+      "qualification_or_limit": "Qualitative examination of selected institutions, not a nationwide causal evaluation or evidence that mosque construction is always a collective obligation.",
+      "method": "Qualitative documents and interviews",
+      "related_need_ids": [
+        "community-institutions",
+        "household-sufficiency"
+      ],
+      "source_url": "https://jfatwa.usim.edu.my/index.php/jfatwa/article/view/584",
+      "review_date": "2026-11-13",
+      "full_text_collated": false,
+      "empirical_sufficiency_conclusion": "not established"
+    },
+    {
+      "id": "masa-2025",
+      "title": "MASA@Sungai Nibong: Holistic Urban-Poverty Intervention",
+      "category_and_year": "Family-centred intervention · 2025",
+      "authors_and_venue": "Mohd Sadiq Mohd Mokhtar, Shereeza Mohamed Saniff, Ahmad Shaifful Anuar Ahmad Shukor · Jurnal Islam dan Masyarakat Kontemporari",
+      "research_contribution": "Studies a phased project involving households in waqf accommodation in Penang. The authors report improved household incomes, women’s economic participation and reduced dependence on assistance through tailored guidance and entrepreneurship.",
+      "qualification_or_limit": "A context-specific qualitative case study; reported improvements are not an independently established general treatment effect.",
+      "method": "Qualitative case study and content analysis",
+      "related_need_ids": [
+        "household-sufficiency",
+        "livelihood-training"
+      ],
+      "source_url": "https://journal.unisza.edu.my/jimk/index.php/jimk/article/view/937",
+      "review_date": "2026-11-13",
+      "full_text_collated": false,
+      "empirical_sufficiency_conclusion": "not established"
+    },
+    {
+      "id": "had-kifayah-2025",
+      "title": "Penilaian Ḥadd al-Kifāyah Berasaskan Maqāṣid al-Sharīʿah",
+      "category_and_year": "Standards of material adequacy · 2025",
+      "authors_and_venue": "Abdul Muzil Abd Rahim · Universiti Kebangsaan Malaysia",
+      "research_contribution": "Examines poverty and zakat eligibility thresholds across Malaysian jurisdictions and recommends attention to religious learning, preventive healthcare, participation and human development alongside material costs.",
+      "qualification_or_limit": "Ḥadd al-kifāyah is a threshold of household sufficiency in poverty/zakat administration; it is not equivalent to the legal category farḍ kifāya.",
+      "method": "Thesis; case-study analysis and four expert interviews",
+      "related_need_ids": [
+        "household-sufficiency"
+      ],
+      "source_url": "https://ptsldigital.ukm.my/jspui/handle/123456789/782686",
+      "review_date": "2026-11-13",
+      "full_text_collated": false,
+      "empirical_sufficiency_conclusion": "not established"
+    },
+    {
+      "id": "iium-curriculum-2020",
+      "title": "Reasserting the Maqāṣid of Islamic Revealed Knowledge Curricula",
+      "category_and_year": "Intellectual renewal and curriculum · 2020",
+      "authors_and_venue": "Khairil Husaini Bin Jamil · IIUM, al-Burhān",
+      "research_contribution": "Describes an educational effort to integrate the higher aims of Qurʾān and Sunnah learning with programme outcomes, traditional scholarship, critical engagement and spiritual formation.",
+      "qualification_or_limit": "An account of curricular design and educational philosophy, not an independently demonstrated improvement in graduates' competence or a general legal ruling.",
+      "method": "Programme and conceptual study",
+      "related_need_ids": [
+        "contemporary-curricula",
+        "religious-teaching"
+      ],
+      "source_url": "https://journals.iium.edu.my/al-burhan/index.php/al-burhan/article/view/196",
+      "review_date": "2026-11-13",
+      "full_text_collated": false,
+      "empirical_sufficiency_conclusion": "not established"
+    },
+    {
+      "id": "iium-knowledge-2021",
+      "title": "From Streamlining to Mainstreaming Islamization of Knowledge: The Case of IIUM",
+      "category_and_year": "Institutional critique · 2021",
+      "authors_and_venue": "Sari Hanafi · American Journal of Islam and Society; IIUM case study",
+      "research_contribution": "Analyses IIUM's shift towards mainstreamed knowledge integration through maqāṣid and evaluates tensions among professional training, religious formation and pluralism.",
+      "qualification_or_limit": "This critical case study is not a proof of the success or failure of every Islamic university, and its author is not Malaysian merely because the university examined is.",
+      "method": "Critical institutional study",
+      "related_need_ids": [
+        "contemporary-curricula",
+        "community-institutions"
+      ],
+      "source_url": "https://ajis.org/index.php/ajiss/article/view/1086",
+      "review_date": "2026-11-13",
+      "full_text_collated": false,
+      "empirical_sufficiency_conclusion": "not established"
+    },
+    {
+      "id": "kamali-civilizational-renewal-2018",
+      "title": "Tajdīd, Iṣlāḥ and Civilisational Renewal in Islam",
+      "category_and_year": "Civilizational renewal · 2018",
+      "authors_and_venue": "Mohammad Hashim Kamali · IIIT and IAIS Malaysia",
+      "research_contribution": "Connects renewal and reform to living interpretation, ijtihād, civilizational aims and public cooperation, rather than to an occupational or fundraising checklist.",
+      "qualification_or_limit": "A normative intellectual work, not a comprehensive evidence survey of unmet communal needs. The public abstract and contents were examined; the full text has not been critically collated here.",
+      "method": "Scholarly conceptual monograph",
+      "related_need_ids": [
+        "contemporary-curricula",
+        "religious-teaching",
+        "community-institutions"
+      ],
+      "source_url": "https://doi.org/10.2307/j.ctvkc66vh",
+      "review_date": "2026-11-13",
+      "full_text_collated": false,
+      "empirical_sufficiency_conclusion": "not established"
+    }
+  ],
+  "study_domains": [
+    "Legal theory of communal obligations",
+    "Maqāṣid and household sufficiency",
+    "Institutional and educational formation",
+    "Intellectual and civilizational renewal",
+    "Community development case studies"
+  ]
+}

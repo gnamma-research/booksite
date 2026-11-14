@@ -1,0 +1,60 @@
+name: GNAMMA curated manuscript-bibliography shortlist
+on:
+  push:
+    branches:
+      - feature/expanded-fiqh-usul-arabic-bibliography-20261107
+    paths:
+      - 'research/intellectual-atlas/corpora/build_manuscript_select.py'
+      - '.github/workflows/gnamma-manuscript-shortlist.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  compile-public-manuscript-register:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install markup-only parser
+        run: python -m pip install -q beautifulsoup4==4.14.2
+      - name: Compile limited linked bibliographic sample from eight public category lists
+        run: python research/intellectual-atlas/corpora/build_manuscript_select.py
+      - name: Validate school attribution and scholarly limits
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('research/intellectual-atlas/corpora/manuscript-shortlist.json').read_text())
+          works=d['works']
+          assert len(works)>=400
+          assert len(set(w['id'] for w in works))==len(works)
+          assert all(w['catalogue_url'].startswith('https://app.alreq.com/ar/AuthoredBooks/') for w in works)
+          assert all(w['reading_status']=='manuscript catalogue only; no text or scan acquired' for w in works)
+          assert all(not w['school'] or w['school_evidence'] for w in works)
+          for m in ('hanafi','maliki','shafii','hanbali'):
+              assert d['statistics']['by_school'][m]['fiqh']==40
+          print('VALID SHORTLIST',len(works),d['statistics']['by_school'],flush=True)
+          PY
+      - name: Commit snapshot to research branch only
+        if: github.ref == 'refs/heads/feature/expanded-fiqh-usul-arabic-bibliography-20261107'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/intellectual-atlas/corpora/manuscript-shortlist.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Catalogue: bounded source-linked manuscript bibliography shortlist"
+            git push origin HEAD:feature/expanded-fiqh-usul-arabic-bibliography-20261107
+          else
+            echo "Snapshot unchanged"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnamma-manuscript-bibliography
+          path: research/intellectual-atlas/corpora/manuscript-shortlist.json
+          if-no-files-found: ignore

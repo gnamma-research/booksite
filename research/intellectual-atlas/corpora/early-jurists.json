@@ -1,0 +1,325 @@
+{
+  "schema_version": 1,
+  "title": "Early Islamic jurists and non-four Sunni legal circles",
+  "research_date": "2026-11-07",
+  "method": "Curated named authority nodes for an early/non-four-school visual layer; match works only on work-authorship fields, not title mentions or arbitrary shared subjects",
+  "source_url": "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF",
+  "caveats": [
+    "The madhhab term initially referred to opinions and personal circles; later doctrinal schools crystallized gradually, especially in the 4th/10th century.",
+    "A jurist with disciples is not automatically the founder of an enduring doctrinal school.",
+    "Source metadata author matches do not prove a work expresses the founder's own settled legal doctrine.",
+    "The four later institutional schools must not be anachronistically imposed on works before they formed.",
+    "A modern Salafi identity is not added as a classical fifth Sunni madhhab."
+  ],
+  "authority_statuses": {
+    "individual_jurist": "Named early jurist; following or durable school not established by this register",
+    "personal_circle": "Personal/early following; institutional history qualified",
+    "historical_nonfour_school": "Historically attested named non-four-school legal tradition; longevity varies",
+    "founding_eponym": "Early eponym of later institutionalized four-school tradition"
+  },
+  "authorities": [
+    {
+      "id": "awzai",
+      "name": "al-Awzāʿī",
+      "arabic": "الأوزاعي",
+      "death_ah": 157,
+      "status": "personal_circle",
+      "description": "Syrian jurist with historically reported followers and school; the nature of early regional/personal affiliations remains debated.",
+      "author_uri_markers": [
+        "Awzaci",
+        "Awzai",
+        "Awzay",
+        "Awzaci"
+      ],
+      "author_ar_markers": [
+        "الأوزاعي"
+      ],
+      "evidence_urls": [
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF",
+        "https://www.aliftaa.jo/article-en/5800/Article.aspx?ArticleId=5826"
+      ]
+    },
+    {
+      "id": "thawri",
+      "name": "Sufyān al-Thawrī",
+      "arabic": "سفيان الثوري",
+      "death_ah": 161,
+      "status": "personal_circle",
+      "description": "Kufan authority with an associated personal school; its continuity and exclusivity are disputed in specialist scholarship.",
+      "author_uri_markers": [
+        "Thawri",
+        "ThawrI",
+        "SufyanThawri"
+      ],
+      "author_ar_markers": [
+        "سفيان الثوري",
+        "الثوري"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1163/22142371-00802005",
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF"
+      ]
+    },
+    {
+      "id": "layth",
+      "name": "al-Layth b. Saʿd",
+      "arabic": "الليث بن سعد",
+      "death_ah": 175,
+      "status": "personal_circle",
+      "description": "Egyptian jurist with a following; not a surviving four-school institution.",
+      "author_uri_markers": [
+        "LaythIbnSacd",
+        "LaythIbnSad",
+        "Layth"
+      ],
+      "author_ar_markers": [
+        "الليث بن سعد"
+      ],
+      "evidence_urls": [
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF",
+        "https://www.aliftaa.jo/article-en/5800/Article.aspx?ArticleId=5826"
+      ]
+    },
+    {
+      "id": "ibn_abi_layla",
+      "name": "Ibn Abī Laylā",
+      "arabic": "ابن أبي ليلى",
+      "death_ah": 148,
+      "status": "personal_circle",
+      "description": "Early Iraqi jurist and personal-school exemplar; preserved in legal debates rather than an institutional four-school madhhab.",
+      "author_uri_markers": [
+        "IbnAbiLayla",
+        "IbnAbiLayla"
+      ],
+      "author_ar_markers": [
+        "ابن أبي ليلى"
+      ],
+      "evidence_urls": [
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF"
+      ]
+    },
+    {
+      "id": "abu_thawr",
+      "name": "Abū Thawr",
+      "arabic": "أبو ثور",
+      "death_ah": 240,
+      "status": "personal_circle",
+      "description": "Baghdadi jurist with followers and a non-enduring legal circle; not equivalent to a later fully articulated madhhab.",
+      "author_uri_markers": [
+        "AbuThawr",
+        "IbnKhalidAbuThawr"
+      ],
+      "author_ar_markers": [
+        "أبو ثور"
+      ],
+      "evidence_urls": [
+        "https://www.aliftaa.jo/article-en/5800/Article.aspx?ArticleId=5826"
+      ]
+    },
+    {
+      "id": "zahiri",
+      "name": "Dāwūd al-Ẓāhirī / Ẓāhirīs",
+      "arabic": "الظاهرية",
+      "death_ah": 270,
+      "status": "historical_nonfour_school",
+      "description": "Distinct non-four-school literalist legal tradition; later Ibn Ḥazm is a major representative. Their opinions must be evidenced independently.",
+      "author_uri_markers": [
+        "DawudIbnCali",
+        "DawudZahiri",
+        "IbnHazm"
+      ],
+      "author_ar_markers": [
+        "داود الظاهري",
+        "داود بن علي",
+        "ابن حزم"
+      ],
+      "evidence_urls": [
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF",
+        "https://www.aliftaa.jo/article-en/5800/Article.aspx?ArticleId=5826"
+      ]
+    },
+    {
+      "id": "jariri",
+      "name": "al-Ṭabarī / Jarīrī school",
+      "arabic": "الطبري / الجريرية",
+      "death_ah": 310,
+      "status": "historical_nonfour_school",
+      "description": "A non-four-school juristic line associated with Muḥammad b. Jarīr al-Ṭabarī. His tafsīr authorship alone is not a fiqh school relation.",
+      "author_uri_markers": [
+        "Tabari",
+        "IbnJarir"
+      ],
+      "author_ar_markers": [
+        "محمد بن جرير الطبري",
+        "ابن جرير الطبري"
+      ],
+      "evidence_urls": [
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF",
+        "https://www.aliftaa.jo/article-en/5800/Article.aspx?ArticleId=5826"
+      ]
+    },
+    {
+      "id": "ibn_shubruma",
+      "name": "Ibn Shubruma",
+      "arabic": "ابن شبرمة",
+      "death_ah": 144,
+      "status": "individual_jurist",
+      "description": "Independent early Kufan judge and jurist. Do not infer a formally constituted madhhab from individual legal opinions.",
+      "author_uri_markers": [
+        "IbnShubruma",
+        "Shubruma"
+      ],
+      "author_ar_markers": [
+        "ابن شبرمة"
+      ],
+      "evidence_urls": [
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF"
+      ]
+    },
+    {
+      "id": "ata",
+      "name": "ʿAṭāʾ b. Abī Rabāḥ",
+      "arabic": "عطاء بن أبي رباح",
+      "death_ah": 114,
+      "status": "individual_jurist",
+      "description": "Early Meccan legal authority. Presence in the map represents an individual teaching/reasoning tradition, not a later four-school assignment.",
+      "author_uri_markers": [
+        "CataIbnAbiRabah",
+        "AtaIbnAbiRabah"
+      ],
+      "author_ar_markers": [
+        "عطاء بن أبي رباح"
+      ],
+      "evidence_urls": [
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/early-judges-legal-specialists-and-the-search-for-religious-authority/883955AC0685F519128700393FA503B1",
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF"
+      ]
+    },
+    {
+      "id": "nakha_i",
+      "name": "Ibrāhīm al-Nakhaʿī",
+      "arabic": "إبراهيم النخعي",
+      "death_ah": 96,
+      "status": "individual_jurist",
+      "description": "Early Kufan jurist and one of the authorities in the pre-doctrinal school milieu.",
+      "author_uri_markers": [
+        "IbrahimNakhaci",
+        "IbnYazidNakhaci"
+      ],
+      "author_ar_markers": [
+        "إبراهيم النخعي"
+      ],
+      "evidence_urls": [
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/early-judges-legal-specialists-and-the-search-for-religious-authority/883955AC0685F519128700393FA503B1",
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF"
+      ]
+    },
+    {
+      "id": "basri",
+      "name": "al-Ḥasan al-Baṣrī",
+      "arabic": "الحسن البصري",
+      "death_ah": 110,
+      "status": "individual_jurist",
+      "description": "Basran scholar with legal opinions; avoid equating the whole Basran scholarly milieu with a fixed personal school.",
+      "author_uri_markers": [
+        "HasanBasri"
+      ],
+      "author_ar_markers": [
+        "الحسن البصري"
+      ],
+      "evidence_urls": [
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/early-judges-legal-specialists-and-the-search-for-religious-authority/883955AC0685F519128700393FA503B1",
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF"
+      ]
+    },
+    {
+      "id": "saiid",
+      "name": "Saʿīd b. al-Musayyab",
+      "arabic": "سعيد بن المسيب",
+      "death_ah": 94,
+      "status": "individual_jurist",
+      "description": "Early Medinan juristic authority; later madhhab labels should not be retrojected into his lifetime.",
+      "author_uri_markers": [
+        "SacidIbnMusayyab",
+        "IbnMusayyab"
+      ],
+      "author_ar_markers": [
+        "سعيد بن المسيب"
+      ],
+      "evidence_urls": [
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/early-judges-legal-specialists-and-the-search-for-religious-authority/883955AC0685F519128700393FA503B1",
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF"
+      ]
+    },
+    {
+      "id": "abu_hanifa",
+      "name": "Abū Ḥanīfa",
+      "arabic": "أبو حنيفة",
+      "death_ah": 150,
+      "status": "founding_eponym",
+      "description": "Early personal-circle jurist; the later Ḥanafī doctrinal school formed over time and should not be projected backwards as a finished institution.",
+      "author_uri_markers": [
+        "AbuHanifa"
+      ],
+      "author_ar_markers": [
+        "أبو حنيفة",
+        "النعمان بن ثابت"
+      ],
+      "evidence_urls": [
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF"
+      ]
+    },
+    {
+      "id": "malik",
+      "name": "Mālik b. Anas",
+      "arabic": "مالك بن أنس",
+      "death_ah": 179,
+      "status": "founding_eponym",
+      "description": "Founding eponym; distinguish his own circle and teaching from later institutional Mālikism.",
+      "author_uri_markers": [
+        "MalikIbnAnas"
+      ],
+      "author_ar_markers": [
+        "مالك بن أنس"
+      ],
+      "evidence_urls": [
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF"
+      ]
+    },
+    {
+      "id": "shafii",
+      "name": "al-Shāfiʿī",
+      "arabic": "الشافعي",
+      "death_ah": 204,
+      "status": "founding_eponym",
+      "description": "Founding eponym; later Shāfiʿī school organization and doctrinal convergence were subsequent processes.",
+      "author_uri_markers": [
+        "Shafici",
+        "Shafii"
+      ],
+      "author_ar_markers": [
+        "محمد بن إدريس الشافعي"
+      ],
+      "evidence_urls": [
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF"
+      ]
+    },
+    {
+      "id": "ahmad",
+      "name": "Aḥmad b. Ḥanbal",
+      "arabic": "أحمد بن حنبل",
+      "death_ah": 241,
+      "status": "founding_eponym",
+      "description": "Founding eponym; subsequent Ḥanbalī doctrinal and institutional formation is not identical to Aḥmad's lifetime.",
+      "author_uri_markers": [
+        "IbnHanbal"
+      ],
+      "author_ar_markers": [
+        "أحمد بن حنبل"
+      ],
+      "evidence_urls": [
+        "https://www.cambridge.org/core/books/abs/origins-and-evolution-of-islamic-law/formation-of-legal-schools/4557AD1BDFD965F065F3F9AC95A7E2AF"
+      ]
+    }
+  ]
+}

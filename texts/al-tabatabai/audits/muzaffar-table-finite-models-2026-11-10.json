@@ -1,0 +1,472 @@
+{
+  "scope": "Editorial English reconstruction of Rafed displayed p193, M-C-46",
+  "method": "Direct finite-set semantics; all pairs B,C over domains of sizes 0 through 4",
+  "modelCount": 341,
+  "completeness": "Each formula depends only on which of the four Boolean regions B∩C, B∩notC, notB∩C, notB∩notC is nonempty. Domains of at most four elements realize every such pattern. Thus this finite enumeration is complete for the tested unary-predicate fragment, not a proof of all traditional syllogistic assumptions.",
+  "populatedCells": 21,
+  "truthComplementCells": 4,
+  "consequenceCells": 17,
+  "conditions": [
+    {
+      "relation": "Contradictory",
+      "original": "A(B,C)",
+      "cell": "O(B,C)",
+      "extraNonemptyClass": null,
+      "modelsChecked": 341,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 0,
+      "conditionNecessaryAndSufficientGivenOriginal": false,
+      "smallestCountermodelWithoutCondition": null
+    },
+    {
+      "relation": "Contradictory",
+      "original": "I(B,C)",
+      "cell": "E(B,C)",
+      "extraNonemptyClass": null,
+      "modelsChecked": 341,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 0,
+      "conditionNecessaryAndSufficientGivenOriginal": false,
+      "smallestCountermodelWithoutCondition": null
+    },
+    {
+      "relation": "Contradictory",
+      "original": "E(B,C)",
+      "cell": "I(B,C)",
+      "extraNonemptyClass": null,
+      "modelsChecked": 341,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 0,
+      "conditionNecessaryAndSufficientGivenOriginal": false,
+      "smallestCountermodelWithoutCondition": null
+    },
+    {
+      "relation": "Contradictory",
+      "original": "O(B,C)",
+      "cell": "A(B,C)",
+      "extraNonemptyClass": null,
+      "modelsChecked": 341,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 0,
+      "conditionNecessaryAndSufficientGivenOriginal": false,
+      "smallestCountermodelWithoutCondition": null
+    },
+    {
+      "relation": "Simple converse",
+      "original": "A(B,C)",
+      "cell": "I(C,B)",
+      "extraNonemptyClass": "B",
+      "modelsChecked": 121,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 31,
+      "conditionNecessaryAndSufficientGivenOriginal": true,
+      "smallestCountermodelWithoutCondition": {
+        "U": [],
+        "B": [],
+        "C": []
+      }
+    },
+    {
+      "relation": "Simple converse",
+      "original": "I(B,C)",
+      "cell": "I(C,B)",
+      "extraNonemptyClass": null,
+      "modelsChecked": 220,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 0,
+      "conditionNecessaryAndSufficientGivenOriginal": false,
+      "smallestCountermodelWithoutCondition": null
+    },
+    {
+      "relation": "Simple converse",
+      "original": "E(B,C)",
+      "cell": "E(C,B)",
+      "extraNonemptyClass": null,
+      "modelsChecked": 121,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 0,
+      "conditionNecessaryAndSufficientGivenOriginal": false,
+      "smallestCountermodelWithoutCondition": null
+    },
+    {
+      "relation": "Contrapositive retaining quality",
+      "original": "A(B,C)",
+      "cell": "A(notC,notB)",
+      "extraNonemptyClass": null,
+      "modelsChecked": 121,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 0,
+      "conditionNecessaryAndSufficientGivenOriginal": false,
+      "smallestCountermodelWithoutCondition": null
+    },
+    {
+      "relation": "Contrapositive retaining quality",
+      "original": "E(B,C)",
+      "cell": "O(notC,notB)",
+      "extraNonemptyClass": "B",
+      "modelsChecked": 121,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 31,
+      "conditionNecessaryAndSufficientGivenOriginal": true,
+      "smallestCountermodelWithoutCondition": {
+        "U": [],
+        "B": [],
+        "C": []
+      }
+    },
+    {
+      "relation": "Contrapositive retaining quality",
+      "original": "O(B,C)",
+      "cell": "O(notC,notB)",
+      "extraNonemptyClass": null,
+      "modelsChecked": 220,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 0,
+      "conditionNecessaryAndSufficientGivenOriginal": false,
+      "smallestCountermodelWithoutCondition": null
+    },
+    {
+      "relation": "Contrapositive changing quality",
+      "original": "A(B,C)",
+      "cell": "E(notC,B)",
+      "extraNonemptyClass": null,
+      "modelsChecked": 121,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 0,
+      "conditionNecessaryAndSufficientGivenOriginal": false,
+      "smallestCountermodelWithoutCondition": null
+    },
+    {
+      "relation": "Contrapositive changing quality",
+      "original": "E(B,C)",
+      "cell": "I(notC,B)",
+      "extraNonemptyClass": "B",
+      "modelsChecked": 121,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 31,
+      "conditionNecessaryAndSufficientGivenOriginal": true,
+      "smallestCountermodelWithoutCondition": {
+        "U": [],
+        "B": [],
+        "C": []
+      }
+    },
+    {
+      "relation": "Contrapositive changing quality",
+      "original": "O(B,C)",
+      "cell": "I(notC,B)",
+      "extraNonemptyClass": null,
+      "modelsChecked": 220,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 0,
+      "conditionNecessaryAndSufficientGivenOriginal": false,
+      "smallestCountermodelWithoutCondition": null
+    },
+    {
+      "relation": "Predicate-complemented form",
+      "original": "A(B,C)",
+      "cell": "E(B,notC)",
+      "extraNonemptyClass": null,
+      "modelsChecked": 121,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 0,
+      "conditionNecessaryAndSufficientGivenOriginal": false,
+      "smallestCountermodelWithoutCondition": null
+    },
+    {
+      "relation": "Predicate-complemented form",
+      "original": "I(B,C)",
+      "cell": "O(B,notC)",
+      "extraNonemptyClass": null,
+      "modelsChecked": 220,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 0,
+      "conditionNecessaryAndSufficientGivenOriginal": false,
+      "smallestCountermodelWithoutCondition": null
+    },
+    {
+      "relation": "Predicate-complemented form",
+      "original": "E(B,C)",
+      "cell": "A(B,notC)",
+      "extraNonemptyClass": null,
+      "modelsChecked": 121,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 0,
+      "conditionNecessaryAndSufficientGivenOriginal": false,
+      "smallestCountermodelWithoutCondition": null
+    },
+    {
+      "relation": "Predicate-complemented form",
+      "original": "O(B,C)",
+      "cell": "I(B,notC)",
+      "extraNonemptyClass": null,
+      "modelsChecked": 220,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 0,
+      "conditionNecessaryAndSufficientGivenOriginal": false,
+      "smallestCountermodelWithoutCondition": null
+    },
+    {
+      "relation": "Both terms complemented",
+      "original": "A(B,C)",
+      "cell": "I(notB,notC)",
+      "extraNonemptyClass": "notC",
+      "modelsChecked": 121,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 31,
+      "conditionNecessaryAndSufficientGivenOriginal": true,
+      "smallestCountermodelWithoutCondition": {
+        "U": [],
+        "B": [],
+        "C": []
+      }
+    },
+    {
+      "relation": "Both terms complemented",
+      "original": "E(B,C)",
+      "cell": "O(notB,notC)",
+      "extraNonemptyClass": "C",
+      "modelsChecked": 121,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 31,
+      "conditionNecessaryAndSufficientGivenOriginal": true,
+      "smallestCountermodelWithoutCondition": {
+        "U": [],
+        "B": [],
+        "C": []
+      }
+    },
+    {
+      "relation": "Subject-complemented form",
+      "original": "A(B,C)",
+      "cell": "O(notB,C)",
+      "extraNonemptyClass": "notC",
+      "modelsChecked": 121,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 31,
+      "conditionNecessaryAndSufficientGivenOriginal": true,
+      "smallestCountermodelWithoutCondition": {
+        "U": [],
+        "B": [],
+        "C": []
+      }
+    },
+    {
+      "relation": "Subject-complemented form",
+      "original": "E(B,C)",
+      "cell": "I(notB,C)",
+      "extraNonemptyClass": "C",
+      "modelsChecked": 121,
+      "failuresWithCondition": 0,
+      "failuresWithoutCondition": 31,
+      "conditionNecessaryAndSufficientGivenOriginal": true,
+      "smallestCountermodelWithoutCondition": {
+        "U": [],
+        "B": [],
+        "C": []
+      }
+    }
+  ],
+  "subjectExistenceInsufficient": [
+    {
+      "relation": "Both terms complemented",
+      "original": "A",
+      "ordinarySubjectBNonempty": true,
+      "countermodel": {
+        "U": [
+          0
+        ],
+        "B": [
+          0
+        ],
+        "C": [
+          0
+        ]
+      },
+      "missingNonemptyClass": "notC"
+    },
+    {
+      "relation": "Both terms complemented",
+      "original": "E",
+      "ordinarySubjectBNonempty": true,
+      "countermodel": {
+        "U": [
+          0
+        ],
+        "B": [
+          0
+        ],
+        "C": []
+      },
+      "missingNonemptyClass": "C"
+    },
+    {
+      "relation": "Subject-complemented form",
+      "original": "A",
+      "ordinarySubjectBNonempty": true,
+      "countermodel": {
+        "U": [
+          0
+        ],
+        "B": [
+          0
+        ],
+        "C": [
+          0
+        ]
+      },
+      "missingNonemptyClass": "notC"
+    },
+    {
+      "relation": "Subject-complemented form",
+      "original": "E",
+      "ordinarySubjectBNonempty": true,
+      "countermodel": {
+        "U": [
+          0
+        ],
+        "B": [
+          0
+        ],
+        "C": []
+      },
+      "missingNonemptyClass": "C"
+    }
+  ],
+  "dashCounterexamples": [
+    {
+      "relation": "Simple converse",
+      "original": "O(B,C)",
+      "candidate": "O(C,B)",
+      "countermodelWithAllFourTermsNonempty": {
+        "U": [
+          0,
+          1,
+          2
+        ],
+        "B": [
+          1,
+          2
+        ],
+        "C": [
+          2
+        ]
+      }
+    },
+    {
+      "relation": "Contrapositive retaining quality",
+      "original": "I(B,C)",
+      "candidate": "I(notC,notB)",
+      "countermodelWithAllFourTermsNonempty": {
+        "U": [
+          0,
+          1,
+          2
+        ],
+        "B": [
+          1,
+          2
+        ],
+        "C": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "relation": "Contrapositive changing quality",
+      "original": "I(B,C)",
+      "candidate": "O(notC,B)",
+      "countermodelWithAllFourTermsNonempty": {
+        "U": [
+          0,
+          1,
+          2
+        ],
+        "B": [
+          1,
+          2
+        ],
+        "C": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "relation": "Both terms complemented",
+      "original": "I(B,C)",
+      "candidate": "A(notB,notC)",
+      "countermodelWithAllFourTermsNonempty": {
+        "U": [
+          0,
+          1,
+          2
+        ],
+        "B": [
+          2
+        ],
+        "C": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "relation": "Both terms complemented",
+      "original": "O(B,C)",
+      "candidate": "E(notB,notC)",
+      "countermodelWithAllFourTermsNonempty": {
+        "U": [
+          0,
+          1,
+          2
+        ],
+        "B": [
+          2
+        ],
+        "C": [
+          1
+        ]
+      }
+    },
+    {
+      "relation": "Subject-complemented form",
+      "original": "I(B,C)",
+      "candidate": "E(notB,C)",
+      "countermodelWithAllFourTermsNonempty": {
+        "U": [
+          0,
+          1,
+          2
+        ],
+        "B": [
+          2
+        ],
+        "C": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "relation": "Subject-complemented form",
+      "original": "O(B,C)",
+      "candidate": "A(notB,C)",
+      "countermodelWithAllFourTermsNonempty": {
+        "U": [
+          0,
+          1,
+          2
+        ],
+        "B": [
+          2
+        ],
+        "C": [
+          1
+        ]
+      }
+    }
+  ],
+  "proposedReplacementNote": "The contradictory row gives the denial of the original; the other populated cells are presented as consequences of the original. In modern set semantics allowing empty terms, the simple converse of A(B,C) and both contrapositives of E(B,C) require B to be nonempty. The forms complementing both terms or the subject alone require different existence premises: from A(B,C), non-C must be nonempty; from E(B,C), C must be nonempty. These last premises do not follow merely from B being nonempty. The other populated consequences need no additional existence premise. The proofs on displayed pp190–191 give no separate statement that the required C or non-C class exists."
+}

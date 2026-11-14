@@ -1,0 +1,544 @@
+{
+  "schema": "hikma-complete-live-release-v1",
+  "date": "2026-11-11",
+  "timezone": "Asia/Riyadh",
+  "recordedAtUTC": "2026-11-11 04:30:53 UTC",
+  "status": "published-and-verified",
+  "repository": "gnamma-research/booksite",
+  "pullRequest": 290,
+  "sourceCommit": "c300dbd43eb42edef46f3ec60281a94b7d63ac35",
+  "sourceMergeCommit": "5cf6c3cf7aea6b4f21d52d6a5d3c2fbfcb7110d0",
+  "navigationCommit": "3c3228c429feeb45b80cfa21f521f097b3433a7b",
+  "pdfCommit": "f1bdc359333290c0e58c7b167c78f57d379d135e",
+  "scope": "Entire authorial Nihaya critical reading edition based on printed witnesses; complete Bidāya working translation; preserved partial Muẓaffar translation; shared dictionary and reviewed paragraph-level discussion network.",
+  "counts": {
+    "muzaffarAvailableUnits": 140,
+    "muzaffarBookVUnits": 40,
+    "bidayaUnits": 111,
+    "nihayaUnits": 136,
+    "nihayaNumberedChapters": 130,
+    "nihayaExternalComparisonsIncorporated": 136,
+    "nihayaExternalComparisonsRemaining": 0,
+    "criticalApparatusNotes": 154,
+    "textualDecisions": 86,
+    "reciprocalDiscussionPairs": 266,
+    "directedDiscussionRoutes": 532,
+    "dictionaryTerms": 150,
+    "curatedDictionaryTerms": 73,
+    "exactSemanticReferencesVerified": 1293,
+    "pdfEditions": 9
+  },
+  "sourceIntegrity": {
+    "checkpointFilesMatched": 252,
+    "all136UnitArabicAndEnglishHashesMatched": true,
+    "canonicalAudit": "passed; zero failures and warnings",
+    "exactDiscussionAndDictionaryReferencesMatched": 1293,
+    "missingReciprocalRoutes": 0
+  },
+  "automatedVerification": {
+    "reader": {
+      "id": 42959053807,
+      "job": 130320964147,
+      "status": "completed",
+      "conclusion": "success",
+      "studyToolChecks": 34,
+      "readerChecks": 51,
+      "totalBrowserChecks": 85,
+      "artifact": 13828666771,
+      "artifactSha256": "5799af6b1491a8b81ff2328e3a12ef6d26a5815b20d35de6aab6691c66235c37",
+      "completedAtUTC": "2026-11-11T04:28:01Z",
+      "confirmed": [
+        "Exact semantic link and return in Chromium and WebKit",
+        "Dictionary shows all books and correct mental-existence chapter",
+        "Restored chapter boundaries preserve old Arabic and English links",
+        "Good/evil route reaches reviewed argument",
+        "No uncaught JavaScript errors"
+      ]
+    },
+    "continuation": {
+      "run": 42959053704,
+      "status": "success",
+      "tests": 16
+    },
+    "pdfPublication": {
+      "id": 42959053772,
+      "job": 130320964323,
+      "status": "completed",
+      "conclusion": "success",
+      "publicationConfirmedInLogs": true,
+      "artifact": 13827653635,
+      "artifactSha256": "9bbea65784bb476d264291c42f85ca272ed4030a4c70c287c7d45342fc2fdd93"
+    }
+  },
+  "pdfManifest": {
+    "path": "published/manifest.json",
+    "sha256": "1fa24d696c98692010935ceb3f8c1eb56dae877a09790207959a32d7e689635f",
+    "files": [
+      {
+        "filename": "muzaffar-al-mantiq-reading-A4.pdf",
+        "bytes": 1050847,
+        "sha256": "0cb40a4baabc51b52fc9765e19ac67c9ea7ee8aecc47efa9d9983b0f54c6d3f6",
+        "source_sha256": "7b32a57f9a772de1eb9369dab890be0f6463b7d47264c7c88f884c9466ef6fa0",
+        "supplement_sha256": null,
+        "pages": 179
+      },
+      {
+        "filename": "muzaffar-al-mantiq-study-A4.pdf",
+        "bytes": 2117608,
+        "sha256": "2d194ccd7ac18252846909d1da850e69f27ff73bcc8f6700f20f9e0f6311c1bc",
+        "source_sha256": "7b32a57f9a772de1eb9369dab890be0f6463b7d47264c7c88f884c9466ef6fa0",
+        "supplement_sha256": null,
+        "pages": 315
+      },
+      {
+        "filename": "muzaffar-al-mantiq-reference-A4.pdf",
+        "bytes": 1323964,
+        "sha256": "92c7dc939fe2bbe3d32781bc1c4eea70291e3bd506c5c3be07ea52cad92a1479",
+        "source_sha256": "7b32a57f9a772de1eb9369dab890be0f6463b7d47264c7c88f884c9466ef6fa0",
+        "supplement_sha256": null,
+        "pages": 244
+      },
+      {
+        "filename": "bidayat-al-hikma-reading-A4.pdf",
+        "bytes": 657181,
+        "sha256": "4988863cb95764639ddb1449ad4f45821d427e0c32382645b3c51fb22616929e",
+        "source_sha256": "41a82bebff137704771a67a1d70c42754e39b0c8c535c63b089ed87442bd6fa1",
+        "supplement_sha256": null,
+        "pages": 146
+      },
+      {
+        "filename": "bidayat-al-hikma-study-A4.pdf",
+        "bytes": 1260693,
+        "sha256": "3d862881bddfeec7f82e125c41d1ef97e6bdd57223dcc79f427e53935912b44b",
+        "source_sha256": "41a82bebff137704771a67a1d70c42754e39b0c8c535c63b089ed87442bd6fa1",
+        "supplement_sha256": null,
+        "pages": 204
+      },
+      {
+        "filename": "bidayat-al-hikma-reference-A4.pdf",
+        "bytes": 790192,
+        "sha256": "eafd5bb556ff74ba4c187c9140f73fad21f047106f6a41c833f76eea5003f699",
+        "source_sha256": "41a82bebff137704771a67a1d70c42754e39b0c8c535c63b089ed87442bd6fa1",
+        "supplement_sha256": null,
+        "pages": 142
+      },
+      {
+        "filename": "nihayat-al-hikma-reading-A4.pdf",
+        "bytes": 1648637,
+        "sha256": "40437483d87e595d4bfa612679d2f7ddbff5da15b9587b2c998bb74f5ef913c8",
+        "source_sha256": "4fa2a7686d328652aad0178c5839e0ff51a5872c73ff20101c34450ef8de54a5",
+        "supplement_sha256": "d1c97a5f1aaa48ac65b50115674b077cd1a7e5c18926fc63faf5df642df376ad",
+        "pages": 336
+      },
+      {
+        "filename": "nihayat-al-hikma-study-A4.pdf",
+        "bytes": 3358361,
+        "sha256": "e309d97265ab521f17523aa27dcc446923951d4e6a19566b7acd0f0c2f8e5173",
+        "source_sha256": "4fa2a7686d328652aad0178c5839e0ff51a5872c73ff20101c34450ef8de54a5",
+        "supplement_sha256": "d1c97a5f1aaa48ac65b50115674b077cd1a7e5c18926fc63faf5df642df376ad",
+        "pages": 525
+      },
+      {
+        "filename": "nihayat-al-hikma-reference-A4.pdf",
+        "bytes": 2213820,
+        "sha256": "173a8435eabde1a6ac6227e8fb11391f3991d6cabea0f885e344659d2f773741",
+        "source_sha256": "4fa2a7686d328652aad0178c5839e0ff51a5872c73ff20101c34450ef8de54a5",
+        "supplement_sha256": "d1c97a5f1aaa48ac65b50115674b077cd1a7e5c18926fc63faf5df642df376ad",
+        "pages": 377
+      }
+    ]
+  },
+  "publishedPdfParity": [
+    {
+      "filename": "muzaffar-al-mantiq-reading-A4.pdf",
+      "outputHashVerified": true,
+      "sourceMatchesReviewedPreview": true,
+      "supplementMatchesReviewedPreview": true,
+      "pagesMatchReviewedPreview": true,
+      "normalizedPdfBytesMatchReviewedPreview": true
+    },
+    {
+      "filename": "muzaffar-al-mantiq-study-A4.pdf",
+      "outputHashVerified": true,
+      "sourceMatchesReviewedPreview": true,
+      "supplementMatchesReviewedPreview": true,
+      "pagesMatchReviewedPreview": true,
+      "normalizedPdfBytesMatchReviewedPreview": true
+    },
+    {
+      "filename": "muzaffar-al-mantiq-reference-A4.pdf",
+      "outputHashVerified": true,
+      "sourceMatchesReviewedPreview": true,
+      "supplementMatchesReviewedPreview": true,
+      "pagesMatchReviewedPreview": true,
+      "normalizedPdfBytesMatchReviewedPreview": true
+    },
+    {
+      "filename": "bidayat-al-hikma-reading-A4.pdf",
+      "outputHashVerified": true,
+      "sourceMatchesReviewedPreview": true,
+      "supplementMatchesReviewedPreview": true,
+      "pagesMatchReviewedPreview": true,
+      "normalizedPdfBytesMatchReviewedPreview": true
+    },
+    {
+      "filename": "bidayat-al-hikma-study-A4.pdf",
+      "outputHashVerified": true,
+      "sourceMatchesReviewedPreview": true,
+      "supplementMatchesReviewedPreview": true,
+      "pagesMatchReviewedPreview": true,
+      "normalizedPdfBytesMatchReviewedPreview": true
+    },
+    {
+      "filename": "bidayat-al-hikma-reference-A4.pdf",
+      "outputHashVerified": true,
+      "sourceMatchesReviewedPreview": true,
+      "supplementMatchesReviewedPreview": true,
+      "pagesMatchReviewedPreview": true,
+      "normalizedPdfBytesMatchReviewedPreview": true
+    },
+    {
+      "filename": "nihayat-al-hikma-reading-A4.pdf",
+      "outputHashVerified": true,
+      "sourceMatchesReviewedPreview": true,
+      "supplementMatchesReviewedPreview": true,
+      "pagesMatchReviewedPreview": true,
+      "normalizedPdfBytesMatchReviewedPreview": true
+    },
+    {
+      "filename": "nihayat-al-hikma-study-A4.pdf",
+      "outputHashVerified": true,
+      "sourceMatchesReviewedPreview": true,
+      "supplementMatchesReviewedPreview": true,
+      "pagesMatchReviewedPreview": true,
+      "normalizedPdfBytesMatchReviewedPreview": true
+    },
+    {
+      "filename": "nihayat-al-hikma-reference-A4.pdf",
+      "outputHashVerified": true,
+      "sourceMatchesReviewedPreview": true,
+      "supplementMatchesReviewedPreview": true,
+      "pagesMatchReviewedPreview": true,
+      "normalizedPdfBytesMatchReviewedPreview": true
+    }
+  ],
+  "visualReview": {
+    "skill": "pdf",
+    "renderer": "pdftoppm",
+    "pageSamples": [
+      {
+        "file": "bidayat-al-hikma-reading-A4.pdf",
+        "pages": [
+          5,
+          73,
+          144
+        ],
+        "total_pages": 146
+      },
+      {
+        "file": "bidayat-al-hikma-reference-A4.pdf",
+        "pages": [
+          5,
+          71,
+          140
+        ],
+        "total_pages": 142
+      },
+      {
+        "file": "bidayat-al-hikma-study-A4.pdf",
+        "pages": [
+          5,
+          102,
+          202
+        ],
+        "total_pages": 204
+      },
+      {
+        "file": "muzaffar-al-mantiq-reading-A4.pdf",
+        "pages": [
+          5,
+          89,
+          91,
+          177
+        ],
+        "total_pages": 179
+      },
+      {
+        "file": "muzaffar-al-mantiq-reference-A4.pdf",
+        "pages": [
+          5,
+          122,
+          242
+        ],
+        "total_pages": 244
+      },
+      {
+        "file": "muzaffar-al-mantiq-study-A4.pdf",
+        "pages": [
+          5,
+          156,
+          157,
+          313
+        ],
+        "total_pages": 315
+      },
+      {
+        "file": "nihayat-al-hikma-reading-A4.pdf",
+        "pages": [
+          5,
+          109,
+          149,
+          168,
+          324,
+          334
+        ],
+        "total_pages": 336
+      },
+      {
+        "file": "nihayat-al-hikma-reference-A4.pdf",
+        "pages": [
+          5,
+          123,
+          169,
+          188,
+          365,
+          375
+        ],
+        "total_pages": 377
+      },
+      {
+        "file": "nihayat-al-hikma-study-A4.pdf",
+        "pages": [
+          5,
+          171,
+          236,
+          262,
+          513,
+          523
+        ],
+        "total_pages": 525
+      }
+    ],
+    "pagesVisuallyInspected": 38,
+    "status": "passed bounded visual sample",
+    "observedDefects": [],
+    "scope": "All nine PDF editions: introductory material, middle body pages, final glossary pages; Nihaya VI.10, VII.8 and XII.24; Muzaffar square-of-opposition diagrams in reading and bilingual study editions. Rendered contact sheets inspected for legibility, Arabic shaping, page containment, columns, diagrams, apparatus and page numbering. This is a representative visual sample, not a claim that all PDF pages were individually viewed."
+  },
+  "pagesDeployment": {
+    "run": 42959162136,
+    "sourceCommit": "f1bdc359333290c0e58c7b167c78f57d379d135e",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/gnamma-research/booksite/actions/runs/42959162136"
+  },
+  "liveFileVerification": {
+    "checkedAtUTC": "2026-11-11T04:29:45.060078+00:00",
+    "baseUrl": "https://gnamma-research.github.io/booksite/",
+    "status": "passed",
+    "checks": [
+      {
+        "path": "texts/al-tabatabai/muzaffar-al-mantiq/data/book.json",
+        "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/muzaffar-al-mantiq/data/book.json",
+        "httpStatus": 200,
+        "bytes": 935528,
+        "expectedSha256": "7b32a57f9a772de1eb9369dab890be0f6463b7d47264c7c88f884c9466ef6fa0",
+        "actualSha256": "7b32a57f9a772de1eb9369dab890be0f6463b7d47264c7c88f884c9466ef6fa0",
+        "matched": true,
+        "units": 140
+      },
+      {
+        "path": "texts/al-tabatabai/bidayat-al-hikma/data/book.json",
+        "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/bidayat-al-hikma/data/book.json",
+        "httpStatus": 200,
+        "bytes": 731353,
+        "expectedSha256": "41a82bebff137704771a67a1d70c42754e39b0c8c535c63b089ed87442bd6fa1",
+        "actualSha256": "41a82bebff137704771a67a1d70c42754e39b0c8c535c63b089ed87442bd6fa1",
+        "matched": true,
+        "units": 111
+      },
+      {
+        "path": "texts/al-tabatabai/nihayat-al-hikma/data/book.json",
+        "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/data/book.json",
+        "httpStatus": 200,
+        "bytes": 2000961,
+        "expectedSha256": "4fa2a7686d328652aad0178c5839e0ff51a5872c73ff20101c34450ef8de54a5",
+        "actualSha256": "4fa2a7686d328652aad0178c5839e0ff51a5872c73ff20101c34450ef8de54a5",
+        "matched": true,
+        "units": 136
+      },
+      {
+        "path": "texts/al-tabatabai/data/study-index.json",
+        "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/data/study-index.json",
+        "httpStatus": 200,
+        "bytes": 1224491,
+        "expectedSha256": "e31693e0a2df2eee8ced2a83a8cd686bd0a6306380a7cceb7d1468073b489219",
+        "actualSha256": "e31693e0a2df2eee8ced2a83a8cd686bd0a6306380a7cceb7d1468073b489219",
+        "matched": true,
+        "terms": 150,
+        "links": 532
+      },
+      {
+        "path": "texts/al-tabatabai/data/editorial-connections.json",
+        "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/data/editorial-connections.json",
+        "httpStatus": 200,
+        "bytes": 721524,
+        "expectedSha256": "37a7680c06c30f4c08909cf38e8c37b1e70db7f03e6ec71979a1afa44d038508",
+        "actualSha256": "37a7680c06c30f4c08909cf38e8c37b1e70db7f03e6ec71979a1afa44d038508",
+        "matched": true
+      },
+      {
+        "path": "texts/al-tabatabai/nihayat-al-hikma/data/editorial-supplement.json",
+        "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/data/editorial-supplement.json",
+        "httpStatus": 200,
+        "bytes": 398867,
+        "expectedSha256": "d1c97a5f1aaa48ac65b50115674b077cd1a7e5c18926fc63faf5df642df376ad",
+        "actualSha256": "d1c97a5f1aaa48ac65b50115674b077cd1a7e5c18926fc63faf5df642df376ad",
+        "matched": true
+      },
+      {
+        "path": "assets/gnamma-bottom.js",
+        "url": "https://gnamma-research.github.io/booksite/assets/gnamma-bottom.js",
+        "httpStatus": 200,
+        "bytes": 7178,
+        "expectedSha256": "35257618bcc7c192925c02e4bcf5ec519352dfb6cbb68b631757cf30c43ce7b9",
+        "actualSha256": "35257618bcc7c192925c02e4bcf5ec519352dfb6cbb68b631757cf30c43ce7b9",
+        "matched": true
+      },
+      {
+        "path": "texts/al-tabatabai/editions/manifest.json",
+        "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/editions/manifest.json",
+        "httpStatus": 200,
+        "bytes": 5083,
+        "expectedSha256": "1fa24d696c98692010935ceb3f8c1eb56dae877a09790207959a32d7e689635f",
+        "actualSha256": "1fa24d696c98692010935ceb3f8c1eb56dae877a09790207959a32d7e689635f",
+        "matched": true
+      },
+      {
+        "path": "texts/al-tabatabai/editions/muzaffar-al-mantiq-reading-A4.pdf",
+        "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/editions/muzaffar-al-mantiq-reading-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 1050847,
+        "expectedSha256": "0cb40a4baabc51b52fc9765e19ac67c9ea7ee8aecc47efa9d9983b0f54c6d3f6",
+        "actualSha256": "0cb40a4baabc51b52fc9765e19ac67c9ea7ee8aecc47efa9d9983b0f54c6d3f6",
+        "matched": true
+      },
+      {
+        "path": "texts/al-tabatabai/editions/muzaffar-al-mantiq-study-A4.pdf",
+        "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/editions/muzaffar-al-mantiq-study-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 2117608,
+        "expectedSha256": "2d194ccd7ac18252846909d1da850e69f27ff73bcc8f6700f20f9e0f6311c1bc",
+        "actualSha256": "2d194ccd7ac18252846909d1da850e69f27ff73bcc8f6700f20f9e0f6311c1bc",
+        "matched": true
+      },
+      {
+        "path": "texts/al-tabatabai/editions/muzaffar-al-mantiq-reference-A4.pdf",
+        "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/editions/muzaffar-al-mantiq-reference-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 1323964,
+        "expectedSha256": "92c7dc939fe2bbe3d32781bc1c4eea70291e3bd506c5c3be07ea52cad92a1479",
+        "actualSha256": "92c7dc939fe2bbe3d32781bc1c4eea70291e3bd506c5c3be07ea52cad92a1479",
+        "matched": true
+      },
+      {
+        "path": "texts/al-tabatabai/editions/bidayat-al-hikma-reading-A4.pdf",
+        "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/editions/bidayat-al-hikma-reading-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 657181,
+        "expectedSha256": "4988863cb95764639ddb1449ad4f45821d427e0c32382645b3c51fb22616929e",
+        "actualSha256": "4988863cb95764639ddb1449ad4f45821d427e0c32382645b3c51fb22616929e",
+        "matched": true
+      },
+      {
+        "path": "texts/al-tabatabai/editions/bidayat-al-hikma-study-A4.pdf",
+        "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/editions/bidayat-al-hikma-study-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 1260693,
+        "expectedSha256": "3d862881bddfeec7f82e125c41d1ef97e6bdd57223dcc79f427e53935912b44b",
+        "actualSha256": "3d862881bddfeec7f82e125c41d1ef97e6bdd57223dcc79f427e53935912b44b",
+        "matched": true
+      },
+      {
+        "path": "texts/al-tabatabai/editions/bidayat-al-hikma-reference-A4.pdf",
+        "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/editions/bidayat-al-hikma-reference-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 790192,
+        "expectedSha256": "eafd5bb556ff74ba4c187c9140f73fad21f047106f6a41c833f76eea5003f699",
+        "actualSha256": "eafd5bb556ff74ba4c187c9140f73fad21f047106f6a41c833f76eea5003f699",
+        "matched": true
+      },
+      {
+        "path": "texts/al-tabatabai/editions/nihayat-al-hikma-reading-A4.pdf",
+        "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/editions/nihayat-al-hikma-reading-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 1648637,
+        "expectedSha256": "40437483d87e595d4bfa612679d2f7ddbff5da15b9587b2c998bb74f5ef913c8",
+        "actualSha256": "40437483d87e595d4bfa612679d2f7ddbff5da15b9587b2c998bb74f5ef913c8",
+        "matched": true
+      },
+      {
+        "path": "texts/al-tabatabai/editions/nihayat-al-hikma-study-A4.pdf",
+        "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/editions/nihayat-al-hikma-study-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 3358361,
+        "expectedSha256": "e309d97265ab521f17523aa27dcc446923951d4e6a19566b7acd0f0c2f8e5173",
+        "actualSha256": "e309d97265ab521f17523aa27dcc446923951d4e6a19566b7acd0f0c2f8e5173",
+        "matched": true
+      },
+      {
+        "path": "texts/al-tabatabai/editions/nihayat-al-hikma-reference-A4.pdf",
+        "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/editions/nihayat-al-hikma-reference-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 2213820,
+        "expectedSha256": "173a8435eabde1a6ac6227e8fb11391f3991d6cabea0f885e344659d2f773741",
+        "actualSha256": "173a8435eabde1a6ac6227e8fb11391f3991d6cabea0f885e344659d2f773741",
+        "matched": true
+      }
+    ]
+  },
+  "liveBrowserVerification": {
+    "status": "passed",
+    "menu": "Texts → Logic and Wisdom: combined reader and all three individual readers visible",
+    "standaloneReaders": [
+      "nihayat-al-hikma",
+      "bidayat-al-hikma",
+      "muzaffar-al-mantiq"
+    ],
+    "dictionarySearch": "mental existence",
+    "dictionaryDestination": "para-B-II-01-en-001",
+    "followedDiscussionRoutes": [
+      {
+        "from": "B-II-01",
+        "to": "para-N-III-01-en-001",
+        "rationaleVisible": true
+      },
+      {
+        "from": "N-III-01",
+        "to": "para-M-V-40-en-002",
+        "rationaleVisible": true
+      }
+    ],
+    "reciprocalRouteVisible": {
+      "from": "N-III-01",
+      "to": "para-B-II-01-en-001"
+    },
+    "returnLinksVisible": true,
+    "downloadPage": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/editions/"
+  },
+  "navigation": {
+    "textDestinations": 17,
+    "staticCatalogueAndSharedMenuDestinationsMatch": true,
+    "htmlConsumersUpdated": 9,
+    "cacheVersion": "20261111-texts-catalog",
+    "allPreviousDestinationsPreserved": true
+  },
+  "retainedScope": {
+    "manuscriptCollation": false,
+    "independentHumanCertification": false,
+    "sourceCruxes": "Explained readings remain at VI.15, VI.19, XII.16 and XII.18.",
+    "muzaffar": "Full Book V preserved; earlier gaps and Book VI remain unfinished.",
+    "bidaya": "Complete working Arabic–English translation; comprehensive textual collation and independent translation review remain separate.",
+    "nihayaDirectRouteCoverage": "126/136 units have selected direct routes; five prefaces and five advanced discussions have documented reasons for no precise counterpart."
+  },
+  "continuation": "This release receipt supersedes pending-publication wording in the frozen source-completion audit and old historical handoffs. The canonical state now returns nihaya_complete."
+}

@@ -1,0 +1,12 @@
+{
+  "units": 110,
+  "introduction": 40,
+  "main": 64,
+  "conclusion": 6,
+  "additionalAncestralBridges": 4,
+  "englishWords": 48897,
+  "bridgeEnglishWords": 341,
+  "newlyIntegratedEnglishWords": 30571,
+  "completeAvailableSourceTranslation": true,
+  "manuscriptCriticalEditionComplete": false
+}

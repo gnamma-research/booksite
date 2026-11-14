@@ -1,0 +1,37 @@
+{
+  "stage": 117,
+  "date": "2026-11-12",
+  "historicalHRecordsPreserved": 1090,
+  "priorStage": 116,
+  "priorPath": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage116.md",
+  "priorBytes": 1171240,
+  "priorSHA256": "e97ccc8021b9b803237d27821d60f6b336090dfe9e8653386e98cbf76687d80e",
+  "fullOutputPath": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage117.md",
+  "fullOutputBytes": 1181516,
+  "fullOutputSHA256": "36a8fb25ba0fc1d7f1f29c8c612efb09bef9993531763582ef8f1327713d517a",
+  "priorBytePrefixPreserved": true,
+  "newWorkingQ309BilingualExamples": 5,
+  "previousWorkingQ309BilingualExamples": 2,
+  "cumulativeWorkingQ309Examples": 7,
+  "remainingQ309Examples": 5,
+  "untouchedOriginalFirstPassEnglishRecords": 1029,
+  "untouchedTableAffectedStatuses": 4,
+  "untouchedModernReferenceOnly": 57,
+  "newWholeSourcePagesCertified": 0,
+  "newManuscriptCriticalVariants": 0,
+  "newFullModal46HistoricalProofs": 0,
+  "appendices": [
+    {
+      "title": "Five additional Q309 historical Arabic-English examples",
+      "file": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE117_Q309_FIVE_MORE_EXAMPLES.md",
+      "bytes": 4362,
+      "sha256": "c834dbc688384fe30fdd1bbf003336ebf71cf16d79c20a524be78861c57f0285"
+    },
+    {
+      "title": "Stage117 cumulative continuity handoff",
+      "file": "texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md",
+      "bytes": 5722,
+      "sha256": "757ad069a2c5b092c941f538cd1353f9e4d1e489632a7c50f1cbab2da226535b"
+    }
+  ]
+}

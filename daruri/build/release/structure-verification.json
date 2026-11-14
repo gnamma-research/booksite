@@ -1,5 +1,5 @@
 {
-  "release": "daruri8-structure-20261020",
+  "release": "daruri13-lesson12-method-20261024",
   "editions": [
     {
       "filename": "daruri.pdf",
@@ -18,7 +18,11 @@
           7
         ]
       },
-      "all_text_black": true,
+      "all_text_black": false,
+      "text_colors_used": [
+        "#000000",
+        "#285e72"
+      ],
       "images": 0,
       "out_of_page_spans": 0,
       "ok": true
@@ -40,7 +44,11 @@
           7
         ]
       },
-      "all_text_black": true,
+      "all_text_black": false,
+      "text_colors_used": [
+        "#000000",
+        "#285e72"
+      ],
       "images": 0,
       "out_of_page_spans": 0,
       "ok": true
@@ -62,14 +70,18 @@
           7
         ]
       },
-      "all_text_black": true,
+      "all_text_black": false,
+      "text_colors_used": [
+        "#000000",
+        "#285e72"
+      ],
       "images": 0,
       "out_of_page_spans": 0,
       "ok": true
     },
     {
       "filename": "daruri-arabic.pdf",
-      "pages": 73,
+      "pages": 72,
       "source_headings": 46,
       "visible_source_destinations": 47,
       "editorial_titles": 0,
@@ -79,14 +91,18 @@
         ],
         "editorial": []
       },
-      "all_text_black": true,
+      "all_text_black": false,
+      "text_colors_used": [
+        "#000000",
+        "#285e72"
+      ],
       "images": 0,
       "out_of_page_spans": 0,
       "ok": true
     },
     {
       "filename": "daruri-arabic-vowelled.pdf",
-      "pages": 69,
+      "pages": 68,
       "source_headings": 46,
       "visible_source_destinations": 47,
       "editorial_titles": 0,
@@ -96,7 +112,11 @@
         ],
         "editorial": []
       },
-      "all_text_black": true,
+      "all_text_black": false,
+      "text_colors_used": [
+        "#000000",
+        "#285e72"
+      ],
       "images": 0,
       "out_of_page_spans": 0,
       "ok": true

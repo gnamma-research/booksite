@@ -1,0 +1,45 @@
+name: Daruri mobile landscape reading dock QA
+on:
+  pull_request:
+    paths:
+      - 'daruri/dock-ios-compact.css'
+      - 'daruri/reading-mode-controls.js'
+      - 'daruri/index.html'
+      - 'daruri/sw.js'
+      - 'daruri/qa/verify-landscape-reading-dock.cjs'
+      - '.github/workflows/daruri-landscape-dock.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  landscape-reader-dock:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check test JavaScript syntax
+        run: node --check daruri/qa/verify-landscape-reading-dock.cjs
+      - name: Remove broken optional Ubuntu package feed
+        run: |
+          for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$source" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$source"; then
+              sudo mv "$source" "$source.disabled"
+            fi
+          done
+      - name: Install Chromium and WebKit
+        run: |
+          npm install --no-save --no-package-lock --prefix daruri/qa playwright@1.58.0
+          ./daruri/qa/node_modules/.bin/playwright install --with-deps chromium webkit
+      - name: Test physical viewport geometry and actual dock tap actions
+        run: node daruri/qa/verify-landscape-reading-dock.cjs
+      - name: Keep landscape and portrait screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-landscape-reader-dock-screenshots
+          path: /tmp/gnamma-*-dock-*.png
+          if-no-files-found: ignore

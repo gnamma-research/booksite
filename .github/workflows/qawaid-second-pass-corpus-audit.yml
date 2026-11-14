@@ -1,0 +1,58 @@
+name: Qawaid complete-corpus second-pass audit
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/qawaid-second-pass-corpus-audit.yml'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/second-pass-corpus-audit.mjs'
+      - 'texts/al-turka/qawaid-al-tawhid/data/**'
+      - 'texts/al-turka/qawaid-al-tawhid/sources/**'
+      - 'texts/al-turka/qawaid-al-tawhid/pdf/**'
+      - 'texts/al-turka/qawaid-al-tawhid/commentary.html'
+      - 'texts/al-turka/qawaid-al-tawhid/downloads/Tamhid_Complete_Commentary_Reading_Edition.html'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: qawaid-second-pass-corpus-audit
+  cancel-in-progress: false
+jobs:
+  verify-and-document:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            texts/al-turka/qawaid-al-tawhid
+      - name: Verify all 171 sections and five PDF binaries
+        run: node texts/al-turka/qawaid-al-tawhid/qa/second-pass-corpus-audit.mjs
+      - name: Recheck and publish the audit from current master with retries
+        run: |
+          git config user.name 'Gnamma editorial audit'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3 4 5 6 7 8; do
+            echo "Source-audit publication attempt $attempt"
+            git fetch origin master
+            git reset --hard origin/master
+            # Do not push a report computed for an earlier corpus or PDF snapshot.
+            node texts/al-turka/qawaid-al-tawhid/qa/second-pass-corpus-audit.mjs
+            git add texts/al-turka/qawaid-al-tawhid/qa/second-pass-corpus-audit.json texts/al-turka/qawaid-al-tawhid/editorial/SECOND_PASS_REVIEW_2026-11-07.md
+            if git diff --cached --quiet; then
+              echo 'Current master already has the verified audit evidence'
+              exit 0
+            fi
+            git commit -m 'Record current 171-unit source and PDF integrity audit'
+            if git push origin HEAD:master; then exit 0; fi
+            sleep 2
+          done
+          echo 'Unable to publish audit after concurrent master updates' >&2
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawaid-second-pass-evidence
+          path: |
+            texts/al-turka/qawaid-al-tawhid/qa/second-pass-corpus-audit.json
+            texts/al-turka/qawaid-al-tawhid/editorial/SECOND_PASS_REVIEW_2026-11-07.md
+          retention-days: 14

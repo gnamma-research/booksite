@@ -1,0 +1,3032 @@
+{
+  "date": "2026-11-07",
+  "kind": "complete-corpus machine-verifiable audit, not manuscript collation or scholarly line-by-line acceptance",
+  "counts": {
+    "matn": 61,
+    "introduction": 40,
+    "main": 64,
+    "conclusion": 6,
+    "allBilingual": 171,
+    "technicalDictionary": 82,
+    "primaryReferenceCards": 18,
+    "pdfs": 5
+  },
+  "sourceEvidence": {
+    "fixedADigitalPages": "48–270",
+    "uniquePages": 223,
+    "verifiedSHAforMain": 64,
+    "introduction": "N online print; no independent full manuscript collation",
+    "conclusion": "A pp.271–274 independently inspected online 7 Nov 2026; not included in retained A_MAIN_095_270 snapshot",
+    "ancestralQT059": "source-reported lacuna explicitly deferred"
+  },
+  "semanticVerification": "Automatic character overlap, hash, page scope and length indicators do not establish the accuracy of individual English clauses, readings, or doctrinal interpretation.",
+  "warnings": [],
+  "errors": [],
+  "units": [
+    {
+      "id": "QT-001",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        48
+      ],
+      "arabicWords": 43,
+      "englishWords": 73,
+      "ratio": 1.698,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.909,
+      "sampledFragments": 11,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-002",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        49
+      ],
+      "arabicWords": 63,
+      "englishWords": 92,
+      "ratio": 1.46,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.944,
+      "sampledFragments": 18,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-003",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        52
+      ],
+      "arabicWords": 16,
+      "englishWords": 17,
+      "ratio": 1.063,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 2,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-004",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        53,
+        54
+      ],
+      "arabicWords": 111,
+      "englishWords": 166,
+      "ratio": 1.495,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.778,
+      "sampledFragments": 27,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-005",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        55
+      ],
+      "arabicWords": 23,
+      "englishWords": 32,
+      "ratio": 1.391,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 4,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-006",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        59,
+        60
+      ],
+      "arabicWords": 33,
+      "englishWords": 57,
+      "ratio": 1.727,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 7,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-007",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        63,
+        64
+      ],
+      "arabicWords": 99,
+      "englishWords": 139,
+      "ratio": 1.404,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 24,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-008",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        67
+      ],
+      "arabicWords": 23,
+      "englishWords": 28,
+      "ratio": 1.217,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 5,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-009",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        68
+      ],
+      "arabicWords": 45,
+      "englishWords": 63,
+      "ratio": 1.4,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.909,
+      "sampledFragments": 11,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-010",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        71
+      ],
+      "arabicWords": 34,
+      "englishWords": 54,
+      "ratio": 1.588,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.889,
+      "sampledFragments": 9,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-011",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        72
+      ],
+      "arabicWords": 47,
+      "englishWords": 74,
+      "ratio": 1.574,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.909,
+      "sampledFragments": 11,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-012",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        74
+      ],
+      "arabicWords": 71,
+      "englishWords": 98,
+      "ratio": 1.38,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 16,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-013",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        78
+      ],
+      "arabicWords": 134,
+      "englishWords": 183,
+      "ratio": 1.366,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.886,
+      "sampledFragments": 35,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-014",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        81
+      ],
+      "arabicWords": 28,
+      "englishWords": 56,
+      "ratio": 2,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 7,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-015",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        82,
+        83
+      ],
+      "arabicWords": 122,
+      "englishWords": 174,
+      "ratio": 1.426,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 30,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-016",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        87
+      ],
+      "arabicWords": 136,
+      "englishWords": 159,
+      "ratio": 1.169,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.967,
+      "sampledFragments": 30,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-017",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        89,
+        90
+      ],
+      "arabicWords": 59,
+      "englishWords": 83,
+      "ratio": 1.407,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.917,
+      "sampledFragments": 12,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-018",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        93
+      ],
+      "arabicWords": 44,
+      "englishWords": 67,
+      "ratio": 1.523,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.9,
+      "sampledFragments": 10,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-019",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        94
+      ],
+      "arabicWords": 44,
+      "englishWords": 70,
+      "ratio": 1.591,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.9,
+      "sampledFragments": 10,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-020",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        95
+      ],
+      "arabicWords": 141,
+      "englishWords": 198,
+      "ratio": 1.404,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.939,
+      "sampledFragments": 33,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-021",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        98
+      ],
+      "arabicWords": 46,
+      "englishWords": 61,
+      "ratio": 1.326,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 10,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-022",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        100,
+        101
+      ],
+      "arabicWords": 248,
+      "englishWords": 301,
+      "ratio": 1.214,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.925,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-023",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        106
+      ],
+      "arabicWords": 157,
+      "englishWords": 194,
+      "ratio": 1.236,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 37,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-024",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        109
+      ],
+      "arabicWords": 85,
+      "englishWords": 112,
+      "ratio": 1.318,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.864,
+      "sampledFragments": 22,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-025",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        111,
+        112
+      ],
+      "arabicWords": 161,
+      "englishWords": 202,
+      "ratio": 1.255,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.947,
+      "sampledFragments": 38,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-026",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        114
+      ],
+      "arabicWords": 39,
+      "englishWords": 52,
+      "ratio": 1.333,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.875,
+      "sampledFragments": 8,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-027",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        118
+      ],
+      "arabicWords": 98,
+      "englishWords": 119,
+      "ratio": 1.214,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.75,
+      "sampledFragments": 20,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-028",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        121
+      ],
+      "arabicWords": 42,
+      "englishWords": 52,
+      "ratio": 1.238,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 10,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-029",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        130,
+        131
+      ],
+      "arabicWords": 22,
+      "englishWords": 35,
+      "ratio": 1.591,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 5,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-030",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        133
+      ],
+      "arabicWords": 107,
+      "englishWords": 147,
+      "ratio": 1.374,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.88,
+      "sampledFragments": 25,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-031",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        137,
+        138
+      ],
+      "arabicWords": 120,
+      "englishWords": 151,
+      "ratio": 1.258,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.923,
+      "sampledFragments": 26,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-032",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        141
+      ],
+      "arabicWords": 25,
+      "englishWords": 35,
+      "ratio": 1.4,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 6,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-033",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        143,
+        144
+      ],
+      "arabicWords": 87,
+      "englishWords": 125,
+      "ratio": 1.437,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.9,
+      "sampledFragments": 20,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-034",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        148,
+        149
+      ],
+      "arabicWords": 336,
+      "englishWords": 372,
+      "ratio": 1.107,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.95,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-035",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        154
+      ],
+      "arabicWords": 178,
+      "englishWords": 216,
+      "ratio": 1.213,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.85,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-036",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        160,
+        161
+      ],
+      "arabicWords": 133,
+      "englishWords": 161,
+      "ratio": 1.211,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.967,
+      "sampledFragments": 30,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-037",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        164
+      ],
+      "arabicWords": 80,
+      "englishWords": 96,
+      "ratio": 1.2,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.833,
+      "sampledFragments": 18,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-038",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        167
+      ],
+      "arabicWords": 78,
+      "englishWords": 91,
+      "ratio": 1.167,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.895,
+      "sampledFragments": 19,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-039",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        172,
+        173
+      ],
+      "arabicWords": 100,
+      "englishWords": 117,
+      "ratio": 1.17,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.826,
+      "sampledFragments": 23,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-040",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        180
+      ],
+      "arabicWords": 89,
+      "englishWords": 142,
+      "ratio": 1.596,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.955,
+      "sampledFragments": 22,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-041",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        185,
+        186
+      ],
+      "arabicWords": 135,
+      "englishWords": 159,
+      "ratio": 1.178,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.929,
+      "sampledFragments": 28,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-042",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        189,
+        190
+      ],
+      "arabicWords": 134,
+      "englishWords": 168,
+      "ratio": 1.254,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.966,
+      "sampledFragments": 29,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-043",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        193,
+        194,
+        195
+      ],
+      "arabicWords": 270,
+      "englishWords": 306,
+      "ratio": 1.133,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.925,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-044",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        197,
+        198
+      ],
+      "arabicWords": 149,
+      "englishWords": 193,
+      "ratio": 1.295,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.935,
+      "sampledFragments": 31,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-045",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        202,
+        203
+      ],
+      "arabicWords": 221,
+      "englishWords": 237,
+      "ratio": 1.072,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.95,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-046",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        206,
+        207
+      ],
+      "arabicWords": 147,
+      "englishWords": 178,
+      "ratio": 1.211,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.906,
+      "sampledFragments": 32,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-047",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        212,
+        213
+      ],
+      "arabicWords": 273,
+      "englishWords": 279,
+      "ratio": 1.022,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-048",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        215,
+        216,
+        217,
+        218
+      ],
+      "arabicWords": 262,
+      "englishWords": 265,
+      "ratio": 1.011,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-049",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        224,
+        225
+      ],
+      "arabicWords": 234,
+      "englishWords": 254,
+      "ratio": 1.085,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.878,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-050",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        228,
+        229,
+        230
+      ],
+      "arabicWords": 159,
+      "englishWords": 192,
+      "ratio": 1.208,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.941,
+      "sampledFragments": 34,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-051",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        234
+      ],
+      "arabicWords": 127,
+      "englishWords": 159,
+      "ratio": 1.252,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.935,
+      "sampledFragments": 31,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-052",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        237
+      ],
+      "arabicWords": 101,
+      "englishWords": 131,
+      "ratio": 1.297,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 21,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-053",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        243,
+        244
+      ],
+      "arabicWords": 261,
+      "englishWords": 249,
+      "ratio": 0.954,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.925,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-054",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        248
+      ],
+      "arabicWords": 158,
+      "englishWords": 156,
+      "ratio": 0.987,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.867,
+      "sampledFragments": 30,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-055",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        249,
+        250
+      ],
+      "arabicWords": 112,
+      "englishWords": 138,
+      "ratio": 1.232,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.885,
+      "sampledFragments": 26,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-056",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        252,
+        253,
+        254,
+        255
+      ],
+      "arabicWords": 687,
+      "englishWords": 549,
+      "ratio": 0.799,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.854,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-057",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        257,
+        258
+      ],
+      "arabicWords": 122,
+      "englishWords": 170,
+      "ratio": 1.393,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.815,
+      "sampledFragments": 27,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-058",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        260
+      ],
+      "arabicWords": 129,
+      "englishWords": 155,
+      "ratio": 1.202,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 28,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-059",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        262,
+        263,
+        264
+      ],
+      "arabicWords": 170,
+      "englishWords": 206,
+      "ratio": 1.212,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.879,
+      "sampledFragments": 33,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-060",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        266,
+        267
+      ],
+      "arabicWords": 245,
+      "englishWords": 315,
+      "ratio": 1.286,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.925,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "QT-061",
+      "part": "matn",
+      "matnId": null,
+      "pages": [
+        269,
+        270
+      ],
+      "arabicWords": 253,
+      "englishWords": 310,
+      "ratio": 1.225,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.951,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-001",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        19,
+        20
+      ],
+      "arabicWords": 95,
+      "englishWords": 169,
+      "ratio": 1.779,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-002",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        20
+      ],
+      "arabicWords": 51,
+      "englishWords": 88,
+      "ratio": 1.725,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-003",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        20,
+        21
+      ],
+      "arabicWords": 130,
+      "englishWords": 233,
+      "ratio": 1.792,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-004",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        21
+      ],
+      "arabicWords": 77,
+      "englishWords": 121,
+      "ratio": 1.571,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-005",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        21,
+        22
+      ],
+      "arabicWords": 151,
+      "englishWords": 255,
+      "ratio": 1.689,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-006",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        22,
+        23
+      ],
+      "arabicWords": 126,
+      "englishWords": 163,
+      "ratio": 1.294,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-007",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        23
+      ],
+      "arabicWords": 169,
+      "englishWords": 260,
+      "ratio": 1.538,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-008",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        23,
+        24
+      ],
+      "arabicWords": 117,
+      "englishWords": 167,
+      "ratio": 1.427,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-009",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        24,
+        25
+      ],
+      "arabicWords": 217,
+      "englishWords": 289,
+      "ratio": 1.332,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-010",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        25,
+        26
+      ],
+      "arabicWords": 122,
+      "englishWords": 137,
+      "ratio": 1.123,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-011",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        26
+      ],
+      "arabicWords": 145,
+      "englishWords": 199,
+      "ratio": 1.372,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-012",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        26,
+        27
+      ],
+      "arabicWords": 185,
+      "englishWords": 221,
+      "ratio": 1.195,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-013",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        27
+      ],
+      "arabicWords": 74,
+      "englishWords": 113,
+      "ratio": 1.527,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-014",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        27,
+        28
+      ],
+      "arabicWords": 178,
+      "englishWords": 201,
+      "ratio": 1.129,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-015",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        28,
+        29
+      ],
+      "arabicWords": 157,
+      "englishWords": 209,
+      "ratio": 1.331,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-016",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        29,
+        30
+      ],
+      "arabicWords": 202,
+      "englishWords": 246,
+      "ratio": 1.218,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-017",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        30
+      ],
+      "arabicWords": 103,
+      "englishWords": 140,
+      "ratio": 1.359,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-018",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        30,
+        31
+      ],
+      "arabicWords": 47,
+      "englishWords": 85,
+      "ratio": 1.809,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-019",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        31
+      ],
+      "arabicWords": 97,
+      "englishWords": 151,
+      "ratio": 1.557,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-020",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        31,
+        32
+      ],
+      "arabicWords": 107,
+      "englishWords": 133,
+      "ratio": 1.243,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-021",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        32
+      ],
+      "arabicWords": 108,
+      "englishWords": 156,
+      "ratio": 1.444,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-022",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        32
+      ],
+      "arabicWords": 76,
+      "englishWords": 108,
+      "ratio": 1.421,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-023",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        33
+      ],
+      "arabicWords": 71,
+      "englishWords": 113,
+      "ratio": 1.592,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-024",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        33
+      ],
+      "arabicWords": 115,
+      "englishWords": 151,
+      "ratio": 1.313,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-025",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        34
+      ],
+      "arabicWords": 129,
+      "englishWords": 152,
+      "ratio": 1.178,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-026",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        34,
+        35
+      ],
+      "arabicWords": 159,
+      "englishWords": 206,
+      "ratio": 1.296,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-027",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        35,
+        36
+      ],
+      "arabicWords": 195,
+      "englishWords": 207,
+      "ratio": 1.062,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-028",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        36,
+        37
+      ],
+      "arabicWords": 262,
+      "englishWords": 308,
+      "ratio": 1.176,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-029",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        37,
+        38
+      ],
+      "arabicWords": 107,
+      "englishWords": 159,
+      "ratio": 1.486,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-030",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        38
+      ],
+      "arabicWords": 224,
+      "englishWords": 319,
+      "ratio": 1.424,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-031",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        38,
+        39
+      ],
+      "arabicWords": 142,
+      "englishWords": 194,
+      "ratio": 1.366,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-032",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        39,
+        40
+      ],
+      "arabicWords": 146,
+      "englishWords": 192,
+      "ratio": 1.315,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-033",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        40
+      ],
+      "arabicWords": 93,
+      "englishWords": 125,
+      "ratio": 1.344,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-034",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        40,
+        41
+      ],
+      "arabicWords": 161,
+      "englishWords": 230,
+      "ratio": 1.429,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-035",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        41,
+        42
+      ],
+      "arabicWords": 171,
+      "englishWords": 218,
+      "ratio": 1.275,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-036",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        42
+      ],
+      "arabicWords": 84,
+      "englishWords": 121,
+      "ratio": 1.44,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-037",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        42
+      ],
+      "arabicWords": 89,
+      "englishWords": 119,
+      "ratio": 1.337,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-038",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        42
+      ],
+      "arabicWords": 91,
+      "englishWords": 136,
+      "ratio": 1.495,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-039",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        42
+      ],
+      "arabicWords": 56,
+      "englishWords": 90,
+      "ratio": 1.607,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-INTRO-040",
+      "part": "introduction",
+      "matnId": null,
+      "pages": [
+        42
+      ],
+      "arabicWords": 70,
+      "englishWords": 110,
+      "ratio": 1.571,
+      "arabicSourceStatus": "N page-scoped online citation; independent line-snapshot collation outstanding",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-001",
+      "part": "main",
+      "matnId": "QT-001",
+      "pages": [
+        48,
+        49
+      ],
+      "arabicWords": 277,
+      "englishWords": 342,
+      "ratio": 1.235,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-002",
+      "part": "main",
+      "matnId": "QT-002",
+      "pages": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "arabicWords": 676,
+      "englishWords": 801,
+      "ratio": 1.185,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.976,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-003",
+      "part": "main",
+      "matnId": "QT-003",
+      "pages": [
+        52,
+        53
+      ],
+      "arabicWords": 286,
+      "englishWords": 325,
+      "ratio": 1.136,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.95,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-004",
+      "part": "main",
+      "matnId": "QT-004",
+      "pages": [
+        54
+      ],
+      "arabicWords": 173,
+      "englishWords": 213,
+      "ratio": 1.231,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-005",
+      "part": "main",
+      "matnId": "QT-005",
+      "pages": [
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "arabicWords": 1036,
+      "englishWords": 1154,
+      "ratio": 1.114,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.951,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-006",
+      "part": "main",
+      "matnId": "QT-006",
+      "pages": [
+        60,
+        61,
+        62,
+        63
+      ],
+      "arabicWords": 852,
+      "englishWords": 988,
+      "ratio": 1.16,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.976,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-007",
+      "part": "main",
+      "matnId": "QT-007",
+      "pages": [
+        64,
+        65,
+        66
+      ],
+      "arabicWords": 553,
+      "englishWords": 599,
+      "ratio": 1.083,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-008",
+      "part": "main",
+      "matnId": "QT-008",
+      "pages": [
+        67,
+        68
+      ],
+      "arabicWords": 239,
+      "englishWords": 285,
+      "ratio": 1.192,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-009",
+      "part": "main",
+      "matnId": "QT-009",
+      "pages": [
+        68,
+        69,
+        70,
+        71
+      ],
+      "arabicWords": 785,
+      "englishWords": 875,
+      "ratio": 1.115,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-010",
+      "part": "main",
+      "matnId": "QT-010",
+      "pages": [
+        71,
+        72
+      ],
+      "arabicWords": 308,
+      "englishWords": 314,
+      "ratio": 1.019,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-011",
+      "part": "main",
+      "matnId": "QT-011",
+      "pages": [
+        73,
+        74
+      ],
+      "arabicWords": 364,
+      "englishWords": 422,
+      "ratio": 1.159,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.976,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-012",
+      "part": "main",
+      "matnId": "QT-012",
+      "pages": [
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "arabicWords": 730,
+      "englishWords": 787,
+      "ratio": 1.078,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-013",
+      "part": "main",
+      "matnId": "QT-013",
+      "pages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "arabicWords": 655,
+      "englishWords": 629,
+      "ratio": 0.96,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.975,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-014",
+      "part": "main",
+      "matnId": "QT-014",
+      "pages": [
+        81,
+        82
+      ],
+      "arabicWords": 316,
+      "englishWords": 364,
+      "ratio": 1.152,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.975,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-015",
+      "part": "main",
+      "matnId": "QT-015",
+      "pages": [
+        83,
+        84,
+        85,
+        86,
+        87
+      ],
+      "arabicWords": 800,
+      "englishWords": 862,
+      "ratio": 1.077,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-016",
+      "part": "main",
+      "matnId": "QT-016",
+      "pages": [
+        87,
+        88,
+        89
+      ],
+      "arabicWords": 547,
+      "englishWords": 549,
+      "ratio": 1.004,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.95,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-017",
+      "part": "main",
+      "matnId": "QT-017",
+      "pages": [
+        90,
+        91,
+        92,
+        93
+      ],
+      "arabicWords": 744,
+      "englishWords": 731,
+      "ratio": 0.983,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.925,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-018",
+      "part": "main",
+      "matnId": "QT-018",
+      "pages": [
+        93,
+        94
+      ],
+      "arabicWords": 175,
+      "englishWords": 197,
+      "ratio": 1.126,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 37,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-019",
+      "part": "main",
+      "matnId": "QT-019",
+      "pages": [
+        94,
+        95
+      ],
+      "arabicWords": 165,
+      "englishWords": 198,
+      "ratio": 1.2,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 37,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-020",
+      "part": "main",
+      "matnId": "QT-020",
+      "pages": [
+        95,
+        96,
+        97,
+        98
+      ],
+      "arabicWords": 596,
+      "englishWords": 695,
+      "ratio": 1.166,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.976,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-021",
+      "part": "main",
+      "matnId": "QT-021",
+      "pages": [
+        98,
+        99
+      ],
+      "arabicWords": 347,
+      "englishWords": 400,
+      "ratio": 1.153,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-022",
+      "part": "main",
+      "matnId": "QT-022",
+      "pages": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106
+      ],
+      "arabicWords": 1353,
+      "englishWords": 1392,
+      "ratio": 1.029,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-023",
+      "part": "main",
+      "matnId": "QT-023",
+      "pages": [
+        106,
+        107,
+        108,
+        109
+      ],
+      "arabicWords": 612,
+      "englishWords": 698,
+      "ratio": 1.141,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.951,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-024",
+      "part": "main",
+      "matnId": "QT-024",
+      "pages": [
+        109,
+        110,
+        111
+      ],
+      "arabicWords": 641,
+      "englishWords": 667,
+      "ratio": 1.041,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.951,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-025",
+      "part": "main",
+      "matnId": "QT-025",
+      "pages": [
+        112,
+        113,
+        114
+      ],
+      "arabicWords": 642,
+      "englishWords": 658,
+      "ratio": 1.025,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-026",
+      "part": "main",
+      "matnId": "QT-026",
+      "pages": [
+        114,
+        115,
+        116,
+        117
+      ],
+      "arabicWords": 571,
+      "englishWords": 621,
+      "ratio": 1.088,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.976,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-027",
+      "part": "main",
+      "matnId": "QT-027",
+      "pages": [
+        118,
+        119,
+        120,
+        121
+      ],
+      "arabicWords": 806,
+      "englishWords": 864,
+      "ratio": 1.072,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.95,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-028",
+      "part": "main",
+      "matnId": "QT-028",
+      "pages": [
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "arabicWords": 1909,
+      "englishWords": 1978,
+      "ratio": 1.036,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.976,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-029",
+      "part": "main",
+      "matnId": "QT-029",
+      "pages": [
+        131,
+        132
+      ],
+      "arabicWords": 391,
+      "englishWords": 456,
+      "ratio": 1.166,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.805,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-030",
+      "part": "main",
+      "matnId": "QT-030",
+      "pages": [
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "arabicWords": 923,
+      "englishWords": 1002,
+      "ratio": 1.086,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.878,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-031",
+      "part": "main",
+      "matnId": "QT-031",
+      "pages": [
+        138,
+        139,
+        140,
+        141
+      ],
+      "arabicWords": 583,
+      "englishWords": 604,
+      "ratio": 1.036,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.95,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-032",
+      "part": "main",
+      "matnId": "QT-032",
+      "pages": [
+        141,
+        142,
+        143
+      ],
+      "arabicWords": 438,
+      "englishWords": 569,
+      "ratio": 1.299,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.976,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-033",
+      "part": "main",
+      "matnId": "QT-033",
+      "pages": [
+        144,
+        145,
+        146,
+        147,
+        148
+      ],
+      "arabicWords": 1160,
+      "englishWords": 1301,
+      "ratio": 1.122,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.951,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-034",
+      "part": "main",
+      "matnId": "QT-034",
+      "pages": [
+        150,
+        151,
+        152,
+        153,
+        154
+      ],
+      "arabicWords": 1113,
+      "englishWords": 1056,
+      "ratio": 0.949,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-035",
+      "part": "main",
+      "matnId": "QT-035",
+      "pages": [
+        154,
+        155,
+        156,
+        157,
+        158
+      ],
+      "arabicWords": 848,
+      "englishWords": 904,
+      "ratio": 1.066,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.927,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-035-B",
+      "part": "main",
+      "matnId": "QT-035",
+      "pages": [
+        158,
+        159,
+        160
+      ],
+      "arabicWords": 579,
+      "englishWords": 622,
+      "ratio": 1.074,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-036",
+      "part": "main",
+      "matnId": "QT-036",
+      "pages": [
+        161,
+        162,
+        163
+      ],
+      "arabicWords": 561,
+      "englishWords": 568,
+      "ratio": 1.012,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.925,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-036-B",
+      "part": "main",
+      "matnId": "QT-036",
+      "pages": [
+        163,
+        164
+      ],
+      "arabicWords": 211,
+      "englishWords": 227,
+      "ratio": 1.076,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.925,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-037",
+      "part": "main",
+      "matnId": "QT-037",
+      "pages": [
+        164,
+        165,
+        166,
+        167
+      ],
+      "arabicWords": 708,
+      "englishWords": 740,
+      "ratio": 1.045,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-038",
+      "part": "main",
+      "matnId": "QT-038",
+      "pages": [
+        167,
+        168,
+        169,
+        170,
+        171,
+        172
+      ],
+      "arabicWords": 876,
+      "englishWords": 929,
+      "ratio": 1.061,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.975,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-039",
+      "part": "main",
+      "matnId": "QT-039",
+      "pages": [
+        173,
+        174,
+        175,
+        176,
+        177
+      ],
+      "arabicWords": 1271,
+      "englishWords": 1360,
+      "ratio": 1.07,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.951,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-039-B",
+      "part": "main",
+      "matnId": "QT-039",
+      "pages": [
+        178,
+        179,
+        180
+      ],
+      "arabicWords": 501,
+      "englishWords": 485,
+      "ratio": 0.968,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-040",
+      "part": "main",
+      "matnId": "QT-040",
+      "pages": [
+        180,
+        181,
+        182,
+        183,
+        184
+      ],
+      "arabicWords": 597,
+      "englishWords": 642,
+      "ratio": 1.075,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-040-B",
+      "part": "main",
+      "matnId": "QT-040",
+      "pages": [
+        184,
+        185
+      ],
+      "arabicWords": 327,
+      "englishWords": 352,
+      "ratio": 1.076,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.927,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-041",
+      "part": "main",
+      "matnId": "QT-041",
+      "pages": [
+        186,
+        187,
+        188,
+        189
+      ],
+      "arabicWords": 805,
+      "englishWords": 838,
+      "ratio": 1.041,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.951,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-042",
+      "part": "main",
+      "matnId": "QT-042",
+      "pages": [
+        190,
+        191,
+        192,
+        193
+      ],
+      "arabicWords": 353,
+      "englishWords": 373,
+      "ratio": 1.057,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-043",
+      "part": "main",
+      "matnId": "QT-043",
+      "pages": [
+        195,
+        196,
+        197
+      ],
+      "arabicWords": 613,
+      "englishWords": 546,
+      "ratio": 0.891,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-044",
+      "part": "main",
+      "matnId": "QT-044",
+      "pages": [
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "arabicWords": 381,
+      "englishWords": 418,
+      "ratio": 1.097,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.976,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-045",
+      "part": "main",
+      "matnId": "QT-045",
+      "pages": [
+        203,
+        204,
+        205,
+        206
+      ],
+      "arabicWords": 443,
+      "englishWords": 380,
+      "ratio": 0.858,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-046",
+      "part": "main",
+      "matnId": "QT-046",
+      "pages": [
+        207,
+        208,
+        209,
+        210,
+        211,
+        212
+      ],
+      "arabicWords": 556,
+      "englishWords": 480,
+      "ratio": 0.863,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.975,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-047",
+      "part": "main",
+      "matnId": "QT-047",
+      "pages": [
+        213,
+        214,
+        215
+      ],
+      "arabicWords": 553,
+      "englishWords": 502,
+      "ratio": 0.908,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.95,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-048",
+      "part": "main",
+      "matnId": "QT-048",
+      "pages": [
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224
+      ],
+      "arabicWords": 1037,
+      "englishWords": 991,
+      "ratio": 0.956,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.927,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-049",
+      "part": "main",
+      "matnId": "QT-049",
+      "pages": [
+        225,
+        226,
+        227,
+        228
+      ],
+      "arabicWords": 695,
+      "englishWords": 589,
+      "ratio": 0.847,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.95,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-050",
+      "part": "main",
+      "matnId": "QT-050",
+      "pages": [
+        230,
+        231,
+        232,
+        233,
+        234
+      ],
+      "arabicWords": 794,
+      "englishWords": 668,
+      "ratio": 0.841,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.976,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-051",
+      "part": "main",
+      "matnId": "QT-051",
+      "pages": [
+        234,
+        235,
+        236,
+        237
+      ],
+      "arabicWords": 678,
+      "englishWords": 646,
+      "ratio": 0.953,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.925,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-052",
+      "part": "main",
+      "matnId": "QT-052",
+      "pages": [
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243
+      ],
+      "arabicWords": 350,
+      "englishWords": 357,
+      "ratio": 1.02,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.925,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-053",
+      "part": "main",
+      "matnId": "QT-053",
+      "pages": [
+        244,
+        245,
+        246,
+        247
+      ],
+      "arabicWords": 1076,
+      "englishWords": 956,
+      "ratio": 0.888,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.95,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-054",
+      "part": "main",
+      "matnId": "QT-054",
+      "pages": [
+        248,
+        249
+      ],
+      "arabicWords": 365,
+      "englishWords": 346,
+      "ratio": 0.948,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-055",
+      "part": "main",
+      "matnId": "QT-055",
+      "pages": [
+        250,
+        251,
+        252
+      ],
+      "arabicWords": 501,
+      "englishWords": 462,
+      "ratio": 0.922,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.95,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-056",
+      "part": "main",
+      "matnId": "QT-056",
+      "pages": [
+        255,
+        256,
+        257
+      ],
+      "arabicWords": 489,
+      "englishWords": 410,
+      "ratio": 0.838,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 1,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-057",
+      "part": "main",
+      "matnId": "QT-057",
+      "pages": [
+        258,
+        259,
+        260
+      ],
+      "arabicWords": 519,
+      "englishWords": 491,
+      "ratio": 0.946,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.975,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-058",
+      "part": "main",
+      "matnId": "QT-058",
+      "pages": [
+        260,
+        261,
+        262
+      ],
+      "arabicWords": 654,
+      "englishWords": 542,
+      "ratio": 0.829,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.925,
+      "sampledFragments": 40,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-059",
+      "part": "main",
+      "matnId": "QT-059",
+      "pages": [
+        264,
+        265,
+        266
+      ],
+      "arabicWords": 544,
+      "englishWords": 504,
+      "ratio": 0.926,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.976,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-060",
+      "part": "main",
+      "matnId": "QT-060",
+      "pages": [
+        267,
+        268,
+        269
+      ],
+      "arabicWords": 523,
+      "englishWords": 461,
+      "ratio": 0.881,
+      "arabicSourceStatus": "fixed A digital page transcription",
+      "sourceFragmentOverlap": 0.951,
+      "sampledFragments": 41,
+      "recordedSourceHashVerified": true,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-061-C",
+      "part": "conclusion",
+      "matnId": "QT-061",
+      "pages": [
+        270,
+        271
+      ],
+      "arabicWords": 158,
+      "englishWords": 202,
+      "ratio": 1.278,
+      "arabicSourceStatus": "A pp.270–274: independent closing-page source check; complete retained page snapshot not included",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-061-D",
+      "part": "conclusion",
+      "matnId": "QT-061",
+      "pages": [
+        271
+      ],
+      "arabicWords": 89,
+      "englishWords": 104,
+      "ratio": 1.169,
+      "arabicSourceStatus": "A pp.270–274: independent closing-page source check; complete retained page snapshot not included",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-061-E",
+      "part": "conclusion",
+      "matnId": "QT-061",
+      "pages": [
+        271,
+        272
+      ],
+      "arabicWords": 134,
+      "englishWords": 161,
+      "ratio": 1.201,
+      "arabicSourceStatus": "A pp.270–274: independent closing-page source check; complete retained page snapshot not included",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-061-F",
+      "part": "conclusion",
+      "matnId": "QT-061",
+      "pages": [
+        272,
+        273
+      ],
+      "arabicWords": 176,
+      "englishWords": 202,
+      "ratio": 1.148,
+      "arabicSourceStatus": "A pp.270–274: independent closing-page source check; complete retained page snapshot not included",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-061-A",
+      "part": "conclusion",
+      "matnId": "QT-061",
+      "pages": [
+        274
+      ],
+      "arabicWords": 48,
+      "englishWords": 81,
+      "ratio": 1.688,
+      "arabicSourceStatus": "A pp.270–274: independent closing-page source check; complete retained page snapshot not included",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    },
+    {
+      "id": "SH-061-B",
+      "part": "conclusion",
+      "matnId": "QT-061",
+      "pages": [
+        274
+      ],
+      "arabicWords": 34,
+      "englishWords": 60,
+      "ratio": 1.765,
+      "arabicSourceStatus": "A pp.270–274: independent closing-page source check; complete retained page snapshot not included",
+      "sourceFragmentOverlap": null,
+      "sampledFragments": null,
+      "recordedSourceHashVerified": false,
+      "editorialReview": "not independently certified clause by clause"
+    }
+  ],
+  "pdfAudit": [
+    {
+      "filename": "qawaid-bilingual-reading.pdf",
+      "bytes": 920135,
+      "sha256": "60604520d5b33965b4f9234a899e399d6d875792ccceda355862733a5cae5fe7",
+      "hasPdfHeader": true
+    },
+    {
+      "filename": "qawaid-english-reading.pdf",
+      "bytes": 434268,
+      "sha256": "01cf0f26749d852feb15c732317bcfb141a77260fd1b276274437de11da45ef4",
+      "hasPdfHeader": true
+    },
+    {
+      "filename": "qawaid-arabic-reading.pdf",
+      "bytes": 521482,
+      "sha256": "5848a5c747ad6533513c69340cba908d9ed1d0e1fe1911f20d69e675d20755ac",
+      "hasPdfHeader": true
+    },
+    {
+      "filename": "qawaid-bilingual-study.pdf",
+      "bytes": 1022784,
+      "sha256": "552387fb3bf610f977ab3c9542cad657bef3984daf0b0bc8dd9c90a90fc0a539",
+      "hasPdfHeader": true
+    },
+    {
+      "filename": "qawaid-bilingual-reference.pdf",
+      "bytes": 1214374,
+      "sha256": "6c55df55553fdce4377cac8b233f35a13f2f6e4f5f117fd8fce28353ada524d8",
+      "hasPdfHeader": true
+    }
+  ]
+}

@@ -110,9 +110,74 @@ async function exercise(engine,name,origin){
   await page.waitForFunction(()=>document.querySelectorAll('#gn-dock-private-status .gn-dock-summary-pair').length===4,null,{timeout:10000});
   assert.deepEqual(await page.locator('#gn-dock-private-status .gn-dock-count').allTextContents(),
     ['1','1','1','1'],'Continuous lost section-wide status while scanning paragraphs');
+
+  // Language status and colours must switch in the click task itself rather
+  // than after redrawing 416 sections or after a delayed CSS transition.
+  const quick=await page.evaluate(()=>{
+    const ar=document.querySelector('#persistentLanguages [data-language-toggle="arabic"]');
+    const start=performance.now();
+    ar.click();
+    const next=document.querySelector('#persistentLanguages [data-language-toggle="arabic"]');
+    const en=document.querySelector('#persistentLanguages [data-language-toggle="english"]');
+    return {duration:performance.now()-start,ar:next.getAttribute('aria-pressed'),
+      english:en.getAttribute('aria-pressed'),
+      mode:document.querySelector('#reader')?.className,
+      vowelVersion:document.querySelector('#reader')?.dataset.gnRenderedVowels,
+      animation:getComputedStyle(next).transitionDuration};
+  });
+  assert.equal(quick.ar,'true','Continuous Arabic must activate immediately');
+  assert.equal(quick.english,'true','Continuous must keep English when Arabic is enabled');
+  assert.match(quick.mode,/mode-parallel/,'Continuous body language class was delayed');
+  assert(quick.duration<1200,'Continuous language toggle is still blocking: '+JSON.stringify(quick));
+  assert(quick.animation.split(',').every(x=>parseFloat(x)===0),
+    'Language-button colour still animates slowly: '+quick.animation);
+  const withVowels=await page.evaluate(()=>{
+    document.querySelector('#persistentLanguages [data-language-toggle="arabic"]').click();
+    const pill=document.querySelector('#persistentLanguages [data-language-toggle="arabic"]');
+    return {state:pill.dataset.arabicState,pressed:pill.getAttribute('aria-pressed'),
+      source:document.querySelector('#reader')?.dataset.gnRenderedVowels};
+  });
+  assert.equal(withVowels.state,'vowelled','Second Arabic tap must immediately signal tashkīl');
+  assert.equal(withVowels.pressed,'true');
+  assert.equal(withVowels.source,'true');
+  const off=await page.evaluate(()=>{
+    document.querySelector('#persistentLanguages [data-language-toggle="arabic"]').click();
+    const ar=document.querySelector('#persistentLanguages [data-language-toggle="arabic"]');
+    const en=document.querySelector('#persistentLanguages [data-language-toggle="english"]');
+    return {ar:ar.getAttribute('aria-pressed'),en:en.getAttribute('aria-pressed'),
+      arColor:getComputedStyle(ar).backgroundColor,enColor:getComputedStyle(en).backgroundColor,
+      mode:document.querySelector('#reader')?.className};
+  });
+  assert.equal(off.ar,'false','Arabic needs immediate OFF colour/pressed state');
+  assert.equal(off.en,'true','English must remain ON');
+  assert.notEqual(off.arColor,off.enColor,'AR/EN colours failed to update in Continuous');
+  assert.match(off.mode,/mode-english/);
+
+  // Check AR/EN in Continuous, then return to ordinary Reading to open
+  // Visuals; Focus deliberately hides the global Visuals toolbar.
   await page.locator('#focusToolbar').click();
   await page.locator('[data-gn-reader-mode="reading"]').click();
   await page.locator('body.focus-level-3').waitFor({state:'detached'});
+
+  // Appearance lives inside Visuals; selecting it directly keeps saved theme
+  // semantics. The original top button remains DOM-bound but hidden.
+  assert.equal(await page.locator('#themeBtn').isVisible(),false,
+    'Standalone toolbar Appearance control is still visible');
+  await page.locator('#settingsBtn').click();
+  const appearance=page.locator('#settingsTheme');
+  await appearance.locator('[data-theme-choice="dark"]').waitFor({state:'visible',timeout:10000});
+  assert.equal(await appearance.locator('[data-theme-choice]').count(),3,
+    'Visuals should offer System/Light/Dark appearance choices');
+  await appearance.locator('[data-theme-choice="dark"]').click();
+  assert.equal(await page.locator('html').getAttribute('data-theme'),'dark');
+  assert.equal(await appearance.locator('[data-theme-choice="dark"]').getAttribute('aria-pressed'),'true');
+  await appearance.locator('[data-theme-choice="system"]').click();
+  assert.equal(await appearance.locator('[data-theme-choice="system"]').getAttribute('aria-pressed'),'true');
+  await appearance.locator('[data-theme-choice="light"]').click();
+  assert.equal(await page.locator('html').getAttribute('data-theme'),'light');
+  await page.locator('#settingsClose').click();
+  assert(!errors.some(e=>/forEach is not a function|continuousVowel|themeChoice|Cannot read properties/.test(e)),
+    'Language/appearance page error: '+errors.join('; '));
   // Continuous reading can leave us in a different paragraph/section.
   // Return to the exact saved passage before asserting passage-local counts.
   await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded'});

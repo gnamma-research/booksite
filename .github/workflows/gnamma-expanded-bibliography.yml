@@ -1,0 +1,59 @@
+name: GNAMMA expanded Arabic primary-work bibliography
+on:
+  push:
+    branches:
+      - feature/expanded-fiqh-usul-arabic-bibliography-20261107
+    paths:
+      - 'research/intellectual-atlas/corpora/build_expansion.py'
+      - '.github/workflows/gnamma-expanded-bibliography.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile work-level catalogue from pinned primary-version metadata
+        run: python research/intellectual-atlas/corpora/build_expansion.py
+      - name: Validate selection, unique identifiers and provenance labels
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('research/intellectual-atlas/corpora/expanded-bibliography.json')
+          j=json.loads(p.read_text(encoding='utf8'))
+          w=j['works']; ids=[x['book_uri'] for x in w]
+          assert len(ids)==len(set(ids))
+          assert len(w)>200, ('Unexpectedly small bibliography',len(w))
+          assert j['statistics']['by_genre']['fiqh']>=70
+          assert j['statistics']['by_genre']['nahw']>=50
+          assert all(x['source_url'].startswith('https://github.com/OpenITI/RELEASE/blob/'+j['source_commit']+'/data/') for x in w)
+          assert all(x['reading_status']=='OpenITI primary-version metadata (not locally verified)' for x in w)
+          assert all(x['school_evidence_level']!='text metadata category' or x['school_evidence'].startswith('OpenITI category:') for x in w)
+          print('BIBLIOGRAPHY VERIFIED',len(w),'distinct candidate works',j['statistics']['by_school'])
+          PY
+      - name: Commit generated candidate registry to research branch only
+        if: github.ref == 'refs/heads/feature/expanded-fiqh-usul-arabic-bibliography-20261107'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/intellectual-atlas/corpora/expanded-bibliography.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Catalogue: generate pinned OpenITI work-level bibliography"
+            git push origin HEAD:feature/expanded-fiqh-usul-arabic-bibliography-20261107
+          else
+            echo "Generated metadata unchanged"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnamma-expanded-catalogue
+          path: research/intellectual-atlas/corpora/expanded-bibliography.json
+          if-no-files-found: ignore

@@ -60,3 +60,11 @@ html[data-gn-bg="gnamma"] .gn-preview .p-glass{background:var(--p-glass)}
 
 /* Scholarly reference tools open without moving the reader's place. */
 @media(min-width:1001px){.gn-preview .p-ref{position:fixed;top:108px;right:16px;z-index:40;box-shadow:0 22px 56px rgba(66,48,31,.18);}}
+
+/* Bidāya edition choice: one common source reader, two interpretation scopes. */
+.gn-preview[data-work="bidaya"] .p-edition-bar{display:flex;flex-wrap:wrap;gap:0;margin:17px 0 9px;border-bottom:1px solid var(--p-rule);font:12px/1.4 system-ui,sans-serif}
+.p-edition-bar button{border:0;border-bottom:2px solid transparent;background:transparent;color:var(--p-muted);padding:11px 14px 12px;text-align:left;min-height:44px}
+.p-edition-bar button:hover,.p-edition-bar button:focus-visible{background:rgba(255,255,255,.58)}
+.p-edition-bar button[aria-pressed="true"]{border-bottom-color:var(--p-accent);color:var(--p-ink);font-weight:600}
+.p-edition-summary{margin:0 0 14px;color:var(--p-muted);font:12px/1.65 system-ui,sans-serif}
+@media(max-width:700px){.p-edition-bar{display:grid!important;grid-template-columns:1fr 1fr}.p-edition-bar button{font-size:11px;padding:10px 7px;min-width:0}.p-edition-summary{font-size:11px;line-height:1.5}}

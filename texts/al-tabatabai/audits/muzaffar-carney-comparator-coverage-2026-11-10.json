@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "checked": "2026-11-10",
+  "source": "User-provided Mantiq al Mudhaffar - English.pdf",
+  "attribution": "Shaykh ʿAbdul-Ḥakīm Carney",
+  "pdfPages": 75,
+  "pagesDirectlyInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    37,
+    38,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75
+  ],
+  "observations": [
+    {
+      "pages": "1",
+      "finding": "Title page identifies al-Muẓaffar and the named English translator."
+    },
+    {
+      "pages": "37–38",
+      "finding": "PDF p.37 ends its discussion of natural, logical and intellectual universals/species. PDF p.38 immediately begins the inference preface and definition of syllogism corresponding to Book V. This observed join establishes noncontinuous coverage in relation to the six-book authorial sequence."
+    },
+    {
+      "pages": "70–74",
+      "finding": "The final substantive pages cover the closing inference material, induction and analogy, extending through the end of Book V."
+    },
+    {
+      "pages": "75",
+      "finding": "Blank final page."
+    }
+  ],
+  "metadataCorrection": "The earlier assertion that this PDF ended before the definition material was inaccurate as an endpoint claim. It is a partial, noncontinuous comparator extending through Book V. No claim of complete six-book coverage or comprehensive clause-by-clause comparison is made.",
+  "use": "Bibliographic/coverage comparison only. The PDF is not republished and its English is not used as the text of the new translation."
+}

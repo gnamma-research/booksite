@@ -1,0 +1,148 @@
+{
+  "project": "al-mahaimi-mashra-al-khusus",
+  "stage": "11",
+  "date": "2026-11-10",
+  "edition_reference": "al-Mazidi, Beirut 2008, pp.11–232 commentary; separately printed Qunawi appendix pp.235–267",
+  "translation": {
+    "commentary_printed_range": [
+      11,
+      232
+    ],
+    "commentary_first_pass_pages": 222,
+    "source_checked_translation_status": "first pass, not independent critical review"
+  },
+  "arabic": {
+    "commentary_imported": 142,
+    "commentary_imported_ranges": [
+      [
+        11,
+        149
+      ],
+      [
+        230,
+        232
+      ]
+    ],
+    "commentary_unimported": 80,
+    "commentary_missing_range": [
+      150,
+      229
+    ],
+    "qunawi_2008_online_page_proofs": [
+      235,
+      236,
+      237,
+      238,
+      267
+    ],
+    "qunawi_2008_unimported_range": [
+      239,
+      266
+    ],
+    "qunawi_2008_unimported_pages": 28,
+    "qunawi_independent_online_passages": 47,
+    "qunawi_online_passages_source": "independent online transcription; not checked against printed appendix",
+    "qunawi_2008_page_specific_transcribed_elsewhere": [
+      237,
+      238
+    ],
+    "qunawi_2008_digital_transcribed_across_project": [
+      235,
+      236,
+      237,
+      238,
+      267
+    ],
+    "qunawi_2008_remaining_without_page_specific_proof": [
+      239,
+      266
+    ],
+    "qunawi_2008_pages_without_page_specific_proof": 28
+  },
+  "concordance": {
+    "ar_en_qunawi_passages": 47,
+    "ar_en_qunawi_words_approx": 8147,
+    "contextual_links": 64,
+    "distinct_commentary_targets": 61,
+    "linked_online_text_groups": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ],
+    "unlinked_online_text_groups": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "numbering_discrepancy_note": "online text 19-C describes affinities, while the Mahaimi working commentary calls affinity material Text Twenty; no automatic ordinal concordance",
+    "appendix_2008_lemma_links": 19,
+    "appendix_2008_lemma_link_method": "Minimum 15 distinct matching normalized Arabic 5-grams; links are between duplicated 2008 digital-text witnesses and hence not manuscript collation."
+  },
+  "edition": {
+    "printer_facsimiles_checked": 0,
+    "manuscripts_collated": 0,
+    "ashtiyani_edition": "bibliographic record confirmed; copy not acquired",
+    "editorial_apparatus": "nine intra-edition final-text differences plus independent supporting quotations (stage09)",
+    "p232": "terminal text syntactically incomplete in online transcription; printed editor says آخره; do not infer missing authorial conclusion",
+    "manuscripts_identified": [
+      {
+        "siglum": "M1",
+        "library": "Leiden University Libraries",
+        "shelfmark": "Or. 5675",
+        "folios": 362,
+        "date_ah": 1142,
+        "date_ce": "1729–1730",
+        "description": "Al-Mahāʾimī, Mashraʿ al-khuṣūṣ, formerly owned by Sultan Muhammad Shifa of Banten",
+        "catalogue_url": "https://bibliography.mk.iq/files/0e8ddc804348667f.pdf",
+        "copyist_attributed_by": "A.C.S. Peacock: Muhyi al-Din ibn Shaykh Abd al-Shakur ibn Abd al-Karim ibn al-Sultan Abu al-Mafakhir",
+        "status": "catalogue_verified_no_manuscript_image_seen"
+      }
+    ],
+    "manuscript_pages_visually_inspected": 0
+  },
+  "status": {
+    "reader_corpus_entries": 280,
+    "reader_language_modes": [
+      "ar",
+      "en",
+      "both"
+    ],
+    "work_layers": [
+      "matn",
+      "sharh",
+      "all"
+    ],
+    "backlinks": true,
+    "source_confidence_banners": true,
+    "live_deployment_independently_verified": false,
+    "reader_publication_sha": "36acc5e0576be07f794646e0401de62b499752f7"
+  },
+  "files": {
+    "reader": "texts/al-mahaimi/mashra-al-khusus/index.html",
+    "data": "texts/al-mahaimi/mashra-al-khusus/data/parallel.json",
+    "apparatus": "texts/al-mahaimi/mashra-al-khusus/editorial/APPARATUS_STAGE09.md",
+    "concordance": "texts/al-mahaimi/mashra-al-khusus/editorial/CONCORDANCE_STAGE10.md",
+    "integrity_test": "tests/test_mahaimi_stage10.py",
+    "appendix_proof_pp237_238": "texts/al-mahaimi/mashra-al-khusus/data/stage10-qunawi-pp237-238.md",
+    "appendix_lemma_concordance": "texts/al-mahaimi/mashra-al-khusus/data/appendix-lemma-concordance-stage11.json",
+    "witness_register": "texts/al-mahaimi/mashra-al-khusus/editorial/WITNESS_REGISTER_STAGE11.md"
+  },
+  "source_access_test": {
+    "ablibrary_robots": "disallowed",
+    "najaf_get": "403 forbidden",
+    "ibnalarabi_tls": "TLS handshake error",
+    "notes": "No automated source extraction has occurred, and no access restrictions were bypassed."
+  }
+}

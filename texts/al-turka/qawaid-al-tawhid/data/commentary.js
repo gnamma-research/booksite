@@ -1,0 +1,97 @@
+/* Gnamma: preserved final-page source module, SH-061-A/B.
+   The complete 110-unit translation is assembled in commentary-corpus.js. */
+window.GNAMMA_TAMHID_SHARH = {
+  "schema": "gnamma-tamhid-sharh-v1",
+  "updated": "2026-11-04",
+  "author": "Ṣāʾin al-Dīn ʿAlī Ibn Turka",
+  "book": "Tamhīd al-Qawāʿid / التمهيد في شرح قواعد التوحيد",
+  "base": "Āshtiyānī, second printing 1360 SH / 1982, Arabic pp.3–274",
+  "state": "final-closing-excerpts-source-module",
+  "coverage": {
+    "verifiedEnglishUnits": 2,
+    "verifiedArabicPrintedPages": [
+      274
+    ],
+    "scopeNote": "This file retains SH-061-A/B only. It is one source module, not the whole corpus. The complete 110-unit translation is assembled in commentary-corpus.js; all main commentary is available in the linked reader."
+  },
+  "units": [
+    {
+      "id": "SH-061-A",
+      "matnId": "QT-061",
+      "page": 274,
+      "section": "The guide and the measure proper to each station",
+      "kind": "sharh",
+      "ArabicSourceStatus": "directly-cited-digitized-printed-page",
+      "arabic": "هذا كلّه إذا لم يكن له شيخ مسلك يرشده، وإمام مكمّل يقتدى به، وبيده مقاليد أقفاله وأحواله. وأمّا إذا كان له ذلك، فلكل منزل ومقام بحسب كلّ وقت واستعداد، علوم وميزان يخصّه، ينبّه السالك بحسب تفرّسه مراقي استعداده على تلك العلوم بموازينها.",
+      "english": "All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his actions and states. If, however, he does have such a guide, then every stage and station has sciences and a measure proper to it, according to the time and the seeker's capacity. The guide, discerning the successive degrees of that capacity, draws the traveller's attention to those sciences and their appropriate measures.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/17638/470?lang=ar",
+      "notes": [
+        "This is the descendant's commentary continuing after QT-061, not the grandfather's matn. Arabic sourced to printed p.274 in the online transcription.",
+        "H2014 II:598 prints أفعاله وأحواله (actions and states), adopted provisionally for reading; A reads أقفاله وأحواله (locks and states), and إقباله is also reported. All remain recorded as printed alternatives. No original manuscript has been independently collated.",
+        "The guide's discernment (تفرّس) is presented as enabling guidance appropriate to each station, time, and capacity; it does not eliminate the matn's concern with tests of knowledge. The active participle «مكمّل» signifies a guide who brings others toward perfection; it is not the passive «مكمَّل».",
+        "Qawtaw7 / H2014 H2014/2:598: partial resolution. Preferred: «مقاليد أفعاله وأحواله». H2014 prints أفعاله, one of the alternatives already reported in A, not أقفاله. This corroborates a real reading alternative and supports an actions/states rendering for H2014; it does not establish that A’s locks reading is wrong or settle archetypal priority. The A/N electronic wording remains preserved in the witness apparatus.",
+        "Qawtaw8 adjudication: Use H2014 أفعاله وأحواله, keys to his actions and states; preserve A أقفاله and reported إقباله as alternatives without deciding stemmatic priority."
+      ],
+      "variants": [
+        {
+          "base": "أقفاله وأحواله",
+          "alternatives": [
+            "إقباله وأحواله",
+            "أفعاله وأحواله"
+          ],
+          "status": "reported-in-electronic-printed-apparatus"
+        }
+      ],
+      "witnessComparisons": [
+        {
+          "stage": "Qawtaw7",
+          "number": 57,
+          "status": "partial-resolution",
+          "printedComparator": "H2014",
+          "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+          "sourceLocations": [
+            "H2014/2:598"
+          ],
+          "sourceExcerpt": "هذا كلّه إذا لم يكن له شيخ مسلك يرشده، وإمام مكمّل يقتدى به، وبيده مقاليد أقفاله وأحواله.",
+          "preferredReading": "مقاليد أفعاله وأحواله",
+          "interpretation": "The keys to his actions and states.",
+          "editorialDecision": "H2014 prints أفعاله, one of the alternatives already reported in A, not أقفاله. This corroborates a real reading alternative and supports an actions/states rendering for H2014; it does not establish that A’s locks reading is wrong or settle archetypal priority.",
+          "sourceStrength": "Typeset medieval quotation in modern printed commentary, no independent manuscript collation",
+          "manuscriptCollation": false
+        }
+      ],
+      "readingArabic": "هذا كلّه إذا لم يكن له شيخ مسلك يرشده، وإمام مكمّل يقتدى به، وبيده مقاليد أفعاله وأحواله. وأمّا إذا كان له ذلك، فلكل منزل ومقام بحسب كلّ وقت واستعداد، علوم وميزان يخصّه، ينبّه السالك بحسب تفرّسه مراقي استعداده على تلك العلوم بموازينها.",
+      "qawtaw8": {
+        "status": "reading-settled",
+        "note": "Use H2014 أفعاله وأحواله, keys to his actions and states; preserve A أقفاله and reported إقباله as alternatives without deciding stemmatic priority.",
+        "originalArabicPreserved": true,
+        "comparatorArabicPreserved": true,
+        "manuscriptsCollated": 0
+      }
+    },
+    {
+      "id": "SH-061-B",
+      "matnId": "QT-061",
+      "page": 274,
+      "section": "The commentator's own conclusion",
+      "kind": "sharh",
+      "ArabicSourceStatus": "directly-cited-digitized-printed-page",
+      "arabic": "لكن لتحقيق هذا الكلام وتبيين أحكامه أبحاث طويل الذيل، لا يناسبها أمثال هذه المختصرات، فلنكتف بهذا القدر في هذه التعليقات حامدين لله ربّ العالمين، ومصلّين على محمد وآله الطيّبين الطاهرين وصحبه أجمعين.",
+      "english": "But a full examination of this matter and an exposition of the rules governing it would require lengthy investigations unsuitable for brief works such as this. Let us therefore be content with what has been said in these commentaries, praising God, Lord of the worlds, and invoking blessings upon Muḥammad, his good and pure family, and all his Companions.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/17638/470?lang=ar",
+      "notes": [
+        "This is the closing sentence of Ṣāʾin al-Dīn Ibn Turka's commentary, not the ancestor's closing formula.",
+        "The printed page then introduces a note headed «شرح (1) الحمد لله الذي وفقني ...» in the editor Āshtiyānī's own first person, dated 1395 AH. That later editorial text is deliberately excluded from this translation.",
+        "Rendered from the accessible Arabic text on p.274. The spelling and punctuation have been lightly normalized."
+      ],
+      "variants": []
+    }
+  ],
+  "queue": [],
+  "policy": {
+    "commentarySeparateFromMatn": true,
+    "authorialAttribution": "Only Arabic identified as Ṣāʾin al-Dīn's commentary may be translated; omit later Persian marginalia, editor's colophon, and ancestral quotations already in the matn.",
+    "doNotImpute": "No autogenerated Arabic or placeholder translations; unworked lemmata stay explicitly unworked.",
+    "sourceScope": "Closing excerpts from A p.274. See commentary-corpus.js for the complete source-scoped introduction, main commentary and conclusion."
+  }
+};

@@ -1,0 +1,23 @@
+name: Qawtaw18 reconciled critical-status acceptance
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/qawtaw18-status-parity.yml'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/qawtaw18_check.py'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/qawtaw18-current-dispositions.json'
+      - 'texts/al-turka/qawaid-al-tawhid/editorial/QAWTAW18_CURRENT_CRITICAL_DISPOSITION_2026-11-13.md'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/qawtaw10-final-status.json'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/qawtaw7-witness-register.json'
+      - 'texts/al-turka/qawaid-al-tawhid/pdf/manifest.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  status-acceptance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify exact 57-to-14-to-2 reconciliation and unchanged source/PDF parity
+        run: python texts/al-turka/qawaid-al-tawhid/qa/qawtaw18_check.py

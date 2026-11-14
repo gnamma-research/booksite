@@ -1,0 +1,529 @@
+{
+  "schema": 1,
+  "contentCommit": "5098feea89a2b131cee916289ff328e743a37d84",
+  "files": [
+    {
+      "path": ".github/workflows/hikma-a4-pdf-release.yml",
+      "bytes": 5736,
+      "gitBlobSha": "074a48d6f30e02bc516c01ffda7c6f23cf2de259",
+      "sha256": "0fb6ee1d35781fae93dbafc7e361015b4af5a481903d5fce4efb20d09a07076f"
+    },
+    {
+      "path": "texts/al-tabatabai/assets/hikma-combined.js",
+      "bytes": 52742,
+      "gitBlobSha": "c58ad884fb08eeb6b84844718d9de33055d03ccd",
+      "sha256": "aae18515da32c056fad5c0dc228c7c3edcec4cce30ec5b8e95f4204a0cf56a7e"
+    },
+    {
+      "path": "texts/al-tabatabai/assets/hikma-pdf.css",
+      "bytes": 3643,
+      "gitBlobSha": "b4324c879b0c16f6d09d86a961aff98b15f72908",
+      "sha256": "64e6e7f8c503ff84c31642a55b4e25593e6ae4abcb0f8e163fa55dfdf3b55ea0"
+    },
+    {
+      "path": "texts/al-tabatabai/assets/hikma-reader.js",
+      "bytes": 52742,
+      "gitBlobSha": "c58ad884fb08eeb6b84844718d9de33055d03ccd",
+      "sha256": "aae18515da32c056fad5c0dc228c7c3edcec4cce30ec5b8e95f4204a0cf56a7e"
+    },
+    {
+      "path": "texts/al-tabatabai/assets/hikma-refinements.css",
+      "bytes": 13705,
+      "gitBlobSha": "7a851815e42f5a2ebf469a401fa5cb647fc209d6",
+      "sha256": "bab485d7bc86c8a28bf4e8984e40b4a4951aaf56cad80a1b6a9635eb92d5e0b7"
+    },
+    {
+      "path": "texts/al-tabatabai/assets/hikma-refinements.js",
+      "bytes": 15042,
+      "gitBlobSha": "5429e33048f825b04ea4f78a7cbc24dfb7c563c5",
+      "sha256": "0fdd353a92cc48e7204c0b7be80389a93d3fdd975cf1260fe53d096ec8cf40d5"
+    },
+    {
+      "path": "texts/al-tabatabai/assets/hikma-rich-text.css",
+      "bytes": 3786,
+      "gitBlobSha": "e3695243db4f809ca87e2d3786e9d53c63a557cb",
+      "sha256": "5ddb7b380b7dd00255792d8b1aca500f99524a10aa681cdcdfa07a5853149fd0"
+    },
+    {
+      "path": "texts/al-tabatabai/assets/hikma-rich-text.js",
+      "bytes": 11422,
+      "gitBlobSha": "204199dd2d4089eae8f8cde1622fb7e04f15411e",
+      "sha256": "4aa1ebff833ef4ed698c024283f7c42e320f0529ae89bb73f8d49e0f7851b1f2"
+    },
+    {
+      "path": "texts/al-tabatabai/assets/hikma-study-tools.css",
+      "bytes": 13386,
+      "gitBlobSha": "c807f6934473e19f0ddda7c819c9914710e4c6e9",
+      "sha256": "24765263071c60e85119d417f18023121bfeac2cbe6f26eb7c41abd9883b78d4"
+    },
+    {
+      "path": "texts/al-tabatabai/assets/hikma-study-tools.js",
+      "bytes": 38461,
+      "gitBlobSha": "ae82dd3fc2a0b6bb48a44e87ac6c44f4b163e50f",
+      "sha256": "85d31f776a58874c16480f5e1c35f252fee0e8c45ddc7877264d84c38c286033"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/cross-book-review-register-2026-11-07.json",
+      "bytes": 646126,
+      "gitBlobSha": "9287d7f292609620a94cab9fd313735c189156e0",
+      "sha256": "bcf30f099a9be79bfae716e92a897313ac750cb10f77d7f14abcec5f2fc3c7d9"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/muzaffar-book-v-continuation-2026-11-10.json",
+      "bytes": 16189,
+      "gitBlobSha": "850dda9e8bab12a1a62fb7478f21105d81e90c20",
+      "sha256": "9d6c1044bf7dbd52d0f9c772a5223ca7c23a20a1d65e03a584f8e0cc6857ccbb"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/muzaffar-book-v-link-review-2026-11-10.json",
+      "bytes": 17636,
+      "gitBlobSha": "7372c89157c9d8320ce60468fa35abf3b6410ae6",
+      "sha256": "043d52043d20c676380b451a50a71e1a756c6626ed0bbd0d783924fc9e47bd81"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/muzaffar-book-v-source-decisions-2026-11-10.json",
+      "bytes": 19986,
+      "gitBlobSha": "560e9b8ca57031d25b46194712c079ea79fca120",
+      "sha256": "e662afe2c0c05d31c6498c597f1742374db2f1ba572ca780c6013e395d36ad55"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/muzaffar-book-v-source-provenance-2026-11-10.json",
+      "bytes": 3006,
+      "gitBlobSha": "2e9e321c125464ee4246a53d2fe3407f1c04fd19",
+      "sha256": "d80e78a080f73693c1fb3e15c38e65d1ecf5644333338f37015ae15ac0575ca3"
+    },
+    {
+      "path": "texts/al-tabatabai/data/editorial-connections.json",
+      "bytes": 85632,
+      "gitBlobSha": "6f28e66945e784f1685315e01ca3711a1ed55046",
+      "sha256": "0803818f1d704ef6e9b10442f53577a0f12f4fb757580602f5edd9a880491e76"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/analogy.json",
+      "bytes": 9251,
+      "gitBlobSha": "b5a906cbc9c6878688c7154139dd0bb307ac22aa",
+      "sha256": "119ea64eba03855d2b95e5234ff6797c8096c8fd7fcb51e13b946f61434e9755"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/assent.json",
+      "bytes": 60643,
+      "gitBlobSha": "a6060ae17cfa940e9bbab11669f21e2085d447fd",
+      "sha256": "27f0f0fda409cc8a5a505a4c0ec1c7797a76f8155b5257f21fda1f17770d3e0b"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/categorical-syllogism.json",
+      "bytes": 5466,
+      "gitBlobSha": "657d09c43b0ab41f1346fca3ef1166ebdf38b96a",
+      "sha256": "94be4fd0d9d139d5db37e4e9bb8174bb074daebc6961d2d4f107715de4a6c784"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/complete-induction.json",
+      "bytes": 819,
+      "gitBlobSha": "6a2162aaa9098eab05786946d0e42a9668fe6462",
+      "sha256": "885e28a16e4a593d000411d187005d95ef6530c1acbf0489b4ecd84e08494e5f"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/compound-syllogism.json",
+      "bytes": 4656,
+      "gitBlobSha": "9ad9bf7c59451e5adccc0de9f1655aa5698a30c0",
+      "sha256": "8e145499145158b0856a7ce35228b6f0ee96d253b560a25dafc9a259e58bbe95"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/conception.json",
+      "bytes": 31697,
+      "gitBlobSha": "89a7648b747eca4badc43e88026846f9812d557d",
+      "sha256": "5ee96e8fa0f35cc68f5560f92bd195c6e1bd8209eac97d0da6a28211f42c1ab8"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/conditional-syllogism.json",
+      "bytes": 4755,
+      "gitBlobSha": "557f690883472c8b2aa7309dfff3ceb69ee1dc86",
+      "sha256": "f25b8ae97e8b7e8ff33fa721aa9cc58235d070e054674b0b030e1f1b8b6ae143"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/conjunctive-syllogism.json",
+      "bytes": 10749,
+      "gitBlobSha": "4492f7f85453ddbd8f40755b8e1101a9a23e3dc1",
+      "sha256": "aeb9be43ea49333758893b3436b8d1e495e5642e4adaed7126508292a09b9ae0"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/enthymeme.json",
+      "bytes": 3024,
+      "gitBlobSha": "c319bfd9b41c344dc0cda354ea8fb13f002bb469",
+      "sha256": "d00ebb8966d9144bf269b5122469f3f570980940077da8fc00ffebc2c3ce8efc"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/exceptional-syllogism.json",
+      "bytes": 9649,
+      "gitBlobSha": "56ea18d059eed57c4ca319f18067aa7898a6b1d2",
+      "sha256": "05b659d491e6d624332a6b206d1f13a5ec2bcbd4502d80d7c3c1c6c2794b1d11"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/incomplete-induction.json",
+      "bytes": 1769,
+      "gitBlobSha": "dc6f5ee8fee7d00cf6dc8336a225fde30cf39bb4",
+      "sha256": "87f4e92dc17c4743a4786f1ad070e07365fa715ac3d7a8ca2a08468b32e1a715"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/induction.json",
+      "bytes": 15244,
+      "gitBlobSha": "be489af76e090d800f7caa67c00acc34755cb9f0",
+      "sha256": "460f05ed394558a249346192a9cc69739c80b189233805861190532e781a5456"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/intellectual-consideration.json",
+      "bytes": 71025,
+      "gitBlobSha": "cc5b4378870c7e766b470d54356b1ba6b67f8aaf",
+      "sha256": "e6b3e3c6fb91fab7a4c8fb7c36f7de2eb1c2f21ad77c5e0903995d9d358d99e8"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/mental-existence.json",
+      "bytes": 23856,
+      "gitBlobSha": "e7baeec6608fb2610b5f794108bcb6030ca28f5a",
+      "sha256": "a1fae00a7047c7f1a4cffa7a570be52cfc91ad411461444790c5fef45bea3524"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/middle-term.json",
+      "bytes": 13423,
+      "gitBlobSha": "3d0805816f2fd4a2395eac70ed75ec09fa270e58",
+      "sha256": "e1e4d4480e2031658f2148a5d18065555ae8c7e6a39a6d69fc1bf52a12512970"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/proof-by-assumption.json",
+      "bytes": 1534,
+      "gitBlobSha": "daccbfb32fb5502070d1a8a7b5a8a9c3891bce2c",
+      "sha256": "191647ebaeeecc921d53b3d1482313f8dc57830cc912d59da76a1da726a2b474"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/reductio.json",
+      "bytes": 5544,
+      "gitBlobSha": "39f41c7e50f9f817c1a7e44e238f59b08e302bdd",
+      "sha256": "cbf64695b53d1e959887b83339a8a0053d13161bac20e0f0b2658dd280df9584"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/self-evident-knowledge.json",
+      "bytes": 42654,
+      "gitBlobSha": "595633719982bf709aac964944df06849a396104",
+      "sha256": "911674388770227897184764eb336c0c46cf6d520f7d674ff0617fcecc5b800b"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/syllogism.json",
+      "bytes": 89961,
+      "gitBlobSha": "13736bf39a6cb3c554881b970418460c3740fa55",
+      "sha256": "263c57a3a20e26668cd5be11d08d74ff7d763515960a17fb8f9f2846f6e78e11"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/syllogistic-figure.json",
+      "bytes": 63387,
+      "gitBlobSha": "fb84400d6298b3566dc028844076994e0c6b5046",
+      "sha256": "bb61c6516a7ceea519f5e7741e37bcc6157fb18bc08fb22669a018e76b81b4eb"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/syllogistic-mood.json",
+      "bytes": 20419,
+      "gitBlobSha": "c120c323c7b49b6d39e0a591abe5bd5a63619b76",
+      "sha256": "bb8d81c6fdd7ad35e1d3a3c346a0de9d3c3ea5f969ac3a304364cb97dd14e23d"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-causal-circularity.json",
+      "bytes": 5304,
+      "gitBlobSha": "21f481e84f0db92e6fe835668ff4a23c0c5cfa46",
+      "sha256": "43364f8b96e78e934a55ee96b7712d68015f50114e606f3af5c58ea933aae5c9"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-cause-effect.json",
+      "bytes": 310856,
+      "gitBlobSha": "f71e7fdbeab8fcea4642da85cda9e10e98478832",
+      "sha256": "c4422e0bf23ed1ef69cfe474c73d4eef977c3e5617ee80bf9c8794e647e750f2"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-circularity.json",
+      "bytes": 9079,
+      "gitBlobSha": "616626ad00dada4e2d128b5ef7398f8563e0370d",
+      "sha256": "6373702672bf8c0737a7f76ee076d30a8c5de5913707dbc4dadfccb93be14089"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-common-accident.json",
+      "bytes": 10582,
+      "gitBlobSha": "c2fe2301d40d0fb32b6d5fa5a1764096e8030f44",
+      "sha256": "6667188d64d53231b12a962d084d122ef6b646f4b29f2a2ef4d3633681af2df7"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-complete-cause.json",
+      "bytes": 32414,
+      "gitBlobSha": "76e46d3b8bfabeed673d5f2c36bcfcd0a70c4c1b",
+      "sha256": "f8c199c013e24b1dcbdeacbcce9804e75c2a9f8c854f98ac92f1a432331933a7"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-concept-instance.json",
+      "bytes": 140776,
+      "gitBlobSha": "1e330fafa3c2e341b7399fa4522b56507512abe5",
+      "sha256": "80d785bcd721e7b4902be7de4feffbae2a59ee2e934b8df71fc77fb86f556317"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-conception-assent.json",
+      "bytes": 48484,
+      "gitBlobSha": "a570deb246e60394d104d1e5f60edcb18c5007f5",
+      "sha256": "46b1f1e16fb54939c5fedab07a5cae8e5b55335332464e1aca5ac174db136f76"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-contradiction.json",
+      "bytes": 38931,
+      "gitBlobSha": "1ec3dd8c9dce29fdb6800c14fb5c87b17efc2718",
+      "sha256": "3f71381b174daa94e793a20b2e53c84a247f929cf1277b01553c51df2d3f3881"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-demonstration.json",
+      "bytes": 71050,
+      "gitBlobSha": "9be23b40428d4c8058d7d8ed1b0732ba098e47e9",
+      "sha256": "0a2558867d4850947876f301ef9b67018f0db89d53e9af4b438a713fff9ebacc"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-descriptive-definition.json",
+      "bytes": 7119,
+      "gitBlobSha": "40040e3fc80173995787e4efec18ef8b663bb41e",
+      "sha256": "f802b75f258c69dfd9a025ecea63c1839fd25aed66d2c06abce54f38e758f1a7"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-differentia.json",
+      "bytes": 64271,
+      "gitBlobSha": "efabacafbf16d006443037950df784465a2f85c2",
+      "sha256": "db1af0ea4a6480df0aa76638c6a719bf09ac1552ffdcdb30e6fb78fb2f94f8db"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-distinction.json",
+      "bytes": 21566,
+      "gitBlobSha": "3c488720aadcd05f08a19279cdff99b764196e16",
+      "sha256": "9f3296ebf6693ae43098e4cfb5823406d94c6230ec2534737012aea713b2bf37"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-establishment-subsistence.json",
+      "bytes": 52272,
+      "gitBlobSha": "46e960ed1e08e2fb9d5a487f8ccd2e12f792161f",
+      "sha256": "5e5c04d90fa7add32434e3f024a0cb5b2e95c7dc531b210470e2e8052ca74f5d"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-existence.json",
+      "bytes": 578269,
+      "gitBlobSha": "02fef7601821884340c2d1393080d0f6eed2c337",
+      "sha256": "5c61e6713ca277b2118e901f06e448d3ad6702caa2a397b8239690fb1c1b9fcc"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-existent-being.json",
+      "bytes": 328149,
+      "gitBlobSha": "44bb76f5835a37cd24d12fa0e2b94f178bad8fc7",
+      "sha256": "0b46fb9cb444fb2be75a6b801861f65e7e9e277395b23698f150833f125a4efa"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-genus.json",
+      "bytes": 83944,
+      "gitBlobSha": "51abf62d2f48bf767d4c86809d6a851a82e771b0",
+      "sha256": "71e634b1f35c3769a17f473d4d9144530716993cec2dee575d25674a23ffdf69"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-in-itself-for-itself-through-itself.json",
+      "bytes": 103040,
+      "gitBlobSha": "73284187819f720efa58511c90956115d7bbc8c5",
+      "sha256": "d49a42816fff49b0530907e3aad772a60ef0b46097cff7dc6ac6a3406b35f67b"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-infinite-regress.json",
+      "bytes": 13444,
+      "gitBlobSha": "205fad8b04a13f147fce6ab7495d838a2b890afa",
+      "sha256": "c5b3ae29ba3a901402b20b7a6b7940678078e42a5e5bd563f7f79deeaad8b560"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-intellect-knower-intelligible.json",
+      "bytes": 146037,
+      "gitBlobSha": "9b2cbe38463d8e5e1876ca3cd15bb52e700b8bf0",
+      "sha256": "9734749f48a350a141c27879ef55e675ebc3c43ba231413644955791de6caf93"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-intermediate-traversal-motion.json",
+      "bytes": 13510,
+      "gitBlobSha": "26b8a258d349bdb4c6f9184a2e337064b23dccd1",
+      "sha256": "80523d85dbfc43cb4478cb61fa3b5d8c3cf68dea47a5f0f83f6d8416279fecb8"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-matter-form.json",
+      "bytes": 315315,
+      "gitBlobSha": "47232ee2908d935891fa0abd7bfce225994a31d6",
+      "sha256": "d8416e1e599f88cccc904c7d15269ec8f233a406b7339392f2e49bc9831dcffe"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-necessity-possibility-or-contingency-impossibility.json",
+      "bytes": 155863,
+      "gitBlobSha": "f6ab1b4d4c0b065b562be2746322112cc6735254",
+      "sha256": "2877a2d5ebe88da59a8e12d3954e6ac9a8cbeb6e3b46ddbbee8f629965a283aa"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-potency.json",
+      "bytes": 93290,
+      "gitBlobSha": "ec2a6223553f6d0a0695b9f4251bc1f7f5c3e611",
+      "sha256": "f2ab565d62aa1b5e3ef4a7b330dc9df33a417aa0de4d589183d4eef256ea030a"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-potentiality-actuality.json",
+      "bytes": 234755,
+      "gitBlobSha": "dde923401055611de2f2270f09a6eefb98ece6aa",
+      "sha256": "4abfbe9ef516f19df31f7757b64f4dcfa171f5ac6609ef51d61860ba7d5f15d4"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-proprium.json",
+      "bytes": 46556,
+      "gitBlobSha": "31c862c457dbff68248085363c82f832639d6590",
+      "sha256": "78c436c260328b8198b0bd48dab79667a6786736f30ccc0f847e011c26032ffd"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-quality.json",
+      "bytes": 91597,
+      "gitBlobSha": "1bb336056445968ef056ae38cdf1bde20486dc7c",
+      "sha256": "8706f3b7fb79345b851471fc517baeebc65e22e11e1e43da1a00626de195b192"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-quantity.json",
+      "bytes": 34660,
+      "gitBlobSha": "ada5cf317ff0e671336825c4187bcbc27f1ad8e8",
+      "sha256": "17ec5641db64f14a6881244e4b699709895105c835efe1391ddc861100b5a493"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-relation.json",
+      "bytes": 124972,
+      "gitBlobSha": "d0c234e7cdb4fb218f5f6e164d90c0a0434958b7",
+      "sha256": "9c1af62cc554c8f6b4ea12386612f11bc70c964fd4815eb09c4695e83ba128e5"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-rest.json",
+      "bytes": 16826,
+      "gitBlobSha": "9a00c0f70e6d65678a800f42a575526317e22084",
+      "sha256": "eb06b1126afb0cb6ccfb402809ca1af73de15b77460931b12b8ecb814d2d9ef9"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-sign.json",
+      "bytes": 9203,
+      "gitBlobSha": "ada1414ae71a738bfb323ca6fea8d4111f664890",
+      "sha256": "05a2b9515fbc563e422e6e2b40bbac615775f0c5f4ca9cf4fb483861fc509af3"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-soul.json",
+      "bytes": 129766,
+      "gitBlobSha": "5adf958b72a476d976f3667d75dbf68761cb555a",
+      "sha256": "f74c5cb66b4b48ff8bed3f9ab6c780536633ddd0d221d6c27a3d42753c5d41c3"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-species.json",
+      "bytes": 141608,
+      "gitBlobSha": "a2e7b4313ffb96efcc725692e79875eb6484a4ef",
+      "sha256": "c9bb96084a1810b0210238eebe375d38df1d632b0a9e9f4f520149a6fc5e26eb"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-substance-accident.json",
+      "bytes": 179054,
+      "gitBlobSha": "95575d343cc3db5e145c8c5439d3af37b374c74e",
+      "sha256": "ff6e4803bb6fa6e21c3b2835ecde67f32448257386bfd2a6e5e4ccf82c36fffd"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-time-dahr-sarmad.json",
+      "bytes": 96778,
+      "gitBlobSha": "6d06eec37664ae03da76caa8b071cfbe4a58335a",
+      "sha256": "97870488095b9fe32ae8ea938e4914b9f7500414b45a3d7a3d8cc9e70ce2d7a8"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/term-time.json",
+      "bytes": 92798,
+      "gitBlobSha": "ffb9d9ac91ac20805b6b30eba4cbdfc6d5a7e591",
+      "sha256": "37e7ca22ee88c813ec0eff45fbe2ed519ff31f1227e445be20f68b1124f207b3"
+    },
+    {
+      "path": "texts/al-tabatabai/data/occurrences/universal-particular.json",
+      "bytes": 158906,
+      "gitBlobSha": "bc00a7e3c1e2e7f9f7fe6fbfb2c14d6e7bcdaa85",
+      "sha256": "3534a8115a0e231cec99d9e9c40ce6250d07c0b13e7c41a949bb8d75c5b2b23b"
+    },
+    {
+      "path": "texts/al-tabatabai/data/paragraph-anchors.json",
+      "bytes": 875835,
+      "gitBlobSha": "52485695dfb82fadafa00c868ecf269e5a13e7ef",
+      "sha256": "486c5cceb17e1271fceaf7fcb8f46de7810415eae931302b2d32a98bd43c3615"
+    },
+    {
+      "path": "texts/al-tabatabai/data/study-index.json",
+      "bytes": 653642,
+      "gitBlobSha": "380f8c6d8ee53bc8ddaee87eff73f9ca988818f9",
+      "sha256": "ec4a9cb0d96176af412fd15bf6486b36ef2ad7bcd8ae7382b30329c1c5de633a"
+    },
+    {
+      "path": "texts/al-tabatabai/editions/index.html",
+      "bytes": 10425,
+      "gitBlobSha": "518b2aa81638be83b5a2e0fc7cf0447e7c48f792",
+      "sha256": "dd2ff33f2e613c7a639da89f3c0579b4410a2da7709217ed05287a7be4fc8793"
+    },
+    {
+      "path": "texts/al-tabatabai/muzaffar-al-mantiq/contents.html",
+      "bytes": 7485,
+      "gitBlobSha": "7d6db6db9cd55b59958596936a6874ddfa441594",
+      "sha256": "93a0ced7564fb5f79bf0dadb1fb49d736bb8e19d8ae87f2d874ede799297ea22"
+    },
+    {
+      "path": "texts/al-tabatabai/muzaffar-al-mantiq/data/authorial-map.json",
+      "bytes": 45552,
+      "gitBlobSha": "52e948503d2cfcd5011fa95fe178f3638b0191d4",
+      "sha256": "ae283dfef0688772e12caa024c9e4318109165b7e5ab36a44e95c20b6ae9c128"
+    },
+    {
+      "path": "texts/al-tabatabai/muzaffar-al-mantiq/data/book.json",
+      "bytes": 935528,
+      "gitBlobSha": "ba352971b7cc35ebee7a481bf5f66c4838d6f8d9",
+      "sha256": "7b32a57f9a772de1eb9369dab890be0f6463b7d47264c7c88f884c9466ef6fa0"
+    },
+    {
+      "path": "texts/al-tabatabai/tools/audit-hikma.mjs",
+      "bytes": 24070,
+      "gitBlobSha": "1ac7e0ca9f477597549048f3804a5a10af86831a",
+      "sha256": "cae8af154888a7712c69227b4301e6f84015c8507cadb1e7a1e6c15019657e27"
+    },
+    {
+      "path": "texts/al-tabatabai/tools/build-pdfs.cjs",
+      "bytes": 8949,
+      "gitBlobSha": "c476dc5dd01769893a97e02886f2765bb12296e0",
+      "sha256": "3a142027bd500bda0129a1368394a89452ea6e5bfdc587288cb5f9a675bce6f6"
+    },
+    {
+      "path": "texts/al-tabatabai/tools/qa-study-tools.cjs",
+      "bytes": 12402,
+      "gitBlobSha": "86bfe93de831290c1b2137ae138436938e984341",
+      "sha256": "b3190148082da0f178d861cefbd9d741786a4b119855f4f0843641bb8dde79df"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/recovery-stage9-2026-11-10/summary.json",
+      "bytes": 8806,
+      "gitBlobSha": "f9c0b97b37d26992d16840d8b1dd43ff4041b86b",
+      "sha256": "ba04f90d09d362cb13cff64b274b00b85a69c7716ba8ac602d7890e0f4d162d1"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/recovery-stage9-2026-11-10/integrity-receipt.json",
+      "bytes": 148097,
+      "gitBlobSha": "388c88167f4cb22baebbaeeaf68dc1a6a877cfee",
+      "sha256": "3504f0f234d9ee4fa0b9cc6567e93101d25f6fa4346f5fdd2f62a116f822a2cb"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/recovery-stage9-2026-11-10/nihaya-external-a.json",
+      "bytes": 256219,
+      "gitBlobSha": "a84cf01e427ae8523ec3cc56bf206af33b50076a",
+      "sha256": "44712d84c11fdbf02045a8a71e65703d220d9f6fac23b07b25dc1cd259b0b3bd"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/recovery-stage9-2026-11-10/nihaya-external-b.json",
+      "bytes": 756230,
+      "gitBlobSha": "d5b3757f901fe462507853ad889950284a931849",
+      "sha256": "429e45c58439c6f48dc1c6442b39ad8759113dc4579d393233b0e64728566148"
+    },
+    {
+      "path": "texts/al-tabatabai/audits/recovery-stage9-2026-11-10/nihaya-external-c.json",
+      "bytes": 63467,
+      "gitBlobSha": "114f59f43c5b8ede24dccb2a1215d8b2ff318682",
+      "sha256": "2d8e30557e6f8998e85972c7d3113547d02828af33a32a64adf11bae5480d90b"
+    }
+  ],
+  "scope": "82 recovered prepared repository files plus five recovered external-comparison records; excludes the later restart documentation and this manifest."
+}

@@ -1,0 +1,159 @@
+#!/usr/bin/env python3
+"""Interactive GNAMMA Farghānī reader QA across Chromium + Safari/WebKit."""
+from pathlib import Path
+from playwright.sync_api import sync_playwright
+import os, json, sys
+
+BASE=os.environ.get("FARGHANI_READER_BASE","http://127.0.0.1:8819/texts/al-farghani/muntaha-al-madarik/")
+ART=Path(os.environ.get("FARGHANI_QA_OUTPUT","qa-artifacts/farghani"))
+ART.mkdir(parents=True,exist_ok=True)
+reports=[]
+
+def assert_no_hscroll(page,tag):
+    d=page.evaluate("({full:document.documentElement.scrollWidth,viewport:innerWidth})")
+    assert d["full"]<=d["viewport"]+2,f"{tag}: horizontal overflow {d}"
+
+def run_browser(p,engine,browser_name):
+    for is_mobile in (False, True):
+        label=browser_name+("-phone" if is_mobile else "-desktop")
+        context=p.browser_type if False else None
+        browser=getattr(p,browser_name).launch(headless=True)
+        opts={"viewport":{"width":390,"height":844},"device_scale_factor":2,"is_mobile":True,"has_touch":True} if is_mobile else {"viewport":{"width":1440,"height":900},"device_scale_factor":1}
+        if browser_name=="webkit" and is_mobile:
+            opts["is_mobile"]=True
+        ctx=browser.new_context(**opts)
+        page=ctx.new_page()
+        errors=[]
+        page.on("pageerror",lambda e:errors.append(str(e)))
+        page.goto(BASE,wait_until="domcontentloaded",timeout=60000)
+        assert "Complete English working translation of the introduction" in page.locator(".fg-completion").inner_text(),f"{label}: homepage completion unclear"
+        assert page.locator('.fg-actions a[href="continuous-translation.html"]').is_visible()
+        assert page.locator('.fg-actions a[href="parallel-introduction.html"]').is_visible()
+        assert page.locator("#reading-list").count()==0,f"{label}: selected critical extracts must not be the primary reader"
+        page.goto(BASE+"continuous-translation.html",wait_until="domcontentloaded",timeout=60000)
+        page.wait_for_selector("html.fr-ready")
+        page.screenshot(path=str(ART/(label+"-opening.png")),full_page=False)
+        assert page.locator("#document section.b2007-page").count()==128,f"{label}: source pages"
+        assert page.locator('#scholarly-apparatus li[id^="apparatus-p"]').count()==128,f"{label}: apparatus pages"
+        assert page.locator("#document section[data-part-start]").count()==5,f"{label}: foundation starts"
+        assert page.locator('#document [id="b2007-p34"]').count()==1,f"{label}: printed p34"
+        assert "Cloud-like Presence" in page.locator('#b2007-p34').inner_text()
+        assert_no_hscroll(page,label+" open")
+        assert page.locator("body").evaluate("(n)=>n.classList.contains('reader-clean')"),f"{label}: page-number labels not unobtrusive"
+        page.locator("#fr-contents-open").click()
+        assert page.locator("#fr-panel").evaluate("(n)=>n.open")
+        page.locator(".fr-dialog-body .fr-input").fill("p. 70")
+        # Result searching page number may also match printed page title text.
+        page.locator(".fr-dialog-body .fr-result").filter(has_text="p. 70").first.click()
+        page.wait_for_timeout(600)
+        assert page.evaluate("location.hash")=="#b2007-p70",f"{label}: contents direct link"
+        indicator=page.locator("#fr-current").inner_text()
+        geometry=page.evaluate("({y:scrollY,viewport:innerHeight,p70:document.querySelector('#b2007-p70').getBoundingClientRect().top,p69:document.querySelector('#b2007-p69').getBoundingClientRect().top,p71:document.querySelector('#b2007-p71').getBoundingClientRect().top,hash:location.hash})")
+        assert "70" in indicator,f"{label}: progress page not correct {indicator!r}; geometry {geometry}"
+        page.locator("#fr-save").click()
+        assert page.locator("#fr-save").get_attribute("aria-pressed")=="true"
+        page.locator("#fr-more-open").click()
+        page.get_by_role("button",name="Editorial notes · current page").click()
+        assert page.locator("#fr-panel-body").get_by_text("Beirut p.70").count()>=1
+        assert page.locator('#fr-panel-body a[href*="critical-edition.html?page=70"]').count()==1
+        page.locator("#fr-close").click()
+        assert page.locator("#fr-panel").evaluate("(n)=>!n.open")
+        page.locator("#fr-search-open").click()
+        field=page.locator("#fr-panel-body .fr-input")
+        field.fill("Knowledge")
+        page.wait_for_timeout(200)
+        assert page.locator("#fr-panel-body .fr-result").count()>=1,f"{label}: full text search"
+        page.locator("#fr-panel-body .fr-result").first.click()
+        assert page.evaluate("location.hash").startswith("#b2007-p"),f"{label}: search jump"
+        page.wait_for_timeout(500)
+        if is_mobile:
+            assert page.locator("#fr-more-open").is_visible(),f"{label}: phone tools entry missing"
+            page.locator("#fr-more-open").click()
+            assert page.locator("#fr-panel-title").inner_text()=="Appearance & reading tools"
+            page.get_by_role("button",name="A+ Larger").click()
+            page.get_by_role("button",name="Mist",exact=True).click()
+            assert page.evaluate("document.documentElement.dataset.theme")=="horizon"
+            page.get_by_role("button",name="Night",exact=True).click()
+            page.locator("#fr-close").click()
+        else:
+            page.locator("#fr-more-open").click()
+            page.get_by_role("button",name="A+ Larger").click()
+            page.get_by_role("button",name="Mist",exact=True).click()
+            assert page.evaluate("document.documentElement.dataset.theme")=="horizon",f"{label}: theme control"
+            page.get_by_role("button",name="Night",exact=True).click()
+            page.locator("#fr-close").click()
+        scale=page.evaluate("getComputedStyle(document.documentElement).getPropertyValue('--fr-scale').trim()")
+        assert float(scale)>1,f"{label}: type scaling"
+        assert page.evaluate("document.documentElement.dataset.theme")=="night",f"{label}: dark theme"
+        if is_mobile:
+            page.locator("#fr-more-open").click()
+            page.get_by_role("button",name="Focus reading").click()
+        else:
+            page.locator("#fr-more-open").click()
+            page.get_by_role("button",name="Focus reading").click()
+        assert page.locator("body").evaluate("(n)=>n.classList.contains('fr-focus')")
+        assert page.locator("#fr-exit-focus").is_visible()
+        page.locator("#fr-exit-focus").click()
+        assert not page.locator("body").evaluate("(n)=>n.classList.contains('fr-focus')")
+        page.locator("#fr-bookmarks-open").click()
+        assert page.locator("#fr-panel-body").get_by_text("★ Beirut p. 70").count()==1,f"{label}: saved pages"
+        page.locator("#fr-close").click()
+        page.reload(wait_until="domcontentloaded")
+        page.wait_for_selector("html.fr-ready")
+        assert page.evaluate("document.documentElement.dataset.theme")=="night",f"{label}: prefs not retained"
+        page.locator("#fr-bookmarks-open").click()
+        assert page.locator("#fr-panel-body").get_by_text("★ Beirut p. 70").count()==1,f"{label}: bookmarks lost on refresh"
+        page.locator("#fr-close").click()
+        page.emulate_media(media="print")
+        assert page.locator('#b2007-p18 h3').evaluate("(n)=>getComputedStyle(n).position")!="absolute",f"{label}: printed page labels not shown"
+        page.emulate_media(media="screen")
+        assert_no_hscroll(page,label+" final")
+        assert not errors,f"{label}: JavaScript page errors {errors[:5]}"
+        page.screenshot(path=str(ART/(label+".png")),full_page=False)
+        # Extract reader must acknowledge partial Arabic coverage without conflating it with full English.
+        page.goto(BASE+"extracts.html",wait_until="domcontentloaded")
+        assert page.locator("#reading-list .reading-block").count()>=1,f"{label}: archived source extract reader missing"
+        assert not errors,f"{label}: reader errors {errors[:5]}"
+        # The parallel full introduction remains readable, but its source notes are hidden by default.
+        page.goto(BASE+"parallel-introduction.html",wait_until="domcontentloaded",timeout=60000)
+        assert page.locator(".pr-page").count()==128,f"{label}: missing complete bilingual page span"
+        assert not page.locator("body").evaluate("(n)=>n.classList.contains('pr-show-notes')"),f"{label}: apparatus visible by default"
+        assert page.locator("#pr-study-open").is_visible(),f"{label}: bilingual study access absent"
+        assert not page.locator(".pr-apparatus").first.is_visible(),f"{label}: source notes intrude into authorial text"
+        page.locator("#pr-study-open").click()
+        assert page.locator("#pr-dialog").evaluate("(n)=>n.open"),f"{label}: source evidence dialog not open"
+        assert "Source, notes and variants" in page.locator("#pr-dialog-content").inner_text(),f"{label}: page evidence missing"
+        assert page.locator('#pr-dialog-content a[href*="critical-edition.html?page=18"]').count()==1,f"{label}: per-page source route missing"
+        page.locator("#pr-close").click()
+        # Previously flattened modern notes must be absent from Farghānī's Arabic,
+        # but present in the separate current-page scholarly apparatus.
+        assert "رواه مسلم في صحيحه" not in page.locator("#p20 .pr-ar").inner_text(),f"{label}: p20 modern note leaked into Arabic"
+        assert "هذا الأثر لم أجده" not in page.locator("#p25 .pr-ar").inner_text(),f"{label}: p25 modern note leaked into Arabic"
+        assert "الآية 7" in page.locator("#p26 .pr-ar").inner_text(),f"{label}: genuine Quranic verse locator was stripped"
+        page.locator("#pr-study-open").click()
+        page.locator('#pr-dialog-content select[aria-label="Source evidence for Beirut printed page"]').select_option("20")
+        assert "رواه مسلم في صحيحه" in page.locator(".pr-study-evidence").inner_text(),f"{label}: p20 note lost from separate Study apparatus"
+        page.locator('#pr-dialog-content select[aria-label="Source evidence for Beirut printed page"]').select_option("25")
+        assert "هذا الأثر لم أجده" in page.locator(".pr-study-evidence").inner_text(),f"{label}: p25 note lost from separate Study apparatus"
+        page.locator("#pr-close").click()
+        # 559 selected records must stay usable in page-filtered critical viewer.
+        page.goto(BASE+"critical-edition.html?page=52",wait_until="domcontentloaded",timeout=60000)
+        page.wait_for_selector(".audit-clause")
+        assert page.locator("#count").inner_text().strip()=="559",f"{label}: critical record total"
+        page.locator("#page-select").select_option("52")
+        assert page.locator("#clauses .audit-clause").count()>0,f"{label}: p52 missing"
+        assert page.locator('.audit-clause[data-disposition="corrected"]').count()>=0
+        assert not errors,f"{label}: critical reader errors {errors[:5]}"
+        assert_no_hscroll(page,label+" critical")
+        page.screenshot(path=str(ART/(label+"-critical.png")),full_page=False)
+        reports.append({"browser":browser_name,"mobile":is_mobile,"pages":128,"notes":70,"critical_records":559,"status":"pass"})
+        ctx.close()
+        browser.close()
+
+with sync_playwright() as p:
+    browsers=os.environ.get("FARGHANI_BROWSERS","chromium,webkit").split(",")
+    for b in browsers:
+        run_browser(p,b,b)
+
+print(json.dumps(reports,indent=2))
+(ART/"report.json").write_text(json.dumps(reports,indent=2)+"\n",encoding="utf-8")

@@ -1,0 +1,37 @@
+name: Verify published Qawaid PDFs (legacy publisher retired)
+on:
+  push:
+    branches: [master]
+    paths: ['.github/workflows/qawaid-publish-verified-pdfs.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-current:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Explain retired fixed Qawtaw5 PDF artifact
+        run: |
+          echo 'The obsolete fixed artifact ID 13295306715 must never overwrite the later Qawtaw16 scholarly release.'
+          echo 'This workflow is read-only; PDF release v2 is the maintained production builder.'
+      - name: Install PDF inspection
+        run: python -m pip install --quiet pypdf
+      - name: Verify current committed five PDFs without changing them
+        run: |
+          python - <<'PY'
+          import hashlib,json,pathlib
+          from pypdf import PdfReader
+          p=pathlib.Path('texts/al-turka/qawaid-al-tawhid/pdf')
+          x=json.loads((p/'manifest.json').read_text())
+          assert x['revision']=='2026-11-12-qawtaw16-source-scoped-reading', x['revision']
+          assert len(x['files'])==5
+          for row in x['files']:
+              f=p/row['filename']; b=f.read_bytes()
+              assert b.startswith(b'%PDF-')
+              assert len(b)==row['size_bytes']
+              assert hashlib.sha256(b).hexdigest()==row['sha256']
+              assert len(PdfReader(f).pages)==row['pages']
+              print(row['title'], row['pages'], 'verified pages')
+          PY

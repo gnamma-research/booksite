@@ -1,0 +1,178 @@
+{
+  "schema": "gnamma-bidaya-alternative-usul-public-archive-v1",
+  "source_version": "0.1",
+  "supplement_version": "0.2",
+  "authorial_status": "provisional research, not full Bidāya or canonical Revision16",
+  "counts": {
+    "extended_cases_v01": 12,
+    "case_reviews_v02": 13,
+    "countertests": 4,
+    "reader_applications": 28,
+    "source_records": 115,
+    "constitution_articles": 15
+  },
+  "case_index": [
+    {
+      "id": "B02",
+      "title": "Extent of wiping the head",
+      "status": "adopted_provisionally",
+      "url_fragment": "case-B02",
+      "version": "v0.1"
+    },
+    {
+      "id": "B03",
+      "title": "Proposing over a prior proposal",
+      "status": "adopted_provisionally",
+      "url_fragment": "case-B03",
+      "version": "v0.1"
+    },
+    {
+      "id": "B05",
+      "title": "Intention as a condition of wudu",
+      "status": "adopted_provisionally",
+      "url_fragment": "case-B05",
+      "version": "v0.1"
+    },
+    {
+      "id": "B08",
+      "title": "Remoter guardian with nearer guardian present",
+      "status": "adopted_provisionally",
+      "url_fragment": "case-B08",
+      "version": "v0.1"
+    },
+    {
+      "id": "B09",
+      "title": "Traveller fasting",
+      "status": "adopted_provisionally",
+      "url_fragment": "case-B09",
+      "version": "v0.1"
+    },
+    {
+      "id": "B13_B23",
+      "title": "Fixed minimum dower",
+      "status": "adopted_provisionally",
+      "url_fragment": "case-B13_B23",
+      "version": "v0.1"
+    },
+    {
+      "id": "B16",
+      "title": "Hajj timing",
+      "status": "adopted_provisionally",
+      "url_fragment": "case-B16",
+      "version": "v0.1"
+    },
+    {
+      "id": "B17",
+      "title": "Initial umra and completion",
+      "status": "adopted_provisionally",
+      "url_fragment": "case-B17",
+      "version": "v0.1"
+    },
+    {
+      "id": "B18",
+      "title": "Menstrual divorce",
+      "status": "adopted_provisionally",
+      "url_fragment": "case-B18",
+      "version": "v0.1"
+    },
+    {
+      "id": "B21",
+      "title": "Deathbed divorce and inheritance",
+      "status": "adopted_provisionally",
+      "url_fragment": "case-B21",
+      "version": "v0.1"
+    },
+    {
+      "id": "B22",
+      "title": "Operative grounds of commodity riba",
+      "status": "adopted_provisionally",
+      "url_fragment": "case-B22",
+      "version": "v0.1"
+    },
+    {
+      "id": "B25",
+      "title": "Mistaken qibla",
+      "status": "adopted_provisionally",
+      "url_fragment": "case-B25",
+      "version": "v0.1"
+    },
+    {
+      "id": "B01",
+      "title": "Marriage: differing rulings by capacity — CONDITIONAL",
+      "url_fragment": "case-B01",
+      "version": "v0.2"
+    },
+    {
+      "id": "B04",
+      "title": "Zakāt on minor-owned wealth — CANDIDATE",
+      "url_fragment": "case-B04",
+      "version": "v0.2"
+    },
+    {
+      "id": "B06",
+      "title": "Coerced divorce and competent consent — CANDIDATE",
+      "url_fragment": "case-B06",
+      "version": "v0.2"
+    },
+    {
+      "id": "B10",
+      "title": "Basmala: recitation and Qurʾānic membership — HOLD",
+      "url_fragment": "case-B10",
+      "version": "v0.2"
+    },
+    {
+      "id": "B11",
+      "title": "Absent father and guardianship — CONDITIONAL",
+      "url_fragment": "case-B11",
+      "version": "v0.2"
+    },
+    {
+      "id": "B12",
+      "title": "Touching women and ablution — CANDIDATE",
+      "url_fragment": "case-B12",
+      "version": "v0.2"
+    },
+    {
+      "id": "B14",
+      "title": "Option in sale before separation — CANDIDATE",
+      "url_fragment": "case-B14",
+      "version": "v0.2"
+    },
+    {
+      "id": "B15",
+      "title": "Guardianship as condition of marriage — HOLD",
+      "url_fragment": "case-B15",
+      "version": "v0.2"
+    },
+    {
+      "id": "B19",
+      "title": "Foetal compensation and right-holder — HOLD",
+      "url_fragment": "case-B19",
+      "version": "v0.2"
+    },
+    {
+      "id": "B20",
+      "title": "Zakāt on jewellery — HOLD",
+      "url_fragment": "case-B20",
+      "version": "v0.2"
+    },
+    {
+      "id": "B24",
+      "title": "Triple divorce after mutual imprecation — CONDITIONAL",
+      "url_fragment": "case-B24",
+      "version": "v0.2"
+    },
+    {
+      "id": "B27",
+      "title": "Cupping while fasting — HOLD",
+      "url_fragment": "case-B27",
+      "version": "v0.2"
+    },
+    {
+      "id": "B28",
+      "title": "Deferred exchange of livestock — HOLD",
+      "url_fragment": "case-B28",
+      "version": "v0.2"
+    }
+  ]
+}

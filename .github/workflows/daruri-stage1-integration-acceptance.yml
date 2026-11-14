@@ -1,10 +1,12 @@
-name: Daruri Stage 1 on-device PDF integration acceptance (STAGING ONLY)
+name: Daruri Stage 1 genuine 120-file retirement and browser PDF acceptance
 on:
   push:
-    branches: [staging/daruri-stage1-12-plus-15-20261023]
+    branches: [staging/daruri-stage1-12-plus-15-20261023, integration/daruri-stage1-current-master-20261023, release/daruri-stage1-retire-120-verified-20261023]
     paths:
       - '.github/workflows/daruri-stage1-integration-acceptance.yml'
       - 'daruri/dynamic-pdf/**'
+      - 'daruri/editions/apparatus/**'
+      - 'daruri/qa/verify_stage1_retirement.py'
       - 'daruri/dynamic-editions.html'
       - 'daruri/personal-export.js'
       - 'daruri/editions-selector.js'
@@ -16,10 +18,12 @@ on:
       - 'daruri/qa/verify_dynamic_negative_paths.cjs'
       - 'daruri/qa/verify_dynamic_cancel_identity.cjs'
   pull_request:
-    branches: [master]
+    branches: [master, integration/daruri-stage1-current-master-20261023]
     paths:
       - '.github/workflows/daruri-stage1-integration-acceptance.yml'
       - 'daruri/dynamic-pdf/**'
+      - 'daruri/editions/apparatus/**'
+      - 'daruri/qa/verify_stage1_retirement.py'
       - 'daruri/dynamic-editions.html'
       - 'daruri/personal-export.js'
       - 'daruri/editions-selector.js'
@@ -38,7 +42,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   catalogue:
-    name: Retain 12 bases, 15 packets, 120 profiles and every rollback PDF
+    name: 12 signed sources, 15 packets, 120 maps and absence of retired variant PDFs
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -56,7 +60,7 @@ jobs:
           node --check daruri/qa/verify_dynamic_design_browser.cjs
           node daruri/dynamic-pdf/test_design_catalog.cjs
           node daruri/qa/verify-editions-delivery.cjs
-      - name: All published fallback PDFs and signed inputs remain present
+      - name: Verify signed Stage 1 sources and archival-retirement policy
         run: |
           python - <<'PY'
           import json,pathlib
@@ -66,13 +70,21 @@ jobs:
           d=json.loads((root/'dynamic-pdf/packets/manifest.json').read_text())
           assert len(a['files'])==120 and len(b['files'])==12
           assert len(d['packets'])==15 and len(d['profiles'])==120
-          assert all((root/'editions'/x['file']).is_file() for x in a['files'])
+          if (root/'dynamic-pdf/RETIRE_120.json').is_file():
+            assert all(not (root/'editions'/x['file']).exists() for x in a['files']), 'Prebuilt variants remain'
+          else:
+            assert all((root/'editions'/x['file']).is_file() for x in a['files'])
           assert all((root/'editions'/x['file']).is_file() for x in b['files'])
           assert all((root/'dynamic-pdf/packets'/p['file']).is_file() for p in d['packets'])
           assert all((root/'dynamic-pdf/packets'/p['map']).is_file() for p in d['packets'])
           assert all((root/'dynamic-pdf/packets'/p['map']).is_file() for p in d['profiles'])
-          print('STAGE1 PASS: 12 bases, 15 packets, 120 signed profiles, approved rollback intact')
+          print('STAGE1 CATALOGUE: 12 bases, 15 packets, 120 signed profiles; retirement='+str((root/'dynamic-pdf/RETIRE_120.json').is_file()))
           PY
+      - name: Exhaustive actual retirement SHA gate (only when marker is present)
+        run: |
+          if test -f daruri/dynamic-pdf/RETIRE_120.json; then
+            python daruri/qa/verify_stage1_retirement.py
+          fi
   browser:
     name: In-browser actual PDF generation and negative-paths (${{ matrix.browser }})
     runs-on: ubuntu-latest

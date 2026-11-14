@@ -1,0 +1,43 @@
+name: Qawaid immersive reader and research QA
+on:
+  push:
+    branches: [feature/qawaid-immersive-search-design-20261113]
+    paths:
+      - '.github/workflows/qawaid-immersive-reader-research-qa.yml'
+      - 'texts/al-turka/qawaid-al-tawhid/index.html'
+      - 'texts/al-turka/qawaid-al-tawhid/commentary.html'
+      - 'texts/al-turka/qawaid-al-tawhid/qawaid-research-search.*'
+      - 'texts/al-turka/qawaid-al-tawhid/qawaid-reading-refinement.css'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/test-immersive-research-browser.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify source JavaScript syntax
+        run: |
+          node --check texts/al-turka/qawaid-al-tawhid/qawaid-research-search.js
+          node --check texts/al-turka/qawaid-al-tawhid/layered-reader.js
+          node --check texts/al-turka/qawaid-al-tawhid/commentary-reader.js
+      - name: Install Chromium browser
+        run: |
+          python -m pip install --quiet playwright
+          python -m playwright install --with-deps chromium
+      - name: End-to-end mobile/desktop reader and scholarly search acceptance
+        run: python texts/al-turka/qawaid-al-tawhid/qa/test-immersive-research-browser.py
+      - name: Preserve machine acceptance and visual screenshots
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawaid-immersive-search-screenshots
+          path: |
+            texts/al-turka/qawaid-al-tawhid/qa/qawaid-immersive-search-browser-report.json
+            texts/al-turka/qawaid-al-tawhid/qa/qawaid-immersive-mobile.png
+            texts/al-turka/qawaid-al-tawhid/qa/qawaid-commentary-mobile.png
+            texts/al-turka/qawaid-al-tawhid/qa/qawaid-research-mobile.png
+            texts/al-turka/qawaid-al-tawhid/qa/qawaid-immersive-error.png
+          retention-days: 14

@@ -8,6 +8,7 @@ from collections import Counter
 from pathlib import Path
 import fitz
 ROOT=Path(__file__).resolve().parents[1]/"daruri"
+RETIRE=(ROOT/"dynamic-pdf/RETIRE_120.json").is_file()
 OUT=Path(sys.argv[1]) if len(sys.argv)>1 else Path("pdf_parity_ci/link_graph_report.json")
 def digest(p):
  h=hashlib.sha256()
@@ -20,8 +21,33 @@ def sources():
  bases=json.loads((ROOT/"editions/manifest.json").read_text())["files"]
  for d in bases:yield ("base_a4",ROOT/"editions"/d["file"],d["file"],d["sha256"],d["pages"])
  apparatus=json.loads((ROOT/"editions/apparatus/manifest.json").read_text())["files"]
- for d in apparatus:yield ("apparatus",ROOT/"editions"/d["file"],d["file"],d["sha256"],d["pages"])
+ if not RETIRE:
+  for d in apparatus:yield ("apparatus",ROOT/"editions"/d["file"],d["file"],d["sha256"],d["pages"])
 entries=list(sources());counts=Counter();problems=[];per_file=[]
+if RETIRE:
+  # The 120 prebuilt apparatus PDFs have been intentionally retired. Audit
+  # their 120 signed recipes and prohibit any accidental leftover binary.
+  retire=json.loads((ROOT/"dynamic-pdf/RETIRE_120.json").read_text())
+  assert retire["schema"]=="gnamma-daruri-stage1-retirement-v1"
+  apparatus=json.loads((ROOT/"editions/apparatus/manifest.json").read_text())["files"]
+  packet_data=json.loads((ROOT/"dynamic-pdf/packets/manifest.json").read_text())
+  profiles={p["profile"]:p for p in packet_data["profiles"]}
+  packet_names={p["file"] for p in packet_data["packets"]}
+  assert len(apparatus)==len(profiles)==120 and len(packet_names)==15
+  for row in apparatus:
+   target=ROOT/"editions"/row["file"]
+   if target.exists():problems.append({"file":row["file"],"why":"redundant-full-variant-pdf-still-present"})
+   profile=profiles.get(row["file"])
+   if not profile or profile["profile_sha256"]!=row["sha256"] or profile["base"]!=row["source_base"]:
+    problems.append({"file":row["file"],"why":"signed-on-demand-recipe-mismatch"})
+   elif profile["packet"] not in packet_names:
+    problems.append({"file":row["file"],"why":"reusable-apparatus-packet-missing-from-catalogue"})
+   else:
+    signed=ROOT/"dynamic-pdf/packets"/profile["map"]
+    if not signed.is_file() or digest(signed)!=profile["map_sha256"]:
+     problems.append({"file":row["file"],"why":"on-demand-profile-map-sha-mismatch"})
+  counts["retired_prebuilt_pdf_variants"]=len(apparatus)
+  counts["signed_on_demand_apparatus_profiles"]=len(profiles)
 for idx,(kind,path,name,expected_sha,pages) in enumerate(entries,1):
  try:
   check={"kind":kind,"name":name,"expected_pages":pages,"expected_sha":expected_sha}
@@ -72,7 +98,7 @@ for idx,(kind,path,name,expected_sha,pages) in enumerate(entries,1):
   per_file.append({"kind":kind,"name":name,"error":str(e)})
  if idx%20==0:print("SCANNED",idx,"of",len(entries),"links",counts["total_links"],flush=True)
 result={"files":len(entries),"counts":dict(counts),"problems":problems,"files_summary":per_file,
-        "all_published_files_pass":len(problems)==0,"scope":"All 5 canonical + 12 A4 + 120 apparatus PDFs. All embedded PDF link annotations checked. This does not certify semantics of each named target."}
+        "all_published_files_pass":len(problems)==0,"scope":("5 canonical + 12 A4 direct PDFs + 120 signed local-generation recipes; pre-retirement 137-PDF full-link graph remains archived. Direct PDF link annotations checked; current composed PDFs covered by independent 120-profile parity and browser tests." if RETIRE else "All 5 canonical + 12 A4 + 120 apparatus PDFs; embedded link annotations checked."), "retirement_mode":RETIRE}
 OUT.parent.mkdir(parents=True,exist_ok=True)
 OUT.write_text(json.dumps(result,ensure_ascii=False,indent=2))
 print(json.dumps({k:v for k,v in result.items() if k!="files_summary"},indent=2)[:5500])

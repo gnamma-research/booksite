@@ -1,0 +1,28 @@
+name: Farghani XIX original 1876 print additional photo comparison
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'tools/farghani/extra_1876_photos.py'
+      - '.github/workflows/farghani-original-print-additional.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  retrieve-source-photographs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --quiet pillow requests
+      - name: Retrieve original 1876 PRINT image scans 44–48 for human collation
+        run: python tools/farghani/extra_1876_photos.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: farghani-I1876-original-photographs-new-xix
+          path: qa-artifacts/farghani-i1876-new/
+          retention-days: 30

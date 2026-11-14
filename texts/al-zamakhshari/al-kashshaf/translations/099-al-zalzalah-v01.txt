@@ -1,0 +1,220 @@
+AL-KASHSHAF / FUTUH AL-GHAYB — C07 REVIEWED
+10 November 2026
+
+All 277 existing passages have undergone electronic comparison. This is a revised working edition, not a definitive critical edition. Draft coverage: 19 Kashshāf sūrahs, 18 Ṭībī sūrahs and Fātiḥa I:677–686 only. I:687–770 remains untranslated. One Arabic gap, conflicting readings, complete page-image collation and final scholarly approval remain outstanding.
+
+SURAH 99 — al-Zalzalah
+
+﴿بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا﴾ (99:1)
+When Earth is shaken with her (final) earthquake
+
+﴿وَأَخْرَجَتِ ٱلْأَرْضُ أَثْقَالَهَا﴾ (99:2)
+And Earth yieldeth up her burdens
+
+﴿وَقَالَ ٱلْإِنسَـٰنُ مَا لَهَا﴾ (99:3)
+And man saith: What aileth her
+
+﴿يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا﴾ (99:4)
+That day she will relate her chronicles
+
+﴿بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا﴾ (99:5)
+Because thy Lord inspireth her
+
+﴿يَوْمَئِذٍ يَصْدُرُ ٱلنَّاسُ أَشْتَاتًا لِّيُرَوْا۟ أَعْمَـٰلَهُمْ﴾ (99:6)
+That day mankind will issue forth in scattered groups to be shown their deeds
+
+﴿فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ﴾ (99:7)
+And whoso doeth good an atom's weight will see it then
+
+﴿وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ﴾ (99:8)
+And whoso doeth ill an atom's weight will see it then
+
+K099.01 — Heading and verses [IV:783]
+
+Medinan; also said to be Meccan. Eight verses. [The DKA heading additionally places its revelation after al-Nisāʾ.]
+In the name of God, the All-Merciful, the Merciful.
+
+When the earth is shaken with its shaking, (1) and the earth brings out its burdens, (2) and the human being says, “What is the matter with it?”—(3) on that day it will tell its tidings, (4) because your Lord has inspired it. (5) On that day people will come forth separately, to be shown their deeds. (6) Whoever does an atom’s weight of good will see it, (7) and whoever does an atom’s weight of evil will see it. (8)
+
+K099.02 — The shaking and the burdens [IV:783]
+
+Zilzālahā is read with kasra (كَسْرة) or fatḥa (فَتْحة) on the zāy (ز). With kasra (كَسْرة) it is a verbal noun; with fatḥa (فَتْحة), a noun. Among word-patterns, faʿlāl (فَعْلال) with fatḥa (فَتْحة) occurs only in a reduplicated form.
+
+If you ask what “its shaking” means in the possessive construction, I answer: the shaking that befits it in accordance with wisdom and God’s will—the violent shaking beyond which there is none. Compare: “Honour the pious man with his honour, and abase the impious man with his abasement,” meaning the honour and abasement they respectively deserve. Or it means its entire shaking, every degree of shaking possible for it.
+
+Athqāl is the plural of thaqal (ثَقَل), household goods, as in “They carry your burdens” [16:7]. He makes the things buried within the earth its burdens.
+
+T099.01 — The word-pattern faʿlāl [XVI:536]
+
+Medinan; nine verses. In the name of God, the All-Merciful, the Merciful. [The embedded Kashshāf heading instead records disagreement about the place of revelation; both headings here give nine verses.]
+
+On “among word-patterns, faʿlāl (فَعْلال) with fatḥa (فَتْحة) occurs only in a reduplicated form,” al-Kawāshī has: “The expression nāqa (ناقة) جزعال occurs, meaning a she-camel which [probably ‘limps’; the electronic text reads تطلع, ‘looks out/climbs’], as does qasṭāl (قَسْطال), a word for dust; neither is reduplicated. It is said that Bahrām and Shahrām are foreign.” As for qahqār (قَهْقار), it is a weak linguistic form. Al-Ṣiḥāḥ has: “Qahqarr, with doubled rāʾ (ر), is hard stone. Aḥmad ibn Yaḥyā alone used to say qahqār (قَهْقار).”
+
+T099.02 — A shaking beyond which there is none [XVI:537]
+
+On “beyond which there is none”: no shaking comes beyond it—that is, none surpasses it or is stronger. Al-Mughrib says: “The expression wa-in kāna laysa bi-lladhī lā (لا) baʿda (بعد) lahu means ‘although it is not the ultimate in excellence.’ It derives from their saying, ‘This is something beyond which there is no further extreme of excellence or badness.’ Sometimes they abbreviate it and say laysa baʿdahu (بعده), ‘there is none beyond it’; then the lā (لا) that negates an entire class is introduced, and [baʿd (بعد)] is used like a fully declinable noun.”
+
+On “or its entire shaking”: the measure appropriate to it and attributed to it. The difference from the preceding interpretation is that the first refers to the agent and the requirement of His will. Hence he says, “the shaking that befits it in accordance with wisdom.” The second, although indicating comprehensiveness, is less intense than the first. His phrase “befits it in accordance with wisdom” alludes to his doctrinal position.
+
+The Imām says: “That is, the shaking prescribed for it, if it is conceived as a living being. It is related that it shakes from the intensity of Isrāfīl’s voice.” This works only if it is conceived as alive and frightened, just as it is made speaking in “it tells its tidings.”
+
+On “He makes the things buried within it its burdens,” al-Rāghib says: “Its burdens are said to be its treasures, or the human bodies it contains at the resurrection. ‘They carry your burdens’ [16:7] means your heavy loads.”
+
+K099.03 — The human being’s question and the earth’s speech [IV:783–784]
+
+“And the human being says, ‘What is the matter with it?’”—that it has shaken so violently and cast out what was in its belly. This occurs at the second blast, when it shakes and casts out its dead alive. They say this because of the dreadful event that overwhelms them, just as they say, “Who has raised us from our sleeping-place?” [36:52]. It is also said that this is the unbeliever’s speech, because he did not believe in resurrection; the believer says, “This is what the All-Merciful promised, and the messengers spoke truly” [36:52].
+
+If you ask what the earth’s telling and its being inspired mean, I answer: this is figurative language for God’s bringing about in it states that take the place of telling by the tongue. Someone who asks, “What is the matter with it?”, looks at those states and knows why it shook and why it cast out the dead, and that this is what the prophets used to forewarn of and caution against.
+
+It is also said that God literally makes it speak and it reports the good and evil done upon it. It is related from God’s Messenger: “It bears witness against everyone concerning what he did upon its surface.”
+
+T099.03 — The implied circumstance and the earth’s testimony [XVI:538]
+
+On “‘What is the matter with it?’—that it has shaken”: it is said that this indicates an omission in the expression. The omitted clause is circumstantial, referring to the pronoun governed by the preposition, because it functions as an object: what has happened to it in this state? Compare His saying, “What is the matter with them, turning away from the reminder?” [74:49].
+
+On “it bears witness against everyone concerning what he did upon its surface”: Imām Aḥmad ibn Ḥanbal and al-Tirmidhī transmit from Abū Hurayra that God’s Messenger recited “On that day it will tell its tidings” and asked, “Do you know what its tidings are?” They said, “God and His Messenger know best.” He said: “Its tidings are that it bears witness against every male or female servant concerning what they did on its surface. It says, ‘On such-and-such a day, he did such-and-such.’ These are its tidings.”
+
+K099.04 — Adverbials and the objects of “tell” [IV:784]
+
+If you ask what governs the accusative of idhā (إذا), “when,” and yawmaʾidhin (يومئذ), “on that day,” I answer: yawmaʾidhin (يومئذ) substitutes for idhā (إذا), and tuḥaddithu (تحدّث), “it tells,” governs both. Alternatively, idhā (إذا) may be governed by an omitted verb, and yawmaʾidhin (يومئذ) by tuḥaddithu (تحدّث).
+
+If you ask where the two objects of tuḥaddithu (تحدّث) are, I answer: the first is omitted and the second is “its tidings.” The underlying expression is “it tells created beings its tidings.” But the aim is to mention its telling the tidings, not to mention created beings, in order to magnify the day.
+
+T099.04 — Does “tell” take one object, two, or three? [XVI:539–540]
+
+On “where are the two objects of ‘it tells’?”: it is said that both question and answer are open to examination. Ḥaddatha does not take two objects; it takes one. The omitted term explicitly supplied here is the direct object; the expressed term, “its tidings,” is an absolute object, a verbal-noun complement. These are not called “two objects” in the grammarians’ technical usage.
+
+True, when the particular content of the verbal noun is mentioned in this construction, it is made accusative. Some grammarians then call its components a second and third object, as in “I told Zayd that ʿAmr was standing,” and call the verb transitive to three objects. It has been stated and established in its proper place that this is not so: the verb takes one object, while “Zayd standing” is accusative because it occupies the place of the verbal noun. But when the verbal noun is explicitly expressed, as in “I told him a telling and a report,” no one says that the verb takes two objects.
+
+The proof is that, after explaining that “Zayd standing” is accusative in such a construction because it occupies the place of a verbal noun, rather than being a second and third object, Ibn al-Ḥājib says: “It remains to ask how something that is not an action in meaning—the supposed second and third objects—can occupy the position of a verbal noun.” He answers: “It was not a verbal noun insofar as it was ‘Zayd standing,’ but insofar as it was a particular report. The aspect that permits it to be predicated of ‘the report’ when you say, ‘Zayd told me that ʿAmr was departing,’ is the same aspect that permits it to occupy the place of a verbal noun.”
+
+I say: one may answer that ḥaddatha (حدّث) and its sister verbs truly take one object, and that making them take three or two involves figurative extension or incorporation of another verb’s meaning. Al-Mufaṣṣal says: “Ḥaddathtu is treated like aʿlamtu (أعلمت), ‘I informed,’ because it agrees with it in meaning, and is therefore made transitive in the same way.” The author of al-Iqlīd says: “Anbaʾa, nabbaʾa (نبّأ), akhbara, and khabbara originally take one object: anbaʾtu (أنبأت) Zaydan bi-kadhā (بكذا), ‘I informed Zayd of such-and-such.’ The preposition is then omitted and one says anbaʾtuhu (أنبأته) kadhā (كذا). In revelation, ‘Who informed you of this?’ [66:3] means bi-hādhā (بهذا), ‘of this’; and ‘Inform My servants that I am the Forgiving, the Merciful’ [15:49]. When these verbs take three objects, this is only because they are treated like aʿlamtu (أعلمت).”
+
+It is therefore clear that the author’s question rests on this analysis. His answer indicates it when he explicitly says: “As though it were said, ‘On that day it tells its tidings: that your Lord has inspired it,’ because one says both ‘I told him such-and-such’ and ‘I told him of such-and-such.’”
+
+T099.05 — Why the hearers are omitted [XVI:540]
+
+On “the aim is to mention its telling the tidings”: the purpose in the verse is the second object, not the first, because the sūrah is directed toward the terror of the Resurrection. That is: a tremendous day on which inanimate things speak.
+
+K099.05 — “Because your Lord has inspired it” [IV:784]
+
+If you ask what the bāʾ (ب) in “because your Lord” depends on, I answer: on “it tells.” The meaning is: it tells its tidings because your Lord inspired it and commanded it to tell.
+
+The meaning may also be: on that day, by telling that your Lord has inspired it, it tells its tidings—on the understanding that its telling that your Lord has inspired it is itself the telling of its tidings. Compare your saying, “You have given me every counsel by counselling me about religion.”
+
+“Because your Lord” may also substitute for “its tidings,” as though it were said, “On that day it tells of its tidings: that your Lord has inspired it,” because you can say both ḥaddathtuhu (حدّثته) kadhā (كذا) and ḥaddathtuhu (حدّثته) bi-kadhā (بكذا), “I told him such-and-such.”
+
+Awḥā lahā means awḥā ilayhā (أوحى إليها), “inspired it.” It is figurative, like “that We say to it, ‘Be,’ and it is” [cf. 16:40; 36:82]. The poet says:
+“He inspired it to be still, and it became still.”
+
+Ibn Masʿūd read tunabbiʾu akhbārahā (تُنَبِّئُ أخبارها), “it reports its tidings”; Saʿīd ibn Jubayr read tunbiʾu (تُنْبِئُ), without doubling the consonant.
+
+T099.06 — Abstraction and the inspiration of the earth [XVI:540–541]
+
+On “on that day, by telling that your Lord has inspired it, it tells its tidings”: apparently the bāʾ (ب) here resembles that in “If you meet so-and-so, you will meet in him a man of consummate goodness.” The meaning is: by telling that your Lord has inspired it, the earth tells its tidings in their utmost degree. This therefore belongs to abstraction, tajrīd (تجريد). Hence he says: “On the understanding that its telling that your Lord has inspired it is itself the telling of its tidings.”
+
+Under His words, “When We took from the prophets their covenant,” down to “and We took from them a solemn covenant” [33:7], he says: “By the second He intends precisely the first: by that covenant We took from them a solemn covenant.” The same applies to the example “You gave me every counsel by counselling me about religion”: from counsel concerning religion he abstracts perfect counsel. So too the poet says:
+“She granted me all my wishes with a visit,
+snatched in secret like the darting of a bird.
+Had I been able, I would have bestowed upon the darkness
+the blackness of my pupil, to lengthen our night.”
+
+On “it is figurative”: that is, an extended metaphor, as previously under “Be, and it is.” The will to manifest the states within the earth is likened to an instruction conveyed to someone commanded, to display the swiftness with which what is wanted of him is obeyed.
+
+K099.06 — Separate departures and the order of the verses [IV:784–785]
+
+They come forth from the exits of their graves to the standing-place “separately”: some white-faced and secure, others black-faced and frightened. Or they leave the standing-place separately, divided between the paths of Paradise and the Fire, to be shown the recompense of their deeds.
+
+In the Prophet’s reading, li-yaraw has fatḥa (فَتْحة): “so that they may see.” Ibn ʿAbbās and Zayd ibn ʿAlī read yurahu with ḍamma (ضَمّة): “he will be shown it.” It is related that a Bedouin put the words “good, he will see it” later [than the corresponding clause about evil]. When told, “You have put one part before and another after,” he replied:
+“Take the hollow of Harshā or its back:
+either side of Harshā is a road for them.”
+
+T099.07 — Harshā and the priority of good [XVI:542]
+
+On the line “Take the hollow of Harshā”: Harshā is a pass on the road to Mecca, near al-Juḥfa, with two routes. He addresses his two companions: travel through the hollow of this pass or along its back, since both sides are roads for the camels. This is a proverb for a course equally easy from either side.
+
+It is said that the Bedouin imagined rearrangement here to be permissible. This is wrong: he overlooked the Qurʾān’s subtleties. There is no point in adducing the line here, and it would have been better to omit it, because primary concern attaches to good, while evil is incidental. Under “Whoever disbelieves, his unbelief is against him; and whoever acts righteously, they prepare for themselves—so that He may reward those who believe and do righteous deeds from His bounty; He does not love the unbelievers” [30:44–45], the Qāḍī says: “‘So that He may reward’ gives the purpose of ‘they prepare.’ Limiting the mention to the believer’s reward indicates that this is what is intended in itself.”
+
+K099.07 — The atom’s weight and the two groups [IV:785]
+
+A dharra is a small ant. It is also said that dharr is the dust visible in a beam of sunlight.
+
+If you ask, “The unbeliever’s good deeds are nullified by unbelief, and the believer’s evil deeds are pardoned through avoiding major sins: what, then, is the meaning of recompense for atom-weights of good and evil?”—I answer: the meaning is “whoever does an atom’s weight of good” from the company of the felicitous, and “whoever does an atom’s weight of evil” from the company of the wretched, because this follows “people will come forth separately.”
+
+T099.08 — The restricted reading and objections to its premises [XVI:542–543]
+
+On “because this follows ‘On that day people will come forth separately’”: he means that “Whoever does an atom’s weight of good will see it, and whoever does an atom’s weight of evil will see it” sets out the division of people into two groups, the felicitous and the wretched. That is, the verse is restricted in scope.
+
+Al-Intiṣāf says: “His question rests on two principles. The first is that the unbeliever’s good deeds are nullified by unbelief. This needs examination. If it means that he receives no reward for them, it is correct. But if it means that they do not lessen punishment, that is not conceded. Reports have come concerning Ḥātim, that God lightens his punishment for his generosity, and concerning Abū Ṭālib and others. Such deeds therefore have an effect in lessening punishment.
+
+“The second is that avoiding major sins necessarily expiates minor ones. This conflicts with the doctrine of the People of the Sunna. Minor sins are expiated by one of two things: repentance, or God’s willing forgiveness. This question therefore falls away according to us.”
+
+The Imām says: “One may say that, although the unbeliever’s good deeds are nullified by his unbelief, the weighing of deeds is recognized according to your own position. To the extent of those good deeds, punishment for his unbelief is reduced. The same applies on the other side. This therefore does not impair the verse’s generality.”
+
+T099.09 — Two possible scopes and the author’s doctrinal intention [XVI:543–544]
+
+I say: the verse admits two meanings. One paired clause may intend the felicitous and the other the wretched, since the relative expression is repeated. Or each clause may intend generality: whoever among believers and unbelievers does an atom’s weight of good will see it, and whoever among believers and unbelievers does an atom’s weight of evil will see it.
+
+The author’s words follow the first interpretation, as does what Muḥyī al-Sunna [al-Baghawī] and the Imām transmit from Muḥammad ibn Kaʿb al-Quraẓī: whoever does an atom’s weight of good while an unbeliever sees its reward in this world—in himself, his family, and his property—until he meets the hereafter with no good awaiting him there. Whoever does an atom’s weight of evil while a believer has it expiated in this world—in himself, his family, and his property—until he reaches the hereafter with no evil awaiting him there.
+
+But the author’s intention is to include the person committing a major sin among the unbelievers and the wretched, because that person’s good deeds are nullified by it and he therefore sees only evil; just as the minor sins of one avoiding major sins are expiated through that avoidance and he sees only good. This is known from his question.
+
+On the second interpretation comes what al-Wāḥidī transmits from Muqātil: whoever does an atom’s weight of good in this world will see it on the Day of Resurrection and rejoice in it. Likewise with evil: he sees it in his record, and it grieves him. Muḥyī al-Sunna and the Imām transmit from Ibn ʿAbbās: no believer or unbeliever does anything, good or evil, without God showing it to him. The believer’s evil deeds are forgiven and he is rewarded for his good deeds; the unbeliever’s good deeds are rejected and he is punished for his evil deeds.
+
+T099.10 — Wording, meaning, and style favour generality [XVI:544–545]
+
+This latter possibility is supported by the wording, the meaning, and the style.
+
+As for the wording: “Whoever does,” as already stated, elaborates the preceding “People will come forth separately, to be shown their deeds,” so the two must agree. “Their deeds” is a plural in a possessive construction and conveys comprehensiveness and inclusion of all. “People will come forth” is qualified by “separately,” indicating that they take diverse routes to settle in their stations in Paradise and the Fire according to their differing deeds. Hence Paradise has ascending degrees and the Fire descending levels.
+
+As for the meaning: the passage explains the exhaustive display of deeds and their recompense, as in His saying, “We shall set up the just scales for the Day of Resurrection, and no soul will be wronged in anything. Even if it is the weight of a mustard seed, We shall bring it; and We suffice as reckoners” [21:47].
+
+As for the style: this is one of the comprehensive statements containing the benefits of religion, both its foundations and its branches. We have transmitted from al-Bukhārī and Muslim, from Abū Hurayra, that God’s Messenger was asked about donkeys and said, “Nothing has been revealed to me concerning them except this comprehensive, unique verse,” and recited it. “About donkeys” means about alms on donkeys. Fādhdha, “unique,” means singular in its meaning: a man fadhdha from his companions when he separated from them.
+
+Imām Aḥmad transmits from Ṣaʿṣaʿa ibn Muʿāwiya, al-Farazdaq’s uncle, that he came to the Prophet, who recited the verse. He said, “That is enough for me; I do not mind hearing nothing else.” In al-Ḥaqāʾiq: a sage was asked, “Admonish us,” and recited the verse. The questioner said, “Then the admonition has reached its utmost.”
+
+K099.08 — Closing report [IV:785]
+
+From God’s Messenger: “Whoever recites Sūrat ‘When the earth is shaken’ four times is like someone who recites the whole Qurʾān.”
+
+T099.11 — The closing report and another transmitted measure [XVI:545]
+
+On “whoever recites Sūrat ‘When the earth is shaken’ four times”: we have transmitted from al-Tirmidhī, from Ibn ʿAbbās, who said that God’s Messenger said: “Whoever recites ‘When the earth is shaken,’ it is reckoned for him as half the Qurʾān.”
+
+End of the sūrah.
+
+al-Zalzalah · source and review notes · inherited record
+
+INHERITED C06 RECORD. Earlier scan claims have not been independently reconfirmed in this pass. Current corrections supersede provisional renderings below; consult the C07 review register.
+
+TEXTUAL NOTES
+K099-U1: The electronic DKA text has بالنسيان, “by forgetfulness,” where the embedded Kashshāf text in Ṭībī has باللسان, “by the tongue.” The latter is required by the discussion of literal speech and is followed here; the Turkish comparator supports it.
+T099-U1: Printed XVI:536 confirms the nine-verse heading, as against DKA’s eight; no verse text is missing from this translation. The same page prints تطلع in the lexical gloss for jizʿāl. “Limps” is a provisional contextual correction to تظلع, explicitly distinguished from the printed reading. The word’s vocalization and gloss require a further lexical witness.
+T099-U2: Printed XVI:539 confirms that the grammar discussion changes its illustrative name from ʿAmr to Zayd between examples. The translation preserves that change; its grammatical argument is not silently rewritten.
+T099-U3: Printed XVI:545 reads بنصف القرآن, “as half the Qurʾān,” correcting the transcription’s بنف القرآن. This differs from the Kashshāf’s preceding four-recitation report; both authorial statements are retained.
+T099-U4: The claims about unbelievers, major sinners, expiation, and mitigation of punishment are the positions quoted and debated by the authors. The quotation from al-Intiṣāf and Ṭībī’s description of al-Zamakhsharī’s intention remain separately attributed.
+
+
+Tanzil Quran Text
+Copyright (C) 2007-2021 Tanzil Project
+License: Creative Commons Attribution 3.0
+
+This copy of the Quran text is carefully produced, highly
+verified and continuously monitored by a group of specialists
+in Tanzil Project.
+
+TERMS OF USE:
+
+- Permission is granted to copy and distribute verbatim copies
+  of this text, but CHANGING IT IS NOT ALLOWED.
+
+- This Quran text can be used in any website or application,
+  provided that its source (Tanzil Project) is clearly indicated,
+  and a link is made to tanzil.net to enable users to keep
+  track of changes.
+
+- This copyright notice shall be included in all verbatim copies
+  of the text, and shall be reproduced appropriately in all files
+  derived from or containing substantial portion of this text.
+
+Please check updates at: http://tanzil.net/updates/

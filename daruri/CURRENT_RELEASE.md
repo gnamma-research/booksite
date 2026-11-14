@@ -1,10 +1,20 @@
 # Darūrī — current release and coordination record
 
-Updated 22 October 2026. Read the shared [active release coordination note](DARURI_RELEASE_COORDINATION_2026-10-20.md) alongside this record, [the PDF manifest](pdf-editions-manifest.json), and the latest `master` source when integrating parallel work. The current reading-PDF release is **`daruri8-structure-20261020`**, described first below. Later sections preserve release history; their earlier page counts, layouts and snapshot identities must not be used as the current baseline.
+Updated 24 October 2026. Read the shared [active release coordination note](DARURI_RELEASE_COORDINATION_2026-10-20.md) alongside this record, [the PDF manifest](pdf-editions-manifest.json), and the latest `master` source when integrating parallel work. The current reading-PDF release is **`daruri13-lesson12-method-20261024`**, described first below. Later sections preserve release history; their earlier page counts, layouts and snapshot identities must not be used as the current baseline.
 
 Canonical repository: `gnamma-research/booksite`, branch `master`.
 
 Canonical reader: [https://gnamma-research.github.io/booksite/daruri/](https://gnamma-research.github.io/booksite/daruri/).
+
+
+## Teacher-informed terminology, dictionary and canonical PDF editions — 24 October 2026
+
+**Published:** [PR #172](https://github.com/gnamma-research/booksite/pull/172), merged into `master` as [`271e733`](https://github.com/gnamma-research/booksite/commit/271e73364daf29b64feabe9626e61131f0fbbc0c). The verified source branch passed [canonical release QA](https://github.com/gnamma-research/booksite/actions/runs/40118546982). **Release revision: `daruri13-lesson12-method-20261024`**. Consult the manifest for exact hashes and sizes, not earlier PDF snapshots.
+
+Following a fresh comparison with teacher Lessons 1 and 2 (§§1–9), §2 now renders `sibār` as **“method of examination”**, retaining the original instrument metaphor in its scholarly lexical note; `iʿtiqād` is **“assent”**, and `al-farāʾiḍ wa-l-sunan` is **“obligatory and recommended observances”**. §4 renders `ṣuḥḥiḥat bi-l-istiqrāʾ` as **“validated precisely through induction”**, and §7 identifies `al-mutakallimīn` as **“practitioners of kalām”** (not merely people discussing the craft). The source Arabic, section IDs and all unrelated text remain intact. Explanatory notes N002/N003/N005, the `G-B2-0009` grammar note, glossary, historical dictionary data, first study unit, formative checks and the printable companion were updated consistently.
+
+**Published canonical five PDF page totals:** bilingual scholarly **243**; bilingual study **131**; English reading **97**; Arabic reading **72**; fully vowelled Arabic **68**. The separate printable study-guide companion remains **85** pages. Every edition was rebuilt from `edition-r3-20261020.js`, and all 565 static scholarly PDF references and 259 dynamic reader page locations were re-mapped to the rebuilt PDF. The current three-tier Editions interface and five plain no-JavaScript fallback links remain in place; its display counts and versioned links are synchronized. The offline bundle, service worker, PDF manifest, portable scholarly source archive, and release metadata were also updated. QA checked source text, source notes, anchors, PDF navigation, structural outlines, footnote placement and release idempotency. This is not a claim of a physical iPhone test; GitHub Pages deployment should be verified separately.
+
 
 ## Reader release: three named reading modes — 22 October 2026
 

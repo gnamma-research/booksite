@@ -1,0 +1,1817 @@
+{
+  "date": "2026-11-12",
+  "baseline": "1.6.1-prose-and-source-fidelity-review",
+  "edition_goal": "Source assessment of 1.6.1, not proof of all claims",
+  "total_chapters": 46,
+  "total_claim_items": 138,
+  "high_risk_chapters": [
+    1,
+    4,
+    5,
+    11,
+    12,
+    15,
+    16,
+    19,
+    20,
+    23,
+    24,
+    27,
+    28,
+    31,
+    32,
+    33,
+    40,
+    44,
+    46
+  ],
+  "note": "All 138 claim excerpts have been refreshed against edition 1.6.1. Older witness lists are CANDIDATE locators, not verified correspondence to every current sentence. Evidence status is upgraded only when specific publicly readable texts were checked; most claims still await source-level collation.",
+  "categories": [
+    "narrative event",
+    "contextual causal proposition",
+    "doctrinal/interpreted claim"
+  ],
+  "entries": [
+    {
+      "chapter": 1,
+      "title": "Prophetic beginnings: guidance addressed to human life",
+      "book": "Book I — The world into which the mission came",
+      "claims": [
+        {
+          "id": "SC-01-H1",
+          "claim": "God created Ādam, taught him the names and entrusted humanity with a life on earth in which knowledge and obedience would be required.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Qurʾān 2:30–33; 7:19–25; Farghānī Muntahā pp. 110–116",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Qurʾān 2:30–33; 7:19–25; Farghānī Muntahā pp. 110–116",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-01-H2",
+          "claim": "Nūḥ called his people to worship God and continued his mission despite their rejection.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Qurʾān 2:30–33; 7:19–25; Farghānī Muntahā pp. 110–116",
+          "verification": "core Qurʾānic facts checked directly; further tafsīr variants pending",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Qurʾān 71:1–10; 11:25–47; 23:27",
+          "source_mapping_note": "Nūḥ sequence grounded in primary verse text and checked relative to earlier erroneous Ark chronology."
+        },
+        {
+          "id": "SC-01-I3",
+          "claim": "Ādam: knowledge, responsibility and repentance.",
+          "type": "Qurʾānic / Akbarian metaphysical interpretation",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "working translations; verse loci known",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 2,
+      "title": "Land, settlement and the political worlds of the Near East",
+      "book": "Book I — The world into which the mission came",
+      "claims": [
+        {
+          "id": "SC-02-H1",
+          "claim": "Human life depends upon land, water, plants, animals and the labour of others.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Qurʾān 80:24–32; early Uruk/Egyptian administrative archaeology; regional Near Eastern histories",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Qurʾān 80:24–32; early Uruk/Egyptian administrative archaeology; regional Near Eastern histories",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-02-H2",
+          "claim": "Along the Nile, the annual flood sustained cultivation whose rhythms joined households, villages and successive political authorities.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Qurʾān 80:24–32; early Uruk/Egyptian administrative archaeology; regional Near Eastern histories",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Qurʾān 80:24–32; early Uruk/Egyptian administrative archaeology; regional Near Eastern histories",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-02-I3",
+          "claim": "Provision, embodied action and the purpose of earthly knowledge.",
+          "type": "Qurʾānic / material history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "material primary sources not freshly collated",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 3,
+      "title": "Israel and Judah: kingship, destruction and life beyond a kingdom",
+      "book": "Book I — The world into which the mission came",
+      "claims": [
+        {
+          "id": "SC-03-H1",
+          "claim": "In the lands of Israel and Judah, kingship brought together the care of sanctuaries, military defence, the administration of land and the settlement of disputes.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Qurʾān 21:78–79; 2 Kings 17,25; Babylonian chronicles; Ezra–Nehemiah",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Qurʾān 21:78–79; 2 Kings 17,25; Babylonian chronicles; Ezra–Nehemiah",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-03-H2",
+          "claim": "The Assyrian capture of Samaria in 722/721 BCE broke the northern kingdom's political autonomy.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Qurʾān 21:78–79; 2 Kings 17,25; Babylonian chronicles; Ezra–Nehemiah",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Qurʾān 21:78–79; 2 Kings 17,25; Babylonian chronicles; Ezra–Nehemiah",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-03-I3",
+          "claim": "Royal power and prophetic guidance must be distinguished first at the level of their objects. A ruler has authority over certain affairs of protection, administration and judgment; the divine command addresses the just exercise of those offices and also the relations of people not occupying an office. The Qurʾānic accounts of Dāwūd's judgment (38:20–26) and ",
+          "type": "scriptural comparison / Near Eastern history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "specific dating and chronicle loci need recheck",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 4,
+      "title": "Religious disciplines and the changing world of the first millennium BCE",
+      "book": "Book I — The world into which the mission came",
+      "claims": [
+        {
+          "id": "SC-04-H1",
+          "claim": "In the centuries after the great Near Eastern kingdoms lost their earlier forms, communities increasingly sustained learning across political and linguistic boundaries.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Achaemenid/Hellenistic material chronology; Greek Septuagint; Guénon Crisis of Modern World ch. 1",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Achaemenid/Hellenistic material chronology; Greek Septuagint; Guénon Crisis of Modern World ch. 1",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-04-H2",
+          "claim": "In northern India, several traditions debated ritual, renunciation and release; in China, teachers examined human cultivation and the obligations of ruler and family.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Achaemenid/Hellenistic material chronology; Greek Septuagint; Guénon Crisis of Modern World ch. 1",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Achaemenid/Hellenistic material chronology; Greek Septuagint; Guénon Crisis of Modern World ch. 1",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-04-I3",
+          "claim": "Different teachings address different deficiencies and human possibilities. A rite disciplines the body and shared time; an ethical regimen trains desire and deliberate action; philosophical inquiry distinguishes arguments and principles; contemplation seeks knowledge not exhausted by ordinary discursive descriptions. Yet these modes cannot be positioned aut",
+          "type": "comparative historical / Traditionalist interpretation",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "cross-civilizational cause unresolved",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 5,
+      "title": "Jesus and the communities that carried his message",
+      "book": "Book I — The world into which the mission came",
+      "claims": [
+        {
+          "id": "SC-05-H1",
+          "claim": "In Roman Judaea, Yaḥyā called people to repentance and ʿĪsā ibn Maryam proclaimed worship of God, righteousness and mercy among a people whose life was shaped by Jerusalem's sanctuary, the Law and competing authorities.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Qurʾān 3:33–55, 5:110–120, 19:16–36; earliest Christian texts; council records",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Qurʾān 3:33–55, 5:110–120, 19:16–36; earliest Christian texts; council records",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-05-H2",
+          "claim": "His followers carried teachings across households and cities in the eastern Mediterranean.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Qurʾān 3:33–55, 5:110–120, 19:16–36; earliest Christian texts; council records",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Qurʾān 3:33–55, 5:110–120, 19:16–36; earliest Christian texts; council records",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-05-I3",
+          "claim": "The Qurʾānic designation of ʿĪsā as God's Word and a spirit from Him (4:171), together with the emphatic qualification “by My permission” in the accounts of his signs (5:110), requires both recognition of the extraordinary and preservation of servanthood. The Akbarian tradition develops a distinctive Christic wisdom concerning spirit, breath and life-giving ",
+          "type": "scriptural comparison / Christian history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "council/church/source-specific reviews pending",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 6,
+      "title": "The sixth-century crossroads of Rome, Persia, Ethiopia and Arabia",
+      "book": "Book I — The world into which the mission came",
+      "claims": [
+        {
+          "id": "SC-06-H1",
+          "claim": "In the sixth century, Arabia lay between several powerful states and religious communities.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Roman–Sasanian 602–628 war evidence; Himyar-Najrān/Aksum evidence; Valentina Grasso research",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Roman–Sasanian 602–628 war evidence; Himyar-Najrān/Aksum evidence; Valentina Grasso research",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-06-H2",
+          "claim": "In the Ḥijāz, settlements and routes required water, family alliances, security and organized hospitality.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Roman–Sasanian 602–628 war evidence; Himyar-Najrān/Aksum evidence; Valentina Grasso research",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Roman–Sasanian 602–628 war evidence; Himyar-Najrān/Aksum evidence; Valentina Grasso research",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-06-I3",
+          "claim": "A principial reading of the Muhammadan mission cannot deduce its historical timing from the wars of surrounding empires. The universal character of the mission within Islamic revelation is a normative and spiritual claim; the war's impact on taxes, recruitment, local loyalties and military exhaustion is a historical claim supported by different evidence. The",
+          "type": "late-antique history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "epigraphic/literary claims require independent check",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 7,
+      "title": "The sanctuary, the clans and the obligations of protection",
+      "book": "Book II — The formation of believers in Makkah",
+      "claims": [
+        {
+          "id": "SC-07-H1",
+          "claim": "The Kaʿbah was the centre of Makkah's religious life and drew visitors from tribes that did not always live at peace with one another.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Qurʾān 106; Ibn Hishām on protection/Ḥilf al-Fuḍūl; Meccan trade scholarship",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Qurʾān 106; Ibn Hishām on protection/Ḥilf al-Fuḍūl; Meccan trade scholarship",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-07-H2",
+          "claim": "Muḥammad ﷺ belonged to Banū Hāshim and lived within obligations of kinship and hospitality that neighbours recognized.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Qurʾān 106; Ibn Hishām on protection/Ḥilf al-Fuḍūl; Meccan trade scholarship",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Qurʾān 106; Ibn Hishām on protection/Ḥilf al-Fuḍūl; Meccan trade scholarship",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-07-I3",
+          "claim": "The sanctuary is a received trust before it is an opportunity for prestige or trade. Qurʾān 106 joins journeys with security and provision and directs worship to the Lord of the House. The distinction between serving the sacred centre and possessing its privileges makes the immediate conflict intelligible: an office can be necessary while its holder mistakes",
+          "type": "Qurʾānic / Sīrah",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "protector and trade claims need recension criticism",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 8,
+      "title": "Ḥirāʾ, Khadījah and the beginnings of a teaching community",
+      "book": "Book II — The formation of believers in Makkah",
+      "claims": [
+        {
+          "id": "SC-08-H1",
+          "claim": "Muḥammad ﷺ was raised by members of Banū Hāshim after the deaths of his parents.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Bukhārī 3; Qurʾān 96:1–5; Farghānī pp. 103,110–116",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Bukhārī 3; Qurʾān 96:1–5; Farghānī pp. 103,110–116",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-08-H2",
+          "claim": "Khadījah sheltered and reassured him, recalling his care for relatives, truthful dealings, hospitality and help to those in need.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Bukhārī 3; Qurʾān 96:1–5; Farghānī pp. 103,110–116",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Bukhārī 3; Qurʾān 96:1–5; Farghānī pp. 103,110–116",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-08-I3",
+          "claim": "The earliest revelation is narrated in the extended report of ʿĀʾishah in Ṣaḥīḥ al-Bukhārī 3 ([text and Arabic](https://sunnah.com/bukhari:3)). The report distinguishes true dreams before the first encounter, the love of seclusion, periods at Ḥirāʾ, the angel's demand to recite, the pressure he experienced, the revelation of the first verses of Sūrat al-ʿAla",
+          "type": "authenticated-hadith locator / Akbarian",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Bukhārī primary electronic; Farghānī working",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 9,
+      "title": "The Meccan proclamation: worship, reckoning and new loyalties",
+      "book": "Book II — The formation of believers in Makkah",
+      "claims": [
+        {
+          "id": "SC-09-H1",
+          "claim": "The Qurʾānic proclamation summoned the people of Makkah to worship one God and to answer for every person's life after death.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Qurʾān 90:11–18,92:5–21,107:1–7; Ibn Hishām persecution accounts",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Qurʾān 90:11–18,92:5–21,107:1–7; Ibn Hishām persecution accounts",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-09-H2",
+          "claim": "The response to this call differed according to each person's obligations and place in society.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Qurʾān 90:11–18,92:5–21,107:1–7; Ibn Hishām persecution accounts",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Qurʾān 90:11–18,92:5–21,107:1–7; Ibn Hishām persecution accounts",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-09-I3",
+          "claim": "Meccan passages concerning the Last Day and provision—among them 90:11–18, 92:5–21 and 107:1–7—bring the demands of worship into direct relation with property and the vulnerable. The soul's recognition that it answers to God can change how it perceives the rights of another person. This is not a bare assertion that piety causes altruism: relinquishing a poss",
+          "type": "Qurʾānic / Sīrah history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "persecution details vary by narrator",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 10,
+      "title": "Aksum: faith before political safety",
+      "book": "Book II — The formation of believers in Makkah",
+      "claims": [
+        {
+          "id": "SC-10-H1",
+          "claim": "In Makkah the protection of a person depended heavily upon clan and patronage.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Ibn Hishām Jaʿfar/Najāshī recensions; Bukhārī 3905",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Ibn Hishām Jaʿfar/Najāshī recensions; Bukhārī 3905",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-10-H2",
+          "claim": "Meccan envoys asked that the migrants be surrendered.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Ibn Hishām Jaʿfar/Najāshī recensions; Bukhārī 3905",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Ibn Hishām Jaʿfar/Najāshī recensions; Bukhārī 3905",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-10-I3",
+          "claim": "The emigrants to Aksum needed political protection while remaining faithful to the religion they had embraced. The migrants had accepted the message, but acceptance did not give them a state's protective instruments. A Christian sovereign's refusal to hand them over could preserve their capacity to worship without endorsing each Islamic doctrinal claim. Aksu",
+          "type": "Sīrah/hadith",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "full refugee speech variants not collated",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 11,
+      "title": "From loss of protection to an alliance at al-ʿAqabah",
+      "book": "Book II — The formation of believers in Makkah",
+      "claims": [
+        {
+          "id": "SC-11-H1",
+          "claim": "The deaths of Khadījah and Abū Ṭālib brought the Prophet ﷺ two grave personal losses and left him more exposed to opposition in Makkah.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Qurʾān 17:1,53:1–18; Muslim 162a,176a,177a; Bukhārī 349; Qūnawī QUN-NU-019-G",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Qurʾān 17:1,53:1–18; Muslim 162a,176a,177a; Bukhārī 349; Qūnawī QUN-NU-019-G",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-11-H2",
+          "claim": "The Qurʾān speaks of God's taking His servant by night from the Sacred Mosque to the Farthest Mosque.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Qurʾān 17:1,53:1–18; Muslim 162a,176a,177a; Bukhārī 349; Qūnawī QUN-NU-019-G",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Qurʾān 17:1,53:1–18; Muslim 162a,176a,177a; Bukhārī 349; Qūnawī QUN-NU-019-G",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-11-I3",
+          "claim": "The loss of Khadījah and Abū Ṭālib requires attention to what each relationship had actually supplied. Khadījah's home had joined affection, shelter, economic means and confidence in the Prophet's person; Abū Ṭālib's protection operated through clan standing, even while he differed from the religious proclamation. The removal of these supports altered materi",
+          "type": "Qurʾānic / authenticated-hadith / Akbarian",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "principal electronic narrations checked; total variant collation incomplete",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": [
+        "MIRAJ_CRITICAL_DOSSIER_1_6_20261112.md"
+      ]
+    },
+    {
+      "chapter": 12,
+      "title": "The Hijrah: neighbours, newcomers and a shared order",
+      "book": "Book III — Madinah: how a religious fellowship became a public community",
+      "claims": [
+        {
+          "id": "SC-12-H1",
+          "claim": "The emigrants arrived in Yathrib with their religious fellowship but without much of the property, livelihood and kin protection they had possessed in Makkah.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Ibn Hishām / Abū ʿUbayd Medinan agreement recensions; Michael Lecker 2004/2024",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Ibn Hishām / Abū ʿUbayd Medinan agreement recensions; Michael Lecker 2004/2024",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-12-H2",
+          "claim": "The town also needed agreements for common defence and the settlement of disputes.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Ibn Hishām / Abū ʿUbayd Medinan agreement recensions; Michael Lecker 2004/2024",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Ibn Hishām / Abū ʿUbayd Medinan agreement recensions; Michael Lecker 2004/2024",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-12-I3",
+          "claim": "In Madinah, support for individual emigrants gradually became part of a more durable arrangement of shared responsibilities. A migrant needed food and lodging; the Anṣārī who shared them also had legitimate claims belonging to his own household. Qurʾān 59:8–9 praises the hosts who preferred others despite need, but this does not mean scarcity ceased or that ",
+          "type": "early legal-document history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "signatories/composition/deeds require direct recension comparison",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 13,
+      "title": "Worship takes shape in the routines of a town",
+      "book": "Book III — Madinah: how a religious fellowship became a public community",
+      "claims": [
+        {
+          "id": "SC-13-H1",
+          "claim": "In Madinah, worship became part of the daily routines of households and neighbourhoods.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Bukhārī 709,676,516,6129,5997,220; Muslim 102,1695a,b,1696a",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Bukhārī 709,676,516,6129,5997,220; Muslim 102,1695a,b,1696a",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-13-H2",
+          "claim": "The Prophet ﷺ did not treat ordinary vulnerability as a distraction from God.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Bukhārī 709,676,516,6129,5997,220; Muslim 102,1695a,b,1696a",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Bukhārī 709,676,516,6129,5997,220; Muslim 102,1695a,b,1696a",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-13-I3",
+          "claim": "**The different goods of one human life.** The Qurʾānic texts on prayer direction (2:142–150), fasting (2:183–187), deferred debts (2:282), inheritance (4:7–12) and marital arbitration (4:35) address distinct acts and obligations. The people receiving them were not professional worshippers separate from professional household members and traders. They acted ",
+          "type": "authenticated-hadith / practical-synthesis",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "several principal loci checked, legal exegesis incomplete",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": [
+        "encounters-1_6/index.json"
+      ]
+    },
+    {
+      "chapter": 14,
+      "title": "Badr: conflict tests allegiance and public judgment",
+      "book": "Book III — Madinah: how a religious fellowship became a public community",
+      "claims": [
+        {
+          "id": "SC-14-H1",
+          "claim": "The migration to Madinah had not removed conflict with Quraysh.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Qurʾān 3:123–127; Sūrat al-Anfāl; Ibn Isḥāq maghāzī reports",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Qurʾān 3:123–127; Sūrat al-Anfāl; Ibn Isḥāq maghāzī reports",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-14-H2",
+          "claim": "The Muslims had fought together under the Prophet's command, but they did not agree over every claim to the spoils.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Qurʾān 3:123–127; Sūrat al-Anfāl; Ibn Isḥāq maghāzī reports",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Qurʾān 3:123–127; Sūrat al-Anfāl; Ibn Isḥāq maghāzī reports",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-14-I3",
+          "claim": "Victory at Badr brought new responsibilities for the treatment of captives and the distribution of property. Qurʾān 8 treats spoils, fear, divine assistance and the treatment of captives as matters on which participants could require correction. When people attribute a success to their own superiority, the resulting claims to wealth or public rank can sever ",
+          "type": "Qurʾānic / military history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "troop totals / attributed dialogue vary",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 15,
+      "title": "Uḥud and the Trench: discipline, siege and divided loyalties",
+      "book": "Book III — Madinah: how a religious fellowship became a public community",
+      "claims": [
+        {
+          "id": "SC-15-H1",
+          "claim": "Quraysh returned toward Madinah seeking revenge, and near Uḥud some Muslim archers left the positions assigned to them after a moment of apparent advantage.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Qurʾān 3:121–175,33:9–27; Ibn Isḥāq/al-Wāqidī accounts of Qurayẓah",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Qurʾān 3:121–175,33:9–27; Ibn Isḥāq/al-Wāqidī accounts of Qurayẓah",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-15-H2",
+          "claim": "A larger coalition later advanced toward Madinah.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Qurʾān 3:121–175,33:9–27; Ibn Isḥāq/al-Wāqidī accounts of Qurayẓah",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Qurʾān 3:121–175,33:9–27; Ibn Isḥāq/al-Wāqidī accounts of Qurayẓah",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-15-I3",
+          "claim": "The two campaigns tested different forms of endurance and obedience. Qurʾān 3:121–175 addresses Uḥud, with explicit attention to disobedience, fear and consequences; Qurʾān 33:9–27 addresses the siege and its aftermath. The actual tasks differed: archers held a limited tactical position, while trench workers and their dependants bore extended labour and depr",
+          "type": "Qurʾānic / disputed maghāzī history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "specific casualty and speeches HIGH RISK",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 16,
+      "title": "Al-Ḥudaybiyyah: an agreement that changed the terms of conflict",
+      "book": "Book III — Madinah: how a religious fellowship became a public community",
+      "claims": [
+        {
+          "id": "SC-16-H1",
+          "claim": "In the sixth year after the Hijrah, the Prophet ﷺ led companions toward Makkah intending pilgrimage.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Bukhārī 2731–2732; Qurʾān 48; Ibn Hishām treaty accounts",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Bukhārī 2731–2732; Qurʾān 48; Ibn Hishām treaty accounts",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-16-H2",
+          "claim": "Abū Jandal arrived during the negotiations in chains, making the cost of one clause immediate.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Bukhārī 2731–2732; Qurʾān 48; Ibn Hishām treaty accounts",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Bukhārī 2731–2732; Qurʾān 48; Ibn Hishām treaty accounts",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-16-I3",
+          "claim": "**The complete event before the abstraction.** The most extensive connected source is the narration of al-Miswar ibn Makhramah and Marwān in [Bukhārī 2731–2732](https://sunnah.com/bukhari:2731), which includes blocked travel, negotiation, different emissaries, treaty wording, Abū Jandal's appearance, ʿUmar's questions and Umm Salamah's counsel. The report is",
+          "type": "authenticated-hadith / early treaty history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "connected report checked, treaty variants partly open",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": [
+        "encounters-1_6/index.json"
+      ]
+    },
+    {
+      "chapter": 17,
+      "title": "Khaybar, the deferred pilgrimage and changing relations beyond Madinah",
+      "book": "Book III — Madinah: how a religious fellowship became a public community",
+      "claims": [
+        {
+          "id": "SC-17-H1",
+          "claim": "The truce with Quraysh allowed the Prophet ﷺ to direct attention to other parts of Arabia.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Bukhārī 2331 and 4248; other Khaybar legal traditions",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Bukhārī 2331 and 4248; other Khaybar legal traditions",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-17-H2",
+          "claim": "The following year the Muslims fulfilled the deferred pilgrimage visit under the agreement with Quraysh.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Bukhārī 2331 and 4248; other Khaybar legal traditions",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Bukhārī 2331 and 4248; other Khaybar legal traditions",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-17-I3",
+          "claim": "The Khaybar report through Ibn ʿUmar in Bukhārī 2331 and 4248 identifies a half-share of the cultivated produce, though the reports' shared chain should not be represented as two independent attestations. Later questions of tenancy, crop-sharing and tenure require additional evidence. Agricultural time is not simply the instant of a treaty: a tree requires c",
+          "type": "authenticated-hadith / land tenure",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "shared report line, not independent corroboration",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 18,
+      "title": "The return to Makkah and the incorporation of Arabia",
+      "book": "Book III — Madinah: how a religious fellowship became a public community",
+      "claims": [
+        {
+          "id": "SC-18-H1",
+          "claim": "When fighting among allied groups breached the arrangements of al-Ḥudaybiyyah, the Prophet ﷺ advanced toward Makkah in 630 with a force capable of limiting organized resistance.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Qurʾān 110,9:25–27; conquest and Ḥunayn sīrah recensions",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Qurʾān 110,9:25–27; conquest and Ḥunayn sīrah recensions",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-18-H2",
+          "claim": "Even after Makkah's surrender, the Muslims faced resistance elsewhere in Arabia.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Qurʾān 110,9:25–27; conquest and Ḥunayn sīrah recensions",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Qurʾān 110,9:25–27; conquest and Ḥunayn sīrah recensions",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-18-I3",
+          "claim": "Makkah's return is a reorientation of a sacred trust rather than simply the transfer of a site. The Qurʾān's account of Ḥunayn (9:25–27) explicitly counters confidence in sheer numbers. Yet the historical treatment of Meccan amnesty must be discriminating: different transmitted accounts include specific exceptions, casualties and legal decisions. A general p",
+          "type": "Qurʾānic / maghāzī",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "exception/amnesty details need report-level check",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 19,
+      "title": "The Farewell Pilgrimage and the responsibilities that survived the Prophet",
+      "book": "Book III — Madinah: how a religious fellowship became a public community",
+      "claims": [
+        {
+          "id": "SC-19-H1",
+          "claim": "Believers from different regions gathered to accompany the Prophet ﷺ on his final pilgrimage.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Muslim 1218a; related Farewell sermon accounts; Qurʾān 5:3,62:2",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Muslim 1218a; related Farewell sermon accounts; Qurʾān 5:3,62:2",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-19-H2",
+          "claim": "The pilgrimage joined public worship with reminders of people's obligations toward one another.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Muslim 1218a; related Farewell sermon accounts; Qurʾān 5:3,62:2",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Muslim 1218a; related Farewell sermon accounts; Qurʾān 5:3,62:2",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-19-I3",
+          "claim": "**Public exemplary action.** Jābir ibn ʿAbd Allāh's long report on the Farewell Pilgrimage in [Ṣaḥīḥ Muslim 1218a](https://sunnah.com/muslim:1218a), together with 1218b and other reports, supplies a connected account of the rites. It is a major witness because it relates bodily movements, places, legal answers, public speech and the narrator's recollections.",
+          "type": "authenticated-hadith / doctrinal history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "connected Jābir report checked, sermon variants open",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 20,
+      "title": "After the Prophet: allegiance and the survival of obligations",
+      "book": "Book IV — Succession, conquest and imperial government",
+      "claims": [
+        {
+          "id": "SC-20-H1",
+          "claim": "After the Prophet ﷺ died, the community could no longer bring new disputes to him or receive further revelation.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Bukhārī Saqīfa/ʿAlī reports; Ghadīr accounts; Sunni/Imāmī historical sources",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Bukhārī Saqīfa/ʿAlī reports; Ghadīr accounts; Sunni/Imāmī historical sources",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-20-H2",
+          "claim": "Many Arabian groups also reconsidered the ties that had joined them to Madinah.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Bukhārī Saqīfa/ʿAlī reports; Ghadīr accounts; Sunni/Imāmī historical sources",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Bukhārī Saqīfa/ʿAlī reports; Ghadīr accounts; Sunni/Imāmī historical sources",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-20-I3",
+          "claim": "After the Prophet's death, the community had to continue government, teaching and adjudication without receiving new revelation. These responsibilities did not all pass to one office in the same way. A ruler may maintain defence, authorization of officials and collection of public revenues without receiving revelation. A transmitter may preserve words faithf",
+          "type": "contested succession historiography",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "HIGH RISK; no one account treated as settled",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 21,
+      "title": "Conquest and the problems inherited from older empires",
+      "book": "Book IV — Succession, conquest and imperial government",
+      "claims": [
+        {
+          "id": "SC-21-H1",
+          "claim": "The consolidation of authority in Arabia was followed by campaigns in Syria, Iraq and Egypt.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Al-Balādhurī Futūḥ al-buldān; conquests, papyri and coins; Kennedy",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Al-Balādhurī Futūḥ al-buldān; conquests, papyri and coins; Kennedy",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-21-H2",
+          "claim": "New governors negotiated surrender, adapted administrative practices, gathered revenue and dealt with populations whose religious commitments did not immediately change.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Al-Balādhurī Futūḥ al-buldān; conquests, papyri and coins; Kennedy",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Al-Balādhurī Futūḥ al-buldān; conquests, papyri and coins; Kennedy",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-21-I3",
+          "claim": "The conquest made Muslim commanders responsible for lands and populations whose needs continued after the battles. Food supplies, taxation, security and property had to be administered under the new rulers. Each involves real claims of persons and material systems whose proper use could be governed by religious ends. But the historically specific instruments",
+          "type": "historical / documentary",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "local tax regime and chronology need primary control",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 22,
+      "title": "The garrison, the treasury and the provincial community",
+      "book": "Book IV — Succession, conquest and imperial government",
+      "claims": [
+        {
+          "id": "SC-22-H1",
+          "claim": "The new garrison towns grew into communities where soldiers and their families lived alongside traders, freed persons, clients, teachers and judges.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Early dīwān/revenue reports; Donner and fiscal studies",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Early dīwān/revenue reports; Donner and fiscal studies",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-22-H2",
+          "claim": "The *dīwān* recorded soldiers and other recipients entitled to stipends.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Early dīwān/revenue reports; Donner and fiscal studies",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Early dīwān/revenue reports; Donner and fiscal studies",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-22-I3",
+          "claim": "The *dīwān* recorded claims to public stipends, enabling officials to identify recipients, calculate payments and settle some disputes about entitlement. A register can prevent a rightful recipient from being overlooked; it can also fix an unjust hierarchy or hide the claims of persons who lack representation. The formal accuracy of a record is therefore dis",
+          "type": "administrative history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "stipend and land assignments often retrospective",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 23,
+      "title": "Civil war and the limits of loyalty",
+      "book": "Book IV — Succession, conquest and imperial government",
+      "claims": [
+        {
+          "id": "SC-23-H1",
+          "claim": "As the Muslim polity expanded, the power of provincial commanders and the wealth controlled by governors grew.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Al-Ṭabarī first fitna transmission lines; al-Balādhurī",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Al-Ṭabarī first fitna transmission lines; al-Balādhurī",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-23-H2",
+          "claim": "The conflict divided people who had shared the Prophet's company or accepted his message.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Al-Ṭabarī first fitna transmission lines; al-Balādhurī",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Al-Ṭabarī first fitna transmission lines; al-Balādhurī",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-23-I3",
+          "claim": "The first civil war arose amid disputes about the murder of ʿUthmān, the legitimacy of ʿAlī's rule, and who could order lawful retaliation. The duty to answer the murder of ʿUthmān, the need for a government capable of enforcing public orders, the protection of the Prophet's family and the fear of further civil war are not identical problems, even when the s",
+          "type": "contested political historiography",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "HIGH RISK speeches/motives uncertain",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 24,
+      "title": "Damascus, Karbalāʾ and the making of an imperial administration",
+      "book": "Book IV — Succession, conquest and imperial government",
+      "claims": [
+        {
+          "id": "SC-24-H1",
+          "claim": "Muʿāwiyah governed from Damascus with Syrian military support and administrative practices drawn partly from earlier provincial worlds.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Al-Ṭabarī (Abū Mikhnaf lines); Dome of the Rock inscriptions and coinage",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Al-Ṭabarī (Abū Mikhnaf lines); Dome of the Rock inscriptions and coinage",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-24-H2",
+          "claim": "Further conflict preceded ʿAbd al-Malik's consolidation of Umayyad rule.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Al-Ṭabarī (Abū Mikhnaf lines); Dome of the Rock inscriptions and coinage",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Al-Ṭabarī (Abū Mikhnaf lines); Dome of the Rock inscriptions and coinage",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-24-I3",
+          "claim": "At Karbalāʾ, al-Ḥusayn and his companions faced armed opponents and were killed. Their choices, deaths and the subsequent remembrance of the event must be examined before any later spiritual interpretation is proposed. The victims, their obligations and choices, and the role of political coercion require primary attention. The sources differ about reported s",
+          "type": "contested Karbalāʾ / material",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "HIGH RISK; dependent transmission witnesses",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 25,
+      "title": "The Abbasid revolution and a change of ruling centre",
+      "book": "Book IV — Succession, conquest and imperial government",
+      "claims": [
+        {
+          "id": "SC-25-H1",
+          "claim": "By the middle of the eighth century, the Umayyad empire controlled extensive resources but faced political and social opposition across several provinces.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Al-Ṭabarī; M. A. Shaban and Elton Daniel; Baghdad foundation sources",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Al-Ṭabarī; M. A. Shaban and Elton Daniel; Baghdad foundation sources",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-25-H2",
+          "claim": "The political centre shifted toward Iraq.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Al-Ṭabarī; M. A. Shaban and Elton Daniel; Baghdad foundation sources",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Al-Ṭabarī; M. A. Shaban and Elton Daniel; Baghdad foundation sources",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-25-I3",
+          "claim": "The Abbasid revolution combined military organization, ideological promises, regional grievances, fiscal pressures and contested lineage claims. Its recruitment was not exclusively a movement of non-Arab converts, and the slogans circulating in Khurāsān did not specify one final shared theory of legitimacy. Different surviving accounts must be assessed again",
+          "type": "Abbasid historical synthesis",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Khurāsān ideological and social claims disputed",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 26,
+      "title": "Baghdad and the work of a learned city",
+      "book": "Book V — How knowledge and spiritual formation acquired lasting institutions",
+      "claims": [
+        {
+          "id": "SC-26-H1",
+          "claim": "Baghdad developed around a court and an expanding urban economy whose households, workshops, markets and places of instruction drew people from many regions.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Dimitri Gutas Greek Thought Arabic Culture; Ḥunayn letters; miḥnah reports",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Dimitri Gutas Greek Thought Arabic Culture; Ḥunayn letters; miḥnah reports",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-26-H2",
+          "claim": "The scholars working in Baghdad pursued different kinds of inquiry.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Dimitri Gutas Greek Thought Arabic Culture; Ḥunayn letters; miḥnah reports",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Dimitri Gutas Greek Thought Arabic Culture; Ḥunayn letters; miḥnah reports",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-26-I3",
+          "claim": "Knowledge spread in Baghdad through the work of teachers, translators, scribes, patrons and students who depended upon one another. A physician may possess a transmitted treatise without yet having clinical judgment; a translator may know two languages but lack the conceptual distinctions needed for a reliable version of Galen; a jurist may know several repo",
+          "type": "translation/material intellectual history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "court/translation dates need source matching",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 27,
+      "title": "Travelers, households and the authentication of transmitted learning",
+      "book": "Book V — How knowledge and spiritual formation acquired lasting institutions",
+      "claims": [
+        {
+          "id": "SC-27-H1",
+          "claim": "People who wanted to learn the Prophet's ﷺ teaching could begin with a relative, a trusted teacher or a neighbour who had heard and witnessed him.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Ahmed El Shamsy 2021 Ur-Muwaṭṭaʾ and its Recensions; Bukhārī 103,101",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Ahmed El Shamsy 2021 Ur-Muwaṭṭaʾ and its Recensions; Bukhārī 103,101",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-27-H2",
+          "claim": "Transmitters named the people from whom they had heard a report and described how it had reached them.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Ahmed El Shamsy 2021 Ur-Muwaṭṭaʾ and its Recensions; Bukhārī 103,101",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Ahmed El Shamsy 2021 Ur-Muwaṭṭaʾ and its Recensions; Bukhārī 103,101",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-27-I3",
+          "claim": "Scholars transmitting ḥadīth examined several separate questions: what the Prophet had said or done, which narrators reported it, what wording they preserved and what religious obligations followed from it. The same text can be a reliable witness to an action while leaving open questions of whether the action was obligatory, context-specific or an instance o",
+          "type": "manuscript / hadith / pedagogy",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "journal paper bibliographic electronic verification",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 28,
+      "title": "Legal schools emerge from the need to decide recurrent cases",
+      "book": "Book V — How knowledge and spiritual formation acquired lasting institutions",
+      "claims": [
+        {
+          "id": "SC-28-H1",
+          "claim": "A contract could be sound in form but disputed in execution.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "al-Shāfiʿī Risāla and al-Umm; Muwaṭṭaʾ recensions; Bukhārī 3475",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "al-Shāfiʿī Risāla and al-Umm; Muwaṭṭaʾ recensions; Bukhārī 3475",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-28-H2",
+          "claim": "The circles associated with Abū Ḥanīfah, Mālik, al-Shāfiʿī and Aḥmad ibn Ḥanbal developed through students as well as founding teachers.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "al-Shāfiʿī Risāla and al-Umm; Muwaṭṭaʾ recensions; Bukhārī 3475",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "al-Shāfiʿī Risāla and al-Umm; Muwaṭṭaʾ recensions; Bukhārī 3475",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-28-I3",
+          "claim": "Fiqh arises because revealed norms address human acts that differ in their objects, evidence and circumstances. A report describing the Prophet ﷺ doing something can be authentic without proving that its performance is always obligatory. A ruling may be generally established without solving the actual classification of a transaction if the parties' agreement",
+          "type": "juristic / primary textual",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "individual school formulations need original texts",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 29,
+      "title": "Endowments, colleges and the social life of scholarship",
+      "book": "Book V — How knowledge and spiritual formation acquired lasting institutions",
+      "claims": [
+        {
+          "id": "SC-29-H1",
+          "claim": "A scholar's knowledge could attract pupils, but a teacher and students still needed shelter, books, food and time.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Michael Chamberlain Knowledge and Social Practice in Medieval Damascus; waqf deeds",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Michael Chamberlain Knowledge and Social Practice in Medieval Damascus; waqf deeds",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-29-H2",
+          "claim": "Through *waqf*, donors set aside property whose income would support defined charitable or educational purposes.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Michael Chamberlain Knowledge and Social Practice in Medieval Damascus; waqf deeds",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Michael Chamberlain Knowledge and Social Practice in Medieval Damascus; waqf deeds",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-29-I3",
+          "claim": "An endowed teaching institution can be explained through its property, the people who administer it, its legal rules and the purposes it is intended to serve. Property and its yield constitute a material support; the donor, administrator and workers act to establish and sustain it; a deed sets rules about beneficiaries, uses and responsibilities; the institu",
+          "type": "urban scholarly material history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "case records and deed wording not collated",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 30,
+      "title": "Translation, theological controversy and the uses of reason",
+      "book": "Book V — How knowledge and spiritual formation acquired lasting institutions",
+      "claims": [
+        {
+          "id": "SC-30-H1",
+          "claim": "Disagreements over divine attributes, human responsibility and the beginning of the world led Muslim theologians to develop distinctive forms of argument.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "al-Fārābī Iḥṣāʾ al-ʿulūm; Ibn Sīnā Shifāʾ; Gutas; miḥnah narratives",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "al-Fārābī Iḥṣāʾ al-ʿulūm; Ibn Sīnā Shifāʾ; Gutas; miḥnah narratives",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-30-H2",
+          "claim": "Al-Kindī and al-Fārābī elaborated philosophical inquiries, while Muʿtazilī, Ashʿarī, Māturīdī and other theologians disputed the meaning and limits of the claims they drew from the Qurʾān.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "al-Fārābī Iḥṣāʾ al-ʿulūm; Ibn Sīnā Shifāʾ; Gutas; miḥnah narratives",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "al-Fārābī Iḥṣāʾ al-ʿulūm; Ibn Sīnā Shifāʾ; Gutas; miḥnah narratives",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-30-I3",
+          "claim": "The legal and philosophical distinction of the kinds of proof is fundamental to the history of Islamic learning. Al-Fārābī's *Enumeration of the Sciences* classifies logical, linguistic, mathematical, natural, metaphysical, political and legal inquiries under different methods. Ibn Sīnā's *Shifāʾ*, especially its metaphysical books, develops necessity and po",
+          "type": "philosophical and translation history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "primary passages still need aligned comparison",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 31,
+      "title": "Al-Ghazālī, al-Rāzī and the remaking of philosophical theology",
+      "book": "Book V — How knowledge and spiritual formation acquired lasting institutions",
+      "claims": [
+        {
+          "id": "SC-31-H1",
+          "claim": "As theology and philosophy developed, Muslim thinkers examined one another's arguments about the world, divine action and the limits of human knowledge.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "al-Ghazālī Tahāfut XVII and Munqidh; Ibn Rushd Tahāfut al-tahāfut; al-Rāzī/Ṭūsī on Ishārāt",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "al-Ghazālī Tahāfut XVII and Munqidh; Ibn Rushd Tahāfut al-tahāfut; al-Rāzī/Ṭūsī on Ishārāt",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-31-H2",
+          "claim": "In the eastern lands, Fakhr al-Dīn al-Rāzī examined Ibn Sīnā's analyses of essence, existence, definition and knowledge.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "al-Ghazālī Tahāfut XVII and Munqidh; Ibn Rushd Tahāfut al-tahāfut; al-Rāzī/Ṭūsī on Ishārāt",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "al-Ghazālī Tahāfut XVII and Munqidh; Ibn Rushd Tahāfut al-tahāfut; al-Rāzī/Ṭūsī on Ishārāt",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-31-I3",
+          "claim": "Al-Ghazālī's *Tahāfut al-falāsifa* attacks twenty identifiable philosophical propositions; some belong to the natural philosophy of causation and others to more fundamental claims about the eternity of the world and God's knowledge. In the seventeenth discussion he challenges the presumption that the customary relation of a cause and its effect must be neces",
+          "type": "philosophical dialectic",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "direct contested lemmas need full reading",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 32,
+      "title": "The work of the heart becomes a teachable discipline",
+      "book": "Book V — How knowledge and spiritual formation acquired lasting institutions",
+      "claims": [
+        {
+          "id": "SC-32-H1",
+          "claim": "The Qurʾān called human beings to worship with sincerity and warned that outward action could be corrupted by showing off, self-admiration or withholding the rights of others.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Qurʾān 91:7–10,107:4–7; Muḥāsibī Riʿāya; Qushayrī Risāla; Ghazālī Iḥyāʾ; Mahāʾimī MSH-055",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Qurʾān 91:7–10,107:4–7; Muḥāsibī Riʿāya; Qushayrī Risāla; Ghazālī Iḥyāʾ; Mahāʾimī MSH-055",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-32-H2",
+          "claim": "Al-Muḥāsibī examined the hidden movements of self-regard and the discipline of self-accounting.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Qurʾān 91:7–10,107:4–7; Muḥāsibī Riʿāya; Qushayrī Risāla; Ghazālī Iḥyāʾ; Mahāʾimī MSH-055",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Qurʾān 91:7–10,107:4–7; Muḥāsibī Riʿāya; Qushayrī Risāla; Ghazālī Iḥyāʾ; Mahāʾimī MSH-055",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-32-I3",
+          "claim": "Qurʾān 91:7–10 joins the soul's creation and moral recognition to the responsibility of purification. Qurʾān 107:4–7 censures ostentatious prayer and withheld ordinary assistance. The first *ḥadīth* of al-Bukhārī identifies intentions as relevant to actions; its historical and juristic uses are more extensive than a formula suggesting only good feelings matt",
+          "type": "normative/spiritual doctrine",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "exact authors' different meanings need source collation",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 33,
+      "title": "From the teacher's company to enduring Sufi networks",
+      "book": "Book V — How knowledge and spiritual formation acquired lasting institutions",
+      "claims": [
+        {
+          "id": "SC-33-H1",
+          "claim": "Students seeking greater purity of heart accompanied teachers whose worship, speech and everyday conduct they trusted.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Chittick Muhammadan Inheritance (1996); Ibn ʿArabī Fuṣūṣ; al-Qūnawī; Farghānī; al-Ḥikam",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Chittick Muhammadan Inheritance (1996); Ibn ʿArabī Fuṣūṣ; al-Qūnawī; Farghānī; al-Ḥikam",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-33-H2",
+          "claim": "The Qādirī, Suhrawardī and Shādhilī traditions grew through different relationships of teaching, service, remembrance and patronage.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Chittick Muhammadan Inheritance (1996); Ibn ʿArabī Fuṣūṣ; al-Qūnawī; Farghānī; al-Ḥikam",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Chittick Muhammadan Inheritance (1996); Ibn ʿArabī Fuṣūṣ; al-Qūnawī; Farghānī; al-Ḥikam",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-33-I3",
+          "claim": "The Sufi tradition cannot be reduced to ethical self-management, nor can every claim to a hidden spiritual state be accepted as an independent form of law. Its distinctive question is **how the human being becomes capable of receiving and acting through knowledge of God**—through correct practice, divine gift, self-knowledge and relationships that disclose h",
+          "type": "Akbarian/Sufi intellectual history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "spiritual inheritance not empirically verifiable as an isnād",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 34,
+      "title": "Cairo, Damascus and Jerusalem: government, learning and the Crusades",
+      "book": "Book VI — An international civilization with many centres",
+      "claims": [
+        {
+          "id": "SC-34-H1",
+          "claim": "Muslim communities lived under several competing rulers, while scholars, merchants and pilgrims continued to travel between their territories.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Fāṭimid/Cairo records; Ibn al-Athīr and Latin chroniclers; Mamluk historians",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Fāṭimid/Cairo records; Ibn al-Athīr and Latin chroniclers; Mamluk historians",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-34-H2",
+          "claim": "The crusading capture of Jerusalem in 1099 brought violence, displacement and new Latin principalities among diverse Muslim and Eastern Christian populations.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Fāṭimid/Cairo records; Ibn al-Athīr and Latin chroniclers; Mamluk historians",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Fāṭimid/Cairo records; Ibn al-Athīr and Latin chroniclers; Mamluk historians",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-34-I3",
+          "claim": "In Cairo and Damascus, shared scholarly traditions continued under rulers with different political and religious allegiances. A person seeking Qurʾānic recitation, legal teaching or lodging could find recognized forms of instruction under quite different rulers, while tax regimes and military loyalties changed. This was possible because teachers, texts, reco",
+          "type": "medieval comparative history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "wars/patronage case-level evidence pending",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 35,
+      "title": "Al-Andalus and the Maghrib: cities, scholarship and the loss of a political world",
+      "book": "Book VI — An international civilization with many centres",
+      "claims": [
+        {
+          "id": "SC-35-H1",
+          "claim": "ʿAbd al-Raḥmān I, an Umayyad prince who had escaped the Abbasid overthrow, established his rule in Córdoba in 756.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Córdoba caliphate and ṭawāʾif chronologies; Viguera-Molins; Morisco expulsion",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Córdoba caliphate and ṭawāʾif chronologies; Viguera-Molins; Morisco expulsion",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-35-H2",
+          "claim": "Judges and teachers carried Mālikī legal learning across the straits; physicians, poets, grammarians, philosophers and Sufis wrote and taught in different urban settings.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Córdoba caliphate and ṭawāʾif chronologies; Viguera-Molins; Morisco expulsion",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Córdoba caliphate and ṭawāʾif chronologies; Viguera-Molins; Morisco expulsion",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-35-I3",
+          "claim": "The political histories of the Umayyad emirate, caliphate, *ṭawāʾif*, Almoravids, Almohads and Nasrid Granada must be kept distinct. Their changes involved revenue, rural production, warfare and diplomacy rather than a single spiritual cycle imposed retrospectively. The historiographical term *convivencia* cannot alone characterize centuries of exchange and ",
+          "type": "Andalusian political/learning history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "multiconfessional and expulsion detail needs witnesses",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 36,
+      "title": "Persianate language, commerce and the circulation of books",
+      "book": "Book VI — An international civilization with many centres",
+      "claims": [
+        {
+          "id": "SC-36-H1",
+          "claim": "Arabic remained the language of the Qurʾān and a major medium of religious scholarship, while Persian became increasingly important for administration, narrative, ethical instruction, poetry and learned exchange across Iran, Central Asia, Anatolia and India.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Persianate manuscript colophons, Hodgson, Shahab Ahmed, literary history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Persianate manuscript colophons, Hodgson, Shahab Ahmed, literary history",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-36-H2",
+          "claim": "Books were translated, copied and explained by teachers before readers in other regions could make full use of them.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Persianate manuscript colophons, Hodgson, Shahab Ahmed, literary history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Persianate manuscript colophons, Hodgson, Shahab Ahmed, literary history",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-36-I3",
+          "claim": "The distinction between *Islam* as a religious tradition and *Islamicate* culture as a wider historical field, developed by Hodgson, is helpful only if the historian does not infer that poetry, mathematics or Persian writing must be outside a participant's lived religious vocation. Shahab Ahmed's critique requires taking seriously persons who regarded poetry",
+          "type": "Persianate book transmission",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "specific manuscript route not yet named",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 37,
+      "title": "Mongol conquest, conversion and the survival of scholarly worlds",
+      "book": "Book VI — An international civilization with many centres",
+      "claims": [
+        {
+          "id": "SC-37-H1",
+          "claim": "Mongol armies devastated cities and displaced communities across Central and Western Asia in the thirteenth century.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Peter Jackson Mongols and the Islamic World; Iranica; Ilkhanid records",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Peter Jackson Mongols and the Islamic World; Iranica; Ilkhanid records",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-37-H2",
+          "claim": "Mongol rulers supported different religions and made differing choices concerning Islam.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Peter Jackson Mongols and the Islamic World; Iranica; Ilkhanid records",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Peter Jackson Mongols and the Islamic World; Iranica; Ilkhanid records",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-37-I3",
+          "claim": "Political conversion and the formation of a religious community are not one event. Ghāzān's public Islamic identity can be dated in relation to political acts and patronage; the spiritual convictions of particular households cannot be inferred simply from royal ritual. Earlier Muslim members of Mongol dynasties and different local populations complicate any ",
+          "type": "Mongol political and conversion history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "court declarations distinct household conviction",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 38,
+      "title": "The Middle Niger: markets, kings and independent scholars",
+      "book": "Book VI — An international civilization with many centres",
+      "claims": [
+        {
+          "id": "SC-38-H1",
+          "claim": "Routes crossing the Sahara linked the Middle Niger with North African markets.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Tārīkh al-Sūdān; Aḥmad Bābā works; biographical manuscripts; Niger archaeology",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Tārīkh al-Sūdān; Aḥmad Bābā works; biographical manuscripts; Niger archaeology",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-38-H2",
+          "claim": "Under later Songhay rule, Timbuktu and Jenne supported merchants, jurists, teachers and families who collected and copied books.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Tārīkh al-Sūdān; Aḥmad Bābā works; biographical manuscripts; Niger archaeology",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Tārīkh al-Sūdān; Aḥmad Bābā works; biographical manuscripts; Niger archaeology",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-38-I3",
+          "claim": "Muslim scholars in the Middle Niger taught Mālikī law and other inherited disciplines in local settings that differed from the colleges and courts of Cairo. A student in Timbuktu could study Mālikī law and Arabic grammar within familial teaching relations and local patterns of commerce very different from those of a Cairo college. Historical evidence must id",
+          "type": "West African history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "collection and library dates disputed",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 39,
+      "title": "Across the monsoon seas: ports, households and the Malay world",
+      "book": "Book VI — An international civilization with many centres",
+      "claims": [
+        {
+          "id": "SC-39-H1",
+          "claim": "Merchants and sailors travelled the Indian Ocean by the seasonal winds, crossing between East Africa, the Arabian shores, India and Southeast Asia.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Kenneth Hall; A.C.S. Peacock Indian Ocean studies; Melaka harbour sources",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Kenneth Hall; A.C.S. Peacock Indian Ocean studies; Melaka harbour sources",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-39-H2",
+          "claim": "By the fifteenth century Melaka had become a major port whose rulers governed resident and temporary merchants through harbour arrangements, customs and protection.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Kenneth Hall; A.C.S. Peacock Indian Ocean studies; Melaka harbour sources",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Kenneth Hall; A.C.S. Peacock Indian Ocean studies; Melaka harbour sources",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-39-I3",
+          "claim": "In Melaka, the *syahbandar* and harbour customs help identify the practical causes that brought different people into sustained contact. A visiting merchant needed protection and predictable dealings; a resident family needed continuity through seasons when ships departed; a teacher needed a language in which students could understand instruction. These func",
+          "type": "maritime/port history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "conversion of rulers and dates disputed",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 40,
+      "title": "Bengal: fields, settlements and changing religious communities",
+      "book": "Book VI — An international civilization with many centres",
+      "claims": [
+        {
+          "id": "SC-40-H1",
+          "claim": "In the eastern Bengal delta, waterways shifted while cultivators cleared fields and established new settlements.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Richard Eaton Rise of Islam and the Bengal Frontier; land grants and site inscriptions",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Richard Eaton Rise of Islam and the Bengal Frontier; land grants and site inscriptions",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-40-H2",
+          "claim": "Persianate administration and Muslim courts interacted with Bengali-speaking households, agricultural obligations and local traditions.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Richard Eaton Rise of Islam and the Bengal Frontier; land grants and site inscriptions",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Richard Eaton Rise of Islam and the Bengal Frontier; land grants and site inscriptions",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-40-I3",
+          "claim": "Richard Eaton's study of Bengal distinguishes political, agrarian and religious frontiers, and in later work also describes other related historical movements. The central evidence includes dated inscriptions, settlement patterns, land grants and literary memories. A historian must ask which sources actually identify an event and which project later religiou",
+          "type": "Bengal agrarian-religious history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "actual dated shrine deed and local site needed",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 41,
+      "title": "The Ottoman settlement: courts, colleges and a growing imperial household",
+      "book": "Book VI — An international civilization with many centres",
+      "claims": [
+        {
+          "id": "SC-41-H1",
+          "claim": "Ottoman rulers built an empire from an Anatolian principality, with Constantinople becoming the imperial capital after its conquest in 1453.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Ottoman qāḍī court records; Veinstein studies; imperial qānūn",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Ottoman qāḍī court records; Veinstein studies; imperial qānūn",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-41-H2",
+          "claim": "Judges learned Ḥanafī legal doctrine while working alongside sultanic regulations concerning revenue and public administration.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Ottoman qāḍī court records; Veinstein studies; imperial qānūn",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Ottoman qāḍī court records; Veinstein studies; imperial qānūn",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-41-I3",
+          "claim": "Ottoman towns contained courts, fiscal offices, colleges, mosques and Sufi lodges, each with its own responsibilities and sources of authority. A qāḍī's court, the *ʿilmiyye*, fiscal officers, Sufi lodges and family schools possessed different kinds of authority. Their relative integration was a historical achievement dependent upon appointments, training, d",
+          "type": "Ottoman legal-social history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "specific court file/defendant pending",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": [],
+      "supplemental_case_verification": "Publisher academic chapter abstract of Peirce verified, Ottoman court register not seen"
+    },
+    {
+      "chapter": 42,
+      "title": "Safavid Iran and Mughal India: rival confessional and imperial settlements",
+      "book": "Book VI — An international civilization with many centres",
+      "claims": [
+        {
+          "id": "SC-42-H1",
+          "claim": "In early modern Iran the Safavid rulers made Twelver Shiʿism a defining public feature of their government, supported learned specialists and sought to alter the religious organization of communities whose practices had previously varied.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Safavid Shiʿi institutions and Mughal revenue/court/education studies",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Safavid Shiʿi institutions and Mughal revenue/court/education studies",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-42-H2",
+          "claim": "Mughal rulers governed across India through military power, revenue arrangements, courtly Persian and negotiation with regional elites of diverse religions and languages.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Safavid Shiʿi institutions and Mughal revenue/court/education studies",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Safavid Shiʿi institutions and Mughal revenue/court/education studies",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-42-I3",
+          "claim": "The Safavid adoption of Shiʿi identity must be differentiated from the gradual formation of local institutions and personal practice. A ruler can order public symbols and sponsor teachers, yet the inward allegiance of families changes through schooling, marriage, liturgy, instruction and sometimes coercion over time. Twelver Shiʿi claims about the Imamate ar",
+          "type": "early-modern comparative empires",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "not interchangeable confessional contexts",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 43,
+      "title": "Oceans, finance and the changing balance of power",
+      "book": "Book VII — Modern change in the conditions of religious life",
+      "claims": [
+        {
+          "id": "SC-43-H1",
+          "claim": "European ships entered Indian Ocean systems already sustained by Arab, Indian, Persian, African and other merchants.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Hodgson Great Western Transmutation; Surat shipping/credit histories; Guénon modernity critique",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Hodgson Great Western Transmutation; Surat shipping/credit histories; Guénon modernity critique",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-43-H2",
+          "claim": "These developments affected Muslim societies differently.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Hodgson Great Western Transmutation; Surat shipping/credit histories; Guénon modernity critique",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Hodgson Great Western Transmutation; Surat shipping/credit histories; Guénon modernity critique",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-43-I3",
+          "claim": "European trading companies entered an Indian Ocean system in which merchants, ports, credit networks and regional rulers had long been active. The Indian Ocean contained routes, port offices, credit practices and resident communities whose history predated the companies. Their subsequent coercive capacities changed unevenly. Political control of one harbour ",
+          "type": "maritime-economic / normative",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "risk of teleological decline, quantitative evidence needed",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 44,
+      "title": "Colonial courts and the transformation of Islamic law",
+      "book": "Book VII — Modern change in the conditions of religious life",
+      "claims": [
+        {
+          "id": "SC-44-H1",
+          "claim": "In parts of South Asia, British Company rule assumed powers of revenue collection and adjudication formerly exercised through Mughal and other local institutions.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Kozlowski 1985 chap. Creating Law Muslim Endowments; Abul Fata v Russomoy (1894); Chatterjee 2021 archives; 1913 statute",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Kozlowski 1985 chap. Creating Law Muslim Endowments; Abul Fata v Russomoy (1894); Chatterjee 2021 archives; 1913 statute",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-44-H2",
+          "claim": "The transformation can be followed in a particular family dispute.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Kozlowski 1985 chap. Creating Law Muslim Endowments; Abul Fata v Russomoy (1894); Chatterjee 2021 archives; 1913 statute",
+          "verification": "published primary appellate judgment and statutory text checked",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Privy Council appellate judgment 15 December 1894; waqf deed 21 December 1868 as quoted; 1913 and 1930 validating Acts",
+          "source_mapping_note": "Original deed and extended lower-court evidence not directly examined. See WAQF_PRIVY_COUNCIL_SOURCE_AUDIT_20261112.md."
+        },
+        {
+          "id": "SC-44-I3",
+          "claim": "**A documented institutional transition rather than a general thesis of decline.** Hastings's 1772 Judicial Plan in Bengal redistributed public jurisdiction while claiming to preserve certain forms of law appropriate to religious communities. Elizabeth Lhost, *Everyday Islamic Law and the Making of Modern South Asia* (2022), and Robert Travers, *Empires of C",
+          "type": "colonial judicial microhistory",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Kozlowski overview checked; full case judgment still unexamined",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": [
+        "rewrite-20261112/benchmark-1_6-19-44.json"
+      ]
+    },
+    {
+      "chapter": 45,
+      "title": "Renewal through teaching, reform and print",
+      "book": "Book VII — Modern change in the conditions of religious life",
+      "claims": [
+        {
+          "id": "SC-45-H1",
+          "claim": "Scholars confronted new conditions of political power, schooling, transport and the circulation of books.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Deoband foundation 1866, Aligarh foundation and curricula; print history; al-Attas",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Deoband foundation 1866, Aligarh foundation and curricula; print history; al-Attas",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-45-H2",
+          "claim": "Deoband, founded in 1866, supported inherited religious learning through new institutional arrangements under colonial conditions.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Deoband foundation 1866, Aligarh foundation and curricula; print history; al-Attas",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Deoband foundation 1866, Aligarh foundation and curricula; print history; al-Attas",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-45-I3",
+          "claim": "The printing press can extend both genuine knowledge and mistaken extraction from context. A reader may accurately repeat a phrase and still lack the language, source comparison or practical distinctions needed to understand it; another can use widespread access to scrutinize claims previously insulated by local authority. These possibilities cannot be decid",
+          "type": "modern education/institutional history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "syllabi/registry and print exemplars need direct check",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "normal",
+      "related_dossiers": []
+    },
+    {
+      "chapter": 46,
+      "title": "Nation-states, migration and the new scale of Muslim life",
+      "book": "Book VII — Modern change in the conditions of religious life",
+      "claims": [
+        {
+          "id": "SC-46-H1",
+          "claim": "During the twentieth century Ottoman political institutions ended, colonial territories underwent different struggles and settlements, and Muslim communities formed states and minorities under new borders and systems of citizenship.",
+          "type": "reported narrative/historical proposition",
+          "witnesses": "Ottoman dissolution; decolonization and migration records; contemporary digital-media studies",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Directly locate support for this particular sentence, compare dates and narrative variants.",
+          "candidate_witnesses": "Ottoman dissolution; decolonization and migration records; contemporary digital-media studies",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-46-H2",
+          "claim": "A child might learn prayer from a parent, Qurʾānic Arabic in school, legal reasoning from a university teacher and spiritual counsel from a person whose character the family trusts.",
+          "type": "contextual or consequential historical claim",
+          "witnesses": "Ottoman dissolution; decolonization and migration records; contemporary digital-media studies",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "Locate the witnesses, evaluate whether causal inference exceeds the evidence.",
+          "candidate_witnesses": "Ottoman dissolution; decolonization and migration records; contemporary digital-media studies",
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        },
+        {
+          "id": "SC-46-I3",
+          "claim": "The digital and migratory conditions of contemporary Muslim life make the difference between **transmission** and **realization** unusually visible. A searchable text supplies access to information; a verified edition improves confidence in the wording; trained language and source criticism allow careful interpretation; competent legal reasoning helps apply ",
+          "type": "modern social/education history",
+          "verification": "provisional—refreshed claim not individually collated",
+          "needed": "claims about digital effects need empirical data",
+          "candidate_witnesses": null,
+          "source_mapping_note": "Inherited source locator; precise correspondence to this refreshed claim remains provisional."
+        }
+      ],
+      "risk": "high",
+      "related_dossiers": []
+    }
+  ],
+  "regeneration": "12 November 2026, current chapter source",
+  "verified_targeted_cases": [
+    {
+      "chapter": 1,
+      "claim": "SC-01-H2",
+      "source": "Qurʾān 71:1–10; 11:37–47; 23:27",
+      "status": "Selected verses directly checked for Nūḥ's mission, Ark chronology, son's refusal and repentance; not exhaustive tafsīr collation",
+      "url": "https://quran.com/11/42-47"
+    },
+    {
+      "chapter": 44,
+      "claim": "SC-44-H2",
+      "source": "1894 Privy Council published appellate judgment and Mussalman Wakf Validating Acts of 1913 and 1930",
+      "status": "Judgment text and statutes consulted; original signed deed and lower-court papers not directly collated",
+      "url": "https://courtkutchehry.com/judgments/abul-fata-mahomed-ishak-and-others-appellant-hash-russomoy-dhur-chowdhry-and-others-respondent"
+    },
+    {
+      "chapter": 41,
+      "claim": "named-case-in-sharḥ",
+      "source": "Leslie Peirce, Morality Tales, Haciye Sabah chapter",
+      "status": "Publisher-hosted academic abstract confirms July 1541 Aintab court case; underlying Ottoman register not collated",
+      "url": "https://doi.org/10.1525/california/9780520228900.003.0012"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+AL-KASHSHAF / FUTUH AL-GHAYB — C07 REVIEWED
+10 November 2026
+
+All 277 existing passages have undergone electronic comparison. This is a revised working edition, not a definitive critical edition. Draft coverage: 19 Kashshāf sūrahs, 18 Ṭībī sūrahs and Fātiḥa I:677–686 only. I:687–770 remains untranslated. One Arabic gap, conflicting readings, complete page-image collation and final scholarly approval remain outstanding.
+
+SURAH 112 — al-Ikhlāṣ
+
+﴿بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللَّهُ أَحَدٌ﴾ (112:1)
+Say: He is Allah, the One
+
+﴿ٱللَّهُ ٱلصَّمَدُ﴾ (112:2)
+Allah, the eternally Besought of all
+
+﴿لَمْ يَلِدْ وَلَمْ يُولَدْ﴾ (112:3)
+He begetteth not nor was begotten
+
+﴿وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ﴾ (112:4)
+And there is none comparable unto Him
+
+[K112.01 | T XVI 632; K IV 817]
+
+Sūrat al-Ikhlāṣ. Meccan; it is also said to be Medinan. It has four verses.
+In the name of God, the All-Merciful, the Merciful.
+“Say: He is God, One. God, the One to whom all turn in need (al-Ṣamad). He neither begot nor was begotten, and no one is equal to Him.” [112:1–4]
+[REVIEW K112-A: The separate four-volume transcription additionally prints “revealed after al-Nās” in its heading and repeats the basmala (بسملة). These are absent from the corresponding Dubai base-text heading. Their authorial status is unestablished; they are recorded rather than silently inserted.]
+
+[K112.02 | T XVI 632–633; K IV 817]
+
+Huwa [He/it] is the pronoun of the matter (ḍamīr al-shaʾn (ضمير الشأن)), and “God is One” is that matter, as when you say, “It is: Zayd is departing.” It is as though one had said: the matter is this—namely, that God is one, with no second beside Him.
+If you ask, “What is the syntactic position of huwa (هو)?”, I answer: nominative, as the subject (mubtadaʾ (مبتدأ)); its predicate is the sentence.
+If you ask, “A sentence functioning as a predicate must contain something referring back to the subject. Where, then, is that reference?”, I answer: this sentence has the same status as the single predicate in your statement “Zayd is your servant-boy”: in meaning, it is the subject itself. For “God is One” is precisely the matter expressed by huwa (هو). This is not the case with “Zayd—his father is departing,” since Zayd and the sentence denote two different meanings; something connecting them is therefore indispensable.
+Ibn ʿAbbās reports: Quraysh said, “Muḥammad, describe to us your Lord, to whom you summon us,” and the sūrah was revealed. That is: the one whose description you have asked me for is God. Aḥad (أحد) is a substitution (badal (بدل)) for “God”; alternatively, [it is construed with an understood subject] “He is One.” It has the meaning of wāḥid (واحد), and its original form is waḥad (وَحَد).
+
+[T112.01 | XVI 632–633 | on K112.02]
+
+Sūrat al-Ikhlāṣ. Meccan; it is also said to be Medinan. Four verses.
+In the name of God, the All-Merciful, the Merciful.
+His words, “The one whose description you asked me for is God, and aḥad (أحد) is a substitution.” Abū al-Baqāʾ says: “Huwa is a subject meaning ‘the one asked about,’ for they said, ‘Is your Lord made of copper or gold?’ On this interpretation, Allāh (الله) may be the predicate of the subject, with aḥad (أحد) a substitution, or the predicate of an omitted subject. Allāh (الله) may also be a substitution, with aḥad (أحد) the predicate. The hamza (همزة) of aḥad (أحد) replaces wāw (و), since it means al-wāḥid (الواحد).” Substitution of hamza (همزة) for a wāw (و) carrying fatḥa (فَتْحة) is rare. It is also said that the hamza (همزة) is original, like the hamza (همزة) in aḥad (أحد) used for generality.
+
+[T112.02 | XVI 633–634 | on K112.02]
+
+His words, “It has the meaning of wāḥid (واحد).” There are two possibilities. First, this may attach to the second interpretation: huwa (هو) answers their request, “Describe your Lord to us,” and is the pronoun referring to the one asked about. In that case, a distinction must be drawn between wāḥid (واحد) and aḥad (أحد). He says in al-Aḥzāb: “Aḥad (أحد) originally means waḥad (وَحَد), that is, al-wāḥid (الواحد); then it was assigned to general negation, applying equally to masculine and feminine, one and more than one.”
+The author of al-Nihāya transmits from al-Azharī: “The difference between al-wāḥid (الواحد) and al-aḥad (الأحد) is that aḥad (أحد) was formed to negate whatever number is mentioned with it: you say, ‘No one came to me.’ Wāḥid is a name formed for the beginning of number: you say, ‘One person came to me,’ but do not say [in this affirmative construction], ‘Aḥad (أحد) came to me.’ Al-wāḥid is unique in essence, without likeness or counterpart; al-aḥad (الأحد) is unique in meaning. It is also said: al-wāḥid (الواحد) is that which is not divisible, is not doubled, does not admit division, and has neither counterpart nor likeness. Only God Most High combines these two descriptions.”
+Al-Azharī says in Tafsīr asmāʾ (أسماء) Allāh (الله) al-ḥusnā: “Al-aḥad is among the attributes God has reserved to Himself: nothing shares it with Him, and nothing other than God is described as al-aḥad (الأحد). One does not say ‘an aḥad (أحد) man’ or ‘an aḥad (أحد) dirham’; one says ‘a wāḥid (واحد) man.’”
+Knowing this, we say: when they said, “Describe to us your Lord, to whom you summon us,” they were told: the one asked about is God, one, unique in essence, without likeness or counterpart. The discourse thus serves to distinguish, and the description differentiates. Although it entails magnification, [when] huwa (هو) is taken as the pronoun of the matter, the descriptions serve magnification alone. For this is the beginning of the Messenger's ﷺ mission, guiding the people and drawing attention to an object of worship of immense dignity and overwhelming dominion. It is as though one had said: Say, Muḥammad, the matter and affair is that God is One, with no second beside Him. Allāh (الله) indicates all the attributes of perfection; aḥad (أحد), all the attributes of majesty. Accordingly, it is appropriate to say “One, with no second beside Him,” because aḥad (أحد) indicates the negation of whatever is mentioned with it.
+The second possibility is that [his explanation] attaches to both interpretations together: either huwa (هو) is the pronoun of the matter, or huwa (هو) means the one asked about. There would then be no distinction between aḥad (أحد) and wāḥid (واحد). Al-Jawharī says, “Al-aḥad means al-wāḥid (الواحد), and is the beginning of number.” The author of al-Nihāya says, “Al-wāḥid is the solitary one who has always been alone, with no other beside Him.”
+[TEXT CORRECTIONS T112-C1: The scan at p.633 reads لا يتجزأ and إلا الله, correcting the transcription. At p.634 the words على أن يكون «هو» ضمير الشأن، فإجراء الأوصاف لمجرد التعظيم are present in the scan but absent in OpenITI. They are translated above. The transition following وإن استلزم التعظيم remains syntactically awkward; bracketed “when” makes the understood construction explicit.]
+
+[K112.03 | T XVI 634–635; K IV 817–818]
+
+ʿAbd Allāh (الله) and Ubayy read “Huwa Allāhu (الله) aḥad (أحد),” without “Say.” In the Prophet's ﷺ reading it is “Allāhu (الله) aḥad (أحد),” without “Say: He”; and he said, “Whoever recites ‘Allāhu (الله) aḥad (أحد)’—it is equivalent to the Qurʾān.” Al-Aʿmash read “Qul huwa (هو) Allāhu (الله) al-wāḥid (الواحد).” It has also been read “aḥadu (أحدُ) llāhu,” without tanwīn (تنوين): the tanwīn (تنوين) is dropped because it meets the lām (ل) of the definite article. Comparable to this is:
+“Nor remembering God, except a little.”
+The sounder usage is to retain the tanwīn (تنوين), giving it a kasra (كَسْرة) because of the meeting of two unvocalized consonants.
+Al-Ṣamad is on the pattern faʿal (فَعَل) with the meaning of a passive participle (mafʿūl (مفعول)), from ṣamada (صمد) ilayhi, “he directed himself towards him.” It is the master to whom people turn with their needs.
+[REVIEW K112-B: The report about equivalence is translated as given; Ṭībī's correction to “one third” follows in T112.12. Its presence here is not a fresh authentication.]
+
+[T112.03 | XVI 634 | on K112.03]
+
+His words, “It was equivalent to the Qurʾān.” It has been said: its recitation was equivalent to reciting the Qurʾān. The report is cited as evidence for this reading. Perhaps the meaning is that “Say: He” functions as an introduction and preparation for “God is One.” This works only if the pronoun is taken as the pronoun of the matter.
+
+[T112.04 | XVI 635 | on K112.03]
+
+His words, “Nor remembering God, except a little.” Its opening is:
+“I found him not returning to goodwill under reproach.”
+That is: I reminded him. “Nor remembering” is intended with tanwīn (تنوين); it was dropped because two unvocalized consonants met. Allāh (الله) consequently remains accusative, not genitive through annexation (iḍāfa (إضافة)). Dhākir is genitive, coordinated with mustaʿtib (مستعتب): “nor remembering.” That is: I reminded him of the affection formerly between us, but he was found not to turn back, through reproach, from the ugliness of what he had done.
+His words, “The sounder usage is tanwīn (تنوين)”: this is the well-known reading.
+His words, “The master to whom people turn with their needs.” Al-Zajjāj cited al-Asadī:
+“Early came the death-announcer with news of the two best of Banū Asad:
+ʿAmr ibn Masʿūd and the master to whom all turn.”
+Al-Ṣamad: that is, the one to whom everything turns—the one who created all things, and whom nothing can do without. Muḥyī al-Sunna transmitted from Ibn ʿAbbās, Mujāhid, al-Ḥasan and Saʿīd ibn Jubayr: “Al-Ṣamad is the one with no interior cavity.” Al-Shaʿbī said: “The one who neither eats nor drinks.”
+
+[K112.04 | T XVI 636; K IV 818]
+
+The meaning is: He is the God whom you know, and whom you acknowledge as the creator of the heavens and the earth and your own creator. He is one, alone in divinity, with no partner in it. He is the one to whom every creature turns; they cannot dispense with Him, whereas He has no need of them.
+“He did not beget,” because He shares no genus with anything, such that He might have a consort of His own genus and the two might produce offspring. His statement “How could He have a child, when He has no consort?” [6:101] indicates this meaning. “Nor was He begotten,” because everything begotten is originated and a body; He, however, is pre-eternal (qadīm (قديم)), with no beginning to His existence, and is not a body. No one equals Him: that is, no one resembles Him or is like Him. It is also possible to take this from suitability between spouses (kafāʾa (كفاءة)) in marriage, thereby denying Him a consort.
+
+[T112.05 | XVI 636 | on K112.03–04]
+
+Al-Rāghib: “That which has no interior cavity is of two kinds: what is below the human being, such as inanimate things; and what is above, namely the Creator, exalted and holy. The purpose of al-Ṣamad is to indicate that He differs from those to whom they ascribed divinity. Something of this kind is indicated by ‘His mother was a woman of truth; they both used to eat food’ [5:75].”
+His words, “His statement ‘How could He have a child, when He has no consort?’ indicates this meaning”: these are coordinated with “because He shares no genus.” That is, “He did not beget” either indirectly signifies (kināya (كناية)) His transcendence above belonging to a genus—for whoever shares a genus with anything takes a consort of his genus, and whoever takes a consort produces offspring—or [the reasoning proceeds] in reverse: how could He have a child when He has taken no consort? Generation occurs only between two partners of one genus. He transcends having a congener, so a consort cannot properly be ascribed to Him, and neither can generation. He states this in explaining the verse in al-Anʿām.
+
+[K112.05 | T XVI 636, 638; K IV 818]
+
+They asked him to describe Him to them, and what encompasses His attributes was revealed to him. “He is God” points them to the creator and originator of things. Implicit in that is His description as powerful and knowing, since creation requires power and knowledge, occurring as it does with the utmost precision, coherence and order. This also describes Him as living, hearing and seeing. “One” describes His oneness and denies partners. “Al-Ṣamad” describes Him as exclusively the one who is needed; if He is exclusively needed [and not needy], He is self-sufficient. His being self-sufficient together with His being knowing entails that He is just and does not perform evil acts: He knows the evil of the evil act, and knows that He has no need of it. “Nor was He begotten” describes pre-eternity and primordiality. “He did not beget” denies likeness and a shared genus. “No one is equal to Him” confirms this and settles the judgment definitively.
+
+[T112.06 | XVI 636–637 | on K112.05]
+
+His words, “Thus His statement ‘He is God.’” The fāʾ (ف) introduces a detailed exposition; the general statement being expounded is “what encompasses His attributes.” Since Allāh (الله) names the essence—and in the Opening of the Book he established the impossibility of its being a descriptive epithet—it nevertheless has in each context a meaning appropriate to that context. The particular character of the polytheists' question required its explanation as “the Creator,” because of His statement, “If you ask them who created the heavens and the earth, they will certainly say: God” [31:25]. Thus Allāh (الله) here, as an answer, points them to the one who creates things. You know that knowledge and power are what make creatorship possible: these two attributes are therefore included under it. This is what “implicit in that is His description as powerful and knowing” indicates. He cannot be powerful and knowing without being knowing, living, hearing and seeing. Then these descriptions were followed by the meaning of oneness in “One.” Since uniqueness excludes recourse to another, He was affirmed to possess ṣamadiyya (صمدية), so that recourse would be to Him.
+Once this established an essence entailing the attributes of creatorship, knowledge, power, life and divinity, their perfection was to be explained, together with their difference from creatures' attributes in past and future. At this point it was said: “He neither begot nor was begotten, and no one is equal to Him.”
+
+[T112.07 | XVI 637–638 | continuation]
+
+Ḥujjat al-Islām gives a concise discussion of them:
+“‘Aḥad (أحد)’: He is the wāḥid (واحد) from whom partnership is excluded, and the aḥad (أحد) in whom there is no composition. Wāḥid negates partner and likeness; aḥad (أحد) negates multiplicity within His essence. Al-Ṣamad is the self-sufficient one whom others need. He is aḥad (أحد) in essence and wāḥid (واحد) in attributes: for if He had a partner in His dominion, He would not be self-sufficient and needed by others; rather, He would depend for His subsistence and existence on the components of His composition. Thus ṣamadiyya (صمدية) proves both wāḥidiyya (واحدية) and aḥadiyya (أحدية).
+“‘He did not beget’ proves that His continuing existence is not like human existence, whose species persists through generation and reproduction; rather, His existence continues eternally, without beginning or end. ‘Nor was He begotten’ proves that His existence is not like the existence of the human soul, which comes into being after nonexistence and then remains forever, either in a lofty Garden that does not perish or in an abyss that does not end.
+“‘No one is equal to Him’ proves that His true existence is an existence that bestows existence on another without receiving existence from another. Thus ‘He is God, One’ proves His holy, transcendent essence. Ṣamadiyya entails His freedom from need and others' need of Him. ‘Nor was He begotten,’ at the end of the sūrah, removes from Him what characterizes others. There is no clearer path to knowledge of God Most High than removing from Him the attributes of creatures.”
+[REVIEW T112-U1: The scan prints “nor was He begotten” in the last sentence, although it is not the sūrah's final clause. It is preserved. The wording about partnership, composition and attributes also needs comparison with the work being quoted.]
+
+[K112.06 | T XVI 638–639; K IV 818–819]
+
+If you ask, “In eloquent Arabic, an adjunct (ẓarf (ظرف)) that is supplementary (laghw (لغو)), rather than indispensable to the predication (mustaqirr (مستقرّ)), is postponed, not placed first—Sībawayh explicitly says so in his book. Why, then, is it placed first in the most eloquent and most fully Arabic of speech?”, I answer: this utterance is directed precisely at denying equivalence to the essence of the Creator—glory be to Him. This adjunct [lahu, ‘to Him’] is where that meaning converges and is centred. It is therefore the most important and most pertinent element, the one most entitled and most suited to precedence.
+Kufuʾan has been read with ḍamma (ضَمّة) on both kāf (ك) and fāʾ (ف), and also with ḍamma (ضَمّة) or kasra (كَسْرة) on the kāf (ك) together with an unvocalized fāʾ (ف) [kufʾan (كُفْئًا), kifʾan (كِفْئًا)].
+
+[T112.08 | XVI 638 | on K112.05–06]
+
+His words, “Exclusively the one who is needed”: the exception is unfilled (istithnāʾ mufarragh (استثناء مفرّغ)); that is, God is exclusively the one who is needed—relative, that is, to creatures.
+His words, “Supplementary, not indispensable to the predication.” An indispensable adjunct (ẓarf (ظرف) mustaqirr (مستقرّ)) is one required to complete the utterance, as when it functions as the predicate in “There was not in it anyone better than you.” A supplementary adjunct (laghw (لغو)) is one without which the utterance is complete, as in “No one was better than you in it.” In the first case, the indispensable adjunct is put first because it is intended as the focus. The normal arrangement was abandoned in the verse because it was directed at explaining divine oneness.
+Ibn al-Ḥājib says: “It was placed first out of concern for the correspondence of verse endings. Had it merely preceded aḥad (أحد), the aim would have been achieved; but it would then have separated the two parts which are [the predicate and] the subject of predication. It was therefore placed before both, and the aim was achieved.”
+[REVIEW T112-U2: The printed wording is اللذين هما مسند إليه, apparently incomplete as a description of the two parts. The bracketed supplement conveys the apparent argument but requires checking the quoted source.]
+
+[T112.09 | XVI 639 | on K112.06]
+
+The author of al-Intiṣāf says: “Sībawayh reports hearing a rough Arab recite ‘wa-lam yakun aḥadun (أحدٌ) kufuwan (كُفُوًا) lahu.’ The uncouth man followed his habitual manner, his coarse disposition missing the subtle meaning that required the adjunct and predicate to precede the subject. The verse's intended aim is to deny equivalence and equality to God's essence. It was therefore preferable to put first the equivalence intended to be denied Him. Once it was brought forward for negation, the adjunct was mentioned with it, to distinguish the holy essence by the denial of equivalence.”
+I say: its upshot is that attention to the meaning demanded by the context is more fitting, more justified and prior to attention to wording and verse endings.
+
+[T112.10 | XVI 639 | on K112.06]
+
+His words, “Kufuʾan has been read, with ḍamma (ضَمّة) on kāf (ك).” Ḥafṣ reads with ḍamma (ضَمّة) on it and on fāʾ (ف), without hamza (همزة) [kufuwan (كُفُوًا)]. Ḥamza reads with unvocalized fāʾ (ف) and hamza (همزة) when continuing; when stopping, he replaces it with a wāw (و) bearing fatḥa (فَتْحة). The others read with ḍamma (ضَمّة) on fāʾ (ف) and with hamza (همزة).
+Al-Rāghib: “Kufʾ is [equality] in standing and worth. From it comes kifāʾ (كفاء) for a piece of fabric sewn to another, with which the rear of a tent is covered. One says that a person is another's equal in marriage, combat and the like. From it comes mukāfaʾa (مكافأة): equality and corresponding action. Ikfāʾ is overturning something, as though removing equality; from this comes ikfāʾ (إكفاء) in poetry.”
+
+[K112.07 | T XVI 640–642; K IV 819]
+
+If you ask, “Why is this sūrah the equivalent of the whole Qurʾān, despite its shortness and the closeness of its two ends?”, I answer:
+“It is for some great cause that whoever becomes a master becomes one.”
+That is solely because it encompasses God's attributes, His justice and His oneness. For anyone who acknowledges its excellence and believes the Messenger of God's ﷺ statement about it, this is sufficient proof that the science of divine oneness (ʿilm (علم) al-tawḥīd) has an exalted standing with God. How could it be otherwise? Knowledge follows its object: it is ennobled by the nobility of what is known, and lowered by its lowliness. The object of this science is God Most High and His attributes, and what is and is not admissible concerning Him. What, then, do you think of the nobility of its rank, the grandeur of its position, its eminence over every other science, and its winning the prize ahead of them? Whoever disparages it does so because of the weakness of his knowledge of its object, the smallness of his reverence for Him, his lack of fear of Him, and his remoteness from considering his own ultimate fate.
+O God, gather us among those who know You, act for You, affirm Your justice and Your oneness, and fear Your threat.
+It is called “The Sūrah of the Foundation,” because it encompasses the foundations of religion. Ubayy and Anas transmitted from the Prophet ﷺ: “The seven heavens and the seven earths were founded upon ‘Say: He is God, One.’” That is: they were created solely to serve as signs of God's oneness and of the knowledge of His attributes expressed by this sūrah.
+It is related from the Messenger of God ﷺ that he heard a man reciting “Say: He is God, One,” and said, “It has become assured.” He was asked, “Messenger of God, what has become assured?” He answered, “Paradise has become assured for him.”
+
+[T112.11 | XVI 640 | on K112.07]
+
+His words, “The equivalent of the whole Qurʾān.” It is transmitted with fatḥa (فَتْحة) or kasra (كَسْرة) on the ʿayn (ع). Al-Akhfash says: “ʿIdl, with kasra (كَسْرة), means an equivalent. ʿAdl, with fatḥa (فَتْحة), is originally the verbal noun in ‘I made this nicely equal [to that]’; you turn it into a noun for an equivalent to distinguish it from a ʿidl (عِدْل), a load of goods.” Al-Farrāʾ says: “ʿAdl, with fatḥa (فَتْحة), is what equals something while belonging to a different kind. ʿIdl, with kasra (كَسْرة), is its like. You say, ‘I have the ʿidl (عِدْل) of your servant-boy, or of your sheep,’ when it is a servant-boy equal to a servant-boy or a sheep equal to a sheep. If you mean its value in something of another kind, you pronounce the ʿayn (ع) with fatḥa (فَتْحة). Some Arabs sometimes pronounce it with kasra (كَسْرة); that was an error on their part.”
+
+[T112.12 | XVI 640–641 | on K112.07]
+
+The correct version is “one third of the Qurʾān.” We have transmitted from al-Bukhārī, Muslim, Mālik, Abū Dāwūd and al-Nasāʾī, from Abū Saʿīd, that a man heard another reciting “Say: He is God, One” repeatedly. In the morning he came to the Prophet ﷺ and mentioned it, apparently regarding it as little. The Messenger of God ﷺ said: “By Him in whose hand is my soul, it is indeed equivalent to one third of the Qurʾān.”
+Al-Qāḍī says: “Because this sūrah, short as it is, encompasses all knowledge of divinity and refutes those who deviate concerning it, the report says that it equals one third of the Qurʾān. The Qurʾān's aims are confined to explaining beliefs, rulings and narratives. Whoever equates it with the whole takes into account what is intended for its own sake among these.”
+His words, “It is for some cause that whoever becomes a master becomes one”: the opening is:
+“I resolved to stay until morning.”
+Mā is an additional particle giving indefiniteness and magnification: that is, it is for a great cause that whoever becomes a master becomes one.
+[SOURCE CHECK T112-U3: Al-Baghdādī, Khizānat al-adab III:86–88, records the full line and explains إقامة ذي صباح as remaining until morning. The rendering follows that explanation; it does not establish every detail of the poem's attribution or context.]
+
+[T112.13 | XVI 641 | on K112.07]
+
+His words, “It suffices as proof for whoever acknowledges.” Man iʿtarafa [whoever acknowledges] is the object of kafā (كفى) [suffices]. Its subject is what is indicated by “because it encompasses God's attributes.” The pronoun in “its excellence” refers to the sūrah. “Believes” is coordinated with “acknowledges”; “the Messenger of God's ﷺ statement” attaches to “believes.” “That the science of divine oneness” attaches to “as proof,” which is a specification (tamyīz (تمييز)). That is: for whoever acknowledges the sūrah's excellence and believes the Messenger's statement, this suffices as proof that the science of divine oneness has an exalted standing with God.
+The Prophet's ﷺ statement intended here is the one he transmits at the end of the sūrah: “The seven heavens were founded …,” to the end. I have not found this report in the recognized source collections.
+Al-Tirmidhī, Abū Dāwūd and Ibn Māja transmit from Burayda that the Messenger of God ﷺ heard a man saying: “O God, I ask You by my testimony that You are God—there is no god but You—the One, al-Ṣamad, who neither begot nor was begotten, and to whom no one is equal.” The Prophet ﷺ said: “By Him in whose hand is my soul, he has asked God by His greatest name: when invoked by it, He answers; when asked by it, He gives.”
+
+[T112.14 | XVI 642 | on K112.07]
+
+His words, “He said: It has become assured.” Mālik, Aḥmad, al-Tirmidhī and al-Nasāʾī transmitted the report from Abū Hurayra.
+
+[T112.15 | XVI 642–643 | concluding addition]
+
+A conclusion from the words of Shaykh Faṣīḥ al-Dīn—may God have mercy on him:
+“‘God, al-Ṣamad’ is not joined by a conjunction to the preceding sentence, because it confirms and explains its content. The same applies to ‘He did not beget,’ because it confirms the content of ‘God, al-Ṣamad’: the absolutely self-sufficient one, whom everything needs, cannot be a begetter or begotten, since that necessarily entails need.
+“‘Nor was He begotten’ is joined to ‘He did not beget,’ because ‘was not begotten’ does not express the meaning of ‘did not beget,’ and thus does not confirm its meaning; rather, the two sentences confirm the content of the preceding sentence. ‘And no one is equal to Him’ is joined [by a conjunction] because its content does not confirm the content of the two preceding sentences: it expresses that He cannot have any equal in anything mentioned concerning essence and attributes. He is therefore one, with no partner—exalted, holy and supremely great.
+“The predicate is definite in ‘God, al-Ṣamad’ to negate [the claim of] anyone who asserts and names another as ṣamad (صمد). It is indefinite in ‘God, One,’ because they did not call things aḥad (أحد) in this sense.”
+[REVIEW T112-U4: The scan reads نفيا لنفي من زعم وسمى غيره صمدا, literally “to negate the negation of whoever asserted and named another ṣamad (صمد).” This double negation is problematic. The bracketed rendering gives the apparent intended argument, not a verified emendation. Retain the flag pending another witness or the quoted source.]
+The sūrah is complete.
+
+al-Ikhlāṣ · source and review notes · inherited record
+
+INHERITED C06 RECORD. Earlier scan claims have not been independently reconfirmed in this pass. Current corrections supersede provisional renderings below; consult the C07 review register.
+
+END OF TRANSLATED AUTHORIAL TEXT
+Review: full draft; one complete scan pass over XVI 632–643; one Turkish base-text comparison over VI 1460–1467; no independent external review. Four substantive interpretive/source flags remain (T112-U1–U4). Subsequent passes must retain both authors' arguments and all quoted authorities, even where they conflict.
+
+
+Tanzil Quran Text
+Copyright (C) 2007-2021 Tanzil Project
+License: Creative Commons Attribution 3.0
+
+This copy of the Quran text is carefully produced, highly
+verified and continuously monitored by a group of specialists
+in Tanzil Project.
+
+TERMS OF USE:
+
+- Permission is granted to copy and distribute verbatim copies
+  of this text, but CHANGING IT IS NOT ALLOWED.
+
+- This Quran text can be used in any website or application,
+  provided that its source (Tanzil Project) is clearly indicated,
+  and a link is made to tanzil.net to enable users to keep
+  track of changes.
+
+- This copyright notice shall be included in all verbatim copies
+  of the text, and shall be reproduced appropriately in all files
+  derived from or containing substantial portion of this text.
+
+Please check updates at: http://tanzil.net/updates/

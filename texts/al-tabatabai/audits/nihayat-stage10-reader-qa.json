@@ -1,0 +1,191 @@
+{
+  "schema": "gnamma-hikma-reader-qa-1",
+  "recorded_at": "2026-11-10T23:17:22.826210+00:00",
+  "baseline_revision": "078bac900e33bb7d44718985a5c9d42ba1f7370b",
+  "status": "first-ci-partially-passed-navigation-fix-awaiting-repeat",
+  "scope": "Recovered three-book reader and scoped Stage X UI fixes. Browser evidence below is tied to its exact CI revision; final source integration requires another source audit and browser run.",
+  "local_validation": {
+    "source_audit": {
+      "status": "passed",
+      "counts": {
+        "muzaffar": 140,
+        "bidaya": 111,
+        "nihaya": 136,
+        "combined": 387
+      },
+      "all_units_arabic_and_english": true,
+      "failures": [],
+      "warnings": [],
+      "command": "node texts/al-tabatabai/tools/audit-hikma.mjs"
+    },
+    "javascript_syntax": {
+      "status": "passed",
+      "files": [
+        "assets/hikma-rich-text.js",
+        "assets/hikma-reader.js",
+        "assets/hikma-combined.js",
+        "assets/hikma-refinements.js",
+        "assets/hikma-study-tools.js",
+        "tools/qa-study-tools.cjs",
+        "tools/qa-browser.cjs",
+        "tools/build-pdfs.cjs"
+      ]
+    },
+    "diff_whitespace": {
+      "status": "passed",
+      "command": "git diff --check -- .github/workflows/hikma-a4-pdf-release.yml texts/al-tabatabai/assets/hikma-reader.js texts/al-tabatabai/assets/hikma-combined.js texts/al-tabatabai/assets/hikma-study-tools.js texts/al-tabatabai/tools/qa-study-tools.cjs texts/al-tabatabai/audits/nihayat-stage10-reader-qa.json",
+      "scope": "UI, test, QA record and preview-workflow changes; parallel source integration is validated separately."
+    }
+  },
+  "fixes": [
+    {
+      "id": "focus-search-drawer",
+      "problem": "Focus view hid the contents panel even when its mobile drawer was opened; desktop search also targeted the hidden panel.",
+      "change": "Make Focus contents available as a temporary drawer on desktop and mobile, preserve the reading view, and synchronize inert state when the view changes.",
+      "files": [
+        "assets/hikma-reader.js",
+        "assets/hikma-combined.js",
+        "assets/hikma-study-tools.css"
+      ],
+      "browser_assertions": "Focus search visibility and keyboard focus, Escape restoration, desktop continuous-mode interaction, and mobile drawer close."
+    },
+    {
+      "id": "live-reading-desk",
+      "problem": "A Reading Desk already open in one tab did not refresh when another reader tab saved a note or bookmark.",
+      "change": "Dispatch the shared desk update after a validated storage event and reader redraw.",
+      "files": [
+        "assets/hikma-reader.js",
+        "assets/hikma-combined.js"
+      ],
+      "browser_assertions": "Edit a note through a second reader tab and require the already-open first-tab desk to display the new text."
+    },
+    {
+      "id": "print-footnote-language",
+      "problem": "Edition-mode rules suppressed the Arabic or English side of bilingual authorial notes even when an explicit print language required that side.",
+      "change": "Apply explicit English, Arabic or bilingual print selection to authorial notes; retain edition defaults when no override is selected.",
+      "files": [
+        "assets/hikma-study-tools.css"
+      ],
+      "browser_assertions": "Within the existing print-range test, render a runtime-only bilingual-note fixture and verify Arabic-only output under Reading layout, then restore the prior view."
+    },
+    {
+      "id": "preserve-subsection-on-view-change",
+      "problem": "Changing the reading view at M-V-28 selected the first subsection of its shared chapter (M-V-27), so the editions return link subsequently pointed at the wrong subsection.",
+      "change": "Capture the visible reading unit before the view redraw and navigate back to that unit. Use the same current-unit selection for shared reader controls.",
+      "files": [
+        "assets/hikma-reader.js",
+        "assets/hikma-combined.js"
+      ],
+      "browser_assertions": "Require M-V-28 to remain selected immediately after choosing Focus, and retain the existing M-V-28 editions-return assertion.",
+      "validation": "JavaScript syntax and diff checks passed locally; the behavioral fix awaits the next CI run."
+    },
+    {
+      "id": "dictionary-quote-emphasis",
+      "problem": "Reviewed dictionary excerpts displayed literal Markdown emphasis markers around terms such as Mental (dhihniyya).",
+      "change": "Render quote emphasis through the existing shared inline renderer, which escapes source text before adding its limited strong/em markup.",
+      "files": [
+        "assets/hikma-study-tools.js"
+      ],
+      "browser_assertions": "Within the existing mental-existence dictionary scenario, require the M-C-10 excerpt to contain rendered strong emphasis and no literal double-asterisk markers.",
+      "validation": "JavaScript syntax and scoped diff checks passed locally; browser validation awaits the next CI run."
+    }
+  ],
+  "browser_validation": {
+    "status": "first-remote-run-partial-follow-up-pending",
+    "application_checks_passed_locally": 0,
+    "attempts": [
+      {
+        "runner": "default runtime Playwright",
+        "result": "Chromium headless-shell executable absent."
+      },
+      {
+        "runner": "system Chromium",
+        "result": "Launch aborted: socket() failed: Operation not permitted. No application assertions executed."
+      },
+      {
+        "runner": "downloaded WebKit",
+        "result": "Browser downloaded, but host validation reported missing libgtk-4, libgraphene, libharfbuzz-icu, libmanette, libhyphen and libGLESv2. No application assertions executed."
+      }
+    ],
+    "local_logs": "stage10-work/qa/regression.log and stage10-work/qa/study.log",
+    "next_gate": {
+      "workflow": ".github/workflows/hikma-reader-qa.yml",
+      "repository": "gnamma-research/booksite",
+      "branch": "nihayat4-stage10-20261111",
+      "status": "repeat-on-integrated-revision-with-navigation-fix",
+      "suites": [
+        {
+          "script": "texts/al-tabatabai/tools/qa-browser.cjs",
+          "expected_checks": 51
+        },
+        {
+          "script": "texts/al-tabatabai/tools/qa-study-tools.cjs",
+          "expected_checks": 30
+        }
+      ],
+      "engines": [
+        "chromium",
+        "webkit"
+      ],
+      "note": "The first run passed all 51 retained checks and 12 of 30 study checks before a concrete failure. No pass is claimed for unexecuted checks or for a later revision."
+    },
+    "remote_runs": [
+      {
+        "run_id": 42921111094,
+        "job_id": 130195875610,
+        "url": "https://github.com/gnamma-research/booksite/actions/runs/42921111094",
+        "revision": "4a92fdbc54da37b9859a00fb567dc4a5a6a87bc4",
+        "conclusion": "failure",
+        "source_and_syntax_checks": "passed",
+        "regression_suite": {
+          "script": "tools/qa-browser.cjs",
+          "passed": 51,
+          "expected": 51,
+          "engines": [
+            "chromium",
+            "webkit"
+          ]
+        },
+        "study_suite": {
+          "script": "tools/qa-study-tools.cjs",
+          "passed": 12,
+          "expected": 30,
+          "passed_engine": "chromium",
+          "failed_scenario": "one downloads page exposes all books and nine editions",
+          "failure": "Return URL contained M-V-27 instead of the selected M-V-28. The reading-view control had reset the shared chapter to its first subsection.",
+          "not_executed": "The final two Chromium scenarios and all fifteen WebKit scenarios."
+        },
+        "artifact": {
+          "id": 13811367713,
+          "name": "hikma-three-book-browser-and-pdf-smoke",
+          "sha256": "405d7e2cbe162aaf210367600998cc3469af35e50ba2160de902dd1637648d65"
+        },
+        "local_evidence": "stage10-work/qa/run-42921111094.log and stage10-work/qa/first-run.zip"
+      }
+    ]
+  },
+  "unverified": [
+    "Subsection-preserving navigation and formatted dictionary quotes in both browser engines",
+    "Remaining study scenarios, including mobile Focus drawer behavior, and the full suite on final integrated sources",
+    "Nine downloadable PDF files regenerated and visually checked against final Stage X source hashes",
+    "Production publication"
+  ],
+  "mutations": "Reader UI/tests and this QA record are handled by the reader audit; a scoped PDF PR-preview workflow is also prepared. Source integration, commits, branches and publication are coordinated separately.",
+  "visual_review": {
+    "revision": "4a92fdbc54da37b9859a00fb567dc4a5a6a87bc4",
+    "screenshots_reviewed": [
+      "chromium-desktop.png",
+      "webkit-phone.png",
+      "chromium-editions.png",
+      "chromium-classification.png",
+      "chromium-dictionary-all-books.png"
+    ],
+    "findings": [
+      "Desktop and phone controls and reading columns are legible in the captured views.",
+      "The editions page presents nine files and explicitly marks the superseded Muẓaffar source version.",
+      "The dictionary separates reviewed discussions from automatic word occurrences.",
+      "The sampled dictionary screenshot exposed literal Markdown emphasis in a reviewed quote. A scoped fix uses the existing safe inline renderer; its browser assertion awaits the repeat run."
+    ],
+    "limits": "These are sampled views from the first CI artifact, not a full visual certification of the integrated source revision or all nine PDFs."
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "schema": "gnamma.tahdhib.table-audit.v1",
+  "stage": "115",
+  "date": "2026-11-12",
+  "source_corpus": {
+    "stage": "114",
+    "records": 1090,
+    "sections": 14,
+    "first_pass_english": 1029,
+    "missing_source_tables": 4,
+    "modern_reference_only": 57,
+    "sha256": "63d1f2b467b351ddd207752908aa7e25f44b4798fda7bd517f563df654122ab5"
+  },
+  "evidence_grade": "derived-from-surrounding-Arabic-prose; not phototranscribed",
+  "modal": {
+    "note": "HWN-PROPOSITIONS-121",
+    "source_pages": [
+      298,
+      299,
+      300,
+      301
+    ],
+    "column_labels": [
+      {
+        "id": "essential_nonnecessity",
+        "arabic": "اللاضرورة الذاتية",
+        "english": "Nonnecessity of essence"
+      },
+      {
+        "id": "descriptive_nonnecessity",
+        "arabic": "اللاضرورة الوصفية",
+        "english": "Nonnecessity of description"
+      },
+      {
+        "id": "essential_nonpermanence",
+        "arabic": "اللادوام الذاتي",
+        "english": "Nonpermanence of essence"
+      },
+      {
+        "id": "descriptive_nonpermanence",
+        "arabic": "اللادوام الوصفي",
+        "english": "Nonpermanence of description"
+      }
+    ],
+    "rows": [
+      {
+        "id": "absolute_necessary",
+        "arabic": "الضرورية المطلقة",
+        "english": "Absolute necessary",
+        "cells": [
+          {
+            "restriction": "essential_nonnecessity",
+            "status": "X"
+          },
+          {
+            "restriction": "descriptive_nonnecessity",
+            "status": "X"
+          },
+          {
+            "restriction": "essential_nonpermanence",
+            "status": "X"
+          },
+          {
+            "restriction": "descriptive_nonpermanence",
+            "status": "X"
+          }
+        ]
+      },
+      {
+        "id": "general_conditioned",
+        "arabic": "المشروطة العامة",
+        "english": "General conditioned",
+        "cells": [
+          {
+            "restriction": "essential_nonnecessity",
+            "status": "U"
+          },
+          {
+            "restriction": "descriptive_nonnecessity",
+            "status": "X"
+          },
+          {
+            "restriction": "essential_nonpermanence",
+            "status": "R",
+            "recognized_arabic": "المشروطة الخاصة",
+            "recognized_english": "Special conditioned"
+          },
+          {
+            "restriction": "descriptive_nonpermanence",
+            "status": "X"
+          }
+        ]
+      },
+      {
+        "id": "absolute_temporal",
+        "arabic": "الوقتية المطلقة",
+        "english": "Absolute temporal",
+        "cells": [
+          {
+            "restriction": "essential_nonnecessity",
+            "status": "U"
+          },
+          {
+            "restriction": "descriptive_nonnecessity",
+            "status": "U"
+          },
+          {
+            "restriction": "essential_nonpermanence",
+            "status": "R",
+            "recognized_arabic": "الوقتية",
+            "recognized_english": "Qualified temporal"
+          },
+          {
+            "restriction": "descriptive_nonpermanence",
+            "status": "U"
+          }
+        ]
+      },
+      {
+        "id": "absolute_diffuse",
+        "arabic": "المنتشرة المطلقة",
+        "english": "Absolute diffuse",
+        "cells": [
+          {
+            "restriction": "essential_nonnecessity",
+            "status": "U"
+          },
+          {
+            "restriction": "descriptive_nonnecessity",
+            "status": "U"
+          },
+          {
+            "restriction": "essential_nonpermanence",
+            "status": "R",
+            "recognized_arabic": "المنتشرة",
+            "recognized_english": "Qualified diffuse"
+          },
+          {
+            "restriction": "descriptive_nonpermanence",
+            "status": "U"
+          }
+        ]
+      },
+      {
+        "id": "absolute_permanent",
+        "arabic": "الدائمة المطلقة",
+        "english": "Absolute permanent",
+        "cells": [
+          {
+            "restriction": "essential_nonnecessity",
+            "status": "U"
+          },
+          {
+            "restriction": "descriptive_nonnecessity",
+            "status": "U"
+          },
+          {
+            "restriction": "essential_nonpermanence",
+            "status": "X"
+          },
+          {
+            "restriction": "descriptive_nonpermanence",
+            "status": "X"
+          }
+        ]
+      },
+      {
+        "id": "general_customary",
+        "arabic": "العرفية العامة",
+        "english": "General customary",
+        "cells": [
+          {
+            "restriction": "essential_nonnecessity",
+            "status": "U"
+          },
+          {
+            "restriction": "descriptive_nonnecessity",
+            "status": "U"
+          },
+          {
+            "restriction": "essential_nonpermanence",
+            "status": "R",
+            "recognized_arabic": "العرفية الخاصة",
+            "recognized_english": "Special customary"
+          },
+          {
+            "restriction": "descriptive_nonpermanence",
+            "status": "X"
+          }
+        ]
+      },
+      {
+        "id": "general_absolute",
+        "arabic": "المطلقة العامة",
+        "english": "General absolute",
+        "cells": [
+          {
+            "restriction": "essential_nonnecessity",
+            "status": "R",
+            "recognized_arabic": "الوجودية اللاضرورية",
+            "recognized_english": "Existential nonnecessary"
+          },
+          {
+            "restriction": "descriptive_nonnecessity",
+            "status": "U"
+          },
+          {
+            "restriction": "essential_nonpermanence",
+            "status": "R",
+            "recognized_arabic": "الوجودية اللادائمة",
+            "recognized_english": "Existential nonpermanent"
+          },
+          {
+            "restriction": "descriptive_nonpermanence",
+            "status": "U"
+          }
+        ]
+      },
+      {
+        "id": "general_possible",
+        "arabic": "الممكنة العامة",
+        "english": "General possible",
+        "cells": [
+          {
+            "restriction": "essential_nonnecessity",
+            "status": "R",
+            "recognized_arabic": "الممكنة الخاصة",
+            "recognized_english": "Special possible"
+          },
+          {
+            "restriction": "descriptive_nonnecessity",
+            "status": "U"
+          },
+          {
+            "restriction": "essential_nonpermanence",
+            "status": "U"
+          },
+          {
+            "restriction": "descriptive_nonpermanence",
+            "status": "U"
+          }
+        ]
+      }
+    ],
+    "counts": {
+      "R": 7,
+      "U": 16,
+      "X": 9
+    },
+    "original_total_cells": 45,
+    "original_cell_image_verified": false,
+    "authorial_caution": "Q298–299 include modern al-Taqrib material, separate from H121 on Q300–301"
+  },
+  "conditional": {
+    "note": "HWN-CONDITIONAL-040",
+    "parts": [
+      {
+        "code": "C",
+        "arabic": "حملية",
+        "english": "Categorical"
+      },
+      {
+        "code": "K",
+        "arabic": "متصلة",
+        "english": "Connected"
+      },
+      {
+        "code": "D",
+        "arabic": "منفصلة",
+        "english": "Disjunctive"
+      }
+    ],
+    "connected_ordered": [
+      "C→C",
+      "C→K",
+      "C→D",
+      "K→C",
+      "K→K",
+      "K→D",
+      "D→C",
+      "D→K",
+      "D→D"
+    ],
+    "disjunctive_unordered": [
+      "C/C",
+      "C/K",
+      "C/D",
+      "K/K",
+      "K/D",
+      "D/D"
+    ],
+    "total_types": 15,
+    "original_examples_verified": false
+  },
+  "definition": {
+    "note": "HWN-DEFINITION-019",
+    "classifications_in_print": 49,
+    "classifications_verified": 0,
+    "seven_terms": [
+      "الجنس القريب",
+      "الجنس البعيد",
+      "الفصل القريب",
+      "الفصل البعيد",
+      "النوع",
+      "الخاصة",
+      "العرض العام"
+    ],
+    "arithmetic_discrepancy": {
+      "source_page": 259,
+      "factors": [
+        450,
+        120
+      ],
+      "source_stated_product": 5400,
+      "mathematically_computed_product": 54000,
+      "emendation_performed": false
+    }
+  },
+  "open_gaps": [
+    {
+      "note": "HWN-DEFINITION-019",
+      "page": 258,
+      "item": "original 49 classifications"
+    },
+    {
+      "note": "HWN-PROPOSITIONS-097",
+      "page": 294,
+      "item": "modal pairwise relations"
+    },
+    {
+      "note": "HWN-PROPOSITIONS-121",
+      "page": 300,
+      "item": "original 45-cell printed graphic"
+    },
+    {
+      "note": "HWN-CONDITIONAL-040",
+      "page": 309,
+      "item": "original conditional examples"
+    },
+    {
+      "note": "HWN-SCIENCES-029",
+      "page": 387,
+      "item": "original possible geometry diagram"
+    }
+  ],
+  "source_urls": {
+    "Q258": "https://ablibrary.net/book_content/b/12170/258?lang=ar",
+    "Q259": "https://ablibrary.net/book_content/b/12170/259?lang=ar",
+    "Q293": "https://ablibrary.net/book_content/b/12170/293?lang=ar",
+    "Q294": "https://ablibrary.net/book_content/b/12170/294?lang=ar",
+    "Q298": "https://ablibrary.net/book_content/b/12170/298?lang=ar",
+    "Q299": "https://ablibrary.net/book_content/b/12170/299?lang=ar",
+    "Q300": "https://ablibrary.net/book_content/b/12170/300?lang=ar",
+    "Q301": "https://ablibrary.net/book_content/b/12170/301?lang=ar",
+    "Q308": "https://ablibrary.net/book_content/b/12170/308?lang=ar",
+    "Q309": "https://ablibrary.net/book_content/b/12170/309?lang=ar",
+    "Q310": "https://ablibrary.net/book_content/b/12170/310?lang=ar",
+    "Q387": "https://ablibrary.net/book_content/b/12170/387?lang=ar"
+  },
+  "new_photo_certified_pages": 0,
+  "new_translated_numbered_entries": 0,
+  "stage114_records_modified": 0
+}

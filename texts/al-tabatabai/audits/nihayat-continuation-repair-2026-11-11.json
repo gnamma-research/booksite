@@ -1,0 +1,175 @@
+{
+  "date": "2026-11-11",
+  "timeZone": "Asia/Riyadh",
+  "scope": "Continuation control repair; no new scholarly comparisons counted",
+  "preservedSourceCommit": "1a967009e52f36923362b3a96e67574491314942",
+  "canonicalBranch": "nihayat-active",
+  "reconciliationCommit": "ff64b89d059ae43036014bafba00a31f5b085302",
+  "activePullRequest": 290,
+  "findings": [
+    "Default master guide incorrectly resumed Stage IX and requested replay of 83 already-incorporated reports.",
+    "PR 289 had a guide merge conflict; no repaired-head reader check had executed.",
+    "Preservation contentCommit was null.",
+    "Mandatory startup verifier needed 233 checkpoint files and could confuse a sparse retrieval with missing work."
+  ],
+  "repair": [
+    "Preserve the verified Stage X corpus on one stable branch.",
+    "Keep all 26 nonconflicting newer master changes and resolve the guide overlap to current state.",
+    "Provide identical root and project entry points that refer to the stable branch.",
+    "Add bounded state/register startup checks; prioritize saved reports awaiting incorporation.",
+    "Keep full integrity checks explicit and retain old branches as historical evidence."
+  ],
+  "verified": {
+    "checkpointFiles": 233,
+    "sourceIntegrity": "passed",
+    "workingUnits": 387,
+    "compared": 93,
+    "incorporated": 93,
+    "pendingNewComparisons": 43,
+    "firstNewComparison": "N-VI-10",
+    "restartRegressionTests": 15,
+    "actualTextHashCheck": "passed",
+    "structuralSourceAudit": "passed",
+    "activeCheckpointFiles": 236,
+    "remoteContinuationCheck": {
+      "status": "passed",
+      "tests": 15,
+      "ciRun": 42933279930,
+      "ciSourceCommit": "08d7cd6329e7e5fead0959240f3a2ae349e23f9f",
+      "freshWorkspaceRestart": "passed with state/register only",
+      "nextNewUnit": "N-VI-10"
+    },
+    "coldStart": {
+      "result": "passed",
+      "sourceCommit": "59c07624a491318210c7188a2baf234950d56241",
+      "inputDataFiles": 2,
+      "sourceBooksPresent": false,
+      "archiveLoaded": false,
+      "nextNewComparison": "N-VI-10",
+      "compared": 93,
+      "incorporated": 93,
+      "remaining": 43
+    }
+  },
+  "readerValidation": {
+    "run": 42938141421,
+    "sourceCommit": "28198294e8695d71c45f58d680369d178cd7372e",
+    "status": "passed",
+    "legacyChecks": 51,
+    "studyChecks": 30,
+    "complete81ChecksPassed": true,
+    "resolved": [
+      "Paragraph Copy",
+      "Focus/Next subsection retention",
+      "Print/cancel reading-position preservation",
+      "Editions return preserves section"
+    ],
+    "causeAndRepair": "Global html scroll-padding shifted the reading viewport when focusing header controls. Clearance now belongs to content anchors, and print restoration preserves the origin until print media ends.",
+    "finalIntegratedSourceRun": "pending"
+  },
+  "publication": "Unchanged; last recorded verified PDFs remain Stage VIII.",
+  "chatgptConversationErrorCause": "Not established; no application crash logs or conversation repair controls are available here.",
+  "newControlFileHashes": [
+    {
+      "path": "texts/al-tabatabai/tools/resume-current.py",
+      "sha256": "d7bf32b19e62096b7fc243ab5c0a0c05cf39ab93292c64248fc3dafccda922c6"
+    },
+    {
+      "path": "texts/al-tabatabai/tools/tests/test_resume_current.py",
+      "sha256": "7cb39f187be5c6ef2e92df028469db388f87bc185305682e66d8804ed26e0431"
+    },
+    {
+      "path": ".github/workflows/nihayat-continuation-qa.yml",
+      "sha256": "9e1b7437b77d0e3f24a1bdef3a1074dd6e1fb3d696160662fb4c23004cc9bfdc"
+    }
+  ],
+  "readerRepair": {
+    "status": "partially-verified; print-return issue remains open",
+    "confirmed": [
+      "explicit paragraph Copy restoration",
+      "Focus/Next subsection retention"
+    ],
+    "openIssue": "Print restoration and subsequent Editions return must retain M-V-28.",
+    "unconfirmedPrintExperimentCommit": "08d7cd6329e7e5fead0959240f3a2ae349e23f9f",
+    "printExperimentDisposition": "Reverted in active code; retained in Git history. Stronger failing regression kept."
+  },
+  "defaultEntryCommit": "ed053637c45a87698baaa77434713c9fa0d6a118",
+  "historicalRedirectCommits": {
+    "nihayat4-recovery-20261110": "260294cee1d75ab2947822b02a3ca6ed6c60a0db",
+    "nihayat4-stage10-20261111": "08c0e097086a19dab723af1b4aaaa82f166b6c92"
+  },
+  "supersededPullRequest": {
+    "number": 289,
+    "state": "closed",
+    "historicalBranchPreserved": true
+  },
+  "readerValidationAttempts": [
+    {
+      "run": 42930385674,
+      "sourceCommit": "ff64b89d059ae43036014bafba00a31f5b085302",
+      "status": "failed",
+      "legacyChecksPassed": 51,
+      "studyChecksPassedBeforeFailure": 7,
+      "failure": "Study Next navigation stayed at M-C-44 instead of M-C-45; source repair being reviewed separately."
+    },
+    {
+      "run": 42931500565,
+      "sourceCommit": "59c07624a491318210c7188a2baf234950d56241",
+      "status": "failed",
+      "legacyChecksPassed": 51,
+      "studyChecksPassedBeforeFailure": 7,
+      "failure": "Copy dialog did not restore its explicitly chosen paragraph to the current reading line."
+    },
+    {
+      "run": 42932529356,
+      "sourceCommit": "1d3825e36b5265b1e514b9dffc456b1caa46e4bc",
+      "status": "failed",
+      "studyChecksPassedBeforeFailure": 12,
+      "focusAndNextRetention": "passed",
+      "failure": "After printing, old pixel scroll offset overrode the restored semantic anchor; Downloads return used M-V-27 instead of M-V-28."
+    },
+    {
+      "run": 42933279835,
+      "sourceCommit": "08d7cd6329e7e5fead0959240f3a2ae349e23f9f",
+      "status": "failed",
+      "studyChecksPassedBeforeFailure": 11,
+      "focusAndNextRetention": "passed",
+      "failure": "After print media ends, currentUnit() does not return M-V-28. The strengthened print restoration assertion times out.",
+      "legacy51LastPassedRun": 42931500565,
+      "legacy51LastPassedCommit": "59c07624a491318210c7188a2baf234950d56241",
+      "complete81ChecksPassed": false
+    }
+  ],
+  "validationOrder": "Run the currently failing study suite first, followed by all 51 legacy checks; both suites remain required.",
+  "pdfPreview": {
+    "status": "built-and-automatically-verified; not-published",
+    "run": 42933279860,
+    "sourceCommit": "08d7cd6329e7e5fead0959240f3a2ae349e23f9f",
+    "artifactId": 13816593391,
+    "artifactUrl": "https://github.com/gnamma-research/booksite/actions/runs/42933279860/artifacts/13816593391",
+    "pdfCount": 9,
+    "artifactBytes": 16417493,
+    "checks": [
+      "all nine files exist",
+      "source and supplement hashes match",
+      "output file hashes and byte counts match",
+      "page count and sample text extraction pass"
+    ],
+    "visualInspection": "pending",
+    "publicationStep": "skipped on pull-request preview"
+  },
+  "scopeOutcome": "Continuation repair verified and saved. Reader publication remains a separate open task; no whole-project completion or ChatGPT-infrastructure repair claimed.",
+  "readerValidationHistory": [
+    {
+      "run": 42933279835,
+      "sourceCommit": "08d7cd6329e7e5fead0959240f3a2ae349e23f9f",
+      "status": "failed",
+      "studyChecksPassedBeforeFailure": 11,
+      "focusAndNextRetention": "passed",
+      "failure": "After print media ends, currentUnit() does not return M-V-28. The strengthened print restoration assertion times out.",
+      "legacy51LastPassedRun": 42931500565,
+      "legacy51LastPassedCommit": "59c07624a491318210c7188a2baf234950d56241",
+      "complete81ChecksPassed": false
+    }
+  ]
+}

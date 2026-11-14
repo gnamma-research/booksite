@@ -1,0 +1,123 @@
+name: Qawtaw11 historical witness source-integrity release
+on:
+  push:
+    branches: [qawtaw11-20261112-textual-witness-recovery]
+    paths:
+      - '.github/workflows/qawtaw11-witness-release.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: qawtaw11-historical-witness-release
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      P: texts/al-turka/qawaid-al-tawhid
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: qawtaw11-20261112-textual-witness-recovery
+          sparse-checkout: |
+            texts/al-turka/qawaid-al-tawhid
+            assets
+          fetch-depth: 1
+      - name: Apply source-graded witness commentary without changing authorial text
+        run: |
+          git rev-parse HEAD > /tmp/qawtaw11-expected-branch-head
+          python "$P/qa/qawtaw11_witness_reconcile.py"
+          python "$P/qa/finalize-reading-edition.py"
+          node "$P/qa/generate-clause-ledger.mjs"
+      - name: Install browser and Arabic PDF rendering tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core poppler-utils libpango-1.0-0 libpangocairo-1.0-0
+          python -m pip install --quiet weasyprint pypdf playwright
+          python -m playwright install --with-deps chromium
+      - name: Verify navigation of witness desk with real mobile-width Chromium
+        run: |
+          python "$P/qa/test-commentary-browser.py"
+          python "$P/qa/check-standalone-browser.py" --browsers chromium --screenshots /tmp/qawtaw11-browser
+          python -m http.server 8779 >/tmp/qawtaw11-http.log 2>&1 &
+          SERVER=$!
+          trap 'kill "$SERVER"' EXIT
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          from playwright.sync_api import sync_playwright
+          P=Path('texts/al-turka/qawaid-al-tawhid')
+          with sync_playwright() as pw:
+              browser=pw.chromium.launch(headless=True)
+              page=browser.new_page(viewport={'width':390,'height':844})
+              errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
+              page.goto('http://127.0.0.1:8779/'+str(P)+'/textual-decisions.html',wait_until='networkidle')
+              assert page.locator('details.case').count()==14
+              assert page.locator('#qawtaw11-source-register').count()==1
+              assert 'Unattested' in page.locator('#qawtaw11-source-register').inner_text().capitalize() or 'unattested' in page.locator('#qawtaw11-source-register').inner_text()
+              assert page.locator('#filter').count()==1
+              assert not errors,errors
+              browser.close()
+          print('Witness register reader present, 14 original cases remain, mobile Chromium PASS')
+          PY
+      - name: Rebuild all five source-checked PDFs
+        run: python "$P/pdf/build_editions.py"
+      - name: Verify 171 corpus units, existing Arabic and English, new witness notes and five PDF hashes
+        run: |
+          python - <<'PY'
+          import json,pathlib,subprocess,re,hashlib
+          from pypdf import PdfReader
+          p=pathlib.Path('texts/al-turka/qawaid-al-tawhid')
+          def decode_js(s):
+              m=re.search(r'window\.GNAMMA_[A-Z0-9_]+\s*=\s*',s)
+              assert m
+              o,n=json.JSONDecoder().raw_decode(s[m.end():].lstrip())
+              return o['units'] if isinstance(o,dict) else o
+          for path in ['data/units.js','data/commentary-main-001-019.js']:
+              before=decode_js(subprocess.check_output(['git','show','HEAD:'+str(p/path)]).decode())
+              after=decode_js((p/path).read_text())
+              assert [u['id'] for u in before]==[u['id'] for u in after]
+              for a,b in zip(before,after):
+                  for k in ('arabic','readingArabic','english'):
+                      assert a.get(k)==b.get(k),(path,a['id'],k)
+              found=[u for u in after if u['id']==('QT-059' if path=='data/units.js' else 'SH-002')]
+              assert len(found)==1
+              assert any('Qawtaw11 source witness status' in n for n in found[0]['notes'])
+          ledger=json.loads((p/'qa/clause-ledger.json').read_text())['summary']
+          assert ledger['totalBilingualUnits']==171
+          assert ledger['totalArabicPunctuationClauses']==5520
+          witness=json.loads((p/'qa/qawtaw11-witness-status.json').read_text())
+          assert witness['actualNewPagesInspected']==0
+          assert witness['newIndependentManuscriptCollations']==0
+          assert witness['QT059']['actualNewWordsRecovered']==0
+          for key in ['SH-002','QT-059']:
+              assert witness['sourceHashes'][key]['readingNotEmended']
+          manifest=json.loads((p/'pdf/manifest.json').read_text())
+          assert len(manifest['files'])==5
+          for f in manifest['files']:
+              path=p/'pdf'/f['filename']
+              assert path.read_bytes().startswith(b'%PDF-')
+              assert len(PdfReader(str(path)).pages)==f['pages']
+              assert hashlib.sha256(path.read_bytes()).hexdigest()==f['sha256']
+          report={'passed':True,'originalArabicEnglishAndPreferredReadingUnchanged':True,'totalBilingualUnits':171,'comparedArabicSegments':5520,'noteOnlyEdits':2,'newHistoricalPassageImagesInspected':0,'newQT059WordsRecovered':0,'PDFs':manifest['files']}
+          (p/'qa/qawtaw11-test-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps({'passed':True,'fivePDFs':[(x['filename'],x['pages']) for x in manifest['files']]}))
+          PY
+      - name: Publish only verified files to isolated review branch
+        run: |
+          git config user.name 'GNAMMA textual-recovery QA'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin qawtaw11-20261112-textual-witness-recovery
+          test "$(git rev-parse origin/qawtaw11-20261112-textual-witness-recovery)" = "$(cat /tmp/qawtaw11-expected-branch-head)"
+          git add "$P"
+          if ! git diff --cached --quiet; then
+            git commit -m 'Qawtaw11: source-graded historical witness notes, reader and five verified editions'
+            git push origin HEAD:qawtaw11-20261112-textual-witness-recovery
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawtaw11-complete-witness-audit
+          path: texts/al-turka/qawaid-al-tawhid/
+          retention-days: 30

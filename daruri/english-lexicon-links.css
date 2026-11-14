@@ -1,0 +1,21 @@
+/* Parenthetical Arabic references in the English Darūrī reader.
+   Typography inherits every existing palette; the translated text is intact. */
+.passage-en .gn-en-lex-parenthesis{
+  display:inline;white-space:nowrap;direction:ltr;unicode-bidi:isolate;
+}
+.passage-en .inline-term.gn-en-lex-term{
+  display:inline;font-family:var(--arabic,"Amiri",serif);font-size:1.06em;
+  font-weight:inherit;line-height:inherit;letter-spacing:normal;
+  direction:rtl;unicode-bidi:isolate;white-space:normal;
+  color:var(--text);padding:0;border:0;
+  border-bottom:1px dotted var(--gold);
+  text-decoration:none;cursor:pointer;vertical-align:baseline;
+}
+.passage-en .inline-term.gn-en-lex-term:hover,
+.passage-en .inline-term.gn-en-lex-term:focus-visible{
+  background:var(--gold-soft);color:var(--accent);
+  outline-offset:2px;
+}
+@media print{
+ .passage-en .gn-en-lex-term{border-bottom:0;text-decoration:underline;text-decoration-style:dotted;}
+}

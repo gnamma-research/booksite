@@ -1,0 +1,68 @@
+name: Ibn Ajiba complete reader QA
+on:
+  push:
+    branches: [master, codex/ibn-ajiba-reader-20261030, codex/ibnajiba6-daruri-parity]
+    paths:
+      - 'texts/ibn-ajiba/al-bahr-al-madid/*.js'
+      - 'texts/ibn-ajiba/al-bahr-al-madid/*.css'
+      - 'texts/ibn-ajiba/al-bahr-al-madid/index.html'
+      - 'tests/ibn-ajiba/**'
+      - '.github/workflows/ibn-ajiba-reader-qa.yml'
+  pull_request:
+    paths:
+      - 'texts/ibn-ajiba/al-bahr-al-madid/**'
+      - 'tests/ibn-ajiba/**'
+      - '.github/workflows/ibn-ajiba-reader-qa.yml'
+concurrency:
+  group: ibn-ajiba-reader-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  reader:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      BAHR_DIR: texts/ibn-ajiba/al-bahr-al-madid
+      BAHR_URL: http://127.0.0.1:8766/texts/ibn-ajiba/al-bahr-al-madid/
+      BAHR_QA_OUTPUT: qa-artifacts
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python3 tests/ibn-ajiba/package_reader.py
+      - run: node --test tests/ibn-ajiba/reader-core.cjs
+      - run: npm install --no-save --package-lock=false playwright
+      - run: npx playwright install --with-deps chromium webkit
+      - name: Browser verification
+        run: |
+          python3 -m http.server 8766 --bind 127.0.0.1 > /tmp/bahr-server.log 2>&1 &
+          node tests/ibn-ajiba/reader-browser.cjs
+      - name: Save the verified offline reader
+        if: github.event_name == 'push'
+        run: |
+          mkdir -p docs/ibnajiba6-review
+          cp qa-artifacts/reader-phone.png qa-artifacts/daruri-phone.png qa-artifacts/reader-desktop.png qa-artifacts/book-themes.png qa-artifacts/home-desktop.png qa-artifacts/home-aegean.png qa-artifacts/home-first-light.png qa-artifacts/home-night-sea.png qa-artifacts/home-phone.png docs/ibnajiba6-review/
+          git add "$BAHR_DIR/offline-reader.zip" "$BAHR_DIR/offline-files.json" docs/ibnajiba6-review/
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Refresh verified Ibn Ajiba offline reader"
+            # Other books publish to this branch while the reader checks run.
+            # Rebase only this generated-assets commit; never force-push.
+            for attempt in 1 2 3 4 5; do
+              git fetch --no-tags origin "$GITHUB_REF_NAME"
+              git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' rebase "origin/$GITHUB_REF_NAME"
+              if git push origin "HEAD:$GITHUB_REF_NAME"; then
+                exit 0
+              fi
+            done
+            echo "The branch kept changing; verified assets remain in the workflow artifact."
+            exit 1
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ibn-ajiba-browser-qa
+          path: qa-artifacts/

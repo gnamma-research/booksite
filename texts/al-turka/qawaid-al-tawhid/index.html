@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" data-theme="parchment">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fbf9f4">
+<meta name="description" content="Gnamma bilingual reader: Abū Ḥāmid Turka's Qawāʿid al-Tawḥīd and Ṣāʾin al-Dīn Ibn Turka's Tamhīd commentary, in two independently switchable text layers.">
+<title>Qawāʿid al-Tawḥīd · Matn and Commentary · Gnamma</title>
+<link rel="icon" href="qawaid-emblem.svg" type="image/svg+xml">
+<link rel="stylesheet" href="reader.css">
+<link rel="stylesheet" href="layered-reader.css">
+<link rel="stylesheet" href="qawaid-study.css">
+<link rel="stylesheet" href="qawaid-reading-refinement.css">
+<link rel="stylesheet" href="qawaid-research-search.css">
+<link rel="stylesheet" href="qawaid-linked-sources.css">
+</head>
+<body data-mode="paired" data-focus="0" data-language="both" data-show-notes="false" data-background="native">
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+<symbol id="ic-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+<symbol id="ic-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></symbol>
+<symbol id="ic-theme" viewBox="0 0 24 24"><path d="M20.5 14.2A8.6 8.6 0 0 1 9.8 3.5 8.8 8.8 0 1 0 20.5 14.2Z"/></symbol>
+<symbol id="ic-settings" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2.2" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="2.2" fill="currentColor" stroke="none"/><circle cx="8" cy="18" r="2.2" fill="currentColor" stroke="none"/></symbol>
+<symbol id="ic-bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4Z"/></symbol>
+<symbol id="ic-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+<symbol id="ic-left" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+<symbol id="ic-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+<symbol id="ic-focus" viewBox="0 0 24 24"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4M9 12h6"/></symbol>
+<symbol id="ic-book" viewBox="0 0 24 24"><path d="M12 6Q8 3 3 4v15q5-1 9 2 4-3 9-2V4q-5-1-9 2ZM12 6v15"/></symbol>
+<symbol id="ic-link" viewBox="0 0 24 24"><path d="m10 13 4-4M8 16H6a4 4 0 0 1 0-8h4m4 0h4a4 4 0 0 1 0 8h-4"/></symbol>
+</svg>
+<a class="skip-link" href="#reading">Skip to reading</a>
+<header id="topbar" aria-label="Book toolbar">
+ <div class="left"><button class="icon-btn" id="menu-button" type="button" aria-label="Open contents and reading desk" title="Contents"><svg><use href="#ic-menu"/></svg></button><a class="brand-link" href="../../../" title="Gnamma Research home"><img src="qawaid-emblem.svg" alt=""><strong>GNAMMA</strong></a></div>
+ <div class="book-title">Qawāʿid al-Tawḥīd<small>Matn &amp; Tamhīd Commentary</small></div>
+ <div class="right"><button class="icon-btn" id="search-button" type="button" aria-label="Search both texts" title="Search"><svg><use href="#ic-search"/></svg></button><button class="icon-btn" id="theme-button" type="button" aria-label="Change theme" title="Change theme"><svg><use href="#ic-theme"/></svg></button><button class="icon-btn" id="settings-button" type="button" aria-label="Display and reading settings" title="Display settings"><svg><use href="#ic-settings"/></svg></button></div>
+</header>
+<div id="controlbar" aria-label="Reading controls">
+ <div class="seg lang" role="group" aria-label="Text languages"><button id="lang-ar" class="ar-glyph" type="button" aria-pressed="true" title="Show or hide Arabic">ع</button><button id="lang-en" type="button" aria-pressed="true" title="Show or hide English">EN</button></div>
+ <div class="layer-switches" role="group" aria-label="Text layers">
+  <button id="layer-matn" class="layer-switch" type="button" role="switch" aria-checked="true" data-layer-switch="matn" aria-label="Show matn"><span class="switch-track" aria-hidden="true"></span>Matn <span class="switch-word" aria-hidden="true">On</span></button>
+  <button id="layer-sharh" class="layer-switch" type="button" role="switch" aria-checked="true" data-layer-switch="sharh" aria-label="Show sharh commentary"><span class="switch-track" aria-hidden="true"></span>Sharḥ <span class="switch-word" aria-hidden="true">On</span></button>
+ </div>
+ <button id="focus-button" class="text-btn" type="button" aria-label="Cycle through four reading modes" title="Normal, Focus 1, Focus 2, Continuous"><svg><use href="#ic-focus"/></svg> <span id="focus-label">Normal</span></button>
+ <button id="save-button" class="icon-btn" type="button" title="Save current passage" aria-label="Bookmark current passage"><svg><use href="#ic-bookmark"/></svg></button>
+ <span class="reader-status" id="reading-status">Matn + sharḥ · 61 passages</span>
+</div>
+<button id="focus-recover" class="icon-btn" aria-label="Change focus mode or return to toolbar" title="Restore toolbar / next focus mode"><svg><use href="#ic-focus"/></svg></button>
+<main id="main">
+ <section class="book-intro" id="book-home">
+  <span class="eyebrow">GNAMMA RESEARCH · BILINGUAL SCHOLARLY READER</span>
+  <div class="qawaid-frontispiece"><img src="qawaid-frontispiece.svg" alt="Geometric meditation on unity and manifestation: luminous centre, interlacing circles, eightfold star and gold manuscript lines." width="1120" height="420" loading="eager" decoding="async"></div>
+  <h1>Qawāʿid al-Tawḥīd</h1>
+  <div class="ar-title" lang="ar" dir="rtl">قواعد التوحيد</div>
+  <p class="lede">A bilingual reading of Abū Ḥāmid Turka’s early fourteenth-century <em>Qawāʿid al-Tawḥīd</em> and Ṣāʾin al-Dīn Ibn Turka’s early fifteenth-century <em>Tamhīd al-Qawāʿid</em>, arranged as the original matn and its commentary.</p>
+  <div class="edition-meta"><span><b>61</b> matn units</span><span><b>40</b> introductory commentary units</span><span><b>64</b> main commentary sections</span><span><b>6</b> concluding commentary units</span></div>
+  <p class="help-copy">Choose Arabic, English or both; switch the commentary on or off beside each passage, and explore terms, subjects, source quotations and reading editions through the menu.</p>
+  <div class="book-actions"><button class="action-btn primary" id="start-matn" type="button">Read the matn</button><button class="action-btn" id="start-sharh" type="button">Read matn + sharḥ</button><button class="action-btn" id="open-study" type="button">Study &amp; apparatus</button><a class="action-btn" href="commentary.html#SH-INTRO-001">Sharḥ introduction</a></div>
+ </section>
+ <section class="reader-stage" id="reading" aria-label="Reading edition">
+  <div id="reading-list"><p>Opening the reader…</p></div>
+ </section>
+</main>
+<nav id="reading-dock" aria-label="Passage navigation">
+ <button class="dock-btn" id="prev" type="button" title="Previous unit" aria-label="Previous unit"><svg><use href="#ic-left"/></svg> <span id="prev-num">—</span></button>
+ <div class="dock-middle"><button class="dock-center" id="location-button" type="button" aria-label="Choose passage from contents"><strong id="location-title">Qawāʿid al-Tawḥīd</strong><small id="location-source">Select a passage</small></button>
+ <div class="layer-switches dock-layer-controls" role="group" aria-label="Text layers">
+  <button id="dock-layer-matn" class="layer-switch" type="button" role="switch" aria-checked="true" data-layer-switch="matn" aria-label="Show matn"><span class="switch-track" aria-hidden="true"></span>Matn <span class="switch-word" aria-hidden="true">On</span></button>
+  <button id="dock-layer-sharh" class="layer-switch" type="button" role="switch" aria-checked="true" data-layer-switch="sharh" aria-label="Show sharh commentary"><span class="switch-track" aria-hidden="true"></span>Sharḥ <span class="switch-word" aria-hidden="true">On</span></button>
+ </div></div>
+ <button class="dock-btn" id="next" type="button" title="Next unit" aria-label="Next unit"><span id="next-num">—</span> <svg><use href="#ic-right"/></svg></button>
+</nav>
+<dialog id="sheet" aria-labelledby="sheet-title">
+ <header><div><span class="eyebrow" id="sheet-kicker">GNAMMA READING DESK</span><h2 id="sheet-title">Contents</h2></div><button class="icon-btn" id="sheet-close" type="button" aria-label="Close panel"><svg><use href="#ic-close"/></svg></button></header>
+ <div id="sheet-content"></div>
+</dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<footer class="site-footer">Gnamma Research · <a href="../../../">Library</a> · <a href="commentary.html">Commentary</a> · <a href="data/parallel-matn.md">Original text</a> · <a href="clause-review.html">Clause-by-clause review</a> · <a href="textual-decisions.html">Textual decisions</a> · <a href="editorial/QAWTAW16_SOURCE_SCOPED_FINAL_AUDIT_2026-11-12.md">Edition status and final audit</a> · <a href="editorial/QAWTAW19_FINAL_TWO_CRUXES_2026-11-13.md">Final two-crux analysis</a> · <a href="editorial/QAWTAW18_CURRENT_CRITICAL_DISPOSITION_2026-11-13.md">Current critical status</a> · <a href="editorial/QAWTAW17_RESIDUAL_WITNESS_RECONCILIATION_2026-11-13.md">Historical witness review</a></footer>
+<noscript><p class="help-copy">JavaScript is required for the interactive reader. <a href="data/parallel-matn.md">Read the 61-unit bilingual matn in Markdown</a> or <a href="editorial/COMMENTARY_TRANSLATION.md">see the commentary translation status and source files</a>.</p></noscript>
+<script src="data/units.js"></script>
+<script src="data/commentary.js"></script>
+<script src="data/commentary-conclusion.js"></script>
+<script src="data/commentary-main-001-019.js"></script>
+<script src="data/commentary-main-020-060.js"></script>
+<script src="data/commentary-introduction-1.js"></script>
+<script src="data/commentary-introduction-2.js"></script>
+<script src="data/commentary-introduction-3.js"></script>
+<script src="data/commentary-introduction-4.js"></script>
+<script src="data/commentary-corpus.js"></script>
+<script src="layered-reader.js"></script>
+<script src="data/linked-lexicon.js"></script>
+<script src="data/primary-reference-register.js"></script>
+<script src="qawaid-citation-policy.js"></script>
+<script src="qawaid-historical-lexicon.js"></script>
+<script src="qawaid-study.js"></script>
+<script src="qawaid-inline-references.js"></script>
+<script src="qawaid-research-search.js"></script>
+</body></html>

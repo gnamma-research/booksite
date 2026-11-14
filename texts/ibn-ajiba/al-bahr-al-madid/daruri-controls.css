@@ -1,0 +1,432 @@
+/* Compact preferences and navigation; keep the reader's established tokens. */
+/* Native fallback font selects also apply during browser printing. */
+#fallbackReader:has(#fb-arabic-font-choice option[value="amiri"]:checked) {
+  --reader-arabic-font: 'Amiri', 'Geeza Pro', 'Traditional Arabic', serif;
+  --arabic: var(--reader-arabic-font);
+}
+#fallbackReader:has(#fb-arabic-font-choice option[value="scheherazade"]:checked) {
+  --reader-arabic-font: 'Scheherazade New', 'Amiri', 'Geeza Pro', serif;
+  --arabic: var(--reader-arabic-font);
+}
+#fallbackReader:has(#fb-arabic-font-choice option[value="noto"]:checked) {
+  --reader-arabic-font: 'Noto Naskh Arabic', 'Amiri', 'Geeza Pro', serif;
+  --arabic: var(--reader-arabic-font);
+}
+#fallbackReader:has(#fb-english-font-choice option[value="original"]:checked) { --reader-english-font: initial; }
+#fallbackReader:has(#fb-english-font-choice option[value="source-serif"]:checked) { --reader-english-font: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+#fallbackReader:has(#fb-english-font-choice option[value="literata"]:checked) { --reader-english-font: 'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+
+@media screen {
+  .gn-nav-group { margin: 12px 0 0; padding: 0; border: 0; border-top: 1px solid var(--border); }
+  .gn-nav-group > summary { padding: 13px 9px; min-height: 44px; color: var(--text-soft); font: 500 13px/1.4 var(--sans); cursor: pointer; }
+  .gn-nav-group[open] > summary { color: var(--text); }
+  .gn-nav-group .nav-parts, .gn-nav-group .fb-part-nav { margin: 0 0 8px; }
+  .gn-nav-group .gn-pdf-editions { margin-top: 2px; padding-top: 0; border-top: 0; }
+  .gn-nav-group .gn-pdf-editions-label { margin-bottom: 8px; }
+  #leftNav .primary-nav { gap: 2px; }
+  #leftNav .primary-nav .nav-item { min-height: 42px; padding-top: 9px; padding-bottom: 9px; }
+  #leftNav .primary-nav .mini-count { display: none; }
+  #leftNav .nav-bottom, #fallbackReader .fb-publisher-footer { margin-top: 0; padding-top: 0; border-top: 0; }
+  .gn-nav-footer-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin: 12px 0; }
+  .gn-nav-footer-links .text-btn, .gn-nav-footer-links a { margin: 0; padding: 5px 0; color: var(--text-soft); font: 400 12px/1.5 var(--sans); }
+  .gn-nav-footer-links .text-btn.active { color: var(--accent); }
+  .gn-compact-settings { width: min(480px, calc(100vw - 24px)); padding: 20px; background: var(--surface); }
+  .gn-compact-settings > .detail-top { margin: 0 0 8px; padding: 0 0 12px; background: var(--surface); }
+  .gn-compact-settings > .detail-top h2 { font-size: 23px; font-weight: 400; }
+  .gn-compact-settings .gn-setting-row, #fb-settings .gn-setting-row {
+    display: grid; grid-template-columns: minmax(95px, .8fr) minmax(0, 1.2fr); align-items: center; gap: 12px;
+    min-width: 0; margin: 0; padding: 6px 0; border: 0;
+  }
+  .gn-compact-settings .gn-setting-row > label, .gn-compact-settings .gn-setting-row > span,
+  #fb-settings .gn-setting-row > label, #fb-settings .gn-setting-row > span { color: var(--text); font: 400 13px/1.4 var(--sans); }
+  .gn-setting-control { min-width: 0; }
+  .gn-compact-settings select, #fb-settings .gn-setting-row select {
+    display: block; width: 100%; min-width: 0; max-width: none; min-height: 40px; padding: 7px 9px;
+    border: 1px solid var(--border); border-radius: 5px; color: var(--text); background: var(--paper); font: 400 16px/1.4 var(--sans);
+  }
+  .gn-compact-settings select:focus-visible, #fb-settings select:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  .gn-compact-settings .scale-controls { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; gap: 0; width: 100%; }
+  .gn-compact-settings .scale-controls button { min-width: 44px; min-height: 40px; padding: 6px; font-family: var(--serif); }
+  .gn-compact-settings .scale-controls output { min-width: 0; text-align: center; font: 400 13px/1.4 var(--sans); }
+  .gn-compact-settings .gn-setting-control .fineprint { margin: 5px 0 0; font-size: 12px; }
+  .gn-compact-settings .gn-layout-setting { margin-top: 8px; padding-top: 12px; padding-bottom: 12px; border-top: 1px solid var(--border); }
+  .gn-layout-options, #fb-settings .gn-layout-options { display: flex; flex-wrap: nowrap; align-items: center; gap: 8px; border: 0; background: transparent; }
+  .gn-compact-settings .gn-layout-options button,
+  #fb-settings .gn-layout-options .fb-choice > span {
+    display: flex; align-items: center; justify-content: center; position: relative; flex: 0 0 58px;
+    width: 58px; min-width: 58px; min-height: 48px; padding: 6px 9px; border: 1px solid var(--border); border-radius: 5px;
+    color: var(--text); background: var(--paper);
+  }
+  .gn-compact-settings .gn-layout-options button[aria-pressed="true"],
+  #fb-settings .gn-layout-options .fb-choice input:checked + span { color: var(--accent); background: var(--accent-soft); border: 2px solid var(--accent); padding: 5px 8px; }
+  .gn-compact-settings .gn-layout-options button[aria-pressed="true"]::after,
+  #fb-settings .gn-layout-options .fb-choice input:checked + span::after { content: '✓'; position: absolute; right: 3px; top: 1px; font: 500 10px/1.2 var(--sans); }
+  .gn-layout-glyph { direction: ltr; unicode-bidi: isolate; display: grid; align-items: center; justify-items: center; width: 34px; color: inherit; }
+  .gn-layout-glyph > span { font: 400 17px/1.1 var(--serif); }
+  .gn-layout-glyph > bdi { font: 400 23px/1.1 'Amiri', serif; }
+  .gn-layout-columns { grid-template-columns: 1fr 1fr; column-gap: 5px; }
+  .gn-layout-columns > :first-child { border-right: 1px solid currentColor; padding-right: 5px; }
+  .gn-layout-stack { grid-template-columns: 1fr; grid-template-rows: 17px 17px; row-gap: 1px; }
+  .gn-layout-stack > span { font-size: 13px; }
+  .gn-layout-stack > bdi { font-size: 19px; }
+  .gn-layout-stack > :first-child { border-bottom: 1px solid currentColor; width: 24px; text-align: center; }
+  .gn-compact-settings #settingsStackedOrderRow { display: none; }
+  .gn-compact-settings #settingsParallelSideRow { display: grid; }
+  .gn-compact-settings .gn-colour-setting, #fb-settings .gn-colour-setting { margin: 3px 0 0; padding: 12px 0 0; border: 0; border-top: 1px solid var(--border); }
+  .gn-compact-settings .gn-colour-setting > legend, #fb-settings .gn-colour-setting > legend { padding: 0 8px 0 0; color: var(--text); font: 400 13px/1.4 var(--sans); }
+  .gn-compact-settings .gn-colour-mode { display: flex; width: fit-content; max-width: 100%; margin: 0 0 12px; }
+  .gn-compact-settings .gn-colour-mode button { min-width: 66px; min-height: 36px; padding: 7px 12px; font-size: 12px; }
+  .gn-compact-settings #palettePicker, #fb-settings .fb-palettes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .gn-compact-settings #palettePicker .palette-option, #fb-settings .fb-palette > span { min-width: 0; min-height: 72px; padding: 10px; border-radius: 5px; background: var(--paper); }
+  .gn-compact-settings #palettePicker .palette-swatches, #fb-settings .fb-swatches { margin-bottom: 7px; gap: 4px; }
+  .gn-compact-settings #palettePicker .palette-swatches span, #fb-settings .fb-swatches i { height: 10px; }
+  .gn-compact-settings #palettePicker strong, #fb-settings .fb-palette strong { font: 400 12px/1.35 var(--sans); overflow-wrap: anywhere; }
+  .gn-compact-settings #palettePicker small, #fb-settings .fb-palette small { display: none; }
+  #fb-settings .fb-settings-card { width: min(480px, calc(100vw - 24px)); padding: 20px; background: var(--surface); }
+  #fb-settings .fb-settings-card > h2 { margin: 0 0 12px; font: 400 23px/1.3 var(--serif); }
+  #fb-settings .fb-order-side, #fb-settings .fb-order-stacked { margin-top: 8px; padding-top: 12px; padding-bottom: 12px; border-top: 1px solid var(--border); }
+  #fb-settings .fb-order-stacked { display: none; }
+  #fb-settings .fb-order-side { display: grid; }
+  #fb-settings .gn-size-options { display: flex; flex-wrap: wrap; gap: 5px; }
+  #fb-settings .gn-size-options .fb-choice > span { min-height: 40px; padding: 9px 10px; }
+  #fb-settings .fb-meta { margin: 14px 0 0; font-size: 11px; line-height: 1.5; }
+  @media (max-width: 840px) {
+    #fb-settings .fb-order-side { display: none; }
+    #fb-settings .fb-order-stacked { display: grid; }
+  }
+  @media (max-width: 590px) {
+    .gn-compact-settings #settingsParallelSideRow { display: none; }
+    .gn-compact-settings #settingsStackedOrderRow { display: grid; }
+  }
+  @media (max-width: 380px) {
+    .gn-compact-settings, #fb-settings .fb-settings-card { padding: 16px 12px; }
+    .gn-compact-settings .gn-setting-row, #fb-settings .gn-setting-row { grid-template-columns: 84px minmax(0, 1fr); gap: 8px; }
+    .gn-compact-settings #palettePicker .palette-option, #fb-settings .fb-palette > span { padding: 9px 8px; }
+  }
+  @media (pointer: coarse) {
+    .gn-compact-settings select, #fb-settings .gn-setting-row select,
+    .gn-compact-settings .scale-controls button, .gn-compact-settings .gn-colour-mode button,
+    #fb-settings .gn-size-options .fb-choice > span { min-height: 44px; }
+  }
+}
+
+/* Icon-led Visuals panel — 20 October 2026. */
+@media screen {
+  .gn-visuals-panel{width:min(500px,calc(100vw - 24px));padding:18px;background:var(--surface)}
+  .gn-visuals-panel .gn-visuals-header{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:14px;margin:0 0 5px;padding:0 0 12px;border-bottom:1px solid var(--border);background:var(--surface)}
+  .gn-visuals-panel .gn-visuals-header h2{margin:0;font:400 24px/1.2 var(--serif)}
+  .gn-visuals-info{min-height:38px;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;text-align:right;min-width:0}
+  .gn-visuals-info span{font:600 10px/1.2 var(--sans);text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+  .gn-visuals-info strong{margin-top:3px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:400 16px/1.25 var(--serif);color:var(--text)}
+  .gn-visual-row{display:grid;grid-template-columns:48px minmax(0,1fr);align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+  .gn-visual-row:last-of-type{border-bottom:0}
+  .gn-visual-marker{width:42px;height:42px;display:grid;place-items:center;color:var(--muted)}
+  .gn-visual-marker svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+  .gn-type-marker{font:500 18px/1 var(--serif);letter-spacing:-.04em}
+  .gn-fixed-arabic-marker{font:400 24px/1 'Amiri',serif;direction:rtl}
+  .gn-fixed-english-marker{font:600 14px/1 var(--sans);letter-spacing:.02em}
+  .gn-direct-options{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:7px;min-width:0}
+  .gn-direct-options>button,.gn-size-control>button{position:relative;display:grid;place-items:center;min-width:0;min-height:48px;padding:6px 8px;border:1px solid var(--border);border-radius:9px;background:var(--paper);color:var(--text)}
+  .gn-direct-options>button[aria-pressed="true"]{padding:5px 7px;border:2px solid var(--accent);background:var(--accent-soft);color:var(--accent)}
+  .gn-direct-options>button[aria-pressed="true"]::after{content:'✓';position:absolute;top:3px;right:5px;font:600 10px/1 var(--sans);color:var(--accent)}
+  .gn-hidden-control{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important;pointer-events:none!important}
+  .gn-page-mini{width:34px;height:36px;border:1.2px solid currentColor;border-radius:3px;padding:4px;display:grid;gap:3px}
+  .gn-page-mini i{display:block}
+  .gn-page-quiet{grid-template-rows:5px 1fr 1fr}.gn-page-quiet i:first-child{border-bottom:1px solid currentColor}.gn-page-quiet i:nth-child(n+2){background:linear-gradient(currentColor,currentColor) 0 0/100% 1px no-repeat,linear-gradient(currentColor,currentColor) 0 7px/72% 1px no-repeat}
+  .gn-page-book{grid-template-columns:1fr 1fr;column-gap:6px;padding-top:7px}.gn-page-book i{background:repeating-linear-gradient(to bottom,currentColor 0 1px,transparent 1px 7px)}
+  .gn-page-structured{grid-template-rows:1fr 9px;gap:4px}.gn-page-structured i:first-child{background:repeating-linear-gradient(to bottom,currentColor 0 1px,transparent 1px 7px)}.gn-page-structured i:last-child{border-top:1px solid currentColor;border-bottom:1px solid currentColor}
+  .gn-size-control{display:grid!important;grid-template-columns:1fr 1.15fr 1fr!important;gap:7px!important;width:100%}
+  .gn-size-control button{font:600 16px/1 var(--serif)}
+  .gn-size-control output{display:grid;place-items:center;min-height:48px;border:1px solid var(--border);border-radius:9px;background:var(--paper);font:500 13px/1 var(--sans);font-variant-numeric:tabular-nums}
+  .gn-font-specimen{display:block;white-space:nowrap}
+  .gn-font-amiri{font:400 22px/1.25 'Amiri',serif}
+  .gn-font-scheherazade{font:400 23px/1.25 'Scheherazade New','Amiri',serif}
+  .gn-font-noto{font:400 21px/1.25 'Noto Naskh Arabic','Amiri',serif}
+  .gn-font-original{font:400 17px/1.2 'Iowan Old Style','Palatino Linotype','Book Antiqua',Georgia,serif}
+  .gn-font-source-sans{font:400 17px/1.2 'Source Sans 3',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+  .gn-font-lexend{font:400 16px/1.2 'Lexend',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+  .gn-visuals-panel .gn-layout-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;width:100%}
+  .gn-visuals-panel .gn-layout-options button{width:auto;min-width:0;min-height:48px;flex:auto;padding:6px 9px}
+  .gn-visuals-panel .gn-layout-options button[aria-pressed="true"]{padding:5px 8px}
+  .gn-visuals-panel #settingsStackedOrderRow{display:none}.gn-visuals-panel #settingsParallelSideRow{display:grid}
+  .gn-visuals-panel #palettePicker{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:0}
+  .gn-visuals-panel #palettePicker .palette-option{position:relative;min-width:0;min-height:48px;padding:7px;border-radius:9px;background:var(--paper);text-align:center}
+  .gn-visuals-panel #palettePicker .palette-option[aria-pressed="true"]{outline:2px solid var(--accent);outline-offset:-2px;background:var(--accent-soft)}
+  .gn-visuals-panel #palettePicker .palette-swatches{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;height:26px;margin:0}
+  .gn-visuals-panel #palettePicker .palette-swatches span{width:auto;height:100%;border-radius:3px}
+  .gn-visuals-panel #palettePicker strong,.gn-visuals-panel #palettePicker small{display:none}
+  @media(max-width:590px){.gn-visuals-panel #settingsParallelSideRow{display:none}.gn-visuals-panel #settingsStackedOrderRow{display:grid}}
+  @media(max-width:380px){.gn-visuals-panel{padding:14px 11px}.gn-visual-row{grid-template-columns:42px minmax(0,1fr);gap:7px}.gn-direct-options{gap:5px}.gn-visuals-panel #palettePicker{gap:5px}.gn-font-specimen{font-size:15px}.gn-font-amiri,.gn-font-scheherazade,.gn-font-noto{font-size:20px}}
+  @media(pointer:coarse){.gn-direct-options>button,.gn-size-control>button,.gn-size-control output,.gn-visuals-panel #palettePicker .palette-option{min-height:48px}}
+}
+
+@media screen {
+ #leftNav .primary-nav>.nav-item[data-route="home"]{font-weight:650;margin-bottom:5px}
+ #leftNav .primary-nav>.nav-item[data-route="applications"],#leftNav .primary-nav>.nav-item[data-route="bookmarks"]{margin-top:5px}
+ #leftNav .nav-bottom{margin:10px 0 0!important;padding:0!important;display:grid;gap:0;border-top:1px solid var(--border)}
+ #leftNav .nav-bottom>.gn-nav-group{margin:0!important;padding:0!important;border:0!important}
+ #leftNav .nav-bottom>.gn-nav-group+.gn-nav-group{border-top:1px solid var(--border)!important}
+ #leftNav .nav-bottom>.gn-nav-group>summary{list-style:none;display:flex;align-items:center;gap:11px;box-sizing:border-box;min-height:44px;width:100%;padding:10px 12px;border-radius:7px;font:550 12.8px/1.4 var(--sans);cursor:pointer}
+ #leftNav .nav-bottom>.gn-nav-group>summary::-webkit-details-marker{display:none}
+ #leftNav .nav-bottom>.gn-nav-group>summary>.icon{flex:0 0 18px;width:18px;height:18px}
+ #leftNav .nav-bottom>.gn-nav-group>summary:after{content:'';margin-left:auto;flex:0 0 7px;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+ #leftNav .nav-bottom>.gn-nav-group[open]>summary:after{transform:translateY(2px) rotate(225deg)}
+ #leftNav #downloadsMenu>.gn-pdf-editions{box-sizing:border-box;margin:0!important;padding:6px 7px 11px 31px!important;width:100%;max-width:100%}
+ #leftNav #jumpToPartMenu>.nav-parts{box-sizing:border-box;margin:0!important;padding:3px 0 8px 31px;width:100%}
+ #leftNav .nav-bottom>.gn-nav-group>summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+ #fallbackReader .fb-left-panel .fb-publisher-footer{margin:0!important;padding:0!important;border:0!important}
+ #fallbackReader .fb-left-panel>.gn-nav-group,#fallbackReader .fb-left-panel .fb-publisher-footer>.gn-nav-group{margin:0!important}
+ #fallbackReader .fb-left-panel .gn-nav-group>summary{box-sizing:border-box;padding-inline-start:12px;min-height:44px}
+ #fallbackReader .fb-left-panel #fb-downloads-menu>.gn-pdf-editions{margin:0!important;padding:4px 0 9px 12px!important;max-width:100%;box-sizing:border-box}
+ .gnamma-home .home-source-details,.fb-page#home .home-source-details{margin:12px 0 0;padding:9px 0 0;border-top:1px solid var(--border)}
+ .gnamma-home .home-source-details>summary,.fb-page#home .home-source-details>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:var(--accent);font:600 13px/1.5 var(--sans);padding:9px 0}
+ .gnamma-home .home-source-details>summary:focus-visible,.fb-page#home .home-source-details>summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+ .gnamma-home .home-source-copy p,.fb-page#home .home-source-details p{margin:6px 0 12px}
+}
+
+/* iPhone touch corrections — spacing, deliberate taps, and contents opener.
+   touch-action:manipulation prevents double-tap zoom in these controls but
+   deliberately leaves normal scrolling and pinch zoom available. */
+@media screen {
+  .gn-visuals-panel,
+  .gn-visuals-panel .gn-visual-row,
+  .gn-visuals-panel .gn-size-control,
+  .gn-visuals-panel .gn-direct-options,
+  .gn-visuals-panel .gn-direct-options > button,
+  .gn-visuals-panel .gn-size-control > button,
+  .gn-visuals-panel .gn-size-control > output,
+  .gn-visuals-panel .palette-option {
+    touch-action: manipulation;
+  }
+  .gn-visuals-panel .gn-size-control {
+    box-sizing: border-box;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    align-items: stretch !important;
+    justify-items: stretch !important;
+    gap: 7px !important;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0 !important;
+  }
+  .gn-visuals-panel .gn-size-control > button,
+  .gn-visuals-panel .gn-size-control > output {
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    margin: 0 !important;
+    border-radius: 9px;
+    touch-action: manipulation !important;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  #readingControls:not([hidden]) .gn-reader-global-leading #menuBtn {
+    box-sizing: border-box !important;
+    flex: 0 0 44px !important;
+    width: 44px !important;
+    min-width: 44px !important;
+    max-width: 44px !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    margin-inline-end: 4px !important;
+    padding: 8px !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 9px !important;
+    color: var(--text-soft) !important;
+    background: var(--surface-alt) !important;
+    touch-action: manipulation !important;
+  }
+  #readingControls:not([hidden]) .gn-reader-global-leading #menuBtn .icon {
+    display: block;
+    width: 20px !important;
+    height: 20px !important;
+  }
+  @media (max-width: 360px) {
+    #readingControls:not([hidden]) .gn-reader-global-leading #menuBtn {
+      flex-basis: 40px !important;
+      width: 40px !important;
+      min-width: 40px !important;
+      max-width: 40px !important;
+      margin-inline-end: 1px !important;
+    }
+  }
+}
+
+
+/* Tighter Visuals spacing. Only surrounding whitespace changes: the font
+   specimens, 48px touch targets, and the iPhone tap/zoom fix stay intact. */
+@media screen {
+  .gn-visuals-panel {padding:14px 16px !important;}
+  .gn-visuals-panel .gn-visuals-header {
+    gap:12px;
+    padding-bottom:8px !important;
+    margin-bottom:2px !important;
+  }
+  .gn-visuals-panel .gn-visual-row {padding-block:5px !important;}
+  .gn-visuals-panel .gn-palette-row {padding-bottom:2px !important;}
+}
+@media screen and (max-width:380px) {
+  .gn-visuals-panel {padding-inline:11px !important;}
+}
+
+
+/* Optical fix for the four bilingual layout diagrams.
+   The Amiri ayn is now a fixed, tightly cropped SVG outline: no font metrics,
+   baseline descent or dividing-line collision on iPhone Safari. */
+@media screen {
+  .gn-visuals-panel {
+    width: min(460px, calc(100vw - 44px)) !important;
+    max-width: calc(100vw - 44px) !important;
+  }
+  .gn-visuals-panel .gn-layout-glyph {
+    display: grid !important;
+    box-sizing: border-box;
+    direction: ltr !important;
+    unicode-bidi: isolate;
+    justify-items: stretch !important;
+    align-items: stretch !important;
+    gap: 0 !important;
+    padding: 0 !important;
+  }
+  .gn-visuals-panel .gn-layout-glyph.gn-layout-columns {
+    width: 44px !important;
+    height: 30px !important;
+    grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+    grid-template-rows: minmax(0,1fr) !important;
+  }
+  .gn-visuals-panel .gn-layout-glyph.gn-layout-stack {
+    width: 42px !important;
+    height: 36px !important;
+    grid-template-columns: minmax(0,1fr) !important;
+    grid-template-rows: repeat(2,minmax(0,1fr)) !important;
+  }
+  .gn-visuals-panel .gn-layout-glyph > span {
+    display: flex !important;
+    box-sizing: border-box;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    font: 400 13px/1 'Iowan Old Style', Georgia, serif !important;
+    text-align: center;
+  }
+  .gn-visuals-panel .gn-layout-glyph.gn-layout-stack > :first-child {
+    border-bottom: 1px solid currentColor !important;
+  }
+  .gn-visuals-panel .gn-layout-glyph.gn-layout-columns > :first-child {
+    border-right: 1px solid currentColor !important;
+  }
+  .gn-visuals-panel .gn-layout-arabic-icon {
+    display: block !important;
+    box-sizing: content-box;
+    flex: 0 0 16px !important;
+    width: 16px !important;
+    height: 16px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    fill: currentColor !important;
+    stroke: none !important;
+  }
+  .gn-visuals-panel .gn-layout-options button {
+    padding-block: 5px !important;
+  }
+  .gn-visuals-panel .gn-layout-options button[aria-pressed="true"] {
+    padding-block: 4px !important;
+  }
+  @media(max-width:360px) {
+    .gn-visuals-panel {
+      width: calc(100vw - 32px) !important;
+      max-width: calc(100vw - 32px) !important;
+    }
+  }
+}
+
+
+/* Compact Visuals spacing: keep 48px iPhone touch targets and full font
+   specimens; reclaim only surrounding vertical whitespace. */
+@media screen {
+  .gn-visuals-panel {
+    padding: 14px 16px !important;
+  }
+  .gn-visuals-panel .gn-visuals-header {
+    gap: 12px;
+    padding-bottom: 8px !important;
+    margin-bottom: 2px !important;
+  }
+  .gn-visuals-panel .gn-visual-row {
+    padding-block: 5px !important;
+  }
+  .gn-visuals-panel .gn-visual-row:last-of-type {
+    padding-bottom: 2px !important;
+  }
+  @media (max-width: 380px) {
+    .gn-visuals-panel {
+      padding-inline: 11px !important;
+    }
+  }
+}
+
+/* VISUALS RESPONSIVE WIDTH 20261021-visualswidth2
+   About 12–15% narrower at typical iPhone / desktop widths than the
+   preceding 460px / viewport−44px panel. Ultra-small screens have a 286px
+   safety floor so specimens, the full-width size controls, and 48px touch
+   targets remain usable; outer width never exceeds viewport−24px. */
+@media screen {
+  .gn-visuals-panel {
+    width: min(390px, max(286px, calc(100vw - 88px))) !important;
+    max-width: calc(100vw - 24px) !important;
+  }
+  .gn-visuals-panel .gn-visual-row {
+    grid-template-columns: 42px minmax(0, 1fr) !important;
+    column-gap: 7px !important;
+  }
+  .gn-visuals-panel .gn-visual-marker {
+    width: 40px !important;
+  }
+}
+
+/* Home and contents navigation; leave Visuals/reading typography unchanged. */
+@media screen {
+ #leftNav .primary-nav>.gn-nav-section-label{margin:14px 12px 4px;padding:0;color:var(--muted);font:700 10px/1.5 var(--sans);letter-spacing:.075em}
+ #leftNav .primary-nav>.nav-item[data-route="applications"],#leftNav .primary-nav>.nav-item[data-route="bookmarks"]{margin-top:0}
+ #leftNav #downloadsMenu .gn-pdf-editions-label,#leftNav #downloadsMenu .gn-offline-bundle-status{box-sizing:border-box;padding-inline-start:9px}
+ #leftNav #downloadsMenu .gn-offline-bundle-link{box-sizing:border-box;padding-inline:9px!important;max-width:100%;min-width:0;overflow-wrap:anywhere}
+ #leftNav #downloadsMenu .gn-pdf-copy{min-width:0}
+ .gnamma-home .home-purpose{margin-top:28px;padding-top:18px;border-top:1px solid var(--line)}
+ .gnamma-home .home-purpose h3{margin-bottom:7px}
+ .gnamma-home .home-purpose p{margin:0}
+ #fallbackReader .fb-purpose{max-width:780px;line-height:1.7;color:var(--text-soft)}
+}
+
+/* One download destination. Editions contains the PDF and offline HTML choices;
+   hide the duplicate PDF lists in enhanced and no-JS contents menus. */
+#downloadsMenu,#fb-downloads-menu{display:none!important}
+
+/* Appearance control is a visible row of three explicit choices in Visuals. */
+@media screen{
+  #readingControls .gn-reader-global-trailing #themeBtn[hidden],
+  body.reader-enhanced #readingControls .gn-reader-global-trailing #themeBtn[hidden]{
+    display:none!important
+  }
+  .gn-visuals-panel .gn-appearance-options{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+    min-width:0;width:100%;gap:7px
+  }
+  .gn-visuals-panel .gn-appearance-options button{
+    min-height:48px;cursor:pointer;
+    font:600 12px/1.2 var(--sans,system-ui,sans-serif)
+  }
+  .gn-visuals-panel .gn-appearance-options button:focus-visible{
+    outline:2px solid var(--accent);outline-offset:2px
+  }
+}

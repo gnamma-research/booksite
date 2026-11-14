@@ -1,0 +1,64 @@
+name: Tamhid complete commentary publication
+on:
+  push:
+    branches: [master]
+    paths: ['.github/workflows/tamhid-complete-publish.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: tamhid-complete-commentary-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  assemble-test-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            texts/al-turka/qawaid-al-tawhid/
+            texts/manifest.json
+      - name: Retrieve the exact reviewed source snapshots
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run download 41727184298 --repo gnamma-research/booksite --name tamhid-stage13-source --dir /tmp/tamhid13
+          gh run download 41731078124 --repo gnamma-research/booksite --name tamhid-final-source-and-reader --dir /tmp/tamhid-final
+          test -f /tmp/tamhid13/source-pages.json
+          test -f /tmp/tamhid-final/source-final/source-pages.json
+      - name: Assemble verified source passages and reviewed English translations
+        run: |
+          python -m py_compile texts/al-turka/qawaid-al-tawhid/qa/finalize-commentary.py
+          python texts/al-turka/qawaid-al-tawhid/qa/finalize-commentary.py --source13 /tmp/tamhid13/source-pages.json --source-final /tmp/tamhid-final/source-final/source-pages.json
+      - name: Check the complete corpus and reader interactions
+        run: node texts/al-turka/qawaid-al-tawhid/qa/check-commentary.mjs
+      - name: Export Arabic-English and English reading editions
+        run: node texts/al-turka/qawaid-al-tawhid/qa/export-commentary.mjs
+      - name: Check JSON serialization without changing translation content
+        shell: python
+        run: |
+          import json,pathlib
+          base=pathlib.Path('texts/al-turka/qawaid-al-tawhid')
+          for file in base.glob('data/*.json'):
+              json.loads(file.read_text(encoding='utf-8'))
+          print('All commentary JSON files are valid.')
+      - name: Commit only this work and its existing catalogue entry
+        run: |
+          git config user.name 'Gnamma editorial build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add texts/al-turka/qawaid-al-tawhid/ texts/manifest.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Publish complete available Tamhid commentary: 110 bilingual units, four separately attributed ancestral bridges, source checks and exports'
+          git pull --rebase origin master
+          git push origin HEAD:master
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tamhid-complete-commentary-verified
+          path: texts/al-turka/qawaid-al-tawhid/
+          retention-days: 7

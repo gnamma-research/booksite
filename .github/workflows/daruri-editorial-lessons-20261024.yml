@@ -1,0 +1,144 @@
+name: Daruri §§2-7 verified editorial PDF release
+on:
+  push:
+    branches:
+      - editorial/daruri-lesson12-method-20261024
+    paths:
+      - 'daruri/edition-r3-20261020.js'
+      - 'daruri/dictionary-data.json'
+      - 'daruri/dictionary-r3-20261020.js'
+      - 'daruri/build/data/full-headwords.json'
+      - 'daruri/build/verify_structure.py'
+      - 'daruri/build/update_release.py'
+      - 'daruri/study/lessons-01-09.json'
+      - 'daruri/study/foundation-checks.json'
+      - '.github/workflows/daruri-editorial-lessons-20261024.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daruri-editorial-lesson12-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verified-editorial-release:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Check out the isolated editorial branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+      - name: Prepare Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install canonical Arabic-PDF stack and lesson dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libpango-1.0-0 libpangocairo-1.0-0 libharfbuzz0b libfribidi0 fonts-dejavu-core
+          python -m pip install -q -r daruri/build/requirements.txt "PyMuPDF==1.26.7" "reportlab>=4,<5" "pypdf>=5,<7"
+      - name: Verify targeted source edits and canonical counts
+        run: |
+          python - <<'PY'
+          import sys
+          sys.path.insert(0,'daruri/build')
+          from build_editions import read_book
+          b=read_book()
+          sections={s['id']:s for s in b['sections']}
+          assert len(b['sections'])==259 and len(b['notes'])==625 and len(b['glossary'])==153
+          assert len(sections[2]['segments'])==2
+          assert 'method of examination (sibār) and a standard (qānūn)' in sections[2]['segments'][1]['en']
+          assert 'practitioners of kalām (mutakallimūn)' in sections[7]['segments'][0]['en']
+          assert 'validated precisely through induction' in sections[4]['segments'][0]['en']
+          assert 'obligatory and recommended observances' in sections[2]['segments'][0]['en']
+          assert 'probe and a rule' not in sections[2]['segments'][1]['en']
+          assert 'those who discuss this craft' not in sections[7]['segments'][0]['en']
+          assert any(x['id']=='N003' and 'method of examination' in x['text'] for x in b['notes'])
+          assert any(x['id']=='N005' and 'practitioners of kalām' in x['text'] for x in b['notes'])
+          print('Canonical text, apparatus, glossary cardinality and exact changes verified')
+          PY
+      - name: Regenerate interactive and no-JavaScript study guide
+        run: python daruri/study/build-guide.py
+      - name: Rebuild verified study-guide PDF
+        run: python daruri/study/build-guide-pdf.py --date 2026-10-24
+      - name: Build all five canonical reading PDFs from the revised text
+        run: |
+          python daruri/build/build_editions.py --output-dir /tmp/daruri-lesson12-pdfs
+      - name: Validate complete PDF structure and page mappings
+        run: |
+          python daruri/build/verify_structure.py --output-dir /tmp/daruri-lesson12-pdfs
+          python - <<'PY'
+          import fitz
+          for name,phrase in [('daruri.pdf','methodofexamination'),('daruri-study.pdf','practitionersofkalām'),('daruri-english.pdf','validatedpreciselythroughinduction')]:
+              doc=fitz.open('/tmp/daruri-lesson12-pdfs/'+name)
+              text=''.join(''.join(p.get_text().split()) for p in doc[:12])
+              assert phrase in text,(name,phrase)
+              print(name, len(doc), 'pages; revised wording present')
+          PY
+      - name: Install five reviewed PDF binaries and release metadata
+        run: |
+          cp /tmp/daruri-lesson12-pdfs/daruri.pdf daruri/
+          cp /tmp/daruri-lesson12-pdfs/daruri-study.pdf daruri/
+          cp /tmp/daruri-lesson12-pdfs/daruri-english.pdf daruri/
+          cp /tmp/daruri-lesson12-pdfs/daruri-arabic.pdf daruri/
+          cp /tmp/daruri-lesson12-pdfs/daruri-arabic-vowelled.pdf daruri/
+          cp /tmp/daruri-lesson12-pdfs/*.metadata.json daruri/build/release/
+          python - <<'PY'
+          import json,pathlib
+          root=pathlib.Path('/tmp/daruri-lesson12-pdfs')
+          p=root/'structure-verification.json';data=json.loads(p.read_text())
+          data['release']='daruri13-lesson12-method-20261024'
+          (pathlib.Path('daruri/build/release')/p.name).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Synchronize all website PDF links, manifest and cache versions
+        run: |
+          python daruri/build/update_release.py --rebuilt-dir /tmp/daruri-lesson12-pdfs --revision daruri13-lesson12-method-20261024 --edition-date 2026-10-24 --refresh-study-companion --apply | tee daruri/build/release/release-update.json
+          python daruri/build/update_release.py --rebuilt-dir /tmp/daruri-lesson12-pdfs --revision daruri13-lesson12-method-20261024 --edition-date 2026-10-24 --refresh-study-companion --check
+      - name: Rebuild canonical portable source archive from the same text
+        run: |
+          python daruri/build/export_portable_source.py --output-dir /tmp/daruri-source-archive
+          cp /tmp/daruri-source-archive/Daruri_Portable_Scholarly_Source.zip daruri/source/
+          cp /tmp/daruri-source-archive/source-export-report.json daruri/source/
+      - name: Verify lesson wording across maintained text and dictionary sources
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('daruri/dictionary-data.json'))
+          assert 'Method of examination' in next(x['definition'] for x in d['glossary'] if x['term']=='sibār')
+          assert 'practitioners of kalām' in next(x['definition'] for x in d['glossary'] if x['term']=='kalām')
+          assert 'method of examination' in d['terms']['sibār']['aliasesEn']
+          l=json.load(open('daruri/study/lessons-01-09.json'))
+          assert any(t['term']=='mutakallimūn' for t in l[0]['terms'])
+          m=json.load(open('daruri/pdf-editions-manifest.json'))
+          assert m['release_revision']=='daruri13-lesson12-method-20261024'
+          assert all(m['files'][k]['pages']>0 for k in ['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'])
+          print('Dictionary, lesson and PDF manifest synchronized')
+          PY
+      - name: Commit only regenerated canonical release artifacts
+        run: |
+          git config user.name 'gnamma-research-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add daruri/index.html daruri/study-guide-data.js daruri/daruri-study-guide.pdf daruri/study/companion-metadata.json
+          git add daruri/daruri.pdf daruri/daruri-study.pdf daruri/daruri-english.pdf daruri/daruri-arabic.pdf daruri/daruri-arabic-vowelled.pdf
+          git add daruri/edition-r3-20261020.js daruri/pdf-editions-manifest.json daruri/download-bundle.js daruri/sw.js
+          git add daruri/build/release/*.metadata.json daruri/build/release/structure-verification.json daruri/build/release/release-update.json
+          git add daruri/source/Daruri_Portable_Scholarly_Source.zip daruri/source/source-export-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish verified Daruri lesson terminology and canonical PDFs [skip ci]'
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
+      - name: Preserve verification results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-lesson12-editorial-QA
+          path: |
+            /tmp/daruri-lesson12-pdfs/*.metadata.json
+            /tmp/daruri-lesson12-pdfs/structure-verification.json
+            daruri/build/release/release-update.json
+          if-no-files-found: warn

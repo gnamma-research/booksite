@@ -1,0 +1,257 @@
+{
+  "edition": "1.6.1",
+  "date": "2026-11-12",
+  "changes": [
+    {
+      "id": 20,
+      "sharh_replacements": [
+        [
+          "The distinction between the Prophet's unique office and the succession of public responsibilities must be made precise.",
+          "After the Prophet's death, the community had to continue government, teaching and adjudication without receiving new revelation. These responsibilities did not all pass to one office in the same way."
+        ]
+      ]
+    },
+    {
+      "id": 21,
+      "sharh_replacements": [
+        [
+          "The conquest's immediate consequences belonged to the horizon of food, security, property, administration and political allegiance. These were not merely accidental obstacles surrounding a higher mission.",
+          "The conquest made Muslim commanders responsible for lands and populations whose needs continued after the battles. Food supplies, taxation, security and property had to be administered under the new rulers."
+        ]
+      ]
+    },
+    {
+      "id": 22,
+      "sharh_replacements": [
+        [
+          "The *dīwān* is not simply a matter of accounting technique. It is a system of recognized claims that can be made visible, compared, enforced and disputed.",
+          "The *dīwān* recorded claims to public stipends, enabling officials to identify recipients, calculate payments and settle some disputes about entitlement."
+        ],
+        [
+          "This distinction is structurally similar to the difference between possessing an outward religious form and realizing its purpose, but it is not an argument that fiscal registers are manifestations of a particular mystical Name.",
+          "The accuracy of a register and the fairness of the payments it records are different questions. Officials could keep careful accounts while still making unjust distinctions among recipients."
+        ]
+      ]
+    },
+    {
+      "id": 23,
+      "sharh_replacements": [
+        [
+          "The first fitna resists reduction to one moral psychology.",
+          "The first civil war arose amid disputes about the murder of ʿUthmān, the legitimacy of ʿAlī's rule, and who could order lawful retaliation."
+        ]
+      ]
+    },
+    {
+      "id": 24,
+      "sharh_replacements": [
+        [
+          "Karbalāʾ cannot be treated as a small historical episode serving merely to illustrate a ready-made theory of the divine Names.",
+          "At Karbalāʾ, al-Ḥusayn and his companions faced armed opponents and were killed. Their choices, deaths and the subsequent remembrance of the event must be examined before any later spiritual interpretation is proposed."
+        ]
+      ]
+    },
+    {
+      "id": 25,
+      "sharh_replacements": [
+        [
+          "The episode clarifies a recurrent civilizational distinction: **an institution's political foundation and its actual intellectual or moral fertility are different causal stories**.",
+          "Baghdad's foundation established an imperial capital, but its subsequent scholarly life grew through the work of translators, teachers, students, scribes and patrons."
+        ],
+        [
+          "This prepares Book V's central question. If teaching and spiritual formation increasingly require a plural, enduring set of methods, how can they preserve genuine knowledge and character without mistaking preservation of institutional labels for living realization?",
+          "Scholarship in Baghdad depended on teachers able to form students as well as courts and patrons able to sustain them. The persistence of an institution did not guarantee that it continued to fulfil its educational purpose."
+        ]
+      ]
+    },
+    {
+      "id": 26,
+      "sharh_replacements": [
+        [
+          "The relationship between knowledge and ʿumrān is mediated by special kinds of social dependence.",
+          "Knowledge spread in Baghdad through the work of teachers, translators, scribes, patrons and students who depended upon one another."
+        ]
+      ]
+    },
+    {
+      "id": 27,
+      "sharh_replacements": [
+        [
+          "The historical problem of ḥadīth transmission is the distinction between a **reported act**, **a chain asserting reception**, **the transmitted wording**, and **its normative interpretation**.",
+          "Scholars transmitting ḥadīth examined several separate questions: what the Prophet had said or done, which narrators reported it, what wording they preserved and what religious obligations followed from it."
+        ]
+      ]
+    },
+    {
+      "id": 28,
+      "sharh_replacements": [
+        [
+          "A simple contract case reveals the multiple levels.",
+          "Consider a disagreement over goods entrusted to an agent."
+        ]
+      ]
+    },
+    {
+      "id": 29,
+      "sharh_replacements": [
+        [
+          "Waqf offers a remarkably clear distinction among material, efficient, formal and final causes.",
+          "An endowed teaching institution can be explained through its property, the people who administer it, its legal rules and the purposes it is intended to serve."
+        ]
+      ]
+    },
+    {
+      "id": 30,
+      "sharh_replacements": [
+        [
+          "Civilizationally, the achievement consists not in placing medicine, logic, fiqh and taṣawwuf under one patron or building, but in sustaining people capable of judging what each inquiry establishes and when their conclusions have legitimate consequences for other people's lives.",
+          "Baghdad's scholarly communities developed through people trained to distinguish the kinds of evidence proper to medicine, logic, jurisprudence and spiritual instruction. Their work brought different forms of knowledge into contact without making them interchangeable."
+        ]
+      ]
+    },
+    {
+      "id": 31,
+      "sharh_replacements": [
+        [
+          "Primary study gates: exact paragraphs in *Tahāfut* XVII, Ibn Rushd's corresponding response, al-Rāzī's commentary on the *Ishārāt*, al-Ṭūsī's gloss and al-Ghazālī's discussion of *dhawq* in *al-Munqidh*. Claims in this account are thematic until selected primary paragraphs are directly aligned.",
+          "The precise disagreements can be traced in the seventeenth discussion of al-Ghazālī's *Tahāfut*, Ibn Rushd's reply, the commentaries of al-Rāzī and al-Ṭūsī on the *Ishārāt*, and the account of *dhawq* in *al-Munqidh*. These texts show why the different arguments cannot be adequately represented by a single formula about reason and revelation."
+        ]
+      ]
+    },
+    {
+      "id": 32,
+      "sharh_replacements": [
+        [
+          "Primary follow-up should align al-Muḥāsibī's passage on intention, al-Qushayrī's chapters on *ḥāl*, *maqām* and companionship, and the *Iḥyāʾ* opening and books of earning and blameworthy traits. This account gives the structure and verified source locations but is not an exhaustive edition of those primary texts.",
+          "Al-Muḥāsibī's writings on intention, al-Qushayrī's treatment of states and stations, and al-Ghazālī's books on earning and blameworthy traits all attend to the formation of conduct. Their emphases differ, and the terminology of one cannot simply be attributed to the others."
+        ]
+      ]
+    },
+    {
+      "id": 33,
+      "sharh_replacements": [
+        [
+          "The historical question for the following book is how this inheritance became recognizable through multiple languages, economies and political orders.",
+          "As Sufi teaching networks spread, their practices were carried into communities with different languages, livelihoods and forms of government."
+        ]
+      ]
+    },
+    {
+      "id": 34,
+      "sharh_replacements": [
+        [
+          "The history of cities such as Cairo and Damascus is especially suitable for distinguishing the unity of a tradition from uniform political organization.",
+          "In Cairo and Damascus, shared scholarly traditions continued under rulers with different political and religious allegiances."
+        ]
+      ]
+    },
+    {
+      "id": 35,
+      "sharh_replacements": [
+        [
+          "The decisive micro-to-macro question is what people can still become through remaining institutions.",
+          "For displaced families and scholars, the survival of teaching depended on whether they could settle, find pupils, preserve books and continue practising their religion."
+        ]
+      ]
+    },
+    {
+      "id": 36,
+      "sharh_replacements": [
+        [
+          "One route of inquiry is through the reconstruction of a book's movement.",
+          "A book could move from one city to another through merchants, teachers or officials, but a specific journey can be established only when manuscripts, ownership records or citations preserve evidence of it."
+        ]
+      ]
+    },
+    {
+      "id": 37,
+      "sharh_replacements": [
+        [
+          "The Akbarian metaphysical account of return through the varied divine Names should not be used to call conquest or devastation a necessary stage in the unfolding of spiritual perfection.",
+          "Mongol conquests caused immense material loss and human suffering. Later metaphysical accounts of spiritual return do not explain the military causes of these events or make the destruction a necessary condition of religious renewal."
+        ]
+      ]
+    },
+    {
+      "id": 38,
+      "sharh_replacements": [
+        [
+          "The Middle Niger offers a strong test of the difference between a shared revealed orientation and the geographical replication of one imperial institution.",
+          "Muslim scholars in the Middle Niger taught Mālikī law and other inherited disciplines in local settings that differed from the colleges and courts of Cairo."
+        ]
+      ]
+    },
+    {
+      "id": 39,
+      "sharh_replacements": [
+        [
+          "The micro-to-macro pathway is especially clear: one marriage forms responsibilities between people; a recurring neighbourhood of merchants and families establishes repeated worship; learners can acquire ritual and ethical *malakāt* from teachers; scribes and patrons then make such practices portable through manuscripts.",
+          "Some port merchants settled with families, supported places of prayer and arranged instruction for their children. Teachers and scribes helped preserve these practices beyond the duration of an individual trading voyage."
+        ]
+      ]
+    },
+    {
+      "id": 40,
+      "sharh_replacements": [
+        [
+          "A rigorous microhistory would trace one named village or shrine, the associated land grant if preserved, the date and location of an inscription and subsequent changes in surrounding settlement.",
+          "At Bagerhat, the tomb inscription of Khān Jahān supplies a dated anchor for the life of a figure later associated with the development of settlements, waterworks and religious foundations. Later local memories and contemporary inscriptions do not have the same evidentiary status."
+        ]
+      ]
+    },
+    {
+      "id": 41,
+      "sharh_replacements": [
+        [
+          "Ottoman institutions are an especially instructive case of specialization.",
+          "Ottoman towns contained courts, fiscal offices, colleges, mosques and Sufi lodges, each with its own responsibilities and sources of authority."
+        ]
+      ]
+    },
+    {
+      "id": 42,
+      "sharh_replacements": [
+        [
+          "Islamic civilization here involves neither an undifferentiated pluralism nor a single standardized perfected order.",
+          "Safavid Iran and Mughal India developed different arrangements between rulers, jurists, philosophers and spiritual teachers, and those arrangements changed during the histories of both empires."
+        ]
+      ]
+    },
+    {
+      "id": 43,
+      "sharh_replacements": [
+        [
+          "The larger change cannot be reduced to a European entry into a previously empty commercial sea.",
+          "European trading companies entered an Indian Ocean system in which merchants, ports, credit networks and regional rulers had long been active."
+        ]
+      ]
+    },
+    {
+      "id": 44,
+      "sharh_replacements": [
+        [
+          "**The decisive micro–macro lesson.** Here a family endowment and the physical preservation of documents contributed to a case heard by distant judges, which helped produce wider legal controversy and statutory response.",
+          "**From household documents to imperial law.** The family's preserved deeds and accounts became evidence in an appeal to the Privy Council. The ruling affected later litigation concerning family endowments and contributed to demands for legislative change."
+        ]
+      ]
+    },
+    {
+      "id": 45,
+      "sharh_replacements": [
+        [
+          "The central Akbarian contribution is neither the claim that only an initiated shaykh can transmit truth nor the thesis that printed propositions are sufficient for realization.",
+          "Akbarian discussions of realized knowledge distinguish the correct understanding of a text from the spiritual state of the reader. Printed works could widen access, while teachers and sustained practice remained important to the formation of judgment and character."
+        ]
+      ]
+    },
+    {
+      "id": 46,
+      "sharh_replacements": [
+        [
+          "The continuous civilizational problem is therefore the same one first encountered through Khadījah, recitation and the early circle of believers: how can truth become knowledge, knowledge become responsible action, and action form relationships capable of sustaining a community?",
+          "Contemporary readers possess means of accessing religious texts unavailable to earlier generations, yet learning still depends upon trust, explanation, practice and correction. These are also the means by which the earliest believers learned to live the message they received."
+        ]
+      ]
+    }
+  ]
+}

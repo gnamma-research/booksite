@@ -1,0 +1,139 @@
+{
+  "schema": "nihaya-complete-printed-edition-v1",
+  "date": "2026-11-11",
+  "status": "source-complete; final-publication-pending",
+  "scope": "Entire authorial Nihayat al-Hikma, all 130 numbered chapters plus six introductory reading units. Critical reading edition based on printed witnesses.",
+  "sources": {
+    "base": "Qum 1417 Arabic transcription, Rafed b_id=1642",
+    "early": "Qum 1404 printed facsimile, Princeton/NYU princeton_aco000637",
+    "later": "1428 revised edited digital presentation, Rafed b_id=3108 and3109",
+    "sourceArchive": {
+      "filename": "Nihayat4_Stage9_Recovered_Research_2026-11-10.zip",
+      "libraryFileId": "libfile_673bcb72029c8191b429614aadc64ff1",
+      "url": "https://chatgpt.com/library?file_id=libfile_673bcb72029c8191b429614aadc64ff1&account_id=personal",
+      "bytes": 418504494,
+      "sha256": "8f5185e9c53be3f25a35b22bb7b0589a5dead218735be90871e2211b76c85fb9",
+      "researchFiles": 770,
+      "historicalPathPrefix": "/workspace/scratch/5f05ed215428/",
+      "restoreRule": "Resolve the suffix after historicalPathPrefix under the extracted archive root; do not rewrite historical reports.",
+      "reverifiedOn": "2026-11-11"
+    },
+    "completionSourceArchive": {
+      "filename": "Nihayat_Complete_Collation_Evidence_2026-11-11.zip",
+      "libraryFileId": "libfile_d75a9a72ed6481918f715869be5b3931",
+      "url": "https://chatgpt.com/library?file_id=libfile_d75a9a72ed6481918f715869be5b3931&account_id=personal",
+      "bytes": 34776684,
+      "sha256": "cd8d2ddd8d4d106b2fdb86a6a7028dd7e328f52707153770e6fd0da0e7316c02",
+      "evidenceFiles": 107,
+      "manifest": "evidence-manifest.json",
+      "historicalPathPrefix": "/workspace/scratch/39c4d2329b31/",
+      "restoreRule": "Resolve each frozen report path after historicalPathPrefix under the extracted archive root, using evidence-manifest.json for exact identity. Do not rewrite frozen reports.",
+      "scope": "Early printed-witness images and cached later edited digital pages used in the final 43 whole-unit comparisons."
+    }
+  },
+  "counts": {
+    "authorialUnits": 136,
+    "translatedUnits": 136,
+    "completeExternalComparisons": 136,
+    "incorporatedComparisons": 136,
+    "remainingComparisons": 0,
+    "numberedChapters": 130,
+    "criticalApparatusNotes": 154,
+    "textualDecisions": 86,
+    "arabicStringReplacements": 87,
+    "explicitLaterEditorEmendations": 45,
+    "unfootnotedLaterEditedReadings": 17,
+    "layoutOrthographyAndVocalizationOperations": 202,
+    "manuscriptCollations": 0,
+    "independentHumanCertifications": 0
+  },
+  "method": "Recovered full-unit comparisons for the earlier 93 units were preserved and reconciled against exact preimages. The remaining 43 units received fresh full Arabic/English reading with the early printed images and later edited digital presentation. Reconciled application plans, original reports and exact postimage receipts remain distinct. Source grades distinguish early print, later explicit emendation, unfootnoted edited reading, English correction and normalization.",
+  "integrationReceipt": "audits/nihaya-stage10-integration-receipt.json",
+  "comparisonRegister": "audits/nihaya-external-comparison-register.json",
+  "decisionLedger": "audits/nihaya-adopted-textual-decisions-current.json",
+  "finalReports": [
+    "audits/nihaya-completion-vi-vii-2026-11-11.json",
+    "audits/nihaya-completion-viii-xii-2026-11-11.json"
+  ],
+  "finalAppliedPlans": [
+    "audits/nihaya-completion-vi-vii-2026-11-11-integration.json",
+    "audits/nihaya-completion-viii-xii-adopted-plan-2026-11-11.json"
+  ],
+  "presentationReconciliation": "audits/nihaya-completion-presentation-reconciliation-2026-11-11.json",
+  "boundaryAnchorMigration": "audits/nihaya-boundary-anchor-migration-2026-11-11.json",
+  "materialRepairs": [
+    "Restored the complete preparedness paragraph to VI14; removed the truncated duplicate and fused heading from VI15; retained old links through explicit redirects.",
+    "Restored13 original quotation/source locators in the final43 units.",
+    "Clarified VI19 abstraction from quantity and preserved the older divested wording in an interpretive note.",
+    "Corrected English and Arabic at specific documented loci including VII9 correlatives and XII20 existence-bestowing causation.",
+    "Preserved earlier readings against later changed/omitted wording where the printed evidence and argument support retention."
+  ],
+  "retainedCruxes": [
+    "VI15 compressed pronouns",
+    "VI19 relation of conceptual abstraction to an imaginal form",
+    "XII16 أفردا من القدرة",
+    "XII18 syntax/vocalization of فقدها كمال تلك القوة"
+  ],
+  "crossBook": {
+    "bidayaDenominator": 111,
+    "bidayaWithReviewedMapping": 111,
+    "bidayaAwaitingReview": [],
+    "bidayaNihayaDiscussionPairs": 149,
+    "nihayaUnitsInBidayaMapping": 125,
+    "availableMuzaffarDenominator": 140,
+    "muzaffarUnitsInReviewedNewPairing": 55,
+    "curatedLinksBefore": 34,
+    "curatedLinksAfter": 532,
+    "newDirectedLinks": 498,
+    "curatedDictionaryEntries": 73,
+    "nihayaDenominator": 136,
+    "nihayaUnitsWithAnyCuratedBidayaOrMuzaffarRoute": 126,
+    "nihayaWithoutDirectCrossTextRoute": 10,
+    "logicMetaphysicsDiscussionPairs": 117,
+    "totalUndirectedDiscussionPairs": 266,
+    "newlyCuratedDictionaryEntries": 39,
+    "muzaffarAvailableScope": "140 available units, including the complete Book V through the final exercises. Earlier gaps in Books I–IV and all of Book VI remain.",
+    "totalUndirectedUnitPairs": 265,
+    "countingNote": "Discussion pairs distinguish different paragraph arguments within the same chapter pair. The two good/evil routes join one chapter pair through two distinct arguments."
+  },
+  "dictionary": {
+    "totalEntries": 150,
+    "curatedEntries": 73,
+    "newCuratedEntries": 39,
+    "automaticOccurrencesAreNotEditorialDiscussionLinks": true,
+    "additionalGlossaryEntries": 77
+  },
+  "crossBookSecondReview": "audits/discussion-link-second-review-2026-11-11.json",
+  "bidayaCorrection": "audits/bidaya-where-position-correction-2026-11-11.json",
+  "scopeLimitations": [
+    "No manuscript collation or independent human specialist certification.",
+    "A completed printed-witness edition retains attributed editorial readings and explained textual cruxes.",
+    "Muzaffar remains a working140-unit selection: all40 BookV units are saved, earlier gaps and BookVI remain.",
+    "Ten Nihaya units have no distinct cross-book route selected: five prefaces and five advanced discussions; this does not assert absence of every conceptual relationship."
+  ],
+  "canonicalSourceHashes": {
+    "muzaffar-al-mantiq": "7b32a57f9a772de1eb9369dab890be0f6463b7d47264c7c88f884c9466ef6fa0",
+    "bidayat-al-hikma": "41a82bebff137704771a67a1d70c42754e39b0c8c535c63b089ed87442bd6fa1",
+    "nihayat-al-hikma": "4fa2a7686d328652aad0178c5839e0ff51a5872c73ff20101c34450ef8de54a5"
+  },
+  "supplementSha256": "d1c97a5f1aaa48ac65b50115674b077cd1a7e5c18926fc63faf5df642df376ad",
+  "studyIndexSha256": "e31693e0a2df2eee8ced2a83a8cd686bd0a6306380a7cceb7d1468073b489219",
+  "finalReleaseVerification": "Pending final source-matched CI, PDF visual check and live deployment receipt.",
+  "bodyFingerprint": {
+    "sha256": "d3da1e48d1d3ab662f295d2d6c4149d33d4988efbe0a78de2633d36e4d2821e3",
+    "algorithm": "Sort units by ID; concatenate unitID + NUL + SHA256(Arabic UTF-8) + NUL + SHA256(English UTF-8) + newline; SHA256 of UTF-8 result."
+  },
+  "finalReadOnlyReview": {
+    "receiptBodyHashes": "270/270",
+    "inheritedIX9BodyHashes": "2/2",
+    "additionalExpectedPostimages": "108/108",
+    "registerBodyHashes": "272/272",
+    "evidenceReportPaths": "136/136",
+    "planHashes": "7/7",
+    "exactSemanticReferences": "1293/1293",
+    "reciprocalDiscussionPairs": 266,
+    "activeParagraphAnchors": 7842,
+    "validRetiredAliases": 34,
+    "materialBlockers": 0
+  }
+}

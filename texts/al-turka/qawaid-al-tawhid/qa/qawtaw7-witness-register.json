@@ -1,0 +1,1510 @@
+{
+  "schema": "gnamma-qawtaw7-two-witness-register",
+  "sourceBaseline": "Unmodified original A/N electronic transcription",
+  "comparator": "H2014 typeset medieval quotation layer",
+  "date": "2026-11-11",
+  "independentManuscriptsCollated": 0,
+  "records": [
+    {
+      "number": 1,
+      "unit": "QT-008",
+      "status": "resolved-interpretation",
+      "originalArabic": "فلئن قيل: إن الحقيقة الواجبة هي الطبيعة التي هي من ملزومات ما ذُكر من الوجود الذي يشترك فيه جميع الوجودات الخاصّة.",
+      "originalEnglish": "If it is objected: 'The necessary reality is the nature that is among the necessary correlates of that existence, already mentioned, which is common to all particular existences.'",
+      "earlierDiagnosis": "The objection is preserved. Malzūmāt is syntactically and philosophically difficult, and the English remains provisional until comparison with the separate ancestral manuscripts.",
+      "proposedReading": "من ملزومات ... الوجود",
+      "interpretation": "One of the underlying bearers of the common predicate of existence. The common meaning is the lāzim; its distinct substrates/instances are its malzūmāt. No Arabic emendation is required.",
+      "editorialDecision": "The printed lemma retains ملزومات and the commentary explicitly explains the logical direction. Resolution concerns terminology, not acceptance of the objection as authorial doctrine.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:291",
+        "H2014/1:292",
+        "H2014/1:293"
+      ],
+      "arabicChanges": [],
+      "englishChanges": [],
+      "originalArabicSHA256": "37f817dbfaa4180ff7759d2f4a55270f7fbbcbbb565b77e3ebcba78c3c6349bc",
+      "readingArabicSHA256": "37f817dbfaa4180ff7759d2f4a55270f7fbbcbbb565b77e3ebcba78c3c6349bc",
+      "changesApplied": false
+    },
+    {
+      "number": 2,
+      "unit": "QT-020",
+      "status": "supported-reading",
+      "originalArabic": "قلنا: إن تلك الطبيعة لا بدّ وأن يكون مغايرة للوجود العيني وملزومه، لما ذكرنا، دون الوجود الواجب لذاته القائم بنفسه الممتاز عمّا عداه به عين حقيقة.",
+      "originalEnglish": "If it admits no intellectual instances for any of the reasons given, then either its reality differs from the realities of the particular possible existences in external reality—in which case the term “existence” would apply to them only equivocally—or it does not differ from them, in which case the possible existences themselves would possess intrinsic necessity.’ We reply: the supposed underlying necessary nature must, for the reasons already given, differ from external existence and what underlies it. That does not apply to existence necessary through itself, subsisting through itself, and distinguished from everything else by its very reality.",
+      "earlierDiagnosis": "Printed conclusion به عين حقيقة and ملزومه retain textual/grammatical strain; the English follows commentary as provisional rather than establishing a manuscript reading.",
+      "proposedReading": "مغايرة للوجود العيني وملزومة له؛ ... الممتاز عما عداه بعين حقيقته",
+      "interpretation": "That nature must differ from external existence and be its underlying bearer; this does not apply to existence necessary through itself, distinct from others through its very reality.",
+      "editorialDecision": "ملزومة له describes the nature as the bearer entailing existence, not a second object from which the nature differs. Correct English coordination as well as the corrupted closing بعين حقيقته.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:429",
+        "H2014/1:430"
+      ],
+      "arabicChanges": [
+        {
+          "before": "مغايرة للوجود العيني وملزومه",
+          "after": "مغايرة للوجود العيني وملزومة له"
+        },
+        {
+          "before": "الممتاز عمّا عداه به عين حقيقة",
+          "after": "الممتاز عمّا عداه بعين حقيقته"
+        }
+      ],
+      "englishChanges": [
+        {
+          "before": "differ from external existence and what underlies it",
+          "after": "differ from external existence and be its underlying bearer"
+        }
+      ],
+      "originalArabicSHA256": "64b9ff4b316161e8c4c3d6595bec470f4061715b2d2fd83db4a534e63defa702",
+      "readingArabicSHA256": "a7861e18fa4c6365c230fd8941784fa8625aa699218b5302c89ca213ffbb8e37",
+      "changesApplied": true
+    },
+    {
+      "number": 3,
+      "unit": "QT-024",
+      "status": "supported-reading",
+      "originalArabic": "أو بشرط اتصافه بصفات أُخر عارضة له. ولا اعتبار هاهنا بالموجودية بالفرض التي تعرض المعاني العقلية، مثل عروضها لسائر الماهيات وجميع النسب والصفات والأحوال؛ إذ الكلام هاهنا إنما هو في الوجود الموجود بنفسه الواجب بالذات.",
+      "originalEnglish": "We are not concerned here with the being-existent imputed by supposition to intellectual meanings, as it may be imputed to other quiddities and to relations, attributes, and states; the discussion here concerns existence that exists through itself and is necessary through itself.",
+      "earlierDiagnosis": "بالفرض / بالعرض would change suppositional to incidental predication, and the translation explicitly follows the displayed electronic base.",
+      "proposedReading": "الموجودية بالعرض",
+      "interpretation": "Incidental or derivative existentness, predicated of intellectual meanings, rather than existentness merely by supposition.",
+      "editorialDecision": "بالعرض occurs explicitly in both relevant positions of the printed quoted matn; stronger evidence than contextual preference alone.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:485"
+      ],
+      "arabicChanges": [
+        {
+          "before": "الموجودية بالفرض",
+          "after": "الموجودية بالعرض"
+        }
+      ],
+      "englishChanges": [
+        {
+          "before": "being-existent imputed by supposition",
+          "after": "existentness predicated incidentally"
+        }
+      ],
+      "originalArabicSHA256": "38282938cd13162d7a93572e26b6ed6d865c207edc59a6d8cc3cde565b7b766b",
+      "readingArabicSHA256": "b9a4824474460316c010e274b4b34688692650b64be3dcb2ebc27b267ec2ef6c",
+      "changesApplied": true
+    },
+    {
+      "number": 4,
+      "unit": "QT-025",
+      "status": "supported-reading",
+      "originalArabic": "على أنّا نقول: إنّا نعلم بالضرورة أنّ الكون الذي يشترك فيه الأكوان العينيّة، كون عينيّ تكون طبيعته عن تلك الأكوان في الأعيان والأذهان، وأمّا اختلافها وتعدّدها فهو بالإضافة والنسب والاعتبارات المخصّصة الحقيقيّة لا غير.",
+      "originalEnglish": "Furthermore, we maintain that the being in which external beings share is itself objective being, and that the nature of that being is the very reality of those external beings, both outside the mind and in thought; their difference and multiplicity come solely from particularizing relations, connections, and considerations.",
+      "earlierDiagnosis": "Final كون عينيّ تكون طبيعته عن تلك الأكوان is syntactically unstable; English reports a contextual unity rather than an independently attested emendation.",
+      "proposedReading": "تكون طبيعته عين تلك الأكوان",
+      "interpretation": "Its nature is identical with those beings, externally and mentally.",
+      "editorialDecision": "The printed quotation has عين, not عن.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:503"
+      ],
+      "arabicChanges": [
+        {
+          "before": "طبيعته عن تلك الأكوان",
+          "after": "طبيعته عين تلك الأكوان"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "7c482b2a39356fd70eeef530d373f5ee141e0baf7b2b149533ef79ff66bf73c7",
+      "readingArabicSHA256": "9e17587e52f1a26d7052cd9f46b8952b63a281934cd7400ae1c94a82d31ae2bf",
+      "changesApplied": true
+    },
+    {
+      "number": 5,
+      "unit": "QT-030",
+      "status": "supported-reading",
+      "originalArabic": "أو حاصلاً للعلّة الفاعليّة الموجبة المباينة له، فلا يصحّ أن يقال إنها مفتقرة إليها بحسب أحد الوجودين غير الفرضيّين.",
+      "originalEnglish": "It is thus incorrect to say that they depend on that essence in either of the two non-merely-hypothetical modes of existence.",
+      "earlierDiagnosis": "الوجودين غير الفرضيين is retained as non-suppositional modes with a distinct printed العرضي alternative in the commentary; no categorical emendation.",
+      "proposedReading": "بحسب أحد الوجودين الغير العرضيين",
+      "interpretation": "In either of the two non-incidental modes of existence.",
+      "editorialDecision": "The comparator reads العرضيين, not الفرضيين; the modern bracket identifies the two modes as cognitive and external but is not authorial text.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:595"
+      ],
+      "arabicChanges": [
+        {
+          "before": "غير الفرضيّين",
+          "after": "غير العرضيّين"
+        }
+      ],
+      "englishChanges": [
+        {
+          "before": "non-merely-hypothetical modes",
+          "after": "non-incidental modes"
+        }
+      ],
+      "originalArabicSHA256": "0f778f2937a9808641b55a46c0f579e98ad07a66bd10e3932309171e59f9c865",
+      "readingArabicSHA256": "79994042a670ad2a93d3c01bc019a54d3994938b50dfbdf9d7b7aeb02421a895",
+      "changesApplied": true
+    },
+    {
+      "number": 6,
+      "unit": "QT-052",
+      "status": "partial-resolution",
+      "originalArabic": "فلئن قيل: إنّها من حيث هي موجودات خاصّة أمور ممكنة، ولا يجوز أن يتوقّف الحقّ في الاتّصاف بصفة كماليّة على أمر ممكن — ببعض الصفات الممكنة.",
+      "originalEnglish": "If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes.",
+      "earlierDiagnosis": "Objection concerns possible existents; awkward displaced «ببعض الصفات الممكنة» remains.",
+      "proposedReading": "على أمر ممكن ببعض الصفات الممكنة",
+      "interpretation": "The reply should read: certain possible attributes—for example perfections of the names—depend upon other possible attributes. The displaced phrase in the objection remains suspect.",
+      "editorialDecision": "H2014 removes the redundant second على صفات أخر ممكنة in the reply by clear parenthetical punctuation, but still prints ببعض الصفات الممكنة after the objection. The original row cannot be closed entirely.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:487"
+      ],
+      "arabicChanges": [],
+      "englishChanges": [],
+      "originalArabicSHA256": "bdfed2c9f90f2e09383cab2e6a76f7d41025359e7feaa005e2ef2ea6d2ead983",
+      "readingArabicSHA256": "bdfed2c9f90f2e09383cab2e6a76f7d41025359e7feaa005e2ef2ea6d2ead983",
+      "changesApplied": false
+    },
+    {
+      "number": 7,
+      "unit": "QT-053",
+      "status": "supported-reading",
+      "originalArabic": "وأمّا نظائر العفاريت والمردة فلا نسلّم أنّها غير موجودة فيه. نعم، القوى التي هي نظائرها لمّا تسخّرت وهربت [هُذّبت: قراءة بديلة] بالمجاهدات المعتبرة عند أصحاب الاستكمال في الأشخاص الكاملة، فقد صارت الأفعال المحمودة الصادرة عنها ملكيّة،",
+      "originalEnglish": "Nor do we concede that the counterparts of rebellious spirits and demons are absent from the perfected human. Rather, the faculties corresponding to them, having been brought under control and disciplined through the recognised exercises of perfection, perform praiseworthy acts of an angelic character.",
+      "earlierDiagnosis": "هربت versus هذّبت remains; English 'disciplined' is contextual.",
+      "proposedReading": "سخرت وهذبت",
+      "interpretation": "The lower faculties have been subjected and refined through the acknowledged spiritual exercises.",
+      "editorialDecision": "H2014 prints هذبت directly in the lemma. Use it rather than digital هربت, keeping the latter in the apparatus.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:495",
+        "H2014/2:496"
+      ],
+      "arabicChanges": [
+        {
+          "before": "تسخّرت وهربت [هُذّبت: قراءة بديلة]",
+          "after": "سُخّرت وهُذّبت"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "39dde028c006f1d94a57ab5913e82a6256a0345c980af819c831ebd159050a9a",
+      "readingArabicSHA256": "4a9483846f14f212bc921b2626050d0cdd38830c3b6512ed1f4affc21de3f82e",
+      "changesApplied": true
+    },
+    {
+      "number": 8,
+      "unit": "QT-054",
+      "status": "supported-reading",
+      "originalArabic": "على أنّ الحافظة بتوسّط استخراج الأوساط وتأليفها مع حدّي المطلوب، على أنّ الحافظة والمتوهّمة والمتخيّلة قد لا تطيع العقل الفكري وتنقاد لتلك القوّة، بل تصير من جملة خدمها وآلاتها.",
+      "originalEnglish": "[At this point the transmitted Arabic appears to repeat part of its previous clause.] Memory, estimation, and imagination need not obey the discursive intellect, yet they can submit to the nobler faculty and become its servants and instruments.",
+      "earlierDiagnosis": "Duplicated middle-term phrase remains flagged, not silently deleted.",
+      "proposedReading": "... وتأليفها مع حدي المطلوب. على أن الحافظة والمتوهمة والمتخيلة ...",
+      "interpretation": "The discursive faculty draws knowledge through middle terms and the two terms of the conclusion. Memory, estimation and imagination may obey the higher faculty.",
+      "editorialDecision": "The entire printed matn contains the middle-term sentence only once and then proceeds to the faculties. It supports removal of the digital duplication in a corrected reading text.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:509"
+      ],
+      "arabicChanges": [
+        {
+          "before": "على أنّ الحافظة بتوسّط استخراج الأوساط وتأليفها مع حدّي المطلوب، ",
+          "after": ""
+        }
+      ],
+      "englishChanges": [
+        {
+          "before": "[At this point the transmitted Arabic appears to repeat part of its previous clause.] ",
+          "after": ""
+        }
+      ],
+      "originalArabicSHA256": "7c04d4c769e412db47d0ffdfa55a6fd8edf7a973f6c2b240fa1f6bc03c3c858c",
+      "readingArabicSHA256": "b492da68d6c73eaf282e44096f3a04a3cbc0cb3298743bbd1a2c380c104884e9",
+      "changesApplied": true
+    },
+    {
+      "number": 9,
+      "unit": "QT-055",
+      "status": "partial-resolution",
+      "originalArabic": "إمّا بحسب ذاتها أو بوجوب مطاوعتها للهوى، والقوّة الوهميّة أو المتخيّلة البدنيّة إنّما يقهرها على المتابعة والمدافعة عن توجّهها بالكلّيّة نحو البدن وتقيّد انجذابها نحو المادّة والكدورات الماديّة.",
+      "originalEnglish": "The practitioner resists the tendencies flowing from the restrictions just mentioned, whether these arise from the faculties' own nature or from their habitual submission to appetite. The bodily faculties of estimation and imagination, in particular, can be made to follow the higher faculty and prevented from turning wholly toward the body and becoming bound to matter and its obscuring conditions.",
+      "earlierDiagnosis": "Printed variants بوجود/بوجوب and تقيّد/ويفيد; English is contextual.",
+      "proposedReading": "أو بوجوه مطاوعتها للهوى ... ويقيد انجذابها",
+      "interpretation": "Whether through their own nature or the ways in which they obey appetite; sustained discipline restricts their attraction toward matter.",
+      "editorialDecision": "H2014 prints بوجوه, a third reading rather than either بوجوب or بوجود, and ويقيد rather than bare تقيّد. These improve syntax and are attested in this print, but settling the underlying witness choice remains open.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:521"
+      ],
+      "arabicChanges": [
+        {
+          "before": "بوجوب مطاوعتها للهوى",
+          "after": "بوجوه مطاوعتها للهوى"
+        },
+        {
+          "before": "وتقيّد انجذابها",
+          "after": "ويقيّد انجذابها"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "406b5494549548425d273d6d12079438d2191f6a3ee378a2346150410873236b",
+      "readingArabicSHA256": "86168f18afdef54e03d90874ea8356f2c494dc1032401ce7e5f01aaa8e618b63",
+      "changesApplied": true
+    },
+    {
+      "number": 10,
+      "unit": "QT-056",
+      "status": "supported-reading",
+      "originalArabic": "وأمّا كسب الملكات المفيدة للذلّة وقلّة الحميّة والمسكنة وما يشبهها، فلا يجوز بالنسبة إلى المرتاضين الذين غلب على مزاجهم الغضب الشديد والعجب والتكبّر والقهر والسطوة وحبّ الجاه وما يشبهها.",
+      "originalEnglish": "As for acquiring dispositions that produce abasement, diminished zeal, meekness, and the like, this is not permissible for practitioners whose temperaments are dominated by intense anger, conceit, pride, coercion, forcefulness, love of rank, and similar traits.",
+      "earlierDiagnosis": "The transmitted «فلا يجوز» before anger/pride apparently conflicts with therapy by contraries; no conjectural emendation.",
+      "proposedReading": "فلا يجوز إلا بالنسبة إلى المرتاضين",
+      "interpretation": "Cultivating the countervailing dispositions is not permissible except for practitioners dominated by intense anger, conceit, pride, coercion, forcefulness and love of rank.",
+      "editorialDecision": "The complete printed lemma explicitly includes إلا. This supplies positive textual evidence for the formerly conjectural exception and restores the therapy-of-opposites argument. It is not a universal endorsement of abasement and not current clinical advice.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:539",
+        "H2014/2:540"
+      ],
+      "arabicChanges": [
+        {
+          "before": "فلا يجوز بالنسبة إلى المرتاضين",
+          "after": "فلا يجوز إلّا بالنسبة إلى المرتاضين"
+        }
+      ],
+      "englishChanges": [
+        {
+          "before": "this is not permissible for practitioners",
+          "after": "this is not permissible except for practitioners"
+        }
+      ],
+      "originalArabicSHA256": "7e287482cfe77ed43ec4bcf3aab6e63fab7142666bd8bf974eea4a208e8f6d1e",
+      "readingArabicSHA256": "e0a64dde1d15b986f149ce9ae95ce467f851964f4e2cd9231356e9fe96cf66b0",
+      "changesApplied": true
+    },
+    {
+      "number": 11,
+      "unit": "QT-059",
+      "status": "deferred-lacuna",
+      "originalArabic": "وأمّا الثاني فلما بيّنّاه في كتبنا المعمولة في صناعة الحكمة.",
+      "originalEnglish": "As for the second claim, its explanation has already been supplied in our works on philosophical science.",
+      "earlierDiagnosis": "Referenced missing proof and reported ancestral lacuna not reconstructed.",
+      "proposedReading": "وأما الثاني ... فلما بيناه في كتبنا المعمولة في صناعة الحكمة",
+      "interpretation": "The second proposition is referred to the author’s philosophical writings; no replacement ancestral text is supplied.",
+      "editorialDecision": "The printed matn has the same transition and does not recover the reported missing ancestral passage. A smooth continuation in this modern edition is not proof that the separate ancestral text is complete.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:571",
+        "H2014/2:572"
+      ],
+      "arabicChanges": [],
+      "englishChanges": [],
+      "originalArabicSHA256": "0dd4c71821c5c905c2aabbbaeb242a997563702d80fd52f3256931bfb7cdfe62",
+      "readingArabicSHA256": "0dd4c71821c5c905c2aabbbaeb242a997563702d80fd52f3256931bfb7cdfe62",
+      "changesApplied": false
+    },
+    {
+      "number": 12,
+      "unit": "QT-060",
+      "status": "partial-resolution",
+      "originalArabic": "فوقع نفسه في لجج الخيالات الفاسدة والأوهام الباطلة، عند تلاطم أمواج الشكوك والشبهات المغرقة. فاضمحلّ نور قلبه وعميت بصيرته بتراكم الكدورات المظلمة والعقائد الفاسدة،",
+      "originalEnglish": "Tossed into a sea of corrupt imaginings and false suppositions amid overwhelming waves of doubts, the light of his heart fades and his insight is blinded by the accumulation of obscuring conditions and false beliefs.",
+      "earlierDiagnosis": "A p267 variants فوقع/فأوقع and المفرفة/المغرقة left open.",
+      "proposedReading": "المغرقة; فوقع نفسه retained",
+      "interpretation": "Drowning/overwhelming waves of doubts. The construction فوقع نفسه is also printed and remains grammatically questionable.",
+      "editorialDecision": "H2014 confirms المغرقة over the damaged digital المفرفة, but does not independently support the conjectural causative فأوقع.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:581"
+      ],
+      "arabicChanges": [],
+      "englishChanges": [],
+      "originalArabicSHA256": "5d7d65bf0cc8de5c10927808532af1d4380b193c271a19b80fbc02878240d391",
+      "readingArabicSHA256": "5d7d65bf0cc8de5c10927808532af1d4380b193c271a19b80fbc02878240d391",
+      "changesApplied": false
+    },
+    {
+      "number": 13,
+      "unit": "QT-060",
+      "status": "supported-reading",
+      "originalArabic": "فليتقِ خبث هذه العقيدة ووجه ضررها من لطفه وليستعذ به من مكره وغضبه.",
+      "originalEnglish": "Let him recognise, through God's grace, the corruption and harm of this belief, and seek refuge in Him from His devising and wrath.",
+      "earlierDiagnosis": "A p267 prints فيتقن ... واستعد while adopted Arabic has فليتق ... وليستعذ; the English remains interpretative.",
+      "proposedReading": "فتيقّن خبث هذه العقيدة ووجه ضررها من لطفه، واستعذ به من مكره وغضبه",
+      "interpretation": "Recognize, through His gracious aid, the corruption of this belief and the way it harms, and seek refuge in Him from His devising and wrath.",
+      "editorialDecision": "The print has second-person imperatives فتيقّن and استعذ. This is not the reader’s conjectural third-person فليتقِ ... وليستعذ, nor the defective electronic فيتقن ... واستعد. Vocalization/punctuation here are editorial normalization.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:582"
+      ],
+      "arabicChanges": [
+        {
+          "before": "فليتقِ خبث هذه العقيدة ووجه ضررها من لطفه وليستعذ",
+          "after": "فتيقّن خبث هذه العقيدة ووجه ضررها من لطفه، واستعذ"
+        }
+      ],
+      "englishChanges": [
+        {
+          "before": "Let him recognise, through God's grace, the corruption and harm of this belief, and seek refuge in Him from His devising and wrath.",
+          "after": "Let him recognize, through God's grace, the corruption and harm of this belief, and seek refuge in Him from His devising and wrath."
+        }
+      ],
+      "originalArabicSHA256": "5d7d65bf0cc8de5c10927808532af1d4380b193c271a19b80fbc02878240d391",
+      "readingArabicSHA256": "c0eb143c5737bb983293716cc7425ac205e3c2b4eb85c07cfd2bd50662875923",
+      "changesApplied": true
+    },
+    {
+      "number": 14,
+      "unit": "QT-061",
+      "status": "unresolved",
+      "originalArabic": "ومتى عرفت هذا فنقول: لا بدّ للسالكين من أصحاب المجاهدة أن يحصّلوا العلوم الحقيقيّة الفكريّة النظريّة أوّلاً، بعد تصفية القلب بقطع العلائق المكدّرة المظلمة وتهذيب الأخلاق وترتيبها، حتّى تصير هذه العلوم النظريّة التي تكون من جملتها الصناعة الآليّة المميّزة بالنسبة إلى المعارف الذوقيّة كالعلم الآلي المنطقي بالنسبة إلى العلوم النظريّة غير المتّسقة المنتظمة.",
+      "originalEnglish": "Once this is understood, we say that those who follow the path of spiritual exertion must first acquire the genuine discursive and theoretical sciences, after purifying their hearts by severing darkening attachments and refining and ordering their dispositions, so that those sciences—including the instrumental discipline that discriminates correct from incorrect thinking—will stand in relation to experiential cognitions much as the instrumental science of logic stands in relation to theoretical sciences whose arguments require ordering.",
+      "earlierDiagnosis": "Purification, prior studies and logic analogy retained; غير المتسقة المنتظمة printed syntax unresolved.",
+      "proposedReading": "غير المتسقة المنتظمة",
+      "interpretation": "The analogy concerns logic’s ordering of theoretical knowledge, but the juxtaposition of the negative with the two participles is still textually awkward.",
+      "editorialDecision": "H2014 repeats the difficult wording in the lemma. Its modern explanation simplifies it to غير المنتظمة. That clarifies the interpretation but does not establish حذف المنتظمة or insert a conjunction in the medieval text.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:591",
+        "H2014/2:592",
+        "H2014/2:593"
+      ],
+      "arabicChanges": [],
+      "englishChanges": [],
+      "originalArabicSHA256": "e836a0616d501da780358ad62139ce1b69a640aa4fa59cbd0037aa438da0079e",
+      "readingArabicSHA256": "e836a0616d501da780358ad62139ce1b69a640aa4fa59cbd0037aa438da0079e",
+      "changesApplied": false
+    },
+    {
+      "number": 15,
+      "unit": "SH-INTRO-011",
+      "status": "supported-reading",
+      "originalArabic": "فإنها بهذا المعنى نفس حقيقة الخصوصيات، وعين تلك الحيثيات؛ إذ تلك إنما هي تصور تعيناتها المتمائزة بمجرد النسب والإضافات وصنوف الاعتبارات، على ما ستطلع عليه، إن شاء الله تعالى.",
+      "originalEnglish": "In the latter sense, existentness is the very reality of those particularities and those very aspects: they are but the determination-forms distinguished through relations, correlations, and different considerations, as you will come to understand, God willing.",
+      "earlierDiagnosis": "Electronic تصور تعيناتها is rendered as determination-forms (as though صور); source reading remains uncertain rather than attested correction.",
+      "proposedReading": "صور تعيناتها",
+      "interpretation": "They are the forms of its determinations, distinguished by relations and considerations.",
+      "editorialDecision": "The printed quotation reads صور, not تصور; bracketed modern explanatory additions excluded.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:80"
+      ],
+      "arabicChanges": [
+        {
+          "before": "تصور تعيناتها المتمائزة",
+          "after": "صور تعيناتها المتمائزة"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "09bd47f25c79c245ac585c56e18a16dcc5b241983805c02d8f31a105d970c3af",
+      "readingArabicSHA256": "fa580d180edb627405272c9fd9220cdbe311b50ff94e6232122fbe4a1d9dfebf",
+      "changesApplied": true
+    },
+    {
+      "number": 16,
+      "unit": "SH-INTRO-025",
+      "status": "supported-reading",
+      "originalArabic": "إذ محصل هذا التقسيم أن ما يتصوره العقل لا يخلو من أن يكون قابلا للحوق الوجود في نفسه، أو يكن،",
+      "originalEnglish": "The point of the division is this: whatever intellect conceives either admits existence in itself or does not.",
+      "earlierDiagnosis": "N has أو يكن without negative; English supplies or does not contextually.",
+      "proposedReading": "أو لم يكن",
+      "interpretation": "Whatever intellect conceives either admits existence in itself or does not.",
+      "editorialDecision": "The negative is now supported by a separately printed quotation, not solely supplied from context.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:129"
+      ],
+      "arabicChanges": [
+        {
+          "before": "أو يكن،",
+          "after": "أو لم يكن،"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "90f32373a1b286b10eac19897bfec3d9662accba9b0157f46f071609b9052b9b",
+      "readingArabicSHA256": "b5bd999d5a3d0f3c640073fca3079e96e1968a1e5a3027f0454929175117e64d",
+      "changesApplied": true
+    },
+    {
+      "number": 17,
+      "unit": "SH-INTRO-035",
+      "status": "supported-reading",
+      "originalArabic": "حتى يتمكن من تميز الأحكام الحقة التي لها بحسب الأمر بعينه المفهمة المقومة لها والمميزة إياها في ذاتها عن غيرها من اللواحق العارضة لها باعتبار المجالي والمراتب؛",
+      "originalEnglish": "Intellect can thereby distinguish the true judgments that belong to them as they are—the judgments making their constitution intelligible and distinguishing them in themselves—from the other features that accrue to them through their loci of appearance and degrees.",
+      "earlierDiagnosis": "Strained sequence بحسب الأمر بعينه المفهمة المقومة is construed as intrinsic intelligible judgements; exact syntax not certified.",
+      "proposedReading": "بحسب الأمر بعينه أو المقومة لها والمميزة إياها في ذاتها",
+      "interpretation": "Distinguish the true judgements belonging to things as they are, or constituting and distinguishing them in themselves, from accidental features of their loci and degrees.",
+      "editorialDecision": "The comparator provides a coherent alternative to the electronic string المفهمة المقومة. Retain its disjunctive أو; do not claim an independently recovered manuscript text.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:170"
+      ],
+      "arabicChanges": [
+        {
+          "before": "بعينه المفهمة المقومة لها",
+          "after": "بعينه أو المقومة لها"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "c83d067655f47fb1899694e7aedebff5b29bf246c2d45bfdfb887de4f21f1493",
+      "readingArabicSHA256": "7869222004908ce16e8b70e1ee9c465d27e530a1308146062ec25fef991e98a5",
+      "changesApplied": true
+    },
+    {
+      "number": 18,
+      "unit": "SH-INTRO-035",
+      "status": "supported-reading",
+      "originalArabic": "وهذه القوة من آثار ما أشير إليه آنفا بأنه أول فعل الحق العقل الأول ومن تصور تعيناته في هذه النشأة،",
+      "originalEnglish": "This power is among the effects of the First Intellect, of which we said earlier that it is the Real's first act, and among the forms of its determinations in this realm.",
+      "earlierDiagnosis": "Retained تصور تعيناته rendered forms of determinations as though صور; source uncertainty remains.",
+      "proposedReading": "ومن صور تعيناته في هذه النشأة",
+      "interpretation": "And among the forms of its determinations in this realm.",
+      "editorialDecision": "صور is explicit in the printed quotation.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:170"
+      ],
+      "arabicChanges": [
+        {
+          "before": "ومن تصور تعيناته",
+          "after": "ومن صور تعيناته"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "c83d067655f47fb1899694e7aedebff5b29bf246c2d45bfdfb887de4f21f1493",
+      "readingArabicSHA256": "b9f4e11030710e6c698db1550cb4eeab0ff73a465c12353d1befb72cf4e848b8",
+      "changesApplied": true
+    },
+    {
+      "number": 19,
+      "unit": "SH-001",
+      "status": "supported-reading",
+      "originalArabic": "الذين منهم من اختصَّ في تلك المظهريَّة و المرآتيَّة بمزيَّة الخنم و التمام ، عليه و على آله الصلاة و السلام .",
+      "originalEnglish": "Among them is the one distinguished within this manifestation and mirroring by the excellence of sealing and completion—blessings and peace upon him and his family.",
+      "earlierDiagnosis": "Electronic الخنم rendered sealing as though الختم; invocation retained, no witnessed correction claimed.",
+      "proposedReading": "بمزية الختم والتمام",
+      "interpretation": "With the distinction of sealing and completion.",
+      "editorialDecision": "The printed medieval lemma has الختم, not the digital الخنم. Adopt الختم for a corrected reading text while preserving the old transcription in the apparatus.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:205"
+      ],
+      "arabicChanges": [
+        {
+          "before": "بمزيَّة الخنم",
+          "after": "بمزيَّة الختم"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "3e321b84347609c1bd637a3570e10a4771b4bb1d7b87c8d3e4a6f7d4190867b2",
+      "readingArabicSHA256": "53e6b4828524d7454a1e9379970a54669348074331dc1912f79919ec17f98130",
+      "changesApplied": true
+    },
+    {
+      "number": 20,
+      "unit": "SH-002",
+      "status": "partial-resolution",
+      "originalArabic": "و بيان ذلك ان القطع ببطلان مسألة التوحيد قطع ببطلان جميع اقسام اليقينيّات . من العقليّة المبرهنة و التي قياساتها معها و الحسّية التي هي من المشاهدات و الفطريَّة التي هي الأوليّات و العزيزية إلى هي الوجدانيات ،",
+      "originalEnglish": "The explanation given is that certainty that the doctrine of unity is invalid [sic] amounts to certainty in the invalidity of all classes of certain cognition: rational judgments established by demonstration and those carrying their syllogisms with them; sensory judgments belonging to observation; primordial judgments belonging to first principles; and instinctive judgments belonging to immediate awareness.",
+      "earlierDiagnosis": "Restores literal ببطلان مسألة التوحيد. Previous bracketed English inverted the received negative to match context; source contradiction now explicit. العزيزية/إلى also corrupt in digital text.",
+      "proposedReading": "والغريزية التي هي الوجدانيات; main ببطلان retained",
+      "interpretation": "Instinctive cognitions, namely immediately experienced cognitions. The additional negative in certainty of the invalidity of unity remains problematic.",
+      "editorialDecision": "H2014 p224 prints ببطلان مسألة التوحيد too, although its explanation on pp221–223 presupposes certainty in unity. This is evidence that the polarity problem is not merely the current digital transcription. Do not silently delete the negative; الغريزية/التي are directly supported lexical corrections.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:221",
+        "H2014/1:222",
+        "H2014/1:223",
+        "H2014/1:224"
+      ],
+      "arabicChanges": [
+        {
+          "before": "و العزيزية إلى هي الوجدانيات",
+          "after": "و الغريزية التي هي الوجدانيات"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "5d64575198c2659ac2b5d20b4ae7ceedc66caf70e982e1e0a41027f43c81cf66",
+      "readingArabicSHA256": "abfffc2df4dad45ca5cf0288fdabac90a1cac2e9593137e982e94f5755bf0f95",
+      "changesApplied": true
+    },
+    {
+      "number": 21,
+      "unit": "SH-008",
+      "status": "supported-reading",
+      "originalArabic": "الا ان الوجودات الممكنات لها ماهيّات معروضة لها دون الطبيعة الخاصَّة الواجبة ، الا ان الوجودات الممكنات لها ماهيّات معروضة له دون الطبيعة الخاصَّة الواجبة ، فان الوجود نفس ماهيَّتها ،",
+      "originalEnglish": "Possible existences have quiddities that serve as their subjects, whereas the particular necessary nature does not, because existence is its very quiddity.",
+      "earlierDiagnosis": "Arabic repeats possible-existence/quiddity clause; English translates once, with duplication explicitly retained in Arabic and apparatus.",
+      "proposedReading": "إلا أن وجودات الممكنات لها ماهيات معروضة لها ... دون الطبيعة الخاصة الواجبة",
+      "interpretation": "Possible existences have quiddities serving as their subjects, unlike the particular necessary nature. Translate once; remove the duplicated digital sentence only from an explicitly corrected reading text.",
+      "editorialDecision": "The complete printed medieval paragraph contains the clause once; modern brackets explain its pronouns. No medieval manuscript deletion is claimed.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:293"
+      ],
+      "arabicChanges": [
+        {
+          "before": "، الا ان الوجودات الممكنات لها ماهيّات معروضة له دون الطبيعة الخاصَّة الواجبة",
+          "after": ""
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "47e684840e1b0b3bc51dc91ff549efc11b5dae0f4304bd398bd8a73ed94f8d48",
+      "readingArabicSHA256": "986925cd1acc64c992996f5b63a375386ce19554994af1969db46949f5f8e5a4",
+      "changesApplied": true
+    },
+    {
+      "number": 22,
+      "unit": "SH-009",
+      "status": "supported-reading",
+      "originalArabic": "فالحقيقة الخاصَّة الواجبة ، حينئذ - لا يغاير الوجوب المطلق بالذات .",
+      "originalEnglish": "The particular necessary reality would therefore not differ essentially from unrestricted existence.",
+      "earlierDiagnosis": "A string reads الوجوب المطلق while English has unrestricted existence; contextual الوجود reading requires explicit note.",
+      "proposedReading": "لا يغاير الوجود المطلق بالذات",
+      "interpretation": "The particular necessary reality does not differ intrinsically from unrestricted existence.",
+      "editorialDecision": "The comparator prints الوجود, not the electronic الوجوب; English already conveys the supported reading.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:299"
+      ],
+      "arabicChanges": [
+        {
+          "before": "لا يغاير الوجوب المطلق",
+          "after": "لا يغاير الوجود المطلق"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "abadebb7a16effbb6c5e4faa8dde7b54ef4c62b784a3a6a848fce6caf98e8cfb",
+      "readingArabicSHA256": "80451ca95656635da6b79dd89d21b3fe72c03a8f88a332cbed3db30a2e810bc0",
+      "changesApplied": true
+    },
+    {
+      "number": 23,
+      "unit": "SH-011",
+      "status": "supported-reading",
+      "originalArabic": "و على التقدير الأول يلزم ان يكون افراد الطبيعة الواجبة ممكنة بالذات ، امتنعت الافراد الباقية منها ، أو أمكنت ، ضرورة امتناع وجود بها بالذات و امتناعها بها ، و الا يلزم خلاف الفرض .",
+      "originalEnglish": "In the first, the individuals of the necessary nature must be possible through themselves, whether the remaining individuals are impossible or possible. They cannot be intrinsically necessary or intrinsically impossible without contradicting what has been supposed.",
+      "earlierDiagnosis": "Individual intrinsic possibility argument retained; digital وجود بها apparently stands for وجوبها, not independently corrected.",
+      "proposedReading": "ضرورة امتناع وجوبها",
+      "interpretation": "Because their being necessary through themselves is impossible.",
+      "editorialDecision": "The joined word وجوبها is visible in the printed lemma and resolves the digital split وجود بها.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:322"
+      ],
+      "arabicChanges": [
+        {
+          "before": "امتناع وجود بها بالذات",
+          "after": "امتناع وجوبها بالذات"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "1f25bc07c2dc4933aa9027aacf62b309d806182e5b877b186978011107623633",
+      "readingArabicSHA256": "4eda06df4ed60a3830c2dc45108a5d2603a03f1c920cbdfccac58a7c6a36fc9a",
+      "changesApplied": true
+    },
+    {
+      "number": 24,
+      "unit": "SH-011",
+      "status": "unresolved",
+      "originalArabic": "و ان أريد به الإمكان الخاص ، فمعلوم ان الطبيعة الواجبة لو صحَّ ان يكون ذات افراد ، لزم ان تكون تلك الأفراد ممكنة بالإمكان الخاص ، كيف و بين مفهوميهما تناف في الصدق ! ؟",
+      "originalEnglish": "But if possibility means possibility in the strict sense, it is [not established] that a necessary nature's admitting individuals entails their strict possibility. How could that follow, when the two concepts are incompatible in predication?",
+      "earlierDiagnosis": "English [not established] supplies negative absent from printed فمعلوم; context strongly suggests it but source remains unresolved.",
+      "proposedReading": "فمعلوم",
+      "interpretation": "Printed wording is corroborated but the objection appears to require denying that strict possibility follows. Retain the problem in the apparatus; a conjectural فغير معلوم or فممنوع has not been witnessed.",
+      "editorialDecision": "H2014 does not supply the missing negative. The modern explanatory paragraph articulates the objection coherently but does not establish an alternative authorial reading.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:324"
+      ],
+      "arabicChanges": [],
+      "englishChanges": [],
+      "originalArabicSHA256": "1f25bc07c2dc4933aa9027aacf62b309d806182e5b877b186978011107623633",
+      "readingArabicSHA256": "4eda06df4ed60a3830c2dc45108a5d2603a03f1c920cbdfccac58a7c6a36fc9a",
+      "changesApplied": false
+    },
+    {
+      "number": 25,
+      "unit": "SH-018",
+      "status": "supported-reading",
+      "originalArabic": "و لأن سلَّمنا انها غير معقولة لذاتها بالنسبة إلى العقول المفارقة ، لكن مسلّم ، انها ليست معقولة بحسب الاعتبارات و الإضافات ،",
+      "originalEnglish": "Even if we grant that it is not intelligible in itself to separate intellects, we [do not] grant that it is unintelligible under considerations and relations.",
+      "earlierDiagnosis": "Digital لكن مسلّم lacks the negative supplied by English [do not]; surrounding reply suggests conjecture, not established reading.",
+      "proposedReading": "لكن ممنوع أنها ليست معقولة بحسب الاعتبارات والإضافات",
+      "interpretation": "But it is denied that it is not apprehensible through relational considerations and additions.",
+      "editorialDecision": "The independent printed presentation supplies ممنوع rather than digital مسلّم. It supports the negative English sense without adding an unattested لا to the old wording.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:417"
+      ],
+      "arabicChanges": [
+        {
+          "before": "لكن مسلّم ، انها ليست معقولة",
+          "after": "لكن ممنوع ، انها ليست معقولة"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "779b67d4035905e560f8646afeeefb585fb037ed0f822be5ae489048e4902d4e",
+      "readingArabicSHA256": "14e06782c72ae1eaad46881de29f76716638c93f7eae21541e5865eebe8eb57c",
+      "changesApplied": true
+    },
+    {
+      "number": 26,
+      "unit": "SH-020",
+      "status": "supported-reading",
+      "originalArabic": "فلو لم يقتض بعض افرادها الوجوب و البعض الآخر الامتناع ، لزم ان لا يكون ذلك الاقتضاء بالذات ، بل ، بالغير ، فيلزم ان يكون الواجب في وجوبه محتاجاً إلى الغير ، و ذلك بَيِّن الاستحالة ، و ان لم يمكن ان تكون ذات افراد عقليَّة لشيء ممّا ذكر من الوجوه الأربعة ،",
+      "originalEnglish": "Thus, if some instances required necessity and others impossibility [the reported alternative reading], that requirement would not arise through themselves but through another. The Necessary would then depend on another for its necessity, which is plainly impossible. If, instead, it cannot have intellectual instances for any of the four reasons previously mentioned, then either this unrestricted reality differs from the reality of particular external existences called possible existences, or it does not.",
+      "earlierDiagnosis": "لو لم يقتض is inconsistent with the inferential role; displayed فلو اقتضى alternative remains source-disputed.",
+      "proposedReading": "فلو اقتضى بعض أفرادها الوجوب والبعض الآخر الامتناع",
+      "interpretation": "If some instances required necessity and others impossibility, that requirement would come from another, not from their common nature itself.",
+      "editorialDecision": "The printed quotation has affirmative فلو اقتضى, not the reversed electronic فلو لم يقتض.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:431"
+      ],
+      "arabicChanges": [
+        {
+          "before": "فلو لم يقتض بعض افرادها",
+          "after": "فلو اقتضى بعض افرادها"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "959f065c44a67d0384c3cf5bd112e7141ff7897533b8d070e0fae4ca01415b28",
+      "readingArabicSHA256": "a6cd83a3ce94d709251f5dfff71869e971e08ab73fe89942683a53e7ef46be2c",
+      "changesApplied": true
+    },
+    {
+      "number": 27,
+      "unit": "SH-024",
+      "status": "supported-reading",
+      "originalArabic": "و اما ما تكوَّنت فيها ، فامر آخر غير نفس الصورة انّما اعتبره العقل عند ملاحظته لما ملاحظة تكوُّنها فيه ، و لا شك ان ذلك انّما وقعت في الدرجة الثانية من التعقُّل ، فيمتنع حينئذ ان يكون لها وجود في الخارج ، و يلزم الاختلاف المذكور .",
+      "originalEnglish": "For we answer that intelligible forms are what accrue to intellects, whereas what constitutes their being there is something else, distinct from the form itself. Intellect considers it when attending to the form's coming to be within intellect. It thus occurs at the second level of intellection, cannot exist externally, and yields the difference just alleged.",
+      "earlierDiagnosis": "ما تكوّنت فيها and عند ملاحظته لما are problematic readings; translation provisional.",
+      "proposedReading": "وأما ما تكوّن فيها ... عند ملاحظته لها ملاحظة تكوّنها فيه",
+      "interpretation": "Their coming-to-be in intellect is another consideration, distinguished from the intelligible form and apprehended at a second level of intellection.",
+      "editorialDecision": "The print has تكون rather than تكونت and لها rather than لما. Preserve the distinction between form and its considered occurrence; bracketed glosses are modern.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:487",
+        "H2014/1:488"
+      ],
+      "arabicChanges": [
+        {
+          "before": "عند ملاحظته لما ملاحظة تكوُّنها فيه",
+          "after": "عند ملاحظته لها ملاحظة تكوُّنها فيه"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "bd7a0651d82cfb00581bdea73ccb363c14a67e30c650e3b1fa8171b8be13ddcc",
+      "readingArabicSHA256": "486938e8b3b199a21fc738786560c1f7e8ece630a014686343f3c58263de8995",
+      "changesApplied": true
+    },
+    {
+      "number": 28,
+      "unit": "SH-026",
+      "status": "supported-reading",
+      "originalArabic": "شعر كلُّ من في حماك ، يهواك لكن * انا وحدي ، لكلّ مَن في حماكا",
+      "originalEnglish": "‘All within Your sanctuary love You; yet I alone [am] for all within Your sanctuary.’",
+      "earlierDiagnosis": "Closing elliptical verse has no explicit predicate; English marks [am] rather than falsely completing it.",
+      "proposedReading": "أنا وحدي بكل من في حماكا",
+      "interpretation": "Everyone within Your sanctuary loves You; I alone love everyone within Your sanctuary.",
+      "editorialDecision": "The print has بكل, not لكل. The predicate of the second hemistich is supplied from the first (love), not a literal copula “am”; the explanatory note explicitly confirms this interpretation. Its attribution to Ibn al-Farid is reported by this edition, not independently established here.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:529"
+      ],
+      "arabicChanges": [
+        {
+          "before": "انا وحدي ، لكلّ مَن في حماكا",
+          "after": "أنا وحدي بكلّ من في حماكا"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "9367c27b31f553a1ca2fc7ce0863d11489271a66530e845a04e5d32d612989bc",
+      "readingArabicSHA256": "a28971d4e84a61e5f9590f94a735142f6172a8d4fe44b6ea504441f6ac8af14a",
+      "changesApplied": true
+    },
+    {
+      "number": 29,
+      "unit": "SH-028",
+      "status": "supported-reading",
+      "originalArabic": "و لا يخفى على الفطن المستيقظ ، ان ملخّص هذا الكلام ، هو ان الحقيقة الادراكيَّة ، أي الإدراك العقلي ، المنسوب إلى المجردات ، ليس مطلق الحصول ، بل الحصول الخاص الذي هو عبارة عن استحضار المؤثِّر - اثره المتَّصل به ، و يختلف ذلك حسب اختلاف المدركين في التأثير ، فكلما كان المؤثّر اقوى في التأثير و أقلُّ احتياجاً إلى الوسائط ، كان ذلك الاتصال اقوى ، و كلَّما كان أضعف و اكثر احتياجاً إلى الوسائط كان ذلك الاتِّصاف أضعف . فمنهم من بلغ في قوة التأثير مبلغ الإيجاب الذاتي الذي يُحصِّل الأثر بحيث يصير مع المؤثر كهو مع نفسه في الارتباط بدون الاحتياج إلى غيره من الوسائط و الآلات ، و هذا غاية القوة في التأثير ، لا يمكن ان يتصور لها مزيد ، فيكون النِّسبة الارتباطيّة و الرقيقة الاتحادية الحاصلة له مع المُدرك ايضاً لا يمكن ان يتصور لها مزيد في الوجود أصلًا . و منهم من بلغ في الضعف إلى حيث لا يقدر بدون ارادة و اختيار زايد عليه ، و مع ذلك يحتاج إلى وسائط كثيرة و أسباب شتّى ، و هذا نهاية الضعف في التأثير ، فكذلك النسبة الارتباطيَّة و الرقيقة الاتحاديَّة في غاية الضعف و البعد ، حتى ينتهى إلى المقارنة الفرضيَّة - العرضيَّة - .",
+      "originalEnglish": "An alert reader will recognize its substance: the reality of cognition—intellectual cognition ascribed to immaterial beings—is not presence without qualification, but a particular presence consisting in an agent's having present its effect connected with it. This varies with the cognizing agents' efficacy. The stronger the agent's influence and the less it needs intermediaries, the stronger that connection; the weaker its influence and the more intermediaries it requires, the weaker the connection. Some agents attain the strength of intrinsic necessitation, producing an effect so that its connection with the agent is like the agent's connection with itself, without any intermediaries or instruments. This is the utmost efficacy, beyond which nothing more can be conceived. The relational connection and subtle unifying link with the cognized object likewise admit no increase. Others are so weak that they cannot act without an additional will and choice and, even then, need many intermediaries and diverse causes. This is the extremity of weakness in efficacy; the relational connection and subtle unifying link are correspondingly weak and remote, eventually reaching merely accidental conjunction [a contextual reading of the displayed alternatives].",
+      "earlierDiagnosis": "Strength of linkage varies with efficacy/mediating instruments; final الفرضية versus العرضية variant materially changes 'suppositional' versus 'accidental' conjunction.",
+      "proposedReading": "حتى ينتهي إلى المقارنة العرضية",
+      "interpretation": "Until the connection reaches merely accidental conjunction.",
+      "editorialDecision": "The quoted commentary clearly prints العرضية; the bracketed accident–substrate explanation is modern, excluded from the medieval quotation.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:582",
+        "H2014/1:583"
+      ],
+      "arabicChanges": [
+        {
+          "before": "المقارنة الفرضيَّة - العرضيَّة -",
+          "after": "المقارنة العرضيَّة"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "b63ec43abbd14ca813cfdeeccfe48166989e9d284aefbe8dda01714a12240703",
+      "readingArabicSHA256": "55a1cef83fc5fc034c386614d18cd449212f501acb72c0cf41907b7daa2ceaea",
+      "changesApplied": true
+    },
+    {
+      "number": 30,
+      "unit": "SH-030",
+      "status": "supported-reading",
+      "originalArabic": "و إذا تقرّر ان الماهيّات و الأعيان باعتبار مغايرتها للذات ، ليس لها حصَّة من الوجود أصلًا ، فلا يمكن اضافة الوجود إليها و اعتبارها معها بهذا الاعتبار ، فلو أضيف إليها اعتبر لها بوجه من الوجوه ، لا يكون ذلك المضاف الا الوجود الذاتي الحقيقي ، فلا يصحُّ حينئذ ان يقال : أنَّها مفتقرة إلى الذات العاقلة بحسب احد الوجودين الغير الفرضيَّين لأنَّ الوجود المضاف إلى الماهيَّة حينئذ ، انّما هو الوجود الذاتي الحقيقي الذي لا يمكن ان يفتقر موصوفه بحسبه إلى شيء ، فان الافتقار انّما يكون للموجود بالوجود الفرضي الذي قد ثبت انتفاؤه مطلقا .",
+      "originalEnglish": "Once it is established that quiddities and entities, considered as different from the essence, have no share in existence, existence cannot be attributed to or considered with them under that consideration. If existence is nevertheless attributed to them in any respect, it can only be real intrinsic existence. It would then be incorrect to say that they depend on the knowing essence in respect of either of the two non-suppositional modes of existence [the displayed reading]. The existence attributed to the quiddity would be real intrinsic existence, in respect of which its subject cannot depend on anything. Dependence belongs only to something existent through suppositional existence [with ‘incidental existence’ reported as an alternative], whose independent standing has been denied.",
+      "earlierDiagnosis": "The closing argument has الفرضي / العرضي alternatives determining whether 'suppositional' or 'accidental' existence carries the dependence. English marks the base reading and variant rather than resolving it.",
+      "proposedReading": "غير العرضيين؛ بالوجود العرضي",
+      "interpretation": "Neither cognitive nor external being considered intrinsically; dependence concerns derivative or incidental existentness.",
+      "editorialDecision": "Both occurrences use عرض, not فرض. Maintain distinction between existence itself and derivative attribution; do not turn this into denial of every relation of dependence.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:613",
+        "H2014/1:614"
+      ],
+      "arabicChanges": [
+        {
+          "before": "الغير الفرضيَّين",
+          "after": "الغير العرضيَّين"
+        },
+        {
+          "before": "بالوجود الفرضي",
+          "after": "بالوجود العرضي"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "0c48cb5fa6e9b0f2799e56c72bfd9a5fe92cb00b5d6b32a614c1aa1cf4a05c6c",
+      "readingArabicSHA256": "a0f1bc4bf30f4cdc89d2c261a6a55f6399fc01b1a10311e99255fe789b195426",
+      "changesApplied": true
+    },
+    {
+      "number": 31,
+      "unit": "SH-031",
+      "status": "partial-resolution",
+      "originalArabic": "لكن للزجاج بدا ، شعاعة ، فترى فيه الوان .",
+      "originalEnglish": "its radiance appears through the glass, and colours are seen in it.",
+      "earlierDiagnosis": "The electronic Arabic للزجاج بدا شعاعة is syntactically disturbed; English 'radiance appears through the glass' is contextual, not a manuscript-established emendation.",
+      "proposedReading": "لكن للزجاج بدا شعاعه، فتراءى فيه ألوان",
+      "interpretation": "Its ray becomes manifest in relation to the glass, and colours appear in it.",
+      "editorialDecision": "The print corroborates the glass/ray construction and reads فتراءى, but does not independently justify replacing للزجاج with a different preposition. Do not certify the older English through as a literal counterpart. No independent poetic attribution is established.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج1.pdf",
+      "hLocators": [
+        "H2014/1:625",
+        "H2014/1:626"
+      ],
+      "arabicChanges": [
+        {
+          "before": "لكن للزجاج بدا ، شعاعة ، فترى فيه الوان",
+          "after": "لكن للزجاج بدا شعاعه، فتراءى فيه ألوان"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "16be073e445f43fdf9a7e738bf090880281e90beaa2af0e51b47b3bf9883c71a",
+      "readingArabicSHA256": "2710e5b5323b22690c664cf7c352b3b0ec8a04f17151e6e32a0a6296479829b4",
+      "changesApplied": true
+    },
+    {
+      "number": 32,
+      "unit": "SH-033",
+      "status": "supported-reading",
+      "originalArabic": "فما كانت ظاهرة الاعتباري على احكام اطلاق الذات و وجودها الحقيقي .",
+      "originalEnglish": "I say: after explaining the divine level and the preceding levels determined through disclosure—required by essential perfection, in which the properties of the essence's unrestrictedness and real existence predominate over the determinations of the names and their considered manifestation—the author turns to the levels determined through self-beholding in disclosure. These are required by the perfection of the names, in which determinations and their considered manifestation predominate over the essence's unrestrictedness and real existence.",
+      "earlierDiagnosis": "The electronic text repeats part of the preceding contrast in a detached string; English does not duplicate it. Retain as a source-level repetition, not a certified omission.",
+      "proposedReading": "[One continuous contrast between essential jalāʾ and name-related istijlāʾ; no detached repeated tail.]",
+      "interpretation": "Jalāʾ foregrounds intrinsic unrestrictedness; istijlāʾ foregrounds the determinations of the names. The extraneous repeat in the electronic copy is absent.",
+      "editorialDecision": "The complete opening quoted commentary is visible. Bracketed modern clarifications are excluded from the proposed medieval reading.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:145"
+      ],
+      "arabicChanges": [
+        {
+          "before": "فما كانت ظاهرة الاعتباري على احكام اطلاق الذات و وجودها الحقيقي . فما كانت ظاهرة في",
+          "after": "فما كانت ظاهرة في"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "fb30d57eb4e5d90678afe58831db60fb65dd7d532a909e9bd3ab2e04a9fe5093",
+      "readingArabicSHA256": "52f58951984d18be9e85c66c3082f1604fe44bbf234c0b06df2cc1cde4a4213a",
+      "changesApplied": true
+    },
+    {
+      "number": 33,
+      "unit": "SH-035",
+      "status": "supported-reading",
+      "originalArabic": "من ان الإمكان عبارة عن الوجود بنسبته إلى المعلومات و لا شكَّ ان تلك التعيُّنات عن ظاهر العلم باعتبار تمايزه عن الوجود بنسبة إلى المعلومات ،",
+      "originalEnglish": "As explained in the prolegomenon, possibility is described in relation to objects of knowledge. The displayed wording speaks of existence in relation to the known, then of the manifest aspect of knowledge distinguished from existence by its relation to the known [the clause is textually disordered; see note].",
+      "earlierDiagnosis": "The Arabic sentence beginning الإمكان عبارة عن الوجود is disordered; English explains the received wording and its difficulty rather than purporting to restore continuous authorial syntax.",
+      "proposedReading": "الإمكان عبارة عن ظاهر العلم باعتبار تمايزه عن الوجود بنسبة إلى المعلومات",
+      "interpretation": "Possibility is described as the outward aspect of knowledge, considered as distinguished from existence by its relation to known things.",
+      "editorialDecision": "The printed quotation supplies ظاهر العلم, absent/disordered in the electronic string. This is a technical relational account, not the bare definition “possibility is existence”.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:191",
+        "H2014/2:192"
+      ],
+      "arabicChanges": [
+        {
+          "before": "الإمكان عبارة عن الوجود بنسبته إلى المعلومات",
+          "after": "الإمكان عبارة عن ظاهر العلم باعتبار تمايزه عن الوجود بنسبة إلى المعلومات"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "dfc3d25e8b1745d11d8af701900e3d636c5a35c95c6448c9506deb28207605b6",
+      "readingArabicSHA256": "45ef459a11bf82de6d2d3a24c569116e664b6142781e01edd54f5da81562559b",
+      "changesApplied": true
+    },
+    {
+      "number": 34,
+      "unit": "SH-035",
+      "status": "supported-reading",
+      "originalArabic": "و ذلك لأنّ تلك الأحوال عند مقارنة الوجود ايّاها و مقارنتها للوجود ، يصير موجودة بالضرورة ، فلو كان عدم الاستحقاقيَّة مطلقا ، مقتضى طبايعها ، للزم صيرورة الممتنع الذاتي موجوداً بضرورة الوصف ، و ذلك بَيِّن الاستحالة ،",
+      "originalEnglish": "When existence accompanies those states and they accompany it, they necessarily become existent. If their natures intrinsically required nonbeing without qualification [the reported alternative reading], something intrinsically impossible would become existent through the necessity of an attribute, which is plainly impossible.",
+      "earlierDiagnosis": "English follows a reported interpretive alternative concerning intrinsically required nonbeing, not a demonstrated manuscript correction of عدم الاستحقاقية مطلقا.",
+      "proposedReading": "فلو كان استحقاقية العدم مطلقا مقتضى طبائعها",
+      "interpretation": "If their natures intrinsically required nonexistence without qualification, their becoming existent would make the intrinsically impossible exist.",
+      "editorialDecision": "The print distinguishes عدم الاستحقاقية (absence of entitlement) from استحقاقية العدم (entitlement to nonbeing). The latter, not the former, belongs in this counterfactual.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:194",
+        "H2014/2:195"
+      ],
+      "arabicChanges": [
+        {
+          "before": "عدم الاستحقاقيَّة مطلقا",
+          "after": "استحقاقية العدم مطلقا"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "dfc3d25e8b1745d11d8af701900e3d636c5a35c95c6448c9506deb28207605b6",
+      "readingArabicSHA256": "572e616ee96f260d60dd922b76bffc65cde3313560b60fa4b52546fd1a5df10f",
+      "changesApplied": true
+    },
+    {
+      "number": 35,
+      "unit": "SH-036",
+      "status": "supported-reading",
+      "originalArabic": "- و باعتبار بعض صفات أخر ، انواع أخر ، عينيَّة غير كاملة الذات ، أي غير مستقلة و باعتبار ظهورها بحسب بعض أحوالها الآخر ، انواع آخر عينيَّة غير كاملة الذات ، أي غير مستقلة في الوجود تابعة بشيء فيه يسمّى عندهم بالحقائق التابعة و الصّور الكاينة ،",
+      "originalEnglish": "Through other attributes, or manifestation according to other states, there result external kinds incomplete in themselves, dependent on something else in existence. They are called dependent realities and occurring forms, such as the divisions of quantity and quality.",
+      "earlierDiagnosis": "Received Arabic repeats the incomplete-nature formulation in adjacent forms; English renders the sense once. No authorial deletion is established.",
+      "proposedReading": "[The dependent-nature clause occurs once.]",
+      "interpretation": "Other determinations yield external kinds incomplete in themselves, dependent on another for existence, called dependent realities and occurring forms.",
+      "editorialDecision": "The complete quoted passage contains one dependent-nature statement; the adjacent electronic repeat is absent.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:220"
+      ],
+      "arabicChanges": [
+        {
+          "before": "، انواع أخر ، عينيَّة غير كاملة الذات ، أي غير مستقلة و باعتبار ظهورها بحسب بعض أحوالها الآخر ، انواع آخر عينيَّة غير كاملة الذات ، أي غير مستقلة",
+          "after": "، انواع أخر ، عينيَّة غير كاملة الذات ، أي غير مستقلة"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "1961c33962804711441f8e070c2ccf51ac74ab039f0d5f36aba3ad8ff268bf17",
+      "readingArabicSHA256": "9d064865ba71f7ac8a57f829e92f86130855cceafb9d03ee72a896f56d5594c1",
+      "changesApplied": true
+    },
+    {
+      "number": 36,
+      "unit": "SH-038",
+      "status": "supported-reading",
+      "originalArabic": "و اما إدراكه ما يدرك بقواه الجسمانيّات ، فمن حيث الأمداد المذكور ، لكن من مرتبة الاسم الظاهر لا عن مرتبة الاسم الظاهر .",
+      "originalEnglish": "Apprehension through bodily faculties also occurs through that aid, but from the level of the name Manifest. [The displayed text immediately adds ‘not from the level of the name Manifest’; this repetition or displaced negation leaves the sentence textually unsettled.] Now suppose that a human being follows the path of the people of realization through detachment, purification, and the other disciplines taught by an experienced traveller.",
+      "earlierDiagnosis": "Source says from the level of Manifest and immediately not from that level. English flags the contradiction rather than silently resolving the negation.",
+      "proposedReading": "لكن من مرتبة الاسم الظاهر",
+      "interpretation": "Bodily cognition receives the same replenishment, but through the level of the name Manifest; inward spiritual cognition was described through Hidden.",
+      "editorialDecision": "The print has no following لا عن مرتبة الاسم الظاهر. Removing the redundant contradictory tail restores the stated Hidden/Manifest contrast.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:258",
+        "H2014/2:259"
+      ],
+      "arabicChanges": [
+        {
+          "before": "لكن من مرتبة الاسم الظاهر لا عن مرتبة الاسم الظاهر",
+          "after": "لكن من مرتبة الاسم الظاهر"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "2334585fe872b95f085c7114608f2ad93116062b624a9ba6fab798a416ccc5ab",
+      "readingArabicSHA256": "68529c5b0e84a3be6b529ba0b6d6409cbf0a5673bf1236c9c57db261e2e66844",
+      "changesApplied": true
+    },
+    {
+      "number": 37,
+      "unit": "SH-039",
+      "status": "supported-reading",
+      "originalArabic": "فهذه حقيقته فله المطلق في الحدوث و القدم ، فله الكمال المطلق في الحدوث و القدم ،",
+      "originalEnglish": "This is his reality. He possesses comprehensive perfection with respect to origination and eternity.",
+      "earlierDiagnosis": "Source gives two overlapping formulations of unrestricted perfection in origination and eternity. English renders the complete sense once; possible duplication remains uncollated.",
+      "proposedReading": "فهذه حقيقته، فله الكمال المطلق في الحدوث والقدم",
+      "interpretation": "Such is the human reality: it possesses comprehensive perfection in respect of originatedness and eternity.",
+      "editorialDecision": "The quotation runs across the page boundary once; the shorter duplicate فله المطلق في الحدوث والقدم is absent. This is Ibn Arabi quoted within Ibn Turka, not a separately collated edition of Insha al-Dawair.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:285",
+        "H2014/2:286"
+      ],
+      "arabicChanges": [
+        {
+          "before": "فله المطلق في الحدوث و القدم ، فله الكمال المطلق",
+          "after": "فله الكمال المطلق"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "c605fb628673307c27b703abe10b5b7fa2fc266b1839f6f4f4d2a1442f98b944",
+      "readingArabicSHA256": "60e18a1a0da67d1d65808214ef375a83d8cc522656cf0d3752eb0f7df9dc5a8b",
+      "changesApplied": true
+    },
+    {
+      "number": 38,
+      "unit": "SH-040",
+      "status": "supported-reading",
+      "originalArabic": "لأن الامر باصطلاحهم عبارة عن اظهار حكم الوحدة في عين الكثرة ، المعبَّر بالحركة الايجاديَّة تارة و النكاح الساري اخرى ، كما ان النسى عبارة عن اظهار حكم الكثرة و رجوعها إلى الوحدة .",
+      "originalEnglish": "In their terminology, command means making the governing property of unity manifest within multiplicity. This is expressed at one time as the existential movement and at another as the all-pervading conjunction. The contrasting expression in the source—printed as al-nasī, with its wording uncertain—means making multiplicity's governing property manifest and returning it to unity.",
+      "earlierDiagnosis": "Command and existential movement are clear; the contrasting printed النسى is explicitly uncertain in English.",
+      "proposedReading": "كما أن النهي عبارة عن إظهار حكم الكثرة ورجوعها إلى الوحدة",
+      "interpretation": "Command manifests unity within multiplicity; prohibition manifests multiplicity and its return to unity.",
+      "editorialDecision": "النهي is explicit in the printed quoted commentary; the previous النسى is not retained as an unexplained technical word.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:305"
+      ],
+      "arabicChanges": [
+        {
+          "before": "كما ان النس",
+          "after": "كما أن النهي"
+        }
+      ],
+      "englishChanges": [
+        {
+          "before": "The contrasting expression in the source—printed as al-nasī, with its wording uncertain—means",
+          "after": "The contrasting expression, prohibition (al-nahy), means"
+        }
+      ],
+      "originalArabicSHA256": "9888bdfe6b91a922eb1b17d2022064e4e2514de0e26c98bc3f631970872424d3",
+      "readingArabicSHA256": "04862f1a8c90d9cd759d47f59cd73f8364ae67bbbb05aaa065d9d5eeb9c9c09e",
+      "changesApplied": true
+    },
+    {
+      "number": 39,
+      "unit": "SH-041",
+      "status": "supported-reading",
+      "originalArabic": "و كلُّ مرئى بالذات برؤية الباصرة ، لا بُدَّ و ان يكون عرضاً جسمانياًّ ، و ذلك لأن الرؤية الباصرة ، لا بُدَّ و ان يكون عرضاً جسمانياًّ ، و ذلك لأن الرؤية اما لخروج الأشعَّة أو بالانطباع ، و الأشعَّة انّما تنتهي إلى السُّطوح الملونة ، كما ان الانطباع لا يكون الا من شأنها ،",
+      "originalEnglish": "What is seen intrinsically must be a bodily accident, since sight occurs either through the emission of rays or through an impression: rays terminate at coloured surfaces, and those surfaces are what can produce the impression.",
+      "earlierDiagnosis": "Bodily-accident clause is repeated in the electronic source; English renders the optical argument once and no textual deletion is certified.",
+      "proposedReading": "وكل مرئي بالذات برؤية الباصرة لا بد وأن يكون عرضاً جسمانياً؛ وذلك لأن الرؤية إما لخروج الأشعة أو بالانطباع",
+      "interpretation": "Anything seen directly by sight must be a bodily accident, because vision occurs either through emission of rays or through impression.",
+      "editorialDecision": "The physical account is the historical argument being reported. H2014 prints the clause once, without the electronic repetition of لا بد وأن يكون عرضاً جسمانياً وذلك لأن الرؤية.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:330"
+      ],
+      "arabicChanges": [
+        {
+          "before": "و ذلك لأن الرؤية الباصرة ، لا بُدَّ و ان يكون عرضاً جسمانياًّ ، و ذلك لأن الرؤية اما",
+          "after": "و ذلك لأن الرؤية اما"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "41b0015a3387a901ff2d3a3394725256620a85675df4ec7582bf886b0ff0b302",
+      "readingArabicSHA256": "43600771e095f693828e303a6889fa8d78ab528a8ca4f3fd7f13b1d666a59c7c",
+      "changesApplied": true
+    },
+    {
+      "number": 40,
+      "unit": "SH-041",
+      "status": "supported-reading",
+      "originalArabic": "اعلم ان نسبة هذا الكلام من المصنّف هاهنا ، انّما وقع في معرض التشكيك من حيث انَّه في صدد توجيه المسألة و ايراد الشبهة ، لكن لمَّا لم يكن في تقرير الاجوبة ما يتعلق بهذا الكلام ، وجب التعرُّض لجوابه حتى يتوهم ، انَّه انما ذكر للتحقيق .",
+      "originalEnglish": "This is impossible.’ Know that the author's earlier argument occurs here in the course of raising difficulties and formulating objections. Since his subsequent replies do not address this particular argument, it was necessary to answer it here [lest it be mistaken for his settled position].",
+      "earlierDiagnosis": "Source حتى يتوهم is rendered as lest it be mistaken, supplying a contextually expected negation. Keep this interpretation marked pending independent witness.",
+      "proposedReading": "حتى لا يتوهّم أنه إنما ذكر للتحقيق",
+      "interpretation": "An answer must be supplied lest the reader suppose that the preceding objection was stated as an established conclusion.",
+      "editorialDecision": "The negative لا is explicitly printed in the quoted medieval passage. The source-supported correction restores the dialectical voice, not merely smoother English.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:340"
+      ],
+      "arabicChanges": [
+        {
+          "before": "حتى يتوهم ، انَّه انما ذكر للتحقيق",
+          "after": "حتى لا يتوهم ، انَّه انما ذكر للتحقيق"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "41b0015a3387a901ff2d3a3394725256620a85675df4ec7582bf886b0ff0b302",
+      "readingArabicSHA256": "b60c56b44c32519ed3b58c4e0a264b7949aff462c8bd1578a242c7e7457fdd9f",
+      "changesApplied": true
+    },
+    {
+      "number": 41,
+      "unit": "SH-045",
+      "status": "supported-reading",
+      "originalArabic": "و لا يخفى انه حينئذ بمعزل في تلك الحالة عن استعمال القوى الجسمانية ، و إذا كان الأمر على هذا الوجه ، فلا اعتبار عندهم به مثل هذه الإدراكات من الحسِّية و الخياليَّة و الوهميَّة و الكفريَّة ، بل هذه الإدراكات كلَّها يكون عندهم مانعاً - مانعة - لحصول ما هو الكمال الحقيقي لديهم .",
+      "originalEnglish": "In that condition the person is plainly apart from employing bodily faculties. Sensory, imaginative, estimative, and discursive apprehensions therefore count for nothing on their account; indeed, they obstruct genuine perfection.",
+      "earlierDiagnosis": "Displayed الكفرية is rendered discursive as though الفكرية in the enumerated faculties. This is contextual interpretation, not witnessed Arabic correction.",
+      "proposedReading": "من الحسية والخيالية والوهمية والفكرية",
+      "interpretation": "Sensory, imaginative, estimative and discursive apprehensions.",
+      "editorialDecision": "The printed faculty list reads الفكرية, not the digital الكفرية.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:376"
+      ],
+      "arabicChanges": [
+        {
+          "before": "الكفريَّة",
+          "after": "الفكريَّة"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "88e543eebc3ea784df17fa515c30a206076d57eda21a1691f73401800eb2c278",
+      "readingArabicSHA256": "25d0e9ffe02c7e7d52203b60e2c41e81ef3ea5e14e6c08567f983a555b00824e",
+      "changesApplied": true
+    },
+    {
+      "number": 42,
+      "unit": "SH-048",
+      "status": "supported-reading",
+      "originalArabic": "و ما قال السائل هاهنا ، من انَّه يلزم ان يكون ادراك بعض الصُّور و الأسماء تعقُّلًا عينياً تفصيلياً ، فلا يصلح ان يكون مرآة جامعة للجميع ، مردود ،",
+      "originalEnglish": "The questioner's claim that some forms and names would then be apprehended only through an intellectual, objective, differentiated cognition [the wording displayed in this commentary reprise], so that the human being could not mirror the whole, is rejected.",
+      "earlierDiagnosis": "Reprised objection reads تعقلا عينيا تفصيليا rather than the earlier unseen cognition wording; English marks the displayed reprise rather than silently harmonizing it.",
+      "proposedReading": "من أنه يلزم أن يكون إدراك بعض الصور والأسماء تعقّلاً غيبيّاً، فلا يصلح أن يكون مرآة جامعة للجميع",
+      "interpretation": "The objection is that apprehending some forms and names would be an unseen intellection, so the locus would not be a mirror comprehending everything.",
+      "editorialDecision": "H2014 reads غيبياً and does not include تفصيلياً at this reprise. Do not replace it with the عينياً تفصيلياً used later in the same paragraph for the contrasting kind of apprehension. This resolves the immediate opposition in the working reading, not the history of all witnesses.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:425"
+      ],
+      "arabicChanges": [
+        {
+          "before": "تعقُّلًا عينياً تفصيلياً",
+          "after": "تعقُّلًا غيبياً"
+        }
+      ],
+      "englishChanges": [
+        {
+          "before": "only through an intellectual, objective, differentiated cognition [the wording displayed in this commentary reprise]",
+          "after": "as an unseen intellection"
+        }
+      ],
+      "originalArabicSHA256": "1bcecd93e88a34d76c74c1ff4c00179b3e7f01c15fe8a866ac8326c406614551",
+      "readingArabicSHA256": "1b781fb0f19eb5a9fda80fb639d32a727a64fa9d29aca845f2d76469589b42ac",
+      "changesApplied": true
+    },
+    {
+      "number": 43,
+      "unit": "SH-049",
+      "status": "partial-resolution",
+      "originalArabic": "فظهر من هذا ، ان الإنسان من حيث هو حاصر لجميع القوابل العلويَّة و السفليَّة من الروحانيَّة و المثاليَّة و الطبيعيَّة الجسمانيَّة بجملتها واحديّة جمعيتها على سبيل الجمع و التركيب الحقيقي الامتزاجى فهو بهذه الحيثيَّة انَّما يصلح ان يصير مظهراً لتلك الصورة بذلك الاعتبار و الحيثيَّة المذكورة بجملتها واحديَّة جمعيتها على سبيل الجمع و التركيب الحقيقي الامتزاجى .",
+      "originalEnglish": "Thus the human being, insofar as he contains all higher and lower receptivities—spiritual, imaginal, natural, and bodily—in their entirety and comprehensive oneness through genuine combination and intermixture, is suitable to manifest that form under the corresponding consideration, likewise in its entirety and comprehensive oneness.",
+      "earlierDiagnosis": "Long received sentence repeats the real-combination/intermixture phrase; English represents the combined sense once. No witnessed deletion is established.",
+      "proposedReading": "بجملتها وأحدية جمعيتها على سبيل الجمع والتركيب والامتزاج الحقيقي ... بجملتها وأحدية جمعيتها ... على سبيل الجمع والتركيب الحقيقي الامتزاجي",
+      "interpretation": "The print retains both qualifying phrases: the first qualifies the human gathering of receptivities; the second can qualify the form whose locus the human becomes. Keep the repeated wording visible pending a further witness.",
+      "editorialDecision": "Unlike other duplications, this repetition also occurs in the separately printed quotation. Its bracketed modern gloss associates the second phrase with حقيقة الحق. It is unsafe to delete it as an electronic dittography; the two referents provide a plausible interpretation, not an archetypal-text proof.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:446"
+      ],
+      "arabicChanges": [],
+      "englishChanges": [],
+      "originalArabicSHA256": "7a5ab30c6fface3849d19e914f2ff291123874455c5f0e1b68a8a1cbf3300ffa",
+      "readingArabicSHA256": "7a5ab30c6fface3849d19e914f2ff291123874455c5f0e1b68a8a1cbf3300ffa",
+      "changesApplied": false
+    },
+    {
+      "number": 44,
+      "unit": "SH-051",
+      "status": "supported-reading",
+      "originalArabic": "و بيانه ، ان الأفعال الواقعة في عالم الخلق منها ما هي كمالية شريفة مقصودة بالذات ، لها مدخل في تكميل الغاية الحقيقيَّة التي هي غاية الغايات ، كالتغذية و الكميَّة و غير ذلك .",
+      "originalEnglish": "Acts in the created world are of two sorts. Some are noble, perfective, and intended in themselves, contributing to the attainment of the genuine goal which is the end of ends, such as nourishment and growth [the indicated correction].",
+      "earlierDiagnosis": "Nourishment/growth rendering uses an indicated correction of displayed الكمية; not a newly collated reading.",
+      "proposedReading": "كالتغذية والتنمية وغير ذلك",
+      "interpretation": "Such as nourishment, growth, and the like.",
+      "editorialDecision": "The quoted text supports التنمية; the electronic الكمية was not the correct word for the intended example.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:471"
+      ],
+      "arabicChanges": [
+        {
+          "before": "كالتغذية و الكميَّة",
+          "after": "كالتغذية و التنمية"
+        }
+      ],
+      "englishChanges": [
+        {
+          "before": "nourishment and growth [the indicated correction]",
+          "after": "nourishment and growth"
+        }
+      ],
+      "originalArabicSHA256": "6658a93748058095bdfdb5427b9bd86aeb0b747ba2cc04cb615a4a0efde39ca9",
+      "readingArabicSHA256": "b8c577c2fa35acf318ee14d57ffed590e8d17bb291cd133ccf4eca402289099e",
+      "changesApplied": true
+    },
+    {
+      "number": 45,
+      "unit": "SH-053",
+      "status": "supported-reading",
+      "originalArabic": "لا اعتبر في إطلاقها بالمعنى المذكور ساير انواع إدراكاتها من كليّاتها و جزئيّاتها ، صوراً كانت أو معانى ، غائبة أو حاضرة ، كما اعتبر تصرُّفاتها من التركيبات الواقعة في تلك المدركات و استحال حينئذ ان يكون شيء منها مانعاً لحصول ما هو الكمال الحقيقي عندهم ،",
+      "originalEnglish": "Unrestrictedness in the stated sense then includes all kinds of their apprehension: universal and particular, forms and meanings, absent and present, as well as their operations combining these objects. None can obstruct genuine perfection.",
+      "earlierDiagnosis": "Displayed لا اعتبر is interpreted as conditional لاعتبر; English keeps positive inclusion, but independent text-check is still required.",
+      "proposedReading": "لاعتُبر في إطلاقها بالمعنى المذكور سائر أنواع إدراكاتها",
+      "interpretation": "Then all kinds of those faculties’ apprehensions would be taken into account within its unrestrictedness in the stated sense.",
+      "editorialDecision": "The print joins the conditional apodosis لاعتبر. It is not the negative لا اعتبر. Editorial interlinear bracketed explanations in H2014 are excluded from the proposed medieval reading.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:501"
+      ],
+      "arabicChanges": [
+        {
+          "before": "، لا اعتبر في إطلاقها",
+          "after": "، لاعتُبر في إطلاقها"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "718cb50cef181b378e58266de2463132b8d910be0c1116813cd82828b07c67a1",
+      "readingArabicSHA256": "5d97582d0384260657276465f097f1ea2df58a84f9f01a4d49e55e2fde5fe6e8",
+      "changesApplied": true
+    },
+    {
+      "number": 46,
+      "unit": "SH-053",
+      "status": "supported-reading",
+      "originalArabic": "و اما عالم النسب ، فمنهم العرض ، نظيره الأسود و الأبيض ، و منهم الكيف نظيره الصحيح و السقيم ، و منهم ، الأين ، نظيره ، رأسى على عينى و عينى على كتفي ، و منهم ، الإضافة ، نظيرها ، هذا أبى و انا ابنه ،",
+      "originalEnglish": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head above my neck and my neck above my shoulders [the reported alternative]; correlation, exemplified by this being my father and my being his son;",
+      "earlierDiagnosis": "Place example uses a reported neck/shoulder alternative rather than displayed eye wording; attribution and textual uncertainty remain explicit.",
+      "proposedReading": "رأسي على عنقي وعنقي على كتفي",
+      "interpretation": "My head is upon my neck, and my neck upon my shoulder.",
+      "editorialDecision": "The quoted text supports عنقي in both places, not عيني. This remains a quotation inside Ibn Turka’s commentary, not an independent collation of Ibn ʿArabī’s original work.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:507"
+      ],
+      "arabicChanges": [
+        {
+          "before": "رأسى على عينى و عينى على كتفي",
+          "after": "رأسي على عنقي وعنقي على كتفي"
+        }
+      ],
+      "englishChanges": [
+        {
+          "before": "my head above my neck and my neck above my shoulders [the reported alternative]",
+          "after": "my head upon my neck and my neck upon my shoulder"
+        }
+      ],
+      "originalArabicSHA256": "718cb50cef181b378e58266de2463132b8d910be0c1116813cd82828b07c67a1",
+      "readingArabicSHA256": "424784e993434c46433893ee54289bccceb1de7110a7429b26e09cb71e3011ce",
+      "changesApplied": true
+    },
+    {
+      "number": 47,
+      "unit": "SH-053",
+      "status": "unresolved",
+      "originalArabic": "و منهم ، الوضع ، نظيره ، يمينى - نفسي - ، و منهم ، ان يفعل ، نظيره ، الأكل ، و منهم ، ان ينفعل ، نظيره ، الشبع ،",
+      "originalEnglish": "position, exemplified here by my right [the wording is uncertain]; acting, exemplified by eating; and being acted upon, exemplified by satiation.",
+      "earlierDiagnosis": "Position example يميني/نفسي remains uncertain; acting/eating and receiving/satiation are clear.",
+      "proposedReading": "ومنهم الوضع، نظيره: يميني",
+      "interpretation": "The position example is printed as يميني, literally “my right [side/hand]”. Its precise intended completeness and relation to the reported نفسي alternative remain unresolved.",
+      "editorialDecision": "The new print corroborates يميني but does not repair the unusually abbreviated example. Retain it with a note; do not substitute a familiar textbook example or promote نفسي to a witnessed preferred reading.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:507"
+      ],
+      "arabicChanges": [
+        {
+          "before": "يمينى - نفسي -",
+          "after": "يمينى"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "718cb50cef181b378e58266de2463132b8d910be0c1116813cd82828b07c67a1",
+      "readingArabicSHA256": "f1c4be5d3636303cdf3d3cf3605914f6eb336e66576139ac9682795032e9111a",
+      "changesApplied": true
+    },
+    {
+      "number": 48,
+      "unit": "SH-053",
+      "status": "supported-reading",
+      "originalArabic": "و منهم ، اختلاف الصور في الايهاب ، كالفيل و الحمار و الأسد و الصرصر ، نظيره ، القوى الانسانيَّة التي يقبل ، الصور المعنويَّة من مذموم و محمود ، هذا فطن فهو فيل ، هذا بليد ، فهو حمار ، هذا شجاع ، فهو اسد ، جبّار ، فهو صرصر .",
+      "originalEnglish": "There are also different forms in bodily coverings, such as elephant, donkey, lion, and ṣarṣar. These correspond to human faculties receiving praiseworthy and blameworthy forms: this one is discerning, so he is an elephant; this one dull, so a donkey; this one brave, so a lion; this one cowardly [the suggested reading], so a ṣarṣar.",
+      "earlierDiagnosis": "Animal images preserved; English cowardly follows a suggested reading rather than displayed جبار. Do not certify the suggested reconstruction as a manuscript reading.",
+      "proposedReading": "هذا شجاع فهو أسد، هذا جبان فهو صرصر",
+      "interpretation": "This one is brave, so he is a lion; this one is cowardly, so he is a cricket.",
+      "editorialDecision": "H2014 prints جبان, not جبار, and supplies هذا in the final comparison. Its separate footnote identifies صرصر as a jumping, chirping insect; the medieval quoted noun is preserved.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:507"
+      ],
+      "arabicChanges": [
+        {
+          "before": "جبّار ، فهو صرصر",
+          "after": "جبان ، فهو صرصر"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "718cb50cef181b378e58266de2463132b8d910be0c1116813cd82828b07c67a1",
+      "readingArabicSHA256": "d54af09229b62b76aff8db0409049eabaa7eaafab52deae24c1f62dfa0e41a4b",
+      "changesApplied": true
+    },
+    {
+      "number": 49,
+      "unit": "SH-054",
+      "status": "supported-reading",
+      "originalArabic": "و اما لأشياء الباقية ، فكلَّما يدرك و يوصل به إليها ،",
+      "originalEnglish": "The remaining things apprehended through that higher faculty can also be reached intellectually.",
+      "earlierDiagnosis": "Received sentence about remaining objects is incomplete; the fluent English is a contextual construction, not a demonstrated restoration.",
+      "proposedReading": "وأما الأشياء الباقية، فكما تدرك ويوصل إليها بتلك القوة، تدرك أيضاً بالعقل ويوصل به إليها",
+      "interpretation": "As for the remaining things, just as they are apprehended and reached through that faculty, they are also apprehended and reached through intellect.",
+      "editorialDecision": "The printed quotation supplies the missing comparison and the clause تدرك أيضاً بالعقل. This is more than a conjectural smoothing of the defective electronic string.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:511"
+      ],
+      "arabicChanges": [
+        {
+          "before": "و اما لأشياء الباقية ، فكلَّما يدرك و يوصل به إليها",
+          "after": "وأما الأشياء الباقية، فكما تدرك ويوصل إليها بتلك القوة، تدرك أيضاً بالعقل ويوصل به إليها"
+        }
+      ],
+      "englishChanges": [
+        {
+          "before": "The remaining things apprehended through that higher faculty can also be reached intellectually.",
+          "after": "As for the remaining things, just as they are apprehended and reached through the higher faculty, they are also apprehended and reached through intellect."
+        }
+      ],
+      "originalArabicSHA256": "74d6b60b2423248d2a568f946c44998cc48461395d3080fa4a439f0352670040",
+      "readingArabicSHA256": "a97d25433d6a571ea84581b1c453eb28ea5110924613db600762372e8909863a",
+      "changesApplied": true
+    },
+    {
+      "number": 50,
+      "unit": "SH-055",
+      "status": "supported-reading",
+      "originalArabic": "فمهما غلب فيها من الصفات و الأحكام ، وجوبيَّة كانت ، أو امكانيَّة ، يكون ظهور ذلك التجلي فيها بحسبها منصبغاً بذلك الغالب من الأحكام النسبيَّة الاعتباريَّة محققاً بأحكامه و أوصافه الحقيقية التي أولها العلم ،",
+      "originalEnglish": "Whatever attributes predominate in them, necessary or possible, colour its manifestation through those relational considerations, while its own real properties—first among them knowledge—are concealed [following the reported alternative].",
+      "earlierDiagnosis": "English concealed follows a reported alternative to displayed محققا; this affects the polarity and is not independently settled.",
+      "proposedReading": "مختفياً بأحكامه وأوصافه الحقيقية التي أولها العلم",
+      "interpretation": "The disclosure is concealed in respect of its real properties and attributes, foremost among which is knowledge.",
+      "editorialDecision": "H2014 explicitly prints مختفياً. The digital محققاً changes the polarity; the English concealed now has direct printed support.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:524"
+      ],
+      "arabicChanges": [
+        {
+          "before": "محققاً بأحكامه و أوصافه الحقيقية",
+          "after": "مختفياً بأحكامه و أوصافه الحقيقية"
+        }
+      ],
+      "englishChanges": [
+        {
+          "before": "are concealed [following the reported alternative]",
+          "after": "are concealed"
+        }
+      ],
+      "originalArabicSHA256": "52db8e5f26df1130be32b7f86018f72367ecdee274021b03f4e4b14de323b3e3",
+      "readingArabicSHA256": "5ab533bd519db5c6775f0b249bcc89fcd9c8a994d01219d0c09ed1bf380e653e",
+      "changesApplied": true
+    },
+    {
+      "number": 51,
+      "unit": "SH-055",
+      "status": "partial-resolution",
+      "originalArabic": "إذ اسعاف المقتضيات القوى و القيود المذكورة انَّما يقهر القوَّة القدسيَّة على المتابعة و المدافعة عن توجُّهها بالكليَّة نحو البدن و تقيُّد انجذابها نحو المادَّة و الكدورات المظلمة اللازمة لها ،",
+      "originalEnglish": "Indulging those faculties and restrictions conversely subjects the holy faculty to their direction and draws it toward the body, matter, and its obscuring conditions. The source's exact sentence here is disordered, but its subsequent causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands.",
+      "earlierDiagnosis": "Disordered source sentence about indulging faculties is interpreted contextually; the English explicitly discloses the defect.",
+      "proposedReading": "إذ إسعاف مقتضيات القوى والقيود المذكورة إنما يقهر القوة القدسية على المتابعة والمدافعة عن توجهها بالكلية نحو البدن، ويقيّد انجذابها نحو المادة والكدورات المظلمة اللازمة لها",
+      "interpretation": "The sentence concerns how gratifying the lower faculties’ demands enslaves the holy faculty and binds attention to bodily and material concerns. Its exact pronoun relations and the force of المدافعة عن still require a cautious construction.",
+      "editorialDecision": "The quotation corrects the broken opening into إسعاف مقتضيات and reads ويقيّد. The modern explanation confirms the causal contrast but is not authorial replacement text. Do not claim that a complete original syntactic reconstruction has been established.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:528",
+        "H2014/2:529"
+      ],
+      "arabicChanges": [],
+      "englishChanges": [],
+      "originalArabicSHA256": "52db8e5f26df1130be32b7f86018f72367ecdee274021b03f4e4b14de323b3e3",
+      "readingArabicSHA256": "5ab533bd519db5c6775f0b249bcc89fcd9c8a994d01219d0c09ed1bf380e653e",
+      "changesApplied": false
+    },
+    {
+      "number": 52,
+      "unit": "SH-058",
+      "status": "supported-reading",
+      "originalArabic": "و هكذا الكلام في النوم و السهو و ما يوجبهما من الجوع و الشبع ، فان الإفراط في شيء من ذلك يوجب كلال القوَّة الفكريَّة و ضعفها عن الحركة الانفعاليَّة المفضية إلى المطالب الكسبيَّة .",
+      "originalEnglish": "The same applies to sleep and lapses of attention, and to the hunger and satiety that can give rise to them. Excess in any of these dulls and weakens the discursive faculty, preventing the movement between considerations by which acquired conclusions are reached.",
+      "earlierDiagnosis": "Earlier correction following السهو as lapses of attention is preserved; السهر parallel and الانفعالية/الانتقالية remain distinct source questions.",
+      "proposedReading": "وهكذا الكلام في النوم والسهر وما يوجبهما من الجوع والشبع ... عن الحركة الانتقالية المفضية إلى المطالب الكسبية",
+      "interpretation": "The same applies to sleep and wakefulness and to the hunger and satiety that give rise to them; excess impairs the thinking faculty and its transitional movement toward acquired objects of inquiry.",
+      "editorialDecision": "Both disputed words are now directly supported: السهر rather than السهو, and الانتقالية rather than الانفعالية. The earlier edition’s inattention translation accurately followed its electronic base but should not remain the preferred reading once this printed evidence is adopted. Keep the electronic variant in the apparatus.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:560"
+      ],
+      "arabicChanges": [
+        {
+          "before": "النوم و السهو",
+          "after": "النوم و السهر"
+        },
+        {
+          "before": "الحركة الانفعاليَّة",
+          "after": "الحركة الانتقاليَّة"
+        }
+      ],
+      "englishChanges": [
+        {
+          "before": "sleep and lapses of attention",
+          "after": "sleep and wakefulness"
+        },
+        {
+          "before": "the movement between considerations by which acquired conclusions are reached",
+          "after": "the transitional movement through which acquired conclusions are reached"
+        }
+      ],
+      "originalArabicSHA256": "bb98611de75666be2da458ebfa55196fd95ec6eddbee93d70fc73d8f64f11ebe",
+      "readingArabicSHA256": "f07ffa14ccbdeff3658a75169116d8f254998e50f04a3cd8a362886da1f471ba",
+      "changesApplied": true
+    },
+    {
+      "number": 53,
+      "unit": "SH-059",
+      "status": "supported-reading",
+      "originalArabic": "على انَّه قد اعتبر في طريق التصفية مثل هذه المعدّات كتخيلة المحل و تصفية الباطن و توجّهه إلى المبدأ و غير ذلك من الشروط و الأسباب المعتبرة عندهم على ما سبق بيانه .",
+      "originalEnglish": "The path of purification itself requires analogous preparations: emptying the receptacle, purifying the inward being, directing it toward the Principle, and the other recognized conditions already described.",
+      "earlierDiagnosis": "Emptying renders the contextual sense of displayed تخيلة as if تخلية; no independent correction of Arabic is claimed.",
+      "proposedReading": "كتخلية المحل",
+      "interpretation": "Such as emptying the receptive locus, purifying the interior, and turning toward the Principle.",
+      "editorialDecision": "The printed medieval text has تخلية, directly supporting the current English and correcting digital تخيلة.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:577"
+      ],
+      "arabicChanges": [
+        {
+          "before": "كتخيلة المحل",
+          "after": "كتخلية المحل"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "c210bd893f9caa97bb6b44c1e849bde6db507c067243410a98a5c98013f9fc03",
+      "readingArabicSHA256": "817b863f1dd8d8351dfbe684ac9a21beaad48c60e1c88703e377df405193c0eb",
+      "changesApplied": true
+    },
+    {
+      "number": 54,
+      "unit": "SH-061-E",
+      "status": "partial-resolution",
+      "originalArabic": "بل لاح له عند الاعتبار بميزانه المميّزة ما فيه من النقص، ما يميّز به بعض ما فيه من البعض، فما اطمأنّ به كلّ الاطمئنان وطلب ما هو أعلى وأتمّ.",
+      "originalEnglish": "Testing that attainment against the measure would have disclosed its deficiency and enabled him to distinguish some of its contents from others. He would not have rested in complete assurance but would have sought something higher and more perfect.",
+      "earlierDiagnosis": "English now retains distinguishing some contents from others. Final Arabic البعض/النقص apparatus remains unresolved.",
+      "proposedReading": "ما فيه من النقص، فما اطمأن به كل الاطمئنان",
+      "interpretation": "The measure would reveal its deficiency, so that he would not rest completely assured and would seek what is higher.",
+      "editorialDecision": "H2014 omits the problematic additional clause ما يميز به بعض ما فيه من البعض altogether. This provides a coherent separately printed form but does not settle whether the longer wording in A is corrupted, interpolated, or editorially omitted here. Retain both forms in apparatus; do not silently treat omission as manuscript proof.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:595",
+        "H2014/2:596"
+      ],
+      "arabicChanges": [
+        {
+          "before": "ما فيه من النقص، ما يميّز به بعض ما فيه من البعض، فما اطمأنّ",
+          "after": "ما فيه من النقص، فما اطمأنّ"
+        }
+      ],
+      "englishChanges": [
+        {
+          "before": "and enabled him to distinguish some of its contents from others. ",
+          "after": ". "
+        }
+      ],
+      "originalArabicSHA256": "0ac3751da45b8dde4b7a505627cfe07a5e5f9a456d0ca3a27cb5f8979bc5525d",
+      "readingArabicSHA256": "8f9f28a6325c69655846267a1f10435549ad5076a31569be5d5c91f70b45ff4a",
+      "changesApplied": true
+    },
+    {
+      "number": 55,
+      "unit": "SH-061-F",
+      "status": "partial-resolution",
+      "originalArabic": "حتى يصيرى هذه العلوم النظريّة التي من جملتها الصناعة الآليّة المميّزة بالنسبة إلى المعارف الذوقيّة كالعلم الآليّ المنطقيّ بالنسبة إلى العلوم النظريّة الغير المنسّقة المنتظمة.",
+      "originalEnglish": "These theoretical sciences, including the instrumental discipline of discrimination, will then stand in relation to experiential cognitions as the instrumental science of logic stands in relation to theoretical sciences requiring orderly arrangement.",
+      "earlierDiagnosis": "يصيرى and الغير المنسقة المنتظمة remain transcription cruxes. English is an expressly provisional construction.",
+      "proposedReading": "حتى تصير هذه العلوم النظرية ... الغير المتسقة المنتظمة",
+      "interpretation": "These theoretical sciences would stand to experiential cognitions as logic stands to theoretical knowledge requiring arrangement.",
+      "editorialDecision": "تصير resolves the digital يصيرى. H2014 still retains the awkward negative/participle sequence; the entire group is therefore not fully resolved.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:597"
+      ],
+      "arabicChanges": [
+        {
+          "before": "حتى يصيرى هذه العلوم",
+          "after": "حتى تصير هذه العلوم"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "207a6bc0b534fdfc5dc18fc600d2441131edefa90a73711bdbaeecf383fc586e",
+      "readingArabicSHA256": "21db8ec55b4038dc715faa62e3e5d48e7f28f5a8403ef3a24fa704742d17f707",
+      "changesApplied": true
+    },
+    {
+      "number": 56,
+      "unit": "SH-061-F",
+      "status": "supported-reading",
+      "originalArabic": "فإذا استحصل السالك المجتهد تلك الملكة فلو تحيّر في أثناء الطلب والملوك وتوقّف في بعض المطالب التي لا يحصل له بالفكر،",
+      "originalEnglish": "If the diligent traveller acquires that capacity and then encounters perplexity in his seeking and travelling, reaching an impasse on a question not attained through discursive thought, this excellent capacity enables him to bring it to light and explain its truth to a discerning seeker of guidance.",
+      "earlierDiagnosis": "الملوك is a problematic base form; travelling reads conjecturally as السلوك, without manuscript confirmation.",
+      "proposedReading": "في أثناء الطلب والسلوك",
+      "interpretation": "During seeking and spiritual wayfaring.",
+      "editorialDecision": "Printed السلوك confirms the contextual correction of digital الملوك; no change of doctrinal interpretation is needed.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:597"
+      ],
+      "arabicChanges": [
+        {
+          "before": "الطلب والملوك",
+          "after": "الطلب والسلوك"
+        }
+      ],
+      "englishChanges": [],
+      "originalArabicSHA256": "207a6bc0b534fdfc5dc18fc600d2441131edefa90a73711bdbaeecf383fc586e",
+      "readingArabicSHA256": "ea65ab7c89c87b37bd4e3be833718f9854de05db34d0204054bbdfef789aab9f",
+      "changesApplied": true
+    },
+    {
+      "number": 57,
+      "unit": "SH-061-A",
+      "status": "partial-resolution",
+      "originalArabic": "هذا كلّه إذا لم يكن له شيخ مسلك يرشده، وإمام مكمّل يقتدى به، وبيده مقاليد أقفاله وأحواله.",
+      "originalEnglish": "All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his locks and states.",
+      "earlierDiagnosis": "أقفاله/إقباله/أفعاله variants materially affect metaphor; the principal displayed reading is followed.",
+      "proposedReading": "مقاليد أفعاله وأحواله",
+      "interpretation": "The keys to his actions and states.",
+      "editorialDecision": "H2014 prints أفعاله, one of the alternatives already reported in A, not أقفاله. This corroborates a real reading alternative and supports an actions/states rendering for H2014; it does not establish that A’s locks reading is wrong or settle archetypal priority.",
+      "sourceUrl": "https://archive.alhaydari.com/ebook/ar/كتب-العرفان/شرح-تمهيد-القواعد/شرح-تمهيد-القواعد-ج2.pdf",
+      "hLocators": [
+        "H2014/2:598"
+      ],
+      "arabicChanges": [
+        {
+          "before": "مقاليد أقفاله وأحواله",
+          "after": "مقاليد أفعاله وأحواله"
+        }
+      ],
+      "englishChanges": [
+        {
+          "before": "keys to his locks and states",
+          "after": "keys to his actions and states"
+        }
+      ],
+      "originalArabicSHA256": "ac5bb55b771aad046eb7cf08a14965b4a4fecda564cb810bf7a4f2102309e79d",
+      "readingArabicSHA256": "47c209d81b8f1737d2e02f602db7c1aee8285515d764445527740d404e01569c",
+      "changesApplied": true
+    }
+  ]
+}

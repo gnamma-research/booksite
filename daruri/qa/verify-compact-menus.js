@@ -66,7 +66,7 @@ test('reading-first Contents navigation preserves direct destinations and second
  assert.deepEqual(items.map(node=>node.attrs['data-route']),['reader','contents','bookmarks','index','glossary','applications','study','editions']);
  const labels=['Read','Contents','Reading Desk','Subject index','Dictionary','Bidāya applications','Guided study','Editions & downloads'];
  items.forEach((node,i)=>{assert.equal(node.tag,'button');assert.equal(node.attrs.type,'button');assert.ok(node.text().startsWith(labels[i]));assert.ok(node.hasClass('nav-item'));assert.ok(!node.hasClass('primary'));});
- assert.deepEqual(items.map(node=>node.find(child=>child.tag==='use')?.attrs.href),['#i-book','#i-toc','#i-library','#i-subject','#i-dictionary','#i-balance','#i-study',undefined]);
+ assert.deepEqual(items.map(node=>node.find(child=>child.tag==='use')?.attrs.href),['#i-book','#i-toc','#i-library','#i-subject','#i-dictionary','#i-balance','#i-study','#i-editions']);
  const headings=nav.children.filter(node=>node.hasClass('gn-nav-section-label')).map(node=>node.text());
  assert.deepEqual(headings,['Reference tools','Explore further']);
  const footer=byId('leftNav').find(node=>node.hasClass('gn-nav-footer-links'));
@@ -106,14 +106,18 @@ test('enhanced Visuals controls are direct while hidden selects preserve state c
  assert.deepEqual(options(byId('englishFontChoice')).map(node=>node.text()),['Original','Source Sans 3','Lexend']);
  assert.deepEqual(options(byId('fb-english-font-choice')).map(node=>node.text()),['Original','Source Sans 3','Lexend']);
 });
-test('layout and palette glyphs are named; duplicate theme mode is hidden from Visuals',()=>{
+test('layout, palette and visible Appearance choices share the Visuals dialog',()=>{
  const settings=byId('settingsOverlay');
  for(const [attribute,expected,active]of [['data-parallel-side',['left','right'],'right'],['data-stacked-order',['top','bottom'],'top']]){
   const buttons=descendants(settings,node=>Object.hasOwn(node.attrs,attribute));assert.deepEqual(buttons.map(button=>button.attrs[attribute]),expected);
   for(const button of buttons){assert.equal(button.tag,'button');assert.equal(button.attrs.type,'button');assert.ok(button.attrs['aria-label']?.includes('Arabic'));assert.ok(button.find(node=>node.hasClass('gn-layout-glyph')&&node.attrs['aria-hidden']==='true'));assert.equal(button.attrs['aria-pressed'],String(button.attrs[attribute]===active));assert.ok(!Object.hasOwn(button.attrs,'title'));}
  }
  for(const id of ['fb-arabic-left','fb-arabic-right','fb-arabic-top','fb-arabic-bottom']){const node=byId(id);assert.equal(node.tag,'input');assert.equal(node.attrs.type,'radio');assert.ok(node.attrs['aria-label']||node.parent.attrs['aria-label']||node.parent.text().includes('Arabic'),'Named native glyph '+id);}
- assert.ok(Object.hasOwn(byId('settingsTheme').attrs,'hidden'),'Duplicate theme mode remains only as hidden compatibility hook');
+ const appearance=byId('settingsTheme');
+ assert.ok(!Object.hasOwn(appearance.attrs,'hidden'),
+  'Appearance choices belong visibly inside Visuals');
+ assert.equal(appearance.attrs['aria-label'],'Appearance: System, Light or Dark');
+ assert.ok(appearance.parent.hasClass('gn-appearance-row'),'Appearance uses Visuals row');
  assert.ok(!withinClosedDetails(byId('palettePicker'),settings));
  assert.ok(!withinClosedDetails(byId('smallerType'),settings));assert.ok(!withinClosedDetails(byId('largerType'),settings));
  assert.ok(settings.find(node=>node.attrs['aria-label']==='Colour palette'));

@@ -1,0 +1,45 @@
+name: Sanandaji cumulative source-reader QA
+on:
+  push:
+    paths:
+      - "texts/al-sanandaji/taqrib-al-maram/**"
+      - ".github/workflows/sanandaji-cumulative-qa.yml"
+  pull_request:
+    paths:
+      - "texts/al-sanandaji/taqrib-al-maram/**"
+      - ".github/workflows/sanandaji-cumulative-qa.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  corpus-integrity:
+    name: Original-page and marginal-source integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check reader scripts
+        shell: bash
+        run: |
+          for file in texts/al-sanandaji/taqrib-al-maram/stage51-*.js texts/al-sanandaji/taqrib-al-maram/stage51-corpus-ci.cjs texts/al-sanandaji/taqrib-al-maram/cumulative-stage51.js; do
+            node --check "$file"
+          done
+      - name: Validate current Volume I update syntax
+        run: |
+          node --check texts/al-sanandaji/taqrib-al-maram/stage85-source-delta.js
+          node --check texts/al-sanandaji/taqrib-al-maram/stage86-source-delta.js
+          node --check texts/al-sanandaji/taqrib-al-maram/stage86-corpus-ci.cjs
+          node --check texts/al-sanandaji/taqrib-al-maram/stage87-source-delta.js
+          node --check texts/al-sanandaji/taqrib-al-maram/stage87-corpus-ci.cjs
+          node --check texts/al-sanandaji/taqrib-al-maram/stage88-source-delta.js
+          node --check texts/al-sanandaji/taqrib-al-maram/stage88-corpus-ci.cjs
+      - name: Validate source-page joins, coverage and reader order
+        run: node texts/al-sanandaji/taqrib-al-maram/stage51-corpus-ci.cjs
+      - name: Validate Volume I source positions, stable IDs and absence of false completion claims
+        run: node texts/al-sanandaji/taqrib-al-maram/stage86-corpus-ci.cjs
+      - name: Validate Volume I Stage87 source layers and proof gates
+        run: node texts/al-sanandaji/taqrib-al-maram/stage87-corpus-ci.cjs
+      - name: Validate Volume I Stage88 additions, stable IDs and zero false certification
+        run: node texts/al-sanandaji/taqrib-al-maram/stage88-corpus-ci.cjs

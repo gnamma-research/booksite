@@ -1,0 +1,1418 @@
+{
+  "schema": "hikma.discussion-network.second-editorial-review.v1",
+  "date": "2026-11-11",
+  "capturedAtUTC": "2026-11-11T01:44:23.844001+00:00",
+  "status": "review complete; findings handed to root and discussion-network editor",
+  "reviewType": "Second AI-assisted editorial review; not independent human certification",
+  "scope": "Conceptual validity of a substantive sample of discussion links and all ten substantive Nihāya no-direct-route classifications. Not a fresh source collation or exhaustive certification of every network edge.",
+  "method": [
+    "Read the 22 paired canonical English discussions and relevant surrounding paragraphs; checked Arabic passages where conceptual wording or scope required it.",
+    "Read all ten substantive nonparallel Nihāya English bodies in full and inspected the specified candidate Bidāya or Muzaffar counterparts.",
+    "Assess argumentative relationship, distinctions, author-versus-reported-view attribution, and necessary cautions. Exact quotes establish the reviewed locations rather than replacing semantic review.",
+    "Capture current complete file hashes, unit Arabic/English body hashes, and matched-paragraph hashes. These bind the reviewed sources but do not imply that every paragraph of every referenced source unit underwent a new full collation."
+  ],
+  "sourceQualification": {
+    "aiAssisted": true,
+    "independentHumanCertification": false,
+    "newManuscriptCollation": false,
+    "newCompleteBookSourceCollation": false,
+    "exhaustiveNetworkReview": false
+  },
+  "inputFilesAtCapture": [
+    {
+      "path": "bidayat-al-hikma/data/book.json",
+      "sha256": "41a82bebff137704771a67a1d70c42754e39b0c8c535c63b089ed87442bd6fa1"
+    },
+    {
+      "path": "nihayat-al-hikma/data/book.json",
+      "sha256": "4fa2a7686d328652aad0178c5839e0ff51a5872c73ff20101c34450ef8de54a5"
+    },
+    {
+      "path": "muzaffar-al-mantiq/data/book.json",
+      "sha256": "7b32a57f9a772de1eb9369dab890be0f6463b7d47264c7c88f884c9466ef6fa0"
+    },
+    {
+      "path": "data/editorial-connections.json",
+      "sha256": "37a7680c06c30f4c08909cf38e8c37b1e70db7f03e6ec71979a1afa44d038508"
+    },
+    {
+      "path": "audits/discussion-link-completion-2026-11-11.json",
+      "sha256": "279125e0f9e1efccbc4aed8cb6c3f52f8d62c16cc827a13674f69481022f62c4"
+    }
+  ],
+  "networkLinkCountAtCapture": 532,
+  "existingPairsInspected": [
+    {
+      "linkID": "ct-b-ii-01-n-iii-01-16",
+      "topic": "Mental existence",
+      "from": {
+        "unit": "B-II-01",
+        "language": "english",
+        "exactNavigationQuote": "The prevailing position among philosophers is that quiddities have, in addition to their external existence—where their characteristic effects follow from them—another mode of existence in w",
+        "currentParagraphOrdinal": 1,
+        "paragraphSHA256": "1656d2ad3aa5a03ba8f25ca154ab55a1c79bc6c7e4084d77c54f2595889a5936"
+      },
+      "to": {
+        "unit": "N-III-01",
+        "language": "english",
+        "exactNavigationQuote": "The well-known position of the philosophers is that these quiddities which exist externally and upon which their effects follow have another existence in which those very external effects do",
+        "currentParagraphOrdinal": 1,
+        "paragraphSHA256": "39a1062467f5118740921d584a6a8f96e846490cf28696f883ad883c19650b29"
+      },
+      "currentRationale": "Nihāya restates the distinction between mental and external existence, develops the alternatives to it, and uses the distinction between primary and common predication to answer the category and impossibility objections.",
+      "currentCaution": null,
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The shared quiddity/external-effects distinction is valid; the later text develops the objections and modes-of-predication replies."
+    },
+    {
+      "linkID": "ct-m-c-10-b-ii-01-12",
+      "topic": "Mental existence",
+      "from": {
+        "unit": "M-C-10",
+        "language": "english",
+        "exactNavigationQuote": "**1. Mental, external, and real propositions.** An affirmative categorical proposition affirms something of something. Affirmation presupposes that the thing of which a predicate is affirmed",
+        "currentParagraphOrdinal": 2,
+        "paragraphSHA256": "ab64987022b62d00dc59b97e9b1f412b99e07e173687848688a1043d915a7b83"
+      },
+      "to": {
+        "unit": "B-II-01",
+        "language": "english",
+        "exactNavigationQuote": "The philosophers offer several arguments for mental existence. **First**, we make affirmative judgments about non-existents—for example, attributing some character to a sea of mercury, or di",
+        "currentParagraphOrdinal": 3,
+        "paragraphSHA256": "8a8b36b69059e04ec06197533a63190e09a9f49668091b41be94af01093ed34a"
+      },
+      "currentRationale": "The logical claim that affirmative predication requires an established subject becomes an argument for mental existence when the subject is absent from the external world. Bidāya gives that argument explicitly.",
+      "currentCaution": null,
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The requirement that an affirmative judgment have an established subject is explicitly used in the proof from judgments about nonexistents."
+    },
+    {
+      "linkID": "ct-m-c-10-n-iii-01-13",
+      "topic": "Mental existence",
+      "from": {
+        "unit": "M-C-10",
+        "language": "english",
+        "exactNavigationQuote": "**Mental (dhihniyya):** the subject exists in the intellect alone. Examples are “Every conjunction of contradictories differs from a conjunction of similars” and “Every ruby mountain is poss",
+        "currentParagraphOrdinal": 5,
+        "paragraphSHA256": "8bca74536bc6e563de12fa55f30214709a6efd5ba8523babee73f5a8b348ecff"
+      },
+      "to": {
+        "unit": "N-III-01",
+        "language": "english",
+        "exactNavigationQuote": "The logicians' division of individuals into mental and external individuals is based upon a loose manner of speaking intended to facilitate instruction.",
+        "currentParagraphOrdinal": 13,
+        "paragraphSHA256": "0236395b6be164bb05f0878ccbcd71a5b191d75d48b8b4188b6061b00a227db9"
+      },
+      "currentRationale": "Nihāya expressly qualifies the logicians’ division into mental and external individuals as a pedagogical way of speaking. Read this alongside Muẓaffar’s classification of categorical propositions.",
+      "currentCaution": "The two discussions classify different things: propositions by their subject domain, and quiddities by their mode of existence.",
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The caution correctly distinguishes the classification of propositions by subject domain from the metaphysical status of mentally represented quiddities."
+    },
+    {
+      "linkID": "ct-m-v-40-n-iii-01-v",
+      "topic": "Mental existence",
+      "from": {
+        "unit": "M-V-40",
+        "language": "english",
+        "exactNavigationQuote": "1. Someone argued against mental existence as follows: if quiddities existed in the mind, the mind would be hot and cold when conceiving heat and cold, straight and round, and so on. The con",
+        "currentParagraphOrdinal": 2,
+        "paragraphSHA256": "2346702ef129ee4c477e1e609f40359cd11dad40a7d2698ccb9af82b13b3bc2f"
+      },
+      "to": {
+        "unit": "N-III-01",
+        "language": "english",
+        "exactNavigationQuote": "The resolution is that the criterion for a thing's existence being for another and for its qualifying that other is common predication. What exists in the mind of coldness, heat, and the lik",
+        "currentParagraphOrdinal": 19,
+        "paragraphSHA256": "a37d3628ad285c1b981f2498c2355e78ab954206118fb8ccd019c5ccfc3a3ed6"
+      },
+      "currentRationale": "The final exercises ask for the logical arrangement of the same mental-existence proof and hot/cold objection treated in Nihāya. Its reply distinguishes the mental concept from the external effect by modes of predication.",
+      "currentCaution": "This links a worked philosophical dispute to a request to formalize it, not a generic occurrence of “proposition”.",
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The actual hot/cold exercise is paired with its philosophical reply through primary/common predication; this is a specific argument rather than a generic logical term."
+    },
+    {
+      "linkID": "disc-m-k-15-n-xi-10-logic-75",
+      "topic": "Logical versus philosophical second intelligibles",
+      "from": {
+        "unit": "M-K-15",
+        "language": "english",
+        "exactNavigationQuote": "**2. The logical universal (*al-kullī al-manṭiqī*).** The intellect considers the abstract characteristic of being a universal—“that which may be supposed to apply to many”—without attaching it to any particular nature, such as human, animal, or stone. It exists only in the intellect, for it is a purely mental concept formed by",
+        "currentParagraphOrdinal": 3,
+        "paragraphSHA256": "a08964626a12d4502d8b1c65c44550980100f4f97994501c4bcbd0b728bfcfb8"
+      },
+      "to": {
+        "unit": "N-XI-10",
+        "language": "english",
+        "exactNavigationQuote": "As for meanings whose instances are characterized precisely by being mental, our minds can take something abstracted from external reality—which is a concept—as an instance and consider it.",
+        "currentParagraphOrdinal": 4,
+        "paragraphSHA256": "8905b5cb7f2cc3414ab31747a60c460b198f7609c99716a76eae2dbaa83e9156"
+      },
+      "currentRationale": "Nihāya explains how the intellect makes a first concept its object and abstracts universal, genus, differentia, and the other logical classifications.",
+      "currentCaution": "A logical second intention has a mental instance; this is distinct from a philosophical predicate whose subject is externally qualified.",
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The logical universal has a mental instance; the caution correctly prevents its identification with an externally qualifying philosophical predicate."
+    },
+    {
+      "linkID": "disc-b-iv-07-n-iv-01-24",
+      "topic": "Logical versus philosophical second intelligibles",
+      "from": {
+        "unit": "B-IV-07",
+        "language": "english",
+        "exactNavigationQuote": "Intrinsic possibility is an *intellectual consideration* because it belongs to a quiddity considered by the intellect apart from its existence and non-existence.",
+        "currentParagraphOrdinal": 1,
+        "paragraphSHA256": "3f33638b896e8c6ef1885ba06470ed0cdb94e14e7faa2a61f3a759df5fa33324"
+      },
+      "to": {
+        "unit": "N-IV-01",
+        "language": "english",
+        "exactNavigationQuote": "The answer is that qualification by an attribute among concrete things does not require that attribute to be realized among them through a separate, independent existence.",
+        "currentParagraphOrdinal": 22,
+        "paragraphSHA256": "88647b513dc9a39d177ab5f7a605b62886372c22c3d8513ceea3165b170f00b6"
+      },
+      "currentRationale": "Nihāya clarifies how possibility is intellectually predicated while its subject is qualified by it externally.",
+      "currentCaution": "An intellectual consideration is not thereby a groundless fiction; Nihāya expressly denies both a separate external entity and a wholly ungrounded consideration.",
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The externally qualified subject does not require possibility to have a separate external existence. The caution against treating intellectual consideration as groundless fiction is supported."
+    },
+    {
+      "linkID": "disc-m-k-12-n-v-04-logic-66",
+      "topic": "Accidental predicate versus inhering accident",
+      "from": {
+        "unit": "M-K-12",
+        "language": "english",
+        "exactNavigationQuote": "**2. Accidental predicate.** This is extrinsic to the subject's essence and attaches to it after all its essential constituents are given. Being capable of laughter in relation to human being and walking in relation to animal provide examples.",
+        "currentParagraphOrdinal": 3,
+        "paragraphSHA256": "29b02cd11613abd350d4ca913000b400fff93f9212af1c1ede465f4850124937"
+      },
+      "to": {
+        "unit": "N-V-04",
+        "language": "english",
+        "exactNavigationQuote": "Other concepts predicated of them, which fall outside their definitions, such as “writer” in relation to the human being and “walking” in relation to animal, are called “accidental predicates.”",
+        "currentParagraphOrdinal": 2,
+        "paragraphSHA256": "cff4fd09927138e643f9fd5c3bc6e2468a769b00dbf08e1c139136c77029ffd2"
+      },
+      "currentRationale": "Nihāya develops accidental predicates as concepts outside a subject’s definition.",
+      "currentCaution": "Accidental here does not mean merely temporary, nor does it coincide with the ontological opposition to substance.",
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "Both discuss predicates outside a constitutive definition. The caution correctly excludes both mere temporariness and identification with an ontological accident."
+    },
+    {
+      "linkID": "disc-m-k-16-b-vi-01-logic-70",
+      "topic": "Accidental predicate versus inhering accident",
+      "from": {
+        "unit": "M-K-16",
+        "language": "english",
+        "exactNavigationQuote": "A second ambiguity arises because logicians call an extrinsic universal a special or common *ʿaraḍ*, and then also call such a thing as laughter an *ʿaraḍ*.",
+        "currentParagraphOrdinal": 2,
+        "paragraphSHA256": "be2c4cf2217f8d5e063a2bc1e28ce125b5f093385d62943f92b380380e817b55"
+      },
+      "to": {
+        "unit": "B-VI-01",
+        "language": "english",
+        "exactNavigationQuote": "An accidental quiddity, by contrast, is such that, when existing outside the mind, it exists in a subject able to subsist independently of it.",
+        "currentParagraphOrdinal": 2,
+        "paragraphSHA256": "1f8f9ea13e0b296a90666b6393c8b96166477c9a15629a260850b972528d6c35"
+      },
+      "currentRationale": "Bidāya’s accident inhering in an independent subject is the ontological sense that Muẓaffar distinguishes from an accidental predicate.",
+      "currentCaution": "Do not merge ʿaraḍ, an inhering accident, with ʿaraḍī, a predicate outside a definition.",
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The explicit Muzaffar ambiguity warning is correctly paired with the ontological definition; the caution preserves arad versus aradi."
+    },
+    {
+      "linkID": "disc-m-k-16-n-vi-02-logic-71",
+      "topic": "Accidental predicate versus inhering accident",
+      "from": {
+        "unit": "M-K-16",
+        "language": "english",
+        "exactNavigationQuote": "A second ambiguity arises because logicians call an extrinsic universal a special or common *ʿaraḍ*, and then also call such a thing as laughter an *ʿaraḍ*.",
+        "currentParagraphOrdinal": 2,
+        "paragraphSHA256": "be2c4cf2217f8d5e063a2bc1e28ce125b5f093385d62943f92b380380e817b55"
+      },
+      "to": {
+        "unit": "N-VI-02",
+        "language": "english",
+        "exactNavigationQuote": "Quiddity divides primarily into a quiddity which, when it exists externally, exists not in a subject independent of it—this is the quiddity of substance—and a quiddity which, when it exists externally, exists in a subject independent of it—these are the nine accidental categories.",
+        "currentParagraphOrdinal": 1,
+        "paragraphSHA256": "08243324c5b205c0cdf79efa0fdff9d7a42a48db6bb3ead7dc7c4c570bcb2026"
+      },
+      "currentRationale": "Nihāya’s substance/accident division provides the ontological counterpart of Muẓaffar’s warning about the two senses of accident.",
+      "currentCaution": null,
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The ontological counterpart is correctly identified. The rationale and source warning already supply the distinction despite the absence of an additional caution field."
+    },
+    {
+      "linkID": "disc-m-d-08-n-vii-01-logic-89",
+      "topic": "Logical versus causal circularity",
+      "from": {
+        "unit": "M-D-08",
+        "language": "english",
+        "exactNavigationQuote": "Fourth, the account must not be circular. Circularity arises when the expression offered to explain the subject is itself unintelligible except through that subject. The subject then becomes part of its own explanation.",
+        "currentParagraphOrdinal": 2,
+        "paragraphSHA256": "a64c605fc60d6f7ba137833e7f9a5920ac5865973d9684cf72cabd4cf40eb929"
+      },
+      "to": {
+        "unit": "N-VII-01",
+        "language": "english",
+        "exactNavigationQuote": "An existent is divided into the one and the many: every existent is either one or many.",
+        "currentParagraphOrdinal": 1,
+        "paragraphSHA256": "6af6b308e1284a04445aaf4b3e6c52c8bba9fb9fb16e0e848ada4cbcd6ef5768"
+      },
+      "currentRationale": "Nihāya diagnoses the circularity and self-definition in proposed real definitions of unity and multiplicity.",
+      "currentCaution": "Definitional circularity concerns explanation; it should not be conflated with a circle of efficient causes.",
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The definition of one and many genuinely illustrates definitional circularity. The caution correctly distinguishes this from existential priority in efficient causation."
+    },
+    {
+      "linkID": "disc-b-vii-05-n-viii-05-59",
+      "topic": "Logical versus causal circularity",
+      "from": {
+        "unit": "B-VII-05",
+        "language": "english",
+        "exactNavigationQuote": "A causal circle (*dawr*) is impossible. It occurs when the existence of something depends on what itself depends upon that thing, whether directly, an *explicit circle*, or through one or more intermediaries, a *concealed circle*. In either case the thing's existence ultimately depends upon itself. Since a cause is prior to its effect in",
+        "currentParagraphOrdinal": 1,
+        "paragraphSHA256": "d0efe195c67c670034ecc7170c7b2b0816aa06a0722c1fc115a300fbb2688244"
+      },
+      "to": {
+        "unit": "N-VIII-05",
+        "language": "english",
+        "exactNavigationQuote": "Circularity is a thing’s existence depending upon something whose existence depends upon it.",
+        "currentParagraphOrdinal": 1,
+        "paragraphSHA256": "27dfc3f0a749ce6a290991e9a69829332d2b7d1c85c911336600a5e8ffbe85f4"
+      },
+      "currentRationale": "Nihāya develops the same explicit and mediated circles before examining regress in ordered causes.",
+      "currentCaution": null,
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The two passages analyze direct and mediated existential dependence and the impossibility of self-priority, rather than circular wording."
+    },
+    {
+      "linkID": "ct-m-v-39-b-vii-03-v",
+      "topic": "Complete-cause necessity",
+      "from": {
+        "unit": "M-V-39",
+        "language": "english",
+        "exactNavigationQuote": "We may, however, know that the common feature—the respect of resemblance—is a **complete cause** of the judgment’s presence in the original case. We then infer with certainty that the judgme",
+        "currentParagraphOrdinal": 3,
+        "paragraphSHA256": "c2401ea301b5e3f3bca3000ba9c2bf296d9c36e4c08697d50f367745fc39f204"
+      },
+      "to": {
+        "unit": "B-VII-03",
+        "language": "english",
+        "exactNavigationQuote": "Whenever a complete cause exists, its effect must exist. Otherwise the effect could be absent despite the presence of everything required for it; its absence would then be unexplained. Likew",
+        "currentParagraphOrdinal": 1,
+        "paragraphSHA256": "a14a1599154eae22dcc9dea9de6a9012cce161f21fdd8fb4e1763c8d9cc44729"
+      },
+      "currentRationale": "Muẓaffar’s transition from resemblance to certain demonstration depends on the common feature being a complete cause. Bidāya explains why a complete cause and its effect cannot be separated.",
+      "currentCaution": "Ontological necessity does not by itself establish that an investigator has identified the complete cause; Muẓaffar expressly marks that epistemic difficulty.",
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The inference from analogy requires a genuinely complete cause. The epistemic caution is essential and is already present."
+    },
+    {
+      "linkID": "ct-m-v-39-n-viii-03-v",
+      "topic": "Complete-cause necessity",
+      "from": {
+        "unit": "M-V-39",
+        "language": "english",
+        "exactNavigationQuote": "We may, however, know that the common feature—the respect of resemblance—is a **complete cause** of the judgment’s presence in the original case. We then infer with certainty that the judgme",
+        "currentParagraphOrdinal": 3,
+        "paragraphSHA256": "c2401ea301b5e3f3bca3000ba9c2bf296d9c36e4c08697d50f367745fc39f204"
+      },
+      "to": {
+        "unit": "N-VIII-03",
+        "language": "english",
+        "exactNavigationQuote": "This is mistaken. The human being acting by choice is not a complete cause of the act, but an incomplete cause. The act has other incomplete causes, such as matter, its presence, the coincid",
+        "currentParagraphOrdinal": 10,
+        "paragraphSHA256": "1cc16a9fd0bf4f0409095b8bc8101631d5f360649a3fcc15f1717172400dc0d9"
+      },
+      "currentRationale": "The argument’s certainty requires the full cause. Nihāya distinguishes complete from incomplete causes, including in voluntary action, and argues that the complete cause necessitates its effect.",
+      "currentCaution": "The relation is the specific full-cause premise, not a broad crosslink for every occurrence of “cause”.",
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The destination explicitly distinguishes the human as an incomplete cause from the full causal complex; the shared premise is precise."
+    },
+    {
+      "linkID": "disc-m-v-37-b-vii-03-logic-116",
+      "topic": "Complete-cause necessity",
+      "from": {
+        "unit": "M-V-37",
+        "language": "english",
+        "exactNavigationQuote": "**2. On causal explanation as well.** Someone who has observed some particulars investigates the cause of the feature’s presence and discovers that it belongs to those observed particulars because of a cause or characteristic present in their kind. Reason has no doubt that an effect never fails to follow its cause. The observer",
+        "currentParagraphOrdinal": 3,
+        "paragraphSHA256": "081de89a64e243fc2ce03ecbe9f4db7526ac7094034231111fe7b66d758907db"
+      },
+      "to": {
+        "unit": "B-VII-03",
+        "language": "english",
+        "exactNavigationQuote": "Whenever a complete cause exists, its effect must exist.",
+        "currentParagraphOrdinal": 1,
+        "paragraphSHA256": "a14a1599154eae22dcc9dea9de6a9012cce161f21fdd8fb4e1763c8d9cc44729"
+      },
+      "currentRationale": "Muẓaffar’s causal generalisation assumes that the identified cause necessitates the effect, the principle explained in Bidāya.",
+      "currentCaution": "Knowing that a complete cause necessitates its effect does not establish that an empirical inquiry has found that complete cause.",
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The causal-induction bridge is supported. Its caution correctly separates causal necessity from successful empirical identification of a complete cause."
+    },
+    {
+      "linkID": "disc-b-vii-03-n-viii-03-57",
+      "topic": "Complete-cause necessity",
+      "from": {
+        "unit": "B-VII-03",
+        "language": "english",
+        "exactNavigationQuote": "Whenever a complete cause exists, its effect must exist.",
+        "currentParagraphOrdinal": 1,
+        "paragraphSHA256": "a14a1599154eae22dcc9dea9de6a9012cce161f21fdd8fb4e1763c8d9cc44729"
+      },
+      "to": {
+        "unit": "N-VIII-03",
+        "language": "english",
+        "exactNavigationQuote": "As for the necessity of the effect’s existence when its complete cause exists: if its existence were not necessary when its complete cause exists, its nonexistence would be admissible.",
+        "currentParagraphOrdinal": 2,
+        "paragraphSHA256": "936352d2339f382f0763b81f3e807e33801ce896492a6017dcfab0c91feea520"
+      },
+      "currentRationale": "Nihāya develops the impossibility of a complete cause without its effect.",
+      "currentCaution": "Necessity relative to another is distinguished from the effect’s being made necessary through its cause.",
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The destination gives the same nonseparation principle and expressly distinguishes necessity relative to another from necessity through another."
+    },
+    {
+      "linkID": "disc-b-x-10-n-vi-17-93",
+      "topic": "Where versus position",
+      "from": {
+        "unit": "B-X-10",
+        "language": "english",
+        "exactNavigationQuote": "Rather, location is a kind of position, and local motion is correspondingly a variety of positional motion.",
+        "currentParagraphOrdinal": 2,
+        "paragraphSHA256": "602cf92a6db5d68f7fbc0ec952014ce9b543870ce3c306fb2ff315d83eb63902"
+      },
+      "to": {
+        "unit": "N-VI-17",
+        "language": "english",
+        "exactNavigationQuote": "The objection to this is that a body may move from place to place without any change in its substance or in its other accidents apart from where; conversely, a change in position may occur without locomotion.",
+        "currentParagraphOrdinal": 7,
+        "paragraphSHA256": "f2ec8a0d326d54c442120c0c64cf16ceb4c93816adaede5c4524b3ca2867a55d"
+      },
+      "currentRationale": "Bidāya affirmatively treats where as a kind of position and local motion as positional motion; compare Nihāya’s earlier argument distinguishing them and its later reservation in IX.7.",
+      "currentCaution": "Bidāya’s Arabic says “بل الأين ضرب من الوضع”; this is an affirmative claim, not a conditional possibility. Nihāya VI.17 distinguishes the categories, while IX.7 questions where’s independence. The route preserves this difference rather than harmonising the three passages.",
+      "assessment": "wording qualification identified; destination valid",
+      "finding": "The destination and anti-harmonization caution are correct, but the wording at review start understated Bidāya’s positive assertion as a mere possibility; see wordingFinding."
+    },
+    {
+      "linkID": "disc-b-vi-11-n-vi-17-50",
+      "topic": "Where versus position",
+      "from": {
+        "unit": "B-VI-11",
+        "language": "english",
+        "exactNavigationQuote": "**Where** is the determination arising from a thing's relation to place.",
+        "currentParagraphOrdinal": 2,
+        "paragraphSHA256": "bd4bf5ab6d1360b40eece50e542147ff4ef70aa91ce380b6e301a722cc5ba3e1"
+      },
+      "to": {
+        "unit": "N-VI-17",
+        "language": "english",
+        "exactNavigationQuote": "Where is a configuration acquired by a body through its relation to place.",
+        "currentParagraphOrdinal": 2,
+        "paragraphSHA256": "7876761fc87a53f8c3db95cbcb1c3d7900859d7d04ff7c10e9fa7cbee95a6e10"
+      },
+      "currentRationale": "Nihāya develops the determination a body acquires through its relation to place.",
+      "currentCaution": "Nihāya VI.17 argues for its distinction from position, but IX.7 later expresses doubt about its independent category status; Bidāya X.10 also raises that qualification.",
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The category definition is a valid counterpart. The caution correctly preserves the tension with Nihāya IX.7 and Bidāya X.10."
+    },
+    {
+      "linkID": "disc-b-xii-08-n-xii-13-128",
+      "topic": "Divine will",
+      "from": {
+        "unit": "B-XII-08",
+        "language": "english",
+        "exactNavigationQuote": "**The author's assessment.** These explanations analytically reduce the meanings of will and speech to certain aspects of knowledge and power.",
+        "currentParagraphOrdinal": 5,
+        "paragraphSHA256": "6514a0585ff6783e346a45e228a90219f388dbae8a0b7c71ab71352a36386cf8"
+      },
+      "to": {
+        "unit": "N-XII-13",
+        "language": "english",
+        "exactNavigationQuote": "In brief, there is no proof that the concept of will applies to the Necessary’s knowledge of the most fitting order.",
+        "currentParagraphOrdinal": 12,
+        "paragraphSHA256": "19f3bc7574846f15f346eba18be4d867606fd78f77d7fe46714a5dadc7eb1506"
+      },
+      "currentRationale": "Nihāya explicitly questions whether identifying divine knowledge with will establishes the concept of will rather than merely renaming knowledge.",
+      "currentCaution": null,
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The destination explicitly questions whether naming divine knowledge will establishes the concept of will. No unqualified identity is imposed."
+    },
+    {
+      "linkID": "disc-b-xii-08-n-xii-16-127",
+      "topic": "Divine speech",
+      "from": {
+        "unit": "B-XII-08",
+        "language": "english",
+        "exactNavigationQuote": "The author adds, however, that the will and speech attributed to God in the Qurʾān and Sunnah are intended as **attributes of action** under the account of such attributes to be given, God willing.",
+        "currentParagraphOrdinal": 6,
+        "paragraphSHA256": "620c1c19433f933d6de6d8951ef54e39fa88c77c58e28461be6dddd0b9d2d284"
+      },
+      "to": {
+        "unit": "N-XII-16",
+        "language": "english",
+        "exactNavigationQuote": "I reply: this is because they occur in the Book and the Sunna.",
+        "currentParagraphOrdinal": 9,
+        "paragraphSHA256": "8c877a3a8f3a354bc42dac2cfece8c95bb9330c461b133e984840eff6c96aa98"
+      },
+      "currentRationale": "Both distinguish philosophical reductions of speech from its attribution in revealed discourse.",
+      "currentCaution": "The reported account of speech as an essential attribute is not the author’s unqualified conclusion.",
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The link reaches the author’s concluding distinction between a reported essential-attribute analysis and speech as an attribute of act."
+    },
+    {
+      "linkID": "disc-m-l-02-n-xii-16-logic-36",
+      "topic": "Divine speech",
+      "from": {
+        "unit": "M-L-02",
+        "language": "english",
+        "exactNavigationQuote": "This intellectual transition cannot occur without an explanation.",
+        "currentParagraphOrdinal": 3,
+        "paragraphSHA256": "b10b5aaf8ff7181e0db8465e7bbd69b7fb675c24eee5c7b7124df8711632e1a8"
+      },
+      "to": {
+        "unit": "N-XII-16",
+        "language": "english",
+        "exactNavigationQuote": "“If there were a real existent signifying something through real rather than conventional signification—such as an effect signifying that which produces it, or an effect signifying through its existential perfection the perfection present in its cause in a higher and nobler manner—it would be more entitled to be",
+        "currentParagraphOrdinal": 5,
+        "paragraphSHA256": "155256fa8c958c0e00208ed6be189f92d5e676d4735660ebca3d3f08f8894f90"
+      },
+      "currentRationale": "Nihāya explicitly contrasts real signification through an effect with conventional verbal signification, using the logical distinction in its analysis of speech.",
+      "currentCaution": "The chapter reports this analysis and then qualifies whether speech is a separate essential attribute.",
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "Real causal signification and conventional linguistic signification are appropriately compared; the later authorial qualification is retained."
+    },
+    {
+      "linkID": "disc-m-l-03-n-xii-16-logic-38",
+      "topic": "Divine speech",
+      "from": {
+        "unit": "M-L-03",
+        "language": "english",
+        "exactNavigationQuote": "The reason a word signifies a meaning is the established intellectual connection between expression and meaning.",
+        "currentParagraphOrdinal": 2,
+        "paragraphSHA256": "46d8ccb269bfd8c09b22164c6932de6630fe9430bb2089625032a8a2ac4362f0"
+      },
+      "to": {
+        "unit": "N-XII-16",
+        "language": "english",
+        "exactNavigationQuote": "“In our ordinary usage, speech is an expression that signifies, through conventional designation, what is inwardly intended.",
+        "currentParagraphOrdinal": 4,
+        "paragraphSHA256": "f1a0715cb01d84d30f6e03d3d596f01e55acf5ee00285b640427656176508699"
+      },
+      "currentRationale": "Nihāya’s account of ordinary speech explicitly relies on the hearer’s knowledge of linguistic convention.",
+      "currentCaution": null,
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "Both passages explicitly require knowledge of the convention for ordinary verbal signification."
+    },
+    {
+      "linkID": "disc-b-xii-06-n-xii-14-125",
+      "topic": "Complete causality and voluntary action",
+      "from": {
+        "unit": "B-XII-06",
+        "language": "english",
+        "exactNavigationQuote": "But relative to the human being, considered as one constituent of that complete causal complex, the action remains possible.",
+        "currentParagraphOrdinal": 4,
+        "paragraphSHA256": "dc191fe832f103a8f4c26839b8c5e9ff73a9fa12eff3b48328777401b30083b9"
+      },
+      "to": {
+        "unit": "N-XII-14",
+        "language": "english",
+        "exactNavigationQuote": "The reply is that voluntary acts are contingent things.",
+        "currentParagraphOrdinal": 7,
+        "paragraphSHA256": "442256a7575f35eba9417bd0531d40bd2e15dbc3f9db09f07dadec9cd30754b4"
+      },
+      "currentRationale": "Nihāya develops the distinction between the human as one causal constituent and the complete cause, and describes divine and human agency as vertically ordered.",
+      "currentCaution": "The author’s causal necessity preserves the act’s qualification as voluntary; it is not presented as elimination of choice.",
+      "assessment": "conceptually valid in the stated scope",
+      "finding": "The shared distinction between the human constituent and the full cause is valid. The caution correctly retains the act’s qualification as voluntary and the vertical ordering of agency."
+    }
+  ],
+  "additionalSupportingExistingRoute": {
+    "linkID": "disc-b-x-10-n-ix-07-92",
+    "from": {
+      "unit": "B-X-10",
+      "language": "english",
+      "exactNavigationQuote": "The traditional philosophers held that motion occurs in four categories: *place*, *quality*, *quantity*, and *position*.",
+      "currentParagraphOrdinal": 1,
+      "paragraphSHA256": "ea423555f6362cce49d11a8281b20bb2836759dc302bab52687fd3c78c6412ee"
+    },
+    "to": {
+      "unit": "N-IX-07",
+      "language": "english",
+      "exactNavigationQuote": "The well-known position among the ancient philosophers is that motion occurs in four categories: quality, quantity, place, and position.",
+      "currentParagraphOrdinal": 1,
+      "paragraphSHA256": "7048a63885e6eaf4aa2b449f9f0252b44853f3e5f26d241e3d460135fa5929d4"
+    },
+    "assessment": "The shared four-category account is correctly linked; Nihāya IX.7 paragraph 6 supplies the further explicit doubt about independent Where."
+  },
+  "wordingFinding": {
+    "unit": "B-X-10",
+    "networkLinkID": "disc-b-x-10-n-vi-17-93",
+    "finding": "A positive Arabic assertion was weakened into a conditional in the English and into mere possibility in the link rationale. The destination and existing anti-harmonization caution were correct.",
+    "arabicEvidence": "بل الأين ضرب من الوضع و عليه فالحركة الأينية ضرب من الحركة الوضعية",
+    "originalEnglish": "If location is a kind of position, local motion is correspondingly a variety of positional motion.",
+    "minimalProposedEnglish": "Rather, location is a kind of position, and local motion is correspondingly a variety of positional motion.",
+    "originalLinkRationale": "Bidāya explicitly allows the possibility that where is a kind of position; compare Nihāya’s earlier argument distinguishing them and its later reservation in IX.7.",
+    "proposedLinkRationale": "Bidāya states that where is a kind of position and accordingly treats local motion as positional; compare Nihāya’s earlier argument distinguishing them and its later doubt about where’s independence in IX.7.",
+    "existingCautionDisposition": "retain",
+    "currentEnglishContainsOriginal": false,
+    "currentEnglishContainsProposed": true,
+    "sourceLocator": {
+      "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
+      "page": 225,
+      "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    "priorParityAuditLocator": {
+      "path": "audits/bidaya-325page-source-parity-2026-11-07.json",
+      "sha256": "03cea017783d699c210da6e8569d0cc8acf6c9c6f323d85f8c183b76d4949b5f",
+      "firstPrintedPage": 225,
+      "lastPrintedPage": 228
+    },
+    "original325PagePDFInspectedInThisReview": false,
+    "originalPDFAvailability": "The original 325-page Bidāya PDF was not present among the recovered files or the recovered research archive entries; no fresh direct PDF inspection is claimed.",
+    "additionalCorroboration": {
+      "source": "Nihāya, revised 1428 edition, edited digital vol. 1 p. 221 n. 1",
+      "archiveRelativePath": "stage9_nihaya_a/html/3108-221.html",
+      "sha256": "c25c69d43c35856385557d1347d5984068bd33b00838bad196fb89ceb753cd24",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=221&type=c_fbook",
+      "quotedBidayaPage": 158,
+      "exactQuotedClause": "لكن في كون الأين مقولة برأسها كلام ، وإن كان مشهورا بينهم ، بل الأين ضرب من الوضع",
+      "qualification": "A later editor’s quotation corroborates the wording; it is not a substitute for a newly inspected original Bidāya page."
+    }
+  },
+  "substantiveNonparallelCases": [
+    {
+      "unit": "N-IV-08",
+      "englishBodyReadInFull": true,
+      "priorClassification": "no direct route selected",
+      "disposition": "add specific discussion routes",
+      "counterpartsOrBackgroundInspected": [
+        "M-C-20",
+        "B-I-11"
+      ],
+      "reason": "The advanced chapter contains direct counterparts for the logical distinction between necessary and coincidental conditionals, and the primary/common-predication resolution of the absolute-nonexistence paradox. Its full analysis is more extensive, but the navigation standard is discussion-level.",
+      "absoluteNoRelationshipClaimed": false
+    },
+    {
+      "unit": "N-IX-02",
+      "englishBodyReadInFull": true,
+      "priorClassification": "no direct route selected",
+      "disposition": "add specific discussion route",
+      "counterpartsOrBackgroundInspected": [
+        "B-X-01",
+        "B-X-11"
+      ],
+      "reason": "Its opening graded-potentiality argument repeats the sperm/food example and inference from positive proximity and intensity. Bidāya also supplies related continuous-form foundations; the precise proposed route uses the opening argument.",
+      "absoluteNoRelationshipClaimed": false
+    },
+    {
+      "unit": "N-X-07",
+      "englishBodyReadInFull": true,
+      "priorClassification": "no direct route selected",
+      "disposition": "retain bounded no-distinct-route-selected disposition",
+      "counterpartsOrBackgroundInspected": [
+        "B-IX-03"
+      ],
+      "reason": "This unit specifically changes the relata of origination from quiddity and cause to two existences under existential primacy. The inspected Bidāya account names temporal, intrinsic, and dahri origination, without a distinct exposition of this additional division. Shared causal-dependence foundations remain possible.",
+      "absoluteNoRelationshipClaimed": false
+    },
+    {
+      "unit": "N-XI-15",
+      "englishBodyReadInFull": true,
+      "priorClassification": "no direct route selected",
+      "disposition": "retain bounded no-distinct-route-selected disposition",
+      "counterpartsOrBackgroundInspected": [
+        "B-XI-01",
+        "B-XI-10"
+      ],
+      "reason": "The active/passive/neither classification and the quoted Asfar synthesis of graded knowledge have no matching introductory division in the inspected counterparts. Bidāya XI.10 paragraph 4 overlaps its union doctrine, so this is not a claim that the unit has no shared foundations.",
+      "absoluteNoRelationshipClaimed": false
+    },
+    {
+      "unit": "N-XII-06",
+      "englishBodyReadInFull": true,
+      "priorClassification": "no direct route selected",
+      "disposition": "add specific discussion route",
+      "counterpartsOrBackgroundInspected": [
+        "B-XII-02",
+        "B-XII-03"
+      ],
+      "reason": "The earlier exclusion considered the divine-unity chapter but overlooked Bidāya XII.3, whose proof from the bestowal of beings, effects, and relations explicitly concludes sole lordship. Nihāya supplies further order and cooperation arguments.",
+      "absoluteNoRelationshipClaimed": false
+    },
+    {
+      "unit": "N-XII-12",
+      "englishBodyReadInFull": true,
+      "priorClassification": "no direct route selected",
+      "disposition": "retain bounded no-distinct-route-selected disposition",
+      "counterpartsOrBackgroundInspected": [
+        "B-XII-05"
+      ],
+      "reason": "The essential/active division of decree and the restriction of measure to material attributes and effects have no distinct counterpart in the inspected Bidāya chapter. Bidāya XII.5 paragraph 16 reports Peripatetic providential knowledge, then criticizes its acquired-form model. It must not be equated without qualification with Nihāya XII.12 paragraph 2, which identifies providential knowledge with the divine essence.",
+      "absoluteNoRelationshipClaimed": false
+    },
+    {
+      "unit": "N-XII-17",
+      "englishBodyReadInFull": true,
+      "priorClassification": "no direct route selected",
+      "disposition": "add qualified foundation route",
+      "counterpartsOrBackgroundInspected": [
+        "B-XII-05",
+        "B-XII-09"
+      ],
+      "reason": "The earlier exclusion overlooked Bidāya XII.9’s explicit three-realm causal hierarchy and correspondence with divine knowledge. Nihāya uses this shared structure to infer the best possible order; the link must distinguish the premise from the stronger conclusion.",
+      "absoluteNoRelationshipClaimed": false
+    },
+    {
+      "unit": "N-XII-18",
+      "englishBodyReadInFull": true,
+      "priorClassification": "no direct route selected",
+      "disposition": "add two specific discussion routes",
+      "counterpartsOrBackgroundInspected": [
+        "B-XII-03",
+        "B-XII-14"
+      ],
+      "reason": "The prior reason referred only to brief material impediments. Bidāya XII.3 in fact contains the same privation example and fivefold good/evil classification. The pain objection and explicit divine-decree treatment remain later developments.",
+      "absoluteNoRelationshipClaimed": false
+    },
+    {
+      "unit": "N-XII-23",
+      "englishBodyReadInFull": true,
+      "priorClassification": "no direct route selected",
+      "disposition": "retain bounded no-distinct-route-selected disposition",
+      "counterpartsOrBackgroundInspected": [
+        "B-IX-03",
+        "B-X-11",
+        "B-XII-14"
+      ],
+      "reason": "Bidāya’s general origination definitions and its account of cosmic flux provide background, but the inspected passages do not reproduce Nihāya’s complete proof of whole-world origination and its extended critique of a prior empty time. This is a scoped selection decision, not denial of every possible foundation link.",
+      "absoluteNoRelationshipClaimed": false
+    },
+    {
+      "unit": "N-XII-24",
+      "englishBodyReadInFull": true,
+      "priorClassification": "no direct route selected",
+      "disposition": "retain bounded no-distinct-route-selected disposition",
+      "counterpartsOrBackgroundInspected": [
+        "B-XII-03",
+        "B-XII-14"
+      ],
+      "reason": "The derivation of uninterrupted emanation, rejection of cosmic cycles, and warning about unknown conditions in allegedly complete causes are distinctive in the inspected material. General dependence and renewal passages are not identical to this conclusion.",
+      "absoluteNoRelationshipClaimed": false
+    }
+  ],
+  "proposedAdditions": [
+    {
+      "from": {
+        "unit": "B-XII-03",
+        "language": "english",
+        "currentParagraphOrdinal": 6,
+        "paragraphSHA256": "12ca42ab3cc3c9b91fcf7c798c7964cb88b2ae06bc12ffb9861f6a114a08978c",
+        "exactOpening": "A reply attributed to Plato treats evil as privation. Non-being does not require a positive cause that bestows it; its ‘cause’ is the lack of the corresponding good. In killing, for example, the evil is not the killer's power, which is a po",
+        "openingIsExcerpt": true
+      },
+      "to": {
+        "unit": "N-XII-18",
+        "language": "english",
+        "currentParagraphOrdinal": 3,
+        "paragraphSHA256": "faa375971b1f2771afdb05954bae90a4c3e8f1dc2624dd26f08bfd84e000ab06",
+        "exactOpening": "Thorough reflection upon occurrences of evil confirms this. Careful examination of their aspects shows that the evil occurring is the nonexistence of an essence or the absence of a perfection of an essence. If, for example, a man kills anot",
+        "openingIsExcerpt": true
+      },
+      "relationship": "development",
+      "topic": "Evil as privation, using the same killing and sword example.",
+      "requiredQualification": "Nihāya adds a developed proof, the pain and presential-knowledge objection, and the explicit divine-decree conclusion; the shorter Bidāya account does not contain all of those developments.",
+      "supportingSourceParagraphs": [],
+      "supportingDestinationParagraphs": [
+        {
+          "unit": "N-XII-18",
+          "language": "english",
+          "currentParagraphOrdinal": 4,
+          "paragraphSHA256": "d1bbd919ecb48af4101a8bab9037fb183cf834d75a89985f6b64e1bfa241a936",
+          "exactOpening": "The foregoing shows that an existent counted as evil because harm is suffered through it is evil incidentally, as with the killer and the sword in this example.",
+          "openingIsExcerpt": false
+        }
+      ],
+      "disposition": "recommend reciprocal discussion routes",
+      "currentNetworkIDsForThisUnitPair": [
+        "disc-b-xii-03-n-xii-18-evil-privation",
+        "disc-b-xii-03-n-xii-18-good-evil-divisions"
+      ],
+      "note": "A current unit-pair match records file state at capture; final anchor generation remains the root workflow."
+    },
+    {
+      "from": {
+        "unit": "B-XII-03",
+        "language": "english",
+        "currentParagraphOrdinal": 7,
+        "paragraphSHA256": "5c1f005233e04fe918b2aeddbdd8b8a6e4fa63be76a18e1893613fb8f7226132",
+        "exactOpening": "Another reply, attributed to Aristotle, divides possible things into five: what is pure good; what contains much good and little evil; what contains equal good and evil; what contains much evil and little good; and what is pure evil. The fi",
+        "openingIsExcerpt": true
+      },
+      "to": {
+        "unit": "N-XII-18",
+        "language": "english",
+        "currentParagraphOrdinal": 12,
+        "paragraphSHA256": "a5ea6c5f963c9738b4975fc9625f782de9edd04b3e68a1c9c96177baa9a00ac7",
+        "exactOpening": "For, as reported from the First Teacher, things fall into five divisions in respect of the goods and evils attributed to them: pure good, pure evil, predominance of good, predominance of evil, and equality of good and evil.",
+        "openingIsExcerpt": false
+      },
+      "relationship": "development",
+      "topic": "The fivefold good/evil classification and the instantiation of pure good and predominant good.",
+      "requiredQualification": "Nihāya makes the providential and divine-decree implications explicit; this is a parallel argument, not identity of the complete chapters.",
+      "supportingSourceParagraphs": [
+        {
+          "unit": "B-XII-03",
+          "language": "english",
+          "currentParagraphOrdinal": 8,
+          "paragraphSHA256": "edf29895ec261ca9ed12291d5e51ddc8f3b343c0d34d280a9e6be6d707d2d754",
+          "exactOpening": "The other three kinds do not exist in the proposed causal order. Producing equal good and evil would have no sufficient reason to favour its production; producing a preponderance of evil would favour the lesser good over the greater; and pr",
+          "openingIsExcerpt": true
+        }
+      ],
+      "supportingDestinationParagraphs": [
+        {
+          "unit": "N-XII-18",
+          "language": "english",
+          "currentParagraphOrdinal": 13,
+          "paragraphSHA256": "111b1c6faa2aabc0bfa502e52acdf70f978ee86778fedbcf840d6a15e10d8d88",
+          "exactOpening": "Two of the five divisions exist. The first is pure good: the Necessary—exalted is He—whose existence is necessary, who possesses every existential perfection and is the whole of perfection. Completely immaterial beings are included with Him",
+          "openingIsExcerpt": true
+        },
+        {
+          "unit": "N-XII-18",
+          "language": "english",
+          "currentParagraphOrdinal": 14,
+          "paragraphSHA256": "0390f7f200799211ccafb71cfbe217c50a5e5d175683b86f7d53c51fdc3497b0",
+          "exactOpening": "As for the remaining three divisions, pure evil is pure nonexistence, sheer nullity with no access to existence. Predominance of evil and equality of good and evil are excluded by divine providence, which arranges the order of existence in ",
+          "openingIsExcerpt": true
+        },
+        {
+          "unit": "N-XII-18",
+          "language": "english",
+          "currentParagraphOrdinal": 16,
+          "paragraphSHA256": "ba74e10b540d20e8bb6439336e35229903716d2d64833781b0587d76ea5eaf35",
+          "exactOpening": "Since it is clear that the few evils attaching to things are necessary consequences of their many goods, intention and will relate to the goods primarily, and to the evils necessarily accompanying them consequentially and through a secondar",
+          "openingIsExcerpt": true
+        }
+      ],
+      "disposition": "recommend reciprocal discussion routes",
+      "currentNetworkIDsForThisUnitPair": [
+        "disc-b-xii-03-n-xii-18-evil-privation",
+        "disc-b-xii-03-n-xii-18-good-evil-divisions"
+      ],
+      "note": "A current unit-pair match records file state at capture; final anchor generation remains the root workflow."
+    },
+    {
+      "from": {
+        "unit": "B-XII-03",
+        "language": "english",
+        "currentParagraphOrdinal": 3,
+        "paragraphSHA256": "bec85556572a1015d947f68eaaab2ec42b1e31a32346cce88a2cbdc4e285aa6f",
+        "exactOpening": "He is therefore the bestower of existence upon everything else. And since He is the cause of their actualities, He is also the cause of their characteristic effects and the relations connecting them: the cause of a thing's being is the caus",
+        "openingIsExcerpt": true
+      },
+      "to": {
+        "unit": "N-XII-06",
+        "language": "english",
+        "currentParagraphOrdinal": 5,
+        "paragraphSHA256": "570e68c6eab5e27f145ed983e78b65b3b86e35a06bd99a64795bb91e37756f08",
+        "exactOpening": "It is also necessary that the cause of a thing’s cause is a cause of that thing, and that the effect of a thing’s effect is an effect of that thing. Since causes end in the Necessary—exalted is He—every existent, however supposed, is His ef",
+        "openingIsExcerpt": true
+      },
+      "relationship": "foundation",
+      "topic": "Universal lordship through the bestowal of beings, their effects, and their relations.",
+      "requiredQualification": "Nihāya adds the unity-of-order argument and replies to proposals about multiple cooperating lords.",
+      "supportingSourceParagraphs": [
+        {
+          "unit": "B-XII-03",
+          "language": "english",
+          "currentParagraphOrdinal": 4,
+          "paragraphSHA256": "46d2e79ad4d7b662e566b024738f1169b8073ff80da3b9c2ce67ed60e3aeeac6",
+          "exactOpening": "He alone is thus the original source of what is other than Himself, their possessor and governor, the Lord of the worlds without a rival.",
+          "openingIsExcerpt": false
+        }
+      ],
+      "supportingDestinationParagraphs": [
+        {
+          "unit": "N-XII-06",
+          "language": "english",
+          "currentParagraphOrdinal": 6,
+          "paragraphSHA256": "647f958cbb3e4b134fdc81c5328dd475fa33392b3e133ef09ac49272ebbbe35e",
+          "exactOpening": "It is therefore clear from the foregoing that the Necessary—exalted is He—is the one who brings about the order prevailing in our witnessed mode of being and governs through the universal governance encompassing the parts of the world. The ",
+          "openingIsExcerpt": true
+        }
+      ],
+      "disposition": "recommend reciprocal discussion routes",
+      "currentNetworkIDsForThisUnitPair": [
+        "disc-b-xii-03-n-xii-06-sole-lordship"
+      ],
+      "note": "A current unit-pair match records file state at capture; final anchor generation remains the root workflow."
+    },
+    {
+      "from": {
+        "unit": "M-C-20",
+        "language": "english",
+        "currentParagraphOrdinal": 3,
+        "paragraphSHA256": "163336f828180b22675edac36600d80ad22c264b4a8ba980b95c291898fa7c93",
+        "exactOpening": "In a necessary connection, a genuine relation entails that one side follows from the other. This may take several causal forms: the antecedent causes the consequent, the consequent is a sign of a cause corresponding to it, or both statement",
+        "openingIsExcerpt": true
+      },
+      "to": {
+        "unit": "N-IV-08",
+        "language": "english",
+        "currentParagraphOrdinal": 8,
+        "paragraphSHA256": "7dea5706db37b3ce245699cb1db3b7d89136385b7f30707bf7b00938d13fd47d",
+        "exactOpening": "“This distinguishes an implicative conditional from a coincidental conditional. In the first, the consequent, whether affirmative or negative, is judged true on the supposition that the antecedent, whether affirmative or negative, is true, ",
+        "openingIsExcerpt": true
+      },
+      "relationship": "foundation",
+      "topic": "Necessary versus coincidental connection, grounded in a real relation rather than repeated coincidence.",
+      "requiredQualification": "Nihāya applies the distinction to dependence among impossible suppositions. This is not an identification with the modern material conditional and does not license the claim that every impossibility entails every other.",
+      "supportingSourceParagraphs": [
+        {
+          "unit": "M-C-20",
+          "language": "english",
+          "currentParagraphOrdinal": 4,
+          "paragraphSHA256": "c5dd0587b2d71108a3614a7c00286d41b40ccf972f2405217510d93e518f9d96",
+          "exactOpening": "In a coincidental connection, no intrinsic relation of entailment links the antecedent and consequent, although the latter happens when the former occurs. Suppose the student Muḥammad only arrives after the teacher has begun the lesson. We ",
+          "openingIsExcerpt": true
+        },
+        {
+          "unit": "M-C-20",
+          "language": "english",
+          "currentParagraphOrdinal": 5,
+          "paragraphSHA256": "6a61e4c108adea226dac2ca969a5fcffa0e684effed6396ff806e1e2c48bf049",
+          "exactOpening": "Muẓaffar warns against treating **repeated coincidence alone** as proof of necessary connection. Frequent succession of two events does not establish that the first makes the second necessary.",
+          "openingIsExcerpt": false
+        }
+      ],
+      "supportingDestinationParagraphs": [
+        {
+          "unit": "N-IV-08",
+          "language": "english",
+          "currentParagraphOrdinal": 9,
+          "paragraphSHA256": "52e7142c17ba48719fed777d9b81cb20cecceedfe14a514ed807e50412596fe6",
+          "exactOpening": "“In the second, the same judgment is made without a connection of entailment, merely because the antecedent and consequent happen to coincide.",
+          "openingIsExcerpt": false
+        },
+        {
+          "unit": "N-IV-08",
+          "language": "english",
+          "currentParagraphOrdinal": 10,
+          "paragraphSHA256": "28fcfef1fb857da3ae803b50d4cee04330a79ed2299180cd85dd9c3169c2b687",
+          "exactOpening": "“During debate, when an impossible supposition is made in order to establish the impossibility of some matter by a reductio or a direct argument, it has become common among dialecticians to say: ‘Your supposition is impossible. It may there",
+          "openingIsExcerpt": true
+        }
+      ],
+      "disposition": "recommend reciprocal discussion routes",
+      "currentNetworkIDsForThisUnitPair": [
+        "disc-m-c-20-n-iv-08-impossible-conditionals"
+      ],
+      "note": "A current unit-pair match records file state at capture; final anchor generation remains the root workflow."
+    },
+    {
+      "from": {
+        "unit": "B-I-11",
+        "language": "english",
+        "currentParagraphOrdinal": 4,
+        "paragraphSHA256": "e8dc212bb96b0b416d275d3e727baffa79011fb65c7ccc0922d63710f16e1395",
+        "exactOpening": "Absolute non-existence is absolute non-existence by primary predication. Yet the concept *absolute non-existence*, insofar as it is present to the intellect, is itself a mental existent under common predication. It is this mentally existing",
+        "openingIsExcerpt": true
+      },
+      "to": {
+        "unit": "N-IV-08",
+        "language": "english",
+        "currentParagraphOrdinal": 13,
+        "paragraphSHA256": "fa69875cd7844db912d21ba237c17b1b66992745dc82cf9f86a6d17af6807d46",
+        "exactOpening": "This resembles the response given to the apparent contradiction in our statement, “Nothing can be asserted of the absolutely nonexistent.” This indicates the denial of assertion concerning the absolutely nonexistent, while itself being an a",
+        "openingIsExcerpt": true
+      },
+      "relationship": "development",
+      "topic": "The apparent self-refutation of denying predication of absolute nonexistence, resolved by primary and common predication.",
+      "requiredQualification": "The possible mental description must not be identified with an impossible or absolutely nonexistent referent.",
+      "supportingSourceParagraphs": [
+        {
+          "unit": "B-I-11",
+          "language": "english",
+          "currentParagraphOrdinal": 5,
+          "paragraphSHA256": "3616a8fc321df00d15ca0dd2394825c80ed1c43bbdf4ed9e8e1c9bed2e706825",
+          "exactOpening": "The same distinction dissolves other apparent paradoxes. ‘A particular is particular’ is true by primary predication, whereas the concept ‘particular’ is a universal predicable of many cases by common predication. A supposed partner of the ",
+          "openingIsExcerpt": true
+        },
+        {
+          "unit": "B-I-11",
+          "language": "english",
+          "currentParagraphOrdinal": 6,
+          "paragraphSHA256": "e8d637ef66fce34e0e81dbe179ac035b9fd7ea164b3d4e657467000b32e74401",
+          "exactOpening": "The point is not that the impossible object becomes possible, but that its intelligible description has a kind of mental existence different from what it signifies.",
+          "openingIsExcerpt": false
+        }
+      ],
+      "supportingDestinationParagraphs": [
+        {
+          "unit": "N-IV-08",
+          "language": "english",
+          "currentParagraphOrdinal": 11,
+          "paragraphSHA256": "d0cdc51b77d94ce3cb2849c1e8f1d2278552714e6921c7398365f6b53a0a4037",
+          "exactOpening": "If it is said: “The intrinsically impossible is simply what the intellect supposes and reports to be intrinsically impossible. What, then, does its inability to comprehend it mean?”",
+          "openingIsExcerpt": false
+        },
+        {
+          "unit": "N-IV-08",
+          "language": "english",
+          "currentParagraphOrdinal": 12,
+          "paragraphSHA256": "493b4898c349bd4f522e69fd239ef813b4c486b50c524cc76c95994b8fe49ba5",
+          "exactOpening": "The answer is: What is meant is that it has no actual reality to which knowledge could attach. Indeed, that which we suppose to be intrinsically impossible and judge accordingly is intrinsically impossible by primary predication, and is jud",
+          "openingIsExcerpt": true
+        }
+      ],
+      "disposition": "recommend reciprocal discussion routes",
+      "currentNetworkIDsForThisUnitPair": [
+        "disc-b-i-11-n-iv-08-nonexistent-predication"
+      ],
+      "note": "A current unit-pair match records file state at capture; final anchor generation remains the root workflow."
+    },
+    {
+      "from": {
+        "unit": "B-X-01",
+        "language": "english",
+        "currentParagraphOrdinal": 2,
+        "paragraphSHA256": "5a7b33c04b62be88b995964601eccb6d63782ab18de4699531100f3452886e1a",
+        "exactOpening": "This possibility is an extramental condition rather than a mere intellectual consideration of quiddity. It admits intensity, weakness, proximity, and remoteness. An embryo possessing the disposition to become a human being is nearer to huma",
+        "openingIsExcerpt": true
+      },
+      "to": {
+        "unit": "N-IX-02",
+        "language": "english",
+        "currentParagraphOrdinal": 2,
+        "paragraphSHA256": "02580e05cba1d7a559f8be740ad27cd39d541e1cf3ed0d8b09986cfa0013299c",
+        "exactOpening": "Moreover, we find that this relation varies in proximity and remoteness, intensity and weakness. A sperm-drop is nearer to an animal than food is, although both share the possibility of becoming an animal.",
+        "openingIsExcerpt": false
+      },
+      "relationship": "development",
+      "topic": "The embryo or sperm/food comparison and graded proximity as evidence of an extramental potentiality.",
+      "requiredQualification": "Nihāya proceeds to a stronger account of continuous graded potential and actual existence; the link identifies the shared opening argument.",
+      "supportingSourceParagraphs": [
+        {
+          "unit": "B-X-01",
+          "language": "english",
+          "currentParagraphOrdinal": 3,
+          "paragraphSHA256": "d2f09b77d6a2e9c8ea3a88ecd1fbfed4b6e7922007a63e7c038d8c1fe62e2035",
+          "exactOpening": "Since the disposition exists externally, it is not an independent self-subsisting substance. It is an accident inhering in something else. Let it be called *potentiality* (quwwa), and let its subject be called *matter* (mādda). Thus every t",
+          "openingIsExcerpt": true
+        }
+      ],
+      "supportingDestinationParagraphs": [
+        {
+          "unit": "N-IX-02",
+          "language": "english",
+          "currentParagraphOrdinal": 3,
+          "paragraphSHA256": "9e3a3640fed4207956f0e2d9793b2b6dc653be530b99eec0d26d3c987e4000b1",
+          "exactOpening": "Proximity, remoteness, intensity, and weakness are positive attributes that can characterize only something existent. The relation in question therefore necessarily exists.",
+          "openingIsExcerpt": false
+        },
+        {
+          "unit": "N-IX-02",
+          "language": "english",
+          "currentParagraphOrdinal": 4,
+          "paragraphSHA256": "c803e0da0f55a21348043205383146cd4824897cc87d96d430e89f3a5e1e4b6b",
+          "exactOpening": "Every existent relation requires both of its terms to exist within the domain in which it exists. It necessarily subsists through them; its existence does not fall outside theirs; and one term of the relation exists for the other. All this ",
+          "openingIsExcerpt": true
+        },
+        {
+          "unit": "N-IX-02",
+          "language": "english",
+          "currentParagraphOrdinal": 5,
+          "paragraphSHA256": "4854a26a195b8534485d5bc5ef01eaa6434e36f379f3f1235e0bc310f8044fa6",
+          "exactOpening": "Since what is received does not exist in the recipient with the external existence that is the source of its effects, it exists in the recipient with a weak existence upon which not all its effects follow.",
+          "openingIsExcerpt": false
+        },
+        {
+          "unit": "N-IX-02",
+          "language": "english",
+          "currentParagraphOrdinal": 6,
+          "paragraphSHA256": "26ed25cb31f6a0782fbd919a8caee4ce9fc142b5e360027a7cf5769ebccad853",
+          "exactOpening": "Since each of its two existences, weak and intense, is the very same thing, they are one. What is received thus has one existence with two degrees: a weak degree upon which not all its effects follow, and an intense degree that is otherwise",
+          "openingIsExcerpt": true
+        }
+      ],
+      "disposition": "recommend reciprocal discussion routes",
+      "currentNetworkIDsForThisUnitPair": [
+        "disc-b-x-01-n-ix-02-graded-preparedness"
+      ],
+      "note": "A current unit-pair match records file state at capture; final anchor generation remains the root workflow."
+    },
+    {
+      "from": {
+        "unit": "B-XII-09",
+        "language": "english",
+        "currentParagraphOrdinal": 8,
+        "paragraphSHA256": "b82e0361d2f0f54f4fa47ec1434b65a70880ef4dab127eb45644eb487b534254",
+        "exactOpening": "Since a cause contains the effect's perfection in a higher and more excellent mode, the worlds correspond to one another. The imaginal world has an order resembling that of the material world but more perfect than it. The intellectual world",
+        "openingIsExcerpt": true
+      },
+      "to": {
+        "unit": "N-XII-17",
+        "language": "english",
+        "currentParagraphOrdinal": 9,
+        "paragraphSHA256": "57005e464fe23ccd461bf6a03664eb30261caaf4daea3ce2f9ab5b1d56452bb4",
+        "exactOpening": "The intellectual order is therefore the best and most precise possible order; next comes the imaginal order, a shadow of the intellectual order; then the material order, a shadow of the imaginal. The general order of the world is thus the b",
+        "openingIsExcerpt": true
+      },
+      "relationship": "foundation",
+      "topic": "The corresponding intellectual, imaginal, and material orders, vertically related by causality and graded perfection.",
+      "requiredQualification": "Bidāya supplies correspondence and graded perfection; Nihāya draws the explicit conclusion that the order is the best and most precise possible.",
+      "supportingSourceParagraphs": [
+        {
+          "unit": "B-XII-09",
+          "language": "english",
+          "currentParagraphOrdinal": 5,
+          "paragraphSHA256": "f3d4850ae01970fe9fdc53a5576896049edceb41d0312cd9a24bd46ed1f28e6c",
+          "exactOpening": "These three worlds are ordered in existence. The intellectual world is prior to the imaginal, and the imaginal prior to the material. Pure actuality, unmixed with potency, is more intense in existence than what is potential or mixed with po",
+          "openingIsExcerpt": true
+        },
+        {
+          "unit": "B-XII-09",
+          "language": "english",
+          "currentParagraphOrdinal": 6,
+          "paragraphSHA256": "2c6a7d4e4a8d9692398cee6c95f4b669e81707159ba44417e9b0242d06428cfd",
+          "exactOpening": "Moreover, the separate intellect is less bounded and restricted, more extensive and simpler in being, than the imaginal existent. The stronger and more expansive a degree of existence, the higher its place in the graded order and the closer",
+          "openingIsExcerpt": true
+        },
+        {
+          "unit": "B-XII-09",
+          "language": "english",
+          "currentParagraphOrdinal": 7,
+          "paragraphSHA256": "41e5a8b16b8972d3d6b904a339af360be5bad0b0419a2524b2e339f475845554",
+          "exactOpening": "This order is also an order of **causality**: the intellectual world is a cause bestowing existence upon the imaginal, and the imaginal upon the material.",
+          "openingIsExcerpt": false
+        }
+      ],
+      "supportingDestinationParagraphs": [
+        {
+          "unit": "N-XII-17",
+          "language": "english",
+          "currentParagraphOrdinal": 6,
+          "paragraphSHA256": "0471aea389d2ba98d864e90fd29f9409606a904bbba6631f703020efe35e7624",
+          "exactOpening": "To explain: as indicated earlier, the universal realms of existence are three, with no fourth rationally possible. Existence is either marked by potentiality and preparedness, so that its possible primary and secondary perfections are not g",
+          "openingIsExcerpt": true
+        },
+        {
+          "unit": "N-XII-17",
+          "language": "english",
+          "currentParagraphOrdinal": 7,
+          "paragraphSHA256": "aa9a855793de45b639b0e0d00b19b4195d8b3b00383ea604f714649ef52f3586",
+          "exactOpening": "There are therefore three universal realms, ordered according to the intensity and weakness of existence. Their order is vertical, through causality and being caused. The degree of intellectual existence is an effect of the Necessary—exalte",
+          "openingIsExcerpt": true
+        },
+        {
+          "unit": "N-XII-17",
+          "language": "english",
+          "currentParagraphOrdinal": 8,
+          "paragraphSHA256": "171d08097ba9bc1deb7c9c958b68042648a7c72bc4037dc806b21e888516a5a6",
+          "exactOpening": "The degree of intellectual existence is therefore the highest degree of contingent existence and the nearest to the Necessary—exalted is He. An intellectual species is confined to a single individual. Intellectual existence with its order i",
+          "openingIsExcerpt": true
+        }
+      ],
+      "disposition": "recommend reciprocal discussion routes",
+      "currentNetworkIDsForThisUnitPair": [
+        "disc-b-xii-09-n-xii-17-ordered-realms"
+      ],
+      "note": "A current unit-pair match records file state at capture; final anchor generation remains the root workflow."
+    }
+  ],
+  "summary": {
+    "existingPairsInspected": 22,
+    "additionalSupportingExistingRoutes": 1,
+    "wrongExistingDestinationsFound": 0,
+    "understatedArabicAssertionsFound": 1,
+    "substantiveNonparallelCasesInspected": 10,
+    "unitsWithMissedDirectDiscussionCounterparts": 5,
+    "proposedNewReciprocalPairs": 7,
+    "boundedNoDistinctRouteSelectionsRetained": 5
+  },
+  "currentSourceBodyHashes": [
+    {
+      "unit": "B-I-11",
+      "arabicSHA256": "2815462a9b803d798fe78622ae9d05179894d1c0025a6097aadb8d413a392662",
+      "englishSHA256": "d5002778cda3da75c3a7b57128f8580839886884175a42f657ddaa6dcbd16f4a"
+    },
+    {
+      "unit": "B-II-01",
+      "arabicSHA256": "6204a6ed64e3bc7a59d3c1197b4f8a97909423b388e26f43341092373ea58b85",
+      "englishSHA256": "61394000b8ecf889df87c312a63ae628ab372ae0661bbad04a755681d8726da9"
+    },
+    {
+      "unit": "B-IV-07",
+      "arabicSHA256": "212cddc428ed1a9701de454509b4b5ce8cf75b1ab32c1e94917cdf2959aaa025",
+      "englishSHA256": "f47fc08b367e5554360459203813de6902f7f39ebe09e0b5f153e0d85a41bea0"
+    },
+    {
+      "unit": "B-IX-03",
+      "arabicSHA256": "609999ddef4679620cc1b97f27cd70919a9e0e8833f283a0c1a221098a6e0e08",
+      "englishSHA256": "0faf34a53373ffcb305667a39f80082b87f856b8aa93795ad0394b6813b138d8"
+    },
+    {
+      "unit": "B-VI-01",
+      "arabicSHA256": "6626885ac00eb0885f0e3ec87c5553fcf54b2a545a0df0d0ef2e70c87984022c",
+      "englishSHA256": "20be4c5f63fee055c6b354501c78f9bfb2aed05ff4417cb90f9068358e69a598"
+    },
+    {
+      "unit": "B-VI-11",
+      "arabicSHA256": "9033a6a46f3ae65a9a4bf5241c7f7afa0aaf52720639c3925e661ed4120b7261",
+      "englishSHA256": "a4df87b9d702d1e92feb2afa0c32e29e6fd4145d94d2ce8497ca26c640c3d979"
+    },
+    {
+      "unit": "B-VII-03",
+      "arabicSHA256": "a0464ba856a8208e89a342622acd9ed5eab5c7e64e348434fd8fea7b504df3d1",
+      "englishSHA256": "e90c8df5687a8416ed20b8d5e1a9618ad6d29f3e1242b00d8c9c70b328569f49"
+    },
+    {
+      "unit": "B-VII-05",
+      "arabicSHA256": "9f16aebe3e02b448972a585cf2711b507da36295faf3288cd89150842d603858",
+      "englishSHA256": "aa131d5f4e21b087fae4286c7e4abdd30775883893492cbb6203c4505495873b"
+    },
+    {
+      "unit": "B-X-01",
+      "arabicSHA256": "e844c9af1b09cf6f77ef96fdffd758661fc4e5e90a6df45023c74b5c1ed63d87",
+      "englishSHA256": "ede35c9cf52f88cdc5ba164926d38be69502e80b036323ab2097350d036428b2"
+    },
+    {
+      "unit": "B-X-10",
+      "arabicSHA256": "d81aef11d99672fd8df267e1e0cfc96774544c6dd982d6085a7d639aa98a61b2",
+      "englishSHA256": "02260eeff3af329c32fb17979dfa92cd32efb39bcbc2193cdc40f03e095e0272"
+    },
+    {
+      "unit": "B-X-11",
+      "arabicSHA256": "f645b316004774d0e10b4eda6eb49b17657c5ab77e07b11877ae1d5364f136ee",
+      "englishSHA256": "e31d5f14c16d268defd9630df0b36a0814957d60caf37b03aa943d8d7094ea28"
+    },
+    {
+      "unit": "B-XI-01",
+      "arabicSHA256": "32a32ecc91bf06ae7435206336cc1c47fb23a1a36aef40045705d43ed349282a",
+      "englishSHA256": "314cb676af5e2d0c874525a08a66b1e2b7661a35537588e191a5eb420f420d1f"
+    },
+    {
+      "unit": "B-XI-10",
+      "arabicSHA256": "161f8162c96275670c37a9a8dda64ce0e917d7f375b931b0d74c8abb2b98de74",
+      "englishSHA256": "c63511daba7dac4793db43eaac285f0e6b7d4b801cadb5cd22c218c582c0a5f4"
+    },
+    {
+      "unit": "B-XII-02",
+      "arabicSHA256": "ecf7b89e23970100134a024f03ae437d82133f36a9d3dbf04e94f0f654876fd7",
+      "englishSHA256": "e5ceeabc5091c14b3a95f36de11635d9bb4216a056eacded4c5e2b5a56e4708c"
+    },
+    {
+      "unit": "B-XII-03",
+      "arabicSHA256": "6c5dfd4e1d75e7eebf22a12ae320615077936fd832d0f3a754c34f2898c9ed7c",
+      "englishSHA256": "5c85cb19a3bccc393807e6bc9718dae5d5be5b78e0526bb2194807d35ffd4cf9"
+    },
+    {
+      "unit": "B-XII-05",
+      "arabicSHA256": "58cb09a0c946b6ebd0c179748ccc0a1c348c518dfdc95f9c40874b223695e1a3",
+      "englishSHA256": "8fc25a73a1721513159b7afb6844c631a7d4e2d536e0f184015aab8ea5b870dd"
+    },
+    {
+      "unit": "B-XII-06",
+      "arabicSHA256": "fd6f6a3299ff3e91211f7dcfd600e51950696e18e5774d5485b68cdc11a2c71d",
+      "englishSHA256": "712d441e9da5ad9412e6c30b052c00fe1cc8ed02faf03d745b8f4e9bb293a513"
+    },
+    {
+      "unit": "B-XII-08",
+      "arabicSHA256": "184b4ed869f72b446d05d85bd76be2ec30fe8d63fb70a8573634f405a7cd6c87",
+      "englishSHA256": "c8df573605722094d5f9c94c1864b7faf291d9a02568ab5459ea91e03f4c105e"
+    },
+    {
+      "unit": "B-XII-09",
+      "arabicSHA256": "3058a0284c42a7e9cf34f9bd9e3124ff3b349a3b7d612534e2f113f3d35dec91",
+      "englishSHA256": "fbd7ecbc8ad4a604f95d4d5977afe7ce5845d8756c1f2f73d4d12f4cd3caf78f"
+    },
+    {
+      "unit": "B-XII-14",
+      "arabicSHA256": "7c5197a87016a6094d458691c5c09e30408618c0090cd9c057b72a3b88d28188",
+      "englishSHA256": "2a3aa2491ea02a508bda165781eba746720b28bdec206f1f7a40231be44f635c"
+    },
+    {
+      "unit": "M-C-10",
+      "arabicSHA256": "78fef4270a89919864494bc5ce40d708e53a8809c12c3cfd9c7f8442624f9957",
+      "englishSHA256": "2b4423384a80a3c5623f55da90de2e324d3c0090dfca7c65996abbcc69ef1da7"
+    },
+    {
+      "unit": "M-C-20",
+      "arabicSHA256": "1f29a0472d3a8fcb6e8cbfd14db1db2c8cd8c366df8f626bba3ba2024f7389f5",
+      "englishSHA256": "e335d1b6dc694b2a8fd58d1ee4e78cfda484b9e7019a1d1a3e34bf8bfd57c540"
+    },
+    {
+      "unit": "M-D-08",
+      "arabicSHA256": "32b8dd265da418943fa51ac73cfc098a12a1832b46ce5328e741415c19ffa675",
+      "englishSHA256": "c747a81e6d8c7afc5438d81cb2d305fb18436fd03b6ac762c48e13de605918ad"
+    },
+    {
+      "unit": "M-K-12",
+      "arabicSHA256": "abed4033265571c4377178afd998a7d9e30d19e2f8712e8a1ac8bd3a77a6b094",
+      "englishSHA256": "830dabf37f164678c4e6d4f936e4b78c97306533cc039ceb0caccec311f8299d"
+    },
+    {
+      "unit": "M-K-15",
+      "arabicSHA256": "8f5a4e3a05a5acf91b533ff3115688c27a993f3457d9c028551cf730f800747e",
+      "englishSHA256": "f145e906c4d5aade8d5e139704742ec9cd16c64078f17d2aeac6af2146103921"
+    },
+    {
+      "unit": "M-K-16",
+      "arabicSHA256": "8b19386cf5170d65ce079887dc840e166a29038ea8c2f9447346a807ceab5294",
+      "englishSHA256": "c707c299178d318db60324aba5593a5fe3246e34c97b27371f0bafcd28244496"
+    },
+    {
+      "unit": "M-L-02",
+      "arabicSHA256": "28baa6c7b85666054422dd59c4e9e66811434c1239e230da10b5935112bed455",
+      "englishSHA256": "6f576697726b0b5f57e31fcbd39bef68507cc011746c2fe10b150a7e3b66244b"
+    },
+    {
+      "unit": "M-L-03",
+      "arabicSHA256": "d14dffb54a02cf82147b7f34dc5a97ef41e156ef9a7b47da979b2f3c879dd16f",
+      "englishSHA256": "e6f773814812e2a9b1bde5e8b0e98bd6fa6b699b70f6f916ab4cfa3eaca2348c"
+    },
+    {
+      "unit": "M-V-37",
+      "arabicSHA256": "da06b0dd7bddc2cf8e6400ffbb7540a1122bd226be17db3035a0ee83aee36720",
+      "englishSHA256": "9a0b5276564afb948d44af2077abd7f7353223f01bd10a3c801d99735b110c90"
+    },
+    {
+      "unit": "M-V-39",
+      "arabicSHA256": "f1ec82f8eb6df8a70e0701c72288e5e7434dfc023972dbb8a80a8c8594cfd198",
+      "englishSHA256": "6222d4b9c8893ef0ee76cea7ba71a83ff40ff40a7ce0c3d798ade56b263ef6c2"
+    },
+    {
+      "unit": "M-V-40",
+      "arabicSHA256": "04a8aa2378f347e36717e6419740f599482a15f2560133cb1341b15fe16d456b",
+      "englishSHA256": "c6d4f99854d7f1260e21d5d027cfd3ffea173030f7e847a769fed444572915c8"
+    },
+    {
+      "unit": "N-III-01",
+      "arabicSHA256": "8c6843d10ea385d8c71f81676eb80018efb26a78579bef9b95eaf9fd991593e9",
+      "englishSHA256": "01876f551a9570c70452fb7bc0b6c7d5e6a175b2764b77c2783be2b2997f9e5a"
+    },
+    {
+      "unit": "N-IV-01",
+      "arabicSHA256": "f549ff9bcc99215a5cb26635f5de3bdbf333720e9b50e71147793d6461e293ec",
+      "englishSHA256": "51ab28e8c24dfd19b49f75a759825a4bf89aa21c46d2241d973598432d9f70b3"
+    },
+    {
+      "unit": "N-IV-08",
+      "arabicSHA256": "85c121d52dbfd3478493f85c40d8b04beb81634e799c5c2aff5433f1e7fa2833",
+      "englishSHA256": "314a1270103351a55d8144f1613da045cc14a7e78a855839a3e8b7bdb540d0f4"
+    },
+    {
+      "unit": "N-IX-02",
+      "arabicSHA256": "334bc23d7cf7887475e13889202d538519a80744c67b8f8eca2b47dd029004cb",
+      "englishSHA256": "17f6576f0405ab11e81794a5d2ef344e6beaa4a31b53e4f02fe2c4526fe3a9fe"
+    },
+    {
+      "unit": "N-IX-07",
+      "arabicSHA256": "ca43547e77d1500edb650c8c61d69a2ce5c391d27f04d66b4779b5a7f0d44dae",
+      "englishSHA256": "96fea55f3eab790aed38cfb249f4e1524a72d860c2d89e6956fcd813522ca7bc"
+    },
+    {
+      "unit": "N-V-04",
+      "arabicSHA256": "8a98060c570211456d45816941a903e732418afa080485aa95f7978fbf133844",
+      "englishSHA256": "03d1a25b4ea6f6df815e23b5053b0f32c5d4161b46688923c24efaa5c11f9c3c"
+    },
+    {
+      "unit": "N-VI-02",
+      "arabicSHA256": "5450d475bbff6e349742e4a65011ea501f4772a54bfcbc8dd939b6fa1a4fb6a8",
+      "englishSHA256": "d8cdc5706c25f31bf604a4204fcb599faa8b8822309078f8da08615598ab92b6"
+    },
+    {
+      "unit": "N-VI-17",
+      "arabicSHA256": "697c7104e3076b2e1f95ebba6b2a850263f285ca49f9d93b43c8a17bf70ec602",
+      "englishSHA256": "9372ece8cc8cb5eca07db30ba4b8055928859a79308d54028c2d3681a6dc9769"
+    },
+    {
+      "unit": "N-VII-01",
+      "arabicSHA256": "1fae90de38cfcf3ae6d65f96b4866b6a768cc10dedab63b2f06285fe99ccd241",
+      "englishSHA256": "1de2a4ac52c0358601b128109abc196a93a90e8742b85506b6b75061155a7a54"
+    },
+    {
+      "unit": "N-VIII-03",
+      "arabicSHA256": "e8b2ff58a051648ae76412b075f5cf0a35fa4ff79f871a3908f2f1d42a8d8bc2",
+      "englishSHA256": "e5718bac2e9fc1783e35b53984b921968d40c9d564a87a45d5225e6f662aaa2d"
+    },
+    {
+      "unit": "N-VIII-05",
+      "arabicSHA256": "ea61e6f7e2b4aa362c03980d00ef63f046647cd8498657fb089bfe29a0a50eec",
+      "englishSHA256": "e3002ceb84e2d4c69e0b035a22bd948944c021f6d212bd72bcf5a944edf935bd"
+    },
+    {
+      "unit": "N-X-07",
+      "arabicSHA256": "3e47ab8a89caf0b881675fdb0f3021df9842cc7fe0468fa926916b341815dcdf",
+      "englishSHA256": "190674ce3496a5e2b060c237e4c9bb4706667463e71805c27f1b11dcdea4e869"
+    },
+    {
+      "unit": "N-XI-10",
+      "arabicSHA256": "5e0ccce4f7768f48a25d161fb3ff936dce5bfcb2431280b0fb88ecbc7172f2a2",
+      "englishSHA256": "c9722158b709deee0183ec09ba23347e85c2cc899cff029b6b3a73905458c569"
+    },
+    {
+      "unit": "N-XI-15",
+      "arabicSHA256": "70e2b0117dfc1442a20222457792d982374f388756914f6e6ba55d8e734fa706",
+      "englishSHA256": "22a8151f7f21c2e7014328aca3b338c7d798d92db60505d04c0057d4dc3b66af"
+    },
+    {
+      "unit": "N-XII-06",
+      "arabicSHA256": "4eb235373a9b9aef215ace9720f50926497c15f4664426a6a5e55f124cab425d",
+      "englishSHA256": "68c4ae168e8d44bde21676454a177caafc0e77716f4be2fd69410f8199323d0d"
+    },
+    {
+      "unit": "N-XII-12",
+      "arabicSHA256": "75c31ddbf86c0bc284d9500ea7e109ce21a738c46f06666cbbeb78950f49ddc3",
+      "englishSHA256": "30431beca02110853eed924a4de1c31b0bda8ddca609e522e892a48516b0e0f6"
+    },
+    {
+      "unit": "N-XII-13",
+      "arabicSHA256": "b77a7c1383ab5d4406dba2e94ea2a3d28085cce56f11671baf3b6662353d3d5a",
+      "englishSHA256": "1139d62b60569c16f4d9a4f490593cbfe8b8e1dc8859b7cf9ae51c7a2e66a9a5"
+    },
+    {
+      "unit": "N-XII-14",
+      "arabicSHA256": "bfb090ec938fad56be504d3114bf6e8ee8d75cf398708a6d80b235d8ede5635b",
+      "englishSHA256": "16b69fe1ed2fdd5383816bea6c16e63bb3dba486c5f7196de5db944fee36aab5"
+    },
+    {
+      "unit": "N-XII-16",
+      "arabicSHA256": "aca0c964beeedf13ea2c9219cec7f430adcb34c567079f31c9fcd3d3f71bff0b",
+      "englishSHA256": "76c5db3dd3a5eedca2b07daa60f0ed8696c022ed07c52e96e997928511522af1"
+    },
+    {
+      "unit": "N-XII-17",
+      "arabicSHA256": "c3617214de6b651e2c3553f30453d5fe1cad687f03ff7a0f0ad498c7c1f994a4",
+      "englishSHA256": "f1d4edcbce13bac040fabab6dfdda1c9d7631705ec73b8267a5d6b2adcb61bbc"
+    },
+    {
+      "unit": "N-XII-18",
+      "arabicSHA256": "f5ae08023623ccef5be92d409aeb8e4c026e92efb62b373aba4958ec9d706784",
+      "englishSHA256": "1dddf954f8e9e6bfe878c51afcd0bc4bf20b24c61be7bcc488ddf1db29ffa28f"
+    },
+    {
+      "unit": "N-XII-23",
+      "arabicSHA256": "aa011c0966b5c0fb28d103f09937c099b90e45b6bac33234293fcb74a1995400",
+      "englishSHA256": "e2e451e979b398c89cfb55eee1783015d23ea7b79fded82133775975fa7b746d"
+    },
+    {
+      "unit": "N-XII-24",
+      "arabicSHA256": "e45922cea01e46493f8205b34610fce5fe7c66cf4005bf55b5862c40ee751010",
+      "englishSHA256": "7c21860cd05a6043f1b18c6f53fec32b10075ae2f620f250d4b5e371236c7021"
+    }
+  ],
+  "handoff": {
+    "findingsDeliveredTo": [
+      "root",
+      "discussion_links"
+    ],
+    "editorialNetworkMutatedByThisReviewer": false,
+    "canonicalBooksMutatedByThisReviewer": false,
+    "priorCollationReportsMutatedByThisReviewer": false,
+    "onlyFileCreatedByThisFollowup": "audits/discussion-link-second-review-2026-11-11.json",
+    "finalPublicationAnchors": "Root regenerates the canonical paragraph anchors after source corrections and semantic incorporation."
+  }
+}

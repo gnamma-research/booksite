@@ -1,0 +1,398 @@
+{
+  "title": "Muẓaffar Book V: Stage IX source decisions and bounded fidelity review",
+  "date": "2026-11-10",
+  "completeBaseSpan": "Rafed displayed pp200–270",
+  "baseEdition": "Dār al-Taʿāruf 1402 AH as digitally presented by Rafed",
+  "paginationWarning": "Rafed displayed labels are not equated with print folios. 1968 canvas and visible/inferred folio are separately recorded.",
+  "arabicPolicy": "Kaf/ya and whitespace normalization only in the complete digital base. Substantive readings remain unchanged. Recovered figure transcription is explicitly bracketed and attributed to the 1968 witness.",
+  "englishPolicy": "Fresh full translation from Arabic. No Carney wording or other modern translation used. All authorial proof steps, examples, exercises, and footnotes included.",
+  "attestedTextualDecisionCount": 9,
+  "attestedTextualDecisions": [
+    {
+      "id": "MV-TEXT-01",
+      "unit": "M-V-04",
+      "baseDisplayedPage": 204,
+      "issue": "Premise number in the justice example",
+      "baseReading": "(٢)",
+      "witnessReading": "(١)",
+      "decision": "The contradictory of the conclusion is explicit in the first conditional premise, not the exceptive second premise.",
+      "arabicPolicy": "Base reading retained without substantive emendation.",
+      "englishPolicy": "Explicitly disclosed earlier-print-supported rendering.",
+      "witness": {
+        "edition": "Najaf, Maṭbaʿat al-Nuʿmān, 1968; Princeton/NYU Arabic Collections Online",
+        "canvas": 237,
+        "printedPage": 233,
+        "printedPageVisiblyNumbered": true,
+        "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/237/full/!1600,2200/0/default.jpg",
+        "sha256": "0373b6ab80b52ecc4a707f3177acfa5b394595f2acc5d330d63ca792eb19b2b1",
+        "scope": "Targeted passage inspected visually; not full collation of the page or unit."
+      }
+    },
+    {
+      "id": "MV-TEXT-02",
+      "unit": "M-V-04",
+      "baseDisplayedPage": 204,
+      "issue": "Inflected noun in the conclusion",
+      "baseReading": "معرف",
+      "witnessReading": "معرب",
+      "decision": "The print supports “inflected”, matching the preceding division of words.",
+      "arabicPolicy": "Base reading retained without substantive emendation.",
+      "englishPolicy": "Explicitly disclosed earlier-print-supported rendering.",
+      "witness": {
+        "edition": "Najaf, Maṭbaʿat al-Nuʿmān, 1968; Princeton/NYU Arabic Collections Online",
+        "canvas": 237,
+        "printedPage": 233,
+        "printedPageVisiblyNumbered": true,
+        "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/237/full/!1600,2200/0/default.jpg",
+        "sha256": "0373b6ab80b52ecc4a707f3177acfa5b394595f2acc5d330d63ca792eb19b2b1",
+        "scope": "Targeted passage inspected visually; not full collation of the page or unit."
+      }
+    },
+    {
+      "id": "MV-TEXT-03",
+      "unit": "M-V-07",
+      "baseDisplayedPage": 209,
+      "issue": "Conditional antecedent in general rule4",
+      "baseReading": "واذا كانت النتيجة جزئية",
+      "witnessReading": "واذا كانت جزئية كانت النتيجة جزئية",
+      "decision": "The omitted antecedent is restored in the English: if one premise is particular, the conclusion is particular.",
+      "arabicPolicy": "Base reading retained without substantive emendation.",
+      "englishPolicy": "Explicitly disclosed earlier-print-supported rendering.",
+      "witness": {
+        "edition": "Najaf, Maṭbaʿat al-Nuʿmān, 1968; Princeton/NYU Arabic Collections Online",
+        "canvas": 242,
+        "printedPage": 238,
+        "printedPageVisiblyNumbered": true,
+        "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/242/full/!1600,2200/0/default.jpg",
+        "sha256": "66345fe3967ec3eac83e1c8b4d6280ea15fb5090578927e3a6371b52dd1eecb4",
+        "scope": "Targeted passage inspected visually; not full collation of the page or unit."
+      }
+    },
+    {
+      "id": "MV-TEXT-04",
+      "unit": "M-V-11",
+      "baseDisplayedPage": 218,
+      "issue": "Conclusion claimed for second-figure mood4",
+      "baseReading": "س ب م",
+      "witnessReading": "س ب حـ",
+      "decision": "English has “Some B is not C”, not a repetition of the minor “Some B is not M”.",
+      "arabicPolicy": "Base reading retained without substantive emendation.",
+      "englishPolicy": "Explicitly disclosed earlier-print-supported rendering.",
+      "witness": {
+        "edition": "Najaf, Maṭbaʿat al-Nuʿmān, 1968; Princeton/NYU Arabic Collections Online",
+        "canvas": 252,
+        "printedPage": 248,
+        "printedPageVisiblyNumbered": true,
+        "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/252/full/!1600,2200/0/default.jpg",
+        "sha256": "0237c868d3c635c9c225bc454f40e9f090021246d9d4b4757dc347fc3fd5f014",
+        "scope": "Targeted passage inspected visually; not full collation of the page or unit."
+      }
+    },
+    {
+      "id": "MV-TEXT-05",
+      "unit": "M-V-17",
+      "baseDisplayedPage": 228,
+      "issue": "Missing premise in fourth-figure reduction",
+      "baseReading": "كل م ب",
+      "witnessReading": "كل حـ م ؛ كل م ب",
+      "decision": "The full interchanged premise pair is directly visible: all C are M; all M are B.",
+      "arabicPolicy": "Base reading retained without substantive emendation.",
+      "englishPolicy": "Explicitly disclosed earlier-print-supported rendering.",
+      "witness": {
+        "edition": "Najaf, Maṭbaʿat al-Nuʿmān, 1968; Princeton/NYU Arabic Collections Online",
+        "canvas": 264,
+        "printedPage": 260,
+        "printedPageVisiblyNumbered": true,
+        "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/264/full/!1600,2200/0/default.jpg",
+        "sha256": "2f014d8f5f6d37742bafdbf34c1c2d5fde9198472996293d6871e53727e22e6d",
+        "scope": "Targeted passage inspected visually; not full collation of the page or unit."
+      }
+    },
+    {
+      "id": "MV-TEXT-06",
+      "unit": "M-V-19",
+      "baseDisplayedPage": 233,
+      "issue": "Negation in the shared conditional component",
+      "baseReading": "واذا يترك أمته سدي",
+      "witnessReading": "واذا لم يترك أمته سدى",
+      "decision": "The English retains the printed negation: if he does not leave his community without direction.",
+      "arabicPolicy": "Base reading retained without substantive emendation.",
+      "englishPolicy": "Explicitly disclosed earlier-print-supported rendering.",
+      "witness": {
+        "edition": "Najaf, Maṭbaʿat al-Nuʿmān, 1968; Princeton/NYU Arabic Collections Online",
+        "canvas": 269,
+        "printedPage": 265,
+        "printedPageVisiblyNumbered": true,
+        "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/269/full/!1600,2200/0/default.jpg",
+        "sha256": "47ec7e8a053b06808af1a36760e37889883e1d54e49887cd2097d07133aa3040",
+        "scope": "Targeted passage inspected visually; not full collation of the page or unit."
+      }
+    },
+    {
+      "id": "MV-TEXT-07",
+      "unit": "M-V-28",
+      "baseDisplayedPage": 248,
+      "issue": "Negation in the non-reversibility of entailment",
+      "baseReading": "وثبوت الاعم يلزم منه ثبوت الاخص",
+      "witnessReading": "وثبوت الأعم لا يلزم منه ثبوت الأخص",
+      "decision": "The broader consequent does not entail the narrower antecedent; the digital omission reverses the rule.",
+      "arabicPolicy": "Base reading retained without substantive emendation.",
+      "englishPolicy": "Explicitly disclosed earlier-print-supported rendering.",
+      "witness": {
+        "edition": "Najaf, Maṭbaʿat al-Nuʿmān, 1968; Princeton/NYU Arabic Collections Online",
+        "canvas": 285,
+        "printedPage": 281,
+        "printedPageVisiblyNumbered": true,
+        "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/285/full/!1600,2200/0/default.jpg",
+        "sha256": "d3b7c0e175eea881610d661e81d90455f60f7f29ca783995ffc274cd5a261969",
+        "scope": "Targeted passage inspected visually; not full collation of the page or unit."
+      }
+    },
+    {
+      "id": "MV-TEXT-08",
+      "unit": "M-V-34",
+      "baseDisplayedPage": 260,
+      "issue": "Universal quantifier in equality analysis",
+      "baseReading": "مساو لب مساو لمساوي ج",
+      "witnessReading": "كل مساو لب مساو لمساوي ج",
+      "decision": "The English major explicitly quantifies everything equal to B, as the print does.",
+      "arabicPolicy": "Base reading retained without substantive emendation.",
+      "englishPolicy": "Explicitly disclosed earlier-print-supported rendering.",
+      "witness": {
+        "edition": "Najaf, Maṭbaʿat al-Nuʿmān, 1968; Princeton/NYU Arabic Collections Online",
+        "canvas": 298,
+        "printedPage": 294,
+        "printedPageVisiblyNumbered": true,
+        "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/298/full/!1600,2200/0/default.jpg",
+        "sha256": "297863ab87611f8228c8858f5b5c4373e7a4912bbb729d9dd218db5ed9f00fca",
+        "scope": "Targeted passage inspected visually; not full collation of the page or unit."
+      }
+    },
+    {
+      "id": "MV-TEXT-09",
+      "unit": "M-V-40",
+      "baseDisplayedPage": 269,
+      "issue": "Imperative opening exercise16",
+      "baseReading": "البراهين في قاعدة نقض المحمول",
+      "witnessReading": "أرجع البراهين في قاعدة نقض المحمول",
+      "decision": "“Recast the proofs” follows the print; the differing internal page references remain those of the base edition.",
+      "arabicPolicy": "Base reading retained without substantive emendation.",
+      "englishPolicy": "Explicitly disclosed earlier-print-supported rendering.",
+      "witness": {
+        "edition": "Najaf, Maṭbaʿat al-Nuʿmān, 1968; Princeton/NYU Arabic Collections Online",
+        "canvas": 308,
+        "printedPage": 304,
+        "printedPageVisiblyNumbered": true,
+        "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/308/full/!1600,2200/0/default.jpg",
+        "sha256": "85fdec1e6c0699f424b96835e56be6fee8f66ea4ff25e11703c7fd83618a9fc8",
+        "scope": "Targeted passage inspected visually; not full collation of the page or unit."
+      }
+    }
+  ],
+  "recoveredFigures": [
+    {
+      "unit": "M-V-05",
+      "baseDisplayedPage": 205,
+      "baseCondition": "Only the heading survives in the digital page; no inline figure is present.",
+      "witness": {
+        "edition": "Najaf, Maṭbaʿat al-Nuʿmān, 1968; Princeton/NYU Arabic Collections Online",
+        "canvas": 238,
+        "printedPage": 234,
+        "printedPageVisiblyNumbered": true,
+        "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/238/full/!1600,2200/0/default.jpg",
+        "sha256": "f68d10db33eae87ba15c2ed6679c170d9ebdc27df49c26bd2c3575d7447d7ec0",
+        "scope": "Targeted passage inspected visually; not full collation of the page or unit."
+      },
+      "recoveredContent": [
+        {
+          "parentArabic": "الحجة",
+          "parentEnglish": "Argument",
+          "childrenArabic": [
+            "قياس",
+            "تمثيل",
+            "استقراء"
+          ],
+          "childrenEnglish": [
+            "Syllogism",
+            "Analogy",
+            "Induction"
+          ]
+        },
+        {
+          "parentArabic": "قياس",
+          "parentEnglish": "Syllogism",
+          "childrenArabic": [
+            "استثنائي",
+            "اقتراني"
+          ],
+          "childrenEnglish": [
+            "Exceptional",
+            "Conjunctive"
+          ]
+        },
+        {
+          "parentArabic": "اقتراني",
+          "parentEnglish": "Conjunctive",
+          "childrenArabic": [
+            "حملي",
+            "شرطي"
+          ],
+          "childrenEnglish": [
+            "Categorical",
+            "Conditional"
+          ]
+        }
+      ],
+      "presentation": "Full Arabic bracketed transcription and full English relation table; structured sourceFigure metadata. This is not the square-only sourceDiagram schema."
+    }
+  ],
+  "unresolvedPrintedCruxes": [
+    {
+      "id": "MV-CRUX-01",
+      "unit": "M-V-08",
+      "baseDisplayedPage": 211,
+      "reading": "بين وضع",
+      "witness": {
+        "edition": "Najaf, Maṭbaʿat al-Nuʿmān, 1968; Princeton/NYU Arabic Collections Online",
+        "canvas": 244,
+        "printedPage": 240,
+        "printedPageVisiblyNumbered": true,
+        "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/244/full/!1600,2200/0/default.jpg",
+        "sha256": "fbd16f223a7946ff1e8f425992720e073a6aff6a382058601939a8cbca2590ca",
+        "scope": "Targeted passage inspected visually; not full collation of the page or unit."
+      },
+      "finding": "Both base and print read بين, not عين. A second agent independently confirmed the initial dotted bāʾ.",
+      "englishDecision": "“The same as” is a disclosed contextual reconstruction from the later twice-repeated عين وضعه, not an attested textual repair.",
+      "status": "Unresolved printed wording; Arabic unchanged."
+    },
+    {
+      "id": "MV-CRUX-02",
+      "unit": "M-V-20",
+      "baseDisplayedPage": 237,
+      "reading": "اذا غرق زيد فهو ليس في الماء",
+      "witness": {
+        "edition": "Najaf, Maṭbaʿat al-Nuʿmān, 1968; Princeton/NYU Arabic Collections Online",
+        "canvas": 272,
+        "printedPage": 268,
+        "printedPageVisiblyNumbered": true,
+        "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/272/full/!1600,2200/0/default.jpg",
+        "sha256": "20002b6684aea7dcd97a7cefc3bc3738e927ff6ec8855f39180928b3fbeedf6b",
+        "scope": "Targeted passage inspected visually; not full collation of the page or unit."
+      },
+      "finding": "The second purported non-entailed conditional does not instantiate the previously specified template, whose antecedent would be “does not drown”. The same wording is printed.",
+      "englishDecision": "Retained literally as a non-entailed example, with an explicit template-mismatch note.",
+      "status": "Inherited printed mismatch; no silent negation supplied."
+    },
+    {
+      "id": "MV-CRUX-03",
+      "unit": "M-V-27",
+      "baseDisplayedPage": 247,
+      "reading": "لا يتوقف الانتاج فيها على مقدمة أخرى كقياس المساواة",
+      "witness": {
+        "edition": "Najaf, Maṭbaʿat al-Nuʿmān, 1968; Princeton/NYU Arabic Collections Online",
+        "canvas": 284,
+        "printedPage": 280,
+        "printedPageVisiblyNumbered": false,
+        "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/284/full/!1600,2200/0/default.jpg",
+        "sha256": "5f6a3e8496006011ee9a96c24bfe6b98fa246f9a3c99d861794db9558c3b8b35",
+        "scope": "Targeted passage inspected visually; not full collation of the page or unit."
+      },
+      "finding": "The equality comparison is loose or misleading if read as making equality an example of a complete syllogism. The same wording appears in the print.",
+      "englishDecision": "Construes the comparison as the additional premise needed in equality, in accord with the explicit earlier definition and later analysis; interpretation disclosed.",
+      "status": "Inherited ambiguous comparison; Arabic unchanged."
+    },
+    {
+      "id": "MV-CRUX-04",
+      "unit": "M-V-30",
+      "baseDisplayedPage": 251,
+      "reading": "هذا ناطق لأن كل ناطق انسان",
+      "witness": {
+        "edition": "Najaf, Maṭbaʿat al-Nuʿmān, 1968; Princeton/NYU Arabic Collections Online",
+        "canvas": 288,
+        "printedPage": 284,
+        "printedPageVisiblyNumbered": false,
+        "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/288/full/!1600,2200/0/default.jpg",
+        "sha256": "b9d5e7910873764a208e7b8fdec4f16c721ec878f5bd5d999e890ca964e12bb8",
+        "scope": "Targeted passage inspected visually; not full collation of the page or unit."
+      },
+      "finding": "The author calls the example two premises with conclusion omitted, although لأن makes the first sound like a conclusion. The print retains لأن.",
+      "englishDecision": "Retains “because” and flags the mismatch; does not silently replace it with “and”.",
+      "status": "Inherited printed connective; no emendation."
+    }
+  ],
+  "logicalQualifications": [
+    {
+      "units": [
+        "M-V-13",
+        "M-V-17"
+      ],
+      "issue": "Traditional existential conditions",
+      "finding": "Third-figure moods1–2 require an existing M; fourth-figure mood1 requires an existing C, and mood4 an existing M. These conditions are noted rather than omitted under modern empty-class semantics."
+    },
+    {
+      "units": [
+        "M-V-15"
+      ],
+      "issue": "Existence in proof by assumption",
+      "finding": "The assumed D comes from the witness asserted by a particular premise, making its nonemptiness explicit."
+    },
+    {
+      "units": [
+        "M-V-21",
+        "M-V-23"
+      ],
+      "issue": "Negative genuine disjunction",
+      "finding": "The author’s conversion to four particular negative conditionals is retained. It cannot be identified without additional semantic and circumstance conditions with merely negating modern Boolean exclusive-or. The 1968 p269 confirms the wording, not validity under another semantics."
+    },
+    {
+      "units": [
+        "M-V-25"
+      ],
+      "issue": "Conditional substitution",
+      "finding": "The author states conditions only for the two varieties sharing in the consequent, despite first outlining four varieties. The limitation is preserved."
+    },
+    {
+      "units": [
+        "M-V-34"
+      ],
+      "issue": "Equality and resemblance",
+      "finding": "The omitted external premise supplies transitivity. No blanket transitivity of all resemblance relations is added."
+    },
+    {
+      "units": [
+        "M-V-35",
+        "M-V-37"
+      ],
+      "issue": "Historical scientific examples and certainty",
+      "finding": "Biological, medicinal, fruit, and geometrical examples remain authorial examples. The ordinary-condition qualification, complete-similarity assumption, and possibility of revising a mistaken causal attribution are preserved."
+    },
+    {
+      "units": [
+        "M-V-38",
+        "M-V-39"
+      ],
+      "issue": "Juristic analogy and complete cause",
+      "finding": "School attribution is explicit. Certainty requires knowledge of the complete cause; merely shared properties do not suffice. The abbreviated legal report is not independently collated."
+    },
+    {
+      "units": [
+        "M-V-40"
+      ],
+      "issue": "Exercise7 direction of inference",
+      "finding": "The exercise is retained with its “only” wording and without reversing implication to make the proposed inference valid."
+    }
+  ],
+  "review": {
+    "method": "All base prose/formula/exercise blocks read in consecutive bounded batches; English checked against the corresponding Arabic while drafted, with a final pass over negations, proof directions, conditional nesting, school attribution, and source qualifications.",
+    "fullIndependentPrintCollation": false,
+    "fullIndependentBilingualReview": false,
+    "specialistCertification": false,
+    "secondReader": "Independent exact-letter check of canvas244/printed240 only, by /root/muzaffar_iv_b; it corrected an initial overreading before finalization.",
+    "coverage": {
+      "expectedSourceBlocks": 798,
+      "coveredSourceBlocks": 798,
+      "missingBlocks": [],
+      "extraBlocks": []
+    }
+  }
+}

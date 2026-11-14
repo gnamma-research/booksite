@@ -12,6 +12,7 @@ on:
       - 'daruri/download-bundle.js'
       - 'daruri/qa/verify-hadith-context.js'
       - 'daruri/qa/verify-hadith-inline.cjs'
+      - 'daruri/qa/verify-hadith-scroll-browser.py'
       - '.github/workflows/daruri-hadith-context-qa.yml'
   pull_request:
     paths:
@@ -23,6 +24,7 @@ on:
       - 'daruri/download-bundle.js'
       - 'daruri/qa/verify-hadith-context.js'
       - 'daruri/qa/verify-hadith-inline.cjs'
+      - 'daruri/qa/verify-hadith-scroll-browser.py'
   workflow_dispatch:
 
 permissions:
@@ -48,3 +50,28 @@ jobs:
         run: |
           node daruri/qa/verify-reader-source-notes.js
           node daruri/qa/verify-quran-context.js
+
+  hadith-scroll-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install desktop and iPhone-viewport browser engines
+        run: |
+          python -m pip install -q playwright==1.58.0
+          python -m playwright install --with-deps chromium webkit
+      - name: Verify only one scrollbar for expanded Hadith notes
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m http.server 8132 --bind 127.0.0.1 > /tmp/daruri-hadith-scroll-http.log 2>&1 &
+          pid=$!
+          trap 'kill "$pid" || true' EXIT
+          for i in {1..80}; do
+            if curl --silent --fail http://127.0.0.1:8132/daruri/ > /dev/null; then break; fi
+            sleep 0.25
+          done
+          DARURI_QA_BASE=http://127.0.0.1:8132/daruri/ python daruri/qa/verify-hadith-scroll-browser.py

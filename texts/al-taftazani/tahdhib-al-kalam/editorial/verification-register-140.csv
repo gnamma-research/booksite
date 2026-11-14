@@ -1,0 +1,141 @@
+unit,chapter,heading,word_count_english,R12_arabic_word_count,inherited_grade,prior_gap_flag,prior_OCR_locator,R13_collation_dossiers,original_matn_full_image_certified,Taqrib_print_page_read,muḥākamāt_voice_separated,eligible_for_definitive_edition,verification_action
+I.01,I,Definition and subject of kalām,24,15,A,False,OCR 525–529,C01,NO,NO,NO,NO,"Recheck precise wording and establish independent witness, then pair commentary"
+I.02,I,Accounts of knowledge,39,20,B,True,OCR 527–553,C01,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+I.03,I,The causal connection of inquiry and knowledge,20,10,A,False,OCR 553–556,,NO,NO,NO,NO,"Recheck precise wording and establish independent witness, then pair commentary"
+I.04,I,Why inquiry is obligatory,46,21,B,False,OCR 557–559,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+I.05,I,The objection of circularity,31,17,B,False,OCR 559–560,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+I.06,I,The reply: obligation versus recognition,27,11,C,True,OCR 582–584,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+I.07,I,Proofs and the priority of rational evidence,42,27,B,True,OCR 584–588,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+II.01,II,The concept of existence,17,8,A,False,OCR 589–591,C02,NO,NO,NO,NO,"Recheck precise wording and establish independent witness, then pair commentary"
+II.02,II,Existence and the necessary being,33,21,B,True,OCR 591–621,C02,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+II.03,II,Degrees and conceptual universality of being,40,21,C,True,OCR 618–621,C02,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+II.04,II,Four uses of “existence”,46,23,B,False,OCR 621–640,C03,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+II.05,II,Argument for mental existence,53,31,B,True,OCR 640–645,C03,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+II.06,II,Mental presentation without real inherence,51,17,B,False,OCR 644–648,C03,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+II.07,II,"Thinghood, establishment, and nonexistence",38,21,A,False,OCR 648–650,C04,NO,NO,NO,NO,"Recheck precise wording and establish independent witness, then pair commentary"
+II.08,II,Existence as predicate and copula,38,19,B,True,OCR 670–674,C04,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+II.09,II,Three considerations of quiddity,55,26,B,False,OCR 675–695,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+II.10,II,Quiddity and the natural universal,39,15,B,False,OCR 693–696,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+II.11,II,Composite and simple essences,42,23,A,False,OCR 701–704,,NO,NO,NO,NO,"Recheck precise wording and establish independent witness, then pair commentary"
+II.12,II,The issue of whether quiddities are made,20,11,C,True,OCR 705–708,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+II.13,II,Individuality and its principles,40,13,C,True,OCR 729–754,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+II.14,II,"Necessity, impossibility and possibility",26,13,B,True,OCR 755–788,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+II.15,II,Necessary and impossible through themselves,28,17,B,True,OCR 778–784,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+II.16,II,Possibility and preparedness,50,25,B,False,OCR 783–788,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+II.17,II,Why the contingent needs a cause,50,26,B,False,OCR 806–815,C05,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+II.18,II,Objection: producing what is already present,53,19,B,True,OCR 814–817,C05,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+II.19,II,The two senses of dependence,23,10,C,True,OCR 817–838,C05,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+II.20,II,Eternity and origination,36,19,A,False,OCR 860–865,,NO,NO,NO,NO,"Recheck precise wording and establish independent witness, then pair commentary"
+II.21,II,Different orders of priority,22,16,B,False,OCR 889–895,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+II.22,II,Unity and multiplicity,42,21,B,True,OCR 898–904,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+II.23,II,Identity and opposition,35,18,B,True,OCR 919–959,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+II.24,II,Definition and divisions of cause,35,15,C,True,OCR 975–987,C10,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+II.25,II,Circularity and regress,34,11,C,True,OCR 1045–1075,C06,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+II.26,II,"Form, matter, and finality by extension",63,38,B,False,OCR 1083–1092,C10,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+II.27,II,Divine production and customary causation,22,15,A,False,OCR 1090–1092,C10,NO,NO,NO,NO,"Recheck precise wording and establish independent witness, then pair commentary"
+III.01,III,Opening of the chapter on accidents,46,23,B,False,OCR 1093–1097,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.02,III,The philosophers’ category account,27,24,C,True,OCR 1111–1116,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+III.03,III,Persistence of accidents,26,12,B,True,OCR 1136–1145,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+III.04,III,Quantity: discrete and continuous,25,18,B,False,OCR 1161–1167,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.05,III,Time as a measure,34,16,B,False,OCR 1187–1195,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.06,III,The nature of place,36,21,B,False,OCR 1196–1209,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.07,III,Whether a vacuum is possible,32,11,C,True,OCR 1210–1235,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+III.08,III,Quality as an accident,24,14,A,False,OCR 1238–1241,,NO,NO,NO,NO,"Recheck precise wording and establish independent witness, then pair commentary"
+III.09,III,Primary tangible qualities,17,8,A,False,OCR 1240–1242,,NO,NO,NO,NO,"Recheck precise wording and establish independent witness, then pair commentary"
+III.10,III,"Force, inclination, and voluntariness",38,21,B,False,OCR 1259–1266,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.11,III,Colour and light,29,19,B,False,OCR 1266–1292,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.12,III,Hearing and sound,16,12,B,False,OCR 1300–1317,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.13,III,States and settled dispositions,35,12,B,True,OCR 1343–1347,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+III.14,III,Life and its opposite,28,11,B,False,OCR 1343–1347,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.15,III,Knowledge and mental forms,28,17,B,False,OCR 1347–1350,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.16,III,Knowledge of the nonexistent,30,17,B,False,OCR 1353–1357,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.17,III,The kinds of apprehension,11,6,A,False,OCR 1365–1367,,NO,NO,NO,NO,"Recheck precise wording and establish independent witness, then pair commentary"
+III.18,III,Levels of cognition and judgment,33,20,B,True,OCR 1366–1372,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+III.19,III,Knowledge in potency and act,39,24,B,False,OCR 1372–1376,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.20,III,Will and power,37,23,B,False,OCR 1398–1416,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.21,III,"Power before, with, and after an action",39,25,B,False,OCR 1435–1444,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.22,III,"Pleasure, pain, and health",46,26,B,False,OCR 1458–1468,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.23,III,Qualities of magnitude and preparedness,38,24,B,False,OCR 1470–1497,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.24,III,"Location, rest and motion",39,20,B,False,OCR 1498–1528,C07,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.25,III,The classification of movement,40,14,B,False,OCR 1561–1568,C07,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.26,III,"Motion, speed and slowness",23,12,B,False,OCR 1596–1607,C07,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.27,III,The category of relation,42,17,B,False,OCR 1622–1626,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+III.28,III,"Time, posture, possession and action",54,31,C,True,OCR 1641–1660,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+IV.01,IV,Substance: introductory alternatives,31,24,C,True,OCR 1662–1676,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+IV.02,IV,The body and divisibility,35,12,C,True,OCR 1677–1688,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+IV.03,IV,Dispute over indivisible parts,37,20,B,True,OCR 1699–1710,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+IV.04,IV,Material and formal principles of the body,61,29,B,True,OCR 1729–1735,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+IV.05,IV,The counterproposal about continuity,23,17,B,False,OCR 1733–1737,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+IV.06,IV,Finitude of dimensions,37,19,C,True,OCR 1773–1787,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+IV.07,IV,The cosmos is not eternal,43,23,B,True,OCR 1800–1815,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+IV.08,IV,The agent’s eternal will and the originated effect,52,19,C,True,OCR 1813–1820,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+IV.09,IV,Simple and composite bodies in the philosophers’ natural science,25,17,B,False,OCR 1821–1824,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+IV.10,IV,The celestial spheres in the inherited astronomical system,35,16,B,True,OCR 1842–1859,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+IV.11,IV,Cosmic contingency and voluntary agency,17,8,B,False,OCR 1859–1862,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+IV.12,IV,Vegetative powers: nutrition and growth,43,16,B,True,OCR 1934–1943,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+IV.13,IV,The question of natural powers,31,16,C,True,OCR 1943–1951,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+IV.14,IV,Animal faculties: the external senses,30,21,B,True,OCR 1953–1963,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+IV.15,IV,Two explanations of vision,30,12,B,False,OCR 1961–1970,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+IV.16,IV,"The common sense, imagination and estimation",45,22,B,True,OCR 1976–1987,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+IV.17,IV,What is the human soul?,23,16,B,False,OCR 1999–2006,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+IV.18,IV,Arguments for the immaterial soul,48,17,C,True,OCR 2007–2016,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+IV.19,IV,Theoretical intellect and its four grades,61,23,B,False,OCR 2075–2082,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+IV.20,IV,"Practical intellect, ethics, and political life",51,24,B,True,OCR 2081–2093,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+IV.21,IV,The cardinal virtues as equilibria,34,16,B,False,OCR 2091–2096,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+IV.22,IV,Separate intellects reported by the philosophers,37,21,B,False,OCR 2111–2118,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+IV.23,IV,Angels and jinn: a doctrinal alternative,38,21,B,True,OCR 2121–2137,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.01,V,From contingency and origination to the Necessary,26,16,A,False,OCR 2140–2144,,NO,NO,NO,NO,"Recheck precise wording and establish independent witness, then pair commentary"
+V.02,V,The divine signs in the horizons and selves,42,15,B,True,OCR 2142–2148,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.03,V,Absolute simplicity and incompositeness,35,12,B,False,OCR 2152–2159,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+V.04,V,Unity and the problem of two omnipotent agents,52,26,B,True,OCR 2158–2165,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.05,V,"Not a body, substance, accident or spatial being",35,11,B,True,OCR 2197–2224,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.06,V,The divine attributes are not reducible to the essence,39,10,B,True,OCR 2237–2245,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.07,V,Divine power and the contingency of effects,31,17,B,True,OCR 2244–2253,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.08,V,An eternal power can specify temporal effects,42,11,C,True,OCR 2261–2278,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.09,V,Divine knowledge does not imply change,42,20,C,True,OCR 2277–2286,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.10,V,Will as specification of contingent alternatives,35,13,B,True,OCR 2287–2294,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.11,V,The uncreated divine speech and temporal utterance,33,11,B,True,OCR 2307–2327,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.12,V,The Qurʾān as recited and as eternal attribute,35,19,C,True,OCR 2327–2340,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.13,V,Divine creating and the notion of takwīn,48,16,C,True,OCR 2357–2371,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.14,V,The possibility of seeing God,42,22,B,True,OCR 2373–2394,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.15,V,The divine vision and created apprehension,20,15,B,False,OCR 2450–2460,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+V.16,V,Creation and acquisition in human action,44,22,B,False,OCR 2478–2482,C08,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+V.17,V,The Muʿtazilī account of human production,22,10,A,False,OCR 2482–2485,,NO,NO,NO,NO,"Recheck precise wording and establish independent witness, then pair commentary"
+V.18,V,"Conscious agency, responsibility and divine causality",47,20,B,True,OCR 2498–2515,C08,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.19,V,Neither sheer compulsion nor independent delegation,47,16,C,True,OCR 2543–2550,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.20,V,Moral good and evil: reason or revelation?,33,19,B,False,OCR 2606–2614,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+V.21,V,"Wisdom, purposes, and divine action",38,23,B,True,OCR 2638–2649,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.22,V,"Guidance, misguidance and divine agency",38,19,B,True,OCR 2650–2656,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+V.23,V,Divine names and the essence,31,19,B,True,OCR 2731–2742,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.01,VI,Prophet and messenger,43,23,B,False,OCR 2744–2748,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+VI.02,VI,Why prophecy is a gift and benefit,37,14,B,True,OCR 2747–2761,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.03,VI,Miracle as the proof of prophethood,34,10,B,True,OCR 2760–2768,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.04,VI,Objections to the miracle argument,53,23,B,True,OCR 2763–2773,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.05,VI,The Qurʾān and the prophet’s truthfulness,42,18,B,True,OCR 2779–2784,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.06,VI,Eloquence and the theory of diversion (ṣarfa),39,17,C,True,OCR 2783–2791,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.07,VI,The prophets’ freedom from grave defects,41,15,B,True,OCR 2825–2842,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.08,VI,The superiority of prophets and angels,30,9,B,True,OCR 2869–2885,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.09,VI,The reality of saints’ extraordinary acts,27,11,A,False,OCR 2891–2897,,NO,NO,NO,NO,"Recheck precise wording and establish independent witness, then pair commentary"
+VI.10,VI,The saint does not supersede the prophet,26,15,A,False,OCR 2903–2907,,NO,NO,NO,NO,"Recheck precise wording and establish independent witness, then pair commentary"
+VI.11,VI,The disputed relation between prophetic walāya and nubuwwa,42,21,B,True,OCR 2905–2917,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.12,VI,The possibility of bodily resurrection,25,14,B,True,OCR 2920–2927,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.13,VI,A response about numerically the same individual,37,14,C,True,OCR 2924–2930,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.14,VI,Paradise and Hell are not bound by the inherited cosmic spheres,42,12,C,True,OCR 2958–2972,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.15,VI,The questioning and punishment of the grave,28,9,B,True,OCR 2974–2985,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.16,VI,The events of the Last Day,38,21,B,True,OCR 2985–3000,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.17,VI,Reward as grace and punishment as justice,34,19,B,False,OCR 3002–3009,,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+VI.18,VI,The grave sinner need not remain eternally in Hell,41,12,B,True,OCR 3020–3030,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.19,VI,Remission of grave sins without repentance,30,10,B,True,OCR 3044–3053,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.20,VI,Repentance and repairing wrongful acts,37,19,B,True,OCR 3080–3086,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.21,VI,Enjoining right and forbidding wrong,32,14,B,True,OCR 3085–3100,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.22,VI,Faith as assent,23,13,B,False,OCR 3101–3105,C09,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+VI.23,VI,"Faith, verbal confession and works",52,30,B,False,OCR 3103–3107,C09,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+VI.24,VI,The heart as the seat of religious assent,27,12,B,False,OCR 3108–3115,C09,NO,NO,NO,NO,Verify against primary page images and link printed commentary locus
+VI.25,VI,Conscious belief is not the same as bare knowledge,35,12,B,True,OCR 3120–3145,C09,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.26,VI,Works and the essence of faith,42,22,B,True,OCR 3166–3184,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.27,VI,The believer who commits a grave sin,31,15,B,True,OCR 3207–3223,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.28,VI,Faith and Islam,29,17,B,True,OCR 3225–3238,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.29,VI,Increase and decrease of faith,51,22,B,True,OCR 3238–3248,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.30,VI,The faith of one who follows authority,38,13,B,True,OCR 3258–3268,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.31,VI,Imamate by selection and public responsibility,30,8,C,True,OCR 3319–3347,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span
+VI.32,VI,The succession dispute as historical and theological controversy,34,10,C,True,OCR 3360–3424,,NO,NO,NO,NO,Reconstruct omitted Arabic from independent primary scan; proof and translate continuous span

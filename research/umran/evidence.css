@@ -1,0 +1,53 @@
+
+/* ʿUmrān evidence desk and assessment studio — layered on existing site style */
+.evidence-list{display:grid;grid-template-columns:1fr;gap:25px;margin-top:20px}
+.evidence-record{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:clamp(21px,3.5vw,37px);scroll-margin-top:20px}
+.evidence-record-head h2{font-size:clamp(28px,3.8vw,39px);max-width:900px}
+.evidence-record-head .note{max-width:850px}
+.metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin:25px 0 29px}
+.data-tile{border-radius:8px;border:1px solid #d5ded5;background:#f0f5ef;padding:16px 15px;min-width:0}
+.data-value{display:block;font:400 clamp(23px,2.8vw,34px)/1.22 Georgia,serif;letter-spacing:-.035em;color:var(--forest);overflow-wrap:anywhere;margin:0 0 10px}
+.data-label{display:block;font:600 13px/1.45 system-ui,sans-serif;color:var(--ink);min-height:40px}
+.data-context{display:block;font:12px/1.5 system-ui,sans-serif;color:var(--muted);margin-top:8px}
+.data-source{display:inline-block;font:600 12px system-ui,sans-serif;margin-top:10px}
+.evidence-columns{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin:23px 0}
+.evidence-columns section{border-top:2px solid var(--line);padding-top:16px}
+.evidence-columns h3{font:700 13px/1.4 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--forest)}
+.evidence-columns p{font-size:15px;line-height:1.7}
+.evidence-record h4{font-size:20px;margin-top:23px}
+.evidence-record details{padding-top:10px}
+.evidence-record details:not(.case-sources){border-top:1px solid var(--line)}
+.evidence-record details ul{padding-left:24px;max-width:800px}
+.evidence-record details li{font-size:14px;margin:7px 0}
+.evidence-record summary{font-weight:700;font-size:14px}
+.evidence-record .case-footer{border-top:1px solid var(--line);margin-top:23px;padding-top:15px}
+.evidence-record .case-footer a{font-weight:600}
+.evidence-record .case-sources{margin-top:10px}
+.evidence-record .case-sources ol{margin-top:16px}
+.studio-lead{max-width:850px}
+.studio-panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:clamp(18px,3vw,32px);margin-bottom:29px}
+.studio-panel h2{font-size:28px;margin-bottom:15px}
+.studio-panel .eyebrow{margin-bottom:5px}
+.studio-form{max-width:930px}
+.studio-form fieldset{padding:0;margin:0 0 25px;border:0;min-width:0}
+.studio-form legend{font:400 25px/1.4 Georgia,serif;margin:0 0 7px}
+.studio-form .fieldhint{color:var(--muted);font-size:13px;max-width:710px;line-height:1.65;margin-bottom:15px}
+.studio-form .formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.studio-form label{display:flex;flex-direction:column;gap:7px;font:650 13px/1.45 system-ui,sans-serif;color:var(--ink)}
+.studio-form input,.studio-form textarea,.studio-form select{border-radius:7px;padding:11px 12px;border:1px solid #b5bdb4;background:white;min-width:0;color:var(--ink);font:400 14px/1.5 system-ui,sans-serif}
+.studio-form textarea{resize:vertical;min-height:94px}
+.studio-form input:focus,.studio-form textarea:focus{border-color:var(--forest)}
+.studio-form label small{font:400 11px/1.5 system-ui,sans-serif;color:var(--muted)}
+.studio-form .full{grid-column:1/-1}
+.studio-buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.studio-buttons button{font-size:14px}
+.studio-output{border-top:2px solid var(--forest);margin-top:22px;padding-top:26px}
+.studio-output[hidden]{display:none}
+.studio-output h2{font-size:29px}
+.studio-output pre{padding:20px;background:#f0eee6;border-radius:8px;white-space:pre-wrap;word-break:break-word;font:13px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace;border:1px solid var(--line);max-height:70svh;overflow-y:auto}
+.studio-status{font:600 13px/1.5 system-ui,sans-serif;color:var(--forest);margin-bottom:13px}
+.studio-disclaimer{padding:15px 20px;background:#f6ede2;border-left:3px solid var(--clay);font-size:13px;line-height:1.65}
+.studio-disclaimer p:last-child{margin:0}
+@media(max-width:880px){.metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.metric-grid,.evidence-columns,.studio-form .formgrid{grid-template-columns:1fr}.data-label{min-height:0}.evidence-record{padding:21px}.studio-panel{padding:19px}.studio-form legend{font-size:23px}.data-value{font-size:30px}.studio-buttons button{width:100%}}
+@media print{.mast,.footer,.btns,.toolbar,.studio-buttons,.skip{display:none!important}.evidence-record{break-inside:avoid}.studio-output pre{max-height:none;overflow:visible}body{background:white!important}.pagehead{padding:10px 0 20px}body:has(#sufficiency-studio) .pagehead,body:has(#sufficiency-studio) main>section:not(.alt),body:has(#sufficiency-studio) .studio-form{display:none!important}body:has(#sufficiency-studio) .studio-panel{border:0;padding:0}body:has(#sufficiency-studio) .studio-output{border-top:0;margin-top:0;padding-top:0}}

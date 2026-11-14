@@ -1,0 +1,469 @@
+{
+  "edition": "1.7.0-generative-recomposition",
+  "date": "2026-11-13",
+  "status": "draft-to-be-merged",
+  "baseline": "1.6.2-targeted-source-and-prose-fidelity",
+  "rule": "For each chapter replace one explicitly chosen interpretive paragraph with a case-grounded, generative account. Other historical and source-critical evidence is retained. This is a synthetic interpretive pass, not complete new manuscript collation.",
+  "changes": [
+    {
+      "chapter": 1,
+      "title": "Prophetic beginnings: guidance addressed to human life",
+      "replace_paragraph_index": 3,
+      "previous_paragraph_length": 331,
+      "revision_length": 781,
+      "reason": "Adamic naming and the primacy of received knowledge",
+      "replacement": "Ādam's naming of creatures concerns received knowledge before it concerns dominion. The Qurʾānic account joins learning, responsibility, disobedience, repentance and the promise of further guidance (2:30–38). These relations furnish the theological opening for later accounts of human arts, judgment and government without making those institutions contemporaneous with Ādam. In the Akbarian interpretation, the comprehensive human is capable of relating differentiated realities without confusing their natures; the Muhammadan perfection later gathers prophetic excellences under an incomparable final commission. The relation is typological and principial, not a historical claim that all subsequent sciences descended by direct institutional transmission from the first prophet.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 2,
+      "title": "Land, settlement and the political worlds of the Near East",
+      "replace_paragraph_index": 3,
+      "previous_paragraph_length": 702,
+      "revision_length": 788,
+      "reason": "Earthly labor as a true field of right judgment",
+      "replacement": "A cultivator who studies soil and seasons exercises genuinely valid knowledge of the world; an administrator who allocates irrigation waters must also judge competing claims. These are related but not identical excellences. The Qurʾān's description of human settlement in the earth (11:61) gives neither an unqualified title to exploit it nor a technical manual for reservoirs. Human beings act through materials whose properties they must learn, other persons whose rights they must respect, and ends that order their choices. The later Muhammadan example makes this earthly work relevant to worship without dissolving agriculture, medicine or building into purely religious metaphors. The connection is explanatory: sound attention to material reality makes responsible action possible.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 3,
+      "title": "Israel and Judah: kingship, destruction and life beyond a kingdom",
+      "replace_paragraph_index": 1,
+      "previous_paragraph_length": 725,
+      "revision_length": 761,
+      "reason": "Prophetic authority and the durability of household transmission",
+      "replacement": "After the destruction of the kingdoms of Israel and Judah, families and teachers continued to transmit worship, law and remembered identity under changing rulers. The loss of sovereignty did not terminate every practice, although it exposed communities to exile, coercion and differences in what could be taught publicly. The Qurʾānic memories of Dāwūd and Sulaymān bring together prophecy and kingship without equating royal power with all divine guidance. In the later Muhammadan order, public authority, learned transmission and household teaching would likewise be distinguishable, even though their ultimate religious orientation could be shared. The historical connection is comparative rather than a claim of a directly copied Jewish institutional model.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 4,
+      "title": "Religious disciplines and the changing world of the first millennium BCE",
+      "replace_paragraph_index": 1,
+      "previous_paragraph_length": 740,
+      "revision_length": 808,
+      "reason": "Station of no station without a universalist historical shortcut",
+      "replacement": "The philosophical schools, rituals and spiritual disciplines that appeared across different regions cannot be fitted onto one documented global chronology of revelation. Their particular objects nevertheless clarify a principial issue: knowledge of nature, moral formation, contemplation and political order require different kinds of attention. Ibn ʿArabī's later language of the Muhammadan *maqām lā maqām* does not describe a generic mixture of cultures; according to Chittick, it concerns realization that is not confined to any one particular spiritual station. Cross-cultural comparison may disclose analogous questions, but it does not make all doctrinal answers equivalent or prove contact where the sources record none. The historical institutions must remain distinct from the metaphysical analogy.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 5,
+      "title": "Jesus and the communities that carried his message",
+      "replace_paragraph_index": 1,
+      "previous_paragraph_length": 678,
+      "revision_length": 770,
+      "reason": "Christic healing, servanthood and differentiated wisdom",
+      "replacement": "In Qurʾān 5:110, ʿĪsā's healing and extraordinary signs occur by God's permission. Their recipient is a living person in bodily need, not merely an object offered as evidence in an abstract controversy. The act of healing, the recipient's response, the prophet's divine dependence and the later transmission of reports can be separately studied without recreating the fullness of prophetic wisdom. Ibn ʿArabī's Christic *Fuṣūṣ* offers a later account of spirit, breath and manifestation, but cannot substitute for the first-century evidence or settle the Christian–Muslim doctrinal difference. This differentiated prophetic excellence is important to the Akbarian account of Muhammadan comprehensiveness: gathering distinct wisdoms does not erase their real differences.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 6,
+      "title": "The sixth-century crossroads of Rome, Persia, Ethiopia and Arabia",
+      "replace_paragraph_index": 1,
+      "previous_paragraph_length": 587,
+      "revision_length": 749,
+      "reason": "Different causes of receptivity along imperial frontiers",
+      "replacement": "The sixth-century frontier worlds set the conditions within which people received the Prophet's summons, not the cause of revelation itself. A Meccan could enjoy clan protection while a client lacked it; a ruler at Najrān or Aksum could use sovereign authority in a way unavailable to an Arabian household. The divine end of guidance, the material ability to speak or travel, and the disposition to believe were consequently not the same kind of power. Their eventual conjunction in particular relationships—hosting, protection, hearing, recitation and allegiance—made the historical mission communicable. A metaphysical account of a universal prophetic reality does not explain the taxation of a Sasanian province or the exact timing of Rome's war.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 7,
+      "title": "The sanctuary, the clans and the obligations of protection",
+      "replace_paragraph_index": 1,
+      "previous_paragraph_length": 644,
+      "revision_length": 784,
+      "reason": "Sacred trust, protection and the formation of a public character",
+      "replacement": "Before the first revelation, the Prophet's neighbours knew him within the moral life of Makkah: kinship obligations, care for those without protection, exchange and the trustworthiness of speech. Accounts of *Ḥilf al-Fuḍūl* remember a pre-prophetic agreement for protection, though the later report's details require separate historical scrutiny. A sacred precinct could bring different tribes together without producing just conduct in every encounter. This distinction would recur after the Hijrah: the correct purpose of an institution depends upon what its custodians actually do for other people. The subsequent Akbarian language of comprehensive prophetic character interprets that coherence; it is not evidence that Meccan participants possessed its later technical vocabulary.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 8,
+      "title": "Ḥirāʾ, Khadījah and the beginnings of a teaching community",
+      "replace_paragraph_index": 2,
+      "previous_paragraph_length": 716,
+      "revision_length": 839,
+      "reason": "Khadījah's living recognition and the plurality of evidence",
+      "replacement": "Khadījah answered the Prophet's distress by recalling a pattern she knew from living with him: truthful speech, concern for relatives, hospitality and help to the vulnerable. In [al-Bukhārī 3](https://sunnah.com/bukhari:3), that lived acquaintance differs from Waraqah's comparison with an earlier bearer of revelation and from the Prophet's own reception of revealed words. The three kinds of knowledge cooperate but cannot be exchanged for one another. The Akbarian description of prophetic comprehensiveness gives a later interpretation of their unity in one person, not an alternative account of the angelic encounter. The household's first act of shelter and recognition also became a condition for subsequent recitation, instruction and mutual trust: the earliest community formed through persons, not a pre-existing school or court.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 9,
+      "title": "The Meccan proclamation: worship, reckoning and new loyalties",
+      "replace_paragraph_index": 1,
+      "previous_paragraph_length": 699,
+      "revision_length": 717,
+      "reason": "Meccan obligation, inward intention and concrete social claims",
+      "replacement": "The Meccan commands to worship God, care for dependants and remember the Last Day reached people whose resources and protections differed. Giving food and freeing a person from bondage are outward actions with material consequences; fear of God, love of justice and the refusal of ostentation concern the actor's inward formation. A legal interpreter may identify a binding duty, while a companion observes how repeated truthful conduct forms a person who can be trusted. Neither determination is false, but they answer different questions. The Qurʾānic summons was addressed to an integral human life before later disciplines distinguished legal obligation, moral character and social welfare as specialized studies.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 10,
+      "title": "Aksum: faith before political safety",
+      "replace_paragraph_index": 3,
+      "previous_paragraph_length": 483,
+      "revision_length": 807,
+      "reason": "Refuge, faith and the nonidentity of protection with sovereignty",
+      "replacement": "At Aksum the emigrants continued worship by relying on a ruler who possessed the political power to refuse their extradition. The Negus's original protection and the later Muslim testimony concerning his faith must be kept distinct: [al-Bukhārī 3877](https://sunnah.com/bukhari:3877) records the Prophet's announcement of his death and the prayer commanded for him. Protection of vulnerable people, truthful religious witness and political jurisdiction intersected without becoming a single office held by the emigrants. The later Muhammadan inheritance includes the capacity to maintain worship when its adherents have no sovereign authority over their hosts. The circumstances of refuge, however, depend on the king's actual decision, distance from Makkah and the continued life of the migrant households.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 11,
+      "title": "From loss of protection to an alliance at al-ʿAqabah",
+      "replace_paragraph_index": 7,
+      "previous_paragraph_length": 490,
+      "revision_length": 809,
+      "reason": "The Miʿrāj's return and the embodied form of prayer",
+      "replacement": "The Prophet's return from the Miʿrāj is indispensable to its explanatory force. The report of [Muslim 162a](https://sunnah.com/muslim:162a) relates the meeting with Mūsā, his counsel concerning the community's capacity, and the prescription of five daily prayers. In Ibn ʿArabī's later interpretation of spiritual ascent, *return* is not simply descent into an inferior life: worship resumes among real bodies, times, households and neighbours. A correct legal account establishes the prayer's duties, but does not exhaust the spiritual reality of ascension, nor does a mystical reading abolish its established ritual form. The subsequent work of teaching prayer, welcoming migrants and undertaking the pledges at al-ʿAqabah arose through separate historical actions rather than mechanically from the heavens.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 12,
+      "title": "The Hijrah: neighbours, newcomers and a shared order",
+      "replace_paragraph_index": 2,
+      "previous_paragraph_length": 527,
+      "revision_length": 881,
+      "reason": "Hospitality, obligations and the making of a shared order",
+      "replacement": "The Prophet's guidance in Madinah required more than generosity in the moment and more than a document declaring unity. Migrants had to eat and work; hosts retained obligations to their own dependants; different groups bore responsibilities concerning ransom, blood compensation and common security. The transmitted Medinan *kitāb* places these relations into public terms without making every resident a member of one modern category of citizenship. A person who recognizes another's need and a community that reliably settles an enforceable claim are accomplishing related forms of justice. The Akbarian idea of comprehensive human action can illuminate their coordination, but the actual agreement's clauses and participants must be established through textual comparison. Public ʿumrān arises through people carrying out specified obligations, not a document acting on its own.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 13,
+      "title": "Worship takes shape in the routines of a town",
+      "replace_paragraph_index": 11,
+      "previous_paragraph_length": 579,
+      "revision_length": 856,
+      "reason": "Confession, repentance, child care and the limits of a juristic extraction",
+      "replacement": "The cases of Māʿiz and the Ghāmidī woman in [Muslim 1695a](https://sunnah.com/muslim:1695) cannot be reduced either to a legal formula or to a sentimental account of forgiveness. The report includes repeated approaches, refusal or delay, the establishment of a confession and eventual severe punishment; in the woman's case, pregnancy and care for the infant affect the timing and arrangements. The legal question concerns proof, jurisdiction and punishment; the moral question includes repentance, the rights of a dependent child and the speech of witnesses. The Prophet's decisions address these real persons under different claims, while the source does not grant an external observer exhaustive access to their inner stations. A jurist's correct ruling preserves one indispensable aspect of guidance without reproducing the comprehensive prophetic act.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 14,
+      "title": "Badr: conflict tests allegiance and public judgment",
+      "replace_paragraph_index": 1,
+      "previous_paragraph_length": 698,
+      "revision_length": 815,
+      "reason": "Victory does not end judgment: Badr's differentiated claims",
+      "replacement": "At Badr, defeat or victory did not remove the need to judge the handling of captives and the distribution of goods. The people present had experienced fear, combat and loss; they were now responsible for persons who could not defend themselves and property over which competing claims arose. Qurʾān 8 addresses these questions within worshipful dependence upon God. Later jurists can analyze captives and spoils; moral formation concerns the passions that make victory appear to authorize unlimited personal entitlement; political history traces how such decisions were enforced. A later Akbarian comparison with comprehensive discernment is meaningful only after preserving these concrete differences. No one successful military decision can be taken as an exhaustive disclosure of the Prophet's spiritual station.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 15,
+      "title": "Uḥud and the Trench: discipline, siege and divided loyalties",
+      "replace_paragraph_index": 1,
+      "previous_paragraph_length": 625,
+      "revision_length": 810,
+      "reason": "Embodied obedience and the real work of collective defence",
+      "replacement": "At Uḥud, an assigned group of archers left a position; at the Trench, men and households sustained digging, watches and provisions over many days. The relevant virtues were enacted through precise circumstances: keeping an assigned station, carrying food, using tools, obeying legitimate direction and maintaining mutual confidence. Their consequences were military as well as personal. Qurʾān 3 and 33 address failure and endurance through the events themselves. The Akbarian return to outward action does not turn siege work into a symbol with no material causes. Even a true spiritual resolve cannot replace a correctly sited trench or adequate food. Later public offices and military methods inherited limited aspects of disciplined collective action without becoming the Prophet's comprehensive authority.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 16,
+      "title": "Al-Ḥudaybiyyah: an agreement that changed the terms of conflict",
+      "replace_paragraph_index": 7,
+      "previous_paragraph_length": 480,
+      "revision_length": 847,
+      "reason": "Treaty, counsel, embodied example and effective learning",
+      "replacement": "At al-Ḥudaybiyyah, the treaty created real obligations even while Abū Jandal's arrival made one clause painful to witness. The Companions understood the command to complete the sacrificial rites but hesitated after the disappointment of being prevented from entering Makkah. In [al-Bukhārī 2731–2732](https://sunnah.com/bukhari/54/19), Umm Salamah advises the Prophet to act visibly without further explanation; he judges the advice suitable and the Companions follow his example. The distinction is not between law and kindness but among a binding instruction, the distress of those addressed, practical counsel and the mode by which persons are enabled to act. Fiqh may examine the treaty and ritual duties; education examines demonstration; political history studies the truce. Their truths remain partial apprehensions of the integrated event.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 17,
+      "title": "Khaybar, the deferred pilgrimage and changing relations beyond Madinah",
+      "replace_paragraph_index": 1,
+      "previous_paragraph_length": 670,
+      "revision_length": 752,
+      "reason": "The contract cannot harvest grain: competence and justice at Khaybar",
+      "replacement": "Khaybar required sustained work after the fighting ceased. The reported agreement allowed Jewish cultivators to work fields for a share of the harvest ([al-Bukhārī 2331](https://sunnah.com/bukhari:2331)); both sides depended on the real competence of those who knew the land. Legal analysis asks what contract was made and under which conditions; administration must determine shares, continuity of tenure and the treatment of disputes. Worship and the ethical requirement of honouring agreements are not thereby reduced to crop accounting, but cannot be lived by ignoring it. A comprehensive orientation to justice gives these activities a proper end; it does not substitute for agricultural knowledge or the actual historical terms of the settlement.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 18,
+      "title": "The return to Makkah and the incorporation of Arabia",
+      "replace_paragraph_index": 1,
+      "previous_paragraph_length": 611,
+      "revision_length": 852,
+      "reason": "Reconciliation under power and the limits of military success",
+      "replacement": "The Prophet's treatment of former opponents after the conquest of Makkah involved people who had reason to fear retaliation from a newly victorious authority. Offers of security and acts of reconciliation changed their practical possibilities without erasing every reported exception or dispute over individual cases. Qurʾān 9:25–27 places the later campaign at Ḥunayn under a warning against confidence in numbers alone. Fiqh can discuss protection and public rights; ethical inquiry considers forbearance under power; political analysis follows alliances and the incorporation of new groups. These are differentiations of one historically enacted orientation, not evidence that political triumph by itself establishes spiritual perfection. Teachers and collectors then carried authoritative words into places the Prophet could not visit continuously.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 19,
+      "title": "The Farewell Pilgrimage and the responsibilities that survived the Prophet",
+      "replace_paragraph_index": 8,
+      "previous_paragraph_length": 675,
+      "revision_length": 939,
+      "reason": "The Farewell Pilgrimage and the three unequal inheritances",
+      "replacement": "Ibn ʿArabī's account of prophetic inheritance, as discussed by [William Chittick](https://www.persee.fr/doc/horma_0984-2616_1996_num_30_1_1371), distinguishes works, states and knowledge. These are not separate professions into which the Prophet can be disassembled. At the Farewell Pilgrimage, people learned embodied rites, heard obligations concerning the security of life and property, and received guidance from someone whose comprehensive prophetic commission they could not reproduce. Jābir's report in [Muslim 1218a](https://sunnah.com/muslim:1218a) travels through later named transmitters, including Jaʿfar ibn Muḥammad's report from his father. A transmitted legal rule may be genuinely authoritative, while the actual spiritual fullness of the Prophet's worship is not transferred intact with a written description. Finality makes faithful differentiated inheritance necessary without making it identical to renewed revelation.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 20,
+      "title": "After the Prophet: allegiance and the survival of obligations",
+      "replace_paragraph_index": 2,
+      "previous_paragraph_length": 549,
+      "revision_length": 812,
+      "reason": "After finality, plural responsibilities and disputed succession",
+      "replacement": "After the Prophet's death, military command, collection of zakāt, adjudication, instruction and the preservation of revelation still required responsible persons. The dispute at Saqīfah concerns actual competing understandings of legitimate succession: Sunni and Imāmī historical and theological sources must be allowed their own claims rather than converted into interchangeable metaphors. In the Akbarian tradition, the persistence of *wilāya* and graded spiritual inheritance does not confer a second law-giving prophethood, nor make political allegiance sufficient evidence of inward realization. The inherited functions had to be exercised by fallible people in specific institutions. One cannot deduce who held a historical office or how a contested pledge occurred from a universal metaphysical hierarchy.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 21,
+      "title": "Conquest and the problems inherited from older empires",
+      "replace_paragraph_index": 2,
+      "previous_paragraph_length": 505,
+      "revision_length": 826,
+      "reason": "Conquest, public obligations and administrative knowledge",
+      "replacement": "A commander in Syria or Egypt might have authority to maintain peace yet depend on local cultivators, administrators and scribes for water, tax and property records. Inherited provincial arrangements could be retained, revised or contested without a single uniform model. Normative guidance concerning justice reaches real people through these mediations: a trustworthy official must know whose fields are assessed and which promises bind him. The Akbarian account of comprehensive right action can criticize an office that equates its narrow task with all human good, but it cannot itself choose an irrigation schedule or calculate a tax. Provincial ʿumrān has independent material and political causes, and later fiqh developed categories for judgments that the Prophet had never had to administer in exactly these settings.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 22,
+      "title": "The garrison, the treasury and the provincial community",
+      "replace_paragraph_index": 3,
+      "previous_paragraph_length": 461,
+      "revision_length": 855,
+      "reason": "The divan as documentary competence without complete moral authority",
+      "replacement": "The stipend register, or *dīwān*, gave names and claims a durable written form; it could help allocate revenue while also preserving distinctions of rank that people disputed. Neither careful bookkeeping nor generous intention independently settles whether an entitlement is just. A treasury officer has a defined responsibility, a jurist examines the governing rule, and a claimant can contest the facts recorded. The Prophetic inheritance here is not an invisible mystical quality in the register but the enduring demand for truthful, competent and fair public action. Historians must explain the actual stipends, military organization and relations among Arab settlers, clients and cultivators before judging outcomes. As functions differentiated, their cooperation became a problem that could no longer be settled by personal proximity to the Prophet.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 23,
+      "title": "Civil war and the limits of loyalty",
+      "replace_paragraph_index": 2,
+      "previous_paragraph_length": 494,
+      "revision_length": 785,
+      "reason": "Competing obligations and the limit of retrospective spiritual judgment",
+      "replacement": "During the first civil war, parties made incompatible demands about allegiance, retaliation, political order and the authority of particular leaders. One group might invoke a genuine duty while others disputed its priority, the evidence for its fulfilment or the competence of the person enforcing it. The Akbarian concern with limited stations provides a disciplined question about partial judgment, not authority to pronounce hidden spiritual defects in the participants. Reports of the Battle of the Camel, Ṣiffīn and arbitration have contested chains and political histories; the historian must reconstruct those separately. The resulting legal and theological arguments about public obedience cannot be read straight off a single victory or an imagined one-sentence morality tale.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 24,
+      "title": "Damascus, Karbalāʾ and the making of an imperial administration",
+      "replace_paragraph_index": 1,
+      "previous_paragraph_length": 549,
+      "revision_length": 838,
+      "reason": "Karbalāʾ and why coercive sovereignty is not spiritual succession",
+      "replacement": "Al-Ḥusayn's killing at Karbalāʾ cannot be converted into a metaphor for the death of spiritual rule: armed men killed real members of the Prophet's family and their companions, and later communities preserved painful, contested memories of the event. A dynasty could command an army and administer taxation without possessing the moral or spiritual legitimacy it claimed. Twelver Imāmī and Sunni accounts distinguish the rightful authority of the Prophet's family differently; those distinctions must be presented accurately rather than collapsed into generic *walāya*. The comprehensive Muhammadan standard judges conduct and obligations but does not turn the historian into a witness of every participant's inward state. Coins, inscriptions and administrative changes testify to a government's capacities, not to its perfected humanity.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 25,
+      "title": "The Abbasid revolution and a change of ruling centre",
+      "replace_paragraph_index": 2,
+      "previous_paragraph_length": 484,
+      "revision_length": 861,
+      "reason": "A revolution can change sovereignty without recreating the whole",
+      "replacement": "The Abbasid movement drew together Khurāsānian military forces, discontented groups and claims associated with the Prophet's household, but these elements were never a single intention shared by every supporter. After 750, the new rulers still had to finance soldiers, appoint officials and sustain peace; Baghdad's later scholarly life depended on teachers, translators, markets and patrons whose achievements were not gifts mechanically transferred by a caliphal title. The comprehensive Muhammadan exemplar gives a measure for how power ought to serve worship and justice, without suggesting that one caliph can inherit every mode of prophetic knowledge. Historical explanation therefore follows recruitment, administration, the movement of people and the production of books rather than equating the change of dynasty with the renewal of all religious life.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 26,
+      "title": "Baghdad and the work of a learned city",
+      "replace_paragraph_index": 2,
+      "previous_paragraph_length": 503,
+      "revision_length": 869,
+      "reason": "Baghdad's skilled sciences and the difference between spiritual universality and technical omniscience",
+      "replacement": "Ḥunayn ibn Isḥāq could compare Greek manuscripts and produce a careful Syriac or Arabic rendering; a physician still needed experience recognizing disease and treating actual patients. A jurist's competence and a translator's competence likewise had different objects. The Prophet's comprehensive guidance cannot be reproduced by aggregating the skills present in Baghdad, yet each skill can contribute genuinely to humane action when exercised rightly. In the Akbarian language of *maqām lā maqām*, universality of spiritual realization must not be mistaken for infallible mastery of technical crafts. This is why the translation movement is better reconstructed through copies, readers, patrons and revision than through one legendary institution possessing every science. The *miḥnah* adds a distinct warning: political force does not prove a disputed doctrine true.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 27,
+      "title": "Travelers, households and the authentication of transmitted learning",
+      "replace_paragraph_index": 6,
+      "previous_paragraph_length": 486,
+      "revision_length": 820,
+      "reason": "ʿĀʾishah's inquiry as the germ of mature textual discernment",
+      "replacement": "A report is preserved by responsible people, not by a chain diagram existing independently of them. When ʿĀʾishah questioned the Prophet about a seemingly conflicting description of the reckoning ([al-Bukhārī 103](https://sunnah.com/bukhari:103)), accurate transmission depended on noticing a distinction and asking further. Later *isnād* criticism, comparison of recensions and legal interpretation develop genuine intellectual capacities, or *malakāt*, through repeated exercises with teachers. These are authentic modes of inheriting the Prophetic teaching, yet even a fully authenticated sentence leaves further questions about its scope, occasion and the spiritual life of the person who spoke it. No critic or jurist gains a monopoly over the entire Muhammadan reality merely by mastering one necessary discipline.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 28,
+      "title": "Legal schools emerge from the need to decide recurrent cases",
+      "replace_paragraph_index": 7,
+      "previous_paragraph_length": 556,
+      "revision_length": 868,
+      "reason": "Fiqh as authoritative discernment rather than an exhaustive prophetic portrait",
+      "replacement": "The Messenger's ruling in a concrete case joins evidence, the meaning of words, knowledge of persons and responsibility before God. Later fiqh rightly isolates the conditions that make a transaction valid or a prescribed sanction applicable; this abstraction may be indispensable to protecting people from arbitrary judgment. Yet the woman of Ghāmid is not reducible to a confession entry: the source also recounts pregnancy, care of an infant and repentance while retaining the severity of the punishment. The Akbarian language of comprehensiveness identifies a limit upon isolated analysis, not a hidden repeal of legal rules. A jurist must still investigate witnesses and circumstances under established methods; a spiritual guide cannot substitute private intuition for public proof. The schools developed by making such differentiations accountable and teachable.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 29,
+      "title": "Endowments, colleges and the social life of scholarship",
+      "replace_paragraph_index": 6,
+      "previous_paragraph_length": 422,
+      "revision_length": 784,
+      "reason": "Educational waqf: material continuity and formative limits",
+      "replacement": "A madrasa endowed by *waqf* brings together a donor's property, a manager's responsibility, teachers' learning and pupils' work. The deed can establish a legally durable obligation to provide resources; it cannot itself give students *malaka* or ensure the instructor's sincerity. Ibn Khaldūn's account of learned skill as acquired through exercise clarifies one historical mediation, while the Akbarian distinction of knowledge, works and states points to a further limit: a formed spiritual life is not guaranteed by professional qualification. The higher goal of trustworthy understanding does not make rent collection or the selection of competent teachers dispensable. Institutional success must be judged through both reliable supports and what people actually learn and become.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 30,
+      "title": "Translation, theological controversy and the uses of reason",
+      "replace_paragraph_index": 4,
+      "previous_paragraph_length": 709,
+      "revision_length": 849,
+      "reason": "Distinct standards of proof within an ordered search for truth",
+      "replacement": "Al-Fārābī's classification of sciences and the later debates of al-Rāzī and Ibn Sīnā address claims that have to be judged by their appropriate arguments. A valid proof concerning a natural fact is not invalidated by saying that spiritual realization is higher; an inward experience cannot authenticate a Greek manuscript or settle a syllogism by itself. Qūnawī's distinction of particular tastings under divine Names from a comprehensive standpoint concerns modes of realization within an Akbarian account, not a license to combine contradictory propositions under one sense. This precision makes the wider Muhammadan frame philosophically fruitful: different cognitive powers can be truly ordered without surrendering their disciplines' own criteria. Baghdad's translators and students learned those criteria through work, correction and argument.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 31,
+      "title": "Al-Ghazālī, al-Rāzī and the remaking of philosophical theology",
+      "replace_paragraph_index": 5,
+      "previous_paragraph_length": 564,
+      "revision_length": 840,
+      "reason": "Discursive correctness, experiential realization and scholarly character",
+      "replacement": "Al-Ghazālī's distinction between knowing about a spiritual state and *tasting* it asks what kind of person a body of knowledge forms. Al-Rāzī's objections to Ibn Sīnā, and al-Ṭūsī's subsequent replies, address a different task: whether a definition or argument proves what it claims. One may be intellectually competent yet vain, or disciplined in worship yet mistaken in a philosophical demonstration. Within the Akbarian comparison, a comprehensive spiritual standpoint cannot simply invalidate the logical distinctions on which true learning depends. Its relevance lies in the human subject capable of understanding, willing, practising and correcting different kinds of truth. The late scholarly tradition thereby exposes both the value of specialization and the danger of treating any specialized achievement as the entirety of wisdom.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 32,
+      "title": "The work of the heart becomes a teachable discipline",
+      "replace_paragraph_index": 6,
+      "previous_paragraph_length": 523,
+      "revision_length": 838,
+      "reason": "Tazkiya grows from enacted worship rather than detached emotional inspection",
+      "replacement": "When the Prophet shortened prayer after hearing a child cry ([al-Bukhārī 709](https://sunnah.com/bukhari:709)), he remained engaged in worship while responding to the mother's actual distress. When he served his household and proceeded to prayer at its time ([al-Bukhārī 676](https://sunnah.com/bukhari:676)), neither responsibility abolished the other. The later disciplines of intention, self-examination and spiritual states distinguish features of these acts; al-Muḥāsibī, al-Qushayrī and al-Ghazālī offer different treatments. Their investigations matter because outward compliance can coexist with vanity, and repeated good action may form durable *malakāt*. Yet a claim of realized inward knowledge does not free one from the evidence or rights that govern a public case. Spiritual cultivation returns to conduct among real people.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 33,
+      "title": "From the teacher's company to enduring Sufi networks",
+      "replace_paragraph_index": 8,
+      "previous_paragraph_length": 576,
+      "revision_length": 836,
+      "reason": "Ṣuḥba, works, states and knowledge without exclusive spiritual monopoly",
+      "replacement": "The Shādhilī insistence on reliance upon God amid work and the Akbarian distinction between *takhalluq* and *taḥaqquq* address different stages of becoming a trustworthy person. A disciple may learn a correct practice through instruction, develop stable restraint by repetition, and receive a spiritual opening that neither syllabus nor lodge can manufacture. Ibn ʿArabī's three inheritances of works, states and knowledge, summarized by [Chittick](https://www.persee.fr/doc/horma_0984-2616_1996_num_30_1_1371), are not three mutually exclusive guilds. *Ṣuḥba* may help integrate them, while the actual verification of a legal report still belongs to hadith criticism and a patient's condition to appropriate medicine. The Prophet's comprehensive station remains an orienting original, not an office possessed whole by one later shaykh.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 34,
+      "title": "Cairo, Damascus and Jerusalem: government, learning and the Crusades",
+      "replace_paragraph_index": 3,
+      "previous_paragraph_length": 453,
+      "revision_length": 829,
+      "reason": "Plural urban centres, differentiated institutions and real religious disagreements",
+      "replacement": "The transformation of al-Azhar under different governments and Ṣalāḥ al-Dīn's campaigns around Jerusalem concerned unlike kinds of continuity. A school survives through teachers, pupils, appointments and resources; a campaign proceeds through provisions, alliances and armed force; the sacred worth of Jerusalem is neither an army nor a budget. The comprehensive Prophetic example offers a standard by which these activities may be rightly related without treating Egyptian, Syrian and Crusader institutions as historically interchangeable. Ismāʿīlī and Sunni doctrines of religious authority also differed in substance; sharing urban buildings does not make them versions of the same theology. A civilizational relation exists through actually interacting people, not merely because a map groups several cities under one colour.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 35,
+      "title": "Al-Andalus and the Maghrib: cities, scholarship and the loss of a political world",
+      "replace_paragraph_index": 1,
+      "previous_paragraph_length": 533,
+      "revision_length": 844,
+      "reason": "The western learned inheritance across intellectual and political rupture",
+      "replacement": "Ibn Rushd's jurisprudence and philosophical demonstrations and Ibn ʿArabī's accounts of spiritual realization developed within related western Islamic worlds, yet their specific arguments cannot be equated by geographical proximity. In Córdoba and Granada, actual judges, scribes, artisans and teachers sustained different forms of competence under changing governments. After 1492, families attempted to preserve worship and learning under the loss of political and legal protection; the costs of forced conversion were real, not steps assumed to be spiritually beneficial. The comprehensive Muhammadan ideal remains intelligible across political change, but no metaphysical analogy establishes the legal rights promised in Granada's capitulations or proves that they were honoured. Archives, lives and doctrines must retain their differences.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 36,
+      "title": "Persianate language, commerce and the circulation of books",
+      "replace_paragraph_index": 3,
+      "previous_paragraph_length": 465,
+      "revision_length": 843,
+      "reason": "Translating an inherited truth is not identical with realizing it",
+      "replacement": "A reader of an Arabic juristic text through Persian explanation can correctly grasp a ruling without sharing the spiritual experience of its author; another might learn a Persian ethical poem by heart while misunderstanding its contested metaphysical claims. Qūnawī's attention to restricted standpoints and realization permits a later interpretation of these differences without downgrading competent translation. Dārā Shukoh's 1657 *Sirr-i akbar* offers a sharper test: Sanskrit specialists, Persian translators and a Mughal patron brought texts together under one contested interpretive programme. The spiritual affinity Dārā asserted cannot replace philology or establish that every participant agreed with him. Books travel when particular people copy, translate, teach or carry them, and those routes remain subject to documentary proof.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 37,
+      "title": "Mongol conquest, conversion and the survival of scholarly worlds",
+      "replace_paragraph_index": 1,
+      "previous_paragraph_length": 447,
+      "revision_length": 723,
+      "reason": "Mongol conversion and the nonidentity of court religion with lived faith",
+      "replacement": "Aḥmad Tegüder's earlier Islam and Ghāzān's adoption of Islam in 1295 warn against treating a dynasty as a single spiritual subject. Court policy could change through the ruler and his advisers; schools, books, *waqfs* and local households could also survive, fail or transform at different rates. The Akbarian idea of comprehensive order does not erase the losses caused by conquest or turn destruction into a necessary purification. A scholar who kept teaching after losing a patron preserved one part of a wider inheritance through actual human effort. Administrative decrees, manuscript transmission and inward conviction belong to different kinds of evidence, and the continuity of religion must be tested through each.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 38,
+      "title": "The Middle Niger: markets, kings and independent scholars",
+      "replace_paragraph_index": 2,
+      "previous_paragraph_length": 458,
+      "revision_length": 779,
+      "reason": "Timbuktu's learning beyond sovereign authority",
+      "replacement": "Aḥmad Bābā's forced displacement following Moroccan conquest demonstrates why an Islamic civilization cannot be defined by whichever government holds Timbuktu. His learning could still be exercised through people and books, while the loss of a library or teaching circle harmed families and pupils. A merchant's trustworthiness, a jurist's judgment and a teacher's companionship can support the same religious life without each containing its totality. The Akbarian account of comprehensiveness allows them to be ordered toward an ultimate good, not to claim that all the city's residents shared one achieved spiritual station. The surviving manuscripts and biographies tell different parts of that history and cannot be combined into an imagined continuous eyewitness chronicle.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 39,
+      "title": "Across the monsoon seas: ports, households and the Malay world",
+      "replace_paragraph_index": 2,
+      "previous_paragraph_length": 459,
+      "revision_length": 813,
+      "reason": "Melaka: lawful coexistence and the different causes of religious community",
+      "replacement": "The *syahbandar* officials of Melaka attended to traders whose languages, business relations and places of origin differed. Their work made passage and dispute settlement more predictable; it did not itself convert visiting merchants. Muslim families and teachers later sustained prayer, instruction and textual learning among particular port communities. These practices could belong to a common religious orientation without requiring one uniform cultural form. A juridical ruling concerning exchange, a merchant's practical integrity and a teacher's cultivation of students are legitimate partial inheritances, not competing claims to be the whole Prophet. The chronology of royal conversion remains disputed and must be reconstructed independently from dated sources rather than inferred from port prosperity.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 40,
+      "title": "Bengal: fields, settlements and changing religious communities",
+      "replace_paragraph_index": 3,
+      "previous_paragraph_length": 608,
+      "revision_length": 747,
+      "reason": "Bengal's earth and water as actual media of communal formation",
+      "replacement": "At Bagerhat, the dated tomb inscription of Khān Jahān and the later memories of waterworks, roads and settlements furnish different kinds of historical testimony. Drainage and cultivation made habitation possible; grants, patrons and teachers could sustain worship and learning; families could transmit practices to new generations. The relation of all these actions to the worship of God is a genuine question of their purposes and conduct, but the Akbarian account of the divine Names cannot supply a missing land deed or a farmer's private conviction. The comprehensive human vocation is realized, if at all, through knowledge of created conditions and just dealings with others, not by ignoring mud, rain, labour and the rights of cultivators.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 41,
+      "title": "The Ottoman settlement: courts, colleges and a growing imperial household",
+      "replace_paragraph_index": 2,
+      "previous_paragraph_length": 407,
+      "revision_length": 784,
+      "reason": "Aintab: courtly authority and the actual persons governed",
+      "replacement": "In Ottoman Aintab, the case of Haciye Sabah's religious teaching and punishment by a court forces a distinction between preserving legal procedure and judging the justice of its operation. A court could record allegations and enforce a ruling; the woman and her pupils had a different understanding of the learning taking place in a household. The historical record cannot disclose every person's inner motives, yet it can record the judge's use of public power. The prophetic inheritance involves both the authority of valid rules and the obligations of knowledge, fairness and restraint toward persons; no single office guarantees their complete integration. The Akbarian comparison offers a norm of comprehensive right judgment, not retrospective endorsement of Ottoman punishment.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 42,
+      "title": "Safavid Iran and Mughal India: rival confessional and imperial settlements",
+      "replace_paragraph_index": 3,
+      "previous_paragraph_length": 532,
+      "revision_length": 737,
+      "reason": "Distinct confessional and juristic institutions within contested imperial worlds",
+      "replacement": "The Safavid promotion of Twelver Shiʿism and the Mughal compilation of the *Fatāwā-yi ʿĀlamgīrī* represent different projects. The first included public confessional policy and the work of learned communities; the second required jurists, scribes, texts and imperial patronage. Neither can be equated with the inward religious life of all inhabitants, and the Imāmī doctrine of the Imamate cannot be silently converted into an Akbarian account of saintly inheritance. The Muhammadan centre remains a theological interpretation of ordered guidance, not the administrative identity of any one dynasty. The comparison becomes concrete when it asks who taught, what the jurists argued, how courts operated and what people actually practised.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 43,
+      "title": "Oceans, finance and the changing balance of power",
+      "replace_paragraph_index": 3,
+      "previous_paragraph_length": 419,
+      "revision_length": 884,
+      "reason": "Commerce and the limits of numerical abstraction",
+      "replacement": "At Surat and other Indian Ocean ports, a merchant needed reliable measures, safe shipping, credit and a means of settling disputes. Company fleets later acquired coercive capabilities and territorial revenue powers through particular acts, but did not thereby obtain authority over every commercial relationship. The normative demand for truthful exchange remains recognizable even as contract distance, insurance and state finance change its practical tests. Hodgson's historical account of technological and economic transformation and Guénon's spiritual critique of quantity ask distinct questions. An Akbarian explanation of comprehensive human judgment may bring them into conversation but cannot establish either maritime chronology or the moral status of a transaction without evidence. The human subject remains answerable to rights obscured by an abstract price or statistic.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 44,
+      "title": "Colonial courts and the transformation of Islamic law",
+      "replace_paragraph_index": 7,
+      "previous_paragraph_length": 600,
+      "revision_length": 893,
+      "reason": "The waqf dispute and the relocation of legal authority",
+      "replacement": "The 1868 Sylhet deed and the 1894 Privy Council decision make a precise distinction visible. A jurist may recognize the category of a family *waqf*, while a colonial appellate court controls which arguments, translations and standards of proof determine legal effect. In 1913 and 1930 legislation altered the rules again. This is a shift in jurisdiction and interpretation, not merely loss of a single sacred word. The Prophet's comprehensive guidance is an orienting whole for justice, yet no modern tribunal or inherited juristic formula recreates the personal discernment of every concrete relationship. That observation cannot decide this dispute by mystical intuition: the legal record, the parties' intentions as evidenced, valid doctrine and actual statutory provisions still have to be studied. The case follows family actions into imperial institutions through identifiable documents.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 45,
+      "title": "Renewal through teaching, reform and print",
+      "replace_paragraph_index": 3,
+      "previous_paragraph_length": 652,
+      "revision_length": 818,
+      "reason": "Modern education as the distribution and recombination of learned capacities",
+      "replacement": "Deoband and Aligarh answered different educational problems in colonial South Asia through donors, teachers, languages, curricula and changing expectations of employment. A printed book could carry a correct text to new pupils, yet the student still needed the ability to understand, argue, act and, where appropriate, cultivate inward sincerity. An examination may certify one learned skill without proving every dimension of character. Conversely, personal spiritual reputation cannot replace mastery of law, medicine or language. The Akbarian account of the Prophet's comprehensive example is most useful here as a measure of how these distinct achievements may cooperate, not as a slogan declaring all modern schools spiritually empty. The reported 1866/1867 Deoband chronology requires separate source resolution.",
+      "evidence_lost_if_not_elsewhere": []
+    },
+    {
+      "chapter": 46,
+      "title": "Nation-states, migration and the new scale of Muslim life",
+      "replace_paragraph_index": 5,
+      "previous_paragraph_length": 500,
+      "revision_length": 931,
+      "reason": "Digital retrieval, authentic knowledge and the human end of civilization",
+      "replacement": "A searchable digital edition makes a text available under conditions unavailable to a medieval student. It does not automatically produce a reliable variant reading, a correct juristic judgment or the *malaka* needed to apply one. The ongoing [Oxford *Fatāwā-yi ʿĀlamgīrī* project](https://www.thebritishacademy.ac.uk/projects/islamic-law-in-south-asia-the-fatawa-alamgiriyya-project/) illustrates the genuine promise of connecting passages, places and prior authorities while leaving their verification to trained inquiry. Al-Qūnawī and al-Farghānī offer an Akbarian interpretation of the Prophet's comprehensive spiritual inheritance; they do not make one digital scholar or one spiritual teacher a replacement for the final Messenger. A living Muhammadan-oriented civilization will depend upon persons able to relate trustworthy sources, specific competencies, justice, worship and character under altered historical conditions.",
+      "evidence_lost_if_not_elsewhere": []
+    }
+  ]
+}

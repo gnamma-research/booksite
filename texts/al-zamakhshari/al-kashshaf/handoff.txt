@@ -1,0 +1,33 @@
+KASHSHAF / FUTUH AL-GHAYB — C07 REVIEWED
+10 November 2026
+
+CURRENT RESULT
+All 277 existing authorial passages have been compared with electronic Arabic sources. 26 correction records were adopted. The inherited reader from bcbb0846e6d3fdd1cdee86286b4b51b34fe0c791 has been preserved and the corrected Arabic and English integrated into its 123 reading units, 19 static chapter pages, legacy chapter URLs, downloads and search/dictionary data. Navigation, menu icons and controls use the Bahr al-Madid implementation.
+
+REVIEW STATUS
+Electronic comparison: 277/277.
+Complete Arabic transcriptions: 276/277.
+Fresh page-image collation: 0/277.
+Final scholarly approval: 0/277.
+T108.04 exact Arabic restoration was recovered from the earlier C07 correction record citing Dubai XVI:603; retained in brackets, without claiming a fresh image check.
+T113.06: Arabic of the question to Aisha and her answer still missing from the electronic source. A visible gap is retained; it was not backtranslated.
+This is NOT a definitive critical edition.
+
+DRAFT COVERAGE
+19 Kashshaf surahs; 18 complete Tibi surahs and Fatiha I:677–686. Fatiha I:687–770 remains untranslated. Other 95 Quran chapters and general introductions are outside this corpus. The Kashshaf closing prayer/colophon is retained separately in sources/kashshaf-colophon-ar.txt; Tibi's book epilogue is outside the reader.
+
+READ FIRST
+review-register.html — passage decisions and source dossiers.
+review-ledger.json — adopted and deferred corrections and remaining work.
+reviews/*.json — five detailed comparison dossiers.
+edition.json — canonical reader records; reviewed-corpus.json — all 277 independently keyed passages.
+coverage.json — draft coverage separated from verification.
+arabic-corrections.json — inherited scan reports; these were not newly verified.
+
+NEXT REQUIRED WORK
+Obtain and collate full printed-page images, resolve every flagged variant, complete Tibi Fatiha I:687–770, then perform independent scholarly review. In T104 the positive/negative variant changes the argument and must remain explicit. Do not promote draft completeness or electronic comparison to final approval.
+
+VALIDATION
+tests/kashshaf/verify-c07.py: content invariants and exact cumulative copies.
+tests/kashshaf/reader-browser.cjs: Chromium and WebKit; exact Bahr menu/icon parity, shelf, modes, Tibi persistence, search, dictionary, bookmarks, print, 19 static pages, 277 complete English and Arabic sections, responsive layouts and review links.
+.github/workflows/kashshaf-reader-qa.yml runs these before publication.

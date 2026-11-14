@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Source Texts · GNAMMA Research</title>
+<meta name="description" content="Arabic primary-source corpus library for fiqh, hadith, tafsir, tasawwuf, grammar and balagha. Provenance, quality notes and original-text integrity are preserved.">
+<link rel="icon" href="../../../assets/gnamma-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="corpora.css?v=20261107-30-source-v2">
+<script defer src="corpora.js?v=20261107-30-source-v2"></script>
+</head>
+<body>
+<a href="#catalogue" class="skip">Skip to the corpus catalogue</a>
+<header class="mast">
+  <a class="identity" href="../../../"><img src="../../../assets/gnamma-mark.svg" alt=""><span>gnamma <small>RESEARCH</small></span></a>
+  <nav aria-label="Site navigation"><a href="../">Intellectual atlas</a><a href="../../../texts/">Texts</a><a href="../../../">Home</a></nav>
+</header>
+<main class="wrapper">
+  <div class="intro">
+    <p class="eyebrow">Source-attested corpus · OpenITI texts</p>
+    <h1>Arabic source texts</h1>
+    <p>Read source-attested Arabic digitizations—including complete hosted source files and pinned on-demand versions—across fiqh, hadith, tafsīr, taṣawwuf and Arabic language sciences. Some individual digitizations omit passages; check each source warning.</p>
+    <p class="caution"><strong>New:</strong> <a href="expansion.html">Browse the expanded 2,500+ bibliographic source records</a> for fiqh/uṣūl, grammar and balāgha, including separately labelled digital-version candidates and manuscript catalogues. This larger bibliography is not equivalent to 2,500 acquired Arabic texts.</p>
+    <p class="caution"><strong>Dedicated source reader:</strong> Thirty OpenITI-identified digital text versions and five independently sourced commentary/abridgment connections. This library is separate from the 404-entry historical atlas; it does not manufacture a hadith isnād graph or certify manuscript variants.</p>
+    <p class="caution"><strong>Editorial distinction:</strong> source file verified ≠ manuscript-collated or critically edited. Digital versions may contain copying, pagination or OCR problems. A specific version and source record accompany every book. OpenITI texts are distributed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>, with attribution to <a href="https://openiti.org/" target="_blank" rel="noopener">OpenITI</a>.</p>
+  </div>
+  <section aria-label="Browse source corpus" id="catalogue">
+    <div class="filters">
+      <label class="searchbox">Search text or author <input id="search" type="search" placeholder="Title, author, Arabic, OpenITI URI…" autocomplete="off"></label>
+      <label>Science <select id="science">
+        <option value="all">All sciences</option>
+        <option value="fiqh">Fiqh &amp; uṣūl</option>
+        <option value="hadith">Hadith</option>
+        <option value="tafsir">Tafsīr</option>
+        <option value="tasawwuf">Taṣawwuf</option>
+        <option value="philosophy">Philosophy / metaphysics</option>
+        <option value="arabic">Arabic language sciences</option>
+        <option value="nahw">Naḥw / syntax</option>
+        <option value="sarf">Ṣarf / morphology</option>
+        <option value="balagha">Balāgha</option>
+        <option value="lugha">Lexicography</option>
+      </select></label>
+      <label id="madhhab-wrap">Madhhab <select id="madhhab">
+        <option value="all">All madhhabs</option><option value="hanafi">Ḥanafī</option><option value="maliki">Mālikī</option><option value="shafii">Shāfiʿī</option><option value="hanbali">Ḥanbalī</option><option value="comparative">Comparative</option>
+      </select></label>
+      <button id="clear" type="button" title="Reset corpus filters">Reset</button>
+    </div>
+    <p class="count" id="counts" role="status" aria-live="polite">Loading indexed sources…</p>
+    <div class="layout">
+      <div class="catalog" aria-label="Available book versions"><div id="books" class="books"></div></div>
+      <article id="reader" class="reader" aria-live="off">
+        <div class="empty" id="empty"><h2>Choose a work</h2><p>Each entry identifies one OpenITI digitization, not necessarily an exhaustive copy of the historical work. Five full source files are mirrored byte-for-byte; the other versions load on demand from a pinned OpenITI release.</p></div>
+        <div id="reading" hidden>
+          <div class="bookhead">
+            <button type="button" id="back" class="back">← Catalogue</button>
+            <p class="eyebrow" id="record-code"></p><h2 id="title"></h2><p class="arabic-title" dir="rtl" lang="ar" id="title-ar"></p><p id="author"></p>
+            <div id="categories" class="chips"></div>
+          </div>
+          <section id="related-block" class="related" hidden aria-label="Bibliographically evidenced textual relationships">
+            <h3>Documented text network</h3>
+            <p class="related-note">Connections are based on named bibliographical evidence, not automatically inferred from chronology or shared terms. Select a book or inspect the relation's source.</p>
+            <div id="network-graphic" class="network-graphic" role="region" tabindex="0" aria-label="Scrollable text family diagram"></div>
+            <div id="network-evidence" class="network-evidence"></div>
+          </section>
+          <div id="provenance" class="provenance"></div>
+          <div class="source-tools">
+            <button id="load" type="button">Read a digitized Arabic version</button>
+            <a id="source" target="_blank" rel="noopener noreferrer">Original source</a>
+            <a id="metadata" target="_blank" rel="noopener noreferrer">Version metadata</a>
+            <button id="copy-citation" type="button">Copy version citation</button>
+          </div>
+          <p id="reader-status" class="status" role="status" aria-live="polite">Select Read to load this version.</p>
+          <div id="text-controls" class="text-controls" hidden>
+            <label>Find in loaded text <input type="search" id="find-in-text" placeholder="Arabic text or page marker"></label>
+            <button id="find-next" type="button">Find next</button>
+            <div class="pager"><button id="previous" type="button">Previous</button><span id="page-count" aria-live="polite"></span><button id="next" type="button">Next</button></div>
+          </div>
+          <section class="arabic-body" id="arabic-body" lang="ar" dir="rtl" aria-label="Arabic text in its selected OpenITI version"></section>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="method" aria-label="Editorial verification method">
+    <h2>Verification levels</h2>
+    <p><strong>Attested:</strong> original OpenITI work and version identifiers exist in the selected release and their Git object hashes are recorded. <strong>Byte-matched local:</strong> a GNAMMA-hosted full text matches its source Git blob hash. <strong>Editorially provisional:</strong> individual manuscript, edition, internal hadith numbering, commentary dependency and textual-critical claims require additional comparison, even when a digital version was marked reviewed by OpenITI.</p>
+    <p>Read the <a href="https://github.com/gnamma-research/booksite/blob/master/research/intellectual-atlas/corpora/CORPUS_VERIFICATION.md">source-verification register</a> and <a href="registry.json">structured corpus registry</a>. The <a href="../">intellectual atlas</a> preserves separately qualified book-to-book relationships; this corpus library does not manufacture those arrows from shared terminology.</p>
+  </section>
+</main>
+<footer class="foot">GNAMMA research · Arabic text sources used non-commercially with OpenITI attribution · Source corpus is not a critical edition.</footer>
+</body></html>

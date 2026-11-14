@@ -1,0 +1,121 @@
+<!doctype html><html lang="en" data-theme="parchment">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="GNAMMA source-checked clause-by-clause Farghānī introduction, all 128 Beirut introductory printed-page labels, with evidence grades, with Arabic original, new English review, critical flags and witness register. Not a definitive manuscript edition.">
+<title>Farghānī · Critical clause review · GNAMMA</title>
+<link rel="icon" href="../../../assets/gnamma-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../al-turka/qawaid-al-tawhid/reader.css">
+<style>
+:root{--reading-width:1130px}body{font-family:Georgia,"Iowan Old Style",serif;background:var(--bg);color:var(--ink)}
+header#topbar{position:sticky;top:0;min-height:53px;padding:7px clamp(12px,3vw,25px)}
+#topbar .book-title{white-space:normal;line-height:1.3}
+#topbar .right{gap:9px;font:600 12px/1.3 system-ui,sans-serif}
+#topbar .right a{white-space:nowrap;text-decoration:none}
+.page-wrap{max-width:1160px;padding:21px 19px 120px;margin:0 auto}
+.page-head{max-width:970px;margin:0 auto 19px}
+.page-head h1{font:500 clamp(28px,4vw,42px)/1.2 Georgia,serif;letter-spacing:-.025em;margin:8px 0}
+.page-head p{font:14px/1.6 system-ui,sans-serif;color:var(--muted);margin:8px 0}
+.editorial-alert{background:var(--wash);border-left:3px solid var(--accent);padding:11px 14px;font:13px/1.55 system-ui,sans-serif;border-radius:4px;margin:13px 0}
+.editorial-alert strong{color:var(--ink)}
+.audit-status{display:flex;flex-wrap:wrap;gap:14px;margin:13px 0;color:var(--muted);font:12px/1.5 system-ui,sans-serif}
+.audit-status strong{font-size:17px;color:var(--ink)}
+.audit-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0 18px;background:var(--float);border:1px solid var(--line);border-radius:10px;padding:8px;position:sticky;top:56px;z-index:15;backdrop-filter:blur(12px)}
+.audit-tools label{font:600 11px system-ui,sans-serif;color:var(--muted)}
+.audit-tools select,.audit-tools input{border:1px solid var(--line);border-radius:7px;padding:8px 10px;background:var(--panel);color:var(--ink);font:12px/1.4 system-ui,sans-serif}
+.audit-tools input[type=search]{flex:1 1 180px;min-width:120px}
+.audit-tools select{max-width:170px}
+.audit-tools button{border:1px solid var(--line);border-radius:7px;background:var(--panel);color:var(--accent);padding:8px 10px;font:600 12px system-ui,sans-serif}
+.audit-tools button[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent)}
+.source-section{margin:0 auto 16px;scroll-margin-top:120px}
+.source-section h2{font:500 23px Georgia,serif;margin:22px 0 7px;padding-top:4px;border-bottom:1px solid var(--line)}
+.source-section h2 small{display:inline;font:11px system-ui,sans-serif;color:var(--muted)}
+.audit-clause{padding:10px 0 11px;border-bottom:1px solid var(--line);scroll-margin-top:122px}
+.audit-clause h3{margin:1px 0 7px;font:600 10px/1.55 system-ui,sans-serif;color:var(--muted);letter-spacing:.08em;display:flex;flex-wrap:wrap;gap:9px;align-items:center;text-transform:uppercase}
+.audit-clause h3 a{font-weight:500;text-transform:none;letter-spacing:0}
+.audit-flag{font:600 10px/1.5 system-ui,sans-serif;padding:2px 7px;border:1px solid var(--line);border-radius:4px;color:var(--accent);background:var(--wash);text-transform:none;letter-spacing:0}
+.audit-text{display:grid;grid-template-columns:1fr 1fr;gap:clamp(17px,3vw,38px)}
+.audit-text .ar{font:23px/2 "Amiri","Noto Naskh Arabic","Traditional Arabic",serif;direction:rtl;text-align:right;unicode-bidi:plaintext;margin:0}
+.audit-text .en{font:17px/1.78 Georgia,serif;margin:0}
+.audit-note{margin:6px 0 0;font:12px/1.65 system-ui,sans-serif;color:var(--muted);padding:8px 12px;border-left:2px solid var(--accent);background:var(--wash)}
+.audit-note strong{color:var(--ink)}
+.audit-clause[data-disposition=crux] .audit-flag{border-color:#bc945a}
+.audit-witness{margin:8px 0;padding:10px;border:1px solid var(--line);border-radius:7px;background:var(--panel);font:12px/1.6 system-ui,sans-serif}.audit-witness p.ar{font:21px/1.8 "Amiri","Noto Naskh Arabic",serif;margin:4px 0}.audit-witness p{margin:4px 0}.audit-witness a{color:var(--accent)}
+.data-note{font:12px/1.6 system-ui,sans-serif;color:var(--muted);margin-top:12px}
+[data-show-notes=false] .audit-note{display:none}
+[data-language=ar] .audit-text,[data-language=en] .audit-text{grid-template-columns:1fr}
+[data-language=ar] .audit-text .en,[data-language=en] .audit-text .ar{display:none}
+#empty{display:none;font:14px system-ui,sans-serif;color:var(--muted);padding:25px}
+footer{font:12px/1.7 system-ui,sans-serif;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin-top:30px}
+@media(max-width:760px){
+#topbar{grid-template-columns:1fr 1fr}.book-title{display:none}
+.page-wrap{padding:15px 13px 90px}
+.audit-tools{gap:6px;top:50px;padding:6px}
+.audit-text{grid-template-columns:1fr;gap:5px}
+.audit-text .ar{font-size:23px;line-height:1.84}
+.audit-text .en{font-size:17px;line-height:1.65}
+.audit-clause{padding:7px 0 8px}
+.audit-clause h3{margin:0 0 4px}
+}
+@media print{header#topbar,.audit-tools{display:none}.audit-clause{break-inside:avoid}.source-section h2{break-after:avoid}.page-wrap{max-width:none}}
+
+.editorial-alert{background:transparent;border:1px solid var(--line);border-radius:8px;padding:9px 13px;margin:12px 0;color:var(--muted)}
+.editorial-alert summary{font:600 12px/1.6 ui-sans-serif,system-ui,sans-serif;cursor:pointer;color:var(--accent)}
+.editorial-alert p{margin:8px 0;font-size:12px}
+.audit-witness{padding:9px 12px;margin:8px 0;border:1px solid var(--line);background:var(--panel);border-radius:9px}
+.audit-witness summary{font:600 12px/1.5 ui-sans-serif,system-ui,sans-serif;color:var(--accent);cursor:pointer}
+.audit-witness[open]{border-color:var(--accent)}
+.visible-results{color:var(--muted);font:12px/1.5 ui-sans-serif,system-ui,sans-serif;margin:7px 0}
+.audit-pagination{display:flex;justify-content:center;margin:22px 0 35px}
+.audit-pagination button{border:1px solid var(--line);background:var(--panel);color:var(--accent);border-radius:10px;padding:11px 20px;font:600 13px ui-sans-serif,system-ui,sans-serif}
+.audit-pagination button[hidden]{display:none}
+footer details{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:12px 15px}
+footer summary{font:600 12px/1.6 ui-sans-serif,system-ui,sans-serif;cursor:pointer;color:var(--accent)}
+footer p{line-height:1.9}
+@media(max-width:760px){.audit-tools{top:55px}.page-head{margin-bottom:11px}.audit-witness p.ar{font-size:21px}}
+
+.audit-status{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:start;gap:12px;margin:12px 0;color:var(--muted)}
+.audit-status span{min-width:0;font:11px/1.55 ui-sans-serif,system-ui,sans-serif}
+.audit-status strong{display:block;font:500 22px/1.1 Georgia,serif;margin-bottom:2px;color:var(--ink)}
+@media(max-width:760px){.audit-status{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 15px;margin:11px 0 15px}.audit-status strong{font-size:21px}.page-head p{font-size:13px;line-height:1.5}}
+</style>
+</head>
+<body data-language="both" data-show-notes="false">
+<header id="topbar"><div class="left"><a class="brand-link" href="../../../" aria-label="GNAMMA home"><img src="../../../assets/gnamma-mark.svg" alt=""><strong>GNAMMA</strong></a></div><div class="book-title">Muntahā al-madārik<small>Clause-by-clause critical review</small></div><nav class="right" aria-label="Book navigation"><a href="./">Book</a><a href="continuous-translation.html">English draft</a><a href="handoffs.html">Handoffs</a></nav></header>
+<main class="page-wrap">
+<section class="page-head">
+<span class="eyebrow">GNAMMA · FARḠĀNĪ · SELECTIVE SOURCE-CRITICAL AUDIT</span>
+<h1>Arabic–English clause review</h1>
+<p>559 selected Arabic–English clauses across 128 introductory page labels. Use the page filter or search to read the text; source grades and historical-print evidence remain accessible at each locus.</p>
+<details class="editorial-alert"><summary>Source grades and critical limitations</summary><p><strong>Critical status:</strong> 283 selected checks against the B2007 digitized edited Arabic, 276 checks against a later <strong>derivative online retranscription</strong> of that edition, plus fifteen photographed 1876 print-to-modern-digital bounded phrase checks, including corrections to p48 بسبحات and p52 اسم الحكم. The derivative source is <strong>not</strong> an independent witness. <strong>Zero</strong> manuscript collations. Every displayed page has selected checked spans only, not complete line-by-line proofreading. The 128-page English working draft remains available.</p></details>
+<div class="audit-status">
+<span><strong id="count">—</strong> selected bilingual clauses</span>
+<span><strong id="pages">128</strong> Beirut page labels</span>
+<span><strong id="cruces">—</strong> unresolved readings</span>
+<span><strong>15</strong> photographed-print checks · 7 differences · 8 agreements · 0 manuscript variants</span>
+</div>
+</section>
+<nav class="audit-tools" aria-label="Audit controls">
+<label for="page-select">Page</label><select id="page-select"><option value="all">All reviewed pages</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option><option value="60">60</option><option value="61">61</option><option value="62">62</option><option value="63">63</option><option value="64">64</option><option value="65">65</option><option value="66">66</option><option value="67">67</option><option value="68">68</option><option value="69">69</option><option value="70">70</option><option value="71">71</option><option value="72">72</option><option value="73">73</option><option value="74">74</option><option value="75">75</option><option value="76">76</option><option value="77">77</option><option value="78">78</option><option value="79">79</option><option value="80">80</option><option value="81">81</option><option value="82">82</option><option value="83">83</option><option value="84">84</option><option value="85">85</option><option value="86">86</option><option value="87">87</option><option value="88">88</option><option value="89">89</option><option value="90">90</option><option value="91">91</option><option value="92">92</option><option value="93">93</option><option value="94">94</option><option value="95">95</option><option value="96">96</option><option value="97">97</option><option value="98">98</option><option value="99">99</option><option value="100">100</option><option value="101">101</option><option value="102">102</option><option value="103">103</option><option value="104">104</option><option value="105">105</option><option value="106">106</option><option value="107">107</option><option value="108">108</option><option value="109">109</option><option value="110">110</option><option value="111">111</option><option value="112">112</option><option value="113">113</option><option value="114">114</option><option value="115">115</option><option value="116">116</option><option value="117">117</option><option value="118">118</option><option value="119">119</option><option value="120">120</option><option value="121">121</option><option value="122">122</option><option value="123">123</option><option value="124">124</option><option value="125">125</option><option value="126">126</option><option value="127">127</option><option value="128">128</option><option value="129">129</option><option value="130">130</option><option value="131">131</option><option value="132">132</option><option value="133">133</option><option value="134">134</option><option value="135">135</option><option value="136">136</option><option value="137">137</option><option value="138">138</option><option value="139">139</option><option value="140">140</option><option value="141">141</option><option value="142">142</option><option value="143">143</option><option value="144">144</option><option value="145">145</option></select>
+<label for="filter-select">Status</label><select id="filter-select"><option value="all">All clauses</option><option value="crux">Unresolved readings</option><option value="revise">Translation revisions</option><option value="annotate">Source notes</option><option value="corrected">Text corrections</option><option value="print">Inspected 1876 print</option><option value="derivative">Derivative transcription only</option></select>
+<input type="search" id="query" placeholder="Search Arabic or English…" aria-label="Search clauses"/>
+<button id="lang-button" type="button" aria-label="Cycle languages">AR + EN</button>
+<button id="notes-button" type="button" aria-pressed="false">Notes</button>
+</nav>
+<div id="visible-results" class="visible-results" role="status" aria-live="polite">Loading selected passages…</div>
+<div id="clauses"><p>Loading the audited clauses…</p></div>
+<div id="empty">No matching audited clauses in this selection.</div>
+<div class="audit-pagination"><button id="load-more" type="button" hidden>Show more passages</button></div>
+<footer><details><summary>Scholarly evidence files, historical stages and bibliographical notes</summary><p><a href="editorial/CRITICAL_AUDIT_STAGE_001.md">Full audit rationale and correction log</a> · <a href="editorial/CRITICAL_TRANSLATION_24_29.md">New 62-locus critical pass</a> · <a href="editorial/CRITICAL_AUDIT_STAGE_002.md">New critical findings</a> · <a href="editorial/I1876_COLLATION_STAGE_006.md">New 1876 p13 correction and p23/p25 agreements</a> · <a href="editorial/I1876_COLLATION_CUMULATIVE_006.json">All fifteen photographed comparisons, Stage XVI</a> · <a href="editorial/I1876_COLLATION_STAGE_007.md">High-resolution critical report VII</a> · <a href="editorial/WITNESS_REGISTER.json">Textual witnesses</a> · <a href="editorial/I1876_COLLATION_001.md">First photographic 1876 print collation</a> · <a href="editorial/CRITICAL_TRANSLATION_30_36.md">Earlier 56-locus modern source audit</a> · <a href="editorial/WITNESS_CENSUS_CRITICAL_004.md">New manuscript census</a> · <a href="editorial/FULL_CUMULATIVE_CRITICAL_004.md">Updated full cumulative handoff</a> · <a href="editorial/CRITICAL_TRANSLATION_37_47_50.md">Stage VIII selected Arabic–English checks</a> · <a href="editorial/STAGE_HANDOFF_CRITICAL_008.md">Stage VIII exact restart</a> · <a href="editorial/CRITICAL_TRANSLATION_48_49_51_60.md">Stage IX Arabic–English checks</a> · <a href="editorial/STAGE_HANDOFF_CRITICAL_009.md">Stage IX exact restart</a> · <a href="editorial/CRITICAL_TRANSLATION_61_69_DERIVATIVE.md">Stage X pp61–69</a> · <a href="editorial/CRITICAL_TRANSLATION_70_78_DERIVATIVE.md">Stage XI pp70–78</a> · <a href="editorial/STAGE_HANDOFF_CRITICAL_012.md">Stage XII full handoff</a> · <a href="editorial/SOURCE_PROVENANCE_CRITICAL_012.json">Evidence grade register</a> · <a href="editorial/CRITICAL_TRANSLATION_79_101_DERIVATIVE.md">Stage XIII pp79–101</a> · <a href="editorial/CUMULATIVE_SELECTED_BILINGUAL_014.md">All 559 reviewed excerpts, including p52 I1876 correction</a> · <a href="editorial/STAGE_HANDOFF_CRITICAL_013.md">Stage XIII full handoff</a> · <a href="editorial/SOURCE_PROVENANCE_CRITICAL_013.json">Evidence-grade register XIII</a> · <a href="editorial/CRITICAL_TRANSLATION_102_125_DERIVATIVE.md">Stage XIV-A</a> · <a href="editorial/CRITICAL_TRANSLATION_126_145_DERIVATIVE.md">Stage XIV-B</a> · <a href="editorial/STAGE_HANDOFF_CRITICAL_014.md">Stage XIV handoff</a> · <a href="editorial/SOURCE_PROVENANCE_CRITICAL_014.json">Source grades</a> · <a href="editorial/I1876_COLLATION_STAGE_015.md">Stage XV photographed print corrections</a> · <a href="editorial/STAGE_HANDOFF_CRITICAL_015.md">Stage XV exact handoff</a> · <a href="editorial/I1876_COLLATION_STAGE_016.md">New p52 photograph and translation correction</a> · <a href="editorial/I1876_P32_NAME_SEQUENCE_016.md">I1876 p32 / Beirut pp52–53 name-sequence concordance</a> · <a href="editorial/STAGE_HANDOFF_CRITICAL_016.md">Stage XVI exact restart</a> · <a href="handoffs.html">Stage history</a>.</p><p>Unreviewed portions of the introduction remain accessible in the working English reader but must not be described as critically checked.</p></details><p><a href="continuous-translation.html">Return to the complete English introduction</a> · <a href="handoffs.html">Latest exact handoff</a></p></footer>
+</main>
+<script src="data/critical-pass-001-p18-20.js"></script>
+<script src="data/critical-pass-002-p21-23.js"></script>
+<script src="data/critical-pass-003-p24-29.js"></script>
+<script src="data/critical-pass-004-p30-36.js"></script>
+<script src="data/critical-pass-005-p37-47-p50.js"></script>
+<script src="data/critical-pass-006-p48-49-51-60.js"></script>
+<script src="data/critical-pass-007-p61-69.js"></script>
+<script src="data/critical-pass-008-p70-78.js"></script>
+<script src="data/critical-pass-009-p79-101.js"></script>
+<script src="data/critical-pass-010-p102-125.js"></script>
+<script src="data/critical-pass-011-p126-145.js"></script>
+<script src="critical-reader.js"></script>
+</body></html>

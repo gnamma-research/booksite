@@ -1,0 +1,84 @@
+{
+  "revision": "2026-11-12-qawtaw16-source-scoped-reading",
+  "source": "Gnamma translated Arabic/English matn and Tamhīd commentary, original edition N and Āshtiyānī edition A",
+  "format": "A4, searchable Unicode text, source-based content",
+  "files": [
+    {
+      "filename": "qawaid-bilingual-reading.pdf",
+      "title": "Bilingual Reading",
+      "group": "reading",
+      "language": "both",
+      "pages": 298,
+      "size_bytes": 920135,
+      "sha256": "60604520d5b33965b4f9234a899e399d6d875792ccceda355862733a5cae5fe7",
+      "description": "Original and commentary, without explanatory notes",
+      "content": {
+        "matn": 61,
+        "commentary": 110
+      },
+      "default": false
+    },
+    {
+      "filename": "qawaid-english-reading.pdf",
+      "title": "English Reading",
+      "group": "reading",
+      "language": "english",
+      "pages": 138,
+      "size_bytes": 434268,
+      "sha256": "01cf0f26749d852feb15c732317bcfb141a77260fd1b276274437de11da45ef4",
+      "description": "Original and commentary, without explanatory notes",
+      "content": {
+        "matn": 61,
+        "commentary": 110
+      },
+      "default": false
+    },
+    {
+      "filename": "qawaid-arabic-reading.pdf",
+      "title": "Arabic Reading",
+      "group": "reading",
+      "language": "arabic",
+      "pages": 172,
+      "size_bytes": 521482,
+      "sha256": "5848a5c747ad6533513c69340cba908d9ed1d0e1fe1911f20d69e675d20755ac",
+      "description": "Original and commentary, without explanatory notes",
+      "content": {
+        "matn": 61,
+        "commentary": 110
+      },
+      "default": false
+    },
+    {
+      "filename": "qawaid-bilingual-study.pdf",
+      "title": "Bilingual Study",
+      "group": "study",
+      "language": "both",
+      "pages": 322,
+      "size_bytes": 1022784,
+      "sha256": "552387fb3bf610f977ab3c9542cad657bef3984daf0b0bc8dd9c90a90fc0a539",
+      "description": "With selected notes and subject guide",
+      "content": {
+        "matn": 61,
+        "commentary": 110
+      },
+      "default": false
+    },
+    {
+      "filename": "qawaid-bilingual-reference.pdf",
+      "title": "Bilingual Reference",
+      "group": "reference",
+      "language": "both",
+      "pages": 368,
+      "size_bytes": 1214374,
+      "sha256": "6c55df55553fdce4377cac8b233f35a13f2f6e4f5f117fd8fce28353ada524d8",
+      "description": "Complete source notes, glossary, index and references",
+      "content": {
+        "matn": 61,
+        "commentary": 110
+      },
+      "default": true
+    }
+  ],
+  "arabicVowelled": false,
+  "notOffered": "A fully vowelled Arabic edition is not made from an unvowelled transcription."
+}

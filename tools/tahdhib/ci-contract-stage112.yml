@@ -1,0 +1,489 @@
+name: Tahdhib actual reader and logic verification
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - ".github/workflows/tahdhib-reader-ci.yml"
+      - "tools/tahdhib/**"
+      - "texts/shared/tahdhib-daruri-shell.js"
+      - "texts/shared/tahdhib-daruri-shell.css"
+      - "texts/al-taftazani/tahdhib-al-kalam/**"
+      - "texts/al-taftazani/tahdhib-al-mantiq/**"
+      - "daruri/bookmark-ui.js"
+  push:
+    paths:
+      - ".github/workflows/tahdhib-reader-ci.yml"
+      - "tools/tahdhib/reader_qa.mjs"
+      - "tools/tahdhib/experience_qa.mjs"
+      - "tools/tahdhib/daruri_shell_qa.mjs"
+      - "tools/tahdhib/yazdi_layer_qa.mjs"
+      - "texts/shared/tahdhib-daruri-shell.js"
+      - "texts/shared/tahdhib-daruri-shell.css"
+      - "texts/al-taftazani/tahdhib-al-kalam/edition/subject-index.js"
+      - "tools/tahdhib/verify_logic_core.py"
+      - "tools/tahdhib/verify_fourth_figure_scope.py"
+      - "tools/tahdhib/verify_special_modal_temporal_shadow.py"
+      - "tools/tahdhib/verify_special_modal_witness_scope.py"
+      - "tools/tahdhib/verify_fourth_figure_mode8_temporal_shadow.py"
+      - "tools/tahdhib/verify_fourth_figure_special_46_mix_types.py"
+      - "tools/tahdhib/verify_fourth_figure_modes6_7_temporal_shadow.py"
+      - "tools/tahdhib/verify_modal_type_crosswalk.py"
+      - "tools/tahdhib/verify_modal_distinctions_stage100.py"
+      - "texts/al-taftazani/tahdhib-al-kalam/edition/**"
+      - "texts/al-taftazani/tahdhib-al-mantiq/edition/**"
+concurrency:
+  group: tahdhib-reader-verification-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  logical-core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check non-modal inference reconstructions and source-corpus integrity
+        run: |
+          python tools/tahdhib/verify_logic_core.py
+          python tools/tahdhib/check_stage_handoff.py
+          python tools/tahdhib/verify_fourth_figure_scope.py
+          python tools/tahdhib/verify_special_modal_temporal_shadow.py
+          python tools/tahdhib/verify_special_modal_witness_scope.py
+          python tools/tahdhib/verify_fourth_figure_mode8_temporal_shadow.py
+          python tools/tahdhib/verify_fourth_figure_special_46_mix_types.py
+          python tools/tahdhib/verify_fourth_figure_modes6_7_temporal_shadow.py
+          python tools/tahdhib/verify_modal_type_crosswalk.py
+          python tools/tahdhib/verify_modal_distinctions_stage100.py
+          python - <<'PY'
+          import json, pathlib
+          base=pathlib.Path('texts/al-taftazani')
+          def load(name):
+              data=(base/name/'edition/data.js').read_text(encoding='utf-8')
+              return json.loads(data.split('=',1)[1].rstrip(';\n '))
+          logic=load('tahdhib-al-mantiq');kalam=load('tahdhib-al-kalam')
+          assert len(logic['units'])==19 and len(kalam['units'])==1044
+          supplement=base/'tahdhib-al-mantiq'/'edition'
+          def read_hawashi(name):
+              text=(supplement/name).read_text(encoding='utf-8')
+              return json.loads(text.split('=',1)[1].strip().removesuffix(';'))
+          a=read_hawashi('hawashi-q125-139-data.js')
+          b=read_hawashi('hawashi-q140-154-data.js')
+          positions=a['entries']+b['entries']
+          assert [p['page'] for p in positions]==list(range(125,155))
+          assert len(positions)==30
+          assert positions[0]['type']=='section' and positions[1]['type']=='blank'
+          assert sum(p['type']=='selection' for p in positions)==28
+          assert all(p['sourceUrl']==f"https://ablibrary.net/book_content/b/12170/{p['page']}?lang=ar" for p in positions)
+          assert all(p['fullPageTranslated'] is False and p['photoCollated'] is False for p in positions)
+          assert all('later' in p['authorialStatus'] for p in positions)
+          assert all(p['ar'] and p['en'] and p['voices'] for p in positions if p['type']=='selection')
+          assert len({p['page'] for p in positions})==30
+          extra=read_hawashi('hawashi-q155-178-data.js')['entries']
+          assert [p['page'] for p in extra]==list(range(155,179)) and len(extra)==24
+          assert [p['page'] for p in positions+extra]==list(range(125,179))
+          assert sum(p['type']=='selection' for p in positions+extra)==52
+          assert all(p['fullPageTranslated'] is False and p['photoCollated'] is False for p in extra)
+          assert all(p['ar'] and p['en'] and p['analysis'] and p['voices'] for p in extra)
+          assert all(p['sourceUrl']==f"https://ablibrary.net/book_content/b/12170/{p['page']}?lang=ar" for p in extra)
+          extended=(supplement/'hawashi-q125-178.html').read_text(encoding='utf-8')
+          assert 'NOT</strong> a complete translation of the later glosses' in extended
+          assert 'hawashi-q155-178-data.js' in extended and 'Math.min(178' in extended
+          index=(supplement/'hawashi-q125-154.html').read_text(encoding='utf-8')
+          assert 'NOT</strong> a thirty-page complete translation' in index
+          assert 'hawashi-q125-139-data.js' in index and 'hawashi-q140-154-data.js' in index
+          menu=(supplement/'logic-daruri-reader.js').read_text(encoding='utf-8')
+          assert 'hawashi-q125-178.html' in menu
+          assert 'Matn / Matn + sharḥ' in menu
+          import re
+          raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-layer-data.js').read_text(encoding='utf-8')
+          gloss=json.loads(raw.split('=',1)[1].strip().removesuffix(';'))
+          assert len(gloss['entries'])==177
+          assert len([x for x in gloss['entries'] if x.get('witnessComparison')])==9
+          assert all(not x.get('witnessComparison',{}).get('scanVerified',True) for x in gloss['entries'] if x.get('witnessComparison'))
+          assert len({x['id'] for x in gloss['entries']})==177
+          continuous_raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-continuous-l03-data.js').read_text(encoding='utf-8')
+          continuous=json.loads(continuous_raw.split('=',1)[1].strip().removesuffix(';'))
+          p=continuous['sourcePages']
+          assert continuous['unit']=='L.03' and continuous['certified'] is False
+          assert [x['page'] for x in p]==list(range(22,30))
+          assert len(p)==8 and all(x['ar'] and x['en'] and str(x['page']) in x['sourceUrl'] for x in p)
+          assert 'ولا لازم ذهني' in p[2]['ar'] and 'textual-crux-Q24' in p[2]['flags']
+          assert len(p[2].get('comparisons',[]))==3 and all(not x['scanVerified'] for x in p[2]['comparisons'])
+          assert all('التقريب ص' not in x['ar'] for x in p)
+          assert 'المنقول' in p[-1]['ar'] and 'دلالة اللفظ' in p[0]['ar']
+          wider_raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-continuous-universals-data.js').read_text(encoding='utf-8')
+          wider=json.loads(wider_raw.split('=',1)[1].strip().removesuffix(';'))
+          w=wider['blocks']
+          assert wider['certified'] is False and len(w)==10
+          assert sorted(set(x['page'] for x in w))==list(range(30,38))
+          assert [x['unit'] for x in w]==['L.04']*2+['L.05']*5+['L.06']*3
+          assert len({x['id'] for x in w})==10
+          assert all(x['ar'] and x['en'] and str(x['page']) in x['sourceUrl'] for x in w)
+          assert len([x for x in w if x['page']==31])==2 and len([x for x in w if x['page']==35])==2
+          assert 'التباين الجزئي' in w[4]['ar'] and 'الجنس' in w[8]['ar']
+          assert w[-1]['seam']=='p37-later-continuation-unverified'
+          l07_raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-continuous-p39-47-data.js').read_text(encoding='utf-8')
+          l07=json.loads(l07_raw.split('=',1)[1].strip().removesuffix(';'))
+          q=l07['sourceBlocks']
+          assert l07['unit']=='L.07' and l07['certified'] is False
+          assert [x['page'] for x in q]==list(range(39,48))
+          assert all(x['ar'] and x['en'] and 'ablibrary.net' in x['sourceUrl'] for x in q)
+          assert 'هامش' in l07['interveningPage'] and all(x['page']!=38 for x in q)
+          assert 'الإمام الرازي' in q[4]['ar'] and 'للمحقق الطوسي' in q[4]['ar']
+          assert 'لزوم' in q[-1]['ar'] and 'الوجود الذهني' in q[-1]['ar']
+          q48_raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-continuous-q48-51-data.js').read_text(encoding='utf-8')
+          q48=json.loads(q48_raw.split('=',1)[1].strip().removesuffix(';'))
+          c=q48['blocks']
+          assert q48['certified'] is False and [x['page'] for x in c]==[48,49,50,51]
+          assert [x['unit'] for x in c]==['L.08','L.08','L.09','L.09']
+          assert [x['page'] for x in q48['gaps']]==[52,53]
+          assert 'وفيه تأمل' in c[1]['ar'] and 'حواشي التجريد' in c[1]['ar']
+          assert 'بالفصل القريب حد' in c[2]['ar'] and 'التعريف اللفظي' in c[3]['ar']
+          assert all(x['ar'] and x['en'] and str(x['page']) in x['sourceUrl'] and x['scanVerified'] is False for x in c)
+          q54_raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-continuous-q54-58-data.js').read_text(encoding='utf-8')
+          q54=json.loads(q54_raw.split('=',1)[1].strip().removesuffix(';'))
+          z=q54['sourceBlocks']
+          assert q54['certified'] is False and [x['page'] for x in z]==list(range(54,59))
+          assert all(x['unit']=='L.10' and x['ar'] and x['en'] and x['scanVerified'] is False for x in z)
+          assert z[0]['ar'].endswith('وهذا') and z[1]['ar']=='المعنى لا يتوقف معرفته على معرفة الخبر والقضية فلا دور.'
+          assert 'المحقق الشريف' not in z[1]['ar'] and len(z[1]['ar'].split())<16
+          assert 'الفارابي' in z[2]['ar'] and 'الرابطة' in z[2]['ar']
+          assert 'المحصورات' in z[3]['ar'] and 'الخارج' in z[4]['ar']
+          assert 'كليهما' in z[-1]['ar']
+          assert sum(len(x['sourceBlocks']) if 'sourceBlocks' in x else len(x['blocks']) for x in [q48,q54])==9
+          modal_raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-continuous-q59-64-data.js').read_text(encoding='utf-8')
+          modal=json.loads(modal_raw.split('=',1)[1].strip().removesuffix(';'))
+          mod=modal['blocks']
+          assert modal['certified'] is False and [x['page'] for x in mod]==list(range(59,65))
+          assert all(x['unit']=='L.11' and x['ar'] and x['en'] and x['sourceLayer']=='main شرح' and x['sourcePhotographyChecked'] is False for x in mod)
+          assert 'مادة القضية' in mod[0]['ar'] and 'جهة القضية' in mod[0]['ar']
+          assert 'الضرورة' in mod[1]['ar'] and 'الدوام' in mod[1]['ar']
+          assert 'ثمان' in mod[2]['ar'] and 'مركبة' in mod[2]['ar']
+          assert 'ستة عشر' in mod[4]['ar'] and 'ثلاثة' in mod[4]['ar'] and 'التسعة الباقية' in mod[4]['ar']
+          assert 'القضايا السبع' in mod[5]['ar']
+          conditional_raw=(base/'tahdhib-al-mantiq'/'edition/yazdi-continuous-q65-69-data.js').read_text(encoding='utf-8')
+          conditional=json.loads(conditional_raw.split('=',1)[1].strip().removesuffix(';'))
+          cond=conditional['blocks']
+          assert conditional['certified'] is False and [x['page'] for x in cond]==list(range(65,70))
+          assert all(x['unit']=='L.12' and x['ar'] and x['en'] and x['sourceLayer']=='main شرح' and x['sourcePhotographyChecked'] is False for x in cond)
+          assert 'لزومية' in cond[0]['ar'] and 'اتفاقية' in cond[0]['ar']
+          assert 'الحقيقية' in cond[1]['ar'] and 'مانعة الخلو' in cond[2]['ar']
+          assert 'تقادير المقدم' in cond[3]['ar'] and 'عن التمام' in cond[4]['ar']
+          assert 'أقسام الشرطية' not in cond[0]['ar']
+          assert mod[5]['ar'].endswith('على') and cond[0]['ar'].startswith('كلها')
+          assert cond[0]['ar'].endswith('كعلية طلوع') and cond[1]['ar'].startswith('الشمس')
+          assert cond[1]['ar'].endswith('في الصدق فقط') and cond[2]['ar'].startswith('نحو')
+          assert cond[2]['ar'].endswith('أسود و') and cond[3]['ar'].startswith('غير كاتب')
+          assert len({x['id'] for x in [*mod,*cond]})==11
+          assert all('م‍يرزا محمد علي' not in x['ar'] and 'التقريب ص' not in x['ar'] for x in [*mod,*cond])
+          def source_file(name):
+              raw=(base/'tahdhib-al-mantiq'/'edition'/name).read_text(encoding='utf-8')
+              return json.loads(raw.split('=',1)[1].strip().removesuffix(';'))
+          contrad=source_file('yazdi-continuous-q70-73-data.js')
+          convert=source_file('yazdi-continuous-q74-80-data.js')
+          contrap=source_file('yazdi-continuous-q81-84-data.js')
+          c13=contrad['blocks'];c14=convert['blocks'];c15=contrap['blocks']
+          for data,blocks,unit,start,end in [
+              (contrad,c13,'L.13',70,73),
+              (convert,c14,'L.14',74,80),
+              (contrap,c15,'L.15',81,84)
+          ]:
+              assert data['certified'] is False
+              assert [x['page'] for x in blocks]==list(range(start,end+1))
+              assert all(x['unit']==unit and x['ar'] and x['en'] and x['photoChecked'] is False for x in blocks)
+              assert all(str(x['page']) in x['sourceUrl'] and 'ablibrary.net' in x['sourceUrl'] for x in blocks)
+              assert all('التقريب ص' not in x['ar'] and 'ميرزا محمد علي' not in x['ar'] for x in blocks)
+          assert 'اختلاف القضيتين' in c13[0]['ar'] and 'در تناقض' in c13[1]['ar']
+          assert 'على سبيل منع الخلو' in c13[2]['ar'] and 'كل فرد فرد' in c13[3]['ar']
+          assert 'مع بقاء الصدق' in c14[0]['ar'] and 'الموجبة إنما تنعكس جزئية' in c14[1]['ar']
+          assert 'الفارابي' in c14[3]['ar'] and 'الشيخ' in c14[3]['ar']
+          assert 'وفيه تأمل' in c14[5]['ar'] and 'بعض المنخسف' in c14[6]['ar']
+          assert 'القدماء' in c15[0]['ar'] and 'المتأخرون' in c15[0]['ar']
+          assert 'دليل الافتراض' in c15[2]['ar'] and 'يفرض ذات الموضوع' in c15[3]['ar']
+          assert len({x['id'] for x in [*c13,*c14,*c15]})==15
+          syll=source_file('yazdi-continuous-q86-94-data.js')
+          sy=syll['blocks']
+          assert syll['certified'] is False
+          assert syll['unit']=='L.16'
+          assert [x['page'] for x in sy]==list(range(86,95))
+          assert len({x['id'] for x in sy})==9
+          assert all(x['unit']=='L.16' and x['ar'] and x['en'] and x['photoChecked'] is False for x in sy)
+          assert all(str(x['page']) in x['sourceUrl'] and 'ablibrary.net' in x['sourceUrl'] for x in sy)
+          assert all('التقريب ص' not in x['ar'] and 'ميرزا محمد علي' not in x['ar'] for x in sy)
+          assert 'الجزء الصوري' in sy[0]['ar']
+          assert 'قياس المساواة' in sy[1]['ar'] and 'مقدمة خارجية' in sy[1]['ar']
+          assert 'والمتكرر أوسط' in sy[2]['ar']
+          assert 'الشكل الأول' in sy[3]['ar']
+          assert 'فعليتها' in sy[3]['ar'] and 'كلية الكبرى' in sy[4]['ar']
+          assert 'السالبتين' in sy[5]['ar'] and len(sy[5]['ar'].split())<30
+          assert 'الشكل الثاني' in sy[6]['ar'] and 'اختلاف' in sy[6]['ar']
+          assert 'الضروب المنتجة' in sy[7]['ar']
+          assert 'عكس الكبرى' in sy[8]['ar'] and 'الشكل الأول' in sy[8]['ar']
+          assert [x['page'] for x in gloss['entries'] if x['unit']=='L.16']==[86,86,98,98]
+          late_files=[
+              ('yazdi-continuous-q95-97-data.js','L.16',list(range(95,98)),3),
+              ('yazdi-continuous-q98-101-data.js','L.16',list(range(98,102)),4),
+              ('yazdi-continuous-q102-104-data.js','L.17',[102,103,103,104],4),
+              ('yazdi-continuous-q105-108-data.js','L.18',list(range(105,109)),4),
+              ('yazdi-continuous-q110-113-data.js','L.18',list(range(110,114)),4),
+              ('yazdi-continuous-q114-118-data.js','L.19',list(range(114,119)),5),
+              ('yazdi-continuous-q119-123-data.js','L.19',list(range(119,124)),5),
+          ]
+          late={}
+          for filename,unit,pages,number in late_files:
+              entry=source_file(filename)
+              blocks=entry['blocks']
+              assert entry['certified'] is False
+              assert entry['unit']==unit and len(blocks)==number
+              assert [b['page'] for b in blocks]==pages
+              assert len({b['id'] for b in blocks})==number
+              assert all(b['unit']==unit and b['ar'] and b['en'] and b['photoChecked'] is False for b in blocks)
+              assert all(str(b['page']) in b['sourceUrl'] and 'ablibrary.net' in b['sourceUrl'] for b in blocks)
+              assert all('التقريب ص' not in b['ar'] for b in blocks)
+              late[filename]=entry
+          q95=late['yazdi-continuous-q95-97-data.js']['blocks']
+          q98=late['yazdi-continuous-q98-101-data.js']['blocks']
+          q102=late['yazdi-continuous-q102-104-data.js']['blocks']
+          q105=late['yazdi-continuous-q105-108-data.js']['blocks']
+          q110=late['yazdi-continuous-q110-113-data.js']['blocks']
+          q114=late['yazdi-continuous-q114-118-data.js']['blocks']
+          q119=late['yazdi-continuous-q119-123-data.js']['blocks']
+          assert 'لينتج الموجبتان' in q95[0]['ar'] and 'عبارة المصنف تسامح' in q95[2]['ar']
+          assert 'تفردت به' in q98[-1]['ar']
+          assert 'من متصلتين' in q102[0]['ar'] and 'الاستثنائي' in q102[2]['ar']
+          assert 'ليس هذا قياسا واحدا' in q102[-1]['ar']
+          assert 'الاستقراء' in q105[0]['ar'] and 'السبر والتقسيم' in q105[-1]['ar']
+          assert 'حكم عليه كل كل' in q105[-1]['ar']
+          assert 'اليقين' in q110[1]['ar'] and 'البرهان اللمي' in q110[2]['ar']
+          assert 'أهملوه' in q110[-1]['ar']
+          assert 'بالبرهان' in q114[0]['ar'] and 'لذواتها' in q114[3]['ar']
+          assert 'قوله «الغرض»' in q119[0]['ar'] and 'الأنحاء التعليمية' in q119[2]['ar']
+          assert 'جعلنا الله وإياكم' in q119[-1]['ar'] and 'قد تمت النسخة' not in q119[-1]['ar']
+          col=late['yazdi-continuous-q119-123-data.js']['colophon']
+          assert 'قد تمت النسخة' in col['text'] and 'Nonauthorial' in col['attribution']
+          assert late['yazdi-continuous-q119-123-data.js']['nextLayer']['page']==125
+          opening=source_file('yazdi-continuous-q7-13-data.js')['blocks']
+          intro=source_file('yazdi-continuous-q14-19-data.js')['blocks']
+          assert [x['page'] for x in opening]==list(range(7,14))
+          assert [x['page'] for x in intro]==list(range(14,20))
+          assert all(x['ar'] and x['en'] and x['photoChecked'] is False for x in [*opening,*intro])
+          allblocks=[*opening,*intro,*p,*w,*q,*c,*z,*mod,*cond,*c13,*c14,*c15,*sy,*q95,*q98,*q102,*q105,*q110,*q114,*q119]
+          assert len(allblocks)==113 and len({x['page'] for x in allblocks})==110
+          assert len({x['id'] for x in allblocks})==113
+          groups=[
+              [x for x in allblocks if 7<=x['page']<=66],
+              [x for x in allblocks if 67<=x['page']<=123]
+          ]
+          assert [len({x['page'] for x in group}) for group in groups]==[55,55]
+          assert [len(group) for group in groups]==[57,56]
+          counts=[(sum(len(x['ar'].split()) for x in group),sum(len(x['en'].split()) for x in group)) for group in groups]
+          assert counts==[(8734,11229),(10589,12662)],counts
+          batch_dir=base/'tahdhib-al-mantiq'/'edition'/'batches'
+          import re
+          for n,(start,end,blocks_count) in enumerate([(7,66,57),(67,123,56)],1):
+              md=(batch_dir/f'yazdi-main-batch-0{n}-q{start}-{end}.md').read_text(encoding='utf-8')
+              assert len(re.findall(r'^## Qum printed page \d+ ',md,re.M))==55
+              assert md.count('**العربية — Original**')==blocks_count
+              assert md.count('**English — Translation**')==blocks_count
+              assert f'## Qum printed page {start} ' in md and f'## Qum printed page {end} ' in md
+              assert (batch_dir/f'batch-0{n}-q{start}-{end}.html').exists()
+          assert (batch_dir/'batch-reader.css').exists() and (batch_dir/'batch-reader.js').exists()
+          assert all(x['page'] not in (38,52,53,85,109,124,125) for x in allblocks)
+          assert sum(x.get('unit','L.03')=='L.16' for x in allblocks)==16
+          assert sum(x.get('unit','L.03')=='L.17' for x in allblocks)==4
+          assert sum(x.get('unit','L.03')=='L.18' for x in allblocks)==8
+          assert sum(x.get('unit','L.03')=='L.19' for x in allblocks)==10
+          assert 85 not in [x['page'] for x in allblocks]
+          assert sum(x.get('unit', 'L.03')=='L.13' for x in allblocks)==4
+          assert sum(x.get('unit', 'L.03')=='L.14' for x in allblocks)==7
+          assert sum(x.get('unit', 'L.03')=='L.15' for x in allblocks)==4
+          assert sum(x.get('unit', 'L.03')=='L.16' for x in allblocks)==16
+          assert sum(x.get('unit', 'L.03')=='L.11' for x in allblocks)==6
+          assert sum(x.get('unit', 'L.03')=='L.12' for x in allblocks)==5
+          assert all('التقريب ص' not in x['ar'] for x in w)
+          assert len({x['unit'] for x in gloss['entries']})==19
+          assert all(x.get('arabic') and x.get('english') and x.get('sourceUrl') and x.get('attribution') for x in gloss['entries'])
+          assert len({u['id'] for u in kalam['units']})==1044
+          assert len({u['page'] for u in kalam['units']})==113
+          assert len(logic['open_issues'])>=6 and len(kalam['open_issues'])==3
+          text={u['id']:u['ar'] for u in logic['units']}
+          assert 'الوقتيتان المطلقتان' in text['L.11']
+          assert 'وإلا لزم سلب الشيء عن نفسه' in text['L.14']
+          assert 'مع الموجبة الموجبتين، ومع السالبة السالبتين' in text['L.16']
+          assert 'وكون الممكنة مع ضرورية' in text['L.16']
+          assert 'وكون الممكنة مع ضرورة' not in text['L.16']
+          assert 'وكليتهما مع الموجبة الجزئية موجبة جزئية إن لم يكن بسلب' in text['L.16']
+          assert 'وكليتها مع الموجبة الجزئية جزئية موجبة إن لم تكن بسلب' not in text['L.16']
+          assert 'مع الموجبة الكلية الموجبتين' not in text['L.16']
+          assert 'التناقض اختلاف قضيتين' in text['L.13']
+          assert 'في الكيف والكم والجهة' in text['L.13']
+          assert kalam['pending_pages']==[77]
+          ktext={u['id']:u['ar'] for u in kalam['units']}
+          assert 'مقدار طبيعة غير قارة' in ktext['KAL-039.03']
+          assert 'ولامتناع فنائه لما مر' in ktext['KAL-039.04']
+          assert 'مقدار أسرعها' in ktext['KAL-039.05']
+          assert 'فمنها القدرة لاستناد الحوادث إليه تعالى وفاقا' in ktext['KAL-080.11']
+          assert 'و«وهم راكعون» للعطف' in ktext['KAL-124.06']
+          assert 'ولدين موسى' in ktext['KAL-100.02']
+          assert 'أو بحكمة البعثة' in ktext['KAL-100.07']
+          assert 'لا كصلاة اليهود أو خاضعون' in ktext['KAL-124.06']
+          assert '[موضع يحتاج مقابلة' not in ktext['KAL-124.06']
+          assert any('Stage100' in (n.get('text','')) for u in logic['units'] if u['id']=='L.16' for n in u.get('notes',[]))
+          assert kalam['pending_pages']==[77]
+          assert len(logic['stage78_source_concordance']['unit_printed_pages'])==19
+          assert len(logic.get('witness_comparisons_stage77',[]))>=10
+          assert 'والنظريات' in text['L.18']
+          assert 'وكل منها عنادية إن كان التنافي لذات الجزأين' in text['L.12']
+          assert 'وكل منهما عنادية' not in text['L.12']
+          assert 'لزومية إن كان ذلك لعلاقة' in text['L.12']
+          assert 'بتنافي نسبتين' in text['L.12'] and 'بتنافي النسبتين' not in text['L.12']
+          assert 'صدقاً وكذباً معاً' not in text['L.12']
+          assert 'على جميع التقادير للمقدم' in text['L.12']
+          assert 'أو لبعضها مطلقاً جزئية' in text['L.12']
+          assert 'والنقيض للضرورية الممكنة العامة' in text['L.13']
+          assert 'في العكس المستوي' in text['L.15']
+          assert 'وبين انعكاس الخاصتين' in text['L.15']
+          assert 'بالافتراض' not in text['L.15']
+          assert 'من المتصلتين' in text['L.17']
+          assert 'وتنعقد فيه الأشكال الأربعة' in text['L.17']
+          assert 'والحقيقية وضع كل' in text['L.17']
+          assert 'وقد يخص باسم قياس الخلف' in text['L.17']
+          assert 'وقد يختص باسم قياس الخلف' not in text['L.17']
+          assert any(z.get('page')==17 for z in logic.get('open_issues',[]))
+          assert any(z.get('page')==16 and 'negative' in z.get('issue','') for z in logic.get('open_issues',[]))
+          assert any('Stage91' in (n.get('text','')) for u in logic['units'] if u['id']=='L.16' for n in u.get('notes',[]))
+          assert 'فتأمل' not in text['L.15']
+          assert 'وقد بين انعكاس الخاصتين' not in text['L.15']
+          assert 'وجود الموضوع محققاً وهي الخارجية' in text['L.10']
+          assert 'وجود الموضوع إما محققاً' not in text['L.10']
+          assert 'فيسمى معدولاً' in text['L.11']
+          assert 'وإلا فمحصلة' not in text['L.11']
+          assert 'وإلا فمطلقة' not in text['L.11']
+          assert 'فإن كان الحكم في القضية' in text['L.11']
+          assert 'ما دام ذات الموضوع موجودة' not in text['L.11']
+          assert 'فالمطلقة العامة' in text['L.11']
+          assert 'لعدم ضرورة خلافها فالممكنة العامة' in text['L.11']
+          assert 'باللاضرورة الذاتية' in text['L.11']
+          assert 'الوقتيتان المطلقتان' in text['L.11']
+          assert 'وتسمى الوجودية اللادائمة' in text['L.11']
+          assert 'بلا ضرورة الجانب الموافق أيضاً وتسمى الممكنة الخاصة' in text['L.11']
+          assert 'باللاضرورة من الجانب الموافق' not in text['L.11']
+          assert 'وللدائمة المطلقة العامة' in text['L.13']
+          assert 'والله أعلم بالصواب' in text['L.19']
+          print('PASS: Cairo L16 witness kept separate from longer commentary-contained print and 19 / 1,044 corpus integrity')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tahdhib-nonmodal-proof-report
+          path: |
+            tools/tahdhib/verified_nonmodal_results.json
+            tools/tahdhib/verified_fourth_figure_scope.json
+            tools/tahdhib/verified_special_modal_temporal_shadow.json
+            tools/tahdhib/verified_special_modal_witness_scope.json
+            tools/tahdhib/verified_fourth_figure_mode8_temporal_shadow.json
+            tools/tahdhib/verified_fourth_figure_special_46_mix_types.json
+            tools/tahdhib/verified_fourth_figure_modes6_7_temporal_shadow.json
+            tools/tahdhib/verified_modal_type_crosswalk.json
+            tools/tahdhib/verified_modal_distinctions_stage100.json
+
+  reader-chromium:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Chromium and WebKit regression dependencies
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium webkit
+      - name: Exercise both bilingual readers in desktop, portrait, and landscape
+        run: |
+          python3 -m http.server 8765 >/tmp/tahdhib-http.log 2>&1 &
+          SERVER=$!
+          trap 'kill "$SERVER" || true' EXIT
+          sleep 2
+          node --check texts/shared/tahdhib-daruri-shell.js
+          node --check daruri/bookmark-ui.js
+          node --check tools/tahdhib/daruri_shell_qa.mjs
+          node --check tools/tahdhib/yazdi_layer_qa.mjs
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-layer-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-layer.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q7-13-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q14-19-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/batches/batch-reader.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-l03-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-universals-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-p39-47-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q48-51-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q54-58-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q59-64-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q65-69-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q70-73-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q74-80-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q81-84-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q86-94-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q95-97-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q98-101-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q102-104-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q105-108-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q110-113-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q114-118-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-continuous-q119-123-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-q125-139-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-q140-154-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-q155-178-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage104.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage105.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage106a.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage106b.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage106c.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage106d.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage107a.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage107b.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage107c.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage107d.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage107e.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage107f.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage108a.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage108b.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-numbered-notes-stage109a.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage110a.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage110b.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage110c.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage110d.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage111a.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage111b.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-signification-notes-stage111a.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-signification-notes-stage112a.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-signification-notes-stage112b.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-signification-notes-stage112c.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-signification-notes-stage112d.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-concepts-notes-stage112a.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage111a.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-introduction-notes-stage111b.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/hawashi-signification-notes-stage111a.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/progress-data.js
+          node --check tools/tahdhib/handoff_reader_qa.mjs
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-daruri-reader.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/indian-2013-outline-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/logic-glossary-extensions.js
+          node --check texts/al-taftazani/tahdhib-al-kalam/edition/reader.js
+          node --check texts/al-taftazani/tahdhib-al-kalam/edition/experience.js
+          node --check texts/al-taftazani/tahdhib-al-kalam/edition/vowels.js
+          node --check texts/al-taftazani/tahdhib-al-kalam/edition/glossary.js
+          node --check texts/al-taftazani/tahdhib-al-kalam/edition/glossary-ui.js
+          node --check texts/al-taftazani/tahdhib-al-kalam/edition/subject-index.js
+          node --check texts/al-taftazani/tahdhib-al-kalam/edition/reading-history.js
+          node --check texts/al-taftazani/tahdhib-al-kalam/edition/machine-vowels.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/machine-vowels.js
+          node tools/tahdhib/reader_qa.mjs
+          node tools/tahdhib/experience_qa.mjs
+          node tools/tahdhib/daruri_shell_qa.mjs
+          node tools/tahdhib/yazdi_layer_qa.mjs
+          node tools/tahdhib/hawashi_qa.mjs
+          node tools/tahdhib/hawashi_extended_qa.mjs
+          node tools/tahdhib/handoff_reader_qa.mjs

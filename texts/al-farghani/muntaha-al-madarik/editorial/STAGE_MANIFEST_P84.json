@@ -1,0 +1,326 @@
+{
+  "schema": "gnamma-farghani-translation-stage-v2",
+  "stage": "2026-11-08-new-fifty-Beirut-pages-p35-p84",
+  "repository": "gnamma-research/booksite",
+  "branch": "master",
+  "work": "Farghānī, Muntahā al-madārik, four-foundation introduction",
+  "edition": "B2007, modern Beirut Arabic digital witness, not I1876",
+  "inherited": {
+    "path": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_34.md",
+    "git_blob_sha": "474c2be3327caafea6e4554b0b2a8858f7261d6b",
+    "first": 18,
+    "last": 34,
+    "pages": 17
+  },
+  "new_stages": [
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_35_40.md",
+      "first": 35,
+      "last": 40,
+      "pages": 6,
+      "git_blob_sha": "2cb9ab78ee3d93e651e24c4dabf4824876f22ee9"
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_41_46.md",
+      "first": 41,
+      "last": 46,
+      "pages": 6,
+      "git_blob_sha": "56f1417a45770986216d374e914a28b79db7bed5"
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_47_52.md",
+      "first": 47,
+      "last": 52,
+      "pages": 6,
+      "git_blob_sha": "1bf2d5be9284f32fe48a6997e09e3b58e93567b3"
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_53_60.md",
+      "first": 53,
+      "last": 60,
+      "pages": 8,
+      "git_blob_sha": "df0411d6b54078b39e9e5368a62767653c1a6bca"
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_61_68.md",
+      "first": 61,
+      "last": 68,
+      "pages": 8,
+      "git_blob_sha": "13a351ead1a3e7740c8e9f68458f52615e8ceed8"
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_69_76.md",
+      "first": 69,
+      "last": 76,
+      "pages": 8,
+      "git_blob_sha": "53f9632ceae70eabdc72b495833bf2c3e755767d"
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_77_84.md",
+      "first": 77,
+      "last": 84,
+      "pages": 8,
+      "git_blob_sha": "94e83cffaeae9759959e10b6708078c006a798bc"
+    }
+  ],
+  "added_pages": 50,
+  "cumulative_pages": 67,
+  "cumulative_range": "B2007 pp.18–84, 67 consecutive numbered pages",
+  "cumulative_english_draft_path": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_84.md",
+  "cumulative_master_commit": "e2602a88e204a57fd2bc14943f7ae8a98b57cff1",
+  "web_reader_path": "texts/al-farghani/muntaha-al-madarik/continuous-translation.html",
+  "web_reader_commit": "a825ef4e3f0002ead86f878ddfc71f5142143b99",
+  "detailed_status_path": "texts/al-farghani/muntaha-al-madarik/editorial/STATUS.md",
+  "critical_scholarly_introduction": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_INTRODUCTION.md",
+  "parallel_text": {
+    "count": 32,
+    "source_pages": "18–34",
+    "path": "texts/al-farghani/muntaha-al-madarik/data/units.js",
+    "full_arabic_copytext": false
+  },
+  "page_integrity": {
+    "new_page_range": [
+      35,
+      84
+    ],
+    "new_headings": 50,
+    "new_gaps": 0,
+    "new_duplicates": 0,
+    "cumulative_page_range": [
+      18,
+      84
+    ],
+    "cumulative_headings": 67,
+    "cumulative_gaps": 0,
+    "html_page_links": 67
+  },
+  "foundation_boundaries": [
+    {
+      "id": 1,
+      "end": 69
+    },
+    {
+      "id": 2,
+      "start": 70,
+      "end": 78
+    },
+    {
+      "id": 3,
+      "start": 79,
+      "current_end": 84
+    }
+  ],
+  "next_page": {
+    "b2007": 85,
+    "url": "https://ablibrary.net/book_content/b/9606/85?lang=ar",
+    "previous_text": "وهو مما يلي عالمه وعين مرتبته التي هي حصة من الحضرة العمائية التي هي عين البرزخية بين حضرتي الوجوب والإمكان من التعين الثاني",
+    "following_text": "وعالم الغيب والمعاني، ولكن من حيث تفصيل تلك البرزخية لا من حيث إجمالها"
+  },
+  "critical_flags": {
+    "fully_transcribed_arabic": false,
+    "independent_line_by_line_source_translation_proofing": false,
+    "manuscript_collated_variants": 0,
+    "independently_collated_1876_print": false,
+    "complete_authorial_introduction": false,
+    "verified_1876_vs_beirut_pagination": false,
+    "source_character_denominator": null,
+    "percentage_critically_complete": null
+  },
+  "state": "Cumulative working English draft only, not a completed critical bilingual edition",
+  "open_issues": [
+    "B2007 p21 F007 restored wāḥidiyya clause needs independent check",
+    "B2007 p33 ambiguous transition needs print collation",
+    "B2007 p34 ḥaḍra al-ʿamaliyya needs independent witness",
+    "B2007 p73 free divine choice vs necessary manifestation deserves analytical collation",
+    "All p35–84 English sentences need Arabic clause audit"
+  ],
+  "cumulative_handoff": {
+    "path": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_P84.md",
+    "git_blob_sha": "32fbaa09125cfcb968e06b5834f79c9cd41a83c6",
+    "bytes_utf8": 323976,
+    "included_content": [
+      "67-source-page English working translation, B2007 18–84",
+      "32 complete bilingual Arabic-English excerpt records",
+      "critical scholarly introduction",
+      "comparative dossier",
+      "technical glossary",
+      "witness register and corrections",
+      "editorial status",
+      "historical stage P34 handoff"
+    ],
+    "scope_limitations": "No full Arabic copy-text, no manuscript source images, no verified independent collation"
+  },
+  "handoff_archive_page": "texts/al-farghani/muntaha-al-madarik/handoffs.html",
+  "handoff_archive_index": "texts/al-farghani/muntaha-al-madarik/editorial/HANDOFFS.md",
+  "publication_protocol": "docs/TRANSLATION_CONTINUITY_PROTOCOL.md — every stage must update archive and website",
+  "file_inventory": [
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/COMPARISON.md",
+      "blob_sha": "ca88320fcbeaebc4494d24bddc3a522832f8d364",
+      "bytes_utf8": 7701
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/CONTINUATION_TRANSLATION_24_29.md",
+      "blob_sha": "ee1e4e283ccd9ba24e39031f1ebc0f4b7f7c1f56",
+      "bytes_utf8": 21516
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/CONTINUATION_TRANSLATION_30_34.md",
+      "blob_sha": "3dba5013ae74562eb87f9725ae5a8edf7acc16e0",
+      "bytes_utf8": 21370
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_INTRODUCTION.md",
+      "blob_sha": "940cb7ab03df02252e7ab34c60dbd48af473e843",
+      "bytes_utf8": 19847
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_P84.md",
+      "blob_sha": "32fbaa09125cfcb968e06b5834f79c9cd41a83c6",
+      "bytes_utf8": 323976
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/GLOSSARY.md",
+      "blob_sha": "dd67a311d42feb85489da32f7704d80bad264543",
+      "bytes_utf8": 4523
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/HANDOFFS.md",
+      "blob_sha": "4fe1c2b08947c945a51baa11f64408271f68c60d",
+      "bytes_utf8": 4827
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/OPENING_TRANSLATION_18_23.md",
+      "blob_sha": "a4a398e6005a7ff895ebe57dad0064352d0fa440",
+      "bytes_utf8": 19229
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_HANDOFF.md",
+      "blob_sha": "53fab6f587f0769f3caf1e312dd0aaa3f9127cba",
+      "bytes_utf8": 6046
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_HANDOFF_P84.md",
+      "blob_sha": "7502017cc62f3527d5fffab67129edf45e8b415e",
+      "bytes_utf8": 5480
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_MANIFEST.json",
+      "blob_sha": "511c43db6989a5b43fc5e72a2161f8cefe328025",
+      "bytes_utf8": 6255
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/STATUS.md",
+      "blob_sha": "ff49f33a6199a2e1c8d7474a2d15e94bfefdb5da",
+      "bytes_utf8": 13418
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_35_40.md",
+      "blob_sha": "2cb9ab78ee3d93e651e24c4dabf4824876f22ee9",
+      "bytes_utf8": 19648
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_41_46.md",
+      "blob_sha": "56f1417a45770986216d374e914a28b79db7bed5",
+      "bytes_utf8": 19904
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_47_52.md",
+      "blob_sha": "1bf2d5be9284f32fe48a6997e09e3b58e93567b3",
+      "bytes_utf8": 19682
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_53_60.md",
+      "blob_sha": "df0411d6b54078b39e9e5368a62767653c1a6bca",
+      "bytes_utf8": 25310
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_61_68.md",
+      "blob_sha": "13a351ead1a3e7740c8e9f68458f52615e8ceed8",
+      "bytes_utf8": 25546
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_69_76.md",
+      "blob_sha": "53f9632ceae70eabdc72b495833bf2c3e755767d",
+      "bytes_utf8": 24879
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/TRANSLATION_77_84.md",
+      "blob_sha": "94e83cffaeae9759959e10b6708078c006a798bc",
+      "bytes_utf8": 26376
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/WITNESS_REGISTER.json",
+      "blob_sha": "caa53e3a01d1225a86913291e0b37c5fc6ba9eba",
+      "bytes_utf8": 7176
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_34.md",
+      "blob_sha": "474c2be3327caafea6e4554b0b2a8858f7261d6b",
+      "bytes_utf8": 63807
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_84.md",
+      "blob_sha": "b9a6f1a3dc3b38c6af45918b6b4f0e115f34e228",
+      "bytes_utf8": 226203
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/data/units.js",
+      "blob_sha": "1f9725df629cd16003083a5ff5002acaf5fb340c",
+      "bytes_utf8": 37521
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/index.html",
+      "blob_sha": "34fce2528b8387d9b6004d9781d8f3999977f504",
+      "bytes_utf8": 9860
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/continuous-translation.html",
+      "blob_sha": "2d0249c4f6f68ba558f747c7fd67466c1e2fad45",
+      "bytes_utf8": 243061
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/critical-introduction.html",
+      "blob_sha": "83aa7cc3f032a2fdd0052d3be43c848c82745dea",
+      "bytes_utf8": 27502
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/handoffs.html",
+      "blob_sha": "68a4da64a831a30e8dc61bef68e1f54b8cd49402",
+      "bytes_utf8": 9952
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/reader.js",
+      "blob_sha": "aced2e1d612f93034f7a35466c04b849b62dec04",
+      "bytes_utf8": 13843
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/reader.css",
+      "blob_sha": "15e14af50a2c281252b4b8561df9127453f48466",
+      "bytes_utf8": 4905
+    },
+    {
+      "path": "texts/manifest.json",
+      "blob_sha": "0440bae208d381e3ac103ce53c222702b4443538",
+      "bytes_utf8": 23262
+    },
+    {
+      "path": "texts/index.html",
+      "blob_sha": "3c1dddcebcca92d73536f5afc8c545cf8dd8af26",
+      "bytes_utf8": 6636
+    },
+    {
+      "path": "docs/TRANSLATION_CONTINUITY_PROTOCOL.md",
+      "blob_sha": "58c7caec17115fcc4abb2d1282bcea4acd7cd7ee",
+      "bytes_utf8": 6220
+    }
+  ],
+  "cumulative_handoff_verified_in_repository": true,
+  "github_pages_deployment_verified": false,
+  "source_validation_note": "Page-number coverage and link structure verified. Arabic-to-English fidelity and exact page-to-page clause coverage have NOT been independently checked.",
+  "archive_policy_status": "Committed; full handoff is a preserved snapshot of the working-stage text and apparatus. Latest stage manifest reflects post-publication files; stage archive contents remain immutable.",
+  "project_issue": "https://github.com/gnamma-research/booksite/issues/245",
+  "site_publication_observation": "GitHub Pages latest observed build queued; no successful deployment of final commit confirmed.",
+  "external_page_load_verified": false,
+  "file_inventory_updated_on": "2026-11-08"
+}

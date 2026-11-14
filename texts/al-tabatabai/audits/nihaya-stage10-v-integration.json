@@ -1,0 +1,442 @@
+{
+  "schema": "nihaya-stage10-integration-plan-v1",
+  "group": "new-stage-V-comparisons",
+  "units": [
+    {
+      "unitID": "N-V-05",
+      "reviewId": "stage10-N-V-05",
+      "sourceReport": "nihaya-external-stage10-new.json#N-V-05",
+      "arabicPreimageSha256": "5e047d15f47b722a6370207aaf63de1c347a165c74c17a2d7ceb8c769cd2fb80",
+      "englishPreimageSha256": "7562bb95f884f9b491f700291eb1d9cf8b8158132dc0a7f4462241682d991d34",
+      "noChangeJudgment": [
+        "The complete account of genus/differentia as matter/form under contrasting considerations, the Asfar quotation, both objections and replies, and all four conclusions are present in the English.",
+        "A substantive digital transcription error changes rational animal into an identity between animal and rational; both the 1404 print p.79 and later I.134 support repair of Arabic and the corresponding English.",
+        "The early printed Asfar citation (II, pp.29–30) is absent from the stored body; restore it as an explicitly authorial source note.",
+        "Later I.134 regularizes منها to منهما. The 1404 print has منها, and the early reading is retained. This does not require an English alteration.",
+        "Later I.135 n.5 names Qutb al-Din al-Rawandi in a reference to Sharh al-Matali. That later-editor attribution has not been independently verified and is not inserted as authorial fact."
+      ],
+      "decisions": [
+        {
+          "decisionID": "N10-NEW-V-05-01",
+          "disposition": "adopt",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "فيكون الحيوان هو الناطق بعينه",
+          "new": "فيكون هو الحيوان الناطق بعينه",
+          "expectedOccurrences": 1,
+          "reason": "Both witnesses read that the determined genus is the rational animal itself, not animal identical with rational.",
+          "classification": "attested-digital-transcription-repair",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": [
+            {
+              "witness": "1404 printed facsimile",
+              "page": 79,
+              "canvas": 83
+            },
+            {
+              "witness": "1428 edited digital presentation",
+              "volume": 1,
+              "page": 134
+            }
+          ],
+          "criticalNote": {
+            "id": "N-EXT10-V-05-01",
+            "passageId": "N-V-05",
+            "type": "textual",
+            "status": "adopted-attested-reading",
+            "adoption": "adopted",
+            "originalReading": "فيكون الحيوان هو الناطق بعينه",
+            "adoptedReading": "فيكون هو الحيوان الناطق بعينه",
+            "text": "The 1417 digital base transposes the words in the sentence identifying the determined genus with the human species. The 1404 print (p.79, canvas83) and the later edited digital text (I.134) both read فيكون هو الحيوان الناطق بعينه, “so that it is that very rational animal.” Arabic and English are corrected together. This is an attested transcription repair, not a manuscript claim.",
+            "source": "1404 print p.79; 1428 edited digital text I.134",
+            "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/83"
+          }
+        },
+        {
+          "decisionID": "N10-NEW-V-05-02",
+          "disposition": "adopt",
+          "field": "english",
+          "operation": "replace",
+          "old": "so that animal is identical with rational, and is the human species.",
+          "new": "so that it is that very rational animal, namely the human species.",
+          "expectedOccurrences": 1,
+          "reason": "Follow the attested Arabic restoration in N10-NEW-V-05-01.",
+          "classification": "translation-following-attested-arabic-repair",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": [
+            {
+              "witness": "1404 printed facsimile",
+              "page": 79,
+              "canvas": 83
+            },
+            {
+              "witness": "1428 edited digital presentation",
+              "volume": 1,
+              "page": 134
+            }
+          ]
+        },
+        {
+          "decisionID": "N10-NEW-V-05-03",
+          "disposition": "adopt",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "لاستلزمه كونَ",
+          "new": "لاستلزامه كونَ",
+          "expectedOccurrences": 1,
+          "reason": "Restore the missing alif in the verbal noun; both witnesses have لاستلزامه.",
+          "classification": "mechanical-transcription-repair",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": [
+            {
+              "witness": "1404",
+              "page": 81,
+              "canvas": 85
+            },
+            {
+              "witness": "1428 digital",
+              "volume": 1,
+              "page": 136
+            }
+          ]
+        },
+        {
+          "decisionID": "N10-NEW-V-05-04",
+          "disposition": "adopt",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "الجواهر المادّيّةً المركّبة",
+          "new": "الجواهر المادّيّة المركّبة",
+          "expectedOccurrences": 1,
+          "reason": "Remove an erroneous tanwin from the definite adjective; witnesses have the definite phrase.",
+          "classification": "mechanical-vocalization-repair",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": [
+            {
+              "witness": "1404",
+              "page": 81,
+              "canvas": 85
+            },
+            {
+              "witness": "1428 digital",
+              "volume": 1,
+              "page": 136
+            }
+          ]
+        },
+        {
+          "decisionID": "N10-NEW-V-05-05",
+          "disposition": "adopt",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "بالجزء\n\nالأخصّ",
+          "new": "بالجزء الأخصّ",
+          "expectedOccurrences": 1,
+          "reason": "Join an extraction-induced paragraph split inside the sentence; no wording change.",
+          "classification": "layout-only",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": []
+        },
+        {
+          "decisionID": "N10-NEW-V-05-06",
+          "disposition": "adopt",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "بالوجود\n\nالفرديّ",
+          "new": "بالوجود الفرديّ",
+          "expectedOccurrences": 1,
+          "reason": "Join an extraction-induced paragraph split inside the sentence; no wording change.",
+          "classification": "layout-only",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": []
+        },
+        {
+          "decisionID": "N10-NEW-V-05-07",
+          "disposition": "adopt",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "الصورة\n\nلا بشرط",
+          "new": "الصورة لا بشرط",
+          "expectedOccurrences": 1,
+          "reason": "Join an extraction-induced paragraph split inside the sentence; no wording change.",
+          "classification": "layout-only",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": []
+        },
+        {
+          "decisionID": "N10-NEW-V-05-08",
+          "disposition": "adopt",
+          "field": "notes",
+          "operation": "append",
+          "old": null,
+          "new": {
+            "type": "Authorial source citation",
+            "arabic": "(ج ٢، ص ٢٩–٣٠)",
+            "text": "The author cites al-Asfār, volume II, pp.29–30. This reference appears after the quotation in the 1404 print (p.80, canvas84); the later edited presentation places the reference in I.135, note1. It is restored here as a source note.",
+            "source": "1404 printed text p.80",
+            "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/84"
+          },
+          "expectedOccurrences": null,
+          "reason": "Restore an omitted authorial reference, distinguishing it from the later editor’s explanatory notes.",
+          "classification": "authorial-citation-restoration",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": [
+            {
+              "witness": "1404",
+              "page": 80,
+              "canvas": 84
+            },
+            {
+              "witness": "1428 digital",
+              "volume": 1,
+              "page": 135,
+              "note": 1
+            }
+          ]
+        },
+        {
+          "decisionID": "N10-NEW-V-05-09",
+          "disposition": "apparatus-only",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "ولا يحمل على شيء منها",
+          "new": "ولا يحمل على شيء منهما",
+          "expectedOccurrences": 1,
+          "reason": "Later grammar regularization has no necessary semantic effect; retain the early printed reading and record the variant only.",
+          "classification": "later-editorial-regularization",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": [
+            {
+              "witness": "1404",
+              "page": 79,
+              "canvas": 83
+            },
+            {
+              "witness": "1428 digital",
+              "volume": 1,
+              "page": 134,
+              "note": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unitID": "N-V-06",
+      "reviewId": "stage10-N-V-06",
+      "sourceReport": "nihaya-external-stage10-new.json#N-V-06",
+      "arabicPreimageSha256": "a3bb7af299c0e84c2643c6e45098fc8e2c7f234c1e3fecb74b359851578dbc73",
+      "englishPreimageSha256": "1fe96f40824709cb9449d27cd6f089c38b488606dd80127508fda34be74959fd",
+      "noChangeJudgment": [
+        "The full distinction of logical and real/derivational differentiae, ultimate differentia, regress objection, primary/common predication, substantial form and immaterial soul is represented without an omitted argument in the current English.",
+        "The existing English treatment of من غير أن تندرج تحته فيكون جزءا من ماهيتها correctly keeps the consequence inside the negative scope. The early print and later text both retain the same Arabic; do not add a negation or reverse the English.",
+        "Later I.140 and I.142 regularize masculine pronouns in ففي كونه and فيصدق عليه to feminine forms. The early print pp.83–84 attests the existing forms; retain them and record the later variants.",
+        "The later editor’s threefold account of differentia (I.137 n.1) elaborates the author’s twofold division. It is commentary and is not substituted for the author’s two senses.",
+        "The early and later witnesses support correction of two mechanical spellings; several artificial paragraph breaks are joined without changing wording."
+      ],
+      "decisions": [
+        {
+          "decisionID": "N10-NEW-V-06-01",
+          "disposition": "adopt",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "وهو إنمّا يعدّ",
+          "new": "وهو إنّما يعدّ",
+          "expectedOccurrences": 1,
+          "reason": "Correct misplaced shadda in إنما.",
+          "classification": "mechanical-vocalization-repair",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": [
+            {
+              "witness": "1404",
+              "page": 82,
+              "canvas": 86
+            },
+            {
+              "witness": "1428 digital",
+              "volume": 1,
+              "page": 137
+            }
+          ]
+        },
+        {
+          "decisionID": "N10-NEW-V-06-02",
+          "disposition": "adopt",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "مميِّيزات ذاتيّة",
+          "new": "مميِّزات ذاتيّة",
+          "expectedOccurrences": 1,
+          "reason": "Remove a duplicated ya in مميزات; both witnesses have the ordinary plural.",
+          "classification": "mechanical-transcription-repair",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": [
+            {
+              "witness": "1404",
+              "page": 84,
+              "canvas": 88
+            },
+            {
+              "witness": "1428 digital",
+              "volume": 1,
+              "page": 141
+            }
+          ]
+        },
+        {
+          "decisionID": "N10-NEW-V-06-03",
+          "disposition": "adopt",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "الفصل المنطقيّ ،\n\nككون",
+          "new": "الفصل المنطقيّ ، ككون",
+          "expectedOccurrences": 1,
+          "reason": "Join an artificial paragraph break; no lexical change.",
+          "classification": "layout-only",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": []
+        },
+        {
+          "decisionID": "N10-NEW-V-06-04",
+          "disposition": "adopt",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "فالجوهر مثلا\n\nصادق",
+          "new": "فالجوهر مثلا صادق",
+          "expectedOccurrences": 1,
+          "reason": "Join an artificial paragraph break; no lexical change.",
+          "classification": "layout-only",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": []
+        },
+        {
+          "decisionID": "N10-NEW-V-06-05",
+          "disposition": "adopt",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "حملٌ\n\nشائعٌ",
+          "new": "حملٌ شائعٌ",
+          "expectedOccurrences": 1,
+          "reason": "Join an artificial paragraph break; no lexical change.",
+          "classification": "layout-only",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": []
+        },
+        {
+          "decisionID": "N10-NEW-V-06-06",
+          "disposition": "adopt",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "روحانيّةَ\n\nالبقاء",
+          "new": "روحانيّةَ البقاء",
+          "expectedOccurrences": 1,
+          "reason": "Join an artificial paragraph break; no lexical change.",
+          "classification": "layout-only",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": []
+        },
+        {
+          "decisionID": "N10-NEW-V-06-07",
+          "disposition": "apparatus-only",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "ففي كونه نوعاً من الجوهر",
+          "new": "ففي كونها نوعاً من الجوهر",
+          "expectedOccurrences": 1,
+          "reason": "The early print attests the existing masculine pronoun; the later edition regularizes agreement. Retain the early reading without changing the accurate English.",
+          "classification": "later-pronoun-regularization",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": [
+            {
+              "witness": "1404",
+              "page": 83,
+              "canvas": 87
+            },
+            {
+              "witness": "1428 digital",
+              "volume": 1,
+              "page": 140
+            }
+          ]
+        },
+        {
+          "decisionID": "N10-NEW-V-06-08",
+          "disposition": "apparatus-only",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "فيصدق عليه الجوهر",
+          "new": "فيصدق عليها الجوهر",
+          "expectedOccurrences": 1,
+          "reason": "The early print attests عليه; later text regularizes feminine agreement. No semantic correction to the English is needed.",
+          "classification": "later-pronoun-regularization",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": [
+            {
+              "witness": "1404",
+              "page": 84,
+              "canvas": 88
+            },
+            {
+              "witness": "1428 digital",
+              "volume": 1,
+              "page": 142
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unitID": "N-V-07",
+      "reviewId": "stage10-N-V-07",
+      "sourceReport": "nihaya-external-stage10-new.json#N-V-07",
+      "arabicPreimageSha256": "121b159a0df676fea485b63efceb7cd43e4e9a4d05d96f46f2b561caf5ac0805",
+      "englishPreimageSha256": "37633216968827c54aa315dcb7e0b76e755b54bb01184a3012543ffa4352ad4c",
+      "noChangeJudgment": [
+        "Real/relative species, the unity of real composites, union versus conjunction, and all four alternatives in the multiplicity argument are present in both Arabic and English.",
+        "Early p.86 has بانضمامه إليه وعدم انضمامه الكثرة with the conjunction و; the later digital presentation I.145 omits that conjunction. Retain the early-supported base and the English contrast between presence and absence of the separable accident.",
+        "The current translation preserves the distinction between an individual of a species and a numerical unit in the regress argument, and correctly concludes by contraposition.",
+        "The later editor’s discussion of whether real and relative species share a univocal term is kept as later commentary; it does not replace the author’s classification.",
+        "One artificial paragraph break inside حقيقة واحدة is joined. No substantive Arabic or English change is required."
+      ],
+      "decisions": [
+        {
+          "decisionID": "N10-NEW-V-07-01",
+          "disposition": "adopt",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "وتتّحد حقيقة\n\nواحدة",
+          "new": "وتتّحد حقيقة واحدة",
+          "expectedOccurrences": 1,
+          "reason": "Join a false paragraph break within حقيقة واحدة.",
+          "classification": "layout-only",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": []
+        },
+        {
+          "decisionID": "N10-NEW-V-07-02",
+          "disposition": "apparatus-only",
+          "field": "arabic",
+          "operation": "replace",
+          "old": "بانضمامه إليه وعدم انضمامه الكثرةُ",
+          "new": "بانضمامه إليه عدم انضمامه الكثرة",
+          "expectedOccurrences": 1,
+          "reason": "The earlier printed witness supports the conjunction; the later digital omission is not adopted. Current English correctly renders the contrast.",
+          "classification": "later-digital-omission",
+          "sourceGrade": "1404 printed facsimile visually inspected; corresponding 1428 edited digital presentation read. No manuscript attestation claimed.",
+          "evidence": [
+            {
+              "witness": "1404",
+              "page": 86,
+              "canvas": 90
+            },
+            {
+              "witness": "1428 digital",
+              "volume": 1,
+              "page": 145
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

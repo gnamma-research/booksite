@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-11",
+  "scope": "Preserve links to the restored VI14 preparedness paragraph after the VI14/VI15 boundary repair.",
+  "changes": [
+    {
+      "retired": "para-N-VI-15-ar-001",
+      "target": "para-N-VI-14-ar-013",
+      "targetUnit": "N-VI-14",
+      "targetQuote": "وأمّا نفس الاستعداد",
+      "cleanVI15ParagraphNewID": "para-N-VI-15-ar-049",
+      "reason": "The old anchor began with the truncated VI14 preparedness paragraph. Both witnesses place the complete paragraph before the VI15 heading. Arabic old ar001 also fused the opening of VI15; its clean VI15 paragraph receives a new ID so old links can follow their opening text without stealing the clean paragraph target."
+    },
+    {
+      "retired": "para-N-VI-15-en-001",
+      "target": "para-N-VI-14-en-010",
+      "targetUnit": "N-VI-14",
+      "targetQuote": "As for preparedness itself",
+      "cleanVI15ParagraphNewID": null,
+      "reason": "The old anchor began with the truncated VI14 preparedness paragraph. Both witnesses place the complete paragraph before the VI15 heading. Arabic old ar001 also fused the opening of VI15; its clean VI15 paragraph receives a new ID so old links can follow their opening text without stealing the clean paragraph target."
+    }
+  ],
+  "evidence": "1404 printed p.120, canvas124;1428 vol.1 p.206 and following VI15 heading on207. See complete comparison report VI14/VI15."
+}

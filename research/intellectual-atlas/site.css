@@ -1,0 +1,611 @@
+:root{color-scheme:light dark;--gn-atlas-paper:light-dark(#fbf9f4,#151c20);--gn-atlas-ink:light-dark(#302c29,#e5edf0);--gn-atlas-pool:light-dark(#255969,#9bced7);--gn-atlas-line:light-dark(#dddcd4,#3b4b54)}
+body{margin:0;background:var(--gn-atlas-paper);color:var(--gn-atlas-ink)}
+.gn-atlas-skip{position:absolute;top:8px;left:12px;z-index:50;transform:translateY(-180%);padding:10px 14px;background:var(--gn-atlas-paper);color:var(--gn-atlas-pool)}
+.gn-atlas-skip:focus{transform:translateY(0)}
+.gn-atlas-masthead{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:13px 26px;border-bottom:1px solid var(--gn-atlas-line);max-width:1600px;margin:auto;background:var(--gn-atlas-paper)}
+.gn-atlas-masthead a{color:var(--gn-atlas-pool);text-underline-offset:.2em}
+.gn-atlas-wordmark{display:flex;align-items:center;gap:10px;text-decoration:none;font:28px/1 Georgia,"Times New Roman",serif;letter-spacing:-.6px}
+.gn-atlas-wordmark img{width:37px;height:37px}
+.gn-atlas-wordmark small{display:block;font:8px/1.5 system-ui,sans-serif;letter-spacing:3px;margin-top:4px}
+.gn-atlas-masthead nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:12px 22px;font:13px/1.5 system-ui,sans-serif}
+body #kalam-timeline-app-v3{max-width:1600px;margin:auto;--ia-bg:var(--gn-atlas-paper);--ia-panel:light-dark(#fffefa,#1d272d);--ia-active:light-dark(#255969,#d4e6ee)}
+body #kalam-timeline-app-v3 .ia-head{padding-right:26px}
+body #kalam-timeline-app-v3 .gn-atlas-introduction{padding:15px 26px 17px;background:var(--ia-panel);border-bottom:1px solid var(--ia-line);font-size:14px;line-height:1.55}
+body #kalam-timeline-app-v3 .gn-atlas-introduction p{margin:0 0 7px;max-width:1000px}
+body #kalam-timeline-app-v3 .gn-atlas-deck{font-weight:600}
+body #kalam-timeline-app-v3 .gn-atlas-deck span{font-size:12px;font-weight:400;color:var(--ia-muted)}
+body #kalam-timeline-app-v3 .gn-atlas-notes{margin-top:9px}
+body #kalam-timeline-app-v3 .gn-atlas-notes summary{color:var(--ia-link);font-size:13px;cursor:pointer;width:fit-content;padding:3px 0}
+body #kalam-timeline-app-v3 .gn-atlas-note-body{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(270px,1fr);gap:30px;padding-top:16px;max-width:1200px}
+body #kalam-timeline-app-v3 .gn-atlas-note-body h2{font-size:15px;margin:0 0 9px}
+body #kalam-timeline-app-v3 .gn-atlas-note-body p{font-size:13px;line-height:1.65;margin-bottom:11px}
+body #kalam-timeline-app-v3 .gn-atlas-downloads{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+body #kalam-timeline-app-v3 .gn-atlas-downloads a{display:block;width:fit-content;font-size:14px;font-weight:500;text-underline-offset:.18em}
+body #kalam-timeline-app-v3 .gn-atlas-downloads span{display:block;font-size:12px;font-weight:400;color:var(--ia-muted);margin-top:2px}
+body #kalam-timeline-app-v3 .gn-atlas-source-note{margin-top:15px!important;color:var(--ia-muted)}
+@media(max-width:700px){.gn-atlas-masthead{padding:12px 15px;align-items:flex-start;gap:14px}.gn-atlas-masthead nav{gap:7px;font-size:12px;max-width:175px}.gn-atlas-wordmark{font-size:24px}.gn-atlas-wordmark img{width:32px;height:32px}body #kalam-timeline-app-v3 .ia-head{padding-right:15px}body #kalam-timeline-app-v3 .ia-nav{margin-right:0}body #kalam-timeline-app-v3 .gn-atlas-introduction{padding:12px 15px}body #kalam-timeline-app-v3 .gn-atlas-deck span{display:block;margin-top:3px}body #kalam-timeline-app-v3 .gn-atlas-note-body{grid-template-columns:1fr;gap:15px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* atlas-vertical-scroll-v6: long SVG and detailed evidence panels scroll independently.
+   Higher specificity than the embedded legacy CSS without changing the source dataset. */
+body #kalam-timeline-app-v3 .ia-chart{
+  max-height:min(73dvh,820px);
+  min-height:270px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  overscroll-behavior:auto;
+  scrollbar-gutter:stable;
+  scrollbar-width:thin;
+  touch-action:pan-y;
+}
+body #kalam-timeline-app-v3 .ia-chart svg{touch-action:pan-y}
+@media(min-width:900px){
+  body #kalam-timeline-app-v3 .ia-layout.ia-has-detail .ia-sheet{
+    max-height:calc(100dvh - 16px);
+    overflow-y:auto;
+    overscroll-behavior-y:auto;
+    scrollbar-gutter:stable;
+    scrollbar-width:thin;
+  }
+}
+@media(max-width:700px){
+  body #kalam-timeline-app-v3 .ia-chart{max-height:min(70dvh,660px);min-height:220px}
+}
+body #kalam-timeline-app-v3 .ia-region-network-control{flex:1 1 200px;min-width:0}
+body #kalam-timeline-app-v3 .ia-region-network-control select{min-width:0;max-width:100%;width:100%}
+body #kalam-timeline-app-v3 .ia-route-explorer{padding:10px 25px 13px;border-bottom:1px solid var(--ia-line);background:var(--ia-panel)}
+body #kalam-timeline-app-v3 .ia-route-explorer summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--ia-link);width:fit-content}
+body #kalam-timeline-app-v3 .ia-route-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:13px;margin:14px 0 10px}
+body #kalam-timeline-app-v3 .ia-route-groups section{min-width:0}
+body #kalam-timeline-app-v3 .ia-route-groups h3{font-size:12px;margin-bottom:8px}
+body #kalam-timeline-app-v3 .ia-route-groups button{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:4px;width:100%;margin-bottom:6px;padding:9px 12px;border:1px solid var(--ia-line);background:var(--ia-bg);border-radius:7px}
+body #kalam-timeline-app-v3 .ia-route-groups button small{font-size:11px;color:var(--ia-muted)}
+body #kalam-timeline-app-v3 .ia-route-groups button:hover,body #kalam-timeline-app-v3 .ia-work-routes button:hover{border-color:var(--ia-link);background:var(--ia-soft)}
+body #kalam-timeline-app-v3 .ia-route-groups button:focus-visible,body #kalam-timeline-app-v3 .ia-work-routes button:focus-visible{outline:2px solid var(--ia-link);outline-offset:2px}
+body #kalam-timeline-app-v3 .ia-work-routes{margin:12px 0;padding:10px 0;border-block:1px solid var(--ia-line)}
+body #kalam-timeline-app-v3 .ia-work-routes h3{margin-bottom:7px;font-size:13px}
+body #kalam-timeline-app-v3 .ia-work-routes button{font-size:12px;padding:6px 10px;margin:3px 5px 3px 0;min-height:32px;text-align:left}
+body #kalam-timeline-app-v3 .ia-chart .ia-polity-gap{fill:none;stroke:var(--ia-muted);stroke-dasharray:3 2;stroke-width:1.2;opacity:.85}
+@media(max-width:700px){
+  body #kalam-timeline-app-v3 .ia-route-explorer{padding:10px 15px}
+  body #kalam-timeline-app-v3 .ia-region-network-control{flex:1 1 100%}
+}
+
+/* Atlas hierarchy v6.1 — 3 distinct summary drawers share the same compact cards. */
+body #kalam-timeline-app-v3 .ia-explorer-note{margin:8px 0 10px;max-width:90ch;font-size:12px;line-height:1.55}
+body #kalam-timeline-app-v3 .ia-tradition-explorer .ia-swatch{margin-right:6px;vertical-align:middle}
+body #kalam-timeline-app-v3 .ia-route-explorer summary:focus-visible{outline:2px solid var(--ia-link);outline-offset:4px}
+body #kalam-timeline-app-v3 .ia-route-explorer>summary{padding:2px 0}
+body #kalam-timeline-app-v3 .ia-route-explorer .ia-route-groups button strong{font-weight:600;line-height:1.35}
+@media(max-width:700px){body #kalam-timeline-app-v3 .ia-route-explorer .ia-route-groups{grid-template-columns:1fr}}
+
+/* scholar-network-revision7: a separate layer for academies, curricula and
+   translation networks. Its appearance must never imply a political dynasty. */
+body #kalam-timeline-app-v3 .ia-chart .ia-scholar-network{
+  fill:light-dark(#ded4eb,#55416d);
+  stroke:light-dark(#916aad,#cba7ed);
+  stroke-width:1.2;stroke-dasharray:4 2;opacity:.82
+}
+body #kalam-timeline-app-v3 .ia-chart .ia-scholar-network-selected{
+  stroke:var(--ia-link);stroke-width:2.3;fill:var(--ia-soft);opacity:1
+}
+body #kalam-timeline-app-v3 .ia-chart .ia-network-label{
+  fill:light-dark(#4b315d,#f0e3ff);font-size:11px;font-weight:600;
+  pointer-events:none
+}
+body #kalam-timeline-app-v3 .ia-classifications{margin:14px 0;padding:9px 0;border-block:1px solid var(--ia-line)}
+body #kalam-timeline-app-v3 .ia-classifications>summary{color:var(--ia-link);cursor:pointer;font-weight:600}
+body #kalam-timeline-app-v3 .ia-classifications .ia-detail-row{line-height:1.6}
+body #kalam-timeline-app-v3 .gn-atlas-neoplatonic-journey{border-top:1px solid var(--ia-line);padding:14px 0 0;margin-top:12px}
+body #kalam-timeline-app-v3 .gn-atlas-neoplatonic-journey h2{font-size:15px;margin-bottom:6px}
+body #kalam-timeline-app-v3 .gn-atlas-neoplatonic-journey p{max-width:85ch;font-size:12px;line-height:1.6;color:var(--ia-muted)}
+body #kalam-timeline-app-v3 .gn-atlas-neoplatonic-journey .ia-actions{margin-top:9px}
+body #kalam-timeline-app-v3 .gn-atlas-neoplatonic-journey a{display:inline-block;padding:8px 4px}
+
+/* Revision 8: continuous time scrubbing and non-duration work labels. */
+body #kalam-timeline-app-v3 .ia-travel-track{cursor:grab;touch-action:pan-y;height:44px;overflow:visible}
+body #kalam-timeline-app-v3 .ia-travel-track.ia-dragging{cursor:grabbing}
+body #kalam-timeline-app-v3 .ia-travel-window{pointer-events:none;overflow:visible;transition:none!important}
+body #kalam-timeline-app-v3 .ia-travel-grip{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:29px;height:31px;display:grid;place-items:center;border-radius:8px;background:var(--ia-panel);color:var(--ia-link);border:1px solid var(--ia-link);box-shadow:0 1px 5px light-dark(#00212b36,#0009);pointer-events:none}
+body #kalam-timeline-app-v3 .ia-travel-grip svg{width:15px;height:18px;display:block}
+body #kalam-timeline-app-v3 .ia-travel-ticks{position:absolute;inset:0;pointer-events:none}
+body #kalam-timeline-app-v3 .ia-travel-ticks i{position:absolute;bottom:0;width:1px;height:6px;background:var(--ia-muted);opacity:.5}
+body #kalam-timeline-app-v3 .ia-date-guide{font-size:12px;line-height:1.55;color:var(--ia-muted);margin:0 0 10px;max-width:100ch}
+body #kalam-timeline-app-v3 .ia-date-guide strong{color:var(--ia-fg);font-weight:650}
+body #kalam-timeline-app-v3 .ia-chart .ia-work-label{fill:var(--ia-panel);stroke:var(--ia-line);stroke-width:.9}
+body #kalam-timeline-app-v3 .ia-chart a:hover .ia-work-label{fill:var(--ia-soft);stroke:var(--ia-link)}
+body #kalam-timeline-app-v3 .ia-chart .ia-date-glyph{fill:var(--ia-series);stroke:var(--ia-series);stroke-width:1.4}
+body #kalam-timeline-app-v3 .ia-chart .ia-date-glyph.ia-date-open{fill:var(--ia-panel)}
+body #kalam-timeline-app-v3 .ia-chart .ia-date-window{fill:none;stroke:var(--ia-series);stroke-width:1.5;stroke-dasharray:2 3;opacity:.85}
+body #kalam-timeline-app-v3 .ia-chart .ia-node-date{font-size:10.5px;fill:var(--ia-link);font-weight:600}
+body #kalam-timeline-app-v3 .ia-chart .ia-date-stem{stroke-width:1.1;stroke-dasharray:2 3}
+@media(max-width:650px){body #kalam-timeline-app-v3 .ia-travel-grip{width:30px;height:32px}body #kalam-timeline-app-v3 .ia-date-guide{font-size:11.5px}}
+@media(prefers-reduced-motion:reduce){body #kalam-timeline-app-v3 .ia-travel-window{transition:none}}
+
+body #kalam-timeline-app-v3 .ia-chart .ia-work-label.ia-selected-box{stroke:var(--ia-active);stroke-width:1.8;fill:var(--ia-soft)}
+
+/* Mobile-first 7.1.2. The graphic is the main content, not the last item
+   below a long project preface. All research text and controls remain accessible. */
+body #kalam-timeline-app-v3 .gn-atlas-introduction>summary,
+body #kalam-timeline-app-v3 .ia-secondary-controls>summary{display:none}
+body #kalam-timeline-app-v3 .ia-secondary-controls[open]>.ia-control-row{margin-top:8px}
+body #kalam-timeline-app-v3 .ia-secondary-controls{min-width:0}
+body #kalam-timeline-app-v3 .ia-secondary-controls>.ia-filters{margin-top:8px}
+body #kalam-timeline-app-v3 .ia-mobile-label,
+body #kalam-timeline-app-v3 .gn-atlas-mobile-site-nav{display:none}
+body #kalam-timeline-app-v3 .ia-explorer-shortcuts{display:block;min-width:0}
+body #kalam-timeline-app-v3 .ia-chart-whole{display:none}
+body #kalam-timeline-app-v3 .ia-timeline-help{margin:10px 0 3px;padding:7px 0;border-top:1px solid var(--ia-line)}
+body #kalam-timeline-app-v3 .ia-timeline-help>summary{font-size:12px;font-weight:600;cursor:pointer;color:var(--ia-link);padding:5px 2px}
+body #kalam-timeline-app-v3 .ia-timeline-help>div{padding:10px 3px 3px}
+body #kalam-timeline-app-v3 .ia-timeline-help .ia-travel-help{margin:0 0 8px}
+body #kalam-timeline-app-v3 .ia-timeline-help .ia-date-guide{margin:0 0 4px}
+body #kalam-timeline-app-v3 .ia-timeline-help summary:focus-visible,
+body #kalam-timeline-app-v3 .ia-secondary-controls>summary:focus-visible,
+body #kalam-timeline-app-v3 .gn-atlas-introduction>summary:focus-visible{outline:2px solid var(--ia-link);outline-offset:3px}
+
+@media(max-width:700px), (max-height:550px) and (pointer:coarse){
+  .gn-atlas-masthead{padding:8px 12px;min-height:44px}
+  .gn-atlas-masthead nav{display:none}
+  .gn-atlas-wordmark{font-size:21px}
+  .gn-atlas-wordmark img{width:29px;height:29px}
+  body #kalam-timeline-app-v3 .ia-head{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding:7px 12px 7px}
+  body #kalam-timeline-app-v3 .ia-brand .ia-eyebrow{display:none}
+  body #kalam-timeline-app-v3 h1{font-size:19px;line-height:1.15}
+  body #kalam-timeline-app-v3 .ia-nav{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:2px;max-width:100%;min-width:0;margin:0;scrollbar-width:thin;overscroll-behavior-x:contain}
+  body #kalam-timeline-app-v3 .ia-nav button{flex:0 0 auto;min-height:30px;padding:5px 8px;font-size:11px;white-space:nowrap}
+  body #kalam-timeline-app-v3 .gn-atlas-introduction{padding:0;border-bottom:1px solid var(--ia-line)}
+  body #kalam-timeline-app-v3 .gn-atlas-introduction>summary{display:list-item;cursor:pointer;font-size:12px;font-weight:600;color:var(--ia-link);padding:8px 15px;min-height:36px;list-style-position:inside}
+  body #kalam-timeline-app-v3 .gn-atlas-intro-body{padding:11px 14px 14px}
+  body #kalam-timeline-app-v3 .gn-atlas-mobile-site-nav{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 10px;font-size:12px}
+  body #kalam-timeline-app-v3:not([data-mobile-ready]) .gn-atlas-intro-body,
+  body #kalam-timeline-app-v3:not([data-mobile-ready]) .ia-secondary-controls>:not(summary){display:none!important}
+  body #kalam-timeline-app-v3 .ia-controls{padding:8px 12px 7px;gap:5px}
+  body #kalam-timeline-app-v3 .ia-quick-controls{gap:5px;display:grid;grid-template-columns:minmax(0,1fr)}
+  body #kalam-timeline-app-v3 .ia-search{width:100%;min-width:0;flex:auto}
+  body #kalam-timeline-app-v3 .ia-search input{min-height:38px;padding:6px 10px;font-size:16px}
+  body #kalam-timeline-app-v3 .ia-text-family-control{width:100%;display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;align-items:center;font-size:12px;flex:auto}
+  body #kalam-timeline-app-v3 .ia-text-family-control select{width:100%;max-width:100%;min-height:35px;font-size:14px;padding:5px 8px}
+  body #kalam-timeline-app-v3 .ia-secondary-controls{border-top:1px solid var(--ia-line);padding-top:3px}
+  body #kalam-timeline-app-v3 .ia-secondary-controls>summary{display:list-item;padding:5px 3px;cursor:pointer;font-size:12px;font-weight:600;min-height:29px;color:var(--ia-link);list-style-position:inside}
+  body #kalam-timeline-app-v3 .ia-secondary-controls[open]>.ia-control-row{margin:8px 0}
+  body #kalam-timeline-app-v3 .ia-secondary-controls .ia-field{flex:1 1 45%}
+  body #kalam-timeline-app-v3 .ia-secondary-controls .ia-region-network-control{flex:1 1 100%}
+  body #kalam-timeline-app-v3 .ia-text-family-status:not(.ia-route-active){display:none}
+  body #kalam-timeline-app-v3 .ia-text-family-status.ia-route-active{padding:6px 10px;font-size:11px;max-height:78px;overflow-y:auto}
+  body #kalam-timeline-app-v3 .ia-context-line{display:none}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;padding:6px 10px;border-bottom:1px solid var(--ia-line)}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts .ia-route-explorer{min-width:0;padding:0;margin:0;border:1px solid var(--ia-line);border-radius:6px;overflow:visible;background:var(--ia-panel)}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts .ia-route-explorer>summary{display:block;list-style:none;cursor:pointer;text-align:center;min-height:32px;padding:7px 3px;font-size:12px;color:var(--ia-link);white-space:nowrap}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts .ia-route-explorer>summary::-webkit-details-marker{display:none}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts .ia-route-explorer[open]{grid-column:1/-1;order:5;padding:0 8px 9px}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts .ia-route-explorer[open]>summary{text-align:left;padding-left:6px}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts .ia-route-groups{grid-template-columns:1fr;margin-top:9px}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts .ia-route-groups button{min-height:34px}
+  body #kalam-timeline-app-v3 .ia-desktop-label{display:none}
+  body #kalam-timeline-app-v3 .ia-mobile-label{display:inline}
+  body #kalam-timeline-app-v3 .ia-main{padding:9px 12px 18px}
+  body #kalam-timeline-app-v3 .ia-main-head{margin:0 0 7px;gap:5px;align-items:center}
+  body #kalam-timeline-app-v3 .ia-main-head>div:first-child{gap:0}
+  body #kalam-timeline-app-v3 .ia-main-head h2{font-size:14px;font-weight:650}
+  body #kalam-timeline-app-v3 .ia-main-head [data-range-caption]{font-size:11px}
+  body #kalam-timeline-app-v3 .ia-main-head .ia-actions{gap:4px}
+  body #kalam-timeline-app-v3 .ia-main-head .ia-actions button{min-height:32px;min-width:38px;padding:5px 8px;font-size:11px}
+  body #kalam-timeline-app-v3 .ia-chart-whole{display:inline-block}
+  body #kalam-timeline-app-v3 .ia-nav-overview{margin:0;padding:3px 2px 7px;gap:5px}
+  body #kalam-timeline-app-v3 .ia-travel-track{height:36px}
+  body #kalam-timeline-app-v3 .ia-travel-grip{height:29px}
+  body #kalam-timeline-app-v3 .ia-timeline-help{margin-top:7px}
+  body #kalam-timeline-app-v3 .ia-timeline-help>summary{padding:5px 1px}
+}
+
+/* A source-correct empty intersection is not a failed search.
+   Offer an explicit way to clear restrictive dimensions without changing time. */
+body #kalam-timeline-app-v3 .ia-filter-empty{
+  text-align:left;max-width:700px;margin:18px 0;padding:18px 20px;
+  border:1px solid var(--ia-line);border-radius:9px;
+  background:var(--ia-panel);color:var(--ia-fg)
+}
+body #kalam-timeline-app-v3 .ia-filter-empty h3{font-size:14px;margin:0 0 5px}
+body #kalam-timeline-app-v3 .ia-filter-empty p{font-size:12px;line-height:1.5;color:var(--ia-muted);margin:0 0 11px}
+body #kalam-timeline-app-v3 .ia-filter-empty button{font-size:12px;min-height:36px;color:var(--ia-link)}
+
+
+.ia-reader-return{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:14px 18px;margin:8px 0 20px;border:1px solid var(--ia-line,#b7c1bd);border-radius:10px;background:var(--ia-panel,#e9eee9)}.ia-reader-return a,.ia-reader-links a{font-weight:600}.ia-reader-return span{font-size:12px}.ia-reader-links{padding:14px 0;border-block:1px solid var(--ia-line,#b7c1bd);margin:18px 0}
+
+#kalam-timeline-app-v3.ia-from-reader .gn-atlas-introduction:not([open]){display:none}
+#kalam-timeline-app-v3.ia-from-reader .gn-atlas-introduction{display:none!important}
+
+.ia-reader-return{position:sticky;top:0;z-index:50;background:var(--ia-panel)}.ia-from-reader .ia-layout{scroll-margin-top:75px}
+
+/* Evidenced directed replies to Fakhr al-Dīn al-Rāzī (not a textual family). */
+body #kalam-timeline-app-v3 .ia-chart .ia-relation.ia-route-response{stroke-width:2.7;opacity:1}
+body #kalam-timeline-app-v3 .ia-chart .ia-relation.ia-route-context{stroke:var(--ia-muted);stroke-dasharray:4 5;stroke-width:1.2;opacity:.55}
+body #kalam-timeline-app-v3 .ia-response-register{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:12px;margin:12px 0}
+body #kalam-timeline-app-v3 .ia-response-card{border:1px solid var(--ia-line);border-radius:9px;background:var(--ia-panel);padding:14px;display:grid;align-content:start;gap:10px;min-width:0}
+body #kalam-timeline-app-v3 .ia-response-card h3{font-size:14px;font-weight:650}
+body #kalam-timeline-app-v3 .ia-response-card button[data-work]{border:0;background:none;min-height:auto;padding:0;color:var(--ia-link);text-align:left;text-decoration:underline;text-underline-offset:2px}
+body #kalam-timeline-app-v3 .ia-response-card .ia-actions{align-items:center;flex-wrap:wrap}
+@media(max-width:700px){body #kalam-timeline-app-v3 .ia-response-register{grid-template-columns:minmax(0,1fr)}}
+
+/* Family-level, source-backed critique filter: no special author toolbar buttons. */
+body #kalam-timeline-app-v3 .ia-text-family-status .ia-family-critique-toggle{
+  display:inline-flex;align-items:center;gap:5px;vertical-align:middle;
+  margin:0 5px;border:1px solid var(--ia-line);border-radius:999px;
+  padding:3px 8px;cursor:pointer;background:var(--ia-panel);color:var(--ia-fg);
+  font-size:11px;font-weight:600;white-space:normal;
+}
+body #kalam-timeline-app-v3 .ia-text-family-status .ia-family-critique-toggle input{
+  width:14px;height:14px;margin:0;flex:none;accent-color:var(--ia-link);
+}
+body #kalam-timeline-app-v3 .ia-text-family-status .ia-family-critique-toggle:focus-within{
+  outline:2px solid var(--ia-link);outline-offset:2px;
+}
+@media(max-width:700px){
+  body #kalam-timeline-app-v3 .ia-text-family-status .ia-family-critique-toggle{
+    padding:4px 7px;margin:2px 3px;min-height:29px;
+  }
+}
+
+/* Unified explore interface v9: the visual map is primary, never a wall of menus. */
+body #kalam-timeline-app-v3 .ia-quick-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+body #kalam-timeline-app-v3 .ia-quick-controls .ia-search{flex:1 1 245px}
+body #kalam-timeline-app-v3 .ia-quick-controls .ia-text-family-control{display:none!important}
+body #kalam-timeline-app-v3 .ia-explorer-shortcuts{display:none!important}
+body #kalam-timeline-app-v3 .ia-secondary-controls>summary{display:none!important}
+body #kalam-timeline-app-v3 .ia-secondary-controls:not([open]){display:none!important}
+body #kalam-timeline-app-v3 .ia-secondary-controls[open]{border:1px solid var(--ia-line);padding:11px;border-radius:9px}
+body #kalam-timeline-app-v3 .ia-quick-controls .ia-explore-open{font-size:13px;font-weight:650;white-space:nowrap;min-height:38px;background:var(--ia-active);color:var(--ia-onactive);border-color:transparent}
+body #kalam-timeline-app-v3 .ia-quick-controls .ia-quick-view{display:flex;gap:5px;align-items:center;color:var(--ia-muted);font-size:12px;white-space:nowrap}
+body #kalam-timeline-app-v3 .ia-quick-controls .ia-quick-view select{max-width:150px;min-height:38px;font-size:13px;padding:6px 9px}
+body #kalam-timeline-app-v3 .ia-quick-controls .ia-advanced-open{min-height:38px;min-width:38px;font-size:19px;padding:4px 9px}
+body #kalam-timeline-app-v3 .ia-text-family-status:not(.ia-route-active){display:none}
+body #kalam-timeline-app-v3 .ia-controls{gap:7px}
+body #kalam-timeline-app-v3 .ia-explore-overlay{position:fixed;inset:0;z-index:1000;display:flex;align-items:flex-end;justify-content:center;color:var(--ia-fg)}
+body #kalam-timeline-app-v3 .ia-explore-overlay[hidden]{display:none!important}
+body #kalam-timeline-app-v3 .ia-explore-backdrop{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;border-radius:0;background:#0009}
+body #kalam-timeline-app-v3 .ia-explore-panel{position:relative;display:flex;flex-direction:column;max-height:min(87dvh,810px);width:min(650px,100%);background:var(--ia-panel);border:1px solid var(--ia-line);border-radius:17px 17px 0 0;box-shadow:0 -8px 45px #0004;overflow:hidden;outline:none}
+body #kalam-timeline-app-v3 .ia-explore-heading{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px 18px;border-bottom:1px solid var(--ia-line)}
+body #kalam-timeline-app-v3 .ia-explore-heading strong{font-size:16px}
+body #kalam-timeline-app-v3 .ia-explore-heading p{color:var(--ia-muted);font-size:12px;margin:3px 0 0}
+body #kalam-timeline-app-v3 .ia-explore-heading .ia-explore-close{font-size:26px;line-height:1;min-width:36px;padding:3px}
+body #kalam-timeline-app-v3 .ia-explore-content{padding:16px 18px 22px;overflow-y:auto;min-height:0;overscroll-behavior:contain}
+body #kalam-timeline-app-v3 .ia-explore-eyebrow{font-size:11px;letter-spacing:.6px;font-weight:650;color:var(--ia-muted);text-transform:uppercase;margin:0 0 8px}
+body #kalam-timeline-app-v3 .ia-science-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin:0 0 17px}
+body #kalam-timeline-app-v3 .ia-science-choices button{text-align:left;min-width:0;font-size:12px;padding:10px;line-height:1.35;min-height:42px;overflow-wrap:anywhere}
+body #kalam-timeline-app-v3 .ia-science-choices button[aria-pressed="true"]{background:var(--ia-active);color:var(--ia-onactive);border-color:transparent}
+body #kalam-timeline-app-v3 .ia-explore-subtitle{font-size:13px;font-weight:650;margin:10px 0 7px}
+body #kalam-timeline-app-v3 .ia-explore-note{color:var(--ia-muted);font-size:12px;line-height:1.5;margin:6px 0 12px}
+body #kalam-timeline-app-v3 .ia-explore-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+body #kalam-timeline-app-v3 .ia-explore-grid button{font-size:12px;text-align:left;padding:11px;min-width:0;white-space:normal;overflow-wrap:anywhere;min-height:41px}
+body #kalam-timeline-app-v3 .ia-explore-grid button[aria-pressed="true"]{background:var(--ia-active);color:var(--ia-onactive);border-color:transparent}
+body #kalam-timeline-app-v3 .ia-explore-grid button small{display:block;color:var(--ia-muted);margin-top:3px;font-size:10px}
+body #kalam-timeline-app-v3 .ia-explore-family-list{display:grid;grid-template-columns:minmax(0,1fr);gap:6px;margin:8px 0 10px}
+body #kalam-timeline-app-v3 .ia-explore-family-list button{display:block;text-align:left;white-space:normal;padding:10px 12px;min-height:40px;overflow-wrap:anywhere}
+body #kalam-timeline-app-v3 .ia-explore-family-list button small{display:block;font-size:11px;color:var(--ia-muted)}
+body #kalam-timeline-app-v3 .ia-explore-panel a{color:var(--ia-link)}
+body #kalam-timeline-app-v3 .ia-explore-planned{padding:12px;border:1px solid var(--ia-line);border-radius:9px;background:var(--ia-soft);font-size:12px;line-height:1.5;margin-top:11px}
+body #kalam-timeline-app-v3 .ia-explore-planned strong{display:block;margin-bottom:5px}
+body #kalam-timeline-app-v3 .ia-explore-planned ul{padding-left:18px;margin:6px 0 0}
+body #kalam-timeline-app-v3 .ia-network-scroll{max-height:min(76dvh,790px);width:100%;overflow:auto;border:1px solid var(--ia-line);border-radius:9px;background:var(--ia-panel);overscroll-behavior:contain;scrollbar-width:thin}
+body #kalam-timeline-app-v3 .ia-network-scroll svg{display:block;max-width:none}
+body #kalam-timeline-app-v3 .ia-network-node{cursor:pointer}
+body #kalam-timeline-app-v3 .ia-network-node rect{fill:var(--ia-panel);stroke:var(--ia-line);stroke-width:1.2}
+body #kalam-timeline-app-v3 .ia-network-node.is-root rect{fill:var(--ia-soft);stroke:var(--ia-link);stroke-width:2}
+body #kalam-timeline-app-v3 .ia-network-node.is-selected rect{stroke:var(--ia-active);stroke-width:2.5}
+body #kalam-timeline-app-v3 .ia-network-node text{fill:var(--ia-fg);font-size:11px}
+body #kalam-timeline-app-v3 .ia-network-node .ia-network-node-sub{fill:var(--ia-muted);font-size:10px}
+body #kalam-timeline-app-v3 .ia-network-edge{stroke:var(--ia-link);stroke-width:1.8;fill:none;opacity:.8}
+body #kalam-timeline-app-v3 .ia-network-edge.ia-network-critique{stroke:var(--ia-bad);stroke-width:2.3}
+body #kalam-timeline-app-v3 .ia-network-edge.ia-network-weak{stroke-dasharray:4 5}
+body #kalam-timeline-app-v3 .ia-network-edge-hit{stroke:transparent;stroke-width:17;fill:none;pointer-events:stroke}
+body #kalam-timeline-app-v3 .ia-network-help{font-size:12px;color:var(--ia-muted);margin:10px 0}
+body #kalam-timeline-app-v3 .ia-network-legend{display:flex;flex-wrap:wrap;gap:5px 12px;color:var(--ia-muted);font-size:11px;margin:7px 0 12px}
+body #kalam-timeline-app-v3 .ia-network-legend span{display:inline-flex;align-items:center;gap:5px}
+body #kalam-timeline-app-v3 .ia-network-legend b{display:inline-block;width:17px;height:0;border-top:2px solid var(--ia-link)}
+body #kalam-timeline-app-v3 .ia-network-legend .is-critical b{border-color:var(--ia-bad)}
+body #kalam-timeline-app-v3 .ia-network-legend .is-uncertain b{border-style:dashed}
+@media(min-width:850px){
+  body #kalam-timeline-app-v3 .ia-explore-overlay{align-items:center}
+  body #kalam-timeline-app-v3 .ia-explore-panel{border-radius:17px;max-height:min(82dvh,850px)}
+}
+@media(max-width:700px), (max-height:550px) and (pointer:coarse){
+  body #kalam-timeline-app-v3 .ia-head{padding:5px 12px}
+  body #kalam-timeline-app-v3 .ia-nav{display:none}
+  body #kalam-timeline-app-v3 .ia-controls{padding:6px 10px}
+  body #kalam-timeline-app-v3 .ia-quick-controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,auto) auto;gap:5px}
+  body #kalam-timeline-app-v3 .ia-quick-controls .ia-search{grid-column:1/-1;min-width:0}
+  body #kalam-timeline-app-v3 .ia-quick-controls .ia-explore-open{min-height:34px;padding:5px 11px}
+  body #kalam-timeline-app-v3 .ia-quick-controls .ia-quick-view{justify-self:end;min-width:0}
+  body #kalam-timeline-app-v3 .ia-quick-controls .ia-quick-view select{max-width:128px;min-height:34px}
+  body #kalam-timeline-app-v3 .ia-quick-controls .ia-advanced-open{min-height:34px;min-width:34px}
+  body #kalam-timeline-app-v3 .ia-explore-panel{max-height:min(88dvh,930px);border-radius:18px 18px 0 0;padding-bottom:env(safe-area-inset-bottom,0px)}
+  body #kalam-timeline-app-v3 .ia-explore-content{padding:12px}
+  body #kalam-timeline-app-v3 .ia-science-choices{gap:5px}
+  body #kalam-timeline-app-v3 .ia-science-choices button{min-height:41px;padding:8px}
+  body #kalam-timeline-app-v3 .ia-context-line{display:none}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts{display:none!important}
+  body #kalam-timeline-app-v3 .ia-text-family-status.ia-route-active{max-height:54px;overflow:auto}
+  body #kalam-timeline-app-v3 .ia-secondary-controls[open]{padding:8px}
+  body #kalam-timeline-app-v3 .ia-network-scroll{max-height:min(72dvh,720px)}
+  body #kalam-timeline-app-v3 .ia-layout.ia-has-detail .ia-sheet{position:fixed;left:0;right:0;bottom:0;top:auto;z-index:850;max-height:min(77dvh,850px);overflow:auto;border:1px solid var(--ia-line);border-radius:17px 17px 0 0;padding-bottom:env(safe-area-inset-bottom,0px);box-shadow:0 -8px 35px #0005}
+}
+
+body #kalam-timeline-app-v3 .ia-network-node:focus-visible rect,
+body #kalam-timeline-app-v3 .ia-network-node:hover rect{stroke:var(--ia-link);stroke-width:2.5}
+body #kalam-timeline-app-v3 .ia-network-scroll a[data-edge]:focus-visible .ia-network-edge{stroke-width:4}
+@media(max-width:700px), (max-height:550px) and (pointer:coarse){
+  body #kalam-timeline-app-v3 .ia-main-head button[data-action="pan-back"],
+  body #kalam-timeline-app-v3 .ia-main-head button[data-action="pan-forward"]{display:none}
+  body #kalam-timeline-app-v3 .ia-main-head .ia-actions{gap:3px}
+}
+
+body #kalam-timeline-app-v3 .ia-explore-footer{margin-top:17px;padding-top:12px;border-top:1px solid var(--ia-line);display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+body #kalam-timeline-app-v3 .ia-explore-footer button{font-size:12px;min-height:34px}
+body #kalam-timeline-app-v3 .ia-explore-footer a{font-size:12px}
+@media(min-width:701px){body #kalam-timeline-app-v3 .ia-quick-controls .ia-quick-view{display:none}}
+@media(max-width:360px){
+ body #kalam-timeline-app-v3 .ia-quick-controls .ia-quick-view{font-size:0}
+ body #kalam-timeline-app-v3 .ia-quick-controls .ia-quick-view select{max-width:117px}
+}
+
+/* Cross-science original-text acquisitions remain separate from verified argument edges. */
+body #kalam-timeline-app-v3 .ia-explore-library{margin:14px 0 11px;padding:12px 13px;border-radius:9px;border:1px solid var(--ia-line);background:var(--ia-soft)}
+body #kalam-timeline-app-v3 .ia-explore-library strong{display:block;font-size:12px}
+body #kalam-timeline-app-v3 .ia-explore-library p{margin:4px 0 9px;color:var(--ia-muted);font-size:12px;line-height:1.5}
+body #kalam-timeline-app-v3 .ia-explore-library a{display:inline-block;padding:7px 11px;border:1px solid var(--ia-link);border-radius:8px;color:var(--ia-link);font-size:12px;font-weight:650;text-decoration:none}
+body #kalam-timeline-app-v3 .ia-explore-library a:hover,body #kalam-timeline-app-v3 .ia-explore-library a:focus-visible{background:var(--ia-panel)}
+
+/* Discipline/source map: source-attested bibliographic work views. */
+body #kalam-timeline-app-v3.ia-source-mode .ia-advanced-open,
+body #kalam-timeline-app-v3.ia-source-mode .ia-secondary-controls{display:none}
+body #kalam-timeline-app-v3 .ia-source-select{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0}
+body #kalam-timeline-app-v3 .ia-source-select button{font-size:12px;min-height:35px;padding:6px 10px;border-radius:7px}
+body #kalam-timeline-app-v3 .ia-source-select button[aria-pressed="true"]{background:var(--ia-active);color:var(--ia-onactive);border-color:transparent}
+body #kalam-timeline-app-v3 .ia-source-count{font-size:12px;color:var(--ia-fg);font-weight:650;margin:8px 0}
+body #kalam-timeline-app-v3 .ia-source-lane{fill:var(--ia-fg);font-size:12px;font-weight:650}
+body #kalam-timeline-app-v3 .ia-source-node:focus-visible rect,
+body #kalam-timeline-app-v3 .ia-source-node:hover rect{stroke:var(--ia-link);stroke-width:3}
+body #kalam-timeline-app-v3 .ia-source-edge{fill:none;stroke:var(--ia-link);stroke-width:1.75;stroke-dasharray:5 3}
+body #kalam-timeline-app-v3 .ia-source-inventory{margin:12px 0;border-top:1px solid var(--ia-line);padding-top:10px}
+body #kalam-timeline-app-v3 .ia-source-inventory summary{cursor:pointer;font-size:12px;font-weight:650;color:var(--ia-fg)}
+body #kalam-timeline-app-v3 .ia-source-inventory ul{padding-left:22px;margin:8px 0}
+body #kalam-timeline-app-v3 .ia-source-inventory li{margin:8px 0;font-size:12px;overflow-wrap:anywhere}
+body #kalam-timeline-app-v3 .ia-source-library-link{font-size:12px;margin:14px 0}
+body #kalam-timeline-app-v3 .ia-source-library-link a{display:inline-block;padding:8px 12px;border:1px solid var(--ia-line);border-radius:7px;font-weight:650}
+@media(max-width:700px){
+  body #kalam-timeline-app-v3 .ia-source-select{gap:4px;margin:6px 0}
+  body #kalam-timeline-app-v3 .ia-source-select button{min-height:40px;padding:7px 9px}
+  body #kalam-timeline-app-v3 .ia-source-count{margin:7px 0}
+  body #kalam-timeline-app-v3 .ia-source-library-link a{display:block;text-align:center}
+}
+
+/* Landscape phones: the nav is hidden for short touch viewports, so do NOT also
+   hide the only display-mode selector at min-width:701px. */
+@media (min-width:701px) and (max-height:550px) and (pointer:coarse){
+  body #kalam-timeline-app-v3 .ia-quick-controls .ia-quick-view{
+    display:flex!important;min-width:0;
+  }
+}
+
+/* Expanded catalogues are linked research layers, not network edges. */
+body #kalam-timeline-app-v3 .ia-source-expansion{margin:15px 0 10px;padding:12px;border:1px solid var(--ia-line);border-radius:9px;background:var(--ia-soft)}
+body #kalam-timeline-app-v3 .ia-source-expansion h3{font-size:14px;margin:0 0 6px;font-weight:650}
+body #kalam-timeline-app-v3 .ia-source-expansion p{font-size:12px;color:var(--ia-muted);line-height:1.5;margin:6px 0 10px}
+body #kalam-timeline-app-v3 .ia-source-expansion-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(205px,100%),1fr));gap:6px;margin:8px 0 11px}
+body #kalam-timeline-app-v3 .ia-source-expansion-grid a{display:block;min-width:0;padding:7px 9px;border-radius:6px;text-decoration:none;background:var(--ia-panel);border:1px solid var(--ia-line);font-size:12px}
+body #kalam-timeline-app-v3 .ia-source-expansion-grid a:hover{border-color:var(--ia-link)}
+body #kalam-timeline-app-v3 .ia-source-expansion-grid span{display:block;line-height:1.5;text-align:right;overflow-wrap:anywhere}
+body #kalam-timeline-app-v3 .ia-source-expansion-grid small{font-size:10px;color:var(--ia-muted);line-height:1.4;display:block;margin-top:4px}
+body #kalam-timeline-app-v3 .ia-source-expansion .ia-expansion-all{font-size:12px;font-weight:650;display:inline-block;padding:8px 11px;border:1px solid var(--ia-link);border-radius:7px;background:var(--ia-panel)}
+/* GNAMMA integrated bibliographic map: differentiated citation layers. */
+body #kalam-timeline-app-v3 .gnbib-controls{display:flex;flex-wrap:wrap;gap:8px;align-items:end;margin:10px 0}
+body #kalam-timeline-app-v3 .gnbib-controls label{display:grid;gap:4px;min-width:min(195px,100%);font-size:11px;color:var(--ia-muted)}
+body #kalam-timeline-app-v3 .gnbib-controls select{width:100%;max-width:270px;font-size:12px;min-height:38px}
+body #kalam-timeline-app-v3 .gnbib-controls button{font-size:11px;min-height:38px}
+body #kalam-timeline-app-v3 .gnbib-schools{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0}
+body #kalam-timeline-app-v3 .gnbib-schools button{font-size:12px;padding:6px 10px;min-height:36px}
+body #kalam-timeline-app-v3 .gnbib-schools button[aria-pressed="true"]{background:var(--ia-active);color:var(--ia-onactive);border-color:transparent}
+body #kalam-timeline-app-v3 .gnbib-map{margin:13px 0;border:1px solid var(--ia-line);border-radius:9px;background:var(--ia-panel);padding:10px}
+body #kalam-timeline-app-v3 .gnbib-muted{color:var(--ia-muted);font-size:11px;line-height:1.6;max-width:100ch}
+body #kalam-timeline-app-v3 .gnbib-note{font-size:11px;color:var(--ia-muted);padding:8px 10px;border-left:2px solid var(--ia-line);background:var(--ia-soft);margin:9px 0}
+body #kalam-timeline-app-v3 .gnbib-overflow{max-width:100%;overflow-x:auto;overflow-y:auto;max-height:min(66dvh,700px);overscroll-behavior:contain;scrollbar-width:thin;border:1px solid var(--ia-line);border-radius:8px}
+body #kalam-timeline-app-v3 .gnbib-grid{display:grid;grid-template-columns:175px repeat(9,94px);align-items:stretch;min-width:max-content;background:var(--ia-panel)}
+body #kalam-timeline-app-v3 .gnbib-grid>*{border-bottom:1px solid var(--ia-line);border-right:1px solid var(--ia-line);min-height:59px}
+body #kalam-timeline-app-v3 .gnbib-head{font-size:10px;color:var(--ia-muted);font-weight:650;text-align:center;padding:11px 5px;position:sticky;top:0;background:var(--ia-soft);z-index:2}
+body #kalam-timeline-app-v3 .gnbib-head:first-child{position:sticky;left:0;z-index:5;text-align:left}
+body #kalam-timeline-app-v3 .gnbib-rowlabel{position:sticky;left:0;z-index:3;background:var(--ia-panel);padding:10px 9px;font-size:11px;font-weight:650;line-height:1.3;overflow-wrap:anywhere}
+body #kalam-timeline-app-v3 .gnbib-rowlabel small{display:block;color:var(--ia-muted);font-weight:400;font-size:10px;margin-top:4px}
+body #kalam-timeline-app-v3 .gnbib-cell{border-radius:0!important;border:0!important;border-right:1px solid var(--ia-line)!important;border-bottom:1px solid var(--ia-line)!important;display:flex;align-items:center;justify-content:center;min-width:94px;min-height:59px;padding:4px!important;background:transparent!important;cursor:pointer}
+body #kalam-timeline-app-v3 .gnbib-cell:hover,body #kalam-timeline-app-v3 .gnbib-current{background:var(--ia-soft)!important}
+body #kalam-timeline-app-v3 .gnbib-cell:focus-visible{outline:3px solid var(--ia-link);outline-offset:-3px}
+body #kalam-timeline-app-v3 .gnbib-blank{font-size:10px;color:var(--ia-line);cursor:default}
+body #kalam-timeline-app-v3 .gnbib-circle{display:flex;align-items:center;justify-content:center;min-width:23px;min-height:23px;padding:1px;background:var(--ia-link);color:var(--ia-panel);border-radius:50%;font-size:10px;font-weight:700;font-variant-numeric:tabular-nums;box-shadow:0 1px 4px #0002}
+body #kalam-timeline-app-v3 .gnbib-current .gnbib-circle{outline:3px solid var(--ia-fg);outline-offset:3px}
+body #kalam-timeline-app-v3 .gnbib-focus{margin:8px 0;color:var(--ia-fg);font-size:12px}
+body #kalam-timeline-app-v3 .gnbib-focus button{font-size:11px;padding:4px 8px;min-height:29px;margin-left:4px}
+body #kalam-timeline-app-v3 .gnbib-results{margin:14px 0;border-top:1px solid var(--ia-line);padding-top:10px}
+body #kalam-timeline-app-v3 .gnbib-results>h3{font-size:14px;margin:0 0 5px}
+body #kalam-timeline-app-v3 .gnbib-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(225px,100%),1fr));gap:8px;margin:10px 0}
+body #kalam-timeline-app-v3 .gnbib-card{padding:10px;border:1px solid var(--ia-line);background:var(--ia-panel);border-radius:8px;display:grid;align-content:start;gap:6px;min-width:0}
+body #kalam-timeline-app-v3 .gnbib-book{border:0;background:transparent;padding:0;display:block;text-align:left;min-height:0!important;color:var(--ia-link);width:100%}
+body #kalam-timeline-app-v3 .gnbib-book span{display:block;font-size:15px;font-weight:650;text-align:right;line-height:1.7;overflow-wrap:anywhere}
+body #kalam-timeline-app-v3 .gnbib-book small{display:block;font-size:11px;color:var(--ia-muted);line-height:1.4;text-align:left;overflow-wrap:anywhere}
+body #kalam-timeline-app-v3 .gnbib-cardmeta{font-size:10px;color:var(--ia-muted)}
+body #kalam-timeline-app-v3 .gnbib-citation a{font-size:11px;text-underline-offset:2px;overflow-wrap:anywhere}
+body #kalam-timeline-app-v3 .gnbib-pages{display:flex;gap:8px;justify-content:center;align-items:center;margin:14px 0;font-size:12px}
+body #kalam-timeline-app-v3 .gnbib-pages button{font-size:12px;min-height:36px}
+body #kalam-timeline-app-v3 .gnbib-detail{border:1px solid var(--ia-line);background:var(--ia-soft);border-radius:9px;padding:14px;margin:12px 0;scroll-margin-top:15px}
+body #kalam-timeline-app-v3 .gnbib-detail-head{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:12px;color:var(--ia-muted)}
+body #kalam-timeline-app-v3 .gnbib-detail-head button{font-size:19px;min-height:30px;min-width:30px;padding:2px 7px}
+body #kalam-timeline-app-v3 .gnbib-detail h3{text-align:right;line-height:1.8;font-size:20px;margin:5px 0}
+body #kalam-timeline-app-v3 .gnbib-detail p{font-size:12px;margin:7px 0;line-height:1.6}
+body #kalam-timeline-app-v3 .gnbib-detail dl{display:grid;grid-template-columns:115px minmax(0,1fr);gap:5px 10px;font-size:12px;margin:12px 0}
+body #kalam-timeline-app-v3 .gnbib-detail dt{color:var(--ia-muted)}
+body #kalam-timeline-app-v3 .gnbib-detail dd{margin:0;overflow-wrap:anywhere}
+@media(max-width:700px){
+ body #kalam-timeline-app-v3 .gnbib-grid{grid-template-columns:116px repeat(9,82px)}
+ body #kalam-timeline-app-v3 .gnbib-cell{min-width:82px}
+ body #kalam-timeline-app-v3 .gnbib-rowlabel{font-size:10px;padding:7px 5px}
+ body #kalam-timeline-app-v3 .gnbib-map{padding:7px}
+ body #kalam-timeline-app-v3 .gnbib-controls{gap:6px}
+ body #kalam-timeline-app-v3 .gnbib-controls label{min-width:145px;flex:1}
+ body #kalam-timeline-app-v3 .gnbib-cards{grid-template-columns:minmax(0,1fr)}
+ body #kalam-timeline-app-v3 .gnbib-detail dl{grid-template-columns:83px minmax(0,1fr)}
+}
+
+body #kalam-timeline-app-v3 .gnbib-tabs{display:flex;flex-wrap:wrap;gap:5px;margin:7px 0 11px}
+body #kalam-timeline-app-v3 .gnbib-tabs button{font-size:12px;padding:6px 11px;min-height:38px}
+body #kalam-timeline-app-v3 .gnbib-tabs button[aria-pressed="true"]{background:var(--ia-active);color:var(--ia-onactive);border-color:transparent}
+
+/* Subject-first real SVG networks, replacing book-card and period-matrix views. */
+#kalam-timeline-app-v3 .gnv-tabs{display:flex;gap:5px;flex-wrap:wrap;margin:6px 0 9px}
+#kalam-timeline-app-v3 .gnv-tabs button{padding:7px 11px;font-size:12px;min-height:38px;border:1px solid var(--ia-line);border-radius:7px}
+#kalam-timeline-app-v3 .gnv-tabs button[aria-pressed="true"]{background:var(--ia-active);color:var(--ia-onactive);border-color:transparent}
+#kalam-timeline-app-v3 .gnv-schools button{font-size:11px;min-height:36px}
+#kalam-timeline-app-v3 .gnv-toolbar{display:flex;align-items:end;flex-wrap:wrap;gap:9px;padding:6px 0;margin-bottom:6px}
+#kalam-timeline-app-v3 .gnv-toolbar>button{font-size:12px;min-height:35px}
+#kalam-timeline-app-v3 .gnv-evidence-select{display:grid;gap:4px;font-size:11px;color:var(--ia-muted);max-width:235px}
+#kalam-timeline-app-v3 .gnv-evidence-select select{font-size:12px;min-height:36px}
+#kalam-timeline-app-v3 .gnv-zoom{display:flex;align-items:center;gap:4px;margin-left:auto;font-size:12px}
+#kalam-timeline-app-v3 .gnv-zoom button{min-width:35px;min-height:35px;padding:5px;font-size:14px}
+#kalam-timeline-app-v3 .gnv-zoom span{min-width:40px;text-align:center;color:var(--ia-muted)}
+#kalam-timeline-app-v3 .gnv-pager{display:flex;justify-content:center;align-items:center;gap:10px;margin:8px 0;font-size:12px}
+#kalam-timeline-app-v3 .gnv-pager button{font-size:12px;padding:6px 10px;min-height:34px}
+#kalam-timeline-app-v3 .gnv-picture{border:1px solid var(--ia-line);border-radius:10px;background:var(--ia-panel);padding:10px;min-width:0}
+#kalam-timeline-app-v3 .gnv-layout{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;min-width:0;align-items:start}
+#kalam-timeline-app-v3 .gnv-legend{display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:10px;color:var(--ia-muted)}
+#kalam-timeline-app-v3 .gnv-legend span{display:inline-flex;gap:5px;align-items:center}
+#kalam-timeline-app-v3 .gnv-legend i{display:inline-block;width:20px;height:0;border-top:2px dashed var(--ia-link)}
+#kalam-timeline-app-v3 .gnv-legend .gnv-key-verified{border-top:3px solid #ad7c26}
+#kalam-timeline-app-v3 .gnv-legend .gnv-key-jurist{border-top:3px dotted var(--ia-fg)}
+#kalam-timeline-app-v3 .gnv-caution{font-size:11px;line-height:1.55;color:var(--ia-muted);border-left:2px solid var(--ia-line);padding:6px 10px;margin:8px 0 11px}
+#kalam-timeline-app-v3 .gnv-canvas{height:min(70dvh,690px);min-height:320px;max-width:100%;overflow:auto;scrollbar-width:thin;overscroll-behavior:contain;background:var(--ia-soft);border:1px solid var(--ia-line);border-radius:9px;touch-action:pan-x pan-y}
+#kalam-timeline-app-v3 .gnv-canvas svg{display:block;max-width:none;max-height:none;overflow:visible;background:transparent}
+#kalam-timeline-app-v3 .gnv-category-edge{fill:none;stroke:var(--ia-link);stroke-width:1.6;stroke-dasharray:5 5;stroke-opacity:.44;pointer-events:none}
+#kalam-timeline-app-v3 .gnv-evidence-edge{fill:none;stroke:#ad7c26;stroke-width:3;stroke-opacity:.9}
+#kalam-timeline-app-v3 #gnv-arrow path{fill:#ad7c26}
+#kalam-timeline-app-v3 .gnv-node{cursor:pointer}
+#kalam-timeline-app-v3 .gnv-node rect{stroke:var(--ia-line);stroke-width:1.4;fill:var(--ia-panel);filter:drop-shadow(0 1px 2px #0002);transition:fill .12s,stroke-width .12s}
+#kalam-timeline-app-v3 .gnv-node:hover rect{stroke:var(--ia-link);stroke-width:3;fill:var(--ia-soft)}
+#kalam-timeline-app-v3 .gnv-node:focus-visible rect{stroke:var(--ia-link);stroke-width:4}
+#kalam-timeline-app-v3 .gnv-node.gnv-picked rect{stroke:var(--ia-link);stroke-width:3.5}
+#kalam-timeline-app-v3 .gnv-group rect{fill:var(--ia-active);stroke:var(--ia-link);stroke-width:1.2}
+#kalam-timeline-app-v3 .gnv-group .gnv-label,#kalam-timeline-app-v3 .gnv-group .gnv-sub{fill:var(--ia-onactive)}
+#kalam-timeline-app-v3 .gnv-home rect{fill:var(--ia-soft);stroke:var(--ia-link);stroke-width:2.6}
+#kalam-timeline-app-v3 .gnv-jurist rect{fill:light-dark(#f5eee0,#383126);stroke:#ac8b52;stroke-width:2}
+#kalam-timeline-app-v3 .gnv-node text{pointer-events:none;dominant-baseline:central}
+#kalam-timeline-app-v3 .gnv-node .gnv-label{fill:var(--ia-fg);font-family:system-ui,"Noto Sans Arabic",sans-serif;font-size:13px;font-weight:660;unicode-bidi:plaintext}
+#kalam-timeline-app-v3 .gnv-node .gnv-sub{fill:var(--ia-muted);font-family:system-ui,sans-serif;font-size:10px}
+#kalam-timeline-app-v3 .gnv-jurist .gnv-label{font-size:12px}
+#kalam-timeline-app-v3 .gnv-zoom button:focus-visible,#kalam-timeline-app-v3 .gnv-node:focus-visible{outline:2px solid var(--ia-link);outline-offset:2px}
+#kalam-timeline-app-v3 .gnv-detail{width:min(335px,34vw);min-width:260px;max-height:min(70dvh,690px);overflow:auto;border:1px solid var(--ia-line);border-radius:9px;background:var(--ia-panel);padding:12px;box-shadow:0 3px 8px #0001}
+#kalam-timeline-app-v3 .gnv-detail[hidden]{display:none!important}
+#kalam-timeline-app-v3 .gnv-detail-head{display:flex;align-items:center;justify-content:space-between;gap:5px;font-size:12px}
+#kalam-timeline-app-v3 .gnv-detail-head button{padding:2px 8px;min-height:28px;font-size:19px}
+#kalam-timeline-app-v3 .gnv-detail h3{font-size:17px;font-weight:650;line-height:1.65;margin:8px 0}
+#kalam-timeline-app-v3 .gnv-detail p{font-size:12px;line-height:1.6;margin:7px 0;overflow-wrap:anywhere}
+#kalam-timeline-app-v3 .gnv-detail .gnv-type{font-size:11px;color:var(--ia-muted);margin-top:9px}
+#kalam-timeline-app-v3 .gnv-detail dl{display:grid;grid-template-columns:95px minmax(0,1fr);gap:5px 8px;font-size:11px;margin:10px 0}
+#kalam-timeline-app-v3 .gnv-detail dt{color:var(--ia-muted)}
+#kalam-timeline-app-v3 .gnv-detail dd{margin:0;overflow-wrap:anywhere}
+#kalam-timeline-app-v3 .gnv-detail .gnv-qualification{border-top:1px solid var(--ia-line);color:var(--ia-muted);padding-top:9px}
+#kalam-timeline-app-v3 .gnv-hint,#kalam-timeline-app-v3 .gnv-credit{font-size:11px;line-height:1.6;color:var(--ia-muted);margin:9px 0}
+#kalam-timeline-app-v3 .gnv-credit{margin-bottom:0}
+@media(max-width:700px){
+ #kalam-timeline-app-v3 .gnv-picture{padding:7px}
+ #kalam-timeline-app-v3 .gnv-layout{grid-template-columns:minmax(0,1fr);gap:8px}
+ #kalam-timeline-app-v3 .gnv-canvas{height:min(66dvh,590px);min-height:320px;width:100%}
+ #kalam-timeline-app-v3 .gnv-detail{width:100%;min-width:0;max-height:42dvh}
+ #kalam-timeline-app-v3 .gnv-toolbar{gap:6px}
+ #kalam-timeline-app-v3 .gnv-toolbar>button{flex:1 1 150px}
+ #kalam-timeline-app-v3 .gnv-evidence-select{flex:1 1 160px;max-width:unset}
+ #kalam-timeline-app-v3 .gnv-zoom{margin-left:0}
+ #kalam-timeline-app-v3 .gnv-legend{gap:7px}
+ #kalam-timeline-app-v3 .gnv-tabs{gap:4px}
+ #kalam-timeline-app-v3 .gnv-tabs button{font-size:11px;padding:6px 8px}
+ #kalam-timeline-app-v3 .gnv-pager{gap:6px;font-size:11px}
+ #kalam-timeline-app-v3 .gnv-pager button{padding:5px 7px}
+}
+
+/* GNAMMA disciplinary atlas: same chronological date-axis/annotated work cards
+   as the philosophy–kalām atlas; separate vertical principal-texts synopsis. */
+#kalam-timeline-app-v3 .dn-modes,#kalam-timeline-app-v3 .dn-tabs{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+#kalam-timeline-app-v3 .dn-modes button{font-weight:650;font-size:12px;min-height:39px;padding:7px 13px}
+#kalam-timeline-app-v3 .dn-modes button[aria-pressed="true"]{background:var(--ia-active);color:var(--ia-onactive);border-color:transparent}
+#kalam-timeline-app-v3 .dn-tabs button{font-size:11px;min-height:35px;padding:6px 10px}
+#kalam-timeline-app-v3 .dn-tabs button[aria-pressed="true"]{background:var(--ia-active);color:var(--ia-onactive);border-color:transparent}
+#kalam-timeline-app-v3 .dn-filter-line{display:flex;gap:8px;align-items:end;flex-wrap:wrap;margin:8px 0}
+#kalam-timeline-app-v3 .dn-filter-line label{display:grid;font-size:11px;gap:4px;color:var(--ia-muted)}
+#kalam-timeline-app-v3 .dn-filter-line select{font-size:12px;min-height:37px}
+#kalam-timeline-app-v3 .dn-filter-line button{font-size:12px;min-height:37px}
+#kalam-timeline-app-v3 .dn-research{background:var(--ia-panel);border:1px solid var(--ia-line);border-radius:9px;padding:12px;min-width:0}
+#kalam-timeline-app-v3 .dn-caveat{border-left:2px solid var(--ia-line);padding:6px 12px;background:var(--ia-soft);font-size:11px;line-height:1.65;color:var(--ia-muted);margin:2px 0 10px}
+#kalam-timeline-app-v3 .dn-control-line{display:flex;align-items:end;gap:8px;flex-wrap:wrap}
+#kalam-timeline-app-v3 .dn-time-controls{display:grid;gap:10px;margin:10px 0 12px}
+#kalam-timeline-app-v3 .dn-travel{display:flex;gap:8px;align-items:center;font-size:11px;color:var(--ia-muted);font-variant-numeric:tabular-nums}
+#kalam-timeline-app-v3 .dn-travel input{flex:1;min-width:0;accent-color:var(--ia-link);cursor:pointer;min-height:24px}
+#kalam-timeline-app-v3 .dn-time-actions{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+#kalam-timeline-app-v3 .dn-time-actions button{font-size:11px;min-height:34px;padding:6px 9px}
+#kalam-timeline-app-v3 .dn-window{display:flex;align-items:end;gap:8px;flex-wrap:wrap}
+#kalam-timeline-app-v3 .dn-window label{display:grid;gap:3px;font-size:11px;color:var(--ia-muted)}
+#kalam-timeline-app-v3 .dn-window input{width:99px;min-height:34px;padding:6px 8px;font-size:12px;font-variant-numeric:tabular-nums}
+#kalam-timeline-app-v3 .dn-window button{min-height:34px;padding:6px 9px;font-size:11px}
+#kalam-timeline-app-v3 .dn-period-caption{font-size:12px;color:var(--ia-muted);padding-bottom:6px}
+#kalam-timeline-app-v3 .dn-navigational{display:flex;gap:8px;flex-wrap:wrap;margin:5px 0}
+#kalam-timeline-app-v3 .dn-navigational button{font-size:11px;min-height:33px}
+#kalam-timeline-app-v3 .dn-composite{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start;min-width:0}
+#kalam-timeline-app-v3 .dn-map{border:1px solid var(--ia-line);border-radius:8px;background:var(--ia-soft);overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;min-width:0;max-width:100%;min-height:240px;max-height:min(74dvh,830px);touch-action:pan-y}
+#kalam-timeline-app-v3 .dn-map svg{display:block;max-width:none;max-height:none}
+#kalam-timeline-app-v3 .dn-summary-map{max-height:min(74dvh,850px);touch-action:pan-x pan-y}
+#kalam-timeline-app-v3 .dn-detail{width:min(330px,31vw);min-width:260px;max-height:min(74dvh,830px);overflow-y:auto;border:1px solid var(--ia-line);border-radius:8px;background:var(--ia-panel);padding:12px;font-size:12px;line-height:1.55}
+#kalam-timeline-app-v3 .dn-detail[hidden]{display:none!important}
+#kalam-timeline-app-v3 .dn-detail-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+#kalam-timeline-app-v3 .dn-detail-head button{padding:2px 8px;min-height:30px;font-size:17px}
+#kalam-timeline-app-v3 .dn-detail h3{margin:9px 0;font-size:18px;line-height:1.5}
+#kalam-timeline-app-v3 .dn-detail p{font-size:12px;line-height:1.55;overflow-wrap:anywhere;margin:8px 0}
+#kalam-timeline-app-v3 .dn-detail dl{display:grid;grid-template-columns:95px minmax(0,1fr);gap:4px 8px;margin:10px 0}
+#kalam-timeline-app-v3 .dn-detail dt{color:var(--ia-muted)}
+#kalam-timeline-app-v3 .dn-detail dd{margin:0;overflow-wrap:anywhere}
+#kalam-timeline-app-v3 .dn-detail .dn-caveat{border-top:1px solid var(--ia-line);border-left:0;padding:7px 0}
+#kalam-timeline-app-v3 .dn-legend{display:flex;flex-wrap:wrap;gap:8px 15px;font-size:10px;color:var(--ia-muted);margin:9px 0}
+#kalam-timeline-app-v3 .dn-brief,#kalam-timeline-app-v3 .dn-source-note{color:var(--ia-muted);font-size:11px;line-height:1.65;margin:8px 0}
+#kalam-timeline-app-v3 .dn-lane-background{fill:light-dark(#f7f8f4,#1e292f);stroke:var(--ia-line);stroke-opacity:.55;stroke-width:.7}
+#kalam-timeline-app-v3 .dn-lane-name{fill:var(--ia-fg);font-size:12px;font-weight:680;cursor:pointer}
+#kalam-timeline-app-v3 [data-dn-lane],#kalam-timeline-app-v3 [data-dn-work],#kalam-timeline-app-v3 [data-dn-scholar],#kalam-timeline-app-v3 [data-dn-cluster],#kalam-timeline-app-v3 [data-dn-undated],#kalam-timeline-app-v3 [data-dn-edge]{cursor:pointer}
+#kalam-timeline-app-v3 [role="button"]:focus-visible{outline:3px solid var(--ia-link);outline-offset:2px}
+#kalam-timeline-app-v3 .dn-work-rect{fill:var(--ia-panel);stroke:var(--ia-line);stroke-width:1.3;filter:drop-shadow(0 1px 1px #0002)}
+#kalam-timeline-app-v3 [data-dn-work]:hover .dn-work-rect,#kalam-timeline-app-v3 .dn-picked .dn-work-rect{stroke:var(--ia-link);stroke-width:3;fill:var(--ia-soft)}
+#kalam-timeline-app-v3 .dn-scholar rect{fill:light-dark(#f2e6d5,#3c3124);stroke:#977542;stroke-width:1.7}
+#kalam-timeline-app-v3 .dn-scholar:hover rect{stroke-width:3}
+#kalam-timeline-app-v3 svg [data-dn-work] text,#kalam-timeline-app-v3 svg [data-dn-scholar] text,#kalam-timeline-app-v3 svg [data-dn-cluster] text{pointer-events:none}
+#kalam-timeline-app-v3 .dn-axis-label{fill:var(--ia-muted);font-size:10px;font-weight:650;letter-spacing:.5px}
+#kalam-timeline-app-v3 .dn-undated-chip{fill:var(--ia-panel);stroke:var(--ia-link);stroke-dasharray:4 3}
+#kalam-timeline-app-v3 .dn-undated-label{fill:var(--ia-link);font-size:11px;font-weight:600}
+#kalam-timeline-app-v3 .dn-undated-root{fill:var(--ia-panel);stroke:var(--ia-link);stroke-width:1.5}
+#kalam-timeline-app-v3 .dn-unplaced-root{fill:var(--ia-panel);stroke:var(--ia-link);stroke-width:2}
+#kalam-timeline-app-v3 .dn-unplaced-title{fill:var(--ia-fg);font-size:14px;font-weight:650}
+#kalam-timeline-app-v3 .dn-unplaced-small{fill:var(--ia-muted);font-size:10px}
+#kalam-timeline-app-v3 .dn-catalogue-branch{fill:none;stroke:var(--ia-muted);stroke-dasharray:4 5;stroke-opacity:.32;stroke-width:1.2}
+#kalam-timeline-app-v3 .dn-documented-arrow,#kalam-timeline-app-v3 .dn-verified-relation{fill:none;stroke:#ad7d27;stroke-width:2.7}
+#kalam-timeline-app-v3 .dn-synopsis-lane{stroke:var(--ia-line);stroke-width:3;stroke-dasharray:4 7}
+#kalam-timeline-app-v3 .dn-synopsis-node{fill:var(--ia-panel);stroke:var(--ia-line);stroke-width:1.5}
+#kalam-timeline-app-v3 [data-dn-work]:hover .dn-synopsis-node,#kalam-timeline-app-v3 .dn-selected{stroke:var(--ia-link);stroke-width:3}
+#kalam-timeline-app-v3 .dn-synopsis-head{fill:var(--ia-fg);font-size:13px;font-weight:670}
+#kalam-timeline-app-v3 .dn-synopsis-sub{fill:var(--ia-muted);font-size:10px}
+#kalam-timeline-app-v3 .dn-synopsis-authority-note{fill:var(--ia-muted);font-size:10px}
+#kalam-timeline-app-v3 .dn-pages{display:flex;align-items:center;justify-content:center;gap:8px;margin:12px 0;font-size:11px}
+#kalam-timeline-app-v3 .dn-pages button{font-size:11px;min-height:34px}
+@media(max-width:700px){
+ #kalam-timeline-app-v3 .dn-research{padding:8px}
+ #kalam-timeline-app-v3 .dn-composite{grid-template-columns:minmax(0,1fr)}
+ #kalam-timeline-app-v3 .dn-map{min-height:260px;max-height:min(65dvh,640px)}
+ #kalam-timeline-app-v3 .dn-detail{width:100%;min-width:0;max-height:40dvh}
+ #kalam-timeline-app-v3 .dn-modes button{flex:1 1 130px;padding:6px 8px}
+ #kalam-timeline-app-v3 .dn-time-actions button{font-size:10px;padding:5px 7px}
+ #kalam-timeline-app-v3 .dn-time-controls{gap:6px}
+ #kalam-timeline-app-v3 .dn-tabs{gap:4px}
+ #kalam-timeline-app-v3 .dn-tabs button{font-size:10px;padding:6px 8px}
+ #kalam-timeline-app-v3 .dn-period-caption{width:100%}
+ #kalam-timeline-app-v3 .dn-window input{width:90px}
+}

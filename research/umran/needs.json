@@ -1,0 +1,633 @@
+{
+  "project": "Work, Vocation & Umran",
+  "version": "2026-11-13-v4-maqasid-and-renewal",
+  "notice": "Candidate need/function catalogue, not a finding of actual local shortage, assignment of personal religious obligation, or spiritual ranking. Project data are organiser claims, not independent verification.",
+  "classification_basis": "Provisional juristic research; consult sources and scholars",
+  "sufficiency_status": "unknown for every profile",
+  "needs": [
+    {
+      "id": "religious-teaching",
+      "title": "Religious teaching and scholarly succession",
+      "category": "knowledge",
+      "scope": "Local · regional · transnational",
+      "status": "Established duty in necessary forms",
+      "level": "established_duty",
+      "purpose": "Provide reliable basic religious instruction and sustain qualified future teachers and jurists.",
+      "tests": [
+        "Access to reliable instruction",
+        "Competence and supervision of teachers",
+        "Advanced training and scholarly succession"
+      ],
+      "roles": [
+        "Teacher",
+        "Scholar and mentor",
+        "Translator",
+        "Administrator",
+        "Endowment organiser"
+      ],
+      "sources": [
+        "Al-Ghazālī, Iḥyāʾ",
+        "Al-Nawawī, al-Majmūʿ",
+        "IIFA Resolution 164"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft",
+      "example_project_ids": [
+        "education-fund",
+        "southgate",
+        "bangi-education-support"
+      ],
+      "evidence_case_ids": [
+        "bangi-education-campaign"
+      ],
+      "higher_aim_ids": [
+        "din",
+        "aql",
+        "tazkiya",
+        "tajdid"
+      ],
+      "renewal_programme_ids": [
+        "scholarly-succession",
+        "critical-texts",
+        "curriculum-pathways",
+        "spiritual-ethical-formation",
+        "civilizational-learning"
+      ]
+    },
+    {
+      "id": "contemporary-curricula",
+      "title": "Curricula for contemporary intellectual discourse",
+      "category": "knowledge",
+      "scope": "Regional · transnational",
+      "status": "Context-dependent derivation",
+      "level": "context_dependent",
+      "purpose": "Develop the intellectual competence needed to understand and respond responsibly to contemporary scientific, philosophical and technical debates.",
+      "tests": [
+        "Specify missing learner competencies",
+        "Assess existing teaching and curricula",
+        "Evaluate actual learning and teacher formation"
+      ],
+      "roles": [
+        "Curriculum developer",
+        "Researcher",
+        "Teacher",
+        "Translator",
+        "Educational evaluator"
+      ],
+      "sources": [
+        "Al-Nawawī, Rawḍat al-Ṭālibīn",
+        "IIFA Resolution 164"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft",
+      "example_project_ids": [
+        "education-fund",
+        "bangi-education-support"
+      ],
+      "evidence_case_ids": [
+        "malaysia-learning",
+        "bangi-education-campaign"
+      ],
+      "higher_aim_ids": [
+        "din",
+        "aql",
+        "tajdid"
+      ],
+      "renewal_programme_ids": [
+        "scholarly-succession",
+        "critical-texts",
+        "curriculum-pathways",
+        "contemporary-intellectual-dialogue",
+        "knowledge-technology",
+        "civilizational-learning"
+      ]
+    },
+    {
+      "id": "medical-care",
+      "title": "Necessary medical care",
+      "category": "care",
+      "scope": "Local · city · regional",
+      "status": "Strong classical foundation; details disputed",
+      "level": "established_duty",
+      "purpose": "Ensure clinically significant medical needs can be addressed through competent, accessible treatment.",
+      "tests": [
+        "Relevant clinical needs and waiting periods",
+        "Qualified treatment capacity and access",
+        "Quality and continuity of care"
+      ],
+      "roles": [
+        "Clinician",
+        "Clinical educator",
+        "Health IT specialist",
+        "Hospital administrator",
+        "Medical logistics"
+      ],
+      "sources": [
+        "Al-Ghazālī, Iḥyāʾ",
+        "Al-Nawawī, al-Majmūʿ"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft",
+      "example_project_ids": [
+        "sudan-basic",
+        "sudan-water",
+        "mental-health"
+      ],
+      "evidence_case_ids": [
+        "malaysia-mental-health"
+      ],
+      "higher_aim_ids": [
+        "nafs",
+        "umran"
+      ],
+      "renewal_programme_ids": [
+        "trustworthy-institutions"
+      ]
+    },
+    {
+      "id": "water-sanitation",
+      "title": "Safe water, sanitation and infrastructure",
+      "category": "infrastructure",
+      "scope": "Neighbourhood · city · region",
+      "status": "Context-dependent obligation",
+      "level": "context_dependent",
+      "purpose": "Sustain indispensable water, waste handling, roads and civil infrastructure where reliable provision is required.",
+      "tests": [
+        "Service safety and reliability",
+        "Waste collection and pollution indicators",
+        "Maintenance capacity and interruption risk"
+      ],
+      "roles": [
+        "Sanitation worker",
+        "Engineer",
+        "Technician",
+        "Municipal administrator",
+        "Infrastructure planner"
+      ],
+      "sources": [
+        "Classical discussions of necessary crafts and utilities",
+        "Contextual assessment required"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft",
+      "example_project_ids": [
+        "sudan-water",
+        "refugee-support"
+      ],
+      "evidence_case_ids": [],
+      "higher_aim_ids": [
+        "nafs",
+        "umran",
+        "khalq"
+      ],
+      "renewal_programme_ids": [
+        "stewardship-resilience"
+      ]
+    },
+    {
+      "id": "food-access",
+      "title": "Secure food access",
+      "category": "livelihood",
+      "scope": "Household · city · nation · transnational",
+      "status": "Context-dependent obligation",
+      "level": "context_dependent",
+      "purpose": "Ensure reliable, affordable access to essential food without presuming that local production is always necessary where trade suffices.",
+      "tests": [
+        "Household food security and affordability",
+        "Stability of supply and alternatives",
+        "Access under disruption"
+      ],
+      "roles": [
+        "Farmer",
+        "Trader",
+        "Logistics specialist",
+        "Community organiser",
+        "Supply analyst"
+      ],
+      "sources": [
+        "Al-Ghazālī, Iḥyāʾ",
+        "Ibn Taymiyya, Majmūʿ al-Fatāwā"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft",
+      "example_project_ids": [
+        "sudan-basic",
+        "tanzania-care"
+      ],
+      "evidence_case_ids": [],
+      "higher_aim_ids": [
+        "mal",
+        "umran",
+        "khalq"
+      ],
+      "renewal_programme_ids": [
+        "crafts-livelihood",
+        "stewardship-resilience"
+      ]
+    },
+    {
+      "id": "ai-safety",
+      "title": "Safety and accountable governance of advanced AI",
+      "category": "technology",
+      "scope": "National · transnational · humanity-wide",
+      "status": "Plausible but disputed derivation",
+      "level": "plausible_disputed",
+      "purpose": "Investigate credible grave harms from advanced AI to life, justice, institutions and human moral agency, and identify effective safeguards.",
+      "tests": [
+        "A specified risk mechanism and its evidence",
+        "Independent evaluation of proposed safeguards",
+        "Existing institutional response and remaining gaps"
+      ],
+      "roles": [
+        "AI evaluation specialist",
+        "Security researcher",
+        "Governance analyst",
+        "Independent auditor",
+        "Educator and institution-builder"
+      ],
+      "sources": [
+        "General duties to prevent grave harms",
+        "80,000 Hours AI problem profile (empirical argument)"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft",
+      "example_project_ids": [],
+      "evidence_case_ids": [],
+      "higher_aim_ids": [
+        "aql",
+        "adl"
+      ],
+      "renewal_programme_ids": [
+        "contemporary-intellectual-dialogue",
+        "legal-discernment",
+        "knowledge-technology"
+      ]
+    },
+    {
+      "id": "dependent-care",
+      "title": "Care for dependent and vulnerable people",
+      "category": "care",
+      "scope": "Household · neighbourhood · city",
+      "status": "Mixed personal and collective obligations",
+      "level": "context_dependent",
+      "purpose": "Prevent neglect and grave harm to vulnerable dependants through family, community and appropriate institutional arrangements.",
+      "tests": [
+        "Existing personal obligations identified",
+        "Care needs and safety",
+        "Access to respite and adequate support"
+      ],
+      "roles": [
+        "Family caregiver",
+        "Care worker",
+        "Social worker",
+        "Respite organiser",
+        "Institutional coordinator"
+      ],
+      "sources": [
+        "Classical treatment of family and communal duties",
+        "Contextual legal review required"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft",
+      "example_project_ids": [
+        "tanzania-care",
+        "orphan-education"
+      ],
+      "evidence_case_ids": [],
+      "higher_aim_ids": [
+        "nafs",
+        "nasl",
+        "tazkiya"
+      ],
+      "renewal_programme_ids": [
+        "spiritual-ethical-formation",
+        "family-household"
+      ]
+    },
+    {
+      "id": "funerals",
+      "title": "Funeral rites and burial provision",
+      "category": "religious-practice",
+      "scope": "Local · regional",
+      "status": "Established classical communal duty",
+      "level": "established_duty",
+      "purpose": "Ensure competent and accessible performance of obligatory funeral rites and burial arrangements.",
+      "tests": [
+        "Qualified practitioners and access",
+        "Appropriate facilities and coordination"
+      ],
+      "roles": [
+        "Community volunteer",
+        "Burial coordinator",
+        "Funeral practitioner",
+        "Administrator"
+      ],
+      "sources": [
+        "Al-Nawawī, al-Majmūʿ",
+        "Classical funeral law"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft",
+      "example_project_ids": [],
+      "evidence_case_ids": [],
+      "higher_aim_ids": [
+        "din"
+      ],
+      "renewal_programme_ids": []
+    },
+    {
+      "id": "household-sufficiency",
+      "title": "Adequate provision for vulnerable households",
+      "category": "welfare",
+      "scope": "Household · city · state",
+      "status": "Overlapping duties and administrative standards",
+      "level": "context_dependent",
+      "purpose": "Investigate whether households can access necessary material, educational, health and social provisions, including properly administered assistance where warranted.",
+      "tests": [
+        "Define household costs and access locally",
+        "Distinguish zakat eligibility thresholds from collective legal duties",
+        "Assess continuity, dignity, accessibility and longer-term support"
+      ],
+      "roles": [
+        "Social worker",
+        "Zakat administrator",
+        "Household assessor",
+        "Waqf manager",
+        "Community researcher"
+      ],
+      "sources": [
+        "Abdul Muzil Abd Rahim, UKM (2025), ḥadd al-kifāyah",
+        "MASA@Sungai Nibong study (2025)"
+      ],
+      "example_project_ids": [
+        "tanzania-skills",
+        "tanzania-care",
+        "orphan-education",
+        "bangi-education-support"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft",
+      "evidence_case_ids": [
+        "penang-household"
+      ],
+      "higher_aim_ids": [
+        "nasl",
+        "mal",
+        "adl"
+      ],
+      "renewal_programme_ids": [
+        "legal-discernment",
+        "family-household",
+        "trustworthy-institutions",
+        "crafts-livelihood"
+      ]
+    },
+    {
+      "id": "livelihood-training",
+      "title": "Vocational capability and pathways into livelihood",
+      "category": "livelihood",
+      "scope": "Local · regional",
+      "status": "Potential means; not automatically a separate farḍ kifāya",
+      "level": "beneficial_means",
+      "purpose": "Prepare people for competent, lawful and sustainable livelihood when training and access to work are genuinely necessary to remedy dependence or exclusion.",
+      "tests": [
+        "Identify viable work and market demand",
+        "Evaluate training quality and earnings after completion",
+        "Check household needs, safety and alternatives"
+      ],
+      "roles": [
+        "Vocational teacher",
+        "Apprenticeship mentor",
+        "Small business adviser",
+        "Programme evaluator",
+        "Employer"
+      ],
+      "sources": [
+        "MASA@Sungai Nibong (2025)",
+        "Malaysian research on social entrepreneurship and human capital"
+      ],
+      "example_project_ids": [
+        "tanzania-skills"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft",
+      "evidence_case_ids": [
+        "penang-household"
+      ],
+      "higher_aim_ids": [
+        "aql",
+        "mal"
+      ],
+      "renewal_programme_ids": [
+        "crafts-livelihood"
+      ]
+    },
+    {
+      "id": "community-institutions",
+      "title": "Sustainable community and mosque institutions",
+      "category": "institutions",
+      "scope": "Neighbourhood · city · regional networks",
+      "status": "Potential enabling means; function-specific duty",
+      "level": "beneficial_means",
+      "purpose": "Examine the spaces, governance, qualified personnel, finances and services needed for community learning, care, worship and social cooperation.",
+      "tests": [
+        "Separate building, maintenance and service functions",
+        "Analyse real usage and accessible alternatives",
+        "Evaluate governance, financial sustainability and benefit"
+      ],
+      "roles": [
+        "Community trustee",
+        "Facilities manager",
+        "Imam and teacher",
+        "Financial controller",
+        "Institutional organiser"
+      ],
+      "sources": [
+        "Abd Wakil et al., Journal of Fatwa Management and Research (2024)",
+        "International Islamic Fiqh Academy Resolution 164 (2007)"
+      ],
+      "example_project_ids": [
+        "southgate"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft",
+      "evidence_case_ids": [],
+      "higher_aim_ids": [
+        "mal",
+        "adl",
+        "umran",
+        "tajdid"
+      ],
+      "renewal_programme_ids": [
+        "legal-discernment",
+        "spiritual-ethical-formation",
+        "trustworthy-institutions"
+      ]
+    },
+    {
+      "id": "mental-health",
+      "title": "Accessible mental-health and psychosocial care",
+      "category": "care",
+      "scope": "Local · regional · transnational",
+      "status": "Potentially necessary clinical provision; status context-dependent",
+      "level": "context_dependent",
+      "purpose": "Provide safe, competent care and professional formation where serious mental-health needs lack effective support, while distinguishing clinical needs from general wellness activities.",
+      "tests": [
+        "Document access to qualified clinicians and appropriate care",
+        "Assess service quality, supervision and safety",
+        "Study actual unmet need rather than promotional demand"
+      ],
+      "roles": [
+        "Licensed clinician",
+        "Mental-health researcher",
+        "Clinical supervisor",
+        "Community liaison",
+        "Service evaluator"
+      ],
+      "sources": [
+        "Classical duty to prevent serious harm (requires contemporary legal derivation)",
+        "LaunchGood professional formation campaign (organiser statement)"
+      ],
+      "example_project_ids": [
+        "mental-health"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft",
+      "evidence_case_ids": [
+        "malaysia-mental-health"
+      ],
+      "higher_aim_ids": [
+        "nafs"
+      ],
+      "renewal_programme_ids": []
+    },
+    {
+      "id": "emergency-response",
+      "title": "Emergency relief and displacement support",
+      "category": "emergency",
+      "scope": "Local · regional · transnational",
+      "status": "Contextual responsibilities to avert grave harm",
+      "level": "context_dependent",
+      "purpose": "Secure food, safe water, health and other essential support during acute displacement or disaster, including coordination and continuity of supply.",
+      "tests": [
+        "Verify the acute humanitarian situation independently",
+        "Map relief provision, gaps and competing authorities",
+        "Examine logistics, safety, local participation and sustainability"
+      ],
+      "roles": [
+        "Humanitarian coordinator",
+        "Relief logistics worker",
+        "Health and WASH practitioner",
+        "Interpreter",
+        "Field administrator"
+      ],
+      "sources": [
+        "Juristic duties concerning rescue and prevention of grave harm (further verification)",
+        "Organiser reports and independent humanitarian data needed"
+      ],
+      "example_project_ids": [
+        "sudan-basic",
+        "refugee-support"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft",
+      "evidence_case_ids": [],
+      "higher_aim_ids": [
+        "nafs",
+        "umran",
+        "khalq"
+      ],
+      "renewal_programme_ids": [
+        "stewardship-resilience"
+      ]
+    },
+    {
+      "id": "displaced-shelter",
+      "title": "Safe temporary shelter and stabilisation",
+      "category": "emergency",
+      "scope": "City · region · transnational",
+      "status": "Context-dependent collective and institutional provision",
+      "level": "context_dependent",
+      "purpose": "Investigate provision of safe shelter, protection and basic services for displaced persons, with attention to lawful responsibility and the conditions for lasting stabilisation.",
+      "tests": [
+        "Document the affected population and emergency housing supply",
+        "Assess safety, family integrity, health and access",
+        "Verify agencies' responsibilities and alternatives"
+      ],
+      "roles": [
+        "Shelter coordinator",
+        "Civil engineer",
+        "Social worker",
+        "Local housing administrator",
+        "Protection specialist"
+      ],
+      "sources": [
+        "General duties concerning protection and grave harm (juristic assessment required)",
+        "Independent displacement and housing data required"
+      ],
+      "example_project_ids": [
+        "refugee-support"
+      ],
+      "actual_scope_confirmed": false,
+      "sufficiency_status": "unknown",
+      "personal_duty_status": "not_assessed",
+      "reviewed": "2026-11-13",
+      "publication": "research_draft",
+      "evidence_case_ids": [],
+      "higher_aim_ids": [
+        "nasl"
+      ],
+      "renewal_programme_ids": [
+        "family-household",
+        "stewardship-resilience"
+      ]
+    }
+  ],
+  "research_sources": [
+    "malaysia.json",
+    "projects.html"
+  ],
+  "evidence_record_source": "assessments.json",
+  "evidence_policy": "A research example may document an outcome, a provider activity or a source-defined capacity gap. None automatically certifies complete sufficiency, a legal obligation or individual duty.",
+  "aim_framework": "vision.json",
+  "relationship_policy": "All aim and programme links are analytic hypotheses. They do not determine priority scores, legal obligations, actual local deficits, or spiritual rank."
+}

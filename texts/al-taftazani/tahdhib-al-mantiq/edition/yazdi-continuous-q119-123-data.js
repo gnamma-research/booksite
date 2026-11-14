@@ -1,0 +1,113 @@
+/* Q119–123 final main ḥāshiya; colophon is separately attributed not authorial prose. */
+window.GNAMMA_YAZDI_CONTIGUOUS_Q119_123={
+  "schema": "gnamma-yazdi-closure-q119-123-v1",
+  "unit": "L.19",
+  "author": "Mullā ʿAbd Allāh al-Yazdī",
+  "certified": false,
+  "sourceEdition": "Qum searchable printed main شرح on pages119–123",
+  "scope": "Five consecutive source page blocks finishing the main printed ḥāshiya; end colophon stored as nonauthorial note.",
+  "blocks": [
+    {
+      "page": 119,
+      "id": "YZC18-119",
+      "unit": "L.19",
+      "title": "Principles versus preliminaries; the purpose and benefit of a science",
+      "ar": "الشروع في مقاصد العلم، سواء كان داخلا في العلم فيكون من المبادئ المصطلحة السابقة كتصور الموضوع والأعراض الذاتية والتصديقات التي تتألف منها قياسات العلم، أو خارجا عنه يتوقف عليه الشروع كمعرفة الحد والغاية وبيان الموضوع والاستمداد. والفرق بين المقدمات والمبادئ بهذا المعنى مما لا ينبغي أن يشتبه، فإن المقدمات خارجة عن العلم لا محالة بخلاف المبادئ، فتبصر. قوله «يذكرون»: أي في صدر كتبهم على أنها من المقدمات أو من المبادئ بالمعنى الأعم. قوله «الغرض»: اعلم أن ما يترتب على فعل إن كان باعثا للفاعل على صدور ذلك الفعل منه يسمى غرضا وعلة غائية، وإلا يسمى فائدة ومنفعة وغاية. قالوا: أفعال الله تعالى لا تعلل بالأغراض وإن اشتملت على غايات ومنافع لا تحصى. فكأن مقصود المصنف أن القدماء كانوا يذكرون في صدر كتبهم ما كان سببا حاملا على تدوين المدون الأول لهذا العلم، ثم يعقبونه بما يشتمل عليه من منفعة ومصلحة حتى يميل إليها عموم الطبائع إن كانت لهذا العلم منفعة ومصلحة سوى الغرض الباعث للواضع الأول. وقد عرفت في صدر الكتاب الغرض والغاية من علم المنطق وهما العصمة، فتذكر. قوله «الثالث: السمة»: السمة في اللغة العلامة، وكأن المقصود هاهنا",
+      "en": "... beginning the substantive aims of a science. Under Ibn al-Ḥājib's broader usage, \"principles\" can be things set forth before a science's proper business, whether **internal** to the science—such as conceptions of its subject and proper attributes, or the accepted premises out of which its proofs are made—or **external preliminaries** needed to embark intelligently, such as its definition, purpose, subject and source materials. It remains necessary to distinguish these broad preliminaries (*muqaddimāt*) from principles (*mabādiʾ*) strictly internal to the science: the former are necessarily outside its systematic subject matter, whereas the latter need not be. On \"they mention\": earlier authors place these items at the beginning of their books as preliminaries or principles in the broad sense. On \"purpose\" (*gharaḍ*): an effect following an action is called that action's **purpose or final cause** if it actually motivates the agent to perform it. If not, it is a **benefit, utility or end** that follows the act without being the agent's original motive. The theologians cited here deny that divine acts have motivating purposes, even while recognizing innumerable benefits. Al-Yazdī understands the ancient practice as mentioning first what moved a discipline's initial compiler to compose it, and then the additional benefits that might encourage students to pursue it. For logic, the protection of thinking from error was already identified at the beginning as its intended end. On \"the third: the designation\": a *sima* is literally a distinguishing mark, and here seems intended to indicate ...",
+      "notes": [
+        "The causal definition of purpose depends on what actually motivates the agent, not merely an objective benefit subsequent to the act.",
+        "The theological report on divine acts is attributed to a view of earlier scholars, rather than independently argued as a doctrine of logic.",
+        "The main paragraph ends before the separately attributed Q119 hāmish, whose explanation of 'eight headings' is not al-Yazdī's."
+      ],
+      "seam": "continues-to-120",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/119?lang=ar",
+      "photoChecked": false,
+      "attribution": "al-Yazdī main Qum شرح"
+    },
+    {
+      "page": 120,
+      "id": "YZC18-120",
+      "unit": "L.19",
+      "title": "Why the discipline is called logic; Aristotle, al-Fārābī, Avicenna and classifications of philosophy",
+      "ar": "الإشارة إلى وجه تسمية العلم، كما يقال: إنما سمي المنطق منطقا لأن النطق يطلق على الظاهري وهو التكلم، وعلى الباطني وهو إدراك الكليات، وهذا العلم يقوي الأول ويسلك بالثاني مسلك السداد، فاشتق له اسم من النطق. فالمنطق إما مصدر ميمي بمعنى النطق أطلق على العلم المذكور مبالغة في مدخليته في تكميل النطق حتى كأنه هو، وإما اسم مكان كأن هذا العلم محل النطق ومظهره. وفي ذكر وجه التسمية إشارة إجمالية إلى ما يفصله العلم من المقاصد. قوله «الرابع: المؤلف ليسكن قلب المتعلم»: على ما هو الشأن في مبادئ الحال من معرفة حال الأقوال بمراتب الرجال، وأما المحققون فيعرفون الرجال بالحق لا الحق بالرجال، ولنعم ما قال ولي ذي الجلال عليه سلام الله المتعال: «لا تنظر إلى من قال وانظر إلى ما قال». ومقنن قوانين المنطق والفلسفة هو الحكيم العظيم «أرسطو»، دونهما بأمر «إسكندر»، ولذا لقب بـ«المعلم الأول»، وقيل للمنطق إنه «ميراث ذي القرنين». ثم بعد نقل المترجمين تلك الفلسفيات من لغة يونانية إلى لغة العرب هذبها ورتبها وأتقنها ثانيا «المعلم الثاني» الحكيم «أبو نصر الفارابي»، وقد فصلها وحررها بعد إضاعة كتب «أبي نصر» الشيخ الرئيس «أبو علي سينا». قوله «من أي علم هو»: أي من أي جنس من أجناس العلوم: العقلية أو النقلية، الفرعية أو الأصلية؟ كما يبحث عن حال المنطق أنه من جنس العلوم الحكمية أم لا؛ فإن فسرت الحكمة بـ«العلم بأحوال أعيان الموجودات على ما هي عليه في نفس الأمر بقدر الطاقة البشرية» لم يكن منها، إذ ليس بحثه إلا عن المفهومات والموجودات الذهنية الموصلة إلى التصور أو إلى التصديق، وإن حذف «الأعيان» من التفسير المذكور فهو من الحكمة. ثم على التقدير الثاني فهو من قسم الحكمة النظرية الباحثة عما ليس وجودها بقدرتنا واختيارنا؛ ثم هل هو حينئذ أصل من أصول الحكمة النظرية أو من فروع الإلهية؟ والمقام لا يسع بسط ذلك الكلام.",
+      "en": "... the reason a discipline bears its name. \"Logic\" (*manṭiq*) is related to *nuṭq*, which can mean outward articulation in speech and inward rational articulation in the apprehension of universals. The discipline improves outward speaking and directs inward thinking into sound order. Its name may be taken as a verbal noun intensifying the discipline's contribution to rational discourse, or as a noun of place, as though logic were the sphere in which articulate thinking becomes manifest. Explaining the name gives a preliminary indication of the discipline's concerns. On \"the fourth: its author, so the learner's heart may be reassured\": a beginner can gain confidence from knowing the standing of an author, but genuine investigators judge people **through the truth**, not truth through the rank of people. Al-Yazdī quotes the saying, \"Do not look at who said it; look at what was said.\" He then recounts a conventional intellectual history in which Aristotle systematically recorded the rules of logic and philosophy, receiving the title First Teacher; al-Fārābī, the Second Teacher, organized and refined the Greek learning after its Arabic translation; Avicenna later elaborated it further. This is a historical narrative reported by the commentator, not a critically verified account of the precise chronology of ancient manuscripts. On \"of what science is it?\": one must locate logic among rational or transmitted, principal or subsidiary disciplines. If philosophy is defined as knowledge of the **external realities of existents** as they are, insofar as human ability permits, logic is not itself philosophy, since its direct concern is with concepts and intellectual objects leading to conception or assent. If \"external realities\" is removed, logic counts as a philosophical science. In that case it belongs to **theoretical** philosophy, dealing with what does not exist through our choice; whether it is a foundational theoretical science or a branch of metaphysics remains a further disputed classification beyond this short work.",
+      "notes": [
+        "The historical Aristotle/Fārābī/Avicenna narrative is **reported history**, not a newly established modern historiographical conclusion.",
+        "The maxim about judging statements, not people, is attributed to an unnamed revered authority in the Arabic; do not invent a speaker's identity.",
+        "The philosophical classification turns on whether the **definition of philosophy requires extramental subject matter**; this is a significant formal-object distinction."
+      ],
+      "seam": "complete-at-page",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/120?lang=ar",
+      "photoChecked": false,
+      "attribution": "al-Yazdī main Qum شرح"
+    },
+    {
+      "page": 121,
+      "id": "YZC18-121",
+      "unit": "L.19",
+      "title": "The nine or ten divisions of logic and the placement of this book",
+      "ar": "قوله «في أي مرتبة هو»: كما يقال إن مرتبة المنطق أن يشتغل به بعد تهذيب الأخلاق وتقويم الفكر ببعض الهندسيات. وذكر الأستاذ في بعض رسائله أنه ينبغي تأخيره في زماننا هذا عن أن يعلم قدر صالح من العلوم الأدبية لما شاع من كون التداوين باللغة العربية. قوله «القسمة»: أي قسمة العلم أو الكتاب إلى أبوابهما. فالأول كما يقال أبواب المنطق تسعة: الأول باب «إيساغوجي»، أي الكليات الخمس؛ الثاني التعريفات؛ الثالث القضايا؛ الرابع القياس وأخواه؛ الخامس البرهان؛ السادس الجدل؛ السابع الخطابة؛ الثامن المغالطة؛ التاسع الشعر. وبعضهم عد بحث الألفاظ بابا آخر فعاد أبواب المنطق عشرة كاملة. والثاني كما يقال إن كتابنا هذا مرتب على قسمين: القسم الأول في المنطق وهو مرتب على مقدمة ومقصدين وخاتمة؛ المقدمة في بيان الماهية والغاية والموضوع، والمقصد الأول في مباحث التصورات، والمقصد الثاني في مباحث التصديقات، والخاتمة في أجزاء العلوم. والقسم الثاني في علم الكلام، وهو مرتب على كذا أبواب، الأول في كذا إلخ، وكما قال في الشمسية: «ورتبته على مقدمة وثلاث مقالات وخاتمة». وهذا الثاني شائع كثير فلا يخلو عنه كتاب. قوله «الأنحاء التعليمية»: أي الطرق المذكورة في التعاليم لعموم نفعها في العلوم. وقد اضطربت كلمة الشراح هاهنا، وما نذكره هو الموافق لتتبع كتب القوم والمأخوذ من شرح المطالع.",
+      "en": "On \"its rank among disciplines\": logic may be introduced after moral training and some elementary mathematics, which can help discipline judgment. A teacher cited by al-Yazdī argued that in his own time students should first gain substantial command of the language sciences, since the books they will study are written in Arabic. On \"division\": this may mean division **of the science itself** into disciplines, or division **of a particular book** into its chapters. In the first sense logic is conventionally divided into nine parts: (1) the *Isagoge* or five predicables, (2) definition, (3) propositions, (4) syllogism and its two relatives, (5) demonstration, (6) dialectic, (7) rhetoric, (8) fallacy, and (9) poetry. Some add the discussion of **words and expressions** as a tenth part. In the second sense one describes the organization of this particular book: it has two broad parts, Logic and Kalām. The Logic portion contains an introduction on its definition, purpose and subject; a first main section on conceptions; a second on assents; and a conclusion on the parts of the sciences. Kalām has its own divisions. A similar practice of arranging a book into introduction, chapters and conclusion appears in the *Shamsiyya*. On \"methods of teaching\": these are methods useful across the disciplines, on which commentators have offered divergent interpretations. Al-Yazdī proposes an account drawn from a reading of the classical texts and the *Sharḥ al-Maṭāliʿ*.",
+      "notes": [
+        "The note about giving priority to Arabic grammar and literature is a **historically situated pedagogical recommendation**, not a universal prescribed syllabus.",
+        "The 9/10 divisions are the logical-arts taxonomy, distinct from the 19 editorial headings of the modern website.",
+        "The Q121 main paragraph precedes the separately signed Muḥammad ʿAlī هامش listing four methods; his gloss is not copied as Yazdī's authorial commentary."
+      ],
+      "seam": "complete-at-page",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/121?lang=ar",
+      "photoChecked": false,
+      "attribution": "al-Yazdī main Qum شرح"
+    },
+    {
+      "page": 122,
+      "id": "YZC18-122",
+      "unit": "L.19",
+      "title": "Constructing a syllogism backwards from a sought conclusion, then analyzing one already given",
+      "ar": "قوله «وهي التقسيم»: كأن المراد به ما يسمى «تركيب القياس» أيضا. وذلك بأن يقال: إذا أردت تحصيل مطلب من المطالب التصديقية فضع طرفي المطلوب واطلب جميع موضوعات كل واحد منهما وجميع محمولات كل واحد منهما، سواء كان حمل الطرفين عليها وحملها على الطرفين بواسطة أو بغير واسطة، وكذلك اطلب جميع ما سلب عنه أحد الطرفين أو سلب هو عن أحدهما. ثم انظر إلى نسبة الطرفين إلى الموضوعات والمحمولات، فإن وجدت من محمولات موضوع المطلوب ما هو موضوع لمحموله فقد حصل المطلوب من الشكل الأول، أو ما هو محمول على محموله فمن الشكل الثاني، أو من موضوعات موضوعه ما هو موضوع لمحموله فمن الشكل الثالث، أو محمول لمحموله فمن الرابع، كل ذلك بعد اعتبار الشرائط بحسب الكمية والكيفية كما في شرح المطالع. وقد عبر المصنف عن هذا المعنى بقوله «أعني التكثير»، أي تكثير المقدمات أخذا «من فوق»، أي من النتيجة، لأنها المقصد الأقصى بالنسبة إلى الدليل. قوله «والتحليل»: في شرح المطالع كثيرا ما يورد في العلوم قياسات منتجة للمطالب لا على الهيئات المنطقية، لتساهل المركب اعتمادا على الفطن العالم بالقواعد. فإن أردت أن تعرف أنه على أي شكل من الأشكال فعليك بالتحليل وهو عكس التركيب. حصل المطلوب وانظر إلى القياس المنتج له، فإن كان فيه مقدمة تشارك المطلوب بكلا جزأيه فالقياس استثنائي، وإن كانت مشاركة للمطلوب بأحد جزأيه فالقياس اقتراني. ثم انظر إلى طرفي المطلوب ليتميز عندك الصغرى عن الكبرى، لأن ذلك الجزء إن كان محكوما عليه في النتيجة فهي الصغرى، أو محكوما به فيها فهي الكبرى. ثم ضم الجزء الآخر من المطلوب إلى الجزء الآخر من تلك المقدمة، فإن تألفا على أحد التأليفات الأربع فما انضم إلى جزئي المطلوب هو الحد الأوسط، ويتميز الشكل المنتج، وإن لم يتألفا كان القياس مركبا فاعمل بكل واحد منهما العمل المذكور، أي ضع الجزء الآخر من المطلوب والجزء الآخر من المقدمة كما وضعت طرفي المطلوب في التقسيم، فلا بد أن يكون لكل واحد منهما نسبة إلى شيء مما في القياس وإلا لم يكن القياس منتجا للمطلوب. فإن وجدت حدا",
+      "en": "On \"division\": here it appears to mean **constructing a syllogism** (*tarkīb al-qiyās*). To establish a sought propositional conclusion, place its two extreme terms before you. Search for subjects and predicates connected with each extreme, including relations through intermediaries and negative predications. Compare the candidate terms and their relations. If a predicate of the intended conclusion's subject can be made the subject of the predicate-term, you have a first-figure construction; if the corresponding candidate term stands as a predicate of that predicate-term, a second-figure pattern; analogous arrangements give the third and fourth figures. In all cases the quantity and quality conditions for a productive syllogism must be checked. Al-Taftāzānī calls this \"multiplication from above\": one **expands backwards from the desired conclusion**, the uppermost end or aim of proof, seeking premises that will establish it. On \"analysis\": the reverse method is used when a proof has already been presented but without explicit syllogistic form, perhaps because its author trusted the competent reader to supply the arrangement. Identify its conclusion and examine the premises. A premise which reproduces the matter of the conclusion in both its terms suggests an exceptive argument; one sharing only one term suggests a conjunctive argument. Determine which component of the conclusion is its subject and which its predicate, so the corresponding premises can be classified as minor and major. Link the remaining terms and see whether a valid arrangement from one of the four figures emerges: the connecting item is the **middle term**. If not, the argument may be **compound**, requiring repeated decomposition until all its premises and intermediate conclusions are laid out. The printed page ends with \"if you find a term ...\", continued on page 123.",
+      "notes": [
+        "The source describes a heuristic **backward search** for proof and a forward/reverse analysis of an existing argument.",
+        "The phrase «التكثير من فوق» is interpreted from the conclusion as the highest end or aim, not from a spatial diagram.",
+        "The layout's printed editorial alternatives around «حصل/حصلت» and some clause numbers are not proven manuscript variants.",
+        "The Q122 source runs into Q123 at «فإن وجدت حدا»; source seam must be preserved."
+      ],
+      "seam": "continues-to-123",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/122?lang=ar",
+      "photoChecked": false,
+      "attribution": "al-Yazdī main Qum شرح",
+      "englishReviewStage": 127,
+      "englishReviewGrade": "fuller clause-and-example-aligned digital-source English; not independent manuscript certification",
+      "revisionNote": "Restores the four-figure relations and full procedural steps for constructing and decomposing syllogisms; retains Q122-Q123 seam. Revised English loaded by source-separated reading overlay, preserving canonical original field.",
+      "englishOverrideStage": 127
+    },
+    {
+      "page": 123,
+      "id": "YZC18-123",
+      "unit": "L.19",
+      "title": "Defining, demonstrating and avoiding imitation: the commentator's closing counsel",
+      "ar": "مشتركا بينهما فقد تم القياس وتبين لك المقدمات والأشكال والنتيجة. فقوله «وهو عكسه»: أي تكثير المقدمات إلى فوق، وهو النتيجة، كما مر وجهه. قوله «والتحديد أي فعل الحد»: يعني أن المراد بالتحديد بيان أخذ الحد، وكأن المراد المعرف مطلقا للأشياء. وذلك بأن يقال: إذا أردت تعريف شيء فلا بد أن تضع ذلك الشيء وتطلب جميع ما هو أعم منه وتحمل عليه بواسطة أو بغيرها، وتميز الذاتيات عن العرضيات بأن تعد ما هو بين الثبوت له وما يلزم من مجرد ارتفاعه ارتفاع نفس الماهية ذاتيا، وما ليس كذلك عرضيا عاما، وتطلب جميع ما هو مساو له فيتميز عندك الجنس من العرض العام والفصل من الخاصة، ثم تركب أي قسم شئت من أقسام المعرف بعد اعتبار الشرائط المذكورة في باب المعرف. قوله «أي الطريق إلى الوقوف على الحق»: أي اليقين إن كان المطلوب علما نظريا، وإلى الوقوف عليه والعمل به إن كان علما عمليا. كما يقال إذا أردت الوصول إلى اليقين فلا بد أن تستعمل في الدليل بعد ملاحظة شرائط صحة الصورة إما الضروريات الست أو ما يحصل منها بصورة صحيحة وهيئة منتجة، وتبالغ في التفحص عن ذلك حتى لا تشتبه بالمشهورات أو المسلمات أو المشبهات، ولا تذعن لشيء بمجرد حسن الظن به أو بمن تسمع منه حتى لا تقع في مضيق الخطابة ولا ترتبط بربقة التقليد. قوله «وهذا بالمقاصد أشبه»: أي الأمر الثامن أشبه بمقاصد الفن منه بالمقدمات، ولذا ترى المتأخرين كصاحب المطالع يوردون ما سوى التحديد في مباحث الحجة ولواحق القياس، وأما التحديد فشأنه أن يذكر في مباحث المعرف. وقيل هذا إشارة إلى العمل وكونه أشبه بالمقصود ظاهر، بل المقصود من العلم العمل. جعلنا الله وإياكم من الراسخين في الأمرين، ورزقنا بفضله وجوده سعادة الدارين بحق نبيه محمد خير البرية أجمعين وعترته الطاهرين، إنه موفق ومعين.",
+      "en": "... shared between them, the proof is complete and its premises, form and result have become clear. On \"its reverse\": analysis runs in the opposite direction from constructing premises upward toward a target conclusion, as just explained. On \"definition, that is, composing the defining formula\": one should find what is more general than the item to be defined and what is predicable of it, directly or indirectly. Distinguish **essential** features from **accidental** ones: an essential feature belongs through what the thing is, and removing it would destroy the essence; a general accident does not have that role. Identify the concepts coextensive with the item, separating **genus from common accident** and **differentia from property**, and then construct the appropriate type of defining account according to the rules given earlier. On \"the way to reach truth\": for a theoretical science this means knowledge of truth with certainty; for a practical science it means knowing what is true and **acting upon it**. To attain certainty, ensure first that a demonstration has the proper form; then employ the six sorts of necessary foundational premises, or what follows soundly from them. Investigate carefully so that they are not confused with mere common opinions, concessions or deceptive semblances. Do **not** assent simply because you have a favourable opinion of a proposition or admire the person from whom you heard it: that would trap you in rhetoric or bind you to imitation. On \"this is more like the aims of the discipline\": the eighth introductory heading, concerned with educational procedures, belongs more naturally among the discipline's proper contents than among its preliminaries. Later commentators therefore locate most such procedures in the study of proof and its subordinate topics, and defining procedures in the study of definition. Another interpretation takes the phrase to refer to **practice**: the point of knowledge is action. Al-Yazdī closes by asking God to establish reader and author alike in knowledge and practice and grant them happiness in both worlds.",
+      "notes": [
+        "Q123 contains the last main ḥāshiya discussion AND a **separate closing/printing colophon**; the colophon is stored as independent metadata and is NOT inserted into al-Yazdī's speaking voice.",
+        "The final instruction against merely trusting a speaker returns to the distinction between *certainty* and *accepted-on-authority premises* discussed in the five arts.",
+        "The Arabic printed Qum text includes parenthetical possible variants «فيتميز/يميز» and «محافظة/ملاحظة», which remain unverified from photographic witnesses."
+      ],
+      "seam": "end-main-ḥāshiya",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/123?lang=ar",
+      "photoChecked": false,
+      "attribution": "al-Yazdī main Qum شرح"
+    }
+  ],
+  "colophon": {
+    "text": "قد تمت النسخة المسماة ب « الحاشية في المنطق » من مؤلفات العالم المدقق والفاضل المحقق الآخوند « ملا عبد الله اليزدي » نور الله مضجعه وأسكنه بحبوحة جنته.",
+    "english": "The copy of the work entitled The Gloss on Logic, by the scholar and investigator Mullā ʿAbd Allāh al-Yazdī, has been completed. May God illuminate his resting place and settle him in His Paradise.",
+    "attribution": "Nonauthorial printed completion notice; not part of the author's running شرح",
+    "sourceUrl": "https://ablibrary.net/book_content/b/12170/123?lang=ar",
+    "photoChecked": false
+  },
+  "nextLayer": {
+    "page": 125,
+    "heading": "حواشي الحاشية",
+    "attribution": "later annotations on the gloss, not al-Yazdī main شرح"
+  }
+};

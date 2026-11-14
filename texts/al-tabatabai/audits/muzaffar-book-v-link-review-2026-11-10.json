@@ -1,0 +1,321 @@
+{
+  "date": "2026-11-10",
+  "status": "proposed-grounded-links-for-parent-integration",
+  "selectionRule": "Actual shared proof, objection/reply, or specific causal/epistemic condition; no keyword-only matches.",
+  "links": [
+    {
+      "from": "M-V-40",
+      "to": "B-II-01",
+      "label": "Mental existence: exercises and their philosophical setting",
+      "relationship": "substantive-argument-or-method",
+      "strength": "direct",
+      "rationale": "Exercises1,4,5 reproduce the hot/cold objection and the proof from affirmative judgments of impossibles. Bidāya develops both and distinguishes primary from common predication in the reply.",
+      "sourceLocation": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "268–270",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=268&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 268,
+            "firstBlock": 0,
+            "lastBlockExclusive": 8
+          },
+          {
+            "page": 269,
+            "firstBlock": 0,
+            "lastBlockExclusive": 13
+          },
+          {
+            "page": 270,
+            "firstBlock": 0,
+            "lastBlockExclusive": 1
+          }
+        ]
+      },
+      "targetBook": "bidayat-al-hikma",
+      "targetTitle": "External and mental existence",
+      "targetEvidence": ". Primary predication makes the mental content what it is in meaning; it does not make the soul an instance of the external attribute under common predication. A subject is actually qualified by heat or cold when the corresponding form exists externally in the subject, not merely when the subject mentally possesses a conception of heat or cold.\n\n**The fourth object",
+      "targetBookSha256AtReview": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
+      "qualification": "Read the objection together with its reply; do not present the objection as Ṭabāṭabāʾī’s conclusion."
+    },
+    {
+      "from": "M-V-40",
+      "to": "N-III-01",
+      "label": "Mental existence: impossibles, effects, and predication",
+      "relationship": "substantive-argument-or-method",
+      "strength": "direct",
+      "rationale": "The final exercises ask for the logical arrangement of the same mental-existence proof and hot/cold objection treated in Nihāya. Its reply distinguishes the mental concept from the external effect by modes of predication.",
+      "sourceLocation": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "268–270",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=268&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 268,
+            "firstBlock": 0,
+            "lastBlockExclusive": 8
+          },
+          {
+            "page": 269,
+            "firstBlock": 0,
+            "lastBlockExclusive": 13
+          },
+          {
+            "page": 270,
+            "firstBlock": 0,
+            "lastBlockExclusive": 1
+          }
+        ]
+      },
+      "targetBook": "nihayat-al-hikma",
+      "targetTitle": "Chapter: The Division of Existence into Mental and External Existence",
+      "targetEvidence": "hese things. For by something hot, cold, square, or triangular we mean only that in which these meanings—which exist for another and qualify it—have occurred.\n\nThe resolution is that the criterion for a thing's existence being for another and for its qualifying that other is common predication. What exists in the mind of coldness, heat, and the like is such by primary predication, rather than co",
+      "targetBookSha256AtReview": "d1dd963f7a22e2be4ccca4c73c3799a4be6f9b5e4a30415cfc6d12993d07a4fd",
+      "qualification": "This links a worked philosophical dispute to a request to formalize it, not a generic occurrence of “proposition”."
+    },
+    {
+      "from": "M-V-40",
+      "to": "B-XII-04",
+      "label": "The giver cannot lack the perfection it gives",
+      "relationship": "substantive-argument-or-method",
+      "strength": "direct",
+      "rationale": "Exercise2 uses the causal axiom to infer divine knowledge from knowledge produced in us. Bidāya explicitly states the same axiom and applies it to knowledge, power, and life.",
+      "sourceLocation": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "268–270",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=268&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 268,
+            "firstBlock": 0,
+            "lastBlockExclusive": 8
+          },
+          {
+            "page": 269,
+            "firstBlock": 0,
+            "lastBlockExclusive": 13
+          },
+          {
+            "page": 270,
+            "firstBlock": 0,
+            "lastBlockExclusive": 1
+          }
+        ]
+      },
+      "targetBook": "bidayat-al-hikma",
+      "targetTitle": "The divine attributes and their predication",
+      "targetEvidence": "t God is the source bestowing every existence and existential perfection. A cause giving a perfection must possess that perfection in a higher and nobler mode: what gives something does not lack it absolutely. God must therefore be qualified by the perfections of knowledge, power, and life.\n\nAttributes are divided into **affirmative** and **negative**. Yet since the",
+      "targetBookSha256AtReview": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
+      "qualification": "The target qualifies possession as higher and nobler; it does not attribute a creature’s limited mode to God."
+    },
+    {
+      "from": "M-V-40",
+      "to": "N-XII-04",
+      "label": "The giver of perfection and divine simplicity",
+      "relationship": "substantive-argument-or-method",
+      "strength": "direct",
+      "rationale": "Exercise2 uses the exact maxim that the giver cannot lack what it gives. Nihāya uses it in proving that no existential perfection is absent from the Necessary, while explaining how the possession is compatible with simplicity.",
+      "sourceLocation": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "268–270",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=268&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 268,
+            "firstBlock": 0,
+            "lastBlockExclusive": 8
+          },
+          {
+            "page": 269,
+            "firstBlock": 0,
+            "lastBlockExclusive": 13
+          },
+          {
+            "page": 270,
+            "firstBlock": 0,
+            "lastBlockExclusive": 1
+          }
+        ]
+      },
+      "targetBook": "nihayat-al-hikma",
+      "targetTitle": "The Necessary is simple, composed of neither external nor mental parts",
+      "targetEvidence": "ntial perfection is denied of Him. For every contingent existential perfection is an effect bestowed by a cause, and causes end in the intrinsically Necessary. The giver of a thing cannot lack it. He—exalted is He—therefore possesses every existential perfection without any admixture of nonexistence. The necessary reality is purely simple, and nothing is",
+      "targetBookSha256AtReview": "d1dd963f7a22e2be4ccca4c73c3799a4be6f9b5e4a30415cfc6d12993d07a4fd",
+      "qualification": "The target explicitly rejects common predication identifying the Necessary with contingent things; retain that qualification."
+    },
+    {
+      "from": "M-V-39",
+      "to": "B-VII-03",
+      "label": "Complete cause and necessary effect",
+      "relationship": "substantive-argument-or-method",
+      "strength": "direct",
+      "rationale": "Muẓaffar’s transition from resemblance to certain demonstration depends on the common feature being a complete cause. Bidāya explains why a complete cause and its effect cannot be separated.",
+      "sourceLocation": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "266–267",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=266&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 266,
+            "firstBlock": 1,
+            "lastBlockExclusive": 6
+          },
+          {
+            "page": 267,
+            "firstBlock": 0,
+            "lastBlockExclusive": 5
+          }
+        ]
+      },
+      "targetBook": "bidayat-al-hikma",
+      "targetTitle": "Necessary concomitance of complete cause and effect",
+      "targetEvidence": "Whenever a complete cause exists, its effect must exist. Otherwise the effect could be absent despite the presence of everything required for it; its absence would then be unexplained. Likewise, if an effect actually",
+      "targetBookSha256AtReview": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
+      "qualification": "Ontological necessity does not by itself establish that an investigator has identified the complete cause; Muẓaffar expressly marks that epistemic difficulty."
+    },
+    {
+      "from": "M-V-39",
+      "to": "N-VIII-03",
+      "label": "Complete cause rather than one causal factor",
+      "relationship": "substantive-argument-or-method",
+      "strength": "direct",
+      "rationale": "The argument’s certainty requires the full cause. Nihāya distinguishes complete from incomplete causes, including in voluntary action, and argues that the complete cause necessitates its effect.",
+      "sourceLocation": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "266–267",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=266&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 266,
+            "firstBlock": 1,
+            "lastBlockExclusive": 6
+          },
+          {
+            "page": 267,
+            "firstBlock": 0,
+            "lastBlockExclusive": 5
+          }
+        ]
+      },
+      "targetBook": "nihayat-al-hikma",
+      "targetTitle": "The necessity of the effect’s existence when its complete cause exists, and of the cause’s existence when its effect exists",
+      "targetEvidence": "use with which the act is necessary. The human being himself is one part of the complete cause. The act’s relation to him is one of possibility, not necessity. The discussion concerns the necessitation exercised by the complete cause, not by cause without qualification.\n\nMoreover, to admit that an agent acting by choice stands in an equal relation to the act and its nonexistence is to deny the causal connection. This entails a",
+      "targetBookSha256AtReview": "d1dd963f7a22e2be4ccca4c73c3799a4be6f9b5e4a30415cfc6d12993d07a4fd",
+      "qualification": "The relation is the specific full-cause premise, not a broad crosslink for every occurrence of “cause”."
+    },
+    {
+      "from": "M-V-37",
+      "to": "N-XI-13",
+      "label": "Knowing the cause and knowing a caused conclusion",
+      "relationship": "substantive-argument-or-method",
+      "strength": "direct",
+      "rationale": "Muẓaffar contrasts bare observation with inquiry that knows a causal explanation. Nihāya develops the dependence of certain knowledge of a caused thing on its cause and distinguishes the case of what has no cause.",
+      "sourceLocation": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "262–264",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=262&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 262,
+            "firstBlock": 6,
+            "lastBlockExclusive": 9
+          },
+          {
+            "page": 263,
+            "firstBlock": 0,
+            "lastBlockExclusive": 5
+          },
+          {
+            "page": 264,
+            "firstBlock": 0,
+            "lastBlockExclusive": 2
+          }
+        ]
+      },
+      "targetBook": "nihayat-al-hikma",
+      "targetTitle": "Knowledge of what has a cause is obtained only through knowledge of its cause, and related matters",
+      "targetEvidence": "g established for itself is one instance of that concomitance, and knowledge of it does not depend upon a cause.\n\nIt is therefore clear from the foregoing that investigating a conclusion sought yields knowledge of it only by proceeding to it through its cause, if it has a cause, or through general concomitances, if it has no cause. Proceeding to a cause through its effect, however, yields no knowledge at all.",
+      "targetBookSha256AtReview": "d1dd963f7a22e2be4ccca4c73c3799a4be6f9b5e4a30415cfc6d12993d07a4fd",
+      "qualification": "Nihāya separately allows general concomitances for what has no cause and discusses the objection from sensation. This is not an assertion that both authors give an identical modern theory of induction."
+    },
+    {
+      "from": "M-V-32",
+      "to": "B-XI-08",
+      "label": "Proof must terminate in self-evident premises",
+      "relationship": "substantive-argument-or-method",
+      "strength": "direct",
+      "rationale": "Compound syllogisms are traced back to self-evident premises to avoid an endless regress of acquisition. Bidāya states the same dependence of discursive knowledge on immediate cognition.",
+      "sourceLocation": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "255–257",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=255&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 255,
+            "firstBlock": 0,
+            "lastBlockExclusive": 6
+          },
+          {
+            "page": 256,
+            "firstBlock": 0,
+            "lastBlockExclusive": 17
+          },
+          {
+            "page": 257,
+            "firstBlock": 0,
+            "lastBlockExclusive": 1
+          }
+        ]
+      },
+      "targetBook": "bidayat-al-hikma",
+      "targetTitle": "Immediate and discursive knowledge",
+      "targetEvidence": "ual account of the human being or the horse, or demonstrations that the angles of a triangle equal two right angles and that the human has an immaterial soul.\n\nDiscursive sciences ultimately depend upon immediate cognitions by which their conclusions are established. Otherwise the series of demonstrations would recede without end and could never yield knowledge, as explained in lo",
+      "targetBookSha256AtReview": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
+      "qualification": "Link to the foundation of the proof chain, not merely to the shared word “knowledge”."
+    },
+    {
+      "from": "M-V-33",
+      "to": "N-XI-09",
+      "label": "Reductio, contradictories, and the first principle",
+      "relationship": "substantive-argument-or-method",
+      "strength": "direct",
+      "rationale": "Muẓaffar’s reductio establishes the target by falsifying its contradictory because contradictories cannot both be false. Nihāya names their joint truth/joint falsity exclusion the first principle and describes the exceptive syllogism completing knowledge.",
+      "sourceLocation": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination",
+        "page": "257–259",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=257&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "blockCoverage": [
+          {
+            "page": 257,
+            "firstBlock": 1,
+            "lastBlockExclusive": 9
+          },
+          {
+            "page": 258,
+            "firstBlock": 0,
+            "lastBlockExclusive": 11
+          },
+          {
+            "page": 259,
+            "firstBlock": 0,
+            "lastBlockExclusive": 9
+          }
+        ]
+      },
+      "targetBook": "nihayat-al-hikma",
+      "targetTitle": "The division of acquired knowledge into self-evident and theoretical",
+      "targetEvidence": "e, yields knowledge only if it excludes its contradictory and that contradictory is false.\n\nIt is therefore the first proposition to which assent attaches, and all theoretical and self-evident knowledge ultimately rests upon it in an exceptive syllogism through which the knowledge is completed.\n\nIf doubt about it were supposed, this would spread to every proposition and invalidate knowledge at its very root.\n\n",
+      "targetBookSha256AtReview": "d1dd963f7a22e2be4ccca4c73c3799a4be6f9b5e4a30415cfc6d12993d07a4fd",
+      "qualification": "The link concerns the logical foundation of reductio and certainty; it does not conflate reductio with simple immediate inference."
+    }
+  ]
+}

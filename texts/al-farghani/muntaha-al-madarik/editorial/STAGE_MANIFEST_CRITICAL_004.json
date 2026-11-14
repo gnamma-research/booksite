@@ -1,0 +1,193 @@
+{
+  "schema": "gnamma-farghani-critical-stage-IV-v1",
+  "date": "2026-11-09",
+  "repository": "gnamma-research/booksite",
+  "branch": "master",
+  "editorial_scope": "Arabic introduction four foundations B2007 pp18–143 + concluding tatimmat al-dibaja pp144–145; not complete verse commentary",
+  "working_english_intro": {
+    "page_count": 128,
+    "beirut_start": 18,
+    "beirut_end": 145,
+    "draft_complete_by_page": true,
+    "independently_proofed_complete": false
+  },
+  "source_critical": {
+    "checked_selected_spans": 198,
+    "pages_with_at_least_one_source_check": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "pass_clause_counts": [
+      37,
+      43,
+      62,
+      56
+    ],
+    "next_page_to_check": 37,
+    "full_page_line_proofreading": false,
+    "actual_1876_print_pages_collated": 0,
+    "actual_manuscript_pages_collated": 0,
+    "independently_verified_farghani_manuscript_variants": 0,
+    "pass_IV_dispositions": {
+      "retain": 44,
+      "revise": 6,
+      "annotate": 3,
+      "corrected_typography": 1,
+      "unresolved_crux": 2
+    },
+    "unresolved_digital_cruxes": 12,
+    "verified_manuscript_variant_count": 0,
+    "cumulative_unresolved_cruxes": 12
+  },
+  "manuscript_witness_register": {
+    "codex_count": 11,
+    "source": "editorial/WITNESS_CENSUS_CRITICAL_004.md",
+    "status": "eleven candidate codices from catalogues/scholarship; no independently viewed textual folios"
+  },
+  "canonical_full_cumulative": "editorial/FULL_CUMULATIVE_CRITICAL_004.md",
+  "previous_immutable_archive": "editorial/FULL_CUMULATIVE_CRITICAL_003.md",
+  "verification": {
+    "total": 198,
+    "unique_ids": 198,
+    "distinct_pages": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "page_count": 19,
+    "quality_ledger_records": 198,
+    "codices": 11,
+    "manuscript_variants": 0,
+    "reader_has_all": true,
+    "reader_page_options": true,
+    "old_full_corpus_preserved": true,
+    "next_page": 37,
+    "crux_new": 2,
+    "corrected_new": 1
+  },
+  "files": [
+    {
+      "path": "editorial/FULL_CUMULATIVE_CRITICAL_004.md",
+      "sha": "07c0fb4566a9c7b6058e13e43e1e1ae8dce06779",
+      "characters": 975050
+    },
+    {
+      "path": "editorial/FULL_CUMULATIVE_CRITICAL_003.md",
+      "sha": "008267a71fce2e7df965ce165501c2be2a8590b8",
+      "characters": 803484
+    },
+    {
+      "path": "editorial/CRITICAL_TRANSLATION_30_36.md",
+      "sha": "dd96c3b271728889999fa52e16aeba17c7c71fce",
+      "characters": 24257
+    },
+    {
+      "path": "editorial/WITNESS_CENSUS_CRITICAL_004.md",
+      "sha": "fa66659064b5940ee2b094962fb69f54bd42a705",
+      "characters": 10612
+    },
+    {
+      "path": "editorial/CRITICAL_LOCUS_REGISTER_004.json",
+      "sha": "8632d402fac22b35035098324d42d9751a583b5d",
+      "characters": 6738
+    },
+    {
+      "path": "editorial/STAGE_HANDOFF_CRITICAL_004.md",
+      "sha": "1f53b6523c9f7a4a6b05ee5b3243e3bcf283766d",
+      "characters": 4091
+    },
+    {
+      "path": "editorial/STATUS.md",
+      "sha": "160094530be434b00d9ba61f95b7ad08a8fe3c50",
+      "characters": 24220
+    },
+    {
+      "path": "editorial/HANDOFFS.md",
+      "sha": "3b19771b249bc8b673f73992abc37094cb0bfe1a",
+      "characters": 10054
+    },
+    {
+      "path": "editorial/WITNESS_REGISTER.json",
+      "sha": "2352021540f1e7c84ec1ed70c09e62a60e030886",
+      "characters": 19303
+    },
+    {
+      "path": "editorial/CRITICAL_COVERAGE_REGISTER.json",
+      "sha": "20c119926cc118f684533cff143686577caf7717",
+      "characters": 81289
+    },
+    {
+      "path": "critical-edition.html",
+      "sha": "13fabda20661549cb530b8fad7e1812bff1f13ac",
+      "characters": 9179
+    },
+    {
+      "path": "critical-reader.js",
+      "sha": "e4f43d4091fa12c4d011a87dbd4f035cf369af69",
+      "characters": 3352
+    },
+    {
+      "path": "index.html",
+      "sha": "2e131cd2c83dc40de756a20b83aec2fed7a0f307",
+      "characters": 10096
+    },
+    {
+      "path": "handoffs.html",
+      "sha": "22b10dcd9d22fac018ff94b389752aa82ead3ec9",
+      "characters": 11615
+    },
+    {
+      "path": "data/critical-pass-001-p18-20.js",
+      "sha": "b3d7bcde5c2e627e80f1f042f58d8c3ac6aa943a",
+      "characters": 29733
+    },
+    {
+      "path": "data/critical-pass-002-p21-23.js",
+      "sha": "0bea13500cad9c05c1103d868fd21f37464b8a4b",
+      "characters": 34332
+    },
+    {
+      "path": "data/critical-pass-003-p24-29.js",
+      "sha": "e5f36566112ad78c4713c1d5ec95347976ad4b77",
+      "characters": 42332
+    },
+    {
+      "path": "data/critical-pass-004-p30-36.js",
+      "sha": "89399b5d9235377481ed81f865fc0d35f15ae352",
+      "characters": 35567
+    }
+  ]
+}
