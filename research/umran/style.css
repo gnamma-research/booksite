@@ -145,3 +145,8 @@ th{color:var(--forest);font-weight:650}
 @media(max-width:880px){.hero-grid,.split{grid-template-columns:1fr;gap:34px}.hero{padding:58px 0}.aside{position:static}.cardgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.footergrid{grid-template-columns:1fr 1fr}.crumb{display:none}}
 @media(max-width:650px){.shell{padding:0 19px}.topline{min-height:69px}.brand img{width:40px;height:40px;flex-basis:40px}.brand .word{font-size:21px}.brand .word small{font-size:7px}.subnav .shell{gap:18px}.subnav a{font-size:12px}.hero{padding:47px 0}.hero h1{font-size:45px}.hero-side{padding:20px}.section{padding:47px 0}.sectionhead{display:block}.sectionhead .more{display:inline-block;margin-top:12px}.cardgrid,.cardgrid.two,.listgrid,.fields,.footergrid,.pathfinder .formgrid{grid-template-columns:1fr}.card,.dossier,.field{padding:21px}.pagehead{padding:37px 0 31px}.content{padding:32px 0 60px}.toolbar input,.toolbar select{flex:1 1 100%;width:100%;max-width:none}.lesson{grid-template-columns:28px 1fr;gap:10px}.band{font-size:19px}.pathfinder{padding:20px}.step{grid-template-columns:30px 1fr}.btns{gap:8px}.btn{font-size:13px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}a.card{transition:none}}
+
+/* A single six-section navigation; deep research pages highlight their parent section. */
+.subnav a[aria-current="location"]{border-bottom-color:var(--clay);color:var(--ink)}
+.subnav .shell{gap:clamp(12px,2.5vw,28px)}
+@media(max-width:650px){.subnav .shell{gap:17px}.subnav a{padding:11px 0}}
