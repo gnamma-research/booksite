@@ -386,18 +386,18 @@
       ],
       "url": "texts/al-sanandaji/taqrib-al-maram/",
       "related_matn_id": "taftazani-tahdhib-kalam",
-      "note": "Taqrīb al-Marām Volume I: 280 page positions indexed; all 279 body pages contain some working Arabic/English, but many printed clauses and long lower marginalia remain untranslated. Stage87 visually revises 10 bounded records (7 newly with typed Arabic), for 1,178/1,401 records with some Arabic; 222 genuine printed-source records still without typed Arabic, plus 1 retained hidden ghost editorial entry. 0/279 pages are completely proofed in all registers. Source images and original Būlāq 1318 AH PDF available in offline scholarly package; public reader remains uncluttered. Merger with Tahdhīb deferred until commentary Volume II complete.",
+      "note": "Volume I: 280 printed positions indexed; all 279 body pages have some Arabic and working English, but literal all-register text and long lower ḥawāshī are incomplete. Stage88 adds 9 visually checked bounded Arabic-English readings on I:8–11, 17–19 and 22. 1,187/1,401 working records have some typed Arabic; 213 genuine source records remain Arabic-blank, excluding one retired synthetic editorial entry. 0/279 pages critically complete or independently second-proofed. Source PDF/facsimiles accompany the offline recovery; clean public reader remains separate from scholarly apparatus. Combined Tahdhīb/Taqrīb reader deferred until both volumes of commentary are finished.",
       "cumulative_text": "texts/al-sanandaji/taqrib-al-maram/2026-10-31_parallel_selected_commentary.md",
       "volume_i_reader_url": "texts/al-sanandaji/taqrib-al-maram/stage84-reader.html",
-      "volume_i_reader_status": "single-print-bounded-working-translation-upper-ruled-lower-proof-open",
+      "volume_i_reader_status": "all-pages-with-some-source-text-and-selected-English; all-register-critical-proof-incomplete",
       "source_images_publicly_hosted": false,
       "body_page_positions": 279,
       "body_pages_with_any_english": 279,
       "body_pages_with_some_typed_arabic": 279,
       "working_records": 1401,
-      "records_with_some_typed_arabic": 1178,
+      "records_with_some_typed_arabic": 1187,
       "critically_complete_pages": 0,
-      "last_editorial_update": "2026-11-13"
+      "last_editorial_update": "2026-11-14"
     },
     {
       "id": "taftazani-tahdhib-logic",
