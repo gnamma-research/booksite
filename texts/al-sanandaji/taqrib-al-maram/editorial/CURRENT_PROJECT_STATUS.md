@@ -1,3 +1,19 @@
+# Stage 89 — Volume I bounded Arabic–English proof and reader continuity (14 November 2026)
+
+**Supersedes Stage88 numerical counters below.** Source: Būlāq 1318 AH original print; single-witness image examination. This is an incremental *working* edition, not a definitive critical one.
+
+**New:** ten bounded Arabic–English readings in ten pre-existing source records across printed **I:10, 11, 13, 15, 16 and 19**. The corresponding original printed lines have been inspected; remainder of each long lower/upper passage is deliberately left open. The earlier English summaries remain available as hidden `stage89_prior_working_overview` metadata, rather than being silently treated as literal translation. See [new source readings](STAGE89_BOUNDED_SOURCE_READINGS.md).
+
+**Strict figures:** 1,401 original stable IDs, **1,197** containing *some* typed Arabic, **204** without any typed Arabic, of which one is a known retired editorial paraphrase. **203 genuine source records still lack Arabic:** 152 lower notes, 21 ruled notes, 30 upper records. All 279 body pages contain some working Arabic/English; that is neither a gap-free transcription nor evidence of whole-page translation. **0 of 279 pages** have all printed registers fully transcribed, literally translated and independently proofed. Manuscript collation remains unattempted and is not the blocking requirement for this single-print release.
+
+**Source integrity and tests:** unchanged original 632-page combined PDF SHA-256 `4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134`; all 280 Volume I facsimile PNGs retained, SHA-256 per-image register shipped with offline release. 1,401-ID source-regression passed. Chromium testing with injected local static files passed at 390, 768 and 1400 pixels without JS errors/overflow. Arabic search for a lower note navigated to I:13 and automatically unfolded its otherwise hidden marginal block; real-device iOS Safari acceptance is open. See [verification and next gaps](STAGE89_VERIFICATION.md) and [the remaining source-record ledger](STAGE89_UNTRANSCRIBED_RECORD_QUEUE.csv).
+
+**Reader policy:** do not restore stage notices, editorial history or progress bars to the user-facing study reader. Keep the *Tahdhīb al-Kalām* reader separate and defer the unified matn–sharḥ experience until *Taqrīb* Volumes I and II are fully accepted. Prioritize complete printed text, especially the lower ḥawāshī; then perform independent line-by-line Arabic–English proof.
+
+---
+
+## Archived Stage 88 and previous checkpoints
+
 # Stage 88 — bounded lower and upper text recovery (14 November 2026)
 
 **This is the newest checked checkpoint.** The public reading interface remains study-first and unchanged in structure; stage notes below are for editors, not inserted in the continuous reading view.
