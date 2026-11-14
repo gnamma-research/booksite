@@ -56,6 +56,11 @@ function pageArticle(n,flow=false){const wrap=E('section',flow?'flow-section':'p
  const marg=margins(rows);if(marg){if(!upper.length)marg.open=true;wrap.append(marg)}
  if(!flow){const foot=E('div','page-footer');foot.append(btn('← Previous',()=>go(n-1)));foot.append(btn('Contents',()=>show('Contents',contents),'page-toc'));foot.append(btn('Next →',()=>go(n+1)));wrap.append(foot)}
  return wrap}
+function revealPassage(unit){
+ const target=document.getElementById(tagKey(unit));if(!target)return;
+ const details=target.closest('details.marginal-block');if(details)details.open=true;
+ target.scrollIntoView({behavior:'smooth',block:'center'});
+}
 function navigateUrl(unit){const u=new URL(location.href);u.searchParams.set('p',page);if(unit)u.searchParams.set('unit',unit);else u.searchParams.delete('unit');try{history.replaceState(null,'',u.toString())}catch{}}
 function syncControls(){const n=$('pageNumber');n.value=String(page);$('previous').disabled=page<=1;$('next').disabled=page>=280;
  for(const x of document.querySelectorAll('[data-reading-mode]')){x.classList.toggle('active',x.dataset.readingMode===state.mode);x.setAttribute('aria-pressed',String(x.dataset.readingMode===state.mode))}
@@ -64,7 +69,7 @@ function syncControls(){const n=$('pageNumber');n.value=String(page);$('previous
  document.documentElement.style.setProperty('--reading-size',Math.max(16,Math.min(28,Number(state.font)))+'px');document.documentElement.style.setProperty('--arabic-size',Math.max(20,Math.min(42,Number(state.arabicSize)))+'px');document.documentElement.style.setProperty('--leading',Math.max(1.4,Math.min(2.5,Number(state.leading))));
  $('focusControls').hidden=state.mode!=='focus';$('focusPrev').disabled=page<=1;$('focusNext').disabled=page>=280}
 function render(){syncControls();const main=$('text');main.replaceChildren();if(state.mode==='flow'){flowEnd=page;extendFlow(7)}else{main.append(pageArticle(page))}save()}
-function go(n,unit){if(!Number.isFinite(Number(n)))return;page=Math.max(1,Math.min(280,Math.trunc(Number(n))));navigateUrl(unit);if(state.mode==='flow'&&unit)state.mode='read';render();if(unit)requestAnimationFrame(()=>document.getElementById(tagKey(unit))?.scrollIntoView({behavior:'smooth',block:'center'}));else window.scrollTo({top:0,behavior:'instant'})}
+function go(n,unit){if(!Number.isFinite(Number(n)))return;page=Math.max(1,Math.min(280,Math.trunc(Number(n))));navigateUrl(unit);if(state.mode==='flow'&&unit)state.mode='read';render();if(unit)requestAnimationFrame(()=>revealPassage(unit));else window.scrollTo({top:0,behavior:'instant'})}
 function setMode(m){state.mode=m;render();window.scrollTo({top:0,behavior:'instant'})}
 function extendFlow(num){const host=$('text');const start=flowEnd;for(let i=start;i<=Math.min(280,start+num-1);i++){host.append(pageArticle(i,true))}flowEnd=Math.min(281,start+num);
  const old=host.querySelector('.flow-more');if(old)old.remove();if(flowEnd<=280)host.append(btn('Continue reading',()=>extendFlow(7),'flow-more'));else host.append(E('p','end-text','End of Volume I'))}
@@ -106,5 +111,5 @@ for(const b of document.querySelectorAll('[data-reading-mode]'))b.onclick=()=>se
 $('contentsButton').onclick=()=>show('Contents',contents);$('searchButton').onclick=()=>show('Search',searchPanel);$('notesButton').onclick=()=>show('Saved pages & notes',saved);$('settingsButton').onclick=()=>show('Reading settings',settings);$('langButton').onclick=()=>show('Language',language);$('toolsButton').onclick=()=>show('Reading tools',tools);$('exitFocus').onclick=()=>setMode('read');$('focusPrev').onclick=()=>go(page-1);$('focusNext').onclick=()=>go(page+1);$('closeSheet').onclick=close;
 $('backdrop').addEventListener('click',e=>{if(e.target===$('backdrop'))close()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('backdrop').hidden)close();else if(state.mode==='focus')setMode('read');return}if(e.target.closest('input,textarea,select,button,[contenteditable]')||!$('backdrop').hidden)return;if(e.key==='ArrowLeft')go(page-1);else if(e.key==='ArrowRight')go(page+1);else if(e.key==='/'){e.preventDefault();show('Search',searchPanel)}});
-$('text').setAttribute('aria-live','off');render();const requested=query.get('unit');if(requested)requestAnimationFrame(()=>document.getElementById(tagKey(requested))?.scrollIntoView({block:'center'}));
+$('text').setAttribute('aria-live','off');render();const requested=query.get('unit');if(requested)requestAnimationFrame(()=>revealPassage(requested));
 })();
