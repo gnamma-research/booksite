@@ -109,12 +109,37 @@ async function load(){
         revisions=new Map(overlay.records.map(x=>[x.id,x]));
     }
    }catch(e){/* Retain the complete older public reading if the optional layer fails. */}
+   let definitionPatches=new Map();
+   try{
+     const response=await fetch('stage131-h-definition-english-patches.json?v=20261115',{cache:'force-cache'});
+     if(response.ok){
+       const v=await response.json();
+       if(v.schema==='gnamma.tahdhib.stage131.h-definition-english-patches.v1'
+          &&Array.isArray(v.records)&&v.records.length===11)
+         definitionPatches=new Map(v.records.map(x=>[x.id,x]));
+     }
+   }catch(e){/* Optional English revision: never block the original corpus. */}
    app.stage130EnglishRevisions=0;
+   app.stage131DefinitionCorrections=0;
+   app.stage131SkippedPatches=[];
    app.records=data.records.map(note=>{
-    const update=revisions.get(note.id);
-    if(!update||typeof update.english!=='string'||!update.english.trim())return note;
-    app.stage130EnglishRevisions++;
-    return {...note,englishOriginal:note.english,english:update.english,stage130Review:true};
+     let revised=note;
+     const update=revisions.get(note.id);
+     if(update&&typeof update.english==='string'&&update.english.trim()){
+       app.stage130EnglishRevisions++;
+       revised={...revised,englishOriginal:revised.english,english:update.english,stage130Review:true};
+     }
+     const fix=definitionPatches.get(note.id);
+     if(fix&&typeof fix.old==='string'&&typeof fix.new==='string'){
+       if(typeof revised.english==='string'&&revised.english.includes(fix.old)){
+         revised={...revised,
+           englishOriginal:revised.englishOriginal??revised.english,
+           english:revised.english.replace(fix.old,fix.new),
+           stage131Review:true};
+         app.stage131DefinitionCorrections++;
+       }else app.stage131SkippedPatches.push(note.id);
+     }
+     return revised;
    });
    render();
  }catch(error){
@@ -138,6 +163,6 @@ allTab.onclick=()=>{app.showReferences=false;app.index=0;render()};
 refTab.onclick=()=>{app.showReferences=true;app.index=0;render()};
 prev.onclick=()=>{app.index=Math.max(0,app.index-1);render();scroller.scrollTop=0};
 next.onclick=()=>{app.index++;render();scroller.scrollTop=0};
-function expose(){return {open,close:shut,goTo(id){if(!app.records){open();return}const i=app.records.findIndex(x=>x.id===id);if(i<0)return;app.section='all';section.value='all';app.query='';search.value='';app.showReferences=true;const idx=notes().findIndex(x=>x.id===id);app.index=Math.floor(idx/12);render();open();},counts:()=>({loaded:app.records?.length||0,visible:app.filtered.length,stage130EnglishRevisions:app.stage130EnglishRevisions||0})}}
+function expose(){return {open,close:shut,goTo(id){if(!app.records){open();return}const i=app.records.findIndex(x=>x.id===id);if(i<0)return;app.section='all';section.value='all';app.query='';search.value='';app.showReferences=true;const idx=notes().findIndex(x=>x.id===id);app.index=Math.floor(idx/12);render();open();},counts:()=>({loaded:app.records?.length||0,visible:app.filtered.length,stage130EnglishRevisions:app.stage130EnglishRevisions||0,stage131DefinitionCorrections:app.stage131DefinitionCorrections||0,stage131SkippedPatches:app.stage131SkippedPatches||[]})}}
 window.GnammaTahdhibFourLayers=Object.freeze(expose());
 })();
