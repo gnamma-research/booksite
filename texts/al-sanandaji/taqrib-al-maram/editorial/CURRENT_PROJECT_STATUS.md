@@ -1,3 +1,17 @@
+# Stage 92 — Volume I printed ruled notes and lower-text source recovery (15 November 2026)
+
+**Latest checkpoint.** Stage 92 adds **17** facsimile-grounded Arabic–English readings to pre-existing Volume I records that lacked typed Arabic. **15 ruled-note entries** now have at least one entered Arabic passage (nine short ruled bands have a connected complete first-pass transcription; the other six remain bounded extracts), and two extended **lower marginal commentaries** have substantial new beginning passages. The original source image remains authoritative. See [new bilingual readings](STAGE92_BOUNDED_ARABIC_ENGLISH_READINGS.md) and [critical audit](STAGE92_EDITORIAL_AND_SOURCE_AUDIT.md).
+
+**Coverage, not completion:** 1,401 stable corpus records; **1,232** contain some Arabic (previously 1,215); **168 genuine printed-source records remain Arabic-blank**, comprising **138 lower** and **30 upper** entries; one retired editorial record remains hidden. Every one of the 279 printed body pages contains some Arabic and English working material, but numerous long marginal passages and parts of the upper prose remain untranslated or abridged. **0/279 complete all-register pages independently proofed.** “Complete first-pass short ruled block” is not equivalent to “complete page.” No manuscript collation has been claimed or performed.
+
+**Verification:** Būlāq 1318 AH, combined scan 632 physical PDF pages, SHA-256 `4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134`; all 280 Volume I source images match the preserved individual checksums. Cumulative Node source integrity passed with all 1,401 records; in-memory Chromium checks passed at 390, 768 and 1400-pixel widths with Arabic search revealing the I:31 ruled note inside its collapsed marginal section. Local file/localhost navigation was restricted in the test environment; actual iOS Safari remains untested. See [metrics](STAGE92_METRICS.json) and [exact remaining queue](STAGE92_ARABIC_BLANK_SOURCE_QUEUE.csv).
+
+**Editorial priority:** 138 blank lower-commentary records, then 30 blank upper records, then the many omitted clauses inside already nonblank records; preserve distinct voices, literal source reading and cross-page joins; perform complete independent all-register page proof. The public reader remains study-first with editorial history removed from its normal reading view. The combined *Tahdhīb*–*Taqrīb* reader remains deferred until both *Taqrīb* volumes have been completed and checked.
+
+---
+
+## Stage 91 and earlier (archival)
+
 # Stage 91 — reconciled Volume I source checks (15 November 2026)
 
 **Newest verified checkpoint.** The already-public Stage 90 contains **ten** bounded Arabic–English source readings, printed I:14–15 and I:22–24. A separate pass recovered thirteen candidates, **five overlapping** those existing records. To prevent overwriting verified text, this Stage 91 supplement adds **only the eight other readings**, printed I:9, 11–13, 25, 27, 30 and 33. Both batches are loaded sequentially, giving **18 unique newly source-typed records** relative to Stage 89. See [the eight new printed excerpts](STAGE91_NEW_SOURCE_EXCERPTS.md) and the retained Stage 90 dossier.
