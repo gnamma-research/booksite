@@ -1,3 +1,19 @@
+# Stage 90 — first-pass lower-marginal transcription and bilingual proof (15 November 2026)
+
+**Latest source-based checkpoint.** Ten pre-existing source records gained image-checked, bounded Arabic with corresponding first-pass English: **eight lower marginal units and two middle-ruled units** on original printed I:14–15 and I:22–24. The revised material concerns knowledge as an end, knowing one's own cognition, demonstrative/conceptual inference, self-evidence of intellect, scepticism, customary causal association, and Muʿtazilī generation. It is a **limited literal extract**, not a complete page or note, except that the short ruled passage on I:22 is tentatively covered as a block pending a second reading. See [Stage90 source texts](STAGE90_BOUNDED_AR_EN_READINGS.md).
+
+**Strict accounting:** Stable records **1,401/1,401 retained**, **1,207** have *some* Arabic; **193 genuine source records remain without Arabic** (plus one hidden retired non-source editorial item). Original body-page positions with any Arabic/English: **279/279**; full all-register Arabic and independently proofed literal translation: **0/279**. Many already entered records still contain selected quotations and unrendered remainder—these metrics are not a percentage of actual words translated. No manuscript collation was undertaken, and it is not the primary blocking requirement for the intended Būlāq single-print edition.
+
+**Source and tests:** Original Būlāq 1318 AH 632-page PDF SHA-256 `4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134`. All 280 Volume I page PNG hashes match the retained source register; original physical combined PDF page = printed I:p +13. New first-pass transcriptions have original printed-page and register locators, and prior explanatory English is kept only as hidden historical metadata. Node corpus integrity checks passed, and injected-static Chromium QA at 390/768/1400 pixels loaded all 1,401 records without JS errors or horizontal overflow. Direct file browsing was blocked by local environment policy. Real iOS Safari and independent second-person philological verification are still open.
+
+**Reader policy:** The existing public reader remains clean; Stage90 source corrections load after previous patches and before its reader script. No stage banners/old reader links were added. The *Tahdhīb al-Kalām* + *Taqrīb* merger remains deferred until both commentary volumes have genuinely completed translation and proof.
+
+**Next actual blocker:** Transcribe the remaining 193 Arabic-blank source entries, then finish every still omitted upper, ruled and lower printed span and independently proof page by page. The extensive lower margins, not the basic page index, dominate remaining editorial workload. The [record-level queue](STAGE90_REMAINING_SOURCE_RECORDS.csv) tracks unfinished entries.
+
+---
+
+## Archived Stage89 and earlier checkpoints
+
 # Stage 89 — Volume I bounded Arabic–English proof and reader continuity (14 November 2026)
 
 **Supersedes Stage88 numerical counters below.** Source: Būlāq 1318 AH original print; single-witness image examination. This is an incremental *working* edition, not a definitive critical one.
