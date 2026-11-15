@@ -39,6 +39,8 @@ jobs:
           node --check texts/al-sanandaji/taqrib-al-maram/stage89-corpus-ci.cjs
           node --check texts/al-sanandaji/taqrib-al-maram/stage90-source-delta.js
           node --check texts/al-sanandaji/taqrib-al-maram/stage90-corpus-ci.cjs
+          node --check texts/al-sanandaji/taqrib-al-maram/stage91-source-delta.js
+          node --check texts/al-sanandaji/taqrib-al-maram/stage91-corpus-ci.cjs
           node --check texts/al-sanandaji/taqrib-al-maram/reader.js
       - name: Validate source-page joins, coverage and reader order
         run: node texts/al-sanandaji/taqrib-al-maram/stage51-corpus-ci.cjs
@@ -52,3 +54,5 @@ jobs:
         run: node texts/al-sanandaji/taqrib-al-maram/stage89-corpus-ci.cjs
       - name: Validate Stage90 upper/lower source note integrity and no false completion
         run: node texts/al-sanandaji/taqrib-al-maram/stage90-corpus-ci.cjs
+      - name: Reconcile Stage90 and Stage91 source records and proof gates
+        run: node texts/al-sanandaji/taqrib-al-maram/stage91-corpus-ci.cjs
