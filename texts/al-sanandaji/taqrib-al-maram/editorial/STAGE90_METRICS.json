@@ -1,0 +1,25 @@
+{
+  "stage": 90,
+  "date": "2026-11-15",
+  "record_total": 1401,
+  "some_typed_arabic_records": 1207,
+  "source_records_without_typed_arabic": 193,
+  "retired_editorial_records_without_typed_arabic": 1,
+  "body_pages_with_some_typed_arabic": 279,
+  "printed_body_pages": 279,
+  "new_bounded_transcription_records": 10,
+  "revised_by_layer": {
+    "lower": 8,
+    "ruled": 2
+  },
+  "pages_touched": [
+    14,
+    15,
+    22,
+    23,
+    24
+  ],
+  "all_register_completed_pages": 0,
+  "independently_proofed_pages": 0,
+  "source_pdf_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134"
+}
