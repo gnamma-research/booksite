@@ -1,3 +1,17 @@
+# Stage 91 — reconciled Volume I source checks (15 November 2026)
+
+**Newest verified checkpoint.** The already-public Stage 90 contains **ten** bounded Arabic–English source readings, printed I:14–15 and I:22–24. A separate pass recovered thirteen candidates, **five overlapping** those existing records. To prevent overwriting verified text, this Stage 91 supplement adds **only the eight other readings**, printed I:9, 11–13, 25, 27, 30 and 33. Both batches are loaded sequentially, giving **18 unique newly source-typed records** relative to Stage 89. See [the eight new printed excerpts](STAGE91_NEW_SOURCE_EXCERPTS.md) and the retained Stage 90 dossier.
+
+**Page and record accounting (not translation completeness):** Volume I has 280 indexed printed leaf positions (I:1 bibliographic title, I:2–280 body). All **279 body leaves contain some working Arabic and English**, but large portions are still summarized or wholly missing. There are **1,401 unique records**, **1,215 with some typed Arabic**, and **185 genuine source-oriented records still without Arabic**, including **140 lower, 30 upper, and 15 ruled**. One discredited synthetic editorial record is retained for provenance but hidden from the reader. **0/279** all-register pages are word-complete and independently verified. Do not call this a finished critical edition; exhaustive manuscript collation is not required, but exhaustive printed-text transcription and proof are.
+
+**Source and QA:** Būlāq 1318 AH first-volume scan, original combined-PDF SHA-256 `4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134`. All 280 PNGs matched their inherited individual hashes. Stable-ID, source-layer and no-false-certification regression passed locally; Chromium simulated reading at 390px, 768px and 1400px passed, including Arabic search and opening a collapsed marginal note. Live iOS Safari and independent philological second proof remain open. [Machine metrics](STAGE91_MERGED_METRICS.json) and [185-record remaining queue](STAGE91_REMAINING_SOURCE_QUEUE.csv) are maintained separately.
+
+**User-facing reader:** unchanged clean study interface. No stage labels, project history or production notes in the reading text; source proof data remain in the editorial archive. Keep separate *Tahdhīb al-Kalām* and *Taqrīb* readers until *Taqrīb* Volumes I and II have both been fully translated and checked.
+
+---
+
+## Stage 90 and earlier historical checkpoints
+
 # Stage 90 — first-pass lower-marginal transcription and bilingual proof (15 November 2026)
 
 **Latest source-based checkpoint.** Ten pre-existing source records gained image-checked, bounded Arabic with corresponding first-pass English: **eight lower marginal units and two middle-ruled units** on original printed I:14–15 and I:22–24. The revised material concerns knowledge as an end, knowing one's own cognition, demonstrative/conceptual inference, self-evidence of intellect, scepticism, customary causal association, and Muʿtazilī generation. It is a **limited literal extract**, not a complete page or note, except that the short ruled passage on I:22 is tentatively covered as a block pending a second reading. See [Stage90 source texts](STAGE90_BOUNDED_AR_EN_READINGS.md).
