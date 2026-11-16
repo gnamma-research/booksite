@@ -1,5 +1,5 @@
 {
-  "version": "1.0-20261113",
+  "version": "1.1-verified-graphic-scale",
   "notes": "Dates before and during the prophetic mission, especially the Miʿrāj, have varying traditional reconstructions. Approximate dates are explicitly marked. Institutional and legal dates draw on the existing Sīrah dossiers; exact event-level claims remain subject to specialist verification.",
   "eras": [
     {
@@ -29,7 +29,9 @@
         8
       ],
       "era": "prophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 570,
+      "displayPrecision": "approximate"
     },
     {
       "id": "khadija",
@@ -40,7 +42,9 @@
         8
       ],
       "era": "prophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 595,
+      "displayPrecision": "approximate"
     },
     {
       "id": "revelation",
@@ -51,7 +55,9 @@
         8
       ],
       "era": "prophetic",
-      "certainty": "traditional chronology"
+      "certainty": "traditional chronology",
+      "plotYear": 610,
+      "displayPrecision": "approximate"
     },
     {
       "id": "aksum",
@@ -62,7 +68,9 @@
         10
       ],
       "era": "prophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 615,
+      "displayPrecision": "approximate"
     },
     {
       "id": "loss",
@@ -73,7 +81,9 @@
         11
       ],
       "era": "prophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 619,
+      "displayPrecision": "approximate"
     },
     {
       "id": "miraj",
@@ -84,7 +94,10 @@
         11
       ],
       "era": "prophetic",
-      "certainty": "date disputed"
+      "certainty": "date disputed",
+      "plotYear": 610,
+      "plotEndYear": 621,
+      "displayPrecision": "disputed range"
     },
     {
       "id": "aqaba",
@@ -95,7 +108,10 @@
         11
       ],
       "era": "prophetic",
-      "certainty": "traditional chronology"
+      "certainty": "traditional chronology",
+      "plotYear": 621,
+      "plotEndYear": 622,
+      "displayPrecision": "approximate range"
     },
     {
       "id": "hijrah",
@@ -107,7 +123,9 @@
         12
       ],
       "era": "prophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 622,
+      "displayPrecision": "conventional"
     },
     {
       "id": "badr",
@@ -118,7 +136,9 @@
         14
       ],
       "era": "prophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 624,
+      "displayPrecision": "conventional"
     },
     {
       "id": "uhud",
@@ -129,7 +149,9 @@
         15
       ],
       "era": "prophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 625,
+      "displayPrecision": "conventional"
     },
     {
       "id": "trench",
@@ -140,7 +162,9 @@
         15
       ],
       "era": "prophetic",
-      "certainty": "conventional chronology"
+      "certainty": "conventional chronology",
+      "plotYear": 627,
+      "displayPrecision": "conventional"
     },
     {
       "id": "hudaybiyyah",
@@ -151,7 +175,9 @@
         16
       ],
       "era": "prophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 628,
+      "displayPrecision": "conventional"
     },
     {
       "id": "khaybar",
@@ -162,7 +188,9 @@
         17
       ],
       "era": "prophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 628,
+      "displayPrecision": "conventional"
     },
     {
       "id": "conquest",
@@ -173,7 +201,9 @@
         18
       ],
       "era": "prophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 630,
+      "displayPrecision": "conventional"
     },
     {
       "id": "hunayn",
@@ -184,7 +214,9 @@
         18
       ],
       "era": "prophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 630,
+      "displayPrecision": "conventional"
     },
     {
       "id": "tabuk",
@@ -195,7 +227,10 @@
         19
       ],
       "era": "prophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 630,
+      "plotEndYear": 631,
+      "displayPrecision": "approximate range"
     },
     {
       "id": "farewell",
@@ -206,7 +241,9 @@
         19
       ],
       "era": "prophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 632,
+      "displayPrecision": "conventional"
     },
     {
       "id": "death",
@@ -218,7 +255,9 @@
         20
       ],
       "era": "prophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 632,
+      "displayPrecision": "conventional"
     },
     {
       "id": "rashidun",
@@ -232,7 +271,10 @@
         23
       ],
       "era": "postprophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 632,
+      "plotEndYear": 661,
+      "displayPrecision": "historical period"
     },
     {
       "id": "first-fitna",
@@ -243,7 +285,10 @@
         23
       ],
       "era": "postprophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 656,
+      "plotEndYear": 661,
+      "displayPrecision": "historical period"
     },
     {
       "id": "karbala",
@@ -254,7 +299,9 @@
         24
       ],
       "era": "postprophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 680,
+      "displayPrecision": "conventional"
     },
     {
       "id": "abbasid",
@@ -265,7 +312,9 @@
         25
       ],
       "era": "postprophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 750,
+      "displayPrecision": "conventional"
     },
     {
       "id": "baghdad",
@@ -277,7 +326,9 @@
         26
       ],
       "era": "postprophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 762,
+      "displayPrecision": "conventional"
     },
     {
       "id": "madrasa",
@@ -288,7 +339,9 @@
         29
       ],
       "era": "postprophetic",
-      "certainty": "commonly cited date"
+      "certainty": "commonly cited date",
+      "plotYear": 1067,
+      "displayPrecision": "approximate"
     },
     {
       "id": "cairo",
@@ -299,7 +352,9 @@
         34
       ],
       "era": "postprophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 969,
+      "displayPrecision": "conventional"
     },
     {
       "id": "jerusalem",
@@ -310,7 +365,9 @@
         34
       ],
       "era": "postprophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 1187,
+      "displayPrecision": "conventional"
     },
     {
       "id": "mongols",
@@ -321,7 +378,9 @@
         37
       ],
       "era": "postprophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 1258,
+      "displayPrecision": "conventional"
     },
     {
       "id": "ghazan",
@@ -332,7 +391,9 @@
         37
       ],
       "era": "postprophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 1295,
+      "displayPrecision": "conventional"
     },
     {
       "id": "mansa",
@@ -343,7 +404,9 @@
         38
       ],
       "era": "postprophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 1324,
+      "displayPrecision": "conventional"
     },
     {
       "id": "ottoman",
@@ -354,7 +417,9 @@
         41
       ],
       "era": "postprophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 1453,
+      "displayPrecision": "conventional"
     },
     {
       "id": "granada",
@@ -365,7 +430,9 @@
         35
       ],
       "era": "postprophetic",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 1492,
+      "displayPrecision": "conventional"
     },
     {
       "id": "portuguese",
@@ -376,7 +443,9 @@
         43
       ],
       "era": "modern",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 1498,
+      "displayPrecision": "conventional"
     },
     {
       "id": "company",
@@ -388,7 +457,9 @@
         44
       ],
       "era": "modern",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 1600,
+      "displayPrecision": "documented"
     },
     {
       "id": "diwani",
@@ -399,7 +470,9 @@
         44
       ],
       "era": "modern",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 1765,
+      "displayPrecision": "documented"
     },
     {
       "id": "hastings",
@@ -410,7 +483,9 @@
         44
       ],
       "era": "modern",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 1772,
+      "displayPrecision": "documented"
     },
     {
       "id": "waqf-deed",
@@ -421,7 +496,9 @@
         44
       ],
       "era": "modern",
-      "certainty": "documented date"
+      "certainty": "documented date",
+      "plotYear": 1868,
+      "displayPrecision": "documented"
     },
     {
       "id": "waqf-privy",
@@ -432,7 +509,9 @@
         44
       ],
       "era": "modern",
-      "certainty": "documented date"
+      "certainty": "documented date",
+      "plotYear": 1894,
+      "displayPrecision": "documented"
     },
     {
       "id": "wakf-1913",
@@ -443,7 +522,9 @@
         44
       ],
       "era": "modern",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 1913,
+      "displayPrecision": "documented"
     },
     {
       "id": "ottoman-end",
@@ -454,7 +535,9 @@
         46
       ],
       "era": "modern",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 1924,
+      "displayPrecision": "documented"
     },
     {
       "id": "wakf-1930",
@@ -465,7 +548,9 @@
         44
       ],
       "era": "modern",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 1930,
+      "displayPrecision": "documented"
     },
     {
       "id": "partition",
@@ -477,7 +562,9 @@
         46
       ],
       "era": "modern",
-      "certainty": "approximate"
+      "certainty": "approximate",
+      "plotYear": 1947,
+      "displayPrecision": "documented"
     },
     {
       "id": "digital",
@@ -488,7 +575,28 @@
         46
       ],
       "era": "modern",
-      "certainty": "ongoing process"
+      "certainty": "ongoing process",
+      "plotYear": 2001,
+      "plotEndYear": 2026,
+      "displayPrecision": "ongoing period"
     }
-  ]
+  ],
+  "visualization": {
+    "scale": "linear calendar years CE",
+    "domains": {
+      "prophetic": [
+        570,
+        632
+      ],
+      "postprophetic": [
+        632,
+        1492
+      ],
+      "modern": [
+        1498,
+        2026
+      ]
+    },
+    "note": "Visual positions are calendar-date locations. Approximate events retain their approximate labels. The Ascension's period is represented as a broad uncertainty band, not as a point-dated occurrence. 21st-century digital changes are shown as an ongoing span."
+  }
 }
