@@ -103,3 +103,20 @@
 .chron-item:target{background:rgba(181,155,109,.13);padding:9px 12px 9px 5px;border-radius:8px}
 @media(max-width:650px){.chrono-scroll svg{min-width:1150px}.chrono-graphic{padding:11px}}
 @media(prefers-color-scheme:dark){.chrono-scroll{background:#31322c}.chrono-gridline{stroke:#4b4d45}.chrono-axis{stroke:#99958a}.chrono-dot{fill:#292c28;stroke:#c5b39d}.chrono-dot-number,.chrono-tick{fill:#ece7dc}.chrono-documented{fill:#685f53}.chron-num{color:#f8f5ef;background:#655646}}
+
+
+/* A collapsed cast list gives context without occupying the reading surface. */
+.chapter-cast{border-top:1px solid var(--line,#ddd1c3);margin:1.8rem 0 .3rem;padding-top:12px;color:var(--ink,#332b25);font:13px/1.6 system-ui,sans-serif}
+.chapter-cast summary{list-style:none;cursor:pointer;font-weight:650;padding:8px 8px 8px 0;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.chapter-cast summary::before{content:"+";border:1px solid var(--line,#d2c7b5);border-radius:5px;width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;font-size:16px;font-weight:400;color:var(--clay,#8c674a)}
+.chapter-cast[open] summary::before{content:"−"}
+.chapter-cast summary::-webkit-details-marker{display:none}
+.chapter-cast summary span{color:var(--muted,#71675e);font-size:12px;font-weight:400}
+.chapter-cast-body{padding:3px 0 14px 29px}
+.chapter-cast-label{font:700 11px/1.45 system-ui,sans-serif;letter-spacing:.02em;color:var(--muted,#796e5e);margin:12px 0 5px}
+.chapter-cast-links{display:flex;flex-wrap:wrap;gap:7px}
+.chapter-cast-links a{font:12px/1.4 system-ui,sans-serif;display:inline-block;padding:5px 8px;border:1px solid var(--line,#d5c5b6);border-radius:6px;text-decoration:none;color:inherit}
+.chapter-cast-links a:hover{border-color:var(--clay,#896c50);text-decoration:underline}
+.chapter-cast-help{font:12px/1.5 system-ui,sans-serif;color:var(--muted,#71665a);margin:13px 0 0}
+.mode-matn .chapter-cast{display:none}
+@media print{.chapter-cast{display:none!important}}
