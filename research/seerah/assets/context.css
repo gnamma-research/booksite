@@ -77,3 +77,29 @@
 .reading-column p[id^="s"]{scroll-margin-top:104px}
 .reading-column p[id^="s"]:target{background:linear-gradient(90deg,rgba(180,147,96,.12),transparent);border-radius:3px}
 @media print{.person-context-dialog{display:none!important}.person-ref{text-decoration:none}}
+
+
+/* Real chronology: equally spaced calendar years. The figure is deliberately scrollable rather than compressing historical intervals on mobile. */
+.chrono-graphic{border:1px solid var(--line,#d7cab8);border-radius:12px;padding:13px 14px 17px;margin:22px 0;background:var(--panel,#fbf7ef)}
+.chrono-graphic h2{font:500 20px/1.4 Georgia,serif;margin:0 0 8px}
+.chrono-graphic .context-help{margin:8px 0 0;font:12px/1.6 system-ui,sans-serif}
+.chrono-scroll{overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-gutter:stable;background:linear-gradient(90deg,#fcfaf4,#f3ede1);border:1px solid var(--line,#dbd0bf);border-radius:9px}
+.chrono-scroll svg{display:block;min-width:1050px;width:100%;height:auto}
+.chrono-gridline{stroke:#e3d7c6;stroke-width:1}
+.chrono-axis{stroke:#8d7761;stroke-width:2.1}
+.chrono-event-line{stroke:#baa991;stroke-width:1;opacity:.8}
+.chrono-tick{font:12px system-ui,sans-serif;fill:#685e50}
+.chrono-dot{stroke:#72563f;fill:#fcf8ec;stroke-width:2}
+.chrono-documented{fill:#b7a18a}
+.chrono-dot-number{font:600 9.5px system-ui,sans-serif;fill:#47392b;pointer-events:none}
+.chrono-date-range{fill:#a6b4a4;opacity:.5;pointer-events:none}
+.chrono-uncertainty-band{fill:#d1bfa4;opacity:.65;stroke:#8a7459;stroke-width:1;stroke-dasharray:3 3;pointer-events:none}
+.chrono-event-marker:hover .chrono-dot,.chrono-event-marker:focus-visible .chrono-dot{stroke:#247a74;stroke-width:3;fill:#e5f4ee}
+.chrono-event-marker:focus-visible{outline:none}
+.chron-num{font-size:11px;background:#e7dfd4;color:#504338;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;min-width:23px;min-height:23px;margin-right:5px}
+.chron-precision{font-size:11px;color:var(--muted,#766b5d);font-weight:400}
+.chron-precision.documented{font-weight:600}
+.chron-item{scroll-margin-top:120px}
+.chron-item:target{background:rgba(181,155,109,.13);padding:9px 12px 9px 5px;border-radius:8px}
+@media(max-width:650px){.chrono-scroll svg{min-width:1150px}.chrono-graphic{padding:11px}}
+@media(prefers-color-scheme:dark){.chrono-scroll{background:#31322c}.chrono-gridline{stroke:#4b4d45}.chrono-axis{stroke:#99958a}.chrono-dot{fill:#292c28;stroke:#c5b39d}.chrono-dot-number,.chrono-tick{fill:#ece7dc}.chrono-documented{fill:#685f53}.chron-num{color:#f8f5ef;background:#655646}}
