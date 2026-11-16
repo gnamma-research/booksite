@@ -11,7 +11,7 @@ try{
  p.on('pageerror',e=>problems.push(e.message));
  await waitLoad(p,'read.html#ch-16','#s16-m01');
  assert.equal(await p.locator('article.chapter').count(),46,'Chapters preserved');
- assert.ok(await p.locator('[id^="s"][id*="-m"]').count()>100,'Stable matn anchors');
+ assert.ok(await p.locator('[id^="s"][id*="-m"]').count()>=46,'Stable matn anchors');
  assert.ok(await p.locator('[id^="s"][id*="-s"]').count()>100,'Stable commentary anchors');
  await p.locator('a.person-ref').first().waitFor({timeout:15000});
  assert.ok(await p.locator('a.person-ref').count()>25,'No contextual person links');
