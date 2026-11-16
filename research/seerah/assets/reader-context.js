@@ -11,6 +11,22 @@ dialog.innerHTML='<div class="person-context-head"><h2>'+esc(person.name)+'</h2>
 if(typeof dialog.showModal==='function')dialog.showModal();else dialog.setAttribute('open','');dialog.querySelector('[data-close-person]').focus()}
 document.addEventListener('click',e=>{const link=e.target.closest('a[data-person-id]');if(link){const person=people.get(link.dataset.personId);if(person){e.preventDefault();open(person,link)}}if(e.target.closest('[data-close-person]')||e.target===dialog){dialog.close?.();dialog.removeAttribute('open')}});
 
+function addChapterPlaces(data){
+ for(const article of document.querySelectorAll('article.chapter')){
+  const chapter=Number(article.dataset.chapterPosition);
+  const places=data.entries.filter(p=>p.chapters.includes(chapter));
+  if(!places.length)continue;
+  const el=document.createElement('details');el.className='chapter-places';
+  const list=places.map(p=>{
+   const region=p.groups[0]||'arabia';
+   const url='geography.html?region='+encodeURIComponent(region)+'&place='+encodeURIComponent(p.id)+'#place-'+encodeURIComponent(p.id);
+   return '<a href="'+url+'" title="'+esc(p.context)+'">'+esc(p.name)+' <small>('+esc(p.country)+')</small></a>';
+  }).join('');
+  el.innerHTML='<summary>Explore the geography <span>('+places.length+' places)</span></summary><div class="chapter-place-links">'+list+'</div><p class="chapter-cast-help">Modern reference locations on an attributed geographic basemap. Historical borders and routes require separate evidence.</p>';
+  const bottom=article.querySelector('.chapter-bottom');if(bottom)bottom.before(el);else article.append(el);
+ }
+}
+
 function addChapterCast(data){
  const groupNames=new Map(data.groups.map(g=>[g.id,g.name]));
  for(const article of document.querySelectorAll('article.chapter')){
@@ -40,4 +56,5 @@ document.addEventListener('click',e=>{
 },true);
 
 fetch('data/people.json').then(r=>{if(!r.ok)throw Error('People reference index unavailable');return r.json()}).then(data=>{people=new Map(data.entries.map(e=>[e.id,e]));decorate(data);addChapterCast(data)}).catch(()=>{});
+fetch('data/places.json').then(r=>{if(!r.ok)throw Error('Map places unavailable');return r.json()}).then(addChapterPlaces).catch(()=>{});
 })();
