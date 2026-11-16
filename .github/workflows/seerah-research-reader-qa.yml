@@ -25,6 +25,7 @@ jobs:
           node research/seerah/tests/verify.mjs
           node research/seerah/tests/verify-restoration.mjs
           node research/seerah/tests/verify-preview-1.9.mjs
+          node research/seerah/tests/verify-context.mjs
   browser:
     needs: parity
     runs-on: ubuntu-24.04
@@ -56,6 +57,9 @@ jobs:
           python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/seerah-http.log 2>&1 &
           sleep 3
           node research/seerah/qa/reader-browser-qa.mjs
+          if [ "${{ matrix.edition }}" = "current" ]; then
+            node research/seerah/qa/context-browser-qa.mjs
+          fi
       - name: Keep QA evidence (reports and screenshots)
         if: always()
         uses: actions/upload-artifact@v4
