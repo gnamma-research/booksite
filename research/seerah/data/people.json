@@ -1,6 +1,6 @@
 {
-  "version": "1.0-curated-20261113",
-  "about": "Contextual person and community register. Short descriptions are editorial summaries of the cited sources and the Sīrah chapters; they are neither full biographies nor proofs of every attribution. Sources remain subject to textual verification.",
+  "version": "1.1-two-layer-concordance",
+  "about": "Contextual person and community register. Short descriptions are editorial summaries of the cited sources and the Sīrah chapters; they are neither full biographies nor proofs of every attribution. Sources remain subject to textual verification. Each appearance is keyed to the first matching paragraph in each distinct matn and sharḥ layer of a chapter; index labels are navigational pointers, not proof of new biographical assertions. Limited manual aliases are visibly marked for anonymous figures.",
   "groups": [
     {
       "id": "antecedents",
@@ -51,14 +51,23 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s01-m01"
+          "anchor": "s01-m01",
+          "matched": "Ādam"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s01-s03",
+          "matched": "Ādam"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s01-m01"
+        "anchor": "s01-m01",
+        "matched": "Ādam"
       }
     },
     {
@@ -79,8 +88,24 @@
         "iblis"
       ],
       "source": "Qurʾān 2:35–37; 7:19–23",
-      "appearances": [],
-      "first": null
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s01-m03",
+          "matched": "his spouse",
+          "contextual": true
+        }
+      ],
+      "first": {
+        "chapter": 1,
+        "layer": "matn",
+        "paragraph": 3,
+        "anchor": "s01-m03",
+        "matched": "his spouse",
+        "contextual": true
+      }
     },
     {
       "id": "iblis",
@@ -104,14 +129,23 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 2,
-          "anchor": "s01-m02"
+          "anchor": "s01-m02",
+          "matched": "Iblīs"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s01-s05",
+          "matched": "Iblīs"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 2,
-        "anchor": "s01-m02"
+        "anchor": "s01-m02",
+        "matched": "Iblīs"
       }
     },
     {
@@ -134,14 +168,23 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 7,
-          "anchor": "s01-m07"
+          "anchor": "s01-m07",
+          "matched": "Nūḥ"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 24,
+          "anchor": "s01-s24",
+          "matched": "Nūḥ"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 7,
-        "anchor": "s01-m07"
+        "anchor": "s01-m07",
+        "matched": "Nūḥ"
       }
     },
     {
@@ -162,20 +205,30 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 7,
-          "anchor": "s01-m07"
+          "anchor": "s01-m07",
+          "matched": "Hūd"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 29,
+          "anchor": "s01-s29",
+          "matched": "Hūd"
         },
         {
           "chapter": 2,
           "layer": "sharh",
           "paragraph": 46,
-          "anchor": "s02-s46"
+          "anchor": "s02-s46",
+          "matched": "Hūd"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 7,
-        "anchor": "s01-m07"
+        "anchor": "s01-m07",
+        "matched": "Hūd"
       }
     },
     {
@@ -196,20 +249,30 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 7,
-          "anchor": "s01-m07"
+          "anchor": "s01-m07",
+          "matched": "Ṣāliḥ"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 33,
+          "anchor": "s01-s33",
+          "matched": "Ṣāliḥ"
         },
         {
           "chapter": 2,
           "layer": "sharh",
           "paragraph": 3,
-          "anchor": "s02-s03"
+          "anchor": "s02-s03",
+          "matched": "Ṣāliḥ"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 7,
-        "anchor": "s01-m07"
+        "anchor": "s01-m07",
+        "matched": "Ṣāliḥ"
       }
     },
     {
@@ -230,14 +293,23 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 7,
-          "anchor": "s01-m07"
+          "anchor": "s01-m07",
+          "matched": "Lūṭ"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 37,
+          "anchor": "s01-s37",
+          "matched": "Lūṭ"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 7,
-        "anchor": "s01-m07"
+        "anchor": "s01-m07",
+        "matched": "Lūṭ"
       }
     },
     {
@@ -258,20 +330,30 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 7,
-          "anchor": "s01-m07"
+          "anchor": "s01-m07",
+          "matched": "Shuʿayb"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 29,
+          "anchor": "s01-s29",
+          "matched": "Shuʿayb"
         },
         {
           "chapter": 2,
           "layer": "sharh",
           "paragraph": 46,
-          "anchor": "s02-s46"
+          "anchor": "s02-s46",
+          "matched": "Shuʿayb"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 7,
-        "anchor": "s01-m07"
+        "anchor": "s01-m07",
+        "matched": "Shuʿayb"
       }
     },
     {
@@ -296,14 +378,23 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 8,
-          "anchor": "s01-m08"
+          "anchor": "s01-m08",
+          "matched": "Ibrāhīm"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 41,
+          "anchor": "s01-s41",
+          "matched": "Ibrāhīm"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 8,
-        "anchor": "s01-m08"
+        "anchor": "s01-m08",
+        "matched": "Ibrāhīm"
       }
     },
     {
@@ -327,20 +418,30 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 8,
-          "anchor": "s01-m08"
+          "anchor": "s01-m08",
+          "matched": "Ismāʿīl"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 46,
+          "anchor": "s01-s46",
+          "matched": "Ismāʿīl"
         },
         {
           "chapter": 42,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s42-s01"
+          "anchor": "s42-s01",
+          "matched": "Ismāʿīl"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 8,
-        "anchor": "s01-m08"
+        "anchor": "s01-m08",
+        "matched": "Ismāʿīl"
       }
     },
     {
@@ -364,32 +465,37 @@
           "chapter": 10,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s10-s01"
+          "anchor": "s10-s01",
+          "matched": "Isḥāq"
         },
         {
           "chapter": 14,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s14-s01"
+          "anchor": "s14-s01",
+          "matched": "Isḥāq"
         },
         {
           "chapter": 15,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s15-s01"
+          "anchor": "s15-s01",
+          "matched": "Isḥāq"
         },
         {
           "chapter": 26,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s26-s01"
+          "anchor": "s26-s01",
+          "matched": "Isḥāq"
         }
       ],
       "first": {
         "chapter": 10,
         "layer": "sharh",
         "paragraph": 1,
-        "anchor": "s10-s01"
+        "anchor": "s10-s01",
+        "matched": "Isḥāq"
       }
     },
     {
@@ -431,20 +537,30 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 8,
-          "anchor": "s01-m08"
+          "anchor": "s01-m08",
+          "matched": "Yūsuf"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 49,
+          "anchor": "s01-s49",
+          "matched": "Yūsuf"
         },
         {
           "chapter": 2,
           "layer": "sharh",
           "paragraph": 8,
-          "anchor": "s02-s08"
+          "anchor": "s02-s08",
+          "matched": "Yūsuf"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 8,
-        "anchor": "s01-m08"
+        "anchor": "s01-m08",
+        "matched": "Yūsuf"
       }
     },
     {
@@ -467,38 +583,58 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 8,
-          "anchor": "s01-m08"
+          "anchor": "s01-m08",
+          "matched": "Mūsā"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 55,
+          "anchor": "s01-s55",
+          "matched": "Mūsā"
         },
         {
           "chapter": 2,
           "layer": "sharh",
           "paragraph": 46,
-          "anchor": "s02-s46"
+          "anchor": "s02-s46",
+          "matched": "Mūsā"
         },
         {
           "chapter": 3,
           "layer": "sharh",
           "paragraph": 4,
-          "anchor": "s03-s04"
+          "anchor": "s03-s04",
+          "matched": "Mūsā"
         },
         {
           "chapter": 11,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s11-m01"
+          "anchor": "s11-m01",
+          "matched": "Mūsā"
+        },
+        {
+          "chapter": 11,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s11-s02",
+          "matched": "Mūsā"
         },
         {
           "chapter": 38,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s38-m01"
+          "anchor": "s38-m01",
+          "matched": "Mūsā"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 8,
-        "anchor": "s01-m08"
+        "anchor": "s01-m08",
+        "matched": "Mūsā"
       }
     },
     {
@@ -522,14 +658,16 @@
           "chapter": 1,
           "layer": "sharh",
           "paragraph": 59,
-          "anchor": "s01-s59"
+          "anchor": "s01-s59",
+          "matched": "al-Khiḍr"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "sharh",
         "paragraph": 59,
-        "anchor": "s01-s59"
+        "anchor": "s01-s59",
+        "matched": "al-Khiḍr"
       }
     },
     {
@@ -552,20 +690,37 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 8,
-          "anchor": "s01-m08"
+          "anchor": "s01-m08",
+          "matched": "Dāwūd"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 7,
+          "anchor": "s01-s07",
+          "matched": "Dāwūd"
         },
         {
           "chapter": 3,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s03-m01"
+          "anchor": "s03-m01",
+          "matched": "Dāwūd"
+        },
+        {
+          "chapter": 3,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s03-s04",
+          "matched": "Dāwūd"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 8,
-        "anchor": "s01-m08"
+        "anchor": "s01-m08",
+        "matched": "Dāwūd"
       }
     },
     {
@@ -588,20 +743,37 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 8,
-          "anchor": "s01-m08"
+          "anchor": "s01-m08",
+          "matched": "Sulaymān"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 70,
+          "anchor": "s01-s70",
+          "matched": "Sulaymān"
         },
         {
           "chapter": 3,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s03-m01"
+          "anchor": "s03-m01",
+          "matched": "Sulaymān"
+        },
+        {
+          "chapter": 3,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s03-s04",
+          "matched": "Sulaymān"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 8,
-        "anchor": "s01-m08"
+        "anchor": "s01-m08",
+        "matched": "Sulaymān"
       }
     },
     {
@@ -622,14 +794,16 @@
           "chapter": 1,
           "layer": "sharh",
           "paragraph": 60,
-          "anchor": "s01-s60"
+          "anchor": "s01-s60",
+          "matched": "Ayyūb"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "sharh",
         "paragraph": 60,
-        "anchor": "s01-s60"
+        "anchor": "s01-s60",
+        "matched": "Ayyūb"
       }
     },
     {
@@ -650,14 +824,16 @@
           "chapter": 1,
           "layer": "sharh",
           "paragraph": 65,
-          "anchor": "s01-s65"
+          "anchor": "s01-s65",
+          "matched": "Yūnus"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "sharh",
         "paragraph": 65,
-        "anchor": "s01-s65"
+        "anchor": "s01-s65",
+        "matched": "Yūnus"
       }
     },
     {
@@ -680,14 +856,16 @@
           "chapter": 1,
           "layer": "sharh",
           "paragraph": 76,
-          "anchor": "s01-s76"
+          "anchor": "s01-s76",
+          "matched": "Zakariyyā"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "sharh",
         "paragraph": 76,
-        "anchor": "s01-s76"
+        "anchor": "s01-s76",
+        "matched": "Zakariyyā"
       }
     },
     {
@@ -711,26 +889,30 @@
           "chapter": 1,
           "layer": "sharh",
           "paragraph": 76,
-          "anchor": "s01-s76"
+          "anchor": "s01-s76",
+          "matched": "Yaḥyā"
         },
         {
           "chapter": 5,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s05-m01"
+          "anchor": "s05-m01",
+          "matched": "Yaḥyā"
         },
         {
           "chapter": 27,
           "layer": "sharh",
           "paragraph": 4,
-          "anchor": "s27-s04"
+          "anchor": "s27-s04",
+          "matched": "Yaḥyā"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "sharh",
         "paragraph": 76,
-        "anchor": "s01-s76"
+        "anchor": "s01-s76",
+        "matched": "Yaḥyā"
       }
     },
     {
@@ -753,26 +935,44 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 8,
-          "anchor": "s01-m08"
+          "anchor": "s01-m08",
+          "matched": "Maryam"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 80,
+          "anchor": "s01-s80",
+          "matched": "Maryam"
         },
         {
           "chapter": 5,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s05-m01"
+          "anchor": "s05-m01",
+          "matched": "Maryam"
+        },
+        {
+          "chapter": 5,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s05-s01",
+          "matched": "Maryam"
         },
         {
           "chapter": 10,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s10-s01"
+          "anchor": "s10-s01",
+          "matched": "Maryam"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 8,
-        "anchor": "s01-m08"
+        "anchor": "s01-m08",
+        "matched": "Maryam"
       }
     },
     {
@@ -796,32 +996,51 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 8,
-          "anchor": "s01-m08"
+          "anchor": "s01-m08",
+          "matched": "ʿĪsā"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 80,
+          "anchor": "s01-s80",
+          "matched": "ʿĪsā"
         },
         {
           "chapter": 4,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s04-m01"
+          "anchor": "s04-m01",
+          "matched": "ʿĪsā"
         },
         {
           "chapter": 5,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s05-m01"
+          "anchor": "s05-m01",
+          "matched": "Jesus"
+        },
+        {
+          "chapter": 5,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s05-s01",
+          "matched": "ʿĪsā"
         },
         {
           "chapter": 10,
           "layer": "sharh",
-          "paragraph": 4,
-          "anchor": "s10-s04"
+          "paragraph": 1,
+          "anchor": "s10-s01",
+          "matched": "ʿĪsā"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 8,
-        "anchor": "s01-m08"
+        "anchor": "s01-m08",
+        "matched": "ʿĪsā"
       }
     },
     {
@@ -869,50 +1088,86 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 9,
-          "anchor": "s01-m09"
+          "anchor": "s01-m09",
+          "matched": "Muḥammad ﷺ"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 21,
+          "anchor": "s01-s21",
+          "matched": "Prophet Muḥammad"
         },
         {
           "chapter": 5,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s05-m01"
+          "anchor": "s05-m01",
+          "matched": "Muḥammad"
         },
         {
           "chapter": 6,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s06-m01"
+          "anchor": "s06-m01",
+          "matched": "Muḥammad"
+        },
+        {
+          "chapter": 6,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s06-s03",
+          "matched": "Muḥammad"
         },
         {
           "chapter": 7,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s07-m01"
+          "anchor": "s07-m01",
+          "matched": "Muḥammad"
+        },
+        {
+          "chapter": 7,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s07-s04",
+          "matched": "Muḥammad"
         },
         {
           "chapter": 8,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s08-m01"
+          "anchor": "s08-m01",
+          "matched": "Muḥammad"
+        },
+        {
+          "chapter": 8,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s08-s03",
+          "matched": "Muḥammad"
         },
         {
           "chapter": 18,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s18-s01"
+          "anchor": "s18-s01",
+          "matched": "Muḥammad"
         },
         {
           "chapter": 28,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s28-s01"
+          "anchor": "s28-s01",
+          "matched": "Muḥammad"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 9,
-        "anchor": "s01-m09"
+        "anchor": "s01-m09",
+        "matched": "Muḥammad ﷺ"
       }
     },
     {
@@ -935,20 +1190,30 @@
           "chapter": 8,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s08-m01"
+          "anchor": "s08-m01",
+          "matched": "Khadījah"
+        },
+        {
+          "chapter": 8,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s08-s01",
+          "matched": "Khadījah"
         },
         {
           "chapter": 11,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s11-m01"
+          "anchor": "s11-m01",
+          "matched": "Khadījah"
         }
       ],
       "first": {
         "chapter": 8,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s08-m01"
+        "anchor": "s08-m01",
+        "matched": "Khadījah"
       }
     },
     {
@@ -974,38 +1239,44 @@
           "chapter": 8,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s08-s01"
+          "anchor": "s08-s01",
+          "matched": "ʿĀʾishah"
         },
         {
           "chapter": 10,
           "layer": "sharh",
           "paragraph": 6,
-          "anchor": "s10-s06"
+          "anchor": "s10-s06",
+          "matched": "ʿĀʾishah"
         },
         {
           "chapter": 11,
           "layer": "sharh",
           "paragraph": 2,
-          "anchor": "s11-s02"
+          "anchor": "s11-s02",
+          "matched": "ʿĀʾishah"
         },
         {
           "chapter": 19,
           "layer": "sharh",
           "paragraph": 4,
-          "anchor": "s19-s04"
+          "anchor": "s19-s04",
+          "matched": "ʿĀʾishah"
         },
         {
           "chapter": 27,
           "layer": "sharh",
           "paragraph": 2,
-          "anchor": "s27-s02"
+          "anchor": "s27-s02",
+          "matched": "ʿĀʾishah"
         }
       ],
       "first": {
         "chapter": 8,
         "layer": "sharh",
         "paragraph": 1,
-        "anchor": "s08-s01"
+        "anchor": "s08-s01",
+        "matched": "ʿĀʾishah"
       }
     },
     {
@@ -1032,14 +1303,16 @@
           "chapter": 20,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s20-s01"
+          "anchor": "s20-s01",
+          "matched": "Fāṭimah"
         }
       ],
       "first": {
         "chapter": 20,
         "layer": "sharh",
         "paragraph": 1,
-        "anchor": "s20-s01"
+        "anchor": "s20-s01",
+        "matched": "Fāṭimah"
       }
     },
     {
@@ -1066,32 +1339,44 @@
           "chapter": 1,
           "layer": "sharh",
           "paragraph": 7,
-          "anchor": "s01-s07"
+          "anchor": "s01-s07",
+          "matched": "Ali"
         },
         {
           "chapter": 8,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s08-m01"
+          "anchor": "s08-m01",
+          "matched": "ʿAlī"
         },
         {
           "chapter": 20,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s20-s01"
+          "anchor": "s20-s01",
+          "matched": "ʿAlī"
         },
         {
           "chapter": 23,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s23-m01"
+          "anchor": "s23-m01",
+          "matched": "ʿAlī"
+        },
+        {
+          "chapter": 23,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s23-s01",
+          "matched": "ʿAlī"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "sharh",
         "paragraph": 7,
-        "anchor": "s01-s07"
+        "anchor": "s01-s07",
+        "matched": "Ali"
       }
     },
     {
@@ -1118,32 +1403,37 @@
           "chapter": 23,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s23-m01"
+          "anchor": "s23-m01",
+          "matched": "al-Ḥasan"
         },
         {
           "chapter": 24,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s24-m01"
+          "anchor": "s24-m01",
+          "matched": "al-Ḥasan"
         },
         {
           "chapter": 27,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s27-s01"
+          "anchor": "s27-s01",
+          "matched": "Ḥasan"
         },
         {
           "chapter": 33,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s33-m01"
+          "anchor": "s33-m01",
+          "matched": "al-Ḥasan"
         }
       ],
       "first": {
         "chapter": 23,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s23-m01"
+        "anchor": "s23-m01",
+        "matched": "al-Ḥasan"
       }
     },
     {
@@ -1170,14 +1460,23 @@
           "chapter": 24,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s24-m01"
+          "anchor": "s24-m01",
+          "matched": "al-Ḥusayn"
+        },
+        {
+          "chapter": 24,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s24-s01",
+          "matched": "al-Ḥusayn"
         }
       ],
       "first": {
         "chapter": 24,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s24-m01"
+        "anchor": "s24-m01",
+        "matched": "al-Ḥusayn"
       }
     },
     {
@@ -1201,32 +1500,44 @@
           "chapter": 6,
           "layer": "sharh",
           "paragraph": 3,
-          "anchor": "s06-s03"
+          "anchor": "s06-s03",
+          "matched": "Abū Ṭālib"
         },
         {
           "chapter": 7,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s07-m01"
+          "anchor": "s07-m01",
+          "matched": "Abū Ṭālib"
+        },
+        {
+          "chapter": 7,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s07-s01",
+          "matched": "Abū Ṭālib"
         },
         {
           "chapter": 8,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s08-m01"
+          "anchor": "s08-m01",
+          "matched": "Abū Ṭālib"
         },
         {
           "chapter": 11,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s11-m01"
+          "anchor": "s11-m01",
+          "matched": "Abū Ṭālib"
         }
       ],
       "first": {
         "chapter": 6,
         "layer": "sharh",
         "paragraph": 3,
-        "anchor": "s06-s03"
+        "anchor": "s06-s03",
+        "matched": "Abū Ṭālib"
       }
     },
     {
@@ -1250,14 +1561,16 @@
           "chapter": 15,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s15-m01"
+          "anchor": "s15-m01",
+          "matched": "Ḥamzah"
         }
       ],
       "first": {
         "chapter": 15,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s15-m01"
+        "anchor": "s15-m01",
+        "matched": "Ḥamzah"
       }
     },
     {
@@ -1281,20 +1594,30 @@
           "chapter": 16,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s16-m01"
+          "anchor": "s16-m01",
+          "matched": "Umm Salamah"
+        },
+        {
+          "chapter": 16,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s16-s01",
+          "matched": "Umm Salamah"
         },
         {
           "chapter": 19,
           "layer": "sharh",
           "paragraph": 4,
-          "anchor": "s19-s04"
+          "anchor": "s19-s04",
+          "matched": "Umm Salamah"
         }
       ],
       "first": {
         "chapter": 16,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s16-m01"
+        "anchor": "s16-m01",
+        "matched": "Umm Salamah"
       }
     },
     {
@@ -1318,26 +1641,30 @@
           "chapter": 7,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s07-m01"
+          "anchor": "s07-m01",
+          "matched": "Banū Hāshim"
         },
         {
           "chapter": 8,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s08-m01"
+          "anchor": "s08-m01",
+          "matched": "Banū Hāshim"
         },
         {
           "chapter": 10,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s10-m01"
+          "anchor": "s10-m01",
+          "matched": "Banū Hāshim"
         }
       ],
       "first": {
         "chapter": 7,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s07-m01"
+        "anchor": "s07-m01",
+        "matched": "Banū Hāshim"
       }
     },
     {
@@ -1362,38 +1689,58 @@
           "chapter": 8,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s08-m01"
+          "anchor": "s08-m01",
+          "matched": "Abū Bakr"
+        },
+        {
+          "chapter": 8,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s08-s04",
+          "matched": "Abū Bakr"
         },
         {
           "chapter": 10,
           "layer": "sharh",
           "paragraph": 6,
-          "anchor": "s10-s06"
+          "anchor": "s10-s06",
+          "matched": "Abū Bakr"
         },
         {
           "chapter": 11,
           "layer": "matn",
           "paragraph": 2,
-          "anchor": "s11-m02"
+          "anchor": "s11-m02",
+          "matched": "Abū Bakr"
         },
         {
           "chapter": 20,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s20-m01"
+          "anchor": "s20-m01",
+          "matched": "Abū Bakr"
+        },
+        {
+          "chapter": 20,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s20-s01",
+          "matched": "Abū Bakr"
         },
         {
           "chapter": 21,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s21-m01"
+          "anchor": "s21-m01",
+          "matched": "Abū Bakr"
         }
       ],
       "first": {
         "chapter": 8,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s08-m01"
+        "anchor": "s08-m01",
+        "matched": "Abū Bakr"
       }
     },
     {
@@ -1420,44 +1767,51 @@
           "chapter": 16,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s16-s01"
+          "anchor": "s16-s01",
+          "matched": "ʿUmar"
         },
         {
           "chapter": 17,
           "layer": "sharh",
           "paragraph": 3,
-          "anchor": "s17-s03"
+          "anchor": "s17-s03",
+          "matched": "ʿUmar"
         },
         {
           "chapter": 20,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s20-s01"
+          "anchor": "s20-s01",
+          "matched": "ʿUmar"
         },
         {
           "chapter": 21,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s21-m01"
+          "anchor": "s21-m01",
+          "matched": "ʿUmar"
         },
         {
           "chapter": 22,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s22-m01"
+          "anchor": "s22-m01",
+          "matched": "ʿUmar"
         },
         {
           "chapter": 28,
           "layer": "sharh",
           "paragraph": 6,
-          "anchor": "s28-s06"
+          "anchor": "s28-s06",
+          "matched": "ʿUmar"
         }
       ],
       "first": {
         "chapter": 16,
         "layer": "sharh",
         "paragraph": 1,
-        "anchor": "s16-s01"
+        "anchor": "s16-s01",
+        "matched": "ʿUmar"
       }
     },
     {
@@ -1482,14 +1836,23 @@
           "chapter": 23,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s23-m01"
+          "anchor": "s23-m01",
+          "matched": "ʿUthmān"
+        },
+        {
+          "chapter": 23,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s23-s02",
+          "matched": "ʿUthmān"
         }
       ],
       "first": {
         "chapter": 23,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s23-m01"
+        "anchor": "s23-m01",
+        "matched": "ʿUthmān"
       }
     },
     {
@@ -1515,20 +1878,30 @@
           "chapter": 11,
           "layer": "matn",
           "paragraph": 2,
-          "anchor": "s11-m02"
+          "anchor": "s11-m02",
+          "matched": "Muṣʿab ibn ʿUmayr"
+        },
+        {
+          "chapter": 11,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s11-s01",
+          "matched": "Muṣʿab"
         },
         {
           "chapter": 27,
           "layer": "sharh",
           "paragraph": 4,
-          "anchor": "s27-s04"
+          "anchor": "s27-s04",
+          "matched": "Muṣʿab"
         }
       ],
       "first": {
         "chapter": 11,
         "layer": "matn",
         "paragraph": 2,
-        "anchor": "s11-m02"
+        "anchor": "s11-m02",
+        "matched": "Muṣʿab ibn ʿUmayr"
       }
     },
     {
@@ -1553,14 +1926,16 @@
           "chapter": 10,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s10-s01"
+          "anchor": "s10-s01",
+          "matched": "Jaʿfar ibn Abī Ṭālib"
         }
       ],
       "first": {
         "chapter": 10,
         "layer": "sharh",
         "paragraph": 1,
-        "anchor": "s10-s01"
+        "anchor": "s10-s01",
+        "matched": "Jaʿfar ibn Abī Ṭālib"
       }
     },
     {
@@ -1584,14 +1959,23 @@
           "chapter": 9,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s09-m01"
+          "anchor": "s09-m01",
+          "matched": "Bilāl"
+        },
+        {
+          "chapter": 9,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s09-s04",
+          "matched": "Bilāl"
         }
       ],
       "first": {
         "chapter": 9,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s09-m01"
+        "anchor": "s09-m01",
+        "matched": "Bilāl"
       }
     },
     {
@@ -1617,14 +2001,23 @@
           "chapter": 16,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s16-m01"
+          "anchor": "s16-m01",
+          "matched": "Abū Jandal"
+        },
+        {
+          "chapter": 16,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s16-s01",
+          "matched": "Abū Jandal"
         }
       ],
       "first": {
         "chapter": 16,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s16-m01"
+        "anchor": "s16-m01",
+        "matched": "Abū Jandal"
       }
     },
     {
@@ -1649,14 +2042,23 @@
           "chapter": 13,
           "layer": "matn",
           "paragraph": 2,
-          "anchor": "s13-m02"
+          "anchor": "s13-m02",
+          "matched": "Māʿiz"
+        },
+        {
+          "chapter": 13,
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s13-s05",
+          "matched": "Māʿiz"
         }
       ],
       "first": {
         "chapter": 13,
         "layer": "matn",
         "paragraph": 2,
-        "anchor": "s13-m02"
+        "anchor": "s13-m02",
+        "matched": "Māʿiz"
       }
     },
     {
@@ -1683,20 +2085,30 @@
           "chapter": 13,
           "layer": "matn",
           "paragraph": 2,
-          "anchor": "s13-m02"
+          "anchor": "s13-m02",
+          "matched": "Woman of Ghāmid"
+        },
+        {
+          "chapter": 13,
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s13-s05",
+          "matched": "Woman of Ghāmid"
         },
         {
           "chapter": 28,
           "layer": "sharh",
           "paragraph": 2,
-          "anchor": "s28-s02"
+          "anchor": "s28-s02",
+          "matched": "Woman of Ghāmid"
         }
       ],
       "first": {
         "chapter": 13,
         "layer": "matn",
         "paragraph": 2,
-        "anchor": "s13-m02"
+        "anchor": "s13-m02",
+        "matched": "Woman of Ghāmid"
       }
     },
     {
@@ -1721,50 +2133,79 @@
           "chapter": 7,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s07-m01"
+          "anchor": "s07-m01",
+          "matched": "emigrants"
         },
         {
           "chapter": 10,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s10-m01"
+          "anchor": "s10-m01",
+          "matched": "emigrants"
+        },
+        {
+          "chapter": 10,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s10-s03",
+          "matched": "emigrants"
         },
         {
           "chapter": 11,
           "layer": "matn",
           "paragraph": 2,
-          "anchor": "s11-m02"
+          "anchor": "s11-m02",
+          "matched": "emigrants"
+        },
+        {
+          "chapter": 11,
+          "layer": "sharh",
+          "paragraph": 6,
+          "anchor": "s11-s06",
+          "matched": "emigrants"
         },
         {
           "chapter": 12,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s12-m01"
+          "anchor": "s12-m01",
+          "matched": "emigrants"
+        },
+        {
+          "chapter": 12,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s12-s01",
+          "matched": "emigrants"
         },
         {
           "chapter": 14,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s14-m01"
+          "anchor": "s14-m01",
+          "matched": "emigrants"
         },
         {
           "chapter": 17,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s17-m01"
+          "anchor": "s17-m01",
+          "matched": "emigrants"
         },
         {
           "chapter": 20,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s20-m01"
+          "anchor": "s20-m01",
+          "matched": "emigrants"
         }
       ],
       "first": {
         "chapter": 7,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s07-m01"
+        "anchor": "s07-m01",
+        "matched": "emigrants"
       }
     },
     {
@@ -1789,14 +2230,16 @@
           "chapter": 20,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s20-m01"
+          "anchor": "s20-m01",
+          "matched": "Anṣār"
         }
       ],
       "first": {
         "chapter": 20,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s20-m01"
+        "anchor": "s20-m01",
+        "matched": "Anṣār"
       }
     },
     {
@@ -1821,26 +2264,30 @@
           "chapter": 7,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s07-m01"
+          "anchor": "s07-m01",
+          "matched": "Aws"
         },
         {
           "chapter": 11,
           "layer": "sharh",
           "paragraph": 6,
-          "anchor": "s11-s06"
+          "anchor": "s11-s06",
+          "matched": "Aws"
         },
         {
           "chapter": 12,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s12-m01"
+          "anchor": "s12-m01",
+          "matched": "Aws"
         }
       ],
       "first": {
         "chapter": 7,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s07-m01"
+        "anchor": "s07-m01",
+        "matched": "Aws"
       }
     },
     {
@@ -1865,26 +2312,30 @@
           "chapter": 7,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s07-m01"
+          "anchor": "s07-m01",
+          "matched": "Khazraj"
         },
         {
           "chapter": 11,
           "layer": "sharh",
           "paragraph": 6,
-          "anchor": "s11-s06"
+          "anchor": "s11-s06",
+          "matched": "Khazraj"
         },
         {
           "chapter": 12,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s12-m01"
+          "anchor": "s12-m01",
+          "matched": "Khazraj"
         }
       ],
       "first": {
         "chapter": 7,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s07-m01"
+        "anchor": "s07-m01",
+        "matched": "Khazraj"
       }
     },
     {
@@ -1947,14 +2398,16 @@
           "chapter": 15,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s15-m01"
+          "anchor": "s15-m01",
+          "matched": "Saʿd ibn Muʿādh"
         }
       ],
       "first": {
         "chapter": 15,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s15-m01"
+        "anchor": "s15-m01",
+        "matched": "Saʿd ibn Muʿādh"
       }
     },
     {
@@ -1999,80 +2452,135 @@
           "chapter": 2,
           "layer": "sharh",
           "paragraph": 40,
-          "anchor": "s02-s40"
+          "anchor": "s02-s40",
+          "matched": "Quraysh"
         },
         {
           "chapter": 6,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s06-m01"
+          "anchor": "s06-m01",
+          "matched": "Quraysh's"
+        },
+        {
+          "chapter": 6,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s06-s03",
+          "matched": "Quraysh's"
         },
         {
           "chapter": 7,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s07-m01"
+          "anchor": "s07-m01",
+          "matched": "Quraysh"
+        },
+        {
+          "chapter": 7,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s07-s01",
+          "matched": "Quraysh's"
         },
         {
           "chapter": 8,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s08-m01"
+          "anchor": "s08-m01",
+          "matched": "Quraysh's"
         },
         {
           "chapter": 9,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s09-m01"
+          "anchor": "s09-m01",
+          "matched": "Quraysh's"
         },
         {
           "chapter": 10,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s10-s01"
+          "anchor": "s10-s01",
+          "matched": "Quraysh"
         },
         {
           "chapter": 11,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s11-m01"
+          "anchor": "s11-m01",
+          "matched": "Quraysh"
+        },
+        {
+          "chapter": 11,
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s11-s05",
+          "matched": "Quraysh"
         },
         {
           "chapter": 13,
           "layer": "sharh",
           "paragraph": 8,
-          "anchor": "s13-s08"
+          "anchor": "s13-s08",
+          "matched": "Quraysh"
         },
         {
           "chapter": 14,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s14-m01"
+          "anchor": "s14-m01",
+          "matched": "Quraysh's"
         },
         {
           "chapter": 15,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s15-m01"
+          "anchor": "s15-m01",
+          "matched": "Quraysh"
+        },
+        {
+          "chapter": 15,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s15-s04",
+          "matched": "Quraysh"
         },
         {
           "chapter": 16,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s16-m01"
+          "anchor": "s16-m01",
+          "matched": "Quraysh"
+        },
+        {
+          "chapter": 16,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s16-s04",
+          "matched": "Quraysh"
         },
         {
           "chapter": 17,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s17-m01"
+          "anchor": "s17-m01",
+          "matched": "Quraysh's"
+        },
+        {
+          "chapter": 17,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s17-s02",
+          "matched": "Quraysh"
         }
       ],
       "first": {
         "chapter": 2,
         "layer": "sharh",
         "paragraph": 40,
-        "anchor": "s02-s40"
+        "anchor": "s02-s40",
+        "matched": "Quraysh"
       }
     },
     {
@@ -2096,14 +2604,16 @@
           "chapter": 15,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s15-m01"
+          "anchor": "s15-m01",
+          "matched": "Banū Qaynuqāʿ"
         }
       ],
       "first": {
         "chapter": 15,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s15-m01"
+        "anchor": "s15-m01",
+        "matched": "Banū Qaynuqāʿ"
       }
     },
     {
@@ -2204,14 +2714,16 @@
           "chapter": 16,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s16-s01"
+          "anchor": "s16-s01",
+          "matched": "Suhayl ibn ʿAmr"
         }
       ],
       "first": {
         "chapter": 16,
         "layer": "sharh",
         "paragraph": 1,
-        "anchor": "s16-s01"
+        "anchor": "s16-s01",
+        "matched": "Suhayl ibn ʿAmr"
       }
     },
     {
@@ -2256,15 +2768,17 @@
         {
           "chapter": 10,
           "layer": "sharh",
-          "paragraph": 2,
-          "anchor": "s10-s02"
+          "paragraph": 1,
+          "anchor": "s10-s01",
+          "matched": "Negus"
         }
       ],
       "first": {
         "chapter": 10,
         "layer": "sharh",
-        "paragraph": 2,
-        "anchor": "s10-s02"
+        "paragraph": 1,
+        "anchor": "s10-s01",
+        "matched": "Negus"
       }
     },
     {
@@ -2323,20 +2837,30 @@
           "chapter": 23,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s23-m01"
+          "anchor": "s23-m01",
+          "matched": "Muʿāwiyah"
+        },
+        {
+          "chapter": 23,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s23-s02",
+          "matched": "Muʿāwiyah"
         },
         {
           "chapter": 24,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s24-m01"
+          "anchor": "s24-m01",
+          "matched": "Muʿāwiyah"
         }
       ],
       "first": {
         "chapter": 23,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s23-m01"
+        "anchor": "s23-m01",
+        "matched": "Muʿāwiyah"
       }
     },
     {
@@ -2361,14 +2885,16 @@
           "chapter": 24,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s24-m01"
+          "anchor": "s24-m01",
+          "matched": "Yazīd"
         }
       ],
       "first": {
         "chapter": 24,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s24-m01"
+        "anchor": "s24-m01",
+        "matched": "Yazīd"
       }
     },
     {
@@ -2390,14 +2916,16 @@
           "chapter": 25,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s25-m01"
+          "anchor": "s25-m01",
+          "matched": "Abū Muslim"
         }
       ],
       "first": {
         "chapter": 25,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s25-m01"
+        "anchor": "s25-m01",
+        "matched": "Abū Muslim"
       }
     },
     {
@@ -2418,14 +2946,23 @@
           "chapter": 25,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s25-m01"
+          "anchor": "s25-m01",
+          "matched": "al-Manṣūr"
+        },
+        {
+          "chapter": 25,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s25-s02",
+          "matched": "al-Manṣūr"
         }
       ],
       "first": {
         "chapter": 25,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s25-m01"
+        "anchor": "s25-m01",
+        "matched": "al-Manṣūr"
       }
     },
     {
@@ -2447,14 +2984,16 @@
           "chapter": 26,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s26-s01"
+          "anchor": "s26-s01",
+          "matched": "al-Maʾmūn"
         }
       ],
       "first": {
         "chapter": 26,
         "layer": "sharh",
         "paragraph": 1,
-        "anchor": "s26-s01"
+        "anchor": "s26-s01",
+        "matched": "al-Maʾmūn"
       }
     },
     {
@@ -2475,14 +3014,16 @@
           "chapter": 26,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s26-s01"
+          "anchor": "s26-s01",
+          "matched": "Hārūn al-Rashīd"
         }
       ],
       "first": {
         "chapter": 26,
         "layer": "sharh",
         "paragraph": 1,
-        "anchor": "s26-s01"
+        "anchor": "s26-s01",
+        "matched": "Hārūn al-Rashīd"
       }
     },
     {
@@ -2503,14 +3044,16 @@
           "chapter": 26,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s26-s01"
+          "anchor": "s26-s01",
+          "matched": "Ḥunayn ibn Isḥāq"
         }
       ],
       "first": {
         "chapter": 26,
         "layer": "sharh",
         "paragraph": 1,
-        "anchor": "s26-s01"
+        "anchor": "s26-s01",
+        "matched": "Ḥunayn ibn Isḥāq"
       }
     },
     {
@@ -2531,14 +3074,16 @@
           "chapter": 28,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s28-m01"
+          "anchor": "s28-m01",
+          "matched": "Abū Ḥanīfah"
         }
       ],
       "first": {
         "chapter": 28,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s28-m01"
+        "anchor": "s28-m01",
+        "matched": "Abū Ḥanīfah"
       }
     },
     {
@@ -2559,14 +3104,23 @@
           "chapter": 28,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s28-m01"
+          "anchor": "s28-m01",
+          "matched": "Mālik"
+        },
+        {
+          "chapter": 28,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s28-s01",
+          "matched": "Mālik"
         }
       ],
       "first": {
         "chapter": 28,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s28-m01"
+        "anchor": "s28-m01",
+        "matched": "Mālik"
       }
     },
     {
@@ -2588,20 +3142,30 @@
           "chapter": 27,
           "layer": "sharh",
           "paragraph": 4,
-          "anchor": "s27-s04"
+          "anchor": "s27-s04",
+          "matched": "al-Shāfiʿī"
         },
         {
           "chapter": 28,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s28-m01"
+          "anchor": "s28-m01",
+          "matched": "al-Shāfiʿī"
+        },
+        {
+          "chapter": 28,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s28-s01",
+          "matched": "al-Shāfiʿī"
         }
       ],
       "first": {
         "chapter": 27,
         "layer": "sharh",
         "paragraph": 4,
-        "anchor": "s27-s04"
+        "anchor": "s27-s04",
+        "matched": "al-Shāfiʿī"
       }
     },
     {
@@ -2623,20 +3187,23 @@
           "chapter": 26,
           "layer": "sharh",
           "paragraph": 2,
-          "anchor": "s26-s02"
+          "anchor": "s26-s02",
+          "matched": "Aḥmad ibn Ḥanbal"
         },
         {
           "chapter": 28,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s28-m01"
+          "anchor": "s28-m01",
+          "matched": "Aḥmad ibn Ḥanbal"
         }
       ],
       "first": {
         "chapter": 26,
         "layer": "sharh",
         "paragraph": 2,
-        "anchor": "s26-s02"
+        "anchor": "s26-s02",
+        "matched": "Aḥmad ibn Ḥanbal"
       }
     },
     {
@@ -2658,50 +3225,72 @@
           "chapter": 1,
           "layer": "sharh",
           "paragraph": 14,
-          "anchor": "s01-s14"
+          "anchor": "s01-s14",
+          "matched": "al-Ghazālī"
         },
         {
           "chapter": 9,
           "layer": "sharh",
           "paragraph": 4,
-          "anchor": "s09-s04"
+          "anchor": "s09-s04",
+          "matched": "al-Ghazālī"
         },
         {
           "chapter": 13,
           "layer": "sharh",
           "paragraph": 8,
-          "anchor": "s13-s08"
+          "anchor": "s13-s08",
+          "matched": "al-Ghazālī"
         },
         {
           "chapter": 19,
           "layer": "sharh",
           "paragraph": 3,
-          "anchor": "s19-s03"
+          "anchor": "s19-s03",
+          "matched": "al-Ghazālī"
         },
         {
           "chapter": 30,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s30-s01"
+          "anchor": "s30-s01",
+          "matched": "al-Ghazālī"
         },
         {
           "chapter": 31,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s31-m01"
+          "anchor": "s31-m01",
+          "matched": "al-Ghazālī"
+        },
+        {
+          "chapter": 31,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s31-s01",
+          "matched": "al-Ghazālī"
         },
         {
           "chapter": 32,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s32-m01"
+          "anchor": "s32-m01",
+          "matched": "al-Ghazālī"
+        },
+        {
+          "chapter": 32,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s32-s01",
+          "matched": "al-Ghazālī"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "sharh",
         "paragraph": 14,
-        "anchor": "s01-s14"
+        "anchor": "s01-s14",
+        "matched": "al-Ghazālī"
       }
     },
     {
@@ -2722,26 +3311,37 @@
           "chapter": 28,
           "layer": "sharh",
           "paragraph": 3,
-          "anchor": "s28-s03"
+          "anchor": "s28-s03",
+          "matched": "Ibn Rushd"
         },
         {
           "chapter": 31,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s31-m01"
+          "anchor": "s31-m01",
+          "matched": "Ibn Rushd"
+        },
+        {
+          "chapter": 31,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s31-s01",
+          "matched": "Ibn Rushd"
         },
         {
           "chapter": 35,
           "layer": "sharh",
           "paragraph": 2,
-          "anchor": "s35-s02"
+          "anchor": "s35-s02",
+          "matched": "Ibn Rushd"
         }
       ],
       "first": {
         "chapter": 28,
         "layer": "sharh",
         "paragraph": 3,
-        "anchor": "s28-s03"
+        "anchor": "s28-s03",
+        "matched": "Ibn Rushd"
       }
     },
     {
@@ -2762,38 +3362,65 @@
           "chapter": 1,
           "layer": "matn",
           "paragraph": 5,
-          "anchor": "s01-m05"
+          "anchor": "s01-m05",
+          "matched": "Ibn ʿArabī"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 16,
+          "anchor": "s01-s16",
+          "matched": "Ibn ʿArabī"
         },
         {
           "chapter": 11,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s11-m01"
+          "anchor": "s11-m01",
+          "matched": "Ibn ʿArabī"
+        },
+        {
+          "chapter": 11,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s11-s03",
+          "matched": "Ibn ʿArabī"
         },
         {
           "chapter": 19,
           "layer": "sharh",
           "paragraph": 5,
-          "anchor": "s19-s05"
+          "anchor": "s19-s05",
+          "matched": "Ibn ʿArabī"
         },
         {
           "chapter": 33,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s33-m01"
+          "anchor": "s33-m01",
+          "matched": "Ibn ʿArabī"
+        },
+        {
+          "chapter": 33,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s33-s02",
+          "matched": "Ibn ʿArabī"
         },
         {
           "chapter": 35,
           "layer": "sharh",
           "paragraph": 2,
-          "anchor": "s35-s02"
+          "anchor": "s35-s02",
+          "matched": "Ibn ʿArabī"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "matn",
         "paragraph": 5,
-        "anchor": "s01-m05"
+        "anchor": "s01-m05",
+        "matched": "Ibn ʿArabī"
       }
     },
     {
@@ -2816,32 +3443,44 @@
           "chapter": 1,
           "layer": "sharh",
           "paragraph": 21,
-          "anchor": "s01-s21"
+          "anchor": "s01-s21",
+          "matched": "Qūnawī"
         },
         {
           "chapter": 11,
           "layer": "sharh",
           "paragraph": 4,
-          "anchor": "s11-s04"
+          "anchor": "s11-s04",
+          "matched": "al-Qūnawī"
         },
         {
           "chapter": 19,
           "layer": "sharh",
           "paragraph": 5,
-          "anchor": "s19-s05"
+          "anchor": "s19-s05",
+          "matched": "Qūnawī"
         },
         {
           "chapter": 33,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s33-m01"
+          "anchor": "s33-m01",
+          "matched": "al-Qūnawī"
+        },
+        {
+          "chapter": 33,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s33-s03",
+          "matched": "al-Qūnawī"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "sharh",
         "paragraph": 21,
-        "anchor": "s01-s21"
+        "anchor": "s01-s21",
+        "matched": "Qūnawī"
       }
     },
     {
@@ -2864,32 +3503,44 @@
           "chapter": 1,
           "layer": "sharh",
           "paragraph": 21,
-          "anchor": "s01-s21"
+          "anchor": "s01-s21",
+          "matched": "Farghānī"
         },
         {
           "chapter": 11,
           "layer": "sharh",
           "paragraph": 4,
-          "anchor": "s11-s04"
+          "anchor": "s11-s04",
+          "matched": "Farghānī"
         },
         {
           "chapter": 19,
           "layer": "sharh",
           "paragraph": 5,
-          "anchor": "s19-s05"
+          "anchor": "s19-s05",
+          "matched": "Farghānī"
         },
         {
           "chapter": 33,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s33-m01"
+          "anchor": "s33-m01",
+          "matched": "al-Farghānī"
+        },
+        {
+          "chapter": 33,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s33-s03",
+          "matched": "Farghānī"
         }
       ],
       "first": {
         "chapter": 1,
         "layer": "sharh",
         "paragraph": 21,
-        "anchor": "s01-s21"
+        "anchor": "s01-s21",
+        "matched": "Farghānī"
       }
     },
     {
@@ -2911,14 +3562,23 @@
           "chapter": 34,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s34-m01"
+          "anchor": "s34-m01",
+          "matched": "Ṣalāḥ al-Dīn"
+        },
+        {
+          "chapter": 34,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s34-s01",
+          "matched": "Ṣalāḥ al-Dīn"
         }
       ],
       "first": {
         "chapter": 34,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s34-m01"
+        "anchor": "s34-m01",
+        "matched": "Ṣalāḥ al-Dīn"
       }
     },
     {
@@ -2941,14 +3601,23 @@
           "chapter": 34,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s34-m01"
+          "anchor": "s34-m01",
+          "matched": "Nūr al-Dīn"
+        },
+        {
+          "chapter": 34,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s34-s03",
+          "matched": "Nūr al-Dīn"
         }
       ],
       "first": {
         "chapter": 34,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s34-m01"
+        "anchor": "s34-m01",
+        "matched": "Nūr al-Dīn"
       }
     },
     {
@@ -2969,14 +3638,23 @@
           "chapter": 37,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s37-m01"
+          "anchor": "s37-m01",
+          "matched": "Ghāzān"
+        },
+        {
+          "chapter": 37,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s37-s01",
+          "matched": "Ghāzān"
         }
       ],
       "first": {
         "chapter": 37,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s37-m01"
+        "anchor": "s37-m01",
+        "matched": "Ghāzān"
       }
     },
     {
@@ -3000,14 +3678,16 @@
           "chapter": 37,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s37-s01"
+          "anchor": "s37-s01",
+          "matched": "Aḥmad Tegüder"
         }
       ],
       "first": {
         "chapter": 37,
         "layer": "sharh",
         "paragraph": 1,
-        "anchor": "s37-s01"
+        "anchor": "s37-s01",
+        "matched": "Aḥmad Tegüder"
       }
     },
     {
@@ -3028,14 +3708,16 @@
           "chapter": 38,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s38-m01"
+          "anchor": "s38-m01",
+          "matched": "Mansa Mūsā"
         }
       ],
       "first": {
         "chapter": 38,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s38-m01"
+        "anchor": "s38-m01",
+        "matched": "Mansa Mūsā"
       }
     },
     {
@@ -3056,14 +3738,16 @@
           "chapter": 38,
           "layer": "sharh",
           "paragraph": 3,
-          "anchor": "s38-s03"
+          "anchor": "s38-s03",
+          "matched": "Aḥmad Bābā"
         }
       ],
       "first": {
         "chapter": 38,
         "layer": "sharh",
         "paragraph": 3,
-        "anchor": "s38-s03"
+        "anchor": "s38-s03",
+        "matched": "Aḥmad Bābā"
       }
     },
     {
@@ -3100,14 +3784,23 @@
           "chapter": 42,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s42-m01"
+          "anchor": "s42-m01",
+          "matched": "Akbar"
+        },
+        {
+          "chapter": 42,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s42-s01",
+          "matched": "Akbar"
         }
       ],
       "first": {
         "chapter": 42,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s42-m01"
+        "anchor": "s42-m01",
+        "matched": "Akbar"
       }
     },
     {
@@ -3129,14 +3822,16 @@
           "chapter": 42,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s42-m01"
+          "anchor": "s42-m01",
+          "matched": "Aurangzeb"
         }
       ],
       "first": {
         "chapter": 42,
         "layer": "matn",
         "paragraph": 1,
-        "anchor": "s42-m01"
+        "anchor": "s42-m01",
+        "matched": "Aurangzeb"
       }
     },
     {
@@ -3176,14 +3871,16 @@
           "chapter": 42,
           "layer": "sharh",
           "paragraph": 2,
-          "anchor": "s42-s02"
+          "anchor": "s42-s02",
+          "matched": "Shāh Walī Allāh"
         }
       ],
       "first": {
         "chapter": 42,
         "layer": "sharh",
         "paragraph": 2,
-        "anchor": "s42-s02"
+        "anchor": "s42-s02",
+        "matched": "Shāh Walī Allāh"
       }
     }
   ]
