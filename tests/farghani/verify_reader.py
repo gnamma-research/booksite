@@ -228,6 +228,43 @@ check([x.get("page") for x in full_pages]==list(range(18,24)),
       "Stage XXII continuous page audit must cover 18–23, once each")
 check(len(proof_units)==76,"Stage XXII 76 full-sequence Arabic–English clause units lost")
 
+# Stage XXIV: verify cumulative 292 source-ordered bilingual units and physical witness limits.
+stage24=json.loads((BOOK/"editorial/CUMULATIVE_CONTINUOUS_PROOF_18_36_024.json").read_text(encoding="utf-8"))
+reviewed24=stage24.get("units",[])
+expected24={29:17,30:16,31:21,32:18,33:17,34:17,35:17,36:17}
+check(len(reviewed24)==292 and len({u["id"] for u in reviewed24})==292,
+      "Stage XXIV cumulative clause count/IDs must be 292")
+check([p["page"] for p in stage24["page_coverage"]]==list(range(18,37)),
+      "Stage XXIV must preserve exactly B2007 pp18–36")
+for n in range(18,37):
+    source=assert_page[n]["reading_ar"]
+    clauses=[u for u in reviewed24 if u["page"]==n]
+    check("".join(u["arabic_exact"] for u in clauses)==source,
+          f"Stage XXIV B2007 p{n} missing/differing digitized source clause")
+    check(all(source[u["offset_start"]:u["offset_end"]]==u["arabic_exact"] and
+              bool(u.get("english_review")) for u in clauses),
+          f"Stage XXIV B2007 p{n} corrupted source offsets or empty English")
+check(all(len([u for u in reviewed24 if u["page"]==n])==m for n,m in expected24.items()),
+      "Stage XXIV new eight-page clause counts changed")
+check(not any(u.get("manuscript_checked",False) for u in reviewed24),
+      "Stage XXIV must not claim examined medieval manuscripts")
+latest24=json.loads((BOOK/"editorial/STAGE_MANIFEST_CONTINUOUS_024.json").read_text(encoding="utf-8"))
+check(latest24.get("contiguous_reviewed_units")==292 and latest24.get("newly_reviewed_units")==140,
+      "Stage XXIV manifest count inconsistent")
+check(latest24.get("next_page")==37 and "واسم المريد" in latest24.get("next_exact_arabic",""),
+      "Stage XXIV exact p37 continuation lost")
+master24=(BOOK/"editorial/WORKING_TRANSLATION_18_145.md").read_text(encoding="utf-8")
+full24=(BOOK/"editorial/FULL_CUMULATIVE_ENGLISH_PROOF_024.md").read_text(encoding="utf-8")
+master_break="## Complete, preserved working English translation of the introduction (B2007 pp18–145)\n\n"
+check(master_break in full24,
+      "Stage XXIV full cumulative English master boundary missing")
+if master_break in full24:
+    check(full24.split(master_break,1)[1].strip()==master24.strip(),
+          "Stage XXIV full English master snapshot differs from working source")
+check((BOOK/"editorial/FULL_CUMULATIVE_ARABIC_SOURCE_024.md").is_file() and
+      (BOOK/"editorial/FULL_CUMULATIVE_SELECTED_AND_PRINT_024.md").is_file(),
+      "Stage XXIV full Arabic/selected critical archive aliases missing")
+
 # Stage XXIII cumulative, proof-of-preservation and source fidelity (not physical witness verification).
 latest=json.loads((BOOK/"editorial/CUMULATIVE_CONTINUOUS_PROOF_18_28_023.json").read_text(encoding="utf-8"))
 check(latest.get("source_contiguous_clauses")==152 or len(latest.get("units",[]))==152,

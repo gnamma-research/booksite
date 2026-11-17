@@ -1,3 +1,11 @@
+# Latest preserved state · Stage XXIV, 17 November 2026
+
+[Full cumulative Stage XXIV recovery index](FULL_CUMULATIVE_CHECKPOINT_024.md) · [exact next p37 handoff](STAGE_HANDOFF_CONTINUOUS_024.md) · [full bilingual 292-unit JSON](CUMULATIVE_CONTINUOUS_PROOF_18_36_024.json) · [full working English and proof](FULL_CUMULATIVE_ENGLISH_PROOF_024.md) · [full original online digitized Arabic](FULL_CUMULATIVE_ARABIC_SOURCE_024.md) · [560 selected records + 15 photographed-print comparisons](FULL_CUMULATIVE_SELECTED_AND_PRINT_024.md).
+
+**Frontier:** fully reviewed contiguous modern B2007 digital-source pp18–36: 19 pages, 292 new English-reviewed units across prior stages, 140 added on pp29–36. **First unread page 37** begins «( واسم المريد ) المتعين بها هو الطالب». No earlier material retranslated. Main commentary excluded. Printed/MSS independent checks still outstanding; see full handoff.
+
+---
+
 # Latest preserved state · Stage XXIII, 17 November 2026
 
 Full cumulative Stage XXIII: [Recovery index](FULL_CUMULATIVE_CHECKPOINT_023.md) · [Precise handoff](STAGE_HANDOFF_CONTINUOUS_023.md) · [Cumulative English](FULL_CUMULATIVE_ENGLISH_PROOF_023.md) · [full Arabic digitized source](FULL_CUMULATIVE_ARABIC_SOURCE_023.md) · [complete canonical selected evidence + historic print](FULL_CUMULATIVE_SELECTED_AND_PRINT_023.md) · [152-unit proof JSON](CUMULATIVE_CONTINUOUS_PROOF_18_28_023.json).

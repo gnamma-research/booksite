@@ -1,3 +1,15 @@
+## Stage XXIV — complete digitized-source proofreading B2007 pp29–36 (17 November 2026)
+
+The last verified Stage XXIII frontier was B2007 p28, with 152 consecutive bilingual units. **Stage XXIV added 140 complete, new, source-ordered Arabic–English units on B2007 pp29–36**. All source excerpts were checked against the original archived modern B2007 online-digitized Arabic, and each of the now **292** cumulative units reconstructs its parent source page exactly across **19 consecutive printed-page positions (18–36)**. This is a **digital-source and editorial translation proof**, NOT independent physical printed-page collation, a manuscript-critical source text or peer-reviewed edition. The complete four-foundation introduction + concluding preface retains 128/128 working English and digital Arabic page labels.
+
+**Historical photograph controls are inherited, not new:** I1876-L06 B2007 p29 `المذكور / المذكورة` PRINT difference; I1876-L10 B2007 p33 «في عون هذا» photographed PRINT agreement; I1876-L05 B2007 p34 `العمائية / العملية` PRINT difference (p36 modern digitization uses `العمائية` independently within the same context). These remain 15 bounded 1876 photographic comparisons total, 7 differences and 8 agreements. Zero full independent printed pages line-collated; zero verified manuscript variants. The full 128-page English/Arabic readers, 560 selected bilingual excerpts, prior cumulative archives and PDF were left unchanged.
+
+[Complete full recovery](FULL_CUMULATIVE_CHECKPOINT_024.md) · [new pp29–32](CONTINUOUS_PROOF_P29_32_024.md) · [new pp33–36](CONTINUOUS_PROOF_P33_36_024.md) · [292-unit JSON](CUMULATIVE_CONTINUOUS_PROOF_18_36_024.json) · [scholarly findings](CONTINUOUS_PROOF_REVIEW_024.md) · [precise handoff](STAGE_HANDOFF_CONTINUOUS_024.md).
+
+**NEXT p37:** «( واسم المريد ) المتعين بها هو الطالب», following p36 «والإرادة لما كان معناها طلب المراد والميل إليه تخصيصا أو ترتيبا أو إظهارا أو إخفاء». Keep p87, p138, physical B2007 p52, all independent manuscript and hadith/verse obligations open.
+
+---
+
 ## Stage XXIII — reconciled Stage XXII; complete digital-source proof through p28 (17 November 2026)
 
 Stage XXII commit `0b6271e0440e603316f481360621913825b36f25` and all 76 saved pp18–23 clauses were recovered and verified; **not repeated**. This stage added **76 full-contiguous Arabic–English clauses** on Beirut modern digitized pp24–28. Machine reconstruction verifies all 152 clauses across **B2007 pp18–28 (eleven source page positions)**, with no gaps or source alterations. The full 128-page English and Arabic introductions remain intact; brief corrections in the clean and bilingual English reader join the p23–24 authorial syntax and clarify the seventh-degree referent on p28.
