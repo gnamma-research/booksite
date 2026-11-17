@@ -11,7 +11,7 @@ const reader = read('read.html');
 const clarity = JSON.parse(read('editorial/READING_CLARITY_EDITS.json')).changes;
 const proposal = Object.assign({}, ...['I_III','IV_VII'].map(b => JSON.parse(read('editorial/RECOMPOSED_MATN_BOOKS_' + b + '.json')).matn));
 const landing = read('index.html');
-const manuscript = read('editorial/current-edition-1.9.1-integrated.md');
+const manuscript = read('editorial/current-edition-1.9.2-principial-narrative.md');
 const critical = JSON.parse(read('data/dossiers.json'));
 const atlas = read('atlas.html');
 const bridges = Object.assign({},
