@@ -89,7 +89,7 @@ window.GNAMMA_QAWAID_CITATION_POLICY = Object.freeze({
     "q-18-17": "quran-verse",
     "q-42-11": "quran-verse",
     "hadith-time-3197": "quoted-hadith-with-variant",
-    "ibn-arabi-dawair-human-sh039": "source-checked-quotation",
+    "ibn-arabi-dawair-human-sh039": "quoted-in-tamhid",
     "ibn-arabi-fusus-mirror-qt041": "source-checked-quotation",
     "ibn-arabi-fusus-eye-sh041": "source-checked-quotation",
     "ibn-arabi-futuhat-proportion-sh041": "source-checked-quotation",
