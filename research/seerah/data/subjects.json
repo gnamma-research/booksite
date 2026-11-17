@@ -42,6 +42,12 @@
           "anchor": "s01-m01"
         },
         {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s01-s02"
+        },
+        {
           "chapter": 2,
           "layer": "sharh",
           "paragraph": 2,
@@ -49,9 +55,27 @@
         },
         {
           "chapter": 8,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s08-m02"
+        },
+        {
+          "chapter": 8,
           "layer": "sharh",
           "paragraph": 1,
           "anchor": "s08-s01"
+        },
+        {
+          "chapter": 12,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s12-v01"
+        },
+        {
+          "chapter": 22,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s22-m02"
         }
       ],
       "preferred_chapters": [
@@ -82,16 +106,34 @@
           "anchor": "s01-m09"
         },
         {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s01-v01"
+        },
+        {
           "chapter": 11,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 5,
           "anchor": "s11-s04"
+        },
+        {
+          "chapter": 16,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s16-v02"
+        },
+        {
+          "chapter": 23,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s23-v02"
         },
         {
           "chapter": 33,
           "layer": "sharh",
-          "paragraph": 4,
-          "anchor": "s33-s04"
+          "paragraph": 3,
+          "anchor": "s33-v01"
         }
       ],
       "preferred_chapters": [
@@ -120,9 +162,9 @@
       "appearances": [
         {
           "chapter": 1,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s01-m01"
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s01-s04"
         }
       ],
       "preferred_chapters": [
@@ -131,9 +173,9 @@
       ],
       "first": {
         "chapter": 1,
-        "layer": "matn",
-        "paragraph": 1,
-        "anchor": "s01-m01"
+        "layer": "sharh",
+        "paragraph": 5,
+        "anchor": "s01-s04"
       }
     },
     {
@@ -148,9 +190,15 @@
       "meaning": "A mediating reality that joins and distinguishes different orders; used to interpret integrated prophetic action.",
       "appearances": [
         {
-          "chapter": 36,
+          "chapter": 11,
           "layer": "sharh",
           "paragraph": 3,
+          "anchor": "s11-v01"
+        },
+        {
+          "chapter": 36,
+          "layer": "sharh",
+          "paragraph": 5,
           "anchor": "s36-s03"
         }
       ],
@@ -159,10 +207,10 @@
         13
       ],
       "first": {
-        "chapter": 36,
+        "chapter": 11,
         "layer": "sharh",
         "paragraph": 3,
-        "anchor": "s36-s03"
+        "anchor": "s11-v01"
       }
     },
     {
@@ -213,6 +261,24 @@
           "anchor": "s01-m03"
         },
         {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 10,
+          "anchor": "s01-s09"
+        },
+        {
+          "chapter": 26,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s26-v02"
+        },
+        {
+          "chapter": 29,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s29-v02"
+        },
+        {
           "chapter": 35,
           "layer": "sharh",
           "paragraph": 1,
@@ -243,9 +309,9 @@
       "appearances": [
         {
           "chapter": 1,
-          "layer": "matn",
-          "paragraph": 2,
-          "anchor": "s01-m02"
+          "layer": "sharh",
+          "paragraph": 8,
+          "anchor": "s01-s07"
         }
       ],
       "preferred_chapters": [
@@ -253,9 +319,9 @@
       ],
       "first": {
         "chapter": 1,
-        "layer": "matn",
-        "paragraph": 2,
-        "anchor": "s01-m02"
+        "layer": "sharh",
+        "paragraph": 8,
+        "anchor": "s01-s07"
       }
     },
     {
@@ -277,9 +343,15 @@
           "anchor": "s01-m04"
         },
         {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 9,
+          "anchor": "s01-s08"
+        },
+        {
           "chapter": 2,
           "layer": "sharh",
-          "paragraph": 3,
+          "paragraph": 4,
           "anchor": "s02-s03"
         },
         {
@@ -289,46 +361,88 @@
           "anchor": "s03-s01"
         },
         {
-          "chapter": 5,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s05-m01"
-        },
-        {
           "chapter": 10,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s10-m01"
         },
         {
+          "chapter": 10,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s10-v01"
+        },
+        {
           "chapter": 11,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s11-m01"
+          "paragraph": 5,
+          "anchor": "s11-m05"
+        },
+        {
+          "chapter": 11,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s11-v01"
         },
         {
           "chapter": 13,
           "layer": "matn",
-          "paragraph": 2,
-          "anchor": "s13-m02"
+          "paragraph": 4,
+          "anchor": "s13-m04"
+        },
+        {
+          "chapter": 13,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s13-v02"
         },
         {
           "chapter": 16,
-          "layer": "matn",
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s16-m01"
+          "anchor": "s16-s01"
         },
         {
           "chapter": 17,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 5,
           "anchor": "s17-s04"
+        },
+        {
+          "chapter": 18,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s18-m02"
         },
         {
           "chapter": 28,
           "layer": "sharh",
           "paragraph": 2,
           "anchor": "s28-s02"
+        },
+        {
+          "chapter": 32,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s32-v02"
+        },
+        {
+          "chapter": 34,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s34-v01"
+        },
+        {
+          "chapter": 37,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s37-v02"
+        },
+        {
+          "chapter": 46,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s46-v02"
         }
       ],
       "preferred_chapters": [
@@ -356,7 +470,7 @@
         {
           "chapter": 33,
           "layer": "sharh",
-          "paragraph": 3,
+          "paragraph": 5,
           "anchor": "s33-s03"
         }
       ],
@@ -368,7 +482,7 @@
       "first": {
         "chapter": 33,
         "layer": "sharh",
-        "paragraph": 3,
+        "paragraph": 5,
         "anchor": "s33-s03"
       }
     },
@@ -381,11 +495,53 @@
       ],
       "group": "Metaphysics",
       "meaning": "Universal orientation and attention to the specific claims of a present situation.",
-      "appearances": [],
+      "appearances": [
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s01-v01"
+        },
+        {
+          "chapter": 4,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s04-v01"
+        },
+        {
+          "chapter": 21,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s21-v01"
+        },
+        {
+          "chapter": 30,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s30-v01"
+        },
+        {
+          "chapter": 32,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s32-v02"
+        },
+        {
+          "chapter": 43,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s43-v01"
+        }
+      ],
       "preferred_chapters": [
         13
       ],
-      "first": null
+      "first": {
+        "chapter": 1,
+        "layer": "sharh",
+        "paragraph": 3,
+        "anchor": "s01-v01"
+      }
     },
     {
       "id": "miraj",
@@ -402,8 +558,14 @@
         {
           "chapter": 11,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s11-m01"
+          "paragraph": 3,
+          "anchor": "s11-m03"
+        },
+        {
+          "chapter": 11,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s11-s02"
         }
       ],
       "preferred_chapters": [
@@ -412,8 +574,8 @@
       "first": {
         "chapter": 11,
         "layer": "matn",
-        "paragraph": 1,
-        "anchor": "s11-m01"
+        "paragraph": 3,
+        "anchor": "s11-m03"
       }
     },
     {
@@ -429,14 +591,14 @@
       "appearances": [
         {
           "chapter": 1,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s01-m01"
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s01-s02"
         },
         {
           "chapter": 33,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 6,
           "anchor": "s33-s04"
         }
       ],
@@ -445,9 +607,9 @@
       ],
       "first": {
         "chapter": 1,
-        "layer": "matn",
-        "paragraph": 1,
-        "anchor": "s01-m01"
+        "layer": "sharh",
+        "paragraph": 2,
+        "anchor": "s01-s02"
       }
     },
     {
@@ -486,16 +648,40 @@
           "anchor": "s01-m09"
         },
         {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 48,
+          "anchor": "s01-s47"
+        },
+        {
           "chapter": 2,
           "layer": "matn",
           "paragraph": 4,
           "anchor": "s02-m04"
         },
         {
+          "chapter": 2,
+          "layer": "sharh",
+          "paragraph": 37,
+          "anchor": "s02-s36"
+        },
+        {
+          "chapter": 4,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s04-m03"
+        },
+        {
           "chapter": 8,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s08-m01"
+        },
+        {
+          "chapter": 8,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s08-s01"
         },
         {
           "chapter": 9,
@@ -505,15 +691,33 @@
         },
         {
           "chapter": 11,
-          "layer": "matn",
-          "paragraph": 2,
-          "anchor": "s11-m02"
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s11-s01"
         },
         {
           "chapter": 13,
           "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s13-m02"
+        },
+        {
+          "chapter": 13,
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s13-m01"
+          "anchor": "s13-s01"
+        },
+        {
+          "chapter": 15,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s15-m02"
+        },
+        {
+          "chapter": 16,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s16-m04"
         },
         {
           "chapter": 16,
@@ -523,15 +727,33 @@
         },
         {
           "chapter": 18,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s18-m03"
+        },
+        {
+          "chapter": 18,
           "layer": "sharh",
           "paragraph": 2,
           "anchor": "s18-s02"
         },
         {
           "chapter": 19,
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s19-s04"
+        },
+        {
+          "chapter": 22,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s22-v01"
+        },
+        {
+          "chapter": 27,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s19-m01"
+          "paragraph": 2,
+          "anchor": "s27-m02"
         },
         {
           "chapter": 27,
@@ -542,14 +764,20 @@
         {
           "chapter": 28,
           "layer": "sharh",
-          "paragraph": 6,
+          "paragraph": 8,
           "anchor": "s28-s06"
         },
         {
           "chapter": 29,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s29-s02"
+        },
+        {
+          "chapter": 32,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s29-m01"
+          "anchor": "s32-m01"
         },
         {
           "chapter": 32,
@@ -564,9 +792,27 @@
           "anchor": "s33-m01"
         },
         {
+          "chapter": 34,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s34-v02"
+        },
+        {
+          "chapter": 36,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s36-m04"
+        },
+        {
+          "chapter": 42,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s42-m02"
+        },
+        {
           "chapter": 45,
           "layer": "sharh",
-          "paragraph": 3,
+          "paragraph": 5,
           "anchor": "s45-s03"
         },
         {
@@ -606,16 +852,34 @@
           "anchor": "s01-m10"
         },
         {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 16,
+          "anchor": "s01-s15"
+        },
+        {
           "chapter": 2,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 5,
           "anchor": "s02-s04"
+        },
+        {
+          "chapter": 7,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s07-v01"
         },
         {
           "chapter": 8,
           "layer": "sharh",
           "paragraph": 1,
           "anchor": "s08-s01"
+        },
+        {
+          "chapter": 9,
+          "layer": "matn",
+          "paragraph": 5,
+          "anchor": "s09-m05"
         },
         {
           "chapter": 9,
@@ -626,8 +890,20 @@
         {
           "chapter": 13,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 6,
           "anchor": "s13-s04"
+        },
+        {
+          "chapter": 14,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s14-m04"
+        },
+        {
+          "chapter": 14,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s14-v01"
         },
         {
           "chapter": 19,
@@ -636,22 +912,82 @@
           "anchor": "s19-s02"
         },
         {
+          "chapter": 22,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s22-v01"
+        },
+        {
+          "chapter": 25,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s25-m04"
+        },
+        {
+          "chapter": 27,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s27-v02"
+        },
+        {
+          "chapter": 29,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s29-v02"
+        },
+        {
+          "chapter": 30,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s30-v02"
+        },
+        {
           "chapter": 31,
           "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s31-m03"
+        },
+        {
+          "chapter": 31,
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s31-m01"
+          "anchor": "s31-s01"
         },
         {
           "chapter": 32,
-          "layer": "matn",
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s32-m01"
+          "anchor": "s32-s01"
         },
         {
           "chapter": 33,
           "layer": "sharh",
           "paragraph": 3,
-          "anchor": "s33-s03"
+          "anchor": "s33-v01"
+        },
+        {
+          "chapter": 42,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s42-v02"
+        },
+        {
+          "chapter": 45,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s45-m04"
+        },
+        {
+          "chapter": 45,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s45-v01"
+        },
+        {
+          "chapter": 46,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s46-v02"
         }
       ],
       "preferred_chapters": [
@@ -680,50 +1016,86 @@
         {
           "chapter": 1,
           "layer": "sharh",
-          "paragraph": 35,
+          "paragraph": 36,
           "anchor": "s01-s35"
         },
         {
           "chapter": 2,
           "layer": "sharh",
-          "paragraph": 25,
-          "anchor": "s02-s25"
+          "paragraph": 3,
+          "anchor": "s02-v01"
         },
         {
           "chapter": 3,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s03-v01"
+        },
+        {
+          "chapter": 6,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s03-m01"
+          "paragraph": 3,
+          "anchor": "s06-m03"
+        },
+        {
+          "chapter": 6,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s06-v01"
         },
         {
           "chapter": 7,
           "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s07-m02"
+        },
+        {
+          "chapter": 7,
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s07-m01"
+          "anchor": "s07-s01"
         },
         {
           "chapter": 8,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s08-m01"
+          "paragraph": 4,
+          "anchor": "s08-m04"
+        },
+        {
+          "chapter": 8,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s08-v01"
         },
         {
           "chapter": 9,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s09-m01"
+          "paragraph": 3,
+          "anchor": "s09-m03"
+        },
+        {
+          "chapter": 10,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s10-v01"
+        },
+        {
+          "chapter": 12,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s12-m03"
         },
         {
           "chapter": 12,
           "layer": "sharh",
-          "paragraph": 4,
-          "anchor": "s12-s04"
+          "paragraph": 3,
+          "anchor": "s12-v01"
         },
         {
           "chapter": 13,
-          "layer": "matn",
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s13-m01"
+          "anchor": "s13-s01"
         },
         {
           "chapter": 17,
@@ -734,14 +1106,26 @@
         {
           "chapter": 18,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s18-m01"
+          "paragraph": 4,
+          "anchor": "s18-m04"
+        },
+        {
+          "chapter": 18,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s18-s02"
         },
         {
           "chapter": 19,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s19-v01"
+        },
+        {
+          "chapter": 20,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s19-m01"
+          "anchor": "s20-m01"
         },
         {
           "chapter": 20,
@@ -750,10 +1134,28 @@
           "anchor": "s20-s02"
         },
         {
+          "chapter": 21,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s21-m03"
+        },
+        {
+          "chapter": 21,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s21-v02"
+        },
+        {
+          "chapter": 22,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s22-m02"
+        },
+        {
           "chapter": 22,
           "layer": "sharh",
           "paragraph": 3,
-          "anchor": "s22-s03"
+          "anchor": "s22-v01"
         },
         {
           "chapter": 24,
@@ -762,10 +1164,34 @@
           "anchor": "s24-m01"
         },
         {
+          "chapter": 24,
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s24-s03"
+        },
+        {
+          "chapter": 25,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s25-m02"
+        },
+        {
           "chapter": 27,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s27-m01"
+        },
+        {
+          "chapter": 27,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s27-s02"
+        },
+        {
+          "chapter": 28,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s28-m01"
         },
         {
           "chapter": 29,
@@ -774,46 +1200,10 @@
           "anchor": "s29-m01"
         },
         {
-          "chapter": 32,
-          "layer": "sharh",
-          "paragraph": 4,
-          "anchor": "s32-s04"
-        },
-        {
-          "chapter": 36,
-          "layer": "sharh",
-          "paragraph": 3,
-          "anchor": "s36-s03"
-        },
-        {
-          "chapter": 38,
-          "layer": "sharh",
-          "paragraph": 2,
-          "anchor": "s38-s02"
-        },
-        {
-          "chapter": 40,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s40-m01"
-        },
-        {
-          "chapter": 41,
-          "layer": "sharh",
-          "paragraph": 2,
-          "anchor": "s41-s02"
-        },
-        {
-          "chapter": 42,
+          "chapter": 29,
           "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s42-s01"
-        },
-        {
-          "chapter": 44,
-          "layer": "sharh",
-          "paragraph": 4,
-          "anchor": "s44-s04"
+          "anchor": "s29-s01"
         }
       ],
       "preferred_chapters": [
@@ -824,7 +1214,7 @@
       "first": {
         "chapter": 1,
         "layer": "sharh",
-        "paragraph": 35,
+        "paragraph": 36,
         "anchor": "s01-s35"
       }
     },
@@ -843,7 +1233,7 @@
         {
           "chapter": 7,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 5,
           "anchor": "s07-s04"
         },
         {
@@ -855,8 +1245,14 @@
         {
           "chapter": 30,
           "layer": "sharh",
-          "paragraph": 3,
+          "paragraph": 5,
           "anchor": "s30-s03"
+        },
+        {
+          "chapter": 44,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s44-m02"
         }
       ],
       "preferred_chapters": [
@@ -867,7 +1263,7 @@
       "first": {
         "chapter": 7,
         "layer": "sharh",
-        "paragraph": 4,
+        "paragraph": 5,
         "anchor": "s07-s04"
       }
     },
@@ -886,13 +1282,31 @@
         {
           "chapter": 1,
           "layer": "sharh",
-          "paragraph": 19,
+          "paragraph": 20,
           "anchor": "s01-s19"
+        },
+        {
+          "chapter": 27,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s27-v02"
+        },
+        {
+          "chapter": 29,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s29-v02"
+        },
+        {
+          "chapter": 32,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s32-v01"
         },
         {
           "chapter": 45,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 6,
           "anchor": "s45-s04"
         }
       ],
@@ -903,7 +1317,7 @@
       "first": {
         "chapter": 1,
         "layer": "sharh",
-        "paragraph": 19,
+        "paragraph": 20,
         "anchor": "s01-s19"
       }
     },
@@ -917,12 +1331,42 @@
       ],
       "group": "Practical wisdom",
       "meaning": "The progressive acquisition of virtues through repeated effort.",
-      "appearances": [],
+      "appearances": [
+        {
+          "chapter": 27,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s27-v02"
+        },
+        {
+          "chapter": 31,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s31-m03"
+        },
+        {
+          "chapter": 32,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s32-v01"
+        },
+        {
+          "chapter": 45,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s45-v01"
+        }
+      ],
       "preferred_chapters": [
         32,
         33
       ],
-      "first": null
+      "first": {
+        "chapter": 27,
+        "layer": "sharh",
+        "paragraph": 4,
+        "anchor": "s27-v02"
+      }
     },
     {
       "id": "tahaqquq",
@@ -953,16 +1397,40 @@
       "meaning": "Formative company through which the learner encounters instruction, example and practical correction.",
       "appearances": [
         {
-          "chapter": 1,
+          "chapter": 8,
           "layer": "matn",
-          "paragraph": 9,
-          "anchor": "s01-m09"
+          "paragraph": 1,
+          "anchor": "s08-m01"
+        },
+        {
+          "chapter": 11,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s11-m01"
+        },
+        {
+          "chapter": 12,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s12-m01"
+        },
+        {
+          "chapter": 21,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s21-m04"
         },
         {
           "chapter": 32,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s32-s02"
+        },
+        {
+          "chapter": 33,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s32-m01"
+          "anchor": "s33-m01"
         },
         {
           "chapter": 33,
@@ -976,10 +1444,10 @@
         33
       ],
       "first": {
-        "chapter": 1,
+        "chapter": 8,
         "layer": "matn",
-        "paragraph": 9,
-        "anchor": "s01-m09"
+        "paragraph": 1,
+        "anchor": "s08-m01"
       }
     },
     {
@@ -1001,10 +1469,58 @@
           "anchor": "s01-m05"
         },
         {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 13,
+          "anchor": "s01-s12"
+        },
+        {
           "chapter": 5,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s05-m01"
+        },
+        {
+          "chapter": 5,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s05-v01"
+        },
+        {
+          "chapter": 13,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s13-m03"
+        },
+        {
+          "chapter": 13,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s13-v01"
+        },
+        {
+          "chapter": 14,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s14-m04"
+        },
+        {
+          "chapter": 16,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s16-m04"
+        },
+        {
+          "chapter": 16,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s16-v02"
+        },
+        {
+          "chapter": 33,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s33-m03"
         }
       ],
       "preferred_chapters": [
@@ -1034,14 +1550,32 @@
         {
           "chapter": 1,
           "layer": "matn",
-          "paragraph": 8,
-          "anchor": "s01-m08"
+          "paragraph": 1,
+          "anchor": "s01-m01"
+        },
+        {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 21,
+          "anchor": "s01-s20"
         },
         {
           "chapter": 2,
           "layer": "sharh",
-          "paragraph": 43,
+          "paragraph": 44,
           "anchor": "s02-s43"
+        },
+        {
+          "chapter": 6,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s06-v01"
+        },
+        {
+          "chapter": 7,
+          "layer": "matn",
+          "paragraph": 5,
+          "anchor": "s07-m05"
         },
         {
           "chapter": 7,
@@ -1051,20 +1585,20 @@
         },
         {
           "chapter": 8,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s08-m03"
+        },
+        {
+          "chapter": 8,
           "layer": "sharh",
           "paragraph": 2,
           "anchor": "s08-s02"
         },
         {
-          "chapter": 10,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s10-m01"
-        },
-        {
           "chapter": 11,
           "layer": "sharh",
-          "paragraph": 6,
+          "paragraph": 7,
           "anchor": "s11-s06"
         },
         {
@@ -1075,9 +1609,51 @@
         },
         {
           "chapter": 14,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s14-v01"
+        },
+        {
+          "chapter": 15,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s14-m01"
+          "paragraph": 3,
+          "anchor": "s15-m03"
+        },
+        {
+          "chapter": 15,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s15-v01"
+        },
+        {
+          "chapter": 17,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s17-v01"
+        },
+        {
+          "chapter": 18,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s18-m03"
+        },
+        {
+          "chapter": 24,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s24-m03"
+        },
+        {
+          "chapter": 27,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s27-m02"
+        },
+        {
+          "chapter": 28,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s28-m03"
         },
         {
           "chapter": 28,
@@ -1087,15 +1663,57 @@
         },
         {
           "chapter": 33,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s33-m02"
+        },
+        {
+          "chapter": 33,
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s33-s03"
+        },
+        {
+          "chapter": 34,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s34-m02"
+        },
+        {
+          "chapter": 37,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s37-m03"
+        },
+        {
+          "chapter": 38,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s38-m03"
+        },
+        {
+          "chapter": 38,
           "layer": "sharh",
           "paragraph": 3,
-          "anchor": "s33-s03"
+          "anchor": "s38-v01"
+        },
+        {
+          "chapter": 39,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s39-m03"
         },
         {
           "chapter": 39,
           "layer": "sharh",
           "paragraph": 2,
           "anchor": "s39-s02"
+        },
+        {
+          "chapter": 44,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s44-v02"
         },
         {
           "chapter": 46,
@@ -1111,8 +1729,8 @@
       "first": {
         "chapter": 1,
         "layer": "matn",
-        "paragraph": 8,
-        "anchor": "s01-m08"
+        "paragraph": 1,
+        "anchor": "s01-m01"
       }
     },
     {
@@ -1130,7 +1748,7 @@
         {
           "chapter": 1,
           "layer": "sharh",
-          "paragraph": 22,
+          "paragraph": 23,
           "anchor": "s01-s22"
         },
         {
@@ -1147,15 +1765,33 @@
         },
         {
           "chapter": 13,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s13-m04"
+        },
+        {
+          "chapter": 13,
           "layer": "sharh",
-          "paragraph": 6,
+          "paragraph": 8,
           "anchor": "s13-s06"
+        },
+        {
+          "chapter": 31,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s31-m01"
         },
         {
           "chapter": 32,
           "layer": "matn",
+          "paragraph": 5,
+          "anchor": "s32-m05"
+        },
+        {
+          "chapter": 32,
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s32-m01"
+          "anchor": "s32-s01"
         }
       ],
       "preferred_chapters": [
@@ -1165,7 +1801,7 @@
       "first": {
         "chapter": 1,
         "layer": "sharh",
-        "paragraph": 22,
+        "paragraph": 23,
         "anchor": "s01-s22"
       }
     },
@@ -1185,25 +1821,31 @@
         {
           "chapter": 1,
           "layer": "sharh",
-          "paragraph": 23,
+          "paragraph": 24,
           "anchor": "s01-s23"
         },
         {
           "chapter": 2,
           "layer": "sharh",
-          "paragraph": 23,
+          "paragraph": 24,
           "anchor": "s02-s23"
         },
         {
-          "chapter": 4,
+          "chapter": 3,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s04-m01"
+          "paragraph": 3,
+          "anchor": "s03-m03"
+        },
+        {
+          "chapter": 3,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s03-v01"
         },
         {
           "chapter": 10,
           "layer": "sharh",
-          "paragraph": 6,
+          "paragraph": 7,
           "anchor": "s10-s06"
         },
         {
@@ -1214,20 +1856,26 @@
         },
         {
           "chapter": 13,
+          "layer": "matn",
+          "paragraph": 5,
+          "anchor": "s13-m05"
+        },
+        {
+          "chapter": 13,
           "layer": "sharh",
-          "paragraph": 6,
-          "anchor": "s13-s06"
+          "paragraph": 4,
+          "anchor": "s13-v02"
         },
         {
           "chapter": 14,
           "layer": "sharh",
-          "paragraph": 3,
+          "paragraph": 4,
           "anchor": "s14-s03"
         },
         {
           "chapter": 18,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 5,
           "anchor": "s18-s04"
         },
         {
@@ -1237,16 +1885,16 @@
           "anchor": "s19-s01"
         },
         {
+          "chapter": 23,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s23-v02"
+        },
+        {
           "chapter": 24,
           "layer": "sharh",
           "paragraph": 1,
           "anchor": "s24-s01"
-        },
-        {
-          "chapter": 26,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s26-m01"
         },
         {
           "chapter": 27,
@@ -1256,21 +1904,39 @@
         },
         {
           "chapter": 29,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s29-m01"
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s29-v01"
         },
         {
           "chapter": 33,
           "layer": "sharh",
-          "paragraph": 3,
+          "paragraph": 5,
           "anchor": "s33-s03"
+        },
+        {
+          "chapter": 35,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s35-m04"
         },
         {
           "chapter": 36,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s36-m01"
+          "paragraph": 3,
+          "anchor": "s36-m03"
+        },
+        {
+          "chapter": 36,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s36-v02"
+        },
+        {
+          "chapter": 37,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s37-v02"
         },
         {
           "chapter": 38,
@@ -1281,20 +1947,26 @@
         {
           "chapter": 39,
           "layer": "sharh",
-          "paragraph": 3,
+          "paragraph": 5,
           "anchor": "s39-s03"
         },
         {
           "chapter": 41,
+          "layer": "matn",
+          "paragraph": 5,
+          "anchor": "s41-m05"
+        },
+        {
+          "chapter": 41,
           "layer": "sharh",
-          "paragraph": 3,
+          "paragraph": 5,
           "anchor": "s41-s03"
         },
         {
           "chapter": 45,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s45-m01"
+          "paragraph": 5,
+          "anchor": "s45-m05"
         },
         {
           "chapter": 46,
@@ -1310,7 +1982,7 @@
       "first": {
         "chapter": 1,
         "layer": "sharh",
-        "paragraph": 23,
+        "paragraph": 24,
         "anchor": "s01-s23"
       }
     },
@@ -1327,9 +1999,9 @@
       "appearances": [
         {
           "chapter": 1,
-          "layer": "matn",
-          "paragraph": 9,
-          "anchor": "s01-m09"
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s01-s03"
         },
         {
           "chapter": 2,
@@ -1340,8 +2012,20 @@
         {
           "chapter": 3,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 5,
           "anchor": "s03-s04"
+        },
+        {
+          "chapter": 4,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s04-m03"
+        },
+        {
+          "chapter": 5,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s05-m01"
         },
         {
           "chapter": 5,
@@ -1352,44 +2036,62 @@
         {
           "chapter": 7,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 5,
           "anchor": "s07-s04"
         },
         {
           "chapter": 8,
           "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s08-m04"
+        },
+        {
+          "chapter": 8,
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s08-m01"
+          "anchor": "s08-s01"
         },
         {
           "chapter": 9,
           "layer": "matn",
+          "paragraph": 5,
+          "anchor": "s09-m05"
+        },
+        {
+          "chapter": 9,
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s09-m01"
+          "anchor": "s09-s01"
         },
         {
           "chapter": 10,
           "layer": "sharh",
-          "paragraph": 6,
+          "paragraph": 7,
           "anchor": "s10-s06"
         },
         {
           "chapter": 11,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s11-m01"
+          "paragraph": 4,
+          "anchor": "s11-m04"
+        },
+        {
+          "chapter": 11,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s11-s02"
         },
         {
           "chapter": 12,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s12-m01"
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s12-s04"
         },
         {
           "chapter": 13,
-          "layer": "matn",
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s13-m01"
+          "anchor": "s13-s01"
         },
         {
           "chapter": 14,
@@ -1417,9 +2119,21 @@
         },
         {
           "chapter": 19,
-          "layer": "matn",
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s19-m01"
+          "anchor": "s19-s01"
+        },
+        {
+          "chapter": 20,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s20-m03"
+        },
+        {
+          "chapter": 20,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s20-v02"
         },
         {
           "chapter": 24,
@@ -1434,16 +2148,28 @@
           "anchor": "s26-s02"
         },
         {
-          "chapter": 29,
+          "chapter": 27,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s27-v02"
+        },
+        {
+          "chapter": 28,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s29-m01"
+          "anchor": "s28-m01"
         },
         {
           "chapter": 30,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s30-m01"
+        },
+        {
+          "chapter": 30,
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s30-s03"
         },
         {
           "chapter": 32,
@@ -1453,8 +2179,14 @@
         },
         {
           "chapter": 33,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s33-m01"
+        },
+        {
+          "chapter": 33,
           "layer": "sharh",
-          "paragraph": 3,
+          "paragraph": 5,
           "anchor": "s33-s03"
         }
       ],
@@ -1465,9 +2197,9 @@
       ],
       "first": {
         "chapter": 1,
-        "layer": "matn",
-        "paragraph": 9,
-        "anchor": "s01-m09"
+        "layer": "sharh",
+        "paragraph": 4,
+        "anchor": "s01-s03"
       }
     },
     {
@@ -1485,7 +2217,7 @@
         {
           "chapter": 1,
           "layer": "sharh",
-          "paragraph": 23,
+          "paragraph": 24,
           "anchor": "s01-s23"
         },
         {
@@ -1495,28 +2227,40 @@
           "anchor": "s13-s01"
         },
         {
+          "chapter": 14,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s14-v01"
+        },
+        {
           "chapter": 19,
           "layer": "sharh",
           "paragraph": 2,
           "anchor": "s19-s02"
         },
         {
-          "chapter": 36,
+          "chapter": 26,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s26-v01"
+        },
+        {
+          "chapter": 28,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s36-m01"
+          "paragraph": 5,
+          "anchor": "s28-m05"
+        },
+        {
+          "chapter": 28,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s28-v02"
         },
         {
           "chapter": 44,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s44-m01"
-        },
-        {
-          "chapter": 46,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s46-m01"
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s44-v02"
         }
       ],
       "preferred_chapters": [
@@ -1527,7 +2271,7 @@
       "first": {
         "chapter": 1,
         "layer": "sharh",
-        "paragraph": 23,
+        "paragraph": 24,
         "anchor": "s01-s23"
       }
     },
@@ -1545,15 +2289,15 @@
       "appearances": [
         {
           "chapter": 28,
-          "layer": "sharh",
-          "paragraph": 3,
-          "anchor": "s28-s03"
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s28-m02"
         },
         {
-          "chapter": 31,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s31-m01"
+          "chapter": 28,
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s28-s03"
         },
         {
           "chapter": 44,
@@ -1564,8 +2308,8 @@
         {
           "chapter": 45,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s45-m01"
+          "paragraph": 4,
+          "anchor": "s45-m04"
         }
       ],
       "preferred_chapters": [
@@ -1574,9 +2318,9 @@
       ],
       "first": {
         "chapter": 28,
-        "layer": "sharh",
-        "paragraph": 3,
-        "anchor": "s28-s03"
+        "layer": "matn",
+        "paragraph": 2,
+        "anchor": "s28-m02"
       }
     },
     {
@@ -1598,10 +2342,22 @@
           "anchor": "s01-m01"
         },
         {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s01-s03"
+        },
+        {
           "chapter": 2,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s02-m01"
+        },
+        {
+          "chapter": 2,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s02-s01"
         },
         {
           "chapter": 4,
@@ -1612,26 +2368,44 @@
         {
           "chapter": 8,
           "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s08-m02"
+        },
+        {
+          "chapter": 8,
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s08-m01"
+          "anchor": "s08-s01"
         },
         {
           "chapter": 11,
           "layer": "sharh",
-          "paragraph": 4,
-          "anchor": "s11-s04"
+          "paragraph": 3,
+          "anchor": "s11-v01"
         },
         {
           "chapter": 12,
           "layer": "sharh",
-          "paragraph": 5,
+          "paragraph": 6,
           "anchor": "s12-s05"
         },
         {
           "chapter": 13,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s13-m04"
+        },
+        {
+          "chapter": 13,
           "layer": "sharh",
-          "paragraph": 5,
-          "anchor": "s13-s05"
+          "paragraph": 4,
+          "anchor": "s13-v02"
+        },
+        {
+          "chapter": 15,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s15-m03"
         },
         {
           "chapter": 17,
@@ -1646,22 +2420,88 @@
           "anchor": "s19-s02"
         },
         {
+          "chapter": 20,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s20-v01"
+        },
+        {
+          "chapter": 21,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s21-m04"
+        },
+        {
+          "chapter": 21,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s21-v01"
+        },
+        {
+          "chapter": 22,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s22-m04"
+        },
+        {
+          "chapter": 23,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s23-v02"
+        },
+        {
+          "chapter": 25,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s25-m04"
+        },
+        {
+          "chapter": 25,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s25-v02"
+        },
+        {
+          "chapter": 26,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s26-m01"
+        },
+        {
           "chapter": 26,
           "layer": "sharh",
           "paragraph": 3,
-          "anchor": "s26-s03"
+          "anchor": "s26-v01"
+        },
+        {
+          "chapter": 27,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s27-m01"
         },
         {
           "chapter": 27,
           "layer": "sharh",
           "paragraph": 3,
-          "anchor": "s27-s03"
+          "anchor": "s27-v01"
         },
         {
           "chapter": 28,
           "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s28-m03"
+        },
+        {
+          "chapter": 28,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s28-v01"
+        },
+        {
+          "chapter": 29,
+          "layer": "matn",
           "paragraph": 1,
-          "anchor": "s28-m01"
+          "anchor": "s29-m01"
         },
         {
           "chapter": 29,
@@ -1676,70 +2516,16 @@
           "anchor": "s30-m01"
         },
         {
+          "chapter": 30,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s30-s02"
+        },
+        {
           "chapter": 31,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s31-m01"
-        },
-        {
-          "chapter": 32,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s32-m01"
-        },
-        {
-          "chapter": 33,
-          "layer": "sharh",
-          "paragraph": 2,
-          "anchor": "s33-s02"
-        },
-        {
-          "chapter": 37,
-          "layer": "sharh",
-          "paragraph": 2,
-          "anchor": "s37-s02"
-        },
-        {
-          "chapter": 38,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s38-m01"
-        },
-        {
-          "chapter": 39,
-          "layer": "sharh",
-          "paragraph": 1,
-          "anchor": "s39-s01"
-        },
-        {
-          "chapter": 42,
-          "layer": "sharh",
-          "paragraph": 2,
-          "anchor": "s42-s02"
-        },
-        {
-          "chapter": 43,
-          "layer": "sharh",
-          "paragraph": 2,
-          "anchor": "s43-s02"
-        },
-        {
-          "chapter": 44,
-          "layer": "sharh",
-          "paragraph": 2,
-          "anchor": "s44-s02"
-        },
-        {
-          "chapter": 45,
-          "layer": "sharh",
-          "paragraph": 3,
-          "anchor": "s45-s03"
-        },
-        {
-          "chapter": 46,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s46-m01"
         }
       ],
       "preferred_chapters": [
@@ -1773,16 +2559,58 @@
           "anchor": "s01-m05"
         },
         {
-          "chapter": 19,
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 17,
+          "anchor": "s01-s16"
+        },
+        {
+          "chapter": 8,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s08-m03"
+        },
+        {
+          "chapter": 8,
           "layer": "sharh",
           "paragraph": 3,
+          "anchor": "s08-v01"
+        },
+        {
+          "chapter": 13,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s13-v01"
+        },
+        {
+          "chapter": 16,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s16-v02"
+        },
+        {
+          "chapter": 19,
+          "layer": "sharh",
+          "paragraph": 4,
           "anchor": "s19-s03"
+        },
+        {
+          "chapter": 23,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s23-v01"
         },
         {
           "chapter": 26,
           "layer": "sharh",
           "paragraph": 1,
           "anchor": "s26-s01"
+        },
+        {
+          "chapter": 28,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s28-v02"
         },
         {
           "chapter": 29,
@@ -1793,8 +2621,26 @@
         {
           "chapter": 33,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s33-m01"
+          "paragraph": 2,
+          "anchor": "s33-m02"
+        },
+        {
+          "chapter": 33,
+          "layer": "sharh",
+          "paragraph": 6,
+          "anchor": "s33-s04"
+        },
+        {
+          "chapter": 40,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s40-v02"
+        },
+        {
+          "chapter": 45,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s45-v02"
         }
       ],
       "preferred_chapters": [
@@ -1822,15 +2668,15 @@
       "appearances": [
         {
           "chapter": 1,
-          "layer": "matn",
-          "paragraph": 10,
-          "anchor": "s01-m10"
+          "layer": "sharh",
+          "paragraph": 24,
+          "anchor": "s01-s23"
         },
         {
-          "chapter": 12,
+          "chapter": 9,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s12-m01"
+          "anchor": "s09-m01"
         },
         {
           "chapter": 13,
@@ -1839,10 +2685,34 @@
           "anchor": "s13-m01"
         },
         {
+          "chapter": 13,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s13-s01"
+        },
+        {
+          "chapter": 19,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s19-m02"
+        },
+        {
           "chapter": 19,
           "layer": "sharh",
           "paragraph": 3,
-          "anchor": "s19-s03"
+          "anchor": "s19-v01"
+        },
+        {
+          "chapter": 20,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s20-m02"
+        },
+        {
+          "chapter": 20,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s20-v01"
         },
         {
           "chapter": 22,
@@ -1851,10 +2721,34 @@
           "anchor": "s22-s02"
         },
         {
+          "chapter": 23,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s23-v02"
+        },
+        {
+          "chapter": 27,
+          "layer": "matn",
+          "paragraph": 5,
+          "anchor": "s27-m05"
+        },
+        {
           "chapter": 28,
           "layer": "sharh",
-          "paragraph": 5,
-          "anchor": "s28-s05"
+          "paragraph": 3,
+          "anchor": "s28-v01"
+        },
+        {
+          "chapter": 30,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s30-v02"
+        },
+        {
+          "chapter": 33,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s33-m04"
         },
         {
           "chapter": 33,
@@ -1863,15 +2757,33 @@
           "anchor": "s33-s02"
         },
         {
-          "chapter": 41,
+          "chapter": 35,
           "layer": "sharh",
           "paragraph": 3,
+          "anchor": "s35-v01"
+        },
+        {
+          "chapter": 37,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s37-v02"
+        },
+        {
+          "chapter": 41,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s41-m03"
+        },
+        {
+          "chapter": 41,
+          "layer": "sharh",
+          "paragraph": 5,
           "anchor": "s41-s03"
         },
         {
           "chapter": 44,
           "layer": "sharh",
-          "paragraph": 5,
+          "paragraph": 7,
           "anchor": "s44-s05"
         }
       ],
@@ -1882,9 +2794,9 @@
       ],
       "first": {
         "chapter": 1,
-        "layer": "matn",
-        "paragraph": 10,
-        "anchor": "s01-m10"
+        "layer": "sharh",
+        "paragraph": 24,
+        "anchor": "s01-s23"
       }
     },
     {
@@ -1901,8 +2813,26 @@
         {
           "chapter": 2,
           "layer": "sharh",
-          "paragraph": 35,
+          "paragraph": 36,
           "anchor": "s02-s35"
+        },
+        {
+          "chapter": 17,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s17-m02"
+        },
+        {
+          "chapter": 28,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s28-v02"
+        },
+        {
+          "chapter": 29,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s29-m01"
         },
         {
           "chapter": 29,
@@ -1911,10 +2841,28 @@
           "anchor": "s29-s01"
         },
         {
+          "chapter": 33,
+          "layer": "matn",
+          "paragraph": 5,
+          "anchor": "s33-m05"
+        },
+        {
           "chapter": 37,
           "layer": "sharh",
           "paragraph": 2,
           "anchor": "s37-s02"
+        },
+        {
+          "chapter": 41,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s41-m03"
+        },
+        {
+          "chapter": 41,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s41-v02"
         },
         {
           "chapter": 43,
@@ -1924,9 +2872,15 @@
         },
         {
           "chapter": 44,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s44-m02"
+        },
+        {
+          "chapter": 44,
           "layer": "sharh",
           "paragraph": 3,
-          "anchor": "s44-s03"
+          "anchor": "s44-v01"
         }
       ],
       "preferred_chapters": [
@@ -1937,7 +2891,7 @@
       "first": {
         "chapter": 2,
         "layer": "sharh",
-        "paragraph": 35,
+        "paragraph": 36,
         "anchor": "s02-s35"
       }
     },
@@ -1953,6 +2907,12 @@
       "group": "Law and public order",
       "meaning": "The transmitted covenants ordering named groups' obligations in the early Medinan community.",
       "appearances": [
+        {
+          "chapter": 12,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s12-m04"
+        },
         {
           "chapter": 12,
           "layer": "sharh",
@@ -1971,9 +2931,9 @@
       ],
       "first": {
         "chapter": 12,
-        "layer": "sharh",
-        "paragraph": 1,
-        "anchor": "s12-s01"
+        "layer": "matn",
+        "paragraph": 4,
+        "anchor": "s12-m04"
       }
     },
     {
@@ -1991,13 +2951,13 @@
         {
           "chapter": 1,
           "layer": "sharh",
-          "paragraph": 42,
+          "paragraph": 43,
           "anchor": "s01-s42"
         },
         {
           "chapter": 2,
           "layer": "sharh",
-          "paragraph": 36,
+          "paragraph": 37,
           "anchor": "s02-s36"
         },
         {
@@ -2008,45 +2968,63 @@
         },
         {
           "chapter": 7,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s07-m04"
+        },
+        {
+          "chapter": 7,
           "layer": "sharh",
           "paragraph": 1,
           "anchor": "s07-s01"
         },
         {
           "chapter": 8,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s08-m02"
+        },
+        {
+          "chapter": 8,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 5,
           "anchor": "s08-s04"
         },
         {
-          "chapter": 10,
+          "chapter": 9,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s10-m01"
+          "paragraph": 2,
+          "anchor": "s09-m02"
+        },
+        {
+          "chapter": 10,
+          "layer": "sharh",
+          "paragraph": 7,
+          "anchor": "s10-s06"
         },
         {
           "chapter": 11,
           "layer": "matn",
-          "paragraph": 2,
-          "anchor": "s11-m02"
+          "paragraph": 4,
+          "anchor": "s11-m04"
+        },
+        {
+          "chapter": 11,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s11-s01"
+        },
+        {
+          "chapter": 12,
+          "layer": "matn",
+          "paragraph": 5,
+          "anchor": "s12-m05"
         },
         {
           "chapter": 12,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 5,
           "anchor": "s12-s04"
-        },
-        {
-          "chapter": 13,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s13-m01"
-        },
-        {
-          "chapter": 15,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s15-m01"
         },
         {
           "chapter": 16,
@@ -2057,13 +3035,19 @@
         {
           "chapter": 18,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s18-m01"
+          "paragraph": 3,
+          "anchor": "s18-m03"
+        },
+        {
+          "chapter": 18,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s18-s03"
         },
         {
           "chapter": 19,
           "layer": "sharh",
-          "paragraph": 5,
+          "paragraph": 6,
           "anchor": "s19-s05"
         },
         {
@@ -2073,16 +3057,46 @@
           "anchor": "s20-m01"
         },
         {
+          "chapter": 20,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s20-s01"
+        },
+        {
           "chapter": 23,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s23-m01"
         },
         {
+          "chapter": 23,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s23-s01"
+        },
+        {
           "chapter": 24,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s24-m01"
+        },
+        {
+          "chapter": 24,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s24-v01"
+        },
+        {
+          "chapter": 25,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s25-v01"
+        },
+        {
+          "chapter": 34,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s34-m04"
         }
       ],
       "preferred_chapters": [
@@ -2092,7 +3106,7 @@
       "first": {
         "chapter": 1,
         "layer": "sharh",
-        "paragraph": 42,
+        "paragraph": 43,
         "anchor": "s01-s42"
       }
     },
@@ -2116,10 +3130,40 @@
           "anchor": "s01-m02"
         },
         {
+          "chapter": 1,
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s01-s04"
+        },
+        {
           "chapter": 2,
           "layer": "matn",
           "paragraph": 5,
           "anchor": "s02-m05"
+        },
+        {
+          "chapter": 2,
+          "layer": "sharh",
+          "paragraph": 7,
+          "anchor": "s02-s06"
+        },
+        {
+          "chapter": 3,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s03-m01"
+        },
+        {
+          "chapter": 3,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s03-v01"
+        },
+        {
+          "chapter": 4,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s04-m01"
         },
         {
           "chapter": 4,
@@ -2128,10 +3172,16 @@
           "anchor": "s04-s02"
         },
         {
-          "chapter": 8,
+          "chapter": 7,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s08-m01"
+          "paragraph": 5,
+          "anchor": "s07-m05"
+        },
+        {
+          "chapter": 8,
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s08-s04"
         },
         {
           "chapter": 9,
@@ -2140,34 +3190,88 @@
           "anchor": "s09-m01"
         },
         {
+          "chapter": 9,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s09-s01"
+        },
+        {
           "chapter": 10,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s10-m01"
         },
         {
+          "chapter": 10,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s10-v01"
+        },
+        {
           "chapter": 12,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 5,
           "anchor": "s12-s04"
         },
         {
           "chapter": 13,
           "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s13-m02"
+        },
+        {
+          "chapter": 13,
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s13-m01"
+          "anchor": "s13-s01"
         },
         {
           "chapter": 14,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s14-m01"
+          "paragraph": 2,
+          "anchor": "s14-m02"
+        },
+        {
+          "chapter": 14,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s14-v01"
         },
         {
           "chapter": 15,
           "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s15-m02"
+        },
+        {
+          "chapter": 15,
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s15-m01"
+          "anchor": "s15-s01"
+        },
+        {
+          "chapter": 16,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s16-m03"
+        },
+        {
+          "chapter": 16,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s16-v02"
+        },
+        {
+          "chapter": 18,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s18-m01"
+        },
+        {
+          "chapter": 18,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s18-v01"
         },
         {
           "chapter": 19,
@@ -2176,100 +3280,40 @@
           "anchor": "s19-s02"
         },
         {
+          "chapter": 20,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s20-m01"
+        },
+        {
+          "chapter": 21,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s21-v01"
+        },
+        {
+          "chapter": 22,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s22-v02"
+        },
+        {
+          "chapter": 23,
+          "layer": "matn",
+          "paragraph": 5,
+          "anchor": "s23-m05"
+        },
+        {
           "chapter": 23,
           "layer": "sharh",
           "paragraph": 3,
-          "anchor": "s23-s03"
+          "anchor": "s23-v01"
         },
         {
           "chapter": 24,
           "layer": "sharh",
-          "paragraph": 3,
+          "paragraph": 5,
           "anchor": "s24-s03"
-        },
-        {
-          "chapter": 25,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s25-m01"
-        },
-        {
-          "chapter": 26,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s26-m01"
-        },
-        {
-          "chapter": 27,
-          "layer": "sharh",
-          "paragraph": 1,
-          "anchor": "s27-s01"
-        },
-        {
-          "chapter": 28,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s28-m01"
-        },
-        {
-          "chapter": 30,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s30-m01"
-        },
-        {
-          "chapter": 31,
-          "layer": "sharh",
-          "paragraph": 2,
-          "anchor": "s31-s02"
-        },
-        {
-          "chapter": 32,
-          "layer": "sharh",
-          "paragraph": 3,
-          "anchor": "s32-s03"
-        },
-        {
-          "chapter": 34,
-          "layer": "sharh",
-          "paragraph": 1,
-          "anchor": "s34-s01"
-        },
-        {
-          "chapter": 36,
-          "layer": "sharh",
-          "paragraph": 3,
-          "anchor": "s36-s03"
-        },
-        {
-          "chapter": 37,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s37-m01"
-        },
-        {
-          "chapter": 39,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s39-m01"
-        },
-        {
-          "chapter": 41,
-          "layer": "sharh",
-          "paragraph": 2,
-          "anchor": "s41-s02"
-        },
-        {
-          "chapter": 42,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s42-m01"
-        },
-        {
-          "chapter": 44,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s44-m01"
         }
       ],
       "preferred_chapters": [
@@ -2300,14 +3344,44 @@
         {
           "chapter": 1,
           "layer": "sharh",
-          "paragraph": 47,
+          "paragraph": 48,
           "anchor": "s01-s47"
+        },
+        {
+          "chapter": 2,
+          "layer": "sharh",
+          "paragraph": 12,
+          "anchor": "s02-s11"
+        },
+        {
+          "chapter": 9,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s09-m04"
+        },
+        {
+          "chapter": 18,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s18-s02"
         },
         {
           "chapter": 20,
           "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s20-m03"
+        },
+        {
+          "chapter": 20,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s20-s02"
+        },
+        {
+          "chapter": 21,
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s20-m01"
+          "anchor": "s21-s01"
         },
         {
           "chapter": 22,
@@ -2316,10 +3390,28 @@
           "anchor": "s22-m01"
         },
         {
-          "chapter": 26,
+          "chapter": 22,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s22-s01"
+        },
+        {
+          "chapter": 24,
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s24-s03"
+        },
+        {
+          "chapter": 41,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s26-m01"
+          "anchor": "s41-m01"
+        },
+        {
+          "chapter": 41,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s41-s02"
         }
       ],
       "preferred_chapters": [
@@ -2330,7 +3422,7 @@
       "first": {
         "chapter": 1,
         "layer": "sharh",
-        "paragraph": 47,
+        "paragraph": 48,
         "anchor": "s01-s47"
       }
     },
@@ -2364,7 +3456,7 @@
         {
           "chapter": 16,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 6,
           "anchor": "s16-s04"
         },
         {
@@ -2372,6 +3464,36 @@
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s17-m01"
+        },
+        {
+          "chapter": 17,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s17-s01"
+        },
+        {
+          "chapter": 29,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s29-m02"
+        },
+        {
+          "chapter": 29,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s29-v01"
+        },
+        {
+          "chapter": 44,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s44-m03"
+        },
+        {
+          "chapter": 44,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s44-v01"
         }
       ],
       "preferred_chapters": [
@@ -2380,7 +3502,7 @@
       "first": {
         "chapter": 16,
         "layer": "sharh",
-        "paragraph": 4,
+        "paragraph": 6,
         "anchor": "s16-s04"
       }
     },
@@ -2405,7 +3527,7 @@
         {
           "chapter": 15,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 5,
           "anchor": "s15-s04"
         },
         {
@@ -2415,10 +3537,22 @@
           "anchor": "s16-m01"
         },
         {
+          "chapter": 16,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s16-s01"
+        },
+        {
           "chapter": 17,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s17-m01"
+        },
+        {
+          "chapter": 17,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s17-s02"
         },
         {
           "chapter": 18,
@@ -2458,38 +3592,44 @@
         {
           "chapter": 3,
           "layer": "sharh",
-          "paragraph": 3,
+          "paragraph": 4,
           "anchor": "s03-s03"
         },
         {
           "chapter": 7,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s07-m01"
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s07-s02"
         },
         {
           "chapter": 9,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 5,
           "anchor": "s09-s04"
         },
         {
           "chapter": 10,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s10-m04"
+        },
+        {
+          "chapter": 10,
           "layer": "sharh",
-          "paragraph": 3,
+          "paragraph": 4,
           "anchor": "s10-s03"
         },
         {
           "chapter": 11,
-          "layer": "sharh",
+          "layer": "matn",
           "paragraph": 5,
-          "anchor": "s11-s05"
+          "anchor": "s11-m05"
         },
         {
-          "chapter": 13,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s13-m01"
+          "chapter": 11,
+          "layer": "sharh",
+          "paragraph": 6,
+          "anchor": "s11-s05"
         },
         {
           "chapter": 14,
@@ -2508,12 +3648,6 @@
           "layer": "sharh",
           "paragraph": 2,
           "anchor": "s34-s02"
-        },
-        {
-          "chapter": 46,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s46-m01"
         }
       ],
       "preferred_chapters": [
@@ -2523,7 +3657,7 @@
       "first": {
         "chapter": 3,
         "layer": "sharh",
-        "paragraph": 3,
+        "paragraph": 4,
         "anchor": "s03-s03"
       }
     },
@@ -2545,16 +3679,34 @@
           "anchor": "s02-m06"
         },
         {
+          "chapter": 2,
+          "layer": "sharh",
+          "paragraph": 41,
+          "anchor": "s02-s40"
+        },
+        {
           "chapter": 6,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s06-m01"
         },
         {
+          "chapter": 6,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s06-s03"
+        },
+        {
           "chapter": 7,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s07-m01"
+        },
+        {
+          "chapter": 7,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s07-s03"
         },
         {
           "chapter": 8,
@@ -2565,7 +3717,7 @@
         {
           "chapter": 9,
           "layer": "sharh",
-          "paragraph": 3,
+          "paragraph": 4,
           "anchor": "s09-s03"
         },
         {
@@ -2573,6 +3725,12 @@
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s10-m01"
+        },
+        {
+          "chapter": 10,
+          "layer": "sharh",
+          "paragraph": 6,
+          "anchor": "s10-s05"
         },
         {
           "chapter": 11,
@@ -2599,10 +3757,10 @@
           "anchor": "s16-m01"
         },
         {
-          "chapter": 17,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s17-m01"
+          "chapter": 16,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s16-s02"
         },
         {
           "chapter": 18,
@@ -2611,16 +3769,10 @@
           "anchor": "s18-m01"
         },
         {
-          "chapter": 19,
-          "layer": "matn",
+          "chapter": 18,
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s19-m01"
-        },
-        {
-          "chapter": 27,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s27-m01"
+          "anchor": "s18-s01"
         }
       ],
       "preferred_chapters": [
@@ -2650,26 +3802,20 @@
       "appearances": [
         {
           "chapter": 3,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s03-m01"
-        },
-        {
-          "chapter": 6,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s06-m01"
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s03-s03"
         },
         {
           "chapter": 7,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s07-m01"
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s07-v01"
         },
         {
           "chapter": 10,
           "layer": "sharh",
-          "paragraph": 3,
+          "paragraph": 4,
           "anchor": "s10-s03"
         },
         {
@@ -2679,10 +3825,22 @@
           "anchor": "s11-m01"
         },
         {
+          "chapter": 11,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s11-s01"
+        },
+        {
           "chapter": 12,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s12-m01"
+        },
+        {
+          "chapter": 12,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s12-s01"
         },
         {
           "chapter": 13,
@@ -2691,16 +3849,22 @@
           "anchor": "s13-m01"
         },
         {
-          "chapter": 14,
-          "layer": "matn",
+          "chapter": 13,
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s14-m01"
+          "anchor": "s13-s01"
         },
         {
           "chapter": 15,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s15-m01"
+          "paragraph": 2,
+          "anchor": "s15-m02"
+        },
+        {
+          "chapter": 16,
+          "layer": "matn",
+          "paragraph": 4,
+          "anchor": "s16-m04"
         },
         {
           "chapter": 16,
@@ -2709,34 +3873,28 @@
           "anchor": "s16-s02"
         },
         {
-          "chapter": 17,
+          "chapter": 18,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s17-m01"
+          "paragraph": 4,
+          "anchor": "s18-m04"
         },
         {
           "chapter": 18,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s18-m01"
-        },
-        {
-          "chapter": 19,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s19-m01"
+          "layer": "sharh",
+          "paragraph": 5,
+          "anchor": "s18-s04"
         },
         {
           "chapter": 20,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s20-m01"
+          "paragraph": 3,
+          "anchor": "s20-m03"
         },
         {
           "chapter": 21,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s21-m01"
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s21-s02"
         },
         {
           "chapter": 23,
@@ -2745,10 +3903,10 @@
           "anchor": "s23-m01"
         },
         {
-          "chapter": 27,
+          "chapter": 28,
           "layer": "matn",
           "paragraph": 1,
-          "anchor": "s27-m01"
+          "anchor": "s28-m01"
         },
         {
           "chapter": 29,
@@ -2769,9 +3927,9 @@
       ],
       "first": {
         "chapter": 3,
-        "layer": "matn",
-        "paragraph": 1,
-        "anchor": "s03-m01"
+        "layer": "sharh",
+        "paragraph": 4,
+        "anchor": "s03-s03"
       }
     },
     {
@@ -2788,14 +3946,8 @@
         {
           "chapter": 5,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 5,
           "anchor": "s05-s04"
-        },
-        {
-          "chapter": 6,
-          "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s06-m01"
         },
         {
           "chapter": 10,
@@ -2804,16 +3956,10 @@
           "anchor": "s10-m01"
         },
         {
-          "chapter": 11,
-          "layer": "matn",
-          "paragraph": 2,
-          "anchor": "s11-m02"
-        },
-        {
-          "chapter": 12,
-          "layer": "matn",
+          "chapter": 10,
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s12-m01"
+          "anchor": "s10-s01"
         }
       ],
       "preferred_chapters": [
@@ -2822,7 +3968,7 @@
       "first": {
         "chapter": 5,
         "layer": "sharh",
-        "paragraph": 4,
+        "paragraph": 5,
         "anchor": "s05-s04"
       }
     },
@@ -2839,6 +3985,12 @@
       "appearances": [
         {
           "chapter": 44,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s44-m02"
+        },
+        {
+          "chapter": 44,
           "layer": "sharh",
           "paragraph": 1,
           "anchor": "s44-s01"
@@ -2849,9 +4001,9 @@
       ],
       "first": {
         "chapter": 44,
-        "layer": "sharh",
-        "paragraph": 1,
-        "anchor": "s44-s01"
+        "layer": "matn",
+        "paragraph": 2,
+        "anchor": "s44-m02"
       }
     },
     {
@@ -2868,9 +4020,9 @@
       "appearances": [
         {
           "chapter": 1,
-          "layer": "matn",
-          "paragraph": 10,
-          "anchor": "s01-m10"
+          "layer": "sharh",
+          "paragraph": 19,
+          "anchor": "s01-s18"
         },
         {
           "chapter": 2,
@@ -2879,22 +4031,40 @@
           "anchor": "s02-m03"
         },
         {
-          "chapter": 7,
+          "chapter": 2,
+          "layer": "sharh",
+          "paragraph": 16,
+          "anchor": "s02-s15"
+        },
+        {
+          "chapter": 3,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s07-m01"
+          "paragraph": 3,
+          "anchor": "s03-m03"
         },
         {
           "chapter": 10,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 5,
           "anchor": "s10-s04"
         },
         {
           "chapter": 11,
           "layer": "sharh",
-          "paragraph": 6,
+          "paragraph": 7,
           "anchor": "s11-s06"
+        },
+        {
+          "chapter": 12,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s12-v01"
+        },
+        {
+          "chapter": 16,
+          "layer": "matn",
+          "paragraph": 1,
+          "anchor": "s16-m01"
         },
         {
           "chapter": 17,
@@ -2903,10 +4073,16 @@
           "anchor": "s17-m01"
         },
         {
-          "chapter": 19,
-          "layer": "matn",
+          "chapter": 17,
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s19-m01"
+          "anchor": "s17-s01"
+        },
+        {
+          "chapter": 20,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s20-m02"
         },
         {
           "chapter": 22,
@@ -2917,14 +4093,20 @@
         {
           "chapter": 23,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s23-m01"
+          "paragraph": 4,
+          "anchor": "s23-m04"
         },
         {
-          "chapter": 24,
+          "chapter": 34,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s34-v02"
+        },
+        {
+          "chapter": 35,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s24-m01"
+          "paragraph": 5,
+          "anchor": "s35-m05"
         },
         {
           "chapter": 36,
@@ -2933,10 +4115,28 @@
           "anchor": "s36-s02"
         },
         {
+          "chapter": 38,
+          "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s38-m02"
+        },
+        {
           "chapter": 39,
           "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s39-m02"
+        },
+        {
+          "chapter": 39,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s39-s02"
+        },
+        {
+          "chapter": 40,
+          "layer": "matn",
           "paragraph": 1,
-          "anchor": "s39-m01"
+          "anchor": "s40-m01"
         },
         {
           "chapter": 40,
@@ -2945,9 +4145,15 @@
           "anchor": "s40-s02"
         },
         {
+          "chapter": 41,
+          "layer": "matn",
+          "paragraph": 5,
+          "anchor": "s41-m05"
+        },
+        {
           "chapter": 43,
           "layer": "sharh",
-          "paragraph": 3,
+          "paragraph": 5,
           "anchor": "s43-s03"
         }
       ],
@@ -2958,9 +4164,9 @@
       ],
       "first": {
         "chapter": 1,
-        "layer": "matn",
-        "paragraph": 10,
-        "anchor": "s01-m10"
+        "layer": "sharh",
+        "paragraph": 19,
+        "anchor": "s01-s18"
       }
     },
     {
@@ -2982,34 +4188,70 @@
           "anchor": "s29-m01"
         },
         {
+          "chapter": 29,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s29-s01"
+        },
+        {
+          "chapter": 32,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s32-v02"
+        },
+        {
           "chapter": 33,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s33-m01"
         },
         {
+          "chapter": 33,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s33-v02"
+        },
+        {
           "chapter": 34,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s34-m01"
+          "paragraph": 3,
+          "anchor": "s34-m03"
+        },
+        {
+          "chapter": 34,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s34-s02"
         },
         {
           "chapter": 37,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s37-m01"
+          "paragraph": 4,
+          "anchor": "s37-m04"
+        },
+        {
+          "chapter": 37,
+          "layer": "sharh",
+          "paragraph": 2,
+          "anchor": "s37-s02"
+        },
+        {
+          "chapter": 38,
+          "layer": "matn",
+          "paragraph": 3,
+          "anchor": "s38-m03"
         },
         {
           "chapter": 38,
           "layer": "sharh",
-          "paragraph": 3,
+          "paragraph": 5,
           "anchor": "s38-s03"
         },
         {
           "chapter": 41,
-          "layer": "matn",
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s41-m01"
+          "anchor": "s41-s01"
         },
         {
           "chapter": 44,
@@ -3020,8 +4262,14 @@
         {
           "chapter": 45,
           "layer": "matn",
-          "paragraph": 1,
-          "anchor": "s45-m01"
+          "paragraph": 2,
+          "anchor": "s45-m02"
+        },
+        {
+          "chapter": 45,
+          "layer": "sharh",
+          "paragraph": 4,
+          "anchor": "s45-v02"
         }
       ],
       "preferred_chapters": [
@@ -3047,6 +4295,12 @@
       "appearances": [
         {
           "chapter": 33,
+          "layer": "matn",
+          "paragraph": 5,
+          "anchor": "s33-m05"
+        },
+        {
+          "chapter": 33,
           "layer": "sharh",
           "paragraph": 1,
           "anchor": "s33-s01"
@@ -3054,7 +4308,7 @@
         {
           "chapter": 45,
           "layer": "sharh",
-          "paragraph": 4,
+          "paragraph": 6,
           "anchor": "s45-s04"
         },
         {
@@ -3069,9 +4323,9 @@
       ],
       "first": {
         "chapter": 33,
-        "layer": "sharh",
-        "paragraph": 1,
-        "anchor": "s33-s01"
+        "layer": "matn",
+        "paragraph": 5,
+        "anchor": "s33-m05"
       }
     },
     {
@@ -3093,10 +4347,22 @@
           "anchor": "s45-m01"
         },
         {
+          "chapter": 45,
+          "layer": "sharh",
+          "paragraph": 3,
+          "anchor": "s45-v01"
+        },
+        {
           "chapter": 46,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s46-m01"
+        },
+        {
+          "chapter": 46,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s46-s01"
         }
       ],
       "preferred_chapters": [
@@ -3125,14 +4391,26 @@
         {
           "chapter": 39,
           "layer": "matn",
+          "paragraph": 2,
+          "anchor": "s39-m02"
+        },
+        {
+          "chapter": 39,
+          "layer": "sharh",
           "paragraph": 1,
-          "anchor": "s39-m01"
+          "anchor": "s39-s01"
         },
         {
           "chapter": 43,
           "layer": "matn",
           "paragraph": 1,
           "anchor": "s43-m01"
+        },
+        {
+          "chapter": 43,
+          "layer": "sharh",
+          "paragraph": 1,
+          "anchor": "s43-s01"
         }
       ],
       "preferred_chapters": [
@@ -3141,8 +4419,8 @@
       "first": {
         "chapter": 39,
         "layer": "matn",
-        "paragraph": 1,
-        "anchor": "s39-m01"
+        "paragraph": 2,
+        "anchor": "s39-m02"
       }
     }
   ]

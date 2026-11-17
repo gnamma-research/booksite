@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const allowed=/^read(?:-preview-1\.9\.0|-restored-1\.8\.0|-1\.7\.0)?\.html#(?:ch-\d\d|s\d\d-[ms]\d\d)$/;
+const allowed=/^read(?:-preview-1\.9\.0|-restored-1\.8\.0|-1\.7\.0)?\.html#(?:ch-\d\d|s\d\d-[msv]\d\d)$/;
 const q=new URLSearchParams(location.search),provided=q.get('return');
 let stored=null;try{stored=sessionStorage.getItem('gnamma-seerah-return')}catch{}
 const ret=allowed.test(provided||'')?provided:allowed.test(stored||'')?stored:null;

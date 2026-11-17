@@ -1,6 +1,6 @@
 # Sīrah and the Making of Islamic Civilization · Gnamma Research
 
-Public URL: `/research/seerah/` · 46 matns and 46 shurūḥ. Current canonical text: `data/chapters.json`, with 89 new narrative and 51 new explanatory paragraphs integrated across the seven books; earlier 1.4.1–1.9.1 research sources remain archived.
+Public URL: `/research/seerah/` · 46 recomposed matns and 46 source-grounded shurūḥ. The editorial apparatus and earlier stages are maintained separately in `editorial/`.
 
 The Research landing, continuous reader, illustrated atlas and critical dossiers are separate presentations of one work. **The canonical content is `data/chapters.json` and `data/dossiers.json`**; its prior textual bases remain archived, including `editorial/release-1.8.0-restored-chapters.json`. The synchronized complete manuscript is `editorial/current-edition-1.9.2-principial-narrative.md`. Editorial records and progress markers stay outside `read.html`, which shows the matn and optional sharḥ without production notes. This is a substantive interpretive text, not a completed critical collation of all original Sīrah manuscripts.
 
@@ -87,3 +87,7 @@ The [eight-principle metaphysical research note](editorial/MUHAMMADAN_VERTICAL_T
 ## Contextual navigation and principial atlas · 17 November 2026
 
 The [eight-principle guide](principles.html) develops the earlier metaphysical research into explicit bridges through *barzakh*, the two eyes, ascent/return, enacted revelation, formal unity, acquired and realized virtues, prophetic inheritances, and practical civic formation. Its citations are in collapsed source notes; the principal matn and sharḥ remain as previously authored. The [name index](people.html) has 90 curated biographies grouped into five circles, with a two-layer paragraph concordance. The [subject index](subjects.html) links 49 subjects, while the [geographic atlas](geography.html) provides 26 modern-location points on a live, attributed OSM basemap and the [chronology](chronology.html) provides 42 source-labeled dates on a proportional calendar scale. Reader chapters carry collapsed cast guides and reference links return to the originating passage. Historical maps are not reconstructions of seventh-century borders, and manuscript collation is still a separate research task.
+
+
+## Complete integral rewrite · 17 November 2026
+All 46 matns and shurūḥ have been recomposed or extended through the eight-principle framework, preserving historical actors, microcases and source-critical argument. The [full current manuscript](editorial/current-edition-2.0.0-integral-46.md) is synchronized with `data/chapters.json` and `read.html`. The reader does not contain editorial stage notices. The earlier canonical release is preserved in `editorial/archive-20261117-pre2.0.0-*`. Historical witness verification is a separate scholarly task.
