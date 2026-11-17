@@ -1,3 +1,13 @@
+## Stage XXII — contiguous Arabic–English proof through Beirut p23 (17 November 2026)
+
+**First full sequential digital-source page pass now established** for B2007 digitized authorial Arabic **pp18–23 inclusive**, comprising **76 complete, consecutive, individually translated/reviewed bilingual clause units** (9/14/8/15/14/16). Their exact Arabic strings concatenate back to each archived digital `reading_ar` page with no omissions, insertions or changes. This is a complete **digitized-source** clause pass across six page positions, **not six independently collated printed leaves** and not a manuscript-critical Arabic edition. 128/128 working English and modern edited-digital Arabic page positions remain intact overall.
+
+Three clearly supported English improvements on pp19/22 are synchronized in working Markdown, continuous English and bilingual reader: “within the scope” for p19 `في عرض`, explicit p22 compound proper names Baʿlabakk/Maʿdīkarib, and first-person p22 `نظرنا ... ألفينا`. The 560 separately selected source-graded bilingual excerpts and fifteen historic photographed-print comparison loci remain unchanged. No editorial note material has been added to uninterrupted reading.
+
+[Scholarly decisions](CONTINUOUS_PROOF_REVIEW_022.md) · [Full aligned pp18–20](CONTINUOUS_PROOF_P18_20_022.md) · [Full aligned pp21–23](CONTINUOUS_PROOF_P21_23_022.md) · [Machine manifest](STAGE_MANIFEST_CONTINUOUS_022.json) · [Exact next checkpoint](STAGE_HANDOFF_CONTINUOUS_022.md). **NEXT: B2007 p24 `معاني الشأن وهو الأمر`**, continuing the p23 final phrase `اعتبارا لبعض`, then p25. The p87, p138, original physical B2007 p52 and independent manuscript controls remain outstanding.
+
+---
+
 ## Stage XXI — all 37 selected quotation-location flags reviewed (17 November 2026)
 
 Source-location classification is now complete for the selected critical-excerpt corpus: **20** previously nonliteral Arabic excerpt strings now match their modern B2007 digitized passage and six corresponding English excerpts have been substantively revised; **6** other citations differed only because modern numbered editorial footnote cues were omitted, **4** cross the Beirut printed-page boundary, **6** use explicitly marked non-contiguous ellipses, and **1** was already exact under consistent normalization. Every former flag is documented in [full report](SOURCE_PARITY_RECONCILIATION_021.md) and [37-entry machine register](SOURCE_PARITY_RECONCILIATION_021.json).

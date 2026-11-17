@@ -130,7 +130,7 @@ def critical_records():
         match=re.search(r"window\.\w+\s*=\s*(\{[\s\S]*\})\s*;\s*$",txt)
         if not match:raise ValueError(f"bad critical-data JS: {f}")
         data.extend(json.loads(match.group(1)).get("records",[]))
-    if len(data)!=559:raise ValueError(f"Expected 559 selected records, got {len(data)}")
+    if len(data)!=560:raise ValueError(f"Expected 560 selected records, got {len(data)}")
     return data
 def source_note_html(page,record):
     source_url=escape(record["url"],quote=True)

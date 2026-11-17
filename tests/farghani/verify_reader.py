@@ -213,6 +213,45 @@ for clause_id,(prior,target) in repaired.items():
     check(bool(r.get("derivative_source_url")),f"{clause_id}: original derivative source link lost")
 check(lookup.get("CR011-044",{}).get("page")==138,"New direct B2007 p138 source check lost")
 
+# Stage XXII: verify exact digital Arabic clause coverage independently, not just selected excerpts.
+full_proofs=[
+    BOOK/"editorial/CONTINUOUS_PROOF_P18_20_022.json",
+    BOOK/"editorial/CONTINUOUS_PROOF_P21_23_022.json",
+]
+proof_units=[]
+full_pages=[]
+for proof_file in full_proofs:
+    proof=json.loads(proof_file.read_text(encoding="utf-8"))
+    proof_units.extend(proof.get("units",[]))
+    full_pages.extend(proof.get("page_reports",[]))
+check([x.get("page") for x in full_pages]==list(range(18,24)),
+      "Stage XXII continuous page audit must cover 18–23, once each")
+check(len(proof_units)==76,"Stage XXII 76 full-sequence Arabic–English clause units lost")
+proof_counts={p:sum(1 for x in proof_units if x.get("page")==p) for p in range(18,24)}
+check(proof_counts=={18:9,19:14,20:8,21:15,22:14,23:16},
+      f"Stage XXII unit boundaries changed: {proof_counts}")
+for p in range(18,24):
+    page=assert_page[p]
+    segments=[x for x in proof_units if x.get("page")==p]
+    original=page["reading_ar"]
+    check("".join(x["arabic_exact"] for x in segments)==original,
+          f"B2007 p{p}: full sequential digital Arabic clause coverage is not byte-for-byte")
+    check(all(x.get("english_review") and x.get("source_end_offset")>x.get("source_start_offset",-1) for x in segments),
+          f"B2007 p{p}: English review or exact Arabic segment offsets missing")
+    check(all(original[x["source_start_offset"]:x["source_end_offset"]]==x["arabic_exact"] for x in segments),
+          f"B2007 p{p}: corrupt exact source offsets in proof registry")
+    check(all(not x.get("manuscript_checked",False) for x in segments),
+          f"B2007 p{p}: claimed independent MS verification without source")
+check("When we consider them through their manifestations, forms and effects, we find some" in
+      htmls.get("continuous-translation.html",("",None))[0],
+      "Stage XXII p22 first-person source correction missing in continuous reader")
+check("Baʿlabakk and Maʿdīkarib" in htmls.get("continuous-translation.html",("",None))[0],
+      "Stage XXII compound-name examples missing from English reader")
+check("within the scope of the first determination and first self-disclosure" in
+      htmls.get("parallel-introduction.html",("",None))[0],
+      "Stage XXII p19 interpretation missing in bilingual reader")
+
+
 # Stage XXI: all former source-location flags are classified; this is NOT continuous translation proof.
 parity21=json.loads((BOOK/"editorial/SOURCE_PARITY_RECONCILIATION_021.json").read_text(encoding="utf-8"))
 check(parity21.get("total_selected_records")==560,"Stage XXI selected clause register mismatch")
