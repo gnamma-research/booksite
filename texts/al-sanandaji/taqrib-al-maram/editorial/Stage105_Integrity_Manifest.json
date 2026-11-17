@@ -1,0 +1,1000 @@
+{
+  "stage": 105,
+  "original_source_pdf_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "manifest_entries_excluding_manifest_itself": 711,
+  "files": [
+    {
+      "path": "Volume_I/FULL_CUMULATIVE_STAGE100.json",
+      "bytes": 2683780,
+      "sha256": "b30b91f77b5456d56c1c479b5fbe345b17aa14c454e22eeb88fcddf62eae3c7d",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/FULL_CUMULATIVE_STAGE101.json",
+      "bytes": 2516900,
+      "sha256": "bcca9a2d9128a7e0cc237d0e3b834f95a64778854411475844c80beb9c3d4479",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/FULL_CUMULATIVE_STAGE102.json",
+      "bytes": 2704371,
+      "sha256": "e538d9e46e7cc47f6354e2d43dd99394d855a61e438fcc2559338ca9b83fadc8",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/FULL_CUMULATIVE_STAGE103.json",
+      "bytes": 2716663,
+      "sha256": "d224f7a894b886af748a59923f80fec673f8d53de250cb254d2657c63cfe7030",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/FULL_CUMULATIVE_STAGE104.json",
+      "bytes": 2551548,
+      "sha256": "b53d10bb77ceb23ab74ab06543b008895d510faeacf4db239042942f284aeee3",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/FULL_CUMULATIVE_STAGE105.json",
+      "bytes": 2559156,
+      "sha256": "d37a6ffee2baf8fdbc64dd7c889594fccc9e8fa5788ab80f1bdb3e4f3b5db41a",
+      "inherited_stage104": false
+    },
+    {
+      "path": "Volume_I/FULL_CUMULATIVE_STAGE93.json",
+      "bytes": 2443670,
+      "sha256": "a4b0f34a55b58fe0fc8bd7fba314d69eedd70413b86b210d6a05f253088edb5e",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/FULL_CUMULATIVE_STAGE94.json",
+      "bytes": 2453750,
+      "sha256": "c4d23727c183ec4a7b40f5ac84344eda9f0c72206b2c339050231d34a69a08dd",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/FULL_CUMULATIVE_STAGE95.json",
+      "bytes": 2637538,
+      "sha256": "a0d3540cc56f0de6b61a7da2abbcb8728ca9c8ed61b3cde6009d7ba982278b77",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/FULL_CUMULATIVE_STAGE96.json",
+      "bytes": 2472642,
+      "sha256": "34eddfcf533245abb34ff4dc71f884468a07669818f5abdeab69d87f3f2b2819",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/FULL_CUMULATIVE_STAGE97.json",
+      "bytes": 2657942,
+      "sha256": "d938caaf4f1d7633b8286525b9b439c9bfa5f765b4d2c5e80b3e1e5c25ed2952",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/FULL_CUMULATIVE_STAGE98.json",
+      "bytes": 2489073,
+      "sha256": "3b26a5f5935147eb308acdb5d40d59786390897dc5a066165e0bb5397fce4894",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/FULL_CUMULATIVE_STAGE99.json",
+      "bytes": 2675302,
+      "sha256": "8eed9f6f26bfed660d99d1a28d0040e7bca3b32fc1ad2050abc26bda10b48e9b",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/ORIGINAL_SOURCE_PDF_SHA256.txt",
+      "bytes": 114,
+      "sha256": "af504a650d08185934ea55c497eb30cbe228958cedf59850c985774312f558ca",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Original_Bulaq_1318_AH_Taqrib_al_Maram_scan.pdf",
+      "bytes": 20835714,
+      "sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/README_STAGE92_ARCHIVED.md",
+      "bytes": 3217,
+      "sha256": "636d8d20289e4b5fddd656152ee8cc443eb9496b2a51e614995f647fa77297b3",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/README_START_HERE.md",
+      "bytes": 1635,
+      "sha256": "431df07ff2bece12a96a0211792ce96aba9c4f04b576a776ff3de6e660684eb4",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/RELEASE_QA_AND_STATUS.md",
+      "bytes": 2522,
+      "sha256": "002f2c50a510154bd520f642da6066cba66ca538faea57e449a68611e778bd7f",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/SOURCE_IMAGE_SHA256.json",
+      "bytes": 22963,
+      "sha256": "d4a873be8912853f5d4c0ff1cd9f0c79cfffec4c44c89758351e7555335df1ca",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE100_FULL_HANDOFF.md",
+      "bytes": 4573,
+      "sha256": "fac6b098705628f3fa148036e76d932fdc91f54814bab91a9cadedf6ab600c6c",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE100_QA_1400.png",
+      "bytes": 81122,
+      "sha256": "5df0e3fad11c7c527a6f032fc2b5abc3ff7a7e1b6c6016886262007729041cae",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE100_QA_390.png",
+      "bytes": 82477,
+      "sha256": "37e3cad4f61f1eac59cc0fb3fd6ad870d6ee168e9b75256dc2c44285e1d318f0",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE100_QA_768.png",
+      "bytes": 77002,
+      "sha256": "b46e2ef7f6c88ea0a2f4eeae111200f5a2745fa2386c71b36d828f65a89f1b2b",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE101_FULL_HANDOFF.md",
+      "bytes": 5083,
+      "sha256": "4becc6bfbf8fa0e02892f21a6253bc8b0eab7acd6ab21bd879e889b0843bc2b3",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE101_QA_1400.png",
+      "bytes": 401620,
+      "sha256": "15a25cbbf429658d3b05cd0bda9626f97fb899246b7054b9684c0156c3795a96",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE101_QA_390.png",
+      "bytes": 434834,
+      "sha256": "6e61ece4bce006b352403df1a71da5c998e68dc30473fe4ec0072ea6a4dcb994",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE102_FULL_HANDOFF.md",
+      "bytes": 5778,
+      "sha256": "ecac28632e852e0f4de1a6619be18a5028273e007d9df47a34ed7d190ddd0a81",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE103_FULL_HANDOFF.md",
+      "bytes": 4795,
+      "sha256": "8ac35f872cbe6328ff75309ac78a516d51bce1089857f1c102fda0d89068189a",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE104_FULL_TWO_VOLUME_PROJECT_HANDOFF.md",
+      "bytes": 13451,
+      "sha256": "73db66ffaf0e216fc6054f71e3401bc0d7de98f9c85c20c031f9cba04f8e2b45",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE90_OTHER_BATCH_READINGS.md",
+      "bytes": 8291,
+      "sha256": "6cbe4a314a26286dd9171bd91f921953e62d94b0f5d08857761f0dc417e1ef1d",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE90_OTHER_BATCH_VERIFICATION.md",
+      "bytes": 1312,
+      "sha256": "5ae210619499eb899046dd64359dfd862d07552691b34a354a160793a099164c",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE91_BROWSER_QA.json",
+      "bytes": 736,
+      "sha256": "64fec27a110e38d6e9f3a621e54bdf79b682a0585a4a11442946407f8ca5f38c",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE91_METRICS.json",
+      "bytes": 534,
+      "sha256": "8130adcbfcfca5f9debff4ec068f5d7fc616b592c8f08507676575ec788d11f7",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE91_NEW_BILINGUAL_SOURCE_EXCERPTS.md",
+      "bytes": 5769,
+      "sha256": "270e9f40d1c869723a9fa60c1988ec8d956e00f315384144b4d70db94b8bed37",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE91_QA_1400.png",
+      "bytes": 140262,
+      "sha256": "7496e30f970df47532f1a402adae43ee48b1fe832e146731a972ede33cf0dc53",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE91_QA_390.png",
+      "bytes": 66569,
+      "sha256": "317b2215fc9602e7bd2ceb5dcd7e8cf60b9a414b3cf41912b7031bfbeb2a0bbe",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE91_QA_768.png",
+      "bytes": 145980,
+      "sha256": "7d8acae26b63d4de18d3bfca7e7ed75e1f3e5248b9f0e03739fc0c46623ded13",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE91_REMAINING_SOURCE_QUEUE.csv",
+      "bytes": 61450,
+      "sha256": "309c5d1bf26a5f962a575fd71f6a266387800409f27a141b98a43490c8c14679",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE92_BROWSER_QA.json",
+      "bytes": 763,
+      "sha256": "b9d3a87f41250f99ef1bafe15a5dd4d1a15bee58d696bf0c3a54e87bd87db0ee",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE92_EDITORIAL_AND_SOURCE_AUDIT.md",
+      "bytes": 3674,
+      "sha256": "c23de868682f80250632145de62a36293f6b2602258d1fbf14c62667a6a33144",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE92_QA_1400.png",
+      "bytes": 127474,
+      "sha256": "a8ba4694557e8806ee0d2814886b96f554f86fa59af452a3a3886146b03c760b",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE92_QA_390.png",
+      "bytes": 76488,
+      "sha256": "dddba793fe456f000c9937513049fd5f281fbbf9f3726f9c1c4408f3727202cf",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE92_QA_768.png",
+      "bytes": 146246,
+      "sha256": "41b7850d97a2c5ef622da1d89bc51899e01d93ec00422e772ef47db81466aef6",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE93_FULL_HANDOFF.md",
+      "bytes": 5586,
+      "sha256": "94d07cbc207ea481c8ae8e123422c78f7b809c4d10bff1403d3d5f75d6130c8b",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE94_FULL_HANDOFF.md",
+      "bytes": 2686,
+      "sha256": "0da18bbb1f52b5b0738decabb07fa0b7049da3a66421bdfa3cd7519273b79811",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE95_FULL_HANDOFF.md",
+      "bytes": 4635,
+      "sha256": "7d3baa3bb4097cd7a99856ee6bca4c0e85ee7af4c73ffe0ba1e4d71b69039128",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE96_FULL_HANDOFF.md",
+      "bytes": 3975,
+      "sha256": "a684de1b7e81e34965b2bb321105656372afe7323b839063470472b4296d2aa5",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE97_FULL_HANDOFF.md",
+      "bytes": 5915,
+      "sha256": "d07ec83c2b004a4a33aca8c0b4a949aa22300abe3fe8db032c8f7cdf04071c73",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE97_QA_1400.png",
+      "bytes": 72729,
+      "sha256": "fb2627cc7388fe7d1817a03e699e6aefe366486be522eceb0b8af609153ac819",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE97_QA_390.png",
+      "bytes": 66181,
+      "sha256": "391fe366197a04508bda36bece74535f7366c55b7ce69c15a3466e37b615cb79",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE97_QA_768.png",
+      "bytes": 66485,
+      "sha256": "2165f0aad28baf8fee6b250813fdb8c8ef1ac2f6190e1dd1052194f0c8000a8c",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE97_QA_lower_open_1024.png",
+      "bytes": 80185,
+      "sha256": "20d1f63afef4d8921541ffa765bd29e37eaa12879c82fc92930182958a8e7583",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE98_FULL_HANDOFF.md",
+      "bytes": 5289,
+      "sha256": "074bfd2f57884a3c147cb0a3f326ecf44abf822c6f8c9b62eebe1e8057d834a1",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE98_QA_1400.png",
+      "bytes": 98011,
+      "sha256": "8d4d0425a728b948b2fd5ff89a0563bc802ac78246f8b45c313fa458ca2e7d3b",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE98_QA_390.png",
+      "bytes": 71136,
+      "sha256": "98a0bc4e7b6fd4bab574b156a3fe13a1d9c362e848acbb4e88e585bc2feae674",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE98_QA_768.png",
+      "bytes": 92613,
+      "sha256": "89e2eb6e0af6445998fb8736efcb591bea93603588c543824e22408be479dfe6",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE99_FULL_HANDOFF.md",
+      "bytes": 5327,
+      "sha256": "75276bbedbcf0e760bc6b6f928b3af761005ddf7a4039638a95c88f7e0740bb0",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE99_QA_1400.png",
+      "bytes": 74024,
+      "sha256": "82ecc50d75de5c8119dd4ac8ccf93fcba0f8ebd5d613beb34ab82e3c231559b6",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE99_QA_390.png",
+      "bytes": 64984,
+      "sha256": "085cf29908fe1453707433b8c02022d8b3bbae721f05437f440c6c3dc31338d3",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/STAGE99_QA_768.png",
+      "bytes": 70377,
+      "sha256": "0da95e6985cd45fc0913411aba3e5fbbb4e21c97532891a2027396e070664bc5",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage100_Bounded_AR_EN_Readings.md",
+      "bytes": 6640,
+      "sha256": "bcdd83b155f3490d83971a26c7b9bd7384c1d57c9354fca33bc3ae0ce1b51e11",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage100_Browser_QA.json",
+      "bytes": 1587,
+      "sha256": "53860e68c3fdc8271747e5ebde86572fb177bd67dc8a3bd70945a95b874e2c85",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage100_Cumulative_1401_Records.json",
+      "bytes": 2683780,
+      "sha256": "b30b91f77b5456d56c1c479b5fbe345b17aa14c454e22eeb88fcddf62eae3c7d",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage100_Manifest.json",
+      "bytes": 80497,
+      "sha256": "2090a6497e15ce4da45651a034435a4a225cfe5c9b13f46717a7d513fae65292",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage100_Metrics.json",
+      "bytes": 1221,
+      "sha256": "a9d15899f2761a3b178bc7a4f10d69e44b5f584c26a4b9402d7e25a4f98e791a",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage100_Open_Proof_Obligations.csv",
+      "bytes": 421654,
+      "sha256": "a395ae1dfe6c938beb592f6a23c793aeaf8c9fdb1b94068858cb20f2d76451da",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage100_Remaining_Arabic_Queue.csv",
+      "bytes": 96234,
+      "sha256": "ef2d0771481aeb66a589b82c6bddbdf14ca64c5584b7c7a389eb7c0165be2d5a",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage101_Bounded_AR_EN_Readings.md",
+      "bytes": 9489,
+      "sha256": "74a8bccfacd01b368245de235bf4a30261546d219d6881d55a3d3b75cd91eac4",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage101_Browser_QA.json",
+      "bytes": 1942,
+      "sha256": "dfb597bce3da15ba27a5275b6ff2873efbbd930037e3f0a48d735ea950e55f7f",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage101_Cumulative_1401_Records.json",
+      "bytes": 2694128,
+      "sha256": "f269422b16ee92f961486a590e5f8c2772cbd0495627fc0937cc3324ff9ff45d",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage101_Manifest.json",
+      "bytes": 83907,
+      "sha256": "519d46b6733c4c33ef320ae77a80274a3663e546906bb772f7f87060f2c4550a",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage101_Metrics.json",
+      "bytes": 1510,
+      "sha256": "5ca7850bf30d5e27cb0d9b6427f8b1642af3adf8fc59e184c70c75046c7b8f6a",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage101_Open_Proof_Obligations.csv",
+      "bytes": 475657,
+      "sha256": "26e67a36f6fd313327a9ac687c94f742d4b7862ee5a44bfcaf5fa3ef202a666f",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage101_Remaining_Arabic_Queue.csv",
+      "bytes": 93068,
+      "sha256": "555dbe679222403f55c370331929f217192af26823a09523bdd9e86a5341cb26",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage102_Bounded_AR_EN_Readings.md",
+      "bytes": 6363,
+      "sha256": "f9dcdfa3030680699c0dce104220a6b4f311993f534b6b70a6114463f590645d",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage102_Browser_QA.json",
+      "bytes": 955,
+      "sha256": "d3884a84326c9777a1c2acd035640fc96230d386fa989c35b1a259433075507b",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage102_Cumulative_1401_Records.json",
+      "bytes": 2704371,
+      "sha256": "e538d9e46e7cc47f6354e2d43dd99394d855a61e438fcc2559338ca9b83fadc8",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage102_Manifest.json",
+      "bytes": 84997,
+      "sha256": "99938ca952f58b91c08cbbe270fb1b9a49235dddeed680aa13388576f2990d12",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage102_Metrics.json",
+      "bytes": 1658,
+      "sha256": "bad601072f342b1730c337240e7c8c628f9b31dbd578cffa2b249dee80539718",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage102_Open_Proof_Obligations.csv",
+      "bytes": 529695,
+      "sha256": "34b3dea1fb95f54f89ea3471ad844d9ae360c4b866d73b0d93779c1e7a6a3cf5",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage102_Remaining_Arabic_Queue.csv",
+      "bytes": 90990,
+      "sha256": "de1e77054850d7574ceb33ebcce089b4530e52326edf11728e857e58cbe91978",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage103_Bounded_AR_EN_Readings.md",
+      "bytes": 8116,
+      "sha256": "383ebd23d503961f46338010ed3489065a7d340baa3b88d524bd748e223a249b",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage103_Browser_QA.json",
+      "bytes": 1301,
+      "sha256": "591edc50c8f87e4e2b53627cef4c6def2eecfa6830498bc2780b5f9f06c8a728",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage103_Cumulative_1401_Records.json",
+      "bytes": 2716663,
+      "sha256": "d224f7a894b886af748a59923f80fec673f8d53de250cb254d2657c63cfe7030",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage103_Manifest.json",
+      "bytes": 93567,
+      "sha256": "b0acfb2fed26ba5249aec90310664b8b8f0f7bee5cf8c10a206b5c5da935dc6c",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage103_Metrics.json",
+      "bytes": 1727,
+      "sha256": "33af451941c52584020b6a98d9292e01dfb3640c752d7979904ff368a7c2645c",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage103_Open_Proof_Obligations.csv",
+      "bytes": 583998,
+      "sha256": "9614794f82245abfb70f94f679eff16702c53192c6ca7545ce19eaf355229a5c",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage103_Remaining_Arabic_Queue.csv",
+      "bytes": 88795,
+      "sha256": "e723b58484b71d1ef8b0bc155e115843276f2581a71e2f0c403ee5e7ab90d145",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage104_Bounded_AR_EN_Readings.md",
+      "bytes": 9075,
+      "sha256": "96b5b36e2042b7db2a27b185e66709e10bb4d3212dd4e280168f586d59bc5b51",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage104_Browser_QA.json",
+      "bytes": 209,
+      "sha256": "71dbb118ed6d2aab27870b1fdd93483b01f9a05ed4cd81c9611866b0c20bf32a",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage104_Cumulative_1401_Records.json",
+      "bytes": 2730690,
+      "sha256": "3ae999db47f4cea4478fd4cc9e26bce056c0b6b4cbe7cbdc1708cfdf39f4c7b4",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage104_Metrics.json",
+      "bytes": 2244,
+      "sha256": "5bd388f5e9ec08bbcda62ba68c9047e68f4aff10910a852c649d18a6443f39f8",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage104_Open_Proof_Obligations.csv",
+      "bytes": 629515,
+      "sha256": "351a84d52f1dd1cc00940b544f7fb383da221669d89b8470828ac369ef071ffd",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage104_Progress.json",
+      "bytes": 1512,
+      "sha256": "8e8cf33208ea033672075bd604f25466604512dc4d00472e5f3cee3d05771b0f",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage104_Progress_Bars.md",
+      "bytes": 2015,
+      "sha256": "cdbb70a0dd6bc9180db83257267ac8c74ad7301077f4f522bd8de03d6fd4a08c",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage104_Remaining_Arabic_Queue.csv",
+      "bytes": 84548,
+      "sha256": "10ac2040e93f4dbc00a6d2635d0c8d8e42b8e85a7cab9046cef67d6b5cb13407",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage104_Volume_I_File_SHA256_Manifest.json",
+      "bytes": 130834,
+      "sha256": "db19e803a1bb186b78a3b9c2dfb38ad2ed341d11f90d11a1f6551d2671306e03",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage104_Volume_I_Predecessor_Migration_Receipt.json",
+      "bytes": 797,
+      "sha256": "2b63139ee9358ffe98820c2f2788cd5d48063873e4f982753350b26269aec94f",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage105_Bounded_AR_EN_Readings.md",
+      "bytes": 5591,
+      "sha256": "4fcf18809d20ae90f030ba3d1afb11ed06d4428ad8e60b7b5bd6b52674fa071e",
+      "inherited_stage104": false
+    },
+    {
+      "path": "Volume_I/Stage105_Browser_QA.json",
+      "bytes": 217,
+      "sha256": "5376daf36e6e96fa75fc7a6855f6bdf37f6d09f0980a5af91da2b59cda79fdb5",
+      "inherited_stage104": false
+    },
+    {
+      "path": "Volume_I/Stage105_Cumulative_1401_Records.json",
+      "bytes": 2738680,
+      "sha256": "8d0c7505a275e1aa7c2063b9bbe7c81ca85aea93e77f98ed9a7539262cad4255",
+      "inherited_stage104": false
+    },
+    {
+      "path": "Volume_I/Stage105_Metrics.json",
+      "bytes": 1479,
+      "sha256": "cb193db3023a5971c48077d2dc76636140f8e57533f131f227796151150d686e",
+      "inherited_stage104": false
+    },
+    {
+      "path": "Volume_I/Stage105_Open_Proof_Obligations.csv",
+      "bytes": 674957,
+      "sha256": "2a17a369aed52e095fd32a93387438952f6716f00e548daeff23e54b64d9c60b",
+      "inherited_stage104": false
+    },
+    {
+      "path": "Volume_I/Stage105_Remaining_Arabic_Queue.csv",
+      "bytes": 85920,
+      "sha256": "ead32c9e403259bfea655176409b0f53ed5d6598dc8a55b0f409331f21921a8a",
+      "inherited_stage104": false
+    },
+    {
+      "path": "Volume_I/Stage105_Verification.json",
+      "bytes": 653,
+      "sha256": "37e6bd54ee418b1901f82a7628f677b520a5a30064b05e454b54a83673bb97de",
+      "inherited_stage104": false
+    },
+    {
+      "path": "Volume_I/Stage91_Cumulative_1401_Records.json",
+      "bytes": 2574863,
+      "sha256": "38d49560ec334facb61ce340b28a821422a45c8b3fed48466ca604526d54afd5",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage92_Arabic_English_Source_Readings.md",
+      "bytes": 15783,
+      "sha256": "fb9cc680d16e41418cfded24a4a577cd7a8e4bef5656fa51f42ebc1b0f0c03a4",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage92_Cumulative_1401_Records.json",
+      "bytes": 2599113,
+      "sha256": "afaa290b71d4369f9778e66a286263a7986809c34225249f68c59e90dcd77b2d",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage92_Metrics.json",
+      "bytes": 749,
+      "sha256": "757206c7bf7cdf4c38e2f0aeb103d7ec94e9e5f0cf3595c8db1b369b5d407cea",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage92_Proof_Queue.json",
+      "bytes": 4447,
+      "sha256": "ebeb6db1591154e94cb345d7baacc3aebabffa83a12256219fcdd0e684bcf7a7",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage92_Still_Blank_Source_Records.csv",
+      "bytes": 51534,
+      "sha256": "feaddeaeda308739098f87086645b5ef6cbc83496ee0ca16ad7bfd81c19d7b40",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage93_Bounded_AR_EN_Readings.md",
+      "bytes": 12216,
+      "sha256": "7529895e9ab2e971c5d161ef325b9d3dc5de05a2c821548ac7e81cc6d34df267",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage93_Browser_QA.json",
+      "bytes": 652,
+      "sha256": "8da68e79bf4bb1a920c73ebbfd2d5268d15d2a411f49920d1e0b8607410e360b",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage93_Cumulative_1401_Records.json",
+      "bytes": 2616377,
+      "sha256": "69c183f4affc06cd0df6a104b5b2669676c648d21690fc59b211758c09700a76",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage93_Manifest.json",
+      "bytes": 86654,
+      "sha256": "01625df47680984b10bc60d0457477d59f974e8bf2033791117f0d50fe82ec42",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage93_Metrics.json",
+      "bytes": 1131,
+      "sha256": "c808468bd084fe848931fb90501a3be001cec3d7e31dd222a53d30ffede31dd4",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage93_Remaining_Arabic_Queue.csv",
+      "bytes": 74865,
+      "sha256": "437c5da86004970dd4c0c2f809d6e939a1d00b24c634a5878c5d664a75558e2b",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage94_Bounded_AR_EN_Readings.md",
+      "bytes": 6826,
+      "sha256": "4b16a3b26f28888e341770dfad18b2f1e36650512ee871c571d679dc1683e6be",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage94_Cumulative_1401_Records.json",
+      "bytes": 2627565,
+      "sha256": "91c15f5db166c7014cdb7ec2520d7b14cfbc3eda73a6e79658b70905176370e7",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage94_Manifest.json",
+      "bytes": 62911,
+      "sha256": "5374407ffeb69f0ab08e18c2241729c9122271fcdbad7f7cc15de8b975cf0218",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage94_Metrics.json",
+      "bytes": 1100,
+      "sha256": "959b21cb79f728319f7b4b707e8a0b2b60c514c259e88f15b2dc4dfb9aa232dc",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage94_Remaining_Arabic_Queue.csv",
+      "bytes": 98405,
+      "sha256": "a707c38e8d1d74de1082bc1597991f3b6c2c0480d6bb9853b6d601a32392e02f",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage95_Bounded_AR_EN_Readings.md",
+      "bytes": 8170,
+      "sha256": "649f7572a2a2795087e1915d6377886a2841540c9971cc446e65e95b53c6904c",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage95_Browser_QA.json",
+      "bytes": 655,
+      "sha256": "f6948fbbde876c0329663fe5359496ad36613a47b1fc58280cb842793b846182",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage95_Cumulative_1401_Records.json",
+      "bytes": 2637538,
+      "sha256": "a0d3540cc56f0de6b61a7da2abbcb8728ca9c8ed61b3cde6009d7ba982278b77",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage95_Manifest.json",
+      "bytes": 65429,
+      "sha256": "d0331d091dcd1e93a73fc2425068d3308d02edb40c0d406b2abbc19c169ae220",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage95_Metrics.json",
+      "bytes": 1133,
+      "sha256": "f4724ae47cba4656fac2e63e348b04ca5f3e10861b567c894bbe4a2684c59232",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage95_Remaining_Arabic_Queue.csv",
+      "bytes": 112622,
+      "sha256": "d24a7c0b15ed6282e23b7c5c1eee25ce5639ff7c0fe54de6d4a135b8407f72dd",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage96_Bounded_AR_EN_Readings.md",
+      "bytes": 8246,
+      "sha256": "07dbaeb079eb8921e8814d7aa24605d209b05e3b1b7363ce95ab90db7a9fe466",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage96_Browser_QA.json",
+      "bytes": 601,
+      "sha256": "f040693d0bade768fabe854ec81481853c14a0b39619dfbd716911d4ca215341",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage96_Cumulative_1401_Records.json",
+      "bytes": 2647679,
+      "sha256": "aa20ef4a16a51ea4027a958f56bc40272fe178268677256041da3cf453d392c8",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage96_Manifest.json",
+      "bytes": 66317,
+      "sha256": "1bc055b11726c636ce187eb0716ba73cdc054d0a76a5e329f387998be57258ef",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage96_Metrics.json",
+      "bytes": 1116,
+      "sha256": "3fa40e281bf0f55e632c877fde8f14a8fd7fe07458ae6c9ce3902418ef457dbe",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage96_Remaining_Arabic_Queue.csv",
+      "bytes": 109659,
+      "sha256": "43f8aa16e2aaf16c33e9e2a3b38f34f5c8c5abefcfde0fb912b8f98b0eb44ffb",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage97_Bounded_AR_EN_Readings.md",
+      "bytes": 8511,
+      "sha256": "97e86fa7f5cf27c4f7d6a8f27dfe729ff611d877b49f348956fe80b757b1f15e",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage97_Browser_QA.json",
+      "bytes": 5199,
+      "sha256": "af397c7b43fe7095877bcae6dcb6a3b60e43741aa4caf40aef89c3bdf28ec1ed",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage97_Cumulative_1401_Records.json",
+      "bytes": 2657942,
+      "sha256": "d938caaf4f1d7633b8286525b9b439c9bfa5f765b4d2c5e80b3e1e5c25ed2952",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage97_Manifest.json",
+      "bytes": 71207,
+      "sha256": "10f3f5d47728f636b5d96d9e6a0ad66783b0d4bd1bb86b83544050a2ead7ee5c",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage97_Metrics.json",
+      "bytes": 1115,
+      "sha256": "fc6330d1efc11e7e75dd692e94eee11cd99e380020f7267d680353330ece1d5b",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage97_Remaining_Arabic_Queue.csv",
+      "bytes": 107640,
+      "sha256": "e3eece8407d55b5c7324ac44d70620946797c8d5c6030a1beeadd2f1b3a884f7",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage98_Bounded_AR_EN_Readings.md",
+      "bytes": 5937,
+      "sha256": "039ce3a2adbefa85ae6ea36af363844d15e576c9e317140bc41e2bf342f4df60",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage98_Browser_QA.json",
+      "bytes": 1246,
+      "sha256": "552af97ef882c839647b75c8327a90881ef37d10772d3e1237fa2a4e34ad7eb9",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage98_Cumulative_1401_Records.json",
+      "bytes": 2664797,
+      "sha256": "6354e2430d44f63dcc46839d3c54541c6b54c479ea02224e0953b26400fa606f",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage98_Manifest.json",
+      "bytes": 73870,
+      "sha256": "21038fede604d0076b9a2cfd217039d1cdf1662bbda1a5dec9859f8fe11f6f23",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage98_Metrics.json",
+      "bytes": 1150,
+      "sha256": "b1b9bb49ea6bfae781d1db399973110e590cfe0412c0405ff656cec6a9d1aaa1",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage98_Remaining_Arabic_Queue.csv",
+      "bytes": 102220,
+      "sha256": "29695726ad355fc6e63b05f01fcce226b8fbc9c1927ac1fad4391aba3c9a1f16",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage99_Bounded_AR_EN_Readings.md",
+      "bytes": 7411,
+      "sha256": "feaf5e76b2681a4bbb907f9503c8825cc71e6bbad5347312a63b25e6796cba39",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage99_Browser_QA.json",
+      "bytes": 1208,
+      "sha256": "26236480652bc334997460788ce7bbae6626cd79d71c0c7ff655eaad12c7e12b",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage99_Cumulative_1401_Records.json",
+      "bytes": 2675302,
+      "sha256": "8eed9f6f26bfed660d99d1a28d0040e7bca3b32fc1ad2050abc26bda10b48e9b",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage99_Manifest.json",
+      "bytes": 78010,
+      "sha256": "d3478ea7d0cf69a4588301779c759bdaebbd875184f77869b316bf8b316e6ad2",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage99_Metrics.json",
+      "bytes": 1260,
+      "sha256": "9d1a8c17c850e5c0c30e7f13584fa47df7be91bb58aaa534950c751b907071ac",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage99_Open_Proof_Obligations.csv",
+      "bytes": 381573,
+      "sha256": "9f2b7732a4c2272d8d8b544605d5d44ebf0c838eb91157412814cb3cb278463e",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Stage99_Remaining_Arabic_Queue.csv",
+      "bytes": 99467,
+      "sha256": "bf87d660fd3c34a06e649e95e4a5c93f0fd3091f6bf99da4dbbdb7fb7ad397c7",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Volume_I_FULL_CUMULATIVE_BILINGUAL_WORKING_MASTER_Stage104.md",
+      "bytes": 1635810,
+      "sha256": "5b7bc631bce14390ee2458a4cd210b070eab8b160fe892c93ddd6a9bb732f9d7",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/Volume_I_FULL_CUMULATIVE_BILINGUAL_WORKING_MASTER_Stage105.md",
+      "bytes": 1620250,
+      "sha256": "96440c13338b83eba7dcaddf113a2db09df7be50b59e4d31d6de354cca9f9a23",
+      "inherited_stage104": false
+    },
+    {
+      "path": "Volume_I/editorial/CURRENT_PROJECT_STATUS.md",
+      "bytes": 2348,
+      "sha256": "f6d46d621db0c2a9cbe52d3f9686c4a1d8d093449611856dd35774ce83e479b8",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/export_stage91.cjs",
+      "bytes": 518,
+      "sha256": "b42734010f1106d802d556ae13bd7c07f6ff222d0091a1e070ab0be788eb03b6",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/historical_reader_entrypoints/Stage103/index.html",
+      "bytes": 4956,
+      "sha256": "64d43cbb8fdcff8078fd0837430fd1282f4e2d23021f25ef8b21df22a2eb7304",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/historical_reader_entrypoints/Stage103/stage84-reader.html",
+      "bytes": 4956,
+      "sha256": "64d43cbb8fdcff8078fd0837430fd1282f4e2d23021f25ef8b21df22a2eb7304",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/historical_reader_entrypoints/Stage104/index.html",
+      "bytes": 5011,
+      "sha256": "e2d368d25eea953747b78f22ba5489e718accce5c5c5a194c16c0278606723fc",
+      "inherited_stage104": false
+    },
+    {
+      "path": "Volume_I/historical_reader_entrypoints/Stage104/stage84-reader.html",
+      "bytes": 5011,
+      "sha256": "e2d368d25eea953747b78f22ba5489e718accce5c5c5a194c16c0278606723fc",
+      "inherited_stage104": false
+    },
+    {
+      "path": "Volume_I/index.html",
+      "bytes": 5066,
+      "sha256": "5bed78b8da82463403aa00dc4426c9cc9e12906f30415241d60289579c6b170c",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/reader.css",
+      "bytes": 12720,
+      "sha256": "69e6e0faad15c4ad88554be6319b0d31cd0d6e92bb4d42057610b0c558b3f404",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/reader.js",
+      "bytes": 20111,
+      "sha256": "8cb3fd81db28a317650f2232f8d0d97859b132780972766f4e2183b7b64d593d",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/source_crops/I012_ruled_01.png",
+      "bytes": 25292,
+      "sha256": "993dbac9b3f427b410cfc191aa43e3a84794e43d38ed121fc26814c833b0dd0a",
+      "inherited_stage104": true
+    },
+    {
+      "path": "Volume_I/source_crops/I025_lower_01.png",
+      "bytes": 19627,
+      "sha256": "5115e907f5e492b8b44dc8bd5d11bc9eb06bec4e3e555bf70e918a73ecbca4f7",
+      "inherited_stage104": true
