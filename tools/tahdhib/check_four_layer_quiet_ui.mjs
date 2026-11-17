@@ -32,6 +32,22 @@ for(const [engine,type] of [['chromium',chromium],['webkit',webkit]]){
       'Expected 13 source-facing Stage132 English translations, got '+coverage.stage132EnglishRevisions);
     check(coverage.stage132SkippedPatches.length===0,
       'Stage132 historical identity/attribution mismatch: '+coverage.stage132SkippedPatches.join(', '));
+    check(coverage.stage133EnglishRevisions===7,
+      'Expected 7 source-facing Stage133 H-ARTS translations, got '+coverage.stage133EnglishRevisions);
+    check(coverage.stage133SkippedPatches.length===0,
+      'Stage133 historical layer identity mismatch: '+coverage.stage133SkippedPatches.join(', '));
+    await page.locator('#gn-h-panel .gn-h-select').selectOption('H-ARTS');
+    await page.locator('#gn-h-panel .gn-h-search').fill('HWN-ARTS-001');
+    check(await page.locator('#gn-h-HWN-ARTS-001 .gn-h-english').innerText()
+      .then(t=>t.includes('matter of a definition')&&t.includes('two movements')),
+      'Full Stage133 distinction of logical matter and form missing');
+    check(await page.locator('#gn-h-HWN-ARTS-001 .gn-h-older-english').count()===1,
+      'Earlier H-ARTS English must remain available in collapsed note');
+    await page.locator('#gn-h-panel .gn-h-search').fill('HWN-ARTS-038');
+    check(await page.locator('#gn-h-HWN-ARTS-038 .gn-h-english').innerText()
+      .then(t=>t.includes('human and a horse')&&t.includes('existential')),
+      'Stage133 painted-horse and existential-import argument missing');
+    await page.locator('#gn-h-panel .gn-h-search').fill('');
     await page.locator('#gn-h-panel .gn-h-select').selectOption('H-CONTRAPOSITION');
     await page.locator('#gn-h-panel .gn-h-search').fill('HWN-CONTRAPOSITION-012');
     check(await page.locator('#gn-h-HWN-CONTRAPOSITION-012 .gn-h-english').innerText().then(t=>t.includes('particular negative')&&t.includes('broader than the subject')),
