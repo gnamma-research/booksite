@@ -1,0 +1,16 @@
+{
+  "stage": 110,
+  "inherited_stage109_known_archive_file_denominator": 829,
+  "accounted_for": 829,
+  "identical_binary_files": 827,
+  "modified_reader_entrypoints": 2,
+  "exact_stage109_html_copies_preserved_and_hash_verified": true,
+  "known_prior_snapshot_migration_fraction": 1.0,
+  "prior_full_stage109_archive_sha256": "66bc5948e40c2d5555837a9332956d1866880342c3c1e9b8ccda585c412561a4",
+  "historical_volume_II_all_original_asset_total": null,
+  "known_historical_volume_II_original_library_artifacts": 5,
+  "raw_original_remote_stage51_js_bytes_received": false,
+  "independently_accepted_entire_historical_volumeII_migration": false,
+  "original_chats_archived": false,
+  "separate_tahdhib_untouched": true
+}
