@@ -46,7 +46,9 @@ assert.equal((reader.match(/id="s\d\d-r\d\d"/g) || []).length, 89);
 assert.ok(reader.includes('data-mode="matn"') && reader.includes('data-mode="both"'));
 assert.ok(reader.includes('data-bookmark=') && reader.includes('assets/site.js'));
 assert.ok(reader.includes('assets/reader-context.js'));
-assert.ok(reader.includes('principles.html'));
+assert.ok(landing.includes('principles.html'));
+assert.ok(!reader.includes('tables-vi-vii.html') && !reader.includes('Nine critical dossiers'));
+assert.ok(reader.includes('people.html') && reader.includes('subjects.html'))
 assert.doesNotMatch(reader, /Research edition|Editorial and source notes|Editorial status|Previous 1\.7 experimental reader|restored narrative/i);
 assert.doesNotMatch(landing, /Research edition 1\.8\.0|Editorial status|Research progress|remaining chapters retain/i);
 for (let i = 0; i < 46; i++) {
