@@ -1,3 +1,19 @@
+# Stage 93 — cumulative working source checkpoint (17 November 2026)
+
+**Latest checked Stage 93, continuing Stage 92 without replacing prior readings.** Twelve selected original Būlāq Arabic–English passages were recovered on Volume I printed I:27–30, 32, 34–35, and 37 (11 lower commentary and 1 upper commentary). The I:30 lower note now has a substantial contiguous first-pass translation about the circularity of deriving the obligation of theological inquiry from a report whose authority is under examination. On I:34, the printed philosophical term is **القدم (pre-eternity)**, not العدم (nonexistence). All untranscribed spans are explicitly omitted, not silently summarized.
+
+**Precise status:** 280 numbered printed positions, of which 279 are body pages; 1,401 preserved records. **1,244 contain some typed Arabic** and **156 genuine printed-source records still lack typed Arabic** (**127 lower, 29 upper**), plus one archived non-source entry hidden from the public reader. These are *presence counts*, not a percentage of the text translated. **Zero** pages have complete all-register Arabic/English transcription with independent second proof. Extensive manuscript collation is deferred/not required; single-print source checking is mandatory.
+
+**New public continuity assets:** [full 1,401-record cumulative bilingual corpus](FULL_CUMULATIVE_STAGE93.json); [complete stage handoff and exact next record](STAGE93_FULL_HANDOFF.md); [per-file SHA/byte manifest](STAGE93_MANIFEST.json); [12 source-selected Arabic–English passages](STAGE93_BOUNDED_SOURCE_READINGS.md); [remaining 156 record queue](STAGE93_REMAINING_SOURCE_QUEUE.csv); [metrics](STAGE93_METRICS.json); [stage history index](HANDOFFS.md). The separately preserved Stage 93 Library ZIP includes the unchanged 632-page PDF, 280 original images, earlier reader/data and all stage materials.
+
+**Next untranslated source record:** `I007.lower.02`, Būlāq printed page I:7 (combined PDF physical page 20); then `I012.lower.02`, I:12 (physical page 25), and the remaining lower/upper entries as detailed in the queue. Already Arabic-bearing records often remain only partially translated. Preserve separate *matn*, sharḥ, ruled notes and lower notes, with unverified authorship left unassigned. Keep the public reader uncluttered and defer any *Tahdhīb–Taqrīb* merger until both commentary volumes are complete.
+
+**Verification:** original PDF SHA-256 `4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134`; 280/280 image hashes match inherited witness register. Stage 93 Node integrity checks pass (1,401 IDs, 1,244 Arabic-bearing, no false certification). Chromium checks at 390/768/1400px find no script errors or horizontal overflow and confirm Arabic search reveals the correct collapsed marginal passage. These are software tests and do not constitute independent philological proof.
+
+---
+
+## Stage 92 and older historical checkpoints
+
 # Stage 92 — Volume I printed ruled notes and lower-text source recovery (15 November 2026)
 
 **Latest checkpoint.** Stage 92 adds **17** facsimile-grounded Arabic–English readings to pre-existing Volume I records that lacked typed Arabic. **15 ruled-note entries** now have at least one entered Arabic passage (nine short ruled bands have a connected complete first-pass transcription; the other six remain bounded extracts), and two extended **lower marginal commentaries** have substantial new beginning passages. The original source image remains authoritative. See [new bilingual readings](STAGE92_BOUNDED_ARABIC_ENGLISH_READINGS.md) and [critical audit](STAGE92_EDITORIAL_AND_SOURCE_AUDIT.md).
