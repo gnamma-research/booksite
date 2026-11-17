@@ -28,6 +28,22 @@ for(const [engine,type] of [['chromium',chromium],['webkit',webkit]]){
       'All 11 Stage131 definition English corrections must be applied, got '+coverage.stage131DefinitionCorrections);
     check(coverage.stage131SkippedPatches.length===0,
       'Every Stage131 source English snippet must match its old baseline: '+coverage.stage131SkippedPatches.join(', '));
+    check(coverage.stage132EnglishRevisions===13,
+      'Expected 13 source-facing Stage132 English translations, got '+coverage.stage132EnglishRevisions);
+    check(coverage.stage132SkippedPatches.length===0,
+      'Stage132 historical identity/attribution mismatch: '+coverage.stage132SkippedPatches.join(', '));
+    await page.locator('#gn-h-panel .gn-h-select').selectOption('H-CONTRAPOSITION');
+    await page.locator('#gn-h-panel .gn-h-search').fill('HWN-CONTRAPOSITION-012');
+    check(await page.locator('#gn-h-HWN-CONTRAPOSITION-012 .gn-h-english').innerText().then(t=>t.includes('particular negative')&&t.includes('broader than the subject')),
+      'Fuller historical contraposition reasoning not loaded');
+    check(await page.locator('#gn-h-HWN-CONTRAPOSITION-012 .gn-h-older-english').count()===1,
+      'Older contraposition English must remain accessible in collapsed note');
+    await page.locator('#gn-h-panel .gn-h-select').selectOption('H-INDUCTION');
+    await page.locator('#gn-h-panel .gn-h-search').fill('HWN-INDUCTION-027');
+    check(await page.locator('#gn-h-HWN-INDUCTION-027 .gn-h-english').innerText().then(t=>t.includes('al-Ghazālī')&&t.includes('concomitance')),
+      'Fuller induction causal-inference English not loaded');
+    await page.locator('#gn-h-panel .gn-h-search').fill('');
+    await page.locator('#gn-h-panel .gn-h-select').selectOption('all');
     await page.locator('#gn-h-panel .gn-h-select').selectOption('H-DEFINITION');
     await page.locator('#gn-h-panel .gn-h-search').fill('HWN-DEFINITION-019');
     const defined=await page.locator('#gn-h-HWN-DEFINITION-019 .gn-h-english').innerText();
