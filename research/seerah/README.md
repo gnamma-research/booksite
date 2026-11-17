@@ -1,8 +1,8 @@
 # Sīrah and the Making of Islamic Civilization · Gnamma Research
 
-Public URL: `/research/seerah/` · source edition 1.4; retained edition 1.4.1; retained integrated edition 1.5.0; current scholarly research edition 1.8.0 (restored metaphysical baseline) · 46 matns + 46 shurūḥ.
+Public URL: `/research/seerah/` · 46 matns and 46 shurūḥ. Current canonical text: `data/chapters.json`, with 89 new narrative and 51 new explanatory paragraphs integrated across the seven books; earlier 1.4.1–1.9.1 research sources remain archived.
 
-The Research landing, reader, visual atlas and dossiers are four separate presentations of one work. **The canonical content is `data/chapters.json` and `data/dossiers.json`**, restored from the preserved 1.4.1 scholarly-metaphysical edition (`editorial/archive-20261112-preintegrated-chapters-1.4.1.json`); the current fully synchronized manuscript is `editorial/current-edition-1.8.0-metaphysical-restoration.md`. This is a working *research edition*, not a completed critical collation of original Sīrah manuscripts.
+The Research landing, continuous reader, illustrated atlas and critical dossiers are separate presentations of one work. **The canonical content is `data/chapters.json` and `data/dossiers.json`**; its prior textual bases remain archived, including `editorial/release-1.8.0-restored-chapters.json`. The synchronized complete manuscript is `editorial/current-edition-1.9.2-principial-narrative.md`. Editorial records and progress markers stay outside `read.html`, which shows the matn and optional sharḥ without production notes. This is a substantive interpretive text, not a completed critical collation of all original Sīrah manuscripts.
 
 ## Reader contract
 
