@@ -1,0 +1,60 @@
+{
+  "schema": "gnamma.tahdhib.volume1.translation.continuation.v132",
+  "date": "2026-11-17",
+  "latestHandoff": "HANDOFF_STAGE132.md",
+  "sourceMaster": "hawashi-effective-stage114.json",
+  "priorPrivateCheckpoint": "Tahdhib_Volume_I_Four_Layer_Study_and_Research_Stage131.zip",
+  "invariants": {
+    "TUnits": 19,
+    "YBlocks": 113,
+    "HNumbered": 1090,
+    "historicOrProseH": 1033,
+    "modernReferenceOnly": 57,
+    "lexiconTerms": 137
+  },
+  "stage132": {
+    "reviewedPositions": 62,
+    "newPreferredEnglish": 13,
+    "priorPreferredInSectionsKept": 15,
+    "checkedUnchanged": 31,
+    "modernSeparate": 3,
+    "totalHistoricalPreferredEnglish": 130,
+    "historicalWithoutPreferredEnglish": 903,
+    "sourceTranscriptionCertifications": 0
+  },
+  "next": {
+    "section": "H-ARTS",
+    "firstId": "HWN-ARTS-001",
+    "numberedPositions": 38,
+    "priorityIds": [
+      "HWN-ARTS-001",
+      "HWN-ARTS-002",
+      "HWN-ARTS-037",
+      "HWN-ARTS-038"
+    ],
+    "alreadyPreferredDoNotDuplicate": [
+      "HWN-ARTS-012",
+      "HWN-ARTS-018",
+      "HWN-ARTS-036"
+    ],
+    "thenSection": "H-SCIENCES",
+    "thenPositions": 86
+  },
+  "openScholarlyObligations": [
+    "Q258: 37 substantive cell full literal Arabic-English readings",
+    "Q294: last core reading and second-print qualifiers",
+    "Q309: source variants and complex syntax",
+    "11 older SHA extraction mismatches",
+    "46 historically strong modal proof/countermodels",
+    "full T/Y/H historical Arabic-English clause check",
+    "original manuscript comparison",
+    "copyright and authorial layer review"
+  ],
+  "sourceCrux": "HWN-CONTRAPOSITION-003 digital Qum p336: printed second derivation does not entail asserted conclusion",
+  "publicEnglishOverlays": [
+    "stage132-contraposition-preferred-english.json",
+    "stage132-induction-preferred-english.json"
+  ],
+  "publicationPolicy": "No private recovered modern-edition Arabic published wholesale; reader apparatus hidden in ordinary flow.",
+  "status": "Advanced working research edition, not final manuscript-certified critical translation."
+}
