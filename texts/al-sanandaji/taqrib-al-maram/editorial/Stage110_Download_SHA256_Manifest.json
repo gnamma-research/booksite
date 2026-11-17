@@ -1,0 +1,117 @@
+{
+  "stage": 110,
+  "source_full_project_members": 861,
+  "zip_member_integrity_and_sha256_verified": true,
+  "artifacts": [
+    {
+      "file": "Sanandaji_Stage110_FULL_TWO_VOLUME_CUMULATIVE_RECOVERY.zip",
+      "sha256": "0fb5edaa5d14321ceb616cf04f8a8e9c20f34abb69ba86dc1cc0e353330f228d",
+      "bytes": 132171932
+    },
+    {
+      "file": "Sanandaji_VolI_Stage110_Offline_Bilingual_Reader_With_Facsimiles.zip",
+      "sha256": "878d4ba2d638bca729f60da2d16c3890c9042c3c58a7b4dddb17cf0f97690a5f",
+      "bytes": 37038651
+    },
+    {
+      "file": "Sanandaji_VolI_Stage110_Study_Reader.zip",
+      "sha256": "2ba0d3e9593844cabd09b09a4e144bb4afeee7d525f5117479902e8adfa91b27",
+      "bytes": 1745069
+    },
+    {
+      "file": "Sanandaji_VolII_Stage110_Recovered_Reader_and_Source_Critical_Apparatus.zip",
+      "sha256": "7d760962ddcf3e223b38f5f03cd99b63cf50cef4495d65856d5bbdeb395c0e45",
+      "bytes": 21537674
+    },
+    {
+      "file": "Sanandaji_Stage110_New_Readings_And_Full_Handoff.zip",
+      "sha256": "5e441f981901037b04825af5e54217880e259b5463f50633c119865809f3b645",
+      "bytes": 59865
+    },
+    {
+      "file": "Stage110_FULL_TWO_VOLUME_CUMULATIVE_HANDOFF.md",
+      "sha256": "a4b366f2fc2206c947da1469af0cb5dfaaf9f739beceb1cedfdca761e5df3b56",
+      "bytes": 9318
+    },
+    {
+      "file": "Stage110_PROGRESS_BARS.md",
+      "sha256": "1e4f4032308c1c1f9a11ddd816872f315049fec7fcfe0ea6a756ba96a425d336",
+      "bytes": 1955
+    },
+    {
+      "file": "Stage110_VolI_New_Bounded_AR_EN_Readings.md",
+      "sha256": "d740a21b37566b2ecb1f53ec8c257102a47dd5afaaf792ee75fba1207b871ab8",
+      "bytes": 5007
+    },
+    {
+      "file": "Stage110_VolII_Detailed_Source_Proof_And_New_Gloss.md",
+      "sha256": "5cb5c63bbece701d64c5a064c7f65955956145637a0c7b7d8bd9c11db6e01c1a",
+      "bytes": 7609
+    },
+    {
+      "file": "Stage110_VolII_Following_Gloss_Bounded_AR_EN.json",
+      "sha256": "b2d5af9d733cdf76226a938a2af2f5d81ffae94003960bb192e5dcad2d7d3d88",
+      "bytes": 4698
+    },
+    {
+      "file": "Stage110_VolII_G_Note_Second_Visual_Audit.json",
+      "sha256": "e27c3a78f9da569d6af3a488448fb6f8391f8ed89f72df9d1968032b382059ed",
+      "bytes": 5713
+    },
+    {
+      "file": "Stage110_II224_Matn_Sharh_Overlap_Crosswalk.json",
+      "sha256": "784ee77f0c7cf04e4796bc10b0e9e70b9c4b5755a8bb82a164c9ca5434e276ca",
+      "bytes": 2632
+    },
+    {
+      "file": "Stage110_Integrity_Manifest.json",
+      "sha256": "4fde27eddd37e7987bb1a4c4c38cd59023e4c3d3612e91ec748e8ffb6b5208db",
+      "bytes": 153311
+    },
+    {
+      "file": "Stage110_MIGRATION_RECEIPT.json",
+      "sha256": "e7c0ea751b0cd8e2a8f9f6a647dc8154b9a61a8ffa77ac74d04472630388a643",
+      "bytes": 719
+    },
+    {
+      "file": "Stage110_MISSING_MATERIALS.csv",
+      "sha256": "c1a98bec6145bbd0577f59a6113badc75af6948c5f253389a93db173ce2cbf17",
+      "bytes": 5467
+    },
+    {
+      "file": "Stage110_VolI_Open_Proof_Obligations.csv",
+      "sha256": "2ba90b0f7da7adb95083a5b230609950fd42e46d8df0dd4918a0e05de9078a9a",
+      "bytes": 1120311
+    },
+    {
+      "file": "Stage110_VolII_53_ID_Proof_Queue.csv",
+      "sha256": "d2e74a91ef897cb4ba01b551f640cdba223eb9cceb25a7c7f890ee6c22a3dec8",
+      "bytes": 42891
+    },
+    {
+      "file": "Stage110_VolI_Remaining_Arabic_Queue.csv",
+      "sha256": "7c46a687e7bf871f4ad7e2249989a1ce310925fe5bb4509e2e863958c3e1741d",
+      "bytes": 73882
+    },
+    {
+      "file": "Stage110_VolI_Cumulative_1401_Records.json",
+      "sha256": "10d509917164c01ee1171efcc5f434f059b19b84a7a84180a4e5483094935cfb",
+      "bytes": 2788862
+    },
+    {
+      "file": "Stage110_VolI_Full_Cumulative_Bilingual_Working_Master.md",
+      "sha256": "5239f20b0b2d9a52e92cdd8479aff5df0226532c01f2bf1b6f344ab8c565b3db",
+      "bytes": 1889849
+    },
+    {
+      "file": "Stage110_VolII_Full_Cumulative_Working_Master_Index.md",
+      "sha256": "7340ec4a637cedc2441b59d1166310ae4cff6995ead0b2d79572706ee70f6204",
+      "bytes": 2821
+    },
+    {
+      "file": "Stage110_Source_Data_Verification.json",
+      "sha256": "206d28db69d17b707cb9a9fed3bef67a68647d2f1abed4bb24b2cc32614ae8c7",
+      "bytes": 1106
+    }
+  ]
+}
