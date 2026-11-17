@@ -386,7 +386,7 @@
       ],
       "url": "texts/al-sanandaji/taqrib-al-maram/",
       "related_matn_id": "taftazani-tahdhib-kalam",
-      "note": "Volume I: 280 numbered Bulaq 1318 AH page positions indexed; 279 body pages with some Arabic and working English, not complete translation. Stage93 adds 12 bounded image-grounded Arabic-English excerpts (11 lower, 1 upper; I:27–37) and retains all 1,401 source records. 1,244 records contain some Arabic; 156 genuine source records remain Arabic-blank (127 lower, 29 upper), plus one archived non-source entry hidden from the reader. Zero pages are independently all-register critically certified. Source-backed full recovery ZIP saved in Library /Sanandaji/Stage93; public JSON corpus and full handoff committed. Full union with Tahdhīb remains deferred until both commentary volumes are completed.",
+      "note": "Volume I Būlāq 1318 AH single-witness working reader: 280 numbered positions (279 body pages), 1,401 stable source records. Stage97 adds three image-checked bounded Arabic–English lower notes on I:21, 22 and 25; 1,267 records contain some Arabic and 133 remain Arabic-empty (114 lower, 19 upper). Many Arabic-bearing records are still incomplete. Zero pages have passed exhaustive all-register transcription, literal translation and independent second proof. Full Stage97 cumulative recovery is in Library /Sanandaji/Stage97; the reader loads Stage85–97 overlays after Stage84. The existing published standalone Stage93 JSON is historical rather than the current cumulative snapshot. Separate Tahdhīb reader is retained; merger deferred.",
       "cumulative_text": "texts/al-sanandaji/taqrib-al-maram/2026-10-31_parallel_selected_commentary.md",
       "volume_i_reader_url": "texts/al-sanandaji/taqrib-al-maram/stage84-reader.html",
       "volume_i_reader_status": "working-bilingual-source-edition-all-register-exhaustive-translation-proof-incomplete",
@@ -395,13 +395,25 @@
       "body_pages_with_any_english": 279,
       "body_pages_with_some_typed_arabic": 279,
       "working_records": 1401,
-      "records_with_some_typed_arabic": 1244,
+      "records_with_some_typed_arabic": 1267,
       "critically_complete_pages": 0,
       "last_editorial_update": "2026-11-17",
-      "source_qa_checkpoint": "Stage93",
+      "source_qa_checkpoint": "Stage97",
       "full_cumulative_corpus_url": "texts/al-sanandaji/taqrib-al-maram/editorial/FULL_CUMULATIVE_STAGE93.json",
-      "full_handoff_url": "texts/al-sanandaji/taqrib-al-maram/editorial/STAGE93_FULL_HANDOFF.md",
-      "handoff_archive_index_url": "texts/al-sanandaji/taqrib-al-maram/editorial/HANDOFFS.md"
+      "full_handoff_url": "texts/al-sanandaji/taqrib-al-maram/editorial/STAGE97_FULL_HANDOFF.md",
+      "handoff_archive_index_url": "texts/al-sanandaji/taqrib-al-maram/editorial/HANDOFFS.md",
+      "genuine_records_without_typed_arabic": 133,
+      "remaining_blank_by_layer": {
+        "lower": 114,
+        "upper": 19
+      },
+      "current_overlay_url": "texts/al-sanandaji/taqrib-al-maram/stage97-source-delta.js",
+      "current_metrics_url": "texts/al-sanandaji/taqrib-al-maram/editorial/Stage97_Metrics.json",
+      "current_browser_qa_url": "texts/al-sanandaji/taqrib-al-maram/editorial/Stage97_Browser_QA.json",
+      "full_cumulative_corpus_public_snapshot_stage": "Stage93 (historical; Stage97 current full corpus saved in Library)",
+      "latest_full_cumulative_library_path": "/Sanandaji/Stage97/Sanandaji_VolI_Stage97_Full_Source_Recovery.zip",
+      "next_first_arabic_blank_source_record": "I025.upper.02",
+      "next_source_physical_pdf_page": 38
     },
     {
       "id": "taftazani-tahdhib-logic",
