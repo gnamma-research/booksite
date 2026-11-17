@@ -1,0 +1,160 @@
+{
+  "kind": "NEW_CONFIRMED_RECOVERY_GIT_PACKAGE_NOT_ORIGINAL_STAGE13_ZIP",
+  "date": "2026-11-17",
+  "repo": "gnamma-research/booksite",
+  "sourceBranch": "recovery/mahaimi-stage13-20261111",
+  "sourceHead": "24e89e2b6f4ff7d9b73e24bad0cf556e6efa68f7",
+  "files": [
+    {
+      "path": "data/parallel.json",
+      "gitBlobSha1": "7d1427842bfa0074253e31cfae8426f5e99fdb4b",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "data/parallel.md",
+      "gitBlobSha1": "26d02ceb6b8848deceadf999846622ce80c1cdc6",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "data/coverage-stage12.json",
+      "gitBlobSha1": "914c3ab54d8bc7ce8f0d567bcaac28ec9453435e",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "data/coverage-stage13.json",
+      "gitBlobSha1": "89fd111e1d7290b7df8df96649afd743efc99480",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "data/print-page-map-stage12.json",
+      "gitBlobSha1": "d051f4e93266bb6688d8d57e6c42725d3966ac4d",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "data/concordance-stage12.json",
+      "gitBlobSha1": "b22d33ee342ec9fbd83ea42f105ddd354b5f5695",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "editorial/review-stage12/review-index.json",
+      "gitBlobSha1": "25b2f45e7fe9ca70bb876c038ec6c21fce321bc7",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "editorial/review-stage13/review-index.json",
+      "gitBlobSha1": "3256b5ec88692ef0b0921c1bfdcad63815d5d648",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "editorial/review-stage13/review_41_60.json",
+      "gitBlobSha1": "b16d125904d273e0abb103a1336d57c7bcf32546",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "editorial/review-stage13/review_94_105_125_130.json",
+      "gitBlobSha1": "3a4f50c0a98dae064c9c1535afb25047633b4401",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "editorial/review-stage13/review_131_149.json",
+      "gitBlobSha1": "a9ec327695b091f6579ab3278332297e54f96a44",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "editorial/TEXTUAL_NOTES.md",
+      "gitBlobSha1": "85cd37d6925f8bd9f12808320c886a232ab1c5fa",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "editorial/HANDOFF.md",
+      "gitBlobSha1": "2678d1e0791efa0e5335bad0d923948e699e594a",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "editorial/STAGE13_RECOVERY_AND_QA.md",
+      "gitBlobSha1": "8304913fb14416a6954cc94b19c79bde4e168cb3",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "editorial/EDITION_STATUS.md",
+      "gitBlobSha1": "b3f5d51107527cecac61b3b21aed8d27e85fce76",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "editorial/SOURCES_STAGE12.md",
+      "gitBlobSha1": "ed02990c6db25bdd9de2e814d926ac42440010f7",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "editorial/WITNESS_REGISTER_STAGE11.md",
+      "gitBlobSha1": "5c1577168a0a770a9980b0b822ed70d123556031",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "downloads/mahaimi-bilingual.md",
+      "gitBlobSha1": "26d02ceb6b8848deceadf999846622ce80c1cdc6",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "downloads/mahaimi-corpus.json",
+      "gitBlobSha1": "7d1427842bfa0074253e31cfae8426f5e99fdb4b",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "downloads/pdf-build-manifest.json",
+      "gitBlobSha1": "fd9b00d808ae2a292231049706c8d30578fa5a8f",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "downloads/mahaimi-english.pdf",
+      "gitBlobSha1": "ec21c786b7cc6cf21ce3d92dc7eabadede38781b",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "downloads/mahaimi-arabic.pdf",
+      "gitBlobSha1": "efefc5557b2a803f79eab0fed2ae640ecea2637d",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "reader-shell.html",
+      "gitBlobSha1": "e659edbb09968cb0f7396aebcde6d1e7f96b8fe2",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "reader.js",
+      "gitBlobSha1": "0d68d3358f98f9c93f04f22c99d6a20e3193fe3d",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "reader.css",
+      "gitBlobSha1": "98c2383afc0b3a5908556f72248caa8508c8c6bc",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    },
+    {
+      "path": "index.html",
+      "gitBlobSha1": "6f649b73cbf971d622c7b00d56bea95f54afbd8f",
+      "sourceBranch": "recovery/mahaimi-stage13-20261111"
+    }
+  ],
+  "verifiedPdfSha256": {
+    "downloads/mahaimi-english.pdf": "625663059ad5eb15c62496103b5e9ce3bf2db26ee13672f866dc5424a9dbdebb",
+    "downloads/mahaimi-arabic.pdf": "b4c433aa65701525236268932f3692eae3a712bdcb48b8734115a99c2cb7fde3"
+  },
+  "unverifiedBinary": "downloads/mahaimi-bilingual.pdf",
+  "unreconciledScanComparison": [
+    98,
+    148
+  ],
+  "unreconciledCorrectionCounts": {
+    "repositoryStage13": {
+      "english": 85,
+      "notes": 30,
+      "headings": 3
+    },
+    "reportedCumulative": {
+      "english": 102,
+      "arabic": 14,
+      "notes": 41
+    }
+  }
+}
