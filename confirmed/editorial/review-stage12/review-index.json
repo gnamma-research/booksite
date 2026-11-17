@@ -1,0 +1,2060 @@
+{
+  "date": "2026-11-10",
+  "reviewed_pages": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232
+  ],
+  "scan_compared_pages": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    62,
+    64,
+    67,
+    68,
+    70,
+    73,
+    76,
+    85,
+    86,
+    87,
+    92,
+    93,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    171,
+    176,
+    177,
+    182,
+    183,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232
+  ],
+  "records": [
+    {
+      "review_file": "early_pp11-20_patch.json",
+      "printed_page": 11,
+      "pdf_zero_based_index": 11,
+      "pdf_one_based_page": 12,
+      "entry_id": "MSH-000",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "early_pp11-20_patch.json",
+      "printed_page": 12,
+      "pdf_zero_based_index": 12,
+      "pdf_one_based_page": 13,
+      "entry_id": "MSH-001",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "early_pp11-20_patch.json",
+      "printed_page": 13,
+      "pdf_zero_based_index": 13,
+      "pdf_one_based_page": 14,
+      "entry_id": "MSH-002",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "early_pp11-20_patch.json",
+      "printed_page": 14,
+      "pdf_zero_based_index": 14,
+      "pdf_one_based_page": 15,
+      "entry_id": "MSH-003",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "early_pp11-20_patch.json",
+      "printed_page": 15,
+      "pdf_zero_based_index": 15,
+      "pdf_one_based_page": 16,
+      "entry_id": "MSH-004",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "early_pp11-20_patch.json",
+      "printed_page": 16,
+      "pdf_zero_based_index": 16,
+      "pdf_one_based_page": 17,
+      "entry_id": "MSH-005",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "early_pp11-20_patch.json",
+      "printed_page": 17,
+      "pdf_zero_based_index": 17,
+      "pdf_one_based_page": 18,
+      "entry_id": "MSH-006",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "early_pp11-20_patch.json",
+      "printed_page": 18,
+      "pdf_zero_based_index": 18,
+      "pdf_one_based_page": 19,
+      "entry_id": "MSH-007",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "early_pp11-20_patch.json",
+      "printed_page": 19,
+      "pdf_zero_based_index": 19,
+      "pdf_one_based_page": 20,
+      "entry_id": "MSH-007",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "early_pp11-20_patch.json",
+      "printed_page": 20,
+      "pdf_zero_based_index": 20,
+      "pdf_one_based_page": 21,
+      "entry_id": "MSH-008",
+      "status": "Visually inspected running text and boundaries; English read against supplied Arabic; suspect readings retained where not resolved.",
+      "modern_editor_notes_translated": false,
+      "manuscript_collation": false
+    },
+    {
+      "printed_page": 150,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 150,
+      "entry_id": "MSH-P150",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Corrected المظهر اسم الفاعل: the manifester, not a locus of manifestation.",
+        "Restored the Qūnawī lemma physically beginning at the foot of p.150; its continuation is on p.151.",
+        "Rendered أبدي السلطنة as perpetual sway, replacing the inherited paraphrase about relative dominance."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 151,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 151,
+      "entry_id": "MSH-P151",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Aligned opening lemma with the actual split across pp.150–151.",
+        "Restored the final two source clauses about complete divine knowledge and original correspondence to p.151; they were previously placed at the start of p.152.",
+        "Possible Arabic transcription errors in ثم تقابل and الباطل should be checked against scan; current English follows the clear contrast in the argument."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 152,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 152,
+      "entry_id": "MSH-P152",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Removed duplication of p.151 final clauses and retained the continuation at the correct page boundary.",
+        "Verified the first/second determination, qaḍāʾ/qadar distinction, and non-temporal order; no further material omission identified."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 153,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 153,
+      "entry_id": "MSH-P153",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restored the identity claim عين تلك المعلومات instead of the weaker “effects belong to the objects”.",
+        "Restored لا يوجد في الكتب as “not found in books”; “rarely” was not present.",
+        "Removed the added qualification “intellectual” from الإحاطة العلمية, which here does not exclude unveiling.",
+        "Checked transition into Text Thirteen and exception of the Real."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 154,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 154,
+      "entry_id": "MSH-P154",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restored the explicit فعلياً in the qualification on divine knowledge; the inherited “in detail” omitted its active mode.",
+        "Rendered ذاتيات as essential constituents rather than unspecified fundamental characteristics.",
+        "Checked both signs of complete knowledge and the impossibility of a finite knower encompassing the Absolute."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 155,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 155,
+      "entry_id": "MSH-P155",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Corrected the final passage’s attribution to Qūnawī: the same wording is present in the independent appendix p.251. The inherited label assigned it to al-Mahāʾimī and added “the writings of the people of realization”.",
+        "Compared the successive determinations and impossibility of finite knowledge encompassing the Real."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 156,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 156,
+      "entry_id": "MSH-P156",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Preserved the inverse relation in Qūnawī’s contrast: states alternate over the entities, whereas the Real turns in the states.",
+        "Removed the explanation of absoluteness/restriction imported from the opening of p.157, restoring the actual page boundary.",
+        "Checked the explanatory chain human states → varieties of appearance → determinations → names."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 157,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 157,
+      "entry_id": "MSH-P157",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restored the opening explanatory paragraph displaced to p.156.",
+        "Corrected ومعرفة كل ما يعرفه به: knowing everything through the Real, not things by which the Real is known.",
+        "Restored the explicit اتحاد claim, which the inherited English weakened into merely standing in relation.",
+        "Compared quiddity, existence, subject, and attribute distinctions; retained the source’s distinction between quiddities and manifest qualifications."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 158,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 158,
+      "entry_id": "MSH-P158",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Corrected معروضاتها as the substrate/bearer of the quiddities; the inherited English replaced it with a different claim about conditioned being.",
+        "Restored the complete first part of al-Mahāʾimī’s commentary on essential and nominal perfection, previously displaced to p.159.",
+        "Retained the two questions initiating Text Fifteen and the different considerations under which perfections are essential or nominal."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 159,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 159,
+      "entry_id": "MSH-P159",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Aligned the opening with the incomplete sentence on p.158 and removed duplicated preceding-page explanation.",
+        "Made the source’s distinct technical terms waḥda, aḥadiyya, and wāḥidiyya explicit.",
+        "Verified the three considerations and why contingent qualifications do not impair intrinsic perfection."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 160,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 160,
+      "entry_id": "MSH-P160",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Moved the reasons for the nobility of Text Sixteen to their actual position at the beginning of p.161.",
+        "Compared all three accounts of perfection and the distinction between possessing perfection and newly manifesting it."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 161,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 161,
+      "entry_id": "MSH-P161",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restored the opening authorial explanation displaced to p.160.",
+        "Compared unity of knowledge, knower, and known; distinction between conceptual and referential difference; and unicity of comprehensiveness."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 162,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 162,
+      "entry_id": "MSH-P162",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restored omitted examples contrasting confinement of God to particular loci and confinement to the totality of loci.",
+        "Checked the distinction between knowledge of a limited knower’s conception and divine knowledge under another consideration."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 163,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 163,
+      "entry_id": "MSH-P163",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Corrected the pronoun in the shuʾūn/fixed-entities distinction: the modalities are the reality of the fixed entities, rather than a denial that the fixed entities are creatures’ immediate reality.",
+        "Restored the Qurʾānic illustrations physically present on p.163, which were previously displaced to p.164.",
+        "Compared essential creaturely poverty and divine names’ dependence on manifestation."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 164,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 164,
+      "entry_id": "MSH-P164",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Removed the unsupported inverse claim about God possessing attributes absent from creatures; the source only rejects attributes in creatures being absent from the Real.",
+        "Preserved the stated rejection of the rational tanzīh procedure and removed the added contrast between its “fruit” and “true content”.",
+        "Restored page divisions at both boundaries.",
+        "Flagged the printed citation of Q9:72 as not a verbatim source for the shortened phrase الله أكبر."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 165,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 165,
+      "entry_id": "MSH-P165",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restored the opening clause displaced to p.164.",
+        "Preserved نفي السوى without adding “independently existing” inside Qūnawī’s lemma; the subsequent commentary explains the surviving numerical distinction.",
+        "Verified differentiation of names’ rulings and the closing Qurʾānic interpretation."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 166,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 166,
+      "entry_id": "MSH-P166",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Compared the complete statement on locus, origination, and pre-eternity.",
+        "Opening ولم يجعله حدّا likely represents جدًّا; inherited English “not thereby overturned” has no clear Arabic support. Requested scan verification before final patch.",
+        "Facsimile confirms printed حدًّا. Replace the unsupported assertion that the preceding statement is not overturned with a literal rendering and an explicit reading note; do not silently emend to جدًّا."
+      ],
+      "modified": true,
+      "scan_compared": false,
+      "scan_compared_by_other_agent": "ending_witness; shared image evidence confirms flagged printed reading"
+    },
+    {
+      "printed_page": 167,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 167,
+      "entry_id": "MSH-P167",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Aligned final sentence with continuation on p.168.",
+        "Compared the argument against treating an imagined negative abstraction as something higher than the Real.",
+        "The introductory أثريتها ومؤثريتها is not accurately distinguished by inherited “efficacy and being effective”; source reading needs scan check before emendation."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 168,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 168,
+      "entry_id": "MSH-P168",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restored opening clause from actual page boundary.",
+        "Separated an inherited explanatory sentence from the author’s translation by an editorial label.",
+        "Removed speculative additions from the lemma distinguishing determination from the absolute being determined.",
+        "Compared the seven essential names and their non-difference at the first determination."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 169,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 169,
+      "entry_id": "MSH-P169",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Removed unsupported anticipation at the page end: source stops at “although knowledge depends on life, life…”, and the next page must supply the argument.",
+        "Checked the distinction between essential efficacy and efficacy through names under different considerations.",
+        "Electronic Arabic repeats أحديتها where the English reads aḥadiyya/wāḥidiyya; requested scan check."
+      ],
+      "modified": true,
+      "scan_compared": false,
+      "scan_compared_by_other_agent": "ending_witness; shared image evidence confirms flagged printed reading"
+    },
+    {
+      "printed_page": 170,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 170,
+      "entry_id": "MSH-P170",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restore the opening continuation from p169: life is known through knowledge, and dependence is conceptual; remove the anticipatory answer that belongs to p171.",
+        "Remaining clauses, including the distinction between waḥdāniyya and wāḥidiyya, compared with the Arabic body."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 171,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 171,
+      "entry_id": "MSH-P171",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restore omitted source cross-references to Texts Fourteen, Seven/Eight, and Four, and the associated cited phrases. Preserve the printed numbering while marking the discrepancy with the current heading sequence.",
+        "Translate المرتبة الثانية as second rank, not merely second consideration.",
+        "Remove the p172 continuation from the end of this page.",
+        "Facsimile p171 checked: the awkward تبعية and quoted ولا يثمر بشيء ولا يظهر عنه عينه are printed readings, not digital-only errors."
+      ],
+      "modified": true,
+      "scan_compared": true,
+      "scan_comparison_scope": "Page image inspected for page boundaries, printed wording and the specific ambiguous readings recorded in findings; this is not a diplomatic line-by-line facsimile collation."
+    },
+    {
+      "printed_page": 172,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 172,
+      "entry_id": "MSH-P172",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restore the exact manifest/manifester relation: giver = manifest; effusion = locus of manifestation.",
+        "Correct the reversed vessel/water analogy: water takes the vessel’s colour.",
+        "Restore the explicit cross-reference to Text Four; remaining body reviewed clause by clause."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 173,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 173,
+      "entry_id": "MSH-P173",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Correct the feminine plural antecedent in the Qūnawī lemma: the ranks, not the rulings, are effective and manifest in their governance.",
+        "Restore the final explanation concerning sanctified spirits, transient endpoints and mediated effusion, previously shifted to p174.",
+        "Compare remainder concerning fixed entities, external existence, and the combined action of ranks and rulings."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 174,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 174,
+      "entry_id": "MSH-P174",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Remove the p173 material duplicated at the beginning and preserve the actual opening continuation.",
+        "Restore the commentary’s final lemma citation فهي ثابتة, completed by العين on p175.",
+        "Compare stations/degrees, continual new creation, and the mould analogy against the full page body."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 175,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 175,
+      "entry_id": "MSH-P175",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Translate الأمر المقدر without adding a wholly undifferentiated command, which the source does not say.",
+        "Move the final explanation of actual manifestation and unicity to its printed location on p176.",
+        "Compare the complete lemma and commentary on recompense, intrinsic names, and the difference between aḥadiyya and wāḥidiyya."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 176,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 176,
+      "entry_id": "MSH-P176",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restore the complete beginning of Text Twenty, formerly displaced to p177.",
+        "Restore the actual ordering of Knowing, Living, Powerful and Willing; the inherited English replaced it with an unresolved online-transcription disclaimer. Facsimile p176 checked; the awkward pronoun is recorded rather than hidden.",
+        "Explicitly preserve the distinction of the Essence from its names at the divinity rank, rather than substituting only distinction among names.",
+        "Render بالقوة as potentially; restore the cited incipit The names are states."
+      ],
+      "modified": true,
+      "scan_compared": true,
+      "scan_comparison_scope": "Page image inspected for page boundaries, printed wording and the specific ambiguous readings recorded in findings; this is not a diplomatic line-by-line facsimile collation."
+    },
+    {
+      "printed_page": 177,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 177,
+      "entry_id": "MSH-P177",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Remove the beginning of Text Twenty, whose printed location is p176, and start with the actual continuation of the gloss.",
+        "Preserve the printed tension: the lemma calls determination non-impairing, while the commentary explicitly calls it an impairment. The inherited paraphrase softened this opposition and added a resolution absent from the page.",
+        "Correct the direction of the encompassing argument; the source concerns encompassing the manifest shadow, not a shadow encompassing its source. Facsimile p177 checked; الإحاطة العلية retained as an uncertain phrase.",
+        "Align the final conditional continuation with p178."
+      ],
+      "modified": true,
+      "scan_compared": true,
+      "scan_comparison_scope": "Page image inspected for page boundaries, printed wording and the specific ambiguous readings recorded in findings; this is not a diplomatic line-by-line facsimile collation."
+    },
+    {
+      "printed_page": 178,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 178,
+      "entry_id": "MSH-P178",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restore the final clause at the actual page boundary; the substantial explanation of possible manifestations, prophecy and post-prophetic perfection belongs to p179.",
+        "Compare both complete affinity lemmata and their glosses, including non-transfer of a divine attribute and the form of the divine presence."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 179,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 179,
+      "entry_id": "MSH-P179",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restore the opening explanation shifted into p178, including the limits on actual manifestation and the explicit contrast between prophecy in its possible age and the Pole/solitary individual in our time.",
+        "The inherited opening summarized the two affinities but omitted these clauses at their actual page.",
+        "Compare the remainder of the human-perfection discussion and the full opening temperament lemma."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 180,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 180,
+      "entry_id": "MSH-P180",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Full body compared: temperament hierarchy, master–disciple affinity, spiritual intermediaries and genuine equilibrium are covered. Remove the ungrounded qualifier some before philosophers."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 181,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 181,
+      "entry_id": "MSH-P181",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restore the omitted substantive clauses in the final commentary: original determination versus perfection through equilibrium; the green emerald; dark/luminous relations to primordial dust/Nature and First Intellect; and the Tablet’s unrestricted cosmic scope.",
+        "Complete preceding lemmata and glosses compared, including the named angelic stations and temperament condition."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 182,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 182,
+      "entry_id": "MSH-P182",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Replace an abridgment of the angelic hierarchy with all the names, spheres and angelic stations actually on the page.",
+        "Remove the added astronomy disclaimer, which was not in the source and had appeared in the commentator’s voice.",
+        "Restore the quoted incipit, the explanatory chain knowledge/providence/decree/will and fashioning/determination, and identify the obscure final pronoun.",
+        "Facsimile p182 confirms Mercury’s reference is الملك الروح, whereas the digital transcription has فلك الروح; supply a documented Arabic correction."
+      ],
+      "modified": true,
+      "scan_compared": true,
+      "scan_comparison_scope": "Page image inspected for page boundaries, printed wording and the specific ambiguous readings recorded in findings; this is not a diplomatic line-by-line facsimile collation."
+    },
+    {
+      "printed_page": 183,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 183,
+      "entry_id": "MSH-P183",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Correct the reversal in the gloss: the print says the principles as origin are the same as those as perfection, whereas inherited English said the author had distinguished them.",
+        "Restore omitted actual existence, the functions behind Pen/Intellect/Spirit/Universal, the specific account of Throne-related spirits and the closing Qūnawī lemma.",
+        "Restore the commentator’s statement about the Peripatetics and Plato with its attribution to al-Samarqandī, replacing an added historical disclaimer that had displaced the source.",
+        "Facsimile p183 checked; the printed apparent قلبًا error is noted explicitly and the overall interpretation follows the heading القلم."
+      ],
+      "modified": true,
+      "scan_compared": true,
+      "scan_comparison_scope": "Page image inspected for page boundaries, printed wording and the specific ambiguous readings recorded in findings; this is not a diplomatic line-by-line facsimile collation."
+    },
+    {
+      "printed_page": 184,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 184,
+      "entry_id": "MSH-P184",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Remove the p183 incipit repeated at the beginning and the p185 heart/soul purification clauses anticipated at the end.",
+        "Restore the steps of the argument from simple spirits, genus/differentia, general accidents, specific properties and individual distinction.",
+        "Restore the explicit placement of the imaginal world in the sphere of the zodiac, previously reduced to an unspecified cosmographical account."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 185,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 185,
+      "entry_id": "MSH-P185",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restore exact attributions and the two palace formulations rather than compressing them into a paraphrase.",
+        "Restore the progression from purity of imaginal form to dwelling and the explicit comparison between prophetic and saintly ranks.",
+        "Remove p186 discussion of the alternate wording and al-ʿAbbās, returning it to its actual page.",
+        "Keep the modern editor’s inability-to-locate statement separate from authorial text; remove the inherited prescriptive warning."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 186,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 186,
+      "entry_id": "MSH-P186",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restore the complete opening palace/al-ʿAbbās argument shifted to p185.",
+        "Restore the separate premises of the market-of-Paradise objection and the distinction between primary and secondary dwellings; inherited English substantially abbreviated the argument.",
+        "Facsimile p186 confirms التخرج in the difficult clause; preserve its uncertainty explicitly rather than silently omit it.",
+        "End at the actual continuing sentence, removing anticipatory p187 material."
+      ],
+      "modified": true,
+      "scan_compared": true,
+      "scan_comparison_scope": "Page image inspected for page boundaries, printed wording and the specific ambiguous readings recorded in findings; this is not a diplomatic line-by-line facsimile collation."
+    },
+    {
+      "printed_page": 187,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 187,
+      "entry_id": "MSH-P187",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restore the opening continuation and mark the printed incomplete phrase إذ فيها.",
+        "Correct the inherited weakening of the categorical statement about al-bulh, and restore the perfected’s continual vision and the explicit reason for saying from the Real.",
+        "Facsimile p187 confirms the unusual أولياء الزائرين; identify the contextual reading instead of silently normalizing it.",
+        "Compare all food/drink, grammar, and robes/gifts clauses against the full body."
+      ],
+      "modified": true,
+      "scan_compared": true,
+      "scan_comparison_scope": "Page image inspected for page boundaries, printed wording and the specific ambiguous readings recorded in findings; this is not a diplomatic line-by-line facsimile collation."
+    },
+    {
+      "printed_page": 188,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 188,
+      "entry_id": "MSH-P188",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restore the full causal argument and cycle of alternating divine names, formerly moved to p189; remove an added assertion about essential divine change absent from the source.",
+        "Restore the actual opening argument that imaginal affinity alone does not confer the fitness for vision.",
+        "Facsimile p188 checked; document two digital deviations in the Qūnawī lemma: النسبة and جمعهم."
+      ],
+      "modified": true,
+      "scan_compared": true,
+      "scan_comparison_scope": "Page image inspected for page boundaries, printed wording and the specific ambiguous readings recorded in findings; this is not a diplomatic line-by-line facsimile collation."
+    },
+    {
+      "printed_page": 189,
+      "review_file": "english_audit_pp150-189.json",
+      "page": 189,
+      "entry_id": "MSH-P189",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Replace the inherited page in full: it contained the end of p188 and an online-installment note, with none of the actual p189 lemma and commentary on the different ranks, duration and understanding of the audience with the Real.",
+        "Translate every paragraph and preserve the opening one-word continuation and final lemma boundary; p190 counterpart coordinated with ending_witness.",
+        "Facsimile p189 checked against the page map and new English."
+      ],
+      "modified": true,
+      "scan_compared": true,
+      "scan_comparison_scope": "Page image inspected for page boundaries, printed wording and the specific ambiguous readings recorded in findings; this is not a diplomatic line-by-line facsimile collation."
+    },
+    {
+      "printed_page": 61,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 61,
+      "entry_id": "MSH-049",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Complete lemma and exposition compared: the seven principal attributes, three degrees of certainty, essential affairs and fixed entities, and seed/tree analogy are covered. No material correction required.",
+        "Existing Arabic and acquired authorial body agree after normalization to Arabic letters; no editorial footnote on this page."
+      ],
+      "modified": false,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 62,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 62,
+      "entry_id": "MSH-050",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Correct the syntax of the initial rank of primacy and translate تميز الحق as the Real becoming distinguished, rather than substituting plural realities.",
+        "Full page compared, including first/second determination and the compressed fourfold-looking printed sequence والبرزخ والفاصل; the existing uncertainty flag is appropriate.",
+        "Facsimile p62 inspected. Footnote cites the modern bibliographical source for hidden-treasure report and is correctly outside authorial Arabic."
+      ],
+      "modified": true,
+      "scan_compared": true
+    },
+    {
+      "printed_page": 63,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 63,
+      "entry_id": "MSH-051",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Correct the lemma’s pronoun: وسرايته most directly continues حكمهم, the persistence and pervasion of their ruling. The commentator’s subsequent account of divine pervasion remains translated in his own voice.",
+        "Compare all three certainty stages, the qualification of effacement as awareness rather than bodily annihilation, and the three rejected kinds of indwelling.",
+        "Existing Arabic matches the acquired authorial body; no editorial footnote."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 64,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 64,
+      "entry_id": "MSH-052",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Replace the unsupported paraphrase of اليقين with the literal printed certainty and an explicit uncertainty note. Facsimile p64 confirms the reading.",
+        "Translate المقارنة متحققة as actual conjunction, not merely possible conjunction.",
+        "Do not conceal the broken printed sentence beginning وإلا يلزم behind an assured philosophical paraphrase.",
+        "Full body compared; modern footnote defining identity is separate from authorial Arabic in both versions."
+      ],
+      "modified": true,
+      "scan_compared": true
+    },
+    {
+      "printed_page": 65,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 65,
+      "entry_id": "MSH-053",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Full objection/reply sequence compared: existence versus being-existent, appearance as determination, the bodily world, and the perfected human’s acquisition of all cognitive faculties. No material omission found.",
+        "The comparative sentence in the acquired Arabic is compressed/unstable; inherited English follows the apparent comparison between all and fewer modes of apprehension. Existing Arabic matches the transcription; no editorial footnotes."
+      ],
+      "modified": false,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 66,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 66,
+      "entry_id": "MSH-054",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Avoid fixing the referent of the pronoun in the general explanation of prayer to the Prophet: the Arabic says appoint him, and the following discussion extends to human reality and its five presences.",
+        "Full page compared: sense and abiding, postmortem perfected souls, blessing lemma, mediating affinity and first three presences. Arabic body matches the acquired text, with no footnotes."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 67,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 67,
+      "entry_id": "MSH-055",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Complete continuation of the five presences, forms of divine mercy, Muhammadan mediation, realization versus adopting traits and two kinds of witnessing compared. No additional material correction required.",
+        "Facsimile p67 confirms the printed corrupt [يمحوظ] and ambiguous مجازة; inherited English already identifies rather than hides both. Arabic transcription and page body match."
+      ],
+      "modified": false,
+      "scan_compared": true
+    },
+    {
+      "printed_page": 68,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 68,
+      "entry_id": "MSH-056",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Read لازمان له as inseparable from him, rather than parsing it as a negation of time.",
+        "Preserve فخر as glorying rather than substituting praise; the explanation concerns the object of glorying.",
+        "Full body and hadith-note boundary compared; facsimile p68 inspected, including the printed خلقني عليهم."
+      ],
+      "modified": true,
+      "scan_compared": true
+    },
+    {
+      "printed_page": 69,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 69,
+      "entry_id": "MSH-057",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Full distinction of original versus derived lordship, the derivation of Muḥammad, fourfold inheritance, and the ordered kinds of kinship compared. The English covers the substantive clauses and does not confuse bodily lineage with spiritual inheritance.",
+        "Arabic body matches the transcription; the modern Salmān-report reference is separate."
+      ],
+      "modified": false,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 70,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 70,
+      "entry_id": "MSH-058",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Remove added psychological limitations preoccupation with and awareness of, which dilute the source’s claim about purification from self-existence. Mark the corrupt printed phrase and the contextual rendering explicitly.",
+        "Restore the categorical contrast between formal study and directly bestowed knowledge instead of softening it with merely/by itself.",
+        "Facsimile p70 checked: both the corrupt opening phrase and the compressed later الإِفاضة phrase are printed; the latter already has an appropriate inherited uncertainty note. Full lemma/gloss and footnote boundary compared."
+      ],
+      "modified": true,
+      "scan_compared": true
+    },
+    {
+      "printed_page": 71,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 71,
+      "entry_id": "MSH-059",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Full body compared: following and connections, continuity of blessing, definitions of reality/quiddity/identity, Aristotle/al-Ashʿarī accounts of time, and astronomical periods. No material correction required.",
+        "Modern one-line definition in the footnote is outside authorial Arabic; normalized existing and acquired bodies match."
+      ],
+      "modified": false,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 72,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 72,
+      "entry_id": "MSH-060",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Complete end of blessing discussion, beginning of Text One, subject/end of the science, and opening absoluteness lemma compared. Continuation on p73 correctly preserves the lemma voice.",
+        "Existing Arabic matches acquired body; the modern hadith bibliography is separate. No material correction required."
+      ],
+      "modified": false,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 73,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 73,
+      "entry_id": "MSH-061",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Replace an unsupported paraphrase of والاعتبار للتعين في الإطلاق with a literal rendering and note the apparent missing negation; facsimile p73 confirms the anomalous printed wording.",
+        "Render بل عين ذاته as an intensifying correction, indeed His very essence, not an alternative or identical with it.",
+        "Full objection/reply, descriptive definition, necessary existence/principiality and knowledge discussion compared; Arabic body matches transcription."
+      ],
+      "modified": true,
+      "scan_compared": true
+    },
+    {
+      "printed_page": 74,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 74,
+      "entry_id": "MSH-062",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Translate وغيره as other things/predicates, not necessarily each predicate’s contrary; the commentary itself specifies other predicates.",
+        "Complete negative-absoluteness lemma and gloss compared. Both modern footnotes remain outside the authorial Arabic."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 75,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 75,
+      "entry_id": "MSH-063",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Full account of attributing relations under determination, knowledge as the first apprehended determination versus life as first in actuality, relational distinction, and the derivation of cognitions compared. No material correction needed.",
+        "The acquired Arabic alternates المتعلقة/المتعقلة; the English follows the meaning explicitly explained in the gloss. Existing Arabic body matches acquired text, with no footnotes."
+      ],
+      "modified": false,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 76,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 76,
+      "entry_id": "MSH-064",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Expose the contextual negations silently supplied by the inherited translation in the first two والاعتبار لها clauses. Facsimile p76 confirms the wording and the explicitly negative third parallel.",
+        "Full authorial argument compared; the large footnote begins below the printed rule and belongs to the modern editorial apparatus. No body text is lost at the p76/77 transition."
+      ],
+      "modified": true,
+      "scan_compared": true
+    },
+    {
+      "printed_page": 77,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 77,
+      "entry_id": "MSH-065",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Full continuation of unity/necessity/principiality, self-knowledge and fixed entities, and eternal rank ordering compared. Every substantive step and closing Qūnawī lemma is covered.",
+        "Existing Arabic matches acquired body; no modern footnote. No material correction required."
+      ],
+      "modified": false,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 78,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 78,
+      "entry_id": "MSH-066",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Translate rather than omit the difficult abstraction/relation clause, retaining an explicit uncertainty note.",
+        "Remove the added qualification independent from لا وجود لها and restore the contrast between unchanging knowledge and its changing relation.",
+        "Render شهودا علميا لا عينيا without the added independent-existence qualification.",
+        "Complete eternal-knowledge and seed analogy passages compared; Arabic body matches acquired transcription."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 79,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 79,
+      "entry_id": "MSH-067",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Repair the opening continuation: the Arabic subject is the knower who sees multiplicity in the seed, not the multiplicity itself knowing.",
+        "Retain the source’s علمه in the following clause instead of silently substituting what was known; the compressed pronoun chain remains to be collated.",
+        "Full second-mode lemma and commentary compared, including externally ordered quiddities and unity hidden in multiplicity. Existing Arabic body matches acquired text."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 80,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 80,
+      "entry_id": "MSH-068",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Correct the demonstrative antecedents: the second, opposed kind of absoluteness is considered only before the first determination; the first, unopposed kind can be considered both before and after. Inherited English incorrectly made both statements about one kind.",
+        "Full lemma, analysis of demand/non-demand and three ranks compared. Existing final warning about repeated words in the transmitted continuation remains appropriate. Arabic body matches transcription."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 81,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 81,
+      "entry_id": "MSH-069",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Full three-rank exposition and lemma compared, with condition versus cause, absence of impediment, single existential condition and the circularity argument. No material omission or reversal found.",
+        "Existing Arabic body matches acquired transcription; no footnotes."
+      ],
+      "modified": false,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 82,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 82,
+      "entry_id": "MSH-070",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Full account of Most Holy Effusion, positive/negative conditions, why the First Intellect is a condition, second/third-rank effects and the one-demand lemma compared. No material correction required.",
+        "Existing Arabic body matches acquired text; no footnotes."
+      ],
+      "modified": false,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 83,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 83,
+      "entry_id": "MSH-071",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Correct the rank count: ثلاث مراتب مرتبة في مستقره ومرتبتان في تنزله means three in total, one at the source and two in descent, not three plus two.",
+        "Restore the categorical claim that causes are not efficacious but time-marking; remove the added independently and conditions that weaken/broaden the printed statement.",
+        "Complete opening of Text Three, unitary knowledge, fixed entities and final lemma continuation compared. Arabic matches acquired text."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 84,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 84,
+      "entry_id": "MSH-072",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Preserve the distinction between unbounded time of reception and non-finite ruling/description in the opening lemma continuation.",
+        "Full discussion of unchanged knowledge and changing relations, the Zayd example, and the judge/judged deduction compared. Arabic body matches acquired text."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 85,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 85,
+      "entry_id": "MSH-073",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Complete judge/judged lemma and gloss compared, including changing recipients, fixed divine names/angels, and persistence of the first ruling when the object stays fixed. No material correction required.",
+        "Facsimile p85 inspected: the unusual الحاضرين is printed and the English follows it; the fourfold explanation on p86 supplies the exhaustive scope. Arabic body matches acquired transcription."
+      ],
+      "modified": false,
+      "scan_compared": true
+    },
+    {
+      "printed_page": 86,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 86,
+      "entry_id": "MSH-074",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Correct the reversed example: souls change and the intellects affecting them remain fixed. The inherited English made the intellects variable and the recipients fixed.",
+        "Facsimile p86 checked, including the complete body above the rule and the separate long modern footnote on the First Intellect.",
+        "Full fourfold classification and opening of Text Four compared."
+      ],
+      "modified": true,
+      "scan_compared": true
+    },
+    {
+      "printed_page": 87,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 87,
+      "entry_id": "MSH-075",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Correct the instrument relation بما يؤثر به: the agent knows that through which it acts, not merely its resulting effect.",
+        "Correct the grammatical object in the limb/heart clause: بما introduces what the heart conveys/directs, not awareness of the heart itself. Mark the printed verb’s uncertainty.",
+        "Facsimile p87 checked; also identify the evident printed الأعمى for contextual الأعم. Full knowledge/existence and cognition-in-things argument compared."
+      ],
+      "modified": true,
+      "scan_compared": true
+    },
+    {
+      "printed_page": 88,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 88,
+      "entry_id": "MSH-076",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Full answer concerning degrees of manifested knowledge, inanimate things speaking, spiritual powers, universal cognition in animals, and opening of Text Five compared. No material omission or reversal found.",
+        "Existing Arabic matches acquired body; no modern footnotes."
+      ],
+      "modified": false,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 89,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 89,
+      "entry_id": "MSH-P089",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restore the reference to the third text in the opening continuation, completing p88’s from the first/from the second/from the third sequence.",
+        "Complete Qūnawī statement about repetition and the special station of perfection, and the gloss on absolute/relative perfection and direct taste, compared. Arabic body matches acquired transcription."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 90,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 90,
+      "entry_id": "MSH-P090",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Replace an unsupported exclusivity claim, proper to God, with the source’s statement that this comprehension has been attained by him, identifying the compressed pronoun.",
+        "Full three conditions of complete taste, apprehension lemma and explanation of the four cognitive powers compared. Arabic body matches acquired text."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 91,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 91,
+      "entry_id": "MSH-P091",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Remove the anticipated final words of the Qūnawī lemma, which are actually at the top of p92 and otherwise duplicated.",
+        "Compare the complete discussion of combinations of faculties, contradictories, definition/concomitants, and the lemma on why comprehensive knowledge of God is impossible. Arabic matches acquired body."
+      ],
+      "modified": true,
+      "scan_compared": false
+    },
+    {
+      "printed_page": 92,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 92,
+      "entry_id": "MSH-P092",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Restore the omitted logical hierarchy: name composed of attribute and Essence, attribute arising from judgement, and judgement dependent on conception.",
+        "Restore the omitted claim that one has not even reached incapacity, the limit of knowledge, still less knowledge itself.",
+        "Full body compared and facsimile p92 inspected; the opening is the actual completion of the lemma on p91. Arabic body matches transcription."
+      ],
+      "modified": true,
+      "scan_compared": true
+    },
+    {
+      "printed_page": 93,
+      "review_file": "english_audit_pp61-105.json",
+      "page": 93,
+      "entry_id": "MSH-P093",
+      "scope": "complete page body compared clause by clause with inherited English; continuity at page edges checked",
+      "findings": [
+        "Preserve the self-presence claim حصول حقيقته له as His own reality present to Him.",
+        "Restore the actual printed attribution to Ibn ʿArabī; inherited English silently changed it to Qūnawī. Note the relation to the earlier lemma without pretending a second witness.",
+        "Replace the interpretive final summary with the actual definitions and page-boundary continuation; flag the corrupt opening wording.",
+        "Facsimile p93 inspected, confirming the attribution and printed crux; Arabic body matches acquired text."
+      ],
+      "modified": true,
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P190",
+      "printed_page": 190,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P191",
+      "printed_page": 191,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P192",
+      "printed_page": 192,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P193",
+      "printed_page": 193,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P194",
+      "printed_page": 194,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P195",
+      "printed_page": 195,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P196",
+      "printed_page": 196,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P197",
+      "printed_page": 197,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P198",
+      "printed_page": 198,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P199",
+      "printed_page": 199,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P200",
+      "printed_page": 200,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P201",
+      "printed_page": 201,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P202",
+      "printed_page": 202,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P203",
+      "printed_page": 203,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P204",
+      "printed_page": 204,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P205",
+      "printed_page": 205,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P206",
+      "printed_page": 206,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P207",
+      "printed_page": 207,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P208",
+      "printed_page": 208,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P209",
+      "printed_page": 209,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P210",
+      "printed_page": 210,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 2
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P211",
+      "printed_page": 211,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 1
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P212",
+      "printed_page": 212,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P213",
+      "printed_page": 213,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P214",
+      "printed_page": 214,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P215",
+      "printed_page": 215,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 1
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P216",
+      "printed_page": 216,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P217",
+      "printed_page": 217,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P218",
+      "printed_page": 218,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P219",
+      "printed_page": 219,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P220",
+      "printed_page": 220,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P221",
+      "printed_page": 221,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P222",
+      "printed_page": 222,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P223",
+      "printed_page": 223,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P224",
+      "printed_page": 224,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 1
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P225",
+      "printed_page": 225,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P226",
+      "printed_page": 226,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 1
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P227",
+      "printed_page": 227,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P228",
+      "printed_page": 228,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P229",
+      "printed_page": 229,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P230",
+      "printed_page": 230,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 1
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P231",
+      "printed_page": 231,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 1
+    },
+    {
+      "review_file": "commentary_190_232_review_ledger.json",
+      "id": "MSH-P232",
+      "printed_page": 232,
+      "review_status": "retranslated_against_print_and_transcription",
+      "scan_compared": true,
+      "corrections_count": 0
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P106",
+      "printed_page": 106,
+      "review_status": "compared_and_revised",
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P107",
+      "printed_page": 107,
+      "review_status": "compared_and_revised",
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P108",
+      "printed_page": 108,
+      "review_status": "compared_and_revised",
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P109",
+      "printed_page": 109,
+      "review_status": "compared_no_material_english_change",
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P110",
+      "printed_page": 110,
+      "review_status": "compared_and_revised",
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P111",
+      "printed_page": 111,
+      "review_status": "compared_and_revised",
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P112",
+      "printed_page": 112,
+      "review_status": "compared_and_revised",
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P113",
+      "printed_page": 113,
+      "review_status": "compared_and_revised",
+      "scan_compared": false
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P114",
+      "printed_page": 114,
+      "review_status": "compared_and_revised",
+      "scan_compared": false
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P115",
+      "printed_page": 115,
+      "review_status": "compared_and_revised",
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P116",
+      "printed_page": 116,
+      "review_status": "compared_and_revised",
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P117",
+      "printed_page": 117,
+      "review_status": "compared_and_revised",
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P118",
+      "printed_page": 118,
+      "review_status": "compared_and_revised",
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P119",
+      "printed_page": 119,
+      "review_status": "compared_and_revised",
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P120",
+      "printed_page": 120,
+      "review_status": "compared_and_revised",
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P121",
+      "printed_page": 121,
+      "review_status": "compared_and_revised",
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P122",
+      "printed_page": 122,
+      "review_status": "compared_and_revised",
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P123",
+      "printed_page": 123,
+      "review_status": "compared_and_revised",
+      "scan_compared": true
+    },
+    {
+      "review_file": "commentary_106_149_review_ledger.json",
+      "id": "MSH-P124",
+      "printed_page": 124,
+      "review_status": "compared_and_revised",
+      "scan_compared": true
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 21,
+      "entry_id": "MSH-009",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": true,
+      "pdf_zero_based_index_if_inspected": 21,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 22,
+      "entry_id": "MSH-010",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 23,
+      "entry_id": "MSH-011",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": true,
+      "pdf_zero_based_index_if_inspected": 23,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 24,
+      "entry_id": "MSH-012",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 25,
+      "entry_id": "MSH-013",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 26,
+      "entry_id": "MSH-014",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": true,
+      "pdf_zero_based_index_if_inspected": 26,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 27,
+      "entry_id": "MSH-015",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": true,
+      "pdf_zero_based_index_if_inspected": 27,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 28,
+      "entry_id": "MSH-016",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 29,
+      "entry_id": "MSH-017",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 30,
+      "entry_id": "MSH-018",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 31,
+      "entry_id": "MSH-019",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 32,
+      "entry_id": "MSH-020",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 33,
+      "entry_id": "MSH-021",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": true,
+      "pdf_zero_based_index_if_inspected": 33,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 34,
+      "entry_id": "MSH-022",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 35,
+      "entry_id": "MSH-023",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": true,
+      "pdf_zero_based_index_if_inspected": 35,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 36,
+      "entry_id": "MSH-024",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 37,
+      "entry_id": "MSH-025",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 38,
+      "entry_id": "MSH-026",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 39,
+      "entry_id": "MSH-027",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": false,
+      "pdf_zero_based_index_if_inspected": null,
+      "manuscript_collation": false
+    },
+    {
+      "review_file": "pp21-60_patch.json",
+      "printed_page": 40,
+      "entry_id": "MSH-028",
+      "arabic_compared_with_full_electronic_page": true,
+      "english_read_against_arabic": true,
+      "printed_scan_visually_inspected": true,
+      "pdf_zero_based_index_if_inspected": 40,
+      "manuscript_collation": false
+    }
+  ]
+}

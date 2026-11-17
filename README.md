@@ -1,78 +1,18 @@
-<div align="center">
-  <img src="assets/gnamma-mark.svg" alt="Gnamma — natural rock hollow holding water" width="94" />
+# Mahāʾimī / Qūnawī — confirmed Git recovery package (17 Nov 2026)
 
-  # gnamma
+**THIS IS A NEW RECOVERY PACKAGE, NOT `MAHAIMI_STAGE13_FULL_CUMULATIVE.zip`, NOT A RECONSTRUCTION OF ITS 164 MEMBERS, AND NOT PROOF OF FULL HANDOFF RECEIPT.**
 
-  **Research · Texts · Essays**
+The files under `confirmed/` refer directly to original Git blobs in `gnamma-research/booksite`, source branch `recovery/mahaimi-stage13-20261111` at audited head `24e89e2b6f4ff7d9b73e24bad0cf556e6efa68f7`. Git blob hashes are listed in `CONFIRMED_BLOBS.json`. The Git tree keeps actual referenced file bytes recoverable by cloning/downloading this package branch; it is not merely an inventory of paths. Only file identities and digests actually established are claimed.
 
-  [Explore the library](https://gnamma-research.github.io/booksite/) · [About Gnamma](https://gnamma-research.github.io/booksite/about/) · [Browse the texts](https://gnamma-research.github.io/booksite/texts/)
-</div>
+**Verified SHA-256 against `downloads/pdf-build-manifest.json`:**
+- `confirmed/downloads/mahaimi-english.pdf`: 1,027,870 bytes, SHA-256 `625663059ad5eb15c62496103b5e9ce3bf2db26ee13672f866dc5424a9dbdebb` (match).
+- `confirmed/downloads/mahaimi-arabic.pdf`: 821,735 bytes, SHA-256 `b4c433aa65701525236268932f3692eae3a712bdcb48b8734115a99c2cb7fde3` (match).
+- These bytes were fetched encoded from GitHub, decoded and hashed. The bilingual PDF (manifest: 1,887,477 bytes; expected SHA-256 `8f72cbfa40b88386fb6bb8cb9e73e79405df1aab1c47ce9cd7800fdcfe82c221`) was located as Git blob `e6c78f82adc10cda1d53f2b604166c894e9ee62f` but the connector returned empty encoded payload. It is NOT included in the validated-binary subset and must not be called independently checked.
 
-Gnamma takes its name from a natural hollow in rock where water collects. It is a place of encounter: between texts and their contexts, between traditions, and between scholarly interpretation and the world to which it speaks. The project develops connected reading spaces that make sources, concepts, translations, and their wider relationships available for careful investigation.
+**Corpus/review:** Direct blob recovery of `parallel.json` succeeded; 254 unique units, 444 nonempty bilingual pairs, 222 commentary + 33 appendix pages. Full Stage13 review index parsed: 222 reviewed pages, 98 documented scan comparisons; full Stage12 index: 165 reviewed, 91 scan comparisons. Stage13 detailed reports: 85 English pair changes, 30 notes, 3 headings; not equivalent to the separately reported 157 total corrections (102 English, 14 Arabic, 41 notes), which has not been reconciled.
 
-## Required continuity rule for every translation project
+**Discrepancies to retain:** documented Git ledger **98/222** vs later unlocated ZIP report **148/222** (difference 50). Remaining respectively 124 or 72. Never assume the additional 50 pages have been checked; never redo them until later evidence is checked.
 
-Before any new translation stage or continuation chat, read [Translation Continuity and No-Retranslation Protocol](docs/TRANSLATION_CONTINUITY_PROTOCOL.md), locate the latest canonical full master and handoff, and **do not retranslate already-completed material because a prior chat did not mount it**. Full/cumulative/verified/deployed claims require the documented checks. The recovered 7 November 2026 Maqāṣid and Sharḥ masters are preserved on the `research/taftazani-maqasid-cumulative-20261107` research branch.
+**Source assets:** `machra3-khosous.pdf` original print scan is reported by `SOURCES_STAGE12.md` at 9,738,668 bytes, SHA-256 `2e4b896446d82bbd877a8c0657e69976a25c366a2d97559194b7ed96c1749b0e`; electronic source text export is reported at 845,676 bytes SHA-256 `46b71616f72173d524163f2efcccb1e0f3fce97baf505b4087a3b3663be85e70`. Neither source binary was recovered and freshly hashed in this audit. The documented digests are *historical claims*, not new validation.
 
----
-
-# Gnamma Research · multi-book scholarly library
-
-This is the **library repository**, not the al-Mustaṣfā-only project.
-
-## Publishable folders
-
-```
-/                      Public library landing page
-/texts/                Text catalogue, manifest.json
-/texts/{author}/{work}/ Author/work-specific reader, data and editorial evidence
-/arabic/               Shared Arabic transcription (legacy root retained)
-/essays/               Essay collection; scaffold only
-/research/             Comparative studies and evidence-linked research atlases
-/docs/                 Collection-wide editorial policy
-/assets/               Shared catalog stylesheet
-```
-
-Current working published item: [al-Ghazālī, al-Mustaṣfā](texts/al-ghazali/al-mustasfa/). Other named books are **migration candidates**, not uploaded publications.
-
-No copyrighted Hammad dissertation PDFs are committed. The Arabic transcription is derived from OpenITI and remains under CC BY-NC-SA 4.0; see the source/licence notes.
-
-### Add a book
-
-1. Choose stable `author_slug/work_slug`; do not repurpose existing slugs.
-2. Place a responsive `index.html` and `assets/` in `texts/{author}/{work}/`.
-3. Put primary-source and translation content in `data/`, with edition identifiers.
-4. Include `editorial/EDITORIAL_STATUS.md`, source registers, translator notes and quality gates.
-5. Add a `texts/manifest.json` entry with a link **only when the reader exists**.
-6. Check navigation (back to original locus), Unicode Arabic display, phone viewport, search, source citations and licences.
-
-### Hosting
-
-Use GitHub Pages from this repository's default branch `/ (root)` when Pages is activated in Settings → Pages. Deployment is separate from committing files; don't assume the website is live until GitHub Pages returns an active site.
-
-## Mobile deployment status
-
-The live Gnamma library is published via GitHub Pages at **https://gnamma-research.github.io/booksite/**; GitHub's Pages deployment workflow reported success on 19 October 2026. The al-Mustaṣfā reader is at **https://gnamma-research.github.io/booksite/texts/al-ghazali/al-mustasfa/**. Check Settings → Pages and the deployment history to confirm subsequent releases.
-
-The download ZIP intentionally omits the full 1.8 MB Arabic corpus already committed under `arabic/full-arabic-pages.json`. Its reader falls back to that public GitHub source online if a local copy is missing. For a fully offline Arabic archive, add that file at the matching path.
-## Gnamma visual and reader controls (19 October 2026)
-
-The public homepage, text chooser, research and essay sections use the landscape-led Gnamma identity (the natural waterhole mark, editorial lowercase wordmark, minimally dense overlays and icon navigation with hover/focus labels). Book readers have a **Background** control to choose the book's **native appearance** or the **Gnamma landscape**. Preferences are saved locally per work; the Mustaṣfā reader retains its existing native light, dark and sepia settings.
-
-The four non-Mustaṣfā titles linked from the collection now have **labeled preliminary previews** with reading lenses, a technical glossary, source notes and related-reading trails. These are not complete original readers; the missing full editions still need importing. Do not silently equate a preview with publication of the source.
-
-See [branding and backgrounds](docs/GNAMMA_BRANDING_AND_BACKGROUNDS.md). The scenic image has a local SVG fallback; high-resolution photo in the project delivery package can replace the lightweight site background.
-
-## Bottom navigation / book taxonomy (October 2026)
-
-The homepage and category screens use a five-icon dock centred at the bottom. Tapping Texts, Essays, Research or About opens a small translucent list immediately above the dock, without hiding the mountain landscape. The list includes small category titles and, for Texts, waterhole-dot bullets and three scholarly groups: Uṣūl al-fiqh, Tafsīr, Kalām. Icons remain text-free; their aria-labels support assistive technology. Tapping the same icon, the Home icon, or the landscape closes the list. The category URL updates so back/forward navigation works. Static HTML lists remain as an accessible no-JavaScript fallback.
-
-**Bidāya–Ḍarūrī** is under **Research**, linked to the comparative legal-method study, not under Texts. The standalone al-Ḍarūrī fī Uṣūl al-Fiqh reader remains under Uṣūl. The old texts/ibn-rushd/bidayat-al-mujtahid/ preview remains available at its original address but is no longer in the catalogue. Individual books retain their own native reading apparatus and background themes; essays/research retain the full scholarly workspace.
-
-## Texts in Time · Islamic Intellectual Atlas (revision 5, 29 October 2026)
-
-[Open the interactive intellectual atlas](research/intellectual-atlas/). The research register contains **321 scholarly/context records** and **312 qualified textual relationships**, including the dated logic and kalām commentary families around the 1387 **Tahdhīb al-manṭiq wa-l-kalām**. [Read its critical Tahdhīb dossier](research/intellectual-atlas/tahdhib/).
-
-The atlas now provides **twelve equal-level textual-family routes** (including *Ishārāt*, *Tajrīd*, *Mawāqif*, *Maqāṣid*, *Tahdhīb*, *Shifāʾ*, *Fuṣūṣ* and *Asfār*), separate from the **intellectual-tradition** filters. A textual family is a source-book and commentary network, **not an independent doctrinal school**. Users can drag, scroll, zoom, select a family or return to all works. All recorded relationships retain evidence and dating qualifications.
-
-The 84-page updated text-focused reference register and 9-page Tahdhīb supplement are linked from the atlas. Earlier 15-page and 204-page illustrated editions remain clearly labelled as historical map editions. The online JSON and downloadable offline interactive bundle include the latest textual-family routes. Publication and editorial status remain revisable.
+**Do not publish, overwrite, archive old chat, or restart translation.** Read `MISSING_MATERIALS.md` first and check newer archive evidence before starting scan comparison.
