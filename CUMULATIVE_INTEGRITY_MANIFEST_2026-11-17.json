@@ -1,0 +1,132 @@
+{
+  "schema": "mahaimi-full-cumulative-handoff-manifest-v1",
+  "created": "2026-11-17",
+  "status": "recoverable_git_snapshot_with_missing_original_archive",
+  "cumulative_handoff": "FULL_CUMULATIVE_HANDOFF_2026-11-17.md",
+  "source_repo": "gnamma-research/booksite",
+  "source_branch": "recovery/mahaimi-stage13-20261111",
+  "source_commit": "24e89e2b6f4ff7d9b73e24bad0cf556e6efa68f7",
+  "package_branch": "recovery-package/mahaimi-confirmed-20261117",
+  "prior_package_commit": "f9f1921d50e6dbf7a2e7049454241007f1825195",
+  "preserved_source_subtree": "texts/al-mahaimi/mashra-al-khusus/",
+  "preserved_confirmed_copy": "confirmed/",
+  "source_history_parent_commit": "24e89e2b6f4ff7d9b73e24bad0cf556e6efa68f7",
+  "works": [
+    {
+      "id": "mahaimi-mashra-commentary",
+      "printed_pages": [
+        11,
+        232
+      ],
+      "known_page_slots": 222,
+      "working_arabic_page_slots": 222,
+      "working_english_page_slots": 222,
+      "reader_units": 221,
+      "arabic_english_reviewed_pages": 222,
+      "documented_print_comparison_pages": 98
+    },
+    {
+      "id": "qunawi-original-appendix",
+      "printed_pages": [
+        235,
+        267
+      ],
+      "known_page_slots": 33,
+      "working_arabic_page_slots": 33,
+      "working_english_page_slots": 33,
+      "reader_units": 33,
+      "recorded_appendix_print_inspection_pages": 33
+    }
+  ],
+  "totals": {
+    "canonical_units": 254,
+    "canonical_nonempty_bilingual_pairs": 444,
+    "translated_page_slots": 255,
+    "known_page_slots": 255,
+    "manuscript_collated_witnesses": 0,
+    "manuscript_required_witness_denominator": null,
+    "original_archive_reported_members": 164,
+    "original_archive_member_manifest_authenticated": false
+  },
+  "blobs": {
+    "canonical_parallel_json": "7d1427842bfa0074253e31cfae8426f5e99fdb4b",
+    "stage13_review_index": "3256b5ec88692ef0b0921c1bfdcad63815d5d648",
+    "stage13_coverage": "89fd111e1d7290b7df8df96649afd743efc99480",
+    "confirmed_copies_manifest": "CONFIRMED_BLOBS.json"
+  },
+  "pdfs": [
+    {
+      "file": "confirmed/downloads/mahaimi-english.pdf",
+      "bytes": 1027870,
+      "sha256": "625663059ad5eb15c62496103b5e9ce3bf2db26ee13672f866dc5424a9dbdebb",
+      "independently_verified": true
+    },
+    {
+      "file": "confirmed/downloads/mahaimi-arabic.pdf",
+      "bytes": 821735,
+      "sha256": "b4c433aa65701525236268932f3692eae3a712bdcb48b8734115a99c2cb7fde3",
+      "independently_verified": true
+    },
+    {
+      "file": "texts/al-mahaimi/mashra-al-khusus/downloads/mahaimi-bilingual.pdf",
+      "git_blob_sha": "e6c78f82adc10cda1d53f2b604166c894e9ee62f",
+      "manifest_bytes": 1887477,
+      "manifest_sha256": "8f72cbfa40b88386fb6bb8cb9e73e79405df1aab1c47ce9cd7800fdcfe82c221",
+      "independently_verified": false
+    }
+  ],
+  "sources": [
+    {
+      "asset": "machra3-khosous.pdf",
+      "historical_bytes": 9738668,
+      "historical_sha256": "2e4b896446d82bbd877a8c0657e69976a25c366a2d97559194b7ed96c1749b0e",
+      "independently_verified_in_current_recovery": false
+    },
+    {
+      "asset": "2008-electronic-transcription-export",
+      "historical_bytes": 845676,
+      "historical_sha256": "46b71616f72173d524163f2efcccb1e0f3fce97baf505b4087a3b3663be85e70",
+      "independently_verified_in_current_recovery": false
+    }
+  ],
+  "conflicts": {
+    "scan_comparison": {
+      "repository_verified_pages": 98,
+      "later_unrecovered_archive_reported_pages": 148,
+      "difference": 50
+    },
+    "corrections": {
+      "repository_stage13": {
+        "english": 85,
+        "editorial_notes": 30,
+        "headings": 3
+      },
+      "later_unrecovered_reported_cumulative": {
+        "english": 102,
+        "arabic": 14,
+        "notes": 41,
+        "total": 157
+      },
+      "reconciled": false
+    }
+  },
+  "missing_original_archive_names": [
+    "MAHAIMI_STAGE13_FULL_CUMULATIVE.zip",
+    "HANDOFF_STAGE13.md",
+    "VERIFICATION_STAGE13.md",
+    "stage13-archive-verification.json",
+    "checkpoint7b0a0f47"
+  ],
+  "migration_receipt": {
+    "confirmed_original_zip_members": 0,
+    "original_member_listing_unavailable": true,
+    "percentage": null
+  },
+  "do_not": [
+    "retranslate_old_pages",
+    "repeat_potentially_completed_print_comparisons",
+    "overwrite_source",
+    "publish_unverified_variants",
+    "archive_old_chat"
+  ]
+}
