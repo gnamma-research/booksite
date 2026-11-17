@@ -1,0 +1,23 @@
+{
+  "stage": 109,
+  "inherited_stage108_file_count": 801,
+  "accounted_for": 801,
+  "byte_identical": 799,
+  "updated_readers_with_originals_saved": 2,
+  "original_reader_paths": [
+    "Volume_I/index.html",
+    "Volume_I/stage84-reader.html"
+  ],
+  "original_reader_copy_paths": [
+    "Volume_I/historical_reader_entrypoints/Stage108/index.html",
+    "Volume_I/historical_reader_entrypoints/Stage108/stage84-reader.html"
+  ],
+  "known_full_snapshot_receipt_pct": 100.0,
+  "historical_Stage108_archive_not_deleted": true,
+  "historical_stage108_original_full_zip_sha256": "eb3ba3840bdc890914d2c3aa6b297349c06a6b2ec36436965637b8bed2ba771f",
+  "full_historical_volume_II_original_asset_denominator": null,
+  "known_historical_volume_II_originals_received": 5,
+  "independent_original_manuscript_denominator": null,
+  "raw_53_clause_remote_scripts_byte_received": false,
+  "notes": "G-note and duplicate-lemma apparatus added without changing historical remote original JS; old data preserved under prior paths."
+}
