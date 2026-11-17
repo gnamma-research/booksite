@@ -1,0 +1,26 @@
+{
+  "stage": 109,
+  "stage108_original_files_accounted": 801,
+  "byte_identical_inherited": 799,
+  "reader_html_intentionally_updated": 2,
+  "Bulaq_PDF_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "source_280_png_sha256_verified": 280,
+  "volumeI_stable_ids": 1401,
+  "volumeI_active_proof_rows": 1400,
+  "volumeI_new_ids_only": [
+    "I045.upper.02",
+    "I046.lower.01",
+    "I046.lower.02"
+  ],
+  "volumeII_selected_clauses": 53,
+  "volumeII_full_independent_proven": 0,
+  "node_corporal_regression": "PASS Stage109: 1401 IDs, reader 84-109 overlay, 3 new bounded records, old text preserved",
+  "reader_visual_browser_QA": "UNVERIFIED: Node source data tests are not live deployment or interactive UI acceptance",
+  "G_note_printed_end_page": 229,
+  "G_note_first_pass_scope_complete": true,
+  "G_note_independent_proof": false,
+  "II224_duplicate_source_occurrences": 1,
+  "II224_historical_IDs": 2,
+  "original_chats_archived": false,
+  "historical_archive_gates_remain_open": true
+}
