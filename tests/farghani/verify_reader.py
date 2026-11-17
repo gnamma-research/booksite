@@ -227,6 +227,39 @@ for proof_file in full_proofs:
 check([x.get("page") for x in full_pages]==list(range(18,24)),
       "Stage XXII continuous page audit must cover 18–23, once each")
 check(len(proof_units)==76,"Stage XXII 76 full-sequence Arabic–English clause units lost")
+
+# Stage XXIII cumulative, proof-of-preservation and source fidelity (not physical witness verification).
+latest=json.loads((BOOK/"editorial/CUMULATIVE_CONTINUOUS_PROOF_18_28_023.json").read_text(encoding="utf-8"))
+check(latest.get("source_contiguous_clauses")==152 or len(latest.get("units",[]))==152,
+      "Stage XXIII cumulative clause count must be 152")
+check(latest.get("source_contiguous_pages")==11,
+      "Stage XXIII must preserve eleven consecutive digital source pages")
+check([p["page"] for p in latest.get("page_coverage",[])]==list(range(18,29)),
+      "Stage XXIII source pages must cover exactly Beirut pp18–28")
+all_units=latest["units"]
+for n in range(18,29):
+    a=assert_page[n]["reading_ar"]
+    us=[u for u in all_units if u["page"]==n]
+    check("".join(u["arabic_exact"] for u in us)==a,
+          f"B2007 p{n}: changed or dropped a clause in cumulative Stage XXIII proof")
+    check(all(a[u["offset_start"]:u["offset_end"]]==u["arabic_exact"] for u in us),
+          f"B2007 p{n}: source offset mismatch")
+    check(all(u.get("english_review") for u in us),f"B2007 p{n}: empty reviewed English")
+check(len(all_units)==152 and len({u["id"] for u in all_units})==152,
+      "Stage XXIII source proof unit identifiers missing/duplicated")
+check(all(not u.get("manuscript_checked",False) for u in all_units),
+      "Stage XXIII incorrectly claims manuscript inspection")
+stage23=json.loads((BOOK/"editorial/STAGE_MANIFEST_CONTINUOUS_023.json").read_text(encoding="utf-8"))
+check(stage23.get("cumulative_units")==152 and stage23.get("new_units")==76,
+      "Stage XXIII declared scope mismatches cumulative source")
+check("for the seventh inward degree belongs particularly to the Prophet" in
+      htmls.get("continuous-translation.html",("",None))[0],
+      "Page 28 seventh-degree pronoun remains misleading")
+check("and as the properties of endurance and permanence attached to some" in
+      htmls.get("continuous-translation.html",("",None))[0] and
+      "<p>meanings of <em>shaʾn</em>" in htmls.get("continuous-translation.html",("",None))[0],
+      "Page 23–24 joined sentence not synchronized")
+
 proof_counts={p:sum(1 for x in proof_units if x.get("page")==p) for p in range(18,24)}
 check(proof_counts=={18:9,19:14,20:8,21:15,22:14,23:16},
       f"Stage XXII unit boundaries changed: {proof_counts}")

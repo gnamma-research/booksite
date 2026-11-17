@@ -122,7 +122,7 @@ Yet insofar as his state was determined in the Presence of knowledge and in the 
 
 In fact, many things drawn forth by prayer and supplication from hidden affairs and judgments belong to these concealed matters and states. Apart from them, nothing comes about save what is written, established and allotted in the Presence of knowledge; that cannot be increased or diminished.
 
-Some of those who know God and have stood in the universal Presences call certain considerations of oneness, included at the first rank, “essential affairs” (*shuʾūn dhātiyya*). At the second and lower ranks these appear as fundamental realities and certain stable attendant qualities, such as life and knowledge, or as stable things such as individual substances and essences, and as the properties of endurance and permanence attached to some of the meanings of “affair”.
+Some of those who know God and have stood in the universal Presences call certain considerations of oneness, included at the first rank, “essential affairs” (*shuʾūn dhātiyya*). At the second and lower ranks these appear as fundamental realities and certain stable attendant qualities, such as life and knowledge, or as stable things such as individual substances and essences, and as the properties of endurance and permanence attached to some
 
 *Textual boundary:* the discussion of essential affairs and states continues on p. 24.
 
@@ -151,7 +151,7 @@ Some of those who know God and have stood in the universal Presences call certai
 ### B2007 p. 24 — The first comprehensive determination
 [Read Arabic p. 24](https://ablibrary.net/book_content/b/9606/24?lang=ar)
 
-[Continuation from p. 23:] These are among the meanings of *shaʾn* (“affair,” “concern”). Some call certain of them “essential states” (*aḥwāl dhātiyya*). They appear as they pass from one form into another, whether intelligible or sensory: contraction and expansion, contentment and anger, and all accidents that do not endure; and likewise thoughts, images, and imaginal and sensory configurations in this world, the intermediate state, and the next. Recall here the transmitted report concerning the Real—exalted and holy—appearing, in the hereafter, in a form in which a people do not recognize Him, and then in a form in which they do recognize Him. God is the Guide.
+[Continuation from p. 23:] meanings of *shaʾn* (“affair,” “concern”). Some call certain of them “essential states” (*aḥwāl dhātiyya*). They appear as they pass from one form into another, whether intelligible or sensory: contraction and expansion, contentment and anger, and all accidents that do not endure; and likewise thoughts, images, and imaginal and sensory configurations in this world, the intermediate state, and the next. Recall here the transmitted report concerning the Real—exalted and holy—appearing, in the hereafter, in a form in which a people do not recognize Him, and then in a form in which they do recognize Him. God is the Guide.
 
 **Chapter.** Know that the first consideration and determination to become determined from the Unseen is this unity from which *aḥadiyya* and *wāḥidiyya* arise. It thus remains an intermediary (*barzakh*) comprehending both. It is like the reality of love, from which being a lover and being beloved arise, while love comprehends both, removes what stands between them, and unifies them.
 
@@ -230,7 +230,7 @@ People are at different degrees concerning the opening of the gates of these inw
 ### B2007 p. 28 — The roots of the divine attributes and the seventh gate
 [Read Arabic p. 28](https://ablibrary.net/book_content/b/9606/28?lang=ar)
 
-Others have the third gate opened: these are the elect among the believers. Others have the fourth: these are at the beginning of the station of sainthood (*walāya*) and spiritual excellence (*iḥsān*). Those to whom the fifth is opened are among the intermediates. Those to whom the sixth is opened are among the people of the final stations, the perfected and the singular ones. Not even a small aperture of the seventh gate is opened to anyone except the possessor of the Muhammadan inheritance, for the seventh inward degree is particularly his—may God bless him and grant him peace.
+Others have the third gate opened: these are the elect among the believers. Others have the fourth: these are at the beginning of the station of sainthood (*walāya*) and spiritual excellence (*iḥsān*). Those to whom the fifth is opened are among the intermediates. Those to whom the sixth is opened are among the people of the final stations, the perfected and the singular ones. Not even a small aperture of the seventh gate is opened to anyone except the possessor of the Muhammadan inheritance, for the seventh inward degree belongs particularly to the Prophet—may God bless him and grant him peace.
 
 Now the first self-disclosure, insofar as it includes the inward speech and informing described earlier, contains a perfection attributed to it and to its considerations, together with a comprehensive and undifferentiated awareness of that perfection. This is the origin and inward reality of life and of the Living.
 

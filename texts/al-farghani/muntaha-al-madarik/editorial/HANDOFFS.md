@@ -1,3 +1,11 @@
+# Latest preserved state · Stage XXIII, 17 November 2026
+
+Full cumulative Stage XXIII: [Recovery index](FULL_CUMULATIVE_CHECKPOINT_023.md) · [Precise handoff](STAGE_HANDOFF_CONTINUOUS_023.md) · [Cumulative English](FULL_CUMULATIVE_ENGLISH_PROOF_023.md) · [full Arabic digitized source](FULL_CUMULATIVE_ARABIC_SOURCE_023.md) · [complete canonical selected evidence + historic print](FULL_CUMULATIVE_SELECTED_AND_PRINT_023.md) · [152-unit proof JSON](CUMULATIVE_CONTINUOUS_PROOF_18_28_023.json).
+
+**Current frontier:** 11 contiguous B2007 digital source pages, pp18–28; 152 reviewed Arabic–English units, 76 added this stage. Next B2007 p29 at «وتعيّن وباطن كل حقيقة إلهيّة وكونيّة». Earlier Stage XXII files retained, not repeated. See complete scope and unresolved obligations in the precise handoff. No manuscript collation or main poem commentary.
+
+---
+
 ## Latest Stage XVIII — full introduction reader, source-integrity and visual QA (11 November 2026)
 
 The full 128-page working English introductory draft is now the primary reading view, searchable across all pages; it has mobile-first text navigation, exact source links, saved places, progress, focus, typography, themes, and print styling. Optional scholarly apparatus contains 128 source links and 70 notes, separate from continuous reading. The 559-record selected critical reader is paginated and source-grade-filterable. Formatting errors on pages 21,31,34,83,113 were repaired, and p34 canonical working Markdown was aligned to the earlier verified historical PRINT reading (digital alternative retained). No new Arabic source or manuscript folio was inspected.

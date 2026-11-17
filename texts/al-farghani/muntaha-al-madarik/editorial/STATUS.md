@@ -1,3 +1,15 @@
+## Stage XXIII — reconciled Stage XXII; complete digital-source proof through p28 (17 November 2026)
+
+Stage XXII commit `0b6271e0440e603316f481360621913825b36f25` and all 76 saved pp18–23 clauses were recovered and verified; **not repeated**. This stage added **76 full-contiguous Arabic–English clauses** on Beirut modern digitized pp24–28. Machine reconstruction verifies all 152 clauses across **B2007 pp18–28 (eleven source page positions)**, with no gaps or source alterations. The full 128-page English and Arabic introductions remain intact; brief corrections in the clean and bilingual English reader join the p23–24 authorial syntax and clarify the seventh-degree referent on p28.
+
+Source claims remain limited to the **modern digitized Arabic**: **0 full independent original printed pages collated and 0 manuscript variants inspected**. The selected excerpt corpus remains 560 (284 modern digitized; 276 derivative) and the separate historical photographed I1876 printed comparison remains 15 bounded loci. Outstanding B2007 physical p52, p87, p138, verse lineation, hadith provenance and manuscript witnesses stay open.
+
+[Full cumulative recovery](FULL_CUMULATIVE_CHECKPOINT_023.md) · [complete 152-unit machine register](CUMULATIVE_CONTINUOUS_PROOF_18_28_023.json) · [new pp24–26](CONTINUOUS_PROOF_P24_26_023.md) · [new pp27–28](CONTINUOUS_PROOF_P27_28_023.md) · [exact continuation p29](STAGE_HANDOFF_CONTINUOUS_023.md).
+
+**NEXT EXACT:** B2007 **p29**, «وتعيّن وباطن كل حقيقة إلهيّة وكونيّة» following the end of p28 «أصلا لكل اعتبار». Historical printed I1876-L06 p29 «المذكور» versus digitized «المذكورة» must be handled as a print difference, not a manuscript variant.
+
+---
+
 ## Stage XXII — contiguous Arabic–English proof through Beirut p23 (17 November 2026)
 
 **First full sequential digital-source page pass now established** for B2007 digitized authorial Arabic **pp18–23 inclusive**, comprising **76 complete, consecutive, individually translated/reviewed bilingual clause units** (9/14/8/15/14/16). Their exact Arabic strings concatenate back to each archived digital `reading_ar` page with no omissions, insertions or changes. This is a complete **digitized-source** clause pass across six page positions, **not six independently collated printed leaves** and not a manuscript-critical Arabic edition. 128/128 working English and modern edited-digital Arabic page positions remain intact overall.

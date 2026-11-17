@@ -1,0 +1,55 @@
+{
+  "stage": "XXIII",
+  "date": "2026-11-17",
+  "recovered_stage": "XXII",
+  "commit": "0b6271e0440e603316f481360621913825b36f25",
+  "full_introduction": "B2007 pp18–145 working English and digitized Arabic retained",
+  "newly_proofed_pages": [
+    24,
+    28
+  ],
+  "new_units": 76,
+  "cumulative_pages": [
+    18,
+    28
+  ],
+  "cumulative_units": 152,
+  "selected_source_check_count": 560,
+  "selected_modern_digitized": 284,
+  "selected_derivative": 276,
+  "historical_1876_print_loci": 15,
+  "full_independent_print_pages_collated": 0,
+  "medieval_manuscript_readings_verified": 0,
+  "next_page": 29,
+  "next_opening_arabic": "وتعيّن وباطن كل حقيقة إلهيّة وكونيّة",
+  "prior_page_ending": "أصلا لكل اعتبار",
+  "next_print_control": "I1876-L06 Beirut p29 «والتعيّن الأول المذكورة» vs photographed I1876 «المذكور»",
+  "pending": [
+    "B2007 physical printed p52",
+    "B2007 p87 أوجبت محضة",
+    "B2007 p138 مشمّة الروح",
+    "I1876 original print extended collation",
+    "codices Carullah 1107, Ragıp Paşa 670, Kadızademehmed 273 and other codices",
+    "hadith provenance and Ibn al-Farid poem verse lineation"
+  ],
+  "full_cumulative_artifacts": [
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_ENGLISH_PROOF_023.md",
+      "git_blob_sha": "7c69b338e3f4c5339b45c7a2344da662b35e31a8"
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_ARABIC_SOURCE_023.md",
+      "git_blob_sha": "7c293036fb975ebfd09cf030e671de61ac6db07e"
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_SELECTED_AND_PRINT_023.md",
+      "git_blob_sha": "12849cc4c60b9f5bee0057ce64b3a0a9abcca2a8"
+    },
+    {
+      "path": "texts/al-farghani/muntaha-al-madarik/editorial/CUMULATIVE_CONTINUOUS_PROOF_18_28_023.json",
+      "git_blob_sha": "2b16782860f047d083afeb54171d079973ff53bc"
+    }
+  ],
+  "prior_archive": "FULL_CUMULATIVE_READER_018.md",
+  "preserve_original_reader": "Both English and page-aligned bilingual readers retain 128 pages; source Arabic master and modern editor footnotes unchanged."
+}
