@@ -9,6 +9,7 @@ const original = JSON.parse(read('editorial/archive-20261112-preintegrated-chapt
 const archived = JSON.parse(read('editorial/archived-1.7.0-pre-restoration-chapters.json'));
 const reader = read('read.html');
 const clarity = JSON.parse(read('editorial/READING_CLARITY_EDITS.json')).changes;
+const proposal = Object.assign({}, ...['I_III','IV_VII'].map(b => JSON.parse(read('editorial/RECOMPOSED_MATN_BOOKS_' + b + '.json')).matn));
 const landing = read('index.html');
 const manuscript = read('editorial/current-edition-1.9.1-integrated.md');
 const critical = JSON.parse(read('data/dossiers.json'));
@@ -30,7 +31,7 @@ function tokens(value, isHTML) {
   return (value.match(/[\p{L}\p{M}\p{N}]+/gu) || []).map(w => w.toLowerCase());
 }
 
-assert.equal(data.edition, '1.9.1-principial-history-integrated');
+assert.equal(data.edition, '1.9.2-principial-narrative-integrated');
 assert.equal(baseline.edition, '1.8.0-metaphysical-restoration');
 assert.equal(original.edition, '1.4.1');
 assert.equal(archived.edition, '1.7.0-generative-muhammadan-framework');
@@ -41,6 +42,7 @@ assert.equal((reader.match(/<article class="chapter"/g) || []).length, 46);
 assert.equal((reader.match(/class="matn"/g) || []).length, 46);
 assert.equal((reader.match(/class="sharh"/g) || []).length, 46);
 assert.equal((reader.match(/id="s\d\d-v\d\d"/g) || []).length, 51);
+assert.equal((reader.match(/id="s\d\d-r\d\d"/g) || []).length, 89);
 assert.ok(reader.includes('data-mode="matn"') && reader.includes('data-mode="both"'));
 assert.ok(reader.includes('data-bookmark=') && reader.includes('assets/site.js'));
 assert.ok(reader.includes('assets/reader-context.js'));
@@ -62,6 +64,14 @@ for (let i = 0; i < 46; i++) {
       expected[layer] = expected[layer].replace(from, to);
     }
   }
+  if (i + 1 >= 3) {
+    const candidate = proposal[i + 1].split('\n\n');
+    assert.equal(candidate.length, 4, 'Narrative passage count ' + id);
+    const additions = i + 1 === 44 ? candidate.slice(1)
+      : i + 1 === 16 ? [candidate[1], candidate[3]] : candidate.slice(2);
+    expected.matn += '\n\n' + additions.join('\n\n');
+    assert.ok(reader.includes('id="s' + id.slice(-2) + '-r01"'), 'New historical paragraph ' + id);
+  }
   assert.equal(ch.matn, expected.matn, 'Narrative/source fidelity ' + id);
   assert.equal(ch.sharh, expected.sharh, 'Integrated commentary ' + id);
   const start = reader.indexOf('<article class="chapter" id="' + id + '"');
@@ -82,4 +92,4 @@ assert.ok(data.chapters[43].sharh.includes('Privy Council'));
 assert.ok(data.chapters[32].sharh.includes('takhalluq') || data.chapters[31].sharh.includes('Takhalluq'));
 for (const figure of ['timeline','arabia','community','authority','law','spiritual','monsoon'])
   assert.ok(atlas.includes('id="figure-' + figure + '"'));
-console.log('PASS Sīrah: 46 source/reader/manuscript pairs, 51 explanatory paragraphs, distraction-free reader and archived scholarly sources.');
+console.log('PASS Sīrah: 46 source/reader/manuscript pairs, 89 narrative and 51 explanatory paragraphs, context-index fidelity and distraction-free reading.');
