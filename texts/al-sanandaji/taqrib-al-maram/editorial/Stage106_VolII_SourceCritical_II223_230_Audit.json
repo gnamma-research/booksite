@@ -1,0 +1,105 @@
+{
+  "stage": 106,
+  "scope": "Later selected clause modules at II223–230, distinct from preserved Stage38–Stage51 100-page English baseline",
+  "printed_source": "Būlāq 1318 AH combined PDF, II p +295 physical page",
+  "source_pdf_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "source_module_git_blob_sha1": {
+    "continuous-II223-II224-miracle-source-clauses.js": "6eda2da0c0e982b2321c0cb2f8f387bf3e5bbbb9",
+    "continuous-II224-II228-miracle-proof-clauses.js": "1166ac010fb578669c7df88ee6d8f67691a99f78",
+    "continuous-II229-II230-quran-and-sarfa-clauses.js": "ba06affdcd89169ce82ecd363e83fe84b056d0e8"
+  },
+  "distinct_known_ids_in_three_modules": 53,
+  "selected_source_clauses_individually_compared": 8,
+  "completed_clauses_certified": 0,
+  "sample_check_does_not_certify_other_45": true,
+  "checks": [
+    {
+      "id": "B6.MATN.II223.01",
+      "page": 223,
+      "physical_page": 518,
+      "printed_layer": "matn lemma",
+      "source_phrase_or_corrected_candidate": "يعرف المبعوث بنصب الأدلة",
+      "observations": "Printed in upper register inside parentheses; directly adjacent sharh begins after the lemma.",
+      "status": "supports first-pass print alignment; full sentence and authorial proof open"
+    },
+    {
+      "id": "B6.SHARH.II223.02",
+      "page": 223,
+      "physical_page": 518,
+      "printed_layer": "Sanandajī sharh",
+      "source_phrase_or_corrected_candidate": "له الدالة على أن القائل له أرسلتك هو الله تعالى دون الجن",
+      "observations": "Printed immediately after preceding matn lemma; source module English expands the evidentiary argument.",
+      "status": "selected Arabic prefix inspected; remaining words not independently proofed"
+    },
+    {
+      "id": "B6.M.II229.2101",
+      "page": 229,
+      "physical_page": 524,
+      "printed_layer": "matn lemma",
+      "source_phrase_or_corrected_candidate": "لا لعدم تأتي المعارضة مع سهولتها",
+      "observations": "Upper register parenthetical contrast in defining inimitability; exact surrounding semantics remain conditional.",
+      "status": "matched selected phrase; no exhaustive collation"
+    },
+    {
+      "id": "B6.M.II229.2102",
+      "page": 229,
+      "physical_page": 524,
+      "printed_layer": "matn lemma",
+      "source_phrase_or_corrected_candidate": "بالصرفة",
+      "observations": "Parenthesized named hypothesis, not the marginal author’s independent view.",
+      "status": "matched distinct source label"
+    },
+    {
+      "id": "B6.S.II229.2103",
+      "page": 229,
+      "physical_page": 524,
+      "printed_layer": "Sanandajī sharh",
+      "source_phrase_or_corrected_candidate": "كما ذهب إليه النظام وكثير من المعتزلة والشيعة",
+      "observations": "Upper register report of the ṣarfa position, not an editorial endorsement.",
+      "status": "matched selected source phrase"
+    },
+    {
+      "id": "B6.S.II229.2104",
+      "page": 229,
+      "physical_page": 524,
+      "printed_layer": "Sanandajī sharh",
+      "source_phrase_or_corrected_candidate": "يعني أن الله تعالى صرف همم المتحدين وسلب علومهم",
+      "observations": "Upper register exposition of withdrawing intention/knowledge; later causal objections are distinct.",
+      "status": "matched opening phrase, following clauses remain open"
+    },
+    {
+      "id": "G.II.229.21.01",
+      "page": 229,
+      "physical_page": 524,
+      "printed_layer": "lower marginal gloss, writer unassigned",
+      "source_phrase_or_corrected_candidate": "ومركباتها القصيرة",
+      "observations": "The script records «وركباتها القصيرة» without the mīm seen in «ومركباتها» in the p229 lower image. Retain source-script original and log proposed correction; attribution remains UNASSIGNED.",
+      "status": "PRINT/REMOTE DISCREPANCY: probable missing initial م in remote transcription; independently proof before silent emendation"
+    },
+    {
+      "id": "B6.M.II230.2109",
+      "page": 230,
+      "physical_page": 525,
+      "printed_layer": "Qurʾānic lemma in upper register",
+      "source_phrase_or_corrected_candidate": "وعدكم الله مغانم كثيرة تأخذونها",
+      "observations": "Upper printed quotation visually present; script properly treats as lemma rather than free commentary.",
+      "status": "source presence checked; citation, vowelling and exact Qurʾān-source indexing still open"
+    }
+  ],
+  "print_vs_script_discrepancy": [
+    "G.II.229.21.01 remote has وركباتها vs printed ومركباتها; maintain both until second proof"
+  ],
+  "baseline_completed_earlier": {
+    "main_page_drafts_exact_after_whitespace_normalisation": 100,
+    "fixed_interval_main_page_total": 100,
+    "lower_page_sections_exact": 163
+  },
+  "authorial_policy": "Taftāzānī lemmata remain distinct from Sanandajī sharh; no marginal writer assigned from proximity",
+  "unreceived_original_remote_js_bytes": true,
+  "next_volume_II_source_critical_obligations": [
+    "verify 45 unverified selected IDs among three modules",
+    "proof p229 proposed م reading against source on second pass",
+    "verify distinct authorial stream and boundaries for all II224–230 clauses",
+    "inspect further II117 marginal authorship and individual Wasīm notes before any named attribution"
+  ]
+}
