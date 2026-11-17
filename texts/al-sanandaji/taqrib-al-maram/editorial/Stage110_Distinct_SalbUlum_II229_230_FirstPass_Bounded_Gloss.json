@@ -1,0 +1,51 @@
+{
+  "stage": 110,
+  "working_id": "G.II.229-230.following.salb-ulum.01",
+  "historical_remote_source_record_id": null,
+  "independent_identifier_status": "new editorial locator, NOT part of fixed 53 remote clause IDs",
+  "source": "single original Bulaq 1318 AH printed facsimile, II229 physical PDF524 -> II230 physical PDF525",
+  "preceding_note_id": "G.II.229.21.01",
+  "preceding_note_ends": "والخبر المتواتر",
+  "heading": "(قوله وسلب علومهم التي إلخ)",
+  "end_before_next_note_heading": "(قوله إلى غير ذلك)",
+  "printed_pages": [
+    229,
+    230
+  ],
+  "page_images": [
+    "Stage109_Source_Page_Images/physical_PDF_524_single_Bulaq_print.png",
+    "Stage109_Source_Page_Images/physical_PDF_525_single_Bulaq_print.png"
+  ],
+  "author_attribution": "UNASSIGNED — do not infer Wasīm",
+  "status": "substantial bounded first-pass selected clause translation, NOT whole note proofed or diplomatic complete",
+  "passages": [
+    {
+      "section": "II229 opening of the following distinct marginal gloss",
+      "printed_page": 229,
+      "pdf_page": 524,
+      "arabic": "(قوله وسلب علومهم التي إلخ) يعني أن لا يجعلها حاصلة لهم، وإن كانت حاصلة أزالها عنهم. وبالجملة فالتحقيق أن إعجاز القرآن إنما هو لكونه في الطبقة العليا من الفصاحة والبلاغة … بحيث بلغ ما هو خارج عن طوق البشر. يعني أن التكلم بمثله وترتيبه ابتداء واختراعا لم يقع متعلقًا لقدرة البشر ولا يقع أبدا …",
+      "english": "On his words “and he deprived them of the knowledge which …”: This means that God did not cause the relevant knowledge to be present in them; if it had already been present, He removed it. In sum, the more exact account is that the Qurʾān is inimitable because it belongs to the highest rank of eloquence and rhetorical excellence … reaching a level beyond human capacity. To produce and arrange something like it as an original composition has never fallen within human power, and never will …",
+      "open": "Intervening phrase after البلاغة and last boundary before II230 require independent diplomatic proof; this is selected, NOT a complete p229 gloss."
+    },
+    {
+      "section": "II230 first continuation distinguishing two ways ordinary course may be exceeded",
+      "printed_page": 230,
+      "pdf_page": 525,
+      "arabic": "… قد يكون من جهة أنه لا يكون متعلقًا لقدرتنا بحسب العادة كخلق الأجسام وإحياء الأموات، وقد يكون من جهة بلوغه الطبقة التي خرجت من طوقنا، وإن كان نوعه مما تتعلق به قدرتنا. …",
+      "english": "… An extraordinary occurrence may arise because an act does not ordinarily fall within our power, as in creating bodies or bringing the dead to life; or it may arise because an occurrence reaches a level beyond our capacity, even where the general kind of activity is something we are capable of. …",
+      "open": "Beginning of II230 lower commentary is intentionally omitted before this clause; syntax/physical boundary remains to be diplomatically checked."
+    },
+    {
+      "section": "II230 application of the two classes to miracle and speech",
+      "printed_page": 230,
+      "pdf_page": 525,
+      "arabic": "فوقوع كل من الأمرين إذا كان مقرونا بدعوى النبوة، سواء كان ظهوره من نفس الشخص أو من الله في حقه، كان معجزة إذا لم يعارض. والقسم الثاني كالقرآن البليغ … وبه يستقيم بيان الإعجاز في الكلام. (قوله إلى غير ذلك) …",
+      "english": "If either kind occurs in connection with a claim to prophethood—whether manifested through the claimant or by God on his behalf—it constitutes a miracle when it is not successfully countered. The second kind includes the eloquent Qurʾān … In this way the explanation of inimitability in discourse is coherent. The following heading “On his words ‘and other than that’…” begins a DISTINCT marginal gloss.",
+      "open": "Check exact wording of the claim and negation and the final division. The separate heading is given for boundary evidence, NOT counted as part of this gloss."
+    }
+  ],
+  "has_untranslated_intervening_phrases": true,
+  "independent_full_second_proof": false,
+  "earlier_stage38_stage51_100page_english_baseline": "unchanged and not repeated",
+  "source_related_to_sarfa": true
+}
