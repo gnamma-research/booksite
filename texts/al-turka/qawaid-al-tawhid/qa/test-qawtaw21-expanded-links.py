@@ -72,6 +72,7 @@ with sync_playwright() as playwright:
       markers:[...(c?.querySelectorAll('.gn-source-inline')||[])].map(b=>b.dataset.openSource),
       sourceStat:window.GnammaQawaidCitations?.active(),focus:document.body.dataset.focus};
   }"""),flush=True)
+  page.wait_for_selector('#SH-029 .gn-source-inline[data-open-source="q-42-11"]',timeout=12000)
   check("new Qurʾān 42:11 reference exact",page.locator('#SH-029 .gn-source-inline[data-open-source="q-42-11"]').count()==1)
   page.goto("https://gnamma.test"+PREFIX+"#QT-051",wait_until="networkidle")
   diagnostic=page.evaluate("""() => {
@@ -83,6 +84,7 @@ with sync_playwright() as playwright:
     hidden:c?.hidden,markers:c?.querySelectorAll('.gn-source-inline').length,citationState:window.GnammaQawaidCitations?.active()};
   }""")
   print("HADITH_CITATION_DIAGNOSTIC",diagnostic,flush=True)
+  page.wait_for_selector('#SH-051 .gn-source-inline[data-open-source="hadith-time-3197"]',timeout=12000)
   check("new time-related hadith quote matched",page.locator('#SH-051 .gn-source-inline[data-open-source="hadith-time-3197"]').count()==1)
   page.locator('#SH-051 .gn-source-inline[data-open-source="hadith-time-3197"]').click()
   check("hadith textual variant is disclosed", "variants" in page.locator('#gn-study-content').inner_text().lower() or "variant" in page.locator('#gn-study-content').inner_text().lower())
