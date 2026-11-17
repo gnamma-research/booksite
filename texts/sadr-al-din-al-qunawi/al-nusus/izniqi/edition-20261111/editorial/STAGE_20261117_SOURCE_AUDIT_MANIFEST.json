@@ -1,0 +1,54 @@
+{
+  "stage": "IZNIQI-CRITICAL-20261117",
+  "kind": "source-review-only",
+  "branch": "research/izniqi-critical-review-20261117",
+  "canonical_edition": "IZNIQI-READING-20261111",
+  "canonical_repository_path": "texts/sadr-al-din-al-qunawi/al-nusus/izniqi/edition-20261111/",
+  "source_edition": "Balaban-Çalışkan 2023, Ihya 9/2, pp.831-852",
+  "inherited_verified_counts": {
+    "printed_pages": 22,
+    "arabic_words": 7968,
+    "english_words": 12379,
+    "editorial_notes": 78,
+    "independent_manuscript_folios": 0
+  },
+  "new_content": {
+    "canonical_arabic_characters": 0,
+    "canonical_english_words": 0,
+    "recovered_manuscript_readings": 0,
+    "printed_edition_cruxes_retained": 2,
+    "quotation_evidence_rows": 6
+  },
+  "source_image": "https://dergipark.org.tr/en/download/article-file/3074106#page=35",
+  "cruxes": [
+    {
+      "id": "IZN-848-A",
+      "lemma": "يعني ينقلب الوصف ولا يزول",
+      "status": "printed-witness-confirmed; syntactic reading unresolved",
+      "conjecture_not_attested": "لا ينقلب الوصف"
+    },
+    {
+      "id": "IZN-848-B",
+      "lemma": "ويلزم منه أن لا يكون لغير الله وجود إمكاني ولا فعل كسبي",
+      "status": "printed-witness-confirmed; logical conjunction unresolved",
+      "conjecture_not_attested": "ولا يلزم منه"
+    }
+  ],
+  "current_files_sha256": {
+    "full_library_markdown": "acbd6d4579403a77a1a38856d6a86392efebf3b202e20d32e0ec55d62b8414d0",
+    "offline_reader": "30a1ca23285d6f8197052d3c07d773b9bf92f2fdfdcdfe530f81eb3e602a59f6",
+    "english_pdf": "9e49c084210582a8096f6f46bbd6094cc84930f1341996314ee1d76201e20621"
+  },
+  "source_evidence_report": "editorial/REVIEW_P848_AND_REPORTS_20261117.md",
+  "historical_edition": "../editorial/IZNIQI_EN_CUMULATIVE_DRAFT_20261109.md",
+  "historical_policy": "Do not overwrite variants or infer manuscript proof from the printed edition.",
+  "next_frontier": "printed p.848: وأن انقلاب الحقائق ممتنع through وكان في عينه وشهوده كل الأشياء هالكًا. Acquire manuscript folios and compare both printed cruxes; next direct-source checks for Sufi reports and isnads.",
+  "scope_exclusions": [
+    "Mahaimi",
+    "Farghani",
+    "Misbah",
+    "Qawtaw",
+    "shared cross-book datasets"
+  ],
+  "local_full_package": "IZNIQI_Critical_Review_Cumulative_20261117.zip (attached in the originating regular-chat conversation; not uploaded to repository)"
+}
