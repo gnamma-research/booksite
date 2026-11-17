@@ -1,0 +1,25 @@
+{
+  "stage": 109,
+  "records": 1401,
+  "active_records": 1400,
+  "new_bounded_record_ids": [
+    "I045.upper.02",
+    "I046.lower.01",
+    "I046.lower.02"
+  ],
+  "active_some_typed_arabic": 1303,
+  "genuine_arabic_empty": 97,
+  "arabic_empty_by_layer": {
+    "lower": 86,
+    "upper": 11
+  },
+  "strict_complete_all_register_printed_positions": 0,
+  "independent_second_proofed_printed_positions": 0,
+  "printed_project_total": 615,
+  "active_independent_proof_obligations": 1400,
+  "next_first_arabic_blank_record": "I046.upper.02",
+  "next_pdf_physical_page": 59,
+  "original_source_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "source_images_verified": 280,
+  "note": "Typed Arabic is source presence, not complete literal translation"
+}
