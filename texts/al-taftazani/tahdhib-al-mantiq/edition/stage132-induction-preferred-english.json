@@ -1,0 +1,115 @@
+{
+  "schema": "gnamma.tahdhib.stage132.preferred-h-english.v1",
+  "date": "2026-11-17",
+  "layer": "H historical ḥawāshī; Arabic source not republished",
+  "section": "H-INDUCTION",
+  "records": [
+    {
+      "id": "HWN-INDUCTION-007",
+      "speaker": "Muḥammad ʿAlī",
+      "pages": [
+        373
+      ],
+      "english": "The reference is to what the commentator will explain when examining the definition of analogy: *induction* may be used in two senses. Sometimes it denotes the action expressed by its verbal noun—surveying or going through individual cases—and sometimes it denotes the technical kind of argument. Here the author intends the first sense, since he defines induction as “surveying.” He leaves its technical meaning unexpressed, expecting it to be understood by analogy with the procedural definition. This is just like his statement in the chapter on conversion, “It is exchanging the two terms of a proposition”: that expression identifies the operation, while the logical argument or result must be distinguished from it.",
+      "review": "restores two senses of induction and the comparison with the earlier definition of conversion",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/373?lang=ar"
+      ],
+      "grade": "revised against Stage131 recovered digital Arabic, not independent print/manuscript certification"
+    },
+    {
+      "id": "HWN-INDUCTION-012",
+      "speaker": "Muḥammad ʿAlī",
+      "pages": [
+        374
+      ],
+      "english": "But this is not so in the strict sense. It is plain that a judgement concerning a particular is not, merely as such, the judgement concerning the universal which the definition seeks to establish. Even if the objection were granted in its terms, the restriction “insofar as it is universal” would exclude the unintended case, in the customary manner of placing an aspectual qualification in a definition. The definition would mean: surveying individual cases in order to establish the judgement of their universal **precisely as universal**.",
+      "review": "makes the aspect-condition (ḥaythiyya) explicit",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/374?lang=ar"
+      ],
+      "grade": "revised against Stage131 recovered digital Arabic, not independent print/manuscript certification"
+    },
+    {
+      "id": "HWN-INDUCTION-014",
+      "speaker": "Shaykh ʿAbd al-Raḥīm",
+      "pages": [
+        374
+      ],
+      "english": "*Al-asr*, with the vowel *fatḥa*, originally means the strap by which a prisoner is tied. Hence the expression “It is yours *bi-asrihi*,” meaning “together with its binding strap.” This expression became widespread until it was said of anything whatever, “It is yours *bi-asrihi*,” meaning “in its entirety.” *Al-qidd*, with the vowel *kasra*, is a leather thong cut lengthwise from a piece of untanned hide, that is, a strip used for binding.",
+      "review": "retains both source vocalisation notes and the semantic development of the idiom",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/374?lang=ar"
+      ],
+      "grade": "revised against Stage131 recovered digital Arabic, not independent print/manuscript certification"
+    },
+    {
+      "id": "HWN-INDUCTION-018",
+      "speaker": "Mīrzā Muḥammad ʿAlī",
+      "pages": [
+        374
+      ],
+      "english": "The *Miṣbāḥ* says: “The crocodile is one of the creatures of the sea. Its form resembles that of the monitor lizard, but it is about five cubits long, or less. It snatches a human being or a cow, plunges beneath the water with its prey, and eats it.” End of quotation. The *waral* (monitor lizard) is a creature shaped like the common large lizard (*ḍabb*), but bigger.\n\nAnother account says that the crocodile is an animal in the form of a lizard and among the strangest aquatic creatures. It has a wide mouth, sixty fangs in the upper jaw and forty in the lower. Between every two fangs is a small square tooth, and the teeth interlock when the jaws are closed. It has a long tongue, a back resembling that of a tortoise, on which iron is said to have no effect, four legs and a long tail. The report concludes that this animal occurs only in Egypt.",
+      "review": "restores the distinct Miṣbāḥ quotation and the separate elaborate description",
+      "criticalNote": "These are historical natural-history claims reported by the glossator, not claims independently verified by the modern edition.",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/374?lang=ar"
+      ],
+      "grade": "revised against Stage131 recovered digital Arabic, not independent print/manuscript certification"
+    },
+    {
+      "id": "HWN-INDUCTION-026",
+      "speaker": "Mīrzā Muḥammad ʿAlī",
+      "pages": [
+        375
+      ],
+      "english": "The definitions commonly given by the majority are these. **Induction** is the establishing of a judgement concerning a universal because that judgement is found in most of its particulars. **Analogy** is establishing a judgement in one particular because the same judgement is found in another particular on account of a meaning common to both.\n\nThe author departed from these formulations because of the looseness they involve. The two acts of “establishing” just described are not themselves induction and analogy, since induction and analogy are kinds of **argument**, whereas the act of establishing something is certainly not itself an argument. But the author's own definitions, too, contain the looseness already explained, since they name the procedural operation rather than the technical argument. This is a return to the very thing from which he fled: he attempted to avoid imprecision and yet fell into it, as you can see.",
+      "review": "reinstates both traditional definitions and the objection that a proving act is not an argument",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/375?lang=ar"
+      ],
+      "grade": "revised against Stage131 recovered digital Arabic, not independent print/manuscript certification"
+    },
+    {
+      "id": "HWN-INDUCTION-027",
+      "speaker": "Mīrzā Muḥammad ʿAlī",
+      "pages": [
+        375
+      ],
+      "english": "Among the methods is **suitability** (*munāsaba*), also called *ikhāla*: one identifies a causal ground in the original case simply by bringing out the suitability between that feature and the judgement, without taking any further evidence into account.\n\nAnother method is what the Ḥanafīs call “inference” and al-Ghazālī calls **refining the effective ground** (*tanqīḥ al-manāṭ*). One argues that the cause of the judgement is either a feature common to the original case and the new case, or a feature by which the original differs from the new. The latter possibility is rejected by **eliminating the difference**: each proposed distinguishing feature is considered in turn and shown unsuitable to explain the judgement. The cause must therefore be the feature they share. Since that feature is present in the new case, the judgement must be established there as well. It should be noticed that, on the author's analysis, this returns to the method of **concomitance in presence and absence** (*dawarān*) discussed below. Reflect.",
+      "review": "retains the two named methods, Ḥanafī/Ghazālī terminology and exclusion of competing causes",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/375?lang=ar"
+      ],
+      "grade": "revised against Stage131 recovered digital Arabic, not independent print/manuscript certification"
+    },
+    {
+      "id": "HWN-INDUCTION-030",
+      "speaker": "Muḥammad ʿAlī",
+      "pages": [
+        375,
+        376
+      ],
+      "english": "An objection has been made to this: concomitance in presence and absence often occurs even though the feature which accompanies the judgement is not the cause of that judgement. Examples include the correlation between a definition and what it defines; two coextensive effects of a single cause; substance and accident; and the relationship of the final constituent of a complete cause, the complete cause, and an effect which is coextensive with it.\n\nThe objection comes to this. Does concomitance indicate that one correlated feature causes the other **just by being concomitance**, considered in itself, or does the causal conclusion depend on the particular subject matter? The first alternative does not hold, for otherwise a failure of the alleged connection could not occur. The second does not establish the conclusion sought from concomitance alone. The bare pattern of co-occurrence and co-absence therefore does not by itself prove the direction of causation.",
+      "review": "restores the enumeration of noncausal concomitances and the two-horn analysis",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/375?lang=ar",
+        "https://ablibrary.net/book_content/b/12170/376?lang=ar"
+      ],
+      "grade": "revised against Stage131 recovered digital Arabic, not independent print/manuscript certification"
+    },
+    {
+      "id": "HWN-INDUCTION-036",
+      "speaker": "Shaykh ʿAbd al-Raḥīm",
+      "pages": [
+        376
+      ],
+      "english": "It is clear that the claim that the cause must be one of the descriptions just enumerated may be denied. The alternatives do not exhaust the possibilities in the way a strict division between affirmation and negation does. Consequently, by disproving the causal adequacy of some listed descriptions one has **not** thereby established the remaining description as the cause.",
+      "review": "clarifies why an allegedly exhaustive causal enumeration fails",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/376?lang=ar"
+      ],
+      "grade": "revised against Stage131 recovered digital Arabic, not independent print/manuscript certification"
+    }
+  ]
+}
