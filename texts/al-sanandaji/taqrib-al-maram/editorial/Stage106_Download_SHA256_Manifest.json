@@ -1,0 +1,43 @@
+{
+  "stage": 106,
+  "checkpoint": "full two-volume cumulative, not increments only",
+  "original_Stage105_full_archive_SHA256": "ac739ed46ad161677b6e39375241bbc465a3fca7c173fddbedae825eb394eb81",
+  "source_PDF_SHA256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "full_archived_file_count": 741,
+  "project_manifest_entries_excluding_itself": 740,
+  "deliverables": [
+    {
+      "file": "Sanandaji_Stage106_FULL_TWO_VOLUME_CUMULATIVE_RECOVERY.zip",
+      "bytes": 120678966,
+      "sha256": "8cd0cec48b8f8422a166a1521e1290507e490a97c95a6cb096cd3e53ead1fa1e",
+      "entries": 741
+    },
+    {
+      "file": "Sanandaji_VolI_Stage106_Offline_Study_Reader_With_Facsimile.zip",
+      "bytes": 36100931,
+      "sha256": "404582b92a7dfa2a43ca4e465284b7ae2fb1a00e7db747e70c25adeabab1c080",
+      "entries": 320
+    },
+    {
+      "file": "Sanandaji_VolI_Stage106_Study_Reader.zip",
+      "bytes": 710408,
+      "sha256": "701758db1c1a9aa597c9e32b9b677af88712254a0c44c188d9de7627931f7385",
+      "entries": 40
+    },
+    {
+      "file": "Sanandaji_VolII_Stage106_Recovered_Reader_and_Source_Audit.zip",
+      "bytes": 17387570,
+      "sha256": "8182c42fd85ced96b181691435dfd4442159d081b4f35c9edc7d15b5f583acbb",
+      "entries": 14
+    },
+    {
+      "file": "Sanandaji_Stage106_New_Readings_Proof_and_Cumulative_Handoff.zip",
+      "bytes": 100259,
+      "sha256": "e0dd7c3fbd5d0812f300aaa63640edbfffab0e3283edd9a6b1bba0d9709c8bc9",
+      "entries": 13
+    }
+  ],
+  "all_archive_member_crc_verified": true,
+  "full_archive_member_sha256_verified_against_manifest": true,
+  "full_VolumeII_original_migration_total": "UNKNOWN"
+}
