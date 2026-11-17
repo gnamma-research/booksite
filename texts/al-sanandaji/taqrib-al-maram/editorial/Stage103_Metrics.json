@@ -1,0 +1,41 @@
+{
+  "stage": 103,
+  "date": "2026-11-17",
+  "source_stage": 102,
+  "source_pdf_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "numbered_positions": 280,
+  "body_pages": 279,
+  "stable_record_count": 1401,
+  "new_bounded_source_readings": 3,
+  "revised_record_ids": [
+    "I038.upper.01",
+    "I039.lower.01",
+    "I039.lower.02"
+  ],
+  "pages_touched": [
+    38,
+    39
+  ],
+  "records_with_some_typed_arabic": 1285,
+  "genuine_records_without_typed_arabic": 115,
+  "blank_by_layer": {
+    "lower": 100,
+    "upper": 15
+  },
+  "retired_non_source_records": 1,
+  "complete_all_register_pages_independently_proofed": 0,
+  "manuscript_collation_pages": 0,
+  "open_independent_proof_obligation_records": 1400,
+  "next_first_arabic_blank_source_record": "I040.lower.01",
+  "next_source_printed_page": 40,
+  "next_source_physical_pdf_page": 53,
+  "cross_page_joins": [
+    "I037.upper.02 to I038.upper.01: opening continues prior upper demonstration; the I037 record is unchanged",
+    "I038.upper.01 to I038.upper.02: stop before the already translated third argument (و الثالث تمام الحصر...)",
+    "I038.lower.02 → I039.lower.01: «بأحد المعاني» / «لا على التعيين»; I038 retained verbatim",
+    "I039.lower.02 → I040 lower: «فلا يفيد المدعى أعني مغايرة»; next printed continuation still unverified"
+  ],
+  "proofread_status": "Three bounded first-pass source readings, not full register/page; 1,400 active independent-proof obligations remain open, including I026.lower.02 before فإنه حينئذ.",
+  "manuscript_collation_required_for_labelled_single_witness_working_edition": false,
+  "reader_live_site_verified": false
+}
