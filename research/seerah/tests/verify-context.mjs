@@ -57,6 +57,8 @@ for(const e of chron.events){
 for(const file of ['people.html','geography.html','chronology.html','subjects.html'])assert.ok(landing.includes('href="'+file+'"'),'Landing missing '+file);
 for(const file of ['people.html','geography.html','chronology.html','subjects.html'])assert.ok(read(file).includes('assets/companion-return.js'),'No return navigation '+file);
 assert.ok(read('assets/reader-context.js').includes('addChapterCast(data)'));
+assert.ok(read('assets/reader-context.js').includes('then(addChapterPlaces)'));
+assert.ok(read('assets/geography.js').includes("url.searchParams.get('place')"));
 assert.ok(read('assets/context.css').includes('.chapter-cast'));
 assert.ok(peopleHTML.includes('id="person-search"'));
 assert.ok(geoHTML.includes('leaflet@1.9.4')&&read('assets/geography.js').includes('https://tile.openstreetmap.org/{z}/{x}/{y}.png'),'Real map tiles not configured');
