@@ -1,0 +1,53 @@
+# Sanandajī · Stage 106 — FULL CUMULATIVE TWO-VOLUME PROJECT HANDOFF
+
+**17 November 2026 — regular Chat.** Full inherited project scope: ʿAbd al-Qādir al-Sanandajī’s *Taqrīb al-Marām fī Sharḥ Tahdhīb al-Kalām*, two original printed volumes. The separate al-Taftāzānī *Tahdhīb al-Kalām* project and reader are **NOT** merged, modified, or archived. This file specifies the **entire existing project**, not just the Stage106 increment.
+
+## 1. Canonical source and all-volume identification
+
+- The unmodified Būlāq 1318 AH **single-print witness** in `Volume_I/Original_Bulaq_1318_AH_Taqrib_al_Maram_scan.pdf` contains **632 physical PDF pages** and is the **shared primary source for both volumes**, SHA-256 `4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134`. This does **not** constitute independent manuscript establishment of text.
+- Numbered printed-page scope: **Volume I pages 1–280**, combined physical PDF one-based page = printed page +13; **Volume II pages 1–335**, combined physical PDF page = printed page +295. Full printed denominator = **615 positions**, distinct from 632 physical scan pages and from reader cards.
+- All **280** Volume I PNG source leaves are in `Volume_I/source_images/` and match the independent per-leaf hashes in `Volume_I/SOURCE_IMAGE_SHA256.json`. Volume II's 100 original embedded II215–314 image witnesses and the five retrieved historical Library documents remain in `Volume_II/` from Stage38.
+- Separate *matn* Taftāzānī, Sanandajī's commentary, ruled gloss and unassigned lower notes. Never infer a named writer or Wasīm attribution from layout alone. Wasīm's positively identified preface is preserved; later notes remain unassigned pending evidence.
+
+## 2. COMPLETE Volume I cumulative bilingual master and all historical variants
+
+- `Volume_I/Stage106_Cumulative_1401_Records.json` and `Volume_I/FULL_CUMULATIVE_STAGE106.json`: **all 1,401 inherited stable IDs** in original order (**1,400 active**, one hidden retired non-source entry). A fully expanded browseable English/Arabic master is `Volume_I/Volume_I_FULL_CUMULATIVE_BILINGUAL_WORKING_MASTER_Stage106.md`, containing each active ID with its recorded Arabic and English (including all explicitly missing Arabic). Do not confuse this with an independently proofed text.
+- All Stage84–105 source shards, overlays, historical cumulative JSON snapshots, source-crops, Arabic/English readings, edit histories, unresolved variants, alternative readings and reader assets are preserved byte-identically, except two deliberate Stage106 HTML entrypoint modifications: `index.html` and `stage84-reader.html`. Their exact Stage105 original bytes are retained in `Volume_I/historical_reader_entrypoints/Stage105/` and verified by SHA-256.
+- **Genuinely new Volume I work, only** `I042.upper.02`, `I043.lower.01`, and `I043.lower.02`: source-checked bounded phrases, not whole record transcription. Earlier interpretive English/notes/anchor values remain under `stage106_prior_working_*`. `I042.upper.01` and `I043.upper.01` were checked for boundaries but **NOT retranslated or changed**. The short ruled note I043.lower.01 is kept distinct from the long lower commentary I043.lower.02. Continuation of both upper and lower discussions beyond I:43 remains open; no invented bridge.
+- **1,294/1,400** active records have *some* typed Arabic (92.43%); **106** genuine source records remain blank (92 lower,14 upper). This is source-presence indexing **not a translated-text completion percentage**. The 106-record queue is `Volume_I/Stage106_Remaining_Arabic_Queue.csv`.
+- Every **1,400** active independent proofreading, source transcription, clause-level alignment, and textual uncertainty entry is retained in `Volume_I/Stage106_Open_Proof_Obligations.csv`. Stage105 fields and status remain unchanged; only new columns were added. The ambiguous connective at `I026.lower.02` immediately before **فإنه حينئذ** is still OPEN. **0/279** Volume I body pages independently complete and second-proofed across all registers.
+
+## 3. COMPLETE recoverable Volume II prior working master, images, prefaces and apparatus
+
+- `Volume_II/` retains the exact five historical original Library artifacts recovered in the Stage104–105 lineage, including the corrected self-contained Stage38 `II215–314` reader (original Arabic facsimile and English), the corrected Stage38 cumulative English PDF, Stage36 English working PDF, earlier Stage32–34 reader, and Stage38 all-state handoff. Their historical bytes are **not overwritten**.
+- Full renderer-derived `VolumeII_Stage38_RENDERER_DERIVED_100_Position_Cumulative_Working_Master.json` and `.md`: **100 positions II215–314**, with 100 original embedded source image witnesses, 100 main working English drafts, 163 lower-commentary sections. These are precisely marked as **renderer-derived**, not recovered canonical Stage38 JSON files. The full 335-page source crosswalk and Wasīm preface remain archived. Other prior original data files, verification ledgers, named marginal identities, and additional manuscript witnesses remain **MISSING** or UNKNOWN; see `Project_Editorial/Stage106_Missing_Unreceived_And_Unproven_Materials.csv`.
+- Already established, **do not duplicate**: Stage38 vs live remote Stage51 **100/100** corresponding main English drafts and **163/163** corresponding lower English sections on II215–314 match after whitespace normalisation. This is proof of baseline text preservation, not proof of Arabic transcription, correctness or complete translation.
+- **Genuinely new Volume II Stage106 source-critical work**: `Volume_II/Stage106_VolII_SourceCritical_II223_230_Audit.md` and `.json` document **8/53** selected clause IDs checked at the Būlāq source images II223, II229 and II230, belonging to three existing distinct remote source-clause modules; no baseline English was retranslated or changed. Preserve Taftāzānī lemmata distinct from Sanandajī's words and the unassigned p229 lower gloss. One probable remote-script transcription mismatch is registered: **وركباتها القصيرة** (script) versus **ومركباتها القصيرة** (printed p229, proposed correction). This is not a manuscript variant; no silent change to the remote script. The other 45 selected IDs and all full source-proof work remain OPEN.
+- Remote Stage51 and selected source-clause JS assets have **known Git blob IDs but their original file bytes were not downloaded** into this archive. Historical Volume II assets needed in total = **UNKNOWN**; no fabricated percentage of complete historical receipt.
+
+## 4. Honest labelled progress / receipt denominators
+
+Read `Project_Editorial/Stage106_LABELED_PROGRESS_BARS.md` and `Stage106_Progress.json` for exact bars and definitions.
+
+- **Translation certified complete literal all-register:** **0/615 = 0%** (two volumes); first-pass prose does not count.
+- **Independent all-register source collation + second proof:** **0/615 = 0%**. No manuscript comparison performed.
+- **Volume I first-pass Arabic presence ONLY:** **1,294/1,400 = 92.43%** (not translation completeness).
+- **Stage105 known all-volume asset migration:** **712/712 = 100% receipt**, of which **710** are byte-identical and **two** are modified only to load the new overlay, with old HTML originals hash-preserved.
+- **Volume II specifically scoped Stage106 selected-clause visual alignment:** **8/53 = 15.09%**, *first pass*, no full clause proof.
+- **Volume II fixed Stage38–Stage51 baseline preservation** (unchanged): 100/100 page drafts and 163/163 lower sections exact.
+- Full historical Volume II migration denominator **UNKNOWN**, progress **UNKNOWN**. Full manuscript witness denominator **UNKNOWN**.
+
+## 5. Entire-project archive, integrity, source QA and gates
+
+- The Stage106 ZIP contains complete `Volume_I/`, `Volume_II/` and `Project_Editorial/` with every preserved historical, source, apparatus, reader and export asset in the known Stage105 lineage. The new `Project_Editorial/Stage106_FULL_PROJECT_ASSET_SHA256_MANIFEST.json` hashes all current files except itself to avoid circularity. The Stage106 ZIP member hashes and integrity are checked separately; see standalone download manifest.
+- Original Stage105 all-volume ZIP preserved as an **unchanged separate Library artifact** `/Sanandaji/Stage105/Sanandaji_Stage105_FULL_TWO_VOLUME_CUMULATIVE_RECOVERY.zip`, SHA-256 `ac739ed46ad161677b6e39375241bbc465a3fca7c173fddbedae825eb394eb81`. Do **not** relabel Stage106 as the original Stage105 ZIP or delete older copies. The full *contents* of Stage105 are included, without nesting the 116MB compressed ZIP redundantly.
+- Source/checkpoint regression: original PDF hash; all 280 Volume I original image hashes; exactly 1,401 records in stable order, 1,400 open proof rows; three new Arabic-bearing targets only; `I026.lower.02` byte-equivalent JSON object; independent baseline Volume II drafts unchanged. Stage106 Node VM validates all Stage84 source shards + Stage85–106 overlays and both reader entrypoints. **This does NOT verify the live browser, responsive layout or deployment**; those remain unverified pending actual native page loading.
+- DO NOT archive old chat, delete historical variants, claim independent manuscript collation, conflate *Tahdhīb* with *Taqrīb*, hide unproven author assignments, or publish the reader as a finished critical edition. The prior-chat archive receipt gate remains OPEN until full cumulative receipt is confirmed independently.
+
+## 6. Exact continuation points (no duplicate translation)
+
+**Volume I next source record: `I043.upper.02`**, printed I:43, **physical PDF page 56**. Check adjacent `I043.upper.01` and `I044.upper.01` boundaries without retranslating them. Then `I044.lower.01` and `I044.lower.02` in their printed distinct units; maintain the I:43–44 lower continuity, and return to already noted I:42/43 omissions for clause-level proof, not first-pass retranslations.
+
+**Volume II next source-critical work:** independently verify the **remaining 45/53** selected remote source-clause IDs for II:223–230 against the printed upper/ruled/lower sections, beginning with the II:229 lower «ومركباتها» candidate for a second image check and then the II:224–228 miracle-proof lemmas; preserve the 100/100 Stage38–51 English baseline. The unidentified Wasīm notes and II:117 attribution require independent source evidence.
+
+**Next-stage rules:** every stage deliver **FULL cumulative all-volume handoff**, source and reader/external export inventory with hashes, all historical masters, variants/apparatus/receipts, every unresolved proof obligation, honest translation/proof/receipt bars with grounded denominators, exact frontiers, regular Chat. No asynchronous claim.
