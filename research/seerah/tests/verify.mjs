@@ -31,3 +31,5 @@ for(const p of ['people','subjects']){
 }
 assert.ok(html.includes('data-mode="matn"')&&html.includes('data-mode="both"'));
 console.log('PASS 46 rewritten matns, 46 source-rich shuruh, reader and manuscript parity, reference index links, no editorial status in reader');
+
+for(const fragment of ['Dossier 1 examines','(Dossier 7)','A rigorous microhistory would'])assert.ok(!html.includes(fragment),'Editorial/process-language fragment visible in reader: '+fragment);
