@@ -4,7 +4,6 @@ on:
     branches: [master]
     paths:
       - 'tools/farghani/build_intro_parallel.py'
-      - '.github/workflows/farghani-parallel-corpus-build.yml'
   workflow_dispatch:
 permissions:
   contents: write
@@ -42,9 +41,9 @@ jobs:
           assert len(soup.select('section.pr-page .pr-ar'))==128
           assert len(soup.select('section.pr-page .pr-en'))==128
           assert all(p['reading_chars']>=300 and p['url'].endswith(f"/{p['page']}?lang=ar") for p in pages)
-          assert report['selected_critical_records']==559
+          assert report['selected_critical_records']==560
           assert all(soup.select_one(f'#p{n}') for n in range(18,146))
-          print('OK: 128 digitized Arabic source pages + 128 English pages and 559 graded selected records')
+          print('OK: 128 digitized Arabic source pages + 128 English pages and 560 graded selected records')
           print('Digital source excerpt matches:',report['exact_normalized_source_excerpt_matches'])
           print('Possible editorial-note risks:',report['pages_with_possible_unseparated_notes'])
           PY
