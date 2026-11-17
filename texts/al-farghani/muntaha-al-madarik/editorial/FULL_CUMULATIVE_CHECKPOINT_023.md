@@ -36,7 +36,7 @@ This checkpoint supersedes the *continuation point* of Stage XXII without replac
 
 ## Exact Git blob pins
 
-- `texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_ENGLISH_PROOF_023.md` — `7c69b338e3f4c5339b45c7a2344da662b35e31a8`
+- `texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_ENGLISH_PROOF_023.md` — `4bbc6d7d3c7b561651db3f3be99afbe201679b50`
 - `texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_ARABIC_SOURCE_023.md` — `7c293036fb975ebfd09cf030e671de61ac6db07e`
 - `texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_SELECTED_AND_PRINT_023.md` — `12849cc4c60b9f5bee0057ce64b3a0a9abcca2a8`
 - `texts/al-farghani/muntaha-al-madarik/editorial/CUMULATIVE_CONTINUOUS_PROOF_18_28_023.json` — `2b16782860f047d083afeb54171d079973ff53bc`
