@@ -63,7 +63,7 @@ with sync_playwright() as playwright:
   check("Continuous retains all 61 units and hides marks",page.locator('body').get_attribute('data-focus')=='3' and page.locator('.layered-unit').count()==61 and page.locator('.gn-inline-source-marker:visible').count()==0)
   page.locator('#focus-recover').click()
   page.goto("https://gnamma.test"+PREFIX+"#QT-020",wait_until="networkidle")
-  check("Qurʾān 24:40 at SH-020 is registered without inventing any unmatched marker",page.evaluate("'SH-020' in window.GNAMMA_QAWAID_REFERENCES.items.find(r=>r.id==='q-24-40').units") and page.locator('#SH-020 .gn-source-inline[data-open-source="q-24-40"]').count()<=1)
+  check("Qurʾān 24:40 at SH-020 is registered without inventing any unmatched marker",page.evaluate("window.GNAMMA_QAWAID_REFERENCES.items.find(r=>r.id==='q-24-40').units.includes('SH-020')") and page.locator('#SH-020 .gn-source-inline[data-open-source="q-24-40"]').count()<=1)
   page.goto("https://gnamma.test"+PREFIX+"#QT-029",wait_until="networkidle")
   check("new Qurʾān 42:11 reference exact",page.locator('#SH-029 .gn-source-inline[data-open-source="q-42-11"]').count()==1)
   page.goto("https://gnamma.test"+PREFIX+"#QT-051",wait_until="networkidle")
