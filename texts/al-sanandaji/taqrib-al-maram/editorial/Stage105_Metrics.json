@@ -1,0 +1,39 @@
+{
+  "stage": 105,
+  "date": "2026-11-17",
+  "source_stage": 104,
+  "source_pdf_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "combined_source_PDF_pages": 632,
+  "volume_I_numbered_positions": 280,
+  "volume_II_numbered_positions": 335,
+  "total_original_numbered_positions": 615,
+  "stable_record_count": 1401,
+  "active_Volume_I_records": 1400,
+  "hidden_retired_entry": 1,
+  "revised_ids": [
+    "I042.lower.01",
+    "I042.lower.02"
+  ],
+  "new_bounded_source_readings": 2,
+  "records_with_some_arabic": 1291,
+  "active_arabic_empty_records": 109,
+  "blank_by_layer": {
+    "lower": 94,
+    "upper": 15
+  },
+  "all_register_literal_translation_pages_independently_certified": 0,
+  "independently_second_proofed_source_pages": 0,
+  "all_active_proof_obligation_records_open": 1400,
+  "volume_II_stage38_vs_remote_stage51_title_main_lower_exact_pages": 100,
+  "volume_II_stage38_vs_remote_stage51_total_compared_pages": 100,
+  "volume_II_corresponding_lower_sections_exact": 163,
+  "volume_II_current_full_original_migration_denominator": "unknown",
+  "volume_II_original_historical_assets_receipted": 5,
+  "volume_I_predecessor_file_count": 573,
+  "next_first_arabic_blank_record": "I042.upper.02",
+  "next_physical_PDF_page": 55,
+  "unresolved_I026_lower_02": true,
+  "all_source_images_sha_verified": 280,
+  "full_archival_handoff": "Project_Editorial_Stage105/FULL_PROJECT_CUMULATIVE_HANDOFF_STAGE105.md",
+  "browser_QA": "not_run_pending"
+}
