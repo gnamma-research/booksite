@@ -1,0 +1,79 @@
+{
+  "stage": 110,
+  "source_type": "single Bulaq 1318 AH print; assistant second visual pass, NOT independent human or manuscript collation",
+  "source_image": "Stage109_Source_Page_Images/physical_PDF_524_single_Bulaq_print.png",
+  "source_sha256": "e2fa37016973b127b28117dd61c94e7a0fdae7d9fdd31005631142a1a98b3961",
+  "inherited_G_note_record_id": "G.II.229.21.01",
+  "inherited_complete_bounded_note_firstpass_arabic_unchanged": "(قوله مع سهولتها في نفسها إلخ) واحتجوا على سهولة المعارضة مع عدمها بالقطع بأن فصحاء العرب كانوا قادرين على التكلم بمثل مفردات السور ومركباتها القصيرة مثل الحمد لله ومثل رب العالمين وهكذا فيكونون قادرين على الإتيان بمثل سورة منه لكن الله صرف هممهم عن ذلك وأجيب بأن حكم الجملة قد يخالف حكم الأجزاء كما هنا ولكن كل من آحاد العرب قادر على الإتيان بمثل قصائد فصحائهم كامرئ القيس وأضرابه واللازم باطل وهذا يجاب عن شبهة من نفى قطعية الإجماع والخبر المتواتر",
+  "inherited_english_unchanged": "On his words “although it would have been easy in itself”: They argued that matching it would have been easy, despite the absence of a matching composition, because it is certain, they said, that the eloquent Arabs could utter the individual expressions of the sūras and their shorter combinations, such as “Praise belongs to God” and “Lord of the worlds.” Accordingly, they would have been able to produce something like a sūra of it; but God turned their intentions away from doing so. The answer is that what holds of a whole may differ from what holds of its parts, as is the case here. Yet [by the same attempted inference] each individual Arab would be capable of composing poetry comparable to that of their eloquent masters, such as Imruʾ al-Qays and his peers, and this consequent is false. This also answers the objection of those who deny the conclusiveness of consensus and mass-transmitted reports.",
+  "reinspected_source_subspans": [
+    {
+      "no": 1,
+      "print_excerpt": "(قوله مع سهولتها في نفسها إلخ)",
+      "status": "same-print directly rechecked",
+      "note": "G lower-note heading on II229, not part of adjacent next gloss"
+    },
+    {
+      "no": 2,
+      "print_excerpt": "واحتجوا على سهولة المعارضة مع عدمها بالقطع",
+      "status": "same-print directly rechecked",
+      "note": "opening argument; not independent witness"
+    },
+    {
+      "no": 3,
+      "print_excerpt": "فصحاء العرب كانوا قادرين على التكلم بمثل مفردات السور ومركباتها القصيرة",
+      "status": "same-print directly rechecked",
+      "note": "printed ومركباتها; historical remote وركباتها; same original copy"
+    },
+    {
+      "no": 4,
+      "print_excerpt": "مثل الحمد لله ومثل رب العالمين",
+      "status": "same-print directly rechecked",
+      "note": "quoted brief combinations, not proof of composability of entire sura"
+    },
+    {
+      "no": 5,
+      "print_excerpt": "لكن الله صرف هممهم عن ذلك",
+      "status": "same-print directly rechecked",
+      "note": "do not blend into the subsequent distinct gloss about withdrawing knowledge"
+    },
+    {
+      "no": 6,
+      "print_excerpt": "وأجيب بأن حكم الجملة قد يخالف حكم الأجزاء كما هنا",
+      "status": "same-print directly rechecked",
+      "note": "whole-versus-parts rebuttal"
+    },
+    {
+      "no": 7,
+      "print_excerpt": "كامرئ القيس وأضرابه واللازم باطل",
+      "status": "same-print directly rechecked",
+      "note": "supplement in Stage109 long G note retained"
+    },
+    {
+      "no": 8,
+      "print_excerpt": "وبهذا يجاب من شبهة من نفى قطعية الإجماع والخبر المتواتر",
+      "status": "provisional exact-connector correction requiring external independent proof",
+      "note": "Second visual same-print pass suggests «وبهذا يجاب من شبهة» whereas Stage109 normalization has «وهذا يجاب عن شبهة»; preserve BOTH; do NOT silently change historical stage, and do NOT certify without separate reader."
+    }
+  ],
+  "proposed_reading_discussion": [
+    {
+      "category": "historical remote selected reading",
+      "historic": "وركباتها القصيرة",
+      "source_print_candidate": "ومركباتها القصيرة",
+      "confidence": "image-matched same Bulaq copy, two reading passes; not a second textual witness"
+    },
+    {
+      "category": "Stage109 working first-pass normalization",
+      "historic": "وهذا يجاب عن شبهة من نفى قطعية الإجماع والخبر المتواتر",
+      "source_print_candidate": "وبهذا يجاب من شبهة من نفى قطعية الإجماع والخبر المتواتر",
+      "confidence": "initial visual reread tentative; clause-by-clause independent second-person proof still required"
+    }
+  ],
+  "source_subspan_second_visual_pass_count": 8,
+  "external_independent_second_reader_complete": false,
+  "complete_diplomatic_word_by_word_second_proof": false,
+  "verified_other_manuscript_witnesses": 0,
+  "note_boundary": "G starts at قوله مع سهولتها ... and ends at الخبر المتواتر, BEFORE separately headed قوله وسلب علومهم ...",
+  "author": "UNASSIGNED"
+}
