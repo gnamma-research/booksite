@@ -29,6 +29,7 @@ jobs:
           node --check texts/al-turka/qawaid-al-tawhid/qawaid-citation-policy.js
           node --check texts/al-turka/qawaid-al-tawhid/qawaid-study.js
           node --check texts/al-turka/qawaid-al-tawhid/qawaid-inline-references.js
+          python -m py_compile texts/al-turka/qawaid-al-tawhid/qa/test-qawtaw21-expanded-links.py
           node --check texts/sadr-al-din-al-qunawi/al-nusus/reader.js
           python -m pip install --quiet pypdf
           python texts/al-turka/qawaid-al-tawhid/qa/qawtaw16_final_acceptance.py
