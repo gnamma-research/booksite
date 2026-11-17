@@ -67,6 +67,15 @@ with sync_playwright() as playwright:
   page.goto("https://gnamma.test"+PREFIX+"#QT-029",wait_until="networkidle")
   check("new Qurʾān 42:11 reference exact",page.locator('#SH-029 .gn-source-inline[data-open-source="q-42-11"]').count()==1)
   page.goto("https://gnamma.test"+PREFIX+"#QT-051",wait_until="networkidle")
+  diagnostic=page.evaluate("""() => {
+    const c=document.querySelector('#SH-051'),ref=window.GNAMMA_QAWAID_REFERENCES.items.find(r=>r.id==='hadith-time-3197');
+    const text=c?.querySelector('.ar')?.textContent||'';
+    const i=text.indexOf('الزمان');
+    return {sourceText:text.slice(Math.max(0,i-80),i+200),sourceLength:text.length,refUnits:ref?.units,refAnchors:ref?.inlineAnchors,
+    grade:window.GNAMMA_QAWAID_CITATION_POLICY.records['hadith-time-3197'],
+    hidden:c?.hidden,markers:c?.querySelectorAll('.gn-source-inline').length,citationState:window.GnammaQawaidCitations?.active()};
+  }""")
+  print("HADITH_CITATION_DIAGNOSTIC",diagnostic,flush=True)
   check("new time-related hadith quote matched",page.locator('#SH-051 .gn-source-inline[data-open-source="hadith-time-3197"]').count()==1)
   page.locator('#SH-051 .gn-source-inline[data-open-source="hadith-time-3197"]').click()
   check("hadith textual variant is disclosed", "variants" in page.locator('#gn-study-content').inner_text().lower() or "variant" in page.locator('#gn-study-content').inner_text().lower())
