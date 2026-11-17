@@ -17,7 +17,7 @@ The original 18 source cards remain unchanged in `data/primary-reference-registe
 | Qurʾān 18:17, guided and unguided | SH-060 | Existing closing Quranic wording; whole verse and exact online source |
 | Qurʾān 42:11, `ليس كمثله شيء` | SH-029 | Identified exact scriptural phrase; whole verse, not the author's metaphysical interpretation |
 | Bukhārī 3197 / Muslim 1679, the revolution of time | SH-051 | Identifiable quotation with visible wording variants, not falsely represented as a verbatim copy of the canonical hadith |
-| Ibn ʿArabī, *Inshāʾ al-Dawāʾir*, humanity's outer and inner copies | SH-039 | Named lengthy direct quotation; original-work text independently located, not manuscript collated |
+| Ibn ʿArabī, *Inshāʾ al-Dawāʾir*, humanity's outer and inner copies | SH-039 | Named lengthy quotation preserved in Tamhīd; an independently matching original-work passage has **not** been verified. The previously proposed site segment concerns a different topic and must not be cited as the quotation's exact location |
 | Ibn ʿArabī, *Fuṣūṣ al-Ḥikam*, mirror and reflexive vision | QT-041 | Quoted and critiqued in the ancestral matn; linked to the original's Adamic wisdom chapter |
 | Ibn ʿArabī, *Fuṣūṣ al-Ḥikam*, `فلا تنظر العين إلا إليه` | SH-041 | Distinct direct line in the Hūdian wisdom; not confused with the nearby Ḥallāj quotation |
 | Ibn ʿArabī, *Futūḥāt al-Makkiyya*, proportion of temporal to eternal | SH-041 | Named and delimited passage of chapter 3; variant wording noted |
@@ -56,3 +56,6 @@ A Qūnawī reader change preserves the selected `#work=QUN-NU&passage=...` addre
 - The underlying two Qawtaw19 text-critical exceptions (SH-002 and QT-059) remain source-limited as previously documented, not silently emended.
 
 **Scope caveat:** A reviewer seeking an *exhaustive* catalogue of all intertextual influences should not mistake the 99 machine-flagged candidate strings, eleven reviewed additional source cards or seven explicit conceptual comparisons for a critical *total concordance* of every possible unmarked borrowing. Further review can use the retained audit queue without polluting the reader.
+
+For the *qarīn* report recalled in SH-053, the citation card links directly to the Arabic Muslim 2814 narration rather than a secondary compilation; Ibn Turka’s wording is a paraphrase, not a word-for-word report.
+
