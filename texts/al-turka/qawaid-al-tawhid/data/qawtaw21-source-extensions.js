@@ -143,7 +143,7 @@
     "type": "attributed-report",
     "title": "Ṣaḥīḥ Muslim 2814 — The Prophet’s qarin",
     "source": "Ṣaḥīḥ Muslim, 2814",
-    "sourceUrl": "https://dorar.net/hadith/sharh/20815",
+    "sourceUrl": "https://dorar.net/h/Mkvbr6aT?osoul=1",
     "arabic": "مَا مِنْكُمْ مِنْ أَحَدٍ إِلَّا وَقَدْ وُكِّلَ بِهِ قَرِينُهُ مِنَ الْجِنِّ. قَالُوا: وَإِيَّاكَ يَا رَسُولَ اللَّهِ؟ قَالَ: وَإِيَّايَ إِلَّا أَنَّ اللَّهَ أَعَانَنِي عَلَيْهِ فَأَسْلَمَ فَلَا يَأْمُرُنِي إِلَّا بِخَيْرٍ",
     "english": "There is no one among you without a companion from the jinn. Asked whether that included himself, the Prophet replied that God had helped him against his companion, who now commands nothing but good.",
     "units": [
