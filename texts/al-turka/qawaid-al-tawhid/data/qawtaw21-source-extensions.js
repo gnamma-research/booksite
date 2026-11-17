@@ -60,9 +60,9 @@
   {
     "id": "ibn-arabi-dawair-human-sh039",
     "type": "primary-quotation",
-    "title": "Ibn ʿArabī, Inshāʾ al-Dawāʾir — The human has two copies",
-    "source": "Inshāʾ al-Dawāʾir · section on categories of existents",
-    "sourceUrl": "https://ibnalarabi.com/books/dawaer.php?id=4",
+    "title": "Ibn ʿArabī, Inshāʾ al-Dawāʾir — Two-copy human passage as quoted in Tamhīd",
+    "source": "Inshāʾ al-Dawāʾir · attribution in Tamhīd SH-039; separate original passage not independently matched",
+    "sourceUrl": "https://ibnalarabi.com/books/dawaer.php",
     "quoteFrom": "SH-039",
     "quoteIndex": 0,
     "english": "The human being has an outward copy corresponding to the entire world, and an inward copy corresponding to the divine presence; the work describes the human as an isthmus between the two.",
@@ -70,8 +70,8 @@
     "units": [
       "SH-039"
     ],
-    "status": "named-direct-quotation-with-independent-original-online-parallel",
-    "note": "Tamhīd explicitly names Inshāʾ al-Dawāʾir and quotes the passage at length; the original-work Arabic page independently displays the two-copy formula, though not established by a manuscript collation. Differences between the reproduced texts should not be silently normalised."
+    "status": "named-quotation-reproduced-in-tamhid-original-work-uncollated",
+    "note": "Tamhīd explicitly names Inshāʾ al-Dawāʾir and quotes the passage at length; the accessible Inshāʾ al-Dawāʾir contents identify the work, but its segment 4 concerns categories of existents, not this quoted passage. The exact separate-work page has not been independently matched; the SH-039 quotation itself is attested in Tamhīd. Differences must not be silently normalised."
   },
   {
     "id": "ibn-arabi-fusus-mirror-qt041",
