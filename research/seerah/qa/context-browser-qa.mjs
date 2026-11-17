@@ -17,6 +17,8 @@ try{
  assert.ok(await p.locator('a.person-ref').count()>25,'No contextual person links');
  assert.ok(await p.locator('article.chapter .chapter-cast').count()>25,'Per-chapter cast guides absent');
  assert.ok(await p.locator('#ch-13 .chapter-cast').count()===1,'Medinan cast missing');
+ assert.ok(await p.locator('article.chapter .chapter-places').count()>15,'Chapter map links absent');
+ assert.equal(await p.locator('#ch-13 .chapter-places').count(),1,'Madinah chapter has no map context');
  await p.locator('a.person-ref').first().click();
  await p.locator('#person-context-dialog[open]').waitFor();
  assert.ok((await p.locator('#person-context-dialog').innerText()).length>100,'Biography card has no explanation');
@@ -50,6 +52,9 @@ try{
  await p.locator('button[data-region="imperial"]').click();
  assert.equal(await p.locator('.geo-place').count(),9,'Imperial centre map places');
  await p.screenshot({path:dir+'/geography-'+dim.label+'.png'});
+ await waitLoad(p,'geography.html?region=arabia&place=khaybar&return=read.html%23s17-m01#place-khaybar','#geo-places');
+ await p.locator('#place-khaybar.geo-place-focused').waitFor({timeout:10000});
+ assert.ok((await p.locator('#return-reading').getAttribute('href')).includes('read.html#s17-m01'),'Map return to paragraph lost');
  await waitLoad(p,'chronology.html','#chrono-events');
  await p.locator('.chron-item').first().waitFor({timeout:10000});
  assert.equal(await p.locator('.chron-item').count(),18,'Early timeline events');
