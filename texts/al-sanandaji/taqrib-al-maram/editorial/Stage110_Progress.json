@@ -1,0 +1,80 @@
+{
+  "stage": 110,
+  "date": "2026-11-17",
+  "scope": "all 615 printed source positions across 2 volumes",
+  "translation_complete_literal_all_register_independently_accepted": {
+    "completed": 0,
+    "total": 615,
+    "percent": 0.0
+  },
+  "source_collation_all_register_independently_proofed": {
+    "completed": 0,
+    "total": 615,
+    "percent": 0.0
+  },
+  "volume_I_active_records_with_some_source_arabic_NOT_complete_translation": {
+    "completed": 1306,
+    "total": 1400,
+    "percent": 93.29
+  },
+  "volume_I_active_arabic_empty_records": 94,
+  "volume_II_fixed_53_selected_clause_firstpass_source_locator": {
+    "completed": 53,
+    "total": 53,
+    "percent": 100,
+    "inherited_not_repeated": true
+  },
+  "volume_II_distinct_detailed_singleprint_source_loci_fixed_53": {
+    "completed": 4,
+    "total": 53,
+    "percent": 7.55,
+    "note": "same 4 inherited; rechecking G is NOT another distinct locus; new following SalbUlum note is outside fixed 53 ids"
+  },
+  "volume_II_G_II229_second_visual_pass_same_print": {
+    "passages_reviewed": 8,
+    "denominator": 8,
+    "external_independent_proof_completed": 0,
+    "external_independent_proof_denominator": 1,
+    "meaning": "Same assistant re-read same witness; not independent certified proofreading"
+  },
+  "volume_II_new_following_salb_ulum_gloss": {
+    "printed_pages": [
+      229,
+      230
+    ],
+    "selected_passage_count": 3,
+    "complete_diplomatic_note_accepted": false
+  },
+  "volume_II_unique_II224_printed_lemma_span": {
+    "unique_source_substring_count": 1,
+    "historical_reference_ID_count": 2,
+    "independent_full_proof": false
+  },
+  "volume_II_independently_fully_proofed_fixed_clauses": {
+    "completed": 0,
+    "total": 53,
+    "percent": 0
+  },
+  "migration_known_inherited_stage109_binary_receipt": {
+    "completed": 829,
+    "total": 829,
+    "percent": 100,
+    "unchanged": 827,
+    "updated_reader_entrypoints_old_binary_preserved": 2
+  },
+  "migration_entire_historical_volumeII_originals": {
+    "known_library_originals": 5,
+    "total": null,
+    "percent": null
+  },
+  "independent_manuscripts_total": null,
+  "independent_complete_manuscript_collation": false,
+  "next_volume_I": "I047.upper.02",
+  "next_volume_I_physical_pdf_page": 60,
+  "next_volume_II": "Complete source-diplomatic and independent proof of (قوله وسلب علومهم التي إلخ) II229–230, then source-boundary check (قوله إلى غير ذلك) II230, while independently proofing historical G connector variant",
+  "source_original_SHA256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "source_image_hashes_verified": 280,
+  "old_chats_archived": false,
+  "tahdhib_merged": false,
+  "live_browser_QA": "not independently verified"
+}
