@@ -1,0 +1,35 @@
+{
+  "stage": 105,
+  "previous_checkpoint": "Stage104",
+  "known_stage104_assets_total": 690,
+  "known_stage104_assets_accounted_for": 690,
+  "known_snapshot_migration_rate_percent": 100.0,
+  "scope_breakdown": {
+    "Volume_I": {
+      "received": 573,
+      "total": 573,
+      "byte_identical": 571,
+      "modified_reader_entrypoints_prior_bytes_retained": 2
+    },
+    "Volume_II": {
+      "received": 110,
+      "total": 110,
+      "byte_identical": 110,
+      "original_historical_Library_assets": 5,
+      "embedded_source_images": 100
+    },
+    "Project_Editorial": {
+      "received": 7,
+      "total": 7,
+      "byte_identical": 7
+    }
+  },
+  "Original_Bulaq_source_PDF_SHA256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "all_280_original_volume_I_source_images_verified": true,
+  "all_stage38_100_embedded_volume_II_images_inherited_byte_identical": true,
+  "full_historical_volume_II_asset_denominator": "UNKNOWN",
+  "historical_volume_II_asset_migration_percentage": null,
+  "remote_stage51_source_pages_content_reconciled": 100,
+  "remote_stage51_source_modules_compared_by_contents_not_materialized": 4,
+  "archive_gate": "Open; original Stage104 archive preserved separately by SHA; do not archive old chat or merge Tahdhib until complete evidence and QA."
+}
