@@ -17,12 +17,12 @@ window.FARGHANI_CRITICAL_PASS_008={
     78
   ],
   "page_counts": {
-    "70": 5,
-    "71": 6,
+    "70": 6,
+    "71": 5,
     "72": 7,
     "73": 7,
-    "74": 6,
-    "75": 5,
+    "74": 7,
+    "75": 4,
     "76": 6,
     "77": 5,
     "78": 7
@@ -105,18 +105,28 @@ window.FARGHANI_CRITICAL_PASS_008={
     },
     {
       "id": "CR008-006",
-      "page": 71,
+      "page": 70,
       "ar": "فظهرت المفاتيح بحكم ذلك السريان من باطن كل اسم وصفة وحقيقة إلهيّة",
       "en": "The Keys of the Unseen become manifest from the inward aspect of every divine name, attribute and reality.",
       "disposition": "retain",
       "critical_note": "Causes of activity appear through names, while recipient preparedness appears in cosmic realities.",
       "source_siglum": "D-Forum-B2007-derivative",
       "source_url": "https://alshrefalm7sy.ahlamontada.com/t3204-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%A3%D8%AD%D9%83%D8%A7%D9%85-%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%B1%D9%88%D8%A7%D8%AD-%D9%88%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%88%D8%AA-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
-      "source_page_marker": "71",
+      "source_page_marker": "70",
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_page_correction": {
+        "original_record_page": 71,
+        "corrected_b2007_page": 70,
+        "method": "exact-normalized-Arabic-excerpt-located-in-B2007-digitized",
+        "date": "2026-11-17",
+        "historical_print_covered": false,
+        "manuscript_checked": false
+      },
+      "derivative_source_url": "https://alshrefalm7sy.ahlamontada.com/t3204-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%A3%D8%AD%D9%83%D8%A7%D9%85-%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%B1%D9%88%D8%A7%D8%AD-%D9%88%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%88%D8%AA-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/70?lang=ar"
     },
     {
       "id": "CR008-007",
@@ -495,18 +505,28 @@ window.FARGHANI_CRITICAL_PASS_008={
     },
     {
       "id": "CR008-032",
-      "page": 75,
+      "page": 74,
       "ar": "أحدها : كونه هيئة اجتماعية من شعاع النور المفاض المضاف",
       "en": "First, it is a composite configuration from the rays of bestowed and attributed light.",
       "disposition": "retain",
       "critical_note": "First of the Tablet's six semantic faces; interrupted at p74–75.",
       "source_siglum": "D-Forum-B2007-derivative",
       "source_url": "https://alshrefalm7sy.ahlamontada.com/t3204-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%A3%D8%AD%D9%83%D8%A7%D9%85-%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%B1%D9%88%D8%A7%D8%AD-%D9%88%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%88%D8%AA-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
-      "source_page_marker": "75",
+      "source_page_marker": "74",
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_page_correction": {
+        "original_record_page": 75,
+        "corrected_b2007_page": 74,
+        "method": "exact-normalized-Arabic-excerpt-located-in-B2007-digitized",
+        "date": "2026-11-17",
+        "historical_print_covered": false,
+        "manuscript_checked": false
+      },
+      "derivative_source_url": "https://alshrefalm7sy.ahlamontada.com/t3204-%D8%A7%D9%84%D8%A3%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1-%D8%A3%D8%AD%D9%83%D8%A7%D9%85-%D9%85%D8%B1%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%B1%D9%88%D8%A7%D8%AD-%D9%88%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%88%D8%AA-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%86%D8%AA%D9%87%D9%89-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D9%83-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B3%D9%84%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D9%82%D9%8A%D9%86-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D8%B4%D9%8A%D8%AE-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D8%BA%D8%A7%D9%86%D9%8A",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/74?lang=ar"
     },
     {
       "id": "CR008-033",

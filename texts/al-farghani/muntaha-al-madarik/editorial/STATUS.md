@@ -1,3 +1,11 @@
+## Stage XX — source-page integrity and p.138 direct check (17 November 2026)
+
+Twelve selected derivative Arabic excerpts formerly assigned one Beirut printed page too late now cite their **actual digitized B2007 page**, verified by exact conservative normalized phrase lookup; their previous page and forum-source URL remain stored as provenance. New direct B2007 digital excerpt **CR011-044 on p.138** preserves one selected clause per page. Totals **560 selective clauses = 284 modern edited-digital + 276 derivative**, **523/560 exact digitized-page excerpt strings**, **37 unresolved source-parity mismatches**, 128/128 digital Arabic and working English printed-page positions. Inherited photographed 1876 PRINT comparisons remain 15 (7 differences/8 agreements); zero entire independently collated print pages, zero manuscript variants. English prose and Arabic running reader remain unchanged; this is not an exhaustive source-critical edition.
+
+[Stage XX source audit](SOURCE_PAGE_REPAIR_020.md) · [37 remaining source excerpts](SELECTED_EXCERPT_SOURCE_PARITY_020.json) · [exact saved continuation](STAGE_HANDOFF_SOURCE_020.md). Next **CR001-034, B2007 p.20**; p.138 «مشمّة الروح» remains pending 1876 print/manuscript control.
+
+---
+
 ## Stage XVIII — production-quality introductory reader and error audit (11 November 2026)
 
 **Reader UX complete for the existing English working introduction**: all 128 Beirut pp18–145 page anchors survive, with five work sections, full-English-page search, mobile and desktop reading desk, saved places, page-by-page navigation, progress, citation copying, font and theme controls, focus, print and optional per-page Arabic source evidence. A compact phone appearance menu and opaque iOS navigation bar were visually checked in Chromium/WebKit. The 32 older bilingual introductory extracts and 559 selected source-graded Arabic–English critical clauses are separate reading layers.

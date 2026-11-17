@@ -192,12 +192,27 @@ for file in source_files:
         except Exception as ex:
             FAILED.append(f"Invalid JSON data in {file.name}: {ex}"); continue
         rows+=object_.get("records",[])
-check(len(rows)==559,f"Critical dataset count changed unexpectedly: {len(rows)} !=559")
+check(len(rows)==560,f"Critical dataset count changed unexpectedly: {len(rows)} !=560")
 check(len({r.get('id') for r in rows})==len(rows),"Duplicate selected critical clause ID")
 check(set(r.get("page") for r in rows)==set(range(18,146)),"Some Beirut printed page labels lack any selected critical clause")
-check(sum(r.get("page",0)<=60 for r in rows)==283,"Edited-digitized clause count changed from 283")
-check(sum(r.get("page",0)>=61 for r in rows)==276,"Derivative-grade clause count changed from 276")
+check(sum(not str(r.get("source_grade","")).startswith("secondary-") for r in rows)==284,"Edited-digitized clause count changed from 284")
+check(sum(str(r.get("source_grade","")).startswith("secondary-") for r in rows)==276,"Derivative-grade clause count changed from 276")
 check(all(r.get("ar") and r.get("en") and r.get("source_url") for r in rows),"Arabic, English or source URL missing from critical clause")
+
+# Check the full set of Stage XX source-page repairs, including retention of prior provenance.
+repaired={"CR008-006":(71,70),"CR008-032":(75,74),"CR009-016":(83,82),"CR009-045":(92,91),"CR009-046":(92,91),"CR009-071":(100,99),"CR009-072":(101,100),"CR010-007":(105,104),"CR010-031":(117,116),"CR010-045":(124,123),"CR011-025":(138,137),"CR011-026":(138,137)}
+lookup={r["id"]:r for r in rows}
+for clause_id,(prior,target) in repaired.items():
+    r=lookup.get(clause_id,{})
+    check(r.get("page")==target and str(r.get("source_page_marker"))==str(target),
+          f"{clause_id}: B2007 digital source-page correction lost")
+    check(r.get("source_page_correction",{}).get("original_record_page")==prior,
+          f"{clause_id}: original derivative-page provenance lost")
+    check(r.get("digital_control_url")==f"https://ablibrary.net/book_content/b/9606/{target}?lang=ar",
+          f"{clause_id}: corrected direct B2007 digital link lost")
+    check(bool(r.get("derivative_source_url")),f"{clause_id}: original derivative source link lost")
+check(lookup.get("CR011-044",{}).get("page")==138,"New direct B2007 p138 source check lost")
+
 
 critical,_=htmls.get("critical-edition.html",("",None))
 check('critical-reader.js' in critical,"Critical clause viewer script not loaded")
@@ -209,7 +224,7 @@ book=next((x for x in manifest.get("texts",[]) if x.get("id")=="farghani-muntaha
 check(bool(book),"Central catalogue lost Farghānī")
 if book:
     check(book.get("working_english_draft_printed_pages_count")==128,"Catalogue wrongly states English draft scope")
-    check(book.get("critical_pass_source_checked_clause_count")==559,"Catalogue incorrectly claims count of source-reviewed excerpts")
+    check(book.get("critical_pass_source_checked_clause_count")==560,"Catalogue incorrectly claims count of source-reviewed excerpts")
     check(book.get("historical_print_bounded_comparisons")==15,"Catalogue historic printed-locus count differs")
 
 print(json.dumps({

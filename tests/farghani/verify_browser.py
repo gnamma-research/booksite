@@ -136,17 +136,17 @@ def run_browser(p,engine,browser_name):
         page.locator('#pr-dialog-content select[aria-label="Source evidence for Beirut printed page"]').select_option("25")
         assert "هذا الأثر لم أجده" in page.locator(".pr-study-evidence").inner_text(),f"{label}: p25 note lost from separate Study apparatus"
         page.locator("#pr-close").click()
-        # 559 selected records must stay usable in page-filtered critical viewer.
+        # 560 selected records must stay usable in page-filtered critical viewer.
         page.goto(BASE+"critical-edition.html?page=52",wait_until="domcontentloaded",timeout=60000)
         page.wait_for_selector(".audit-clause")
-        assert page.locator("#count").inner_text().strip()=="559",f"{label}: critical record total"
+        assert page.locator("#count").inner_text().strip()=="560",f"{label}: critical record total"
         page.locator("#page-select").select_option("52")
         assert page.locator("#clauses .audit-clause").count()>0,f"{label}: p52 missing"
         assert page.locator('.audit-clause[data-disposition="corrected"]').count()>=0
         assert not errors,f"{label}: critical reader errors {errors[:5]}"
         assert_no_hscroll(page,label+" critical")
         page.screenshot(path=str(ART/(label+"-critical.png")),full_page=False)
-        reports.append({"browser":browser_name,"mobile":is_mobile,"pages":128,"notes":70,"critical_records":559,"status":"pass"})
+        reports.append({"browser":browser_name,"mobile":is_mobile,"pages":128,"notes":70,"critical_records":560,"status":"pass"})
         ctx.close()
         browser.close()
 

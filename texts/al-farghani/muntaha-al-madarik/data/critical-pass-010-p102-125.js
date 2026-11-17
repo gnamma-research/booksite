@@ -97,18 +97,28 @@ window.FARGHANI_CRITICAL_PASS_010={
     },
     {
       "id": "CR010-007",
-      "page": 105,
+      "page": 104,
       "ar": "فلم يوجد شيء غالبا فيها بغير سبب وعلّة ظاهرة",
       "en": "Ordinarily nothing in this realm comes to be without a manifest cause.",
       "disposition": "annotate",
       "critical_note": "Preserve غالبا: the rule expressly allows exceptions rather than universal physical necessity.",
       "source_siglum": "D-Forum-B2007-derivative",
       "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
-      "source_page_marker": "105",
+      "source_page_marker": "104",
       "source_grade": "secondary-online-retranscription-of-modern-edited-Arabic; selected authorial span; no original print or manuscript photograph",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_page_correction": {
+        "original_record_page": 105,
+        "corrected_b2007_page": 104,
+        "method": "exact-normalized-Arabic-excerpt-located-in-B2007-digitized",
+        "date": "2026-11-17",
+        "historical_print_covered": false,
+        "manuscript_checked": false
+      },
+      "derivative_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/104?lang=ar"
     },
     {
       "id": "CR010-008",
@@ -457,18 +467,28 @@ window.FARGHANI_CRITICAL_PASS_010={
     },
     {
       "id": "CR010-031",
-      "page": 117,
+      "page": 116,
       "ar": "فلا جرم ختم به النبوّة ، فلا نبيّ بعده أصلا",
       "en": "Hence prophethood was sealed by him: absolutely no prophet follows him.",
       "disposition": "retain",
       "critical_note": "Author explicitly affirms finality of prophethood.",
       "source_siglum": "D-Forum-B2007-derivative",
       "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
-      "source_page_marker": "117",
+      "source_page_marker": "116",
       "source_grade": "secondary-online-retranscription-of-modern-edited-Arabic; selected authorial span; no original print or manuscript photograph",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_page_correction": {
+        "original_record_page": 117,
+        "corrected_b2007_page": 116,
+        "method": "exact-normalized-Arabic-excerpt-located-in-B2007-digitized",
+        "date": "2026-11-17",
+        "historical_print_covered": false,
+        "manuscript_checked": false
+      },
+      "derivative_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/116?lang=ar"
     },
     {
       "id": "CR010-032",
@@ -667,18 +687,28 @@ window.FARGHANI_CRITICAL_PASS_010={
     },
     {
       "id": "CR010-045",
-      "page": 124,
+      "page": 123,
       "ar": "ففي الرتبة الأولى الكونية تلبس بلباس مظهر روحاني",
       "en": "In the first cosmic rank it wears the form of a spiritual manifestation.",
       "disposition": "retain",
       "critical_note": "Three ranks: spiritual, imaginal and sensible.",
       "source_siglum": "D-Forum-B2007-derivative",
       "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
-      "source_page_marker": "124",
+      "source_page_marker": "123",
       "source_grade": "secondary-online-retranscription-of-modern-edited-Arabic; selected authorial span; no original print or manuscript photograph",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_page_correction": {
+        "original_record_page": 124,
+        "corrected_b2007_page": 123,
+        "method": "exact-normalized-Arabic-excerpt-located-in-B2007-digitized",
+        "date": "2026-11-17",
+        "historical_print_covered": false,
+        "manuscript_checked": false
+      },
+      "derivative_source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/123?lang=ar"
     },
     {
       "id": "CR010-046",
@@ -729,8 +759,8 @@ window.FARGHANI_CRITICAL_PASS_010={
   "page_counts": {
     "102": 2,
     "103": 2,
-    "104": 2,
-    "105": 2,
+    "104": 3,
+    "105": 1,
     "106": 2,
     "107": 2,
     "108": 2,
@@ -741,15 +771,15 @@ window.FARGHANI_CRITICAL_PASS_010={
     "113": 2,
     "114": 2,
     "115": 2,
-    "116": 2,
-    "117": 2,
+    "116": 3,
+    "117": 1,
     "118": 2,
     "119": 2,
     "120": 2,
     "121": 2,
     "122": 2,
-    "123": 2,
-    "124": 2,
+    "123": 3,
+    "124": 1,
     "125": 2
   },
   "record_count": 48,

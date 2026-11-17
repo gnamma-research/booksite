@@ -1,0 +1,33 @@
+{
+  "schema": "gnamma-farghani-stage-020-recovery",
+  "date": "2026-11-17",
+  "scope": "four-foundation introduction and concluding preface, B2007 pp18–145 only",
+  "source_page_repair_count": 12,
+  "new_direct_clause": "CR011-044",
+  "selected_critical_record_count": 560,
+  "source_grades": {
+    "edited_digitized": 284,
+    "derivative": 276
+  },
+  "exact_normalized_digitized_matches": 523,
+  "unresolved_excerpt_mismatches": 37,
+  "arabic_digital_page_labels": 128,
+  "english_working_page_labels": 128,
+  "independently_collated_full_print_pages": 0,
+  "verified_manuscript_variants": 0,
+  "photographed_i1876_print_selected_loci": 15,
+  "preserve_archival_snapshots": [
+    "FULL_CUMULATIVE_READER_018.md",
+    "INTRO_SOURCE_AUDIT_019.json",
+    "PRINT_SCHOLARLY_INTRO_019.html"
+  ],
+  "related_records": [
+    "SOURCE_PAGE_REPAIR_020.md",
+    "SELECTED_EXCERPT_SOURCE_PARITY_020.json",
+    "STAGE_HANDOFF_SOURCE_020.md"
+  ],
+  "next_exact_id": "CR001-034",
+  "next_b2007_page": 20,
+  "separate_pending_crux": "B2007 digitized p138 مشمّة الروح: check actual historical print/manuscripts before revising the womb translation",
+  "main_commentary_out_of_scope": true
+}
