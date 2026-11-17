@@ -5,12 +5,12 @@
   "cumulative_handoff": "FULL_CUMULATIVE_HANDOFF_2026-11-17.md",
   "source_repo": "gnamma-research/booksite",
   "source_branch": "recovery/mahaimi-stage13-20261111",
-  "source_commit": "24e89e2b6f4ff7d9b73e24bad0cf556e6efa68f7",
-  "package_branch": "recovery-package/mahaimi-confirmed-20261117",
+  "source_commit": "9ae479aebe9e4fbd6eac81506dd4a9929c2eed70",
+  "package_branch": "cumulative/mahaimi-qunawi-stage13-verified-20261117",
   "prior_package_commit": "f9f1921d50e6dbf7a2e7049454241007f1825195",
   "preserved_source_subtree": "texts/al-mahaimi/mashra-al-khusus/",
-  "preserved_confirmed_copy": "confirmed/",
-  "source_history_parent_commit": "24e89e2b6f4ff7d9b73e24bad0cf556e6efa68f7",
+  "preserved_confirmed_copy": "sibling branch recovery-package/mahaimi-confirmed-20261117/confirmed/",
+  "source_history_parent_commit": "9ae479aebe9e4fbd6eac81506dd4a9929c2eed70",
   "works": [
     {
       "id": "mahaimi-mashra-commentary",
@@ -128,5 +128,7 @@
     "overwrite_source",
     "publish_unverified_variants",
     "archive_old_chat"
-  ]
+  ],
+  "sibling_confirmed_file_branch": "recovery-package/mahaimi-confirmed-20261117",
+  "presence_verified_on_cumulative_branch": true
 }
