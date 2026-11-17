@@ -1,0 +1,27 @@
+{
+  "stage": 110,
+  "original_pdf_sha256_verified": true,
+  "original_volumeI_images_sha256_verified": 280,
+  "stable_record_ids": 1401,
+  "inherited_all_volume_files_accounted_for": 829,
+  "unchanged_binary_inherited": 827,
+  "updated_html_reader_entrypoints_previous_bytes_preserved": 2,
+  "VolumeI_target_ids": [
+    "I046.upper.02",
+    "I047.lower.01",
+    "I047.lower.02"
+  ],
+  "VolumeI_unmodified_I026_lower02": true,
+  "VolumeI_proof_ledger_rows_preserved": 1400,
+  "VolumeII_fixed_clause_proof_rows_preserved": 53,
+  "VolumeII_G_same_single_print_source_second_visual_review_segments": 8,
+  "VolumeII_G_independent_external_proof_completed": false,
+  "VolumeII_following_distinct_note_source_bounded_sections": 3,
+  "VolumeII_II224_duplicate_unique_source_occurrence": 1,
+  "independent_complete_proofed_source_positions": 0,
+  "live_browser_visual_qa": "NOT verified",
+  "source_node_ci_stdout": "PASS Stage110: 1401 IDs, reader 84-109 overlay, 3 new bounded records, old text preserved",
+  "source_node_ci_stderr": "",
+  "separate_Tahdhib_unchanged": true,
+  "original_chats_unchanged": true
+}
