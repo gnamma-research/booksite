@@ -102,3 +102,16 @@ body:not([data-focus="0"]) #reading .gn-term-inline{display:inline!important}
 @media print{
  #reading .gn-inline-source-marker,#reading .gn-source-inline,.gn-citation-dialog{display:none!important}
 }
+
+
+/* Reviewed cross-reader bridges: scholarly cards only, absent from running text. */
+.gn-crossreader-item{margin:9px 0 14px;padding:12px 14px;border:1px solid var(--line);border-inline-start:3px solid var(--qt-gold,#a17d48);border-radius:5px 10px 10px 5px;background:var(--panel)}
+.gn-crossreader-item>b{display:block;font:600 14px/1.6 var(--font-en);color:var(--ink)}
+.gn-crossreader-item p{margin:7px 0;font:12px/1.7 ui-sans-serif,system-ui;color:var(--muted)}
+.gn-crossreader-item small{display:block;font:10px/1.6 ui-sans-serif,system-ui;color:var(--qt-gold,#a17d48);letter-spacing:.035em}
+.gn-crossreader-item a{display:inline-flex;font:600 12px/1.7 ui-sans-serif,system-ui;color:var(--accent);text-underline-offset:3px;padding-block:3px}
+.gn-source-index-group>a{display:block;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);padding:12px 4px}
+.gn-source-index-group>a:hover,.gn-source-index-group>a:focus-visible{background:var(--accent-soft)}
+.gn-source-index-group>a strong{display:block;font:600 13px/1.7 ui-sans-serif,system-ui}
+.gn-source-index-group>a small{display:block;font:11px/1.6 ui-sans-serif,system-ui;color:var(--muted);padding:4px 0}
+@media print{.gn-crossreader-item,.gn-source-index-group>a{display:none!important}}
