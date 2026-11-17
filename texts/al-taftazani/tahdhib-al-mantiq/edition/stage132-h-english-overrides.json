@@ -1,0 +1,82 @@
+{
+  "schema": "gnamma.tahdhib.stage132.public-english-only.v1",
+  "stage": 132,
+  "date": "2026-11-17",
+  "rights": "Contains preferred English and source locators only; original full digitally recovered Arabic omitted",
+  "expectedOriginalH": 1090,
+  "records": [
+    {
+      "id": "HWN-CONTRAPOSITION-009",
+      "english": "On the passage from “and likewise the nine” to “do not contrapose”: the reason is a counterexample—an instance in which the original proposition holds but the proposed contraposition does not—of the kind already used in the discussion of simple conversion. Consider the narrowest of these nine forms, the time-restricted proposition. It can be true to say: “Necessarily, every moon is not eclipsed at the time of quadrature, though not permanently.” Yet the alleged contraposition, “Some eclipsed thing is possibly not a moon, under general possibility,” is false in the stipulated example, for its contradictory, “Every eclipsed thing is necessarily a moon,” is true. If even the more restricted original cannot be converted in the proposed way, neither can the more general form: if the general form entailed the claimed converse, the narrower form would entail it too. The principal glossator used this reasoning earlier with negative propositions under simple conversion. Remember it.",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/338?lang=ar"
+      ],
+      "sourceSection": "H-CONTRAPOSITION"
+    },
+    {
+      "id": "HWN-CONTRAPOSITION-012",
+      "english": "The point is that a negative proposition, whether universal—such as “No human is a stone”—or particular—such as “Some animal is not human”—yields, by contraposition, a particular negative rather than a universal negative.\n\nWhy does the particular negative hold? The predicate has been denied of everything, or of some of the things, to which the subject applies. Thus at least some bearer of the contradictory of the predicate does not bear the contradictory of the subject. For example, from “No human is a stone,” the proposed particular contraposition is “Some non-stone is not non-human.” This is the positive side of the author's restriction, taken to be evident in the intended logic of the subject.\n\nWhy is the converse not universally negative? The subject of the original may be narrower than the contradictory of its predicate. Thus “No human is a non-animal” is true, while “animal,” the contradictory of “non-animal,” is broader than “human.” If one converted the former into a universal negative, one would have to deny “non-human” of every animal. But then every animal would be human: the allegedly broader term would never apply apart from the narrower one, contrary to the very meaning of its greater extension. Accordingly the author's phrase “because it may be ...” establishes why the universal-negative contraposition is excluded; the particular-negative consequence was explained above.",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/338?lang=ar"
+      ],
+      "sourceSection": "H-CONTRAPOSITION"
+    },
+    {
+      "id": "HWN-CONTRAPOSITION-016",
+      "english": "The reason just given is not, as one might initially suppose, a proof that the subject-description C can be predicated of the selected individual D under the particular modality being discussed. A subject's own description is necessarily predicable of itself and requires no special demonstration. Rather, the reason is offered for restricting this predication to that specific modal qualification.\n\nThere is a known dispute about whether an individual counts as bearing its subject-title merely possibly or only when it actually bears that description. The question was treated at length in the commentary on the words “neither of the two possible propositions has a converse.” Since the view adopted here requires the subject-title to obtain actually, the proof invokes that actuality in order to establish the qualified conclusion. Reflect on this distinction between the bare predication and the modality under which it is asserted.",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/339?lang=ar"
+      ],
+      "sourceSection": "H-CONTRAPOSITION"
+    },
+    {
+      "id": "HWN-CONTRAPOSITION-021",
+      "english": "The words “Understand!” may be pointing to a limitation in the proof: one might suppose that the two special forms, when the original proposition is a particular negative, contrapose to the special customary form on the strength of the proof by supposition (*iftirāḍ*) alone. That is not the whole argument. Establishing the specific claimed converse requires both the supposition argument and an instance of failure (*takhalluf*) that rules out a stronger or otherwise unsuitable converse. The conclusion is therefore supported by the two procedures together, not by supposition in isolation.",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/340?lang=ar"
+      ],
+      "sourceSection": "H-CONTRAPOSITION"
+    },
+    {
+      "id": "HWN-INDUCTION-007",
+      "english": "The commentator is referring to the distinction that will be made more explicitly when the definition of analogy is examined. “Induction” is sometimes used in its verbal-noun sense, signifying the activity of tracing or surveying cases, and sometimes in its technical sense, signifying a certain kind of argument. Here the author has chosen the former sense by defining induction as “surveying” (*taṣaffuḥ*). He does not separately spell out the technical sense, because it can be understood by comparison with the activity described. This is like his procedure in the chapter on conversion, where he says: “It is the exchanging of the two terms of a proposition.” An operation and the argument or result associated with it must not be conflated.",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/373?lang=ar"
+      ],
+      "sourceSection": "H-INDUCTION"
+    },
+    {
+      "id": "HWN-INDUCTION-018",
+      "english": "The *Miṣbāḥ* states: “The crocodile is an aquatic creature resembling a monitor lizard in form. It measures about five cubits or less. It seizes a person or a cow, plunges with the prey into the water, and devours it.” That is the end of the quoted description. The monitor lizard (*waral*) is an animal formed like a *ḍabb*, though larger.\n\nSomeone else has described the crocodile as resembling a *ḍabb* and as among the most remarkable aquatic animals. According to this description, it has a broad mouth, sixty fangs in the upper jaw and forty in the lower. Between each pair of fangs is a small square tooth; when the jaws close, the teeth fit into one another. It is said to have a long tongue, a back like that of a tortoise which iron cannot penetrate, four legs, and a long tail. The account concludes with the claim that this animal is found only in Egypt.\n\nThese details are reported descriptions in the glossator's sources, not independently established zoological observations.",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/374?lang=ar"
+      ],
+      "sourceSection": "H-INDUCTION"
+    },
+    {
+      "id": "HWN-INDUCTION-026",
+      "english": "The well-known definition of induction among most logicians is “establishing a judgment of a universal because that judgment is found in most of its particulars.” Their familiar definition of analogy is “establishing a judgment in one particular because it is established in another particular on account of a meaning shared by the two.”\n\nThe author departed from these formulations because they contain an imprecision: the two acts of “establishing” a judgment are not themselves induction and analogy, understood as kinds of *argument*. An act of establishing something is certainly not identical with the argument through which it is established. Yet, as the commentator has already pointed out, the author's replacement definitions themselves speak in a similarly procedural manner. He has therefore returned to the very imprecision from which he was trying to escape: he fled the looseness in the received definitions, only to fall into it himself.",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/375?lang=ar"
+      ],
+      "sourceSection": "H-INDUCTION"
+    },
+    {
+      "id": "HWN-INDUCTION-027",
+      "english": "One method is *munāsaba* or *ikhāla* (suitability or plausible indication): the effective cause in the original case is identified merely by exhibiting a suitable relation between a proposed characteristic and the judgment, without considering anything further.\n\nAnother method is what the Ḥanafīs call *istidlāl* (inference) and al-Ghazālī calls *tanqīḥ al-manāṭ* (refining the operative ground). The argument runs as follows. The cause of the judgment must be either the feature common to the original case and the new case, or some feature by which the original differs from the new. The second possibility is rejected by *ilghāʾ al-fāriq* (eliminating the difference): one enumerates the putative distinguishing features and shows that none of them is suitable to account for the judgment. What remains as the cause is the shared feature. Since that feature also belongs to the new case, the judgment must apply to the new case as well.\n\nThe commentator adds that this procedure ultimately returns to *dawarān*, the conjunction of the judgment's occurrence with the feature's presence and its absence with the feature's absence, as will be discussed shortly. Reflect.",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/375?lang=ar"
+      ],
+      "sourceSection": "H-INDUCTION"
+    },
+    {
+      "id": "HWN-INDUCTION-030",
+      "english": "An objection is raised: the concomitant presence and absence of two things often occurs even when one is not the cause of the other. Consider the correspondence between a definition and what it defines; two coextensive effects issuing from one cause; substance and accident; or the relation of the last component of a complete cause, the complete cause itself, and a coextensive effect to the effect in question. Such correlations do not, solely by being correlations, establish the proposed direction of causation.\n\nThe objection can be put more generally. If the concomitance (*dawarān*) implies that the associated feature is a cause of the judgment, either it does so in virtue of concomitance considered in itself, or it does so because of some feature peculiar to the particular subject matter. The first alternative is not established—for then failure of the supposed causal relation could not occur. The second alternative supplies no independent proof from concomitance, since the special features of the particular case would have to do the causal work. Mere co-variation therefore cannot, by itself, certify the proposed cause.",
+      "sourceUrls": [
+        "https://ablibrary.net/book_content/b/12170/375?lang=ar",
+        "https://ablibrary.net/book_content/b/12170/376?lang=ar"
+      ],
+      "sourceSection": "H-INDUCTION"
+    }
+  ]
+}
