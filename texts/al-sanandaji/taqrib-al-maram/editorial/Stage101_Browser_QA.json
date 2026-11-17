@@ -1,0 +1,55 @@
+{
+  "stage": 101,
+  "browser_test": "pass_with_limitations",
+  "source": "in-memory reconstruction of original reader HTML, CSS, and sequential JS in local Chromium; not live site",
+  "dimensions": [
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "records": 1401,
+      "arabic_bearing": 1279,
+      "I033_lower_01_arabic_english_visible": true,
+      "I036_lower_01_and_02_arabic_visible": true,
+      "I036_ruled_note_kept_separate": true,
+      "marginal_expanded_programmatically": true,
+      "native_pointer_click_on_disclosure_verified": false,
+      "search_hits": 1,
+      "focus_mode_works": true,
+      "page_errors": []
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "records": 1401,
+      "arabic_bearing": 1279,
+      "I033_lower_01_arabic_english_visible": true,
+      "I036_lower_01_and_02_arabic_visible": true,
+      "I036_ruled_note_kept_separate": true,
+      "marginal_expanded_programmatically": true,
+      "native_pointer_click_on_disclosure_verified": false,
+      "search_hits": 1,
+      "focus_mode_works": true,
+      "page_errors": []
+    },
+    {
+      "width": 1400,
+      "scrollWidth": 1400,
+      "records": 1401,
+      "arabic_bearing": 1279,
+      "I033_lower_01_arabic_english_visible": true,
+      "I036_lower_01_and_02_arabic_visible": true,
+      "I036_ruled_note_kept_separate": true,
+      "marginal_expanded_programmatically": true,
+      "native_pointer_click_on_disclosure_verified": false,
+      "search_hits": 1,
+      "focus_mode_works": true,
+      "page_errors": []
+    }
+  ],
+  "limitations": [
+    "Direct native tap/click to toggle marginal disclosure was not independently verified; test opened it programmatically",
+    "This test reconstructs the local reader rather than visiting deployed GitHub Pages",
+    "Browser QA does not constitute an independent scholarly textual second proof",
+    "Source excerpts remain bounded and omit printed clauses"
+  ]
+}
