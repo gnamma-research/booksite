@@ -2,7 +2,7 @@ import {readFileSync} from 'node:fs';
 import assert from 'node:assert/strict';
 const root=new URL('../',import.meta.url),read=p=>readFileSync(new URL(p,root),'utf8');
 const data=JSON.parse(read('editorial/PREVIEW_1_9_0_THREE_FOOTNOTED_CHAPTERS.json'));
-const previous=JSON.parse(read('data/chapters.json'));
+const previous=JSON.parse(read('editorial/release-1.8.0-restored-chapters.json'));
 const html=read('read-preview-1.9.0.html'),man=read('editorial/PREVIEW_1_9_0_THREE_FOOTNOTED_CHAPTERS.md');
 assert.equal(data.edition,'1.9.0-footnoted-three-chapter-preview');
 assert.equal(previous.edition,'1.8.0-metaphysical-restoration');
