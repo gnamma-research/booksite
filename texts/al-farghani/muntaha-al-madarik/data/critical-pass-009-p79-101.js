@@ -159,7 +159,10 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "editorially-abbreviated-ordered-source-fragments",
+      "editorial_ellipsis": true,
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-008",
@@ -174,7 +177,15 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "continuous-quote-across-B2007-printed-page-boundary",
+      "digital_page_span": [
+        80,
+        81
+      ],
+      "digital_previous_page_url": "https://ablibrary.net/book_content/b/9606/80?lang=ar",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/81?lang=ar",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-009",
@@ -224,7 +235,7 @@ window.FARGHANI_CRITICAL_PASS_009={
     {
       "id": "CR009-012",
       "page": 82,
-      "ar": "فتصوّرت بذلك الانبساط بأقرب صورة إلى الوحدة والبساطة الذي هو هيئة الاستدارة",
+      "ar": "وتصوّرت بذلك الانبساط بأقرب صورة إلى الوحدة والبساطة الذي هو هيئة الاستدارة",
       "en": "In its expansion it assumed the form nearest to unity and simplicity, namely the circular shape.",
       "disposition": "annotate",
       "critical_note": "Cosmological geometry functions as symbolic and philosophical explanation, not a modern measured physical model.",
@@ -234,7 +245,11 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "فتصوّرت بذلك الانبساط بأقرب صورة إلى الوحدة والبساطة الذي هو هيئة الاستدارة",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/82?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-013",
@@ -309,7 +324,7 @@ window.FARGHANI_CRITICAL_PASS_009={
     {
       "id": "CR009-017",
       "page": 83,
-      "ar": "فكان هذا العرش مستوى الاسم الرحمن على جميع معاني الاستواء",
+      "ar": "فلهذا كان هذا العرش مستوى الاسم الرحمن على جميع معاني الاستواء",
       "en": "Thus this Throne is the locus of the name the All-merciful under all the senses of istiwāʾ.",
       "disposition": "annotate",
       "critical_note": "Multiple conceptual meanings follow; the account is Farghānī's reading of scriptural language, not a single lexically mandated definition.",
@@ -319,12 +334,16 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "فكان هذا العرش مستوى الاسم الرحمن على جميع معاني الاستواء",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/83?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-018",
       "page": 83,
-      "ar": "فهذا العرش هو أصل تعيّن صور الزمان بحركته الدورية",
+      "ar": "فإن هذا العرش هو أصل تعيّن صور الزمان بحركته الدورية",
       "en": "The Throne is the origin of the determination of temporal forms through its circular motion.",
       "disposition": "retain",
       "critical_note": "Medieval astronomical model explains temporal measurement and must not be projected uncritically onto current cosmology.",
@@ -334,13 +353,17 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "فهذا العرش هو أصل تعيّن صور الزمان بحركته الدورية",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/83?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-019",
       "page": 84,
-      "ar": "والكرسي الكريم ... مظهرا قابلا لظهور تفاصيل الصور المعنوية والروحانية والحسّية",
-      "en": "The noble Footstool serves as a receptive locus for the detail of intelligible, spiritual and sensible forms.",
+      "ar": "فعين الاسم الباريء لها صورة مستديرة تكون مظهرا قابلا لظهور تفاصيل الصور المعنوية والروحانية والحسّية اللطيفة والكثيفة فيه مسمّى بالكرسي الكريم",
+      "en": "The name al-Bāriʾ assigns it a circular form receptive to the detailed manifestation of intelligible, spiritual, and sensible forms, subtle and dense. This is called the noble Footstool.",
       "disposition": "retain",
       "critical_note": "The three levels require distinct senses of form.",
       "source_siglum": "D-Forum-B2007-derivative",
@@ -349,13 +372,18 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "والكرسي الكريم ... مظهرا قابلا لظهور تفاصيل الصور المعنوية والروحانية والحسّية",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/84?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "english_before_reconciliation": "The noble Footstool serves as a receptive locus for the detail of intelligible, spiritual and sensible forms.",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-020",
       "page": 84,
-      "ar": "وللكرسي الكريم ثلاثة وجوه",
-      "en": "The noble Footstool has three aspects.",
+      "ar": "صار لهذا الكرسي الكريم ثلاثة وجوه",
+      "en": "This noble Footstool thus came to have three aspects.",
       "disposition": "retain",
       "critical_note": "Three-aspect schema mirrors the cosmological role of the intermediate rank.",
       "source_siglum": "D-Forum-B2007-derivative",
@@ -364,7 +392,12 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "وللكرسي الكريم ثلاثة وجوه",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/84?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "english_before_reconciliation": "The noble Footstool has three aspects.",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-021",
@@ -414,8 +447,8 @@ window.FARGHANI_CRITICAL_PASS_009={
     {
       "id": "CR009-024",
       "page": 85,
-      "ar": "فهو أصل الجنان ، ووجوهه أصول مراتبها التي هي جنّة الأعمال وجنّة الميراث وجنّة الامتنان",
-      "en": "Its aspects correspond to Gardens of Works, Inheritance and Gracious Bestowal.",
+      "ar": "وهذا الكرسي الكريم هو أصل الجنان ، ووجوهه أصول مراتبها التي هي جنّة الأعمال وجنّة الميراث وجنّة الامتنان",
+      "en": "The noble Footstool is the origin of the Gardens, and its aspects are the principles of the Gardens of Works, Inheritance, and Gracious Bestowal.",
       "disposition": "retain",
       "critical_note": "Three garden categories correspond to distinct aspects of Footstool.",
       "source_siglum": "D-Forum-B2007-derivative",
@@ -424,7 +457,12 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "فهو أصل الجنان ، ووجوهه أصول مراتبها التي هي جنّة الأعمال وجنّة الميراث وجنّة الامتنان",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/85?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "english_before_reconciliation": "Its aspects correspond to Gardens of Works, Inheritance and Gracious Bestowal.",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-025",
@@ -469,7 +507,10 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "editorially-abbreviated-ordered-source-fragments",
+      "editorial_ellipsis": true,
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-028",
@@ -529,7 +570,9 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "literal-quote-matches-with-modern-footnote-numerals-omitted",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-032",
@@ -579,7 +622,7 @@ window.FARGHANI_CRITICAL_PASS_009={
     {
       "id": "CR009-035",
       "page": 89,
-      "ar": "والسماء الرابعة التي هي في وسط السماوات السبع مظهر صفة الحياة",
+      "ar": "فكانت السماء الرابعة التي هي في وسط السماوات السبع مظهر صفة الحياة",
       "en": "The fourth, central heaven manifests the quality of life.",
       "disposition": "retain",
       "critical_note": "One of seven correspondence assignments, situated in period cosmology.",
@@ -589,7 +632,11 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "والسماء الرابعة التي هي في وسط السماوات السبع مظهر صفة الحياة",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/89?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-036",
@@ -699,7 +746,7 @@ window.FARGHANI_CRITICAL_PASS_009={
     {
       "id": "CR009-043",
       "page": 91,
-      "ar": "فإن كل ما يحل في محل معنوي أو صوري يكون تحت حكم ذلك المحل",
+      "ar": "أن كل ما يحل في محل معنوي أو صوري يكون تحت حكم ذلك المحل",
       "en": "Everything established in an intelligible or formal locus comes under the judgment of that locus.",
       "disposition": "retain",
       "critical_note": "Recalls earlier account of the causal importance of the locus.",
@@ -709,7 +756,11 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "فإن كل ما يحل في محل معنوي أو صوري يكون تحت حكم ذلك المحل",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/91?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-044",
@@ -779,7 +830,7 @@ window.FARGHANI_CRITICAL_PASS_009={
     {
       "id": "CR009-047",
       "page": 92,
-      "ar": "فكانت كلتا يديه يمين مباركة نظرا إلى الكمال الحقيقي لا النسبي",
+      "ar": "كانت كلتا يديه يمين مباركة نظرا إلى الكمال الحقيقي لا النسبي",
       "en": "Both His hands are blessed right hands with respect to true, not relative, perfection.",
       "disposition": "annotate",
       "critical_note": "Theological symbolism is explained within the author's metaphysical language, not physical anatomy.",
@@ -789,7 +840,11 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "فكانت كلتا يديه يمين مباركة نظرا إلى الكمال الحقيقي لا النسبي",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/92?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-048",
@@ -849,7 +904,10 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "editorially-abbreviated-ordered-source-fragments",
+      "editorial_ellipsis": true,
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-052",
@@ -894,7 +952,15 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "continuous-quote-across-B2007-printed-page-boundary",
+      "digital_page_span": [
+        94,
+        95
+      ],
+      "digital_previous_page_url": "https://ablibrary.net/book_content/b/9606/94?lang=ar",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/95?lang=ar",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-055",
@@ -939,7 +1005,10 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "editorially-abbreviated-ordered-source-fragments",
+      "editorial_ellipsis": true,
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-058",
@@ -1074,7 +1143,15 @@ window.FARGHANI_CRITICAL_PASS_009={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "continuous-quote-across-B2007-printed-page-boundary",
+      "digital_page_span": [
+        98,
+        99
+      ],
+      "digital_previous_page_url": "https://ablibrary.net/book_content/b/9606/98?lang=ar",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/99?lang=ar",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR009-067",

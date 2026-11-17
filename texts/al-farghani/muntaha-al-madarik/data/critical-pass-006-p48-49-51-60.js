@@ -420,7 +420,7 @@ window.FARGHANI_CRITICAL_PASS_006={
     {
       "id": "CR006-029",
       "page": 57,
-      "ar": "فالخالق يقدّر الصور كلّها ، والباري يصوّر الصور الروحانية والمثالية ، والمصوّر يصور الصور الحسّية",
+      "ar": "فيكون الخالق يقدّر الصور كلّها ، والباري يصوّر الصور الروحانية والمثالية ، والمصوّر يصور الصور الحسّية",
       "en": "The Creator determines all forms; the Originator fashions spiritual and imaginal forms; the Fashioner forms sensible forms.",
       "disposition": "revise",
       "critical_note": "Distinguish three creative aspects instead of rendering all as generic 'creation'. The text assigns non-sensory forms specifically to al-Bāriʾ.",
@@ -428,7 +428,11 @@ window.FARGHANI_CRITICAL_PASS_006={
       "source_url": "https://ablibrary.net/book_content/b/9606/57?lang=ar",
       "grade": "modern-printed-digital-selected-locus-checked",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "فالخالق يقدّر الصور كلّها ، والباري يصوّر الصور الروحانية والمثالية ، والمصوّر يصور الصور الحسّية",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/57?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR006-030",

@@ -341,7 +341,15 @@ window.FARGHANI_CRITICAL_PASS_004={
       "source_url": "https://ablibrary.net/book_content/b/9606/33?lang=ar",
       "grade": "modern-printed-digital-selected-locus-checked",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "continuous-quote-across-B2007-printed-page-boundary",
+      "digital_page_span": [
+        32,
+        33
+      ],
+      "digital_previous_page_url": "https://ablibrary.net/book_content/b/9606/32?lang=ar",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/33?lang=ar",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR004-027",
@@ -625,7 +633,9 @@ window.FARGHANI_CRITICAL_PASS_004={
       "source_url": "https://ablibrary.net/book_content/b/9606/35?lang=ar",
       "grade": "modern-printed-digital-selected-locus-checked",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "already-normalized-exact-in-B2007",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR004-047",
@@ -747,7 +757,7 @@ window.FARGHANI_CRITICAL_PASS_004={
     {
       "id": "CR004-056",
       "page": 36,
-      "ar": "والعلم في هذه المرتبة الثانية متعلق بمعلومات مفصّلة متميّزة",
+      "ar": "وأن العلم في هذه المرتبة الثانية متعلق بمعلومات مفصّلة متميّزة",
       "en": "At the second rank knowledge relates to differentiated known things.",
       "disposition": "retain",
       "critical_note": "Index the doctrinal claim by rank; do not infer a new essence of divine knowledge.",
@@ -755,7 +765,11 @@ window.FARGHANI_CRITICAL_PASS_004={
       "source_url": "https://ablibrary.net/book_content/b/9606/36?lang=ar",
       "grade": "modern-printed-digital-selected-locus-checked",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "والعلم في هذه المرتبة الثانية متعلق بمعلومات مفصّلة متميّزة",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/36?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "source_parity_resolution_date": "2026-11-17"
     }
   ]
 };

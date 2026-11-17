@@ -32,7 +32,7 @@ window.FARGHANI_CRITICAL_PASS_007={
     {
       "id": "CR007-001",
       "page": 61,
-      "ar": "فذلك الإيثار يكون بالوجود أولا ، ثم بالبقاء ثانيا ، ثم بنفخ الروح والحياة ثالثا",
+      "ar": "وذلك الإيثار يكون بالوجود أولا ، ثم بالبقاء ثانيا ، ثم بنفخ الروح والحياة ثالثا",
       "en": "That bestowal occurs first as existence, second as continuance, and third as the breathing of spirit and life.",
       "disposition": "retain",
       "critical_note": "Three fundamental gifts precede the particular modes of spiritual, psychic and bodily sustenance. STAGE XV: The substantive sequence after الإيثار is directly confirmed on I1876 printed p38 scan42; that PHOTO has preceding conjunction وذلك while the derivative modern text writes فذلك. Only the shared bounded sequence is an agreement; the initial particle remains an unverified difference pending actual B2007 print.",
@@ -52,7 +52,11 @@ window.FARGHANI_CRITICAL_PASS_007={
         "source_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf",
         "original_image_url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000264/42/full/2200,/0/default.jpg",
         "archived_scan_sha256": "f001ab717201e457a9a79e44909c9fb8c4fe7388c345ead125bdc05185e969fb"
-      }
+      },
+      "source_excerpt_before_reconciliation": "فذلك الإيثار يكون بالوجود أولا ، ثم بالبقاء ثانيا ، ثم بنفخ الروح والحياة ثالثا",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/61?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR007-002",
@@ -727,7 +731,7 @@ window.FARGHANI_CRITICAL_PASS_007={
     {
       "id": "CR007-046",
       "page": 68,
-      "ar": "فهي تنفد وتنتهي عند الرجوع إلى التجلّي الأول",
+      "ar": "وهي تنفد وتنتهي عند الرجوع إلى التجلّي الأول",
       "en": "They come to an end on returning to the first self-disclosure.",
       "disposition": "retain",
       "critical_note": "Relative cessation of derivative determinations in ascent, not exhaustion of divine pre-eternal knowledge.",
@@ -737,7 +741,11 @@ window.FARGHANI_CRITICAL_PASS_007={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "فهي تنفد وتنتهي عند الرجوع إلى التجلّي الأول",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/68?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR007-047",

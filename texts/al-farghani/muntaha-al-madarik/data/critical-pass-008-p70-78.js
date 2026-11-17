@@ -576,7 +576,7 @@ window.FARGHANI_CRITICAL_PASS_008={
     {
       "id": "CR008-036",
       "page": 75,
-      "ar": "فصارت جهات العالم الذي تفرّع منه ستّة فوقا وتحتا ويمينا وشمالا وقداما ووراء",
+      "ar": "صارت جهات العالم الذي تفرّع منه ستّة فوقا وتحتا ويمينا وشمالا وقداما ووراء",
       "en": "The dimensions of the world derived from it are six: above, below, right, left, before and behind.",
       "disposition": "retain",
       "critical_note": "A symbolic geometry of six directions with a seventh including them, rather than six spiritual substances.",
@@ -586,7 +586,11 @@ window.FARGHANI_CRITICAL_PASS_008={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "فصارت جهات العالم الذي تفرّع منه ستّة فوقا وتحتا ويمينا وشمالا وقداما ووراء",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/75?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR008-037",
@@ -606,7 +610,7 @@ window.FARGHANI_CRITICAL_PASS_008={
     {
       "id": "CR008-038",
       "page": 76,
-      "ar": "وهي الحياة والعلم والإرادة والقدرة",
+      "ar": "فهي الحياة والعلم والإرادة والقدرة",
       "en": "They are life, knowledge, will and power.",
       "disposition": "retain",
       "critical_note": "Four arkan of the second determination.",
@@ -616,7 +620,11 @@ window.FARGHANI_CRITICAL_PASS_008={
       "source_grade": "secondary-online-Arabic-transcription-derived-from-modern-print; not physical B2007 or independent witness",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "وهي الحياة والعلم والإرادة والقدرة",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/76?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR008-039",

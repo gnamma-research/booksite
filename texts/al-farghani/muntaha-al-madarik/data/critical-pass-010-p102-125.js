@@ -213,8 +213,8 @@ window.FARGHANI_CRITICAL_PASS_010={
     {
       "id": "CR010-014",
       "page": 108,
-      "ar": "وأن الكمّل قليلون والخلفاء كثيرون",
-      "en": "The fully perfected are few, while the vicegerents are numerous.",
+      "ar": "وتعلم أن الكمّل قليلون والخلفاء كثيرون",
+      "en": "Know that the fully perfected are few, while the vicegerents are many.",
       "disposition": "retain",
       "critical_note": "Terminological distinction, not a count of historical caliphs.",
       "source_siglum": "D-Forum-B2007-derivative",
@@ -223,7 +223,12 @@ window.FARGHANI_CRITICAL_PASS_010={
       "source_grade": "secondary-online-retranscription-of-modern-edited-Arabic; selected authorial span; no original print or manuscript photograph",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "وأن الكمّل قليلون والخلفاء كثيرون",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/108?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "english_before_reconciliation": "The fully perfected are few, while the vicegerents are numerous.",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR010-015",
@@ -243,7 +248,7 @@ window.FARGHANI_CRITICAL_PASS_010={
     {
       "id": "CR010-016",
       "page": 109,
-      "ar": "وتوجّه جميع ما ذكرنا إلى تعيين المزاج الأعدل المحمّدي المذكور",
+      "ar": "فتوجّه جميع ما ذكرنا إلى تعيين المزاج الأعدل المحمّدي المذكور",
       "en": "All the preceding determinations converge on the formation of the most balanced Muhammadan temperament.",
       "disposition": "retain",
       "critical_note": "Within Farghānī's metaphysical model; no external medical or astral verification.",
@@ -253,7 +258,11 @@ window.FARGHANI_CRITICAL_PASS_010={
       "source_grade": "secondary-online-retranscription-of-modern-edited-Arabic; selected authorial span; no original print or manuscript photograph",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "وتوجّه جميع ما ذكرنا إلى تعيين المزاج الأعدل المحمّدي المذكور",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/109?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR010-017",
@@ -358,7 +367,10 @@ window.FARGHANI_CRITICAL_PASS_010={
       "source_grade": "secondary-online-retranscription-of-modern-edited-Arabic; selected authorial span; no original print or manuscript photograph",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "editorially-abbreviated-ordered-source-fragments",
+      "editorial_ellipsis": true,
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR010-024",
@@ -613,8 +625,8 @@ window.FARGHANI_CRITICAL_PASS_010={
     {
       "id": "CR010-040",
       "page": 121,
-      "ar": "وعلماء الطريقة والحقيقة الذين هم كبار المشايخ وأطباء تلك العلل والأمراض المعنوية",
-      "en": "Those learned in the path and the truth—the great masters—are physicians of spiritual maladies.",
+      "ar": "وعلى الخصوص علماء الطريقة والحقيقة الذين هم كبار المشايخ وأطباء تلك العلل والأمراض المعنوية",
+      "en": "In particular, the scholars of the Path and the Reality—the great masters—are physicians of these spiritual maladies.",
       "disposition": "retain",
       "critical_note": "The comparison is explicitly therapeutic and analogical.",
       "source_siglum": "D-Forum-B2007-derivative",
@@ -623,7 +635,12 @@ window.FARGHANI_CRITICAL_PASS_010={
       "source_grade": "secondary-online-retranscription-of-modern-edited-Arabic; selected authorial span; no original print or manuscript photograph",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "وعلماء الطريقة والحقيقة الذين هم كبار المشايخ وأطباء تلك العلل والأمراض المعنوية",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/121?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "english_before_reconciliation": "Those learned in the path and the truth—the great masters—are physicians of spiritual maladies.",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR010-041",
@@ -638,7 +655,10 @@ window.FARGHANI_CRITICAL_PASS_010={
       "source_grade": "secondary-online-retranscription-of-modern-edited-Arabic; selected authorial span; no original print or manuscript photograph",
       "grade": "derivative-Arabic-to-working-English-selected-locus-review",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "editorially-abbreviated-ordered-source-fragments",
+      "editorial_ellipsis": true,
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR010-042",

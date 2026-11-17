@@ -54,7 +54,7 @@ window.FARGHANI_CRITICAL_PASS_005={
     {
       "id": "CR005-003",
       "page": 37,
-      "ar": "فكان لذلك داخلا في القول ومنبعثا ومتفرّعا منه",
+      "ar": "كان لذلك داخلا في القول ومنبعثا ومتفرّعا منه",
       "en": "Therefore [power] is included in speech, originates from it and branches from it.",
       "disposition": "retain",
       "critical_note": "The antecedent is القدرة, not الجود. Keep the page-wide referential sequence explicit.",
@@ -62,7 +62,11 @@ window.FARGHANI_CRITICAL_PASS_005={
       "source_url": "https://ablibrary.net/book_content/b/9606/37?lang=ar",
       "grade": "modern-printed-digital-selected-locus-checked",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "فكان لذلك داخلا في القول ومنبعثا ومتفرّعا منه",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/37?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR005-004",

@@ -481,7 +481,9 @@ window.FARGHANI_CRITICAL_PASS_001={
       "source_siglum": "B2007",
       "grade": "printed-digital-Arabic-checked-v1",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "literal-quote-matches-with-modern-footnote-numerals-omitted",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR001-035",
@@ -507,7 +509,9 @@ window.FARGHANI_CRITICAL_PASS_001={
       "source_siglum": "B2007",
       "grade": "printed-digital-Arabic-checked-v1",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "literal-quote-matches-with-modern-footnote-numerals-omitted",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR001-037",

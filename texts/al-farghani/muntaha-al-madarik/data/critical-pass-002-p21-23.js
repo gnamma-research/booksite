@@ -106,7 +106,9 @@ window.FARGHANI_CRITICAL_PASS_002={
       "source_url": "https://ablibrary.net/book_content/b/9606/21?lang=ar",
       "grade": "printed-digital-Arabic-checked-v1",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "literal-quote-matches-with-modern-footnote-numerals-omitted",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR002-008",
@@ -306,15 +308,20 @@ window.FARGHANI_CRITICAL_PASS_002={
     {
       "id": "CR002-023",
       "page": 22,
-      "ar": "نظرا من حيث مظاهرها وصورها وآثارها إليها ألفينا بعضها كلّيات وأصولا أول بمثابة أجناس عالية",
-      "en": "If considered through their manifestations, forms and effects, some prove to be universals and primary principles comparable to supreme genera.",
+      "ar": "نظرنا من حيث مظاهرها وصورها وآثارها إليها ألفينا بعضها كلّيات وأصولا أول بمثابة أجناس عالية",
+      "en": "When we considered them through their manifestations, forms, and effects, we found some to be universals and first principles, akin to the highest genera.",
       "disposition": "retain",
       "critical_note": "Move from first-rank inclusion to what follows upon later manifestation.",
       "source_siglum": "B2007",
       "source_url": "https://ablibrary.net/book_content/b/9606/22?lang=ar",
       "grade": "printed-digital-Arabic-checked-v1",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_excerpt_before_reconciliation": "نظرا من حيث مظاهرها وصورها وآثارها إليها ألفينا بعضها كلّيات وأصولا أول بمثابة أجناس عالية",
+      "digital_control_url": "https://ablibrary.net/book_content/b/9606/22?lang=ar",
+      "source_parity_resolution_type": "literal-quotation-repaired-to-digitized-B2007",
+      "english_before_reconciliation": "If considered through their manifestations, forms and effects, some prove to be universals and primary principles comparable to supreme genera.",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR002-024",
@@ -517,7 +524,9 @@ window.FARGHANI_CRITICAL_PASS_002={
       "source_url": "https://ablibrary.net/book_content/b/9606/23?lang=ar",
       "grade": "printed-digital-Arabic-checked-v1",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "literal-quote-matches-with-modern-footnote-numerals-omitted",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR002-038",
@@ -530,7 +539,9 @@ window.FARGHANI_CRITICAL_PASS_002={
       "source_url": "https://ablibrary.net/book_content/b/9606/23?lang=ar",
       "grade": "printed-digital-Arabic-checked-v1",
       "historical_print_verified": false,
-      "manuscript_verified": false
+      "manuscript_verified": false,
+      "source_parity_resolution_type": "literal-quote-matches-with-modern-footnote-numerals-omitted",
+      "source_parity_resolution_date": "2026-11-17"
     },
     {
       "id": "CR002-039",

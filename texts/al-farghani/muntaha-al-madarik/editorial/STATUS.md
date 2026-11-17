@@ -1,3 +1,13 @@
+## Stage XXI — all 37 selected quotation-location flags reviewed (17 November 2026)
+
+Source-location classification is now complete for the selected critical-excerpt corpus: **20** previously nonliteral Arabic excerpt strings now match their modern B2007 digitized passage and six corresponding English excerpts have been substantively revised; **6** other citations differed only because modern numbered editorial footnote cues were omitted, **4** cross the Beirut printed-page boundary, **6** use explicitly marked non-contiguous ellipses, and **1** was already exact under consistent normalization. Every former flag is documented in [full report](SOURCE_PARITY_RECONCILIATION_021.md) and [37-entry machine register](SOURCE_PARITY_RECONCILIATION_021.json).
+
+All **560** selected source quotations are now located in the *digitized* edition by explicit qualification: **544** normalized exact single-page strings, **6** after omitting modern footnote numerals, **4** page-spanning, **6** editorially abbreviated. These numbers measure **quotation location, not translation accuracy**, and do not certify the continuous Arabic or English against manuscripts. The 128-page working English and modern online Arabic remain intact; 15 inherited historical PRINT photographic comparisons and 0 verified manuscripts remain unchanged. Historical archives and full reader unchanged.
+
+[Stage XXI exact handoff](STAGE_HANDOFF_SOURCE_021.md). **Next continuous proofreading starts at B2007 p.18 first paragraph**. Separate physical B2007 p.52 and the p.138 `مشمّة الروح` reading remain unverified, as does p.87 `أوجبت محضة`.
+
+---
+
 ## Stage XX — source-page integrity and p.138 direct check (17 November 2026)
 
 Twelve selected derivative Arabic excerpts formerly assigned one Beirut printed page too late now cite their **actual digitized B2007 page**, verified by exact conservative normalized phrase lookup; their previous page and forum-source URL remain stored as provenance. New direct B2007 digital excerpt **CR011-044 on p.138** preserves one selected clause per page. Totals **560 selective clauses = 284 modern edited-digital + 276 derivative**, **523/560 exact digitized-page excerpt strings**, **37 unresolved source-parity mismatches**, 128/128 digital Arabic and working English printed-page positions. Inherited photographed 1876 PRINT comparisons remain 15 (7 differences/8 agreements); zero entire independently collated print pages, zero manuscript variants. English prose and Arabic running reader remain unchanged; this is not an exhaustive source-critical edition.

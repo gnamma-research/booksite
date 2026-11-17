@@ -213,6 +213,24 @@ for clause_id,(prior,target) in repaired.items():
     check(bool(r.get("derivative_source_url")),f"{clause_id}: original derivative source link lost")
 check(lookup.get("CR011-044",{}).get("page")==138,"New direct B2007 p138 source check lost")
 
+# Stage XXI: all former source-location flags are classified; this is NOT continuous translation proof.
+parity21=json.loads((BOOK/"editorial/SOURCE_PARITY_RECONCILIATION_021.json").read_text(encoding="utf-8"))
+check(parity21.get("total_selected_records")==560,"Stage XXI selected clause register mismatch")
+check(parity21.get("flagged_records_classified")==37,"Stage XXI reconciliation incomplete")
+check(parity21.get("unclassified_location_flags")==0,"Stage XXI unclassified selected quotations remain")
+check(parity21.get("newly_revised_source_excerpt_count")==20,"Stage XXI source quotation corrections lost")
+check(parity21.get("newly_revised_english_excerpt_count")==6,"Stage XXI English excerpt corrections lost")
+check(len(parity21.get("resolutions",[]))==37,"Stage XXI item provenance register missing")
+revised21=[r for r in rows if r.get("source_parity_resolution_type")=="literal-quotation-repaired-to-digitized-B2007"]
+check(len(revised21)==20,"Stage XXI corrected source excerpts no longer exactly 20")
+check(all(r.get("source_excerpt_before_reconciliation") and r.get("digital_control_url") for r in revised21),
+      "Stage XXI previous Arabic excerpt or modern control link is lost")
+check(lookup.get("CR002-023",{}).get("ar","").startswith("نظرنا"),
+      "B2007 p22 first-person plural نظرنا correction lost")
+check(len([r for r in rows if r.get("digital_page_span") and r.get("source_parity_resolution_type")=="continuous-quote-across-B2007-printed-page-boundary"])==4,
+      "Stage XXI four continuous page-spanning quotations lost")
+
+
 
 critical,_=htmls.get("critical-edition.html",("",None))
 check('critical-reader.js' in critical,"Critical clause viewer script not loaded")
