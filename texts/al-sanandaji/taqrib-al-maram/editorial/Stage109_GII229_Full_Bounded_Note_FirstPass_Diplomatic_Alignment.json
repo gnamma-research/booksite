@@ -1,0 +1,34 @@
+{
+  "stage": 109,
+  "source": "Original Būlāq 1318 AH single print, not a second textual witness",
+  "source_primary_pdf_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "record_id": "G.II.229.21.01",
+  "author_attribution": "UNASSIGNED historical lower marginal commentator; no inference of Wasīm",
+  "printed_volume": "II",
+  "printed_page": 229,
+  "physical_PDF_page": 524,
+  "source_layer": "lower commentary",
+  "print_span_start": "(قوله مع سهولتها في نفسها إلخ)",
+  "print_span_end": "والخبر المتواتر",
+  "following_distinct_lower_note_heading": "(قوله وسلب علومهم التي إلخ)",
+  "cross_page_boundary_correction": "THIS G-note ends on printed II:229. The separate following note continues from II:229 to II:230; historical Stage108 handoff overstated a cross-page span for G. Keep that earlier handoff unchanged as provenance.",
+  "original_remote_module": "continuous-II229-II230-quran-and-sarfa-clauses.js",
+  "remote_original_git_blob_sha1": "ba06affdcd89169ce82ecd363e83fe84b056d0e8",
+  "historical_remote_short_transcription_preserved": "واحتجوا على سهولة المعارضة مع عدمها بالقطع بأن فصحاء العرب كانوا قادرين على التكلم بمثل مفردات السور وركباتها القصيرة مثل الحمد لله ومثل رب العالمين ... فيكونون قادرين على الإتيان بمثل سورة منه لكن الله صرف هممهم عن ذلك. وأجيب بأن حكم الجملة قد يخالف حكم الأجزاء كما هنا",
+  "stage109_full_bounded_note_arabic_first_pass": "(قوله مع سهولتها في نفسها إلخ) واحتجوا على سهولة المعارضة مع عدمها بالقطع بأن فصحاء العرب كانوا قادرين على التكلم بمثل مفردات السور ومركباتها القصيرة مثل الحمد لله ومثل رب العالمين وهكذا فيكونون قادرين على الإتيان بمثل سورة منه لكن الله صرف هممهم عن ذلك وأجيب بأن حكم الجملة قد يخالف حكم الأجزاء كما هنا ولكن كل من آحاد العرب قادر على الإتيان بمثل قصائد فصحائهم كامرئ القيس وأضرابه واللازم باطل وهذا يجاب عن شبهة من نفى قطعية الإجماع والخبر المتواتر",
+  "english_complete_bounded_note_first_pass": "On his words “although it would have been easy in itself”: They argued that matching it would have been easy, despite the absence of a matching composition, because it is certain, they said, that the eloquent Arabs could utter the individual expressions of the sūras and their shorter combinations, such as “Praise belongs to God” and “Lord of the worlds.” Accordingly, they would have been able to produce something like a sūra of it; but God turned their intentions away from doing so. The answer is that what holds of a whole may differ from what holds of its parts, as is the case here. Yet [by the same attempted inference] each individual Arab would be capable of composing poetry comparable to that of their eloquent masters, such as Imruʾ al-Qays and his peers, and this consequent is false. This also answers the objection of those who deny the conclusiveness of consensus and mass-transmitted reports.",
+  "variant_observations": [
+    {
+      "place": "within the same print",
+      "historic_remote_reading": "وركباتها القصيرة",
+      "visual_print_reading": "ومركباتها القصيرة",
+      "verdict": "Print has initial mīm before ر; original remote historical selected transcription retained. Not a manuscript variant."
+    }
+  ],
+  "print_orthography_caution": "Orthography/spelling of names lightly normalised; modern punctuation supplied. A fully diplomatic transcription retaining every original spelling, typographic space and uncertain glyph needs an independent proof; this is a complete identifiable note-span first-pass transcription and aligned translation only.",
+  "independent_second_reader_full_proof": false,
+  "manuscript_collation_performed": false,
+  "whole_printed_page_complete": false,
+  "source_rendered_png": "Stage109_Source_Page_Images/physical_PDF_524_single_Bulaq_print.png",
+  "source_rendered_png_sha256": "e2fa37016973b127b28117dd61c94e7a0fdae7d9fdd31005631142a1a98b3961"
+}
