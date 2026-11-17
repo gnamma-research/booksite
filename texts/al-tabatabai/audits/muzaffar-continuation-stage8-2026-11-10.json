@@ -1,0 +1,336 @@
+{
+  "schema": 1,
+  "date": "2026-11-10",
+  "newUnits": 23,
+  "bookIVUnits": 22,
+  "bookVUnits": 1,
+  "firstUnit": "M-C-26",
+  "lastBookIVUnit": "M-C-47",
+  "bookVOpening": "M-V-01",
+  "coverageA": {
+    "sourceDisplayedPages": "162–178, ending immediately before برهان عكس السالبة الجزئية; displayed169 image transcribed",
+    "start": "الفصل الثاني في أحكام القضايا أو النسب بينها",
+    "end": "فلا يصدق | كل حَـ ب | (المطلوب الثاني)",
+    "next": "برهان عكس السالبة الجزئية at the end of displayed178, assigned to B",
+    "sourcePages": [
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178
+    ],
+    "independentFacsimileCollation": false
+  },
+  "coverageB": {
+    "bookIVNewUnits": 11,
+    "bookVNewUnits": 1,
+    "arabicCharacters": 16464,
+    "englishWords": 4429,
+    "completeAuthorialProseAndExercises": true,
+    "sourceFacsimileCollated": false,
+    "relationTable": "Complete digital contents retained, English alignment and two sign repairs explicitly reconstructed from preceding authorial proofs.",
+    "missingFigure": "No additional figure omitted within this assigned span; mathematical division notation is deficient in the digital source itself."
+  },
+  "unitLocators": [
+    {
+      "id": "M-C-26",
+      "title": "Why relations between propositions are needed",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "162",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=162&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "331864e85f114081ecc87877a992ecc7ee277122082e6b3287b7df72b89c39f6",
+      "englishSha256": "4ea443ba262c3f2addc01c46aadc2777da6fa7036a4dfc8e61c0bc235dc14ce8"
+    },
+    {
+      "id": "M-C-27",
+      "title": "Contradiction: need, definition, and the force of “in itself”",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "163–164",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=163&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "345cfef264685b0b72962d36f2c59fbb137c5cd8c8a3f52175d849d626470408",
+      "englishSha256": "85f131bc303a73c89b59c5ea5557bc925da050ff5f25d9bc75e3d588eee33a80"
+    },
+    {
+      "id": "M-C-28",
+      "title": "The eight unities and unity of predication",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "164–165",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=164&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "2605ebccd622c1b826a7162f1dcea3f65d71e6ad6e8b88f30039d8598094e189",
+      "englishSha256": "75296ade1d8cef13564198b9ea8830d9536093296ca0968e460b4df59812e457"
+    },
+    {
+      "id": "M-C-29",
+      "title": "Differences in quantity, quality, and modality",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "165–167",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=165&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "ff9e9a77d34a613259ebd583f7171cc2e0fbac924b4999bebef595246210fc25",
+      "englishSha256": "0fae2d64ddde69d05859c59353b8f4261d9645a9deef4032975fbb20eb61010f"
+    },
+    {
+      "id": "M-C-30",
+      "title": "Subalternation, contrariety, and subcontrariety",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "167–169",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=167&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "a9c89c9d7214a8329ad8df837cd2ee0661d5ae3b80a664ea140ff40c16706755",
+      "englishSha256": "81e25660024ddffc3db1aeb17bb3d8a3b98795cd8409e38ba0cf221eb96051ca"
+    },
+    {
+      "id": "M-C-31",
+      "title": "Simple conversion and its conditions",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "170–171",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=170&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "a461c8be69c4a8355e1e0f353a5b9a74cd4cf39a178905d096a0cf8962dcb4ab",
+      "englishSha256": "0a7ba0d2038c9365a8073a76ea39a236773980c9749d60f07641392f1618b147"
+    },
+    {
+      "id": "M-C-32",
+      "title": "Conversion of universal and particular affirmatives",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "171–172",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=171&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "d089f3e764ab8f5da1c959932c830428c76c2946043f933b8d1753bfe3b2db0a",
+      "englishSha256": "70ebb666d6ce6958c3606d571570fe15ad40063b568df1d97f637e9f152936e9"
+    },
+    {
+      "id": "M-C-33",
+      "title": "Conversion of the universal negative and its proof",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "172–173",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=172&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "a7e6a15f091b690c263ce2b191796cb2f21942a441ef4eade56dc40de3394045",
+      "englishSha256": "dda8041a85922b0117ede99d152651e1b3aa3198a5be9d9d521a4b14a560f651"
+    },
+    {
+      "id": "M-C-34",
+      "title": "Why particular negatives and disjunctives have no simple converse",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "174",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=174&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "a18a798b1f777722b2f95e4a8f34501d4d29960681ef69045789e060d5ddef55",
+      "englishSha256": "502b389ecbb5eeff9d04256dbc7e2fc140ffb2dcbfde71a0ec973a40deb25247"
+    },
+    {
+      "id": "M-C-35",
+      "title": "Two methods of contraposition and their quantity rules",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "175–176",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=175&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "16fcf60f004f15db9ce5d54664ce03fcf1a901ba8c3b8ebb75e929562cfa7b48",
+      "englishSha256": "1f2079011b04b85312f2c86d993b822e6d91da715e3fb5d3415199ae9fbda6c9"
+    },
+    {
+      "id": "M-C-36",
+      "title": "Two proofs for the contraposition of the universal negative",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Rafed digital presentation catalogued as Dār al-Taʿāruf 1402 AH; displayed-page text, not independently facsimile-collated",
+        "page": "177–178",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=177&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "8ac17b5c2aff49585394b298619ed7536bc35d82a744d8e076dfbe68511f89f2",
+      "englishSha256": "6e4257466f340b1a556934d73d8649c66cec1404a46988d54e63cdbba058df39"
+    },
+    {
+      "id": "M-C-37",
+      "title": "Proofs of the two contrapositives of the particular negative",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "178–180",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=178&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "a39dddaa8d8263e444acb0995cc65895addcd781869ed7b1755aa554dbbde3cf",
+      "englishSha256": "233d4f55613f72d0a33d354f7d6951707eb3c05864f4e63b64a2e3be79ea9eca"
+    },
+    {
+      "id": "M-C-38",
+      "title": "Proofs of the two contrapositives of the universal affirmative",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "180–181",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=180&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "35e318cd33d5928c70bafbfabdc01bcb7d8956ca87ebf4794e8a6b6eb535e110",
+      "englishSha256": "b86973bbbe4a01a19e6ada7de656f11f5e13e508bb5ce7b1b229569722bc7002"
+    },
+    {
+      "id": "M-C-39",
+      "title": "Why the particular affirmative has neither form of contraposition",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "181–183",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=181&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "262ba31525f07120d148795bc1efa4e1deb02ad3685ff7ab5357e89ef15a5686",
+      "englishSha256": "4a5e814d159364ba2fc8e049cb5a0950f47424fe21aff9117d8140ca2f3cc621"
+    },
+    {
+      "id": "M-C-40",
+      "title": "Exercises in consequence, conversion and juristic contraposition",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "184",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=184&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "fc5bf73f72dce46e4d0b6faa20a43226391d2fb51a9af00c1cb0c90c2bc5ae1b",
+      "englishSha256": "d91ede63aa7f1947966090b4cc3a0ef29602e145f7db123722fc7e02c8f57701"
+    },
+    {
+      "id": "M-C-41",
+      "title": "Complementation and the four proofs of predicate obversion",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "185–187",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=185&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "f049b204a6e463dd16ad86a1c16614530256df9730d9759e2d64ac55e2ad5d66",
+      "englishSha256": "bfe811db1b5fff62c77f1f8f09f99539dbb84c89f073bcfd39b7770087040272"
+    },
+    {
+      "id": "M-C-42",
+      "title": "Transforming the original and handling complemented predicates",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "187–188",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=187&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "00e33c627dbecc6e5d34371061c6e05f02bea91af185cf06d2095c24d2ac1668",
+      "englishSha256": "3e0a4b130bb609c6eb4910fefc0282ae66dd4a9ec5663485f5b4d1839fe46481"
+    },
+    {
+      "id": "M-C-43",
+      "title": "Seven exercises on obversion and methods of proof",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "189",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=189&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "ef91ad6f37bd43f60777cb08d22d1c4dbfb535a5526fe775a4d237dd8b8050e2",
+      "englishSha256": "9e9ba3f33d8a054c7a86d6f50f9391ba195ea7436a6ed656126640016c23ce29"
+    },
+    {
+      "id": "M-C-44",
+      "title": "Complete complementation and subject-complementation of the universals",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "190–191",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=190&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "2d757895a31f4d3fcdf34303f7f4435e18ed20ca3161586f4e1726413b1ca5e4",
+      "englishSha256": "aa2b7749bd35db6fc89f7da040a53ad30146c331b489f99f03904cf03e0c172c"
+    },
+    {
+      "id": "M-C-45",
+      "title": "Why neither particular admits complete or subject complementation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "191–192",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=191&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "2e0347157947a49602ffda4d9687d82c843bc5c7e5b502b1e83061207a5cf18b",
+      "englishSha256": "8c8edf8aa13a54cff8d24800aba82b33ac20a30c83212fb2e1d15c0fa07bef0b"
+    },
+    {
+      "id": "M-C-46",
+      "title": "The author’s table of relations among quantified propositions",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "193",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=193&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "targetedIndependentWitness": "1968 Najaf, Maṭbaʿat al-Nuʿmān, Princeton/NYU canvases225–227; only the table and final examples checked"
+      },
+      "arabicSha256": "2bf67599e0f2ad862807ac2cc710ec9262bdd334b5f0e443dfb8739e98d60d58",
+      "englishSha256": "fb52e23ae5e5454f07dad4c469f4859869da89df67bc7c4e89904e0fefef849f"
+    },
+    {
+      "id": "M-C-47",
+      "title": "The logical axiom of immediate transformation",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "194–195",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=194&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers",
+        "targetedIndependentWitness": "1968 Najaf, Maṭbaʿat al-Nuʿmān, Princeton/NYU canvases225–227; only the table and final examples checked"
+      },
+      "arabicSha256": "cb1d32a4090d6616633bd97fbab9a7ef7bf879dc6d297592dca616cf2ee61285",
+      "englishSha256": "746d51d2122ce76d9a17c5f60447f484a558327e909dceaccf6c2508a5597722"
+    },
+    {
+      "id": "M-V-01",
+      "title": "Book V: argument, its aim, and the three methods of inference",
+      "source": {
+        "edition": "Muẓaffar, al-Manṭiq, Dār al-Taʿāruf 1402 AH, Rafed digital presentation; displayed pagination, not independently image-collated",
+        "page": "198–199",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=198&type=c_fbook",
+        "paginationBasis": "Rafed displayed page labels / HTML pg containers"
+      },
+      "arabicSha256": "a5948af671916b4487abbdf501818d7008421d06a03d248d0e269908bf8dba8c",
+      "englishSha256": "c68b6add1db08906ae0bc6b1910e4f8aef49b116a2c558ae15966bf15143fe3b"
+    }
+  ],
+  "arabicCharacters": 32746,
+  "englishWords": 8570,
+  "next": "M-V-02: definition of syllogism, displayed p.200",
+  "limits": [
+    "Earlier summary charts remain omitted.",
+    "The p.193 English table is explicitly reconstructed from damaged digital notation.",
+    "The full 1968 facsimile remains uncollated; targeted table and final-example evidence is documented separately.",
+    "The full six-book work is not translated."
+  ],
+  "targeted1968Report": "muzaffar-1968-targeted-comparison-2026-11-10.json"
+}

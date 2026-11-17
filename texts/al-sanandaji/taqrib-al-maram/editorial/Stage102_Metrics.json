@@ -1,0 +1,40 @@
+{
+  "stage": 102,
+  "date": "2026-11-17",
+  "source_stage": 101,
+  "source_pdf_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "numbered_positions": 280,
+  "body_pages": 279,
+  "stable_record_count": 1401,
+  "new_bounded_source_readings": 3,
+  "revised_record_ids": [
+    "I036.upper.01",
+    "I038.lower.01",
+    "I038.lower.02"
+  ],
+  "pages_touched": [
+    36,
+    38
+  ],
+  "records_with_some_typed_arabic": 1282,
+  "genuine_records_without_typed_arabic": 118,
+  "blank_by_layer": {
+    "lower": 102,
+    "upper": 16
+  },
+  "retired_non_source_records": 1,
+  "complete_all_register_pages_independently_proofed": 0,
+  "manuscript_collation_pages": 0,
+  "open_independent_proof_obligation_records": 1400,
+  "next_first_arabic_blank_source_record": "I038.upper.01",
+  "next_source_printed_page": 38,
+  "next_source_physical_pdf_page": 51,
+  "cross_page_joins": [
+    "I035.upper.01 → I036.upper.01: «في نفس» / «الأمر»; I035 earlier record untouched",
+    "I036.upper.01 → I036.upper.02: ... «فقال» / «(والتعريف)»; later record untouched",
+    "I037.lower → I038.lower.01: preceding «إلى معنى مشترك لا مطلقا»; later gloss opens new quoted lemma",
+    "I038.lower.02 → I039 lower: «بأحد المعاني»; I039 is not retranslated"
+  ],
+  "proofread_status": "Bounded image-checked excerpts only; all inherited 1,400 active obligations remain open, including unresolved I026.lower.02 connective before فإنه حينئذ. Neither full transcription nor independent second proof.",
+  "manuscript_collation_required_for_this_single_witness_working_edition": false
+}

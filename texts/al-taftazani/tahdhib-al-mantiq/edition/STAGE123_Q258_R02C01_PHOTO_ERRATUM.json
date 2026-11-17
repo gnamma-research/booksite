@@ -1,0 +1,33 @@
+{
+  "stage": 123,
+  "date": "2026-11-13",
+  "sourceLayer": "H later historical glosses; printed Q258 ordered definition matrix",
+  "corrections": [
+    {
+      "cell": "Q258-R02-C01",
+      "row": 2,
+      "column": 1,
+      "priorArabic": "غير صحيح",
+      "priorEnglish": "Incorrect [the remainder of the handwritten explanation is not yet reliably read].",
+      "correctedArabic": "انظر",
+      "correctedEnglish": "See the corresponding case.",
+      "sourceStatus": "short printed cross-reference, not invalidity judgment",
+      "sourceGrade": "photographic high confidence at both H1405 and H1433; not authorial manuscript",
+      "printedPage": 258,
+      "pdfIndicesZeroBased": {
+        "H1405": 259,
+        "H1433": 258
+      },
+      "fullSourceMatrixCertified": false
+    }
+  ],
+  "sourceUrls": [
+    "https://archive.org/download/lis_fa12/lis_fa1208.pdf",
+    "https://archive.org/download/lis_fa12/lis_fa1209.pdf"
+  ],
+  "priorCrossReferenceOnlyCount": 11,
+  "minimumSourceCrossReferenceCountAfterCorrection": 12,
+  "recountPending": true,
+  "historicalCorpusRecordsMutated": 0,
+  "independentManuscriptVariantsNew": 0
+}

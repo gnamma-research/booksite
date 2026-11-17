@@ -1,0 +1,810 @@
+{
+  "stage": 125,
+  "date": "2026-11-13",
+  "designation": "46 conditional modal derivation trees from historical reported rules, not 46 independently semantic-strength soundness proofs",
+  "source": "Tony Street ed. al-Katibi al-Risalah al-Shamsiyyah 2024 pp252–254, 303–307, historically adopted Ibn Mubarakshah tables",
+  "sourceURL": "https://dhjhkxawhe8q4.cloudfront.net/library-of-arabic-literature-wp/assets/20240530034338/9781479827510_WEB-1.pdf",
+  "counts": {
+    "typedHistoricalCases": 46,
+    "conditionallyReconstructedProofTrees": 46,
+    "independentHistoricalFullStrengthModalProofs": 0,
+    "finiteModelPremisesUnsatisfiableCases": 4
+  },
+  "historicalSemanticWarning": "No exact full-world essence/necessity, individual-wise description-period and nonvacuity proof has been independently established. Conditional derivation certificates cannot be represented as universal validity.",
+  "proof": [
+    {
+      "caseId": 1,
+      "mood": "VI / AOO",
+      "major": "L",
+      "minor": "LD2",
+      "premises": [
+        "Universal affirmative A(P,M;L)",
+        "Particular special negative O(M,S;LD2)"
+      ],
+      "steps": [
+        "Convert the special O(M,S) using historic special-negative conversion table to O(S,M;AD2)",
+        "Apply figure-II Baroco with the universal A(P,M;major)"
+      ],
+      "result": "O(S,P;A)",
+      "rule": "Street 2024 Table 1 p305 + Table 3 p306",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 2,
+      "mood": "VI / AOO",
+      "major": "A",
+      "minor": "LD2",
+      "premises": [
+        "Universal affirmative A(P,M;A)",
+        "Particular special negative O(M,S;LD2)"
+      ],
+      "steps": [
+        "Convert the special O(M,S) using historic special-negative conversion table to O(S,M;AD2)",
+        "Apply figure-II Baroco with the universal A(P,M;major)"
+      ],
+      "result": "O(S,P;A)",
+      "rule": "Street 2024 Table 1 p305 + Table 3 p306",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 3,
+      "mood": "VI / AOO",
+      "major": "LD1",
+      "minor": "LD2",
+      "premises": [
+        "Universal affirmative A(P,M;LD1)",
+        "Particular special negative O(M,S;LD2)"
+      ],
+      "steps": [
+        "Convert the special O(M,S) using historic special-negative conversion table to O(S,M;AD2)",
+        "Apply figure-II Baroco with the universal A(P,M;major)"
+      ],
+      "result": "O(S,P;AD1)",
+      "rule": "Street 2024 Table 1 p305 + Table 3 p306",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 4,
+      "mood": "VI / AOO",
+      "major": "AD1",
+      "minor": "LD2",
+      "premises": [
+        "Universal affirmative A(P,M;AD1)",
+        "Particular special negative O(M,S;LD2)"
+      ],
+      "steps": [
+        "Convert the special O(M,S) using historic special-negative conversion table to O(S,M;AD2)",
+        "Apply figure-II Baroco with the universal A(P,M;major)"
+      ],
+      "result": "O(S,P;AD1)",
+      "rule": "Street 2024 Table 1 p305 + Table 3 p306",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 5,
+      "mood": "VI / AOO",
+      "major": "LD2",
+      "minor": "LD2",
+      "premises": [
+        "Universal affirmative A(P,M;LD2)",
+        "Particular special negative O(M,S;LD2)"
+      ],
+      "steps": [
+        "Convert the special O(M,S) using historic special-negative conversion table to O(S,M;AD2)",
+        "Apply figure-II Baroco with the universal A(P,M;major)"
+      ],
+      "result": "O(S,P;AD1)",
+      "rule": "Street 2024 Table 1 p305 + Table 3 p306",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 6,
+      "mood": "VI / AOO",
+      "major": "AD2",
+      "minor": "LD2",
+      "premises": [
+        "Universal affirmative A(P,M;AD2)",
+        "Particular special negative O(M,S;LD2)"
+      ],
+      "steps": [
+        "Convert the special O(M,S) using historic special-negative conversion table to O(S,M;AD2)",
+        "Apply figure-II Baroco with the universal A(P,M;major)"
+      ],
+      "result": "O(S,P;AD1)",
+      "rule": "Street 2024 Table 1 p305 + Table 3 p306",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 7,
+      "mood": "VI / AOO",
+      "major": "L",
+      "minor": "AD2",
+      "premises": [
+        "Universal affirmative A(P,M;L)",
+        "Particular special negative O(M,S;AD2)"
+      ],
+      "steps": [
+        "Convert the special O(M,S) using historic special-negative conversion table to O(S,M;AD2)",
+        "Apply figure-II Baroco with the universal A(P,M;major)"
+      ],
+      "result": "O(S,P;A)",
+      "rule": "Street 2024 Table 1 p305 + Table 3 p306",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 8,
+      "mood": "VI / AOO",
+      "major": "A",
+      "minor": "AD2",
+      "premises": [
+        "Universal affirmative A(P,M;A)",
+        "Particular special negative O(M,S;AD2)"
+      ],
+      "steps": [
+        "Convert the special O(M,S) using historic special-negative conversion table to O(S,M;AD2)",
+        "Apply figure-II Baroco with the universal A(P,M;major)"
+      ],
+      "result": "O(S,P;A)",
+      "rule": "Street 2024 Table 1 p305 + Table 3 p306",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 9,
+      "mood": "VI / AOO",
+      "major": "LD1",
+      "minor": "AD2",
+      "premises": [
+        "Universal affirmative A(P,M;LD1)",
+        "Particular special negative O(M,S;AD2)"
+      ],
+      "steps": [
+        "Convert the special O(M,S) using historic special-negative conversion table to O(S,M;AD2)",
+        "Apply figure-II Baroco with the universal A(P,M;major)"
+      ],
+      "result": "O(S,P;AD1)",
+      "rule": "Street 2024 Table 1 p305 + Table 3 p306",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 10,
+      "mood": "VI / AOO",
+      "major": "AD1",
+      "minor": "AD2",
+      "premises": [
+        "Universal affirmative A(P,M;AD1)",
+        "Particular special negative O(M,S;AD2)"
+      ],
+      "steps": [
+        "Convert the special O(M,S) using historic special-negative conversion table to O(S,M;AD2)",
+        "Apply figure-II Baroco with the universal A(P,M;major)"
+      ],
+      "result": "O(S,P;AD1)",
+      "rule": "Street 2024 Table 1 p305 + Table 3 p306",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 11,
+      "mood": "VI / AOO",
+      "major": "LD2",
+      "minor": "AD2",
+      "premises": [
+        "Universal affirmative A(P,M;LD2)",
+        "Particular special negative O(M,S;AD2)"
+      ],
+      "steps": [
+        "Convert the special O(M,S) using historic special-negative conversion table to O(S,M;AD2)",
+        "Apply figure-II Baroco with the universal A(P,M;major)"
+      ],
+      "result": "O(S,P;AD1)",
+      "rule": "Street 2024 Table 1 p305 + Table 3 p306",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 12,
+      "mood": "VI / AOO",
+      "major": "AD2",
+      "minor": "AD2",
+      "premises": [
+        "Universal affirmative A(P,M;AD2)",
+        "Particular special negative O(M,S;AD2)"
+      ],
+      "steps": [
+        "Convert the special O(M,S) using historic special-negative conversion table to O(S,M;AD2)",
+        "Apply figure-II Baroco with the universal A(P,M;major)"
+      ],
+      "result": "O(S,P;AD1)",
+      "rule": "Street 2024 Table 1 p305 + Table 3 p306",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 13,
+      "mood": "VII / OAO",
+      "major": "LD2",
+      "minor": "L",
+      "premises": [
+        "Particular special negative O(P,M;LD2)",
+        "Universal affirmative A(M,S;L)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;XD2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 14,
+      "mood": "VII / OAO",
+      "major": "LD2",
+      "minor": "A",
+      "premises": [
+        "Particular special negative O(P,M;LD2)",
+        "Universal affirmative A(M,S;A)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;XD2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 15,
+      "mood": "VII / OAO",
+      "major": "LD2",
+      "minor": "LD1",
+      "premises": [
+        "Particular special negative O(P,M;LD2)",
+        "Universal affirmative A(M,S;LD1)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;XD2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 16,
+      "mood": "VII / OAO",
+      "major": "LD2",
+      "minor": "AD1",
+      "premises": [
+        "Particular special negative O(P,M;LD2)",
+        "Universal affirmative A(M,S;AD1)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;XD2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 17,
+      "mood": "VII / OAO",
+      "major": "LD2",
+      "minor": "LD2",
+      "premises": [
+        "Particular special negative O(P,M;LD2)",
+        "Universal affirmative A(M,S;LD2)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;XD2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 18,
+      "mood": "VII / OAO",
+      "major": "LD2",
+      "minor": "AD2",
+      "premises": [
+        "Particular special negative O(P,M;LD2)",
+        "Universal affirmative A(M,S;AD2)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;XD2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 19,
+      "mood": "VII / OAO",
+      "major": "LD2",
+      "minor": "X1",
+      "premises": [
+        "Particular special negative O(P,M;LD2)",
+        "Universal affirmative A(M,S;X1)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;X2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 20,
+      "mood": "VII / OAO",
+      "major": "LD2",
+      "minor": "LT2",
+      "premises": [
+        "Particular special negative O(P,M;LD2)",
+        "Universal affirmative A(M,S;LT2)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;X2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 21,
+      "mood": "VII / OAO",
+      "major": "LD2",
+      "minor": "LX2",
+      "premises": [
+        "Particular special negative O(P,M;LD2)",
+        "Universal affirmative A(M,S;LX2)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;X2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 22,
+      "mood": "VII / OAO",
+      "major": "LD2",
+      "minor": "X2",
+      "premises": [
+        "Particular special negative O(P,M;LD2)",
+        "Universal affirmative A(M,S;X2)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;X2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 23,
+      "mood": "VII / OAO",
+      "major": "LD2",
+      "minor": "X~L",
+      "premises": [
+        "Particular special negative O(P,M;LD2)",
+        "Universal affirmative A(M,S;X~L)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;X2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 24,
+      "mood": "VII / OAO",
+      "major": "AD2",
+      "minor": "L",
+      "premises": [
+        "Particular special negative O(P,M;AD2)",
+        "Universal affirmative A(M,S;L)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;XD2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 25,
+      "mood": "VII / OAO",
+      "major": "AD2",
+      "minor": "A",
+      "premises": [
+        "Particular special negative O(P,M;AD2)",
+        "Universal affirmative A(M,S;A)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;XD2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 26,
+      "mood": "VII / OAO",
+      "major": "AD2",
+      "minor": "LD1",
+      "premises": [
+        "Particular special negative O(P,M;AD2)",
+        "Universal affirmative A(M,S;LD1)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;XD2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 27,
+      "mood": "VII / OAO",
+      "major": "AD2",
+      "minor": "AD1",
+      "premises": [
+        "Particular special negative O(P,M;AD2)",
+        "Universal affirmative A(M,S;AD1)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;XD2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 28,
+      "mood": "VII / OAO",
+      "major": "AD2",
+      "minor": "LD2",
+      "premises": [
+        "Particular special negative O(P,M;AD2)",
+        "Universal affirmative A(M,S;LD2)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;XD2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 29,
+      "mood": "VII / OAO",
+      "major": "AD2",
+      "minor": "AD2",
+      "premises": [
+        "Particular special negative O(P,M;AD2)",
+        "Universal affirmative A(M,S;AD2)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;XD2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 30,
+      "mood": "VII / OAO",
+      "major": "AD2",
+      "minor": "X1",
+      "premises": [
+        "Particular special negative O(P,M;AD2)",
+        "Universal affirmative A(M,S;X1)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;X2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 31,
+      "mood": "VII / OAO",
+      "major": "AD2",
+      "minor": "LT2",
+      "premises": [
+        "Particular special negative O(P,M;AD2)",
+        "Universal affirmative A(M,S;LT2)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;X2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 32,
+      "mood": "VII / OAO",
+      "major": "AD2",
+      "minor": "LX2",
+      "premises": [
+        "Particular special negative O(P,M;AD2)",
+        "Universal affirmative A(M,S;LX2)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;X2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 33,
+      "mood": "VII / OAO",
+      "major": "AD2",
+      "minor": "X2",
+      "premises": [
+        "Particular special negative O(P,M;AD2)",
+        "Universal affirmative A(M,S;X2)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;X2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 34,
+      "mood": "VII / OAO",
+      "major": "AD2",
+      "minor": "X~L",
+      "premises": [
+        "Particular special negative O(P,M;AD2)",
+        "Universal affirmative A(M,S;X~L)"
+      ],
+      "steps": [
+        "Convert the special O(P,M) by historic special-negative conversion to O(M,P;AD2)",
+        "Apply figure-III Bocardo to the reordered premises"
+      ],
+      "result": "O(S,P;X2)",
+      "rule": "Street 2024 Table 1 p305 + Table 4 p307",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified"
+    },
+    {
+      "caseId": 35,
+      "mood": "VIII / IEO",
+      "major": "L",
+      "minor": "LD2",
+      "premises": [
+        "Particular affirmative I(P,M;L)",
+        "Universal special negative E(M,S;LD2)"
+      ],
+      "steps": [
+        "Reorder as a first-figure syllogism with I(P,M) as minor premise and E(M,S) as universal major; historic restricted conversion/negative rules",
+        "Convert resulting particular special negative O(P,S) using Table 1 to O(S,P;AD2)"
+      ],
+      "result": "O(S,P;AD2)",
+      "rule": "Street 2024 pp252–254; Tables 1 and historic first-figure conversion",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified",
+      "finiteModelPremisesUnsatisfiableInStage100": true
+    },
+    {
+      "caseId": 36,
+      "mood": "VIII / IEO",
+      "major": "A",
+      "minor": "LD2",
+      "premises": [
+        "Particular affirmative I(P,M;A)",
+        "Universal special negative E(M,S;LD2)"
+      ],
+      "steps": [
+        "Reorder as a first-figure syllogism with I(P,M) as minor premise and E(M,S) as universal major; historic restricted conversion/negative rules",
+        "Convert resulting particular special negative O(P,S) using Table 1 to O(S,P;AD2)"
+      ],
+      "result": "O(S,P;AD2)",
+      "rule": "Street 2024 pp252–254; Tables 1 and historic first-figure conversion",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified",
+      "finiteModelPremisesUnsatisfiableInStage100": true
+    },
+    {
+      "caseId": 37,
+      "mood": "VIII / IEO",
+      "major": "LD1",
+      "minor": "LD2",
+      "premises": [
+        "Particular affirmative I(P,M;LD1)",
+        "Universal special negative E(M,S;LD2)"
+      ],
+      "steps": [
+        "Reorder as a first-figure syllogism with I(P,M) as minor premise and E(M,S) as universal major; historic restricted conversion/negative rules",
+        "Convert resulting particular special negative O(P,S) using Table 1 to O(S,P;AD2)"
+      ],
+      "result": "O(S,P;AD2)",
+      "rule": "Street 2024 pp252–254; Tables 1 and historic first-figure conversion",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified",
+      "finiteModelPremisesUnsatisfiableInStage100": false
+    },
+    {
+      "caseId": 38,
+      "mood": "VIII / IEO",
+      "major": "AD1",
+      "minor": "LD2",
+      "premises": [
+        "Particular affirmative I(P,M;AD1)",
+        "Universal special negative E(M,S;LD2)"
+      ],
+      "steps": [
+        "Reorder as a first-figure syllogism with I(P,M) as minor premise and E(M,S) as universal major; historic restricted conversion/negative rules",
+        "Convert resulting particular special negative O(P,S) using Table 1 to O(S,P;AD2)"
+      ],
+      "result": "O(S,P;AD2)",
+      "rule": "Street 2024 pp252–254; Tables 1 and historic first-figure conversion",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified",
+      "finiteModelPremisesUnsatisfiableInStage100": false
+    },
+    {
+      "caseId": 39,
+      "mood": "VIII / IEO",
+      "major": "LD2",
+      "minor": "LD2",
+      "premises": [
+        "Particular affirmative I(P,M;LD2)",
+        "Universal special negative E(M,S;LD2)"
+      ],
+      "steps": [
+        "Reorder as a first-figure syllogism with I(P,M) as minor premise and E(M,S) as universal major; historic restricted conversion/negative rules",
+        "Convert resulting particular special negative O(P,S) using Table 1 to O(S,P;AD2)"
+      ],
+      "result": "O(S,P;AD2)",
+      "rule": "Street 2024 pp252–254; Tables 1 and historic first-figure conversion",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified",
+      "finiteModelPremisesUnsatisfiableInStage100": false
+    },
+    {
+      "caseId": 40,
+      "mood": "VIII / IEO",
+      "major": "AD2",
+      "minor": "LD2",
+      "premises": [
+        "Particular affirmative I(P,M;AD2)",
+        "Universal special negative E(M,S;LD2)"
+      ],
+      "steps": [
+        "Reorder as a first-figure syllogism with I(P,M) as minor premise and E(M,S) as universal major; historic restricted conversion/negative rules",
+        "Convert resulting particular special negative O(P,S) using Table 1 to O(S,P;AD2)"
+      ],
+      "result": "O(S,P;AD2)",
+      "rule": "Street 2024 pp252–254; Tables 1 and historic first-figure conversion",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified",
+      "finiteModelPremisesUnsatisfiableInStage100": false
+    },
+    {
+      "caseId": 41,
+      "mood": "VIII / IEO",
+      "major": "L",
+      "minor": "AD2",
+      "premises": [
+        "Particular affirmative I(P,M;L)",
+        "Universal special negative E(M,S;AD2)"
+      ],
+      "steps": [
+        "Reorder as a first-figure syllogism with I(P,M) as minor premise and E(M,S) as universal major; historic restricted conversion/negative rules",
+        "Convert resulting particular special negative O(P,S) using Table 1 to O(S,P;AD2)"
+      ],
+      "result": "O(S,P;AD2)",
+      "rule": "Street 2024 pp252–254; Tables 1 and historic first-figure conversion",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified",
+      "finiteModelPremisesUnsatisfiableInStage100": true
+    },
+    {
+      "caseId": 42,
+      "mood": "VIII / IEO",
+      "major": "A",
+      "minor": "AD2",
+      "premises": [
+        "Particular affirmative I(P,M;A)",
+        "Universal special negative E(M,S;AD2)"
+      ],
+      "steps": [
+        "Reorder as a first-figure syllogism with I(P,M) as minor premise and E(M,S) as universal major; historic restricted conversion/negative rules",
+        "Convert resulting particular special negative O(P,S) using Table 1 to O(S,P;AD2)"
+      ],
+      "result": "O(S,P;AD2)",
+      "rule": "Street 2024 pp252–254; Tables 1 and historic first-figure conversion",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified",
+      "finiteModelPremisesUnsatisfiableInStage100": true
+    },
+    {
+      "caseId": 43,
+      "mood": "VIII / IEO",
+      "major": "LD1",
+      "minor": "AD2",
+      "premises": [
+        "Particular affirmative I(P,M;LD1)",
+        "Universal special negative E(M,S;AD2)"
+      ],
+      "steps": [
+        "Reorder as a first-figure syllogism with I(P,M) as minor premise and E(M,S) as universal major; historic restricted conversion/negative rules",
+        "Convert resulting particular special negative O(P,S) using Table 1 to O(S,P;AD2)"
+      ],
+      "result": "O(S,P;AD2)",
+      "rule": "Street 2024 pp252–254; Tables 1 and historic first-figure conversion",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified",
+      "finiteModelPremisesUnsatisfiableInStage100": false
+    },
+    {
+      "caseId": 44,
+      "mood": "VIII / IEO",
+      "major": "AD1",
+      "minor": "AD2",
+      "premises": [
+        "Particular affirmative I(P,M;AD1)",
+        "Universal special negative E(M,S;AD2)"
+      ],
+      "steps": [
+        "Reorder as a first-figure syllogism with I(P,M) as minor premise and E(M,S) as universal major; historic restricted conversion/negative rules",
+        "Convert resulting particular special negative O(P,S) using Table 1 to O(S,P;AD2)"
+      ],
+      "result": "O(S,P;AD2)",
+      "rule": "Street 2024 pp252–254; Tables 1 and historic first-figure conversion",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified",
+      "finiteModelPremisesUnsatisfiableInStage100": false
+    },
+    {
+      "caseId": 45,
+      "mood": "VIII / IEO",
+      "major": "LD2",
+      "minor": "AD2",
+      "premises": [
+        "Particular affirmative I(P,M;LD2)",
+        "Universal special negative E(M,S;AD2)"
+      ],
+      "steps": [
+        "Reorder as a first-figure syllogism with I(P,M) as minor premise and E(M,S) as universal major; historic restricted conversion/negative rules",
+        "Convert resulting particular special negative O(P,S) using Table 1 to O(S,P;AD2)"
+      ],
+      "result": "O(S,P;AD2)",
+      "rule": "Street 2024 pp252–254; Tables 1 and historic first-figure conversion",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified",
+      "finiteModelPremisesUnsatisfiableInStage100": false
+    },
+    {
+      "caseId": 46,
+      "mood": "VIII / IEO",
+      "major": "AD2",
+      "minor": "AD2",
+      "premises": [
+        "Particular affirmative I(P,M;AD2)",
+        "Universal special negative E(M,S;AD2)"
+      ],
+      "steps": [
+        "Reorder as a first-figure syllogism with I(P,M) as minor premise and E(M,S) as universal major; historic restricted conversion/negative rules",
+        "Convert resulting particular special negative O(P,S) using Table 1 to O(S,P;AD2)"
+      ],
+      "result": "O(S,P;AD2)",
+      "rule": "Street 2024 pp252–254; Tables 1 and historic first-figure conversion",
+      "modalProofStatus": "historical-rule-conditional; semantic soundness not independently certified",
+      "finiteModelPremisesUnsatisfiableInStage100": false
+    }
+  ]
+}

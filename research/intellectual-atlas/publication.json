@@ -1,0 +1,213 @@
+{
+  "title": "Texts in Time · Islamic Intellectual Atlas",
+  "revision": "tajrid-critical-links-8-2026-10-31",
+  "status": "working research",
+  "ui_revision": "hanafi-geography-map-and-source-network-fiqh-research-2026-11-10",
+  "mobile_interface_note": "Books by century opens by default and all works are browsable. Fiqh has visible researched-work counts by madhhab; imported source records remain optional. One subject selector, search and shared views serve all sciences. The separate geographical map distinguishes documented author and work events from unlocated works.",
+  "whole_range_note": "Use the shared year controls and zoomable era clusters; switch sciences without changing map interface.",
+  "date_marker_note": "Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.",
+  "entries": 404,
+  "textual_relationships": 377,
+  "sources": 374,
+  "historical_sources": 72,
+  "ancient_bridge_entries": 10,
+  "neoplatonic_new_entries": 44,
+  "neoplatonic_new_relationships": 36,
+  "scholarly_networks": 5,
+  "classification_layers": [
+    "intellectual tradition",
+    "textual family",
+    "regional/historical network",
+    "browse discipline",
+    "source-linked bibliographic category map",
+    "separate source-text witness catalogue"
+  ],
+  "visual_modes": [
+    "Books by century (default)",
+    "source and reception network",
+    "geographical map",
+    "By region interactive geography",
+    "principal texts",
+    "bibliographic catalogue"
+  ],
+  "discipline_nav": [
+    "mapped works",
+    "philosophy, kalām and logic",
+    "fiqh and uṣūl (integrated cited bibliography)",
+    "hadith (SVG book authorities)",
+    "tafsīr (SVG book authorities)",
+    "taṣawwuf (chronological source-work atlas)",
+    "Arabic language sciences (integrated cited bibliography)"
+  ],
+  "textual_family_routes": 21,
+  "researched_fiqh": {
+    "data_url": "corpora/fiqh-research.json",
+    "coverage_and_comparison_url": "corpora/fiqh-coverage.html",
+    "distinct_works": 431,
+    "school_counts": {
+      "hanafi": 125,
+      "shafii": 104,
+      "maliki": 97,
+      "hanbali": 66,
+      "zahiri": 4,
+      "imami": 19,
+      "zaydi": 9,
+      "ibadi": 7
+    },
+    "author_dated_works": 334,
+    "timeline_anchored_works": 335,
+    "qualified_anchor_only_works": 1,
+    "undated_works": 96,
+    "relationships": 247,
+    "source_records": 281,
+    "distinct_source_urls": 281,
+    "source_domains": [
+      "ablibrary.net",
+      "aliftaa.jo",
+      "alminhaj.com",
+      "app.alreq.com",
+      "cp.alukah.net",
+      "ediscovery.qnl.qa",
+      "islamansiklopedisi.org.tr",
+      "islamport.com",
+      "islhornafr.tors.sc.ku.dk",
+      "journals.uqs-ye.info",
+      "khzanah.com",
+      "lib.mcy.gov.ae",
+      "library.ecssr.ae",
+      "maktabat.mu.edu.sa",
+      "malik.awqaf.gov.kw",
+      "takw.in",
+      "usul.ai",
+      "waqfeya.net",
+      "www.almaimanlawfirm.com",
+      "www.bibliotheque.nat.tn",
+      "www.dar-alifta.org",
+      "www.hanafiatlas.com",
+      "www.islam.gov.qa",
+      "www.nli.org.il",
+      "www.qatarch.com"
+    ],
+    "counting_policy": "One authored work per reviewed identity; alternate titles and editions are not additional works. The imported source catalogues are a separate unreconciled layer.",
+    "scope": "Substantial, selected historical fiqh bibliography. Not an exhaustive enumeration of every school; no claim of full-text acquisition or critical collation.",
+    "full_text_acquisition_or_collation_claimed": false
+  },
+  "hanafi_atlas_benchmark": {
+    "data_url": "corpora/hanafi-atlas-benchmark.json",
+    "catalogue_entries": 84,
+    "core_entries": 68,
+    "textual_relations": 74,
+    "contextual_relations_kept_separate": 18,
+    "original_reading_collection_books": 23,
+    "original_readers_reproduced_locally": false,
+    "attribution_url": "https://www.hanafiatlas.com/about"
+  },
+  "source_corpus": {
+    "url": "corpora/",
+    "index": "corpora/registry.json",
+    "verification_register": "corpora/CORPUS_VERIFICATION.md",
+    "source_repository": "OpenITI/RELEASE",
+    "pinned_commit": "cfc4157a3cf2054c0888f133970a4eaa3e22e58c",
+    "digital_versions": 30,
+    "mirrored_byte_identical": 5,
+    "on_demand_remote_versions": 25,
+    "bibliography_evidenced_work_relations": 5,
+    "print_manuscript_collations_claimed": 0,
+    "complete_corpora_claimed": false,
+    "license": "CC BY-NC-SA 4.0"
+  },
+  "chronology_enrichment": {
+    "source": "corpora/author-chronology.json",
+    "alreq_author_biographies_checked": 19,
+    "alreq_records_with_sourced_author_death_anchor": 764,
+    "alreq_records_still_without_author_death_anchor": 3393,
+    "event_type": "author death, not book composition or manuscript copying",
+    "unplaced_workflow": "Immediate searchable source workbench in both chronology and geographic views",
+    "automatic_same_title_merges": 0
+  },
+  "geography": {
+    "data_url": "corpora/geo-events.json",
+    "geocoded_events": 41,
+    "author_events": 30,
+    "work_events": 11,
+    "registered_places": 28,
+    "unplaced_research_caveat": "No automatic geolocation from an author nisba, text title or manuscript catalogue association."
+  },
+  "bibliography_map": {
+    "mode": "single shared chronological renderer with source-date qualifications, undated source-record lanes, Hanafi-style bidirectional work-centred networks and optional principal-texts synopses",
+    "openiti_primary_work_candidates": 1857,
+    "alreq_source_linked_entries": 4157,
+    "graph_renderer": "atlas-unified.js",
+    "graph_interactions": [
+      "one shared year axis for all sciences",
+      "zoom and pan to era clusters",
+      "sourced author-death timeline anchors",
+      "visible undated workbench and Arabic title/author search",
+      "author/source identity and citations",
+      "school and early-jurist lanes",
+      "unplaced geography catalogue",
+      "source-evidence work panel",
+      "bidirectional text network",
+      "principal texts"
+    ],
+    "registered_early_historical_authorities": 16,
+    "alreq_fiqh_by_school": {
+      "hanafi": {
+        "fiqh": 1033,
+        "usul": 101
+      },
+      "maliki": {
+        "fiqh": 380,
+        "usul": 30
+      },
+      "shafii": {
+        "fiqh": 782,
+        "usul": 119
+      },
+      "hanbali": {
+        "fiqh": 199,
+        "usul": 39
+      }
+    },
+    "alreq_nahw_entries": 892,
+    "alreq_sarf_entries": 109,
+    "alreq_balagha_entries": 261,
+    "cross_catalogue_conceptual_identity_collated": false,
+    "text_or_manuscript_acquired_from_alreq": false,
+    "historical_influence_edges_generated": 0,
+    "primary_source_registers": [
+      "corpora/expanded-bibliography.json",
+      "corpora/manuscript-full.json"
+    ]
+  },
+  "textual_family_note": "The 404/377 audited dataset remains unchanged and the earlier UI is archived. The geographic map has a small cited event sample (author biography vs text composition); it is not a complete geocoding of Alreq or OpenITI. No invented influence or manuscript dates.",
+  "tahdhib_added_entries": 26,
+  "avicennian_extension_entries": 11,
+  "avicennian_new_textual_routes": 2,
+  "tahdhib_added_relationships": 26,
+  "displayed_political_periods": 48,
+  "displayed_events": 36,
+  "download_current_pdf": null,
+  "download_current_offline": "Gnamma_Intellectual_Atlas_Offline_Revision8.zip",
+  "individual_reign_rows": 0,
+  "pdf_pages": {
+    "illustrated_overview_legacy": 15,
+    "illustrated_reference_legacy": 204,
+    "historical_revision7_register": 84,
+    "focused_tahdhib_supplement": 9
+  },
+  "pdf_note": "The live atlas now includes subject-specific interactive SVG graphs of cited books, jurists and classical legal schools, including 2025 OpenITI work candidates and Alreq source catalogue entries. The revision 8 offline ZIP and older PDFs predate these additions; they are historical snapshots. Catalogue references are not acquired manuscript scans, verified complete texts or legal-opinion graphs.",
+  "download_sha256": {
+    "Gnamma_Intellectual_Atlas_Offline_Revision7.zip": "50a705efd9814ff291cd317582257ae40f3e8ddb53e366ce30d103635b59a5a6",
+    "Gnamma_Intellectual_Atlas_Offline_Revision8.zip": "c3b40b57db522d36e9ac379457aaf209d4be5fd588c6518a0e9860297d000013",
+    "Intellectual_Atlas_Reference_Revision4.pdf": "7d5bf70d9d683bbdeaaba21ce9b6f8bc3b7e112356bd81b50622466964858b24",
+    "Intellectual_Atlas_Reference_Revision7.pdf": "56fdc288c6171980b9313540a10698434185c656b6a2f3909317b8d0ef5920b9",
+    "Islamic_Intellectual_Timeline.pdf": "f75eba18a18b04a3a443a0f6a097ba05013179219ae5eafadcdb5fa5513235ba",
+    "Islamic_Timeline_Overview.pdf": "346e2cf5efcca1943d00361d7fcd8ca4cbf26b6510a24aa1417c0659da4258c8",
+    "Islamic_Timeline_Website_Package.zip": "8673c89ac9b75ba35c5ca8ffbe63eba5345ba1d259d37b74488266b0ffab7352",
+    "Tahdhib_Genealogy_Addendum.pdf": "331d46c9fe8bb2a7e059e18dd214fb117f8d1d8ff5bf5e0fe3d82a8e81db33ab",
+    "intellectual-atlas-data.json": "d6136c3cd5cd1d92b45cef20b8fa00c5c2233963d465887ffe46700cfcbf658e"
+  },
+  "reader_navigation_revision": "tajrid-reader-ui-3-2026-10-31",
+  "reader_return_links": "Preserve safe debate views, passage context, filters and comparison selection."
+}

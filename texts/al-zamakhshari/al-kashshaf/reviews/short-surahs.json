@@ -1,0 +1,1243 @@
+{
+  "review": "Short-surah Kashshaf and Tibi source audit",
+  "date": "2026-11-10",
+  "surahs": [
+    103,
+    108,
+    109,
+    110,
+    111
+  ],
+  "scope": "All 56 current English segments compared clause-by-clause with their available Arabic electronic sources. Full authorial Arabic counterparts supplied, separating Kashshaf base from Tibi glosses and rejoining page breaks. Quran display blocks excluded for separate reader rendering.",
+  "definitive": false,
+  "scan_verified_this_run": false,
+  "limits": [
+    "Electronic witnesses contain errors and gaps. Source-grounded conjectural repairs are bracketed and individually recorded.",
+    "Prior scan-restored English in 108,109,110 is retained based on existing translation endnotes, not represented as newly scan-verified.",
+    "Printed Tibi XVI:613 is missing from the previously supplied scan and remains outstanding.",
+    "This is a translation/source-alignment audit, not independent authentication of every hadith, historical claim, grammatical position, or source attribution."
+  ],
+  "counts": {
+    "segments": 56,
+    "kashshaf": 23,
+    "tibi": 33,
+    "proposed_translation_corrections": 6
+  },
+  "segments": [
+    {
+      "id": "K103.01",
+      "arabic": "مكية، وآياتها 3 «نزلت بعد الشرح» بسم الله الرحمن الرحيم",
+      "verses": [
+        1,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:793, heading",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "K103.02",
+      "arabic": "أقسم بصلاة العصر لفضلها، بدليل قوله تعالى: والصلاة الوسطى صلاة العصر، في مصحف حفصة. وقوله عليه الصلاة والسلام «من فاتته صلاة العصر فكأنما وتر أهله وماله» ولأن التكليف في أدائها أشق لتهافت الناس في تجاراتهم ومكاسبهم آخر النهار، واشتغالهم بمعايشهم. أو أقسم بالعشي كما أقسم بالضحى لما فيهما جميعا من دلائل القدرة. أو أقسم بالزمان لما في مروره من أصناف العجائب. والإنسان: للجنس. والخسر: الخسران، كما قيل: الكفر في الكفران. والمعنى: أن الناس في خسران من تجارتهم إلا الصالحين وحدهم، لأنهم اشتروا الآخرة بالدنيا، فربحوا وسعدوا، ومن عداهم تجروا خلاف تجارتهم، فوقعوا في الخسارة والشقاوة وتواصوا بالحق بالأمر الثابت الذي لا يسوغ إنكاره، وهو الخير كله: من توحيد الله وطاعته، واتباع كتبه ورسله، والزهد في الدنيا، والرغبة في الآخرة وتواصوا بالصبر عن المعاصي وعلى الطاعات، وعلى ما يبلو الله به عباده.",
+      "verses": [
+        1,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:793–794",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_keywords": [
+        "الخُسر / الخُسران",
+        "الكُفر / الكُفران",
+        "الحقّ",
+        "الصبر"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "K103.03",
+      "arabic": "عن رسول الله صلى الله عليه وسلم: «من قرأ سورة والعصر غفر الله له وكان ممن تواصى بالحق وتواصى بالصبر».",
+      "verses": [
+        1,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:794",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "K108.01",
+      "arabic": "مكية، وآياتها 3 «نزلت بعد العاديات» بسم الله الرحمن الرحيم\n\nفي قراءة رسول الله صلى الله عليه وسلم: إنا [أنطيناك]، بالنون. وفي حديثه صلى الله عليه وسلم: «وأنطوا الثبجة» والكوثر: فوعل من الكثرة وهو المفرط الكثرة. قيل لأعرابية رجع ابنها من السفر: بم آب ابنك؟ قالت: آب بكوثر. وقال: وأنت كثير يا ابن مروان طيب... وكان أبوك ابن العقائل كوثرا",
+      "verses": [
+        1,
+        1
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:806",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "إنا أعطيناك، بالنون",
+          "display": "إنا [أنطيناك]، بالنون",
+          "basis": "The local DKA electronic witness contradicts its explicit بالنون. The embedded Kashshaf in Tibi s517 line17 has أنطيناك; the prior translation note K108-U1 already records this correction."
+        }
+      ],
+      "arabic_keywords": [
+        "أَنْطَيْنَاكَ",
+        "أَنْطُوا الثَّبَجَةَ",
+        "فَوْعَل",
+        "الكثرة"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "K108.02",
+      "arabic": "وقيل الكوثر نهر في الجنة. وعن النبي صلى الله عليه وسلم أنه قرأها حين أنزلت عليه فقال: «أتدرون ما الكوثر؟ إنه نهر في الجنة وعدنيه ربى، فيه خير كثير » وروى في صفته: أحلى من العسل، وأشد بياضا من اللبن، وأبرد من الثلج، وألين من الزبد، حافتاه الزبرجد، وأوانيه من فضة عدد نجوم السماء. وروى: لا يظمأ من شرب منه أبدا: أول وارديه: فقراء المهاجرين: الدنسو الثياب، الشعث الرؤوس، الذين لا يزوجون المنعمات، ولا تفتح لهم أبواب السدد، يموت أحدهم وحاجته تتلجلج في صدره، لو أقسم على الله لأبره» وعن ابن عباس أنه فسر الكوثر بالخير الكثير، فقال له سعيد بن جبير: إن ناسا يقولون: هو نهر في الجنة! فقال: هو من الخير الكثير.",
+      "verses": [
+        1,
+        1
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:806–807",
+      "apparatus": [
+        "Retain the author’s attribution to Ibn Abbas after Saʿid ibn Jubayr’s question. T108.02 transmits the questioning of Ibn Jubayr and his reply differently; do not harmonize the two authors."
+      ],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "K108.03",
+      "arabic": "والنحر: نحر البدن، وعن عطية: هي صلاة الفجر بجمع، والنحر بمنى. وقيل: صلاة العيد والتضحية. وقيل. هي جنس الصلاة. والنحر: وضع اليمين على الشمال، والمعنى: أعطيت مالا غاية لكثرته من خير الدارين الذي لم يعطه أحد غيرك، ومعطى ذلك كله أنا إله العالمين، فاجتمعت لك الغبطتان السنيتان: إصابة أشرف عطاء وأوفره، من أكرم معط وأعظم منعم، فاعبد ربك الذي أعزك بإعطائه، وشرفك وصانك من منن الخلق، مراغما لقومك الذين يعبدون غير الله، وانحر لوجهه وباسمه إذا نحرت، مخالفا لهم في النحر للأوثان",
+      "verses": [
+        1,
+        2
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:807",
+      "apparatus": [
+        "جمع means Muzdalifa here; English Jamʿ [Muzdalifa] and slaughter at Mina are correct. Do not substitute the erroneous Turkish comparator’s dawn prayer at Mina."
+      ],
+      "corrections": [],
+      "arabic_keywords": [
+        "النحر",
+        "البدن",
+        "جَمْع",
+        "مِنى"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "K108.04",
+      "arabic": "إن من أبغضك من قومك لمخالفتك لهم هو الأبتر لا أنت، لأن كل من يولد إلى يوم القيامة من المؤمنين فهم أولادك وأعقابك، وذكرك مرفوع على المنابر والمنار، وعلى لسان كل عالم وذاكر إلى آخر الدهر، يبدأ بذكر الله ويثنى بذكرك، ولك في الآخرة مالا يدخل تحت الوصف، فمثلك لا يقال له أبتر: وإنما الأبتر هو شانئك المنسى في الدنيا والآخرة، وإن ذكر ذكر باللعن. وكانوا يقولون: إن محمدا صنبور: إذا مات مات ذكره. وقيل: نزلت في العاص بن وائل، وقد سماه الأبتر، والأبتر: الذي لا عقب له. ومنه: الحمار الأبتر الذي لا ذنب له.",
+      "verses": [
+        3,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:807–808",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "K108.05",
+      "arabic": "عن رسول الله صلى الله عليه وسلم: «من قرأ سورة الكوثر سقاه الله من كل نهر في الجنة ويكتب له عشر حسنات بعدد كل قربان قربه العباد في يوم النحر أو يقربونه ».",
+      "verses": [
+        1,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:808",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "K109.01",
+      "arabic": "مكية، وهي ست آيات «نزلت بعد الماعون» ويقال لها ولسورة الإخلاص: المقشقشتان، أى المبرئتان من النفاق بسم الله الرحمن الرحيم",
+      "verses": [
+        1,
+        6
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:808, heading",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "K109.02",
+      "arabic": "المخاطبون كفرة مخصوصون قد علم الله منهم أنهم لا يؤمنون. روى أن رهطا من قريش قالوا: يا محمد، هلم فاتبع ديننا ونتبع دينك: تعبد آلهتنا سنة ونعبد إلهك سنة، فقال معاذ الله أن أشرك بالله غيره: فقالوا: فاستلم بعض آلهتنا نصدقك ونعبد إلهك، فنزلت، فغدا إلى المسجد الحرام وفيه الملأ من قريش فقام على رؤوسهم فقرأها عليهم، فأيسوا.",
+      "verses": [
+        1,
+        1
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:808",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "K109.03",
+      "arabic": "لا أعبد أريدت به العبادة فيما يستقبل، لأن «لا» لا تدخل إلا على مضارع في معنى الاستقبال، كما أن «ما» لا تدخل إلا على مضارع في معنى الحال، ألا ترى أن «لن» تأكيد فيما تنفيه «لا» وقال الخليل في «لن»: أن أصله «لا أن» والمعنى: لا أفعل في المستقبل ما تطلبونه منى من عبادة آلهتكم، ولا أنتم فاعلون فيه ما أطلب منكم من عبادة إلهى ولا أنا عابد ما عبدتم أى: وما كنت قط عابدا فيما سلف ما عبدتم فيه، يعنى لم تعهد منى عبادة صنم في الجاهلية، فكيف ترجى منى في الإسلام ولا أنتم عابدون ما أعبد أى: وما عبدتم في وقت ما أنا على عبادته. فإن قلت: فهلا قيل: ما عبدت، كما قيل: ما عبدتم؟ قلت: لأنهم كانوا يعبدون الأصنام قبل المبعث، وهو لم يكن يعبد الله تعالى في ذلك الوقت. فإن قلت: فلم جاء على «ما» دون «من» ؟ قلت، لأن المراد الصفة، كأنه قال: لا أعبد الباطل، ولا تعبدون الحق. وقيل: إن «ما» مصدرية، أى: لا أعبد عبادتكم، ولا تعبدون عبادتي",
+      "verses": [
+        2,
+        5
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:808–809",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_keywords": [
+        "لا / ما / لن",
+        "ما عبدت / ما عبدتم",
+        "ما / من",
+        "ما المصدرية"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "K109.04",
+      "arabic": "لكم دينكم ولي دين لكم شرككم، ولى توحيدي. والمعنى: أنى نبى مبعوث إليكم لأدعوكم إلى الحق والنجاة، فإذا لم تقبلوا منى ولم تتبعوني، فدعوني كفافا ولا تدعوني إلى الشرك. عن رسول الله صلى الله عليه وسلم: «من قرأ سورة الكافرين فكأنما قرأ ربع القرآن وتباعدت منه مردة الشياطين، وبريء من الشرك ويعافى من الفزع الأكبر».",
+      "verses": [
+        6,
+        6
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:809",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "K110.01",
+      "arabic": "نزلت بمنى في حجة الوداع، فتعد مدنية، وهي آخر ما نزل من السور وآياتها 3 «نزلت بعد التوبة» بسم الله الرحمن الرحيم",
+      "verses": [
+        1,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:810, heading",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "K110.02",
+      "arabic": "إذا جاء منصوب بسبح، وهو لما يستقبل. والاعلام بذلك قبل كونه من أعلام النبوة. روى أنها نزلت في أيام التشريق بمنى في حجة الوداع. فإن قلت: ما الفرق بين النصر والفتح حتى عطف عليه؟ قلت: النصر الاغاثة والاظهار على العدو. ومنه: نصر الله الأرض غاثها. والفتح: فتح البلاد. والمعنى: نصر رسول الله صلى الله عليه وسلم على العرب. أو على قريش وفتح مكة. وقيل: جنس نصر الله للمؤمنين وفتح بلاد الشرك عليهم، وكان فتح مكة لعشر مضين من شهر رمضان سنة ثمان، ومع رسول الله صلى الله عليه وسلم عشرة آلاف من المهاجرين والأنصار وطوائف العرب، وأقام بها خمس عشرة ليلة، ثم خرج إلى هوازن، وحين دخلها وقف على باب الكعبة، ثم قال: لا إله إلا الله وحده لا شريك له صدق وعده ونصر عبده وهزم الأحزاب وحده، ثم قال: يا أهل مكة، ما ترون أنى فاعل بكم؟ قالوا: خيرا أخ كريم وابن أخ كريم. قال: اذهبوا فأنتم الطلقاء، فأعتقهم رسول الله صلى الله عليه وسلم، وقد كان الله تعالى أمكنه من رقابهم عنوة، وكانوا له فيئا، فلذلك سمى أهل مكة الطلقاء، ثم بايعوه على الإسلام",
+      "verses": [
+        1,
+        1
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:810",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_keywords": [
+        "النصر / الفتح",
+        "نصر الله الأرض: غاثها"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "K110.03",
+      "arabic": "في دين الله في ملة الإسلام التي لا دين له يضاف إليه غيرها ومن يبتغ غير الإسلام دينا فلن يقبل منه. أفواجا جماعات كثيفة كانت تدخل فيه القبيلة بأسرها بعد ما كانوا يدخلون فيه واحدا واحدا واثنين اثنين. وعن جابر بن عبد الله رضى الله عنه أنه بكى ذات يوم، فقيل له. فقال سمعت رسول الله صلى الله عليه وسلم يقول: «دخل الناس في دين الله أفواجا وسيخرجون منه أفواجا » وقيل: أراد بالناس أهل اليمن. قال أبو هريرة: لما نزلت قال رسول الله صلى الله عليه وسلم: «الله أكبر جاء نصر الله والفتح، وجاء أهل اليمن: قوم رقيقة قلوبهم، الإيمان يمان، والفقه يمان، والحكمة يمانية» » وقال أجد نفير ربكم من قبل اليمن» وعن الحسن: لما فتح رسول الله صلى الله عليه وسلم مكة أقبلت العرب بعضها على بعض، فقالوا: أما إذ ظفر بأهل الحرم فليس به يدان، وقد كان الله أجارهم من أصحاب الفيل وعن كل من أرادهم، فكانوا يدخلون في الإسلام أفواجا من غير قتال. وقرأ ابن عباس: فتح الله والنصر: وقرئ: يدخلون، على البناء للمفعول. فإن قلت: ما محل يدخلون؟ قلت: النصب إما على الحال، على أن رأيت بمعنى أبصرت أو عرفت. أو هو مفعول ثان على أنه بمعنى علمت",
+      "verses": [
+        2,
+        2
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:810–811",
+      "apparatus": [
+        "The local DKA witness has نفير in أجد نفير ربكم; the embedded Kashshaf in Tibi and Tibi’s lexicographic gloss have نفس/نَفَس. English already declares the divergence. Arabic counterpart retains local DKA نفير; do not silently harmonize."
+      ],
+      "corrections": [],
+      "arabic_keywords": [
+        "نفير / نَفَس",
+        "يُدْخَلون",
+        "رأى: أبصر / عرف / علم"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "K110.04",
+      "arabic": "فسبح بحمد ربك فقل سبحان الله: حامدا له، أى: فتعجب لتيسير الله ما لم يخطر ببالك وبال أحد من أن يغلب أحد على أهل الحرم، واحمده على صنعه. أو: فاذكره مسبحا حامدا، زيادة في عبادته والثناء عليه، لزيادة إنعامه عليك. أو فصل له. روت أم هانئ: أنه لما فتح باب الكعبة صلى صلاة الضحى ثماني ركعات وعن عائشة: كان عليه الصلاة والسلام يكثر قبل موته أن يقول: «سبحانك اللهم وبحمدك، أستغفرك وأتوب إليك» والأمر بالاستغفار مع التسبيح تكميل للأمر بما هو قوام أمر الدين: من الجمع بين الطاعة والاحتراس من المعصية، وليكون أمره بذلك مع عصمته لطفا لأمته، ولأن الاستغفار من التواضع لله وهضم النفس، فهو عبادة في نفسه. وعن النبي صلى الله عليه وسلم: «إنى لأستغفر في اليوم والليلة مائة مرة »",
+      "verses": [
+        3,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:811–812",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "K110.05",
+      "arabic": "وروى أنه لما قرأها رسول الله صلى الله عليه وآله وسلم على أصحابه استبشروا وبكى العباس، فقال رسول الله صلى الله عليه وسلم: «ما يبكيك يا عم» ؟ قال: نعيت إليك نفسك. قال: «إنها لكما تقول» فعاش بعدها سنتين لم يرفيهما ضاحكا مستبشرا. وقيل: إن ابن عباس هو الذي قال ذلك، فقال رسول الله صلى الله عليه وسلم، «لقد أوتى هذا الغلام علما كثيرا» وروى أنها لما نزلت خطب رسول الله صلى الله عليه وسلم فقال: «إن عبدا خيره الله بين الدنيا وبين لقائه، فاختار لقاء الله» فعلم أبو بكر رضى الله عنه، فقال: فديناك بأنفسنا وأموالنا وآبائنا وأولادنا. وعن ابن عباس أن عمر رضى الله عنهما كان يدنيه ويأذن له مع أهل بدر، فقال عبد الرحمن: أتأذن لهذا الفتى معنا وفي أبنائنا من هو مثله؟ «فقال إنه ممن قد علمتم » قال ابن عباس: فأذن لهم ذات يوم، وأذن لي معهم، فسألهم عن قول الله تعالى إذا جاء نصر الله ولا أراه سألهم إلا من أجلى، فقال بعضهم: أمر الله نبيه إذا فتح عليه أن يستغفره ويتوب إليه، فقلت: ليس كذلك، ولكن نعيت إليه نفسه، فقال عمر: ما أعلم منها إلا مثل ما تعلم، ثم قال: كيف تلومونني عليه بعد ما ترون؟ وعن النبي صلى الله عليه وسلم أنه دعا فاطمة رضى الله عنها فقال: «يا بنتاه إنه نعيت إلى نفسي، فبكت، فقال: لا تبكى، فإنك أول أهلى لحوقا بي » وعن ابن مسعود أن هذه السورة تسمى سورة التوديع كان توابا أى كان في الأزمنة الماضية منذ خلق المكلفين توابا عليهم إذا استغفروا، فعلى كل مستغفر، أن يتوقع مثل ذلك.",
+      "verses": [
+        1,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:812",
+      "apparatus": [
+        "The report that he lived two years after this revelation conflicts with the Farewell-Pilgrimage dating in K110.01. Both are source claims; do not silently harmonize chronology. Local DKA also explicitly has وفي أبنائنا; web embedded Kashshaf’s أبائنا is an electronic corruption, so English sons is supported."
+      ],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "K110.06",
+      "arabic": "عن رسول الله صلى الله عليه وسلم: «من قرأ سورة إذا جاء نصر الله أعطى من الأجر كمن شهد مع محمد يوم فتح مكة».",
+      "verses": [
+        1,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:813",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "K111.01",
+      "arabic": "مكية، وآياتها 5 [نزلت بعد الفاتحة] بسم الله الرحمن الرحيم\n\nالتباب: الهلاك. ومنه قولهم: أشابة أم تابة، أى: هالكة من الهرم والتعجيز. والمعنى: هلكت يداه، لأنه فيما يروى: أخذ حجرا ليرمى به رسول الله صلى الله عليه وسلم وتب وهلك كله. أو جعلت يداه هالكتين. والمراد: هلاك جملته، كقوله تعالى بما قدمت يداك ومعنى وتب: وكان ذلك وحصل، كقوله: جزانى جزاه الله شر جزائه... جزاء الكلاب العاويات وقد فعل",
+      "verses": [
+        1,
+        1
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:813",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "K111.02",
+      "arabic": "ويدل عليه قراءة ابن مسعود: وقد تب، وروى أنه لما نزل وأنذر عشيرتك الأقربين رقى الصفا وقال. يا صباحاه، فاستجمع إليه الناس من كل أوب. فقال: يا بنى عبد المطلب، يا بنى فهر، إن أخبرتكم أن بسفح هذا الجبل خيلا أكنتم مصدقى؟ قالوا: نعم، قال: فإنى نذير لكم بين يدي الساعة، فقال أبو لهب: تبا لك، ألهذا دعوتنا ؟ فنزلت. فإن قلت: لم كناه، والتكنية تكرمة؟ قلت: فيه ثلاثة أوجه، أحدها: أن يكون مشتهرا بالكنية دون الاسم، فقد يكون الرجل معروفا بأحدهما، ولذلك تجرى الكنية على الاسم، أو الاسم على الكنية عطف بيان، فلما أريد تشهيره بدعوة السوء وأن تبقى سمة له، ذكر الأشهر من علميه ويؤيد ذلك قراءة من قرأ، يدا أبو لهب، كما قيل، على بن أبو طالب. ومعاوية بن أبو سفيان، لئلا يغير منه شيء فيشكل على السامع، ولفليتة بن قاسم أمير مكة ابنان، أحدهما: عبد الله- بالجر، والآخر عبد الله- بالنصب. كان بمكة رجل يقال له: عبد الله- بجرة الدال، لا يعرف إلا هكذا. والثاني: أنه كان اسمه عبد العزى، فعدل عنه إلى كنيته. والثالث: أنه لما كان من أهل النار ومآله إلى نار ذات لهب، وافقت حاله كنيته، فكان جديرا بأن يذكر بها. ويقال: أبو لهب، كما يقال: أبو الشر للشرير. وأبو الخير للخير، وكما كنى رسول الله صلى الله عليه وسلم أبا المهلب: أبا صفرة، بصفرة في وجهه. وقيل كنى بذلك لتلهب وجنتيه وإشراقهما، فيجوز أن يذكر بذلك تهكما به، وبافتخاره بذلك. وقرئ أبى لهب، بالسكون. وهو من تغيير الأعلام، كقولهم: شمس بن مالك بالضم",
+      "verses": [
+        1,
+        1
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:814",
+      "apparatus": [],
+      "corrections": [
+        {
+          "old": "Fulayta ibn Qāsim",
+          "new": "Falīta ibn Qāsim (فَلِيتة بن قاسم)",
+          "evidence": "Kashshaf has unvocalized فليتة; Tibi’s explicit gloss s519 line65 specifies fatḥa on fāʾ and kasra on lām, and separately reports diminutive Fukayta. Fulayta wrongly combines the two.",
+          "certainty": "high"
+        }
+      ],
+      "arabic_keywords": [
+        "يدا أبو لهب",
+        "عبدِ الله / عبدَ الله",
+        "أبي لَهْب",
+        "شُمْس بن مالك"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "K111.03",
+      "arabic": "ما أغنى استفهام في معنى الإنكار، ومحله النصب أو نفى وما كسب مرفوع. وما موصولة أو مصدرية بمعنى: ومكسوبه. أو: وكسبه. والمعنى: لم ينفعه ماله وما كسب بماله، يعنى: رأس المال والأرباح. أو ماشيته وما كسب من نسلها ومنافعها، وكان ذا سابياء. أو ماله الذي ورثه من أبيه والذي كسبه بنفسه. أو ماله التالد والطارف. وعن ابن عباس: ما كسب ولده. وحكى أن بنى أبى لهب احتكموا إليه، فاقتتلوا، فقام يحجز بينهم، فدفعه بعضهم فوقع، فغضب، فقال: أخرجوا عنى الكسب الخبيث: ومنه قوله عليه السلام «إن أطيب ما يأكل الرجل من كسبه وإن ولده من كسبه» وعن الضحاك: ما ينفعه ماله وعمله الخبيث، يعنى كيده في عداوة رسول الله صلى الله عليه وسلم. وعن قتادة: عمله الذي ظن أنه منه على شيء، كقوله وقدمنا إلى ما عملوا من عمل وروى أنه كان يقول: إن كان ما يقول ابن أخى حقا فأنا أفتدى منه نفسي بمالي وولدى",
+      "verses": [
+        2,
+        2
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:814–815",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "K111.04",
+      "arabic": "سيصلى قرئ بفتح الياء وبضمها: مخففا ومشددا، والسين للوعيد، أى: هو كائن لا محالة وإن تراخى وقته وامرأته هي أم جميل بنت حرب أخت أبى سفيان، وكانت تحمل حزمة من الشوك والحسك والسعدان فتنثرها بالليل في طريق رسول الله صلى الله عليه وسلم. وقيل: كانت تمشى بالنميمة: ويقال للمشاء بالنمائم المفسد بين الناس: يحمل الحطب بينهم، أى: يوقد بينهم النائرة ويورث الشر. قال: من البيض لم تصطد على ظهر لأمة... ولم تمش بين الحى بالحطب الرطب جعله رطبا ليدل على التدخين الذي هو زيادة في الشر، ورفعت عطفا على الضمير في سيصلى أى: سيصلى هو وامرأته. وفي جيدها في موضع الحال. أو على الابتداء، وفي جيدها: الخبر. وقرئ: حمالة الحطب، بالنصب على الشتم، وأنا أستحب هذه القراءة، وقد توسل إلى رسول الله صلى الله عليه وسلم بجميل: من أحب شتم أم جميل. وقرئ: حمالة للحطب. وحمالة للحطب: بالتنوين، والرفع والنصب. وقرئ: ومريته بالتصغير.",
+      "verses": [
+        3,
+        4
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:815",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "K111.05",
+      "arabic": "المسد: الذي فتل من الحبال فتلا شديدا، من ليف كان أو جلد، أو غيرهما. قال: ومسد أمر من أيانق ورجل ممسود الخلق مجدوله. والمعنى: في جيدها حبل مما مسد من الحبال، وأنها تحمل تلك الحزمة من الشوك وتربطها في جيدها كما يفعل الحطابون: تخسيسا لحالها، وتحقيرا لها، وتصويرا لها بصورة بعض الحطابات من المواهن، لتمتعض من ذلك ويمتعض بعلها، وهما في بيت العز والشرف. وفي منصب الثروة والجدة. ولقد عير بعض الناس الفضل بن العباس ابن عتبة ابن أبى لهب بحمالة الحطب، فقال: ماذا أردت إلى شتمي ومنقصتي... أم ما تعير من حمالة الحطب غراء شادخة في المجد غرتها... كانت سليلة شيخ ناقب الحسب ويحتمل أن يكون المعنى: أن حالها تكون في نار جهنم على الصورة التي كانت عليها حين كانت تحمل حزمة الشوك، فلا تزال على ظهرها حزمة من حطب النار من شجرة الزقوم أو من الضريع، وفي جيدها حبل من ما مسد من سلاسل النار: كما يعذب كل مجرم بما يجانس حاله في جرمه. عن رسول الله صلى الله عليه وسلم: «من قرأ سورة تبت رجوت أن لا يجمع الله بينه وبين أبى لهب في دار واحدة ».",
+      "verses": [
+        5,
+        5
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "sources/Kashshaf-selected.mARkdown",
+      "locator": "DKA IV:815–817",
+      "apparatus": [],
+      "corrections": [
+        {
+          "old": "carrying and tying up the thorns like wood-gatherers",
+          "new": "carrying that bundle of thorns and fastening it about her neck, as wood-gatherers do",
+          "evidence": "Local DKA explicitly says وأنها تحمل تلك الحزمة من الشوك وتربطها في جيدها كما يفعل الحطابون. Existing English omits the location of the fastening.",
+          "certainty": "high"
+        }
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T103.01",
+      "arabic": "مكية، ثلاث آيات\n\nبسم الله الرحمن الرحيم\n\nقوله: (فكأنما وُتر أهله وماله)، النهاية: \"وتر: أي نقص، يقال: وترته إذا نقصته، فكأنك جعلته وتراً بعد أن كان كثيراً. وقيل: هو من الوتر: الجناية؛ فشُبه من فاتته صلاة العصر بمن قتل حميمه، أو سلب أهله وماله. ويروى بنصب الأهل ورفعهـ فمن نصب جعله مفعولاً ثانياً لوتر، وأضمر فيها مفعولاً لم يُسم فاعله عائداً إلى الذي فاتته الصلاة، ومن رفع لم يُضمر وأقام الأهل مقام ما لم يُسم فاعله، لأنهم المصابون المأخوذون؛ فمن رد النقص إلى الرجل نصبهما، ومن رده إلى الأهل والمال رفعهما\".",
+      "verses": [
+        1,
+        1
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s514.html",
+      "locator": "T-Dubai XVI:565; web lines 20,22,23",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_keywords": [
+        "وُتِرَ",
+        "وَتَرْتُه",
+        "الوِتر: الجناية"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T103.02",
+      "arabic": "قوله: (لتهافت)، وهو التساقط قطعة قطعة، وتهافت الفراش في النار: تساقط.\n\nقوله: (أو أقسم بالزمان)، قال الزجاج: \"والعصر: الدهر، والعصر: اليوم، والعصر: الليلة، قال حُميد بن ثور:\n\nولا يلبث العصران يوماً وليلةً إذا طُلبا أن يُدركا ما تيمما\n\nقوله: (﴿وَتَوَاصَوْا بِالْحَقِّ﴾: بالأمر الثابت) إلى آخره، الراغب: \"الوصية: التقدم إلى الغير بما يعمل به مقروناً بوعظ ونصيحة، من قولهم: أرض واصية: متصلة النبات، يقال: أوصاه ووصاه، وتواصى القوم: إذا أوصى بعضهم بعضاً\"، يقال: \"قدمت إليه بكذا، إذا أمرته قبل وقت الحاجة إلى الفعل\".",
+      "verses": [
+        1,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s514.html",
+      "locator": "T-Dubai XVI:566; web lines 30,32,34,35",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_keywords": [
+        "التهافت",
+        "العصران",
+        "أرض واصية",
+        "أوصاه / وصّاه / تواصوا"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T103.03",
+      "arabic": "قال الإمام: \"الآية فيها وعيد شديد، لأنه حكم بالخسار في جميع الناس، إلا من كان آتياً بالإيمان والعمل الصالح والتواصي بالحق والتواصي بالصبر، فدل ذلك على أن النجاة تتعلق بمجموع هذه الأمور، وكما أنه يلزم المكلف تحصيل ما يخص نفسه به، يلزمه في غيره: الدعاء إلى الدين، والنصيحة، والأمر بالمعروف والنهي عن المنكر، وأن يحب له ما يحب لنفسه. ثم كرر التواصي ليتضمن الأول الدعاء إلى الله، والثاني الثبات عليه\".\n\n[تمت السورة]",
+      "verses": [
+        2,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s514.html",
+      "locator": "T-Dubai XVI:567; web lines 38,40",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "T108.01",
+      "arabic": "ثلاث آيات، مكية\n\nبسم الله الرحمن الرحيم\n\nقوله: (وأَنطوا الثَّبَجَة)، النهاية: \"وهي لغة اليمن. كتب صلوات الله عليه لوائل: أنطوا الثبجة، أي: أعطوا الوسط من الصدقة، لا من خيار المال ولا من رُذالته، وألحقها تاء التأنيث لانتقالها من الاسمية إلى الوصفية\".\n\nقولُه: (ابنَ العَقائِل)، أي: المختارُ من النساء، وعقيلةُ كلِّ شئٍ أكرمُه. والكوثَرُ من الرجالِ: الكثيرُ الخيرِ والعطاء. والبيتُ للكُميت.",
+      "verses": [
+        1,
+        1
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s517.html",
+      "locator": "T-Dubai XVI:600–601; web lines 19,21,22,31",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "T108.02",
+      "arabic": "قولُه: (إنه نهرٌ في الجنّة)، روينا في صحيحِ البخاري، عن سعيدِ بنِ جبيرٍ، عن ابنِ عباس، قالَ في الكوثر: «هو الكثيرُ الخير». قيلَ لابنِ جبير: فإنّ الناسِ يزعمونَ أنه نهرٌ في الجنة؟ فقالَ سعيد: «النهرُ الذي في الجنّةِ، من الخيرِ الذي أعطاه اللهُ تعالى إياه».\n\nوعن أحمدَ بنِ حنبلٍ والترمذي وابنِ ماجه والدرامي، عن ابنِ عمرَ قال: قال رسولُ الله صلى الله عليه وسلم: «الكوثرُ نهرٌ في الجنّة، حافَتَاه من ذهب، ومَجْراه على الدُّرِّ والياقوت، تُرْبتُه أطيبُ من المِسْك، ومَاؤُه أحلى من العسل، وأبيضُ من الثلج».\n\nوفي حديثِ عائشةَ -رضي الله تعالى عنها-: «شاطئاه دُرٌّ مُجَوَّف، وآنيتُه كعددِ نجومِ السماء»، أخرجه البخاري.",
+      "verses": [
+        1,
+        1
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s517.html",
+      "locator": "T-Dubai XVI:601; web lines 32,34,35",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "T108.03",
+      "arabic": "قولُه: (لا تُفتحُ لهم أبوابُ السُّدَد)، الحديثُ من روايةِ الترمذيّ عن ثوبان، أن رسولَ اللهِ صلى الله عليه وسلم قال: «حوضي مثلُ ما بينَ عَدَنٍ إلى عَمّان البلقاء، ماؤُه أشدُّ بياضًا من الثلج، وأحلى من العسل، وأكوابُه عددُ نجومِ السماء، مَنْ شربَ منه لم يَظمأ بعدَها أبدًا، أولُ الناسِ ورودًا علىَّ فقراءُ المهاجرين، والشُّعثُ رؤوسًا، الدُّنْسُ ثيابًا، الذين لا يَنْكحون المتنعّمات، ولا تُفتح لهم أبوابُ السُّدَد».\n\nوقال الترمذي: قالَ عمرُ بنُ عبدِ العزيز: قد نَكَحتُ المتنعّماتِ فاطمةَ [بنتَ] عبد الملك، وفُتحتْ لي أبوابُ السُّدَد. لا جرمَ لا أغسلُ رأسي حتى يَشْعث، ولا ثوبي الذي يَلي جسدي حتى يَتّسخ.\n\nوفي \"الجامع\": «السُّدَدُ جمعُ سُدّة، وهي البابُ ها هنا». وفي \"النهاية\": «السُّدَةُ كالظُلّةِ على البابِ لتقيَ البابَ من المطر، وقيل: هي السّاحةُ بين يدي الباب، وقيل: هي البابُ نفسُه، أي: لا تفتحُ لهم الأبواب. وفي حديثِ أبي الدّرداء، أنه أتى بابَ معاويةَ فلم يُؤذنْ له، فقالَ: من يَغْشَ سُدَدَ السلطانِ يَقُمْ ويَقْعد».\n\nوقلتُ: الأشبهُ أن تُحملَ الإضافةُ في أبوابِ السُّددِ على البيان، فيكنّى بها عن أبوابِ الملوكِ والعظماء، على أنْ يرادَ بالسُّدةِ الظُلّةُ أو الساحة.",
+      "verses": [
+        1,
+        1
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s517.html",
+      "locator": "T-Dubai XVI:602; web lines 40,41,42,44",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "فاطمةَ بنَ عبد الملك",
+          "display": "فاطمةَ [بنتَ] عبد الملك",
+          "basis": "Mechanical gender/name corruption in electronic text; English daughter of Abd al-Malik is correct."
+        }
+      ],
+      "arabic_keywords": [
+        "السُّدَد",
+        "السُّدّة",
+        "الإضافة على البيان"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T108.04",
+      "arabic": "قولُه: (لو أقسمَ على الله لأبرّه)، قالَه صلواتُ اللهِ عليه في حديثِ الرُّبَيِّعَ، روينا عن البخاري ومسلمٍ وأبي داودَ والنسائي، عن أنسِ بنِ مالك، أنّ الرُّبَيِّعَ عَمّتَه كسرتْ ثَنِيّةَ جارية، فَطَلبوا إليها العفوَ فأبَوا، فَعرضوا الأَرْشَ فأبَوا، فأتوا رسولَ الله صلى الله عليه وسلم، وأَبوا إلّا القِصاص، فأَمرَ رسولُ اللهِ صلى الله عليه وسلم بالقِصاص، فقالَ أنسُ بنُ النَّضر: يا رسولَ الله، أتُكسرُ ثَنيةُ الرُّبَيِّع؟ لا، […] فرضيَ القومُ فعَفَوا، فقالَ رسولُ اللهِ صلى الله عليه وسلم: إنّ من [عبادِ] الله مَن لو أقسمَ على اللهِ لأبَّره. معناه: لو سألَ اللهَ لأجابَه. والإقسامُ ها هنا بمعنى الاستعطاف.",
+      "verses": [
+        1,
+        1
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s517.html",
+      "locator": "T-Dubai XVI:602–603; web lines 45,49",
+      "apparatus": [
+        "Existing English oath “By Him who sent you with the truth…” and “Anas, does not God’s Book prescribe retaliation?” were previously restored against printed603, per T108-U1. This run did not independently inspect that scan. Retain English; lacuna remains explicitly marked in the electronic-derived Arabic counterpart."
+      ],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "إلّا\n\nالقِصاص",
+          "display": "إلّا القِصاص",
+          "basis": "Join sentence over printed page break 602/603."
+        },
+        {
+          "witness": "الرُّبَيِّع؟ لا، فرضيَ",
+          "display": "الرُّبَيِّع؟ لا، […] فرضيَ",
+          "basis": "Electronic witness omits the oath and Prophet’s answer. The existing English restores both from a previously recorded inspection of print p603; exact missing Arabic is not recreated here from the English."
+        },
+        {
+          "witness": "من عباِ الله",
+          "display": "من [عبادِ] الله",
+          "basis": "Mechanical dropped final letter in electronic transcription."
+        }
+      ],
+      "english_reviewed": true,
+      "recovered_prior_evidence": {
+        "id": "T108.04",
+        "source_commit": "bcbb0846e6d3fdd1cdee86286b4b51b34fe0c791",
+        "source_file": "arabic-corrections.json",
+        "page": "Dubai XVI:603",
+        "note": "Exact Arabic retained in the earlier C07 reader; adopted in brackets, on the basis of its prior scan report, without a fresh scan check."
+      },
+      "integration_decision": "The electronic witness gap remains documented above. The exact missing Arabic was subsequently found in the earlier C07 archival correction record and is now retained in brackets in the reading text."
+    },
+    {
+      "id": "T108.05",
+      "arabic": "قولُه: (ومُعْطي ذلك كلِّه أنا إلهُ العالمين)، إيذانٌ باختيارِ قولِ ابنِ عباس: إنّ الكوثرَ الخيرُ الكثير، وبإفادةِ ضميرِ الجمعِ الدالِّ على العظمةِ والكبرياء، فإن قائلَه ليسَ إلّا إلهَ العالمين، وأنّ المُعطي لم يكن عظيمًا، إلّا أنّ المُعطي عظيم. ولأجلِ تَيْنِك المناسبتين، رُتّبَ عليه قولُه: ﴿فَصَلِّ لِرَبِّكَ﴾، وَوُضعَ المظهرُ موضعَ المضمر، يعني: كما أنّ المعطي والمعطي عظيمان، فأتِ أنتَ بأعظمِ ما يمكنُ من العباداتِ البدنيةِ والمالية.\n\nوإنما أُوثرَ النحرُ ليُدمجَ معنى معطي قطعِ النفسِ عن اللذاتِ العاجلة، ضُمّ مع ذلك ﴿إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ﴾ تكميلًا لِما بشَّره، قالَ الإمام: «لمّا بَشّره بالنِّعم العظيمة، وقد علمَ أن كمال ذلك إنما يكونُ بقهرِ الأعداء، قيل: ﴿إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ﴾».\n\nنَقلَ السُّلميُّ عن جعفرِ الصادق: «إنّا أعطيناك نورًا في قلبك دَلَّكَ عَلَيّ، وقَطَعَك عمّا سواي. وعن القاسمِ: إنّ شانئَك المنقطعُ عن خيراتِ الدّارين»، واللهُ أعلم.",
+      "verses": [
+        1,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s517.html",
+      "locator": "T-Dubai XVI:603; web lines 50,51,53",
+      "apparatus": [
+        "The phrase وأن المعطى لم يكن عظيما، إلا أن المعطي عظيم remains unresolved. Existing English explicitly treats it provisionally as concessive. The printed wording was previously checked according to T108-U2, but no new scan inspection occurred in this run. Do not remove the uncertainty or silently make the text say an unqualified “both gift and giver are great.”",
+        "The electronic text has ليُدمج معنى معطي قطع النفس; the prior print note reports معنى معطى قطع النفس. Extra معطي/معطى remains unexplained. Existing English “cutting the soul off from immediate pleasures” conveys the evident main clause, not a definitive resolution of every word."
+      ],
+      "corrections": [],
+      "arabic_keywords": [
+        "المُعطَى / المُعطِي",
+        "التكميل"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T108.06",
+      "arabic": "قولُه: (والمَنَار)، النهاية: «المنَارُ جمع مَنارَة، وهي العلامةُ بين الحدَّيْن. ومنه حديثُ أبي هريرة: \"إنّ للإسلامِ [صُوًى] ومَنارًا\"، أي: علاماتٍ وشرائعَ يعرفُ بها». وقيل: المنائرُ: جمعُ المنارةِ التي يُؤذّنُ عليها، والأصلُ: مَناوِر؛ لأنه من النور، بُدّلَ الهمزةُ من الواو، وقد يُشَبَّهُ الأصليُّ بالزائد، كما قالوا: مَصائب، وأصلُه: مَصاوب.\n\nقولُه: (فمثلُك لا يقالُ له: الأبتر)، وهو نحوُ قولك: \"مثلُك لا يَبْخل\" في الكناية، أي: مَن هو في صفتِك، مِن أن كلِّ مَن يولدُ من المؤمنين إلى آخرِ الدَّهر أولادٌ له، لا يقالُ له: الأبتر.\n\nقولُه: (صُنْبور)، النهاية: «الأبترُ الذي لا عَقِب له. وأصلُ الصُّنْبورِ سَعَفةٌ تَنْبتُ في جِذْعِ النخلةِ لا في الأرض. وقيل: هي النخلةُ المنفردةُ التي يَدِقُّ أسفلُها. أرادوا أنه إذا قُلعَ انقطعَ ذِكرُه، كما يَذْهبُ أثرُ الصُّنبورِ، لأنه لا عقبَ له».",
+      "verses": [
+        3,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s517.html",
+      "locator": "T-Dubai XVI:604; web lines 59,60,62",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "صُويّ",
+          "display": "[صُوًى]",
+          "basis": "The lexeme is waymarks (صوى), also signaled by the following gloss علامات وشرائع. Brackets retain visibility that electronic صويّ was repaired; new print verification outstanding."
+        }
+      ],
+      "arabic_keywords": [
+        "المنار / المنارة",
+        "المنائر / المناور",
+        "مصائب / مصاوب",
+        "صنبور"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T108.07",
+      "arabic": "قولُه: (أَوْ يُقَرِّبونَه)، عن بعضهم: \"أو\" للتنويع.\n\nتَمَّتِ السُّورة",
+      "verses": [
+        1,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s517.html",
+      "locator": "T-Dubai XVI:605; web lines 67,69",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "T109.01",
+      "arabic": "قولُه: (ونَتَّبعُ)، عن بعضِهم: هو عطفٌ على محلِّ \"[فاتَّبعْ]\"، لأنه لو كان مضارعًا لكان مجزومًا، أنه جوابُ \"هَلُمَّ\". وقولُه: \"نعبدُ\" إلى آخره، تفسير.\n\nقولُه: (فاستلمْ)، أَيْ: قَبِّلْ؛ يقال: استلمِ الحجرَ، أي: صافحْه، ثُمّ عَمَّ في كلِّ مُماسّة.",
+      "verses": [
+        1,
+        1
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s517.html",
+      "locator": "T-Dubai XVI:606–607; web lines 89,98",
+      "apparatus": [
+        "The Arabic authorial section also has a Meccan/six-verses/basmala heading at web lines85/87. The English segment begins with the gloss, so the Arabic counterpart follows that segment boundary and excludes the redundant heading."
+      ],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "فاتَّتبعْ",
+          "display": "[فاتَّبعْ]",
+          "basis": "Mechanical repeated ت in the quoted Kashshaf lemma; local Kashshaf and the transmitted proposal have فاتبع."
+        }
+      ],
+      "arabic_keywords": [
+        "هَلُمَّ",
+        "فَاتَّبِعْ",
+        "نَتَّبِعْ",
+        "فاستلم",
+        "استلم الحجر"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T109.02",
+      "arabic": "قولُه: (فَهلّا قيل)، يعني: قولُه: ﴿وَلَا أَنْتُمْ عَابِدُونَ مَا أَعْبُدُ﴾، قرينةٌ لقوله: ﴿وَلَا أَنَا عَابِدٌ مَا عَبَدْتُمْ﴾، فلِمَ خولِفَ في الثانية إلى ﴿مَا أَعْبُدُ﴾، وكان الظاهر ﴿مَا عَبَدْتُ﴾، كما قيل في الأولى ﴿مَا عَبَدْتُمْ﴾؟\n\nقولُه: (وهو لم يكنْ يعبدُ اللهَ تعالى في [ذلك] الوقت)، الانتصاف: «هذا القولُ خطأٌ أصلًا وفرعًا، أما أصلُه فإنّ القدريّ يعتقدُ أنَّ النبي صلى الله عليه وسلم، لم يكنْ قبلَ البعثِ على دينِ نبيٍّ قبلَه، لأن ذلك غَميزةٌ في حقّه ومنفّرٌ عن اتّباعه، ويعتقدون أن الناسَ كلَّهم متعبّدون بمقتضى العقلِ بوجوبِ النظرِ في آياتِ الله وأدلّةِ توحيدِه ومعرفتِه، وأنّ وجوبَ النظرِ بالعقلِ لا بالسمع؛\n\nفتلك عبادةُ قبل المبعث، يجبُ أن لا يظنوا به عليه السلام الإخلالَ بها فأصلُهم حينئذٍ يقتضي أنه صلى الله عليه وسلم كانَ قبلَ المبعثِ يعبدُ اللهَ عز وجل، فحافظَ الزمخشريُّ [على] هذا الأصلِ في عدمِ اتْباعِه لنبيٍّ سابق، فأخلَّ بالتفريعِ على أصلِه الآخرِ في وجوبِ العبادةِ بالعقل.\n\nوالحقُّ أنه صلى الله عليه وسلم كانَ متعبدًا قبلَ الوحي ويَتَحنّثُ في غارِ حراء؛ فإنْ كانَ مجئُ قولِه ﴿أَعْبُدُ﴾، لأن الماضي لم تحصلْ فيه العبادةُ المرادةُ في الآية، فيحملُ الأمرُ فيما عَبَدْتُ، على [مجموعِ] العبادةِ الحاصلةِ التي لم تُعلمْ إلّا بالشرع، لا على مجرّدِ توحيدِ الله ومعرفتِه؛ فإنّ ذلك لم يَزلْ ثابتًا له عليه السلام قبل البعثة.\n\nوأما مجيئُه مضارعًا، فلتصوير عبادتِه في نفسِ السامعِ وتَمكُّنِها، كقولِه: ﴿أَلَمْ تَرَ أَنَّ اللَّهَ أَنْزَلَ مِنَ السَّمَاءِ مَاءً فَتُصْبِحُ الْأَرْضُ مُخْضَرَّةً﴾ [الحج: 63]، والأصلُ: أصبحتْ؛ عُدلَ عنه للمعنى المذكور». وقلتُ: يجوزُ أن يُحملَ على الاستمرارِ في الماضي والآتي بقرينةِ التقابل، كما في قوله تعالى: ﴿إِنَّ الَّذِينَ يَتْلُونَ كِتَابَ اللَّهِ وَأَقَامُوا الصَّلَاةَ﴾ [فاطر: 29]، بعطفِ الماضي على المستقبل. والصحيحُ أنه صلواتُ الله عليه كانَ [قبلَ] المبعثِ متعبدًا بشرعٍ.",
+      "verses": [
+        2,
+        5
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s517.html",
+      "locator": "T-Dubai XVI:607–608; web lines 100,101,104,105,106",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "في 1 لك الوقت",
+          "display": "في [ذلك] الوقت",
+          "basis": "Mechanical digit/substitution corruption; exact lemma exists in both Kashshaf witnesses."
+        },
+        {
+          "witness": "مدموعِ العبادة",
+          "display": "[مجموعِ] العبادة",
+          "basis": "Electronic corruption; English full body of worship reflects the evident reading. New print verification remains outstanding."
+        },
+        {
+          "witness": "كانَ المبعثِ متعبدًا",
+          "display": "كانَ [قبلَ] المبعثِ متعبدًا",
+          "basis": "قبل is explicitly documented as restored from printed608 in the prior T109-U1 note; not newly scan-verified in this run."
+        }
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T109.03",
+      "arabic": "روى ابنُ الجوزي في كتابِ \"الوفا\"، عن الإمامِ أحمدَ بنِ حنبلٍ رحمه اللهُ تعالى: «مَن قالَ: إن رسولَ الله صلى الله عليه وسلم كانَ على دينِ قومِه، فهو قولُ سوء، أليسَ [كانَ] لا يأكلُ ما ذُبحَ على النُّصب؟ وقالَ أبو الوفاءِ عليٌّ بنُ عقيل: كان رسولُ الله صلى الله عليه وسلم متدينًا قبلَ بعثتِه، بما يَصحُّ عنده أنه مِن شريعةِ إبراهيم عليه السلام، وأما بعدَ بعثتِه، فهل كانَ يتعبّدُ بشريعةِ مَن قبلَه؟\n\nفيه روايتان: إحداهما: أنه كانَ متعبدًا بما صَحَّ مِن شرائعِ مَن قبلَه بطريقِ الوحيِ إليه،\n\nلا من جهتِهم ولا نَقلِهم ولا كتبهم المنزلة، واختارها أبو الحسن التميميُّ، وهو قولُ أصحابِ أبي حنيفةَ رحمهم الله.\n\nوالروايةُ الثانية: أنه لم [يكنْ] متعبدًا بشئٍ من الشرائعِ، إلّا ما أُوحيَ إليه من شريعتِه، وهو قولُ المعتزلةِ والأشعرية. ولأصحابِ الشافعيّ وجهانِ كالروايتين. واختلفَ القائلون بأنه متعبدٌ بشرعِ مَن قبلَه: بأيِّ شريعةٍ كان متعبدًا؟ قالَ بعضُهم: بشريعةِ موسى عليه السلام إلّا ما نُسخَ في شرعنا. وظاهرُ كلامِ أحمدَ رحمه الله تعالى، أنه كانَ متعبدًا بكلِّ ما صَحَّ أنه شريعةٌ لنبيٍّ قبلَه، ما لم يثبتْ نسخْه، لقوله تعالى: ﴿أُولَئِكَ الَّذِينَ هَدَى اللَّهُ فَبِهُدَاهُمُ اقْتَدِهِ﴾ [الأنعام: 90].\n\nوقالَ ابنُ قتيبة: لم تَزلِ العربُ على بقايا من دينِ إسماعيلَ عليه السلام، من ذلك: حجُّ البيت، والخِتان، وإيقاعُ الطلاقِ إذا كان ثلاثًا، وأن للزوجِ الرّجعةَ في الواحدةِ والاثنين، ودِيّةُ النفسِ [مئةٌ] من الإبل، والغُسلُ من الجنابة، وتحريمُ ذواتِ المحارمِ بالقرابةِ والصِّهر، فكانَ رسولُ الله صلى الله عليه وسلم على ما كانوا عليه من الإيمانِ بالله والعملِ بشرائعهم.\n\nوأما قولِه تعالى: ﴿مَا كُنْتَ تَدْرِي مَا الْكِتَابُ وَلَا الْإِيمَانُ﴾ [الشورى: 52]، يُعنى به: شرائعُ الإيمان، ولم يُردْ به الإيمانُ الذي هو الإقرارُ بالله». تَمَّ كلامُ ابن الجوزي.",
+      "verses": [
+        2,
+        5
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s517.html",
+      "locator": "T-Dubai XVI:608–609; web lines 107,109,112,113,114,115",
+      "apparatus": [
+        "The first and second positions concern following earlier laws AFTER the mission. Do not project these positions backwards onto the preceding discussion of pre-mission worship."
+      ],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "أليسَ انَ لا يأكلُ",
+          "display": "أليسَ [كانَ] لا يأكلُ",
+          "basis": "Mechanical dropped initial ك; existing English correctly retains rhetorical question about the Prophet’s abstention."
+        },
+        {
+          "witness": "لم ينْ متعبدًا",
+          "display": "لم [يكنْ] متعبدًا",
+          "basis": "Mechanical dropped ك; new scan verification outstanding."
+        },
+        {
+          "witness": "مئٌ من الإبل",
+          "display": "[مئةٌ] من الإبل",
+          "basis": "Mechanical truncation; existing translation one hundred is supported by the transmitted formulation."
+        }
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T109.04",
+      "arabic": "وقلتُ: غرضُ المصنفِ من ارتكابِ هذا المحظور، دَفعُ التكرارِ من الكلام باختلافِ الزمانينِ المستقبلِ والماضي؛ فإنه جَعلَ القرينتينِ الأوليينِ للاستقبال والأخُريين للماضي، ولذلك توجّهَ عليه السؤال. والأوجَهُ أن يقال: إن الكلامَ ما وقع في عبادةِ رسولِ الله صلى الله عليه وسلم، وأنه أيُّ شئٍ عبد فيما مضى من الزمان، بل وقع فيما يُستقبل، كما يشهدُ له سَببُ النزولِ بقوله: ﴿مَا أَعْبُدُ﴾، على ظاهره. وأما قولُه: ﴿مَا عَبَدْتُمْ﴾ على الماضي، فللمبالغةِ مِن التبرّي عنهم وعن عبادتهم، فهو على خلافِ الظاهر.",
+      "verses": [
+        2,
+        5
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s517.html",
+      "locator": "T-Dubai XVI:609; web lines 116",
+      "apparatus": [
+        "The criticism هذا المحظور is Tibi’s own I-say passage, not an additional statement by Zamakhshari. Existing English keeps the voices separate."
+      ],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "T109.05",
+      "arabic": "قالَ الإمام: «في الآيةِ قولان: الأولُ: أنه لا تكرارَ فيها، وفيه وجوه:\n\n[أحدُها] أنّ الأولَ للاستقبال، لأن \"لا\" لا تدخلُ إلّا على مضارعٍ في معنى الاستقبال، أي: لا أفعلُ في المستقبلِ ما تطلبونه مني من عبادةِ آلهتِكم، ولا أنتم فاعلون في المستقبلِ ما أطلبُ منكم من عبادةِ إلهي، ثمّ قالَ: ﴿وَلَا أَنَا عَابِدٌ مَا عَبَدْتُمْ﴾، أي: لستُ في الحالِ بعابدٍ معبوديكم، ولا أنتم في الحالِ بعابدين معبودي.\n\nوثانيها: أن يُقلب، فيجعلَ الأولُ للحالِ والثاني للاستقبال، وعليه كلامُ الزجاجِ والواحدي ومحيي السُّنة؛ قال الواحدي: «وإنما جئَ بـ\"ما\" بدلَ \"من\" ليقابلَ قولَه ﴿مَا تَعْبُدُونَ﴾ حملًا للثاني على الأول». وقال الزجاجُ ومحيي السُّنة: «هذا خطابٌ لمن سبقَ في علمِ الله أن لا يؤمن».\n\nوثالثُها: قولُ أبي مسلم: المقصودُ من الأُولَيينِ المعبود، و\"ما\" بمعنى \"الذي\"، أي: لا أعبدُ الأصنامَ ولا تعبدونَ الله، وفي الأُخريَيْنِ \"ما\" مصدرية، أي: ولا أنا عابدٌ مثلَ عبادتكم المبنيّةِ على الشك، ولا أنتم عابدون مثلَ عبادتي المبنيّةِ على اليقين.\n\nورابعُها: أن تُحملَ الأولى على نفي الاعتبارِ الذي ذكروه، والثانيةُ على العامِ بجميعِ الجهات، أي: لا أعبدُ ما تعبدون رجاءَ أن تعبدوا الله، ولا أنتم عابدون رجاءَ أن أعبدَ صنمَكم، ثم قال: ولا أنا عابدٌ صنمَكم لغرضٍ من الأغراض، بوجهٍ من الوجوه، وكذا أنتم لا تعبدون اللهَ لغرضٍ من الأغراض؛ مثالُه: مَن يدعو غيرَه إلى الظلمِ لغرضِ التنعّم، فيقول: لا أظلمُ لغرضِ التنعّم، بل لا أظلمُ أصلًا، سواءٌ كان للتنعّمِ أو غيرِه.",
+      "verses": [
+        2,
+        5
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s517.html",
+      "locator": "T-Dubai XVI:610; web lines 119,121,122,123,124",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "أحدهُا",
+          "display": "[أحدُها]",
+          "basis": "Mechanical dropped م in enumeration."
+        }
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T109.06",
+      "arabic": "والقولُ الثاني: هو أن يُسلَّمَ حصولُ التكرار، وهو لوجهين: أحدُهما أن التكرارَ يفيدُ التوكيد، وكلّما كانتِ الحاجةُ إلى التوكيدِ أشدَّ كانَ التكريرُ أحسن، ولا موضعَ أحوجُ إلى التأكيدِ من هذا المقام؛ لأنهم رجعوا إليه في هذا المعنى مرارًا، وطمعوا فيه لما رأوا فيه من الحرصِ على [إيمانهم].\n\nوقالَ محيي السُّنة: «قالَ أكثرُ أهلِ العلم: إن القرآنَ نزلَ بلسانِ العربِ وعلى مجاري خطابِهم، ومن مذاهبِهم التكرارُ وإرادةَ التأكيدِ والإفهام، كما أن من مذاهبِهم الاختصارَ للتخفيفِ والإيجاز».\n\nوقلتُ: هذا الوجهُ هو الذي اخترناه لطباقِه المقام، ثُمّ المختارُ الوجهُ الرابعُ من القولِ الأول.\n\nوثانيهما: أنهم ذكروا تلك الكلمةَ مرتين، يعني: تعبدُ آلهتَنا شهرًا ونعبدُ إلهك شهرًا، وتعبد [آلهتَنا] سنةً ونعبدُ إلهك سنة، فأتى الجوابُ على التكرار على وفِق قولِهم، وفيه ضَربُ من التهكُّم؛ فإنّ مَن كرّرَ الكلمةَ الواحدةَ لغرضٍ فاسد، فإنه يُجازى لدفعِ تلك الكلمةِ على سبيلِ التكرارِ استخفافًا». نقل هذا الوجهَ محيي السُّنةِ عن القُتَيْبي، أخصر منه.",
+      "verses": [
+        2,
+        5
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s517.html",
+      "locator": "T-Dubai XVI:611; web lines 130,132,133,135",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "إبمانهم",
+          "display": "[إيمانهم]",
+          "basis": "Mechanical character corruption."
+        },
+        {
+          "witness": "آهتَنا",
+          "display": "[آلهتَنا]",
+          "basis": "Mechanical dropped ل."
+        }
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T109.07",
+      "arabic": "قولُه: (فَدَعوني كَفافًا)، النهاية: «الكَفافُ هو الذي لا يفضُلُ عن الشئ، ويكونُ بقَدرِ الحاجةِ إليه، وهو نصبٌ على الحال. وقيل: أرادَ به مكفوفًا عنِّي شَرُّهم. وقيل: أن لا تنالوا منّي ولا أنا أنالُ منكم، أي: تكفّونَ عني وأكفُّ عنكم». فإذن، في قولِه ﴿لَكُمْ دِينُكُمْ وَلِيَ دِينِ﴾ معنى المُتاركةِ وتقريرُ كلِّ من الفريقين الآخرَ على دينه، فيكون منسوخًا بآيةِ القتال.\n\nوقال القاضي: «ولي ديني الذي أنا عليه لا أرفضُه، فليس فيه إذنٌ في الكفرِ ولا مَنعٌ عن الجهاد، فلا يكونُ منسوخًا». وقد فُسِّرَ \"الدِّينُ\" بالحسابِ والجزاءِ والدعاءِ والعبادة.",
+      "verses": [
+        6,
+        6
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s517.html",
+      "locator": "T-Dubai XVI:611–612; web lines 136,141,143",
+      "apparatus": [
+        "Preserve both abrogation positions: the first construes mutual disengagement and abrogation; al-Baydawi’s reported position rejects both permission for unbelief and abrogation. Existing English does this accurately."
+      ],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "بقَدرِ\n\nالحاجةِ",
+          "display": "بقَدرِ الحاجةِ",
+          "basis": "Join lexicographic sentence over printed page break 611/612."
+        }
+      ],
+      "arabic_keywords": [
+        "كَفافًا",
+        "المتاركة",
+        "الدين"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T109.08",
+      "arabic": "قولُه: (فكأنما قرأ ربع القرآن)، روينا عن الترمذي، عن ابنِ عباسٍ وأنس، قالا: قالَ رسولُ اللهِ صلى الله عليه وسلم: «مَن قرأ ﴿قُلْ يَا أَيُّهَا الْكَافِرُونَ﴾، عَدلتْ له رُبعَ القرآن».\n\nتَمّتِ السُّورَة",
+      "verses": [
+        1,
+        6
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s517.html",
+      "locator": "T-Dubai XVI:612; web lines 144,146",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "T110.01",
+      "arabic": "مدنية وهي ثلاث آيات\n\nبسم الله الرحمن الرحيم\n\nقوله: (أو على قريش وفتح مكّة) ، قال القاضي: (قيل: المراد جنس نصر الله وفتح مكّة وسائر البلاد عليهم، وإنما عبّر عن المحصول بالمجيء تجوّزا، للاشعار بأن المقدّرات متوجهة من الأزلِ إلى أوقاتِها المعيَّنةِ لها، فتَقْرُبُ منها شيئًا فشيئًا، أي: قد قربَ النصرُ من وقتِه، فكن مترقّبًا لوروده مستعدًّا لشكره».\n\nوقلتُ: فيه وفي كلامِ المصنِّفِ نَظَر، لأن فتحَ مكةَ مقدّمٌ على نزولِ السورة، لِما روينا عن مسلم، عن عُبيدِ الله بنِ عبدِ الله بنِ عتبة، قال: قالَ لي ابنُ عباس: «أتدري آخرَ سورةٍ نزلتْ من القرآنِ جميعًا؟ » قلتُ: نعم، ﴿إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ﴾. قال: \"صدقت\". وفي كلام المصنّفِ إيذانٌ به، وذلك أنه قال: «وكان فتحُ مكةَ لعشرٍ مَضَيْنَ من شهرِ رمضانَ سنةَ ثمان».\n\nوقيل: إنها نزلتْ في أيامِ التشريقِ بمِنىّ في حجّةِ الوداع، وكانتْ حجّةُ الوداعِ في السَّنةِ العاشرة، لأنه صلواتُ الله عليه، مكثَ تسعَ سنينَ ولم يَحجَّ، ثم أُذنَ له في السنةِ العاشرة.",
+      "verses": [
+        1,
+        1
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s518.html",
+      "locator": "T-Dubai XVI:613–614; web lines 20,22,24,29,30,31",
+      "apparatus": [
+        "Supplied scan history reports missing printed613: physical612=print612, physical613=print614. This electronic counterpart supplies the text, not a substitute claim of scan verification. A replacement image of printed613 remains needed."
+      ],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "متوجهة\n\nمن الأزلِ",
+          "display": "متوجهة من الأزلِ",
+          "basis": "Join quoted sentence over printed page break 613/614."
+        }
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T110.02",
+      "arabic": "قولُه: (وعن جابِر بنِ عبدِ الله رضي الله عنه، أنه بكى ذاتِ يوم)، الحديثُ أخرجَه أحمدُ ابنُ حنبلٍ عنه، ورواه الدّراميُّ عن أبي هريرة.\n\nقولُه: (الإيمانُ يَمانٍ)، الحديثُ من روايةِ البخاري ومسلم والتّرمذي عن أبي هريرة، قال: قالَ رسولُ الله صلى الله عليه وسلم: «أتاكم أهلُ اليمن؛ فإنهم أرقُّ أفئدةً، وألينُ قلوبًا، الإيمانُ يَمانٍ، والحكمةُ يَمانِيَة»، وفي روايةٍ: \"الفقهُ يَمان\"، الحديث.\n\nالنهاية: «إنما قالَ: الإيمانُ يَمانٍ والحكمةُ يَمانِيَة، لأنّ الإيمانَ بدأ من مكة، وهي من تِهامة، وتهامةُ من أرضِ اليمن، ولهذا يقال: الكعبةُ اليمانية. وقيل: إنه صلواتُ الله عليه قالَ هذا القولَ وهو بتبوك، ومكةُ والمدينةُ يومئذٍ بينه وبين اليمن، فأشارَ إلى ناحيةِ اليمنِ وهو يريدُ مكةَ والمدينة. وقيلَ: أرادَ بهذا القولِ الأنصارَ لأنهم يمانيون، وهم نَصروا الإيمانَ والمؤمنين وآوَوْهم، فنُسبِ الإيمانُ إليهم»، لقولِه تعالى: ﴿وَالَّذِينَ تَبَوَّءُوا الدَّارَ وَالْإِيمَانَ﴾ [الحشر: 9].\n\nوعن غيرِه: أريدَ بالحكمةِ السُّنةُ والفقه، لقولِه تعالى: [﴿وَيُعَلِّمُهُمُ الْكِتَابَ وَالْحِكْمَةَ﴾] [الجمعة: 2].\n\nويروى: الفقهُ يَمانٍ؛ هذا ثناءٌ على أهلِ اليمنِ لإسراعِهم إلى الإيمانِ، وحُسْنِ قَبولِهم إياه.\n\nوقلتُ: لعلَّ المعنيَّ من الفقهِ، ما عَناهُ الحسنُ في ما روينا عن الدّرامي عن عمران، قال: قلتُ للحسنِ يومًا في شئٍ قاله\" يا أبا سعيد، ليسَ هكذا تقولُ الفقهاء. فقال: «ويحك! ورأيتَ فقيهًا قَطُّ؟ إنّما الفقيهُ الزاهدُ في الدّنيا، الراغبُ في الآخرة، البصيرُ بأمرِ دينه، المداومُ على عبادة ِ ربّه».",
+      "verses": [
+        2,
+        2
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s518.html",
+      "locator": "T-Dubai XVI:614–616; web lines 32,38,39,40,41,42,44,53",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "أحمدُ\n\nابنُ حنبلٍ",
+          "display": "أحمدُ ابنُ حنبلٍ",
+          "basis": "Join name over printed page break 614/615."
+        },
+        {
+          "witness": "{} [الجمعة: 2]",
+          "display": "[﴿وَيُعَلِّمُهُمُ الْكِتَابَ وَالْحِكْمَةَ﴾] [الجمعة: 2]",
+          "basis": "The quoted Quran phrase is explicitly recorded as restored from print615 (physical614) in prior T110-U1. This run independently confirms the empty electronic placeholder but did not inspect the scan."
+        },
+        {
+          "witness": "فقال: «ويحك!\n\nورأيتَ",
+          "display": "فقال: «ويحك! ورأيتَ",
+          "basis": "Join reported speech over printed page break 615/616; preserve electronic initial و before رأيت pending scan."
+        }
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T110.03",
+      "arabic": "قولُه: (أجدُ نَفَسَ ربّكم من قبلِ اليمن)، النهاية: «النّفَسُ مستعارٌ من نَفَس الهواءِ الذي يَرُدُّه التنفُّسُ إلى الجوف، فيُبْرِدُ من حرارتهِ ويُعدِّلُها، أو من نَفَسِ الرِّيحِ الذي يَتنسِّمُه فيستروحُ إليه، أو مِن نَفَسِ الرَّوْضةِ وهو طيبُ روائحها، فَينفرجُ به عنه. يقالُ: أنتَ في نَفَسٍ من أمرك، وأعملْ وأنتَ في نَفَسٍ من عمرك، أي: في سَعَةٍ وفُسْحة».\n\nقولُه: (أّمَا إذْ ظَفِر)، يُروى \"أما\" مخفّفُا ومثقلًا. والثاني هو الوجه، لأنّ \"أمّا\" تفصيلية، أي: أمّا إذا لم يظفرْ بأهلِ الحرم، فكنّا نطمعُ في غَلَبتنا عليه، وأما إذْ ظفرَ به، فليس لنا به يدان.",
+      "verses": [
+        2,
+        2
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s518.html",
+      "locator": "T-Dubai XVI:616; web lines 54,55",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_keywords": [
+        "نَفَس",
+        "أَمَا / أَمَّا"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T110.04",
+      "arabic": "قولُه: (فقل: سبحانَ الله: حامدًا له، أي: فتعجبْ)، والباءُ في ﴿بِحَمْدِ رَبِّكَ﴾ للحال، أي: قُلِ التسبيحَ وأنتَ ملتبسٌ بالحمد؛ فإذنْ لا يكونُ القصدُ بذكرِ التسبيح الذكر. قال: «والأصلُ في ذلك أن يسبحَ الله في رُؤيةِ العجيبِ من صنائعِه، ثم كثرَ حتى استُعملِ في كلِّ متعجَّبٍ منه». \"الانتصاف\": «الأمرُ على هذا بمعنى الخبر، لأن الأمرَ في صيغةِ التعجّبِ ليسَ مرادًا، والمرادُ أن [هذه] القصةَ من شأنِها أن يُتعجَّبَ منها».\n\nقولُه: (أو: فاذكرْه مسبِّحًا حامدًا)، فعلى هذا، يكونُ القصدُ بذكرِ التسبيح، الذكرَ على سبيلِ التضمين، ولذلك أوقعَه حالًا، و ﴿بِحَمْدِ رَبِّكَ﴾ حالٌ على التداخلِ، لأن التضمينَ يجعلُ المضمّنَ حالًا في الأكثر. قالَ القاضي: «المعنى: فأثنِ على الله بصفاتِ الجلالِ، حامدًا له على صفاتِ الإكرام».\n\nوقلتُ: هذا الوجهُ أولى من الأولِ وأحسنُ التئامًا، وقد مَرّ في سورةِ الفتح أنه تعالى، إنما جعلَ فتحَ مكةَ عِلةً للمغفرة، لأنه كان سببًا لأن يؤمرَ رسولُ الله صلى الله عليه وسلم بالاشتغالِ بخاصّةِ نفسِه، بعدَ بَذْلِ المجهودِ فيما كُلِّفَ به من تبليغِ الرسالةِ ومجاهدةِ أعداءِ الدين، وبالإقبالِ على العبادةِ والتقوى، والتأهُّبِ للمسيرِ إلى المقاماتِ العليةِ واللُّحوقِ بالرفيقِ الأعلى، وإليه يُلمّحُ بقولِه: «إنّ عبدًا خَيَّرَه اللهُ بين الدنيا وبين لقائِه، فاختارَ لقاءَ الله». ومن ثَمّ بكى عَمُّه العباسُ حين تُليتْ عليه السورة، وقَالَ: نُعيتْ إليك نفسُك.\n\nوهذا المعنى هو الذي فَهمَ منه ابنُ عمِّه حَبْرُ الأمة، حين ردّ على أولئك الشيوخ، وقال: نُعيتْ إليه نفسُه، وصَدَّقَه عمرُ رضي الله عنه.",
+      "verses": [
+        3,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s518.html",
+      "locator": "T-Dubai XVI:617–618; web lines 60,61,62,65,66",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "أن هه القصةَ",
+          "display": "أن [هذه] القصةَ",
+          "basis": "Mechanical dropped ذ."
+        },
+        {
+          "witness": "وإليه يُلمّحُ\n\nبقولِه",
+          "display": "وإليه يُلمّحُ بقولِه",
+          "basis": "Join authorial sentence over printed page break 617/618."
+        }
+      ],
+      "arabic_keywords": [
+        "التضمين",
+        "الحال على التداخل"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T110.05",
+      "arabic": "وأما ما روى محيي السُّنة عن محمدِ بنِ جريرٍ أن قولَه: ﴿لِيَغْفِرَ لَكَ اللَّهُ مَا تَقَدَّمَ مِنْ ذَنْبِكَ وَمَا تَأَخَّرَ﴾ [الفتح: 2]، راجعٌ إلى قولِه: ﴿إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ﴾ إلى قولِه ﴿وَاسْتَغْفِرْهُ﴾ أي: واستغفره ليغفرَ لك اللهُ؛ فالمرادُ منه أن هذا التعليل متعلقٌ بمضمرٍ بعد قولِه: ﴿إِنَّا فَتَحْنَا لَكَ فَتْحًا مُبِينًا﴾، ﴿فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ﴾، ﴿لِيَغْفِرَ لَكَ﴾، لأن مرجعَ السُّورتين إلى قصةٍ واحدةٍ وحالةٍ متحدة، لا أنّ ﴿لِيَغْفِرَ لَكَ اللَّهُ﴾ متعلقٌ بقوله: ﴿وَاسْتَغْفِرْهُ﴾ بعينه، لِما يؤدي إلى إخلالِ النظمِ المعجزِ الفائتِ للقُوى والقَدَر، فكيف ونزولُ ﴿إِنَّا فَتَحْنَا﴾، كان قبلَ فتحِ مكةَ بعدَ مرجعِ رسولِ الله صلى الله عليه وسلم من الحُدَيْبية، وتأخُّرُ نزولِ سورةِ النصرِ عن الفتحِ بسنتين؟ وقد أسلفنا في سورةِ هودٍ قانونًا يضمّ أطرافِ قصةٍ واحدة، في مقاماتٍ شتّى، على أنحاءٍ مختلفة.\n\nفإن قلتَ: قد [دَلَّ] اتحادُ القصةِ على هذا المُقدّر، فما تَصنعُ بما روى محيي السُّنةِ أيضًا عن الحسينِ بنِ الفضل، أن قولَه: ﴿لِيَغْفِرَ لَكَ اللَّهُ﴾ مردودٌ إلى قولِه: {وَاسْتَغْفِرْ لِذَنْبِكَ وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ} [محمد: 19]، أي: استغفرْ ﴿لِيَغْفِرَ لَكَ اللَّهُ﴾، و ﴿لِيُدْخِلَ الْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ جَنَّاتٍ تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ﴾ [الفتح: 5].\n\nقلتُ: هذا ممّا يقوي ما آثرناه من التعلّقِ المعنوي؛ لأنك إذا جعلتَ التعلُّقَ فيه لفظيًا، وقعتَ في فيفاءَ، وخبطتَ خبطَ عشواء، ألا ترى كيف قُرِنَ مع ﴿لِيَغْفِرَ لَكَ اللَّهُ﴾ قولُه ﴿لِيُدْخِلَ الْمُؤْمِنِينَ﴾، وهو عِلةٌ لقولِه ﴿أَنْزَلَ السَّكِينَةَ فِي قُلُوبِ الْمُؤْمِنِينَ﴾ [الفتح: 4]، المعلَّلِ بقولِه: ﴿لِيَزْدَادُوا إِيمَانًا﴾، وعُطفَ عليه ﴿وَيُعَذِّبَ الْمُنَافِقِينَ وَالْمُنَافِقَاتِ﴾، كما قالَ المصنف: «ومن قضيّتِه أن سَكَّن قلوبَ المؤمنين»، إلى قولِه: «فيستحقوا الثوابَ فيثيبَهم، ويعذّبَ الكافرين والمنافقين».\n\nوعلى هذا وردَ ما روينا عن مسلمٍ والترمذي، عن أنس: لَمّا نَزلتْ ﴿إِنَّا فَتَحْنَا لَكَ فَتْحًا مُبِينًا﴾ إلى ﴿فَوْزًا عَظِيمًا﴾ [الفتح: 1 - 5]، مَرْجِعَه من الحديبية، وهم يخالطُهم الحزنُ والكآبة، وقد نَحَرَ الهَدْيَ بالحُدَيْبية، قالَ رسولُ الله صلى الله عليه وسلم: «لقد أُنزلتْ عليَّ آيةٌ هي أحبُّ إلىَّ من الدنيا جميعًا».\n\nوفي روايةِ الترمذي: «فقالوا: هنيئًا مريئًا يا رسولَ الله، لقد بَيَّنَ لك اللهُ ما يُفعلَ بك، فماذا يفعلُ بنا؟ » فنزلتْ: ﴿لِيُدْخِلَ الْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ جَنَّاتٍ تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ﴾.\n\nولعلَّ القائلَ لمَّا نَظرَ أن رسولَ الله صلى الله عليه وسلم، إذا استغفرَ لذنبِه وذنبِ المؤمنين، لا بُدَّ أن يَغفرَ اللهُ له، ويستجيبَ دعاءَه في حقِّ أُمتِه، كما قالَ: ﴿وَلَوْ أَنَّهُمْ إِذْ ظَلَمُوا أَنْفُسَهُمْ جَاءُوكَ فَاسْتَغْفَرُوا اللَّهَ وَاسْتَغْفَرَ لَهُمُ الرَّسُولُ لَوَجَدُوا اللَّهَ تَوَّابًا رَحِيمًا﴾ [النساء: 64]، عُلِّق به من حيثُ المعنى، ولأجلِ هذه الدَّقيقة، آثر لفظِ راجعٌ ومردودٌ على متعلق، والله أعلم.",
+      "verses": [
+        3,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s518.html",
+      "locator": "T-Dubai XVI:618–619; web lines 67,68,72,73,74,75,76",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "قد ذَلَّ اتحادُ",
+          "display": "قد [دَلَّ] اتحادُ",
+          "basis": "Mechanical ذ/د error; the argument requires indicated, as correctly translated."
+        },
+        {
+          "witness": "وَلِلْمُؤْمِنِينَ\n\nوَالْمُؤْمِنَاتِ",
+          "display": "وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ",
+          "basis": "Join Quran quotation over printed page break 618/619."
+        }
+      ],
+      "arabic_keywords": [
+        "التعلّق المعنوي / التعلّق اللفظي",
+        "راجع / مردود / متعلّق"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T110.06",
+      "arabic": "قولُه: (صلاةَ الضحى ثمانيَ ركعات)، الحديثُ رويناه في \"صحيح البخاري\".\n\nقولُه: (كانَ يكثرُ قبلَ موتِه)، الحديثُ رواه البخاري ومسلم.\n\nقولُه: (والأمرُ بالاستغفارِ مع التسبيحِ تكميل)، التكميلُ في الصناعةِ، هو أن يُؤتى بكلامٍ فيُرى ناقصًا فَيُتمَّمُ بكلامٍ آخر. وها هنا، الأمرُ بالتسبيحِ: أمرٌ بالطاعةِ، والإتيانُ بالطّاعات، لا يكونُ كاملًا ما لم يُضَمَّ معها الاحترازُ عن المعاصي، قالَ القاضي: «واستغفره هضمًا لنفسِك واستقصارًا لعملِك، واستدراكًا لِما فرط منك بالالتفاتِ إلى الغير، وقيل: استغفره لأمتك. وتقديمُ التسبيحِ ثُمّ الحمدِ على الاستغفار، على طريقة النزولِ من الخالقِ إلى الخَلْق».\n\nقولُه: (إني لأستغفرُ في اليومِ [والليلةِ] مئة مرّة)، رواه البخاريُّ والترمذيُّ عن أبي هريرة.",
+      "verses": [
+        3,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s518.html",
+      "locator": "T-Dubai XVI:620; web lines 80,82,83,84",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "T110.07",
+      "arabic": "قولُه: (وعن ابنِ عباسٍ: أن عمرَ رضي الله عنه يُدْينه) الحديثُ أخرجَه الإمامُ أحمدُ والبخاريُّ والترمذيُّ.\n\nقولُه: (يُدْينه)، أي: يقدّمه ويسوّيه مع الشيوخ، ويأذنُ له في الدخولِ عليه.\n\nقولُه: (دعا فاطمةَ رضي الله عنها، الحديثُ مختصرٌ من روايةِ الدرامي، عن ابنِ عباس.",
+      "verses": [
+        1,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s518.html",
+      "locator": "T-Dubai XVI:621; web lines 94,96,98",
+      "apparatus": [],
+      "corrections": [],
+      "english_reviewed": true
+    },
+    {
+      "id": "T111.01",
+      "arabic": "مكية، وهي خمس آيات\n\nبسم الله الرحمن الرحيم\n\nقولُه: (التباب: الهلاك)، الراغب: «التَّبُّ والتَّباب: الاستمرار في الخسران، يقال: تبًّا له وتبٌّ له وتَببْتُه: إذا قلتُ له ذلك، ولتضمّن ِالاستمرار قيل: استتبَّ لفلانٍ كذا، أي: استمرَّ. و \" تَبّتْ يدا أبي لهب\"، أي: استمرت في الخُسران، قال الله تعالى: ﴿وَمَا زَادُوهُمْ غَيْرَ تَتْبِيبٍ﴾ [هود: 101]، أي: تخسير».\n\nقولهُ: (والتَّعْجيز)، عن بعضهم: عَجَزَتِ المرأةُ وعَجّزتْ: إذا صارت عجوزًا، كما تقول: تَثيّبتِ المرأة، إذا صارت ثَيِّبة.",
+      "verses": [
+        1,
+        1
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s519.html",
+      "locator": "T-Dubai XVI:622; web lines 21,23,25,27",
+      "apparatus": [],
+      "corrections": [
+        {
+          "old": "tabban lahu and tabba lahu",
+          "new": "tabban lahu (تَبًّا له) and tabbun lahu (تَبٌّ له)",
+          "evidence": "s519 line25 explicitly contrasts accusative and nominative nouns: تبًّا له وتبٌّ له. tabba falsely represents the second as a finite verb.",
+          "certainty": "high"
+        },
+        {
+          "old": "ʿajizat and ʿajjazat",
+          "new": "ʿajazat (عَجَزَتْ) and ʿajjazat (عَجَّزَتْ)",
+          "evidence": "s519 line27 vocalizes عَجَزَت with fatḥa on jīm, whereas existing transliteration has kasra. This aligns this witness, not a claim that no alternate lexical form exists.",
+          "certainty": "high"
+        }
+      ],
+      "arabic_keywords": [
+        "تَبًّا له / تَبٌّ له",
+        "التبّ / التباب",
+        "عَجَزَتْ / عَجَّزَتْ"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T111.02",
+      "arabic": "قولُه: (والمراد: هلاك جُملته)، ونحوه قول الشاعر:\n\nوإنّ امرءًا ضَنَّتْ يَداهُ على امرئٍ بِنَيْلِ يدٍ من غيرِه لبخيلُ\n\nأي: ضنّ على امرئٍ. الجوهري: «يُقال: هذا ما جَنَتْ يداك، أي: جَنَيت».\n\nقولُه: (ومعنى ﴿وَتَبَّ﴾: وكان ذلك وحَصَل)، عن بعضهم: فتَبَّ على الأولِ: دعاءٌ، وعلى الثاني: خبر. و «تَبَّتْ» دعاءٌ على كلِّ حال. قال الإمام: «يجوزُ أن يراد بالأولِ هلاكُ عملِه، وبالثاني هلاكُ نفسِه، ووجهُهُ أن المرءَ إنما يسعى لمصلحةِ نفسِه وعملِه، فأخبرَ اللهُ تعالى أنه محرومٌ من الأمرين».\n\nوقلتُ: النظمُ يساعدُ قولَ الإمام، لأن ما بعدَه بيانٌ وتفسير؛ فإنّ قولَه: ﴿مَا أَغْنَى عَنْهُ مَالُهُ وَمَا كَسَبَ﴾، إشارةٌ إلى هلاكِ عملِه، وقولَه: ﴿سَيَصْلَى نَارًا ذَاتَ لَهَبٍ﴾، إشارةٌ إلى هلاكِ نفسِه. وقال «تَبَّ» أولًا على الماضي، ليؤذنَ بالقطعِ على سننِ إخبارِ الله عن المستقبل، و ﴿سَيَصْلَى﴾ ثانيًا على الاستقبال، حكايةً للحالِ الآتية، تصويرًا لها في مشاهدةِ السامع.\n\nيؤيدُه أيضًا قراءةُ ابنِ مسعود رضي الله عنه: «وقد تَبَّ»، لأن «قد» للتحقيق كما في قول الشاعر.\n\nوقد فَعَلْ.\n\nتقديره: جَزاني جزاء الكلابِ العاويات، ويروى: العاديات، جزاهُ اللهُ شَرَّ جزائِه وقد فعلَ ذلك، أي: كانَ ذلك وقد حَصَل.",
+      "verses": [
+        1,
+        1
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s519.html",
+      "locator": "T-Dubai XVI:623–624; web lines 34,36,38,39,40,42,44,49",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "امرئٍبِنَيْلِ",
+          "display": "امرئٍ بِنَيْلِ",
+          "basis": "Mechanical missing space between poem hemistichs."
+        }
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T111.03",
+      "arabic": "قولُه: (وروي أنه لمّا نزل ﴿وَأَنْذِرْ عَشِيرَتَكَ الْأَقْرَبِينَ﴾ [الشعراء: 214])، الحديث [من] رواية البخاريُّ ومسلمٍ والإمام أحمد َ والترمذيِّ، عن ابنِ عباس، قال: \" لمّا نزلتْ: ﴿وَأَنْذِرْ عَشِيرَتَكَ الْأَقْرَبِينَ﴾، صعِدَ النبيُّ صلى الله عليه وسلم على الصَّفا، فجعلَ ينادي: يا بني فِهْر، يا بني عديّ، لبطونِ قريش، حتى اجتمعوا، فجعلَ الرجلُ إذا لم يستطعْ أن يخرجَ، أرسلَ رسولًا لينظرَ ما هو، فجاءَ أبو لهبِ وقريش.\n\nفقال: أرأيتكم لو أخبرتكم أن خيلًا بالوادي تريدُ أن تغيرَ عليكم، كنتم مصدِّقيّ؟ قالوا: نعم، ما جَربّنا عليك إلا صدقًا. قال: فإني نذيرٌ لكم بين يَدَيْ عذابٍ شديد. فقالَ أبو لهب: تَبًّا لك سائرَ اليوم، ألهذا جمعتنا؟ فنزلتْ.\n\nقولُه: (يا صَباحاه)، النهاية «هذه كلمةٌ [يقولُها] المستغيث، وأصلها: إذا صاحوا للغارة؛ لأنهم أكثرُ ما كانوا يُغيرونَ عند الصباح، فكأنه يريد: قد جاءَ الصباحُ فتأهبوا».\n\nقولُه: (بسَفْحِ هذا الجبل)، سَفْحُ الجبلِ: أسفلُه، حيثُ يُسفحُ فيه الماء.",
+      "verses": [
+        1,
+        1
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s519.html",
+      "locator": "T-Dubai XVI:624; web lines 50,51,52,54",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "الحديث ن رواية",
+          "display": "الحديث [من] رواية",
+          "basis": "Mechanical missing م."
+        },
+        {
+          "witness": "كلمةٌ بقولُها",
+          "display": "كلمةٌ [يقولُها]",
+          "basis": "Mechanical ب/ي error."
+        }
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T111.04",
+      "arabic": "قولُه: (لئلا يُغيّرَ منه شئٌ فيشكلُ على السامع)، \"الانتصاف\": «وفيهِ دليلٌ على أن الرّفعَ أسبقُ [وجوهِ] الإعراب، ألا تراهم حافظوا على صورتِه وصيغته، فاشتُهرَ الاسمُ بهذا، وعُدلَ عن اسمِه عبد العُزّى إلى كُنْيتِه لكراهيتِه».\n\nقولُه: (ولِفلِيتةَ)، فَلِيتة: بالفاء المفتوحةِ واللام المكسورة، ويُروى: (ولفُكَيْتة) بالكافِ والتصغير.\n\nقولُه: (وكما كنّي رسول الله صلى الله عليه وسلم أبا المهلَّب: أبا صُفرة)، وليسَ في \"جامعِ الأصولِ\" له ذِكْر. وأما المهلَّبُ، فهو أبو سعيدٍ، المهلّبُ بنُ أبي صُفرة. وأبو صُفرة اسمُه ظالمُ بن سَرَّاق بنِ صبيح الأزدي. ومهلَّبُ صاحبُ الحروبِ المشهورة مع الخوارجِ، مات سنةَ ثلاثٍ وثمانين بمّرْو الُّروذ، في أيام [عبد] الملك بنِ مروان، وهو من الطبقةِ الأولى من تابعي البصرة، رأى عمرَ بن الخطاب رضي الله عنه.\n\nقولُه: (وقيل: كُنّي بذلك)، هذا قسيمٌ للوجه الثالث وليسَ بوجهٍ رابع، يعني: أوثرتِ الكنيةُ إما لاشتهارِه بها واختصاصِها به، حتى إنه لو سُمّي لالتبس، أو إنهما سِيِّان، فَعُدلَ إلى الكنيةِ ولو سُمّي لجاز، أو عُدل إليها رعايةُ لنكتة، وهي إما لأنه يكنى بها، أنه جَهَنّميّ، كنايةَ مُجّردة أو مع التهكّم. وقد أشارَ صاحبُ \"المفتاح\" إلى الوجه الأول، والأولِ من الثالث.\n\nقولُه: (وقرئ: \"أبي لَهْبٍ\" بالسكون)، ابنُ كثير، والباقونَ: بفتحِ الهاء. قالَ أبو البقاء: \" ﴿لَهَبٍ﴾ [بالفتحِ] والإسكانِ لغتان\".\n\nقولُه: (ومَحَلُّه النصب)، أي على أنه مفعولٌ مطلق، أَي: أيَّ غناء. ذكرَ أبو البقاءِ الوجهين، وقال: \"ما\" لا يكونُ بمعنى \"الذي\". رُوي عن المصنف: المالُ اسمٌ عام؛ فعندَ أهلِ البدوِ استعملَ في الإبل، وعند دَهاقتِهم في الضّيعة.",
+      "verses": [
+        1,
+        2
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s519.html",
+      "locator": "T-Dubai XVI:625–626; web lines 64,65,67,71,73,74,76",
+      "apparatus": [],
+      "corrections": [
+        {
+          "old": "Fulayta has fatḥa on fāʾ and kasra on lām",
+          "new": "Falīta (فَلِيتة) has fatḥa on fāʾ and kasra on lām",
+          "evidence": "s519 line65 explicit vowel gloss; keep separately transmitted Fukayta (فُكَيْتة).",
+          "certainty": "high"
+        },
+        {
+          "old": "Ẓālim ibn Surrāq ibn Ṣubayḥ al-Azdī",
+          "new": "Ẓālim ibn Sarrāq ibn Ṣubayḥ al-Azdī",
+          "evidence": "s519 line67 vocalizes سَرَّاق with fatḥa. This correction follows this electronic witness; verify the proper name’s printed vocalization before declaring it final.",
+          "certainty": "provisional_source_vocalization"
+        }
+      ],
+      "arabic_interventions": [
+        {
+          "witness": "وحوهِ الإعراب",
+          "display": "[وجوهِ] الإعراب",
+          "basis": "Mechanical ح/ج error."
+        },
+        {
+          "witness": "صبيح~ الأزدي",
+          "display": "صبيح الأزدي",
+          "basis": "Remove stray electronic markup."
+        },
+        {
+          "witness": "ثلاثٍ وثمانين\n\nبمّرْو",
+          "display": "ثلاثٍ وثمانين بمّرْو",
+          "basis": "Join biography over printed page break 625/626."
+        },
+        {
+          "witness": "في أيام بد الملك",
+          "display": "في أيام [عبد] الملك",
+          "basis": "Mechanical dropped ع; existing English Abd al-Malik is correct."
+        },
+        {
+          "witness": "بالفحِ والإسكانِ",
+          "display": "[بالفتحِ] والإسكانِ",
+          "basis": "Mechanical dropped ت; both grammatical reading description and preceding sentence support fatḥ."
+        }
+      ],
+      "arabic_keywords": [
+        "فَلِيتة / فُكَيْتة",
+        "مفعول مطلق: أيّ غناء"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T111.05",
+      "arabic": "قولُه: (وكانَ ذا سايباء)، النهاية: «السَّايباء: النتاج في المواشي وكثرتِها، يقالُ: إنّ لآلِ فلانٍ سايباء، والجمع السَّوابي، وهي في الأصل الجلدةُ التي يخرجُ منها الولد، وقيل: هي المشيمة». وعن بعضهم: سايباء غيرُ منصرف، وهو اسمُ النتاج.\n\nقولُه: (التَّالِد)، وهو المالُ القديم، نقيضُ الطارف.\n\nقولُه: (إن أطيبَ ما يأكلُ الرجل)، الحديثُ أخرجه أبو داودَ، عن عائشة-رضي الله عنها.\n\nقولُه: (سَيَصْلى: قرئَ بفتحِ الياء)، وهي المشهورة، وبالضمّ شاذّة.",
+      "verses": [
+        2,
+        3
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s519.html",
+      "locator": "T-Dubai XVI:627; web lines 82,84,86,88",
+      "apparatus": [
+        "The electronic text repeatedly prints سايباء, whereas local Kashshaf has سابياء and the established lexical lemma is sābiyāʾ. Existing English explicitly records the transcription variant; Arabic remains diplomatic here."
+      ],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "اسمُ النتاج.4",
+          "display": "اسمُ النتاج.",
+          "basis": "Remove dangling modern footnote marker."
+        }
+      ],
+      "arabic_keywords": [
+        "سابياء / سايباء",
+        "التالد / الطارف"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T111.06",
+      "arabic": "قولُه: (مِن البِيضِ لم تُصْطَدْ) البيت، لم تُصْطَدْ: لم توجَد؛ شُبّهتْ بالمها وأُجري صفتُها عليها. واللامةُ: الأمرُ الذي يُلام عليه، أي: لم توجدْ راكبةَ خصلةٍ تُلامُ عليها؛ يصفُ امرأةً بكرامةِ العِرْض. ويُروى: بالخطرِ الرَّطب. الخطرُ الرطبُ: [الحطبُ] الذي يُخْطر به، أي: يُجعلْ منه [حظيرةٌ]، والمعنى: لم يمشِ بالنميمةِ بين الناسِ، فتُلقى فيهم العداوة.\n\nقولُه: (جعلُه رطبًا ليدلَّ على التدخينِ الذي هو زيادةٌ في الشر)، يعني: ما كفى بأن جعلَه [حطبًا] بل جعلَه رطبًا للإيغالِ [والتتميمِ] لإرادةِ المبالغة، قال امرؤ القيس:\n\nحملتُ رُدَيْنيًّا كأنّ سنانَه سَنا لهَب لم يتصلْ بدُخان\n\nقولُه: (قُرئَ: ﴿حَمَّالَةَ الْحَطَبِ﴾، بالنصب)، عاصمٌ، والباقون: بالرفع.",
+      "verses": [
+        4,
+        4
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s519.html",
+      "locator": "T-Dubai XVI:628; web lines 96,98,99,101",
+      "apparatus": [
+        "Electronic الخطب / خطبًا for wood, خطيرة for enclosure, and التنميم for the rhetorical term appear corrupt. The English sensibly has wood, enclosure, tatmīm, but these forms have not newly been verified against print. The Arabic display marks suggested repairs in brackets; retain apparatus until scan comparison."
+      ],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "الخطبُ",
+          "display": "[الحطبُ]",
+          "basis": "Conjectural correction of evident electronic wood-lexeme error; not new print verification."
+        },
+        {
+          "witness": "خطبًا",
+          "display": "[حطبًا]",
+          "basis": "Conjectural correction of evident electronic wood-lexeme error; not new print verification."
+        },
+        {
+          "witness": "خطيرةٌ",
+          "display": "[حظيرةٌ]",
+          "basis": "Contextually secure enclosure reading, but new print verification outstanding."
+        },
+        {
+          "witness": "والتنميمِ",
+          "display": "[والتتميمِ]",
+          "basis": "Rhetorical term inferred from context and existing translation; brackets mark unverified electronic repair."
+        }
+      ],
+      "arabic_keywords": [
+        "الإيغال / التتميم",
+        "الحَطَب الرَّطْب"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T111.07",
+      "arabic": "قولُه: (ومَسَدٍ أُمِرَّ مِن أيانق)، تمامُه عن الزجاج.\n\nصُهْبٍ عِتاقٍ ذاتِ مخٌّ راهقِ\n\nالأصهب، وفي \"المطلع\": ليسَ بأنيابٍ ولا حقائق. أُمِرّ: أَيْ فُتِل. الأيانقُ جمعُ أَيْنَق، وهو جمعُ ناقة؛ أرادَ أن المسدَ فُتِلَ من جلدِ الأيانق. صُهبٍ: صفةٌ لأيانق. الأصهبُ من الإبل: الذي يخالطُ بياضَه حمرة. راهق: مستعارٌ من راهقَ الغلامُ فهو مراهق. والأنيابُ جمعُ ناب. يعني: هذا المسَد لم يُتَخذ من جلدِ صغيرةٍ ولا كبيرة، وإنما اتخذ من جلدِ فتيّةٍ قويّة.\n\nقولُه: (مجدولُه)، الجوهري: \" جاريةٌ مجدولةُ الخَلْق: حسنةُ الجدل\".\n\nقولُه: (من المواهِنِ)، جمعُ الماهنة، الَمهْنَةُ بالفتحِ: الخدمة، والماهَنُ: الخادم.",
+      "verses": [
+        5,
+        5
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s519.html",
+      "locator": "T-Dubai XVI:629; web lines 111,112,114,116,117",
+      "apparatus": [
+        "Retain authorial راهق and attribution to al-Zajjaj. Prior note T111-U1 records that the modern apparatus offers زاهق and disputes attribution; this is not authority to overwrite the author’s text. An isolated الأصهب before وفي المطلع remains in the electronic source and has no syntactically secure relation; retained, not expanded with invented prose."
+      ],
+      "corrections": [],
+      "arabic_keywords": [
+        "مَسَد",
+        "أُمِرَّ",
+        "أيانق / أينق / ناقة",
+        "صُهْب",
+        "راهق / زاهق",
+        "المواهن"
+      ],
+      "english_reviewed": true
+    },
+    {
+      "id": "T111.08",
+      "arabic": "قولُه: (لِتَمْتعض)، مَعِضْتُ من ذلك الأمرِ أَمعضُ معضًا، وامتعضتُ منه، إذا غضبتَ وشقَّ عليك.\n\nقولُه: (ماذا أَرَدْتَ) البيتين، أَرَدْتَ: أي: مِلْتَ: ضُمّنَ الإرادةُ معنى الميل وعُدِّي بإلى. الشَّادخة: الغُرَّةُ التي فَشَتْ في الوجهِ من الناصيةِ إلى الأنفِ ولم تُصبْ العينين، يوصفُ بها كرائمُ الخيل. والمرادُ بالشيخِ عبدُ المطلبِ وليسَ به؛ لأنها بنتُ حربٍ، أُختُ أبي سفيانَ كما ذكره.\n\nقولُه: (ويُحتملُ أن يكونَ المعنى أن حالها تكونُ في نارِ جهنّمَ على الصورةِ التي كانت عليها)، فعلى هذا: ﴿وَامْرَأَتُهُ حَمَّالَةَ الْحَطَبِ﴾، الجملةُ حالٌ من الضميرِ في ﴿سَيَصْلَى﴾، أو يعطفُ ﴿وَامْرَأَتُهُ﴾ على الضمير. وعلى الأولِ لا يجوزُ الحال، بل عطفُ جملةٍ على جملة، قالَ أبو البقاء: «(امرأتُه) فيه وجهان: أحدهما مبتدأٌ والخبرُ حَمّالة\"، وثانيهما هو معطوفٌ على الضمير في ﴿سَيَصْلَى﴾؛ فعلى هذا، في \"حَمّالة\" وجهان: أحدهما نعتٌ لِما قبلَه، والثاني تقديرُه: وهي حَمّالة».\n\nتَمَّتِ السُّورة",
+      "verses": [
+        4,
+        5
+      ],
+      "review_status": "electronic_source_aligned_not_scan_verified",
+      "source": "https://quranpedia.app/books/futuh-ghayb/s519.html",
+      "locator": "T-Dubai XVI:630–631; web lines 130,131,133,136,138",
+      "apparatus": [],
+      "corrections": [],
+      "arabic_interventions": [
+        {
+          "witness": "﴿سَيَصْلَى﴾،\n\nأو يعطفُ",
+          "display": "﴿سَيَصْلَى﴾، أو يعطفُ",
+          "basis": "Join syntactic discussion over printed page break 630/631."
+        }
+      ],
+      "arabic_keywords": [
+        "مَعِضْتُ / امتعضت",
+        "الإرادة / الميل",
+        "الشادخة"
+      ],
+      "english_reviewed": true
+    }
+  ]
+}

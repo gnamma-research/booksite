@@ -1,0 +1,15 @@
+{
+  "edition_id": "IZNIQI-READING-20261111",
+  "status": "complete-single-printed-edition-reading-translation",
+  "reader": "../izniqi/",
+  "manifest": "../izniqi/edition-20261111/manifest.json",
+  "source_pages": [831, 852],
+  "arabic_and_english_pages": 22,
+  "english_translation_words": 12379,
+  "editorial_notes": 78,
+  "untranslated_running_text_spans": 0,
+  "manuscripts_independently_collated": 0,
+  "superseded_archive": "IZNIQI_EN_CUMULATIVE_DRAFT_20261109.md",
+  "historical_coverage_snapshot": "IZNIQI_COVERAGE_STATUS_20261109.json",
+  "warning": "The Nov9 files remain historical snapshots, not the current coverage claim. Textual cruxes and quotation authentication are documented separately from completed running-text translation."
+}

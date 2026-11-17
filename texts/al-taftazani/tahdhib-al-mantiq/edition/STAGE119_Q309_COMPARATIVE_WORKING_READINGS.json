@@ -1,0 +1,213 @@
+{
+  "schema": "gnamma.tahdhib.stage119.q309.comparative-reading.v1",
+  "date": "2026-11-12",
+  "source_authority": "H later gloss Q309, not Taftazani authorial matn or independent manuscripts",
+  "source_prints": [
+    {
+      "siglum": "H1405",
+      "url": "https://archive.org/download/lis_fa12/lis_fa1208.pdf",
+      "printedPage": 309,
+      "pdfPageIndexZero": 310,
+      "sha256": "696c7b2e2884414f34d90203326f7b07f72e207849080e5069aadd0f12bb5759"
+    },
+    {
+      "siglum": "H1433",
+      "url": "https://archive.org/download/lis_fa12/lis_fa1209.pdf",
+      "printedPage": 309,
+      "pdfPageIndexZero": 309,
+      "sha256": "c119de2073dee4610e99a35cd01bd075841cc0e4dfaef7a9473b950dd250c70d"
+    }
+  ],
+  "derivative_comparator": {
+    "name": "Shamela digitised Sharh al-Tahdhib table (not an independent manuscript)",
+    "url": "https://shamela.org/gen/042fb96f81e9c1897008a735c3383ee5_gen.pdf",
+    "extractedContentLines": "4250-4283",
+    "caution": "Different edition/transcription; compare but never silently impose on H1405/H1433"
+  },
+  "counts": {
+    "all": 15,
+    "instructions": 3,
+    "worked": 12,
+    "provisional": 4,
+    "photoVariant": 2
+  },
+  "scope": {
+    "stage114CorpusRecordsChanged": 0,
+    "stage118DefinitionCellsChanged": 0,
+    "stage118ModalRelationCellsChanged": 0,
+    "wholeHPrintedPagesNewlyCertified": 0,
+    "actualHistoricalModal46ProofsNew": 0
+  },
+  "historicalOrder": {
+    "connected": [
+      "C/C",
+      "C/D",
+      "C/K",
+      "K/C",
+      "D/C",
+      "K/K",
+      "K/D",
+      "D/K",
+      "D/D"
+    ],
+    "disjunctive": [
+      "C/C",
+      "C/K",
+      "C/D",
+      "K/K",
+      "K/D",
+      "D/D"
+    ]
+  },
+  "rows": [
+    {
+      "id": "K01",
+      "family": "connected",
+      "form": "C/C",
+      "ar": "ذِكْرُ ما لا يَخْفى",
+      "en": "Supply the obvious example.",
+      "grade": "printed-instruction",
+      "note": "Not a missing text or a worked example."
+    },
+    {
+      "id": "K02",
+      "family": "connected",
+      "form": "C/D",
+      "ar": "إذا كان الإنسان متصفًا بالنطق، فإمّا أن يكون الإنسان ناطقًا أو ليس بناطق.",
+      "en": "If a human being is characterized by rational speech, then either the human being is rational/articulate or is not.",
+      "grade": "photo-working-variant",
+      "note": "H print appears متصفًا بالنطق, while the derivative Shamela table has مستلزِمًا للنطق. Do not merge these silently."
+    },
+    {
+      "id": "K03",
+      "family": "connected",
+      "form": "C/K",
+      "ar": "إذا كان طلوع الشمس مستلزمًا لوجود النهار، فكلّما كانت الشمس طالعة كان النهار موجودًا.",
+      "en": "If the sun's rising entails the presence of daytime, then whenever the sun has risen daytime is present.",
+      "grade": "working-photo-plus-derivative",
+      "note": "Source joins a categorical claim about entailment to a connected conditional."
+    },
+    {
+      "id": "K04",
+      "family": "connected",
+      "form": "K/C",
+      "ar": "كلّما إن كانت الشمس طالعة فالنهار موجود، فوجود النهار لازم لطلوع الشمس.",
+      "en": "Whenever, if the sun is risen, daytime exists, the existence of daytime is a necessary concomitant of sunrise.",
+      "grade": "working-photo-plus-derivative",
+      "note": "The nested كلما إن construction is source wording, not an editorial simplification."
+    },
+    {
+      "id": "K05",
+      "family": "connected",
+      "form": "D/C",
+      "ar": "كلّما كان هذا إمّا زوجًا أو فردًا كان عددًا.",
+      "en": "Whenever this is either even or odd, it is a number.",
+      "grade": "working-photo-plus-derivative",
+      "note": "The source illustrates a disjunctive antecedent and a categorical consequent."
+    },
+    {
+      "id": "K06",
+      "family": "connected",
+      "form": "K/K",
+      "ar": "ذِكْرُ ما لا يَخْفى",
+      "en": "Supply the obvious example.",
+      "grade": "printed-instruction",
+      "note": "An intentional instruction, not source-loss."
+    },
+    {
+      "id": "K07",
+      "family": "connected",
+      "form": "K/D",
+      "ar": "كلّما إن كانت الشمس طالعة فالنهار موجود، فدائمًا إمّا أن تكون الشمس طالعة وإمّا أن لا يكون النهار موجودًا.",
+      "en": "Whenever, if the sun is risen, daytime exists, then always either the sun is risen or daytime does not exist.",
+      "grade": "working-photo-plus-derivative",
+      "note": "Preserve source دائما and the negation لا; this constructs types and need not be a valid inference."
+    },
+    {
+      "id": "K08",
+      "family": "connected",
+      "form": "D/K",
+      "ar": "إن كان دائمًا إمّا أن تكون الشمس طالعة أو لا يكون النهار موجودًا، فكلّما كانت الشمس طالعة فالنهار موجود.",
+      "en": "If it is always the case that either the sun is risen or daytime is absent, then whenever the sun is risen daytime is present.",
+      "grade": "provisional-photo-assisted-derivative",
+      "note": "Actual PDF witness supplies the clause; compare exact words and nested scope against both prints before certifying."
+    },
+    {
+      "id": "K09",
+      "family": "connected",
+      "form": "D/D",
+      "ar": "ذِكْرُ ما لا يَخْفى",
+      "en": "Supply the obvious example.",
+      "grade": "printed-instruction",
+      "note": "An intentional instruction."
+    },
+    {
+      "id": "D01",
+      "family": "disjunctive",
+      "form": "C/C",
+      "ar": "العدد إمّا زوج وإمّا فرد.",
+      "en": "A number is either even or odd.",
+      "grade": "working-photo-plus-derivative",
+      "note": "Ordinary historical number domain presupposed."
+    },
+    {
+      "id": "D02",
+      "family": "disjunctive",
+      "form": "C/K",
+      "ar": "إمّا أن لا تكون الشمس علّة لوجود النهار، وإمّا كلّما كانت الشمس طالعة فالنهار موجود.",
+      "en": "Either the sun is not the cause of the existence of daytime, or whenever the sun has risen daytime exists.",
+      "grade": "provisional-photo-assisted-derivative",
+      "note": "Check whether the printed first alternative has لا and the scope of the conditional; Shamela comparative table reads لا."
+    },
+    {
+      "id": "D03",
+      "family": "disjunctive",
+      "form": "C/D",
+      "ar": "دائمًا إمّا أن يكون هذا الشيء ليس عددًا، وإمّا أن يكون زوجًا أو فردًا.",
+      "en": "Always, either this thing is not a number, or it is even or odd.",
+      "grade": "working-photo-plus-derivative",
+      "note": "Prior Stage117 omitted دائما, and this dossier restores its historical quantifier."
+    },
+    {
+      "id": "D04",
+      "family": "disjunctive",
+      "form": "K/K",
+      "ar": "إمّا أن يكون إن كانت الشمس طالعة فالنهار موجود، وإمّا أن يكون إن كانت طالعة لم يكن موجودًا.",
+      "en": "Either the conditional 'if the sun is risen, daytime exists' holds, or the conditional 'if it is risen, daytime does not exist' holds.",
+      "grade": "provisional-photo-assisted-derivative",
+      "note": "Do not normalize the source's awkward إن كان ... and repeated كان; quotation/scope boundaries still require checking."
+    },
+    {
+      "id": "D05",
+      "family": "disjunctive",
+      "form": "K/D",
+      "ar": "دائمًا إمّا أن يكون كلّما كانت الشمس طالعة كان النهار موجودًا، وإمّا أن تكون الشمس طالعة وإمّا أن لا يكون النهار موجودًا.",
+      "en": "Always, either it holds that whenever the sun is risen daytime exists, or else the sun is risen or daytime is absent.",
+      "grade": "provisional-photo-assisted-derivative",
+      "note": "Nested outer and inner disjunctions require a literal typographic hierarchy in the final edition."
+    },
+    {
+      "id": "D06",
+      "family": "disjunctive",
+      "form": "D/D",
+      "ar": "إمّا أن يكون هذا العدد زوجًا أو فردًا، وإمّا أن يكون زوجًا أو كسرًا.",
+      "en": "Either this number is even or odd, or it is even or a fraction.",
+      "grade": "photo-working-variant",
+      "note": "Both H-1405 and H-1433 printed impressions appear to read أو كسرًا. A different derivative Shamela transcription reads لا زوجًا ولا فردًا. These are NOT interchangeable; prior Stage118 'neither even nor odd' followed the latter and is unsupported for the two photographed prints."
+    }
+  ],
+  "critical_variants": [
+    {
+      "cell": "K02",
+      "photo": "متصفًا بالنطق",
+      "derivative": "مستلزمًا للنطق",
+      "decision": "retain print as photographed, note alternate digital wording; manual letter-level recheck still open"
+    },
+    {
+      "cell": "D06",
+      "photo": "أو كسرًا",
+      "derivative": "لا زوجًا ولا فردًا",
+      "decision": "preserve divergent witness strings; Stage118 draft wrong for H1405/H1433; not grounds for authorial emendation"
+    }
+  ]
+}

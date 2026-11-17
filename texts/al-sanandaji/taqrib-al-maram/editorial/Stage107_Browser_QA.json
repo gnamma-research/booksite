@@ -1,0 +1,8 @@
+{
+  "stage": 107,
+  "node_in_memory_source_layer_test": "PASS",
+  "browser_visual_test": "NOT_VERIFIED",
+  "live_deployment": "NOT_VERIFIED",
+  "native_reader_qa": "NOT_VERIFIED",
+  "note": "No browser success inferred from code integrity"
+}

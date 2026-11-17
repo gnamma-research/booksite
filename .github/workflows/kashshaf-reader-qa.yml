@@ -1,0 +1,40 @@
+name: Kashshaf and Tibi reader QA
+on:
+  push:
+    branches: [master, 'codex/kashshaf-c07*']
+    paths:
+      - 'texts/al-zamakhshari/al-kashshaf/**'
+      - 'tests/kashshaf/**'
+      - '.github/workflows/kashshaf-reader-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: kashshaf-reader-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  reader:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify source and rendering invariants
+        run: |
+          node --check texts/al-zamakhshari/al-kashshaf/reader-render.js
+          node --check texts/al-zamakhshari/al-kashshaf/book-pages.js
+          node --check tests/kashshaf/reader-browser.cjs
+          python3 tests/kashshaf/verify-c07.py
+      - run: npm install --no-save --package-lock=false playwright
+      - run: npx playwright install --with-deps chromium webkit
+      - name: Verify complete content and reader interactions
+        run: |
+          python3 -m http.server 8767 --bind 127.0.0.1 > /tmp/kashshaf-server.log 2>&1 &
+          node tests/kashshaf/reader-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: kashshaf-reader-qa
+          path: qa-kashshaf/

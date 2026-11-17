@@ -1,0 +1,23 @@
+name: Daruri Copy and paragraph-link QA
+on:
+  pull_request:
+    paths:
+      - 'daruri/copy-links.js'
+      - 'daruri/copy-links.css'
+      - 'daruri/index.html'
+      - 'daruri/sw.js'
+      - 'daruri/download-bundle.js'
+      - 'daruri/qa/verify-copy-links.cjs'
+      - '.github/workflows/daruri-copy-links-qa.yml'
+  workflow_dispatch:
+
+jobs:
+  copy-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify stable paragraph IDs, reader wiring, and offline release assets
+        run: node daruri/qa/verify-copy-links.cjs

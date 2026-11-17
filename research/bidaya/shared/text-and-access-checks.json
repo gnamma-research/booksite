@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "bounded_native_discussions": 11,
+  "represented_studies": 8,
+  "arabic_witness": "OpenITI/Shamela21739, Dar al-Hadith2004",
+  "english": "Nyazee, reading transcription; complete line-by-line collation remains open",
+  "quote_concordances": 14,
+  "methodological_principle_concordances": 14,
+  "distinct_argument_profiles": 8,
+  "new_primary_page_images": 5,
+  "private_documents": [
+    "human-life/index.html",
+    "human-life/reservoir.html",
+    "shared/alchemical-terms.html",
+    "legacy-casebook"
+  ],
+  "wrong_password_rejected": true,
+  "tampered_ciphertext_rejected": true,
+  "public_edition_ii_promotion_removed": true,
+  "previous_public_copies_recalled": false,
+  "scholarly_completion_claim": false
+}

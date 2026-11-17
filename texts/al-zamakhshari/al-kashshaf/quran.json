@@ -1,0 +1,467 @@
+{
+  "source": "Tanzil Quran Text (Uthmani, Hafs), verbatim from dotquran/corpus; source blob 4829c87dd965183330cbfe0a432deebf27ddbae8",
+  "license": "Tanzil Quran Text, Copyright (C) 2007–2021 Tanzil Project. Creative Commons Attribution 3.0. Permission to copy and distribute verbatim; changing the Quran text is not allowed. Credit Tanzil Project and link to https://tanzil.net. Check updates at https://tanzil.net/updates/.",
+  "english": "Marmaduke Pickthall, The Meaning of the Glorious Koran (1930), public domain. Verse translation is separate from the GNAMMA commentary translation.",
+  "verses": {
+    "1:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+      "en": "In the name of Allah, the Beneficent, the Merciful"
+    },
+    "1:2": {
+      "ar": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+      "en": "Praise be to Allah, Lord of the Worlds"
+    },
+    "1:3": {
+      "ar": "ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+      "en": "The Beneficent, the Merciful"
+    },
+    "1:4": {
+      "ar": "مَـٰلِكِ يَوْمِ ٱلدِّينِ",
+      "en": "Master of the Day of Judgment"
+    },
+    "1:5": {
+      "ar": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "en": "Thee (alone) we worship; Thee (alone) we ask for help"
+    },
+    "1:6": {
+      "ar": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+      "en": "Show us the straight path"
+    },
+    "1:7": {
+      "ar": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+      "en": "The path of those whom Thou hast favoured; Not the (path) of those who earn Thine anger nor of those who go astray"
+    },
+    "94:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ",
+      "en": "Have We not caused thy bosom to dilate"
+    },
+    "94:2": {
+      "ar": "وَوَضَعْنَا عَنكَ وِزْرَكَ",
+      "en": "And eased thee of the burden"
+    },
+    "94:3": {
+      "ar": "ٱلَّذِىٓ أَنقَضَ ظَهْرَكَ",
+      "en": "Which weighed down thy back"
+    },
+    "94:4": {
+      "ar": "وَرَفَعْنَا لَكَ ذِكْرَكَ",
+      "en": "And exalted thy fame"
+    },
+    "94:5": {
+      "ar": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+      "en": "But lo! with hardship goeth ease"
+    },
+    "94:6": {
+      "ar": "إِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+      "en": "Lo! with hardship goeth ease"
+    },
+    "94:7": {
+      "ar": "فَإِذَا فَرَغْتَ فَٱنصَبْ",
+      "en": "So when thou art relieved, still toil"
+    },
+    "94:8": {
+      "ar": "وَإِلَىٰ رَبِّكَ فَٱرْغَب",
+      "en": "And strive to please thy Lord"
+    },
+    "95:1": {
+      "ar": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ وَٱلتِّينِ وَٱلزَّيْتُونِ",
+      "en": "By the fig and the olive"
+    },
+    "95:2": {
+      "ar": "وَطُورِ سِينِينَ",
+      "en": "By Mount Sinai"
+    },
+    "95:3": {
+      "ar": "وَهَـٰذَا ٱلْبَلَدِ ٱلْأَمِينِ",
+      "en": "And by this land made safe"
+    },
+    "95:4": {
+      "ar": "لَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ فِىٓ أَحْسَنِ تَقْوِيمٍ",
+      "en": "Surely We created man of the best stature"
+    },
+    "95:5": {
+      "ar": "ثُمَّ رَدَدْنَـٰهُ أَسْفَلَ سَـٰفِلِينَ",
+      "en": "Then we reduced him to the lowest of the low"
+    },
+    "95:6": {
+      "ar": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ",
+      "en": "Save those who believe and do good works, and theirs is a reward unfailing"
+    },
+    "95:7": {
+      "ar": "فَمَا يُكَذِّبُكَ بَعْدُ بِٱلدِّينِ",
+      "en": "So who henceforth will give the lie to thee about the judgment"
+    },
+    "95:8": {
+      "ar": "أَلَيْسَ ٱللَّهُ بِأَحْكَمِ ٱلْحَـٰكِمِينَ",
+      "en": "Is not Allah the most conclusive of all judges"
+    },
+    "97:1": {
+      "ar": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+      "en": "Lo! We revealed it on the Night of Predestination"
+    },
+    "97:2": {
+      "ar": "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
+      "en": "Ah, what will convey unto thee what the Night of Power is"
+    },
+    "97:3": {
+      "ar": "لَيْلَةُ ٱلْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ",
+      "en": "The Night of Power is better than a thousand months"
+    },
+    "97:4": {
+      "ar": "تَنَزَّلُ ٱلْمَلَـٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ",
+      "en": "The angels and the Spirit descend therein, by the permission of their Lord, with all decrees"
+    },
+    "97:5": {
+      "ar": "سَلَـٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
+      "en": "(The night is) Peace until the rising of the dawn"
+    },
+    "99:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا",
+      "en": "When Earth is shaken with her (final) earthquake"
+    },
+    "99:2": {
+      "ar": "وَأَخْرَجَتِ ٱلْأَرْضُ أَثْقَالَهَا",
+      "en": "And Earth yieldeth up her burdens"
+    },
+    "99:3": {
+      "ar": "وَقَالَ ٱلْإِنسَـٰنُ مَا لَهَا",
+      "en": "And man saith: What aileth her"
+    },
+    "99:4": {
+      "ar": "يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا",
+      "en": "That day she will relate her chronicles"
+    },
+    "99:5": {
+      "ar": "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا",
+      "en": "Because thy Lord inspireth her"
+    },
+    "99:6": {
+      "ar": "يَوْمَئِذٍ يَصْدُرُ ٱلنَّاسُ أَشْتَاتًا لِّيُرَوْا۟ أَعْمَـٰلَهُمْ",
+      "en": "That day mankind will issue forth in scattered groups to be shown their deeds"
+    },
+    "99:7": {
+      "ar": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ",
+      "en": "And whoso doeth good an atom's weight will see it then"
+    },
+    "99:8": {
+      "ar": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ",
+      "en": "And whoso doeth ill an atom's weight will see it then"
+    },
+    "101:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ ٱلْقَارِعَةُ",
+      "en": "The Calamity"
+    },
+    "101:2": {
+      "ar": "مَا ٱلْقَارِعَةُ",
+      "en": "What is the Calamity"
+    },
+    "101:3": {
+      "ar": "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ",
+      "en": "Ah, what will convey unto thee what the Calamity is"
+    },
+    "101:4": {
+      "ar": "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ",
+      "en": "A day wherein mankind will be as thickly-scattered moths"
+    },
+    "101:5": {
+      "ar": "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ",
+      "en": "And the mountains will become as carded wool"
+    },
+    "101:6": {
+      "ar": "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ",
+      "en": "Then, as for him whose scales are heavy (with good works)"
+    },
+    "101:7": {
+      "ar": "فَهُوَ فِى عِيشَةٍ رَّاضِيَةٍ",
+      "en": "He will live a pleasant life"
+    },
+    "101:8": {
+      "ar": "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ",
+      "en": "But as for him whose scales are light"
+    },
+    "101:9": {
+      "ar": "فَأُمُّهُۥ هَاوِيَةٌ",
+      "en": "A bereft and Hungry One will be his mother"
+    },
+    "101:10": {
+      "ar": "وَمَآ أَدْرَىٰكَ مَا هِيَهْ",
+      "en": "Ah, what will convey unto thee what she is"
+    },
+    "101:11": {
+      "ar": "نَارٌ حَامِيَةٌۢ",
+      "en": "Raging Fire"
+    },
+    "102:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ أَلْهَىٰكُمُ ٱلتَّكَاثُرُ",
+      "en": "Rivalry in worldly increase distracteth you"
+    },
+    "102:2": {
+      "ar": "حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ",
+      "en": "Until ye come to the graves"
+    },
+    "102:3": {
+      "ar": "كَلَّا سَوْفَ تَعْلَمُونَ",
+      "en": "Nay, but ye will come to know"
+    },
+    "102:4": {
+      "ar": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ",
+      "en": "Nay, but ye will come to know"
+    },
+    "102:5": {
+      "ar": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ",
+      "en": "Nay, would that ye knew (now) with a sure knowledge"
+    },
+    "102:6": {
+      "ar": "لَتَرَوُنَّ ٱلْجَحِيمَ",
+      "en": "For ye will behold hell-fire"
+    },
+    "102:7": {
+      "ar": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ",
+      "en": "Aye, ye will behold it with sure vision"
+    },
+    "102:8": {
+      "ar": "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ",
+      "en": "Then, on that day, ye will be asked concerning pleasure"
+    },
+    "103:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ وَٱلْعَصْرِ",
+      "en": "By the declining day"
+    },
+    "103:2": {
+      "ar": "إِنَّ ٱلْإِنسَـٰنَ لَفِى خُسْرٍ",
+      "en": "Lo! man is a state of loss"
+    },
+    "103:3": {
+      "ar": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
+      "en": "Save those who believe and do good works, and exhort one another to truth and exhort one another to endurance"
+    },
+    "104:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ",
+      "en": "Woe unto every slandering traducer"
+    },
+    "104:2": {
+      "ar": "ٱلَّذِى جَمَعَ مَالًا وَعَدَّدَهُۥ",
+      "en": "Who hath gathered wealth (of this world) and arranged it"
+    },
+    "104:3": {
+      "ar": "يَحْسَبُ أَنَّ مَالَهُۥٓ أَخْلَدَهُۥ",
+      "en": "He thinketh that his wealth will render him immortal"
+    },
+    "104:4": {
+      "ar": "كَلَّا ۖ لَيُنۢبَذَنَّ فِى ٱلْحُطَمَةِ",
+      "en": "Nay, but verily he will be flung to the Consuming One"
+    },
+    "104:5": {
+      "ar": "وَمَآ أَدْرَىٰكَ مَا ٱلْحُطَمَةُ",
+      "en": "Ah, what will convey unto thee what the Consuming One is"
+    },
+    "104:6": {
+      "ar": "نَارُ ٱللَّهِ ٱلْمُوقَدَةُ",
+      "en": "(It is) the fire of Allah, kindled"
+    },
+    "104:7": {
+      "ar": "ٱلَّتِى تَطَّلِعُ عَلَى ٱلْأَفْـِٔدَةِ",
+      "en": "Which leapeth up over the hearts (of men)"
+    },
+    "104:8": {
+      "ar": "إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌ",
+      "en": "Lo! it is closed in on them"
+    },
+    "104:9": {
+      "ar": "فِى عَمَدٍ مُّمَدَّدَةٍۭ",
+      "en": "In outstretched columns"
+    },
+    "105:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَـٰبِ ٱلْفِيلِ",
+      "en": "Hast thou not seen how thy Lord dealt with the owners of the Elephant"
+    },
+    "105:2": {
+      "ar": "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍ",
+      "en": "Did He not bring their stratagem to naught"
+    },
+    "105:3": {
+      "ar": "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ",
+      "en": "And send against them swarms of flying creatures"
+    },
+    "105:4": {
+      "ar": "تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ",
+      "en": "Which pelted them with stones of baked clay"
+    },
+    "105:5": {
+      "ar": "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍۭ",
+      "en": "And made them like green crops devoured (by cattle)"
+    },
+    "106:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ لِإِيلَـٰفِ قُرَيْشٍ",
+      "en": "For the taming of Qureysh"
+    },
+    "106:2": {
+      "ar": "إِۦلَـٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ",
+      "en": "For their taming (We cause) the caravans to set forth in winter and summer"
+    },
+    "106:3": {
+      "ar": "فَلْيَعْبُدُوا۟ رَبَّ هَـٰذَا ٱلْبَيْتِ",
+      "en": "So let them worship the Lord of this House"
+    },
+    "106:4": {
+      "ar": "ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍ وَءَامَنَهُم مِّنْ خَوْفٍۭ",
+      "en": "Who hath fed them against hunger and hath made them safe from fear"
+    },
+    "107:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
+      "en": "Hast thou observed him who belieth religion"
+    },
+    "107:2": {
+      "ar": "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ",
+      "en": "That is he who repelleth the orphan"
+    },
+    "107:3": {
+      "ar": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
+      "en": "And urgeth not the feeding of the needy"
+    },
+    "107:4": {
+      "ar": "فَوَيْلٌ لِّلْمُصَلِّينَ",
+      "en": "Ah, woe unto worshippers"
+    },
+    "107:5": {
+      "ar": "ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
+      "en": "Who are heedless of their prayer"
+    },
+    "107:6": {
+      "ar": "ٱلَّذِينَ هُمْ يُرَآءُونَ",
+      "en": "Who would be seen (at worship)"
+    },
+    "107:7": {
+      "ar": "وَيَمْنَعُونَ ٱلْمَاعُونَ",
+      "en": "Yet refuse small kindnesses"
+    },
+    "108:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ إِنَّآ أَعْطَيْنَـٰكَ ٱلْكَوْثَرَ",
+      "en": "Lo! We have given thee Abundance"
+    },
+    "108:2": {
+      "ar": "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ",
+      "en": "So pray unto thy Lord, and sacrifice"
+    },
+    "108:3": {
+      "ar": "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ",
+      "en": "Lo! it is thy insulter (and not thou) who is without posterity"
+    },
+    "109:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ يَـٰٓأَيُّهَا ٱلْكَـٰفِرُونَ",
+      "en": "Say: O disbelievers"
+    },
+    "109:2": {
+      "ar": "لَآ أَعْبُدُ مَا تَعْبُدُونَ",
+      "en": "I worship not that which ye worship"
+    },
+    "109:3": {
+      "ar": "وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ",
+      "en": "Nor worship ye that which I worship"
+    },
+    "109:4": {
+      "ar": "وَلَآ أَنَا۠ عَابِدٌ مَّا عَبَدتُّمْ",
+      "en": "And I shall not worship that which ye worship"
+    },
+    "109:5": {
+      "ar": "وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ",
+      "en": "Nor will ye worship that which I worship"
+    },
+    "109:6": {
+      "ar": "لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
+      "en": "Unto you your religion, and unto me my religion"
+    },
+    "110:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ",
+      "en": "When Allah's succour and the triumph cometh"
+    },
+    "110:2": {
+      "ar": "وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًا",
+      "en": "And thou seest mankind entering the religion of Allah in troops"
+    },
+    "110:3": {
+      "ar": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا",
+      "en": "Then hymn the praises of thy Lord, and seek forgiveness of Him. Lo! He is ever ready to show mercy"
+    },
+    "111:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ",
+      "en": "The power of Abu Lahab will perish, and he will perish"
+    },
+    "111:2": {
+      "ar": "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ",
+      "en": "His wealth and gains will not exempt him"
+    },
+    "111:3": {
+      "ar": "سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ",
+      "en": "He will be plunged in flaming Fire"
+    },
+    "111:4": {
+      "ar": "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ",
+      "en": "And his wife, the wood-carrier"
+    },
+    "111:5": {
+      "ar": "فِى جِيدِهَا حَبْلٌ مِّن مَّسَدٍۭ",
+      "en": "Will have upon her neck a halter of palm-fibre"
+    },
+    "112:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+      "en": "Say: He is Allah, the One"
+    },
+    "112:2": {
+      "ar": "ٱللَّهُ ٱلصَّمَدُ",
+      "en": "Allah, the eternally Besought of all"
+    },
+    "112:3": {
+      "ar": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+      "en": "He begetteth not nor was begotten"
+    },
+    "112:4": {
+      "ar": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+      "en": "And there is none comparable unto Him"
+    },
+    "113:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+      "en": "Say: I seek refuge in the Lord of the Daybreak"
+    },
+    "113:2": {
+      "ar": "مِن شَرِّ مَا خَلَقَ",
+      "en": "From the evil of that which He created"
+    },
+    "113:3": {
+      "ar": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+      "en": "From the evil of the darkness when it is intense"
+    },
+    "113:4": {
+      "ar": "وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ",
+      "en": "And from the evil of malignant witchcraft"
+    },
+    "113:5": {
+      "ar": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+      "en": "And from the evil of the envier when he envieth"
+    },
+    "114:1": {
+      "ar": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+      "en": "Say: I seek refuge in the Lord of mankind"
+    },
+    "114:2": {
+      "ar": "مَلِكِ ٱلنَّاسِ",
+      "en": "The King of mankind"
+    },
+    "114:3": {
+      "ar": "إِلَـٰهِ ٱلنَّاسِ",
+      "en": "The god of mankind"
+    },
+    "114:4": {
+      "ar": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
+      "en": "From the evil of the sneaking whisperer"
+    },
+    "114:5": {
+      "ar": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
+      "en": "Who whispereth in the hearts of mankind"
+    },
+    "114:6": {
+      "ar": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+      "en": "Of the jinn and of mankind"
+    }
+  }
+}

@@ -1,0 +1,933 @@
+[
+  {
+    "volume": "II",
+    "page": 15,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 25,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 35,
+    "status": "provisional_source_reading",
+    "issues": [
+      "short_upper_under_80_words"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 37,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 51,
+    "status": "provisional_source_reading",
+    "issues": [
+      "short_upper_under_80_words"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 115,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 157,
+    "status": "provisional_source_reading",
+    "issues": [
+      "short_upper_under_80_words"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 185,
+    "status": "provisional_source_reading",
+    "issues": [
+      "short_upper_under_80_words"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 195,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 196,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 197,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 198,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 199,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 200,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 201,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 202,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 203,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 204,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 205,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 206,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 207,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 208,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 209,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 210,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 211,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 212,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 213,
+    "status": "provisional_source_reading",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 214,
+    "status": "provisional_source_reading",
+    "issues": [
+      "short_upper_under_80_words",
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 215,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 216,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 217,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 218,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 219,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 220,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 221,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 222,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 223,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 224,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "short_upper_under_80_words",
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 225,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 226,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 227,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "short_upper_under_80_words",
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 228,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 229,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 230,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 231,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 232,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 233,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 234,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 235,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 236,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 237,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 238,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 239,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 240,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 241,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 242,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "short_upper_under_80_words",
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 243,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "short_upper_under_80_words",
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 244,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 245,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 246,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 247,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 248,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 249,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 250,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 251,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 253,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 254,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 255,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 257,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 258,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 260,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 261,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 262,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 263,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 267,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 268,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 269,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 270,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 271,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 273,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 274,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 275,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 276,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "short_upper_under_80_words",
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 277,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 278,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 279,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 280,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 281,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 282,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 283,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 285,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 286,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 287,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 288,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 289,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 290,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 291,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 292,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 294,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 297,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 300,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 301,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 302,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 303,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 304,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "short_upper_under_80_words",
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 305,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 306,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "short_upper_under_80_words",
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 307,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "short_upper_under_80_words",
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 308,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 309,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 310,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "short_upper_under_80_words",
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 311,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 312,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 313,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "depends_on_prior_page"
+    ]
+  },
+  {
+    "volume": "II",
+    "page": 314,
+    "status": "attempted_upper_full_span",
+    "issues": [
+      "short_upper_under_80_words",
+      "depends_on_prior_page"
+    ]
+  }
+]

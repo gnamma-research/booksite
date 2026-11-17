@@ -1,0 +1,424 @@
+/* Gnamma contextual word hub. Multiple independent meanings may attach to
+ * the same text span: lexical entry, editorial/source note, private annotation,
+ * and temporary search highlight. Do not turn one into another.
+ *
+ * PRECEDENCE: explicitly interactive anchors keep their existing action;
+ * text taps/clicks never open this hub; explicit selection-toolbar actions
+ * and desktop right-click menus open Word Context. Selection and copying
+ * keep native browser behaviour. Personal data remains local.
+ */
+(()=>{
+'use strict';
+if(window.GnammaWordContext)return;
+const $=(s,p=document)=>p.querySelector(s), $$=(s,p=document)=>[...p.querySelectorAll(s)];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+const AR=/[\u0621-\u064a]/u,LETTER=/[\p{L}\p{M}]/u;
+const R=window.BahrReader,S=window.BAHR_SEARCH_DATA;
+const BOOK=S?{...S.book,notes:window.BAHR_DATA.notes}:null;
+const morph=()=>window.GnammaMorphology||null;
+let shade=null,selected=null,oldFocus=null,lastDictionary=null,rendering=false;
+function locator(){return R.current||'';}
+function readPrivate(section,segment,phrase){
+ const info={marks:[],notes:[],bookmarks:[],highlights:[],dictionary:[]};
+ for(const item of R.desk.filter(x=>!x.archived&&x.r===section)){
+  const group=({note:'notes',bookmark:'bookmarks',highlight:'highlights'})[item.type];
+  info[group].push({title:item.note||item.quote||'',kind:item.type,scope:'section',exact:!!item.quote&&item.quote.includes(phrase)});
+ }
+ return info;
+}
+function getInPageDictionary(word,analysis){
+ if(!BOOK?.glossary)return [];
+ const fold=morph()?.fold||((s)=>String(s||'').toLowerCase());
+ const keys=new Set([fold(word),fold(analysis?.best?.lemma)]);
+ return BOOK.glossary.filter(item=>{
+  const forms=String(item.ar||'').split(/[,،؛;\/]/u).map(fold);
+  return forms.some(f=>f&&keys.has(f));
+ }).slice(0,8);
+}
+function attachedNotes(section){
+ return {exact:[],section:(BOOK?.notes||[]).filter(n=>(n.scope||[]).some(x=>x.record_id===section)).slice(0,8)};
+}
+function noteKind(note){
+ if(note.source_type==='quran'||note.kind==='quran-source')return 'Qurʾān source';
+ if(note.source_type==='hadith'||note.kind==='hadith-source')return 'Hadith source';
+ if(note.source_type==='application')return 'Bidāya application source';
+ const label={
+  textual:'Textual / variant note',
+  grammar:'Grammar note',
+  translation:'Translation / editor note',
+  scholarship:'Scholarly apparatus note',
+  interpretive:'Interpretive note',
+  lexical:'Lexical note',
+  crux:'Textual crux',
+  quotation:'Quotation/source note'
+ };
+ return label[note.kind]||note.kindLabel||'Edition note (attribution unverified)';
+}
+function currentToken(node,index){
+ const text=node?.textContent||'';
+ if(!text)return null;
+ let at=Math.min(text.length-1,Math.max(0,index||0));
+ if(!LETTER.test(text[at]||'')&&at>0&&LETTER.test(text[at-1]||''))at--;
+ if(!LETTER.test(text[at]||''))return null;
+ let a=at,b=at+1;
+ while(a>0&&LETTER.test(text[a-1]))a--;
+ while(b<text.length&&LETTER.test(text[b]))b++;
+ const word=text.slice(a,b);
+ return AR.test(word)?word:null;
+}
+function passageOccurrence(word,grid,point){
+ const engine=morph(),content=grid;
+ if(!engine||!content||!point?.node||!content.contains(point.node))return {position:null,neighbours:[]};
+ try{
+  const range=document.createRange();range.setStart(content,0);range.setEnd(point.node,point.offset);
+  const prefix=engine.tokenize(range.toString()).length,tokens=engine.tokenize(content.textContent||''),key=engine.fold(word);
+  const row=S.rows.find(x=>x.kind==='arabic'&&x.anchor===grid.id),source=engine.tokenize(row?.text||'');
+  const position=[Math.max(0,prefix-1),prefix].find(i=>tokens[i]&&engine.fold(tokens[i].word)===key);
+  if(position===undefined||source.length!==tokens.length||engine.fold(source[position]?.word)!==key)return {position:null,neighbours:[]};
+  return {position,neighbours:[tokens[position-1]?.word||'',tokens[position+1]?.word||'']};
+ }catch{return {position:null,neighbours:[]};}
+}
+function atTap(e){
+ const x=e.clientX,y=e.clientY;
+ const pos=document.caretPositionFromPoint?.(x,y);
+ const range=!pos?document.caretRangeFromPoint?.(x,y):null;
+ return {node:pos?.offsetNode||range?.startContainer,
+   offset:pos?.offset??range?.startOffset??0};
+}
+function singleArabicWord(raw){
+ const words=String(raw||'').trim().match(/[\p{L}\p{M}]+/gu)||[];
+ return words.length===1&&AR.test(words[0])?words[0]:null;
+}
+function findSelectedWord(){
+ const sel=window.getSelection?.();
+ if(!sel||sel.isCollapsed||!sel.rangeCount)return null;
+ const word=singleArabicWord(sel.toString());
+ if(!word)return null;
+ const range=sel.getRangeAt(0),parent=node=>node?.nodeType===1?node:node?.parentElement;
+ const side=parent(range.startContainer)?.closest('.ar-column [data-anchor]');
+ if(!side||parent(range.endContainer)?.closest('.ar-column [data-anchor]')!==side||
+    !$('#main')?.contains(side))return null;
+ const grid=side;
+ return grid?{word,anchor:side,grid,point:{node:range.startContainer,offset:range.startOffset}}:null;
+}
+function actions(word,analysis){
+ let lemma=analysis.best?.lemma||'',root=analysis.best?.root||'';
+ if(!lemma&&!root){
+  const available=morph()?.getLexicon()||[];
+  const matches=available.filter(x=>(x.formKeys||[]).includes(morph()?.fold(word)||word));
+  if(matches.length===1){lemma=matches[0].lemma;root=matches[0].root;}
+ }
+ return {lemma,root};
+}
+function search(word,mode,facet='text'){
+ close();
+ window.GnammaUnifiedSearch?.openWith?.(word,mode,facet,'work');
+}
+function showByKind(list,heading,css=''){
+ if(!list?.length)return '';
+ return '<section class="gnw-block '+css+'"><h3>'+esc(heading)+'</h3>'+
+  list.map(item=>'<p>'+esc(item)+'</p>').join('')+'</section>';
+}
+function grammarName(key,value){
+ const mapping={
+  pos:{noun:'Noun',verb:'Verb',adj:'Adjective',prep:'Preposition',part:'Particle',
+    conj:'Conjunction',pron:'Pronoun',noun_prop:'Proper noun'},
+  cas:{n:'Nominative',a:'Accusative',g:'Genitive',u:'Unspecified case'},
+  asp:{p:'Perfect',i:'Imperfect',c:'Imperative'},
+  vox:{a:'Active',p:'Passive'},mod:{i:'Indicative',j:'Jussive',s:'Subjunctive'},
+  stt:{d:'Definite',i:'Indefinite',c:'Construct (iḍāfa)'},
+  num:{s:'Singular',d:'Dual',p:'Plural'},gen:{m:'Masculine',f:'Feminine'},
+  per:{'1':'First person','2':'Second person','3':'Third person'}
+ };
+ return mapping[key]?.[value]||String(value||'');
+}
+function detailedGrammar(best,alternatives){
+ const f=best?.features||{};
+ const primary=[['cas','Case'],['asp','Verb form'],['vox','Voice'],['mod','Mood'],
+  ['stt','Definiteness'],['num','Number'],['gen','Gender'],['per','Person']]
+  .filter(([key])=>f[key]&&f[key]!=='na');
+ const bits=primary.map(([key,name])=>'<div><dt>'+esc(name)+'</dt><dd>'+esc(grammarName(key,f[key]))+'</dd></div>').join('');
+ const split=f.d3seg?'<p><strong>Model segmentation:</strong> <bdi lang="ar" dir="rtl">'+esc(f.d3seg)+'</bdi></p>':'';
+ const pattern=f.pattern?'<p><strong>Stem pattern:</strong> <bdi lang="ar" dir="rtl">'+esc(f.pattern)+'</bdi></p>':'';
+ const gloss=f.gloss?'<p>Model lexicon gloss (not a verified passage translation): '+esc(f.gloss)+'</p>':'';
+ const suggested=f.diac&&f.diac!==best.surface?'<p>Suggested vowels: <bdi lang="ar" dir="rtl">'+esc(f.diac)+'</bdi></p>':'';
+ const details=(primary.length||split||pattern||gloss||suggested)?
+  '<details class="gnw-grammar"><summary>More grammar</summary>'+
+   (bits?'<dl>'+bits+'</dl>':'')+suggested+split+pattern+gloss+
+   '<small>Automatic features are not independently checked against Classical Arabic or editorial variants.</small></details>':'';
+ const variants=alternatives.length?
+  '<details class="gnw-grammar"><summary>'+alternatives.length+' other possible '+(alternatives.length===1?'analysis':'analyses')+'</summary>'+
+  '<ul>'+alternatives.slice(0,5).map(x=>'<li>'+
+   '<bdi lang="ar" dir="rtl">'+esc(x.lemma)+'</bdi> · '+esc(grammarName('pos',x.pos))+
+   (x.features?.cas?' · '+esc(grammarName('cas',x.features.cas)):'')+
+   (groundedMorphActions(x.surface||best.surface||'',x.lemma,x.root).forms?
+    ' <button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(x.lemma)+'">Search indexed forms</button>':'')+
+   '</li>').join('')+'</ul></details>':'';
+ return details+variants;
+}
+const MORPH_CORPUS=(S?.rows||[]).filter(x=>x.kind==='arabic').map(x=>({work:'bahr',id:'arabic:'+x.anchor,section:x.r,anchor:x.anchor,ar:x.text,en:'',type:'text'}));
+function groundedMorphActions(word,lemma,root){
+ const engine=morph();
+ if(!engine?.status?.('bahr')?.loaded || !(engine?.getLexicon?.()||[]).length)
+   return {forms:false,root:false};
+ const fold=engine.fold, target=fold(word), head=fold(lemma||'');
+ let forms=false,related=false;
+ if(lemma){
+  const observed=engine.formsFor(lemma,'bahr',20);
+  forms=observed.some(hit=>fold(hit.form)!==target);
+ }
+ if(root){
+  const result=engine.find(root,'morph-root',MORPH_CORPUS);
+  if(result.ready){
+   const lemmas=new Set(result.items.map(hit=>fold(hit.matched?.lemma||'')).filter(Boolean));
+   related=[...lemmas].some(value=>value!==head);
+  }
+ }
+ return {forms,root:related};
+}
+function wordMarkup(ctx){
+ const {word,analysis,terms,notes,privateInfo,section,segment,highlightType}=ctx;
+ const best=analysis?.best,alts=analysis?.alternatives||[];
+ const names=actions(word,analysis||{});
+ const root=names.root,lemma=names.lemma;
+ const grounded=groundedMorphActions(word,lemma,root);
+ const analysisSection='<section class="gnw-block"><h3>Word in this passage</h3>'+
+  (best?'<div class="gnw-morph-line"><span>Dictionary form</span> <bdi dir="rtl" lang="ar">'+esc(best.lemma)+'</bdi>'+
+   (best.root?' · <span>Root</span> <bdi dir="rtl" lang="ar">'+esc(best.root)+'</bdi>':'')+
+   (best.pos?' · '+esc(grammarName('pos',best.pos)):'')+'</div>'+
+   '<small>'+esc(morph()?.sourceLabel(best.source)||'Provisional analysis')+
+     (best.source==='curated'?' · Candidate headword, not a verified reading of the sentence.':'')+
+     (best.features?.root_origin?' · Root supplemented from a curated dictionary headword, not checked against this occurrence.':'')+
+    '</small>'+detailedGrammar(best,alts):
+   alts.length?'<p>This form has several possible analyses in the current index. The reading of this occurrence is not established.</p>'+
+    '<ul>'+alts.slice(0,5).map(x=>'<li><bdi lang="ar" dir="rtl">'+esc(x.lemma)+'</bdi> · '+esc(grammarName('pos',x.pos))+
+     (groundedMorphActions(word,x.lemma,x.root).forms?
+       ' <button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(x.lemma)+'">Search indexed forms</button>':'')+
+     '</li>').join('')+'</ul>':
+    '<p>No dependable analysis is available here yet. Ordinary word search remains available.</p>')+
+  '</section>';
+ const dictionary=terms.length?
+   '<section class="gnw-block gnw-dictionary"><h3>Dictionary / glossary</h3>'+
+   terms.map(t=>'<p><button type="button" data-gnw-term="'+esc(t.term)+'">'+
+    '<strong>'+esc(t.term)+'</strong> <bdi lang="ar" dir="rtl">'+esc(t.ar||'')+'</bdi></button>'+
+    '<span>'+esc(t.definition||'')+'</span></p>').join('')+'</section>':'';
+ const exact=notes.exact.map(n=>
+  '<button data-gnw-note="'+esc(n.id)+'">'+esc(noteKind(n)+' · '+n.id)+'</button>').join('');
+ const sectionNotes=notes.section.length?
+  '<details class="gnw-subnotes"><summary>'+notes.section.length+' notes attached to this section (not necessarily this word)</summary>'+
+   notes.section.map(n=>'<button type="button" data-gnw-note="'+esc(n.id)+'">'+
+      esc(noteKind(n)+' · '+n.id)+'</button>').join('')+'</details>':'';
+ const editorial=(exact||sectionNotes)?
+   '<section class="gnw-block"><h3>Editorial / source apparatus</h3>'+
+    (exact?'<p>Directly anchored to this wording</p>'+exact:'')+sectionNotes+'</section>':'';
+ const privateCount=privateInfo.notes.length+privateInfo.bookmarks.length+privateInfo.highlights.length;
+ const own=privateCount?'<section class="gnw-block"><h3>Your Reading Desk · private</h3>'+
+   '<p>'+privateInfo.notes.length+' personal notes · '+privateInfo.bookmarks.length+
+   ' bookmarks · '+privateInfo.highlights.length+' saved selections in this section or paragraph.</p>'+
+   '<button type="button" data-gnw-desk="1">Open Reading Desk</button></section>':'';
+ const provenance=highlightType?'<p class="gnw-origin">'+esc(highlightType)+'</p>':'';
+ const fullActions='<section class="gnw-block gnw-actions"><h3>Explore occurrences</h3>'+
+   '<div class="gnw-action-grid">'+
+   '<button type="button" data-gnw-search="literal" data-gnw-value="'+esc(word)+'">Exact word</button>'+
+   '<button type="button" data-gnw-search="terms" data-gnw-value="'+esc(word)+'">Ordinary search</button>'+
+   (grounded.forms?'<button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(lemma)+'">Other indexed forms</button>':'')+
+   (grounded.root?'<button type="button" data-gnw-search="morph-root" data-gnw-value="'+esc(root)+'">Indexed root relatives</button>':'')+
+   '</div></section>';
+ return '<header class="gnw-header"><div><small>WORD CONTEXT · '+(section?esc(R.byId.get(section)?.q||section)+' · ¶'+(segment+1):'CURRENT SELECTION')+'</small>'+
+  '<h2 id="gnw-title" lang="ar" dir="rtl">'+esc(word)+'</h2></div><button type="button" data-gnw-close="1" aria-label="Close word context">×</button></header>'+
+  '<div class="gnw-body">'+provenance+analysisSection+dictionary+editorial+own+fullActions+
+  '<p class="gnw-footnote">A dictionary term, source note, personal annotation and search match are independent layers. Nothing is changed or saved by opening this panel.</p></div>';
+}
+async function openWord(word,anchor,grid,trigger=null,point=null){
+ if(!AR.test(word)||!BOOK)return;
+ const section=grid?.closest('.passage')?.dataset.record||locator(),segment=[...grid.parentElement.querySelectorAll('[data-anchor]')].indexOf(grid);
+ const originalTarget=trigger||anchor;
+ const hasSource=!!originalTarget?.closest?.('[data-note-target]');
+ const noted=attachedNotes(section,segment,
+   anchor?.closest?.('[data-note-target]')?anchor:hasSource?originalTarget:null);
+ const highlightType=originalTarget?.closest?.('mark.search-hit')?'Temporary search highlight':
+   originalTarget?.closest?.('[data-rd-quote],[data-rd-bookmark]')?'Saved reading annotation':null;
+ const privateInfo=readPrivate(section,segment,word);
+ const engine=morph(),occurrence=passageOccurrence(word,grid,point,section,segment);
+ let analysis=engine?.disambiguate(word,occurrence.neighbours,'bahr',
+   section?'arabic:'+grid.id:null,occurrence.position)||
+   {best:null,alternatives:[],certainty:'unavailable'};
+ const ctx={word,anchor,grid,section,segment,notes:noted,highlightType,privateInfo,analysis,
+   terms:getInPageDictionary(word,analysis)};
+ selected=ctx;
+ oldFocus=document.activeElement;
+ if(!shade){
+  shade=document.createElement('div');shade.id='gnamma-word-context';shade.className='gnw-root';
+  shade.setAttribute('role','dialog');shade.setAttribute('aria-modal','true');shade.setAttribute('aria-labelledby','gnw-title');
+  document.body.append(shade);
+ }
+ rendering=true;
+ shade.innerHTML='<div class="gnw-backdrop" data-gnw-close="1"></div><div class="gnw-card">'+wordMarkup(ctx)+'</div>';
+ shade.hidden=false;rendering=false;
+ $('button[data-gnw-close]',shade)?.focus({preventScroll:true});
+ // Upgrade from a curated lexicon to the precomputed source-linked occurrence.
+ engine?.loadLexicon().then(()=>engine.ensure('bahr')).then(async()=>{
+   if(section&&engine.ensureDetail)await engine.ensureDetail('bahr',
+     'arabic:'+grid.id);
+  }).then(()=>{
+   if(shade?.hidden||selected!==ctx)return;
+   ctx.analysis=engine.disambiguate(word,occurrence.neighbours,'bahr',
+     section?'arabic:'+grid.id:null,occurrence.position);
+   ctx.terms=getInPageDictionary(word,ctx.analysis);
+   const card=$('.gnw-card',shade);
+   if(card)card.innerHTML=wordMarkup(ctx);
+ }).catch(()=>{});
+}
+function close(){
+ if(!shade||shade.hidden)return;
+ shade.hidden=true;selected=null;
+ try{oldFocus?.focus?.({preventScroll:true})}catch(_){}
+}
+/* Called explicitly from Reading Desk's selected-word context actions.
+   Translate the saved selection offset into an exact source word when the
+   browser has already collapsed its Selection after a toolbar click. */
+function firstArabicToken(raw){
+ for(const match of String(raw||'').matchAll(/[\p{L}\p{M}]+/gu)){
+  if(AR.test(match[0]))return {word:match[0],index:match.index};
+ }
+ return null;
+}
+/* For a phrase, inspect its first selected Arabic word. Use the saved source
+   offset and the live passage text to resolve the correct occurrence. */
+function openSelectedQuote(target){
+ if(!BOOK||target?.lang!=='ar')return false;
+ const direct=findSelectedWord();if(direct){openWord(direct.word,direct.anchor,direct.grid,direct.anchor,direct.point);return true;}
+ const side=document.getElementById(target.anchor);if(!side||!side.closest('.ar-column'))return false;
+ const raw=side.textContent,at=raw.indexOf(target.quote);if(at<0||at!==raw.lastIndexOf(target.quote))return false;
+ const first=firstArabicToken(target.quote);if(!first)return false;
+ const walker=document.createTreeWalker(side,NodeFilter.SHOW_TEXT);let node,offset=at+first.index;
+ while(node=walker.nextNode()){if(offset<node.length){openWord(first.word,side,side,side,{node,offset});return true;}offset-=node.length;}
+ return false;
+}
+function installDictionaryActions(){
+ // The lexical dossier already includes authorial passages and source navigation.
+ // The old footer offered Word forms / Root family for every glossary label,
+ // even when no reviewed morphology had been indexed (e.g. ṣīgha / صوغ).
+ // Remove that misleading duplicate panel; contextual morphological operations
+ // remain available from actual word occurrences when analysis supports them.
+ const old=$('#gnw-dictionary-search');
+ if(old)old.remove();
+}
+
+document.addEventListener('click',e=>{
+ const btn=e.target?.closest?.('[data-gnw-close],[data-gnw-search],[data-gnw-term],[data-gnw-note],[data-gnw-desk]');
+ if(btn){
+  if(btn.hasAttribute('data-gnw-close')){e.preventDefault();close();return;}
+  if(btn.hasAttribute('data-gnw-search')){
+   e.preventDefault();const mode=btn.dataset.gnwSearch,term=btn.dataset.gnwValue||'';
+   if(mode==='morph-root'||mode==='morph-lemma'){
+    // For a glossary-only English label, consult its Arabic equivalent.
+    const row=BOOK?.glossary?.find(t=>t.term===term);
+    const lemma=row?.ar||term;
+    search(lemma,mode);
+   }else search(term,mode);
+   return;
+  }
+  if(btn.hasAttribute('data-gnw-note')){
+   e.preventDefault();const id=btn.dataset.gnwNote;close();
+   const target=document.getElementById('note-'+id);
+   if(target){target.open=true;target.scrollIntoView({block:'center',behavior:'smooth'});}
+   else{const button=document.createElement('button');button.dataset.note=id;button.hidden=true;document.body.append(button);button.click();button.remove();}
+   return;
+  }
+  if(btn.hasAttribute('data-gnw-term')){
+   e.preventDefault();const term=btn.dataset.gnwTerm;close();
+   const entry=window.BAHR_DATA.dictionary.find(x=>x.term===term);if(entry)R.openDictionary(entry.id);return;
+  }
+  if(btn.hasAttribute('data-gnw-desk')){e.preventDefault();close();location.hash='#/desk';return;}
+ }
+ const dict=e.target?.closest?.('[data-term]');
+ if(dict){lastDictionary={term:dict.dataset.term};queueMicrotask(installDictionaryActions);return;}
+}); 
+/* Explicit word context; native mouse drag and touch selection are untouched.
+   For a selected Arabic word the custom right-click menu retains Copy.
+   Multiword / English selection continues to use the native browser menu. */
+let wordMenu=null,wordMenuTarget=null;
+function closeWordMenu(){
+ wordMenu?.remove();wordMenu=null;wordMenuTarget=null;
+}
+async function copyWordFromMenu(text){
+ try{
+  if(!navigator.clipboard?.writeText)throw new Error('Clipboard unavailable');
+  await navigator.clipboard.writeText(text);return;
+ }catch(_){}
+ const saved=window.getSelection?.(),ranges=[];
+ if(saved)for(let i=0;i<saved.rangeCount;i++)ranges.push(saved.getRangeAt(i).cloneRange());
+ const field=document.createElement('textarea');
+ field.value=text;field.style.cssText='position:fixed;left:-9999px;top:0';
+ document.body.append(field);field.focus();field.select();
+ try{document.execCommand('copy');}catch(_){}
+ field.remove();
+ if(saved){saved.removeAllRanges();ranges.forEach(range=>saved.addRange(range));}
+}
+document.addEventListener('contextmenu',event=>{
+ if(event.defaultPrevented||
+    !window.matchMedia?.('(hover:hover) and (pointer:fine)').matches)return;
+ if(shade&&!shade.hidden)return;
+ if(event.target?.closest?.('a[href],button,input,textarea,select,[contenteditable],[data-rd]'))return;
+ const side=event.target?.closest?.('#main .ar-column [data-anchor]');
+ if(!side)return;
+ // The word under the pointer matters, even when a whole phrase is selected.
+ const point=atTap(event);
+ let word=point.node&&side.contains(point.node)?currentToken(point.node,point.offset):null;
+ const selectedWord=findSelectedWord();
+ if(!word&&selectedWord?.anchor===side)word=selectedWord.word;
+ if(!word)return;
+ const sel=window.getSelection?.(),selection=sel?.toString()||'';
+ const withinSelection=!!(selection&&sel?.rangeCount&&
+  [...sel.getRangeAt(0).getClientRects()].some(rect=>
+   event.clientX>=rect.left-3&&event.clientX<=rect.right+3&&
+   event.clientY>=rect.top-3&&event.clientY<=rect.bottom+3));
+ const chosen={word,anchor:side,grid:side,
+   point:point.node&&side.contains(point.node)?point:selectedWord?.point,
+   text:withinSelection?selection:word,selected:withinSelection};
+ if(!chosen.grid)return;
+ event.preventDefault();
+ closeWordMenu();
+ wordMenuTarget=chosen;
+ wordMenu=document.createElement('div');
+ wordMenu.className='gnw-reader-menu';
+ wordMenu.setAttribute('role','menu');
+ wordMenu.setAttribute('aria-label','Arabic word actions');
+ wordMenu.innerHTML=
+  '<button type="button" role="menuitem" data-gnw-copy-menu="1">Copy '+(chosen.selected?'selection':'word')+'</button>'+
+  '<button type="button" role="menuitem" data-gnw-open-menu="1">Word Context · <bdi lang="ar" dir="rtl">'+esc(chosen.word)+'</bdi></button>';
+ document.body.append(wordMenu);
+ const rect=wordMenu.getBoundingClientRect();
+ wordMenu.style.left=Math.max(8,Math.min(event.clientX,innerWidth-rect.width-8))+'px';
+ wordMenu.style.top=Math.max(8,Math.min(event.clientY,innerHeight-rect.height-8))+'px';
+ wordMenu.querySelector('[data-gnw-open-menu]')?.focus({preventScroll:true});
+},true);
+document.addEventListener('pointerdown',event=>{
+ if(wordMenu&&!wordMenu.contains(event.target))closeWordMenu();
+},true);
+document.addEventListener('click',event=>{
+ const trigger=event.target?.closest?.('[data-gnw-open-menu],[data-gnw-copy-menu]');
+ if(!trigger||!wordMenu?.contains(trigger))return;
+ event.preventDefault();
+ const chosen=wordMenuTarget,copy=trigger.hasAttribute('data-gnw-copy-menu');
+ closeWordMenu();
+ if(!chosen)return;
+ if(copy)copyWordFromMenu(chosen.text);
+ else if(chosen.grid)openWord(chosen.word,chosen.anchor,chosen.grid,trigger,chosen.point);
+},true);
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape'&&wordMenu){e.preventDefault();closeWordMenu();return;}
+ if(e.key==='Escape'&&shade&&!shade.hidden){e.preventDefault();close();}
+ if(e.key==='Tab'&&shade&&!shade.hidden){
+  const focus=$$('button:not([disabled]),a[href]',shade).filter(x=>x.getClientRects().length);
+  if(!focus.length)return;
+  if(e.shiftKey&&document.activeElement===focus[0]){e.preventDefault();focus.at(-1).focus();}
+  else if(!e.shiftKey&&document.activeElement===focus.at(-1)){e.preventDefault();focus[0].focus();}
+ }
+});
+new MutationObserver(()=>{
+ if(!rendering)installDictionaryActions();
+}).observe(document.body,{subtree:true,childList:true,attributes:false});
+window.GnammaWordContext=Object.freeze({openWord,openSelectedQuote,close,findSelectedWord,locateOccurrence:passageOccurrence});
+})();

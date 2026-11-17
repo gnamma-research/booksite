@@ -1,0 +1,1212 @@
+{
+  "date": "2026-10-27",
+  "migration_scope": "Eight-study reader plus complete existing wider research reader; no new claim of source-critical completion.",
+  "canonical_checks": [
+    {
+      "scope": "pilot",
+      "original_studies": 8,
+      "original_article_text_sha256": "6a78b05d1651219bb59f52eedc5ddc08515c3e6efdc57d715c35692a98d9f83e",
+      "relocated_article_text_sha256": "6a78b05d1651219bb59f52eedc5ddc08515c3e6efdc57d715c35692a98d9f83e",
+      "text_preserved": true,
+      "original_stable_ids": 454
+    },
+    {
+      "scope": "reservoir",
+      "original_studies": 72,
+      "original_article_text_sha256": "52eaa92795b6cec89e715a28088c5e684602d271dd040dba1d5b4f64ff402478",
+      "relocated_article_text_sha256": "52eaa92795b6cec89e715a28088c5e684602d271dd040dba1d5b4f64ff402478",
+      "text_preserved": true,
+      "original_stable_ids": 3003
+    }
+  ],
+  "shared_primary_records": 17,
+  "shared_source_page_images": 81,
+  "source_inventory": "Internal recovery manifest retained locally; not part of the public reader.",
+  "independent_materials": "The alternative-usul casebook and qawanin dossier are retained at their existing URLs; B-addresses are not remapped to K-position IDs.",
+  "open_scholarship": "All original OPEN-ISSUES remain. The proposed REP-43 reorder and legal distinction require source review; migration does not silently change them.",
+  "publication_status": "Preservation snapshot; live publication is recorded separately by the repository commit and deployment receipt.",
+  "before_migration": {
+    "gnamma_prototype_topics": [
+      "Intention in purification",
+      "Voluntary relinquishment of dower",
+      "Returning a deposited trust"
+    ],
+    "canonical_eight_study_reader_imported": false,
+    "separate_casebook": "Existing provisional research; retained unchanged."
+  },
+  "after_migration": {
+    "eight_study_reader_imported": true,
+    "wider_72_study_reader_imported": true,
+    "all_annotated_legal_blocks": {
+      "pilot": 100,
+      "reservoir": 1472
+    },
+    "whole_bidaya_critical_review_complete": false
+  },
+  "study_parity": [
+    {
+      "scope": "pilot",
+      "id": "REP-02",
+      "text_sha256": "19a2a51948edbfbbace44b7a1a5d19ab3abf534e7b1cb7c13744e7f49fe5ea95",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 8,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 7,
+        "symbols": 3,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "pilot",
+      "id": "REP-09",
+      "text_sha256": "9e3df3fc6301066aed03aedec64e30f06ed4410ae0594d7d61460fd6ff9907c5",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 9,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 13,
+        "formation": 1,
+        "symbols": 3,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "pilot",
+      "id": "REP-23",
+      "text_sha256": "d4534d1204a640b38d491364166acb29c0c85189851f758090853abd38a64ab6",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 8,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 14,
+        "symbols": 2,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "pilot",
+      "id": "REP-31",
+      "text_sha256": "f92ddee593d24e52f2c55a66d04e71dbda5f8ef06fe39bf2038c47af36144ef1",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 7,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 6,
+        "formation": 1,
+        "symbols": 2,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "pilot",
+      "id": "REP-43",
+      "text_sha256": "7568a386c30e6f5fd61d3bc3d46ae5bc73dccc9f17d60d960cb3ffb516a13966",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 8,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 10,
+        "symbols": 2,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "pilot",
+      "id": "REP-50",
+      "text_sha256": "b388f0f98fa6c8c520bb011e60e11d649c7c174451f5826dcda2ba4b74998c36",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 8,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 8,
+        "formation": 1,
+        "symbols": 2,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "pilot",
+      "id": "REP-63",
+      "text_sha256": "59a7a78582fc3dab2c058b5ba8b78fb6eb10cd9d7f6cae87bce54823fb828942",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 7,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 11,
+        "symbols": 2,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "pilot",
+      "id": "REP-72",
+      "text_sha256": "9a9ff8cc7690962b2c26235bf16d181095dccc7f7b9074ad4aab10f971d9f7ff",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 8,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 23,
+        "formation": 1,
+        "social": 3,
+        "symbols": 3,
+        "alchemy": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-01",
+      "text_sha256": "126fce325e8744f412c1c16f604dff7fedc312b1b089b060a845d19971dffde4",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 6,
+        "stakes": 1,
+        "principles": 1,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-02",
+      "text_sha256": "19a2a51948edbfbbace44b7a1a5d19ab3abf534e7b1cb7c13744e7f49fe5ea95",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 8,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 7,
+        "symbols": 3,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-03",
+      "text_sha256": "4da43f537f5e43c4635632f36da73458428e1266d68d84a41f5e72da2891d66c",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 6,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 14,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-04",
+      "text_sha256": "e493dd2b8aafe583876fe87d2747e25cf7e6e17d886cc4fe1967dfab0794501d",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 8,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-05",
+      "text_sha256": "a0fc9a11ae4b1513db484ed41f4ebdf3bea1eba8edf8bb46c43388fafdd56e13",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 9,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-06",
+      "text_sha256": "d2ee071eb82ab3f08f1aee3611e963263d089b636f38698010a35270922cf4de",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 6,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 12,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-07",
+      "text_sha256": "0828071a2fb775a2305442227debecff797e599ac4a46bd0ac38a6c2b991f036",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 6,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 13,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-08",
+      "text_sha256": "898e730d693b004632dd0af15b3c08360a90e74704cd557fe173aad4deb8a09a",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 9,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 6,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-09",
+      "text_sha256": "9e3df3fc6301066aed03aedec64e30f06ed4410ae0594d7d61460fd6ff9907c5",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 9,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 13,
+        "formation": 1,
+        "symbols": 3,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-10",
+      "text_sha256": "e1796e9d7e2eb5bcfa0bd75eb65a1cc1b0a91bdd2e3b64fd94af5ba40c31a768",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 6,
+        "stakes": 2,
+        "principles": 1,
+        "scripture": 15,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-11",
+      "text_sha256": "6485301eb4d678fffcae3ce440ba2deb5ef54939945d39a80e2e33deca0f85cd",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 6,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 8,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-12",
+      "text_sha256": "925f4b51dea760a1b584ae18b0dca8f86210428661920f28027e58a4af97b6ed",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "social": 2,
+        "formation": 1,
+        "scripture": 10,
+        "alchemy": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-13",
+      "text_sha256": "eeed2b987e448ff8096b7f5ffe0f412223c9b11638690fb73683c0306711ba86",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 6,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 13,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-14",
+      "text_sha256": "0271dcccbf0227d8c755ff94813eaa8dc81b09d3f4491d7bd0f1bf17e764b964",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 10,
+        "formation": 1,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-15",
+      "text_sha256": "e6bd08c08c457d9b422d9877c3c09f0e22a7b4790d9dda0f73e9c586c2d8622b",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 23,
+        "stakes": 2,
+        "principles": 1,
+        "scripture": 44,
+        "alchemy": 3,
+        "social": 5,
+        "formation": 2,
+        "symbols": 2
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-16",
+      "text_sha256": "d2a4cc172a670a23257e2530f7e6fb8dd4207fa50c78e3b9b3d5c560ef78a075",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 6,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 13,
+        "formation": 1,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-17",
+      "text_sha256": "61b4e715f6b38005b7720ec9b11d6ff6e929df27f8b6830529a660444c53a7ba",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 7,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 20,
+        "formation": 2,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-18",
+      "text_sha256": "003c0dee77ac6af2c2f746bb9ca4f119f51431cab78291dbf144e95eae7ed9d2",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 7,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-19",
+      "text_sha256": "16041ae880f2299fb464b15c20e679f6821c87b2d0440116ff4ed4e46933a30a",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 9,
+        "symbols": 1,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-20",
+      "text_sha256": "fbdfdf1d768adb8a068c676242c0d485dba31220e160b92d8722010bcd51b857",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 6,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-21",
+      "text_sha256": "27ca943ad6838bc33113c1b1abe57a403ab74c06d96ae84e53af743b36cdc3eb",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 6,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-22",
+      "text_sha256": "8c7d578cbe7c65a858bfb7d525f784e83db1ef30e7d98dbbee9b54bc1157884b",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 6,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-23",
+      "text_sha256": "d4534d1204a640b38d491364166acb29c0c85189851f758090853abd38a64ab6",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 8,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 14,
+        "symbols": 2,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-24",
+      "text_sha256": "2e6b98981e7c3518b746831ff4c3ffa67741e2f3660834ee6fcec543be505bd2",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 7,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-25",
+      "text_sha256": "beb74e3c094de0444765aeff5973ea95e83879ab4f8ae1b85a08b1add9534ad8",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 7,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-26",
+      "text_sha256": "0b88677a7bd9843f6988b780b1a8527f54ae2769ded35f31ddec87d074a2e88d",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 10,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-27",
+      "text_sha256": "84614c0d15d0a62b64b1a7d0aeb698875869ccc4ffa02896279b5df6e64f1b14",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 7,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-28",
+      "text_sha256": "7c399477aa3a65754f6acef5d299745c418b9a2bb60546a8e8aad2c44514d755",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 7,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-29",
+      "text_sha256": "70a9f9c1563c8fd0c646e6fd7afb5dee4117e078a4a679e487f2453a2ce0fe2f",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 8,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 26,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-30",
+      "text_sha256": "c6d91deae4e92f7eff97569d370890afb0756daccb71ee79f88a4531adfc8ef6",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 11,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-31",
+      "text_sha256": "f92ddee593d24e52f2c55a66d04e71dbda5f8ef06fe39bf2038c47af36144ef1",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 7,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 6,
+        "formation": 1,
+        "symbols": 2,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-32",
+      "text_sha256": "9700393fea3dc89ac84fd1956b0457df9f037956a6278cdeac111a7c850aea3a",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 9,
+        "formation": 2,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-33",
+      "text_sha256": "701d51b4973114a3a40c946ec544a8a6821515a47fa0750dfae37a9b12d627a9",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 11,
+        "formation": 2,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-34",
+      "text_sha256": "c601a1bac17483e0e61e60c4b3dac9a646e3ad22388e916997fa2926218b79b8",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 6,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-35",
+      "text_sha256": "09d522367e9710b1ccbb9745c93a303025519635e45fff4de87dba258516f266",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 7,
+        "symbols": 1,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-36",
+      "text_sha256": "a5da8f5384d568683d10959c61deacc4a96b5c0471e7f75762ddafbefae8e258",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 7,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-37",
+      "text_sha256": "f4862a10a3e82b705e650ec89292e8cf064cfdd47247730fd9a60e14f31a7509",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 6,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 15,
+        "alchemy": 1,
+        "social": 2
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-38",
+      "text_sha256": "82821b385f3f011c4a5ebd10215ecf963d144e237b3474e945b409a6877d3a3e",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 6,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-39",
+      "text_sha256": "30ecd8ee582001e891fc4528eed7c1bc0f6bb790433b008a40083e226f14386c",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 12,
+        "social": 2,
+        "alchemy": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-40",
+      "text_sha256": "742aa82d6b3542a4ab274c0a2f214915519bd1b4d0023ac9e40f3d358ad29855",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 6,
+        "stakes": 2,
+        "principles": 1,
+        "scripture": 14,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-41",
+      "text_sha256": "ed7d60810583afb08cdec7c69eef1df893ba0d1efb4287e2e63831576d134175",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 7,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-42",
+      "text_sha256": "0304eb5c6b7916362338183f0c4d84da6143402c3c2e85328d0efe059929213d",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 6,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 14,
+        "alchemy": 1,
+        "social": 1,
+        "formation": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-43",
+      "text_sha256": "7568a386c30e6f5fd61d3bc3d46ae5bc73dccc9f17d60d960cb3ffb516a13966",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 8,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 10,
+        "symbols": 2,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-44",
+      "text_sha256": "033ee4bcdf21035da8e5bea52835d8cf43eb0e02a51ce8e026bdd67b5a8c65ca",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 7,
+        "formation": 1,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-45",
+      "text_sha256": "e335cc332136c7c9f4bb8aba679dcafde391c4436aff23f35b659210b146b9ca",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 7,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-46",
+      "text_sha256": "9001c109c4a86e356af8bcfd44345f08042d7fb898e565252d8fbe256c67d7ff",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 6,
+        "stakes": 2,
+        "principles": 1,
+        "scripture": 18,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-47",
+      "text_sha256": "3bb33a60b6cf1126a8844b23916d91344df695e41d3ac7ca58b9049620a24ba5",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 6,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-48",
+      "text_sha256": "94e2b4ccfd52b25fd40b847c146724b3dc484949c6ea78a122f236b6ad0bda11",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 11,
+        "formation": 2,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-49",
+      "text_sha256": "2edaa33011aa16f0484de63e1579451f967f342d7c77ca59eeaa739f75a1ea33",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 7,
+        "stakes": 2,
+        "principles": 1,
+        "scripture": 17,
+        "formation": 1,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-50",
+      "text_sha256": "b388f0f98fa6c8c520bb011e60e11d649c7c174451f5826dcda2ba4b74998c36",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 8,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 8,
+        "formation": 1,
+        "symbols": 2,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-51",
+      "text_sha256": "a7d1acb1a61d81fbf70665068e0b9d8bb0659138490ce2ba0a94da44a8b10c67",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 6,
+        "stakes": 2,
+        "principles": 1,
+        "scripture": 13,
+        "formation": 1,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-52",
+      "text_sha256": "1996397d00bbd9144868a7c27ec2c4f8790b9114678a69ceb1803e7c32f4eac4",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 8,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-53",
+      "text_sha256": "0a9997f5ba109fe041ed76bdb10ebf2cecd8560d33b5546b397318eb8d8e4ba3",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 8,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-54",
+      "text_sha256": "a18650a808f81b183200c9c7324c2f6d2497ec627517f29a25645ca4ef31afe4",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 6,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-55",
+      "text_sha256": "398002556a98e35f31fac541f00d2ae82d412ebb96ad7f32861b1b37c6c71119",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 8,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-56",
+      "text_sha256": "0e5c8f5a0431506c9ae193cdc813cd5aae9b095c2776c7097a40d5a3178bc771",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 8,
+        "formation": 1,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-57",
+      "text_sha256": "5ecd4086204b33c1d02b327a9508a39485ec0620e01f0b31a46e07397bf50944",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 7,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-58",
+      "text_sha256": "42cc30c8e501a6517be7d00f3c8ddf9c79ed6f5ca406282668c3cf99ecfa9d32",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 8,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-59",
+      "text_sha256": "5bf9ffd68cfc7fc6ec2307d56ab32fb5d33671996f7c9495270b70889b5d4214",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 6,
+        "stakes": 2,
+        "principles": 1,
+        "scripture": 15,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-60",
+      "text_sha256": "9135d727a928c146f03e37f0fa8ed19876142393533880057f39de1240bf6391",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 11,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 15,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-61",
+      "text_sha256": "08e2425b23a0ad03d7583b999ed99b137086399f0d9e46308b9d4c708ec819c8",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 7,
+        "formation": 1,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-62",
+      "text_sha256": "387b361577243aee0bb3b0cf69648d919c41708ce7262766dc0e88d5f4153d87",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 9,
+        "stakes": 2,
+        "principles": 1,
+        "scripture": 15,
+        "alchemy": 2,
+        "social": 3
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-63",
+      "text_sha256": "59a7a78582fc3dab2c058b5ba8b78fb6eb10cd9d7f6cae87bce54823fb828942",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 7,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 11,
+        "symbols": 2,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-64",
+      "text_sha256": "7dec4622349c1cd02fab869ca24476b491157805018bd80169e234938d67b8df",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 6,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 14,
+        "alchemy": 1,
+        "social": 2
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-65",
+      "text_sha256": "37422564cf9d6f298dbc8ab84f2258e55eb473d9d23c8296fa43e7e0a0a82841",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 12,
+        "social": 2,
+        "alchemy": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-66",
+      "text_sha256": "426dc821cc79da0d88766826318756c5117de2014206a53d0b2ce5d8c7f842d6",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 6,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-67",
+      "text_sha256": "e84d971762e305e69d32798d50c16ff7de33b28623db0a1757ac8877b24eff4a",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 6,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 14,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-68",
+      "text_sha256": "7ccd825a837faf16c2384dacfa4cf31f12c8e341e3da19b312b51cf7c02747df",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 8,
+        "formation": 1,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-69",
+      "text_sha256": "da266682f017d4b5af60edb0fe93177afab83dfeb6d497fc447e08cf4beee198",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 9,
+        "formation": 1,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-70",
+      "text_sha256": "629051b6d2efa9fa967ab74461f3c42c731a4b394ab467f1b049bc165a2cae58",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 5,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 6,
+        "alchemy": 1,
+        "social": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-71",
+      "text_sha256": "bf025730a92d4d0886f7514341200c7eaf0f717ce947c771d6ae8182bf61a07f",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 13,
+        "stakes": 2,
+        "principles": 1,
+        "scripture": 21,
+        "alchemy": 2,
+        "social": 2,
+        "formation": 1,
+        "symbols": 1
+      }
+    },
+    {
+      "scope": "reservoir",
+      "id": "REP-72",
+      "text_sha256": "9a9ff8cc7690962b2c26235bf16d181095dccc7f7b9074ad4aab10f971d9f7ff",
+      "extended_text_preserved": true,
+      "original_layers": {
+        "unclassified_or_core": 8,
+        "stakes": 1,
+        "principles": 1,
+        "scripture": 23,
+        "formation": 1,
+        "social": 3,
+        "symbols": 3,
+        "alchemy": 1
+      }
+    }
+  ]
+}

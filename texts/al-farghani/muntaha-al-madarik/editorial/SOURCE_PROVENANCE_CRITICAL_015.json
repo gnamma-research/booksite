@@ -1,0 +1,93 @@
+{
+  "schema": "gnamma-farghani-source-register-v4",
+  "stage": "XV",
+  "date": "2026-11-09",
+  "work": "Saʿīd al-Dīn al-Farghānī, Muntahā al-madārik, four foundations and concluding preface",
+  "printed_page_coordinate": "B2007 Beirut pp18–145; distinct I1876 print pagination",
+  "cumulative": {
+    "english_working_pages": 128,
+    "selected_bilingual_loci": 559,
+    "selected_b2007_direct_digitized": 283,
+    "selected_secondary_derived_transcription": 276,
+    "source_page_labels_with_selected_entries": 128,
+    "fully_line_proofread_print_pages": 0,
+    "source_primary_photographic_1876_loci": 14,
+    "source_primary_photographic_1876_differences_against_later_digital": 6,
+    "source_primary_photographic_1876_agreements": 8,
+    "distinct_1876_printed_page_labels": 13,
+    "photographed_medieval_manuscript_folios": 0,
+    "independent_medieval_manuscript_variants": 0
+  },
+  "photographic_artifact": {
+    "repository": "gnamma-research/booksite",
+    "workflow_run_id": 42536981050,
+    "artifact_id": 13639926426,
+    "artifact_name": "farghani-i1876-source-review",
+    "artifact_sha256": "ca284622578ec62f45a1db64fbca0b73f6ccb5d341c6f27c3c0ece107abe861b",
+    "expiry_date": "2026-12-08",
+    "source_type": "historical 1876 printed photographs, NOT MSS",
+    "official_viewer": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en",
+    "official_pdf": "https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf"
+  },
+  "new_verified_photographic_loci": [
+    {
+      "id": "I1876-L11",
+      "B2007_printed_page": 38,
+      "I1876_printed_page": 20,
+      "scan": 24,
+      "modern_digital": "القابل",
+      "original_print": "القابل",
+      "relationship": "bounded agreement",
+      "variant_of_handwritten_manuscript": false,
+      "provisional_editorial_decision": "retain القابل"
+    },
+    {
+      "id": "I1876-L12",
+      "B2007_printed_page": 48,
+      "I1876_printed_page": 28,
+      "scan": 32,
+      "modern_digital": "بسبحاب",
+      "original_print": "بسبحات",
+      "relationship": "printed source versus modern digital difference",
+      "variant_of_handwritten_manuscript": false,
+      "provisional_editorial_decision": "edited lemma بسبحات; corrected English splendours"
+    },
+    {
+      "id": "I1876-L13",
+      "B2007_printed_page": 61,
+      "I1876_printed_page": 38,
+      "scan": 42,
+      "modern_derivative": "فذلك الإيثار يكون بالوجود أولا ثم بالبقاء ثانيا ثم بنفخ الروح والحياة ثالثا",
+      "original_print_core": "الإيثار يكون بالوجود أولا ثم بالبقاء ثانيا ثم بنفخ الروح والحياة ثالثا",
+      "relationship": "bounded core agreement, connective differs",
+      "variant_of_handwritten_manuscript": false
+    },
+    {
+      "id": "I1876-L14",
+      "B2007_printed_page": 62,
+      "I1876_printed_page": 39,
+      "scan": 43,
+      "modern_derivative": "تعميما وهو الاسم الغفار وتعديدا وهو الاسم الغفور",
+      "original_print": "تعميما وهو الاسم الغفار وتعديدا وهو الاسم الغفور",
+      "relationship": "bounded agreement",
+      "variant_of_handwritten_manuscript": false
+    }
+  ],
+  "pending_photo_observations": [
+    {
+      "id": "I1876-OBS15-PENDING",
+      "B2007_page": 52,
+      "I1876_page": 32,
+      "scan": 36,
+      "question": "digital سم الحكيم vs low resolution photograph possibly اسم الحكم",
+      "verified_variant": false,
+      "counts_toward_collation": false,
+      "reason": "not legible enough to confirm final yāʾ and the different divine name; must inspect high-resolution source"
+    }
+  ],
+  "apparatus": "editorial/I1876_COLLATION_CUMULATIVE_005.json",
+  "archived_master": "editorial/CUMULATIVE_SELECTED_BILINGUAL_015.md",
+  "next_critical_action": "Photograph B2007 paper page 52 and original-resolution I1876 scan36; obtain actual C1107/R670/K273 folios; full Arabic page-by-page collation",
+  "definitive_critical_edition": false,
+  "note": "Print agreement or difference is not proof of authorial reading or handwritten manuscript variant. Selected source-locus count is not full-page line proof."
+}

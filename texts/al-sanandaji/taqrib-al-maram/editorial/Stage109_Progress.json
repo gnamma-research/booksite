@@ -1,0 +1,79 @@
+{
+  "stage": 109,
+  "date": "2026-11-17",
+  "printed_source_position_total": 615,
+  "translation_independently_accepted_complete_literal_all_registers": {
+    "completed": 0,
+    "total": 615,
+    "pct": 0.0,
+    "meaning": "All printed Arabic/English registers independently accepted, not just snippets"
+  },
+  "independent_source_collation_and_second_proof": {
+    "completed": 0,
+    "total": 615,
+    "pct": 0.0,
+    "meaning": "No printed position completed all-register independent proof"
+  },
+  "volume_I_some_arabic_present_active_source_records": {
+    "completed": 1303,
+    "total": 1400,
+    "pct": 93.07,
+    "meaning": "Source presence only, NOT full translation"
+  },
+  "volume_I_arabic_empty_active_records": 97,
+  "volume_II_distinct_53_ID_firstpass_locator_check": {
+    "completed": 53,
+    "total": 53,
+    "pct": 100.0,
+    "meaning": "Previously completed at Stage107, not repeated"
+  },
+  "volume_II_detailed_bounded_single_print_source_locus_checks": {
+    "completed": 4,
+    "total": 53,
+    "pct": 7.55,
+    "meaning": "3 inherited Stage108 checks + 1 full bounded G-note source alignment; II224 duplicate crosswalk is NOT another unique source span"
+  },
+  "volume_II_GII229_note_firstpass_complete_bounded_span": {
+    "completed": 1,
+    "total": 1,
+    "pct": 100.0,
+    "meaning": "Entire identifiable single printed lower note transcribed and English aligned first pass, NOT independent proof"
+  },
+  "volume_II_independently_full_clause_proof": {
+    "completed": 0,
+    "total": 53,
+    "pct": 0.0
+  },
+  "migration_known_stage108_all_volume_asset_receipt": {
+    "completed": 801,
+    "total": 801,
+    "pct": 100.0,
+    "byte_identical": 799,
+    "updated_readers_exact_old_bytes_preserved": 2
+  },
+  "migration_all_historical_volumeII_assets": {
+    "known_original_library_assets": 5,
+    "total": null,
+    "pct": null,
+    "meaning": "Original Stage38 native JSON and remote Stage51 script bytes not yet received; denominator unknown"
+  },
+  "independent_manuscript_witnesses": {
+    "verified": 0,
+    "total": null,
+    "pct": null
+  },
+  "volumeII_previously_reconciled_english_baseline": {
+    "main_pages_exact": 100,
+    "main_pages_total": 100,
+    "lower_sections_exact": 163,
+    "lower_sections_total": 163,
+    "not_literal_source_critical_proof": true
+  },
+  "next_volumeI": "I046.upper.02",
+  "next_volumeI_printed_page": 46,
+  "next_volumeI_pdf_page": 59,
+  "next_volumeII": "(قوله وسلب علومهم التي إلخ) lower note beginning II229 continuing onto II230; independent second proof of G.II.229.21.01 and II224 matn/sharh segmentation",
+  "old_chats_archived": false,
+  "Tahdhib_merged": false,
+  "live_browser_QA": "not verified"
+}

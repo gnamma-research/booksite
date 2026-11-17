@@ -1,0 +1,22 @@
+{
+  "stage": 107,
+  "inherited_checkpoint": "Stage106",
+  "inherited_checkpoint_full_two_volume_archive_sha256": "8cd0cec48b8f8422a166a1521e1290507e490a97c95a6cb096cd3e53ead1fa1e",
+  "inherited_known_file_total": 741,
+  "all_inherited_known_files_present": 741,
+  "byte_identical_files": 739,
+  "changed_reader_entrypoints_original_exact_bytes_still_retained": 2,
+  "reader_entrypoints": [
+    "Volume_I/index.html",
+    "Volume_I/stage84-reader.html"
+  ],
+  "source_pdf_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "volume_I_source_images_hash_verified": 280,
+  "full_historical_volume_II_asset_denominator": "unknown",
+  "historical_volume_II_original_assets_received": 5,
+  "remote_three_clauses_module_original_JS_bytes_received": false,
+  "historical_archive_gates": "OPEN",
+  "original_chats_unarchived": true,
+  "full_archive_contains_all_predecessor_files": true,
+  "no_claim_of_full_historical_volumeII_receipt": true
+}

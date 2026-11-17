@@ -1,0 +1,12 @@
+{
+  "schema": "gnamma-daruri-stage1-retirement-v1",
+  "status": "isolated-retirement-qa-not-published",
+  "archival_rollback_branch": "archive/daruri-stage1-pre-retirement-20261023",
+  "archival_rollback_commit": "37b8c1bab2f2e4c255eb5d05a368cecefd24a1f6",
+  "removed_complete_variant_pdfs": 120,
+  "approved_base_pdf_designs": 12,
+  "reusable_apparatus_packet_pdfs": 15,
+  "distinct_signed_link_profiles": 120,
+  "separately_published_canonical_pdfs": 5,
+  "runtime": "browser-side SHA-bound PDF assembly from canonical source PDF plus reusable packet; no downloaded completed variant"
+}

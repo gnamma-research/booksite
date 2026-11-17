@@ -80,6 +80,13 @@
       if(button.dataset.palette){
         show('Palette',button.getAttribute('aria-label')||button.dataset.palette);
       }
+      if(button.dataset.themeChoice){
+        requestAnimationFrame(()=>{
+          sync();
+          show('Appearance',button.dataset.themeChoice==='system'?'System':
+            button.dataset.themeChoice==='dark'?'Dark':'Light');
+        });
+      }
     });
     sync();
   }

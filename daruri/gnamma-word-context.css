@@ -73,3 +73,62 @@
 .gnw-root .gnw-grammar small{margin-bottom:11px}
 .gnw-root .gnw-grammar ul{padding-inline-start:18px;margin-bottom:11px}
 .gnw-root .gnw-morph-line>span{color:var(--text-soft,#67746d);font-size:11px}
+
+
+/* Selection must be visibly highlighted, not merely copied to the clipboard.
+   The original reader uses --gold-soft (very close to paper), so a selected
+   range was real but nearly invisible in desktop light palettes.
+   Cover nested spans, notes and search marks as well as passage paragraphs. */
+#reader .passage-ar::selection,
+#reader .passage-en::selection,
+#reader .passage-ar *::selection,
+#reader .passage-en *::selection {
+ background:#accfcc!important;
+ background:color-mix(in srgb,var(--accent,#235c56) 50%,var(--paper,#fffdf8) 50%)!important;
+ color:var(--text,#172e29)!important;
+}
+#reader .passage-ar, #reader .passage-en {
+ -webkit-user-select:text;
+ user-select:text;
+}
+
+/* Explicit desktop right-click actions. Never cover a selection with a
+   modal on a plain tap/click, and leave native context menus for selections. */
+.gnw-reader-menu {
+ position:fixed;
+ z-index:10009;
+ width:max-content;
+ max-width:min(360px,calc(100vw - 16px));
+ padding:5px;
+ border:1px solid var(--line,#d8d3c8);
+ border-radius:9px;
+ background:var(--surface,#fffdf8);
+ color:var(--text,#25322f);
+ box-shadow:0 9px 30px rgba(0,0,0,.19);
+ font:500 13px/1.3 var(--sans,system-ui,sans-serif);
+}
+.gnw-reader-menu button {
+ display:flex;
+ align-items:center;
+ gap:10px;
+ width:100%;
+ min-height:40px;
+ border:0;
+ border-radius:6px;
+ padding:7px 10px;
+ background:transparent;
+ color:inherit;
+ cursor:pointer;
+ text-align:left;
+}
+.gnw-reader-menu button:is(:hover,:focus-visible) {
+ outline:2px solid var(--accent,#235c56);
+ outline-offset:0;
+ background:var(--accent-soft,#e5eee9);
+}
+.gnw-reader-menu bdi[lang="ar"] {
+ font:normal 18px/1.4 'Amiri','Noto Naskh Arabic',serif;
+ max-width:190px;
+ overflow:hidden;
+ text-overflow:ellipsis;
+}

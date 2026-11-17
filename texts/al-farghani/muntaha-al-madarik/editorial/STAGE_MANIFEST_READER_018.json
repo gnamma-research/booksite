@@ -1,0 +1,138 @@
+{
+  "schema": "gnamma-farghani-introduction-reader-stage-v3",
+  "stage": "XVIII",
+  "date_utc": "2026-11-11",
+  "repo": "gnamma-research/booksite",
+  "branch": "master",
+  "scope": "Only the four-foundation introduction and concluding preface, B2007 pp18–145; excludes the main verse-by-verse poem commentary",
+  "inherited_source_status": {
+    "english_working_pages": 128,
+    "selected_critical_records": 559,
+    "modern_digitized_selected": 283,
+    "derivative_selected": 276,
+    "historical_print_bounded_loci": 15,
+    "print_to_digital_differences": 7,
+    "bounded_agreements": 8,
+    "fully_exhaustive_print_pages": 0,
+    "medieval_manuscript_variants": 0
+  },
+  "reader_corrections": {
+    "page_links_preserved": 128,
+    "part_divisions": 5,
+    "source_apparatus_entries": 128,
+    "optional_notes": 70,
+    "editorial_continuation_labels_removed": 11,
+    "extra_progress_paragraphs_relocated": 2,
+    "formatting_repairs_pages": [
+      21,
+      31,
+      34,
+      83,
+      113
+    ],
+    "historical_p34_corrected_to": "الحضرة العمائية",
+    "later_online_p34_retained": "الحضرة العملية",
+    "new_substantive_arabic_readings": 0
+  },
+  "features": [
+    "full English paragraph search",
+    "128-page contents",
+    "per-page source provenance",
+    "last place and bookmarks",
+    "reading progress",
+    "font scaling",
+    "paper/mist/night themes",
+    "desktop width",
+    "mobile Aa Tools",
+    "focus and accessible exit",
+    "printed-page labels optional",
+    "copy citation",
+    "print",
+    "critical clause page/deep-link filters",
+    "critical records 60 per batch"
+  ],
+  "browser_qa": {
+    "tests": "tests/farghani/verify_browser.py",
+    "static": "tests/farghani/verify_reader.py",
+    "workflow": ".github/workflows/farghani-introduction-reader-qa.yml",
+    "passing_reference_run": 42974501898,
+    "browsers": [
+      "chromium desktop",
+      "chromium phone",
+      "webkit desktop",
+      "webkit phone"
+    ],
+    "browser_report_artifact": "farghani-introduction-reader-browser-qa",
+    "meaning": "static and interaction/visual browser tests, not linguistic collation"
+  },
+  "archive": {
+    "path": "editorial/FULL_CUMULATIVE_READER_018.md",
+    "git_blob_sha": "e91627decb9a8ba982028a97f174c0392e6a4c26",
+    "embedded_source_files": 18,
+    "embedded_utf8_bytes": 2488072,
+    "embedded_scope": "full intro English, 559 graded excerpts, critical modules, reader code, print-evidence registers; no physical JPEG bundle"
+  },
+  "exact_restart": "Read editorial/STAGE_HANDOFF_READER_018.md and editorial/READER_REVIEW_018.md, verify latest Actions status; preserve source grades and 128 labels. No main poem commentary.",
+  "assets": [
+    {
+      "path": "editorial/FULL_CUMULATIVE_READER_018.md",
+      "git_blob_sha": "e91627decb9a8ba982028a97f174c0392e6a4c26"
+    },
+    {
+      "path": "editorial/STAGE_HANDOFF_READER_018.md",
+      "git_blob_sha": "edab9bcf55fc227a7b9926bf5fb7b3df7ec62e6a"
+    },
+    {
+      "path": "editorial/READER_REVIEW_018.md",
+      "git_blob_sha": "3f1249b8604c9f8b051fd981c483b8ed8f4af0c6"
+    },
+    {
+      "path": "editorial/WORKING_TRANSLATION_18_145.md",
+      "git_blob_sha": "4fbc6dd9bcd2d76172aaf9488dd1036ec2d3bd35"
+    },
+    {
+      "path": "editorial/CUMULATIVE_SELECTED_BILINGUAL_016.md",
+      "git_blob_sha": "9edc9f4dbd054d0ceaf1b2ff7796caa1e46a12e5"
+    },
+    {
+      "path": "editorial/ALL_CRITICAL_DATASETS_017.md",
+      "git_blob_sha": "f58ccc256e1af619bf369f881819c4ec676d8480"
+    },
+    {
+      "path": "continuous-translation.html",
+      "git_blob_sha": "6fc23915ac182bcdef7e2c777674fcd39d2e0041"
+    },
+    {
+      "path": "full-reader.css",
+      "git_blob_sha": "107d39c4148718814663578bc21305aa6099fdb8"
+    },
+    {
+      "path": "full-reader.js",
+      "git_blob_sha": "c5d4475d4e75cbf2e0d3a6a1a2f3e9f502f6a50a"
+    },
+    {
+      "path": "critical-edition.html",
+      "git_blob_sha": "b24cf6557523f1a07ae1f9aa64c55838ea3e8a63"
+    },
+    {
+      "path": "critical-reader.js",
+      "git_blob_sha": "3ba13c7643f659b771a73b6480a6b0553e4e9c95"
+    },
+    {
+      "path": "reader.js",
+      "git_blob_sha": "c624e9303ce781f2548d0d4d9962891ec7c0d7e6"
+    },
+    {
+      "path": "reader.css",
+      "git_blob_sha": "698db6585024300a4bcbae7d35bdf498c4c2ee96"
+    },
+    {
+      "path": "index.html",
+      "git_blob_sha": "63d9a76c490b3cd6276a2630ba1357533689ed24"
+    },
+    {
+      "path": "data/units.js",
+      "git_blob_sha": "1f9725df629cd16003083a5ff5002acaf5fb340c"
+    }
+  ]
+}

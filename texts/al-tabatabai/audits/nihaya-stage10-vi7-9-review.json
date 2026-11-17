@@ -1,0 +1,850 @@
+{
+  "schema": "nihaya.fresh-complete-comparison.v1",
+  "project": "Nihāyat al-Ḥikma",
+  "date": "2026-11-10",
+  "assignedRange": [
+    "N-VI-07",
+    "N-VI-08",
+    "N-VI-09"
+  ],
+  "status": "three complete fresh comparisons",
+  "completedUnitCount": 3,
+  "completionDefinition": "Stored Arabic and English read in full; every corresponding early printed page visually read, including chapter boundaries; every later digital body paragraph and footnote read. Targeted match scripts only verify source identity and replacement preconditions, not completion of reading.",
+  "inputBookSHA256": "a3d57ed5f2ed991918e2c8057c4ce62f3d9e447da5cb01edd30dd1f45810afc1",
+  "verification": {
+    "uniqueEarlyPagesRead": 6,
+    "laterPagesRead": 10,
+    "laterExtractedParagraphsIncludingNotesMatchedToRawHTML": 94,
+    "rawHTMLMismatchCount": 0,
+    "manuscriptCollationClaimed": false,
+    "specialistCertificationClaimed": false
+  },
+  "units": [
+    {
+      "id": "N-VI-07",
+      "status": "complete",
+      "reviewDate": "2026-11-10",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=134&type=c_fbook",
+        "page": "134–137"
+      },
+      "storedArabicSha256": "0957a3121e48f870aaec1d4b82625acf903c71bcb1e8a93b2eed0765c2274044",
+      "storedEnglishSha256": "ea1740325e9699de45faeb16777b2f87f62a04914a89ca08504ec5f9bddb5c63",
+      "sourceGrade": "Fresh complete-unit AI-assisted comparison of stored Arabic and English, every relevant 1404 printed facsimile page, and the full corresponding 1428 digital body and notes. No manuscript or specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          21
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          17
+        ],
+        "earlyPrintedPages": [
+          106,
+          107,
+          108
+        ],
+        "earlyCanvases": [
+          110,
+          111,
+          112
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          179,
+          180,
+          181,
+          182,
+          183
+        ],
+        "allBoundariesAccounted": true,
+        "segments": [
+          {
+            "storedParagraphs": [
+              1,
+              1
+            ],
+            "earlyPages": [
+              106
+            ],
+            "laterPages": [
+              179
+            ],
+            "topic": "First proof from inseparable predicates and specific forms"
+          },
+          {
+            "storedParagraphs": [
+              2,
+              5
+            ],
+            "earlyPages": [
+              106,
+              107
+            ],
+            "laterPages": [
+              180,
+              181
+            ],
+            "topic": "Sword/house objection; real vs consideration-based compounds, including page-break continuation"
+          },
+          {
+            "storedParagraphs": [
+              6,
+              13
+            ],
+            "earlyPages": [
+              107,
+              108
+            ],
+            "laterPages": [
+              181
+            ],
+            "topic": "Substantial differentiae and second proof from distinctive effects; final phrase continues onto p108"
+          },
+          {
+            "storedParagraphs": [
+              14,
+              17
+            ],
+            "earlyPages": [
+              108
+            ],
+            "laterPages": [
+              182
+            ],
+            "topic": "Individual-form objection and existence-based individuation"
+          },
+          {
+            "storedParagraphs": [
+              18,
+              21
+            ],
+            "earlyPages": [
+              108
+            ],
+            "laterPages": [
+              182,
+              183
+            ],
+            "topic": "Complete conclusion and both consequences; next chapter begins on early109/later184"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_c/scans/early-110.jpg",
+          "path": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_c/scans/early-110.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/110",
+          "printedPage": 106,
+          "canvas": 110,
+          "sha256": "36344e0f6f6602546550e575c429c00b8de5f4b79160bebfc232799eef4af724",
+          "kind": "full-page printed facsimile freshly visually read"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_c/scans/early-111.jpg",
+          "path": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_c/scans/early-111.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/111",
+          "printedPage": 107,
+          "canvas": 111,
+          "sha256": "bc2373707878f41a3aa4bfae90fba00035a6441846b40c788acfc910d1371e2e",
+          "kind": "full-page printed facsimile freshly visually read"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_c/scans/early-112.jpg",
+          "path": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_c/scans/early-112.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/112",
+          "printedPage": 108,
+          "canvas": 112,
+          "sha256": "141c09fe9f63724b2081981569b00874ca1cd1442f70a6b09ea2bf2ffdfa7d5f",
+          "kind": "full-page printed facsimile freshly visually read"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-161.html",
+          "path": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_a/html/3108-161.html",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=161&type=c_fbook",
+          "sha256": "e25d640226402ef417bcb483ddd36bf410555620bb5ed6899d34987ed5de3bd0",
+          "kind": "full corresponding later-edition body and notes freshly read; extracted paragraphs checked against raw numbered HTML containers"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-181.html",
+          "path": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_a/html/3108-181.html",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=181&type=c_fbook",
+          "sha256": "6a21c7e165e40c0c4e5bfa1c831c70d6a22c874f9b39a3e5086abc3ed25e5ac2",
+          "kind": "full corresponding later-edition body and notes freshly read; extracted paragraphs checked against raw numbered HTML containers"
+        }
+      ],
+      "arabicCorrections": [
+        {
+          "old": "ولم ينضمّ إليها إلاّ هيئآت عَرَضيّة",
+          "new": "ولم ينضمّ إليهما إلاّ هيئآت عَرَضيّة",
+          "reason": "Adopt the explicit later dual pronoun referring to الطين والحجر. The early/base feminine singular has no suitable immediate feminine antecedent; English already says the added configurations without specifying the pronoun.",
+          "earlyPages": [
+            106
+          ],
+          "laterPages": [
+            180
+          ],
+          "laterNote": 6,
+          "sourceGrade": "explicit-later-editor-emendation",
+          "earlyReading": "ولم ينضم إليها إلا هيئات عرضية",
+          "laterReading": "ولم ينضمّ إليهما إلّا هيئات عرضيّة",
+          "laterNoteText": "في النسخ : «إليها». وما أثبتناه هو الصحيح."
+        }
+      ],
+      "englishCorrections": [
+        {
+          "old": "such as swords, houses, and other artificial things.",
+          "new": "as with artificial objects such as swords and houses, and with other composites of this kind.",
+          "reason": "The source ends كالسيف والبيت من الأمور الصناعية وغيرها. The existing English restricts the final others to artificial objects, whereas the source also allows other consideration-based compounds. Preserve that wider scope.",
+          "earlyPages": [
+            106,
+            107
+          ],
+          "laterPages": [
+            180
+          ],
+          "laterNote": null,
+          "sourceGrade": "English-scope-correction-against-both-external-witnesses"
+        }
+      ],
+      "orthographicCorrections": [
+        {
+          "old": "هيئآت",
+          "new": "هيئات",
+          "reason": "Correct spelling of the plural configurations; both witnesses print هيئات. Two occurrences in the objection.",
+          "earlyPages": [
+            106
+          ],
+          "laterPages": [
+            180
+          ],
+          "laterNote": null,
+          "sourceGrade": "jointly-attested-spelling-repair",
+          "occurrences": 2
+        },
+        {
+          "old": "المركّبات الإعتباريّه",
+          "new": "المركّبات الإعتباريّة",
+          "reason": "Restore tāʾ marbūṭa; both witnesses print اعتبارية.",
+          "earlyPages": [
+            106
+          ],
+          "laterPages": [
+            180
+          ],
+          "laterNote": null,
+          "sourceGrade": "jointly-attested-spelling-repair"
+        },
+        {
+          "old": "آثاراً مختّصةً",
+          "new": "آثاراً مختصّةً",
+          "reason": "Move the misplaced shadda from tāʾ to ṣād in مختصّة; not a new substantive variant.",
+          "earlyPages": [
+            108
+          ],
+          "laterPages": [
+            182
+          ],
+          "laterNote": null,
+          "sourceGrade": "editorial-lexical-vocalization"
+        }
+      ],
+      "vocalizationCorrections": [
+        {
+          "old": "وتلبُس الجسم",
+          "new": "وتلبُّس الجسم",
+          "reason": "Restore the verbal noun تلبّس, qualification by the concepts; the source consonants are unchanged.",
+          "earlyPages": [
+            106
+          ],
+          "laterPages": [
+            179
+          ],
+          "laterNote": null,
+          "sourceGrade": "contextual-vocalization; no-decisive-case-vowel-attestation-claimed"
+        },
+        {
+          "old": "بالموضوع المشخِّصَ والأعراضَ الفعليّة",
+          "new": "بالموضوع المشخَّصِ. والأعراضُ الفعليّة",
+          "reason": "Retain the early/base consonants المشخص but vocalize them passively: the subject is individuated, not an individuator. The adjective is genitive after بالموضوع; الأعراض begins the following nominal clause and is nominative. The punctuation separates the clauses. Later المتشخص expresses the same sense but adds a consonant and is not imported.",
+          "earlyPages": [
+            108
+          ],
+          "laterPages": [
+            182
+          ],
+          "laterNote": null,
+          "sourceGrade": "contextual-vocalization-and-punctuation; early-consonants-preserved",
+          "earlyReading": "بالموضوع المشخص والأعراض الفعلية",
+          "laterReading": "بالموضوع المتشخّص. والأعراض الفعليّة"
+        }
+      ],
+      "proposedAuthorNotes": [],
+      "proposedEditorialNotes": [
+        {
+          "type": "Later editorial clarification · causal priority",
+          "text": "At 1428 vol.1 p.182 n.3, the editor explains that specific form is not an efficient cause here in the sense of independently bestowing existence. He quotes a pupil of the author who reads “prior to it” as priority in causation, not priority in time. The main text of both editions retains the author’s formulation; this note attributes the clarification to the later commentary.",
+          "sourceVolume": 1,
+          "sourcePage": 182,
+          "sourceFootnote": 3,
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=182&type=c_fbook"
+        }
+      ],
+      "unadoptedVariants": [
+        {
+          "earlyPage": 106,
+          "laterPage": 179,
+          "earlyAndBaseReading": "فهي مقومة لجوهر ذاته",
+          "laterReading": "وهي مقوّمة لجوهر ذاته",
+          "decision": "Retain the early/base consequential conjunction; both constructions carry the same proof."
+        },
+        {
+          "earlyPage": 106,
+          "laterPage": 180,
+          "laterNote": 5,
+          "earlyAndBaseReading": "السؤال عنه",
+          "laterReading": "السؤال عنهما",
+          "laterNoteText": "وفي النسخ : «السؤال عنه». وما أثبتناه هو الصحيح.",
+          "decision": "Retain the singular question about the newly constructed building, an explicit masculine antecedent بناء. The later dual refers instead to clay and stone and is an optional anaphoric clarification, unlike the adopted إليها/إليهما correction."
+        },
+        {
+          "earlyPage": 107,
+          "laterPage": 181,
+          "earlyAndBaseReading": "صدق العرض العام على الخاصة",
+          "laterReading": "صدق العرض العامّ على الخاصّ",
+          "decision": "Retain the early/base reading and the English property. The later unfootnoted form is recorded but does not justify silently replacing the authorial formulation."
+        },
+        {
+          "earlyPage": 108,
+          "laterPage": 182,
+          "earlyAndBaseReading": "بالموضوع المشخص",
+          "laterReading": "بالموضوع المتشخص",
+          "decision": "Retain early consonants and read passive المشخَّصِ; the existing English individuated already gives that coherent sense. Do not import the later added tāʾ."
+        }
+      ],
+      "argumentFindings": [
+        "All21 Arabic and17 English paragraphs are accounted for. Both proofs, both first-proof objections, the individual-form objection, the complete conclusion, and both stated consequences are present.",
+        "The conclusion distinguishes the dependence of secondary matter on specific form from corporeal form’s partnership in preserving prime matter. The English preserves causal priority and the replacement of corporeality with specific form; it does not assert temporal priority.",
+        "The first objection’s singular question can refer to بناء. A dual correction is not automatically obligatory merely because the later editor prints one.",
+        "No original authorial footnote or quotation locator was omitted from this chapter. Later references to Suhrawardī, Ṣadrā, Ibn Sīnā and Bahmanyār are editor apparatus."
+      ],
+      "editorialCommentary": [
+        {
+          "laterPages": [
+            179,
+            180,
+            181
+          ],
+          "finding": "The later editor identifies Peripatetic and Illuminationist positions, cites the proofs and objections in Ṣadrā, Ibn Sīnā and Bahmanyār, and explicates the examples. These attributions are not added authorial sentences."
+        },
+        {
+          "laterPages": [
+            182,
+            183
+          ],
+          "finding": "At182n3, the editor says efficient cause here does not mean a separate bestower of existence and quotes a pupil interpreting the priority as causal, not temporal. At183n1 he cross-refers to his earlier disagreement on matter/form priority."
+        }
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 106,
+          "canvas": 110,
+          "ordinal": "الفصل السابع",
+          "title": "في إثبات الصور النوعية وهي الصور الجوهرية المنوعة لجوهر الجسم المطلق"
+        },
+        "later": {
+          "volume": 1,
+          "page": 179,
+          "ordinal": "الفصل السابع",
+          "title": "في إثبات الصور النوعيّة",
+          "subtitle": "وهي الصور الجوهريّة المنوّعة لجوهر الجسم المطلق"
+        },
+        "subheadings": [
+          {
+            "title": "خاتمة للفصل",
+            "earlyPage": 108,
+            "laterPage": 182,
+            "original": true
+          }
+        ]
+      },
+      "noMissingAuthorialNoteObserved": true,
+      "headingRecommendation": {
+        "old": "الفصل السابع — في إثبات الصور النوعيّة وهي الصور الجوهريّة — المنوِّعة لجوهر الجسم المطلق",
+        "new": "الفصل السابع — في إثبات الصور النوعيّة وهي الصور الجوهريّة المنوِّعة لجوهر الجسم المطلق",
+        "reason": "Remove the reader’s spurious em dash between noun and adjective; retain every original heading clause."
+      }
+    },
+    {
+      "id": "N-VI-08",
+      "status": "complete",
+      "reviewDate": "2026-11-10",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=137&type=c_fbook",
+        "page": "137–139"
+      },
+      "storedArabicSha256": "bed46c906900f371693b73dfee6a5c8db55e79ce4e3aedbc1f60a5045107d983",
+      "storedEnglishSha256": "4afe0f5c6f0129ec2153f811b6b5227eeee594523680f4e567e89c741c6d8c15",
+      "sourceGrade": "Fresh complete-unit AI-assisted comparison of stored Arabic and English, every relevant 1404 printed facsimile page, and the full corresponding 1428 digital body and notes. No manuscript or specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          8
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          5
+        ],
+        "earlyPrintedPages": [
+          109
+        ],
+        "earlyCanvases": [
+          113
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          184,
+          185
+        ],
+        "allBoundariesAccounted": true,
+        "segments": [
+          {
+            "storedParagraphs": [
+              1,
+              4
+            ],
+            "earlyPages": [
+              109
+            ],
+            "laterPages": [
+              184
+            ],
+            "topic": "Accident definition, highest genera, and preferred quantity definition"
+          },
+          {
+            "storedParagraphs": [
+              5,
+              8
+            ],
+            "earlyPages": [
+              109
+            ],
+            "laterPages": [
+              184,
+              185
+            ],
+            "topic": "Division and equality definitions, both objections and complete three-property conclusion"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_c/scans/early-113.jpg",
+          "path": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_c/scans/early-113.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/113",
+          "printedPage": 109,
+          "canvas": 113,
+          "sha256": "205ad9e8ee1e195e916fa276a4cb12ee3969360c7a4f20c6d6f33e834182da85",
+          "kind": "full-page printed facsimile freshly visually read"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-181.html",
+          "path": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_a/html/3108-181.html",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=181&type=c_fbook",
+          "sha256": "6a21c7e165e40c0c4e5bfa1c831c70d6a22c874f9b39a3e5086abc3ed25e5ac2",
+          "kind": "full corresponding later-edition body and notes freshly read; extracted paragraphs checked against raw numbered HTML containers"
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [],
+      "orthographicCorrections": [
+        {
+          "old": "أجناس عاليّة",
+          "new": "أجناس عالية",
+          "reason": "Remove the spurious shadda: high genera are عالية, not عاليّة. Both external texts have عالية.",
+          "earlyPages": [
+            109
+          ],
+          "laterPages": [
+            184
+          ],
+          "laterNote": null,
+          "sourceGrade": "editorial-lexical-vocalization"
+        },
+        {
+          "old": "شيءواحد",
+          "new": "شيء واحد",
+          "reason": "Restore the word boundary present in both external witnesses.",
+          "earlyPages": [
+            109
+          ],
+          "laterPages": [
+            184
+          ],
+          "laterNote": null,
+          "sourceGrade": "jointly-attested-word-separation"
+        },
+        {
+          "old": "خواصٌ ثلاثةٌ",
+          "new": "خواصٌّ ثلاثةٌ",
+          "reason": "Supply the required doubled ṣād of خواصّ, visible in the early print and explicit in the later text; retain the source’s number wording.",
+          "earlyPages": [
+            109
+          ],
+          "laterPages": [
+            185
+          ],
+          "laterNote": null,
+          "sourceGrade": "jointly-attested-lexical-vocalization"
+        }
+      ],
+      "vocalizationCorrections": [],
+      "proposedAuthorNotes": [],
+      "proposedEditorialNotes": [],
+      "unadoptedVariants": [
+        {
+          "earlyPage": 109,
+          "laterPage": 184,
+          "earlyAndBaseReading": "في موضوع مستغن عنه",
+          "laterReading": "في موضوع مستغن عنها",
+          "decision": "Retain the masculine reference to العرض; the later feminine refers to ماهية. Both are intelligible and the English subject independent of it requires no change."
+        }
+      ],
+      "argumentFindings": [
+        "All8 Arabic and5 English paragraphs are present. The preferred measure-by-repetition definition, the criticism of the division definition, the circularity objection against equality, and the final three properties are all translated.",
+        "No Arabic or English semantic correction is warranted. Only a word boundary and two lexical-mark repairs are proposed.",
+        "The entire chapter occupies early printed109, ending before the visible ninth-chapter heading. Later body and notes occupy184–185 and end before186. No omitted authorial note was observed."
+      ],
+      "editorialCommentary": [
+        {
+          "laterPages": [
+            184
+          ],
+          "finding": "The priority of quantity, bibliography of the definitions, and Sabzawārī’s clarification that the intended division is conceptual rather than destructive are later editor commentary."
+        },
+        {
+          "laterPages": [
+            185
+          ],
+          "finding": "The editor cites Bidāya p99 for the division definition, reproduces al-Taftāzānī’s distinction between potential division and the wider supposition of distinct parts, and gives al-Rāzī’s reply that sensible equality may define an intellectually abstract quantity. These are objections and replies in apparatus, not missing author body."
+        }
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 109,
+          "canvas": 113,
+          "ordinal": "الفصل الثامن",
+          "title": "في الكم وهو من المقولات العرضية"
+        },
+        "later": {
+          "volume": 1,
+          "page": 184,
+          "ordinal": "الفصل الثامن",
+          "title": "في الكمّ وهو من المقولات العرضيّة"
+        }
+      },
+      "noMissingAuthorialNoteObserved": true
+    },
+    {
+      "id": "N-VI-09",
+      "status": "complete",
+      "reviewDate": "2026-11-10",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=139&type=c_fbook",
+        "page": "139–141"
+      },
+      "storedArabicSha256": "194ff19a7f3b048931cdc53377d0e2d3d2815ec579ef56a9cae884b0c7d53790",
+      "storedEnglishSha256": "77d06c8610a62a4f3e301512c971e2413ca496e2febbae8c37e84fb2904bd4de",
+      "sourceGrade": "Fresh complete-unit AI-assisted comparison of stored Arabic and English, every relevant 1404 printed facsimile page, and the full corresponding 1428 digital body and notes. No manuscript or specialist certification claimed.",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          18
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          8
+        ],
+        "earlyPrintedPages": [
+          109,
+          110,
+          111
+        ],
+        "earlyCanvases": [
+          113,
+          114,
+          115
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          186,
+          187,
+          188
+        ],
+        "allBoundariesAccounted": true,
+        "segments": [
+          {
+            "storedParagraphs": [
+              1,
+              4
+            ],
+            "earlyPages": [
+              109,
+              110
+            ],
+            "laterPages": [
+              186
+            ],
+            "topic": "Primary division, common limit definition, full middle-line-segment example and infinite divisibility"
+          },
+          {
+            "storedParagraphs": [
+              5,
+              10
+            ],
+            "earlyPages": [
+              110
+            ],
+            "laterPages": [
+              187
+            ],
+            "topic": "Discrete quantity and five example; stable/nonstable, temporal potentiality and three spatial dimensions"
+          },
+          {
+            "storedParagraphs": [
+              11,
+              15
+            ],
+            "earlyPages": [
+              110
+            ],
+            "laterPages": [
+              187,
+              188
+            ],
+            "topic": "External existence and conditional assertion about intersecting surfaces and lines"
+          },
+          {
+            "storedParagraphs": [
+              16,
+              18
+            ],
+            "earlyPages": [
+              110,
+              111
+            ],
+            "laterPages": [
+              188
+            ],
+            "topic": "Number species, unity of time, common measures and the complete irregular-figure conclusion"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "archiveRelativePath": "stage9_nihaya_c/scans/early-113.jpg",
+          "path": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_c/scans/early-113.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/113",
+          "printedPage": 109,
+          "canvas": 113,
+          "sha256": "205ad9e8ee1e195e916fa276a4cb12ee3969360c7a4f20c6d6f33e834182da85",
+          "kind": "full-page printed facsimile freshly visually read"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_c/scans/early-114.jpg",
+          "path": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_c/scans/early-114.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/114",
+          "printedPage": 110,
+          "canvas": 114,
+          "sha256": "1d90cc1d5a8a4cc8f2130488916c5dabece18432fae491d9dd40a554e4918a2f",
+          "kind": "full-page printed facsimile freshly visually read"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_c/scans/early-115.jpg",
+          "path": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_c/scans/early-115.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/115",
+          "printedPage": 111,
+          "canvas": 115,
+          "sha256": "014614bd3401d59e43df0b2fbf0d05e9387d434d1330b63363aa0838e9795bf7",
+          "kind": "full-page printed facsimile freshly visually read"
+        },
+        {
+          "archiveRelativePath": "stage9_nihaya_a/html/3108-181.html",
+          "path": "/workspace/scratch/bfa9477bedba/research-stage9/stage9_nihaya_a/html/3108-181.html",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=181&type=c_fbook",
+          "sha256": "6a21c7e165e40c0c4e5bfa1c831c70d6a22c874f9b39a3e5086abc3ed25e5ac2",
+          "kind": "full corresponding later-edition body and notes freshly read; extracted paragraphs checked against raw numbered HTML containers"
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [
+        {
+          "old": "Discrete quantity, namely number, necessarily exists externally.",
+          "new": "Discrete quantity, namely number, self-evidently exists externally.",
+          "reason": "بالضرورة marks the asserted evident status of this existence claim. “Necessarily exists” can wrongly suggest the intrinsic necessary existence of an accidental quantity. Preserve the source’s epistemic claim without turning it into ontological necessity.",
+          "earlyPages": [
+            110
+          ],
+          "laterPages": [
+            187
+          ],
+          "laterNote": null,
+          "sourceGrade": "English-modal-disambiguation-from-context; not-an-Arabic-variant"
+        },
+        {
+          "old": "because there is a common measure among its instances.",
+          "new": "because there is a common measure among their instances.",
+          "reason": "Preserve the early/base feminine أفرادها, whose nearest grammatical antecedent is the several kinds of motions. The current English singular its tacitly follows the later masculine أفراده referring to time. Their keeps the early reference to instances of those motions; disclose the later alternative separately.",
+          "earlyPages": [
+            110,
+            111
+          ],
+          "laterPages": [
+            188
+          ],
+          "laterNote": null,
+          "sourceGrade": "English-anaphoric-alignment-with-retained-early-reading"
+        }
+      ],
+      "orthographicCorrections": [
+        {
+          "old": "متناهيّةً",
+          "new": "متناهيةً",
+          "reason": "Remove the spurious shadda on yāʾ in finite; consonants unchanged.",
+          "earlyPages": [
+            110
+          ],
+          "laterPages": [
+            188
+          ],
+          "laterNote": null,
+          "sourceGrade": "editorial-lexical-vocalization"
+        },
+        {
+          "old": "والمكّعب",
+          "new": "والمكعّب",
+          "reason": "Move shadda from kāf to ʿayn in cube; both editions name the cube at this locus.",
+          "earlyPages": [
+            111
+          ],
+          "laterPages": [
+            188
+          ],
+          "laterNote": null,
+          "sourceGrade": "editorial-lexical-vocalization"
+        }
+      ],
+      "vocalizationCorrections": [
+        {
+          "old": "ثلاثةً أجزاء",
+          "new": "ثلاثةِ أجزاء",
+          "reason": "The numeral is genitive after إلى and in construct with أجزاء, so it is neither accusative nor nunated. No decisive external case vowel is claimed.",
+          "earlyPages": [
+            110
+          ],
+          "laterPages": [
+            186
+          ],
+          "laterNote": null,
+          "sourceGrade": "contextual-editorial-case-vocalization"
+        },
+        {
+          "old": "قوّةً للجزء التالي",
+          "new": "قوّةٌ للجزء التالي",
+          "reason": "قوة is the nominative predicate of إنّ كلّ جزء, not an accusative object; external consonants are unchanged.",
+          "earlyPages": [
+            110
+          ],
+          "laterPages": [
+            187
+          ],
+          "laterNote": null,
+          "sourceGrade": "contextual-editorial-case-vocalization"
+        }
+      ],
+      "proposedAuthorNotes": [],
+      "proposedEditorialNotes": [
+        {
+          "type": "Later editor’s objection · common boundary",
+          "text": "The 1428 editor at vol.1 p.186 n.2 objects to the author’s middle-segment example. He prefers Sabzawārī’s examples of a point between parts of a line, a line between parts of a surface, a surface between parts of a body, and an instant between parts of time. He argues that a middle piece does not distinguish continuous from discrete quantity, since a middle unit could similarly be selected in seven. Both editions retain the author’s example in the body; this is an attributed philosophical objection, not an attested replacement.",
+          "sourceVolume": 1,
+          "sourcePage": 186,
+          "sourceFootnote": 2,
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=186&type=c_fbook"
+        },
+        {
+          "type": "Later philosophical objection · irregular figures",
+          "text": "At 1428 vol.1 p.188 n.2, the editor quotes a pupil of the author who disputes the final claim about irregular figures. The objection is that an irregular figure may be one actual shape; imagining its partition for calculation does not establish actual composition, any more than imagining two triangles makes a square actually composite. Both editions retain the author’s conclusion. This note reports the objection without silently substituting it for the source text.",
+          "sourceVolume": 1,
+          "sourcePage": 188,
+          "sourceFootnote": 2,
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=188&type=c_fbook"
+        }
+      ],
+      "unadoptedVariants": [
+        {
+          "earlyPage": 110,
+          "laterPage": 186,
+          "earlyAndBaseReading": "والخط ذا قسمين",
+          "laterReading": "والخطّ ذو قسمين",
+          "decision": "Retain ذا under the continuing government of يكون. Later ذو can begin a separate nominal clause, but there is no need to replace the coherent early grammar."
+        },
+        {
+          "earlyPage": 111,
+          "laterPage": 188,
+          "earlyAndBaseReading": "بين أفرادها",
+          "laterReading": "بين أفراده",
+          "decision": "Retain the early feminine referring to the preceding motions. The later masculine instead makes time explicit as antecedent; align English their with the retained early reading and record the alternative."
+        }
+      ],
+      "argumentFindings": [
+        "All18 Arabic and8 English paragraphs are accounted for. The middle-segment example, four/six reductio for a common number-boundary, temporal actuality/potentiality claim, external-existence discussion, conditional status of line, and final irregular-figure classification are retained.",
+        "Do not silently correct the author’s geometry: the later edition retains both disputed examples in the body and places objections in notes.",
+        "The claim about number’s external existence is treated as epistemic necessity/self-evidence, not an additional assertion of intrinsic necessary existence.",
+        "No original author footnote or original citation locator is missing. Early111 clearly shows the end of VI9 followed by the tenth-chapter heading; later188 ends the chapter before189."
+      ],
+      "editorialCommentary": [
+        {
+          "laterPages": [
+            186
+          ],
+          "finding": "The editor at n2 objects to treating a middle segment as a common boundary and prefers Sabzawārī’s point/line, line/surface, surface/body and instant/time examples; he argues that the author’s construction would also work for the middle unit of seven."
+        },
+        {
+          "laterPages": [
+            187
+          ],
+          "finding": "Later notes identify the quantity terminology, the reported disagreement of theologians about numbers/magnitudes, and the promised proof of time at IX11. These attributions do not change the body."
+        },
+        {
+          "laterPages": [
+            188
+          ],
+          "finding": "Later n1 attributes distinct number-species to Aristotle/Ibn Sīnā and the majority report in Ṣadrā. Later n2 quotes an author’s pupil objecting that hypothetical partition of an irregular shape does not establish actual composition."
+        }
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 109,
+          "canvas": 113,
+          "ordinal": "الفصل التاسع",
+          "title": "في انقسامات الكم"
+        },
+        "later": {
+          "volume": 1,
+          "page": 186,
+          "ordinal": "الفصل التاسع",
+          "title": "في انقسامات الكمّ"
+        }
+      },
+      "noMissingAuthorialNoteObserved": true
+    }
+  ]
+}

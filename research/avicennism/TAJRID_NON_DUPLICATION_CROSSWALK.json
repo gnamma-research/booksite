@@ -1,0 +1,473 @@
+{
+  "version": "2026-11-01-after-asfar-reconciled",
+  "source": "Tajrid 30-question master (30 Oct 2026), independently compared with late sourcebook",
+  "tajridEdition": "research/tajrid/#debate/01 ... #debate/30",
+  "lateEdition": "research/avicennism/",
+  "principles": [
+    "The Tajrīd reader is canonical for its 30 shared baseline questions and core matn/commentary witnesses.",
+    "The Late Avicennism reader owns historical differential reception: specific late original texts, novel objections and replies, post-Asfār developments, and Persian/Indian/Ottoman teaching traditions.",
+    "A source quoted in both should have one original master; duplicate links are references, not a second competing transcription.",
+    "Record the exact segment, who raises objection, author response, and what later development changes.",
+    "Missing original-language paragraphs or original witnesses remain explicitly unfinished."
+  ],
+  "questions": [
+    {
+      "id": "01",
+      "title": "Is existence definable?",
+      "referencePath": "../tajrid/#debate/01",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "No new parallel edition",
+      "differenceToInvestigate": "Definition vs primitive intelligibility is baseline; ask whether post-Ṣadrian writers recast it as a thesis about the reality of existence.",
+      "existingEvidence": [
+        "nara-actual"
+      ],
+      "remaining": "Need Sabzavārī direct paragraph; no qualifying new unit yet.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "02",
+      "title": "A common concept or graded realities?",
+      "referencePath": "../tajrid/#debate/02",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Late transformation",
+      "differenceToInvestigate": "Trace later Ṣadrian tashkīk, Sabzavārī, Narāqī and critics without re-editing Ṭūsī's common-concept arguments.",
+      "existingEvidence": [
+        "nara-actual"
+      ],
+      "remaining": "Particular existence and abstraction are relevant but not a complete historical controversy.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "03",
+      "title": "The addition of existence to quiddity",
+      "referencePath": "../tajrid/#debate/03",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Late transformation",
+      "differenceToInvestigate": "Compare ontology of particular existence in Narāqī and later Peripatetics with primacy-of-existence debates after al-Asfār.",
+      "existingEvidence": [
+        "nara-actual",
+        "lah-shaw"
+      ],
+      "remaining": "Do not retranslate Shawāriq on jaʿl; cite the separate primary edition.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "04",
+      "title": "Quiddity in itself and the three considerations",
+      "referencePath": "../tajrid/#debate/04",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Supplement only",
+      "differenceToInvestigate": "Take three considerations as a fixed baseline; investigate later *nafs al-amr* and externally grounded conceptual distinctions where genuinely revised.",
+      "existingEvidence": [
+        "nara-second"
+      ],
+      "remaining": "Do not multiply isolated definitions.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "05",
+      "title": "Thingness, establishment, and the nonexistent",
+      "referencePath": "../tajrid/#debate/05",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Later application only",
+      "differenceToInvestigate": "Examine later theories of restoration of the nonexistent, identity and resurrection beyond the Tajrīd general-matters dossier.",
+      "existingEvidence": [],
+      "remaining": "Full later eschatology/identity dossier still lacking.",
+      "noveltyStatus": "no-independent-late-primary-unit",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "06",
+      "title": "Second intelligibles, states, and logical predication",
+      "referencePath": "../tajrid/#debate/06",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Late transformation",
+      "differenceToInvestigate": "Concentrate on Narāqī's reception of second intentions, later Shamsiyya/Hidāya pedagogy and relation to metaphysical predication.",
+      "existingEvidence": [
+        "nara-second"
+      ],
+      "remaining": "Separate direct Narāqī witness from earlier schools reported by him.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "07",
+      "title": "Mental existence and the known object",
+      "referencePath": "../tajrid/#debate/07",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Late transformation",
+      "differenceToInvestigate": "Develop post-Ṣadrian debate over presence/acquisition, self-awareness and the perception of material particulars.",
+      "existingEvidence": [
+        "taft-mental",
+        "jurj-mental",
+        "nara-second",
+        "nara-presence"
+      ],
+      "remaining": "Narāqī's Jāmiʿ al-afkār II:25–27 has a contextual argument for direct awareness (including objections and replies), but the divine-knowledge proof continues past p.27. Primary Ṣadrian/other Persian comparisons remain outstanding.",
+      "noveltyStatus": "one-direct-later-contextual-argument-full-authorial-proof-open",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "08",
+      "title": "True predication of absent and negative objects",
+      "referencePath": "../tajrid/#debate/08",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Supplement only",
+      "differenceToInvestigate": "Research later nonexistents, negative judgments and grounds of objective correctness only where post-Ṣadrian source directly argues them.",
+      "existingEvidence": [],
+      "remaining": "No direct late primary unit on this extension.",
+      "noveltyStatus": "no-independent-late-primary-unit",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "09",
+      "title": "Nafs al-amr and objective truth",
+      "referencePath": "../tajrid/#debate/09",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Distinct later reception",
+      "differenceToInvestigate": "Follow later Persian/Indian interpretations and realist truthmakers, but cross-reference shared Jurjānī/Mīr Zāhid lemmata.",
+      "existingEvidence": [
+        "nara-second"
+      ],
+      "remaining": "Do not reconstruct a separate 'third world' from a single lexical usage.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "10",
+      "title": "Modality: necessity, possibility, impossibility",
+      "referencePath": "../tajrid/#debate/10",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Later causal application",
+      "differenceToInvestigate": "Study how modal sufficiency interacts with post-Tajrīd will, *ʿilla tāmma*, temporal effects, and post-Ṣadrian becoming.",
+      "existingEvidence": [
+        "lah-shaw",
+        "astar-choice"
+      ],
+      "remaining": "Tajrīd question Q10 remains source of basic modal division.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "11",
+      "title": "Definition, proof, and explanatory demonstration",
+      "referencePath": "../tajrid/#debate/11",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "New pedagogy only",
+      "differenceToInvestigate": "Examine structural differences in later Indian/Ottoman lesson texts and argumentative method, not a second handbook of syllogisms.",
+      "existingEvidence": [],
+      "remaining": "No such contextualized late primary text in current reader.",
+      "noveltyStatus": "no-independent-late-primary-unit",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "12",
+      "title": "Individuation, unity, and relational categories",
+      "referencePath": "../tajrid/#debate/12",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Later ontology focus",
+      "differenceToInvestigate": "Investigate relations, order, collective wholes and identity through later philosophical systems; keep common definitions in Tajrīd.",
+      "existingEvidence": [
+        "lah-active",
+        "lah-eman"
+      ],
+      "remaining": "Relation project and this project must cite rather than duplicate each other's definitions.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "13",
+      "title": "Why the contingent needs a cause",
+      "referencePath": "../tajrid/#debate/13",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "New causal allocation",
+      "differenceToInvestigate": "Use Avicenna VI.1–2 only as foundation; focus post-Ṣadrian positions on efficient agency, continued dependence and event-specific conditions.",
+      "existingEvidence": [
+        "av-vi1",
+        "av-vi2",
+        "lah-temporal"
+      ],
+      "remaining": "Not a second general proof of necessity.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "14",
+      "title": "Creation, preservation, and divine concurrence",
+      "referencePath": "../tajrid/#debate/14",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Later metaphysical contrast",
+      "differenceToInvestigate": "Focus *riḍā* vs *qaṣd*, creation through free will, and post-Ṣadrian conserving action with named counterarguments.",
+      "existingEvidence": [
+        "lah-divine",
+        "aq-104a",
+        "aq-104b"
+      ],
+      "remaining": "Thomist articles are cross-tradition comparison, not a later Avicennian witness.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "15",
+      "title": "Four causes, complete causes, instruments and conditions",
+      "referencePath": "../tajrid/#debate/15",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Later natural efficacy",
+      "differenceToInvestigate": "Track whether later commentators retain, revise or replace form-bestowal and individual natural agency after al-Asfār.",
+      "existingEvidence": [
+        "av-ix5",
+        "lah-element",
+        "lah-active"
+      ],
+      "remaining": "Original causal taxonomy stays with Tajrīd.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "16",
+      "title": "Real created efficacy and occasionalism",
+      "referencePath": "../tajrid/#debate/16",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Later allocation of efficacy",
+      "differenceToInvestigate": "Investigate later discussions of created powers, preparatory versus real efficient sources and genuine immanent form-production.",
+      "existingEvidence": [
+        "lah-divine",
+        "lah-element"
+      ],
+      "remaining": "Do not infer causal occasionalism from an emphasis on vertical dependence.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "17",
+      "title": "Substance, body, matter and substantial form",
+      "referencePath": "../tajrid/#debate/17",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Post-Ṣadrian dispute",
+      "differenceToInvestigate": "Contrast later essential forms, prime matter, continuous substance and divisibility, with full nearby objections.",
+      "existingEvidence": [
+        "lah-element",
+        "ch03",
+        "sabz-motion"
+      ],
+      "remaining": "Sabzavārī's ghurar 111 p.301–302 and separately p.305 directly quote Avicenna Physics II.3 and discuss a flowing subject; uninspected pp.303–304 and modern Ḥasanzāda notes preclude full chapter collation.",
+      "noveltyStatus": "one-layered-later-source-with-middle-page-gap",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "18",
+      "title": "Potency, actuality, and continuity of motion",
+      "referencePath": "../tajrid/#debate/18",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Main Late Avicennism priority",
+      "differenceToInvestigate": "Reconstruct original arguments for/against ḥaraka jawhariyya, continuous traversal, transformation and physical disposition across Persian/Indian authors.",
+      "existingEvidence": [
+        "lah-temporal",
+        "nara-actual",
+        "khay-fire",
+        "sabz-motion"
+      ],
+      "remaining": "Sabzavārī's ghurar 111 p.301–302 and separately p.305 directly quote Avicenna Physics II.3 and discuss a flowing subject; uninspected pp.303–304 and modern Ḥasanzāda notes preclude full chapter collation.",
+      "noveltyStatus": "one-layered-later-source-with-middle-page-gap",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "19",
+      "title": "Origination, eternity, and causal necessity",
+      "referencePath": "../tajrid/#debate/19",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Post-Asfār time research",
+      "differenceToInvestigate": "Compare temporal origination, perpetual dependence and event-specific preparation with later substantial motion and time.",
+      "existingEvidence": [
+        "lah-temporal",
+        "av-vi2"
+      ],
+      "remaining": "Medieval astronomy as historical model, not modern empirical physics.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "20",
+      "title": "Soul, faculties, imagination, and acquired perfection",
+      "referencePath": "../tajrid/#debate/20",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Post-Ṣadrian priority",
+      "differenceToInvestigate": "Translate Narāqī, Sabzavārī, Jilwa and Zunūzī on knowledge by presence, embodiment, faculties and persistence.",
+      "existingEvidence": [
+        "lah-active",
+        "nara-second",
+        "nara-presence"
+      ],
+      "remaining": "Narāqī's Jāmiʿ al-afkār II:25–27 has a contextual argument for direct awareness (including objections and replies), but the divine-knowledge proof continues past p.27. Primary Ṣadrian/other Persian comparisons remain outstanding.",
+      "noveltyStatus": "one-direct-later-contextual-argument-full-authorial-proof-open",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "21",
+      "title": "Final causality, providence, and the good",
+      "referencePath": "../tajrid/#debate/21",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Later theory of divine agency",
+      "differenceToInvestigate": "Read late works on *riḍā*, finality, divine knowledge and actual action while retaining distinct levels of teleology.",
+      "existingEvidence": [
+        "lah-divine"
+      ],
+      "remaining": "A purpose-making argument is not the same as empirical natural teleology.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "22",
+      "title": "Divine simplicity, emanation, and the one-from-one rule",
+      "referencePath": "../tajrid/#debate/22",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Later argumentative revision",
+      "differenceToInvestigate": "Study Lāhījī's full Gawhar IV–VIII and criticisms by Illuminationists, then post-Ṣadrian modifications of causal procession.",
+      "existingEvidence": [
+        "lah-eman",
+        "lah-eman-cont",
+        "lah-element",
+        "lah-active"
+      ],
+      "remaining": "Read all eight pages of the first-emanation section, not four isolated lines.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "23",
+      "title": "The Necessary: existence, essence and proof",
+      "referencePath": "../tajrid/#debate/23",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Distinct late metaphysical reinterpretations",
+      "differenceToInvestigate": "Compare the later primacy of existence, non-quiddity of the Necessary and actual dependence with exact source context.",
+      "existingEvidence": [
+        "nara-actual"
+      ],
+      "remaining": "Formal proof and basic distinctions remain sourced by Tajrīd.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "24",
+      "title": "Divine knowledge, particulars and exemplarity",
+      "referencePath": "../tajrid/#debate/24",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Major post-Asfār priority",
+      "differenceToInvestigate": "Focus Narāqī's developed arguments on presential knowledge, knowledge of changing particulars and relation to distinct faculties and divine simplicity.",
+      "existingEvidence": [
+        "nara-second",
+        "nara-presence"
+      ],
+      "remaining": "Narāqī's Jāmiʿ al-afkār II:25–27 has a contextual argument for direct awareness (including objections and replies), but the divine-knowledge proof continues past p.27. Primary Ṣadrian/other Persian comparisons remain outstanding.",
+      "noveltyStatus": "one-direct-later-contextual-argument-full-authorial-proof-open",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "25",
+      "title": "Prophecy, rational warrant and extraordinary cognition",
+      "referencePath": "../tajrid/#debate/25",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Late extension only",
+      "differenceToInvestigate": "Focus any documented changes in later soul psychology and intellect that actually alter prophecy; avoid rebuilding dogmatic creed chapters.",
+      "existingEvidence": [],
+      "remaining": "Currently no late primary unit with full context.",
+      "noveltyStatus": "no-independent-late-primary-unit",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "26",
+      "title": "Fixed entities, divine knowledge, and unactualized possibilities",
+      "referencePath": "../tajrid/#debate/26",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Cross-tradition late uptake",
+      "differenceToInvestigate": "Consider specific post-Ṣadrian treatments of fixed entities and modal truth with independently named primary authors, not merely Tajrīd glossary.",
+      "existingEvidence": [],
+      "remaining": "No separate late source text presently verified.",
+      "noveltyStatus": "no-independent-late-primary-unit",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "27",
+      "title": "Existence itself, dependent existents, and manifestation",
+      "referencePath": "../tajrid/#debate/27",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Post-Ṣadrian development",
+      "differenceToInvestigate": "Compare Sarian/Ṣadrian primacy, gradation, and later philosophical objections, especially Narāqī and Sabzavārī.",
+      "existingEvidence": [
+        "nara-actual",
+        "lah-eman"
+      ],
+      "remaining": "Do not treat a common concept as proof of a single external reality.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "28",
+      "title": "The hierarchy of lights, presence and imaginal forms",
+      "referencePath": "../tajrid/#debate/28",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Later reaction to Illuminationism",
+      "differenceToInvestigate": "Study explicit response to species-lords and post-Ṣadrian imaginal cognition; use full critique/reply rather than school affiliation.",
+      "existingEvidence": [
+        "lah-active"
+      ],
+      "remaining": "Independent illuminationist commentary texts not translated.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "29",
+      "title": "Waḥdat al-wujūd: unity, multiplicity, and criticism",
+      "referencePath": "../tajrid/#debate/29",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Reception-specific study",
+      "differenceToInvestigate": "Trace later non-equivalence of common wujūd, graded realities, and Akbarian manifestation in named Iranian/Indian witnesses.",
+      "existingEvidence": [
+        "nara-actual",
+        "lah-eman"
+      ],
+      "remaining": "Avoid recycling Tajrīd's metaphysical comparison without a new historical source.",
+      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    },
+    {
+      "id": "30",
+      "title": "Unveiling, demonstration, presence, and imagination",
+      "referencePath": "../tajrid/#debate/30",
+      "baselineOwner": "Tajrīd comparative critical sourcebook — thirty-question reader",
+      "lateScope": "Later epistemology",
+      "differenceToInvestigate": "Study later Iranian debate on presential versus acquired knowledge, ontological grounding of self-awareness, and epistemic methodology.",
+      "existingEvidence": [
+        "nara-second",
+        "nara-presence"
+      ],
+      "remaining": "Narāqī's Jāmiʿ al-afkār II:25–27 has a contextual argument for direct awareness (including objections and replies), but the divine-knowledge proof continues past p.27. Primary Ṣadrian/other Persian comparisons remain outstanding.",
+      "noveltyStatus": "one-direct-later-contextual-argument-full-authorial-proof-open",
+      "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
+    }
+  ],
+  "priorityDeltaQuestions": [
+    "02",
+    "03",
+    "06",
+    "07",
+    "12",
+    "15",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "24",
+    "27",
+    "28",
+    "29",
+    "30"
+  ],
+  "sharedWitnessImportantNote": "This crosswalk is a question-level division of labour. TAJRID_DEDUP_AND_POST_ASFAR_SCOPE.json is the complementary page/record-level overlap audit. A new Narāqī or Sabzavārī locus is one historical witness, not a new proof or second independent version of a Tajrīd passage."
+}

@@ -1,0 +1,15 @@
+{
+  "version": "Stage91 merged",
+  "date": "2026-11-15",
+  "body_pages": 279,
+  "print_page_positions": 280,
+  "stable_record_ids": 1401,
+  "stage90_independent_bounded_records": 10,
+  "stage91_additional_nonoverlapping_records": 8,
+  "total_newly_entered_distinct_records": 18,
+  "records_with_some_arabic": 1215,
+  "genuine_records_without_arabic": 185,
+  "hidden_retired_editorial_records": 1,
+  "independently_certified_full_pages": 0,
+  "interpretation": "Presence on a record is not full transcription or literal translation"
+}

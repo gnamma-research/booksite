@@ -1,0 +1,120 @@
+{
+  "schema": "gnamma-farghani-critical-evidence-grades-v2",
+  "date": "2026-11-09",
+  "stage": "XIII",
+  "work": "Muntaha al-madarik authorial introduction",
+  "beirut_printed_pages": [
+    18,
+    145
+  ],
+  "totals": {
+    "english_working_page_labels": 128,
+    "modern_edited_digital_selected_loci": 283,
+    "modern_edited_digital_page_labels": 43,
+    "secondary_online_retranscription_selected_loci": 185,
+    "secondary_online_retranscription_page_labels": 41,
+    "reader_selected_loci": 468,
+    "printed_page_labels_with_any_selected_checks": 84,
+    "fully_page_line_proofread": 0,
+    "photographed_historical_print_selected_loci": 10,
+    "photographed_historical_print_differences": 5,
+    "photographed_historical_print_agreements": 5,
+    "independent_handwritten_manuscript_folios_examined": 0,
+    "manuscript_variants_verified": 0
+  },
+  "stages": [
+    {
+      "stage": "I–IX",
+      "range": [
+        18,
+        60
+      ],
+      "selected_records": 283,
+      "grade": "direct-modern-edited-digitized",
+      "status": "selected excerpts only"
+    },
+    {
+      "stage": "X",
+      "range": [
+        61,
+        69
+      ],
+      "selected_records": 57,
+      "grade": "D-forum-derivative"
+    },
+    {
+      "stage": "XI",
+      "range": [
+        70,
+        78
+      ],
+      "selected_records": 54,
+      "grade": "D-forum-derivative"
+    },
+    {
+      "stage": "XIII",
+      "range": [
+        79,
+        101
+      ],
+      "selected_records": 74,
+      "grade": "D-forum-derivative",
+      "files": [
+        "data/critical-pass-009-p79-101.js",
+        "editorial/CRITICAL_TRANSLATION_79_101_DERIVATIVE.md"
+      ]
+    }
+  ],
+  "next_new_source_page": 102,
+  "next_original_print_page_to_upgrade": 61,
+  "critical_edition_complete": false,
+  "source_rules": [
+    "Neither forum repost nor web OCR is a distinct MS witness",
+    "Earlier I1876 photographed comparisons cover only 10 loci; don't convert to fully checked pages",
+    "Selected phrase appears on page != every line proofread",
+    "Digital conjecture cannot be promoted to attested variant without independent textual witness"
+  ],
+  "current_textual_issues": [
+    {
+      "page": 38,
+      "form": "القابل",
+      "conjecture": "القائل",
+      "basis": "internal same modern textual tradition pages52,55,56,72,89; no I1876 or MSS verification"
+    },
+    {
+      "page": 41,
+      "form": "عماء",
+      "type": "hadith and linguistic interpretation"
+    },
+    {
+      "page": 48,
+      "form": "بسبحاب",
+      "type": "probable digital typo"
+    },
+    {
+      "page": 52,
+      "form": "سم الحكيم",
+      "type": "probable digital typo"
+    },
+    {
+      "page": 63,
+      "form": "مشيمة",
+      "type": "lexicography"
+    },
+    {
+      "page": 73,
+      "form": "لكونه عرضا",
+      "type": "grammatical and ontological"
+    },
+    {
+      "page": 87,
+      "form": "محضة",
+      "type": "printed modern editorial crux not independently collated"
+    },
+    {
+      "page": 97,
+      "form": "eighteen angelic faults",
+      "type": "interpretive doctrine, not textual variant"
+    }
+  ]
+}

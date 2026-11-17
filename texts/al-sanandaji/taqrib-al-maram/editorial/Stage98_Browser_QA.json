@@ -1,0 +1,49 @@
+{
+  "stage": 98,
+  "source": "in-memory reconstruction of same html/css and ordered scripts; NOT live deployment",
+  "dimensions": [
+    {
+      "width": 390,
+      "records": 1401,
+      "typed": 1269,
+      "appended": true,
+      "prior": true,
+      "scrollWidth": 390,
+      "viewport": 390,
+      "heading": "Volume I · Page 26",
+      "lower_programmatically_expanded": true,
+      "page_errors": []
+    },
+    {
+      "width": 768,
+      "records": 1401,
+      "typed": 1269,
+      "appended": true,
+      "prior": true,
+      "scrollWidth": 768,
+      "viewport": 768,
+      "heading": "Volume I · Page 26",
+      "lower_programmatically_expanded": true,
+      "page_errors": []
+    },
+    {
+      "width": 1400,
+      "records": 1401,
+      "typed": 1269,
+      "appended": true,
+      "prior": true,
+      "scrollWidth": 1400,
+      "viewport": 1400,
+      "heading": "Volume I · Page 26",
+      "lower_programmatically_expanded": true,
+      "page_errors": []
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "file:// navigation not tested; in-memory tests only",
+    "lower commentary opened programmatically; pointer-click interaction not verified",
+    "not independent scholarly textual proof"
+  ],
+  "browser_test": "pass"
+}

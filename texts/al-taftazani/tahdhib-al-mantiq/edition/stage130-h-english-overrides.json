@@ -1,0 +1,156 @@
+{
+  "schema": "gnamma.tahdhib.stage130.h-english-preferred.v1",
+  "release": "2026-11-13",
+  "editorialDesignation": "21 English-only source-facing working revisions. Not full manuscript-critical certification.",
+  "publicArabicIncluded": false,
+  "numberOfHistoricalRecords": 21,
+  "records": [
+    {
+      "id": "HWN-047",
+      "pages": "142",
+      "english": "Shaykh ʿAbd al-Raḥīm. On the words “directing the causes toward the desired good”: the meaning of tawfīq (divine enabling) is to make causes correspond to their effects. Taken by itself, this is a general description: it would cover arranging causes of evil as well as causes of good so that each produces its result. But customary usage does not employ tawfīq for arranging the causes of evil. The principal commentator therefore qualified the definition by mentioning good.\n\nMuḥammad ʿAlī. Its difference from ʿiṣma (protection from sin) is that the latter designates a divine favour in the presence of which the morally responsible person chooses to leave a sinful act undone. Luṭf (gracious assistance) is broader than both: it is that in whose presence the person chooses either to perform an act of obedience or to refrain from a sin. Put another way, it brings the person nearer to obedience and further from disobedience.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-071",
+      "pages": "147",
+      "english": "Shaykh ʿAbd al-Raḥīm. On “and his family—his ʿitra”: āl is a collective noun without a singular derived from the same form. ʿItra, with a kasra, denotes a man's descendants, close kin and clan. The meaning given by the main commentator is the position of the Imāmī school. Al-Nūrī and al-Azharī, however, are reported to take āl here to mean followers.\n\nMuḥammad ʿAlī. A report attributed to al-Ṣādiq, from his forefathers, from al-Ḥasan ibn ʿAlī, relates that the Commander of the Faithful was asked about the Prophet's saying, “I am leaving among you the two weighty things: the Book of God and my ʿitra.” Asked who that ʿitra were, he is reported to have said: “I, al-Ḥasan, al-Ḥusayn, and the nine Imams among the descendants of al-Ḥusayn, the ninth of whom is their Mahdī and their Qāʾim. They will not part from the Book of God, nor will it part from them, until they come to the Messenger at his Pool.” This is an attributed report within the gloss, not a statement of the editor's independent authentication of the transmission.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-INTRO-029",
+      "pages": "173",
+      "english": "Mīrzā Muḥammad ʿAlī. On “not the occurrence of the affirmative restrictive relation”: the inclusion of this qualification is open to objection. It would have been preferable to use the word “assertoric” (khabariyya) in its place, as the context makes clear. Nor does the added designation “restrictive” (taqyīdiyya) have a point here, since an assertoric relation, on this analysis, is necessarily restrictive already. Understand the distinction.\n\nA later remark attributed to Shaykh Muḥammad al-Karmī follows in the source. It belongs to the modern commentary layer, not to the uninterrupted speech of Mīrzā Muḥammad ʿAlī.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-INTRO-060",
+      "pages": "180, 181",
+      "english": "Mīrzā Muḥammad ʿAlī. On “and it may arrive at its contradictory”: by this he means that the result may be incompatible with the other conclusion in some respect. That incompatibility may occur as affirmation versus negation, privation versus possession, genuine contrariety, correlation between opposed relatives, or something analogous to these.\n\nThe author limits his example of error to reasoning that produces assents (taṣdīqāt), since error is not so evident in the case of conceptions (taṣawwurāt). This, as al-Sayyid al-Sharīf notes in his gloss on the Sharḥ al-Risāla, is one explanation. Alternatively, the author may simply have relied on the reader to understand the corresponding case of conceptions by analogy with that of assents. The passage does not itself supply the further example of incorrect essential or descriptive definitions formerly inserted in its English.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-INTRO-065",
+      "pages": "182",
+      "english": "Shaykh ʿAbd al-Raḥīm. The word al-nās (“the people”) was originally unās, it is said, and its hamza was omitted for ease of pronunciation. With the definite article, that omission is so regular that one scarcely says al-unās. The words insān (“human being”) and uns (“human companionship”) are cited as evidence for the proposed original form.\n\nAccording to another explanation, nās is a collective with no singular of its own form, derived from naws, motion: one says nāsa yanūsu nawsan of something that moves, and naws denotes a thing's swaying in the air. The Qāmūs says that al-nās can refer to jinn and human beings; here, however, human beings are intended.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-DALALA-007",
+      "pages": "189",
+      "english": "Muḥammad ʿAlī. That is, expressions are not investigated insofar as they exist, insofar as they are sounds, insofar as they are accidents and not substances, insofar as they are necessary or possible, or insofar as they are temporally stable or not stable. That, at least, is one explanation.\n\nBut the interpretation more suitable to the principal commentator's purpose, as indicated earlier, is that the investigation of expressions in books of logic is conducted under the particular respect stated, not because their treatment of expressions is itself an independent constituent of logic. God knows the true state of the matter.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-DALALA-034",
+      "pages": "197",
+      "english": "Shaykh ʿAbd al-Raḥīm. That is, neither from inclusion to concomitance nor from concomitance to inclusion.\n\nIf you ask why the author did not explicitly discuss whether these two kinds of indication entail each other, I reply that their status is evident from what he has already said. An assigned meaning may be simple and have no necessary concomitant; it may also be composite, or it may be simple while possessing a necessary concomitant, as the principal commentator explained. Hence the author left the relation between the two forms of indication to the student's understanding.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-DALALA-036",
+      "pages": "197",
+      "english": "Muḥammad ʿAlī. The commentator interpreted the phrase this way to forestall a possible objection: the division of “that which is conventionally assigned” without qualification into compound and simple is invalid, because the four nonverbal conventional signs, themselves among the things assigned by convention, are not described as simple or compound in this lexical sense.\n\nThe reply is that the author did not make everything conventionally assigned the subject of this division. He meant a particular kind of it: the conventionally assigned verbal expression. The evidence is that he first singles out the properties of verbal signification by saying “the signification of the expression.” Even if one grants the broader wording, when the term “expression” is used without qualification it ordinarily suggests its fullest representative case.\n\nFurther, “assigned” here means assigned to a meaning. For precisely the same reason, one cannot object that an expression assigned merely for the purpose of grammatical composition is not, in itself, either simple or compound in the relevant sense: that is not the type of assignment being divided here.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-DALALA-041",
+      "pages": "201",
+      "english": "Shaykh ʿAbd al-Raḥīm. On “but this indication is not intended”: one might ask whether the “intention” in the definition of a compound expression means an actual intention or merely the capacity for such an intention. If the first, compounds would count as simple before anyone had actually used them and intended them to signify their meanings. If the second, the proper name “rational animal” (al-ḥayawān al-nāṭiq) would be excluded from the definition of a simple expression merely because its constituent words could be made to signify constituents of a meaning.\n\nThe answer is that what matters is the capacity of a constituent to signify its part when the whole sign is itself intended to signify that particular meaning. When “rational animal” is used as a proper name for its assigned bearer, it falls under the simple expression, even though its words can have separate senses in other uses. The word ghayr (“not/other”) in the quoted construction has the force of illā (“except”), which explains the feminine form maqṣūda used there.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-DALALA-061",
+      "pages": "205",
+      "english": "Shaykh ʿAbd al-Raḥīm. On “an absolute object governed by an omitted verb”: this is an explanation transmitted from usage. The expression ayḍan (“also”) may instead be an adverbial circumstance whose governing verb and subject have been omitted, with the underlying sense “I say this, returning [to the other matter].”\n\nIt is used only where there are two things that agree in some respect and each can stand independently of the other. Mentioning two things excludes an isolated utterance such as “Zayd came also,” when no second matter exists either explicitly or implicitly. Agreement excludes a case such as “He came—or died—also,” where the acts do not fit the required comparison. Independence excludes “Zayd and ʿAmr quarrelled also,” in which the reciprocal relation depends on both parties. The author says that ayḍan is not properly employed in any of these three cases.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-DALALA-071",
+      "pages": "207, 208",
+      "english": "Mīrzā Muḥammad ʿAlī. The reason is that the thing signified in a particular use is not one, but many. If we treated the multiplicity of applications as a multiplicity of meanings, then univocal (mutawāṭiʾ) and graded/analogical (mushakkik) terms could no longer be included among expressions of one meaning. For what they signify in their actual applications is likewise multiple. The main commentator apparently did not raise this further consequence because it is obvious.\n\nOne might object that what they signify is really the single universal quiddity present in the different individuals, rather than those many individuals. I do not accept that this is their only use. Just as such terms are used for the universal quiddity existing in the individuals, they can be used of the individuals as such, even if that latter usage is figurative. Thus the objection based on multiple applications remains. Understand.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-PROPOSITIONS-022",
+      "pages": "270",
+      "english": "Mīrzā Muḥammad ʿAlī. On “because it comes first in mention”: do not object that the first part of a conditional can sometimes be mentioned after the second, as in “I shall honour you if you visit me,” so that calling the condition “antecedent” and the other part “consequent” would be generally inaccurate.\n\nWe deny that the expressed first part of this example is the underlying antecedent in the grammatical construction: on the analysis adopted here, the corresponding element is elided, and the expressed words point to it. But even if we accept the alternative analysis adopted by certain grammarians, the names still refer to the basic order of expression. Normally the first part precedes and the second follows, even if the order can be reversed. Alternatively, the terms are assigned according to the majority of actual cases, not every possible surface order.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-CONTRADICTION-027",
+      "pages": "320",
+      "english": "Mīrzā Muḥammad ʿAlī. The phrase “an inclusive disjunctive proposition that prevents both alternatives from being false” is the predicate of the earlier subject, namely “the contradictory of our statement ...”.\n\nDo not object that the disjunction preventing joint falsity is always affirmative, as established earlier, and that the original compound proposition in this example is also affirmative; the two therefore seem unable to be contradictory, since difference in affirmative or negative quality is a condition of contradiction.\n\nThe reply is that this condition applies to the express contradictory. The disjunctive proposition is not the compound's express contradictory: rather, it is equivalent in truth conditions to that contradictory. The express negation is the removal of one of the two component propositions, without specifying which, in such a way that they cannot both remain true. Calling the equivalent disjunction a “contradictory” is therefore a figurative or extended use, just as the general unqualified actual proposition was previously called the contradictory of the perpetual form.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-CONTRAPOSITION-004",
+      "pages": "336, 337",
+      "english": "Shaykh ʿAbd al-Raḥīm. On “this is the method of the earlier logicians”: this is the procedure accepted and employed in the sciences. The author therefore mentions it first and explains the rules for contraposition in accordance with it.\n\nWhy did later writers depart from it? They examined the older proof that a universal affirmative contraposes to another universal affirmative and objected as follows. The contradictory of the proposed contraposition is a particular negative of the form “Some non-B is not non-C.” A particular negative does not undergo ordinary simple conversion. Nor can it be the minor premise of the first figure, because it is not affirmative, or the major premise, because it is not universal. Thus the syllogism the earlier authors purported to arrange in the first figure does not seem available.\n\nSomeone might claim that “Some non-B is C” follows from “Some non-B is not non-C,” but that implication is disputed. A proposition negative in quality with a negated predicate does not automatically entail a positive affirmative with an unnegated predicate. Its subject might not exist, whereas an affirmative proposition demands subject-existence, whether the predicate is simple or is itself negated. Convinced by this objection, later logicians altered the definition in the manner indicated by the author.\n\nFirst reply. One could restrict the treatment of conversion and contraposition to existent objects, since logic is an introduction to philosophy, and philosophy investigates the conditions of existents. On that restriction, the alleged failure of the implication has no force.\n\nSecond reply. Even if one allows these discussions to concern both existent and nonexistent subjects, as the generality of logic might suggest, the objection assumes that “Every non-B is non-C” is an affirmative whose subject and predicate are both converted into positive negative terms. But the older method can instead take the contradictions of the terms by way of denying them. Then “Every non-B is non-C” is affirmative in its overall predicative form, while its terms express negation; on the later authors' own account this kind of proposition behaves like a negative in not requiring the subject's existence.\n\nAccordingly, if the proposed contraposition of “Every C is B” were false, its contradictory, “Some non-B is not non-C,” would be true. Under the intended interpretation this asserts that the denial of C fails in some subject of which B is denied. Since the denial of C fails, either this is because the subject is absent or because C holds of it. The first alternative is inadmissible on the adopted interpretation; therefore some non-B is C. That supplies the premise required to complete the old reductio. The apparent difficulty therefore disappears without silently changing the older inferential procedure.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-CONTRAPOSITION-008",
+      "pages": "338",
+      "english": "Mīrzā Muḥammad ʿAlī. A particular affirmative cannot in general be contraposed—neither into a particular affirmative nor into a universal affirmative. For example, “Some animal is a non-human” is true. If the proposed contraposition were valid, “Some human is a non-animal” would be true; but that is false, because the wider predicate animal necessarily holds of every human. Otherwise an object would unite the possession and the negation of the same predicate. The same difficulty arises whenever the contradictory of the original predicate is narrower than the original subject.\n\nThe source gives a further modal example: “Some instance of the moon is not eclipsed at quadrature” may be true, whereas its proposed reversal “Some eclipsed thing is possibly a non-moon” is false under the necessary inclusion presupposed in that example. We tested the proposed result in its particular form because that is the normal form to which a particular affirmative converts, when any conversion is admissible. If even the particular form is false, the stronger universal form must fail as well. The converse inference from failure of the universal to failure of the particular would not be valid.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-CONTRAPOSITION-014",
+      "pages": "339",
+      "english": "Shaykh ʿAbd al-Raḥīm. In a proof by supposition of a subject-bearer (iftirāḍ), what is taken as the bearer of the subject-description must be suitable to that subject: an individual of its species, a subspecies, a species under its genus, or something related in an appropriate way. We cannot suppose some human to be a stone, or some animal to be a non-growing body, merely to complete a pattern. Otherwise one or other of the necessary descriptions—the subject-description or the predicate-description—will often fail. The rules of logic are intended to be general; the supposed bearer must genuinely have both descriptions required by the proof.\n\nIn fact, the demonstration by supposition could be stated without the elaborate formula “let us suppose that the subject's bearer is such-and-such.” One might simply assert the particular premises required for the conversion—for example, “Some C is not B while it is C, but not permanently,” followed by the relevant claim that “Some C is D,” and the next premises. Why introduce the supposed subject called D?\n\nThe purpose is to answer the opponent's question: how do you know that some C is D? The original particular proposition already assures us that there is some determinate instance in reality satisfying its description. We assign the letter D to this very instance; if the opponent refuses that notation, another name for the same bearer will serve. The supposition is not an arbitrary new existential assumption.\n\nLogicians customarily use letters such as C and D to abbreviate their examples. If they simply wrote “Some C is D; D is B,” an opponent could ask how D was ever shown to be the C in question. Saying “we suppose this bearer to be D” plays the part of the words “for example.” Were they instead to use an explicit instance—such as “Some writer moves his fingers for as long as he writes, but not permanently”—the extra formula might be unnecessary.\n\nFinally, is iftirāḍ an independent proof of the desired conclusion, or must it be joined with a proof by reductio (khalf)? The more evident answer is that the supposition prepares the material for a reductio. The actual inferential force belongs to reductio, sometimes stated explicitly and sometimes left implicit. This distinction should be preserved.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-INDUCTION-001",
+      "pages": "372",
+      "english": "Mīrzā Muḥammad ʿAlī. On “know that arguments are of three kinds”: one may object that a logically exhaustive division appears to yield four, not three. What is used as evidence is either universal or particular; and what one seeks to establish is likewise either universal or particular. Combining these alternatives gives four possible pairings. Why, then, has the author disregarded inference from universal to universal?\n\nThe answer is that this apparently omitted pairing has several forms. Consider two universals. Either one is included under the other, or it is not. If one is included under the other, we may reason from the containing universal to the contained or, conversely, from the contained to the containing. If neither contains the other, either there is a proximate common universal comprising both or there is not. We thus obtain four cases.\n\nThe first three are already included in the author's three classes of argument: reasoning from a containing universal down to what it contains belongs to syllogism; reasoning upward from the contained to its containing universal belongs to induction; and reasoning between non-inclusive universals that share a proximate common universal belongs to analogy. This works because “universal” in the division includes both genus and species, while “particular” includes both an absolutely particular individual and a relative particular—something particular only in comparison with a broader universal.\n\nThe remaining case, where neither universal includes the other and there is no proximate common universal connecting them, cannot function as the inference in question: the terms lack the relevant relation by which the state of one could establish the state of the other. Accordingly there is no fourth, genuinely additional kind of argument.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-INDUCTION-002",
+      "pages": "372",
+      "english": "Muḥammad ʿAlī. In the expression “its particulars,” the possessive pronoun attached to “particulars” is significant: particularity must be reckoned in relation to the very universal from which the inference proceeds, not in some unrestricted sense.\n\nOtherwise, when someone reasons from the state of human beings to that of animals, the argument might misleadingly be classified as inference from a universal to a particular, merely because humans can be treated as universal under some comparison. That would fail to capture the proper relation of the terms in the author's definition of syllogism.\n\nLikewise, in “from the state of particulars to the state of their universal,” attaching the pronoun to “universal” fixes the common universal concerned. Without it, one could reason from the states of humans, cattle and similar creatures to the state of horses and call that induction from particulars to a universal. It is in fact an instance of analogy between kinds, rather than induction from the instances of a single universal to a judgement about that universal. Reflect.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-INDUCTION-004",
+      "pages": "373",
+      "english": "Mīrzā Muḥammad ʿAlī. In ordinary Arabic istiqrāʾ means following up or surveying: one says “I surveyed the matter” (istaqraytuhu) when one has traced its instances. In technical use it means an argument that infers a judgement about a universal from the judgement established for most of its particulars. It receives this name because its premises cannot be obtained without following up and examining those particulars; the effect (the argument) is named after its cause (the survey).\n\nI have added the word “most” to the definition in order to prevent its including something that is not induction in this strict sense. An argument that establishes the judgement of a universal by examining all its particulars is not properly induction but a divisive syllogism (qiyās muqassim). Such an exhaustive argument yields certainty, whereas induction in the strict sense yields only probable judgement. More than one investigator has stated this distinction.\n\nIt is surprising, then, to find a writer who puts “most” into the definition and nevertheless divides induction into the divisive syllogism and something else. That is inconsistent unless the division concerns a broader meaning of induction, including both the technical and nontechnical senses. The author of the matn too ought to have said “surveying most particulars”—unless that qualification is intended as understood in his wording.\n\nAn objection may be drawn from al-Sayyid al-Sharīf: induction, he says, requires enumerating all the particulars under the universal. Where the enumeration is certain, induction is complete and takes the form of a divisive syllogism. Does this not show that all particulars must be surveyed, even if the claim of completeness is merely supposed or asserted? If so, why introduce “most” at all?\n\nThe reply is that such a restriction lacks convincing support and is contrary to the evident character of incomplete induction. Suppose one observes that a human, a horse, a cow and other animals one encounters move the lower jaw while chewing. One may thereby acquire the opinion that the same rule belongs to animals generally, without claiming—not even ostensibly—that every kind of animal has been surveyed. This is the familiar incomplete induction; a claim of exhaustive enumeration is not among its requirements.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-INDUCTION-034",
+      "pages": "376",
+      "english": "Mīrzā Muḥammad ʿAlī. The intended claim is that, by surveying the candidate attributes and denying causal power to each of the alternatives, one concludes that the attribute remaining under consideration is the cause of the judgement.\n\nThere is a further objection: even if the enumeration of attributes is conceded to be a strict rational division between affirmation and negation, we do not accept that, simply because a shared attribute was causal in the original case, it must also be causal in the new case. A feature peculiar to the original may be a condition for that cause to operate, or a feature peculiar to the new case may prevent it from operating.\n\nThe correct response requires a distinction. If conclusive evidence establishes that the relevant attributes have all been enumerated and excludes the causal role of every candidate other than the proposed attribute, including the original's special circumstances, then the proposed attribute is indeed established as the cause of the judgement. But if it remains possible that a particular feature of the new case is an impediment to its causal operation, the presence of the shared attribute in the new case still does not entail the judgement there. The objection has been answered as to identifying the cause, but not automatically as to its unrestricted application.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    },
+    {
+      "id": "HWN-ARTS-036",
+      "pages": "381, 382",
+      "english": "Muḥammad ʿAlī. The author introduces this restriction because estimation (wahm) does not make false judgements within its proper domain, namely the sensible things. Estimation is the power that apprehends particular meanings present in sensible objects. When its judgement remains within that domain, it is sound on the account being explained. But when it applies the conditions proper to sensible things to what is not sensible, the result can be false.\n\nFor example, having judged sensible existents to occupy a spatial location, it may infer that every existent must occupy a space, or at least must be capable of being pointed to. Such estimative judgements can so resemble primary, immediately evident propositions that the soul fails to distinguish them unless intellect and revealed teaching contradict them.\n\nA separate quotation from Shaykh ʿAbd al-Raḥīm is then introduced in abridged form (“he says ... [until] ...”). Its closing explanation is that the purpose of sophistical argument is to lead the opponent into error and render him silent. Its greatest benefit for the learner is to guard against such fallacies, for the person who can tell good reasoning from bad does not fall into the bad. The source itself abbreviates the intervening quotation; the omitted words must not be supplied as though present.",
+      "reviewGrade": "fuller historical English; checked against recovered digital Arabic, not manuscript certified",
+      "sourceLayer": "H historical glosses"
+    }
+  ]
+}

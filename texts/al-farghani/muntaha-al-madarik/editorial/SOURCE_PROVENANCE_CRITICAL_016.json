@@ -1,0 +1,68 @@
+{
+  "schema": "gnamma-farghani-source-evidence-v5",
+  "date": "2026-11-09",
+  "stage": "XVI",
+  "work": "Muntahā al-madārik, authorial four foundations and prefatory supplement",
+  "primary_page_system": "B2007 Beirut printed pp18–145",
+  "source_type_1876": "Istanbul Maktab al-Sana'i 1293/1876 historical printed volume I, NOT manuscript",
+  "quantitative_evidence": {
+    "intro_english_working_draft_pages": 128,
+    "bilingual_selected_records": 559,
+    "direct_modern_digitized_selected_loci": 283,
+    "derivative_retyped_selected_loci": 276,
+    "printed_page_labels_with_selected_passages": 128,
+    "full_print_pages_exhaustively_line_collated": 0,
+    "I1876_bounded_photographic_print_comparisons": 15,
+    "I1876_differences_vs_modern_digital": 7,
+    "I1876_bounded_agreements": 8,
+    "I1876_distinct_printed_page_labels": 14,
+    "manuscript_folios_independently_seen": 0,
+    "verified_manuscript_variants": 0
+  },
+  "highres_retrieval": {
+    "repository": "gnamma-research/booksite",
+    "workflow_run_id": 42661161348,
+    "workflow_conclusion": "success",
+    "artifact_id": 13693469212,
+    "artifact_sha256": "45b25038fe984f4e1d1636dc9a365e751d230c4b12be9490f35dcb069abb2a75",
+    "artifact_expires": "2026-12-09",
+    "page_indices": [
+      12,
+      13,
+      14,
+      17,
+      20,
+      22,
+      24,
+      32,
+      36,
+      42,
+      43
+    ],
+    "archive_folder": "facsimile-I1876-hires/images",
+    "image_manifest": "facsimile-I1876-hires/IIIF_SELECTED_HIRES_MANIFEST.json"
+  },
+  "new_locus": {
+    "id": "I1876-L15",
+    "beirut_page": 52,
+    "older_printed_page": 32,
+    "iiif_scan": 36,
+    "printed_reading": "تفرع ( اسم الحكم ) منه",
+    "modern_online_digital_reading": "تفرّع ( سم الحكيم ) منه",
+    "provisional_edited_lemma": "تفرع ( اسم الحكم ) منه",
+    "english": "From it branches the name the Judge (al-Ḥakam).",
+    "older_print_verified": true,
+    "modern_physical_print_inspected": false,
+    "actual_medieval_manuscript_inspected": false,
+    "image_sha256": "8a5f2a25fb93cc6560442dd7c0b9f8e9499f833df7b5c33153e12ea4c0463950",
+    "image_pixels": [
+      2200,
+      3370
+    ],
+    "image_path": "facsimile-I1876-hires/images/scan_0036.jpg",
+    "apparatus": "editorial/I1876_COLLATION_CUMULATIVE_006.json",
+    "status": "one verified historical-printed versus online-digital-text difference, NOT a manuscript variant"
+  },
+  "next_direct_work": "photographed physical modern B2007 p52 and independent manuscript folios at the name; full printed leaf collation",
+  "definitive_arabic_critical_edition_complete": false
+}

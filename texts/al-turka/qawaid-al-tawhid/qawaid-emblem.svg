@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="t d">
+<title id="t">Qawāʿid al-Tawḥīd book emblem</title><desc id="d">Eightfold geometric star, concentric rings and central point in indigo and antique gold, symbolising unity and its articulated determinations.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#142e3e"/><stop offset="1" stop-color="#143f48"/></linearGradient></defs>
+<rect width="128" height="128" rx="26" fill="url(#bg)"/>
+<g fill="none" stroke="#ba9870" stroke-width="1.5" opacity=".75"><path d="M64 12v104M12 64h104M27.2 27.2l73.6 73.6M100.8 27.2l-73.6 73.6"/><circle cx="64" cy="64" r="51"/><circle cx="64" cy="64" r="36"/><circle cx="64" cy="64" r="22"/></g>
+<path d="M64 19 77 43 101 27 85 51 109 64 85 77 101 101 77 85 64 109 51 85 27 101 43 77 19 64 43 51 27 27 51 43Z" stroke="#e5c393" stroke-width="2.7" fill="none" stroke-linejoin="round"/>
+<circle cx="64" cy="64" r="9.5" fill="#ead7ae"/><circle cx="64" cy="64" r="4.5" fill="#184652"/>
+</svg>

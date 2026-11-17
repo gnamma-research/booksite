@@ -1,0 +1,440 @@
+{
+  "version": "1.0",
+  "note": "Coordinates locate modern sites, city centres or general historical localities on the present-day OpenStreetMap basemap. Historical boundaries, individual camp positions and itineraries are not being asserted by city-point pins. Badr battlefield and Uhud landmark coordinates are contemporary mapped localities. Historical locations such as Hudaybiyyah are mentioned contextually and omitted from precise pins where coordinates are uncertain.",
+  "basemap": "© OpenStreetMap contributors. Tiles are a modern reference map, not a reconstructed seventh-century landscape.",
+  "groups": [
+    {
+      "id": "arabia",
+      "name": "Arabia and the Red Sea",
+      "description": "The sanctuary, migration, battles, neighbouring frontiers and the first community"
+    },
+    {
+      "id": "imperial",
+      "name": "Imperial and scholarly centres",
+      "description": "Major cities of early Islamic rule and later Mediterranean intellectual history"
+    },
+    {
+      "id": "ocean",
+      "name": "Trade and wider communities",
+      "description": "West African, Indian Ocean, Southeast Asian, Bengal and modern South Asian centres"
+    }
+  ],
+  "entries": [
+    {
+      "id": "makkah",
+      "name": "Makkah",
+      "lat": 21.4225,
+      "lng": 39.8262,
+      "groups": [
+        "arabia"
+      ],
+      "chapters": [
+        7,
+        8,
+        9,
+        16,
+        18
+      ],
+      "context": "Sanctuary, early revelation, Meccan opposition, the truce's destination and the eventual return.",
+      "precision": "modern city centre",
+      "country": "Saudi Arabia"
+    },
+    {
+      "id": "madinah",
+      "name": "Madinah (Yathrib)",
+      "lat": 24.4686,
+      "lng": 39.6124,
+      "groups": [
+        "arabia"
+      ],
+      "chapters": [
+        11,
+        12,
+        13,
+        19
+      ],
+      "context": "Place of the Hijrah and the integration of worship, household responsibilities and public obligations.",
+      "precision": "modern city centre",
+      "country": "Saudi Arabia"
+    },
+    {
+      "id": "taif",
+      "name": "Ṭāʾif",
+      "lat": 21.2703,
+      "lng": 40.4158,
+      "groups": [
+        "arabia"
+      ],
+      "chapters": [
+        11,
+        18
+      ],
+      "context": "City associated with the Prophet's search for receptive hearers and with the later campaign and siege.",
+      "precision": "modern city centre",
+      "country": "Saudi Arabia"
+    },
+    {
+      "id": "badr",
+      "name": "Badr",
+      "lat": 23.77227,
+      "lng": 38.78964,
+      "groups": [
+        "arabia"
+      ],
+      "chapters": [
+        14
+      ],
+      "context": "The town and battlefield locality southwest of Madinah; exact early troop positions require separate critical reconstruction.",
+      "precision": "modern locality near historical battlefield",
+      "country": "Saudi Arabia"
+    },
+    {
+      "id": "uhud",
+      "name": "Mount Uḥud",
+      "lat": 24.5216,
+      "lng": 39.6263,
+      "groups": [
+        "arabia"
+      ],
+      "chapters": [
+        15
+      ],
+      "context": "Mountain north of Madinah, where the 625 CE battle and burial of martyrs are associated with this landscape.",
+      "precision": "modern mountain landmark",
+      "country": "Saudi Arabia"
+    },
+    {
+      "id": "khaybar",
+      "name": "Khaybar",
+      "lat": 25.7025,
+      "lng": 39.2933,
+      "groups": [
+        "arabia"
+      ],
+      "chapters": [
+        17
+      ],
+      "context": "Oasis north of Madinah, linked to reported cultivation agreements and the setting of ʿUmar's land endowment.",
+      "precision": "modern town and oasis",
+      "country": "Saudi Arabia"
+    },
+    {
+      "id": "tabuk",
+      "name": "Tabūk",
+      "lat": 28.3835,
+      "lng": 36.5662,
+      "groups": [
+        "arabia"
+      ],
+      "chapters": [
+        19
+      ],
+      "context": "Northern Arabian location associated with an expedition during the last years of the Prophet's life.",
+      "precision": "modern city centre",
+      "country": "Saudi Arabia"
+    },
+    {
+      "id": "najran",
+      "name": "Najrān",
+      "lat": 17.4933,
+      "lng": 44.1277,
+      "groups": [
+        "arabia"
+      ],
+      "chapters": [
+        6,
+        19
+      ],
+      "context": "South Arabian religious and frontier context where communities interacted with Red Sea and Arabian powers.",
+      "precision": "modern city centre",
+      "country": "Saudi Arabia"
+    },
+    {
+      "id": "aksum",
+      "name": "Aksum",
+      "lat": 14.1212,
+      "lng": 38.7213,
+      "groups": [
+        "arabia"
+      ],
+      "chapters": [
+        10
+      ],
+      "context": "Royal centre of a Christian kingdom that offered refuge to early Muslim emigrants.",
+      "precision": "modern city centre",
+      "country": "Ethiopia"
+    },
+    {
+      "id": "jerusalem",
+      "name": "Jerusalem",
+      "lat": 31.778,
+      "lng": 35.235,
+      "groups": [
+        "arabia",
+        "imperial"
+      ],
+      "chapters": [
+        5,
+        11,
+        34
+      ],
+      "context": "Religious centre central to the Night Journey and to later Islamic, Christian and Jewish political histories.",
+      "precision": "modern city centre",
+      "country": "Israel / Palestinian territories"
+    },
+    {
+      "id": "damascus",
+      "name": "Damascus",
+      "lat": 33.5138,
+      "lng": 36.2765,
+      "groups": [
+        "imperial"
+      ],
+      "chapters": [
+        21,
+        24,
+        34
+      ],
+      "context": "Syrian provincial and later Umayyad centre within the history of public authority and scholarship.",
+      "precision": "modern city centre",
+      "country": "Syria"
+    },
+    {
+      "id": "baghdad",
+      "name": "Baghdad",
+      "lat": 33.3152,
+      "lng": 44.3661,
+      "groups": [
+        "imperial"
+      ],
+      "chapters": [
+        25,
+        26,
+        30
+      ],
+      "context": "Abbasid capital with major traditions of administration, translation, medicine and learned argument.",
+      "precision": "modern city centre",
+      "country": "Iraq"
+    },
+    {
+      "id": "kufa",
+      "name": "Kūfah",
+      "lat": 32.029,
+      "lng": 44.399,
+      "groups": [
+        "imperial"
+      ],
+      "chapters": [
+        22,
+        23,
+        27,
+        28
+      ],
+      "context": "Iraqi garrison town and scholarly setting important to early juristic reasoning and political contest.",
+      "precision": "modern city centre",
+      "country": "Iraq"
+    },
+    {
+      "id": "basra",
+      "name": "Baṣrah",
+      "lat": 30.509,
+      "lng": 47.7804,
+      "groups": [
+        "imperial"
+      ],
+      "chapters": [
+        22,
+        27,
+        28
+      ],
+      "context": "Iraqi garrison and trading city, with important textual, legal and intellectual schools.",
+      "precision": "modern city centre",
+      "country": "Iraq"
+    },
+    {
+      "id": "cairo",
+      "name": "Cairo",
+      "lat": 30.0444,
+      "lng": 31.2357,
+      "groups": [
+        "imperial",
+        "ocean"
+      ],
+      "chapters": [
+        34,
+        43
+      ],
+      "context": "Later urban centre of scholarship, power and pilgrimage networks.",
+      "precision": "modern city centre",
+      "country": "Egypt"
+    },
+    {
+      "id": "cordoba",
+      "name": "Córdoba",
+      "lat": 37.8882,
+      "lng": -4.7794,
+      "groups": [
+        "imperial"
+      ],
+      "chapters": [
+        35
+      ],
+      "context": "Major Andalusian political, intellectual and artistic city.",
+      "precision": "modern city centre",
+      "country": "Spain"
+    },
+    {
+      "id": "granada",
+      "name": "Granada",
+      "lat": 37.1773,
+      "lng": -3.5986,
+      "groups": [
+        "imperial"
+      ],
+      "chapters": [
+        35
+      ],
+      "context": "Andalusian centre associated with the final Nasrid emirate and the events of 1492.",
+      "precision": "modern city centre",
+      "country": "Spain"
+    },
+    {
+      "id": "fes",
+      "name": "Fes",
+      "lat": 34.064,
+      "lng": -4.9747,
+      "groups": [
+        "imperial"
+      ],
+      "chapters": [
+        35
+      ],
+      "context": "Maghribi city with a long history of scholarly learning, craftsmanship and public life.",
+      "precision": "modern city centre",
+      "country": "Morocco"
+    },
+    {
+      "id": "timbuktu",
+      "name": "Timbuktu",
+      "lat": 16.773,
+      "lng": -3.006,
+      "groups": [
+        "ocean"
+      ],
+      "chapters": [
+        38
+      ],
+      "context": "Middle Niger centre of manuscript culture, trade, Muslim scholarship and changing political authority.",
+      "precision": "modern city centre",
+      "country": "Mali"
+    },
+    {
+      "id": "gao",
+      "name": "Gao",
+      "lat": 16.265,
+      "lng": -0.041,
+      "groups": [
+        "ocean"
+      ],
+      "chapters": [
+        38
+      ],
+      "context": "A Niger River centre in the political and commercial history of the Songhay world.",
+      "precision": "modern city centre",
+      "country": "Mali"
+    },
+    {
+      "id": "surat",
+      "name": "Surat",
+      "lat": 21.1702,
+      "lng": 72.8311,
+      "groups": [
+        "ocean"
+      ],
+      "chapters": [
+        43
+      ],
+      "context": "Indian Ocean commercial centre involved in maritime finance, pilgrimage and diverse mercantile networks.",
+      "precision": "modern city centre",
+      "country": "India"
+    },
+    {
+      "id": "melaka",
+      "name": "Melaka",
+      "lat": 2.1896,
+      "lng": 102.2501,
+      "groups": [
+        "ocean"
+      ],
+      "chapters": [
+        39
+      ],
+      "context": "Malay port where political authority, shipping, multilingual exchange and Muslim communities interacted.",
+      "precision": "modern city centre",
+      "country": "Malaysia"
+    },
+    {
+      "id": "bagerhat",
+      "name": "Bagerhat",
+      "lat": 22.6667,
+      "lng": 89.8,
+      "groups": [
+        "ocean"
+      ],
+      "chapters": [
+        40
+      ],
+      "context": "Historic Bengali settlement and mosque complex associated with canals, religious patronage and cultivation.",
+      "precision": "UNESCO historic-site locality",
+      "country": "Bangladesh"
+    },
+    {
+      "id": "sylhet",
+      "name": "Sylhet",
+      "lat": 24.8949,
+      "lng": 91.8687,
+      "groups": [
+        "ocean"
+      ],
+      "chapters": [
+        44
+      ],
+      "context": "Bengal city associated with the family endowment whose validity reached the Privy Council in 1894.",
+      "precision": "modern city centre",
+      "country": "Bangladesh"
+    },
+    {
+      "id": "delhi",
+      "name": "Delhi",
+      "lat": 28.6139,
+      "lng": 77.209,
+      "groups": [
+        "ocean"
+      ],
+      "chapters": [
+        42,
+        45
+      ],
+      "context": "Political and educational centre of South Asian Muslim history, including Mughal and colonial transitions.",
+      "precision": "modern city centre",
+      "country": "India"
+    },
+    {
+      "id": "lahore",
+      "name": "Lahore",
+      "lat": 31.5204,
+      "lng": 74.3587,
+      "groups": [
+        "ocean"
+      ],
+      "chapters": [
+        36,
+        42,
+        45
+      ],
+      "context": "Persianate and South Asian scholarly and administrative city within changing imperial worlds.",
+      "precision": "modern city centre",
+      "country": "Pakistan"
+    }
+  ]
+}

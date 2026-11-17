@@ -1,0 +1,823 @@
+{
+  "schema": "gnamma-farghani-intro-selected-source-parity-v1",
+  "record_count": 559,
+  "normalized_exact_source_match_count": 510,
+  "flagged_records": 49,
+  "categories": {
+    "no-full-excerpt-exact-digital-match": 37,
+    "unique-exact-neighbor-page-candidate": 12
+  },
+  "auto_relocated_records": 0,
+  "scope": "Online B2007 edited digitized Arabic only; historical 1876 print and MS remain separate",
+  "instructions": "An exact match in an adjacent B2007 source page is evidence of possible page misassignment, but requires editorial confirmation. The old derivative-source grade must be preserved.",
+  "loci": [
+    {
+      "id": "CR001-034",
+      "record_page": 20,
+      "source_grade": "printed-digital-Arabic-checked-v1",
+      "arabic_fragment": "وبقوله : « ربّ زدني فيك تحيّرا » ، وأمثال ذلك",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "18": 0.143,
+        "19": 0.143,
+        "20": 1.0,
+        "21": 0.143,
+        "22": 0.0
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR001-036",
+      "record_page": 20,
+      "source_grade": "printed-digital-Arabic-checked-v1",
+      "arabic_fragment": "في السير الحبي وقرب النوافل ، وتقدم السلوك على الجذبة وسبق الفناء على البقاء",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "18": 0.231,
+        "19": 0.231,
+        "20": 1.0,
+        "21": 0.769,
+        "22": 0.231
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR002-007",
+      "record_page": 21,
+      "source_grade": "printed-digital-Arabic-checked-v1",
+      "arabic_fragment": "ثم إن وحدته التي انتشئت منها الأحديّة والواحدية هي عين ذاته لا صفة زائدة ولا نعت زائد عليها",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "19": 0.389,
+        "20": 0.5,
+        "21": 1.0,
+        "22": 0.444,
+        "23": 0.333
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR002-023",
+      "record_page": 22,
+      "source_grade": "printed-digital-Arabic-checked-v1",
+      "arabic_fragment": "نظرا من حيث مظاهرها وصورها وآثارها إليها ألفينا بعضها كلّيات وأصولا أول بمثابة أجناس عالية",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "20": 0.133,
+        "21": 0.2,
+        "22": 0.933,
+        "23": 0.267,
+        "24": 0.2
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR002-037",
+      "record_page": 23,
+      "source_grade": "printed-digital-Arabic-checked-v1",
+      "arabic_fragment": "حتى أنه كان يقول اعتمادا عليها ونظرا إليها : « آدم ومن دونه تحت لوائي يوم القيامة ولا فخر » ، « ولو كان موسى حيّا لما وسعه إلّا اتّباعي »",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "21": 0.12,
+        "22": 0.24,
+        "23": 1.0,
+        "24": 0.24,
+        "25": 0.12
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR002-038",
+      "record_page": 23,
+      "source_grade": "printed-digital-Arabic-checked-v1",
+      "arabic_fragment": "وقوله : « أنا أول من يقرع باب الجنّة وأول من يفتح باب الشفاعة » ونحو ذلك من الإشارات في أحاديث صحاح",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "21": 0.421,
+        "22": 0.263,
+        "23": 1.0,
+        "24": 0.421,
+        "25": 0.263
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR004-026",
+      "record_page": 33,
+      "source_grade": "modern-printed-digital-selected-locus-checked",
+      "arabic_fragment": "ولم يصادف توجّهه ذلك محلّا قابلا لما توجه له",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "31": 0.222,
+        "32": 0.556,
+        "33": 0.667,
+        "34": 0.111,
+        "35": 0.111
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR004-046",
+      "record_page": 35,
+      "source_grade": "modern-printed-digital-selected-locus-checked",
+      "arabic_fragment": "والسلام المنفي عنه تنازع ظهور الصفات",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "33": 0.167,
+        "34": 0.167,
+        "35": 1.0,
+        "36": 0.0,
+        "37": 0.167
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR004-056",
+      "record_page": 36,
+      "source_grade": "modern-printed-digital-selected-locus-checked",
+      "arabic_fragment": "والعلم في هذه المرتبة الثانية متعلق بمعلومات مفصّلة متميّزة",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "34": 0.667,
+        "35": 0.222,
+        "36": 0.889,
+        "37": 0.222,
+        "38": 0.333
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR005-003",
+      "record_page": 37,
+      "source_grade": "modern-printed-digital-selected-locus-checked",
+      "arabic_fragment": "فكان لذلك داخلا في القول ومنبعثا ومتفرّعا منه",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "35": 0.25,
+        "36": 0.5,
+        "37": 1.0,
+        "38": 0.125,
+        "39": 0.125
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR006-029",
+      "record_page": 57,
+      "source_grade": "modern-printed-digital-selected-locus-checked",
+      "arabic_fragment": "فالخالق يقدّر الصور كلّها ، والباري يصوّر الصور الروحانية والمثالية ، والمصوّر يصور الصور الحسّية",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "55": 0.0,
+        "56": 0.0,
+        "57": 0.923,
+        "58": 0.077,
+        "59": 0.231
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR007-001",
+      "record_page": 61,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فذلك الإيثار يكون بالوجود أولا ، ثم بالبقاء ثانيا ، ثم بنفخ الروح والحياة ثالثا",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "59": 0.0,
+        "60": 0.231,
+        "61": 0.923,
+        "62": 0.154,
+        "63": 0.231
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR007-046",
+      "record_page": 68,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فهي تنفد وتنتهي عند الرجوع إلى التجلّي الأول",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "66": 0.25,
+        "67": 0.5,
+        "68": 0.875,
+        "69": 0.125,
+        "70": 0.25
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR008-006",
+      "record_page": 71,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فظهرت المفاتيح بحكم ذلك السريان من باطن كل اسم وصفة وحقيقة إلهيّة",
+      "exact_match_pages": [
+        70
+      ],
+      "category": "unique-exact-neighbor-page-candidate",
+      "adjacent_page_word_membership": {
+        "69": 0.083,
+        "70": 1.0,
+        "71": 0.583,
+        "72": 0.417,
+        "73": 0.333
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR008-032",
+      "record_page": 75,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "أحدها : كونه هيئة اجتماعية من شعاع النور المفاض المضاف",
+      "exact_match_pages": [
+        74
+      ],
+      "category": "unique-exact-neighbor-page-candidate",
+      "adjacent_page_word_membership": {
+        "73": 0.333,
+        "74": 1.0,
+        "75": 0.111,
+        "76": 0.222,
+        "77": 0.111
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR008-036",
+      "record_page": 75,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فصارت جهات العالم الذي تفرّع منه ستّة فوقا وتحتا ويمينا وشمالا وقداما ووراء",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "73": 0.154,
+        "74": 0.077,
+        "75": 0.923,
+        "76": 0.154,
+        "77": 0.077
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR008-038",
+      "record_page": 76,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "وهي الحياة والعلم والإرادة والقدرة",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "74": 0.2,
+        "75": 0.2,
+        "76": 1.0,
+        "77": 0.0,
+        "78": 0.2
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-007",
+      "record_page": 80,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "ثم ظهر من غيب إجمال القلم أثر من ذلك النفس المفاض ... بصورة اللّوح المحفوظ",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "78": 0.429,
+        "79": 0.5,
+        "80": 1.0,
+        "81": 0.5,
+        "82": 0.571
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-008",
+      "record_page": 81,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "هذا الهباء أصلا مجملا ومعدنا مشتملا على كل وجود فرد وجزء لا يتجزأ",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "79": 0.308,
+        "80": 0.308,
+        "81": 1.0,
+        "82": 0.231,
+        "83": 0.154
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-012",
+      "record_page": 82,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فتصوّرت بذلك الانبساط بأقرب صورة إلى الوحدة والبساطة الذي هو هيئة الاستدارة",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "80": 0.333,
+        "81": 0.333,
+        "82": 0.917,
+        "83": 0.333,
+        "84": 0.5
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-016",
+      "record_page": 83,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "انقسمت صورة هذا العرش على اثنتي عشرة قسمة مفروضة لا محسوسة",
+      "exact_match_pages": [
+        82
+      ],
+      "category": "unique-exact-neighbor-page-candidate",
+      "adjacent_page_word_membership": {
+        "81": 0.273,
+        "82": 1.0,
+        "83": 0.364,
+        "84": 0.364,
+        "85": 0.455
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-017",
+      "record_page": 83,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فكان هذا العرش مستوى الاسم الرحمن على جميع معاني الاستواء",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "81": 0.4,
+        "82": 0.5,
+        "83": 0.9,
+        "84": 0.4,
+        "85": 0.4
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-018",
+      "record_page": 83,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فهذا العرش هو أصل تعيّن صور الزمان بحركته الدورية",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "81": 0.111,
+        "82": 0.222,
+        "83": 0.889,
+        "84": 0.556,
+        "85": 0.444
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-019",
+      "record_page": 84,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "والكرسي الكريم ... مظهرا قابلا لظهور تفاصيل الصور المعنوية والروحانية والحسّية",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "82": 0.2,
+        "83": 0.1,
+        "84": 1.0,
+        "85": 0.1,
+        "86": 0.3
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-020",
+      "record_page": 84,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "وللكرسي الكريم ثلاثة وجوه",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "82": 0.25,
+        "83": 0.0,
+        "84": 0.75,
+        "85": 0.25,
+        "86": 0.25
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-024",
+      "record_page": 85,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فهو أصل الجنان ، ووجوهه أصول مراتبها التي هي جنّة الأعمال وجنّة الميراث وجنّة الامتنان",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "83": 0.286,
+        "84": 0.214,
+        "85": 0.929,
+        "86": 0.5,
+        "87": 0.143
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-027",
+      "record_page": 86,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فالأمر حافظ أثر الوحدة في التنزّل إلى الكثرة ، والنهي حامل على رعايتها ... بالرجوع والعروج",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "84": 0.286,
+        "85": 0.214,
+        "86": 1.0,
+        "87": 0.214,
+        "88": 0.286
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-031",
+      "record_page": 87,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فكانت تلك الحركة والقوة الشوقية أوجبت محضة فيها قوية مقوية",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "85": 0.2,
+        "86": 0.1,
+        "87": 1.0,
+        "88": 0.1,
+        "89": 0.4
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-035",
+      "record_page": 89,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "والسماء الرابعة التي هي في وسط السماوات السبع مظهر صفة الحياة",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "87": 0.364,
+        "88": 0.273,
+        "89": 1.0,
+        "90": 0.364,
+        "91": 0.273
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-043",
+      "record_page": 91,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فإن كل ما يحل في محل معنوي أو صوري يكون تحت حكم ذلك المحل",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "89": 0.357,
+        "90": 0.286,
+        "91": 0.929,
+        "92": 0.286,
+        "93": 0.571
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-045",
+      "record_page": 92,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "التي هي عين وحدته الحقيقية",
+      "exact_match_pages": [
+        91
+      ],
+      "category": "unique-exact-neighbor-page-candidate",
+      "adjacent_page_word_membership": {
+        "90": 0.4,
+        "91": 1.0,
+        "92": 0.0,
+        "93": 0.4,
+        "94": 0.4
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-046",
+      "record_page": 92,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "ولشدّة نسبة الكثرة إليها كانت متعلّقاتها ومحتوياتها مختصّة بالقبول والتأثّر والانفعال",
+      "exact_match_pages": [
+        91
+      ],
+      "category": "unique-exact-neighbor-page-candidate",
+      "adjacent_page_word_membership": {
+        "90": 0.0,
+        "91": 1.0,
+        "92": 0.182,
+        "93": 0.091,
+        "94": 0.091
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-047",
+      "record_page": 92,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فكانت كلتا يديه يمين مباركة نظرا إلى الكمال الحقيقي لا النسبي",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "90": 0.364,
+        "91": 0.091,
+        "92": 1.0,
+        "93": 0.364,
+        "94": 0.091
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-051",
+      "record_page": 94,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "ثم تنزل الأمر الإلهيّ ... فتعيّنت رتبة الاعتدال النباتي",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "92": 0.25,
+        "93": 0.375,
+        "94": 1.0,
+        "95": 0.625,
+        "96": 0.0
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-054",
+      "record_page": 95,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فيمشي على بطنه بمقتضى هذين الحكمين",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "93": 0.167,
+        "94": 0.333,
+        "95": 0.833,
+        "96": 0.167,
+        "97": 0.167
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-057",
+      "record_page": 96,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "وكما كانت الملائكة من جملة قوى اليد المضافة إلى الصورة الرحمنية ... كذلك كانوا ... مظاهر أوصاف حقيقة آدم",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "94": 0.176,
+        "95": 0.235,
+        "96": 0.941,
+        "97": 0.176,
+        "98": 0.353
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-066",
+      "record_page": 99,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "والألفاظ المركّبة من الحروف الدالّة على تلك التعيّنات الوجودية هي أسماء تلك الأسماء",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "97": 0.462,
+        "98": 0.769,
+        "99": 0.692,
+        "100": 0.231,
+        "101": 0.154
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-071",
+      "record_page": 100,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "حيث كانت الملائكة محصورين بحكم عالمهم ونشأتهم لم يهتدوا إلى معرفة ما كان خارجا عنها",
+      "exact_match_pages": [
+        99
+      ],
+      "category": "unique-exact-neighbor-page-candidate",
+      "adjacent_page_word_membership": {
+        "98": 0.333,
+        "99": 1.0,
+        "100": 0.467,
+        "101": 0.267,
+        "102": 0.2
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR009-072",
+      "record_page": 101,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فحجب بوهمه وأبعد بحجّته ولجاجه واعتراضه في مقابلة الأمر المطاع",
+      "exact_match_pages": [
+        100
+      ],
+      "category": "unique-exact-neighbor-page-candidate",
+      "adjacent_page_word_membership": {
+        "99": 0.1,
+        "100": 1.0,
+        "101": 0.2,
+        "102": 0.1,
+        "103": 0.2
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR010-007",
+      "record_page": 105,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فلم يوجد شيء غالبا فيها بغير سبب وعلّة ظاهرة",
+      "exact_match_pages": [
+        104
+      ],
+      "category": "unique-exact-neighbor-page-candidate",
+      "adjacent_page_word_membership": {
+        "103": 0.111,
+        "104": 1.0,
+        "105": 0.111,
+        "106": 0.111,
+        "107": 0.111
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR010-014",
+      "record_page": 108,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "وأن الكمّل قليلون والخلفاء كثيرون",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "106": 0.0,
+        "107": 0.2,
+        "108": 1.0,
+        "109": 0.0,
+        "110": 0.0
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR010-016",
+      "record_page": 109,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "وتوجّه جميع ما ذكرنا إلى تعيين المزاج الأعدل المحمّدي المذكور",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "107": 0.3,
+        "108": 0.2,
+        "109": 0.9,
+        "110": 0.6,
+        "111": 0.5
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR010-023",
+      "record_page": 113,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فالنقطة الوسطية الاعتدالية الوحدانية ... إنما هي حقيقة النبوّة",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "111": 0.125,
+        "112": 0.25,
+        "113": 1.0,
+        "114": 0.5,
+        "115": 0.25
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR010-031",
+      "record_page": 117,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فلا جرم ختم به النبوّة ، فلا نبيّ بعده أصلا",
+      "exact_match_pages": [
+        116
+      ],
+      "category": "unique-exact-neighbor-page-candidate",
+      "adjacent_page_word_membership": {
+        "115": 0.556,
+        "116": 1.0,
+        "117": 0.111,
+        "118": 0.556,
+        "119": 0.444
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR010-040",
+      "record_page": 121,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "وعلماء الطريقة والحقيقة الذين هم كبار المشايخ وأطباء تلك العلل والأمراض المعنوية",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "119": 0.083,
+        "120": 0.083,
+        "121": 0.917,
+        "122": 0.083,
+        "123": 0.0
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR010-041",
+      "record_page": 122,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فعلى هذا يكون أهم المهمات للسالك الطالب ... حصول شيخ مرشد",
+      "exact_match_pages": [],
+      "category": "no-full-excerpt-exact-digital-match",
+      "adjacent_page_word_membership": {
+        "120": 0.1,
+        "121": 0.1,
+        "122": 1.0,
+        "123": 0.1,
+        "124": 0.1
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR010-045",
+      "record_page": 124,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "ففي الرتبة الأولى الكونية تلبس بلباس مظهر روحاني",
+      "exact_match_pages": [
+        123
+      ],
+      "category": "unique-exact-neighbor-page-candidate",
+      "adjacent_page_word_membership": {
+        "122": 0.25,
+        "123": 1.0,
+        "124": 0.625,
+        "125": 0.0,
+        "126": 0.0
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR011-025",
+      "record_page": 138,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "أحدهما : من جهة كونه مفيضا ، والآخر من جهة كونه مفاضا",
+      "exact_match_pages": [
+        137
+      ],
+      "category": "unique-exact-neighbor-page-candidate",
+      "adjacent_page_word_membership": {
+        "136": 0.2,
+        "137": 1.0,
+        "138": 0.3,
+        "139": 0.2,
+        "140": 0.3
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    },
+    {
+      "id": "CR011-026",
+      "record_page": 138,
+      "source_grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "arabic_fragment": "فالغالب على الروح أثر الحكم الأول ، وعلى النفس أثر الحكم الثاني",
+      "exact_match_pages": [
+        137
+      ],
+      "category": "unique-exact-neighbor-page-candidate",
+      "adjacent_page_word_membership": {
+        "136": 0.364,
+        "137": 1.0,
+        "138": 0.545,
+        "139": 0.091,
+        "140": 0.455
+      },
+      "recommended_action": "Human confirm B2007 page boundary and context; do not auto-overwrite the previous citation."
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schema": "gnamma-farghani-evidence-grade-register-v3",
+  "updated": "2026-11-09",
+  "stage": "XIV",
+  "scope": "Saʿīd al-Dīn Farghānī Muntahā al-madārik authorial introduction (B2007 pp18–145)",
+  "totals": {
+    "intro_printed_page_labels": 128,
+    "english_working_translation_page_labels": 128,
+    "unique_labels_with_selected_bilingual_checks": 128,
+    "selected_locus_records": 559,
+    "early_direct_edited_digitized_arabic_checked_loci": 283,
+    "early_direct_edited_digitized_page_labels": 43,
+    "secondary_derived_retyped_arabic_checked_loci": 276,
+    "secondary_derived_retyped_page_labels": 85,
+    "independently_full_line_proofread_print_pages": 0,
+    "actual_1876_IIIF_print_bounded_loci_compared": 10,
+    "actual_1876_print_differences": 5,
+    "actual_1876_print_agreements": 5,
+    "independent_medieval_manuscript_folios_collated": 0,
+    "verified_manuscript_variant_count": 0
+  },
+  "source_levels": [
+    {
+      "status": "direct-selected-edited-digital",
+      "pages": [
+        18,
+        60
+      ],
+      "loci": 283,
+      "description": "One modern digitized Beirut edited Arabic source checked against working English; selected excerpts only",
+      "manuscript": false
+    },
+    {
+      "status": "derivative-online-transcription",
+      "pages": [
+        61,
+        101
+      ],
+      "loci": 185,
+      "description": "Forum retyped modern edition; derivative evidence only",
+      "manuscript": false
+    },
+    {
+      "status": "derivative-online-transcription",
+      "pages": [
+        102,
+        125
+      ],
+      "loci": 48,
+      "description": "Stage XIV-A retyped modern edition; selected excerpts only",
+      "manuscript": false
+    },
+    {
+      "status": "derivative-online-transcription",
+      "pages": [
+        126,
+        145
+      ],
+      "loci": 43,
+      "description": "Stage XIV-B retyped modern edition; selected excerpts only",
+      "manuscript": false
+    },
+    {
+      "status": "historical-1876-photographic-print",
+      "loci": 10,
+      "differences": 5,
+      "agreements": 5,
+      "description": "Printed 1876 photograms on 9 original printed page labels, ten bounded phrase comparisons; no full printed page line-collated",
+      "manuscript": false
+    },
+    {
+      "status": "manuscript-census-only",
+      "loci": 0,
+      "known": [
+        "C1107",
+        "R670",
+        "K273",
+        "F3966",
+        "Y706"
+      ],
+      "manuscript": true
+    }
+  ],
+  "critical_edition_established": false,
+  "continuous_critical_arabic_copy_text_complete": false,
+  "untranslated_introduction_pages": 0,
+  "unverified_english_working_draft": true,
+  "next_new_selected_phrase_page": null,
+  "next_direct_print_fidelity_page": 61,
+  "next_critical_action": "Acquisition and full transcription/collation of photographed printed and manuscript source witnesses; establish continuous Arabic critically edited text",
+  "critical_cruxes": [
+    {
+      "page": 38,
+      "digital": "القابل",
+      "internal_conjecture": "القائل",
+      "actual_1876_or_MS": false
+    },
+    {
+      "page": 41,
+      "issue": "ʿamāʾ hadith variant and grammar"
+    },
+    {
+      "page": 48,
+      "digital": "بسبحاب",
+      "conjecture": "بسحاب"
+    },
+    {
+      "page": 52,
+      "digital": "سم الحكيم",
+      "conjecture": "اسم الحكيم"
+    },
+    {
+      "page": 63,
+      "issue": "مشيمة lexical/historical sense"
+    },
+    {
+      "page": 73,
+      "issue": "لكونه عرضا causal ontology"
+    },
+    {
+      "page": 87,
+      "digital": "محضة",
+      "issue": "modern edition footnote unclear"
+    },
+    {
+      "page": 97,
+      "issue": "18 angelic defects (theological interpretation)"
+    },
+    {
+      "page": 107,
+      "issue": "sharīʿa as vicegerent's measure"
+    },
+    {
+      "page": 145,
+      "issue": "act/attribute/essence love bond"
+    }
+  ],
+  "history_preserved": [
+    "STAGE_HANDOFF_CRITICAL_013.md",
+    "STAGE_HANDOFF_CRITICAL_012.md",
+    "FULL_CUMULATIVE_CRITICAL_007.md",
+    "WORKING_TRANSLATION_18_145.md"
+  ]
+}

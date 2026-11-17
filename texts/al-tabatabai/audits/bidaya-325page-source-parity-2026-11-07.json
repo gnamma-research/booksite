@@ -1,0 +1,1163 @@
+{
+  "name": "Bidāya Arabic transcription parity against the user-supplied 325-page bilingual source PDF",
+  "scope": "111 authorial sections (introduction + 110 numbered chapters); all 325 source pages read",
+  "date": "2026-11-07",
+  "witness": {
+    "fileName": "Bidayah_al_Hikmah_Arabic_English_The_Ele.pdf",
+    "pages": 325,
+    "sha256": "6ee59d013c37b619d4d2ee8aff361a9d2175d1f14dd121477f08b18598baa8f6",
+    "location": "User-provided private source PDF; intentionally not redistributed through the public repository",
+    "independentOfImport": false
+  },
+  "method": {
+    "objective": "Detect omission, mis-segmentation, and residual extraction divergences, not certify scholarly correctness",
+    "normalization": "Unicode NFKC, removal of bidi controls/harakat/punctuation, equivalence of alif forms and ى/ي; reversible original PDF encoding substitutions R->لمج, T->ته, 5->نه, and dropped -ا/-ذ/-ه/-ة/-ي ligatures",
+    "measure": "Unique overlapping 12-character Arabic windows sampled every 6 characters from each website unit; counted present if identical substring occurs in the indicated printed PDF page interval",
+    "limits": "The original imported web Arabic is derived from this very same source PDF. Matching proves transcription parity within the normalization, NOT an independent edition, textual accuracy, manuscript collation or English translation fidelity. Differences can reflect deliberate correction of erroneous PDF encoding rather than a website error."
+  },
+  "summary": {
+    "originalUnits": 111,
+    "sourcePagesRead": 325,
+    "weightedWindowMatchPercent": 99.89,
+    "fullyMatched": 103,
+    "reviewBelow99point5": 6,
+    "reviewBelow98": 0,
+    "minMatchPercent": 99.09
+  },
+  "passages": [
+    {
+      "id": "B-INTRO",
+      "stage": "0",
+      "firstPrintedPage": 11,
+      "lastPrintedPage": 13,
+      "sampledWindows": 180,
+      "matchedWindows": 180,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-I-01",
+      "stage": "I",
+      "firstPrintedPage": 14,
+      "lastPrintedPage": 15,
+      "sampledWindows": 49,
+      "matchedWindows": 49,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-I-02",
+      "stage": "I",
+      "firstPrintedPage": 16,
+      "lastPrintedPage": 17,
+      "sampledWindows": 170,
+      "matchedWindows": 170,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-I-03",
+      "stage": "I",
+      "firstPrintedPage": 18,
+      "lastPrintedPage": 19,
+      "sampledWindows": 75,
+      "matchedWindows": 75,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-I-04",
+      "stage": "I",
+      "firstPrintedPage": 20,
+      "lastPrintedPage": 23,
+      "sampledWindows": 335,
+      "matchedWindows": 335,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-I-05",
+      "stage": "I",
+      "firstPrintedPage": 24,
+      "lastPrintedPage": 27,
+      "sampledWindows": 368,
+      "matchedWindows": 368,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-I-06",
+      "stage": "I",
+      "firstPrintedPage": 28,
+      "lastPrintedPage": 30,
+      "sampledWindows": 223,
+      "matchedWindows": 223,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-I-07",
+      "stage": "I",
+      "firstPrintedPage": 31,
+      "lastPrintedPage": 33,
+      "sampledWindows": 204,
+      "matchedWindows": 204,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-I-08",
+      "stage": "I",
+      "firstPrintedPage": 34,
+      "lastPrintedPage": 35,
+      "sampledWindows": 186,
+      "matchedWindows": 186,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-I-09",
+      "stage": "I",
+      "firstPrintedPage": 36,
+      "lastPrintedPage": 37,
+      "sampledWindows": 81,
+      "matchedWindows": 81,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-I-10",
+      "stage": "I",
+      "firstPrintedPage": 38,
+      "lastPrintedPage": 39,
+      "sampledWindows": 77,
+      "matchedWindows": 77,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-I-11",
+      "stage": "I",
+      "firstPrintedPage": 40,
+      "lastPrintedPage": 41,
+      "sampledWindows": 133,
+      "matchedWindows": 133,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-I-12",
+      "stage": "I",
+      "firstPrintedPage": 42,
+      "lastPrintedPage": 45,
+      "sampledWindows": 218,
+      "matchedWindows": 218,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-II-01",
+      "stage": "II",
+      "firstPrintedPage": 46,
+      "lastPrintedPage": 62,
+      "sampledWindows": 1549,
+      "matchedWindows": 1539,
+      "matchPercent": 99.35,
+      "unmatchedSamples": [
+        "سميهالذهنتتم",
+        "ذهنتتمةقداست",
+        "ولااشكالفيهو",
+        "الفيهوفيهانم"
+      ]
+    },
+    {
+      "id": "B-III-01",
+      "stage": "III",
+      "firstPrintedPage": 63,
+      "lastPrintedPage": 64,
+      "sampledWindows": 155,
+      "matchedWindows": 155,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-III-02",
+      "stage": "III",
+      "firstPrintedPage": 65,
+      "lastPrintedPage": 66,
+      "sampledWindows": 90,
+      "matchedWindows": 90,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-III-03",
+      "stage": "III",
+      "firstPrintedPage": 67,
+      "lastPrintedPage": 69,
+      "sampledWindows": 127,
+      "matchedWindows": 127,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-IV-01",
+      "stage": "IV",
+      "firstPrintedPage": 70,
+      "lastPrintedPage": 71,
+      "sampledWindows": 75,
+      "matchedWindows": 75,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-IV-02",
+      "stage": "IV",
+      "firstPrintedPage": 72,
+      "lastPrintedPage": 73,
+      "sampledWindows": 184,
+      "matchedWindows": 184,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-IV-03",
+      "stage": "IV",
+      "firstPrintedPage": 74,
+      "lastPrintedPage": 75,
+      "sampledWindows": 98,
+      "matchedWindows": 98,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-IV-04",
+      "stage": "IV",
+      "firstPrintedPage": 76,
+      "lastPrintedPage": 77,
+      "sampledWindows": 29,
+      "matchedWindows": 29,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-IV-05",
+      "stage": "IV",
+      "firstPrintedPage": 78,
+      "lastPrintedPage": 79,
+      "sampledWindows": 161,
+      "matchedWindows": 161,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-IV-06",
+      "stage": "IV",
+      "firstPrintedPage": 80,
+      "lastPrintedPage": 83,
+      "sampledWindows": 322,
+      "matchedWindows": 322,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-IV-07",
+      "stage": "IV",
+      "firstPrintedPage": 84,
+      "lastPrintedPage": 85,
+      "sampledWindows": 79,
+      "matchedWindows": 79,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-IV-08",
+      "stage": "IV",
+      "firstPrintedPage": 86,
+      "lastPrintedPage": 89,
+      "sampledWindows": 267,
+      "matchedWindows": 267,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-IV-09",
+      "stage": "IV",
+      "firstPrintedPage": 90,
+      "lastPrintedPage": 93,
+      "sampledWindows": 220,
+      "matchedWindows": 218,
+      "matchPercent": 99.09,
+      "unmatchedSamples": [
+        "االموجهةبهما",
+        "هةبهماللخارج"
+      ]
+    },
+    {
+      "id": "B-V-01",
+      "stage": "V",
+      "firstPrintedPage": 94,
+      "lastPrintedPage": 95,
+      "sampledWindows": 110,
+      "matchedWindows": 110,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-V-02",
+      "stage": "V",
+      "firstPrintedPage": 96,
+      "lastPrintedPage": 97,
+      "sampledWindows": 163,
+      "matchedWindows": 163,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-V-03",
+      "stage": "V",
+      "firstPrintedPage": 98,
+      "lastPrintedPage": 99,
+      "sampledWindows": 107,
+      "matchedWindows": 107,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-V-04",
+      "stage": "V",
+      "firstPrintedPage": 100,
+      "lastPrintedPage": 103,
+      "sampledWindows": 275,
+      "matchedWindows": 275,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-V-05",
+      "stage": "V",
+      "firstPrintedPage": 104,
+      "lastPrintedPage": 105,
+      "sampledWindows": 166,
+      "matchedWindows": 166,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-V-06",
+      "stage": "V",
+      "firstPrintedPage": 106,
+      "lastPrintedPage": 107,
+      "sampledWindows": 182,
+      "matchedWindows": 182,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-V-07",
+      "stage": "V",
+      "firstPrintedPage": 108,
+      "lastPrintedPage": 109,
+      "sampledWindows": 82,
+      "matchedWindows": 82,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-V-08",
+      "stage": "V",
+      "firstPrintedPage": 110,
+      "lastPrintedPage": 113,
+      "sampledWindows": 211,
+      "matchedWindows": 211,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VI-01",
+      "stage": "VI",
+      "firstPrintedPage": 114,
+      "lastPrintedPage": 115,
+      "sampledWindows": 146,
+      "matchedWindows": 146,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VI-02",
+      "stage": "VI",
+      "firstPrintedPage": 116,
+      "lastPrintedPage": 117,
+      "sampledWindows": 80,
+      "matchedWindows": 80,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VI-03",
+      "stage": "VI",
+      "firstPrintedPage": 118,
+      "lastPrintedPage": 121,
+      "sampledWindows": 339,
+      "matchedWindows": 339,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VI-04",
+      "stage": "VI",
+      "firstPrintedPage": 122,
+      "lastPrintedPage": 123,
+      "sampledWindows": 82,
+      "matchedWindows": 82,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VI-05",
+      "stage": "VI",
+      "firstPrintedPage": 124,
+      "lastPrintedPage": 125,
+      "sampledWindows": 93,
+      "matchedWindows": 93,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VI-06",
+      "stage": "VI",
+      "firstPrintedPage": 126,
+      "lastPrintedPage": 127,
+      "sampledWindows": 69,
+      "matchedWindows": 69,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VI-07",
+      "stage": "VI",
+      "firstPrintedPage": 128,
+      "lastPrintedPage": 131,
+      "sampledWindows": 249,
+      "matchedWindows": 248,
+      "matchPercent": 99.6,
+      "unmatchedSamples": [
+        "ةمبهمةتناسبا"
+      ]
+    },
+    {
+      "id": "B-VI-08",
+      "stage": "VI",
+      "firstPrintedPage": 132,
+      "lastPrintedPage": 133,
+      "sampledWindows": 117,
+      "matchedWindows": 117,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VI-09",
+      "stage": "VI",
+      "firstPrintedPage": 134,
+      "lastPrintedPage": 137,
+      "sampledWindows": 222,
+      "matchedWindows": 222,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VI-10",
+      "stage": "VI",
+      "firstPrintedPage": 138,
+      "lastPrintedPage": 139,
+      "sampledWindows": 123,
+      "matchedWindows": 123,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VI-11",
+      "stage": "VI",
+      "firstPrintedPage": 140,
+      "lastPrintedPage": 144,
+      "sampledWindows": 230,
+      "matchedWindows": 230,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VII-01",
+      "stage": "VII",
+      "firstPrintedPage": 145,
+      "lastPrintedPage": 146,
+      "sampledWindows": 118,
+      "matchedWindows": 118,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VII-02",
+      "stage": "VII",
+      "firstPrintedPage": 147,
+      "lastPrintedPage": 148,
+      "sampledWindows": 164,
+      "matchedWindows": 164,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VII-03",
+      "stage": "VII",
+      "firstPrintedPage": 149,
+      "lastPrintedPage": 150,
+      "sampledWindows": 136,
+      "matchedWindows": 136,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VII-04",
+      "stage": "VII",
+      "firstPrintedPage": 151,
+      "lastPrintedPage": 152,
+      "sampledWindows": 72,
+      "matchedWindows": 72,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VII-05",
+      "stage": "VII",
+      "firstPrintedPage": 153,
+      "lastPrintedPage": 154,
+      "sampledWindows": 203,
+      "matchedWindows": 203,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VII-06",
+      "stage": "VII",
+      "firstPrintedPage": 155,
+      "lastPrintedPage": 158,
+      "sampledWindows": 322,
+      "matchedWindows": 320,
+      "matchPercent": 99.38,
+      "unmatchedSamples": [
+        "قولالمشائينا",
+        "شائينالسابعا"
+      ]
+    },
+    {
+      "id": "B-VII-07",
+      "stage": "VII",
+      "firstPrintedPage": 159,
+      "lastPrintedPage": 160,
+      "sampledWindows": 85,
+      "matchedWindows": 85,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VII-08",
+      "stage": "VII",
+      "firstPrintedPage": 161,
+      "lastPrintedPage": 162,
+      "sampledWindows": 214,
+      "matchedWindows": 214,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VII-09",
+      "stage": "VII",
+      "firstPrintedPage": 163,
+      "lastPrintedPage": 166,
+      "sampledWindows": 304,
+      "matchedWindows": 304,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VII-10",
+      "stage": "VII",
+      "firstPrintedPage": 167,
+      "lastPrintedPage": 168,
+      "sampledWindows": 132,
+      "matchedWindows": 132,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VII-11",
+      "stage": "VII",
+      "firstPrintedPage": 169,
+      "lastPrintedPage": 171,
+      "sampledWindows": 63,
+      "matchedWindows": 63,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VIII-01",
+      "stage": "VIII",
+      "firstPrintedPage": 172,
+      "lastPrintedPage": 174,
+      "sampledWindows": 254,
+      "matchedWindows": 254,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VIII-02",
+      "stage": "VIII",
+      "firstPrintedPage": 175,
+      "lastPrintedPage": 176,
+      "sampledWindows": 211,
+      "matchedWindows": 211,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VIII-03",
+      "stage": "VIII",
+      "firstPrintedPage": 177,
+      "lastPrintedPage": 178,
+      "sampledWindows": 93,
+      "matchedWindows": 93,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VIII-04",
+      "stage": "VIII",
+      "firstPrintedPage": 179,
+      "lastPrintedPage": 180,
+      "sampledWindows": 136,
+      "matchedWindows": 136,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VIII-05",
+      "stage": "VIII",
+      "firstPrintedPage": 181,
+      "lastPrintedPage": 182,
+      "sampledWindows": 130,
+      "matchedWindows": 130,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VIII-06",
+      "stage": "VIII",
+      "firstPrintedPage": 183,
+      "lastPrintedPage": 184,
+      "sampledWindows": 38,
+      "matchedWindows": 38,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VIII-07",
+      "stage": "VIII",
+      "firstPrintedPage": 185,
+      "lastPrintedPage": 186,
+      "sampledWindows": 163,
+      "matchedWindows": 163,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VIII-08",
+      "stage": "VIII",
+      "firstPrintedPage": 187,
+      "lastPrintedPage": 188,
+      "sampledWindows": 91,
+      "matchedWindows": 91,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VIII-09",
+      "stage": "VIII",
+      "firstPrintedPage": 189,
+      "lastPrintedPage": 190,
+      "sampledWindows": 170,
+      "matchedWindows": 170,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-VIII-10",
+      "stage": "VIII",
+      "firstPrintedPage": 191,
+      "lastPrintedPage": 193,
+      "sampledWindows": 138,
+      "matchedWindows": 138,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-IX-01",
+      "stage": "IX",
+      "firstPrintedPage": 194,
+      "lastPrintedPage": 197,
+      "sampledWindows": 305,
+      "matchedWindows": 305,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-IX-02",
+      "stage": "IX",
+      "firstPrintedPage": 198,
+      "lastPrintedPage": 199,
+      "sampledWindows": 69,
+      "matchedWindows": 69,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-IX-03",
+      "stage": "IX",
+      "firstPrintedPage": 200,
+      "lastPrintedPage": 204,
+      "sampledWindows": 279,
+      "matchedWindows": 279,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-X-01",
+      "stage": "X",
+      "firstPrintedPage": 205,
+      "lastPrintedPage": 208,
+      "sampledWindows": 287,
+      "matchedWindows": 285,
+      "matchPercent": 99.3,
+      "unmatchedSamples": [
+        "مالطبيعيوراب",
+        "عيورابعاانوج"
+      ]
+    },
+    {
+      "id": "B-X-02",
+      "stage": "X",
+      "firstPrintedPage": 209,
+      "lastPrintedPage": 210,
+      "sampledWindows": 29,
+      "matchedWindows": 29,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-X-03",
+      "stage": "X",
+      "firstPrintedPage": 211,
+      "lastPrintedPage": 212,
+      "sampledWindows": 126,
+      "matchedWindows": 126,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-X-04",
+      "stage": "X",
+      "firstPrintedPage": 213,
+      "lastPrintedPage": 214,
+      "sampledWindows": 126,
+      "matchedWindows": 126,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-X-05",
+      "stage": "X",
+      "firstPrintedPage": 215,
+      "lastPrintedPage": 216,
+      "sampledWindows": 81,
+      "matchedWindows": 81,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-X-06",
+      "stage": "X",
+      "firstPrintedPage": 217,
+      "lastPrintedPage": 218,
+      "sampledWindows": 126,
+      "matchedWindows": 126,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-X-07",
+      "stage": "X",
+      "firstPrintedPage": 219,
+      "lastPrintedPage": 220,
+      "sampledWindows": 77,
+      "matchedWindows": 77,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-X-08",
+      "stage": "X",
+      "firstPrintedPage": 221,
+      "lastPrintedPage": 222,
+      "sampledWindows": 48,
+      "matchedWindows": 48,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-X-09",
+      "stage": "X",
+      "firstPrintedPage": 223,
+      "lastPrintedPage": 224,
+      "sampledWindows": 72,
+      "matchedWindows": 72,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-X-10",
+      "stage": "X",
+      "firstPrintedPage": 225,
+      "lastPrintedPage": 228,
+      "sampledWindows": 261,
+      "matchedWindows": 259,
+      "matchPercent": 99.23,
+      "unmatchedSamples": [
+        "يةالوجودواما",
+        "ودواماالاضاف"
+      ]
+    },
+    {
+      "id": "B-X-11",
+      "stage": "X",
+      "firstPrintedPage": 229,
+      "lastPrintedPage": 232,
+      "sampledWindows": 338,
+      "matchedWindows": 338,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-X-12",
+      "stage": "X",
+      "firstPrintedPage": 233,
+      "lastPrintedPage": 234,
+      "sampledWindows": 176,
+      "matchedWindows": 176,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-X-13",
+      "stage": "X",
+      "firstPrintedPage": 235,
+      "lastPrintedPage": 238,
+      "sampledWindows": 276,
+      "matchedWindows": 274,
+      "matchPercent": 99.28,
+      "unmatchedSamples": [
+        "همياغيرفكيور",
+        "رفكيورابعاان"
+      ]
+    },
+    {
+      "id": "B-X-14",
+      "stage": "X",
+      "firstPrintedPage": 239,
+      "lastPrintedPage": 240,
+      "sampledWindows": 134,
+      "matchedWindows": 134,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-X-15",
+      "stage": "X",
+      "firstPrintedPage": 241,
+      "lastPrintedPage": 242,
+      "sampledWindows": 55,
+      "matchedWindows": 55,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-X-16",
+      "stage": "X",
+      "firstPrintedPage": 243,
+      "lastPrintedPage": 247,
+      "sampledWindows": 365,
+      "matchedWindows": 365,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XI-01",
+      "stage": "XI",
+      "firstPrintedPage": 248,
+      "lastPrintedPage": 251,
+      "sampledWindows": 338,
+      "matchedWindows": 338,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XI-02",
+      "stage": "XI",
+      "firstPrintedPage": 252,
+      "lastPrintedPage": 255,
+      "sampledWindows": 388,
+      "matchedWindows": 387,
+      "matchPercent": 99.74,
+      "unmatchedSamples": [
+        "لتخيلوكذااشت"
+      ]
+    },
+    {
+      "id": "B-XI-03",
+      "stage": "XI",
+      "firstPrintedPage": 256,
+      "lastPrintedPage": 257,
+      "sampledWindows": 113,
+      "matchedWindows": 113,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XI-04",
+      "stage": "XI",
+      "firstPrintedPage": 258,
+      "lastPrintedPage": 259,
+      "sampledWindows": 84,
+      "matchedWindows": 84,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XI-05",
+      "stage": "XI",
+      "firstPrintedPage": 260,
+      "lastPrintedPage": 261,
+      "sampledWindows": 81,
+      "matchedWindows": 81,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XI-06",
+      "stage": "XI",
+      "firstPrintedPage": 262,
+      "lastPrintedPage": 263,
+      "sampledWindows": 138,
+      "matchedWindows": 138,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XI-07",
+      "stage": "XI",
+      "firstPrintedPage": 264,
+      "lastPrintedPage": 267,
+      "sampledWindows": 281,
+      "matchedWindows": 281,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XI-08",
+      "stage": "XI",
+      "firstPrintedPage": 268,
+      "lastPrintedPage": 273,
+      "sampledWindows": 512,
+      "matchedWindows": 512,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XI-09",
+      "stage": "XI",
+      "firstPrintedPage": 274,
+      "lastPrintedPage": 275,
+      "sampledWindows": 169,
+      "matchedWindows": 169,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XI-10",
+      "stage": "XI",
+      "firstPrintedPage": 276,
+      "lastPrintedPage": 277,
+      "sampledWindows": 129,
+      "matchedWindows": 129,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XI-11",
+      "stage": "XI",
+      "firstPrintedPage": 278,
+      "lastPrintedPage": 279,
+      "sampledWindows": 111,
+      "matchedWindows": 111,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XI-12",
+      "stage": "XI",
+      "firstPrintedPage": 280,
+      "lastPrintedPage": 282,
+      "sampledWindows": 74,
+      "matchedWindows": 74,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XII-01",
+      "stage": "XII",
+      "firstPrintedPage": 283,
+      "lastPrintedPage": 284,
+      "sampledWindows": 71,
+      "matchedWindows": 71,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XII-02",
+      "stage": "XII",
+      "firstPrintedPage": 285,
+      "lastPrintedPage": 286,
+      "sampledWindows": 166,
+      "matchedWindows": 166,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XII-03",
+      "stage": "XII",
+      "firstPrintedPage": 287,
+      "lastPrintedPage": 290,
+      "sampledWindows": 267,
+      "matchedWindows": 267,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XII-04",
+      "stage": "XII",
+      "firstPrintedPage": 291,
+      "lastPrintedPage": 296,
+      "sampledWindows": 480,
+      "matchedWindows": 480,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XII-05",
+      "stage": "XII",
+      "firstPrintedPage": 297,
+      "lastPrintedPage": 302,
+      "sampledWindows": 507,
+      "matchedWindows": 507,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XII-06",
+      "stage": "XII",
+      "firstPrintedPage": 303,
+      "lastPrintedPage": 306,
+      "sampledWindows": 407,
+      "matchedWindows": 407,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XII-07",
+      "stage": "XII",
+      "firstPrintedPage": 307,
+      "lastPrintedPage": 308,
+      "sampledWindows": 46,
+      "matchedWindows": 46,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XII-08",
+      "stage": "XII",
+      "firstPrintedPage": 309,
+      "lastPrintedPage": 310,
+      "sampledWindows": 127,
+      "matchedWindows": 127,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XII-09",
+      "stage": "XII",
+      "firstPrintedPage": 311,
+      "lastPrintedPage": 313,
+      "sampledWindows": 232,
+      "matchedWindows": 232,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XII-10",
+      "stage": "XII",
+      "firstPrintedPage": 314,
+      "lastPrintedPage": 315,
+      "sampledWindows": 158,
+      "matchedWindows": 158,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XII-11",
+      "stage": "XII",
+      "firstPrintedPage": 316,
+      "lastPrintedPage": 317,
+      "sampledWindows": 177,
+      "matchedWindows": 177,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XII-12",
+      "stage": "XII",
+      "firstPrintedPage": 318,
+      "lastPrintedPage": 321,
+      "sampledWindows": 421,
+      "matchedWindows": 421,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XII-13",
+      "stage": "XII",
+      "firstPrintedPage": 322,
+      "lastPrintedPage": 323,
+      "sampledWindows": 56,
+      "matchedWindows": 56,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    },
+    {
+      "id": "B-XII-14",
+      "stage": "XII",
+      "firstPrintedPage": 324,
+      "lastPrintedPage": 325,
+      "sampledWindows": 148,
+      "matchedWindows": 148,
+      "matchPercent": 100,
+      "unmatchedSamples": []
+    }
+  ]
+}

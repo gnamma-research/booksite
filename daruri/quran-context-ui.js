@@ -4,6 +4,27 @@
   'use strict';
   if (window.__gnQuranContextInstalled) return;
   window.__gnQuranContextInstalled = true;
+
+  // Install the independent dictionary expansion layer alongside Qurʾān context.
+  // Its large, full-source payload remains unloaded until the reader asks for it.
+  if (!document.querySelector('script[data-gn-full-dictionary-context]')) {
+    const fullScript = document.createElement('script');
+    fullScript.dataset.gnFullDictionaryContext = '1';
+    fullScript.async = false;
+    fullScript.src = new URL('full-dictionary-context.js?v=20261025-unified1',
+      document.currentScript?.src || document.baseURI).href;
+    document.head.append(fullScript);
+  }
+  // Three-section source-by-source dictionary dossier; loaded after the reader
+  // without altering the canonical authorial text or other apparatus.
+  if (!document.querySelector('script[data-gn-dictionary-dossier]')) {
+    const dossierScript=document.createElement('script');
+    dossierScript.dataset.gnDictionaryDossier='1';
+    dossierScript.async=false;
+    dossierScript.src=new URL('dictionary-dossier.js?v=20261028-compact1',
+      document.currentScript?.src||document.baseURI).href;
+    document.head.append(dossierScript);
+  }
   const selfURL=document.currentScript?.src || new URL('quran-context-ui.js',document.baseURI).href;
   const dataScriptURL=new URL('quran-context-data.js?v=20261022-qcontext1',selfURL).href;
   let dataPromise=null;

@@ -10,6 +10,10 @@ on:
       - "daruri/build/publish_unvowelled_reading.py"
       - "daruri/build/build_editions.py"
       - "daruri/build/main_text.py"
+      - "daruri/build/english_lexicon_pdf.py"
+      - "daruri/english-lexicon-aliases.json"
+      - "daruri/dictionary-data.json"
+      - "daruri/qa/verify_pdf_inline_lexicon.py"
       - "daruri/build/styles.css"
       - "daruri/build/data/quran-source-notes.json"
       - "daruri/build/data/hadith-source-notes.json"
@@ -39,6 +43,7 @@ jobs:
           python -m pip install -r daruri/build/requirements.txt "pypdf==5.9.0" "PyMuPDF==1.26.7"
       - name: Build and verify all twelve PDF variants
         run: |
+          python daruri/qa/verify_pdf_inline_lexicon.py
           python daruri/build/publish_editions.py --output-dir daruri/editions
           # Rebuild the two optional unvowelled bilingual PDFs against exactly
           # the same current canonical source as the other ten A4 editions.

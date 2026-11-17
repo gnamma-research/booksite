@@ -1,0 +1,38 @@
+:root{--paper:#f7f2e9;--white:#fffdf8;--ink:#352d27;--muted:#736559;--green:#315e62;--line:#d8cabc;--pale:#eaf0eb;--shadow:0 14px 40px #46342624}
+body{background:var(--paper);color:var(--ink)}
+.topbar{background:#f7f2e9f7;border-color:var(--line);gap:12px;padding-inline:22px}
+.gn-bidaya-brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink);font:23px Georgia,serif;white-space:nowrap}
+.gn-bidaya-brand img{width:29px;height:29px}.gn-bidaya-brand small{font:8px/1.2 system-ui;letter-spacing:.15em;color:#87543a}
+.edition-switch{display:flex;gap:3px;padding:3px;border:1px solid #cfbbab;border-radius:24px;background:#eae0d5;flex-shrink:0;font:12px/1.3 system-ui}
+.edition-switch a{text-decoration:none;padding:9px 13px;border-radius:20px;color:#67584b;white-space:nowrap}
+.edition-switch a[aria-current=page]{background:#fffdf8;color:#352d27;box-shadow:0 2px 5px #664c3720}
+.atlas-eyebrow,.map-title{color:#87543a}.atlas-mast{border-bottom-color:var(--line)}
+.atlas-card,.atlas-core,.atlas-stakes,.orientation-map{box-shadow:none}
+.atlas-core{border-top-color:#436b6d}.atlas-stakes{background:#f0e6db}
+.atlas-card:hover{box-shadow:0 4px 20px #49352812}.atlas-group-title{color:#736559}
+body[data-edition=law] .atlas-ground{grid-template-columns:1fr}
+body[data-edition=law] .atlas-card-groups{grid-template-columns:1fr}
+body[data-edition=law] .atlas-card-group{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+body[data-edition=law] .atlas-group-title{grid-column:1/-1}
+.gn-related{border-top:1px solid var(--line);padding-top:22px;margin-top:26px}
+.gn-related button{margin:12px 8px}.gn-related a{line-height:1.5}
+.edition-context{padding:12px 18px;border:1px solid #cba47e;border-radius:8px;background:#fff4de;font:14px/1.5 system-ui;margin:0 auto 20px;max-width:1100px}
+.source-edition-nav{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:12px 20px;border-bottom:1px solid var(--line);background:var(--paper);font:13px/1.4 system-ui}
+.source-edition-nav a{padding:7px 10px;text-decoration:none;border:1px solid var(--line);border-radius:7px}
+.source-edition-nav [aria-current=page]{background:#eee0d2;color:#633f2d}
+.gn-gateway{max-width:1040px;margin:0 auto;padding:45px 24px 90px;font:18px/1.75 Georgia,serif}
+.gn-gateway h1{font-size:clamp(37px,6vw,62px);font-weight:400;line-height:1.12;letter-spacing:-.025em;margin:22px 0}
+.gn-gateway h2{font-weight:400;font-size:27px}.gn-gateway p{max-width:76ch}
+.gn-gateway .overline{font:600 11px system-ui;letter-spacing:.16em;color:#87543a;text-transform:uppercase}
+.edition-choices{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:35px 0}
+.edition-choice{padding:26px;border:1px solid var(--line);border-top:3px solid #87543a;border-radius:8px;background:var(--white);color:var(--ink);text-decoration:none}
+.edition-choice:last-child{border-top-color:#436b6d}.edition-choice p{font-size:16px;line-height:1.7}.edition-choice strong{font:600 13px system-ui;color:var(--green)}
+.gn-gateway table{width:100%;border-collapse:collapse;font:14px/1.6 system-ui;display:block;overflow:auto}
+.gn-gateway th,.gn-gateway td{padding:12px;border:1px solid var(--line);text-align:left;vertical-align:top}.gn-gateway th{background:#eee4d7}
+.gn-gateway .source-note{font:14px/1.7 system-ui;color:var(--muted);border-top:1px solid var(--line);padding-top:20px;margin-top:30px}
+.research-list{list-style:none;padding:0}.research-list li{padding:12px 0;border-bottom:1px solid var(--line)}
+@media(min-width:901px){.topbar .top-actions{gap:6px}.topbar .plain-button{font-size:12px;padding:8px}.topbar .brand{min-width:160px}}
+@media(max-width:1100px) and (min-width:901px){.topbar .gn-bidaya-brand small{display:none}.topbar .brand{min-width:118px}}
+@media(max-width:900px){.topbar{display:grid;grid-template-columns:1fr auto;height:auto;min-height:104px;padding:9px 14px;gap:6px}.topbar .brand{max-width:none}.top-actions{grid-column:1/-1;justify-content:flex-start;flex-wrap:wrap;gap:6px}.topbar .top-actions .plain-button{font-size:11px;padding:7px}.edition-switch a{padding:8px 10px;font-size:11px}.gn-bidaya-brand{font-size:21px}.gn-bidaya-brand small{display:none}.sidebar{top:0}.atlas-mast-actions{flex-wrap:wrap}.edition-choices{grid-template-columns:1fr}.gn-gateway{padding:30px 18px 60px}}
+@media(max-width:540px){body[data-edition=law] .atlas-card-group{grid-template-columns:1fr}.gn-gateway th,.gn-gateway td{padding:9px}.gn-bidaya-brand img{width:24px;height:24px}.edition-switch a{padding:8px;font-size:10px}.topbar{padding-inline:10px}}
+@media print{.topbar,.source-edition-nav,.gn-related,.edition-context{display:none!important}.layout{display:block}.sidebar{display:none!important}main{padding:0!important}.atlas-mast{display:none}.gn-gateway{padding:0}a{color:inherit}}

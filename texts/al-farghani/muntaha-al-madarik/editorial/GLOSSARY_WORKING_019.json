@@ -1,0 +1,535 @@
+{
+  "schema": "gnamma-farghani-introduction-glossary-draft-v1",
+  "status": "editorial contextual glosses; source-page attestation to be programmatically checked",
+  "scope": "Four foundations and concluding preface only, B2007 pp18-145; excludes poem commentary",
+  "entries": [
+    {
+      "id": "FG19-001",
+      "arabic": "ذات",
+      "transliteration": "dhāt",
+      "english": "Essence",
+      "editorial_distinction": "Name of the divine Essence; distinguish it from the Essence considered under a particular disclosure or relational aspect.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-002",
+      "arabic": "غيب الهوية",
+      "transliteration": "ghayb al-huwiyya",
+      "english": "unseen Identity",
+      "editorial_distinction": "The most inward divine hiddenness; not an invisible creature or a bounded object.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-003",
+      "arabic": "إطلاق",
+      "transliteration": "iṭlāq",
+      "english": "nondelimitation",
+      "editorial_distinction": "Freedom from qualifying restrictions; not merely physical boundlessness.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-004",
+      "arabic": "أزلية",
+      "transliteration": "azaliyya",
+      "english": "pre-eternity",
+      "editorial_distinction": "Priority without beginning; distinguish temporal sequence from principial priority.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-005",
+      "arabic": "أبدية",
+      "transliteration": "abadiyya",
+      "english": "everlastingness",
+      "editorial_distinction": "Endlessness in the relevant regard, not automatically identical with pre-eternity.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-006",
+      "arabic": "أحدية",
+      "transliteration": "aḥadiyya",
+      "english": "unicity",
+      "editorial_distinction": "Oneness considered without unfolded differentiated names; not simply synonymous with wāḥidiyya.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-007",
+      "arabic": "واحدية",
+      "transliteration": "wāḥidiyya",
+      "english": "oneness",
+      "editorial_distinction": "Unity with distinguishable intelligible name-relations included, without substantial multiplicity.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-008",
+      "arabic": "تعيّن",
+      "transliteration": "taʿayyun",
+      "english": "determination",
+      "editorial_distinction": "Distinct specification of a rank or relation; does not in itself posit an independently existing substance.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-009",
+      "arabic": "التعين الأول",
+      "transliteration": "al-taʿayyun al-awwal",
+      "english": "first determination",
+      "editorial_distinction": "The initial comprehensive rank in which unicity and oneness require careful distinction.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-010",
+      "arabic": "تجلّي",
+      "transliteration": "tajallī",
+      "english": "self-disclosure",
+      "editorial_distinction": "Manifestation in a receptive regard; not spatial motion of the divine.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-011",
+      "arabic": "ظهور",
+      "transliteration": "ẓuhūr",
+      "english": "outward manifestation",
+      "editorial_distinction": "Showing-forth of an inward reality relative to a recipient or rank.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-012",
+      "arabic": "بطون",
+      "transliteration": "buṭūn",
+      "english": "inwardness",
+      "editorial_distinction": "Being inward or concealed relative to a given disclosure; not simple nonexistence.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-013",
+      "arabic": "رتبة",
+      "transliteration": "rutba",
+      "english": "rank",
+      "editorial_distinction": "An intelligible or ontological order, not automatically a historical date or physical location.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-014",
+      "arabic": "مرتبة",
+      "transliteration": "martaba",
+      "english": "rank",
+      "editorial_distinction": "Degree or station of determination; retain context-sensitive distinctions from rutba and maqām.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-015",
+      "arabic": "اعتبار",
+      "transliteration": "iʿtibār",
+      "english": "consideration",
+      "editorial_distinction": "Distinct aspect of an identical reality; do not turn every consideration into an independent entity.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-016",
+      "arabic": "نسبة",
+      "transliteration": "nisba",
+      "english": "relation",
+      "editorial_distinction": "Attribution or relation under a given regard; often distinguishes names without dividing the Essence.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-017",
+      "arabic": "برزخ",
+      "transliteration": "barzakh",
+      "english": "intermediary",
+      "editorial_distinction": "A comprehensive term between contrasted considerations; not invariably a place between two things.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-018",
+      "arabic": "حقيقة",
+      "transliteration": "ḥaqīqa",
+      "english": "reality",
+      "editorial_distinction": "Principial reality, formal truth, or established determination according to context.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-019",
+      "arabic": "حقائق",
+      "transliteration": "ḥaqāʾiq",
+      "english": "realities",
+      "editorial_distinction": "Plural determinations or truths; count and individuality depend on the rank considered.",
+      "category": "Essence and determination"
+    },
+    {
+      "id": "FG19-020",
+      "arabic": "وجود",
+      "transliteration": "wujūd",
+      "english": "existence; existential presence",
+      "editorial_distinction": "Ranges across self-presence, manifestation and particular existence; do not impose a single external system's sense.",
+      "category": "Existence and knowing"
+    },
+    {
+      "id": "FG19-021",
+      "arabic": "وجدان",
+      "transliteration": "wijdān",
+      "english": "finding; being-present-to",
+      "editorial_distinction": "The reflexive sense of finding/presence relevant to Farghānī's explanations of wujūd.",
+      "category": "Existence and knowing"
+    },
+    {
+      "id": "FG19-022",
+      "arabic": "علم",
+      "transliteration": "ʿilm",
+      "english": "knowledge",
+      "editorial_distinction": "Divine knowing at the first rank and differentiated knowledge-relations at later ranks are not interchangeable.",
+      "category": "Existence and knowing"
+    },
+    {
+      "id": "FG19-023",
+      "arabic": "المعلومات",
+      "transliteration": "al-maʿlūmāt",
+      "english": "known things",
+      "editorial_distinction": "Contents of knowledge, not necessarily independent external objects.",
+      "category": "Existence and knowing"
+    },
+    {
+      "id": "FG19-024",
+      "arabic": "شهود",
+      "transliteration": "shuhūd",
+      "english": "witnessing",
+      "editorial_distinction": "Direct presence or manifestation as known to a witness; distinguish from discursive inference.",
+      "category": "Existence and knowing"
+    },
+    {
+      "id": "FG19-025",
+      "arabic": "كشف",
+      "transliteration": "kashf",
+      "english": "unveiling",
+      "editorial_distinction": "Disclosure of what is concealed from a limited standpoint; not by itself critical verification of a text.",
+      "category": "Existence and knowing"
+    },
+    {
+      "id": "FG19-026",
+      "arabic": "الأسماء الإلهية",
+      "transliteration": "al-asmāʾ al-ilāhiyya",
+      "english": "divine names",
+      "editorial_distinction": "Distinct names and relational perfections without a multiplicity of divine Essences.",
+      "category": "Divine names"
+    },
+    {
+      "id": "FG19-027",
+      "arabic": "الاسم الحي",
+      "transliteration": "al-ism al-Ḥayy",
+      "english": "the name the Living",
+      "editorial_distinction": "Principial life under divine naming, not merely biological animation.",
+      "category": "Divine names"
+    },
+    {
+      "id": "FG19-028",
+      "arabic": "الاسم العليم",
+      "transliteration": "al-ism al-ʿAlīm",
+      "english": "the name the Knowing",
+      "editorial_distinction": "The name from which epistemic branches are articulated in the introduction.",
+      "category": "Divine names"
+    },
+    {
+      "id": "FG19-029",
+      "arabic": "الاسم القادر",
+      "transliteration": "al-ism al-Qādir",
+      "english": "the name the Powerful",
+      "editorial_distinction": "The divine name of power, whose branches require specific acts and recipients.",
+      "category": "Divine names"
+    },
+    {
+      "id": "FG19-030",
+      "arabic": "المريد",
+      "transliteration": "al-Murīd",
+      "english": "the Willing",
+      "editorial_distinction": "The name or qualification of willing, not an autonomous finite desire.",
+      "category": "Divine names"
+    },
+    {
+      "id": "FG19-031",
+      "arabic": "القائل",
+      "transliteration": "al-Qāʾil",
+      "english": "the Speaking",
+      "editorial_distinction": "Used in the internal naming scheme; do not silently substitute it for the printed al-qābil without source grounds.",
+      "category": "Divine names"
+    },
+    {
+      "id": "FG19-032",
+      "arabic": "القابل",
+      "transliteration": "al-qābil",
+      "english": "the receptive",
+      "editorial_distinction": "Preserved on B2007 p38 and the photographed historical print; not automatically a typo for al-qāʾil.",
+      "category": "Divine names"
+    },
+    {
+      "id": "FG19-033",
+      "arabic": "الحكم",
+      "transliteration": "al-Ḥakam",
+      "english": "the Judge",
+      "editorial_distinction": "Historical 1876 print at the B2007 p52 name-sequence locus; modern digital alternative has al-Ḥakīm.",
+      "category": "Divine names"
+    },
+    {
+      "id": "FG19-034",
+      "arabic": "الحكيم",
+      "transliteration": "al-Ḥakīm",
+      "english": "the Wise",
+      "editorial_distinction": "A different divine name from al-Ḥakam, crucial to the p52 digital-vs-historical print comparison.",
+      "category": "Divine names"
+    },
+    {
+      "id": "FG19-035",
+      "arabic": "الجواد",
+      "transliteration": "al-Jawād",
+      "english": "the Generous Giver",
+      "editorial_distinction": "Name of generosity extending through ordered modes of bestowal.",
+      "category": "Divine names"
+    },
+    {
+      "id": "FG19-036",
+      "arabic": "الغفار",
+      "transliteration": "al-Ghaffār",
+      "english": "the All-forgiving",
+      "editorial_distinction": "Farghānī's discussion distinguishes generality of forgiveness under this name.",
+      "category": "Divine names"
+    },
+    {
+      "id": "FG19-037",
+      "arabic": "الغفور",
+      "transliteration": "al-Ghafūr",
+      "english": "the Forgiving",
+      "editorial_distinction": "His discussion distinguishes multiplicity of instances from the scope of al-Ghaffār.",
+      "category": "Divine names"
+    },
+    {
+      "id": "FG19-038",
+      "arabic": "رحمة",
+      "transliteration": "raḥma",
+      "english": "mercy",
+      "editorial_distinction": "Divine mercy viewed under different scopes and modes of bestowal.",
+      "category": "Divine names"
+    },
+    {
+      "id": "FG19-039",
+      "arabic": "كمال ذاتي",
+      "transliteration": "kamāl dhātī",
+      "english": "essential perfection",
+      "editorial_distinction": "Perfection without a requirement that it be manifested to another.",
+      "category": "Divine names"
+    },
+    {
+      "id": "FG19-040",
+      "arabic": "الكمال الأسمائي",
+      "transliteration": "al-kamāl al-asmāʾī",
+      "english": "name-related perfection",
+      "editorial_distinction": "Articulated through the determinations and effects of divine names.",
+      "category": "Divine names"
+    },
+    {
+      "id": "FG19-041",
+      "arabic": "حضرة",
+      "transliteration": "ḥaḍra",
+      "english": "presence",
+      "editorial_distinction": "A domain of actuality or consideration; avoid reducing it to a location.",
+      "category": "Cosmological ranks"
+    },
+    {
+      "id": "FG19-042",
+      "arabic": "الحضرة العمائية",
+      "transliteration": "al-ḥaḍra al-ʿamāʾiyya",
+      "english": "Cloud-like Presence",
+      "editorial_distinction": "Photo-verified 1876 reading at the p34 correspondence; distinct from later digital ʿamaliyya.",
+      "category": "Cosmological ranks"
+    },
+    {
+      "id": "FG19-043",
+      "arabic": "العماء",
+      "transliteration": "al-ʿamāʾ",
+      "english": "cloud-like primordial obscurity",
+      "editorial_distinction": "Technical Akbarian use of the prophetic report's image; textual and hadith status require caution.",
+      "category": "Cosmological ranks"
+    },
+    {
+      "id": "FG19-044",
+      "arabic": "عالم الأرواح",
+      "transliteration": "ʿālam al-arwāḥ",
+      "english": "world of spirits",
+      "editorial_distinction": "Cosmic rank not reducible to physical space or individual souls alone.",
+      "category": "Cosmological ranks"
+    },
+    {
+      "id": "FG19-045",
+      "arabic": "ملكوت",
+      "transliteration": "malakūt",
+      "english": "spiritual dominion",
+      "editorial_distinction": "Spiritual or invisible governance in the ordering of ranks.",
+      "category": "Cosmological ranks"
+    },
+    {
+      "id": "FG19-046",
+      "arabic": "جبروت",
+      "transliteration": "jabarūt",
+      "english": "powerful dominion",
+      "editorial_distinction": "Higher rank of mastery; do not automatically equate with a different school's categories.",
+      "category": "Cosmological ranks"
+    },
+    {
+      "id": "FG19-047",
+      "arabic": "قلم",
+      "transliteration": "qalam",
+      "english": "Pen",
+      "editorial_distinction": "Principial cosmological expression associated with knowing, determination and inscription.",
+      "category": "Cosmological ranks"
+    },
+    {
+      "id": "FG19-048",
+      "arabic": "اللوح المحفوظ",
+      "transliteration": "al-lawḥ al-maḥfūẓ",
+      "english": "Preserved Tablet",
+      "editorial_distinction": "Corresponding receptacle for inscription in the spiritual-cosmic exposition.",
+      "category": "Cosmological ranks"
+    },
+    {
+      "id": "FG19-049",
+      "arabic": "عرش",
+      "transliteration": "ʿarsh",
+      "english": "Throne",
+      "editorial_distinction": "Comprehensive cosmological manifestation with several distinct senses of istiwāʾ.",
+      "category": "Cosmological ranks"
+    },
+    {
+      "id": "FG19-050",
+      "arabic": "كرسي",
+      "transliteration": "kursī",
+      "english": "Footstool",
+      "editorial_distinction": "Cosmic rank that admits several regards and relations in the foundation on the world.",
+      "category": "Cosmological ranks"
+    },
+    {
+      "id": "FG19-051",
+      "arabic": "هباء",
+      "transliteration": "habāʾ",
+      "english": "dust-like substratum",
+      "editorial_distinction": "Term for subtle receptive cosmic material, not mundane particulate dust.",
+      "category": "Cosmological ranks"
+    },
+    {
+      "id": "FG19-052",
+      "arabic": "عالم المثال",
+      "transliteration": "ʿālam al-mithāl",
+      "english": "imaginal world",
+      "editorial_distinction": "Objective imaginal realm, not arbitrary fantasy.",
+      "category": "Cosmological ranks"
+    },
+    {
+      "id": "FG19-053",
+      "arabic": "الإنسان الكامل",
+      "transliteration": "al-insān al-kāmil",
+      "english": "Perfect Human",
+      "editorial_distinction": "Comprehensive locus of the manifestation of names and realities; not simply moral excellence.",
+      "category": "Anthropology and journey"
+    },
+    {
+      "id": "FG19-054",
+      "arabic": "الحقيقة المحمدية",
+      "transliteration": "al-ḥaqīqa al-Muḥammadiyya",
+      "english": "Muhammadan Reality",
+      "editorial_distinction": "Principial Muhammadan comprehensiveness, distinct from a purely biographical description.",
+      "category": "Anthropology and journey"
+    },
+    {
+      "id": "FG19-055",
+      "arabic": "فطرة",
+      "transliteration": "fiṭra",
+      "english": "original disposition",
+      "editorial_distinction": "Primordial created orientation; differentiated from acquired psychological habits.",
+      "category": "Anthropology and journey"
+    },
+    {
+      "id": "FG19-056",
+      "arabic": "قلب",
+      "transliteration": "qalb",
+      "english": "heart",
+      "editorial_distinction": "The intermediary heart may indicate spiritual comprehensiveness rather than only the physical organ.",
+      "category": "Anthropology and journey"
+    },
+    {
+      "id": "FG19-057",
+      "arabic": "الروح الحيواني",
+      "transliteration": "al-rūḥ al-ḥayawānī",
+      "english": "animal spirit",
+      "editorial_distinction": "A rank in Farghānī's layered account of physiological and spiritual animation.",
+      "category": "Anthropology and journey"
+    },
+    {
+      "id": "FG19-058",
+      "arabic": "نفس",
+      "transliteration": "nafs",
+      "english": "soul; self",
+      "editorial_distinction": "Ranges from psychological faculties to the self in a journey; specify the context.",
+      "category": "Anthropology and journey"
+    },
+    {
+      "id": "FG19-059",
+      "arabic": "محبة",
+      "transliteration": "maḥabba",
+      "english": "love",
+      "editorial_distinction": "The original inclination toward disclosure and later experiential love require distinct registers.",
+      "category": "Anthropology and journey"
+    },
+    {
+      "id": "FG19-060",
+      "arabic": "فناء",
+      "transliteration": "fanāʾ",
+      "english": "annihilation",
+      "editorial_distinction": "Removal of certain appropriated determinations; distinguish degrees and complementary abiding.",
+      "category": "Anthropology and journey"
+    },
+    {
+      "id": "FG19-061",
+      "arabic": "بقاء",
+      "transliteration": "baqāʾ",
+      "english": "abiding",
+      "editorial_distinction": "Continuation or subsistence after relevant annihilation, not simply a return to ordinary egohood.",
+      "category": "Anthropology and journey"
+    },
+    {
+      "id": "FG19-062",
+      "arabic": "جمع",
+      "transliteration": "jamʿ",
+      "english": "gathering; unification",
+      "editorial_distinction": "Station of comprehensive unity; its use must be distinguished from erasure of all differentiated acts.",
+      "category": "Anthropology and journey"
+    },
+    {
+      "id": "FG19-063",
+      "arabic": "تفرقة",
+      "transliteration": "tafriqa",
+      "english": "differentiation",
+      "editorial_distinction": "Articulated multiplicity related to a rank; often complementary to gathered unity.",
+      "category": "Anthropology and journey"
+    },
+    {
+      "id": "FG19-064",
+      "arabic": "سلوك",
+      "transliteration": "sulūk",
+      "english": "spiritual travelling",
+      "editorial_distinction": "Ordered travel through stations and practices; distinguish from attraction or sudden disclosure.",
+      "category": "Anthropology and journey"
+    },
+    {
+      "id": "FG19-065",
+      "arabic": "جذب",
+      "transliteration": "jadhb",
+      "english": "attraction",
+      "editorial_distinction": "Drawing to a rank without the ordinary order of disciplined traversal.",
+      "category": "Anthropology and journey"
+    },
+    {
+      "id": "FG19-066",
+      "arabic": "تحقيق",
+      "transliteration": "taḥqīq",
+      "english": "realization",
+      "editorial_distinction": "A state of actual realization, not mere theoretical correctness.",
+      "category": "Anthropology and journey"
+    }
+  ]
+}

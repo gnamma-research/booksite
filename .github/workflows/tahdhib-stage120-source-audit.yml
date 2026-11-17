@@ -1,0 +1,72 @@
+name: Tahdhib Stage120 bound-source translation and cumulative integrity
+on:
+  workflow_dispatch:
+  push:
+    branches: ['research/tahdhib-stage120-q258-q294-photo-clauses-20261112']
+    paths:
+      - '.github/workflows/tahdhib-stage120-source-audit.yml'
+      - 'tools/tahdhib/build_stage120_cumulative.py'
+      - 'tools/tahdhib/check_stage120_release.py'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE120_*.json'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE120_SOURCE_PHOTO_AUDIT.md'
+permissions:
+  contents: write
+jobs:
+  build-audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Assemble complete historical H corpus without rewriting a byte of Stage119
+        run: python tools/tahdhib/build_stage120_cumulative.py
+      - name: Verify 39 Q258 phrase loci, 27 Q294 source signs, and SHA256 continuity
+        run: python tools/tahdhib/check_stage120_release.py
+      - name: Run existing logical-core and published Stage114 corpus checks
+        run: |
+          python -m pip install PyYAML==6.0.2
+          python tools/tahdhib/run_ci_contract.py logical-core
+      - name: Publish only generated Stage120 cumulative text and its integrity manifest
+        env:
+          TARGET_BRANCH: research/tahdhib-stage120-q258-q294-photo-clauses-20261112
+        run: |
+          test "$GITHUB_REF" = "refs/heads/$TARGET_BRANCH"
+          E=texts/al-taftazani/tahdhib-al-mantiq/edition
+          D=$(mktemp -d)
+          cp "$E/batches/hawashi-all-sections-cumulative-stage120.md" "$D/full.md"
+          cp "$E/STAGE120_CUMULATIVE_FILE_INTEGRITY.json" "$D/manifest.json"
+          SOURCE_SHA=$(sha256sum "$E/STAGE120_Q258_FIFTEEN_SOURCE_FRAGMENTS.json" "$E/STAGE120_Q294_EIGHT_DIRECTIONAL_SYMBOLS.json" "$E/HANDOFF_LATEST.md" | sha256sum | cut -d' ' -f1)
+          git fetch origin "$TARGET_BRANCH"
+          git reset --hard "origin/$TARGET_BRANCH"
+          CURRENT_SHA=$(sha256sum "$E/STAGE120_Q258_FIFTEEN_SOURCE_FRAGMENTS.json" "$E/STAGE120_Q294_EIGHT_DIRECTIONAL_SYMBOLS.json" "$E/HANDOFF_LATEST.md" | sha256sum | cut -d' ' -f1)
+          test "$SOURCE_SHA" = "$CURRENT_SHA" || { echo "Source changed while building"; exit 3; }
+          cp "$D/full.md" "$E/batches/hawashi-all-sections-cumulative-stage120.md"
+          cp "$D/manifest.json" "$E/STAGE120_CUMULATIVE_FILE_INTEGRITY.json"
+          python tools/tahdhib/check_stage120_release.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$E/batches/hawashi-all-sections-cumulative-stage120.md" "$E/STAGE120_CUMULATIVE_FILE_INTEGRITY.json"
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish Tahdhīb Stage120 complete recoverable historic corpus and source readings"
+            git push origin "HEAD:refs/heads/$TARGET_BRANCH"
+          fi
+      - name: Export complete recoverable Stage120 research corpus and source apparatus
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tahdhib-stage120-full-cumulative-source
+          path: |
+            texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage120.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage119.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE120_*
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_STAGE119.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/print1405_Q258_table_excerpt.png
+            texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/print1405_Q294_table_excerpt.png
+            texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/PRINT_IMAGE_MANIFEST_STAGE116.json
+            tools/tahdhib/build_stage120_cumulative.py
+            tools/tahdhib/check_stage120_release.py
+          if-no-files-found: warn
+          retention-days: 90

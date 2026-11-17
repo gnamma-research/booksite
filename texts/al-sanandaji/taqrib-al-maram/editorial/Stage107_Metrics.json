@@ -1,0 +1,39 @@
+{
+  "stage": 107,
+  "created_utc": "2026-11-17",
+  "original_pdf_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "original_physical_pages": 632,
+  "volume_I_positions": 280,
+  "volume_II_positions": 335,
+  "total_printed_positions": 615,
+  "volume_I_stable_ids": 1401,
+  "volume_I_active_ids": 1400,
+  "new_volume_I_readings": [
+    "I043.upper.02",
+    "I044.lower.01",
+    "I044.lower.02"
+  ],
+  "arabic_bearing_record_count": 1297,
+  "arabic_empty_record_count": 103,
+  "blank_by_layer": {
+    "lower": 90,
+    "upper": 13
+  },
+  "complete_all_register_independent_translation_page_count": 0,
+  "independently_second_proofed_page_count": 0,
+  "volume_I_proof_rows_retained": 1400,
+  "volume_II_stage107_new_firstpass_source_locator_reviews": 45,
+  "volume_II_fixed_selected_ids_total_located": 53,
+  "volume_II_full_independent_clause_proofs": 0,
+  "volume_II_stage38_stage51_unchanged_baseline_main_drafts": 100,
+  "volume_II_stage38_stage51_unchanged_baseline_lower_sections": 163,
+  "inherited_stage106_known_assets": 741,
+  "inherited_byte_identical": 739,
+  "inherited_reader_originals_retained": 2,
+  "volume_II_historical_migration_denominator": "unknown",
+  "source_hash_checks_pass": true,
+  "next_volume_I": "I044.upper.02",
+  "next_volume_I_physical_pdf_page": 57,
+  "next_volume_II": "II224 B6.SHARH.II224.12, then II226 B6.S.II226.2010 and II229 B6.S.II229.2105",
+  "live_browser_QA": "not_verified"
+}

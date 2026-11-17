@@ -1,0 +1,2005 @@
+{
+  "audit_date": "2026-11-10",
+  "scope": {
+    "surahs": [
+      112,
+      113,
+      114
+    ],
+    "segment_count": 54,
+    "kashshaf_segments": 20,
+    "tibi_segments": 34,
+    "comparison_basis": "All 54 existing C06 English segments read against separated electronic Arabic authorial passages, with quotation-source checks at selected difficult loci.",
+    "source_included": "Authorial surah discussions through completion of al-Nas; no modern editorial notes claimed as translated.",
+    "outside_scope": [
+      "Kashshaf closing prayer and colophon following DKA IV:824.",
+      "Tibi Tadhyil wa-tatmim beginning Dubai XVI:657.",
+      "All other surahs.",
+      "A fresh visual scan collation or manuscript collation."
+    ]
+  },
+  "status": "electronic_source_audit_with_explicit_unresolved_readings",
+  "sources": [
+    {
+      "url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+      "work": "Futuh al-ghayb with embedded Kashshaf base text",
+      "pages": "XVI:632–643",
+      "use": "Separated base and commentary; full electronic passage read."
+    },
+    {
+      "url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+      "work": "Futuh al-ghayb with embedded Kashshaf base text",
+      "pages": "XVI:644–651",
+      "use": "Separated base and commentary; full electronic passage read."
+    },
+    {
+      "url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+      "work": "Futuh al-ghayb with embedded Kashshaf base text",
+      "pages": "XVI:652–656",
+      "use": "Separated base and commentary; stopped before Tadhyil."
+    },
+    {
+      "path": "sources/Kashshaf-selected.mARkdown",
+      "work": "Kashshaf DKA electronic transcription",
+      "pages": "IV:817–824",
+      "use": "Independent base-text comparison and variant verification; contains electronic errors too."
+    },
+    {
+      "url": "https://www.islamweb.net/ar/library/content/205/3329/تفسير-سورة-سورة-الفلق",
+      "work": "Al-Baydawi, Anwar al-tanzil",
+      "pages": "V:348",
+      "use": "Primary Arabic quoted source for T113.01; confirms محاكاة فاتحة يوم القيامة and تربية."
+    },
+    {
+      "url": "https://arabic-keyboard.info/books/ar/read-book/تفسير-الراغب-الأصفهاني",
+      "work": "Al-Raghib, Tafsir",
+      "location": "Tafsir 2:102, electronic line 918",
+      "use": "Primary Arabic quoted source for T113.07; confirms human illness/recovery, لو conditional and بما يقع."
+    },
+    {
+      "url": "https://tafsir.deenapps.com/index.php?chapter=114&tafsir_type=al-razi&trans=usmani&verse=6",
+      "work": "Al-Razi, Mafatih al-ghayb",
+      "location": "Tafsir 114:6, Arabic text, electronic line 44",
+      "use": "Only original Arabic used, not site's AI English summary. Confirms وهذا القول ضعيف; exact Tibi repair remains unproved."
+    },
+    {
+      "url": "https://almntqim.com/٤٦٥١_خزانة-الأدب-البغدادي-ج-٣/٨٦_الصفحة",
+      "work": "Al-Baghdadi, Khizanat al-adab",
+      "pages": "III:86",
+      "use": "Full poetic line and grammatical explanation."
+    },
+    {
+      "url": "https://almntqim.com/٤٦٥١_خزانة-الأدب-البغدادي-ج-٣/٨٨_الصفحة",
+      "work": "Al-Baghdadi, Khizanat al-adab",
+      "pages": "III:88",
+      "use": "Explains staying until morning for T112.12."
+    }
+  ],
+  "limitations": [
+    "This is not a definitive critical edition and must not be labelled newly scan-checked.",
+    "Previously documented C06 scan readings are carried forward with that provenance; scans were not reinspected in this pass.",
+    "Quoted-source emendations are bracketed and distinguished from readings of Tibi's own witness.",
+    "Arabic raw is preserved beside Arabic display text. Display text contains explicitly logged corrections, source restorations and mechanical typography fixes.",
+    "T113.06 has an Arabic electronic lacuna corresponding to an English passage restored in the prior scan report. Exact Arabic remains to be recovered; no backtranslation supplied.",
+    "Some remaining Arabic reading difficulties and contextual English repairs are flagged per segment.",
+    "Hadith reports are translated as the authors give them; this audit does not authenticate every transmission."
+  ],
+  "coverage": {
+    "electronic_segments_reviewed": 54,
+    "fresh_scan_pages_reviewed": 0,
+    "arabic_counterparts": 54,
+    "arabic_counterparts_with_known_lacuna": 1,
+    "english_segments_with_recommended_changes": [
+      "T112.12",
+      "T113.01",
+      "T113.07",
+      "T114.07"
+    ]
+  },
+  "integration_instructions": "Match by segment id. arabic is the proposed display counterpart; arabic_source_raw is the uncorrected extracted electronic wording. recommended_english includes only documented suggested changes. Keep existing_notes and unresolved_flags; carry Arabic editorial/source provenance into apparatus. Do not mark T113.06 Arabic complete. Do not treat linked quoted-source restorations as verified readings of Tibi's print.",
+  "segments": [
+    {
+      "id": "K112.01",
+      "author": "al-Zamakhshari",
+      "arabic": "مكية، وقيل: مدنية، وهي أربع آيات\n\nبسم الله الرحمن الرحيم\n\n[(قُلْ هُوَ اللَّهُ أَحَدٌ (1) اللَّهُ الصَّمَدُ (2) لَمْ يَلِدْ وَلَمْ يُولَدْ (3) وَلَمْ يَكُنْ لَهُ كُفُواً أَحَدٌ)] 1 - 4 [",
+      "arabic_source_raw": "مكية، وقيل: مدنية، وهي أربع آيات\n\nبسم الله الرحمن الرحيم\n\n[(قُلْ هُوَ اللَّهُ أَحَدٌ (1) اللَّهُ الصَّمَدُ (2) لَمْ يَلِدْ وَلَمْ يُولَدْ (3) وَلَمْ يَكُنْ لَهُ كُفُواً أَحَدٌ)] 1 - 4 [",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          11,
+          13,
+          15
+        ],
+        "printed_pages": [
+          632
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K112.01 | T XVI 632; K IV 817]",
+      "existing_notes": [
+        "[REVIEW K112-A: The separate four-volume transcription additionally prints “revealed after al-Nās” in its heading and repeats the basmala. These are absent from the corresponding Dubai base-text heading. Their authorial status is unestablished; they are recorded rather than silently inserted.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "Sūrat al-Ikhlāṣ. Meccan; it is also said to be Medinan. It has four verses.\nIn the name of God, the All-Merciful, the Merciful.\n“Say: He is God, One. God, the One to whom all turn in need (al-Ṣamad). He neither begot nor was begotten, and no one is equal to Him.” [112:1–4]\n[REVIEW K112-A: The separate four-volume transcription additionally prints “revealed after al-Nās” in its heading and repeats the basmala. These are absent from the corresponding Dubai base-text heading. Their authorial status is unestablished; they are recorded rather than silently inserted.]"
+    },
+    {
+      "id": "K112.02",
+      "author": "al-Zamakhshari",
+      "arabic": "(هُوَ) ضمير الشأن، و (اللَّهُ أَحَدٌ) هو الشأن، كقولك: هو زيد منطلق، كأنه قيل: الشأن هذا، وهو أنّ الله واحد لا ثاني له.\n\nفإن قلت: ما محل (هو)؟\n\nقلت: الرفع على الابتداء والخبر الجملة.\n\nفإن قلت: فالجملة الواقعة خبرًا لا بد فيها من راجع إلى المبتدأ، فأين الراجع؟\n\nقلت: حكم هذه الجملة حكم المفرد في قولك: (زيد غلامك) في أنه هو المبتدأ في المعنى، وذلك أن قوله: (اللَّهُ أَحَدٌ) هو الشأن الذي هو عبارة عنه، وليس كذلك (زيد أبوه منطلق)؛ فإنّ زيدًا والجملة يدلان على معنيين مختلفين، فلا بد مما يصل بينهما. وعن ابن عباس: قالت قريش: يا محمد، صف لنا ربك الذي تدعونا إليه، فنزلت، يعنى: الذي سألتموني وصفه هو الله، و (أحد): بدل من قوله: (الله)،\n\nأو على: هو أحد، وهو بمعنى واحد، وأصله: وحد",
+      "arabic_source_raw": "(هُوَ) ضمير الشأن، و (اللَّهُ أَحَدٌ) هو الشأن، كقولك: هو زيد منطلق، كأنه قيل: الشأن هذا، وهو أنّ الله واحد لا ثاني له.\n\nفإن قلت: ما محل (هو)؟\n\nقلت: الرفع على الابتداء والخبر الجملة.\n\nفإن قلت: فالجملة الواقعة خبرًا لا بد فيها من راجع إلى المبتدأ، فأين الراجع؟\n\nقلت: حكم هذه الجملة حكم المفرد في قولك: (زيد غلامك) في أنه هو المبتدأ في المعنى، وذلك أن قوله: (اللَّهُ أَحَدٌ) هو الشأن الذي هو عبارة عنه، وليس كذلك (زيد أبوه منطلق)؛ فإنّ زيدًا والجملة يدلان على معنيين مختلفين، فلا بد مما يصل بينهما. وعن ابن عباس: قالت قريش: يا محمد، صف لنا ربك الذي تدعونا إليه، فنزلت، يعنى: الذي سألتموني وصفه هو الله، و (أحد): بدل من قوله: (الله)،\n\nأو على: هو أحد، وهو بمعنى واحد، وأصله: وحد",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          17,
+          19,
+          21,
+          23,
+          24,
+          33
+        ],
+        "printed_pages": [
+          632,
+          633
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K112.02 | T XVI 632–633; K IV 817]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "Huwa [He/it] is the pronoun of the matter (ḍamīr al-shaʾn), and “God is One” is that matter, as when you say, “It is: Zayd is departing.” It is as though one had said: the matter is this—namely, that God is one, with no second beside Him.\nIf you ask, “What is the syntactic position of huwa?”, I answer: nominative, as the subject (mubtadaʾ); its predicate is the sentence.\nIf you ask, “A sentence functioning as a predicate must contain something referring back to the subject. Where, then, is that reference?”, I answer: this sentence has the same status as the single predicate in your statement “Zayd is your servant-boy”: in meaning, it is the subject itself. For “God is One” is precisely the matter expressed by huwa. This is not the case with “Zayd—his father is departing,” since Zayd and the sentence denote two different meanings; something connecting them is therefore indispensable.\nIbn ʿAbbās reports: Quraysh said, “Muḥammad, describe to us your Lord, to whom you summon us,” and the sūrah was revealed. That is: the one whose description you have asked me for is God. Aḥad is a substitution (badal) for “God”; alternatively, [it is construed with an understood subject] “He is One.” It has the meaning of wāḥid, and its original form is waḥad."
+    },
+    {
+      "id": "K112.03",
+      "author": "al-Zamakhshari",
+      "arabic": "وقرأ عبد الله وأبىّ: (هو الله أحد) بغير (قُلْ)، وفي قراءة النبي صلى الله عليه وسلم: (الله أحد) بغير (قُلْ هُوَ)، وقال: \"من قرأ: الله أحد، كان بعدل القرآن). وقرأ الأعمش: (قل هو الله الواحد). وقرئ: (أحد الله) بغير تنوين؛\n\nأسقط لملاقاته لام التعريف. ونحوه:\n\nولا ذاكر الله إلّا قليلا\n\nوالجيد هو التنوين، وكسره لالتقاء الساكنين. و (الصَّمَدُ) فعل بمعنى مفعول، من صمد إليه إذا قصده، وهو السيد المصمود إليه في الحوائج",
+      "arabic_source_raw": "وقرأ عبد الله وأبىّ: (هو الله أحد) بغير (قُلْ)، وفي قراءة النبي صلى الله عليه وسلم: (الله أحد) بغير (قُلْ هُوَ)، وقال: \"من قرأ: الله أحد، كان بعدل القرآن). وقرأ الأعمش: (قل هو الله الواحد). وقرئ: (أحد الله) بغير تنوين؛\n\nأسقط لملاقاته لام التعريف. ونحوه:\n\nولا ذاكر الله إلّا قليلا\n\nوالجيد هو التنوين، وكسره لالتقاء الساكنين. و (الصَّمَدُ) فعل بمعنى مفعول، من صمد إليه إذا قصده، وهو السيد المصمود إليه في الحوائج",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          42,
+          50,
+          52,
+          54
+        ],
+        "printed_pages": [
+          634,
+          635
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K112.03 | T XVI 634–635; K IV 817–818]",
+      "existing_notes": [
+        "[REVIEW K112-B: The report about equivalence is translated as given; Ṭībī's correction to “one third” follows in T112.12. Its presence here is not a fresh authentication.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "ʿAbd Allāh and Ubayy read “Huwa Allāhu aḥad,” without “Say.” In the Prophet's ﷺ reading it is “Allāhu aḥad,” without “Say: He”; and he said, “Whoever recites ‘Allāhu aḥad’—it is equivalent to the Qurʾān.” Al-Aʿmash read “Qul huwa Allāhu al-wāḥid.” It has also been read “aḥadu llāhu,” without tanwīn: the tanwīn is dropped because it meets the lām of the definite article. Comparable to this is:\n“Nor remembering God, except a little.”\nThe sounder usage is to retain the tanwīn, giving it a kasra because of the meeting of two unvocalized consonants.\nAl-Ṣamad is on the pattern faʿal with the meaning of a passive participle (mafʿūl), from ṣamada ilayhi, “he directed himself towards him.” It is the master to whom people turn with their needs.\n[REVIEW K112-B: The report about equivalence is translated as given; Ṭībī's correction to “one third” follows in T112.12. Its presence here is not a fresh authentication.]"
+    },
+    {
+      "id": "K112.04",
+      "author": "al-Zamakhshari",
+      "arabic": "والمعنى: هو الله الذي تعرفونه وتقرّون بأنه خالق السماوات والأرض وخالقكم، وهو واحد متوحد بالإلهية لا يشارك فيها، وهو الذي يصمد إليه كل مخلوق ولا يستغنون عنه، وهو الغنى عنهم. (لَمْ يَلِدْ) لأنه لا يجانس، حتى يكون له من جنسه صاحبة فيتوالدا. وقد دل على هذا المعنى بقوله: (أَنَّى يَكُونُ لَهُ وَلَدٌ وَلَمْ تَكُنْ لَهُ صاحِبَةٌ)] الأنعام: 101 [. (وَلَمْ يُولَدْ) لأنّ كل مولود محدث وجسم، وهو قديم لا أوّل لوجوده وليس بجسم ولم يكافئه أحد، أي: لم يماثله ولم يشاكله.\n\nويجوز أن يكون من الكفاءة في النكاح، نفيًا للصاحبة:",
+      "arabic_source_raw": "والمعنى: هو الله الذي تعرفونه وتقرّون بأنه خالق السماوات والأرض وخالقكم، وهو واحد متوحد بالإلهية لا يشارك فيها، وهو الذي يصمد إليه كل مخلوق ولا يستغنون عنه، وهو الغنى عنهم. (لَمْ يَلِدْ) لأنه لا يجانس، حتى يكون له من جنسه صاحبة فيتوالدا. وقد دل على هذا المعنى بقوله: (أَنَّى يَكُونُ لَهُ وَلَدٌ وَلَمْ تَكُنْ لَهُ صاحِبَةٌ)] الأنعام: 101 [. (وَلَمْ يُولَدْ) لأنّ كل مولود محدث وجسم، وهو قديم لا أوّل لوجوده وليس يجسم ولم يكافئه أحد، أي: لم يماثله ولم يشاكله.\n\nويجوز أن يكون من الكفاءة في النكاح، نفيًا للصاحبة:",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          71,
+          72
+        ],
+        "printed_pages": [
+          636
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "وليس يجسم",
+          "to": "وليس بجسم",
+          "reason": "Mechanical correction of ي/ب confusion; English already reads 'not a body'. Both electronic witnesses have the typo, so this is an explicitly marked editorial correction, not independent textual evidence.",
+          "status": "editorial_typographical_correction"
+        }
+      ],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K112.04 | T XVI 636; K IV 818]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "The meaning is: He is the God whom you know, and whom you acknowledge as the creator of the heavens and the earth and your own creator. He is one, alone in divinity, with no partner in it. He is the one to whom every creature turns; they cannot dispense with Him, whereas He has no need of them.\n“He did not beget,” because He shares no genus with anything, such that He might have a consort of His own genus and the two might produce offspring. His statement “How could He have a child, when He has no consort?” [6:101] indicates this meaning. “Nor was He begotten,” because everything begotten is originated and a body; He, however, is pre-eternal (qadīm), with no beginning to His existence, and is not a body. No one equals Him: that is, no one resembles Him or is like Him. It is also possible to take this from suitability between spouses (kafāʾa) in marriage, thereby denying Him a consort."
+    },
+    {
+      "id": "K112.05",
+      "author": "al-Zamakhshari",
+      "arabic": "سألوه أن يصفه لهم، فأوحى إليه ما يحتوى على صفاته، فقوله: (هُوَ اللَّهُ) إشارة لهم إلى من هو خالق الأشياء وفاطرها،\n\nوفي طيّ ذلك وصفه بأنه قادر عالم؛ لأن الخلق يستدعى القدرة والعلم، لكونه واقعًا على غاية إحكام واتساق وانتظام، وفي ذلك وصفه بأنه حي سميع بصير. وقوله: (أَحَدٌ) وصف بالوحدانية ونفى الشركاء. وقوله: (الصَّمَدُ) وصف بأنه ليس إلا محتاجًا إليه، وإذا لم يكن إلا محتاجًا إليه، فهو غنى، وفي كونه غنيًا مع كونه عالمًا، أنه عدل غير فاعل للقبائح، لعلمه بقبح القبيح وعلمه بغناه عنه. وقوله: (ولَمْ يُولَدْ) وصف بالقدم والأوّلية. وقوله: (لَمْ يَلِدْ) نفى للشبه والمجانسة.\n\nوقوله: (وَلَمْ يَكُنْ لَهُ كُفُواً أَحَدٌ) تقرير لذلك وبت للحكم به.",
+      "arabic_source_raw": "سألوه أن يصفه لهم، فأوحى إليه ما يحتوى على صفاته، فقوله: (هُوَ اللَّهُ) إشارة لهم إلى من هو خالق الأشياء وفاطرها،\n\nوفي طيّ ذلك وصفه بأنه قادر عالم؛ لأن الخلق يستدعى القدرة والعلم، لكونه واقعًا على غاية إحكام واتساق وانتظام، وفي ذلك وصفه بأنه حي سميع بصير. وقوله: (أَحَدٌ) وصف بالوحدانية ونفى الشركاء. وقوله: (الصَّمَدُ) وصف بأنه ليس إلا محتاجًا إليه، وإذا لم يكن إلا محتاجًا إليه، فهو غنى، وفي كونه غنيًا مع كونه عالمًا، أنه عدل غير فاعل للقبائح، لعلمه بقبح القبيح وعلمه بغناه عنه. وقوله: (ولَمْ يُولَدْ) وصف بالقدم والأوّلية. وقوله: (لَمْ يَلِدْ) نفى للشبه والمجانسة.\n\nوقوله: (وَلَمْ يَكُنْ لَهُ كُفُواً أَحَدٌ) تقرير لذلك وبت للحكم به.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          72,
+          86,
+          87
+        ],
+        "printed_pages": [
+          636,
+          638
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K112.05 | T XVI 636, 638; K IV 818]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "They asked him to describe Him to them, and what encompasses His attributes was revealed to him. “He is God” points them to the creator and originator of things. Implicit in that is His description as powerful and knowing, since creation requires power and knowledge, occurring as it does with the utmost precision, coherence and order. This also describes Him as living, hearing and seeing. “One” describes His oneness and denies partners. “Al-Ṣamad” describes Him as exclusively the one who is needed; if He is exclusively needed [and not needy], He is self-sufficient. His being self-sufficient together with His being knowing entails that He is just and does not perform evil acts: He knows the evil of the evil act, and knows that He has no need of it. “Nor was He begotten” describes pre-eternity and primordiality. “He did not beget” denies likeness and a shared genus. “No one is equal to Him” confirms this and settles the judgment definitively."
+    },
+    {
+      "id": "K112.06",
+      "author": "al-Zamakhshari",
+      "arabic": "فإن قلت: الكلام العربي الفصيح أن يؤخر الظرف الذي هو لغو غير مستقر ولا يقدم، وقد نص سيبويه على ذلك في كتابه، فما باله مقدّمًا في أفصح كلام وأعربه؟\n\nقلت: هذا الكلام إنما سيق لنفى المكافأة عن ذات الباري سبحانه؛ وهذا المعنى مصبه ومركزه هو هذا الظرف، فكان لذلك أهم شيٍء وأعناه، وأحقه بالتقدم وأحراه. وقرئ: (كفؤا) بضم الكاف والفاء، وبضم الكاف وكسرها مع سكون الفاء.",
+      "arabic_source_raw": "فإن قلت: الكلام العربي الفصيح أن يؤخر الظرف الذي هو لغو غير مستقر ولا يقدم، وقد نص سيبويه على ذلك في كتابه، فما باله مقدّمًا في أفصح كلام وأعربه؟\n\nقلت: هذا الكلام إنما سيق لنفى المكافأة عن ذات الباري سبحانه؛ وهذا المعنى مصبه ومركزه هو هذا الظرف، فكان لذلك أهم شيٍء وأعناه، وأحقه بالتقدم وأجراه. وقرئ: (كفؤا) بضم الكاف والفاء، وبضم الكاف وكسرها مع سكون الفاء.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          88,
+          96
+        ],
+        "printed_pages": [
+          638,
+          639
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "وأجراه",
+          "to": "وأحراه",
+          "reason": "Independent Kashshaf DKA IV:819 reads وأحراه.",
+          "status": "independent_Kashshaf_electronic_witness_checked"
+        }
+      ],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K112.06 | T XVI 638–639; K IV 818–819]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "If you ask, “In eloquent Arabic, an adjunct (ẓarf) that is supplementary (laghw), rather than indispensable to the predication (mustaqirr), is postponed, not placed first—Sībawayh explicitly says so in his book. Why, then, is it placed first in the most eloquent and most fully Arabic of speech?”, I answer: this utterance is directed precisely at denying equivalence to the essence of the Creator—glory be to Him. This adjunct [lahu, ‘to Him’] is where that meaning converges and is centred. It is therefore the most important and most pertinent element, the one most entitled and most suited to precedence.\nKufuʾan has been read with ḍamma on both kāf and fāʾ, and also with ḍamma or kasra on the kāf together with an unvocalized fāʾ [kufʾan, kifʾan]."
+    },
+    {
+      "id": "K112.07",
+      "author": "al-Zamakhshari",
+      "arabic": "فإن قلت: لم كانت هذه السورة عدل القرآن كله على قصر منها وتقارب طرفيها؟ قلت:\n\nلأمر ما يسود من يسود\n\nوما ذاك إلا لاحتوائها على صفات الله تعالى وعدله وتوحيده، وكفى دليلًا من اعترف بفضلها وصدق بقول رسول الله صلى الله عليه وسلم فيها: إنّ علم التوحيد من الله تعالى بمكان، وكيف لا يكون كذلك والعلم تابع للمعلوم: يشرف بشرفه، ويتضع بضعته؛ ومعلوم هذا العلم هو الله تعالى وصفاته، وما يجوز عليه وما لا يجوز، فما ظنك بشرف منزلته وجلالة محله،\n\nوإنافته على كل علم، واستيلائه على قصب السبق دونه؛ ومن ازدراه فلضعف علمه بمعلومة، وقلة تعظيمه له، وخلوه من خشيته، وبعده من النظر لعاقبته. اللهم احشرنا في زمرة العالمين بك العاملين لك، القائلين بعدلك وتوحيدك، الخائفين من وعيدك.\n\nوتسمى \"سورة الأساس\" لاشتمالها على أصول الدين، وروى أبىّ وأنس عن النبي صلى الله عليه وسلم: «أسست السماوات السبع والأرضون السبع على قل هو الله أحد»، يعنى ما خلقت إلا لتكون دلائل على توحيد الله ومعرفة صفاته التي نطقت بها هذه السورة.\n\nعن رسول الله صلى الله عليه وسلم أنه سمع رجلا يقرأ: (قل هو الله أحد)، فقال: «وجبت». قيل: يا رسول الله وما \"وجبت\"؟ قال: «وجبت له الجنة».",
+      "arabic_source_raw": "فإن قلت: لم كانت هذه السورة عدل القرآن كله على قصر منها وتقارب طرفيها؟ قلت:\n\nلأمر ما يسود من يسود\n\nوما ذاك إلا لاحتوائها على صفات الله تعالى وعدله وتوحيده، وكفى دليلًا من اعترف بفضلها وصدق بقول رسول الله صلى الله عليه وسلم فيها: إنّ علم التوحيد من الله تعالى بمكان، وكيف لا يكون كذلك والعلم تابع للمعلوم: يشرف بشرفه، ويتضع بضعته؛ ومعلوم هذا العلم هو الله تعالى وصفاته، وما يجوز عليه وما لا يجوز، فما ظنك بشرف منزلته وجلالة محله،\n\nوإنافته على كل علم، واستيلائه على قصب السبق دونه؛ ومن ازدراه فلضعف علمه بمعلومة، وقلة تعظيمه له، وخلوه من خشيته، وبعده من النظر لعاقبته. اللهم احشرنا في زمرة العالمين بك العاملين لك، القائلين بعدلك وتوحيدك، الخائفين من وعيدك.\n\nوتسمى \"سورة الأساس\" لاشتمالها على أصول الدين، وروى أبىّ وأنس عن النبي صلى الله عليه وسلم: «أسست السماوات السبع والأرضون السبع على قل هو الله أحد»، يعنى ما خلقت إلا لتكون دلائل على توحيد الله ومعرفة صفاته التي نطقت بها هذه السورة.\n\nعن رسول الله صلى الله عليه وسلم أنه سمع رجلا يقرأ: (قل هو الله أحد)، فقال: «وجبت». قيل: يا رسول الله وما \"وجبت\"؟ قال: «وجبت له الجنة».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          104,
+          106,
+          116,
+          124,
+          126,
+          127
+        ],
+        "printed_pages": [
+          640,
+          641,
+          642
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K112.07 | T XVI 640–642; K IV 819]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "If you ask, “Why is this sūrah the equivalent of the whole Qurʾān, despite its shortness and the closeness of its two ends?”, I answer:\n“It is for some great cause that whoever becomes a master becomes one.”\nThat is solely because it encompasses God's attributes, His justice and His oneness. For anyone who acknowledges its excellence and believes the Messenger of God's ﷺ statement about it, this is sufficient proof that the science of divine oneness (ʿilm al-tawḥīd) has an exalted standing with God. How could it be otherwise? Knowledge follows its object: it is ennobled by the nobility of what is known, and lowered by its lowliness. The object of this science is God Most High and His attributes, and what is and is not admissible concerning Him. What, then, do you think of the nobility of its rank, the grandeur of its position, its eminence over every other science, and its winning the prize ahead of them? Whoever disparages it does so because of the weakness of his knowledge of its object, the smallness of his reverence for Him, his lack of fear of Him, and his remoteness from considering his own ultimate fate.\nO God, gather us among those who know You, act for You, affirm Your justice and Your oneness, and fear Your threat.\nIt is called “The Sūrah of the Foundation,” because it encompasses the foundations of religion. Ubayy and Anas transmitted from the Prophet ﷺ: “The seven heavens and the seven earths were founded upon ‘Say: He is God, One.’” That is: they were created solely to serve as signs of God's oneness and of the knowledge of His attributes expressed by this sūrah.\nIt is related from the Messenger of God ﷺ that he heard a man reciting “Say: He is God, One,” and said, “It has become assured.” He was asked, “Messenger of God, what has become assured?” He answered, “Paradise has become assured for him.”"
+    },
+    {
+      "id": "T112.01",
+      "author": "al-Tibi",
+      "arabic": "مكية، وقيل مدنية، وهي أربع آيات\n\nبسم الله الرحمن الرحيم\n\nقولُه: (الذي سألتموني وَصْفَه هو الله، و ﴿أَحَدٌ﴾ بدل)، قالَ أبو البقاء: «﴿هُوَ﴾: مبتدأُ\n\nبمعنى المسؤولِ عنه؛ لأنهم قالوا: ربُّك من نحاس أم من ذهب؟ فعلى هذا: يجوزُ أن يكونَ ﴿اللَّهُ﴾ خبرَ المبتدأ، و ﴿أَحَدٌ﴾ بدل، أو خبرُ مبتدأٍ محذوفٍ. يجوزُ أن يكونَ ﴿اللَّهُ﴾ بدلًا، و ﴿أَحَدٌ﴾ الخبر. وهمزةُ ﴿أَحَدٌ﴾ بدل من الواو؛ لأنه بمعنى الواحد»، وإبدالُ الواو المفتوحةِ همزةً قليل، وقيل: الهمزةُ أصلٌ كالهمزة في ﴿أَحَدٌ﴾ المستعمل للعموم.",
+      "arabic_source_raw": "مكية، وقيل مدنية، وهي أربع آيات\n\nبسم الله الرحمن الرحيم\n\nقولُه: (الذي سألتموني وَصْفَه هو الله، و ﴿أَحَدٌ﴾ بدل)، قالَ أبو البقاء: «﴿هُوَ﴾: مبتدأُ\n\nبمعنى المسؤولِ عنه؛ لأنهم قالوا: ربُّك من نحاس أم من ذهب؟ فعلى هذا: يجوزُ أن يكونَ ﴿اللَّهُ﴾ خبرَ المبتدأ، و ﴿أَحَدٌ﴾ بدل، أو خبرُ مبتدأٍ محذوفٍ. يجوزُ أن يكونَ ﴿اللَّهُ﴾ بدلًا، و ﴿أَحَدٌ﴾ الخبر. وهمزةُ ﴿أَحَدٌ﴾ بدل من الواو؛ لأنه بمعنى الواحد»، وإبدالُ الواو المفتوحةِ همزةً قليل، وقيل: الهمزةُ أصلٌ كالهمزة في ﴿أَحَدٌ﴾ المستعمل للعموم.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          26,
+          28,
+          29,
+          35
+        ],
+        "printed_pages": [
+          632,
+          633
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T112.01 | XVI 632–633 | on K112.02]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "Sūrat al-Ikhlāṣ. Meccan; it is also said to be Medinan. Four verses.\nIn the name of God, the All-Merciful, the Merciful.\nHis words, “The one whose description you asked me for is God, and aḥad is a substitution.” Abū al-Baqāʾ says: “Huwa is a subject meaning ‘the one asked about,’ for they said, ‘Is your Lord made of copper or gold?’ On this interpretation, Allāh may be the predicate of the subject, with aḥad a substitution, or the predicate of an omitted subject. Allāh may also be a substitution, with aḥad the predicate. The hamza of aḥad replaces wāw, since it means al-wāḥid.” Substitution of hamza for a wāw carrying fatḥa is rare. It is also said that the hamza is original, like the hamza in aḥad used for generality."
+    },
+    {
+      "id": "T112.02",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (وهو بمعنى واحد)، وفيه احتمالان: أحدُهما أن يتعلقَ بالوجهِ الثاني، وهو أن يكون ﴿هُوَ﴾ جوابًا عن قولهم: صِفْ لنا ربك، ولفظةُ ﴿هُوَ﴾ ضميرُ المسؤول؛ فإذن لابُدَّ من الفرقِ بين واحد وأَحد؛ قال في \" الأحزاب\": «أحدٌ في الأصلِ بمعنى وَحَدٍ، وهو الواحد، ثم وضعَ في النفيِ العامِّ مستويًا فيه المذكرُ والمؤنثُ والواحدُ وما وراءَه».\n\nوروى صاحبُ \"النهاية\" عن الأزهري أنه قال: «الفرقُ بين الواحدِ والأحدِ: أن الأحدَ بُني لنفيِ ما يُذْكَرُ معه من العدد، تقول: ما جاءني أحد، والواحدُ: اسمٌ بني لمفتتحِ العدد، تقول: جاءني واحد من الناس، ولا تقول: جاءني أحد؛ فالواحدُ منفردٌ بالذاتِ في عدمِ المثلِ والنظير، والأحدُ منفردٌ بالمعنى. وقيل: الواحدُ هو الذي لا يتجزّأ، ولا يُثنى، ولا يقبلُ الانقسام، ولا نظيرَ له ولا مِثْل، ولا يَجمعُ هذين الوصفين إلا الله تعالى».\n\nوقال الأزهريُّ في \"تفسير أسماء الله الحسنى\": «الأحدُ من صفاتِ الله التي استأثرَ اللهُ بها، فلايشركه فيها شئٌ، ولا يوصفُ شئٌ بالأحدِ غيرُ الله؛ لا يقال: رجلٌ احدٌ، ولا درهمٌ أحدٌ؛ وإنما يقال: رجلٌ واحدٌ».\n\nإذا عُلِمَ هذا، فنقول: إنهم لما قالوا: صِفْ لنا ربَّك الذي تدعونا إليه، قيل لهم: المسؤول عنه الله، وهو واحدٌ متفردٌ بالذاتِ في عدم المثلِ والنظير؛ فإجراءُ الكلامِ للتمييز، والصّفةُ فارقة.\n\nوإن استلزمَ التعظيم، على أن يكون «هو» ضمير الشأن، فإجراء الأوصاف لمجرد التعظيم؛ لأنه ابتداءُ أمرِ الرسول صلى الله عليه وسلم، إرشادًا للقوم، وتنبيهًا على معبودٍ عظيمِ الشأنِ قاهرِ السلطان، فكأنه قيل: قُلْ يا محمدُ: الشأنُ والأمرُ أن الله أحدٌ لا ثاني له، فَدلَّ بقوله: ﴿اللَّهُ﴾، على جميعِ صفاتِ الكمال، وبالأحدِ على جميع صفاتِ الجلال؛ فالمناسبُ أن يقالَ: واحدٌ لا ثاني له، لأنه دالٌّ لنفيِ ما يُذكرُ معه.\n\nوالاحتمالُ الثاني، وهو أن يتعلَّق بالوجهينِ كليهما، أي: ﴿هُوَ﴾ ضميرُ الشأن، أو ﴿هُوَ﴾ بمعنى المسؤول؛ فحينئذٍ لا فرق بين أحدٍ وواحد، قالَ الجوهري: «الأحدُ بمعنى الواحد، وهو أول العدد»، وقال صاحب \"النهاية\": «الواحدُ هو الفردُ الذي لم يزل وحدَه، ولم يكن معه آخر».",
+      "arabic_source_raw": "قولُه: (وهو بمعنى واحد)، وفيه احتمالان: أحدُهما أن يتعلقَ بالوجهِ الثاني، وهو أن يكون ﴿هُوَ﴾ جوابًا عن قولهم: صِفْ لنا ربك، ولفظةُ ﴿هُوَ﴾ ضميرُ المسؤول؛ فإذن لابُدَّ من الفرقِ بين واحد وأَحد؛ قال في \" الأحزاب\": «أحدٌ في الأصلِ بمعنى وَحَدٍ، وهو الواحد، ثم وضعَ في النفيِ العامِّ مستويًا فيه المذكرُ والمؤنتُ والواحدُ وما وراءَه».\n\nوروى صاحبُ \"النهاية\" عن الأزهري أنه قال: «الفرقُ بين الواحدِ والأحدِ: أن الأحدَ بُني لنفيِ ما يُذْكَرُ معه من العدد، تقول: ما جاءني أحد، والواحدُ: اسمٌ بني لمفتتحِ العدد، تقول: جاءني واحد من الناس، ولا تقول: جاءني أحد؛ فالواحدُ منفردٌ بالذاتِ في عدمِ المثلِ والنظير، والأحدُ منفردٌ بالمعنى. وقيل: الواحدُ هو الذي يتجزّأ، ولا يُثنى، ولا يقبلُ الانقسام، ولا نظيرَ له ولا مِثْل، ولا يَجمعُ هذين الوصفين إلى الله تعالى».\n\nوقال الأزهريُّ في \"تفسير أسماء الله الحسنى\": «الأحدُ من صفاتِ الله التي استأثرَ اللهُ بها، فلايشركه فيها شئٌ، ولا يوصفُ شئٌ بالأحدِ غيرُ الله؛ لا يقال: رجلٌ احدٌ، ولا درهمٌ أحدٌ؛ وإنما يقال: رجلٌ واحدٌ».\n\nإذا عُلِمَ هذا، فنقول: إنهم لما قالوا: صِفْ لنا ربَّك الذي تدعونا إليه، قيل لهم: المسؤول عنه الله، وهو واحدٌ متفردٌ بالذاتِ في عدم المثلِ والنظير؛ فإجراءُ الكلامِ للتمييز، والصّفةُ فارقة.\n\nوإن استلزمَ التعظيم؛ لأنه ابتداءُ أمرِ الرسول صلى الله عليه وسلم، إرشادًا للقوم، وتنبيهًا على معبودٍ عظيمِ الشأنِ قاهرِ السلطان، فكأنه قيل: قُلْ يا محمدُ: الشأنُ والأمرُ أن الله أحدٌ لا ثاني له، فَدلَّ بقوله: ﴿اللَّهُ﴾، على جميعِ صفاتِ الكمال، وبالأحدِ على جميع صفاتِ الجلال؛ فالمناسبُ أن يقالَ: واحدٌ لا ثاني له، لأنه دالٌّ لنفيِ ما يُذكرُ معه.\n\nوالاحتمالُ الثاني، وهو أن يتعلَّق بالوجهينِ كليهما، أي: ﴿هُوَ﴾ ضميرُ الشأن، أو ﴿هُوَ﴾ بمعنى المسؤول؛ فحينئذٍ لا فرق بين أحدٍ وواحد، قالَ الجوهري: «الأحدُ بمعنى الواحد، وهو أول العدد»، وقال صاحب \"النهاية\": «الواحدُ هو الفردُ الذي لم يزل وحدَه، ولم يكن معه آخر».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          36,
+          37,
+          38,
+          43,
+          44,
+          45
+        ],
+        "printed_pages": [
+          633,
+          634
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "هو الذي يتجزّأ",
+          "to": "هو الذي لا يتجزّأ",
+          "reason": "C06 T112-C1 reports لا يتجزأ in Dubai XVI:633; corrects reversed meaning.",
+          "status": "carried_forward_C06_scan_report_not_reinspected"
+        },
+        {
+          "from": "هذين الوصفين إلى الله",
+          "to": "هذين الوصفين إلا الله",
+          "reason": "C06 T112-C1 reports إلا الله in Dubai XVI:633.",
+          "status": "carried_forward_C06_scan_report_not_reinspected"
+        },
+        {
+          "from": "وإن استلزمَ التعظيم؛ لأنه",
+          "to": "وإن استلزمَ التعظيم، على أن يكون «هو» ضمير الشأن، فإجراء الأوصاف لمجرد التعظيم؛ لأنه",
+          "reason": "C06 T112-C1 quotes the omitted words from Dubai XVI:634; supplied exactly from that report. The syntactic transition remains awkward.",
+          "status": "carried_forward_C06_scan_report_not_reinspected"
+        },
+        {
+          "from": "المؤنتُ",
+          "to": "المؤنثُ",
+          "reason": "Obvious electronic transcription/typographical error; raw text retained for comparison. No scan-reading claim.",
+          "status": "editorial_typographical_correction"
+        }
+      ],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T112.02 | XVI 633–634 | on K112.02]",
+      "existing_notes": [
+        "[TEXT CORRECTIONS T112-C1: The scan at p.633 reads لا يتجزأ and إلا الله, correcting the transcription. At p.634 the words على أن يكون «هو» ضمير الشأن، فإجراء الأوصاف لمجرد التعظيم are present in the scan but absent in OpenITI. They are translated above. The transition following وإن استلزم التعظيم remains syntactically awkward; bracketed “when” makes the understood construction explicit.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "His words, “It has the meaning of wāḥid.” There are two possibilities. First, this may attach to the second interpretation: huwa answers their request, “Describe your Lord to us,” and is the pronoun referring to the one asked about. In that case, a distinction must be drawn between wāḥid and aḥad. He says in al-Aḥzāb: “Aḥad originally means waḥad, that is, al-wāḥid; then it was assigned to general negation, applying equally to masculine and feminine, one and more than one.”\nThe author of al-Nihāya transmits from al-Azharī: “The difference between al-wāḥid and al-aḥad is that aḥad was formed to negate whatever number is mentioned with it: you say, ‘No one came to me.’ Wāḥid is a name formed for the beginning of number: you say, ‘One person came to me,’ but do not say [in this affirmative construction], ‘Aḥad came to me.’ Al-wāḥid is unique in essence, without likeness or counterpart; al-aḥad is unique in meaning. It is also said: al-wāḥid is that which is not divisible, is not doubled, does not admit division, and has neither counterpart nor likeness. Only God Most High combines these two descriptions.”\nAl-Azharī says in Tafsīr asmāʾ Allāh al-ḥusnā: “Al-aḥad is among the attributes God has reserved to Himself: nothing shares it with Him, and nothing other than God is described as al-aḥad. One does not say ‘an aḥad man’ or ‘an aḥad dirham’; one says ‘a wāḥid man.’”\nKnowing this, we say: when they said, “Describe to us your Lord, to whom you summon us,” they were told: the one asked about is God, one, unique in essence, without likeness or counterpart. The discourse thus serves to distinguish, and the description differentiates. Although it entails magnification, [when] huwa is taken as the pronoun of the matter, the descriptions serve magnification alone. For this is the beginning of the Messenger's ﷺ mission, guiding the people and drawing attention to an object of worship of immense dignity and overwhelming dominion. It is as though one had said: Say, Muḥammad, the matter and affair is that God is One, with no second beside Him. Allāh indicates all the attributes of perfection; aḥad, all the attributes of majesty. Accordingly, it is appropriate to say “One, with no second beside Him,” because aḥad indicates the negation of whatever is mentioned with it.\nThe second possibility is that [his explanation] attaches to both interpretations together: either huwa is the pronoun of the matter, or huwa means the one asked about. There would then be no distinction between aḥad and wāḥid. Al-Jawharī says, “Al-aḥad means al-wāḥid, and is the beginning of number.” The author of al-Nihāya says, “Al-wāḥid is the solitary one who has always been alone, with no other beside Him.”\n[TEXT CORRECTIONS T112-C1: The scan at p.633 reads لا يتجزأ and إلا الله, correcting the transcription. At p.634 the words على أن يكون «هو» ضمير الشأن، فإجراء الأوصاف لمجرد التعظيم are present in the scan but absent in OpenITI. They are translated above. The transition following وإن استلزم التعظيم remains syntactically awkward; bracketed “when” makes the understood construction explicit.]"
+    },
+    {
+      "id": "T112.03",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (كانَ يَعْدلُ القرآن)، قيل: كان قراءتُه يَعْدلُ قراءةَ القرآن، والحديث استشهادٌ لهذه القراءة. ولعلّ المرادَ أن قولَه: ﴿قُلْ هُوَ﴾ كالمقدمةِ والتمهيدِ لقوله ﴿اللَّهُ أَحَدٌ﴾، وهو إنما يستقيمُ على جَعْلِ الضميرِ للشأن.",
+      "arabic_source_raw": "قولُه: (كانَ يَعْدلُ القرآن)، قيل: كان قراءتُه يَعْدلُ قراءةَ القرآن، والحديث استشهادٌ لهذه القراءة. ولعلّ المرادَ أن قولَه: ﴿قُلْ هُوَ﴾ كالمقدمةِ والتمهيدِ لقوله ﴿اللَّهُ أَحَدٌ﴾، وهو إنما يستقيمُ على جَعْلِ الضميرِ للشأن.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          46
+        ],
+        "printed_pages": [
+          634
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T112.03 | XVI 634 | on K112.03]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "His words, “It was equivalent to the Qurʾān.” It has been said: its recitation was equivalent to reciting the Qurʾān. The report is cited as evidence for this reading. Perhaps the meaning is that “Say: He” functions as an introduction and preparation for “God is One.” This works only if the pronoun is taken as the pronoun of the matter."
+    },
+    {
+      "id": "T112.04",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (ولا ذاكِرِ اللهَ إلا قليلًا)، أولُه:\n\nفأَلفيتُه غيرَ مستعتبٍ\n\nأي: ذَكّرْتُه. أي: ولا ذاكر، على إرادةِ التنوين، فحذفَ لالتقاءِ الساكنين، فبقى \"الله\" منصوبًا لا مجرورًا للإضافةِ. و\"ذاكر\" جُرَّ عطفًا على \"مُسْتعتِبٍ\"، أي: ولا ذاكرٍ. أي: ذكّرتُه ما كانَ بيننا من المودةِ، فوجدَ غيرَ راجعٍ بالعتابِ من قُبحِ ما فَعَل.\n\nقولُه: (والجيّدُ هو التنوين)، وهي المشهورة.\n\nقولُه: (وهو السَّيدُ المصمودُ إليه في الحوائج)، وأنشدَ الزجاجُ للأسدي:\n\nلقد بَكَّرِ الناعي بِخَيْرَي بني أَسَد بعمرِو بنِ مسعودٍ وبالسيِّدِ الصَّمد\n\nالصَّمد: أي يصمدُ إليه كلُّ شئٍ، أي: الذي خلقَ الأشياء كلَّها، لا يستغنى عنه شئٌ.\n\nروى محيي السُّنة عن ابنِ عباسٍ ومجاهدٍ والحسنِ وسعيدِ بنِ جُبير: «الصَّمَدُ: الذي لا جَوْفَ له، وقال الشعبي: الذي لا يأكلُ ولا يشربُ».",
+      "arabic_source_raw": "قولُه: (ولا ذاكِرِ اللهَ إلا قليلًا)، أولُه:\n\nفأَلفيتُه غيرَ مستعتبٍ\n\nأي: ذَكّرْتُه. أي: ولا ذاكر، على إرادةِ التنوين، فحذفَ لالتقاءِ الساكنين، فبقى \"الله\" منصوبًا لا مجرورًا للإضافةِ. و\"ذاكر\" جُرَّ عطفًا على \"مُسْتعتِبٍ\"، أي: ولا ذاكرٍ. أي: ذكّرتُه ما كانَ بيننا من المودةِ، فوجدَ غيرَ راجعٍ بالعتابِ من قُبحِ ما فَعَل.\n\nقولُه: (والجيّدُ هو التنوين)، وهي المشهورة.\n\nقولُه: (وهو السَّيدُ المصمودُ إليه في الحوائج)، وأنشدَ الزجاجُ للأسدي:\n\nلقد بَكَّرِ الناعي بِخَيْرَي بني أَسَد بعمرِو بنِ مسعودٍ وبالسيِّدِ الصَّمد\n\nالصَّمد: أي يصمدُ إليه كلُّ شئٍ، أي: الذي خلقَ الأشياء كلَّها، لا يستغنى عنه شئٌ.\n\nروى محيي السُّنة عن ابنِ عباسٍ ومجاهدٍ والحسنِ وسعيدِ بنِ جُبير: «الصَّمَدُ: الذي لا جَوْفَ له، وقال الشعبي: الذي لا يأكلُ ولا يشربُ».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          56,
+          58,
+          59,
+          61,
+          63,
+          65,
+          66,
+          68
+        ],
+        "printed_pages": [
+          635
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T112.04 | XVI 635 | on K112.03]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "His words, “Nor remembering God, except a little.” Its opening is:\n“I found him not returning to goodwill under reproach.”\nThat is: I reminded him. “Nor remembering” is intended with tanwīn; it was dropped because two unvocalized consonants met. Allāh consequently remains accusative, not genitive through annexation (iḍāfa). Dhākir is genitive, coordinated with mustaʿtib: “nor remembering.” That is: I reminded him of the affection formerly between us, but he was found not to turn back, through reproach, from the ugliness of what he had done.\nHis words, “The sounder usage is tanwīn”: this is the well-known reading.\nHis words, “The master to whom people turn with their needs.” Al-Zajjāj cited al-Asadī:\n“Early came the death-announcer with news of the two best of Banū Asad:\nʿAmr ibn Masʿūd and the master to whom all turn.”\nAl-Ṣamad: that is, the one to whom everything turns—the one who created all things, and whom nothing can do without. Muḥyī al-Sunna transmitted from Ibn ʿAbbās, Mujāhid, al-Ḥasan and Saʿīd ibn Jubayr: “Al-Ṣamad is the one with no interior cavity.” Al-Shaʿbī said: “The one who neither eats nor drinks.”"
+    },
+    {
+      "id": "T112.05",
+      "author": "al-Tibi",
+      "arabic": "الراغب: «الذي ليسَ بأجوفٍ، شيئان: أدونُ من الإنسانِ كالجمادات، وأعلى وهو الباري تعالى وتَقدّس. والقصدُ بقوله ﴿الصَّمَدُ﴾، تنبيهٌ أنه بخلافِ مَن أثبتوا له الإلهية، وإلى نحوِ هذا أشار بقولِه: ﴿وَأُمُّهُ صِدِّيقَةٌ كَانَا يَاكُلَانِ الطَّعَامَ﴾ [المائدة: 75]».\n\nقولُه: (وقَدْ دَلَّ على هذا المعنى بقوله: ﴿أَنَّى يَكُونُ لَهُ وَلَدٌ وَلَمْ تَكُنْ لَهُ صَاحِبَةٌ﴾ [الأنعام: 101]، عطفٌ على قوله: (لأنه لا يُجانَس)، يعني: ﴿لَمْ يَلِدْ﴾: إما كنايةٌ عن كونه تعالى متعاليًا عن الجنسية؛ لأن مَن جانسَ شيئًا اتّخذ من جنسِه صاحبةً، ومَن اتخذَ صاحبةٍ حصَل التوالدُ.\n\nأو بالعكس بأن يقال: كيف يكونُ له ولدٌ، وأنه ما اتخذ صاحبةً؟ لأن الولادةَ لا تكونُ إلّا بين زوجين من جنسٍ واحد، وهو متعالٍ عن مجانسٍ؛ فلم يَصحَّ أن تكونَ له صاحبة، فلم تَصحَّ الولادة، قالَه في تفسيرِ هذه الآيةِ في الأنعام.",
+      "arabic_source_raw": "الراغب: «الذي ليسَ بأجوفٍ، شيئان: أدونُ من الإنسانِ كالجمادات، وأعلى وهو الباري تعالى وتَقدّس. والقصدُ بقوله ﴿الصَّمَدُ﴾، تنبيهٌ أنه بخلافِ مَن أثبتوا له الإلهية، وإلى نحوِ هذا أشار بقولِه: ﴿وَأُمُّهُ صِدِّيقَةٌ كَانَا يَاكُلَانِ الطَّعَامَ﴾ [المائدة: 75]».\n\nقولُه: (وقَدْ دَلَّ على هذا المعنى بقوله: ﴿أَنَّى يَكُونُ لَهُ وَلَدٌ وَلَمْ تَكُنْ لَهُ صَاحِبَةٌ﴾ [الأنعام: 101]، عطفٌ على قوله: (لأنه لا يُجانَس)، يعني: ﴿لَمْ يَلِدْ﴾: إما كنايةٌ عن كونه تعالى متعاليًا عن الجنسية؛ لأن مَن جانسَ شيئًا اتّخذ من جنسِه صاحبةً، ومَن اتخذَ صاحبةٍ حصَل التوالدُ.\n\nأو بالعكس بأن يقال: كيف يكونُ له ولدٌ، وأنه ما اتخذ صاحبةً؟ لأن الولادةَ لا تكونُ إلّا بين زوجين من جنسٍ واحد، وهو متعالٍ عن مجانسٍ؛ فلم يَصحَّ أن تكونَ له صاحبة، فلم تَصحَّ الولادة، قالَه في تفسيرِ هذه الآيةِ في الأنعام.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          73,
+          74,
+          75
+        ],
+        "printed_pages": [
+          636
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T112.05 | XVI 636 | on K112.03–04]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "Al-Rāghib: “That which has no interior cavity is of two kinds: what is below the human being, such as inanimate things; and what is above, namely the Creator, exalted and holy. The purpose of al-Ṣamad is to indicate that He differs from those to whom they ascribed divinity. Something of this kind is indicated by ‘His mother was a woman of truth; they both used to eat food’ [5:75].”\nHis words, “His statement ‘How could He have a child, when He has no consort?’ indicates this meaning”: these are coordinated with “because He shares no genus.” That is, “He did not beget” either indirectly signifies (kināya) His transcendence above belonging to a genus—for whoever shares a genus with anything takes a consort of his genus, and whoever takes a consort produces offspring—or [the reasoning proceeds] in reverse: how could He have a child when He has taken no consort? Generation occurs only between two partners of one genus. He transcends having a congener, so a consort cannot properly be ascribed to Him, and neither can generation. He states this in explaining the verse in al-Anʿām."
+    },
+    {
+      "id": "T112.06",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (فقولُه: ﴿هُوَ اللَّهُ﴾)، الفاءُ تفصيليةٌ، والُمجمَلُ قولُه: \"ما يحتوي على صفاته\". ولمّا كان الله اسمًا للذات، وقرّرَ في فاتحةِ الكتابِ استحالةَ كونِه وصفًا، لكنْ له في كلِّ مقامٍ بحسبِ\n\nمقتضاه معنى، وخصوصيةُ سؤالِ المشركين، أوجبَ أن يفسّرَ بأنه الخالق، لقوله تعالى: ﴿وَلَئِنْ سَأَلْتَهُمْ مَنْ خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ لَيَقُولُنَّ اللَّهُ﴾ [لقمان: 25]؛ فاللهُ ها هنا، جوابًا، إشارةٌ لهم إلى مَن هو خالقُ الأشياء؟ وأنتَ تعلمُ أنّ مُصحّحَ الخالقية هو العلمُ والقُدرةُ، فاندرج تحته هاتانِ الصفتان، وإليه الإشارةُ بقولِه: \"وفي طيِّ ذلك وَصَفَه بأنه قادرٌ عالم\"، ولا يكونُ قادرًا عالماً، حتى يكونَ عالماً حيًّا سميعًا بصيرًا. ثُم عَقبَ هذه الأوصافَ معنى الوحدانية بقولِه: ﴿أَحَدٌ﴾.\n\nولما اقتضى الفردانيةُ قَطْعَ السبيلِ من الغير، أثبتَ له صفةَ الصَّمدانية، ليكون الإلتجاءُ إليه.\n\nولما عُلم من ذلك ثبوتُ الذاتِ المستلزمةِ للصفاتِ من الخالقيةِ والعالمِيةِ والقادريةِ والحييّةِ والإلهية، أريدَ بيانُ كمالهِا وأنها مباينةٌ لصفاتِ المخلوقاتِ فيما مضى ويُستقبل.\n\nوالآن قيل: ﴿لَمْ يَلِدْ وَلَمْ يُولَدْ (3) وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ (4)﴾،",
+      "arabic_source_raw": "قولُه: (فقولُه: ﴿هُوَ اللَّهُ﴾)، الفاءُ تفصيليةٌ، والُمجمَلُ قولُه: \"ما يحتوي على صفاته\". ولمّا كان الله اسمًا للذات، وقرّرَ في فاتحةِ الكتابِ استحالةَ كونِه وصفًا، لكنْ له في كلِّ مقامٍ بحسبِ\n\nمقتضاه معنى، وخصوصيةُ سؤالِ المشركين، أوجبَ أن يفسّرَ بأنه الخالق، لقوله تعالى: ﴿وَلَئِنْ سَأَلْتَهُمْ مَنْ خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ لَيَقُولُنَّ اللَّهُ﴾ [لقمان: 25]؛ فاللهُ ها هنا، جوابًا، إشارةٌ لهم إلى مَن هو خالقُ الأشياء؟ وأنتَ تعلمُ أنّ مُصحّحَ الخالقية هو العلمُ والقُدرةُ، فاندرج تحته هاتانِ الصفتان، وإليه الإشارةُ بقولِه: \"وفي طيِّ ذلك وَصَفَه بأنه قادرٌ عالم\"، ولا يكونُ قادرًا عالماً، حتى يكونَ عالماً حيًّا سميعًا بصيرًا. ثُم عَقبَ هذه الأوصافَ معنى الوحدانية بقولِه: ﴿أَحَدٌ﴾.\n\nولما اقتضى الفردانيةُ قَطْعَ السبيلِ من الغير، أثبتَ له صفةَ الصَّمدانية، ليكون الإلتجاءُ إليه.\n\nولما عُلم من ذلك ثبوتُ الذاتِ المستلزمةِ للصفاتِ من الخالقيةِ والعالمِيةِ والقادريةِ والحييّةِ والإلهية، أريدَ بيانُ كمالهِا وأنها مباينةٌ لصفاتِ المخلوقاتِ فيما مضى ويُستقبل.\n\nوالآن قيل: ﴿لَمْ يَلِدْ وَلَمْ يُولَدْ (3) وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ (4)﴾،",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          76,
+          79,
+          80,
+          81,
+          82
+        ],
+        "printed_pages": [
+          636,
+          637
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T112.06 | XVI 636–637 | on K112.05]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "His words, “Thus His statement ‘He is God.’” The fāʾ introduces a detailed exposition; the general statement being expounded is “what encompasses His attributes.” Since Allāh names the essence—and in the Opening of the Book he established the impossibility of its being a descriptive epithet—it nevertheless has in each context a meaning appropriate to that context. The particular character of the polytheists' question required its explanation as “the Creator,” because of His statement, “If you ask them who created the heavens and the earth, they will certainly say: God” [31:25]. Thus Allāh here, as an answer, points them to the one who creates things. You know that knowledge and power are what make creatorship possible: these two attributes are therefore included under it. This is what “implicit in that is His description as powerful and knowing” indicates. He cannot be powerful and knowing without being knowing, living, hearing and seeing. Then these descriptions were followed by the meaning of oneness in “One.” Since uniqueness excludes recourse to another, He was affirmed to possess ṣamadiyya, so that recourse would be to Him.\nOnce this established an essence entailing the attributes of creatorship, knowledge, power, life and divinity, their perfection was to be explained, together with their difference from creatures' attributes in past and future. At this point it was said: “He neither begot nor was begotten, and no one is equal to Him.”"
+    },
+    {
+      "id": "T112.07",
+      "author": "al-Tibi",
+      "arabic": "ولحجةِ الإسلامِ كلامٌ إجماليٌ فيها، قال: «أحدٌ: هو الواحدُ الذي هو مرفوعُ الشركة، والأَحَدُ الذي لا تركيبَ فيه فالواحدُ نفيُ الشريكِ والمثلِ، والأحدُ نفيٌ للكثرةِ في ذاتِه، والصمدُ الغنيُّ المحتاجُ إليه غيرُه، وهو أحديُّ الذاتِ وواحديُّ الصفات، لأنه لو كان له شريكٌ في مُلكِه، لما كانَ غنيًا يحتاجُ إليه غيرُه، بل كانَ محتاجًا في قوامِه ووجودَه إلى أجزاءِ تركيبِه؛ فالصمديّةُ دليلٌ على الوحدانيةِ والأحديةِ، و ﴿لَمْ يَلِدْ﴾ دليلٌ على أن وجوده المستمرّ، ليس مثل وجود الإنسانِ الذي يبقى نوعُه بالتوالدِ والتناسلِ، بل هو وجودٌ مستمرٌ أزليٌ أبديّ، و ﴿وَلَمْ يُولَدْ﴾ دليلٌ على أنّ وجودِه ليس مثلَ وجودِ نفس الإنسان الذي يتحصّلُ بعدَ العدم: يبقى دائمًا إمّا في جنةٍ عاليةٍ لا تفنى، وإمّا في هاويةٍ لا تنقطع.\n\n﴿وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ﴾، دليلُ على الوجودِ الحقيقي الذي له تعالى، هو الوجودُ الذي يفيدُ وجودَ غيرِه، ولا يستفيدُ الوجودُ من غيرِه؛ فقوله تعالى: ﴿هُوَ اللَّهُ أَحَدٌ﴾، دليلٌ على إثباتِ ذاتِه المقدّسةِ المنزَّهة. والصَّمديةُ تقتضي نفي الحاجةِ عنه واحتياجَ غيرهِ إليه،\n\n﴿وَلَمْ يُولَدْ﴾ في آخر السورة، سلبُ ما يوصفُ به غيره عنه، ولا طريق في معرفة الله تعالى أوضحُ مِن سلبِ صفاتِ المخلوقات عنه».",
+      "arabic_source_raw": "ولحجةِ الإسلامِ كلامٌ إجماليٌ فيها، قال: «أحدٌ: هو الواحدُ الذي هو مرفوعُ الشركة، والأَحَدُ الذي لا تركيبَ فيه فالواحدُ نفيُ الشريكِ والمثلِ، والأحدُ نفيٌ للكثرةِ في ذاتِه، والصمدُ الغنيُّ المحتاجُ إليه غيرُه، وهو أحديُّ الذاتِ وواحديُّ الصفات، لأنه لو كان له شريكٌ في مُلكِه، لما كانَ غنيًا يحتاجُ إليه غيرُه، بل كانَ محتاجًا في قوامِه ووجودَه إلى أجزاءِ تركيبِه؛ فالصمديّةُ دليلٌ على الوحدانيةِ والأحديةِ، و ﴿لَمْ يَلِدْ﴾ دليلٌ على أن وجوده المستمرّ، ليس مثل وجود الإنسانِ الذي يبقى نوعُه بالتوالدِ والتناسلِ، بل هو وجودٌ مستمرٌ أزليٌ أبديّ، و ﴿وَلَمْ يُولَدْ﴾ دليلٌ على أنّ وجودِه ليس مثلَ وجودِ نفس الإنسان الذي يتحصّلُ بعدَ العدم: يبقى دائمًا إمّا في جنةٍ عاليةٍ لا تفنى، وإمّا في هاويةٍ لا تنقطع.\n\n﴿وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ﴾، دليلُ على الوجودِ الحقيقي الذي له تعالى، هو الوجودُ الذي يفيدُ وجودَ غيرِه، ولا يستفيدُ الوجودُ من غيرِه؛ فقوله تعالى: ﴿هُوَ اللَّهُ أَحَدٌ﴾، دليلٌ على إثباتِ ذاتِه المقدّسةِ المنزَّهة. والصَّمديةُ تقتضي نفي الحاجةِ عنه واحتياجَ غيرهِ إليه،\n\n﴿وَلَمْ يُولَدْ﴾ في آخر السورة، سلبُ ما يوصفُ به غيره عنه، ولا طريق في معرفة الله تعالى أوضحُ مِن سلبِ صفاتِ المخلوقات عنه».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          82,
+          83,
+          90
+        ],
+        "printed_pages": [
+          637,
+          638
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [
+        "Quoted Ghazali passage: partnership/composition connection and 'nor was He begotten' as end of the surah remain unverified against the quoted work."
+      ],
+      "english_corrections": [],
+      "english_heading": "[T112.07 | XVI 637–638 | continuation]",
+      "existing_notes": [
+        "[REVIEW T112-U1: The scan prints “nor was He begotten” in the last sentence, although it is not the sūrah's final clause. It is preserved. The wording about partnership, composition and attributes also needs comparison with the work being quoted.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "Ḥujjat al-Islām gives a concise discussion of them:\n“‘Aḥad’: He is the wāḥid from whom partnership is excluded, and the aḥad in whom there is no composition. Wāḥid negates partner and likeness; aḥad negates multiplicity within His essence. Al-Ṣamad is the self-sufficient one whom others need. He is aḥad in essence and wāḥid in attributes: for if He had a partner in His dominion, He would not be self-sufficient and needed by others; rather, He would depend for His subsistence and existence on the components of His composition. Thus ṣamadiyya proves both wāḥidiyya and aḥadiyya.\n“‘He did not beget’ proves that His continuing existence is not like human existence, whose species persists through generation and reproduction; rather, His existence continues eternally, without beginning or end. ‘Nor was He begotten’ proves that His existence is not like the existence of the human soul, which comes into being after nonexistence and then remains forever, either in a lofty Garden that does not perish or in an abyss that does not end.\n“‘No one is equal to Him’ proves that His true existence is an existence that bestows existence on another without receiving existence from another. Thus ‘He is God, One’ proves His holy, transcendent essence. Ṣamadiyya entails His freedom from need and others' need of Him. ‘Nor was He begotten,’ at the end of the sūrah, removes from Him what characterizes others. There is no clearer path to knowledge of God Most High than removing from Him the attributes of creatures.”\n[REVIEW T112-U1: The scan prints “nor was He begotten” in the last sentence, although it is not the sūrah's final clause. It is preserved. The wording about partnership, composition and attributes also needs comparison with the work being quoted.]"
+    },
+    {
+      "id": "T112.08",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (ليس إلا محتاجًا إليه)، والاستثناءُ مفرّغٌ، أي: ليس الله إلا محتاجًا إليه، أي بالنسبة إلى المخلوقات.\n\nقولُه: (لَغوٌ غير مستقر)، الظرفُ المستقر: هو الذي يفتقرُ تمام الكلامِ إليه، وذلك بأن يكون خبرًا كما في قولك: ما كانَ فيها أحدٌ خيرٌ منك. والَّلغوُ أن يكونَ الكلامُ تامًا بدونه كما في قولك: ما كانَ أحدٌ خيرًا منك فيها؛ وإنما قُدّم في اول المستقرّ لكونه مقصودًا، وإنما رُفِضَ في الآية الأصل، لأنها سبقت لبيانِ التوحيد. قالَ ابنُ الحاجب: «إنما قُدِّمَ لاهتمامِ تناسبِ الفواصل، فلو قُدِّمَ على \" أحد\" لحصلَ الغرض، لكن كان يقع الفصلُ بين الجزأين اللذين هما مسندٌ إليه، فقدَّمَ عليهما جميعً وحصلَ الغرض».",
+      "arabic_source_raw": "قولُه: (ليس إلا محتاجًا إليه)، والاستثناءُ مفرّغٌ، أي: ليس الله إلا محتاجًا إليه، أي بالنسبة إلى المخلوقات.\n\nقولُه: (لَغوٌ غير مستقر)، الظرفُ المستقر: هو الذي يفتقرُ تمام الكلامِ إليه، وذلك بأن يكون خبرًا كما في قولك: ما كانَ فيها أحدٌ خيرٌ منك. والَّلغوُ أن يكونَ الكلامُ تامًا بدونه كما في قولك: ما كانَ أحدٌ خيرًا منك فيها؛ وإنما قُدّم في اول المستقرّ لكونه مقصودًا، ةإنما رُفِضَ في الآية الأصل، لأنها سبقت لبيانِ التوحيد. قالَ ابنُ الحاجب: «إنما قُدِّمَ لاهتمامِ تناسبِ الفواصل، فلو قُدِّمَ على \" أحد\" لحصلَ الغرض، لكن كان يقع الفصلُ بين الجزأين اللذين هما مسندٌ إليه، فقدَّمَ عليهما جميعً وحصلَ الغرض».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          92,
+          93
+        ],
+        "printed_pages": [
+          638
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "ةإنما",
+          "to": "وإنما",
+          "reason": "Obvious electronic transcription/typographical error; raw text retained for comparison. No scan-reading claim.",
+          "status": "editorial_typographical_correction"
+        }
+      ],
+      "unresolved_flags": [
+        "Ibn al-Hajib quote اللذين هما مسند إليه appears incomplete. Existing English supplement '[the predicate and]' remains conjectural; Arabic retains witness."
+      ],
+      "english_corrections": [],
+      "english_heading": "[T112.08 | XVI 638 | on K112.05–06]",
+      "existing_notes": [
+        "[REVIEW T112-U2: The printed wording is اللذين هما مسند إليه, apparently incomplete as a description of the two parts. The bracketed supplement conveys the apparent argument but requires checking the quoted source.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "His words, “Exclusively the one who is needed”: the exception is unfilled (istithnāʾ mufarragh); that is, God is exclusively the one who is needed—relative, that is, to creatures.\nHis words, “Supplementary, not indispensable to the predication.” An indispensable adjunct (ẓarf mustaqirr) is one required to complete the utterance, as when it functions as the predicate in “There was not in it anyone better than you.” A supplementary adjunct (laghw) is one without which the utterance is complete, as in “No one was better than you in it.” In the first case, the indispensable adjunct is put first because it is intended as the focus. The normal arrangement was abandoned in the verse because it was directed at explaining divine oneness.\nIbn al-Ḥājib says: “It was placed first out of concern for the correspondence of verse endings. Had it merely preceded aḥad, the aim would have been achieved; but it would then have separated the two parts which are [the predicate and] the subject of predication. It was therefore placed before both, and the aim was achieved.”\n[REVIEW T112-U2: The printed wording is اللذين هما مسند إليه, apparently incomplete as a description of the two parts. The bracketed supplement conveys the apparent argument but requires checking the quoted source.]"
+    },
+    {
+      "id": "T112.09",
+      "author": "al-Tibi",
+      "arabic": "وقال صاحبُ \"الانتصاف\": «نقلَ سيبويه أن سمعَ بعضَ الجُفاةِ من العربِ يقرأ: ولم يكنْ أحدٌ كفوًا له، فجرى هذا الجلفُ على عادته، فجفا طبعُه عن لُطفِ المعنى، الذي لأجله اقتضى تقديمَ الظرفِ والخبرِ على الاسم، وذلك أن الغرضَ الذي سيقت إليه الآيةُ، نفيُ المكافأة والمساواةِ عن ذاتِ الله تعالى، فكان تقديم المكافأةِ المقصودةِ بأن تُسلبَ عنه أنه أولى، ثم لما قُدِّمتْ لتسلبَ ذُكرَ معها الظرف، لتُبيَّنَ الذاتُ المقدسةُ بسلبِ المكافأة».\n\nوقلتُ: تلخيصُه أن مراعاةَ المعنى الذي يقتضيه المقامُ، أحرى وأحقُّ وأقدمُ من مراعاةِ اللفظِ والفواصلِ.",
+      "arabic_source_raw": "وقال صاحبُ \"الانتصاف\": «نقلَ سيبويه أن سمعَ بعضَ الجُفاةِ من العربِ يقرأ: ولم يكنْ أحدٌ كفوًا له، فجرى هذا الجلفُ على عادته، فجفا طبعُه عن لُطفِ المعنى، الذي لأجله اقتضى تقديمَ الظرفِ والخبرِ على الاسم، وذلك أن الغرضَ الذي سيقت إليه الآيةُ، نفيُ المكافأة والمساواةِ عن ذاتِ الله تعالى، فكان تقديم المكافأةِ المقصودةِ بأن تُسلبَ عنه أنه أولى، ثم لما قُدِّمتْ لتسلبَ ذُكرَ معها الظرف، لتُبيَّنَ الذاتُ المقدسةُ بسلبِ المكافأة».\n\nوقلتُ: تلخيصُه أن مراعاةَ المعنى الذي يقتضيه المقامُ، أحرى وأحقُّ وأقدمُ من مراعاةِ اللفظِ والفواصلِ.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          97,
+          98
+        ],
+        "printed_pages": [
+          639
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T112.09 | XVI 639 | on K112.06]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "The author of al-Intiṣāf says: “Sībawayh reports hearing a rough Arab recite ‘wa-lam yakun aḥadun kufuwan lahu.’ The uncouth man followed his habitual manner, his coarse disposition missing the subtle meaning that required the adjunct and predicate to precede the subject. The verse's intended aim is to deny equivalence and equality to God's essence. It was therefore preferable to put first the equivalence intended to be denied Him. Once it was brought forward for negation, the adjunct was mentioned with it, to distinguish the holy essence by the denial of equivalence.”\nI say: its upshot is that attention to the meaning demanded by the context is more fitting, more justified and prior to attention to wording and verse endings."
+    },
+    {
+      "id": "T112.10",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (وقرئ: ﴿كُفُوًا﴾، بضم الكاف)، حَفْص: بضِّمها وضِّم الفاء من غيرِ همز، وحمزة: بإسكانِ الفاءِ مع الهمزةِ في الوصل، فإذا وقفَ أبدلَ واوًا مفتوحة، والباقون: بضمِّ الفاءِ مع الهمزة.\n\nالراغب: «الكُفْءُ: في المنزلةِ والقَدْر، ومنه الكِفاءُ لشُقّةٍ تُنْصحُ بالأخرى، فيُجَلّلُ بها مؤخرُ الخباء. قال: فلانٌ كفءُ فلانٍ في المناكحةِ والمحاربةِ ونحوِ ذلك. ومنه المكافأةُ أي: المساواةُ والمقابلةُ في الفعل، والإكفاءُ: قلبُ الشئِ كأنه إزالةُ المساواة، ومنه الإكفاءُ في الشعر».",
+      "arabic_source_raw": "قولُه: (وقرئ: ﴿كُفُوًا﴾، بضم الكاف)، حَفْص: بضِّمها وضِّم الفاء من غيرِ همز، وحمزة: بإسكانِ الفاءِ مع الهمزةِ في الوصل، فإذا وقفَ أبدلَ واوًا مفتوحة، والباقون: بضمِّ الفاءِ مع الهمزة.\n\nالراغب: «الكُفْءُ: في المنزلةِ والقَدْر، ومنه الكِفاءُ لشُقّةٍ تُنْصحُ بالأخرى، فيُجَلّلُ بها مؤخرُ الخباء. قال: فلانٌ كفءُ فلانٍ في المناكحةِ والمحاربةِ ونحوِ ذلك. ومنه المكافأةُ أي: المساواةُ والمقابلةُ في الفعل، والإكفاءُ: قلبُ الشئِ كأنه إزالةُ المساواة، ومنه الإكفاءُ في الشعر».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          99,
+          101
+        ],
+        "printed_pages": [
+          639
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T112.10 | XVI 639 | on K112.06]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "His words, “Kufuʾan has been read, with ḍamma on kāf.” Ḥafṣ reads with ḍamma on it and on fāʾ, without hamza [kufuwan]. Ḥamza reads with unvocalized fāʾ and hamza when continuing; when stopping, he replaces it with a wāw bearing fatḥa. The others read with ḍamma on fāʾ and with hamza.\nAl-Rāghib: “Kufʾ is [equality] in standing and worth. From it comes kifāʾ for a piece of fabric sewn to another, with which the rear of a tent is covered. One says that a person is another's equal in marriage, combat and the like. From it comes mukāfaʾa: equality and corresponding action. Ikfāʾ is overturning something, as though removing equality; from this comes ikfāʾ in poetry.”"
+    },
+    {
+      "id": "T112.11",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (عَدْلَ القرآنِ كلِّه)، يُروى بفتح العين وكسرها، قال الأخفش: العِدْلُ بالكسر: المِثْل، والعَدْلُ بالفتح: أصلُه مصدر قولك: عَدَلْتَ بهذا عَدْلًا حسنًا، تجعله اسمًا للمِثْلِ، لِتُفْرُق بينه وبين عِدْل المتاع. وقال الفرّاء: العَدْلُ بالفتح: ما عادلَ الشّئ من غير جنسه، والعِدْلُ بالكسر: المِثْل. وتقول: عندي عِدْلُ غلامك، وعِدْلُ شاتك، إذا كان غلامًا يعدلُ غلامًا، أو شاةً تعدلُ شاة، فإذا أردت قيمته من غير جنسه، نَصبتَ العين، وربّما كَسَرها بعضُ العرب، وكان منهم غلط.",
+      "arabic_source_raw": "قولُه: (عَدْلَ القرآنِ كلِّه)، يُروى بفتح العين وكسرها، قال الأخفش: العِدْلُ بالكسر: المِثْل، والعَدْلُ بالفتح: أصلُه مصدر قولك: عَدَلْتَ بهذا عَدْلًا حسنًا، تجعله اسمًا للمِثْلِ، لِتُفْرُق بينه وبين عِدْل المتاع. وقال الفرّاء: العَدْلُ بالفتح: ما عادلَ الشّئ من غير جنسه، والعِدْلُ بالكسر: المِثْل. وتقول: عندي عِدْلُ غلامك، وعِدْلُ شاتك، إذا كان غلامًا يعدلُ غلامًا، أو شاةً تعدلُ شاة، فإذا أردت قيمته من غير جنسه، نَصبتَ العين، وربّما كَسَرها بعضُ العرب، وكان منهم غلط.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          107
+        ],
+        "printed_pages": [
+          640
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T112.11 | XVI 640 | on K112.07]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "His words, “The equivalent of the whole Qurʾān.” It is transmitted with fatḥa or kasra on the ʿayn. Al-Akhfash says: “ʿIdl, with kasra, means an equivalent. ʿAdl, with fatḥa, is originally the verbal noun in ‘I made this nicely equal [to that]’; you turn it into a noun for an equivalent to distinguish it from a ʿidl, a load of goods.” Al-Farrāʾ says: “ʿAdl, with fatḥa, is what equals something while belonging to a different kind. ʿIdl, with kasra, is its like. You say, ‘I have the ʿidl of your servant-boy, or of your sheep,’ when it is a servant-boy equal to a servant-boy or a sheep equal to a sheep. If you mean its value in something of another kind, you pronounce the ʿayn with fatḥa. Some Arabs sometimes pronounce it with kasra; that was an error on their part.”"
+    },
+    {
+      "id": "T112.12",
+      "author": "al-Tibi",
+      "arabic": "والصحيحُ: ثلثُ القرآن؛ رَوينا عن البخاريّ ومسلم ومالك وأبي داودَ والنسائي، عن أبي سعيد، أن رجلًا سمعَ رجلًا يقرأ: ﴿قُلْ هُوَ اللَّهُ أَحَدٌ﴾ يردّدها، فلما أصبحَ جاءَ إلى النبيّ صلى الله عليه وسلم، فذكرَ ذلك له، وكأنّ الرجلَ يتقالُّها، فقال رسول الله صلى الله عليه وسلم: «والذي نفسي بيده، إنها لتعدلُ ثُلُثَ القرآن».\n\nقال القاضي: «ولاشتمال هذه السورة مع قِصرِها على جميع المعارفِ الإلهية، والردِّ على مَن ألحدَ فيها، جاء في الحديثِ أنها تعدلُ ثلثَ القرآن، لأن مقاصدِ القرآنِ محصورةٌ في بيانِ العقائد، والأحكام، والقصص، ومَن عَدَلَها بكلِّه اعتبرَ المقصودِ بالذاتِ من ذلك».\n\nقولُه: (لأمرٍ ما يُسَوَّدُ مَن يَسودُ)، أوله:\n\nعَزَمتُ على إقامةِ ذي صباحِ\n\nو\"ما\" مزيدةٌ إبهاميّة، أي: لأمرٍ عظيمٍ يُسَوَّدُ مَن يَسود.",
+      "arabic_source_raw": "والصحيحُ: ثلثُ القرآن؛ رَوينا عن البخاريّ ومسلم ومالك وأبي داودَ والنسائي، عن أبي سعيد، أن رجلًا سمعَ رجلًا يقرأ: ﴿قُلْ هُوَ اللَّهُ أَحَدٌ﴾ يردّدها، فلما أصبحَ جاءَ إلى النبيّ صلى الله عليه وسلم، فذكرَ ذلك له، وكأنّ الرجلَ يتَقألُّها، فقال رسول الله صلى الله عليه وسلم: «والذي نفسي بيده، إنها لتعدلُ ثُلُثَ القرآن».\n\nقال القاضي: «ولاشتمال هذه السورة مع قِصرِها على جميع المعارفِ الإلهية، والردِّ على مَن ألحدَ فيها، جاء في الحديثِ أنها تعدلُ ثلثَ القرآن، لأن مقاصدِ القرآنِ محصورةٌ في بيانِ العقائد، والأحكام، والقضض، ومَن عَدَلَها بكلِّه اعتبرَ المقصودِ بالذاتِ من ذلك».\n\nقولُه: (لأمرٍ ما يُسَوَّدُ مَن يَسودُ)، أوله:\n\nعَزَمتُ على إقامةِ ذي صباحِ\n\nو\"ما\" مزيدةٌ إبهاميّة، أي: لأمرٍ عظيمٍ يُسَوَّدُ مَن يَسود.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          108,
+          109,
+          110,
+          112,
+          118
+        ],
+        "printed_pages": [
+          640,
+          641
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "يتَقألُّها",
+          "to": "يتقالُّها",
+          "reason": "Obvious electronic transcription/typographical error; raw text retained for comparison. No scan-reading claim.",
+          "status": "editorial_typographical_correction"
+        },
+        {
+          "from": "القضض",
+          "to": "القصص",
+          "reason": "Obvious electronic transcription/typographical error; raw text retained for comparison. No scan-reading claim.",
+          "status": "editorial_typographical_correction"
+        }
+      ],
+      "unresolved_flags": [],
+      "english_corrections": [
+        {
+          "before": "I resolved to stay for a morning.",
+          "after": "I resolved to stay until morning.",
+          "reason": "Al-Baghdadi explicitly glosses the poetic phrase as الإقامة إلى وقت الصباح; the earlier literal 'for a morning' is less precise.",
+          "evidence": {
+            "url": "https://almntqim.com/٤٦٥١_خزانة-الأدب-البغدادي-ج-٣/٨٨_الصفحة",
+            "work": "Khizanat al-adab",
+            "location": "III:88",
+            "arabic": "يقول: عزمت على الإقامة إلى وقت الصباح لأني قد وجدت الرأي والحزم قد أوجبا ذلك"
+          },
+          "status": "recommended"
+        },
+        {
+          "before": "[REVIEW T112-U3: The isolated half-line إقامة ذي صباح lacks its full poetic context. The literal provisional rendering above should be checked against the poem.]",
+          "after": "[SOURCE CHECK T112-U3: Al-Baghdādī, Khizānat al-adab III:86–88, records the full line and explains إقامة ذي صباح as remaining until morning. The rendering follows that explanation; it does not establish every detail of the poem's attribution or context.]",
+          "reason": "Replace the now-outdated claim that the half-line lacks a checked context.",
+          "evidence": {
+            "url": "https://almntqim.com/٤٦٥١_خزانة-الأدب-البغدادي-ج-٣/٨٨_الصفحة",
+            "location": "III:88"
+          },
+          "status": "recommended"
+        }
+      ],
+      "english_heading": "[T112.12 | XVI 640–641 | on K112.07]",
+      "existing_notes": [
+        "[REVIEW T112-U3: The isolated half-line إقامة ذي صباح lacks its full poetic context. The literal provisional rendering above should be checked against the poem.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "The correct version is “one third of the Qurʾān.” We have transmitted from al-Bukhārī, Muslim, Mālik, Abū Dāwūd and al-Nasāʾī, from Abū Saʿīd, that a man heard another reciting “Say: He is God, One” repeatedly. In the morning he came to the Prophet ﷺ and mentioned it, apparently regarding it as little. The Messenger of God ﷺ said: “By Him in whose hand is my soul, it is indeed equivalent to one third of the Qurʾān.”\nAl-Qāḍī says: “Because this sūrah, short as it is, encompasses all knowledge of divinity and refutes those who deviate concerning it, the report says that it equals one third of the Qurʾān. The Qurʾān's aims are confined to explaining beliefs, rulings and narratives. Whoever equates it with the whole takes into account what is intended for its own sake among these.”\nHis words, “It is for some cause that whoever becomes a master becomes one”: the opening is:\n“I resolved to stay until morning.”\nMā is an additional particle giving indefiniteness and magnification: that is, it is for a great cause that whoever becomes a master becomes one.\n[SOURCE CHECK T112-U3: Al-Baghdādī, Khizānat al-adab III:86–88, records the full line and explains إقامة ذي صباح as remaining until morning. The rendering follows that explanation; it does not establish every detail of the poem's attribution or context.]"
+    },
+    {
+      "id": "T112.13",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (وكفى دليلًا من اعترف)، \"من اعترف\" مفعولُ \"كفى\"، والفاعلُ ما دلَّ عليه لاحتوائها على صفات الله، والضمير في \"بفضلها\" للسورة، و\"صَدَّقَ\" عطفٌ على \"اعترف\"، و\"بقولِ رسولِ الله صلى الله عليه وسلم متعلقٌ بـ\"صَدَّقَ\". وقولُه: أن \"علم التوحيد\" متعلّقٌ بـ\"دليلًا\" وهو تمييز، أي\" كفى ذلك مَن اعترفَ بفضلِ السورة، وصَدَّقَ بقولِ الرسولِ، دليلًا على أن علم التوحيد من الله بمكان.\n\nوالمرادُ بقولِ النبي صلى الله عليه وسلم ما رواه في خاتمة السورة: \"أُسِّستْ السماواتُ السبعُ\" إلى آخره؛ ولم أجدِ الحديثَ في الأصولِ المعتبرة.\n\nوقد وردَ عن الترمذيِّ وأبي داودَ وابن ماجه، عن بريدة، أن رسول الله صلى الله عليه وسلم سمع رجلًا يقول: «اللهم إني أسألك بأني أشهدُ أنك أنت الله، لا إله إلا أنت، الأحدُ الصمد، الذي لم يلدْ ولم يولدْ، ولم يكن له كفوًا أحد. فقال النبي صلى الله عليه وسلم\" والذي نفسي بيده، لقد سألَ اللهَ باسمِه الأعظم، الذي إذا دُعي به أجاب، وإذا سُئِلَ به أعطى».",
+      "arabic_source_raw": "قولُه: (وكفى دليلًا من اعترف)، \"من اعترف\" مفعولُ \"كفى\"، والفاعلُ ما دلَّ عليه لاحتوائها على صفات الله، والضمير في \"بفضلها\" للسورة، و\"صَدَّقَ\" عطفٌ على \"اعترف\"، و\"بقولِ رسولِ الله صلى الله عليه وسلم متعلقٌ بـ\"صَدَّقَ\". وقولُه: أن \"علم التوحيد\" متعلّقٌ بـ\"دليلًا\" وهو تمييز، أي\" كفى ذلك مَن اعترفَ بفضلِ السورة، وصَدَّقَ بقولِ الرسولِ، دليلًا على أن علم التوحيد من الله بمكان.\n\nوالمرادُ بقولِ النبي صلى الله عليه وسلم ما رواه في خاتمة السورة: \"أُسِّستْ السماواتُ السبعُ\" إلى آخره؛ ولم أجدِ الحديثَ في الأصولِ المعتبرة.\n\nوقد وردَ عن الترمذيِّ وأبي داودَ وابن ماجه، عن بريدة، أن رسول الله صلى الله عليه وسلم سمع رجلًا يقول: «اللهم إني أسألأك بأني أشهدُ أنك أنت الله، لا إله إلا أنت، الأحدُ الصمد، الذي لم يلدْ ولم يولدْ، ولم يكن له كفوًا أحد. فقال النبي صلى الله عليه وسلم\" والذي نفسي بيده، لقد سألَ اللهَ باسمِه الأعظم، الذي إذا دُعي به أجاب، وإذا سُئِلَ به أعطى».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          119,
+          120,
+          121
+        ],
+        "printed_pages": [
+          641
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "أسألأك",
+          "to": "أسألك",
+          "reason": "Obvious electronic transcription/typographical error; raw text retained for comparison. No scan-reading claim.",
+          "status": "editorial_typographical_correction"
+        }
+      ],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T112.13 | XVI 641 | on K112.07]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "His words, “It suffices as proof for whoever acknowledges.” Man iʿtarafa [whoever acknowledges] is the object of kafā [suffices]. Its subject is what is indicated by “because it encompasses God's attributes.” The pronoun in “its excellence” refers to the sūrah. “Believes” is coordinated with “acknowledges”; “the Messenger of God's ﷺ statement” attaches to “believes.” “That the science of divine oneness” attaches to “as proof,” which is a specification (tamyīz). That is: for whoever acknowledges the sūrah's excellence and believes the Messenger's statement, this suffices as proof that the science of divine oneness has an exalted standing with God.\nThe Prophet's ﷺ statement intended here is the one he transmits at the end of the sūrah: “The seven heavens were founded …,” to the end. I have not found this report in the recognized source collections.\nAl-Tirmidhī, Abū Dāwūd and Ibn Māja transmit from Burayda that the Messenger of God ﷺ heard a man saying: “O God, I ask You by my testimony that You are God—there is no god but You—the One, al-Ṣamad, who neither begot nor was begotten, and to whom no one is equal.” The Prophet ﷺ said: “By Him in whose hand is my soul, he has asked God by His greatest name: when invoked by it, He answers; when asked by it, He gives.”"
+    },
+    {
+      "id": "T112.14",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (فقال: وَجَبَتْ) الحديثُ أخرجه مالكٌ وأحمدُ والترمذيُّ والنسائي عن أبي هريرة.",
+      "arabic_source_raw": "قولُه: (فقال: وَجَبَتْ) الحديثُ أخرجه مالكٌ وأحمدُ والترمذيُّ والنسائي عن أبي هريرة.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          129
+        ],
+        "printed_pages": [
+          642
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T112.14 | XVI 642 | on K112.07]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "His words, “He said: It has become assured.” Mālik, Aḥmad, al-Tirmidhī and al-Nasāʾī transmitted the report from Abū Hurayra."
+    },
+    {
+      "id": "T112.15",
+      "author": "al-Tibi",
+      "arabic": "خاتِمة من كلامِ الشيخ فصيح الدين رحمه الله:\n\nلم يُعطفْ ﴿اللَّهُ الصَّمَدُ﴾ على الجملةِ المتقدمة؛ لأنها محقِّقة لمضمونها ومبينةٌ لها، وكذا ﴿لَمْ يَلِدْ﴾؛ لأنها محقِّقةٌ لمضمونِ ﴿اللَّهُ الصَّمَدُ﴾؛ لأن الغني المطلقَ الذي يفتقرُ إليه كل شئٍ لا ينبغي أن يكون والدًا ولا مولودًا؛ لأن ذلك يستلزم الافتقار بالضرورة. وعُطفَ ﴿لَمْ يُولَدْ﴾ على ﴿لَمْ يَلِدْ﴾ لأن ﴿لَمْ يُولَدْ﴾ لم يُنبئ عن معنى ﴿لَمْ يَلِدْ﴾، فلم يكن محققًا لمعناه، بل الجملتانِ محققتانِ لمضمونِ الجملة السابقة.\n\nوعَطفُ ﴿لَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ﴾، أن مضمونَها لم يكن محققًا لمضمون السابقتين؛ لأنها تُنبئ عن أنه لا يمكنُ أن يكون له مماثلٌ في شئ مِمّا ذُكِرَ في الذاتِ والصفات، فهو واحدٌ لا شريك له تعالى وتقدّسَ وتَعظّم.\n\nوعُرفَ الخبرُ في ﴿اللَّهُ الصَّمَدُ﴾، نفيًا لنفيِ مَن زعم وسمّى غيرَه صمدًا، ونُكِّرَ في ﴿اللَّهُ أَحَدٌ﴾، لأنهم لم يُسمّوا أشياءًا \"أحدًا\" بهذا المعنى.\n\nتَمّتِ السُّورَة",
+      "arabic_source_raw": "خاتِمة م كلامِ الشيخ فصيح الدين رحمه الله:\n\nلم يُعطفْ ﴿اللَّهُ الصَّمَدُ﴾ على الجملةِ المتقدمة؛ لأنها محقِّقة لمضمونها ومبينةٌ لها، وكذا ﴿لَمْ يَلِدْ﴾؛ لأنها محقِّقةٌ لمضمونِ ﴿اللَّهُ الصَّمَدُ﴾؛ لأن الغني المطلقَ الذي يفتقرُ إليه كل شئٍ لا ينبغي أن يكون والدًا ولا مولودًا؛ لأن ذلك يستلزم الافتقار بالضرورة. وعُطفَ ﴿لَمْ يُولَدْ﴾ على ﴿لَمْ يَلِدْ﴾ لأن ﴿لَمْ يُولَدْ﴾ لم يُنبئ عن معنى ﴿لَمْ يَلِدْ﴾، فلم يكن محققًا لمعناه، بل الجملتانِ محققتانِ لمضمونِ الجملة السابقة.\n\nوعَطفُ ﴿لَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ﴾، أن مضمونَها لم يكن محققًا لمضمون السابقتين؛ لأنها تُنبئ عن أنه لا يمكنُ أن يكون له مماثلٌ في شئ مِمّا ذُكِرَ في الذاتِ والصفات، فهو واحدٌ لا شريك له تعالى وتقدّسَ وتَعظّم.\n\nوعُرفَ الخبرُ في ﴿اللَّهُ الصَّمَدُ﴾، نفيًا لنفيِ مَن زعم وسمّى غيرَه صمدًا، ونُكِّرَ في ﴿اللَّهُ أَحَدٌ﴾، لأنهم لم يُسمّوا أشياءًا \"أحدًا\" بهذا المعنى.\n\nتَمّتِ السُّورَة",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s520.html",
+        "line_refs": [
+          131,
+          132,
+          133,
+          136,
+          138
+        ],
+        "printed_pages": [
+          642,
+          643
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "خاتِمة م كلامِ",
+          "to": "خاتِمة من كلامِ",
+          "reason": "Obvious dropped ن in heading; preserved in raw.",
+          "status": "mechanical_typographical_correction"
+        }
+      ],
+      "unresolved_flags": [
+        "نفيا لنفي is retained in Arabic; English '[the claim of]' is an interpretive repair and remains unestablished against another witness."
+      ],
+      "english_corrections": [],
+      "english_heading": "[T112.15 | XVI 642–643 | concluding addition]",
+      "existing_notes": [
+        "[REVIEW T112-U4: The scan reads نفيا لنفي من زعم وسمى غيره صمدا, literally “to negate the negation of whoever asserted and named another ṣamad.” This double negation is problematic. The bracketed rendering gives the apparent intended argument, not a verified emendation. Retain the flag pending another witness or the quoted source.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "A conclusion from the words of Shaykh Faṣīḥ al-Dīn—may God have mercy on him:\n“‘God, al-Ṣamad’ is not joined by a conjunction to the preceding sentence, because it confirms and explains its content. The same applies to ‘He did not beget,’ because it confirms the content of ‘God, al-Ṣamad’: the absolutely self-sufficient one, whom everything needs, cannot be a begetter or begotten, since that necessarily entails need.\n“‘Nor was He begotten’ is joined to ‘He did not beget,’ because ‘was not begotten’ does not express the meaning of ‘did not beget,’ and thus does not confirm its meaning; rather, the two sentences confirm the content of the preceding sentence. ‘And no one is equal to Him’ is joined [by a conjunction] because its content does not confirm the content of the two preceding sentences: it expresses that He cannot have any equal in anything mentioned concerning essence and attributes. He is therefore one, with no partner—exalted, holy and supremely great.\n“The predicate is definite in ‘God, al-Ṣamad’ to negate [the claim of] anyone who asserts and names another as ṣamad. It is indefinite in ‘God, One,’ because they did not call things aḥad in this sense.”\n[REVIEW T112-U4: The scan reads نفيا لنفي من زعم وسمى غيره صمدا, literally “to negate the negation of whoever asserted and named another ṣamad.” This double negation is problematic. The bracketed rendering gives the apparent intended argument, not a verified emendation. Retain the flag pending another witness or the quoted source.]\nThe sūrah is complete."
+    },
+    {
+      "id": "K113.01",
+      "author": "al-Zamakhshari",
+      "arabic": "مختلف فيها، وهي خمس آيات\n\nبسم الله الرحمن الرحيم\n\n[(قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ (1) مِنْ شَرِّ ما خَلَقَ (2) وَمِنْ شَرِّ غاسِقٍ إِذا وَقَبَ (3) وَمِنْ شَرِّ النَّفَّاثاتِ فِي الْعُقَدِ (4) وَمِنْ شَرِّ حاسِدٍ إِذا حَسَدَ)] 1 - 5 [",
+      "arabic_source_raw": "مختلف فيها، وهي خمس آيات\n\nبسم الله الرحمن الرحيم\n\n[(قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ (1) مِنْ شَرِّ ما خَلَقَ (2) وَمِنْ شَرِّ غاسِقٍ إِذا وَقَبَ (3) وَمِنْ شَرِّ النَّفَّاثاتِ فِي الْعُقَدِ (4) وَمِنْ شَرِّ حاسِدٍ إِذا حَسَدَ)] 1 - 5 [",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          11,
+          13,
+          15
+        ],
+        "printed_pages": [
+          644
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K113.01 | T XVI 644; K IV 820]",
+      "existing_notes": [
+        "[TEXT VARIANT: The separate four-volume transcription's heading says “Meccan; also said to be Medinan,” adds “revealed after al-Fīl,” and repeats the basmala. Dubai's base heading is translated above.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "Sūrat al-Falaq. There is disagreement about it [whether Meccan or Medinan]; it has five verses.\nIn the name of God, the All-Merciful, the Merciful.\n“Say: I seek refuge in the Lord of daybreak, from the evil of what He created; from the evil of a darkening one when it enters; from the evil of those who blow upon knots; and from the evil of an envier when he envies.” [113:1–5]\n[TEXT VARIANT: The separate four-volume transcription's heading says “Meccan; also said to be Medinan,” adds “revealed after al-Fīl,” and repeats the basmala. Dubai's base heading is translated above.]"
+    },
+    {
+      "id": "K113.02",
+      "author": "al-Zamakhshari",
+      "arabic": "الفلق والفرق: الصبح، لأن الليل يفلق عنه ويفرق: فعل بمعنى مفعول. يقال في المثل: هو أبين من فلق الصبح، ومن فرق الصبح. ومنه قولهم: سطع الفرقان، إذا طلع الفجر. وقيل: هو كل ما يفلقه الله،\n\nكالأرض عن النبات، والجبال عن العيون، والسحاب عن المطر، والأرحام عن الأولاد، والحب والنوى وغير ذلك. وقيل: هو واٍد في جهنم أو جب فيها، من قولهم لما اطمأن من الأرض: الفلق، والجمع: فلقان. وعن بعض الصحابة أنه قدم الشام فرأى دور أهل الذمّة وما هم فيه من خفض العيش، وما وسع عليهم من دنياهم، فقال: لا أبالي، أليس من ورائهم الفلق؟ فقيل: وما الفلق؟\n\nقال: بيت في جهنم إذا فتح صاح جميع أهل النار من شدّة حرّه.",
+      "arabic_source_raw": "الفلق والفرق: الصبح، لأن الليل يفلق عنه ويفرق: فعل بمعنى مفعول. يقال في المثل: هو أبين من فلق الصبح، ومن فرق الصبح. ومنه قولهم: سطع الفرقان، إذا طلع الفجر. وقيل: هو كل ما يفلقه الله،\n\nكالأرض عن النبات، والجبال عن العيون، والسحاب عن المطر، والأرحام عن الأولاد، والحب والنوى وغير ذلك. وقيل: هو واٍد في جهنم أوجب فيها، من قولهم لما اطمأن من الأرض: الفلق، والجمع: فلقان. وعن بعض الصحابة أنه قدم الشام فرأى دور أهل الذمّة وما هم فيه من خفض العيش، وما وسع عليهم من دنياهم، فقال: لا أبالي، أليس من ورائهم الفلق؟ فقيل: وما الفلق؟\n\nقال: بيت في جهنم إذا فتح صاح جميع أهل النار من شدّة حرّه.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          17,
+          27,
+          33
+        ],
+        "printed_pages": [
+          644,
+          645,
+          646
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "أوجب فيها",
+          "to": "أو جب فيها",
+          "reason": "Separates أو + جب, consistent with the English 'or a pit'. Both electronic forms are joined, so treat as an explicit word-division intervention.",
+          "status": "editorial_word_division"
+        }
+      ],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K113.02 | T XVI 644–646; K IV 820]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "Al-falaq and al-faraq mean morning, because night is split and parted away from it: faʿal has the meaning of mafʿūl. The proverb says, “It is clearer than the breaking of morning,” or “than the parting of morning.” Related to this is their expression saṭaʿa al-furqān when dawn rises.\nIt is also said to mean everything God splits open: the earth for plants, mountains for springs, clouds for rain, wombs for children, grain and date-stones, and other things. It is also said to be a valley in Hell or a pit within it, from their use of falaq for a depression in the ground; the plural is fulqān.\nIt is reported that one of the Companions came to Syria and saw the houses of the protected non-Muslim communities (ahl al-dhimma), their comfortable lives and the worldly plenty granted them. He said, “I do not mind. Is al-falaq not awaiting them?” He was asked, “What is al-falaq?” He answered: “A chamber in Hell which, when opened, makes all the inhabitants of the Fire cry out at the intensity of its heat.”"
+    },
+    {
+      "id": "K113.03",
+      "author": "al-Zamakhshari",
+      "arabic": "(مِنْ شَرِّ ما خَلَقَ) من شر خلقه، وشرهم: ما يفعله المكلفون من الحيوان من المعاصي والمآثم، ومضارّة بعضهم بعضًا من ظلم وبغى وقتل وضرب وشتم وغير ذلك، وما يفعله غير المكلفين منه عن الأكل والنهس واللدغ والعض كالسباع والحشرات، وما وضعه الله في الموات من أنواع الضرر كالإحراق في النار والقتل في السم.",
+      "arabic_source_raw": "(مِنْ شَرِّ ما خَلَقَ) من شر خلقه، وشرهم: ما يفعله المكلفون من الحيوان من المعاصي والمآثم، ومضارّة بعضهم بعضًا من ظلم وبغى وقتل وضرب وشتم وغير ذلك، وما يفعله غير المكلفين منه عن الأكل والنهس واللدغ والعض كالسباع والحشرات، وما وضعه الله في الموات من أنواع الضرر كالإحراق في النار والقتل في السم.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          33
+        ],
+        "printed_pages": [
+          646
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K113.03 | T XVI 646; K IV 820]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "“From the evil of what He created”: from the evil of His creation. Their evil consists in the disobedience and sins committed by morally responsible living beings, and the harm they do one another through injustice, aggression, killing, striking, abuse and so forth; in what the non-responsible among living beings do by devouring, tearing with the teeth, stinging and biting, such as predatory animals and creeping creatures; and in the kinds of harm God has placed in inanimate things, such as burning in fire and killing in poison."
+    },
+    {
+      "id": "K113.04",
+      "author": "al-Zamakhshari",
+      "arabic": "و\"الغاسق\": الليل إذا اعتكر ظلامه، من قوله تعالى: (إِلَى غَسَقِ اللَّيْلِ)] الإسراء: 78 [ومنه: غسقت العين امتلأت دمعا، وغسقت الجراحة: امتلأت دمًا.\n\nووقوبه: دخول ظلامه في كل شيء، ويقال: وقبت الشمس إذا غابت. وفي الحديث: لما رأى الشمس قد وقبت قال: هذا حين حلها، يعنى صلاة المغرب. وقيل: هو القمر إذا امتلأ،\n\nوعن عائشة رضي الله عنها: أخذ رسول الله صلى الله عليه وسلم بيدي فأشار إلى القمر فقال: تعوّذي بالله من شر هذا، فإنه الغاسق إذا وقب، ووقوبه: دخوله في الكسوف واسوداده. ويجوز أن يراد بالغاسق: الأسود من الحيات، ووقبه: ضربه ونقبه. والوقب: النقب، ومنه: وقبة الثريد؛ والتعوّذ من شر الليل؛ لأن انبثاثه فيه أكثر، والتحرّز منه أصعب، ومنه قولهم: الليل أخفى للويل، وقولهم: أغدر الليل؛\n\nلأنه إذا أظلم كثر فيه الغدر، وأسند الشر إليه لملابسته له من حدوثه فيه.",
+      "arabic_source_raw": "و\"الغاسق\": الليل إذا اعتكر ظلامه، من قوله تعالى: (أَقِمِ الصَّلاةَ لِدُلُوكِ)] الإسراء: 78 [ومنه: غسقت العين امتلأت دمعا، وغسقت الجراحة: امتلأت دمًا.\n\nووقوبه: دخول ظلامه في كل شيء، ويقال: وقبت الشمس إذا غابت. وفي الحديث: لما رأى الشمس قد وقبت قال: هذا حين حلها، يعنى صلاة المغرب. وقيل: هو القمر إذا امتلأ،\n\nوعن عائشة رضي الله عنها: أخذ رسول الله صلى الله عليه وسلم بيدي فأشار إلى القمر فقال: تعوّذي بالله من شر هذا، فإنه الغاسق إذا وقب، ووقوبه: دخوله في الكسوف واسوداده. ويجوز أن يراد بالغاسق: الأسود من الحيات، ووقبه: ضربه ونقبه. والوقب: النقب، ومنه: وقبة الثريد؛ والتعوّذ من شر الليل؛ لأن انبثاثه فيه أكثر، والتحرّز منه أصعب، ومنه قولهم: الليل أخفى للويل، وقولهم: أغدر الليل؛\n\nلأنه إذا أظلم كثر فيه الغدر، وأسند الشر إليه لملابسته له من حدوثه فيه.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          33,
+          34,
+          43,
+          51
+        ],
+        "printed_pages": [
+          646,
+          647,
+          648
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "أَقِمِ الصَّلاةَ لِدُلُوكِ",
+          "to": "إِلَى غَسَقِ اللَّيْلِ",
+          "reason": "Matches the existing English choice; independent Kashshaf DKA IV:821 contains إلى غسق الليل. Dubai electronic base has the beginning of 17:78. Retain variant note.",
+          "status": "independent_Kashshaf_electronic_witness_checked"
+        }
+      ],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K113.04 | T XVI 646–648; K IV 820–821]",
+      "existing_notes": [
+        "[TEXT VARIANT K113-C1: Dubai p.646 cites the opening of 17:78, “Establish prayer at the sun's decline,” rather than the words containing ghasaq. The independent four-volume transcription and Turkish p.1470 give the relevant latter clause, translated above. Both forms are recorded.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "Al-ghāsiq is night when its darkness becomes dense, from His statement “… until the darkness of night” [17:78]. Related expressions are “the eye ghasaqat”—filled with tears—and “the wound ghasaqat”—filled with blood. Its wuqūb is the entry of its darkness into everything. One says waqabat al-shams when the sun sets. In the report, when he saw that the sun had set, he said, “This is the time when it becomes lawful”—meaning the sunset prayer.\nIt is also said to be the moon when full. ʿĀʾisha—may God be pleased with her—reports: the Messenger of God ﷺ took my hand, pointed to the moon, and said, “Seek refuge in God from the evil of this, for it is the darkening one when it enters.” Its wuqūb is its entering eclipse and becoming dark.\nAl-ghāsiq may also mean a black snake; its waqb is its striking and piercing. Waqb means a hole, as in waqbat al-tharīd, the hollow in a dish of bread soaked in broth.\nRefuge is sought from the evil of night because evil spreads more widely in it and is harder to guard against. Hence their sayings, “Night conceals misfortune better,” and “Night has become treacherous.” When it grows dark, treachery increases. Evil is attributed to night because it accompanies it, occurring within it.\n[TEXT VARIANT K113-C1: Dubai p.646 cites the opening of 17:78, “Establish prayer at the sun's decline,” rather than the words containing ghasaq. The independent four-volume transcription and Turkish p.1470 give the relevant latter clause, translated above. Both forms are recorded.]"
+    },
+    {
+      "id": "K113.05",
+      "author": "al-Zamakhshari",
+      "arabic": "النَّفَّاثاتِ: النساء، أو النفوس، أو الجماعات السواحر اللاتي يعقدن عقدًا في خيوط وينفثن عليها ويرقين، والنفث: النفخ مع ريق، ولا تأثير لذلك، اللهم إلا إذا كان ثم إطعام شيء ضار، أو سقيه، أو إشمامه، أو مباشرة المسحور به على بعض الوجوه؛ ولكنّ الله عز وجل قد يفعل عند ذلك فعلًا على سبيل الامتحان الذي يتميز به الثبت على الحق من الحشوية والجهلة من العوام،\n\nفينسبه الحشوية والرعاع إليهنّ وإلى نفثهن، والثابتون بالقول الثابت لا يلتفتون إلى ذلك ولا يعبئون به.\n\nفإن قلت: فما معنى الاستعاذة من شرهن؟\n\nقلت: فيها ثلاثة أوجه، أحدها: أن يستعاذ من عملهن الذي هو صنعة السحر ومن إثمهنّ في ذلك. والثاني: أن يستعاذ من فتنتهن الناس بسحرهن وما يخدعنهم به من باطلهن. والثالث: أن يستعاذ مما يصيب الله به من الشر عند نفثهن.",
+      "arabic_source_raw": "النَّفَّاثاتِ: النساء، أو النفوس، أو الجماعات السواحر اللاتي يعقدن عقدًا في خيوط وينفثن عليها ويرقين، والنفث: النفخ من ريق، ولا تأثير لذلك، اللهم إلا إذا كان ثم إطعام شيء ضار، أو سقيه، أو إشمامه، أو مباشرة المسحور به على بعض الوجوه؛ ولكنّ الله عز وجل قد يفعل عند ذلك فعلًا على سبيل الامتحان الذي يتميز به الثبت على الحق من الحشوية والجهلة من العوام،\n\nفينسبه الحشوية والرعاع إليهنّ وإلى نفثهن، والثابتون بالقول الثابت لا يلتفتون إلى ذلك ولا يعبئون به.\n\nفإن قلت: فما معنى الاستعاذة من شرهن؟\n\nقلت: فيها ثلاثة أوجه، أحدها: أن يستعاذ من عملهن الذي هو صنعة السحر ومن إثمهنّ في ذلك. والثاني: أن يستعاذ من فتنتهن الناس بسحرهن وما يخدعنهم به من باطلهن. والثالث: أن يستعاذ مما يصيب الله به من الشر عند نفثهن.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          51,
+          59,
+          61,
+          62
+        ],
+        "printed_pages": [
+          648,
+          649
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "النفخ من ريق",
+          "to": "النفخ مع ريق",
+          "reason": "C06 K113-C2 reports مع ريق in Dubai XVI:648. No fresh scan inspection.",
+          "status": "carried_forward_C06_scan_report_not_reinspected"
+        }
+      ],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K113.05 | T XVI 648–649; K IV 821]",
+      "existing_notes": [
+        "[TEXT CORRECTION K113-C2: Both electronic Arabic texts have النفخ من ريق. The Dubai scan p.648 clearly reads النفخ مع ريق, “blowing with saliva”; Turkish p.1470 agrees. The scan governs this translation. Ḥashwiyya is retained as the author's polemical label, not silently converted into a neutral modern school name.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "Al-naffāthāt are women, souls, or groups of female sorcerers who tie knots in threads, blow upon them and recite incantations. Nafth is blowing with saliva. This has no effect—unless, indeed, something harmful is administered as food, drink or something to smell, or the bewitched person is brought into contact with it in some way. But God—mighty and majestic—may perform an act at that moment as a test by which those steadfast upon truth are distinguished from the Ḥashwiyya and the ignorant common people. The Ḥashwiyya and the rabble attribute it to the women and their blowing; those steadfast in the firm word pay it no attention and attach no weight to it.\nIf you ask, “What, then, does seeking refuge from their evil mean?”, I answer: there are three interpretations. First, refuge is sought from their activity, the practice of sorcery, and their sin in doing it. Second, refuge is sought from their leading people astray through their sorcery and deceiving them by their false practices. Third, refuge is sought from whatever evil God causes to befall someone at the moment of their blowing.\n[TEXT CORRECTION K113-C2: Both electronic Arabic texts have النفخ من ريق. The Dubai scan p.648 clearly reads النفخ مع ريق, “blowing with saliva”; Turkish p.1470 agrees. The scan governs this translation. Ḥashwiyya is retained as the author's polemical label, not silently converted into a neutral modern school name.]"
+    },
+    {
+      "id": "K113.06",
+      "author": "al-Zamakhshari",
+      "arabic": "ويجوز أن يراد بهن النساء الكيادات،\n\nمن قوله: (إِنَّ كَيْدَكُنَّ عَظِيمٌ)] يوسف: 28 [تشبيهًا لكيدهن بالسحر والنفث في العقد. أو اللاتي يفتن الرجال بتعرّضهن لهم وعرضهن محاسنهن، كأنهن يسحرنهم بذلك (إِذا حَسَدَ) إذا ظهر حسده، وعمل بمقتضاه من بغى الغوائل للمحسود؛ لأنه إذا لم يظهر أثر ما أضمره فلا ضرر يعود منه على من حسده، بل هو الضارّ لنفسه لاغتمامه بسرور غيره. وعن عمر بن عبد العزيز: لم أر ظالما أشبه بالمظلوم من حاسد. ويجوز أن يراد بشر الحاسد: إثمه وسماجة حاله في وقت حسده، وإظهاره أثره.",
+      "arabic_source_raw": "ويجوز أن يراد بهن النساء الكيادات،\n\nمن قوله: (إِنَّ كَيْدَكُنَّ عَظِيمٌ)] يوسف: 28 [تشبيهًا لكيدهن بالسحر والنفث في العقد. أو اللاتي يفتن الرجال بتعرّضهن لهم وعرضهن محاسنهن، كأنهن يسحرنهم بذلك (إِذا حَسَدَ) إذا ظهر حسده، وعمل بمقتضاه من بغى الغوائل للمحسود؛ لأنه إذا لم يظهر أثر ما أضمره فلا ضرر يعود منه على من حسده، بل هو الضارّ لنفسه لاغتمامه بسرور غيره. وعن عمر بن عبد العزيز: لم أر ظالما أشبه بالمظلوم من حاسد. ويجوز أن يراد بشر الحاسد: إثمه وسماجة حاله في وقت حسده، وإظهاره أثره.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          62,
+          71
+        ],
+        "printed_pages": [
+          649,
+          650
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K113.06 | T XVI 649–650; K IV 821–822]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "They may also mean scheming women, from His statement “Your scheming is indeed great” [12:28], likening their scheming to sorcery and blowing on knots; or women who tempt men by presenting themselves to them and displaying their attractions, as though bewitching them through that.\n“When he envies”: when his envy becomes manifest and he acts as it dictates, seeking misfortunes for the person envied. If he does not manifest the effect of what he conceals, no harm from him reaches the person he envies. Rather, he harms himself by grieving at another's happiness. ʿUmar ibn ʿAbd al-ʿAzīz is reported to have said: “I have never seen a wrongdoer who more resembles someone wronged than an envier.”\nThe envier's evil may also mean his sin and the ugliness of his condition at the time of his envy and his displaying its effect."
+    },
+    {
+      "id": "K113.07",
+      "author": "al-Zamakhshari",
+      "arabic": "فإن قلت: قوله: (مِنْ شَرِّ ما خَلَقَ) تعميم في كل ما يستعاذ منه، فما معنى الاستعاذة بعده من الغاسق والنفاثات والحاسد؟\n\nقلت: قد خص شر هؤلاء من كل شر لخفاء أمره، وأنه يلحق الإنسان من حيث لا يعلم، كأنما يغتال به. وقالوا: شر العداة المداجي الذي يكيدك من حيث لا تشعر.\n\nفإن قلت: فلم عرف بعض المستعاذ منه ونكر بعضه؟ قلت: عرفت النفاثات؛ لأن كل نفاثة شريرة، ونكر غاسق؛ لأنّ كل غاسق لا يكون فيه الشر، إنما يكون في بعض دون بعض، وكذلك كل حاسد لا يضرّ. ورب حسد محمود، وهو الحسد في الخيرات. ومنه قوله عليه الصلاة والسلام: «لا حسد إلا في اثنتين»،\n\nوقال أبو تمام:\n\nوما حاسد في المكرمات بحاسد\n\nوقال:\n\nإنّ العلا حسن في مثلها الحسد\n\nعن رسول الله صلى الله عليه وسلم: «من قرأ \"المعوّذتين\"، فكأنما قرأ الكتب التي أنزلها الله تعالى كلها».",
+      "arabic_source_raw": "فإن قلت: قوله: (مِنْ شَرِّ ما خَلَقَ) تعميم في كل ما يستعاذ منه، فما معنى الاستعاذة بعده من الغاسق والنفاثات والحاسد؟\n\nقلت: قد خص شر هؤلاء من كل شر لخفاء أمره، وأنه يلحق الإنسان من حيث لا يعلم، كأنما يغتال به. وقالوا: المداجي الذي يكيدك من حيث لا تشعر.\n\nفإن قلت: فلم عرف بعض المستعاذ منه ونكر بعضه؟ قلت: عرفت النفاثات؛ لأن كل نفاثة شريرة، ونكر غاسق؛ لأنّ كل غاسق لا يكون فيه الشر، إنما يكون في بعض دون بعض، وكذلك كل حاسد لا يضرّ. ورب حسد محمود، وهو الحسد في الخيرات. ومنه قوله عليه الصلاة والسلام: «لا حسد إلا في اثنتين»،\n\nوقال أبو تمام:\n\nوما حاسد في المكرمات بحاسد\n\nوقال:\n\nإنّ العلا حسن في مثلها الحسد\n\nعن رسول الله صلى الله عليه وسلم: «من قرأ \"المعوّذتين\"، فكأنما قرأ الكتب التي أنزلها الله تعالى كلها».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          72,
+          74,
+          75,
+          82,
+          84,
+          86,
+          88,
+          89
+        ],
+        "printed_pages": [
+          650,
+          651
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "وقالوا: المداجي",
+          "to": "وقالوا: شر العداة المداجي",
+          "reason": "Kashshaf DKA IV:822 includes شر العداة; absent in Dubai electronic base. Matches existing EN variant choice.",
+          "status": "independent_Kashshaf_electronic_witness_checked"
+        }
+      ],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K113.07 | T XVI 650–651; K IV 822]",
+      "existing_notes": [
+        "[TEXT VARIANT K113-C3: Dubai p.650 omits شر العداة, “the worst enemy,” before المداجي. It is present in the independent four-volume transcription and the Turkish Arabic/Turkish passage; it is included here and the difference recorded.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "If you ask, “‘From the evil of what He created’ includes everything from which refuge is sought. What is the point, then, of subsequently seeking refuge from the darkening one, the women who blow and the envier?”, I answer: their evil is singled out from all evil because its operation is hidden and reaches a person from where he does not know, as though he were treacherously struck by it. They say: “The worst enemy is the one who conceals his hostility and plots against you without your perceiving it.”\nIf you ask, “Why are some of those from whom refuge is sought made definite and others indefinite?”, I answer: al-naffāthāt is made definite because every such blower is evil. Ghāsiq is indefinite because evil is not present in every darkening night, but in some and not others. Likewise, not every envier causes harm. There is even praiseworthy envy: envy in good things. Hence his statement—blessings and peace be upon him—“There is no envy except in two cases.”\nAbū Tammām said:\n“One who envies noble accomplishments is no [blameworthy] envier.”\nHe also said:\n“Loftiness is such that envy of its like is fair.”\nIt is transmitted from the Messenger of God ﷺ: “Whoever recites the two sūrahs of refuge (al-Muʿawwidhatān) is as though he had recited all the books God Most High has sent down.”\n[TEXT VARIANT K113-C3: Dubai p.650 omits شر العداة, “the worst enemy,” before المداجي. It is present in the independent four-volume transcription and the Turkish Arabic/Turkish passage; it is included here and the difference recorded.]"
+    },
+    {
+      "id": "T113.01",
+      "author": "al-Tibi",
+      "arabic": "مكية، وقيل مدنية وهي خمس آيات\n\nبسم الله الرحمن الرحيم\n\nقولُه: (لأن الليلَ يُفلَقُ عنه)، أي: لأن الليلَ يَنْشقُّ عن الصبحِ، فيخرجُ الصبح؛ فَعَلٌ بمعنى مفعول؛ فالليلُ مفلوقٌ عنه.\n\nقولُه: (وقيل: هو كلُّ ما يَفْلِقُه)، قال القاضي: «وهو يَعمُّ جميعَ الممكنات؛ فإنه تعالى فَلَقَ ظلمةَ العدمِ بنورِ الإيجادِ عنها، سيّما ما يخرجُ عن أصلٍ، كالعيونِ والأمطارِ والنباتِ والأولاد، ويَختْصُّ عُرفًا بالصُّبح، ولذلك فُسِّر به. وتَخْصيصُه لِما فيه من تَغيُرِ الحالِ، وتَبدُّلِ وحشةِ\n\nالليلِ بسرورِ النور، [ومحاكاة فاتحة يوم القيامة]، والإشعارِ بأن مَن قدَر أن يزيلَ ظلمةَ الليلِ عن هذا العالم، قدَر أن يزيلَ عن العائذِ ما يخافه. ولفظُ الرّبّ ها هنا أوقعُ من سائرِ الأسماء، لأن الإعاذةَ مِن المضارِّ تربية».",
+      "arabic_source_raw": "مكية، وقيل مدنية وهي خمس آيات\n\nبسم الله الرحمن الرحيم\n\nقولُه: (لأن الليلَ يُفلَقُ عنه)، أي: لأن الليلَ يَنْشقُّ عن الصبحِ، فيخرجُ الصبح؛ فَعَلٌ بمعنى مفعول؛ فالليلُ مفلوقٌ عنه.\n\nقولُه: (وقيل: هو كلُّ ما يَفْلِقُه)، قال القاضي: «وهو يَعمُّ جميعَ الممكنات؛ فإنه تعالى فَلَقَ ظلمةَ العدمِ بنورِ الإيجادِ عنها، سيّما ما يخرجُ عن أصلٍ، كالعيونِ والأمطارِ والنباتِ والأولاد، ويَختْصُّ عُرفًا بالصُّبح، ولذلك فُسِّر به. وتَخْصيصُه لِما فيه من تَغيُرِ الحالِ، وتَبدُّلِ وحشةِ\n\nالليلِ بسرورِ النور، ومحاكاةِ الخيرِ بيوم القيامة، والإشعارِ بأن مَن قدَر أن يزيلَ ظلمةَ الليلِ عن هذا العالم، قدَر أن يزيلَ عن العائذِ ما يخافه. ولفظُ الرّبّ ها هنا أوقعُ من سائرِ الأسماء، لأن الإعاذةَ مِن المضارِّ قريبة».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          19,
+          21,
+          22,
+          24,
+          28
+        ],
+        "printed_pages": [
+          644,
+          645
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "المضارِّ قريبة",
+          "to": "المضارِّ تربية",
+          "reason": "Al-Baydawi's Anwar al-tanzil V:348 reads تربية, corroborating the existing provisional scan report; this is source corroboration.",
+          "status": "quoted_source_corroborated"
+        },
+        {
+          "from": "ومحاكاةِ الخيرِ بيوم القيامة",
+          "to": "[ومحاكاة فاتحة يوم القيامة]",
+          "reason": "Bracketed restoration from al-Baydawi V:348, matching recommended English; retains damaged Tibi reading in raw.",
+          "status": "quoted_source_emendation_bracketed"
+        }
+      ],
+      "unresolved_flags": [],
+      "english_corrections": [
+        {
+          "before": "evokes good through the Day of Resurrection",
+          "after": "[resembles the opening of the Day of Resurrection]",
+          "reason": "The printed/transcribed Tibi quote is corrupt here; Baydawi's quoted source explicitly has محاكاة فاتحة يوم القيامة. Brackets identify source-based restoration rather than a verified Tibi reading.",
+          "evidence": {
+            "url": "https://www.islamweb.net/ar/library/content/205/3329/تفسير-سورة-سورة-الفلق",
+            "work": "Anwar al-tanzil",
+            "location": "V:348, tafsir 113:1",
+            "arabic": "ومحاكاة فاتحة يوم القيامة"
+          },
+          "status": "recommended"
+        },
+        {
+          "before": "[REVIEW T113-U1: The scanned quotation at p.645 has difficult wording محاكاة الخير بيوم القيامة and a final word read provisionally as تربية. OpenITI gives قريبة. The contextual rendering of this final clause is provisional and must be checked against al-Qāḍī's source.]",
+          "after": "[SOURCE CHECK T113-U1: Ṭībī's quoted text has the difficult محاكاة الخير بيوم القيامة and the electronic text ends with قريبة. Al-Bayḍāwī, Anwār al-tanzīl V:348, reads محاكاة فاتحة يوم القيامة and تربية. The bracketed resurrection clause follows that quoted source; تربية also corroborates the earlier provisional reading. These are source-based restorations, not a newly collated Ṭībī manuscript reading.]",
+          "reason": "Record new primary quotation-source evidence and retain witness distinction.",
+          "evidence": {
+            "url": "https://www.islamweb.net/ar/library/content/205/3329/تفسير-سورة-سورة-الفلق",
+            "location": "V:348"
+          },
+          "status": "recommended"
+        }
+      ],
+      "english_heading": "[T113.01 | XVI 644–645 | on K113.02]",
+      "existing_notes": [
+        "[REVIEW T113-U1: The scanned quotation at p.645 has difficult wording محاكاة الخير بيوم القيامة and a final word read provisionally as تربية. OpenITI gives قريبة. The contextual rendering of this final clause is provisional and must be checked against al-Qāḍī's source.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "Sūrat al-Falaq. Meccan; also said to be Medinan. Five verses.\nIn the name of God, the All-Merciful, the Merciful.\nHis words, “Because night is split away from it”: that is, night splits away from morning and morning emerges. Faʿal has the meaning of mafʿūl: night is what is split away from it.\nHis words, “It is also said to mean everything He splits open.” Al-Qāḍī says: “It includes all possible beings, for He split the darkness of nonexistence away from them with the light of bringing into existence—particularly what emerges from an origin, such as springs, rains, plants and children. In conventional use it is especially morning, which is why it was explained that way. Morning is singled out because it changes the condition, replaces the loneliness of night with the joy of light, [resembles the opening of the Day of Resurrection], and signals that the one able to remove the darkness of night from this world can remove from the person seeking refuge what he fears. The word Lord is more fitting here than the other names, because protection from harms is an act of nurture.”\n[SOURCE CHECK T113-U1: Ṭībī's quoted text has the difficult محاكاة الخير بيوم القيامة and the electronic text ends with قريبة. Al-Bayḍāwī, Anwār al-tanzīl V:348, reads محاكاة فاتحة يوم القيامة and تربية. The bracketed resurrection clause follows that quoted source; تربية also corroborates the earlier provisional reading. These are source-based restorations, not a newly collated Ṭībī manuscript reading.]"
+    },
+    {
+      "id": "T113.02",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (لا أبالي، أليسَ من ورائهم الفَلَق؟ )، أي: لا أبالي بحُسنِ دُورِهم وخفضِ عَيْشِهم.\n\nثم استأنفَ مستفهمًا على سبيل التقرير: أليسَ من ورائهم الفَلَق؟ ونظيرُه ما روينا البخاريِّ ومسلمٍ وأحمدَ والترمذيِّ والنسائي، عن ابنِ عباسٍ في حديثٍ طويل، عن عمرَ رضي الله عنه: دخلتُ على رسول الله صلى الله عليه وسلم، فسلّمتُ وهو متكئ على رمالٍ حصيرٍ قد أثر في جنبِه فجلستُ فرفعتُ رأسي في البيت، فوالله ما رأيتُ فيه شيئًا ردَّ البصرَ إلا أَهَبَةَّ ثلاثةً، فقال: يا رسولَ الله، ادع الله أن يوسعَ على أمتك، فقد وَسَّعَ على فارسَ والرومِ وهم لا يعبدون الله، فاستوى جالسًا، ثم قالَ: أفي شكٍّ أنت يا ابنَ الخطاب؟ أولئك قومٌ قد عُجِّلتْ لهم طيباتُهم في الحياة الدنيا.\n\nفقلت: استغفِرْ لي يا رسولَ الله. الحديث. وأما تفسير الفلقِ بأنه وادٍ في جهنم، فروى محيي السُّنةِ عن ابن عباسٍ في رواية، أن الفلقَ سَجْنٌ في جهنم، وعن الكلبي أنه وادٍ في جهنم.",
+      "arabic_source_raw": "قولُه: (لا أبالي، أليسَ من ورائهم الفَلَق؟ )، أي: لا أبالي بحُسنِ دُورِهم وخفضِ عَيْشِهم.\n\nثم استأنفَ مستفهمًا على سبيل التقرير: أليسَ من ورائهم الفَلَق؟ ونظيرُه ما روينا البخاريِّ ومسلمٍ وأحمدَ والترمذيِّ والنسائي، عن ابنِ عباسٍ في حديثٍ طويل، عن عمرَ رضي الله عنه: دخلتُ على رسول الله صلى الله عليه وسلم، فسلّمتُ وهو متكئ على رمالٍ حصيرٍ قد أثر في جنبِه وفه شيئًا ردَّيه، فجلستُ فرفعتُ رأسي في البيت، فوالله ما رأيتُ فيه شيئًا ردَّ البصرَ إلا أَهَبَةَّ ثلاثةً، فقال: يا رسولَ الله، ادع الله أن يوسعَ على أمتك، فقد وَسَّعَ على فارسَ والرومِ وهم لا يعبدون الله، فاستوى جالسًا، ثم قالَ: أفي شكٍّ أنت يا ابنَ الخطاب؟ أول~ك قومٌ قد عُجِّلتْ لهم طيباتُهم في الحياة الدنيا.\n\nفقلت: استغفِرْ لي يا رسولَ الله. الحديث. وأما تفسير الفلقِ بأنه وادٍ في جهنم، فروى محيي السُّنةِ عن ابن عباسٍ في رواية، أن الفلقَ سَجْنٌ في جهنم، وعن الكلبي أنه وادٍ في جهنم.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          29,
+          30,
+          31
+        ],
+        "printed_pages": [
+          645
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "وفه شيئًا ردَّيه، ",
+          "to": "",
+          "reason": "C06 T113-C4 reports these intrusive electronic words absent from scan XVI:645.",
+          "status": "carried_forward_C06_scan_report_not_reinspected"
+        },
+        {
+          "from": "أول~ك",
+          "to": "أولئك",
+          "reason": "Obvious electronic transcription/typographical error; raw text retained for comparison. No scan-reading claim.",
+          "status": "editorial_typographical_correction"
+        }
+      ],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T113.02 | XVI 645 | on K113.02]",
+      "existing_notes": [
+        "[TEXT CORRECTION T113-C4: OpenITI contains nonsensical extra words after “his side.” They are absent from the inspected scan p.645 and are not translated.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "His words, “I do not mind. Is al-falaq not awaiting them?”: that is, I do not mind the beauty of their houses and the ease of their lives. He then begins a new interrogative sentence to elicit assent: “Is al-falaq not awaiting them?”\nComparable is what we transmitted from al-Bukhārī, Muslim, Aḥmad, al-Tirmidhī and al-Nasāʾī, from Ibn ʿAbbās in a long report from ʿUmar—may God be pleased with him: “I entered upon the Messenger of God ﷺ and greeted him. He was reclining upon the woven strands of a mat which had left marks upon his side. I sat down and lifted my head to look about the house. By God, I saw nothing there to catch the eye except three hides. I said: ‘Messenger of God, pray that God grant plenty to your community: He has granted plenty to Persia and Rome, although they do not worship God.’ He sat upright and said, ‘Are you in doubt, son of al-Khaṭṭāb? These are people whose good things have been given them in advance in this worldly life.’ I said: ‘Ask forgiveness for me, Messenger of God.’” The report [continues].\nAs for interpreting al-falaq as a valley in Hell, Muḥyī al-Sunna transmits one report from Ibn ʿAbbās that al-falaq is a prison in Hell, and from al-Kalbī that it is a valley in Hell.\n[TEXT CORRECTION T113-C4: OpenITI contains nonsensical extra words after “his side.” They are absent from the inspected scan p.645 and are not translated.]"
+    },
+    {
+      "id": "T113.03",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (وشَرُّهم ما يفعله المكلَّفون من الحيوان)، لعلَّ إيقاعَ \"من الحيوان\" بيانًا للمكلَّفين، لإخراجِ الملائكةِ منهم. قال القاضي: «خُصَّ عالمُ الخلقِ بالاستعاذةِ عنه لانحصارِ الشرِّ فيه؛ فإن عالمَ الأمرِ خيرٌ كلُّه، وشَرُّه اختياريٌ لازمٌ ومتعدٍّ، كالكفرِ والظلم، وطبيعيٌ كإحراقِ النارِ وإهلاكِ السموم».",
+      "arabic_source_raw": "قولُه: (وشَرُّهم ما يفعله المكلَّفون من الحيوان)، لعلَّ إيقاعَ \"من الحيوان\" بيانًا للمكلَّفين، لإخراجِ الملائكةِ منهم. قال القاضي: «خُصَّ عالمُ الخلقِ بالاستعاذةِ عنه لانحصارِ الشرِّ فيه؛ فإن عالمَ الأمرِ خيرٌ كلُّه، وشَرُّه اختياريٌ لازمٌ ومتعدٍّ، كالكفرِ والظلم، وطبيعيٌ كإحراقِ النارِ وإهلاكِ السموم».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          35
+        ],
+        "printed_pages": [
+          646
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T113.03 | XVI 646 | on K113.03]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "His words, “Their evil is what morally responsible living beings do.” Perhaps “among living beings” is supplied as an explanation of “the morally responsible” in order to exclude the angels.\nAl-Qāḍī says: “The world of creation is singled out as that from which refuge is sought because evil is confined to it: the world of command is wholly good. Its evil is either voluntary—confined to its agent or extending to others, as in unbelief and injustice—or natural, as in fire's burning and poisons' destruction.”"
+    },
+    {
+      "id": "T113.04",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (إذا اعتكر ظَلامُه)، الجوهري: «اعتكرَ الظلامُ: اختلطَ كأنه كرَّ بعضُه على بعض من بُطْءِ انجلائِه».\n\nقولُه: (ويقال: وَقَبت الشمس، إذا غابت)، الراغب: «الوَقَبُ كالنُقْرةِ في الشئ، ومنه وَقَبتِ الشمس، والإيقابُ: تَغيّبُها»\n\nقولُه: (هذا حينُ حَلِّها)، برفعِ \"حين\"، وكسرِ الحاءِ، وجرِّ اللامِ من \"حلها\". النهاية:\n\n«وفي الحديث: لّما رأى الشمسَ قد وَقَبتْ، قال: هذا حينُ حلِّها؛ وَقَبتْ: غابت. وحينُ حِلِّها: الوقتُ الذي يَحلُّ فيه أداؤها، يعني: صلاة المغرب. والوُقوبُ: الدخولُ في كلِّ شئ».",
+      "arabic_source_raw": "قولُه: (إذا اعتكر ظَلامُه)، الجوهري: «اعتكرَ الظلامُ: اختلطَ كأنه كرَّ بعضُه على بعض من بُطْءِ انجلائِه».\n\nقولُه: (ويقال: وَقَبت الشمس، إذا غابت)، الراغب: «الوَقَبُ كالنُقْرةِ في الشئ، ومنه وَقَبتِ الشمس، والإيقابُ: تَغيّبُها»\n\nقولُه: (هذا حينُ حَلِّها)، برفعِ \"حين\"، وكسرِ الحاءِ، وجرِّ اللامِ من \"حلها\". النهاية:\n\n«وفي الحديث: لّما رأى الشمسَ قد وَقَبتْ، قال: هذا حينُ حلِّها؛ وَقَبتْ: غابت. وحينُ حِلِّها: الوقتُ الذي يَحلُّ فيه أداؤها، يعني: صلاة المغرب. والاوُقوبُ: الدخولُ في كلِّ شئ».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          37,
+          38,
+          40,
+          44
+        ],
+        "printed_pages": [
+          646,
+          647
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "الاوُقوبُ",
+          "to": "الوُقوبُ",
+          "reason": "Obvious electronic transcription/typographical error; raw text retained for comparison. No scan-reading claim.",
+          "status": "editorial_typographical_correction"
+        }
+      ],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T113.04 | XVI 646–647 | on K113.04]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "His words, “When its darkness becomes dense.” Al-Jawharī: “Iʿtakara al-ẓalām: it became intermingled, as though part of it returned upon another because of the slowness of its clearing.”\nHis words, “One says waqabat al-shams when it sets.” Al-Rāghib: “Waqb is like a hollow in something; hence waqabat al-shams. Īqāb is its disappearing.”\nHis words, “This is the time when it becomes lawful”: ḥīn is nominative; in ḥillihā the ḥāʾ has kasra and the lām is genitive. Al-Nihāya: “In the report: when he saw that the sun had waqabat, he said, ‘This is the time of its lawfulness.’ Waqabat means ‘set’; the time of its lawfulness is the time when its performance becomes lawful, meaning the sunset prayer. Wuqūb means entry into anything.”"
+    },
+    {
+      "id": "T113.05",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (وعن عائشة-رضي الله عنها)، الحديثُ اخرجَه الإمامُ أحمدُ والترمذيّ، وليسَ فيه: آخذٌ بيدي؛ روى الإمامُ عن ابنِ قتيبة: «إنما سُمي القمرُ غاسقًا، لأنه يُكْسفُ فيغسِق، أي يذهبُ ضوؤُه، ويَسْود، ووقوبُه: دخولُه في ذلك الاسوداد». وقال: «وقد صَحَّ أن القمرَ في جِرْمه غيرُ مستنير فسمّى بالغاسِق لهذا. ووقوبُه المحاقُ في آخر الشهر، لأنه حينئذٍ قليلُ القوةِ وفي غايةِ الرذالة، ولذلك يشتغلُ السحرةُ فيه بالسحر الذي يورثُ التمريض، وهذا مناسبٌ لسبب نزولِ السورتين «، والله أعلم.\n\nقولُه: (الليلُ أخفى للوَيْل)، قالَ الميداني: «أي: افعلْ ما تريدُ ليلًا، فإنه أسْترُ لسِرِّك. وأولُ مَن قال ذلك ساريةُ بنُ عُويْمرِ بنِ عَدِيٍّ العُقَيلي»، وسببُه مذكورٌ في كتابه.\n\nقولُه: (أَغدرَ الليل)، قيل: هو من بابِ أَحصدَ الزّرع، أي حانَ وقتُ غَدْره. وقيل: صارَ ذا غَدْر.",
+      "arabic_source_raw": "قولُه: (وعن عائشة-رضي الله عنها)، الحديثُ اخرجَه الإمامُ أحمدُ والترمذيّ، وليسَ فيه: آخذٌ بيدي؛ روى الإمامُ عن ابنِ قتيبة: «إنما سُمي القمرُ غاسقًا، لأنه يُكْسفُ فيغسِق، أي يذهبُ ضوؤُه، ويَسْود، ووقوبُه: دخولُه في ذلك الاسوداد». وقال: «وقد صَحَّ أن القمرَ في جِرْمه غيرُ مستنير فسمّى بالغاسِق لهذا. ووقوبُه المحاقُ في آخر الشهر، لأنه حينئذٍ قليلُ القوةِ وفي غايةِ الرذالة، ولذلك يشتغلُ السحرةُ فيه بالسحر الذي يورثُ التمريض، وهذا مناسبٌ لسبب نزولِ السورتين «، والله أعلم.\n\nقولُه: (الليلُ أخفى للوَيْل)، قالَ الميداني: «أي: افعلْ ما تريدُ ليلًا، فإنه أسْترُ لسِرِّك. وأولُ مَن قال ذلك ساريةُ بنُ عُويْمرِ بنِ عَدِيٍّ العُقَيلي»، وسببُه مذكورٌ في كتابه.\n\nقولُه: (أَغدرَ الليل)، قيل: هو من بابِ أَحصدَ الزّرع، أي حانَ وقتُ غَدْره. وقيل: صارَ ذا غَدْر.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          45,
+          46,
+          48
+        ],
+        "printed_pages": [
+          647
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T113.05 | XVI 647 | on K113.04]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "His words, “From ʿĀʾisha—may God be pleased with her.” The report was transmitted by Imam Aḥmad and al-Tirmidhī; it does not contain “he took my hand.”\nThe Imam transmits from Ibn Qutayba: “The moon was called ghāsiq because it is eclipsed and darkens: its light departs and it becomes black. Its wuqūb is entering that blackness.” He also says: “It has been established that the moon is not luminous in its own body; it is therefore called ghāsiq. Its wuqūb is the dark moon at the end of the month, when its strength is slight and it is at its lowest condition. For that reason sorcerers then occupy themselves with sorcery that produces illness. This accords with the occasion of revelation of the two sūrahs.” God knows best.\nHis words, “Night conceals misfortune better.” Al-Maydānī says: “That is, do what you wish at night, for it conceals your secret better. The first to say this was Sāriya ibn ʿUwaymir ibn ʿAdī al-ʿUqaylī.” Its occasion is mentioned in his book.\nHis words, “Night has become treacherous”: it is said to be like aḥṣada al-zarʿ [the crop became ready for harvest], that is, the time of its treachery has arrived; it is also said to mean “it has become possessed of treachery.”"
+    },
+    {
+      "id": "T113.06",
+      "author": "al-Tibi",
+      "arabic": "قوُله: (يَتميز به الثُّبَّتُ على الحقِّ من الحَشْوية)، الانتصاف: «القدريّةُ ينكرونَ السحر، والكتابُ والسُّنةُ واردانِ بوقوعِه، والأمرُ بالتعوّذِ منه دليلٌ عليه. وقد سُحِرَ رسولُ الله صلى الله عليه وسلم، في مُشُطٍ ومُشاطَةٍ وجُفِّ طَلْعةِ ذَكَر».\n\nوقلتُ: الحديثُ رويناه عن البخاريِّ ومسلمٍ وابنِ ماجه، عن عائشةَ رضي الله عنها قالت: «سُحِرَ رسولُ الله صلى الله عليه وسلم، حتى إنه ليُخَيّلُ إليه أنه فعلَ الشئَ ولم يكن فعلَه، حتى إذا كانَ ذاتَ يومٍ وهو عندي، دعا الله ودَعاه، ثم قالَ: جاءني رجلان، فجلس أحدهُما عند رأسي والآخر عند رِجْليَّ، ثم قال أحدهما لصاحبه: ما وَجَعُ الرجل؟ قال مَطْبوب. قال: ومَن طَبَّه؟ قال: لبيدُ بنُ الأعصمِ اليهوديُّ من بني زُريق. قال: في ماذا؟ قال: في مُشُطٍ ومُشاطةٍ وجُفِّ طَلْعةِ ذَكَرٍ.\n\nقال: فأين هو؟ قال: في بئرِ ذي أَرْوان»، الحديث.",
+      "arabic_source_raw": "قوُله: (يَتميز به الثُّبَّتُ على الحقِّ من الحَشْوية)، الانتصاف: «القدريّةُ ينكرونَ السحر، والكتابُ والسُّنةُ واردانِ بوقوعِه، والأمرُ بالتعوّذِ منه دليلٌ عليه. وقد سُحِرَ رسولُ الله صلى الله عليه وسلم، في مُشُطٍ ومُشاطَةٍ وجُفِّ طَلْعةِ ذَكَر».\n\nوقلتُ: الحديثُ رويناه عن البخاريِّ ومسلمٍ وابنِ ماجه، عن عائشةَ رضي الله عنها قالت: «سُحِرَ رسولُ الله صلى الله عليه وسلم، حتى إنه ليُخَيّلُ إليه أنه فعلَ الشئَ ولم يكن فعلَه، حتى إذا كانَ ذاتَ يومٍ وهو عندي، دعا الله ودَعاه، ثم قالَ: جاءني رجلان، فجلس أحدهُما عند رأسي والآخر عند رِجْليَّ، ثم قال أحدهما لصاحبه: ما وَجَعُ الرجل؟ قال مَطْبوب. قال: ومَن طَبَّه؟ قال: لبيدُ بنُ الأعصمِ اليهوديُّ من بني زُريق. قال: في ماذا؟ قال: في مُشُطٍ ومُشاطةٍ وجُفِّ طَلْعةِ ذَكَرٍ.\n\nقال: فأين هو؟ قال: في بئرِ ذي أَرْوان»، الحديث.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          52,
+          53,
+          54
+        ],
+        "printed_pages": [
+          648
+        ]
+      },
+      "review": {
+        "electronic_alignment": "clause_checked_but_Arabic_electronic_lacuna_against_existing_scan_based_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [
+        "Arabic source omits the Prophet's question to Aisha and her reply, both restored in existing C06 English from a prior scan report. Exact Arabic of that scanned omission is not available in the present evidence. Do not invent/backtranslate it. arabic_alignment is therefore partial until exact Arabic can be recovered."
+      ],
+      "english_corrections": [],
+      "english_heading": "[T113.06 | XVI 648 | on K113.05]",
+      "existing_notes": [
+        "[TEXT CORRECTION T113-C5: The scan supplies the question to ʿĀʾisha and her answer, absent from the OpenITI transcription. They are retained here.]"
+      ],
+      "arabic_complete": false,
+      "recommended_english": "His words, “By which those steadfast upon truth are distinguished from the Ḥashwiyya.” Al-Intiṣāf: “The Qadariyya deny sorcery, whereas the Book and the Sunna attest its occurrence; the command to seek refuge from it is evidence for it. The Messenger of God ﷺ was bewitched with a comb, combings and the sheath of a male palm's spathe.”\nI say: we transmitted the report from al-Bukhārī, Muslim and Ibn Māja, from ʿĀʾisha—may God be pleased with her:\n“The Messenger of God ﷺ was bewitched, so that he imagined he had done something when he had not. One day, while with me, he prayed to God repeatedly, then said: ‘Have you realized, ʿĀʾisha, that God has given me an answer concerning what I asked Him?’ I said, ‘What is that, Messenger of God?’ He said: ‘Two men came to me. One sat at my head and the other at my feet. One asked his companion: What ails the man? He answered: He has been bewitched. He asked: Who bewitched him? He answered: Labīd ibn al-Aʿṣam, the Jew of Banū Zurayq. He asked: With what? He answered: With a comb, combings and the sheath of a male palm's spathe. He asked: Where is it? He answered: In the well of Dhī Arwān.’” The report [continues].\n[TEXT CORRECTION T113-C5: The scan supplies the question to ʿĀʾisha and her answer, absent from the OpenITI transcription. They are retained here.]"
+    },
+    {
+      "id": "T113.07",
+      "author": "al-Tibi",
+      "arabic": "الراغب: «تأثيرُ السحرِ في النبيِّ صلى الله عليه وسلم، لم يكن من حيثُ إنه نبي، وإنما كانَ في بَدَنِه من حيثُ إنه إنسانٌ أو بشر، كما كان يأكلُ ويتغوّطُ ويغضبُ ويَشْتهي ويَمْرض، [ويصح من حيث هو بشر لا من حيث هو نبي]، وإنما يكون ذلك قادحًا في النبوة [لو وُجدَ] للسحرِ تأثيرٌ في أمر يرجعُ إلى النبوة،\n\nكما أن جُرْحَه وكسرَ ثناياه يومَ أُحُد، لم يقدحْ فيما ضمنَ اللهُ له من عصمته في قوله: ﴿وَاللَّهُ يَعْصِمُكَ مِنَ النَّاسِ﴾ [المائدة: 67]، وكما لا اعتدادَ بما يقعُ في الإسلامِ من غلبةِ المشركين على بعضِ النواحي، فيما ذُكرَ من كمالِ الإسلامِ في قوله: ﴿الْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ﴾ [المائدة: 3]، قالَ القاضي: «ولا يوجبُ ذلك صِدْقَ الكفرةِ في أنه مسحور، لأنهم أرادوا به أنه مجنونٌ بواسطةِ السحر».",
+      "arabic_source_raw": "الراغب: «تأثيرُ السحرِ في النبيِّ صلى الله عليه وسلم، لم يكن من حيثُ إنه نبي، وإنما كانَ في بَدَنِه من حيثُ إنه إنسانٌ أو بشر، كما كان يأكلُ ويتغوّطُ ويغضبُ ويَشْتهي ويَمْرض، فيصحُّ من حيثُ هو نبيّ، وإنما يكون ذلك قادحًا في النبوة. أو وُجدَ للسحرِ تأثيرٌ في أمر يرجعُ إلى النبوة،\n\nكما أن جُرْحَه وكسرَ ثناياه يومَ أُحُد، لم يقدحْ فيما ضمنَ اللهُ له من عصمته في قوله: ﴿وَاللَّهُ يَعْصِمُكَ مِنَ النَّاسِ﴾ [المائدة: 67]، وكما لا اعتدادَ بما لا يقعُ في الإسلامِ من غلبةِ المشركين على بعضِ النواحي، فيما ذُكرَ من كمالِ الإسلامِ في قوله: ﴿الْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ﴾ [المائدة: 3]، قالَ القاضي: «ولا يوجبُ ذلك صِدْقَ الكفرةِ في أنه مسحور، لأنهم أرادوا به أنه مجنونٌ بواسطةِ السحر».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          55,
+          63
+        ],
+        "printed_pages": [
+          648,
+          649
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "بما لا يقعُ",
+          "to": "بما يقعُ",
+          "reason": "C06 T113-U2 reports positive reading in Dubai XVI:649; independently corroborated by al-Raghib's quoted source this pass.",
+          "status": "carried_forward_C06_scan_report_not_reinspected"
+        },
+        {
+          "from": "فيصحُّ من حيثُ هو نبيّ",
+          "to": "[ويصح من حيث هو بشر لا من حيث هو نبي]",
+          "reason": "Bracketed restoration from al-Raghib tafsir 2:102, matching recommended English; not claimed as collated Tibi reading.",
+          "status": "quoted_source_emendation_bracketed"
+        },
+        {
+          "from": "النبوة. أو وُجدَ",
+          "to": "النبوة [لو وُجدَ]",
+          "reason": "Conditional corroborated by al-Raghib tafsir 2:102. Brackets mark quoted-source restoration; retained raw has أو.",
+          "status": "quoted_source_emendation_bracketed"
+        }
+      ],
+      "unresolved_flags": [],
+      "english_corrections": [
+        {
+          "before": "while remaining sound in his prophetic capacity. It would impair prophethood only [if]",
+          "after": "[and recovered, inasmuch as he was human, not inasmuch as he was a prophet]. It would impair prophethood only [if]",
+          "reason": "Al-Raghib's quoted source has ويمرض ويصح من حيث هو بشر لا من حيث هو نبي and لو وجد للسحر تأثير. The existing provisional reading gives صح a different syntactic role. Brackets show restoration from the quotation source.",
+          "evidence": {
+            "url": "https://arabic-keyboard.info/books/ar/read-book/تفسير-الراغب-الأصفهاني",
+            "location": "Tafsir 2:102; electronic line 918",
+            "arabic": "ويمرض ويصح من حيث هو بشر لا من حيث هو نبي، وإنما كان ذلك قادحا في النبوة لو وجد للسحر تأثير في أمر يرجع إلى النبوة"
+          },
+          "status": "recommended"
+        },
+        {
+          "before": "[REVIEW T113-U2: The scan p.648 reads فيصح من حيث نبي and then أو وجد للسحر تأثير. The first is provisionally read as preservation of prophetic soundness; “[if]” expresses the apparently intended conditional of the second, whose printed أو is problematic. Check al-Rāghib's source before removing the flag. At p.649 the scan has بما يقع, correcting OpenITI's بما لا يقع, which reverses the argument.]",
+          "after": "[SOURCE CHECK T113-U2: The earlier scan report gives فيصح من حيث نبي and أو وجد للسحر تأثير. Al-Rāghib's own tafsīr of 2:102 reads ويمرض ويصح من حيث هو بشر لا من حيث هو نبي and لو وجد للسحر تأثير. The bracketed restoration follows the quoted source and explains the human capacity in which illness and recovery occur. The same source confirms the positive بما يقع, already reported from Dubai XVI:649. Ṭībī's exact damaged wording still requires another witness; no new scan collation is claimed.]",
+          "reason": "The quoted source resolves the intended contrast and conditional without erasing the Tibi witness problem.",
+          "evidence": {
+            "url": "https://arabic-keyboard.info/books/ar/read-book/تفسير-الراغب-الأصفهاني",
+            "location": "Tafsir 2:102; electronic line 918"
+          },
+          "status": "recommended"
+        }
+      ],
+      "english_heading": "[T113.07 | XVI 648–649 | continuation]",
+      "existing_notes": [
+        "[REVIEW T113-U2: The scan p.648 reads فيصح من حيث نبي and then أو وجد للسحر تأثير. The first is provisionally read as preservation of prophetic soundness; “[if]” expresses the apparently intended conditional of the second, whose printed أو is problematic. Check al-Rāghib's source before removing the flag. At p.649 the scan has بما يقع, correcting OpenITI's بما لا يقع, which reverses the argument.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "Al-Rāghib: “The effect of sorcery upon the Prophet ﷺ did not concern him inasmuch as he was a prophet; it concerned his body inasmuch as he was a human being or mortal, just as he ate, excreted, became angry, desired and fell ill, [and recovered, inasmuch as he was human, not inasmuch as he was a prophet]. It would impair prophethood only [if] sorcery were found to affect something pertaining to prophethood. Just so, his being wounded and having his front teeth broken on the day of Uḥud did not impair the protection God guaranteed him in ‘God will protect you from people’ [5:67]. Likewise, the polytheists' gaining control over certain regions within Islam is not taken as invalidating the perfection of Islam stated in ‘Today I have perfected your religion for you’ [5:3].”\nAl-Qāḍī says: “This does not make the unbelievers truthful in calling him bewitched, for they meant that he was mad through sorcery.”\n[SOURCE CHECK T113-U2: The earlier scan report gives فيصح من حيث نبي and أو وجد للسحر تأثير. Al-Rāghib's own tafsīr of 2:102 reads ويمرض ويصح من حيث هو بشر لا من حيث هو نبي and لو وجد للسحر تأثير. The bracketed restoration follows the quoted source and explains the human capacity in which illness and recovery occur. The same source confirms the positive بما يقع, already reported from Dubai XVI:649. Ṭībī's exact damaged wording still requires another witness; no new scan collation is claimed.]"
+    },
+    {
+      "id": "T113.08",
+      "author": "al-Tibi",
+      "arabic": "النهاية: «أنه طُبَّ في مُشُطٍ ومُشاطة، وهو الشعرُ الذي يسقطُ من الرأسِ واللحيةِ عند التسريحِ بالمُشُط». ويُرْوى: مُشاقة، و «هي ما ينقطعُ من الإبْرَيْسَمِ والكَتّانِ عند تخليصِه وتَسْريحه. والمَشْقُ: جَذْبُ الشئِ ليطول». «الجُفّ: وعاءُ الطلع، وهو الغشاءُ الذي يكونُ فوقه».\n\nقولُه: (الِّرعَاع)، الأحداثُ والطَّغام.\n\nقولُه: (النساءُ الكيّادات)، شُبِّه كيدُهنّ بالسحر، اختصَره صاحبُ \"الانتصاف\" ثُم قال: «لو فَسَّرَ غيرُ الزمخشريّ هذا، لَعُدَّ من بِدَعِ التفاسير».",
+      "arabic_source_raw": "النهاية: «أنه طُبَّ في مُشُطٍ ومُشاطة، وهو الشعرُ الذي يسقطُ من الرأسِ واللحيةِ عند التسريحِ بالمُشُط». ويُرْوى: مُشاقة، و «هي ما ينقطعُ من الإبْرَيْسَمِ والكَتّانِ عند تخليصِه وتَسْريحه. والمَشْقُ: جَذْبُ الشئِ ليطول». «الجُفّ: وعاءُ الطلع، وهو الغشاءُ الذي يكونُ فوقه».\n\nقولُه: (الِّرعَاع)، الأحداثُ والطَّغام.\n\nقولُه: (النساءُ الكيّادات)، شُبِّه كيدُهنّ بالسحر، اختصَره صاحبُ \"الانتصاف\" ثُم قال: «لو فَسَّرَ غيرُ الزمخشريّ هذا، لَعُدَّ من بِدَعِ التفاسير».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          64,
+          66,
+          68
+        ],
+        "printed_pages": [
+          649
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T113.08 | XVI 649 | continuation]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "Al-Nihāya: “He was bewitched with a comb and combings”: these are the hairs that fall from the head and beard when combed. It is also transmitted as mushāqa: “what breaks off from silk and flax when cleaned and combed. Mashq is pulling something to lengthen it.” “Juff is the casing of the spathe, the covering over it.”\nHis words, “The rabble”: immature youths and the base multitude.\nHis words, “Scheming women”: he likens their scheming to sorcery. The author of al-Intiṣāf abridged it and then said: “Had anyone other than al-Zamakhsharī offered this interpretation, it would have been counted among the innovations of exegesis.”"
+    },
+    {
+      "id": "T113.09",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (كأنما يُغتالُ به)، الأساس: «فلانٌ يَغتالُ مَن يَمرُّ به، وقتَلَه غيلةً، وأخافُ غائلتَه، أي: عاقبةَ شَرِّه».\n\nقولُه: (لا حَسَدَ إلّا في اثنتين)، روينا عن البخاري، عن أبي هريرة، أن رسولَ الله صلى الله عليه وسلم قال: «لا حَسَدَ إلّا على اثنتين: رجلٌ آتاه اللهُ القرآن، فهو يتلوه آناءَ الليلِ والنهار، فسمعَه جارُه فقال: ليتني أوتيتُ مثل ما أوتي فلان، فعملتُ مثل ما يعمل. ورجلٌ آتاه الله مالًا فهو ينفقه في حقه، فقال: يا ليتني أوتيتُ مثل ما أوتي فلان، فعملتُ مثل ما يعمل».\n\nالنهاية: «الحسَدُ: أن يرى الرجلُ لأخيه نعمةٌ، فيتمنّى أن تزول عنه، فتكون له دونه. والغَبْط: أن يتمنى أن يكون له مثلها، ولا يتمنّى زوالها عنه. ومعنى الحديث: ليسَ حسدٌ لا يضرُّ إلّا في اثنتين».",
+      "arabic_source_raw": "قولُه: (كأنما يُغتالُ به)، الأساس: «فلانٌ يَغتالُ مَن يَمرُّ به، وقَنلَه غيلةً، وأخافُ غائلتَه، أي: عاقبةَ شَرِّه».\n\nقولُه: (لا حَسَدَ إلّا في اثنتين)، روينا عن البخاري، عن أبي هريرة، أن رسولَ الله صلى الله عليه وسلم قال: «لا حَسَدَ إلّا على اثنتين: رجلٌ آتاه اللهُ القرآن، فهو يتلوه آناءَ الليلِ والنهار، فسمعَه جارُه فقال: ليتني أوتيتُ مثل ما أوتي فلان، فعملتُ مثل ما يعمل. ورجلٌ آتاه الله مالًا فهة ينفقه في حقه، فقال: يا ليتني أوتيتُ مثل ما أوتي فلان، فعملتُ مثل ما يعمل».\n\nالنهاية: «الحسَدُ: أن يرى الرجلُ لأخيه نعمةٌ، فيتمنّى أن تول عنه، فتتكون له دونه. والغَبْط: أن يتمنى أن يكون له مثلها، ولا يتمنّى زوالها عنه. ومعنى الحديث: ليسَ حسدٌ لا يضرُّ إلّا في اثنتين».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          77,
+          78,
+          91
+        ],
+        "printed_pages": [
+          650,
+          651
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "وقَنلَه",
+          "to": "وقتَلَه",
+          "reason": "Obvious electronic transcription/typographical error; raw text retained for comparison. No scan-reading claim.",
+          "status": "editorial_typographical_correction"
+        },
+        {
+          "from": "فهة ينفقه",
+          "to": "فهو ينفقه",
+          "reason": "Obvious electronic transcription/typographical error; raw text retained for comparison. No scan-reading claim.",
+          "status": "editorial_typographical_correction"
+        },
+        {
+          "from": "أن تول عنه، فتتكون له",
+          "to": "أن تزول عنه، فتكون له",
+          "reason": "Obvious electronic transcription/typographical error; raw text retained for comparison. No scan-reading claim.",
+          "status": "editorial_typographical_correction"
+        }
+      ],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T113.09 | XVI 650–651 | on K113.07]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "His words, “As though he were treacherously struck by it.” Al-Asās: “So-and-so treacherously attacks whoever passes him; he killed him by stealth; I fear his ghāʾila, that is, the eventual consequence of his evil.”\nHis words, “There is no envy except in two cases.” We transmitted from al-Bukhārī, from Abū Hurayra, that the Messenger of God ﷺ said: “There is no envy except concerning two: a man to whom God has given the Qurʾān, who recites it at times throughout night and day. His neighbour hears him and says, ‘Would that I had been given what this man was given, so that I might do as he does!’ And a man to whom God has given wealth, who spends it as it should be spent. Someone says, ‘Would that I had been given what this man was given, so that I might do as he does!’”\nAl-Nihāya: “Ḥasad is that a man sees a blessing enjoyed by his brother and wishes it would leave him and become his own instead. Ghabṭ is to wish to have its like without wishing it to leave him. The report means: there is no harmless envy except in two cases.”"
+    },
+    {
+      "id": "T113.10",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (وما حاسدٌ) أولُه:\n\nوإني لمحسودٌ وأعذرُ حاسدي\n\nوقيل: أوله:\n\nهُمُ حَسَدوه -لا ملومين- مَجْدَه وما حاسدٌ في المكرمات بحاسد\n\nوقال:\n\nواعْذِرْ حَسودَك فيما قد خُصِصْتَ به إنّ العُلا حَسَنٌ في مثلِها الحسّدُ\n\nمِثْلُ ها هنا مثلُ ما في قولك: يجود. أي: إن العُلا حَسَنٌ فيها الحسَد.\n\nتَمَّتِ السُّورَة",
+      "arabic_source_raw": "قولُه: (وما حاسدٌ) أولُه:\n\nوإني لمحسودٌ وأعذرُ حاسدي\n\nوقيل: أوله:\n\nهُمُ حَسَدوه -لا ملومين- مَجْدَه وما حاسدٌ في المكرمات بحاسد\n\nوقال:\n\nواعْذِرْ حَسودَك فيما قد خُصِصْتَ به إنّ العُلا حَسَنٌ في مثلِها الحسّدُ\n\nمِثْلُ ها هنا مثلُ ما في قولك: يجود. أي: إن العُلا حَسَنٌ فيها الحسَد.\n\nتَمَّتِ السُّورَة",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s521.html",
+        "line_refs": [
+          93,
+          95,
+          97,
+          99,
+          101,
+          103,
+          104,
+          106
+        ],
+        "printed_pages": [
+          651
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [
+        "مثل ما في قولك: يجود is incomplete; English '[his like]' supplies the presumed argument. No reconstructed Arabic inserted."
+      ],
+      "english_corrections": [],
+      "english_heading": "[T113.10 | XVI 651 | on K113.07]",
+      "existing_notes": [
+        "[REVIEW T113-U3: The scan's grammatical example is truncated: مثل هاهنا مثل ما في قولك: يجود. The bracketed words supply its apparent point; check the quoted poetic/grammatical context.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "His words, “One who envies …”: its opening is:\n“I am indeed envied, and I excuse my envier.”\nIt is also said that its opening is:\n“They envied him his glory—without being blameworthy;\none who envies noble accomplishments is no [blameworthy] envier.”\nHe also said:\n“Excuse your envier for what has been bestowed especially upon you:\nloftiness is such that envy of its like is fair.”\nMithl [like] here is like what occurs in your saying “[his like] is generous”: that is, loftiness itself is something of which envy is fair.\n[REVIEW T113-U3: The scan's grammatical example is truncated: مثل هاهنا مثل ما في قولك: يجود. The bracketed words supply its apparent point; check the quoted poetic/grammatical context.]\nThe sūrah is complete."
+    },
+    {
+      "id": "K114.01",
+      "author": "al-Zamakhshari",
+      "arabic": "مختلف فيها، وهي ست آيات\n\nبسم الله الرحمن الرحيم\n\n[(قُلْ أَعُوذُ بِرَبِّ النَّاسِ (1) مَلِكِ النَّاسِ (2) إِلهِ النَّاسِ (3) مِنْ شَرِّ الْوَسْواسِ الْخَنَّاسِ (4) الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ (5) مِنَ الْجِنَّةِ وَالنَّاسِ)] 1 - 6 [",
+      "arabic_source_raw": "مختلف فيها، وهي ست آيات\n\nبسم الله الرحمن الرحيم\n\n[(قُلْ أَعُوذُ بِرَبِّ النَّاسِ (1) مَلِكِ النَّاسِ (2) إِلهِ النَّاسِ (3) مِنْ شَرِّ الْوَسْواسِ الْخَنَّاسِ (4) الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ (5) مِنَ الْجِنَّةِ وَالنَّاسِ)] 1 - 6 [",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+        "line_refs": [
+          11,
+          13,
+          15
+        ],
+        "printed_pages": [
+          652
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K114.01 | T XVI652; K IV823]",
+      "existing_notes": [
+        "[TEXT VARIANT: The separate four-volume transcription calls it Meccan, also said to be Medinan, adds “revealed after al-Falaq,” and repeats the basmala. Dubai's base heading is translated above.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "Sūrat al-Nās. There is disagreement about it [whether Meccan or Medinan]; it has six verses.\nIn the name of God, the All-Merciful, the Merciful.\n“Say: I seek refuge in the Lord of humankind, the King of humankind, the God of humankind, from the evil of the whisperer who withdraws, who whispers in the breasts of humankind, from among jinn and humankind.” [114:1–6]\n[TEXT VARIANT: The separate four-volume transcription calls it Meccan, also said to be Medinan, adds “revealed after al-Falaq,” and repeats the basmala. Dubai's base heading is translated above.]"
+    },
+    {
+      "id": "K114.02",
+      "author": "al-Zamakhshari",
+      "arabic": "قرئ: (قل أعوذ) بحذف الهمزة ونقل حركتها إلى اللام، ونحوه: فخذ أربعة.\n\nفإن قلت: لم قيل (بِرَبِّ النَّاسِ) مضافا إليهم خاصة؟\n\nقلت: لأنّ الاستعاذة وقعت من شر الموسوس في صدور الناس، فكأنه قيل: أعوذ من شر الموسوس إلى الناس بربهم الذي يملك عليهم أمورهم، وهو إلههم ومعبودهم، كما يستغيث بعض الموالي إذا اعتراهم خطب بسيدهم ومخدومهم ووالي أمرهم.",
+      "arabic_source_raw": "قرئ: (قل أعوذ) بحذف الهمزة ونقل حركتها إلى اللام، ونحوه: فخذ أربعة.\n\nفإن قلت: لم قيل (بِرَبِّ النَّاسِ) مضافا إليهم خاصة؟\n\nقلت: لأنّ الاستعاذة وقعت من شر الموسوس في صدور الناس، فكأنه قيل: أعوذ من شر الموسوس إلى الناس بربهم الذي يملك عليهم أمورهم، وهو إلههم ومعبودهم، كما يستغيث بعض الموالي إذا اعتراهم خطب بسيدهم ومخدومهم ووالي أمرهم.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+        "line_refs": [
+          17,
+          19,
+          20
+        ],
+        "printed_pages": [
+          652
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K114.02 | T XVI652; K IV823]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "“Qul aʿūdhu” has been read with the hamza omitted and its vowel transferred to the lām. Comparable is “fa-khudh arbaʿata” [2:260].\nIf you ask, “Why say ‘in the Lord of humankind,’ annexing Lord specifically to them?”, I answer: because refuge is sought from the evil of the one who whispers in human breasts. It is as though one had said: I seek refuge from the evil of the one who whispers to people, in their Lord who controls their affairs, who is their God and the one they worship—just as some dependants, when a calamity befalls them, seek help from their master, the one they serve, and the governor of their affairs."
+    },
+    {
+      "id": "K114.03",
+      "author": "al-Zamakhshari",
+      "arabic": "فإن قلت: (مَلِكِ النَّاسِ إِلهِ النَّاسِ) ما هما من رب الناس؟\n\nقلت: هما عطف بيان، كقولك: سيرة أبى حفص عمر الفاروق. بين بملك الناس، ثم زيد بيانا بإله الناس، لأنه قد يقال لغيره: رب الناس، كقوله: (اتَّخَذُوا أَحْبارَهُمْ وَرُهْبانَهُمْ أَرْباباً مِنْ دُونِ اللَّهِ)] التوبة: 31 [وقد يقال: ملك الناس. وأمّا (إِلهِ النَّاسِ) فخاص لا شركة فيه، فجعل غاية للبيان.\n\nفإن قلت: فهلا اكتفى بإظهار المضاف إليه الذي هو الناس مرّة واحدة؟\n\nقلت: لأنّ عطف البيان للبيان، فكان مظنة للإظهار دون الإضمار.",
+      "arabic_source_raw": "فإن قلت: (مَلِكِ النَّاسِ إِلهِ النَّاسِ) ما هما من رب الناس؟\n\nقلت: هما عطف بيان، كقولك: سيرة أبى حفص عمر الفاروق. بين بملك الناس، ثم زيد بيانا بإله الناس، لأنه قد يقال لغيره: رب الناس، كقوله: (اتَّخَذُوا أَحْبارَهُمْ وَرُهْبانَهُمْ أَرْباباً مِنْ دُونِ اللَّهِ)] التوبة: 31 [وقد يقال: ملك الناس. وأمّا (إِلهِ النَّاسِ) فخاص لا شركة فيه، فجعل غاية للبيان.\n\nفإن قلت: فهلا اكتفى بإظهار المضاف إليه الذي هو الناس مرّة واحدة؟\n\nقلت: لأنّ عطف البيان للبيان، فكان مظنة للإظهار دون الإضمار.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+        "line_refs": [
+          31,
+          32,
+          34,
+          36
+        ],
+        "printed_pages": [
+          653
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K114.03 | T XVI653; K IV823]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "If you ask, “What is the relation of ‘King of humankind, God of humankind’ to ‘Lord of humankind’?”, I answer: both are explanatory apposition (ʿaṭf bayān), as in “the conduct of Abū Ḥafṣ, ʿUmar, al-Fārūq.” He is clarified by “King of humankind,” then further clarified by “God of humankind.” For someone other than Him may be called “lord of humankind,” as in “They took their rabbis and monks as lords apart from God” [9:31]; someone may also be called “king of humankind.” But “God of humankind” is exclusive, admitting no partnership, and is therefore made the culmination of the clarification.\nIf you ask, “Why not be content with explicitly mentioning the annexed noun ‘humankind’ once?”, I answer: because explanatory apposition serves clarification, making it a suitable place for explicit mention rather than substitution by a pronoun."
+    },
+    {
+      "id": "K114.04",
+      "author": "al-Zamakhshari",
+      "arabic": "(الْوَسْواسِ) اسم بمعنى الوسوسة، كالزلزال بمعنى الزلزلة، وأمّا المصدر فوسواس\n\nبالكسر كزلزال، والمراد به الشيطان، سمى بالمصدر كأنه وسوسة في نفسه؛ لأنها صنعته وشغله الذي هو عاكف عليه. أو أريد ذو الوسواس. والوسوسة: الصوت الخفي، ومنه: وسواس الحلي. و (الْخَنَّاسِ) الذي عادته أن يخنس، منسوب إلى الخنوس وهو التأخر كالعواج والبتات، لما روى عن سعيد بن جبير: إذا ذكر الإنسان ربه خنس الشيطان وولى، فإذا غفل وسوس إليه. (الَّذِي يُوَسْوِسُ) يجوز في محله الحركات الثلاث، فالجر على الصفة، والرفع والنصب على الشتم، ويحسن أن يقف القارئ على (الْخَنَّاسِ)، ويبتدئ (الَّذِي يُوَسْوِسُ) على أحد هذين الوجهين.",
+      "arabic_source_raw": "(الْوَسْواسِ) اسم بمعنى الوسوسة، كالزلزال بمعنى الزلزلة، وأمّا المصدر فوسواس\n\nبالكسر كزلزال، والمراد به الشيطان، سمى بالمصدر كأنه وسوسة في نفسه؛ لأنها صنعته وشغله الذي هو عاكف عليه. أو أريد ذو الوسواس. والوسوسة: الصوت الخفي، ومنه: وسواس الحلي. و (الْخَنَّاسِ) الذي عادته أن يخنس، منسوب إلى الخنوس وهو التأخر كالعواج والبتات، لما روى عن سعيد بن جبير: إذا ذكر الإنسان ربه خنس الشيطان وولى، فإذا غفل وسوس إليه. (الَّذِي يُوَسْوِسُ) يجوز في محله الحركات الثلاث، فالجر على الصفة، والرفع والنصب على الشتم، ويحسن أن يقف القارئ على (الْخَنَّاسِ)، ويبتدئ (الَّذِي يُوَسْوِسُ) على أحد هذين الوجهين.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+        "line_refs": [
+          36,
+          45
+        ],
+        "printed_pages": [
+          653,
+          654
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [
+        "The base text's 'two interpretations' most naturally means nominative/accusative, while Tibi glosses description/invective. Preserve disagreement."
+      ],
+      "english_corrections": [],
+      "english_heading": "[K114.04 | T XVI653–654; K IV823–824]",
+      "existing_notes": [
+        "[REVIEW K114-U1: “These two interpretations” naturally refers to nominative/accusative in the base passage. Ṭībī explicitly glosses it as “description and invective” below; the Turkish translation follows that gloss. The disagreement is retained rather than silently resolved.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "Al-waswās is a noun meaning whispering (waswasa), as zalzāl means shaking (zalzala). The verbal noun, however, is wiswās, with kasra, like zilzāl. What is meant is Satan: he is named with the verbal noun as though he were whispering itself, since that is his craft and the occupation to which he constantly devotes himself. Alternatively, “the possessor of whispering” is intended. Waswasa is a faint sound; hence waswās al-ḥuly, the rustling of jewellery.\nAl-khannās is one whose habit is to withdraw. It is a form associating him with khunūs, retreating, like al-ʿawwāj and al-battāt [occupational forms]. For it is related from Saʿīd ibn Jubayr that when a person remembers his Lord, Satan withdraws and turns away; when he is heedless, Satan whispers to him.\n“Alladhī yuwaswisu” [who whispers] may occupy a position corresponding to any of the three case vowels: genitive as a description, or nominative or accusative as an expression of invective. It is fitting for the reciter to stop at al-khannās and begin with alladhī yuwaswisu on either of these two interpretations [nominative or accusative].\n[REVIEW K114-U1: “These two interpretations” naturally refers to nominative/accusative in the base passage. Ṭībī explicitly glosses it as “description and invective” below; the Turkish translation follows that gloss. The disagreement is retained rather than silently resolved.]"
+    },
+    {
+      "id": "K114.05",
+      "author": "al-Zamakhshari",
+      "arabic": "(مِنَ الْجِنَّةِ وَالنَّاسِ) بيان للذي يوسوس، على أن الشيطان ضربان: جني وإنسي، كما قال (شياطين الإنس والجن)] الأنعام: 112 [، وعن أبى ذرّ رضي الله عنه قال لرجل: هل تعوّذت بالله من شيطان الإنس؟ ويجوز أن يكون (مِنَ) متعلقا بيوسوس، ومعناه: ابتداء الغاية، أي: يوسوس في صدورهم من جهة الجنّ ومن جهة الناس، وقيل: من الجنة والناس بيان للناس، وأن اسم الناس ينطلق على الجنة، واستدلوا (بنفر) و (رجال) في سورة الجن.\n\nوما أحقه؛ لأن الجن سموا (جنا) لاجتنانهم، والناس (ناسا) لظهورهم، من الإيناس وهو الإبصار، كما سموا بشرا؛ ولو كان يقع الناس على القبيلين، وصح ذلك وثبت: لم يكن مناسبا لفصاحة القرآن وبعده من التصنع",
+      "arabic_source_raw": "(مِنَ الْجِنَّةِ وَالنَّاسِ) بيان للذي يوسوس، على أن الشيطان ضربان: جني وإنسي، كما قال (شياطين الإنس والجن)] الأنعام: 112 [، وعن أبى ذرّ رضي الله عنه قال لرجل: هل تعوّذت بالله من شيطان الإنس؟ ويجوز أن يكون (مِنَ) متعلقا بيوسوس، ومعناه: ابتداء الغاية، أي: يوسوس في صدورهم من جهة الجنّ ومن جهة الناس، وقيل: من الجنة والناس بيان للناس، وأن اسم الناس ينطلق على الجنة، واستدلوا (بنفر) و (رجال) في سورة الجن.\n\nوما أحقه؛ لأن الجن سموا (جنا) لاجتنانهم، والناس (ناسا) لظهورهم، من الإيناس وهو الإبصار، كما سموا بشرا؛ ولو كان يقع الناس على القبيلين، وصح ذلك وثبت: لم يكن مناسبا لفصاحة القرآن وبعده من التصنع",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+        "line_refs": [
+          55,
+          56
+        ],
+        "printed_pages": [
+          655
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K114.05 | T XVI655; K IV824]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "“From among jinn and humankind” explains “who whispers,” on the basis that Satan is of two kinds, jinn and human, as He says: “devils of humankind and jinn” [6:112]. Abū Dharr—may God be pleased with him—is reported to have asked a man: “Have you sought refuge in God from human Satan?”\nMin may also attach to yuwaswisu, denoting a starting point: that is, he whispers in their breasts from the direction of the jinn and from the direction of human beings.\nIt is also said that “from among jinn and humankind” explains al-nās, and that the name al-nās applies to jinn. They adduce nafar [a group] and rijāl [men] in Sūrat al-Jinn as evidence. I do not accept it as established: jinn are called jinn because they are concealed, and people nās because they are manifest, from īnās, seeing, just as they are called bashar. Even if nās applied to both classes, and that were sound and established, it would not suit the Qurʾān's eloquence and its freedom from affectation."
+    },
+    {
+      "id": "K114.06",
+      "author": "al-Zamakhshari",
+      "arabic": "وأجود منه أن يراد بالناس: الناسي، كقوله: (يَوْمَ يَدْعُ الدَّاعِ)] القمر: 6 [كما قرئ: (مِنْ حَيْثُ أَفاضَ النَّاسُ)] البقرة: 199 [، ثم يبين بالجنة والناس؛ لأنّ الثقلين هما النوعان الموصوفان بنسيان حق الله عز وجل.\n\nعن رسول الله صلى الله عليه وسلم: «لقد أنزلت علىّ سورتان ما أنزل مثلهما، وإنك لن تقرأ سورتين أحب ولا أرضى عند الله منهما» يعنى المعوذتين. ويقال للمعوذتين: المقشقشتان.",
+      "arabic_source_raw": "وأجود منه أن يراد بالناس: الناسي، كقوله: (يَوْمَ يَدْعُ الدَّاعِ)] القمر: 6 [كما قرئ: (مِنْ حَيْثُ أَفاضَ النَّاسُ)] البقرة: 199 [، ثم يبين بالجنة والناس؛ لأنّ الثقلين هما النوعان الموصوفان بنسيان حق الله عز وجل.\n\nعن رسول الله صلى الله عليه وسلم: «لقد أنزلت علىّ سورتان ما أنزل مثلهما، وإنك لن تقرأ سورتين أحب ولا أرضى عند الله منهما» يعنى المعوذتين. ويقال للمعوذتين: المقشقشتان.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+        "line_refs": [
+          64,
+          66
+        ],
+        "printed_pages": [
+          656
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[K114.06 | T XVI656; K IV824]",
+      "existing_notes": [
+        "[TRANSLATOR'S NOTE: The phonological argument is the omission of final yāʾ in al-nāsī, parallel to al-dāʿī/al-dāʿ. No claim that the ordinary reading means “forgetful” is being added.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "Better than that is to understand al-nās as al-nāsī [the forgetful one], like “the day the caller calls” [54:6], and as “from where al-nās departed” [2:199] has been read. It is then explained by “jinn and humankind,” since the two weighty kinds (al-thaqalān) are the two species characterized by forgetting God's due—mighty and majestic is He.\nIt is related from the Messenger of God ﷺ: “Two sūrahs have been sent down to me the like of which has never been sent down. You will never recite two sūrahs more beloved or more pleasing to God than these”—meaning the two sūrahs of refuge. The two sūrahs of refuge are also called al-muqashqishatān.\n[TRANSLATOR'S NOTE: The phonological argument is the omission of final yāʾ in al-nāsī, parallel to al-dāʿī/al-dāʿ. No claim that the ordinary reading means “forgetful” is being added.]"
+    },
+    {
+      "id": "T114.01",
+      "author": "al-Tibi",
+      "arabic": "مكية، وقيل: مدنية، وهي ست آيات\n\nبسم الله الرحمن الرحيم\n\nقولُه: (لِمَ قيل: ﴿بِرَبِّ النَّاسِ﴾)، أَيْ أنه ربُّ جميعِ العالمين، فلِمَ خُصَّ بالناسِ ها هنا؟ وأجابَ: إن المستغيثَ هو الناسُ وحدَه إلى ربِّه ومالكِه ومعبودِه، مما يُصيبُه من البلاء.",
+      "arabic_source_raw": "مكية، وقيل: مدنية، وهي ست آيات\n\nبسم الله الرحمن الرحيم\n\nقولُه: (لِمَ قيل: ﴿بِرَبِّ النَّاسِ﴾)، أَيْ أنه ربُّ جميعِ العالمين، فلِمَ خُصَّ بالناسِ ها هنا؟ وأجابَ: إن المستغيثَ هو الناسُ وحدَه إلى ربِّه ومالكِه ومعبودِه، مما يُصيبُه من البلاء.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+        "line_refs": [
+          22,
+          24,
+          26
+        ],
+        "printed_pages": [
+          652
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T114.01 | XVI652 | on K114.02]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "Sūrat al-Nās. Meccan; also said to be Medinan. Six verses.\nIn the name of God, the All-Merciful, the Merciful.\nHis words, “Why say ‘in the Lord of humankind’?”: that is, He is the Lord of all worlds, so why single out humankind here? He answers: it is humankind alone who seek help from their Lord, owner and object of worship against the affliction that befalls them."
+    },
+    {
+      "id": "T114.02",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (كما يستغيثُ بعضُ الموالي إذا اعتراهم خَطْبٌ بسيّدهم ومخدومِهم ووالي أمرِهم)، راعى فيه الترقّي في الإغاثة؛ فإن الدّفعَ من جهةِ التوليةِ أقوى من جهةِ الخدمة، ثم من\n\nجهة السيادة أضعفُ من جهةِ الخدمة. كذلك معنى القَهّاريةِ في الألوهيةِ أعلى منه من معنى المالكيّة، ثم من جهةِ الرّبيّة.\n\nوفي بعض التفاسير: إنَّ دَفْعَ شرِّ الشيطانِ ووسوستِه بأحدِ أمورً ثلاثة، إمّا بأن لا يُمكِّنُه من الوسوسةِ من حيثُ كونُه ربًّا، أو بأنْ يُمكِّنُه، لكن يمنعُه قهرًا من حيثُ المالكية، أو بأن ينهاه عن الوسوسةِ زجرًا، لكن يريدُها اختيارًا من حيثُ كونُه إلهًا، أو يُقال: إن العبدَ استعاذَ بالله من الشيطان.\n\nوعَلّلَ الاستعاذةَ بأوصافٍ مناسبةٍ على الترقي: وَصْفُه عز وجل أولًا بأنه الرّبُّ، لأن أول ما يَعرفُ العبدُ من ربِّه، كونُه منعِمًا عليه ظاهرِه وباطنِه، ثم ينتقلُ منه إلى المعرفةِ بأنه متصرفٌ فيه ومالكُه، ثم ينتقلُ إلى المعرفةِ بأنه هو المعبودُ على الإطلاق، وأنْ لا مصيرَ إلا إليه.",
+      "arabic_source_raw": "قولُه: (كما يستغيثُ بعضُ الموالي إذا اعتراهم خَطْبٌ بسيّدهم ومخدومِهم ووالي أمرِهم)، راعى فيه الترقّي في الإغاثة؛ فإن الدّفعَ من جهةِ التوليةِ أقوى من جهةِ الخدمة، ثم من\n\nجهة السيادة أضعفُ من جهةِ الخدمة. كذلك معنى القَهّاريةِ في الألوهيةِ أعلى منه من معنى المالكيّة، ثم من جهةِ الرّبيّة.\n\nوفي بعض التفاسير: إنَّ دَفْعَ شرِّ الشيطانِ ووسوستِه بأحدِ أمورً ثلاثة، إمّا بأن لا يُمكِّنُه من الوسوسةِ من حيثُ كونُه ربًّا، أو بأنْ يُمكِّنُه، لكن يمنعُه قهرًا من حيثُ المالكية، أو بأن ينهاه عن الوسوسةِ زجرًا، لكن يريدُها اختيارًا من حيثُ كونُه إلهًا، أو يُقال: إن العبدَ استعاذَ بالله من الشيطان.\n\nوعَلّلَ الاستعاذةَ بأوصافٍ مناسبةٍ على الترقي: وَصْفُه عز وجل أولًا بأنه الرّبُّ، لأن أول ما يَعرفُ العبدُ من ربِّه، كونُه منعِمًا عليه ظاهرِه وباطنِه، ثم ينتقلُ منه إلى المعرفةِ بأنه متصرفٌ فيه ومالكُه، ثم ينتقلُ إلى المعرفةِ بأنه هو المعبودُ على الإطلاق، وأنْ لا مصيرَ إلا إليه.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+        "line_refs": [
+          27,
+          37,
+          38,
+          39
+        ],
+        "printed_pages": [
+          652,
+          653
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [
+        "لكن يريدها اختيارا is retained. The unnamed source and intended subject of willing remain unresolved."
+      ],
+      "english_corrections": [],
+      "english_heading": "[T114.02 | XVI652–653 | on K114.02]",
+      "existing_notes": [
+        "[REVIEW T114-U2: The difficult third alternative reads لكن يريدها اختيارا. “Yet willing it by choice” preserves the wording; the subject and the intended theological distinction between prohibition and willing need checking in the unnamed source. Do not replace it with “the devil chooses it” without evidence.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "His words, “Just as some dependants, when a calamity befalls them, seek help from their master, the one they serve, and the governor of their affairs.” He observes an ascent in the help sought: protection through governance is stronger than through being served, while protection through mastery is weaker than through being served. Likewise, the sense of irresistible dominion in divinity is higher than in ownership, and [that is higher] than in lordship.\nSome commentaries say: “Repelling Satan's evil and whispering is through one of three things: either not enabling him to whisper, inasmuch as He is Lord; or enabling him but forcibly preventing him, inasmuch as He is King; or forbidding him to whisper as a rebuke, yet willing it by choice, inasmuch as He is God.”\nAlternatively, it may be said: the servant seeks refuge in God from Satan, grounding the request in appropriate attributes in ascending order. He first describes Him—mighty and majestic—as Lord, because the first thing the servant knows of his Lord is that He bestows blessings upon his outward and inward being. He then advances to knowing that He governs him and owns him, and then to knowing that He alone is the object of worship without qualification and that there is no final resort except to Him.\n[REVIEW T114-U2: The difficult third alternative reads لكن يريدها اختيارا. “Yet willing it by choice” preserves the wording; the subject and the intended theological distinction between prohibition and willing need checking in the unnamed source. Do not replace it with “the devil chooses it” without evidence.]"
+    },
+    {
+      "id": "T114.03",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (وقد يقال: مَلِكُ الناس)، الراغب: «المَلِك: هو المتصرِفُ بالأمرِ والنهيِ في الجمهور، وذلك مختصٌ بسياسةِ الناطقين؛ ولذلك يقال: مَلِكُ الناس، ولا يقال: مَلِكُ الأشياء».",
+      "arabic_source_raw": "قولُه: (وقد يقال: مَلِكُ الناس)، الراغب: «المَلِك: هو المتصرِفُ بالأمرِ والنهيِ في الجمهور، وذلك مختصٌ بسياسةِ الناطقين؛ ولذلك يقال: مَلِكُ الناس، ولا يقال: مَلِكُ الأشياء».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+        "line_refs": [
+          40
+        ],
+        "printed_pages": [
+          653
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T114.03 | XVI653 | on K114.03]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "His words, “Someone may also be called king of humankind.” Al-Rāghib: “A king is one who directs the populace through command and prohibition. This is peculiar to governing rational beings; hence ‘king of humankind’ is said, but not ‘king of things.’”"
+    },
+    {
+      "id": "T114.04",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (وأما المصدرُ فَوِسواس)، عن بعضِهم: أراد بالوَسواسِ الاسم الذي هو بمعنى الوسوسةِ وهو المصدر. وقال المغاربةُ: الفرقُ بين المصدرِ واسمِ المصدر هو أن المعنى الذي يُعبِّرُ\n\nعنه بالفعلِ الحقيقي، الذي هو مبتدأ الفعلِ الصناعي، إذا اعتبرَ فيه تَلَبُّسُ الفاعلِ به وصدورُه منه وتَجدُّدُه؛ فاللفظُ الموضوعُ بإزائه مقيدًا بهذا القيد، سمّي مصدرًا وإن لم يعتبرْ فيه ذلك، فاللفظُ الموضوعُ بإزاءِ ذلك مطلقًا عن هذا القيدِ المذكور، هو اسمُ المصدر.\n\nقولُه: (صَنْعَتُه)، ويُرْوى: ضَيْعتُه. النهاية: «ضَيْعةُ الرجلِ: ما يكونُ منه معاشُه كالصنعةِ والتجارةِ والصناعةِ وغير ذلك».\n\nقولُه: (منسوبٌ إلى الخُنُوس)، قال: منسوبٌ من حيثُ إنه جعلَ الخنوسَ عادةً له.\n\nقولُه: (إذا ذَكرَ الإنسانُ ربَّه خَنَس)، روينا في \"صحيح البخاري\" تعليقًا عن ابنِ عباسٍ قال: قال رسول الله صلى الله عليه وسلم: «الشيطانُ جاثمٌ على قلبِ ابنِ آدم؛ فإذا ذَكرَ الله خَنَس، وإذا غَفلَ وَسْوس».",
+      "arabic_source_raw": "قولُه: (وأما المصدرُ فَوِسواس)، عن بعضِهم: أراد بالوَسواسِ الاسم الذي هو بمعنى الوسوسةِ وهو المصدر. وقال المغاربةُ: الفرقُ بين المصدرِ واسمِ المصدر هو أن المعنى الذي يُعبِّرُ\n\nعنه بالفعلِ الحقيقي، الذي هو مبتدأ الفعلِ الصناعي، إذا اعتبرَ فيه تَلَبُّسُ الفاعلِ به وصدورُه منه وتَجدُّدُه؛ فاللفظُ الموضوعُ بإزائه مقيدًا بهذا القيد، سمّي مصدرًا وإن لم يعتبرْ فيه ذلك، فاللفظُ الموضوعُ بإزاءِ ذلك مطلقًا عن هذا القيدِ المذكور، هو اسمُ المصدر.\n\nقولُه: (صَنْعَتُه)، ويُرْوى: ضَيْعتُه. النهاية: «ضَيْعةُ الرجلِ: ما يكونُ منه معاشُه كالصنعةِ والتجارةِ والصناعةِ وغير ذلك».\n\nقولُه: (منسوبٌ إلى الخُنُوس)، قال: منسوبٌ من حيثُ إنه جعلَ الخنوسَ عادةً له.\n\nقولُه: (إذا ذَكرَ الإنسانُ ربَّه خَنَس)، روينا في \"صحيح البخاري\" تعليقًا عن ابنِ عباسٍ قال: قال رسول الله صلى الله عليه وسلم: «الشيطانُ جاثمٌ على قلبِ ابنِ آدم؛ فإذا ذَكرَ الله خَنَس، وإذا غَفلَ وَسْوس».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+        "line_refs": [
+          42,
+          46,
+          48,
+          50,
+          51
+        ],
+        "printed_pages": [
+          653,
+          654
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T114.04 | XVI653–654 | on K114.04]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "His words, “The verbal noun, however, is wiswās.” According to one explanation, by waswās he meant the noun which has the meaning of waswasa, itself the verbal noun. The Maghribī grammarians say: the difference between a verbal noun (maṣdar) and a noun of the verbal action (ism al-maṣdar) is this. The meaning expressed by the real act—the origin of the grammatical verb—may be considered together with the agent's engagement in it, its proceeding from him, and its renewed occurrence. The expression assigned to that meaning, restricted by this qualification, is called a maṣdar. If that qualification is not considered, the expression assigned to the meaning without the stated restriction is an ism al-maṣdar.\nHis words, “His craft”: another reading is “his livelihood” (ḍayʿatuhu). Al-Nihāya: “A man's ḍayʿa is that from which he earns his living, such as a craft, trade, an industry and so on.”\nHis words, “Associated with khunūs”: he says “associated” because withdrawing has been made his habit.\nHis words, “When a person remembers his Lord, he withdraws.” We transmitted in Ṣaḥīḥ al-Bukhārī, as a suspended report (taʿlīqan), from Ibn ʿAbbās: the Messenger of God ﷺ said, “Satan crouches upon the heart of the son of Adam. When he remembers God, he withdraws; when he is heedless, he whispers.”"
+    },
+    {
+      "id": "T114.05",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (ويَحْسنُ أن يقف القارئ) إلى قولُه: (على أحدِ هذين الوجهين)، أي: الصَّفةِ والشَّتْم. وفي \"الكواشي\": «يكفي الوقفُ على \"الخنّاس\" إن رفعتَ أو نصبتَ ذمًا، فلا يجوزُ إن جَرَرْتَه: صفةٌ للخناس. وقلتُ: وفي عدمِ الجوازِ نظرٌ، نظرًا للفاصلة، قالَ صاحبُ \"المرشد\": فإذا قلتَ: \"الرحمن الرحيم\"، كان الوقفُ كافيًا لأنه رأسُ آية، ولا يكونُ تامًا\n\nلخلوِّ المجرورِ، أعنى: \"مالكِ يومِ الدين\"، من العامل، والفصلِ بين النعتِ والمنعوت، وكذا الوقفُ على \"المستقيم\" جائزٌ وليس بحَسَن، وإنما جُوِّزَ لأنه آخر الآية».",
+      "arabic_source_raw": "قولُه: (ويَحْسنُ أن يقف القارئ) إلى قولُه: (على أحدِ هذين الوجهين)، أي: الصَّفةِ والشَّتْم. وفيي \"الكواشي\": «يكفي الوقفُ على \"الخنّاس\" إن رفعتَ أو نصبتَ ذمًا، فلا يجوزُ إن جَرَرْتَه: صفةٌ للخناس. وقلتُ: وفي عدمِ الجوازِ نظرًا للفاصلة، قالَ صاحبُ \"المرشد\": فإذا قلتَ: \"الرحمن الرحيم\"، كان الوقفُ كافيًا لأنه رأسُ آية، ولا يكونُ تامًا\n\nلخلوِّ المجرورِ، أعنى: \"مالكِ يومِ الدين\"، من العامل، والفصلِ بين النعتِ والمنعوت، وكذا الوقفُ على \"المستقيم\" جائزٌ وليس بحَسَن، وإنما جُوِّزَ لأنه آخر الآية».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+        "line_refs": [
+          52,
+          57
+        ],
+        "printed_pages": [
+          654,
+          655
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "وفي عدمِ الجوازِ نظرًا للفاصلة",
+          "to": "وفي عدمِ الجوازِ نظرٌ، نظرًا للفاصلة",
+          "reason": "C06 T114-C1 reports missing نظر in Dubai XVI:654. No fresh scan inspection.",
+          "status": "carried_forward_C06_scan_report_not_reinspected"
+        },
+        {
+          "from": "وفيي \"الكواشي\"",
+          "to": "وفي \"الكواشي\"",
+          "reason": "Obvious electronic transcription/typographical error; raw text retained for comparison. No scan-reading claim.",
+          "status": "editorial_typographical_correction"
+        }
+      ],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T114.05 | XVI654–655 | on K114.04]",
+      "existing_notes": [
+        "[TEXT CORRECTION T114-C1: OpenITI reads وفي عدم الجواز نظرا للفاصلة. The scan p.654 reads وفي عدم الجواز نظر، نظرا للفاصلة: the missing نظر is restored in this translation. “Sufficient,” “complete” and “good” preserve distinct stop categories, not interchangeable praise.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "His words from “It is fitting for the reciter to stop” to “on either of these two interpretations”: that is, description and invective.\nIn al-Kawāshī: “A stop at al-khannās is sufficient if you make [what follows] nominative or accusative in blame; it is not permissible if you make it genitive as a description of al-khannās.”\nI say: its impermissibility is questionable, considering the verse ending. The author of al-Murshid says: “When you have said ‘the All-Merciful, the Merciful,’ the stop is sufficient because it is the end of a verse. It is not a complete stop, because the genitive expression—I mean ‘Master of the Day of Judgment’—is left without its governor, and the epithet is separated from what it qualifies. Likewise a stop at ‘the straight [path]’ is permissible but not a good stop; it is permitted only because it is the end of the verse.”\n[TEXT CORRECTION T114-C1: OpenITI reads وفي عدم الجواز نظرا للفاصلة. The scan p.654 reads وفي عدم الجواز نظر، نظرا للفاصلة: the missing نظر is restored in this translation. “Sufficient,” “complete” and “good” preserve distinct stop categories, not interchangeable praise.]"
+    },
+    {
+      "id": "T114.06",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (ومن جهة الناس)، مثلُ أن يوسوسَ في قلب المسلمِ من جهة المنجّمين والكُهانِ أنهم يعلمون الغيب، ومن جهةِ الجنِّ أنهم يَضرّون وينفعون. في \"المطلع\": «وعن بعضهم: على البيانِ يكونُ \"من الجِنّةِ والناس\"، حالًا من ضمير \"الذي يوسوس\"».",
+      "arabic_source_raw": "قولُه: (ومن جهة الناس)، مثلُ أن يوسوسَ في قلب المسلمِ من جهة المنجّمين والكُهانِ أنهم يعلمون الغيب، ومن جهةِ الجنِّ أنهم يَضرّون وينفعون. في \"المطلع\": «وعن بعضهم: على البيانِ يكونُ \"من الجِنّةِ والناس\"، حالًا من ضمير \"الذي يوسوس\"».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+        "line_refs": [
+          59
+        ],
+        "printed_pages": [
+          655
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [],
+      "english_corrections": [],
+      "english_heading": "[T114.06 | XVI655 | on K114.05]",
+      "existing_notes": [],
+      "arabic_complete": true,
+      "recommended_english": "His words, “From the direction of human beings”: for example, he whispers into a Muslim's heart, concerning astrologers and soothsayers, that they know the unseen; and concerning jinn, that they harm and benefit.\nIn al-Muṭṭalaʿ: “According to one explanation, if the phrase is taken as clarification, ‘from among jinn and humankind’ is a circumstantial expression (ḥāl) relating to the pronoun in ‘who whispers.’”"
+    },
+    {
+      "id": "T114.07",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (وما أحقّه)، يعني: ما أثبته من قولهم: حَقَقْتُ الشئَ أَحُقُّه، أي: أَثبتُه. قال الإمام: «قيل: إن قولَه: ﴿مِنَ الْجِنَّةِ وَالنَّاسِ﴾ قسمان مندرجان تحت قولِه: ﴿فِي صُدُورِ النَّاسِ﴾، كأن القدرَ المشتركَ بين الجنِّ والإنسِ سُمّي إنسانًا، والإنسانُ أيضًا سُمّي إنسانًا، فيكون لفظُ الإنسانِ واقعًا على الجنسِ والنوعِ بالاشتراك. والدليلُ عليه ما رُويَ أنه جاءَ نفرٌ من الجن، فقيل لهم: مَنْ أنتم؟ فقالوا: ناسٌ من الجن.\n\nوأيضًا قد سَمّاهم اللهُ رجالًا في قوله: ﴿وَأَنَّهُ كَانَ رِجَالٌ مِنَ الْإِنْسِ يَعُوذُونَ بِرِجَالٍ مِنَ الْجِنِّ فَزَادُوهُمْ رَهَقًا﴾ [الجن: 6]، فجازَ أن يُسميَهم هنا ناسًا. وهذا القولُ المتعسِّفُ لا يريدُ أنَه ضعيفٌ، لأن جَعْلَ الإنسانِ اسمًا للجنسِ الذي يندرجُ فيه الجنُّ والإنس، بعيدٌ من اللغة».",
+      "arabic_source_raw": "قولُه: (وما أحقّه)، يعني: ما أثبته من قولهم: حَقَقْتُ الشئَ أَحُقُّه، أي: أَثبتُه. قال الإمام: «قيل: إن قولَه: ﴿مِنَ الْجِنَّةِ وَالنَّاسِ﴾ قسمان مندرجان تحت قولِه: ﴿فِي صُدُورِ النَّاسِ﴾، كأن القدرَ المشتركَ بين الجنِّ والإنسِ سُمّي إنسانًا، والإنسانُ أيضًا سُمّي إنسانًا، فيكون لفظُ الإنسانِ واقعًا على الجنسِ والنوعِ بالاشتراك. والدليلُ عليه ما رُويَ أنه جاءَ نفرٌ من الجن، فقيل لهم: مَنْ أنتم؟ فقالوا: ناسٌ من الجن.\n\nوأيضًا قد سَمّاهم اللهُ رجالًا في قوله: ﴿وَأَنَّهُ كَانَ رِجَالٌ مِنَ الْإِنْسِ يَعُوذُونَ بِرِجَالٍ مِنَ الْجِنِّ فَزَادُوهُمْ رَهَقًا﴾ [الجن: 6]، فجازَ أن يُسميَهم هنا ناسًا. وهذا القولُث المتعسِّفُ لا يريدُ أنَه ضعيفٌ، لأن جَعْلَ الإنسانِ اسمًا للجنسِ الذي يندرجُ فيه الجنُّ والإنس، بعيدٌ من اللغة».",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+        "line_refs": [
+          60,
+          61
+        ],
+        "printed_pages": [
+          655
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [
+        {
+          "from": "القولُث",
+          "to": "القولُ",
+          "reason": "Removal of obvious intrusive ث in electronic text; preserved in raw.",
+          "status": "mechanical_typographical_correction"
+        }
+      ],
+      "unresolved_flags": [
+        "Al-Razi clarifies intended criticism, but exact repair of Tibi's corrupt وهذا القول المتعسف لا يريد أنه ضعيف remains unresolved."
+      ],
+      "english_corrections": [
+        {
+          "before": "ḥaqqaqtu al-shayʾa aḥuqquhu",
+          "after": "ḥaqaqtu al-shayʾa aḥuqquhu",
+          "reason": "The Arabic is حَقَقْتُ الشئَ أَحُقُّه, form I, not ḥaqqaqtu (form II).",
+          "evidence": {
+            "url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+            "printed_page": 655,
+            "line": 60,
+            "arabic": "حَقَقْتُ الشئَ أَحُقُّه"
+          },
+          "status": "recommended"
+        },
+        {
+          "before": "[REVIEW T114-U3: The final sentence is problematic in the print itself: وهذا القول المتعسف لا يريد أنه ضعيف. Its wording is retained, even though its denial of weakness conflicts with the following criticism. The phrase لا يريد may be displaced from the next gloss; that is a hypothesis, not an adopted correction. Check the Imam's source before repairing it. Mā in وما أحقه is negative, not an exclamation; the scan, Ṭībī's gloss and Turkish p.1480 agree.]",
+          "after": "[SOURCE CHECK T114-U3: The earlier scan report gives وهذا القول المتعسف لا يريد أنه ضعيف. Al-Rāzī's tafsīr of 114:6 instead reads وهذا القول ضعيف, followed by the same linguistic objection. This confirms that the source criticizes the interpretation, but does not establish how the corruption arose in Ṭībī. The printed wording is retained with this warning; displacement from the next gloss remains a hypothesis. Mā in وما أحقه is negative, not exclamatory.]",
+          "reason": "Primary quoted source establishes intended criticism but not exact Tibi emendation.",
+          "evidence": {
+            "url": "https://tafsir.deenapps.com/index.php?chapter=114&tafsir_type=al-razi&trans=usmani&verse=6",
+            "location": "Tafsir 114:6, Arabic text (not the site's English summary)",
+            "arabic": "وهذا القول ضعيف؛ لأن جعل الإنسان اسما للجنس الذي يندرج فيه الجن والإنس بعيد من اللغة"
+          },
+          "status": "recommended"
+        }
+      ],
+      "english_heading": "[T114.07 | XVI655 | on K114.05]",
+      "existing_notes": [
+        "[REVIEW T114-U3: The final sentence is problematic in the print itself: وهذا القول المتعسف لا يريد أنه ضعيف. Its wording is retained, even though its denial of weakness conflicts with the following criticism. The phrase لا يريد may be displaced from the next gloss; that is a hypothesis, not an adopted correction. Check the Imam's source before repairing it. Mā in وما أحقه is negative, not an exclamation; the scan, Ṭībī's gloss and Turkish p.1480 agree.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "His words, “I do not accept it as established”: that is, I do not establish it, from their saying ḥaqaqtu al-shayʾa aḥuqquhu, “I established the thing.”\nThe Imam says: “It is said that ‘from among jinn and humankind’ gives two divisions included under ‘in the breasts of al-nās.’ It is as though the common element shared by jinn and humans were called insān, while the human being were also called insān; the expression insān would thus apply equivocally to both genus and species. The evidence is the report that a group of jinn came and were asked, ‘Who are you?’ They answered, ‘Nās from among the jinn.’ God has also called them rijāl in ‘There were men of humankind who sought refuge with men of the jinn, and they increased them in distress’ [72:6]. Thus it would be permissible to call them nās here. This strained statement—he does not mean that it is weak—for making insān the name of a genus containing both jinn and humans is remote from the language.”\n[SOURCE CHECK T114-U3: The earlier scan report gives وهذا القول المتعسف لا يريد أنه ضعيف. Al-Rāzī's tafsīr of 114:6 instead reads وهذا القول ضعيف, followed by the same linguistic objection. This confirms that the source criticizes the interpretation, but does not establish how the corruption arose in Ṭībī. The printed wording is retained with this warning; displacement from the next gloss remains a hypothesis. Mā in وما أحقه is negative, not exclamatory.]"
+    },
+    {
+      "id": "T114.08",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (وأجودُ منه)، أي: من هذا القولِ المتعسِّف: لا يريدُ أنه وجهٌ فيه جَوْدة، وهو أن يُحملَ \"الناسِ\" في قولِه: ﴿صُدُورِ النَّاسِ﴾ على الناسي، فحينئذٍ يمكنُ تقسيمُه إلى الجنِّ والإنسِ لأنهما صفتانِ موصوفانِ بنسيانِ حقِّ الله.",
+      "arabic_source_raw": "قولُه: (وأجودُ منه)، أي: من هذا القولِ المتعسِّف: لا يريدُ أنه وجهٌ فيه جَوْدة، وهو أن يُحملَ \"الناسِ\" في قولِه: ﴿صُدُورِ النَّاسِ﴾ على الناسي، فحينئذٍ يمكنُ تقسيمُه إلى الجنِّ والإنسِ لأنهما صفتانِ موصوفانِ بنسيانِ حقِّ الله.",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+        "line_refs": [
+          67
+        ],
+        "printed_pages": [
+          656
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [
+        "Arabic صفتان موصوفان is retained; English 'two classes' is contextual. Razi and Kashshaf have النوعان الموصوفان, corroborating sense but not proving the exact Tibi reading."
+      ],
+      "english_corrections": [],
+      "english_heading": "[T114.08 | XVI656 | on K114.06]",
+      "existing_notes": [
+        "[TEXT NOTE: The scan/transcription has صفتان موصوفان, literally “two attributes described.” The contextual “two classes” follows the preceding discussion and needs verification against another witness.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "His words, “Better than that”: that is, better than this strained statement; he does not mean that it is an interpretation possessing merit. It is to take al-nās in “the breasts of al-nās” as “the forgetful one.” It can then be divided into jinn and humans, for they are two classes characterized by forgetting God's due.\n[TEXT NOTE: The scan/transcription has صفتان موصوفان, literally “two attributes described.” The contextual “two classes” follows the preceding discussion and needs verification against another witness.]"
+    },
+    {
+      "id": "T114.09",
+      "author": "al-Tibi",
+      "arabic": "قولُه: (المُقَشْقِشَتان)، النهاية: «في الحديثِ: يقالُ لسورتَيْ \"قُلْ يا أيها الكافرون\"، و\"قُلْ هو الله أحد\": المُقَشْقِشَتان، أي: المبرِّئتانِ من النفاقِ والشركِ، كما يَبرأُ المريضُ من عِلَّتِه؛ يقال: قد تَقَشْقشَ المريض: إذا أفاقَ وبَرَأ».\n\nتَمّتِ السُّورَة",
+      "arabic_source_raw": "قولُه: (المُقَشْقِشَتان)، النهاية: «في الحديثِ: يقالُ لسورتَيْ \"قُلْ يا أيها الكافرون\"، و\"قُلْ هو الله أحد\": المُقَشْقِشَتان، أي: المبرِّئتانِ من النفاقِ والشركِ، كما يَبرأُ المريضُ من عِلَّتِه؛ يقال: قد تَقَشْقشَ المريض: إذا أفاقَ وبَرَأ».\n\nتَمّتِ السُّورَة",
+      "evidence": {
+        "source_url": "https://quranpedia.app/books/futuh-ghayb/s522.html",
+        "line_refs": [
+          69,
+          71
+        ],
+        "printed_pages": [
+          656
+        ]
+      },
+      "review": {
+        "electronic_alignment": "compared_clause_by_clause_with_existing_C06_English",
+        "scan_collation_this_pass": false
+      },
+      "arabic_editorial_actions": [],
+      "unresolved_flags": [
+        "Base applies muqashqishatan to 113/114; cited al-Nihaya applies it to 109/112. Both assignments deliberately retained."
+      ],
+      "english_corrections": [],
+      "english_heading": "[T114.09 | XVI656 | on K114.06]",
+      "existing_notes": [
+        "[TRANSLATOR'S NOTE: The base text applies the term to al-Falaq and al-Nās; this quotation applies it to al-Kāfirūn and al-Ikhlāṣ. The differing identifications are preserved.]"
+      ],
+      "arabic_complete": true,
+      "recommended_english": "His words, “Al-muqashqishatān.” Al-Nihāya: “In the report, the sūrahs ‘Say: O unbelievers’ and ‘Say: He is God, One’ are called al-muqashqishatān: the two that free one from hypocrisy and association of partners with God, as a sick person is freed from his illness. One says taqashqasha al-marīḍ when the sick person recovers and becomes well.”\n[TRANSLATOR'S NOTE: The base text applies the term to al-Falaq and al-Nās; this quotation applies it to al-Kāfirūn and al-Ikhlāṣ. The differing identifications are preserved.]\nThe sūrah is complete."
+    }
+  ]
+}

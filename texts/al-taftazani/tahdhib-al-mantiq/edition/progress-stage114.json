@@ -1,0 +1,211 @@
+{
+  "stage": 114,
+  "date": "2026-11-11",
+  "publicationType": "GNAMMA public first-pass working gloss reader",
+  "translationStatus": "end-to-end draft, not an unabridged/source-certified translation",
+  "numberedSourcePositions": 1090,
+  "historicalSections": 14,
+  "sourcePrintedPages": [
+    127,
+    395
+  ],
+  "sourceNonGlossAdminPages": [
+    396,
+    397,
+    398,
+    399,
+    400
+  ],
+  "englishFirstPassRenderings": 1029,
+  "proseRenderedWithMissingTable": 4,
+  "modernEditorialReferenceOnly": 57,
+  "fullDigitalArabicTranscriptions": 79,
+  "arabicLocatorOrReferenceOnly": 1011,
+  "completePhotographicallyCollatedPrintedPages": 0,
+  "independentlyCertifiedYazdiCommentaryPositions": 0,
+  "fullyProvedClassicalModalCases": 0,
+  "sourceTableGaps": [
+    "HWN-DEFINITION-019",
+    "HWN-PROPOSITIONS-097",
+    "HWN-PROPOSITIONS-121",
+    "HWN-CONDITIONAL-040"
+  ],
+  "sources": "Qum searchable 400-page printed volume with 14 local numbered sections; Arabic Qum source links embedded in each record",
+  "sections": [
+    {
+      "sectionId": "H-PREFACE",
+      "title": "Preface glosses",
+      "printedPages": [
+        127,
+        164
+      ],
+      "numberedNotes": 140,
+      "EnglishRenderings": 139,
+      "modernReferences": 1,
+      "missingTableNotes": 0
+    },
+    {
+      "sectionId": "H-INTRO",
+      "title": "Introduction to Logic",
+      "printedPages": [
+        165,
+        187
+      ],
+      "numberedNotes": 82,
+      "EnglishRenderings": 77,
+      "modernReferences": 5,
+      "missingTableNotes": 0
+    },
+    {
+      "sectionId": "H-DALALA",
+      "title": "Signification and expressions",
+      "printedPages": [
+        188,
+        215
+      ],
+      "numberedNotes": 91,
+      "EnglishRenderings": 88,
+      "modernReferences": 3,
+      "missingTableNotes": 0
+    },
+    {
+      "sectionId": "H-MAFAHIM",
+      "title": "Concepts, four relations and five predicables",
+      "printedPages": [
+        216,
+        252
+      ],
+      "numberedNotes": 153,
+      "EnglishRenderings": 134,
+      "modernReferences": 19,
+      "missingTableNotes": 0
+    },
+    {
+      "sectionId": "H-DEFINITION",
+      "title": "Definition",
+      "printedPages": [
+        253,
+        262
+      ],
+      "numberedNotes": 29,
+      "EnglishRenderings": 29,
+      "modernReferences": 0,
+      "missingTableNotes": 1
+    },
+    {
+      "sectionId": "H-PROPOSITIONS",
+      "title": "Propositions and modality",
+      "printedPages": [
+        263,
+        302
+      ],
+      "numberedNotes": 135,
+      "EnglishRenderings": 119,
+      "modernReferences": 16,
+      "missingTableNotes": 2
+    },
+    {
+      "sectionId": "H-CONDITIONAL",
+      "title": "Conditional propositions",
+      "printedPages": [
+        303,
+        311
+      ],
+      "numberedNotes": 44,
+      "EnglishRenderings": 44,
+      "modernReferences": 0,
+      "missingTableNotes": 1
+    },
+    {
+      "sectionId": "H-CONTRADICTION",
+      "title": "Contradiction",
+      "printedPages": [
+        312,
+        322
+      ],
+      "numberedNotes": 33,
+      "EnglishRenderings": 33,
+      "modernReferences": 0,
+      "missingTableNotes": 0
+    },
+    {
+      "sectionId": "H-CONVERSION",
+      "title": "Simple conversion",
+      "printedPages": [
+        323,
+        334
+      ],
+      "numberedNotes": 40,
+      "EnglishRenderings": 38,
+      "modernReferences": 2,
+      "missingTableNotes": 0
+    },
+    {
+      "sectionId": "H-CONTRAPOSITION",
+      "title": "Contraposition",
+      "printedPages": [
+        335,
+        340
+      ],
+      "numberedNotes": 26,
+      "EnglishRenderings": 26,
+      "modernReferences": 0,
+      "missingTableNotes": 0
+    },
+    {
+      "sectionId": "H-SYLLOGISM",
+      "title": "Syllogisms",
+      "printedPages": [
+        341,
+        371
+      ],
+      "numberedNotes": 157,
+      "EnglishRenderings": 149,
+      "modernReferences": 8,
+      "missingTableNotes": 0
+    },
+    {
+      "sectionId": "H-INDUCTION",
+      "title": "Induction and analogy",
+      "printedPages": [
+        372,
+        376
+      ],
+      "numberedNotes": 36,
+      "EnglishRenderings": 33,
+      "modernReferences": 3,
+      "missingTableNotes": 0
+    },
+    {
+      "sectionId": "H-ARTS",
+      "title": "The five arts and syllogistic matter",
+      "printedPages": [
+        377,
+        383
+      ],
+      "numberedNotes": 38,
+      "EnglishRenderings": 38,
+      "modernReferences": 0,
+      "missingTableNotes": 0
+    },
+    {
+      "sectionId": "H-SCIENCES",
+      "title": "Parts and preliminaries of sciences",
+      "printedPages": [
+        384,
+        395
+      ],
+      "numberedNotes": 86,
+      "EnglishRenderings": 86,
+      "modernReferences": 0,
+      "missingTableNotes": 0
+    }
+  ],
+  "links": {
+    "reader": "hawashi-numbered-notes.html",
+    "markdown": "batches/hawashi-all-sections-cumulative-stage114.md",
+    "json": "hawashi-effective-stage114.json",
+    "handoff": "HANDOFF_LATEST.md",
+    "olderReader": "hawashi-numbered-notes-stage113-archive.html"
+  }
+}

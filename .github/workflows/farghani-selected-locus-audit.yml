@@ -1,0 +1,44 @@
+name: Farghani XIX 559 selected clause source page audit
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'tools/farghani/check_selected_loci.py'
+      - '.github/workflows/farghani-selected-locus-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check selected Arabic original snippets against 128 digitized pages
+        run: |
+          python -m py_compile tools/farghani/check_selected_loci.py
+          python tools/farghani/check_selected_loci.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: farghani-selected-source-parity-xix
+          path: |
+            texts/al-farghani/muntaha-al-madarik/editorial/SELECTED_EXCERPT_SOURCE_PARITY_019.json
+            texts/al-farghani/muntaha-al-madarik/editorial/SELECTED_EXCERPT_SOURCE_PARITY_019.md
+          retention-days: 30
+      - name: Publish exact discrepancy queue without mutating citations
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add texts/al-farghani/muntaha-al-madarik/editorial/SELECTED_EXCERPT_SOURCE_PARITY_019.json \
+                  texts/al-farghani/muntaha-al-madarik/editorial/SELECTED_EXCERPT_SOURCE_PARITY_019.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Farghani XIX: audit flagged excerpts and source-page boundaries without invented variants'
+          for attempt in 1 2 3 4 5; do
+            git fetch --no-tags origin master
+            git rebase origin/master
+            if git push origin HEAD:master; then exit 0; fi
+            sleep 3
+          done
+          exit 1

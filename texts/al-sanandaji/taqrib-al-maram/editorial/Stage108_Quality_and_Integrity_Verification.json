@@ -1,0 +1,24 @@
+{
+  "stage": 108,
+  "source_pdf_sha256_match": true,
+  "volume_I_source_images_280_sha256_match": true,
+  "all_1401_ids_match": true,
+  "proof_obligations_open": 1400,
+  "volume_II_53_selected_ID_queue_preserved": true,
+  "volume_II_new_bounded_same_witness_checks": 3,
+  "all_774_inherited_files_accounted_for": true,
+  "byte_identical": 772,
+  "two_original_reader_entrypoints_preserved": true,
+  "newly_changed_record_ids": [
+    "I044.upper.02",
+    "I045.lower.01",
+    "I045.lower.02"
+  ],
+  "archives_member_hashes_passed": true,
+  "zip_testzip_passed": true,
+  "node_source_script_regression": "PASS",
+  "browser_visual_QA": "NOT VERIFIED",
+  "source_colllation_complete_all_register_positions": 0,
+  "next_volume_I": "I045.upper.02",
+  "next_volume_II": "G.II.229.21.01 whole gloss, then B6.M.II224.2001 duplicate"
+}

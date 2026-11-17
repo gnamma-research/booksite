@@ -1,0 +1,316 @@
+{
+  "work": "Quṭb al-Dīn-zāda al-Iznīqī, Risāla fī sharḥ Subḥānaka mā ʿarafnāka ḥaqqa maʿrifatika",
+  "as_of": "2026-11-09",
+  "source_edition": "Balaban and Çalışkan (2023), Ihya 9/2",
+  "source_url": "https://dergipark.org.tr/en/download/article-file/3074106",
+  "source_authorial_printed_pages": [
+    831,
+    852
+  ],
+  "modern_article_printed_pages": [
+    814,
+    856
+  ],
+  "modern_bibliography_pages": [
+    853,
+    856
+  ],
+  "total_medieval_pages": 22,
+  "source_page_images_inspected": 22,
+  "source_page_ranges_with_first_pass_English_draft": 22,
+  "source_pages_with_final_verified_full_literal_translation": 0,
+  "source_pages_with_complete_verified_independent_arabic_transcription": 0,
+  "manuscript_folios_directly_collated": 0,
+  "editorial_policy": "An interpretive page-range draft is NOT a complete translation or a critical edition. Dense embedded quotations and poems must be fully translated before any completion claim.",
+  "segments": [
+    {
+      "range": [
+        831,
+        834
+      ],
+      "file": "IZNIQI_EN_CONTINUOUS_01_pp831-834.md",
+      "status": "prose draft, mixed literal and contextual",
+      "gaps": "Sayings and chains of authority on pp. 833–834 require clause-level checking"
+    },
+    {
+      "range": [
+        835,
+        838
+      ],
+      "file": "IZNIQI_EN_CONTINUOUS_01B_pp835-838.md",
+      "status": "10 numbered rational arguments linked to bilingual excerpt records; contextual chapter III",
+      "gaps": "Arabic and Persian verse on pp. 835, 837; some transitions and complete al-Ghazālī quotation"
+    },
+    {
+      "range": [
+        839,
+        843
+      ],
+      "file": "IZNIQI_EN_CONTINUOUS_02_pp839-843.md",
+      "status": "prose draft, not literal complete",
+      "gaps": "Long Jīlānī and Akbarī embedded quotations need word-by-word comparison and speaker assignment"
+    },
+    {
+      "range": [
+        844,
+        849
+      ],
+      "file": "IZNIQI_EN_CONTINUOUS_03_pp844-849.md",
+      "status": "interpretive prose reconstruction",
+      "gaps": "Long Arabic/Persian poems; precise citations and dense legal anti-antinomian argument"
+    },
+    {
+      "range": [
+        850,
+        852
+      ],
+      "file": "IZNIQI_EN_CONTINUOUS_04_pp850-852.md",
+      "status": "prose draft, not literal complete",
+      "gaps": "Formal kalām terminology; exact quotations and the final ruling about ahl al-qibla"
+    }
+  ],
+  "pages": [
+    {
+      "printed_page": 831,
+      "pdf_zero_index": 17,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_01_pp831-834.md",
+      "unresolved": "Sayings and chains of authority on pp. 833–834 require clause-level checking"
+    },
+    {
+      "printed_page": 832,
+      "pdf_zero_index": 18,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_01_pp831-834.md",
+      "unresolved": "Sayings and chains of authority on pp. 833–834 require clause-level checking"
+    },
+    {
+      "printed_page": 833,
+      "pdf_zero_index": 19,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_01_pp831-834.md",
+      "unresolved": "Sayings and chains of authority on pp. 833–834 require clause-level checking"
+    },
+    {
+      "printed_page": 834,
+      "pdf_zero_index": 20,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_01_pp831-834.md",
+      "unresolved": "Sayings and chains of authority on pp. 833–834 require clause-level checking"
+    },
+    {
+      "printed_page": 835,
+      "pdf_zero_index": 21,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_01B_pp835-838.md",
+      "unresolved": "Arabic and Persian verse on pp. 835, 837; some transitions and complete al-Ghazālī quotation"
+    },
+    {
+      "printed_page": 836,
+      "pdf_zero_index": 22,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_01B_pp835-838.md",
+      "unresolved": "Arabic and Persian verse on pp. 835, 837; some transitions and complete al-Ghazālī quotation"
+    },
+    {
+      "printed_page": 837,
+      "pdf_zero_index": 23,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_01B_pp835-838.md",
+      "unresolved": "Arabic and Persian verse on pp. 835, 837; some transitions and complete al-Ghazālī quotation"
+    },
+    {
+      "printed_page": 838,
+      "pdf_zero_index": 24,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_01B_pp835-838.md",
+      "unresolved": "Arabic and Persian verse on pp. 835, 837; some transitions and complete al-Ghazālī quotation"
+    },
+    {
+      "printed_page": 839,
+      "pdf_zero_index": 25,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_02_pp839-843.md",
+      "unresolved": "Long Jīlānī and Akbarī embedded quotations need word-by-word comparison and speaker assignment"
+    },
+    {
+      "printed_page": 840,
+      "pdf_zero_index": 26,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_02_pp839-843.md",
+      "unresolved": "Long Jīlānī and Akbarī embedded quotations need word-by-word comparison and speaker assignment"
+    },
+    {
+      "printed_page": 841,
+      "pdf_zero_index": 27,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_02_pp839-843.md",
+      "unresolved": "Long Jīlānī and Akbarī embedded quotations need word-by-word comparison and speaker assignment"
+    },
+    {
+      "printed_page": 842,
+      "pdf_zero_index": 28,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_02_pp839-843.md",
+      "unresolved": "Long Jīlānī and Akbarī embedded quotations need word-by-word comparison and speaker assignment"
+    },
+    {
+      "printed_page": 843,
+      "pdf_zero_index": 29,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_02_pp839-843.md",
+      "unresolved": "Long Jīlānī and Akbarī embedded quotations need word-by-word comparison and speaker assignment"
+    },
+    {
+      "printed_page": 844,
+      "pdf_zero_index": 30,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_03_pp844-849.md",
+      "unresolved": "Long Arabic/Persian poems; precise citations and dense legal anti-antinomian argument"
+    },
+    {
+      "printed_page": 845,
+      "pdf_zero_index": 31,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_03_pp844-849.md",
+      "unresolved": "Long Arabic/Persian poems; precise citations and dense legal anti-antinomian argument"
+    },
+    {
+      "printed_page": 846,
+      "pdf_zero_index": 32,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_03_pp844-849.md",
+      "unresolved": "Long Arabic/Persian poems; precise citations and dense legal anti-antinomian argument"
+    },
+    {
+      "printed_page": 847,
+      "pdf_zero_index": 33,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_03_pp844-849.md",
+      "unresolved": "Long Arabic/Persian poems; precise citations and dense legal anti-antinomian argument"
+    },
+    {
+      "printed_page": 848,
+      "pdf_zero_index": 34,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_03_pp844-849.md",
+      "unresolved": "Long Arabic/Persian poems; precise citations and dense legal anti-antinomian argument"
+    },
+    {
+      "printed_page": 849,
+      "pdf_zero_index": 35,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_03_pp844-849.md",
+      "unresolved": "Long Arabic/Persian poems; precise citations and dense legal anti-antinomian argument"
+    },
+    {
+      "printed_page": 850,
+      "pdf_zero_index": 36,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_04_pp850-852.md",
+      "unresolved": "Formal kalām terminology; exact quotations and the final ruling about ahl al-qibla"
+    },
+    {
+      "printed_page": 851,
+      "pdf_zero_index": 37,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_04_pp850-852.md",
+      "unresolved": "Formal kalām terminology; exact quotations and the final ruling about ahl al-qibla"
+    },
+    {
+      "printed_page": 852,
+      "pdf_zero_index": 38,
+      "source_rendered_inspected": true,
+      "english_first_pass_representation": true,
+      "english_full_literal_verified": false,
+      "medieval_arabic_fully_transcribed": false,
+      "manuscript_leaf_collated": false,
+      "provisional_segment": "IZNIQI_EN_CONTINUOUS_04_pp850-852.md",
+      "unresolved": "Formal kalām terminology; exact quotations and the final ruling about ahl al-qibla"
+    }
+  ]
+}

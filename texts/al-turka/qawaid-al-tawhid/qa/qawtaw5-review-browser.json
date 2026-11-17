@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "browser": "Chromium",
+  "viewport": [
+    390,
+    844
+  ],
+  "allSegments": 5520,
+  "units": 171,
+  "pending": 0,
+  "unresolvedFilter": true,
+  "sourcePolarityAndUnityCorrections": true,
+  "realIOSSafariTested": false
+}

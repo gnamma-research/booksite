@@ -1,0 +1,42 @@
+{
+  "stage": 106,
+  "date": "2026-11-17",
+  "source_stage": 105,
+  "original_source_PDF_SHA256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "original_combined_pdf_physical_pages": 632,
+  "volume_I_printed_positions": 280,
+  "volume_II_printed_positions": 335,
+  "total_original_printed_positions": 615,
+  "stable_volume_I_records": 1401,
+  "active_volume_I_records": 1400,
+  "hidden_retired_non_source_record": 1,
+  "new_bounded_volume_I_records": [
+    "I042.upper.02",
+    "I043.lower.01",
+    "I043.lower.02"
+  ],
+  "new_bounded_count": 3,
+  "arabic_bearing_volume_I_active_records": 1294,
+  "genuinely_arabic_blank": 106,
+  "blank_by_layer": {
+    "lower": 92,
+    "upper": 14
+  },
+  "independently_accepted_complete_literal_all_register_pages_both_volumes": 0,
+  "independently_second_proofed_pages_both_volumes": 0,
+  "all_active_Volume_I_independent_proof_obligations_open": 1400,
+  "source_pdf_sha_verified": true,
+  "volume_I_original_source_image_sha_verified": 280,
+  "volume_II_historical_original_library_assets_received": 5,
+  "volume_II_original_historical_migration_denominator": "unknown",
+  "volume_II_stage38_stage51_exact_main_page_drafts": 100,
+  "volume_II_stage38_stage51_exact_lower_page_sections": 163,
+  "source_critical_selected_clause_ids_checked_stage106": 8,
+  "known_distinct_ids_in_3_remote_clause_modules": 53,
+  "stage105_predecessor_project_file_total": 712,
+  "next_first_arabic_blank_record": "I043.upper.02",
+  "next_source_physical_pdf_page": 56,
+  "unresolved_I026_lower_02_connective": true,
+  "live_browser_acceptance": "not_verified",
+  "comprehensive_handoff": "Project_Editorial/Stage106_FULL_TWO_VOLUME_CUMULATIVE_HANDOFF.md"
+}

@@ -60,6 +60,10 @@ on:
       - 'daruri/qa/verify-unified-search.cjs'
       - 'texts/al-ghazali/al-mustasfa/data/gnamma-search-index.json'
   workflow_dispatch:
+concurrency:
+  group: daruri-unified-search-qa-master
+  cancel-in-progress: true
+
 permissions:
   contents: read
 jobs:

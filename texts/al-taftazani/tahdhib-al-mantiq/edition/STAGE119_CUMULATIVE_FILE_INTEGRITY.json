@@ -1,0 +1,87 @@
+{
+  "stage": 119,
+  "date": "2026-11-12",
+  "grade": "working-source-edition; independent critical collation pending",
+  "canonicalHistoricHSource": "Stage114 1090-record corpus, retained in Stage117 full prefix",
+  "priorFullPath": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage117.md",
+  "priorFullBytes": 1181516,
+  "priorFullSHA256": "36a8fb25ba0fc1d7f1f29c8c612efb09bef9993531763582ef8f1327713d517a",
+  "outputPath": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage119.md",
+  "outputBytes": 1297308,
+  "outputSHA256": "d54d4e3b0c7a88df1b18139f7b13e7bf0331188f04bb4d8ea563d7fa3ee7de8e",
+  "previousFullSourceBytePrefixPreserved": true,
+  "historicalHNotesUnchanged": 1090,
+  "englishFirstPassFieldsUnchanged": 1029,
+  "tableAffectedNotesUnchanged": 4,
+  "modernReferenceOnlyUnchanged": 57,
+  "Q309Positions": 15,
+  "Q309WorkedDrafts": 12,
+  "Q309PrintedInstructions": 3,
+  "Q309Provisional": 4,
+  "Q309WitnessDiscrepancies": 2,
+  "Q258SelectedPhrasesUnchanged": 24,
+  "Q258FullyCertifiedCells": 0,
+  "Q294ProvisionalFamiliesUnchanged": 105,
+  "Q294DirectWorkingSourceGlyphs": 19,
+  "Q294RemainingExactTranscriptions": 86,
+  "Q294DirectionCertifiedCells": 0,
+  "newlyCertifiedWholeHPrintedPages": 0,
+  "newAuthorialManuscriptVariants": 0,
+  "newHistoricallyValidModal46Proofs": 0,
+  "appendices": [
+    {
+      "title": "Stage118 full source-cell research status",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE118_SOURCE_CELL_RESEARCH.md",
+      "bytes": 5987,
+      "sha256": "b4b51113a68a4eb3a557fbccb533dee1717c5c7ca671927104da317a969ac2cc"
+    },
+    {
+      "title": "Stage118 Q258 49-cell source phrase register",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE118_Q258_49_DEFINITION_SOURCE_PHRASES.json",
+      "bytes": 22652,
+      "sha256": "192523a6664cf34d8be4a7b4832c421ecc300486957af71c0bfe2a35c2dad2bd"
+    },
+    {
+      "title": "Stage118 Q294 105-cell relation family register",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE118_Q294_105_SOURCE_SYMBOL_FAMILIES.json",
+      "bytes": 46046,
+      "sha256": "7525683068452c35ef560949bb91f94eac6ccba5a0b82cf2c797fbb7b755d003"
+    },
+    {
+      "title": "Stage119 nineteen exact Q294 photographed source marks",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE119_Q294_NINETEEN_DIRECT_GLYPHS.md",
+      "bytes": 2911,
+      "sha256": "cb6ed46681fd52adf2d6faf6c18a5b2a31d6b6596177d7025670aaee812a1f16"
+    },
+    {
+      "title": "Stage119 nineteen exact Q294 source records",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE119_Q294_NINETEEN_DIRECT_GLYPHS.json",
+      "bytes": 10432,
+      "sha256": "38d9fb1655bef596dcb4c44bf58a210a7e1dfc5785d95b822c0e314ae9770309"
+    },
+    {
+      "title": "Stage118 Q259 counting note",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE118_Q259_ARITHMETIC_AND_SCOPE.md",
+      "bytes": 3451,
+      "sha256": "e4e9140602bce22c908f8d97b8e238d1d9ad8398a92055a378f61e834858b616"
+    },
+    {
+      "title": "Stage119 15-cell Q309 comparative source edition",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE119_Q309_COMPARATIVE_WORKING_READINGS.md",
+      "bytes": 7372,
+      "sha256": "fea8c05087c2a31bfd639451f1f9d444e70d9ccd3af839f406c3ac8a729d8cfd"
+    },
+    {
+      "title": "Stage119 machine-readable historical Q309 comparisons",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE119_Q309_COMPARATIVE_WORKING_READINGS.json",
+      "bytes": 9432,
+      "sha256": "61ec2c0d46942c2aa1641f4b5282c4b75e1b2d266f0a5466b14b9c98a9e1c153"
+    },
+    {
+      "title": "Stage119 full cumulative handoff",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md",
+      "bytes": 6912,
+      "sha256": "58b9f10b522f4d6674cdfc83c112640cc9487e04d2ddbbebfdddd9d9ed4fd77b"
+    }
+  ]
+}

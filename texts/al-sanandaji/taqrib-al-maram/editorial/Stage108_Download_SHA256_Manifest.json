@@ -1,0 +1,31 @@
+{
+  "stage": 108,
+  "created_date": "2026-11-17",
+  "files": [
+    {
+      "path": "/mnt/data/Sanandaji_Stage108_FULL_TWO_VOLUME_CUMULATIVE_RECOVERY.zip",
+      "size_bytes": 122962267,
+      "sha256": "eb3ba3840bdc890914d2c3aa6b297349c06a6b2ec36436965637b8bed2ba771f"
+    },
+    {
+      "path": "/mnt/data/Sanandaji_VolI_Stage108_Study_Reader.zip",
+      "size_bytes": 1260501,
+      "sha256": "05bab8d43e65e1759e28046cc2881a3d42e6f6d02b3b534807875c80e87a2265"
+    },
+    {
+      "path": "/mnt/data/Sanandaji_VolI_Stage108_Offline_Study_Reader_With_Facsimile.zip",
+      "size_bytes": 36558201,
+      "sha256": "763270d1db6ee630ab032e5a3c0250b21d1744e0fa29fc45a8402bdbeb53837f"
+    },
+    {
+      "path": "/mnt/data/Sanandaji_VolII_Stage108_Recovered_Reader_and_Source_Critical_Apparatus.zip",
+      "size_bytes": 20481709,
+      "sha256": "1d55c7ed1a2da106aa72b6270f595dfe07a220ff123818aad0d68baa652d5d38"
+    },
+    {
+      "path": "/mnt/data/Sanandaji_Stage108_New_Readings_Proof_and_Full_Handoff.zip",
+      "size_bytes": 603113,
+      "sha256": "038d7dfeb2d1d216a25dbdf37645ecf00c5a563d8fe8f8944d13255a7ea94d88"
+    }
+  ]
+}

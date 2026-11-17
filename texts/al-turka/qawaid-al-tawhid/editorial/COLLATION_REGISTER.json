@@ -1,0 +1,1160 @@
+{
+  "schema": "gnamma-qawaid-source-collation-v1",
+  "updated": "2026-11-03",
+  "criticalStatus": "bibliographical-manuscripts-confirmed-collation-incomplete",
+  "directlyInspectedManuscriptImages": 0,
+  "witnesses": [
+    {
+      "id": "A",
+      "kind": "digital-printed-text",
+      "description": "Āshtiyānī 1982, single online transcription",
+      "reference": "https://ablibrary.net/book_content/b/17638/244?lang=ar",
+      "status": "working-reading-provisional-no-leaf-image-check"
+    },
+    {
+      "id": "F",
+      "kind": "bibliographical-catalogue",
+      "description": "Fahares/FANKHĀ 25:480 work-level incipit/explicit, shared across manuscript records",
+      "reference": "https://www.fahares.net/w/51946",
+      "status": "incipit-and-explicit-catalogued-not-original-codex-images"
+    },
+    {
+      "id": "M1",
+      "kind": "original-matn-manuscript",
+      "shelfmark": "alif-28",
+      "repository": "Mashhad Farhang va Honar",
+      "dating": "851 AH",
+      "scribe": "Ahmad b Ali b Fakhr al-Din al-Bayhaqi al-Sabzawari",
+      "reference": "https://www.fahares.net/m/242468",
+      "status": "bibliographically-verified-no-scan"
+    },
+    {
+      "id": "M2",
+      "kind": "original-matn-manuscript",
+      "shelfmark": "812",
+      "repository": "Mashhad Astan-i Quds Ridawi",
+      "dating": "1067 AH",
+      "folios": 18,
+      "reference": "https://www.fahares.net/m/242469",
+      "status": "bibliographically-verified-no-scan"
+    },
+    {
+      "id": "M3",
+      "kind": "original-matn-manuscript",
+      "shelfmark": "822",
+      "repository": "Mashhad Astan-i Quds Ridawi",
+      "dating": "undated",
+      "reference": "https://www.fahares.net/m/242470",
+      "status": "bibliographically-verified-no-scan"
+    },
+    {
+      "id": "P1",
+      "kind": "printed-original-matn",
+      "description": "Muhammad Turka Qawaid al Tawhid ed Majid Hadizadeh, Nusus wa Rasail min Turath Isfahan IV:37-72",
+      "reference": "https://bibliography.mk.iq/files/0080f66f58b21603.pdf",
+      "status": "bibliographically-verified-no-pages-accessed"
+    },
+    {
+      "id": "T1",
+      "kind": "printed-commentary",
+      "description": "1898 Tehran lithograph Tamhid (not standalone Qawaid)",
+      "reference": "https://kias.sakura.ne.jp/ibnarabi/index.php/Sain_al-Din_Turka",
+      "status": "bibliographically-verified-no-pages-accessed"
+    }
+  ],
+  "loci": [
+    {
+      "id": "QT-001",
+      "basePrintedPages": [
+        48
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/244?lang=ar",
+      "arabicOpening": "الحمد لوليّه، والصلاة على نبيّه محمد وآله. وبعد، فإن تقرير مسألة التوحيد على النحو الذي ذهب إليه العارفون",
+      "issues": 0,
+      "priority": "P1-critical",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-002",
+      "basePrintedPages": [
+        49
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/245?lang=ar",
+      "arabicOpening": "فإن الأكثرين منهم يزعمون أن القطع بها يدلّ على استحكام سوء المزاج في موضوعات القوى النفسانية، وعلى احتراق",
+      "issues": 1,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-003",
+      "basePrintedPages": [
+        52
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/248?lang=ar",
+      "arabicOpening": "لكن لمّا كان الأمر على خلاف ما ظنّوه، بل على عكس ما تخيّلوه…",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-004",
+      "basePrintedPages": [
+        53,
+        54
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/249?lang=ar",
+      "arabicOpening": "أردت أن أكتب رسالة، أوضح فيها حقّية مذهب العارفين، وبطلان قول الطاعنين من المنكرين، مشتملة على صفوة ما ظه",
+      "issues": 6,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-005",
+      "basePrintedPages": [
+        55
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/251?lang=ar",
+      "arabicOpening": "اعلم أن الوجود مشترك بين الوجودات الخاصّة كلّها لا بحسب اللفظ، بل بحسب المعنى، كما بيّنّاه في سائر كتبنا.",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-006",
+      "basePrintedPages": [
+        59,
+        60
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/255?lang=ar",
+      "arabicOpening": "ومن البيّن أن حقيقته من حيث هي هي لا يقبل العدم لذاتها، لامتناع اتّصاف أحد النقيضين بالآخر، وامتناع انقلا",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-007",
+      "basePrintedPages": [
+        63,
+        64
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/259?lang=ar",
+      "arabicOpening": "وتلك الحقيقة الواجبة لذاتها غير المأخوذة بقيد العموم، إذ لا تحقّق للأمر العام من حيث هو عام في الخارج، وغ",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-008",
+      "basePrintedPages": [
+        67
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/263?lang=ar",
+      "arabicOpening": "فلئن قيل: إن الحقيقة الواجبة هي الطبيعة التي هي من ملزومات ما ذُكر من الوجود الذي يشترك فيه جميع الوجودات",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-009",
+      "basePrintedPages": [
+        68
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/264?lang=ar",
+      "arabicOpening": "ولا يلزم من هذا أن تكون تلك الحقيقة من الماهيّات المغايرة للوجود، فيكون مؤثّرة للوجود لا بشرط الوجود، لأن",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-010",
+      "basePrintedPages": [
+        71
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/267?lang=ar",
+      "arabicOpening": "ولا يلزم أن تكون تلك الحقيقة موجودة مرّتين، كسائر الوجودات الباقية، فإن الموجودية المشتركة بينها وبين الم",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-011",
+      "basePrintedPages": [
+        72
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/268?lang=ar",
+      "arabicOpening": "قلنا: إن الطبيعة الواجبة الملزومة لمطلق الوجود إن صحّ أن تكون ذات أفراد ذهنية أو عقلية، فلو وُجد منها فرد",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-012",
+      "basePrintedPages": [
+        74
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/270?lang=ar",
+      "arabicOpening": "وإن لم يمكن أن تكون ذات أفراد ذهنية أو عقلية، إمّا لأن تعيّنها نفس حقيقتها في الخارج، أو لأنها اقتضت تعيّ",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-013",
+      "basePrintedPages": [
+        78
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/274?lang=ar",
+      "arabicOpening": "فإن كانت حقيقته من حيث هي مغايرة لحقيقة الوجود الخارجي والكون العيني الذي تتكون به الماهيات [الحقيقية] ال",
+      "issues": 2,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-014",
+      "basePrintedPages": [
+        81
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/277?lang=ar",
+      "arabicOpening": "على أن اجتماع الأمثال واختصاص أحد المتماثلين بالحالّية والآخر بالمحلّية، واتصاف أحدهما بصفة دون الآخر، من",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-015",
+      "basePrintedPages": [
+        82,
+        83
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/278?lang=ar",
+      "arabicOpening": "ثم إن الوجود الحاصل للماهيات المختلفة والطبائع المتخالفة لا يقبل الوجود والعدم لذاته لما أشير إليه في موض",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-016",
+      "basePrintedPages": [
+        87
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/283?lang=ar",
+      "arabicOpening": "ثم إنا نقول: إن مفهوم تلك الطبيعة غير مفهوم شيء من التعيّنات التي هي من العوارض المستدعية لتحقّق موضوعات ",
+      "issues": 1,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-017",
+      "basePrintedPages": [
+        89,
+        90
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/285?lang=ar",
+      "arabicOpening": "ثم إن معنى كون تعيّنها نفسها في الأعيان، هو أنها يمتاز عمّا عداها بنفسها لا بصفة زائدة عليها في الأعيان، ",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-018",
+      "basePrintedPages": [
+        93
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/289?lang=ar",
+      "arabicOpening": "ولا نسلّم أنها غير معقولة لشيء من العقول، فإنّا قد برهنّا في سائر كتبنا الحكمية أنها عاقلة ومعقولة وعقل ل",
+      "issues": 1,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-019",
+      "basePrintedPages": [
+        94
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/290?lang=ar",
+      "arabicOpening": "ولا نسلّم أنه يمتنع اقترانها بالغير واقتران الغير بها لو لم يُرد بالغير المنافي أو المقابل، لما ستعرفه أن",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-020",
+      "basePrintedPages": [
+        95
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/291?lang=ar",
+      "arabicOpening": "فلئن قيل: لو صحّ ما ذكرتموه في بيان أن الواجب لذاته لا يجوز أن يكون تلك الطبيعة الملزومة للوجود المطلق، ل",
+      "issues": 1,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-021",
+      "basePrintedPages": [
+        98
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/294?lang=ar",
+      "arabicOpening": "فلئن قيل: إن الحقيقة المطلقة لو كانت واجبة لذاتها قائمة بنفسها، لما كانت مطلقة، بل كانت مقيّدة بالوجوب ال",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-022",
+      "basePrintedPages": [
+        100,
+        101
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/296?lang=ar",
+      "arabicOpening": "فلئن قيل: لو صحّ أن تكون حقيقته المطلقة من حيث هي مطلقة قائمة بنفسها بحسب الوجود في الأعيان، من غير أن تف",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-023",
+      "basePrintedPages": [
+        106
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/302?lang=ar",
+      "arabicOpening": "ومن الضروري أن دعوى الضرورة في محلّ النزاع غير مسموعة. على أن الوجود الخاصّ الممكن الذي ذُكر، لو أريد به ",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-024",
+      "basePrintedPages": [
+        109
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/305?lang=ar",
+      "arabicOpening": "فلئن قيل: إن الوجود الذهني الذي يمتنع أن يوجد في الأعيان فرد من أفراد الوجود المطلق الذي يكون من جملة أفر",
+      "issues": 1,
+      "priority": "P1-critical",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-025",
+      "basePrintedPages": [
+        111,
+        112
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/307?lang=ar",
+      "arabicOpening": "تنبيه: اعلم أن اعتقاد كون المبدأ الأول الواجب بذاته أنيّة خاصّة نوعيّة، يلزم من فرضها على ما يقولون به رف",
+      "issues": 1,
+      "priority": "P1-critical",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-026",
+      "basePrintedPages": [
+        114
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/310?lang=ar",
+      "arabicOpening": "ومتى عرفت هذا فنقول: إنّ من الأولى الأوجب أن نجعل الكون الحقيقيّ العينيّ الكون المطلق الذي يحيط بسائر الم",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-027",
+      "basePrintedPages": [
+        118
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/314?lang=ar",
+      "arabicOpening": "ومتى تقرّر هذا عرفت أنّ الحقّ هو الوجود المطلق الذي لا اختلاف فيه ولا تكثّر، بل هو محض الوجود بحيث لا يما",
+      "issues": 2,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-028",
+      "basePrintedPages": [
+        121
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/317?lang=ar",
+      "arabicOpening": "واعلم أنّ تلك الهويّة المطلقة الواحدة بالوحدة الحقيقيّة تلزمها النسبة العلميّة أولاً بحصول نفسها في نفسها",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-029",
+      "basePrintedPages": [
+        130,
+        131
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/326?lang=ar",
+      "arabicOpening": "ثم إن إدراكها لذاتها يتضمّن إدراك سائر الصفات التي تلزمها، لكونها عين ذاتها، وإدراك جميع ما تستلزمه تلك ا",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-030",
+      "basePrintedPages": [
+        133
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/329?lang=ar",
+      "arabicOpening": "ويوجبه أيضاً على النسق المنتظم في الوجود الخارجي علماً إجمالياً جمعياً لا تفصيلياً، لا لما قيل: إن العلم ",
+      "issues": 2,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-031",
+      "basePrintedPages": [
+        137,
+        138
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/333?lang=ar",
+      "arabicOpening": "فإن قيل: العاقليّة يقابل المعقوليّة، فعند انتفاء المغايرة فلا عاقليّة ولا معقوليّة. قلنا: لو صحّ ما ذكرتم",
+      "issues": 1,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-032",
+      "basePrintedPages": [
+        141
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/337?lang=ar",
+      "arabicOpening": "ثم إنها اقتضت الظهور والبروز من حدّ الغيب إلى حدّ الشهادة، وحصول تلك الصفات والتعيّنات متمايزة في الأعيان",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-033",
+      "basePrintedPages": [
+        143,
+        144
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/339?lang=ar",
+      "arabicOpening": "فأوجدت عالم الأرواح، أي عالم العقول والنفوس، فإن ظهور الجود فيه أتمّ من عالم المعاني، ثم عالم المثال، ثم ",
+      "issues": 1,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-034",
+      "basePrintedPages": [
+        148,
+        149
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/344?lang=ar",
+      "arabicOpening": "فلئن قيل: فعلى هذا لا سبيل إلى القول بالإمكان، لكون الوجود واجباً بالذات، وكون الماهيّات والنسب والإضافات",
+      "issues": 2,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-035",
+      "basePrintedPages": [
+        154
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/350?lang=ar",
+      "arabicOpening": "قلنا: إن موضوعات الإمكان ومتعلّقاته بالطبع هي التعيّنات، ولا نسلّم أن الماهيّات والنسب والإضافات غير قابل",
+      "issues": 3,
+      "priority": "P1-critical",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-036",
+      "basePrintedPages": [
+        160,
+        161
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/356?lang=ar",
+      "arabicOpening": "وأما الطبيعة النوعيّة التي يشمل النوع العيني والعقلي، لمّا اقتضت الظهور العيني تعيّنت بالتعيّن العيني، فل",
+      "issues": 3,
+      "priority": "P1-critical",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-037",
+      "basePrintedPages": [
+        164
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/360?lang=ar",
+      "arabicOpening": "وأما حديث الأكمليّة بحسب ظهور الوجود في المرتبة الأخيرة، فلعلّهم أرادوا بها أن ما يكون مدركاً على سبيل ال",
+      "issues": 2,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-038",
+      "basePrintedPages": [
+        167
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/363?lang=ar",
+      "arabicOpening": "والإنسان المستكمل لا يكون كماله إلا بأن تحصل له ملكات هذه الإدراكات في مراتبها، ولا يكون الإدراك الحسّي و",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-039",
+      "basePrintedPages": [
+        172,
+        173
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/368?lang=ar",
+      "arabicOpening": "وإذا عرفت هذا فنقول: إن تلك الهويّة الواحدة بالوحدة الحقيقيّة لما غلب فيها أحكام الوحدة على أحكام الكثرة،",
+      "issues": 2,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-040",
+      "basePrintedPages": [
+        180
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/376?lang=ar",
+      "arabicOpening": "فانبعث انبعاثاً إراديّاً إلى المظهر الكلّي والكون الجامع الحاصر للأمر الإلهي، وهو الإنسان الكامل؛ فإنه ال",
+      "issues": 1,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-041",
+      "basePrintedPages": [
+        185,
+        186
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/381?lang=ar",
+      "arabicOpening": "وما قيل: «إن رؤية الشيء نفسه بنفسه ما هي مثل رؤيته نفسه في أمر آخر يكون له كالمرآة، فإنه يظهر له في نفسه ",
+      "issues": 1,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-042",
+      "basePrintedPages": [
+        189,
+        190
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/385?lang=ar",
+      "arabicOpening": "فإن قيل: العقل الأوّل لا يصلح لمرآتيّة صورته الجامعة لسائر صفاته الكماليّة والتعيّنات الأسمائيّة، بل إنما",
+      "issues": 1,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-043",
+      "basePrintedPages": [
+        193,
+        194,
+        195
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/389?lang=ar",
+      "arabicOpening": "على أنّا نقول: إن حقيقة الحق وصورته الحقيقيّة لو كانت نفس حقيقة الإنسان وصورته، لم يبق فرق بين الظاهر وال",
+      "issues": 3,
+      "priority": "P1-critical",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-044",
+      "basePrintedPages": [
+        197,
+        198
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/393?lang=ar",
+      "arabicOpening": "وحينئذ لو صحّ أن يجعل ذلك المظهر جميع أجزاء العالم الذي يكون من جملته الإنسان وأشخاصه، ثمّ إنّ إدراك ذاته",
+      "issues": 2,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-045",
+      "basePrintedPages": [
+        202,
+        203
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/398?lang=ar",
+      "arabicOpening": "ثمّ إنّهم قد اتّفقوا على أنّ وصول الإنسان إلى حدّ الكمال الحقيقي لا يمكن إلّا بانحلال العقد والتخلّص عن ا",
+      "issues": 1,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-046",
+      "basePrintedPages": [
+        206,
+        207
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/402?lang=ar",
+      "arabicOpening": "ثمّ إنّ من البيّن أنّ الكمال الذي يقولون به كالأمر الممتنع، لأنّه لو وصل إليه السالك وأدركه، لما أمكنه أن",
+      "issues": 2,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-047",
+      "basePrintedPages": [
+        212,
+        213
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/408?lang=ar",
+      "arabicOpening": "على أنّا نقول: إنّ الكمالات الفعليّة المستندة إلى الحجج القويّة والبراهين القاطعة، الحاصلة للنفس الناطقة ",
+      "issues": 3,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-048",
+      "basePrintedPages": [
+        215,
+        216,
+        217,
+        218
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/411?lang=ar",
+      "arabicOpening": "قلنا: إنّ المظهر الكامل هو الكون الجامع الحاصر لجميع المظاهر في سائر المراتب الموجودة فيه، فإنّ المرتبة ا",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-049",
+      "basePrintedPages": [
+        224,
+        225
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/420?lang=ar",
+      "arabicOpening": "ولا بدّ أن يراد بحقيقة الكلّ وصورته الوجود المتعيّن بسائر التعيّنات التي بها يكون مصدراً لجميع الأفعال ال",
+      "issues": 2,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-050",
+      "basePrintedPages": [
+        228,
+        229,
+        230
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/424?lang=ar",
+      "arabicOpening": "ونحن قد بيّنّا في العلوم الحقيقيّة الأصليّة أنّ من الممكن أن يتألّف من جزئيّات العناصر أبدان معتدلة ذوات ",
+      "issues": 1,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-051",
+      "basePrintedPages": [
+        234
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/430?lang=ar",
+      "arabicOpening": "وقد بيّن أيضاً فيها أنّ الأنواع الشريفة التي يمكن أن يصدر عنها الأفعال الكماليّة متناهية، ولا اعتبار بالأ",
+      "issues": 2,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-052",
+      "basePrintedPages": [
+        237
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/433?lang=ar",
+      "arabicOpening": "ولا يمتنع أن يتوقّف الحقّ في الاتّصاف ببعض الصفات والتعيّنات على صفات وتعيّنات أخر لاحقة به من ذاته. فلئن",
+      "issues": 1,
+      "priority": "P1-critical",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-053",
+      "basePrintedPages": [
+        243,
+        244
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/439?lang=ar",
+      "arabicOpening": "فلا يلزم أن تكون الإدراكات الحسّيّة والوهميّة والفكريّة غير معتبرة لو كان الكمال الحقيقي والإدراك اليقيني",
+      "issues": 2,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-054",
+      "basePrintedPages": [
+        248
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/444?lang=ar",
+      "arabicOpening": "ولا نسلّم أنّ العقل لا يدرك كلّ ما يدرك في الطور الذي هو فوق العقل. نعم، إنّ من الأشياء الخفيّة ما لا يصل",
+      "issues": 2,
+      "priority": "P1-critical",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-055",
+      "basePrintedPages": [
+        249,
+        250
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/445?lang=ar",
+      "arabicOpening": "وبيّن أنّ دوام المراقبة والمواظبة على ما ذكرنا من الملاحظة مع ملازمة الآداب والشروط المعتبرة عند أرباب هذ",
+      "issues": 2,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-056",
+      "basePrintedPages": [
+        252,
+        253,
+        254,
+        255
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/448?lang=ar",
+      "arabicOpening": "ومن جعل المعارف العقليّة والعلوم اليقينيّة المستندة إلى البراهين القطعيّة، الحاصلة للإنسان المعتدل المزاج",
+      "issues": 3,
+      "priority": "P1-critical",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-057",
+      "basePrintedPages": [
+        257,
+        258
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/453?lang=ar",
+      "arabicOpening": "واعلم أنّ المحقّقين من النظّار لا ينكرون إمكان طريق التصوّف وإفضاءه إلى المقصد على الندور، لكنّهم استوعرو",
+      "issues": 2,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-058",
+      "basePrintedPages": [
+        260
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/456?lang=ar",
+      "arabicOpening": "وأمّا نحن فنقول: إنّ كلّ شرط يعتبر في طريق التصوّف فلا بدّ من اعتباره في طريق النظر عند التحقيق، فإنّ رفع",
+      "issues": 0,
+      "priority": "P2-full-continuous",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-059",
+      "basePrintedPages": [
+        262,
+        263,
+        264
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/458?lang=ar",
+      "arabicOpening": "وما قيل إنّ علوم النظّار مأخوذة من الحواسّ وعلوم أصحاب المجاهدة مأخوذة من المبدأ الفيّاض فليس بشيء، فإنّ ",
+      "issues": 1,
+      "priority": "P0-lacuna",
+      "reportedLacuna": true,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-060",
+      "basePrintedPages": [
+        266,
+        267
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/462?lang=ar",
+      "arabicOpening": "على أنّا نقول: إنّ العلوم كلّها موجودة فينا، لما ستعرفه لو تأمّلت في المباحث السالفة، لكنّها مخفيّة بالحج",
+      "issues": 3,
+      "priority": "P1-critical",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    },
+    {
+      "id": "QT-061",
+      "basePrintedPages": [
+        269,
+        270
+      ],
+      "baseSourcePage": "https://ablibrary.net/book_content/b/17638/465?lang=ar",
+      "arabicOpening": "دقيقة: قد بقي هاهنا بحث مفيد لا بدّ وأن نشير إليه إشارة خفيّة. اعلم أنّ أصحاب النظر والتعليم عندهم علم يم",
+      "issues": 2,
+      "priority": "P1-critical",
+      "reportedLacuna": false,
+      "witnessObservations": {
+        "M1": null,
+        "M2": null,
+        "M3": null,
+        "P1": null
+      }
+    }
+  ],
+  "cataloguedExcerptReadings": [
+    {
+      "locus": "QT-001",
+      "witness": "F",
+      "grade": "catalogue-transcribed-not-original-codex",
+      "text": "الحمدلله رب العالمین و الصلوة علی نبیه محمد و آله اجمعین فان تقریر مسئلة التوحید علی النحو الذى ذهب اليه العارفون",
+      "comparison": "A has الحمد لوليّه, lacks أجمعين, includes وبعد; no direct collation",
+      "reference": "https://www.fahares.net/w/51946"
+    },
+    {
+      "locus": "QT-061",
+      "witness": "F",
+      "grade": "catalogue-transcribed-not-original-codex",
+      "text": "لا یحتمله هذا المختصر و هذا آخر ما اردنا ان نورده فی هذه الرساله و الحمدلله رب العالمین و الصلوة و السلام علی نبیه محمد المصطفی و آله الطاهرین",
+      "comparison": "Matches A explicit in essentials, not proof of intermediate completeness",
+      "reference": "https://www.fahares.net/w/51946"
+    }
+  ],
+  "policy": "Only fill witnessObservations after actual access to a verifiable source page/image. Do not infer repeated F shared incipit as independently read M1/M2/M3 readings."
+}

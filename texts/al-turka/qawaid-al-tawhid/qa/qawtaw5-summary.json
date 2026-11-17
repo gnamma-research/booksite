@@ -1,0 +1,32 @@
+{
+  "schema": "gnamma-clause-inventory-v2",
+  "date": "2026-11-11",
+  "totalBilingualUnits": 171,
+  "originalMatnUnits": 61,
+  "commentaryUnits": 110,
+  "totalArabicPunctuationClauses": 5520,
+  "totalEnglishSentenceCandidates": 2853,
+  "individuallyComparedArabicPunctuationClauses": 5520,
+  "individuallyComparedUnits": 171,
+  "NOTIndividuallyComparedArabicClauses": 0,
+  "statuses": {
+    "checked-with-note": 513,
+    "checked": 4637,
+    "unresolved-reading": 213,
+    "corrected": 110,
+    "corrected-with-note": 42,
+    "corrected-with-source-crux": 5
+  },
+  "groupStatuses": {
+    "checked-with-note": 103,
+    "checked": 1222,
+    "unresolved-reading": 55,
+    "corrected": 34,
+    "corrected-with-note": 12,
+    "corrected-with-source-crux": 2
+  },
+  "unresolvedOrSourceCruxGroups": 57,
+  "independentManuscriptsCollated": 0,
+  "independentHumanCertification": false,
+  "editorialLimit": "Complete comparison coverage is not certainty of every reading. Punctuation segments may be fragments. Retained electronic Arabic only; QT-059 lacuna deferred. No new manuscript or source-image collation."
+}

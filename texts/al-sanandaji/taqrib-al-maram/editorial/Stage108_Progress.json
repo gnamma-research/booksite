@@ -1,0 +1,66 @@
+{
+  "stage": 108,
+  "date": "2026-11-17",
+  "project": "Taqrīb al-Marām two-volume working edition only, Tahdhīb separate",
+  "translation_complete_literal_independently_accepted_printed_positions": {
+    "completed": 0,
+    "total": 615,
+    "percentage": 0.0,
+    "meaning": "All printed registers and literal English accepted; bounded readings are not counted."
+  },
+  "independent_all_register_printed_position_proof": {
+    "completed": 0,
+    "total": 615,
+    "percentage": 0.0,
+    "meaning": "Independent second-source/witness confirmation and clause-level proofreading not yet completed."
+  },
+  "volume_I_some_typed_arabic_source_presence": {
+    "completed": 1300,
+    "total": 1400,
+    "percentage": 92.86,
+    "meaning": "Presence of some Arabic source per record; not full translation completeness."
+  },
+  "volume_II_selected_53_ID_locator_audit": {
+    "completed": 53,
+    "total": 53,
+    "percentage": 100.0,
+    "meaning": "Completed at Stage107, preserved; not repeated as new work."
+  },
+  "volume_II_detailed_single_print_phrase_comparison": {
+    "completed": 3,
+    "total": 53,
+    "percentage": 5.66,
+    "meaning": "Three requested bounded phrases newly rechecked against same Būlāq printed witness; independent full proofs remain zero."
+  },
+  "volume_II_53_selected_clauses_complete_independent_proof": {
+    "completed": 0,
+    "total": 53,
+    "percentage": 0.0,
+    "meaning": "None has complete source-context and independent second proof."
+  },
+  "migration_known_stage107_all_volume_asset_receipt": {
+    "completed": 774,
+    "total": 774,
+    "percentage": 100.0,
+    "byte_identical": 772,
+    "updated_with_exact_original_preserved": 2
+  },
+  "migration_entire_historical_volume_II_assets": {
+    "known_originals_recovered": 5,
+    "total": null,
+    "percentage": null,
+    "meaning": "Historical total is unknown; remote Stage51 files known by Git SHA but not byte-received."
+  },
+  "independent_manuscript_witness_count": {
+    "verified": 0,
+    "total": null,
+    "percentage": null
+  },
+  "volume_II_reconciled_baseline": {
+    "english_main_drafts_exact": 100,
+    "total_main_pages_in_fixed_II215_314_interval": 100,
+    "lower_english_sections_exact": 163,
+    "total_lower_english_sections_in_interval": 163,
+    "not_full_arabic_or_translation_proof": true
+  }
+}

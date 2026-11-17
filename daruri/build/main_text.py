@@ -79,6 +79,9 @@ MAIN_TEXT_CSS = r"""
 .main-text .footnote-number { font-weight: bold; direction: ltr; unicode-bidi: isolate; }
 .main-text .number-group { display: inline-block; direction: ltr; unicode-bidi: isolate; white-space: nowrap; }
 .main-text .source-url { direction: ltr; unicode-bidi: isolate; }
+.main-text .gn-en-added { direction: ltr; unicode-bidi: isolate; }
+.main-text .gn-en-inline-link { font-family: "Noto Naskh Arabic",serif; direction: rtl; unicode-bidi: isolate;
+    text-decoration: underline; text-decoration-style: dotted; color: inherit; font-size: 1.04em; }
 .main-text .footnote-kind { font-style: italic; }
 .main-text .apparatus-note a { overflow-wrap: anywhere; }
 """
@@ -379,14 +382,24 @@ class _Renderer:
                 raise ValueError(f"Missing {language} anchor for {note['id']}")
             end = _resolve_anchor(text, descriptor, f"{note['id']} {key}/{index}/{language}")
             events.append((end, str(note['id']), note, anchor_index))
-        pieces = []
-        last = 0
-        for end, _, note, anchor_index in sorted(events, key=lambda e: (e[0], e[1])):
-            pieces.append(escape(text[last:end]))
-            pieces.append(self._q_marker(note, anchor_index, language, owner))
-            last = end
-        pieces.append(escape(text[last:]))
-        pieces.append(ending)
+        if language == 'en':
+            # The same dictionary key as the Arabic text, beside a located
+            # English translation, never an end-of-passage terms inventory.
+            from english_lexicon_pdf import markup as inline_english_lexicon
+            supplemental = [(end, self._q_marker(note, anchor_index, language, owner))
+                            for end, _, note, anchor_index in
+                            sorted(events, key=lambda e: (e[0], e[1]))]
+            text_html = inline_english_lexicon(text, str(segment['ar']), supplemental)
+        else:
+            pieces = []
+            last = 0
+            for end, _, note, anchor_index in sorted(events, key=lambda e: (e[0], e[1])):
+                pieces.append(escape(text[last:end]))
+                pieces.append(self._q_marker(note, anchor_index, language, owner))
+                last = end
+            pieces.append(escape(text[last:]))
+            text_html = ''.join(pieces)
+        text_html += ending
         cls = 'english' if language == 'en' else 'arabic'
         lang = 'en' if language == 'en' else 'ar'
         direction = 'ltr' if language == 'en' else 'rtl'
@@ -396,7 +409,7 @@ class _Renderer:
             f'<p class="source-segment {cls}" id="segment-{key}-{index}-{language}" '
             f'data-source-role="segment" data-section-id="{key}" data-segment-index="{index}" '
             f'data-language="{language}" lang="{lang}" dir="{direction}"{paragraph_break}>'
-            + ''.join(pieces) + '</p>'
+            + text_html + '</p>'
         )
 
     def _source_heading(self, section: dict) -> str:

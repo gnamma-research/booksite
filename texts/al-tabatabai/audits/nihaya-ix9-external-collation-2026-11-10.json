@@ -1,0 +1,250 @@
+{
+  "unit": "N-IX-09",
+  "reviewed": "2026-11-10",
+  "reviewType": "complete-authorial-chapter-independent-early-printed-facsimile-comparison",
+  "certification": "AI-assisted scholarly working comparison; no independent human specialist certification",
+  "base": {
+    "edition": "Qum 1417 digitally presented print",
+    "printedPages": "265–266",
+    "url": "https://lib.rafed.net/view.php?b_id=1642&page=265&type=c_fbook",
+    "directlyRetrieved": true,
+    "storedArabicSha256": "bb69ebad15d9cebd8d131c9792d18fe9381bf1bbdfeb4af02d6a3f41e98ebca6",
+    "storedEnglishSha256": "ca658079a87f2d1cf0c5404a57e3b5488249af35e4d0c748c69d5909221ad097"
+  },
+  "witnesses": [
+    {
+      "edition": "Qum 1404 printed facsimile, Princeton Arabic Collections Online",
+      "printedPages": "210–212",
+      "viewerCanvases": [
+        214,
+        215,
+        216
+      ],
+      "manifest": "https://sites.dlib.nyu.edu/viewer/api/presentation/books/princeton_aco000637/manifest.json",
+      "viewer": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/214",
+      "grade": "independent printed facsimile, directly visually inspected complete chapter; not manuscript",
+      "images": [
+        {
+          "canvas": 214,
+          "printedPage": 210,
+          "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000637/214/full/!1600,2200/0/default.jpg",
+          "retrievedFileName": "scan-214.jpg",
+          "sha256": "3daaa475d9c5ddd9d32ecd08faccfc8bf9d5a670460cb0a4f5ae9b5665fe3027"
+        },
+        {
+          "canvas": 215,
+          "printedPage": 211,
+          "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000637/215/full/!1600,2200/0/default.jpg",
+          "retrievedFileName": "scan-215.jpg",
+          "sha256": "13e329d0e4d98f40a92533a86299d512575537870e13f04f8800486f7f11ba7d"
+        },
+        {
+          "canvas": 216,
+          "printedPage": 212,
+          "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000637/216/full/!1600,2200/0/default.jpg",
+          "retrievedFileName": "scan-216.jpg",
+          "sha256": "bfc306fe49465c27e621a3e11cd1e74ef53a7a50d9e880663ebfa96139088302"
+        }
+      ]
+    },
+    {
+      "edition": "1428 fourth edition, Abbas Ali al-Zarii al-Sabzawari, vol.2",
+      "printedPages": "107–110",
+      "url": "https://lib.rafed.net/view.php?b_id=3109&page=107&type=c_fbook",
+      "grade": "later edited print digitally presented by Rafed; complete authorial chapter and attached notes read, NOT facsimile or manuscript",
+      "accessNote": "Desktop HTML returns printed pages101–120 together; each div id pgNNN identifies actual printed page. Web open/mobile showed only p101 and was insufficient. Extracted local pages JSON."
+    }
+  ],
+  "chapterBoundaries": {
+    "earlyStart": "printed p210, final two authorial lines beneath Chapter9 heading, continuing on p211",
+    "earlyEnd": "printed p212, immediately before Chapter10 heading",
+    "baseStart": "printed p265, Chapter9 heading",
+    "baseEnd": "printed p266 before Chapter10 heading",
+    "lateStart": "vol2 p107 Chapter9 heading",
+    "lateEnd": "vol2 p110 before Chapter10 at p111",
+    "allBoundariesInspected": true
+  },
+  "coverage": [
+    {
+      "segment": "Opening: matter as subject; matter, form, potency and act",
+      "earlyPages": "210–211",
+      "basePages": "265",
+      "latePages": "107–108",
+      "finding": "Complete authorial argument present; no substantive omission."
+    },
+    {
+      "segment": "Genus/differentia; hierarchical and parallel species; prime and secondary matter",
+      "earlyPages": "211",
+      "basePages": "265",
+      "latePages": "108",
+      "finding": "Complete; distinctions and order retained in English."
+    },
+    {
+      "segment": "Persistence of matter under parallel succession; accidental motion",
+      "earlyPages": "211",
+      "basePages": "265",
+      "latePages": "108",
+      "finding": "English conveys source; later editor separately changes syntax, recorded below."
+    },
+    {
+      "segment": "Hierarchical motion; stripping and clothing versus clothing after clothing",
+      "earlyPages": "211",
+      "basePages": "265",
+      "latePages": "108",
+      "finding": "Both early and base prints retain first-kind reading; later editor explicitly corrects second-kind. Current English former case obscures this."
+    },
+    {
+      "segment": "Intensification; composite subject; matter as accompanying factor",
+      "earlyPages": "211",
+      "basePages": "265",
+      "latePages": "108",
+      "finding": "Full clauses accounted. Current English by itself / alone properly makes the implied contrast explicit."
+    },
+    {
+      "segment": "Single actuality; final differentia retains earlier perfections; detachment from matter",
+      "earlyPages": "211",
+      "basePages": "265–266",
+      "latePages": "108–109",
+      "finding": "Complete. Base quotation punctuation includes final application sentence; later editor closes quotation earlier. Asfar original not independently collated."
+    },
+    {
+      "segment": "First consequence: simple and compound motion, subject changes through completion",
+      "earlyPages": "212",
+      "basePages": "266",
+      "latePages": "109",
+      "finding": "All premises and conclusion present. One stored Arabic missing-space token requires normalization."
+    },
+    {
+      "segment": "Second consequence: rejection of descending motion; human/animal/vegetal example",
+      "earlyPages": "212",
+      "basePages": "266",
+      "latePages": "109",
+      "finding": "Full authorial claim preserved. Later editor corrects pronoun and raises a substantive objection; never merge objection into authorial text."
+    },
+    {
+      "segment": "Apparent weakening as incidental; withering",
+      "earlyPages": "212",
+      "basePages": "266",
+      "latePages": "110",
+      "finding": "Present and translated; editor objection also covers this consequence."
+    },
+    {
+      "segment": "Third consequence: beginning/end; potentially divided limits; quiddity never independently actualized",
+      "earlyPages": "212",
+      "basePages": "266",
+      "latePages": "110",
+      "finding": "All clauses and final sentence present; English accurately distinguishes no indivisible first/last part from having beginning/end."
+    }
+  ],
+  "editorialDecisions": [
+    {
+      "id": "N1428-IX09-REFERENCE-01",
+      "kind": "attributed-later-editor-emendation",
+      "earlyReading": "كما في القسم الأول",
+      "baseReading": "كما في القسم الأوّل",
+      "editedReading": "كما في القسم الثاني",
+      "earlyLocator": "1404 p211, canvas215",
+      "laterLocator": "1428 vol2 p108 note4",
+      "recommendation": "Adopt second kind explicitly as the later editor's correction, preserving both early/base readings in apparatus. Replace old unresolved/conjecture-only note; do not claim the 1404 witness supports الثاني.",
+      "reason": "The two kinds are defined as hierarchical(first) and parallel(second); stripping and replacement belong to second. Editor explicitly reports copies read first."
+    },
+    {
+      "id": "N1428-IX09-SUBJECT-01",
+      "kind": "attributed-later-editor-grammatical-recast",
+      "earlyReading": "هي الموضوع بعينه ما تعاقبت",
+      "baseReading": "هي الموضوع بعينه ما تعاقبت",
+      "editedReading": "هي بعينها موضوع ما تعاقبت",
+      "earlyLocator": "1404 p211, canvas215",
+      "laterLocator": "1428 vol2 p108 note3",
+      "recommendation": "May adopt only as a disclosed editor recast, not necessary for English. Preserve exact early/base reading. Later note quotes copies with تعاقب without final feminine ت, whereas inspected early facsimile and current 1417 digital have تعاقبت.",
+      "reason": "No substantive change in claim: the same matter persists through succeeding forms. Do not misreport later editor's collective copies as a diplomatic description of this specific 1404 witness."
+    },
+    {
+      "id": "N1428-IX09-POTENTIALITY-01",
+      "kind": "attributed-later-editor-pronoun-correction",
+      "earlyReading": "قوّة لقوّته",
+      "baseReading": "قوّةً لقوّته",
+      "editedReading": "قوّة لقوّتها",
+      "earlyLocator": "1404 p212, canvas216",
+      "laterLocator": "1428 vol2 p109 note2, last sentence",
+      "recommendation": "Adopt feminine pronoun with explicit attribution to editor. English already refers to an actuality's own potentiality and needs no conceptual revision.",
+      "reason": "Pronoun refers to فعليّة ما."
+    }
+  ],
+  "englishCorrections": [
+    {
+      "old": "This occurs through putting on a further form after putting on a form, rather than through stripping off and putting on, as in the former case.",
+      "new": "This occurs not by stripping off and putting on, as in the second kind, but by putting on after putting on.",
+      "reason": "Makes the corrected cross-reference explicit and preserves the author's order; use only with disclosed adopted 1428 correction."
+    }
+  ],
+  "arabicNormalizations": [
+    {
+      "old": "الحدّو قوّةُ",
+      "new": "الحدّ وقوّةُ",
+      "reason": "Restore missing word separation; 1404 p212 clearly separates the conjunction and noun."
+    },
+    {
+      "old": "لا حقة",
+      "new": "لاحقة",
+      "reason": "Restore single word; 1404 p211 and later digital both show لاحقة."
+    }
+  ],
+  "analyticalNotes": [
+    {
+      "id": "N1428-IX09-DESCENT-OBJECTION-01",
+      "source": "1428 vol2 pp109–110 note2 and following note1",
+      "kind": "later editor objection, not variant or adopted authorial correction",
+      "summary": "The editor disputes the argument against descending motion. A subject's coexisting potentiality, not its present actuality, can be actualized at a less perfect level. Such decline can therefore still be potentiality becoming actuality. He also questions treating withering merely as incidental motion. Preserve this disagreement alongside the author's argument."
+    },
+    {
+      "id": "N1428-IX09-SUBJECT-OBJECTION-01",
+      "source": "1428 vol2 p107 note2",
+      "kind": "later editor cross-text objection, not variant",
+      "summary": "The editor invokes Bidāya and the author's Asfar gloss: motion as motion need not have a distinct enduring substrate; substantial motion can itself be a self-subsisting fluid substantial actuality. Keep this outside authorial text."
+    }
+  ],
+  "adjacentTargetedFindings": [
+    {
+      "unit": "N-IX-11",
+      "scope": "targeted grammatical comparison only",
+      "base": "أيّ حركة كانت",
+      "later": "أيّة حركة كانت",
+      "source": "1428 vol2 p115 note2",
+      "early": "1404 p215 canvas219 visibly has أيّ حركة كانت",
+      "decision": "Later-editor grammatical correction, not a translation difference. May adopt transparently; no full chapter collation claimed here."
+    },
+    {
+      "unit": "N-IX-12",
+      "scope": "targeted pronoun comparison only",
+      "base": "أبطَأُ منها",
+      "later": "أبطأ منها",
+      "source": "1428 vol2 p119 note1 says copies read منه",
+      "decision": "Current stored 1417 Arabic already has correct منها. No change needed; do not count as newly corrected reading. Early IX12 facsimile not checked."
+    }
+  ],
+  "limits": [
+    "Complete external facsimile comparison is established for IX.9 only.",
+    "1428 complete chapter reading uses digital presentation, not a scanned print.",
+    "No manuscript consulted.",
+    "No independent human specialist sign-off.",
+    "Asfar quoted/paraphrased source not collated.",
+    "Orthography, punctuation and vowel marks not treated as an exhaustive diplomatic apparatus."
+  ],
+  "decisionStatus": "Three explicitly attributed later-editor readings adopted; two spacing normalizations; English reference corrected. Complete comparison applies only to IX.9.",
+  "priorUnresolvedApparatusRecord": {
+    "id": "N1417-IX09-REFERENCE-01",
+    "passageId": "N-IX-09",
+    "type": "Unresolved internal cross-reference · not an attested emendation",
+    "text": "In Chapter IX.9, printed p. 265, the author contrasts (1) longitudinal substantial motion, where matter and the earlier form become the substrate of a later form, with (2) parallel succession, where an enduring matter receives mutually exclusive forms. The text nevertheless says «لا بطريق الخلع واللبس كما في القسم الأول، بل بطريق اللبس بعد اللبس»—'not by stripping off and putting on, as in the first kind, but by putting on after putting on'—inside its account of the FIRST (longitudinal) kind. In light of the immediately preceding distinction and the following 'first/second' conclusions, «القسم الثاني» is a plausible INTERNAL editorial conjecture for «القسم الأول». The 1417 AH printed-digital source itself reads «الأول». No independent 1404/1428 print or manuscript has been checked at this exact phrase in this review. We leave the copied Arabic and the working English unchanged, record the difficulty, and DO NOT treat the conjecture as witnessed or adopted. A future editor must report exact witness readings and any adopted before/after change.",
+    "url": "https://lib.rafed.net/view.php?b_id=1642&page=265&type=c_fbook",
+    "source": "Ṭabāṭabāʾī, Nihāyat al-Ḥikma, Qum 1417 AH digitally transcribed print, p.265; witnessed reading at this stage ONLY in that base digital presentation; additional print collation outstanding",
+    "status": "unresolved internal textual inconsistency; conjecture not adopted; no independent witness attestation",
+    "adoption": "not-adopted",
+    "originalReading": "كما في القسم الأول",
+    "proposedReading": "كما في القسم الثاني",
+    "evidenceGrade": "internal logical argument only; no parallel printed/manuscript attestation in this stage"
+  },
+  "finalArabicSha256": "06da26a5af5f32dfa4e84c8c6bb05447d977e2eb2331f6baa12b635725e5aaf8",
+  "finalEnglishSha256": "506e40faa1a32241096f5e11651e4ebfd85b9042c8a1bee0db4e1a69424a3b25"
+}

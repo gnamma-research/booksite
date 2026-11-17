@@ -1,0 +1,124 @@
+name: Qawtaw10 philological completion and publication
+# Source witness-locator compatibility restored before this run.
+on:
+  push:
+    branches: [qawtaw10-20261112-semantic-source-status]
+    paths:
+      - '.github/workflows/qawtaw10-release.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: qawtaw10-source-preserving-release
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      P: texts/al-turka/qawaid-al-tawhid
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: qawtaw10-20261112-semantic-source-status
+          sparse-checkout: |
+            texts/al-turka/qawaid-al-tawhid
+            assets
+          fetch-depth: 1
+      - name: Record source SHA and apply all fourteen editorial decisions
+        run: |
+          git rev-parse HEAD >/tmp/qawtaw10-expected-head
+          python "$P/qa/qawtaw10_apply.py"
+          python "$P/qa/finalize-reading-edition.py"
+          node "$P/qa/generate-clause-ledger.mjs"
+          node "$P/qa/check-commentary.mjs"
+      - name: Install Arabic PDF and Chromium QA dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core poppler-utils libpango-1.0-0 libpangocairo-1.0-0
+          python -m pip install --quiet weasyprint pypdf playwright
+          python -m playwright install --with-deps chromium
+      - name: Verify real browser navigation and the fourteen-item apparatus
+        run: |
+          python "$P/qa/test-commentary-browser.py"
+          python "$P/qa/check-standalone-browser.py" --browsers chromium --screenshots /tmp/qawtaw10-browser
+          python -m http.server 8778 >/tmp/qawtaw10-http.log 2>&1 &
+          PID=$!
+          trap 'kill "$PID"' EXIT
+          python - <<'PY'
+          import pathlib,json
+          from playwright.sync_api import sync_playwright
+          base='http://127.0.0.1:8778/texts/al-turka/qawaid-al-tawhid/'
+          with sync_playwright() as p:
+            browser=p.chromium.launch(headless=True)
+            page=browser.new_page(viewport={'width':390,'height':844})
+            errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
+            page.goto(base+'textual-decisions.html',wait_until='networkidle')
+            assert page.locator('details.case').count()==14
+            page.select_option('#filter','reading-settled')
+            assert page.locator('details.case:visible').count()==12
+            page.select_option('#filter','witness-crux-open')
+            assert page.locator('details.case:visible').count()==1
+            page.select_option('#filter','unrecovered-lacuna')
+            assert page.locator('details.case:visible').count()==1
+            assert not errors,errors
+            page.goto(base+'commentary.html',wait_until='networkidle')
+            assert page.locator('footer a[href="textual-decisions.html"]').count()==1
+            assert page.locator('#qawtaw5-release').count()==0
+            assert page.locator('#qawtaw7-release').count()==0
+            browser.close()
+          print('14-case filter, navigation and unobstructed commentary reading PASS')
+          PY
+      - name: Generate five source-preserving PDFs
+        run: python "$P/pdf/build_editions.py"
+      - name: Verify Arabic preservation and all PDFs
+        run: |
+          python - <<'PY'
+          import json,pathlib,hashlib,subprocess
+          from pypdf import PdfReader
+          p=pathlib.Path('texts/al-turka/qawaid-al-tawhid')
+          m=json.loads((p/'pdf/manifest.json').read_text());assert len(m['files'])==5
+          for x in m['files']:
+            f=p/'pdf'/x['filename']
+            assert len(PdfReader(str(f)).pages)==x['pages']
+            assert hashlib.sha256(f.read_bytes()).hexdigest()==x['sha256']
+          def js_units(path):
+            import re
+            s=(p/path).read_text()
+            start=s.index('{') if path=='data/units.js' else s.index('.concat(')+len('.concat(') if '.concat(' in s else re.search(r'window\.GNAMMA_\w+\s*=\s*',s).end()
+            o=json.JSONDecoder().raw_decode(s[start:].lstrip())[0]
+            return o['units'] if isinstance(o,dict) else o
+          modules=['data/units.js','data/commentary.js','data/commentary-conclusion.js']+[f'data/commentary-introduction-{i}.js' for i in range(1,5)]+['data/commentary-main-001-019.js','data/commentary-main-020-060.js']
+          baseline={}
+          for name in modules:
+            origin=subprocess.check_output(['git','show','HEAD:'+str(p/name)]).decode()
+            import re
+            start=origin.index('{') if name=='data/units.js' else origin.index('.concat(')+len('.concat(') if '.concat(' in origin else re.search(r'window\.GNAMMA_\w+\s*=\s*',origin).end()
+            o=json.JSONDecoder().raw_decode(origin[start:].lstrip())[0]
+            for u in o['units'] if isinstance(o,dict) else o:
+              baseline[u['id']]=(u['arabic'],u.get('readingArabic',u['arabic']))
+          current={u['id']:(u['arabic'],u.get('readingArabic',u['arabic'])) for name in modules for u in js_units(name)}
+          assert baseline==current
+          r=json.loads((p/'qa/qawtaw10-final-status.json').read_text())
+          assert r['totalCases']==14 and r['semanticOrReadingResolved']==12 and r['unresolvedNegative']==1 and r['unrecoveredAncestralLacuna']==1
+          ledger=json.loads((p/'qa/clause-ledger.json').read_text())['summary']
+          assert ledger['totalArabicPunctuationClauses']==5520 and ledger['totalBilingualUnits']==171
+          print('A/N and H2014 readings byte-preserved; 12 settled readings, 1 unresolved negation, 1 unrecovered lacuna, 5 PDFs and 171 units validated')
+          PY
+      - name: Commit reviewed text and compiled outputs on isolated branch
+        run: |
+          git config user.name 'GNAMMA editorial release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin qawtaw10-20261112-semantic-source-status
+          test "$(git rev-parse origin/qawtaw10-20261112-semantic-source-status)" = "$(cat /tmp/qawtaw10-expected-head)"
+          git add "$P"
+          if ! git diff --cached --quiet; then
+            git commit -m 'Qawtaw10: fourteen adjudications, five revised English clauses and five verified PDFs'
+            git push origin HEAD:qawtaw10-20261112-semantic-source-status
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawtaw10-verified-edition
+          path: texts/al-turka/qawaid-al-tawhid/
+          retention-days: 30

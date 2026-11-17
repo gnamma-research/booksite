@@ -1,0 +1,125 @@
+{
+  "title": "On Knowing the Divine Reality",
+  "title_ar": "رسالة في شرح سبحانك ما عرفناك حق معرفتك",
+  "author": "Quṭb al-Dīn-zāda Muḥammad al-Iznīqī",
+  "edition_id": "IZNIQI-READING-20261111",
+  "date": "2026-11-11",
+  "source": {
+    "editors": [
+      "Muhammet Seyyit Balaban",
+      "Abdulhamid Çalışkan"
+    ],
+    "journal": "İhya",
+    "volume": 9,
+    "issue": 2,
+    "year": 2023,
+    "article_pages": "814–856",
+    "medieval_text_pages": "831–852",
+    "pdf_url": "https://dergipark.org.tr/en/download/article-file/3074106",
+    "doi": "10.5281/zenodo.8126869"
+  },
+  "coverage": {
+    "source_pages": 22,
+    "pages_with_arabic_and_english": 22,
+    "arabic_words": 7968,
+    "english_translation_words": 12379,
+    "editorial_notes": 78,
+    "untranslated_running_text_spans": 0,
+    "manuscript_witnesses_independently_collated": 0
+  },
+  "grade": "Complete single-printed-edition reading translation with explicitly unresolved readings; not an independently manuscript-collated critical edition.",
+  "scope": "All medieval running text, embedded quotations, Arabic and Persian poems; modern editorial introduction, footnotes and bibliography excluded. Modern bibliography begins below the medieval ending on printed p. 852.",
+  "transcription_policy": "Page-image-based Arabic transcription with light orthographic and punctuation normalization; source variants are not silently merged. Supplied or uncertain interpretations are identified in notes. Arabic and English are aligned by source page, not artificially by paragraph.",
+  "quotation_policy": "Quoted words and attributions are translated as transmitted in the treatise. The translation does not independently authenticate every hadith or historical saying.",
+  "supersedes": "IZNIQI_EN_CUMULATIVE_DRAFT_20261109.md (interpretive reconstruction retained in repository as historical draft).",
+  "chunks": [
+    {
+      "file": "text-831-832.md",
+      "first_page": 831,
+      "last_page": 832,
+      "bytes": 14373,
+      "sha256": "f6c390ea163436591938dd2f3070ceb8ce67e48b0069e9b16d012c28517020d7",
+      "git_blob_sha1": "8942b62bc7d3f4fed5015e1fb89e2925ce520e52"
+    },
+    {
+      "file": "text-833-834.md",
+      "first_page": 833,
+      "last_page": 834,
+      "bytes": 15135,
+      "sha256": "2136e024f5dc7e9126a10ec3f79be563f1cbde1f8073af1a8dd9f8202b509f65",
+      "git_blob_sha1": "e1bba06573aa220a8eaa0c23724a903df0780ae1"
+    },
+    {
+      "file": "text-835-836.md",
+      "first_page": 835,
+      "last_page": 836,
+      "bytes": 15142,
+      "sha256": "e4fa95b7278fd046917d10e26918da5731d89ec43e9c845451be33f3bd521e25",
+      "git_blob_sha1": "e9cf56c96fbf7ae4bf0ef45e734a64cee59b4395"
+    },
+    {
+      "file": "text-837-838.md",
+      "first_page": 837,
+      "last_page": 838,
+      "bytes": 15039,
+      "sha256": "d157b0c04e5b2fc8af707cb05fa688e27ebc75b251b02e14ea7400bb090a8f19",
+      "git_blob_sha1": "cfaed10153706a898741575075d0b661de083518"
+    },
+    {
+      "file": "text-839-840.md",
+      "first_page": 839,
+      "last_page": 840,
+      "bytes": 17825,
+      "sha256": "8521cc78d465500b033a2ee7dfd98b5b87f8b553ed45ac0956a97c2f6a5871e2",
+      "git_blob_sha1": "10a8d71b52e0bb72ccaaefe8a63b9b52a58a216e"
+    },
+    {
+      "file": "text-841-842.md",
+      "first_page": 841,
+      "last_page": 842,
+      "bytes": 17888,
+      "sha256": "580a291ece4605a906006cb169c64692ead2e6c203d4f3c0ec4f28dd711abe7c",
+      "git_blob_sha1": "1616f82fc8771c339b77ffa768146bc820b5941e"
+    },
+    {
+      "file": "text-843-844.md",
+      "first_page": 843,
+      "last_page": 844,
+      "bytes": 15893,
+      "sha256": "84acd1c51b192256e831640da78ba75a31194fcbad7737ece35488ae0b586cd2",
+      "git_blob_sha1": "62a3ed71fce8bd589406eb1865dbcc6759198f4d"
+    },
+    {
+      "file": "text-845-846.md",
+      "first_page": 845,
+      "last_page": 846,
+      "bytes": 14771,
+      "sha256": "ed2b326b7bff9d55b9351436a955224e931bbfd7ff4797b737533f3596e48ae7",
+      "git_blob_sha1": "4336cee04547cd8628813a40f6f317ef9e6a8d4c"
+    },
+    {
+      "file": "text-847-848.md",
+      "first_page": 847,
+      "last_page": 848,
+      "bytes": 18857,
+      "sha256": "d14455dfe8f9dc8c0c45213f89956fa7ff6e0c9f85de9c668dbd358e7260a386",
+      "git_blob_sha1": "baac50eb451741cadc23160f135bb7ea0e23cdec"
+    },
+    {
+      "file": "text-849-850.md",
+      "first_page": 849,
+      "last_page": 850,
+      "bytes": 18014,
+      "sha256": "96f10c0cc4ee7536ee8d6e4292a44ab39dccf63ace0bf55f144290257485511a",
+      "git_blob_sha1": "ce4a649ebdeb70924d711e0e53914ce595601a03"
+    },
+    {
+      "file": "text-851-852.md",
+      "first_page": 851,
+      "last_page": 852,
+      "bytes": 14950,
+      "sha256": "625b891b342adb69a0a64bc33d9673503ae121fc090a9b2626ef0d76b4d1b0f9",
+      "git_blob_sha1": "ab2214c167e251b48f60f32718ada24f4b100cc7"
+    }
+  ]
+}

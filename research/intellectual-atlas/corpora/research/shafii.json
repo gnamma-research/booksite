@@ -1,0 +1,3545 @@
+{
+  "metadata": {
+    "title": "Shafi‘i fiqh corpus expansion: distinct works and evidenced textual relationships",
+    "date": "2026-11-10",
+    "scope": "Classical and continuing traditional Shafi‘i substantive law, with connected commentary, gloss, fatwa, pilgrimage and public-law branches.",
+    "method": "Identity and relationship records are checked against named scholarly reference articles and digitized-book catalogues. This is bibliographical verification, not full-text collation of every book. Dates are author death dates only, never inferred composition dates. Unconfirmed and disputed dates remain null. Editions, alternate titles, co-printed works, compilers and continuations are distinguished.",
+    "not_exhaustive": true,
+    "direction": "base work to dependent work",
+    "limitations": [
+      "Bibliographical reference verification is not full-text collation of every book.",
+      "Dates are author death dates, not composition dates. Exact CE years are deliberately absent for disputed, approximate, or partially checked chronology.",
+      "No unsupported composition places, pedagogical chains, or general-influence edges are asserted.",
+      "Two elementary manuals combine doctrine and practical law and are explicitly labelled in their notes.",
+      "Corpus is a substantial connected selection, not an exhaustive bibliography of Shafi‘i fiqh."
+    ],
+    "audit": "Identity and relation audit with dedicated author/work articles, independent manuscript/publisher catalogues and targeted Jordan Iftaa reference passages. Alternate titles and joint printings remain deduplicated. Author-death dates only; uncertain dates left null.",
+    "statistics": {
+      "works": 104,
+      "relations": 77,
+      "sources": 76,
+      "dated_works": 87,
+      "works_with_checked_ah_death": 92
+    },
+    "audit_completed": "2026-11-10"
+  },
+  "works": [
+    {
+      "id": "fiqh_shafii_umm",
+      "title": "al-Umm",
+      "title_ar": "الأم",
+      "author": "Muḥammad b. Idrīs al-Shāfiʿī",
+      "author_death_ah": 204,
+      "author_death_ce": 820,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "foundational compendium",
+      "source_ids": [
+        "SF_school",
+        "SF_waqfeya"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_school"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_mukhtasar_buwayti",
+      "title": "Mukhtaṣar al-Buwayṭī",
+      "title_ar": "مختصر البويطي",
+      "author": "Yūsuf al-Buwayṭī",
+      "author_death_ah": 231,
+      "author_death_ce": 846,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "epitome",
+      "source_ids": [
+        "SF_school",
+        "SF_buwayti"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_buwayti"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_mukhtasar_muzani",
+      "title": "Mukhtaṣar al-Muzanī",
+      "title_ar": "مختصر المزني",
+      "author": "Ismāʿīl al-Muzanī",
+      "author_death_ah": 264,
+      "author_death_ce": 878,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "epitome",
+      "source_ids": [
+        "SF_school",
+        "SF_wajiz"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_wajiz"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_lubab_mahamili",
+      "title": "al-Lubāb",
+      "title_ar": "اللباب",
+      "author": "Aḥmad b. Muḥammad al-Maḥāmilī",
+      "author_death_ah": 415,
+      "author_death_ce": 1024,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "manual",
+      "source_ids": [
+        "SF_school",
+        "SF_waqfeya"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_school"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_hawi_kabir",
+      "title": "al-Ḥāwī al-kabīr",
+      "title_ar": "الحاوي الكبير",
+      "author": "Abū al-Ḥasan al-Māwardī",
+      "author_death_ah": 450,
+      "author_death_ce": 1058,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_school",
+        "SF_wajiz",
+        "SF_mawardi"
+      ],
+      "notes": "Commentary on Mukhtasar al-Muzani; distinct from al-Hawi al-saghir.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_mawardi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_iqna_mawardi",
+      "title": "al-Iqnāʿ",
+      "title_ar": "الإقناع",
+      "author": "Abū al-Ḥasan al-Māwardī",
+      "author_death_ah": 450,
+      "author_death_ce": 1058,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "manual",
+      "source_ids": [
+        "SF_school",
+        "SF_mawardi"
+      ],
+      "notes": "Distinct from al-Shirbini’s commentary with the same short title.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_mawardi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_ahkam_sultaniyya",
+      "title": "al-Aḥkām al-sulṭāniyya",
+      "title_ar": "الأحكام السلطانية",
+      "author": "Abū al-Ḥasan al-Māwardī",
+      "author_death_ah": 450,
+      "author_death_ce": 1058,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "public law",
+      "source_ids": [
+        "SF_mawardi_ahkam",
+        "SF_mawardi"
+      ],
+      "notes": "Public law within fiqh; not the Hanbali work of Abu Ya‘la.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_mawardi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_ta_liqa_husayn",
+      "title": "al-Taʿlīqa",
+      "title_ar": "التعليقة",
+      "author": "Qāḍī Ḥusayn al-Marwarrūdhī",
+      "author_death_ah": 462,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_baghawi",
+        "SF_husayn_text"
+      ],
+      "notes": "Qadi Husayn’s work; distinguish other works called al-Ta‘liqa.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "author_death_note": "Author death is given as 462 AH; no exact CE date imposed from an approximate conversion."
+    },
+    {
+      "id": "fiqh_shafii_ta_liqa_isfarayini",
+      "title": "al-Taʿlīqa al-kubrā",
+      "title_ar": "التعليقة الكبرى",
+      "author": "Abū Ḥāmid al-Isfarāyīnī",
+      "author_death_ah": 406,
+      "author_death_ce": 1016,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_tanbih",
+        "SF_isfarayini"
+      ],
+      "notes": "A reported commentary on Mukhtasar al-Muzani and source of al-Tanbih.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_isfarayini"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_muhadhdhab",
+      "title": "al-Muhadhdhab",
+      "title_ar": "المهذب",
+      "author": "Abū Isḥāq al-Shīrāzī",
+      "author_death_ah": 476,
+      "author_death_ce": 1083,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "manual",
+      "source_ids": [
+        "SF_muhadhdhab"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_muhadhdhab"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_tanbih",
+      "title": "al-Tanbīh",
+      "title_ar": "التنبيه",
+      "author": "Abū Isḥāq al-Shīrāzī",
+      "author_death_ah": 476,
+      "author_death_ce": 1083,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "manual",
+      "source_ids": [
+        "SF_tanbih",
+        "SF_muhadhdhab"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_muhadhdhab"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_nihayat_matlab",
+      "title": "Nihāyat al-maṭlab fī dirāyat al-madhhab",
+      "title_ar": "نهاية المطلب في دراية المذهب",
+      "author": "Imām al-Ḥaramayn al-Juwaynī",
+      "author_death_ah": 478,
+      "author_death_ce": 1085,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_school",
+        "SF_wajiz",
+        "SF_juwayni"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_juwayni"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_basit",
+      "title": "al-Basīṭ",
+      "title_ar": "البسيط",
+      "author": "Abū Ḥāmid al-Ghazālī",
+      "author_death_ah": 505,
+      "author_death_ce": 1111,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "epitome",
+      "source_ids": [
+        "SF_wajiz"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_wajiz"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_wasit",
+      "title": "al-Wasīṭ",
+      "title_ar": "الوسيط",
+      "author": "Abū Ḥāmid al-Ghazālī",
+      "author_death_ah": 505,
+      "author_death_ce": 1111,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "epitome",
+      "source_ids": [
+        "SF_wajiz"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_wajiz"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_wajiz",
+      "title": "al-Wajīz",
+      "title_ar": "الوجيز",
+      "author": "Abū Ḥāmid al-Ghazālī",
+      "author_death_ah": 505,
+      "author_death_ce": 1111,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "epitome",
+      "source_ids": [
+        "SF_wajiz"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_wajiz"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_khulasat_mukhtasar",
+      "title": "Khulāṣat al-Mukhtaṣar wa-nuqāwat al-muʿtaṣar",
+      "title_ar": "خلاصة المختصر ونقاوة المعتصر",
+      "author": "Abū Ḥāmid al-Ghazālī",
+      "author_death_ah": 505,
+      "author_death_ce": 1111,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "epitome",
+      "source_ids": [
+        "SF_school",
+        "SF_wajiz"
+      ],
+      "notes": "An epitome of al-Muzani’s Mukhtasar; not automatically a fourth abridgment of al-Wajiz.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_wajiz"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_bahr_madhhab",
+      "title": "Baḥr al-madhhab",
+      "title_ar": "بحر المذهب",
+      "author": "ʿAbd al-Wāḥid al-Rūyānī",
+      "author_death_ah": 502,
+      "author_death_ce": 1108,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "compendium",
+      "source_ids": [
+        "SF_ruyani",
+        "SF_waqfeya_bahr"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ruyani"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_tahdhib_baghawi",
+      "title": "al-Tahdhīb fī fiqh al-Imām al-Shāfiʿī",
+      "title_ar": "التهذيب في فقه الإمام الشافعي",
+      "author": "al-Ḥusayn b. Masʿūd al-Baghawī",
+      "author_death_ah": 516,
+      "author_death_ce": 1122,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "manual",
+      "source_ids": [
+        "SF_baghawi",
+        "SF_waqfeya_tahdhib"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_baghawi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_bayan_imrani",
+      "title": "al-Bayān fī madhhab al-Imām al-Shāfiʿī",
+      "title_ar": "البيان في مذهب الإمام الشافعي",
+      "author": "Yaḥyā b. Abī al-Khayr al-ʿImrānī",
+      "author_death_ah": 558,
+      "author_death_ce": 1163,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_muhadhdhab",
+        "SF_imrani"
+      ],
+      "notes": "Expansive commentary in substance on al-Muhadhdhab, not a line-by-line gloss.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_imrani"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_aziz",
+      "title": "al-ʿAzīz sharḥ al-Wajīz",
+      "title_ar": "العزيز شرح الوجيز",
+      "author": "ʿAbd al-Karīm al-Rāfiʿī",
+      "author_death_ah": 623,
+      "author_death_ce": 1226,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_wajiz"
+      ],
+      "notes": "Also Fath al-‘aziz and al-Sharh al-kabir; one work, not three.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_wajiz"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_muharrar",
+      "title": "al-Muḥarrar",
+      "title_ar": "المحرر",
+      "author": "ʿAbd al-Karīm al-Rāfiʿī",
+      "author_death_ah": 623,
+      "author_death_ce": 1226,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "manual",
+      "source_ids": [
+        "SF_wajiz",
+        "SF_minhaj",
+        "SF_waqfeya"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_wajiz"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_rawdat_talibin",
+      "title": "Rawḍat al-ṭālibīn wa-ʿumdat al-muftīn",
+      "title_ar": "روضة الطالبين وعمدة المفتين",
+      "author": "Yaḥyā b. Sharaf al-Nawawī",
+      "author_death_ah": 676,
+      "author_death_ce": 1277,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "epitome",
+      "source_ids": [
+        "SF_school",
+        "SF_wajiz",
+        "SF_nawawi"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_nawawi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_minhaj_talibin",
+      "title": "Minhāj al-ṭālibīn",
+      "title_ar": "منهاج الطالبين",
+      "author": "Yaḥyā b. Sharaf al-Nawawī",
+      "author_death_ah": 676,
+      "author_death_ce": 1277,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "epitome",
+      "source_ids": [
+        "SF_school",
+        "SF_minhaj",
+        "SF_nawawi"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_nawawi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_majmu",
+      "title": "al-Majmūʿ sharḥ al-Muhadhdhab",
+      "title_ar": "المجموع شرح المهذب",
+      "author": "Yaḥyā b. Sharaf al-Nawawī",
+      "author_death_ah": 676,
+      "author_death_ce": 1277,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_muhadhdhab",
+        "SF_nawawi"
+      ],
+      "notes": "Nawawi left it unfinished; later continuations must be identified, not silently attributed to him.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_nawawi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_daqaiq_minhaj",
+      "title": "Daqāʾiq al-Minhāj",
+      "title_ar": "دقائق المنهاج",
+      "author": "Yaḥyā b. Sharaf al-Nawawī",
+      "author_death_ah": 676,
+      "author_death_ce": 1277,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "authorial elucidation",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_nawawi"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_nawawi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_tashih_tanbih",
+      "title": "Taṣḥīḥ al-Tanbīh",
+      "title_ar": "تصحيح التنبيه",
+      "author": "Yaḥyā b. Sharaf al-Nawawī",
+      "author_death_ah": 676,
+      "author_death_ce": 1277,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "correction",
+      "source_ids": [
+        "SF_tanbih",
+        "SF_nawawi"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_nawawi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_tahqiq_nawawi",
+      "title": "al-Taḥqīq",
+      "title_ar": "التحقيق",
+      "author": "Yaḥyā b. Sharaf al-Nawawī",
+      "author_death_ah": 676,
+      "author_death_ce": 1277,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "manual",
+      "source_ids": [
+        "SF_nawawi"
+      ],
+      "notes": "Unfinished work, not a complete comprehensive manual.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_nawawi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_idah_manasik",
+      "title": "al-Īḍāḥ fī manāsik al-ḥajj",
+      "title_ar": "الإيضاح في مناسك الحج",
+      "author": "Yaḥyā b. Sharaf al-Nawawī",
+      "author_death_ah": 676,
+      "author_death_ce": 1277,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "pilgrimage law",
+      "source_ids": [
+        "SF_nawawi"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_nawawi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_fatawa_nawawi",
+      "title": "al-Manthūrāt wa-ʿuyūn al-masāʾil al-muhimmāt",
+      "title_ar": "المنثورات وعيون المسائل المهمات",
+      "author": "Yaḥyā b. Sharaf al-Nawawī",
+      "author_death_ah": 676,
+      "author_death_ce": 1277,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "SF_nawawi"
+      ],
+      "notes": "Also Fatawa al-Nawawi; collected by his pupil Ibn al-‘Attar.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_nawawi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_kifayat_nabih",
+      "title": "Kifāyat al-nabīh sharḥ al-Tanbīh",
+      "title_ar": "كفاية النبيه شرح التنبيه",
+      "author": "Najm al-Dīn Ibn al-Rifʿa",
+      "author_death_ah": 710,
+      "author_death_ce": 1310,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_rifa",
+        "SF_tanbih",
+        "SF_waqfeya_kifaya"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_rifa"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_tashil_hidaya",
+      "title": "Tashīl al-hidāya wa-taḥṣīl al-Kifāya",
+      "title_ar": "تسهيل الهداية وتحصيل الكفاية",
+      "author": "Aḥmad b. Luʾluʾ Ibn al-Naqīb al-Miṣrī",
+      "author_death_ah": 769,
+      "author_death_ce": 1368,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "epitome",
+      "source_ids": [
+        "SF_naqib"
+      ],
+      "notes": "Abridgment of Ibn al-Rif‘a’s commentary.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_naqib"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_umdat_salik",
+      "title": "ʿUmdat al-sālik wa-ʿuddat al-nāsik",
+      "title_ar": "عمدة السالك وعدة الناسك",
+      "author": "Aḥmad b. Luʾluʾ Ibn al-Naqīb al-Miṣrī",
+      "author_death_ah": 769,
+      "author_death_ce": 1368,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "manual",
+      "source_ids": [
+        "SF_naqib"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_naqib"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_siraj_nukat",
+      "title": "al-Sirāj fī nukat al-Minhāj",
+      "title_ar": "السراج في نكت المنهاج",
+      "author": "Aḥmad b. Luʾluʾ Ibn al-Naqīb al-Miṣrī",
+      "author_death_ah": 769,
+      "author_death_ce": 1368,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_naqib",
+        "SF_minhaj"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_naqib"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_hawi_saghir",
+      "title": "al-Ḥāwī al-ṣaghīr",
+      "title_ar": "الحاوي الصغير",
+      "author": "ʿAbd al-Ghaffār al-Qazwīnī",
+      "author_death_ah": 665,
+      "author_death_ce": 1266,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "manual",
+      "source_ids": [
+        "SF_hawi_saghir"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_hawi_saghir"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_bahja_wardiyya",
+      "title": "al-Bahja al-Wardiyya",
+      "title_ar": "البهجة الوردية",
+      "author": "Zayn al-Dīn Ibn al-Wardī",
+      "author_death_ah": 749,
+      "author_death_ce": 1349,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "verse epitome",
+      "source_ids": [
+        "SF_hawi_saghir",
+        "SF_school",
+        "SF_ibnwardi"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ibnwardi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_irshad_ghawi",
+      "title": "Irshād al-ghāwī fī masālik al-Ḥāwī",
+      "title_ar": "إرشاد الغاوي في مسالك الحاوي",
+      "author": "Ismāʿīl Ibn al-Muqriʾ al-Yamanī",
+      "author_death_ah": 837,
+      "author_death_ce": 1433,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "epitome",
+      "source_ids": [
+        "SF_hawi_saghir",
+        "SF_school",
+        "SF_ibnmuqri"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ibnmuqri"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_ikhlas_nawi",
+      "title": "Ikhlāṣ al-nāwī fī Irshād al-ghāwī",
+      "title_ar": "إخلاص الناوي في إرشاد الغاوي",
+      "author": "Ismāʿīl Ibn al-Muqriʾ al-Yamanī",
+      "author_death_ah": 837,
+      "author_death_ce": 1433,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_hawi_saghir",
+        "SF_school",
+        "SF_ibnmuqri"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ibnmuqri"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_fath_jawad",
+      "title": "Fatḥ al-Jawād bi-sharḥ al-Irshād",
+      "title_ar": "فتح الجواد بشرح الإرشاد",
+      "author": "Ibn Ḥajar al-Haytamī",
+      "author_death_ah": 974,
+      "author_death_ce": 1567,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_hawi_saghir",
+        "SF_haytami"
+      ],
+      "notes": "Do not infer its relative length from conflicting secondary notices.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_haytami"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_imdad_irshad",
+      "title": "al-Imdād bi-sharḥ al-Irshād",
+      "title_ar": "الإمداد بشرح الإرشاد",
+      "author": "Ibn Ḥajar al-Haytamī",
+      "author_death_ah": 974,
+      "author_death_ce": 1567,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_hawi_saghir",
+        "SF_haytami"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_haytami"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_ghurar_bahiyya",
+      "title": "al-Ghurar al-bahiyya fī sharḥ al-Bahja al-Wardiyya",
+      "title_ar": "الغرر البهية في شرح البهجة الوردية",
+      "author": "Zakariyyā al-Anṣārī",
+      "author_death_ah": 926,
+      "author_death_ce": 1520,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_hawi_saghir",
+        "SF_ansari"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ansari"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_bahja_mardiyya",
+      "title": "al-Bahja al-marḍiyya sharḥ al-Bahja al-Wardiyya",
+      "title_ar": "البهجة المرضية شرح البهجة الوردية",
+      "author": "Abū Zurʿa Walī al-Dīn Ibn al-ʿIrāqī",
+      "author_death_ah": 826,
+      "author_death_ce": 1423,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_hawi_saghir",
+        "SF_school",
+        "SF_ibniraqi"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ibniraqi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_rawd_talib",
+      "title": "Rawḍ al-ṭālib",
+      "title_ar": "روض الطالب",
+      "author": "Ismāʿīl Ibn al-Muqriʾ al-Yamanī",
+      "author_death_ah": 837,
+      "author_death_ce": 1433,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "epitome",
+      "source_ids": [
+        "SF_school",
+        "SF_ansari",
+        "SF_ibnmuqri",
+        "SF_jordan"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ibnmuqri"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_asna_matalib",
+      "title": "Asnā al-maṭālib fī sharḥ Rawḍ al-ṭālib",
+      "title_ar": "أسنى المطالب في شرح روض الطالب",
+      "author": "Zakariyyā al-Anṣārī",
+      "author_death_ah": 926,
+      "author_death_ce": 1520,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_ansari",
+        "SF_school",
+        "SF_waqfeya_asna",
+        "SF_jordan"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ansari"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_hashiyat_ramli_asna",
+      "title": "Ḥāshiyat al-Ramlī ʿalā Asnā al-maṭālib",
+      "title_ar": "حاشية الرملي على أسنى المطالب",
+      "author": "Shihāb al-Dīn Aḥmad al-Ramlī",
+      "author_death_ah": 957,
+      "author_death_ce": 1550,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "SF_ramli_father",
+        "SF_waqfeya_asna",
+        "SF_jordan"
+      ],
+      "notes": "Shawbari extracted these marginalia; that extraction is not an extra independent work here.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ramli_father"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_ubab_muhit",
+      "title": "al-ʿUbāb al-muḥīṭ bi-muʿẓam nuṣūṣ al-Shāfiʿī wa-l-aṣḥāb",
+      "title_ar": "العباب المحيط بمعظم نصوص الشافعي والأصحاب",
+      "author": "Ṣafī al-Dīn Aḥmad b. ʿUmar al-Muzajjad al-Zabīdī",
+      "author_death_ah": 930,
+      "author_death_ce": 1524,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "epitome",
+      "source_ids": [
+        "SF_school",
+        "SF_muzajjid_bio",
+        "SF_jordan"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_muzajjid_bio"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_muhimmat_isnawi",
+      "title": "al-Muhimmāt fī sharḥ al-Rawḍa wa-l-Rāfiʿī",
+      "title_ar": "المهمات في شرح الروضة والرافعي",
+      "author": "Jamāl al-Dīn al-Isnawī",
+      "author_death_ah": 772,
+      "author_death_ce": 1370,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "critical commentary",
+      "source_ids": [
+        "SF_school",
+        "SF_waqfeya",
+        "SF_isnawi"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_isnawi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_khadim_rawda",
+      "title": "Khādim al-Rāfiʿī wa-l-Rawḍa",
+      "title_ar": "خادم الرافعي والروضة",
+      "author": "Badr al-Dīn al-Zarkashī",
+      "author_death_ah": 794,
+      "author_death_ce": 1392,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "critical commentary",
+      "source_ids": [
+        "SF_school",
+        "SF_zarkashi"
+      ],
+      "notes": "Also shortened to Khadim al-Rawda; comments on al-Rafi‘i’s al-‘Aziz and al-Nawawi’s Rawdat al-talibin.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_zarkashi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_kanz_raghibin",
+      "title": "Kanz al-rāghibīn fī sharḥ Minhāj al-ṭālibīn",
+      "title_ar": "كنز الراغبين في شرح منهاج الطالبين",
+      "author": "Jalāl al-Dīn al-Maḥallī",
+      "author_death_ah": 864,
+      "author_death_ce": 1459,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_waqfeya",
+        "SF_mahalli",
+        "SF_jordan"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_mahalli"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_tuhfat_muhtaj",
+      "title": "Tuḥfat al-muḥtāj bi-sharḥ al-Minhāj",
+      "title_ar": "تحفة المحتاج بشرح المنهاج",
+      "author": "Ibn Ḥajar al-Haytamī",
+      "author_death_ah": 974,
+      "author_death_ce": 1567,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_haytami"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_haytami"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_mughni_muhtaj",
+      "title": "Mughnī al-muḥtāj ilā maʿrifat maʿānī alfāẓ al-Minhāj",
+      "title_ar": "مغني المحتاج إلى معرفة معاني ألفاظ المنهاج",
+      "author": "al-Khaṭīb al-Shirbīnī",
+      "author_death_ah": 977,
+      "author_death_ce": 1570,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_sharbini",
+        "SF_waqfeya"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_sharbini"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_nihayat_muhtaj",
+      "title": "Nihāyat al-muḥtāj ilā sharḥ al-Minhāj",
+      "title_ar": "نهاية المحتاج إلى شرح المنهاج",
+      "author": "Shams al-Dīn Muḥammad al-Ramlī",
+      "author_death_ah": 1004,
+      "author_death_ce": 1596,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_ramli_son"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ramli_son"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_ujalat_muhtaj",
+      "title": "ʿUjālat al-muḥtāj ilā tawjīh al-Minhāj",
+      "title_ar": "عجالة المحتاج إلى توجيه المنهاج",
+      "author": "Sirāj al-Dīn Ibn al-Mulaqqin",
+      "author_death_ah": 804,
+      "author_death_ce": 1401,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_waqfeya",
+        "SF_mulqin"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_mulqin"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_umdat_muhtaj",
+      "title": "ʿUmdat al-muḥtāj ilā Kitāb al-Minhāj",
+      "title_ar": "عمدة المحتاج إلى كتاب المنهاج",
+      "author": "Sirāj al-Dīn Ibn al-Mulaqqin",
+      "author_death_ah": 804,
+      "author_death_ce": 1401,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_mulqin"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_mulqin"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_qut_muhtaj",
+      "title": "Qūt al-muḥtāj",
+      "title_ar": "قوت المحتاج",
+      "author": "Shihāb al-Dīn al-Adhraʿī",
+      "author_death_ah": 783,
+      "author_death_ce": 1381,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_adhrai"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_adhrai"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_najm_wahhaj",
+      "title": "al-Najm al-wahhāj fī sharḥ al-Minhāj",
+      "title_ar": "النجم الوهاج في شرح المنهاج",
+      "author": "Kamāl al-Dīn al-Damīrī",
+      "author_death_ah": 808,
+      "author_death_ce": 1405,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_damiri"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_damiri"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_bidayat_muhtaj",
+      "title": "Bidāyat al-muḥtāj fī sharḥ al-Minhāj",
+      "title_ar": "بداية المحتاج في شرح المنهاج",
+      "author": "Badr al-Dīn Muḥammad Ibn Qāḍī Shuhba",
+      "author_death_ah": 874,
+      "author_death_ce": 1469,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_waqfeya",
+        "SF_qadishuhba_bio"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_qadishuhba_bio"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_hashiyat_qalyubi",
+      "title": "Ḥāshiyat al-Qalyūbī ʿalā Kanz al-rāghibīn",
+      "title_ar": "حاشية القليوبي على كنز الراغبين",
+      "author": "Aḥmad al-Qalyūbī",
+      "author_death_ah": 1069,
+      "author_death_ce": 1659,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_waqfeya_hash",
+        "SF_qalyubi",
+        "SF_jordan"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_qalyubi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_hashiyat_umayra",
+      "title": "Ḥāshiyat ʿUmayra ʿalā Kanz al-rāghibīn",
+      "title_ar": "حاشية عميرة على كنز الراغبين",
+      "author": "Aḥmad al-Burullusī ʿUmayra",
+      "author_death_ah": 957,
+      "author_death_ce": 1550,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_waqfeya_hash",
+        "SF_umayra_bio",
+        "SF_jordan"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_umayra_bio"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_hashiyat_abbadi_tuhfa",
+      "title": "Ḥāshiyat Ibn Qāsim al-ʿAbbādī ʿalā Tuḥfat al-muḥtāj",
+      "title_ar": "حاشية ابن قاسم العبادي على تحفة المحتاج",
+      "author": "Aḥmad Ibn Qāsim al-ʿAbbādī",
+      "author_death_ah": 994,
+      "author_death_ce": 1586,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_haytami",
+        "SF_abbadi"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_abbadi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_hashiyat_shirwani",
+      "title": "Ḥāshiyat al-Shirwānī ʿalā Tuḥfat al-muḥtāj",
+      "title_ar": "حاشية الشرواني على تحفة المحتاج",
+      "author": "ʿAbd al-Ḥamīd al-Shirwānī",
+      "author_death_ah": 1301,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_haytami",
+        "SF_shirwani_bio"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "author_death_note": "Catalogue gives 1301 AH / 1883 CE; no independent day-level verification performed, so exact CE year left unset."
+    },
+    {
+      "id": "fiqh_shafii_hashiyat_shabramallisi",
+      "title": "Ḥāshiyat al-Shabramallisī ʿalā Nihāyat al-muḥtāj",
+      "title_ar": "حاشية الشبراملسي على نهاية المحتاج",
+      "author": "Nūr al-Dīn al-Shabramallisī",
+      "author_death_ah": 1087,
+      "author_death_ce": 1676,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_ramli_son",
+        "SF_shabramallisi_bio",
+        "SF_jordan"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_shabramallisi_bio"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_hashiyat_rashidi",
+      "title": "Ḥāshiyat al-Rashīdī ʿalā Nihāyat al-muḥtāj",
+      "title_ar": "حاشية الرشيدي على نهاية المحتاج",
+      "author": "Aḥmad b. ʿAbd al-Razzāq al-Rashīdī",
+      "author_death_ah": 1096,
+      "author_death_ce": 1685,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_ramli_son",
+        "SF_rashidi_bio",
+        "SF_jordan"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_rashidi_bio"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_manhaj_tullab",
+      "title": "Manhaj al-ṭullāb",
+      "title_ar": "منهج الطلاب",
+      "author": "Zakariyyā al-Anṣārī",
+      "author_death_ah": 926,
+      "author_death_ce": 1520,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "epitome",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_ansari"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ansari"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_fath_wahhab",
+      "title": "Fatḥ al-Wahhāb bi-sharḥ Manhaj al-ṭullāb",
+      "title_ar": "فتح الوهاب بشرح منهج الطلاب",
+      "author": "Zakariyyā al-Anṣārī",
+      "author_death_ah": 926,
+      "author_death_ce": 1520,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_minhaj",
+        "SF_ansari"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ansari"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_futuhat_wahhab",
+      "title": "Futūḥāt al-Wahhāb bi-tawḍīḥ Sharḥ Manhaj al-ṭullāb",
+      "title_ar": "فتوحات الوهاب بتوضيح شرح منهج الطلاب",
+      "author": "Sulaymān al-Jamal",
+      "author_death_ah": 1204,
+      "author_death_ce": 1790,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "SF_ansari",
+        "SF_jamal"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_jamal"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_tajrid_bujayrimi",
+      "title": "al-Tajrīd li-nafʿ al-ʿabīd",
+      "title_ar": "التجريد لنفع العبيد",
+      "author": "Sulaymān al-Bujayrimī",
+      "author_death_ah": 1221,
+      "author_death_ce": 1806,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "SF_ansari",
+        "SF_waqfeya_bujayrimi",
+        "SF_bujayrimi_bio"
+      ],
+      "notes": "Also Hashiyat al-Bujayrimi ‘ala sharh al-Manhaj.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_bujayrimi_bio"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_tanqih_lubab",
+      "title": "Tanqīḥ al-Lubāb",
+      "title_ar": "تنقيح اللباب",
+      "author": "Abū Zurʿa Walī al-Dīn Ibn al-ʿIrāqī",
+      "author_death_ah": 826,
+      "author_death_ce": 1423,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "epitome",
+      "source_ids": [
+        "SF_school",
+        "SF_ansari",
+        "SF_ibniraqi"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ibniraqi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_tahrir_tanqih_lubab",
+      "title": "Taḥrīr Tanqīḥ al-Lubāb",
+      "title_ar": "تحرير تنقيح اللباب",
+      "author": "Zakariyyā al-Anṣārī",
+      "author_death_ah": 926,
+      "author_death_ce": 1520,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "epitome",
+      "source_ids": [
+        "SF_school",
+        "SF_ansari"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ansari"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_tuhfat_tullab",
+      "title": "Tuḥfat al-ṭullāb bi-sharḥ Taḥrīr Tanqīḥ al-Lubāb",
+      "title_ar": "تحفة الطلاب بشرح تحرير تنقيح اللباب",
+      "author": "Zakariyyā al-Anṣārī",
+      "author_death_ah": 926,
+      "author_death_ce": 1520,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_ansari"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ansari"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_hashiyat_sharqawi",
+      "title": "Ḥāshiyat al-Sharqāwī ʿalā Tuḥfat al-ṭullāb",
+      "title_ar": "حاشية الشرقاوي على تحفة الطلاب",
+      "author": "ʿAbd Allāh al-Sharqāwī",
+      "author_death_ah": 1227,
+      "author_death_ce": 1812,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "SF_ansari",
+        "SF_sharqawi"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_sharqawi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_ghayat_ikhtisar",
+      "title": "Ghāyat al-ikhtiṣār (Matn Abī Shujāʿ)",
+      "title_ar": "غاية الاختصار (متن أبي شجاع)",
+      "author": "Abū Shujāʿ al-Iṣfahānī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "manual",
+      "source_ids": [
+        "SF_abu_shuja"
+      ],
+      "notes": "Also al-Taqrib and al-Mukhtasar. Author death uncertain; source gives after 500 AH, not a fixed date.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "author_death_note": "TDV gives death after 500 AH, without an exact year."
+    },
+    {
+      "id": "fiqh_shafii_tuhfat_labib",
+      "title": "Tuḥfat al-labīb fī sharḥ al-Taqrīb",
+      "title_ar": "تحفة اللبيب في شرح التقريب",
+      "author": "Ibn Daqīq al-ʿĪd",
+      "author_death_ah": 702,
+      "author_death_ce": 1302,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_abu_shuja",
+        "SF_daqiq"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_daqiq"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_kifayat_akhyar",
+      "title": "Kifāyat al-akhyār fī ḥall Ghāyat al-ikhtiṣār",
+      "title_ar": "كفاية الأخيار في حل غاية الاختصار",
+      "author": "Taqī al-Dīn al-Ḥiṣnī",
+      "author_death_ah": 829,
+      "author_death_ce": 1426,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_abu_shuja",
+        "SF_waqfeya",
+        "SF_hisni"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_hisni"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_fath_qarib",
+      "title": "Fatḥ al-qarīb al-mujīb fī sharḥ alfāẓ al-Taqrīb",
+      "title_ar": "فتح القريب المجيب في شرح ألفاظ التقريب",
+      "author": "Muḥammad Ibn Qāsim al-Ghazzī",
+      "author_death_ah": 918,
+      "author_death_ce": 1512,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_abu_shuja",
+        "SF_waqfeya",
+        "SF_ghazzi"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ghazzi"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_iqna_shirbini",
+      "title": "al-Iqnāʿ fī ḥall alfāẓ Abī Shujāʿ",
+      "title_ar": "الإقناع في حل ألفاظ أبي شجاع",
+      "author": "al-Khaṭīb al-Shirbīnī",
+      "author_death_ah": 977,
+      "author_death_ce": 1570,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_abu_shuja",
+        "SF_sharbini"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_sharbini"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_hashiyat_bajuri",
+      "title": "Ḥāshiyat al-Bājūrī ʿalā sharḥ Ibn Qāsim al-Ghazzī",
+      "title_ar": "حاشية الباجوري على شرح ابن قاسم الغزي",
+      "author": "Ibrāhīm al-Bājūrī",
+      "author_death_ah": 1277,
+      "author_death_ce": 1860,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "SF_abu_shuja",
+        "SF_bajuri",
+        "SF_jordan"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_bajuri"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_tuhfat_habib",
+      "title": "Tuḥfat al-ḥabīb ʿalā sharḥ al-Khaṭīb",
+      "title_ar": "تحفة الحبيب على شرح الخطيب",
+      "author": "Sulaymān al-Bujayrimī",
+      "author_death_ah": 1221,
+      "author_death_ce": 1806,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "SF_abu_shuja",
+        "SF_sharbini",
+        "SF_waqfeya",
+        "SF_ansari",
+        "SF_bujayrimi_bio"
+      ],
+      "notes": "Distinct from al-Bujayrimi’s gloss on Fath al-Wahhab.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_bujayrimi_bio"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_nihayat_tadrib",
+      "title": "Nihāyat al-tadrīb fī naẓm al-Taqrīb",
+      "title_ar": "نهاية التدريب في نظم التقريب",
+      "author": "Yaḥyā al-ʿImrīṭī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "verse rendering",
+      "source_ids": [
+        "SF_abu_shuja"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null
+    },
+    {
+      "id": "fiqh_shafii_safwat_zubad",
+      "title": "Ṣafwat al-zubad",
+      "title_ar": "صفوة الزبد",
+      "author": "Aḥmad b. Ḥusayn Ibn Raslān al-Ramlī",
+      "author_death_ah": 844,
+      "author_death_ce": 1441,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "verse manual",
+      "source_ids": [
+        "SF_ramli_son",
+        "SF_ramli_father",
+        "SF_ibnraslan"
+      ],
+      "notes": "Also al-Zubad; distinguish this author from both later Ramli jurists.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ibnraslan"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_fath_rahman_zubad",
+      "title": "Fatḥ al-Raḥmān bi-sharḥ Zubad Ibn Raslān",
+      "title_ar": "فتح الرحمن بشرح زبد ابن رسلان",
+      "author": "Shihāb al-Dīn Aḥmad al-Ramlī",
+      "author_death_ah": 957,
+      "author_death_ce": 1550,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_ramli_father",
+        "SF_waqfeya"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ramli_father"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_ghayat_bayan",
+      "title": "Ghāyat al-bayān fī sharḥ Zubad Ibn Raslān",
+      "title_ar": "غاية البيان في شرح زبد ابن رسلان",
+      "author": "Shams al-Dīn Muḥammad al-Ramlī",
+      "author_death_ah": 1004,
+      "author_death_ce": 1596,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_ramli_son"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ramli_son"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_mawahib_samad",
+      "title": "Mawāhib al-Ṣamad fī ḥall alfāẓ al-Zubad",
+      "title_ar": "مواهب الصمد في حل ألفاظ الزبد",
+      "author": "Aḥmad b. Ḥijāzī al-Fashnī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_ramli_son",
+        "SF_fashni_bio"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "author_death_note": "Al-Raqq al-Manshur marks 978 AH / 1570 CE as approximate. Exact year fields remain unset."
+    },
+    {
+      "id": "fiqh_shafii_muqaddima_hadramiyya",
+      "title": "al-Muqaddima al-Ḥaḍramiyya",
+      "title_ar": "المقدمة الحضرمية",
+      "author": "ʿAbd Allāh b. ʿAbd al-Raḥmān Bā Faḍl al-Ḥaḍramī",
+      "author_death_ah": 918,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "manual",
+      "source_ids": [
+        "SF_haytami",
+        "SF_ramli_son",
+        "SF_manhaj_publisher",
+        "SF_jordan",
+        "SF_bafadl_catalogue"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "author_death_note": "Catalogue gives 918 AH / 1512 CE, while other catalogues give 1512 or 1513. Exact CE year left unset."
+    },
+    {
+      "id": "fiqh_shafii_minhaj_qawim",
+      "title": "al-Manhaj al-qawīm bi-sharḥ Masāʾil al-taʿlīm",
+      "title_ar": "المنهج القويم بشرح مسائل التعليم",
+      "author": "Ibn Ḥajar al-Haytamī",
+      "author_death_ah": 974,
+      "author_death_ce": 1567,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_haytami",
+        "SF_waqfeya",
+        "SF_manhaj_publisher",
+        "SF_jordan"
+      ],
+      "notes": "Also catalogued as al-Minhaj al-qawim. The published Arabic title uses al-Manhaj; one work, not separate records for the spelling variants.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_haytami"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_hawashi_madaniyya",
+      "title": "al-Ḥawāshī al-Madaniyya",
+      "title_ar": "الحواشي المدنية",
+      "author": "Muḥammad b. Sulaymān al-Kurdī",
+      "author_death_ah": 1194,
+      "author_death_ce": 1780,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "SF_haytami",
+        "SF_jordan",
+        "SF_kurdi_bio"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_kurdi_bio"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_mawhibat_fadl",
+      "title": "Mawhibat dhī al-faḍl ʿalā sharḥ Muqaddimat Bā Faḍl",
+      "title_ar": "موهبة ذي الفضل على شرح مقدمة بافضل",
+      "author": "Muḥammad Maḥfūẓ al-Tarmasī",
+      "author_death_ah": 1338,
+      "author_death_ce": 1920,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "SF_haytami",
+        "SF_mahfuz",
+        "SF_copenhagen_mawhiba",
+        "SF_jordan"
+      ],
+      "notes": "Title and author corroborated by the University of Copenhagen manuscript catalogue and the dedicated TDV Mahfuz article; a gloss on al-Manhaj al-qawim.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_mahfuz"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_qurrat_ayn",
+      "title": "Qurrat al-ʿayn bi-muhimmāt al-dīn",
+      "title_ar": "قرة العين بمهمات الدين",
+      "author": "Zayn al-Dīn al-Malībārī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "manual",
+      "source_ids": [
+        "SF_malibari"
+      ],
+      "notes": "Author death is disputed in the consulted reference; no exact death date assigned here.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "author_death_note": "Conflicting death reports in the dedicated TDV Malibari entry; exact year fields remain unset."
+    },
+    {
+      "id": "fiqh_shafii_fath_muin",
+      "title": "Fatḥ al-muʿīn bi-sharḥ Qurrat al-ʿayn",
+      "title_ar": "فتح المعين بشرح قرة العين",
+      "author": "Zayn al-Dīn al-Malībārī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_malibari",
+        "SF_waqfeya",
+        "SF_jordan"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "author_death_note": "Conflicting death reports in the dedicated TDV Malibari entry; exact year fields remain unset."
+    },
+    {
+      "id": "fiqh_shafii_ianat_talibin",
+      "title": "Iʿānat al-ṭālibīn ʿalā ḥall alfāẓ Fatḥ al-muʿīn",
+      "title_ar": "إعانة الطالبين على حل ألفاظ فتح المعين",
+      "author": "Abū Bakr ʿUthmān Shaṭṭā al-Dimyāṭī",
+      "author_death_ah": 1310,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "SF_malibari",
+        "SF_jordan",
+        "SF_qnl_iana",
+        "SF_iana_edition"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "author_death_note": "The catalogue gives 1892 or 1893 CE. The AH date is 1310 in standard edition metadata; no exact CE date imposed.",
+      "author_death_ce_range": [
+        1892,
+        1893
+      ],
+      "date_source_ids": [
+        "SF_iana_edition",
+        "SF_qnl_iana"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_tarshih_mustafidin",
+      "title": "Tarshīḥ al-mustafīdīn",
+      "title_ar": "ترشيح المستفيدين",
+      "author": "ʿAlawī b. Aḥmad al-Saqqāf",
+      "author_death_ah": 1335,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "source_ids": [
+        "SF_malibari",
+        "SF_jordan",
+        "SF_nli_tarshih",
+        "SF_saqqaf_bio"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "author_death_note": "Catalogue gives 1916 or 1917 CE. Exact CE year left unset.",
+      "author_death_ce_range": [
+        1916,
+        1917
+      ],
+      "date_source_ids": [
+        "SF_saqqaf_bio",
+        "SF_nli_tarshih"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_nihayat_zayn",
+      "title": "Nihāyat al-zayn fī irshād al-mubtadiʾīn",
+      "title_ar": "نهاية الزين في إرشاد المبتدئين",
+      "author": "Muḥammad Nawawī al-Jāwī al-Bantanī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_malibari",
+        "SF_jawi"
+      ],
+      "notes": "Commentary directly on Qurrat al-‘ayn, not a gloss on Fath al-mu‘in. Author death variants retained as uncertain.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "author_death_note": "TDV reports several conflicting death dates for Nawawi al-Jawi; exact year fields remain unset."
+    },
+    {
+      "id": "fiqh_shafii_safinat_naja",
+      "title": "Safīnat al-najā",
+      "title_ar": "سفينة النجا",
+      "author": "Sālim b. Sumayr al-Ḥaḍramī",
+      "author_death_ah": 1271,
+      "author_death_ce": 1855,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "manual",
+      "source_ids": [
+        "SF_jawi",
+        "SF_jordan",
+        "SF_salim_bio"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_salim_bio"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_kashifat_saja",
+      "title": "Kāshifat al-sajā",
+      "title_ar": "كاشفة السجا",
+      "author": "Muḥammad Nawawī al-Jāwī al-Bantanī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_jawi",
+        "SF_jordan"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "author_death_note": "TDV reports several conflicting death dates for Nawawi al-Jawi; exact year fields remain unset."
+    },
+    {
+      "id": "fiqh_shafii_safinat_salat",
+      "title": "Safīnat al-ṣalāh",
+      "title_ar": "سفينة الصلاة",
+      "author": "ʿAbd Allāh b. ʿUmar al-Ḥaḍramī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "manual",
+      "source_ids": [
+        "SF_jawi",
+        "SF_jordan"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null
+    },
+    {
+      "id": "fiqh_shafii_sullam_munajat",
+      "title": "Sullam al-munājāt",
+      "title_ar": "سلم المناجاة",
+      "author": "Muḥammad Nawawī al-Jāwī al-Bantanī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_jawi",
+        "SF_jordan"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "author_death_note": "TDV reports several conflicting death dates for Nawawi al-Jawi; exact year fields remain unset."
+    },
+    {
+      "id": "fiqh_shafii_riyad_badia",
+      "title": "al-Riyāḍ al-badīʿa",
+      "title_ar": "الرياض البديعة",
+      "author": "Muḥammad b. Sulaymān Ḥasballāh",
+      "author_death_ah": 1335,
+      "author_death_ce": 1917,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "manual",
+      "source_ids": [
+        "SF_jawi",
+        "SF_hasballah_bio"
+      ],
+      "notes": "Elementary manual combining doctrine with practical Shafi‘i law; included for its substantive-law content, not classified as usul al-fiqh.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_hasballah_bio"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_thimar_yania",
+      "title": "al-Thimār al-yāniʿa",
+      "title_ar": "الثمار اليانعة",
+      "author": "Muḥammad Nawawī al-Jāwī al-Bantanī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_jawi"
+      ],
+      "notes": "Commentary on the mixed elementary doctrine and practical-law manual al-Riyad al-badi‘a; counted once.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "author_death_note": "TDV reports several conflicting death dates for Nawawi al-Jawi; exact year fields remain unset."
+    },
+    {
+      "id": "fiqh_shafii_fayd_allah_malik",
+      "title": "Fayḍ Allāh al-Mālik fī ḥall alfāẓ ʿUmdat al-sālik",
+      "title_ar": "فيض الله المالك في حل ألفاظ عمدة السالك",
+      "author": "ʿUmar Barakāt al-Biqāʿī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_naqib"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null
+    },
+    {
+      "id": "fiqh_shafii_anwar_masalik",
+      "title": "Anwār al-masālik",
+      "title_ar": "أنوار المسالك",
+      "author": "Muḥammad al-Zuhrī al-Ghamrāwī",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "source_ids": [
+        "SF_naqib"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null
+    },
+    {
+      "id": "fiqh_shafii_ghaya_ikhtisar_nihaya",
+      "title": "al-Ghāya fī ikhtiṣār al-Nihāya",
+      "title_ar": "الغاية في اختصار النهاية",
+      "author": "ʿIzz al-Dīn Ibn ʿAbd al-Salām",
+      "author_death_ah": 660,
+      "author_death_ce": 1262,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "epitome",
+      "source_ids": [
+        "SF_waqfeya",
+        "SF_ibnabdsalam"
+      ],
+      "notes": "",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ibnabdsalam"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_tadrib_bulkini",
+      "title": "al-Tadrīb fī al-fiqh al-Shāfiʿī",
+      "title_ar": "التدريب في الفقه الشافعي",
+      "author": "Sirāj al-Dīn al-Bulqīnī",
+      "author_death_ah": 805,
+      "author_death_ce": 1403,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "manual",
+      "source_ids": [
+        "SF_waqfeya",
+        "SF_bulkini"
+      ],
+      "notes": "Also Tadrib al-mubtadi wa-tahdhib al-muntahi. The author left it incomplete; the continuation by his son Salih is not silently attributed to him or separately counted here.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_bulkini"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_fatawa_haytami",
+      "title": "al-Fatāwā al-fiqhiyya al-kubrā",
+      "title_ar": "الفتاوى الفقهية الكبرى",
+      "author": "Ibn Ḥajar al-Haytamī",
+      "author_death_ah": 974,
+      "author_death_ce": 1567,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "SF_haytami"
+      ],
+      "notes": "Collected by ‘Abd al-Qadir al-Fakihi; constituent treatises not counted separately here.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_haytami"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_fatawa_ramli",
+      "title": "Fatāwā al-Ramlī",
+      "title_ar": "فتاوى الرملي",
+      "author": "Shihāb al-Dīn Aḥmad al-Ramlī",
+      "author_death_ah": 957,
+      "author_death_ce": 1550,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "fatwa collection",
+      "source_ids": [
+        "SF_ramli_father",
+        "SF_ramli_son"
+      ],
+      "notes": "Father’s legal responses compiled by his son; do not double-count under both authors.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_ramli_father"
+      ]
+    },
+    {
+      "id": "fiqh_shafii_ihshmid_aynayn",
+      "title": "Ithmid al-ʿaynayn fī baʿḍ ikhtilāf al-shaykhayn",
+      "title_ar": "إثمد العينين في بعض اختلاف الشيخين",
+      "author": "ʿAlī b. Aḥmad Bā Ṣabrīn",
+      "author_death_ah": 1304,
+      "author_death_ce": 1887,
+      "school": "shafii",
+      "discipline": "fiqh",
+      "genre": "comparative school positions",
+      "source_ids": [
+        "SF_ramli_son",
+        "SF_haytami",
+        "SF_basabrin_bio"
+      ],
+      "notes": "Compares Haytami and Ramli; no direct commentary edge asserted.",
+      "verification": "bibliographical_reference_checked",
+      "composition_date": null,
+      "date_source_ids": [
+        "SF_basabrin_bio"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "SF_school",
+      "title": "Bilal Aybakan, Şâfiî Mezhebi, TDV İslâm Ansiklopedisi (2010)",
+      "url": "https://islamansiklopedisi.org.tr/safii-mezhebi",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_wajiz",
+      "title": "Bilal Aybakan, el-Vecîz, TDV İslâm Ansiklopedisi (2012)",
+      "url": "https://islamansiklopedisi.org.tr/el-veciz",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_minhaj",
+      "title": "M. Kâmil Yaşaroğlu, Minhâcü’t-Tâlibîn, TDV İslâm Ansiklopedisi (2020)",
+      "url": "https://islamansiklopedisi.org.tr/minhacut-talibin",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_muhadhdhab",
+      "title": "Bilal Aybakan, el-Mühezzeb, TDV İslâm Ansiklopedisi (2020)",
+      "url": "https://islamansiklopedisi.org.tr/el-muhezzeb",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_hawi_saghir",
+      "title": "Cengiz Kallek, el-Hâvi’s-Sagīr, TDV İslâm Ansiklopedisi (1997)",
+      "url": "https://islamansiklopedisi.org.tr/el-havis-sagir",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_ansari",
+      "title": "Ahmet Özel and Cengiz Kallek, Zekeriyyâ el-Ensârî, TDV İslâm Ansiklopedisi (2013)",
+      "url": "https://islamansiklopedisi.org.tr/zekeriyya-el-ensari",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_haytami",
+      "title": "Cengiz Kallek, İbn Hacer el-Heytemî, TDV İslâm Ansiklopedisi (1999)",
+      "url": "https://islamansiklopedisi.org.tr/ibn-hacer-el-heytemi",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_malibari",
+      "title": "Ahmet Özel, Melîbârî, TDV İslâm Ansiklopedisi (2004)",
+      "url": "https://islamansiklopedisi.org.tr/melibari",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_abu_shuja",
+      "title": "M. Kâmil Yaşaroğlu, el-Muhtasar (Ebû Şücâ), TDV İslâm Ansiklopedisi (2020)",
+      "url": "https://islamansiklopedisi.org.tr/el-muhtasar--ebu-suca",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_naqib",
+      "title": "Saffet Köse, İbnü’n-Nakīb el-Mısrî, TDV İslâm Ansiklopedisi (2000)",
+      "url": "https://islamansiklopedisi.org.tr/ibnun-nakib-el-misri",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_nawawi",
+      "title": "M. Yaşar Kandemir, Nevevî, TDV İslâm Ansiklopedisi (2007)",
+      "url": "https://islamansiklopedisi.org.tr/nevevi",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_jawi",
+      "title": "Erdoğan Baş, Nevevî, Muhammed b. Ömer, TDV İslâm Ansiklopedisi (2007)",
+      "url": "https://islamansiklopedisi.org.tr/nevevi-muhammed-b-omer",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_baghawi",
+      "title": "Mevlüt Güngör, Begavî, Ferrâ, TDV İslâm Ansiklopedisi (1992)",
+      "url": "https://islamansiklopedisi.org.tr/begavi-ferra",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_ruyani",
+      "title": "Ali Bakkal, Rûyânî, Abdülvâhid b. İsmâil, TDV İslâm Ansiklopedisi (2008)",
+      "url": "https://islamansiklopedisi.org.tr/ruyani-abdulvahid-b-ismail",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_rifa",
+      "title": "Cengiz Kallek, İbnü’r-Rif‘a, TDV İslâm Ansiklopedisi (2000)",
+      "url": "https://islamansiklopedisi.org.tr/ibnur-rifa",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_tanbih",
+      "title": "Bilal Aybakan, et-Tenbîh, TDV İslâm Ansiklopedisi (2011)",
+      "url": "https://islamansiklopedisi.org.tr/et-tenbih",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_ramli_son",
+      "title": "Ahmet Özel, Remlî, Şemseddin, TDV İslâm Ansiklopedisi (2007)",
+      "url": "https://islamansiklopedisi.org.tr/remli-semseddin",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_ramli_father",
+      "title": "Ahmet Özel, Remlî, Şehâbeddin, TDV İslâm Ansiklopedisi (2007)",
+      "url": "https://islamansiklopedisi.org.tr/remli-sehabeddin",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_sharbini",
+      "title": "Ali Hakan Çavuşoğlu, Şirbînî, Hatîb, TDV İslâm Ansiklopedisi (2010)",
+      "url": "https://islamansiklopedisi.org.tr/sirbini-hatib",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_mulqin",
+      "title": "Ahmet Özel, İbnü’l-Mülakkın, TDV İslâm Ansiklopedisi (2000)",
+      "url": "https://islamansiklopedisi.org.tr/ibnul-mulakkin",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_mawardi",
+      "title": "Mâverdî, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/maverdi",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_mawardi_ahkam",
+      "title": "el-Ahkâmü’s-Sultâniyye (Mâverdî), TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/el-ahkamus-sultaniyye--maverdi",
+      "kind": "scholarly_reference",
+      "support": "Bibliographical identity, authorship, and explicitly described textual relationships.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_waqfeya",
+      "title": "Waqfeya, Shafi‘i fiqh catalogue",
+      "url": "https://waqfeya.net/categories/2173-كتب-الفقه-الشافعي-e06d1bee862e4c308af38ff25345b715",
+      "kind": "digitized_book_catalogue",
+      "support": "Specific listed titles and authors; editions are deduplicated in this dataset.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_waqfeya_hash",
+      "title": "Waqfeya, Qalyubi and Umayra glosses on Mahalli",
+      "url": "https://waqfeya.net/books/حاشيتا-قليوبي-وعميرة-على-شرح-المحلى-على-منهاج-الطالبين/54114381b9b34ef0a6f38b7a70938b2a",
+      "kind": "digitized_book_catalogue",
+      "support": "Two independent glosses printed together; exact commentary target.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_waqfeya_bahr",
+      "title": "Waqfeya, Bahr al-madhhab",
+      "url": "https://waqfeya.net/books/بحر-المذهب-في-فروع-مذهب-الإمام-الشافعي/0be5b2fb0d8b4d47b69ad04be6c04a0a",
+      "kind": "digitized_book_catalogue",
+      "support": "Title, author and edition contents.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_waqfeya_tahdhib",
+      "title": "Waqfeya, al-Tahdhib fi fiqh al-Imam al-Shafi‘i",
+      "url": "https://waqfeya.net/books/التهذيب-في-فقه-الإمام-الشافعي-e707a0f9f79048e2ac895590303f57e4",
+      "kind": "digitized_book_catalogue",
+      "support": "Title and book record.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_waqfeya_kifaya",
+      "title": "Waqfeya, Kifayat al-nabih and al-Hidaya ila awham al-Kifaya",
+      "url": "https://waqfeya.net/books/كفاية-النبيه-شرح-التنبيه-ويليه-الهداية-إلى-أوهام-الكفاية/fecc60fb309c4f5fa7ad01f6aee7b1da",
+      "kind": "digitized_book_catalogue",
+      "support": "Distinct base commentary and appended critical work, not separate editions of one work.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_waqfeya_asna",
+      "title": "Waqfeya, Asna al-matalib with Ramli’s gloss",
+      "url": "https://waqfeya.net/books/أسنى-المطالب-في-شرح-روض-الطالب-وبهامشه-حاشية-الرملي-تجريد-الشوبري-8aa9b9fb57b54121866a0bbfb0493570",
+      "kind": "digitized_book_catalogue",
+      "support": "Authorship, title, and gloss; Shawbari’s extraction is not counted as another independent gloss.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_waqfeya_bujayrimi",
+      "title": "Waqfeya, al-Tajrid li-naf‘ al-‘abid",
+      "url": "https://waqfeya.net/books/حاشية-البجيرمي-على-شرح-المنهج--التجريد-لنفع-العبيد--ط-الحلبي-75d73128fcc346838b2cefbdddc35a26",
+      "kind": "digitized_book_catalogue",
+      "support": "Title and target: Fath al-Wahhab, the commentary on Manhaj al-tullab.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_ghanem",
+      "title": "Tarek Ghanem, Texts, Language, and History in the Madhab-Law Tradition (AUC MA thesis, 2020)",
+      "url": "https://fount.aucegypt.edu/etds/1605/",
+      "kind": "academic_research",
+      "support": "Repository abstract inspected; supports the Minhaj/Tuhfa textual-history research programme. Not used as blanket proof for all records.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_koor",
+      "title": "Mahmood Kooria, The Code, Islamic Law in Circulation (Cambridge, 2022)",
+      "url": "https://www.cambridge.org/core/books/abs/islamic-law-in-circulation/code/0C3C647600271762EFC3E0F8BFBCE849",
+      "kind": "academic_research",
+      "support": "Publisher chapter abstract inspected; contextual source for Minhaj transmission, not a full-page collation or corpus-wide verification.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_juwayni",
+      "title": "Cüveynî, İmâmü’l-Haremeyn, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/cuveyni-imamul-haremeyn",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_ibnmuqri",
+      "title": "İbnü’l-Mukrî el-Yemenî, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/ibnul-mukri-el-yemeni",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_mahalli",
+      "title": "Mahallî, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/mahalli",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_qalyubi",
+      "title": "Kalyûbî, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/kalyubi",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_sharqawi",
+      "title": "Şerkāvî, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/serkavi",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_jamal",
+      "title": "Cemel, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/cemel",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_ibnwardi",
+      "title": "İbnü’l-Verdî, Zeynüddin, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/ibnul-verdi-zeynuddin",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_ibniraqi",
+      "title": "İbnü’l-Irâkī, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/ibnul-iraki",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_ibnraslan",
+      "title": "Remlî, Ahmed b. Hüseyin, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/remli-ahmed-b-huseyin",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_buwayti",
+      "title": "Büveytî, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/buveyti",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_isfarayini",
+      "title": "İsferâyînî, Ebû Hâmid, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/isferayini-ebu-hamid",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_imrani",
+      "title": "İmrânî, Yahyâ b. Ebü’l-Hayr, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/imrani-yahya-b-ebul-hayr",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_isnawi",
+      "title": "İsnevî, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/isnevi",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_zarkashi",
+      "title": "Zerkeşî, Bedreddin, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/zerkesi-bedreddin",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_adhrai",
+      "title": "Ezraî, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/ezrai",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_damiri",
+      "title": "Demîrî, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/demiri",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_bajuri",
+      "title": "Bâcûrî, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/bacuri",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_daqiq",
+      "title": "İbn Dakīkul‘îd, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/ibn-dakikulid",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_hisni",
+      "title": "Hısnî, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/hisni",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_ibnabdsalam",
+      "title": "İbn Abdüsselâm, İzzeddin, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/ibn-abdusselam-izzeddin",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_mahfuz",
+      "title": "Mahfûz b. Abdullah et-Termesî, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/mahfuz-b-abdullah-et-termesi",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_bulkini",
+      "title": "Bulkīnî, Ömer b. Reslân, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/bulkini-omer-b-reslan",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_ghazzi",
+      "title": "İbn Kāsım el-Gazzî, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/ibn-kasim-el-gazzi",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_abbadi",
+      "title": "Abbâdî, İbn Kāsım, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/abbadi-ibn-kasim",
+      "kind": "scholarly_reference",
+      "support": "Named author identity and directly stated author death dates; bibliographical entries where applicable.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_bujayrimi_bio",
+      "title": "Waqfeya, Sulayman al-Bujayrimi author record",
+      "url": "https://waqfeya.net/authors/سليمان-بن-محمد-بن-عمر-الشافعي-البجيرمي-d22b853ceda6413e976047e8fcac391a",
+      "kind": "bibliographical_catalogue",
+      "support": "Author identity and explicitly listed death years. No conversion from AH was invented.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_muzajjid_bio",
+      "title": "Al-Raqq al-Manshur, Ahmad b. Umar al-Muzajjad author record",
+      "url": "https://app.alreq.com/ar/Authors/Author/08cad32a-1739-4ab3-6433-08d78ef039aa",
+      "kind": "bibliographical_catalogue",
+      "support": "Author identity and explicitly listed death years. No conversion from AH was invented.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_umayra_bio",
+      "title": "Al-Raqq al-Manshur, Ahmad al-Burullusi Umayra author record",
+      "url": "https://app.alreq.com/ar/Authors/Author/981fbb23-a93a-4b5b-6272-08d78ef039aa",
+      "kind": "bibliographical_catalogue",
+      "support": "Author identity and explicitly listed death years. No conversion from AH was invented.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_shabramallisi_bio",
+      "title": "Al-Raqq al-Manshur, Ali b. Ali al-Shabramallisi author record",
+      "url": "https://app.alreq.com/ar/Authors/Author/81fce5a6-6bb1-4cac-e698-08d7902f2e12",
+      "kind": "bibliographical_catalogue",
+      "support": "Author identity and explicitly listed death years. No conversion from AH was invented.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_qadishuhba_bio",
+      "title": "Usul, Bidayat al-muhtaj bibliographical record",
+      "url": "https://usul.ai/ar/t/bidayat-muhtaj/176",
+      "kind": "bibliographical_catalogue",
+      "support": "Author identity and explicitly listed death years. No conversion from AH was invented.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_rashidi_bio",
+      "title": "Al-Raqq al-Manshur, Ahmad al-Rashidi author record",
+      "url": "https://app.alreq.com/ar/Authors/Author/beccb034-d806-4bd6-6349-08d78ef039aa",
+      "kind": "bibliographical_catalogue",
+      "support": "Author identity and explicitly listed death years. No conversion from AH was invented.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_jordan",
+      "title": "General Iftaa Department of Jordan, al-Madkhal ila al-madhhab al-Shafi‘i (2023)",
+      "url": "https://aliftaa.jo/Photos/25d44474-f921-4767-8bcc-e527e37445b5.pdf",
+      "kind": "scholarly_reference",
+      "support": "Targeted bibliography passages pp. 223–240 and 306–307 corroborate late manual/commentary families; dates in this source are not used indiscriminately because some entries contain inconsistent years.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_copenhagen_mawhiba",
+      "title": "University of Copenhagen, IslHornAfr catalogue: Mawhibat dhi al-fadl",
+      "url": "https://islhornafr.tors.sc.ku.dk/backend/texts/2358",
+      "kind": "academic_manuscript_catalogue",
+      "support": "Title and author identity for Muhammad Mahfuz al-Tarmasi’s gloss; catalogue search record inspected.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_manhaj_publisher",
+      "title": "Dar al-Minhaj, al-Manhaj al-qawim bi-sharh Masa’il al-ta‘lim",
+      "url": "https://alminhaj.com/gqnPRK",
+      "kind": "publisher_catalogue",
+      "support": "Canonical Arabic title and explicit identity as Ibn Hajar al-Haytami’s commentary on Masa’il al-ta‘lim / al-Muqaddima al-Hadramiyya. Publisher date variant is not silently substituted for TDV biography date.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_kurdi_bio",
+      "title": "Al-Raqq al-Manshur, Muhammad b. Sulayman al-Kurdi",
+      "url": "https://app.alreq.com/ar/Authors/Author/00f468ef-56ec-40d6-fc39-08d7902f2e12",
+      "kind": "bibliographical_catalogue",
+      "support": "Author identity and directly stated AH/CE death dates. The academic article title and abstract, or catalogue author fields, were inspected.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_hasballah_bio",
+      "title": "Al-Raqq al-Manshur, Muhammad b. Sulayman Hasballah",
+      "url": "https://app.alreq.com/ar/Authors/Author/1d034a90-cc12-4add-fc41-08d7902f2e12",
+      "kind": "bibliographical_catalogue",
+      "support": "Author identity and directly stated AH/CE death dates. The academic article title and abstract, or catalogue author fields, were inspected.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_salim_bio",
+      "title": "Alukah manuscript catalogue, al-Fawa’id al-jaliyya by Salim Ibn Sumayr",
+      "url": "https://cp.alukah.net/spotlight/8011/166642/مخطوطة-الفوائد-الجلية-في-الزجر-عن-تعاطي-الحيل-الربوية/",
+      "kind": "manuscript_catalogue",
+      "support": "Author identity and directly stated AH/CE death dates. The academic article title and abstract, or catalogue author fields, were inspected.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_basabrin_bio",
+      "title": "Abd al-Aziz Bazar‘a, Ali b. Ahmad Ba Sabrin: his scholarly life and reforming activities (2023)",
+      "url": "https://journals.uqs-ye.info/index.php/uqs/article/view/163?articlesBySameAuthorPage=6",
+      "kind": "academic_research",
+      "support": "Author identity and directly stated AH/CE death dates. The academic article title and abstract, or catalogue author fields, were inspected.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_qnl_iana",
+      "title": "Qatar National Library, I‘anat al-talibin",
+      "url": "https://ediscovery.qnl.qa/ar/islandora/object/QNL%3A00056499",
+      "kind": "national_library_catalogue",
+      "support": "Direct title/author catalogue identity and stated date limits; uncertainty retained.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_bafadl_catalogue",
+      "title": "UAE Federation Library, al-Minhaj al-qawim / al-Muqaddima al-Hadramiyya",
+      "url": "https://library.ecssr.ae/cgi-bin/koha/opac-detail.pl?biblionumber=190613",
+      "kind": "national_library_catalogue",
+      "support": "Direct title/author catalogue identity and stated date limits; uncertainty retained.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_shirwani_bio",
+      "title": "Al-Raqq al-Manshur, Abd al-Hamid al-Shirwani",
+      "url": "https://app.alreq.com/ar/Authors/Author/08d7e69e-044d-4a64-88cb-1ba17b49b877",
+      "kind": "bibliographical_catalogue",
+      "support": "Direct title/author catalogue identity and stated date limits; uncertainty retained.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_nli_tarshih",
+      "title": "National Library of Israel, Tarshih al-mustafidin",
+      "url": "https://www.nli.org.il/en/books/NNL_ALEPH990023924270205171/NLI",
+      "kind": "national_library_catalogue",
+      "support": "Direct title/author catalogue identity and stated date limits; uncertainty retained.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_husayn_text",
+      "title": "Usul, al-Ta‘liqa lil-Qadi Husayn ‘ala Mukhtasar al-Muzani",
+      "url": "https://usul.ai/tr/t/al-taliqa-lil-qadi-husayn-ala-mukhtasar-al-muzani/7",
+      "kind": "digitized_book_catalogue",
+      "support": "Direct title/author catalogue identity and stated date limits; uncertainty retained.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_iana_edition",
+      "title": "I‘anat al-talibin, edition bibliographical metadata",
+      "url": "https://islamport.com/l/shf/3269/19.htm",
+      "kind": "bibliographical_catalogue",
+      "support": "Exact book title, author identity and 1310 AH death year; 1892–1893 CE range is retained from Qatar National Library.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_saqqaf_bio",
+      "title": "Al-Raqq al-Manshur, Alawi b. Ahmad al-Saqqaf",
+      "url": "https://app.alreq.com/ar/Authors/Author/2e70ae72-e61e-4e6a-e49d-08d7902f2e12",
+      "kind": "bibliographical_catalogue",
+      "support": "Explicit 1335 AH death year and Tarshih al-mustafidin authorship; CE range retained from national-library authority record.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SF_fashni_bio",
+      "title": "Al-Raqq al-Manshur, Ahmad b. Hijazi al-Fashni",
+      "url": "https://app.alreq.com/ar/Authors/Author/105f371f-e3b6-4916-93fa-08d71e0935f3",
+      "kind": "bibliographical_catalogue",
+      "support": "Direct title/author identity and expressly approximate death date, kept out of exact chronology fields.",
+      "accessed": "2026-11-10"
+    }
+  ],
+  "relations": [
+    {
+      "to": "fiqh_shafii_hawi_kabir",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_wajiz"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Ḥāwī al-kabīr as a commentary of Mukhtaṣar al-Muzanī.",
+      "from": "fiqh_shafii_mukhtasar_muzani"
+    },
+    {
+      "to": "fiqh_shafii_nihayat_matlab",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_wajiz"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Nihāyat al-maṭlab fī dirāyat al-madhhab as a commentary of Mukhtaṣar al-Muzanī.",
+      "from": "fiqh_shafii_mukhtasar_muzani"
+    },
+    {
+      "to": "fiqh_shafii_basit",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "SF_wajiz"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Basīṭ as a abridgment of Nihāyat al-maṭlab fī dirāyat al-madhhab.",
+      "from": "fiqh_shafii_nihayat_matlab"
+    },
+    {
+      "to": "fiqh_shafii_wasit",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "SF_wajiz"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Wasīṭ as a abridgment of al-Basīṭ.",
+      "from": "fiqh_shafii_basit"
+    },
+    {
+      "to": "fiqh_shafii_wajiz",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "SF_wajiz"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Wajīz as a abridgment of al-Wasīṭ.",
+      "from": "fiqh_shafii_wasit"
+    },
+    {
+      "to": "fiqh_shafii_khulasat_mukhtasar",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "SF_school"
+      ],
+      "note": "TDV Safii Mezhebi explicitly identifies al-Muzani’s Mukhtasar as the source; the common inferred Wajiz-to-Khulasa chain is not used.",
+      "from": "fiqh_shafii_mukhtasar_muzani"
+    },
+    {
+      "to": "fiqh_shafii_ta_liqa_isfarayini",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_tanbih"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Taʿlīqa al-kubrā as a commentary of Mukhtaṣar al-Muzanī.",
+      "from": "fiqh_shafii_mukhtasar_muzani"
+    },
+    {
+      "to": "fiqh_shafii_bayan_imrani",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_muhadhdhab"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Bayān fī madhhab al-Imām al-Shāfiʿī as a commentary of al-Muhadhdhab.",
+      "from": "fiqh_shafii_muhadhdhab"
+    },
+    {
+      "to": "fiqh_shafii_majmu",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_muhadhdhab"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Majmūʿ sharḥ al-Muhadhdhab as a commentary of al-Muhadhdhab.",
+      "from": "fiqh_shafii_muhadhdhab"
+    },
+    {
+      "to": "fiqh_shafii_aziz",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_wajiz"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-ʿAzīz sharḥ al-Wajīz as a commentary of al-Wajīz.",
+      "from": "fiqh_shafii_wajiz"
+    },
+    {
+      "to": "fiqh_shafii_rawdat_talibin",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "SF_wajiz"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Rawḍat al-ṭālibīn wa-ʿumdat al-muftīn as a abridgment of al-ʿAzīz sharḥ al-Wajīz.",
+      "from": "fiqh_shafii_aziz"
+    },
+    {
+      "to": "fiqh_shafii_minhaj_talibin",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "SF_minhaj"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Minhāj al-ṭālibīn as a abridgment of al-Muḥarrar.",
+      "from": "fiqh_shafii_muharrar"
+    },
+    {
+      "to": "fiqh_shafii_daqaiq_minhaj",
+      "type": "authorial elucidation",
+      "evidence_source_ids": [
+        "SF_minhaj"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Daqāʾiq al-Minhāj as a authorial elucidation of Minhāj al-ṭālibīn.",
+      "from": "fiqh_shafii_minhaj_talibin"
+    },
+    {
+      "to": "fiqh_shafii_tashih_tanbih",
+      "type": "correction",
+      "evidence_source_ids": [
+        "SF_tanbih"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Taṣḥīḥ al-Tanbīh as a correction of al-Tanbīh.",
+      "from": "fiqh_shafii_tanbih"
+    },
+    {
+      "to": "fiqh_shafii_kifayat_nabih",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_tanbih",
+        "SF_waqfeya_kifaya"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Kifāyat al-nabīh sharḥ al-Tanbīh as a commentary of al-Tanbīh.",
+      "from": "fiqh_shafii_tanbih"
+    },
+    {
+      "to": "fiqh_shafii_tashil_hidaya",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "SF_naqib"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Tashīl al-hidāya wa-taḥṣīl al-Kifāya as a abridgment of Kifāyat al-nabīh sharḥ al-Tanbīh.",
+      "from": "fiqh_shafii_kifayat_nabih"
+    },
+    {
+      "to": "fiqh_shafii_bahja_wardiyya",
+      "type": "verse rendering",
+      "evidence_source_ids": [
+        "SF_hawi_saghir"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Bahja al-Wardiyya as a verse rendering of al-Ḥāwī al-ṣaghīr.",
+      "from": "fiqh_shafii_hawi_saghir"
+    },
+    {
+      "to": "fiqh_shafii_irshad_ghawi",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "SF_hawi_saghir"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Irshād al-ghāwī fī masālik al-Ḥāwī as a abridgment of al-Ḥāwī al-ṣaghīr.",
+      "from": "fiqh_shafii_hawi_saghir"
+    },
+    {
+      "to": "fiqh_shafii_ikhlas_nawi",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_hawi_saghir"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Ikhlāṣ al-nāwī fī Irshād al-ghāwī as a commentary of Irshād al-ghāwī fī masālik al-Ḥāwī.",
+      "from": "fiqh_shafii_irshad_ghawi"
+    },
+    {
+      "to": "fiqh_shafii_fath_jawad",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_haytami"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Fatḥ al-Jawād bi-sharḥ al-Irshād as a commentary of Irshād al-ghāwī fī masālik al-Ḥāwī.",
+      "from": "fiqh_shafii_irshad_ghawi"
+    },
+    {
+      "to": "fiqh_shafii_imdad_irshad",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_haytami"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Imdād bi-sharḥ al-Irshād as a commentary of Irshād al-ghāwī fī masālik al-Ḥāwī.",
+      "from": "fiqh_shafii_irshad_ghawi"
+    },
+    {
+      "to": "fiqh_shafii_ghurar_bahiyya",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_hawi_saghir"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Ghurar al-bahiyya fī sharḥ al-Bahja al-Wardiyya as a commentary of al-Bahja al-Wardiyya.",
+      "from": "fiqh_shafii_bahja_wardiyya"
+    },
+    {
+      "to": "fiqh_shafii_bahja_mardiyya",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_hawi_saghir"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Bahja al-marḍiyya sharḥ al-Bahja al-Wardiyya as a commentary of al-Bahja al-Wardiyya.",
+      "from": "fiqh_shafii_bahja_wardiyya"
+    },
+    {
+      "to": "fiqh_shafii_rawd_talib",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "SF_school"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Rawḍ al-ṭālib as a abridgment of Rawḍat al-ṭālibīn wa-ʿumdat al-muftīn.",
+      "from": "fiqh_shafii_rawdat_talibin"
+    },
+    {
+      "to": "fiqh_shafii_asna_matalib",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_ansari"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Asnā al-maṭālib fī sharḥ Rawḍ al-ṭālib as a commentary of Rawḍ al-ṭālib.",
+      "from": "fiqh_shafii_rawd_talib"
+    },
+    {
+      "to": "fiqh_shafii_hashiyat_ramli_asna",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "SF_ramli_father"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Ḥāshiyat al-Ramlī ʿalā Asnā al-maṭālib as a gloss of Asnā al-maṭālib fī sharḥ Rawḍ al-ṭālib.",
+      "from": "fiqh_shafii_asna_matalib"
+    },
+    {
+      "to": "fiqh_shafii_ubab_muhit",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "SF_school"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-ʿUbāb al-muḥīṭ bi-muʿẓam nuṣūṣ al-Shāfiʿī wa-l-aṣḥāb as a abridgment of Rawḍat al-ṭālibīn wa-ʿumdat al-muftīn.",
+      "from": "fiqh_shafii_rawdat_talibin"
+    },
+    {
+      "to": "fiqh_shafii_muhimmat_isnawi",
+      "type": "critical commentary",
+      "evidence_source_ids": [
+        "SF_school",
+        "SF_waqfeya",
+        "SF_isnawi"
+      ],
+      "note": "TDV Isnevi, works item 8 and preceding biography, identifies al-Muhimmat as a critical treatment of al-Rafi‘i’s major commentary and al-Nawawi’s Rawda.",
+      "from": "fiqh_shafii_rawdat_talibin"
+    },
+    {
+      "to": "fiqh_shafii_muhimmat_isnawi",
+      "type": "critical commentary",
+      "evidence_source_ids": [
+        "SF_waqfeya",
+        "SF_isnawi"
+      ],
+      "note": "TDV Isnevi, works item 8 and preceding biography, identifies al-Muhimmat as a critical treatment of al-Rafi‘i’s major commentary and al-Nawawi’s Rawda.",
+      "from": "fiqh_shafii_aziz"
+    },
+    {
+      "to": "fiqh_shafii_khadim_rawda",
+      "type": "critical commentary",
+      "evidence_source_ids": [
+        "SF_school",
+        "SF_zarkashi"
+      ],
+      "note": "TDV Zerkesi, fiqh works item 4, identifies the Rawda and al-Rafi‘i’s Fath al-‘aziz as the two works whose difficult passages this work clarifies.",
+      "from": "fiqh_shafii_rawdat_talibin"
+    },
+    {
+      "to": "fiqh_shafii_kanz_raghibin",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_minhaj"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Kanz al-rāghibīn fī sharḥ Minhāj al-ṭālibīn as a commentary of Minhāj al-ṭālibīn.",
+      "from": "fiqh_shafii_minhaj_talibin"
+    },
+    {
+      "to": "fiqh_shafii_tuhfat_muhtaj",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_minhaj"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Tuḥfat al-muḥtāj bi-sharḥ al-Minhāj as a commentary of Minhāj al-ṭālibīn.",
+      "from": "fiqh_shafii_minhaj_talibin"
+    },
+    {
+      "to": "fiqh_shafii_mughni_muhtaj",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_minhaj"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Mughnī al-muḥtāj ilā maʿrifat maʿānī alfāẓ al-Minhāj as a commentary of Minhāj al-ṭālibīn.",
+      "from": "fiqh_shafii_minhaj_talibin"
+    },
+    {
+      "to": "fiqh_shafii_nihayat_muhtaj",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_minhaj"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Nihāyat al-muḥtāj ilā sharḥ al-Minhāj as a commentary of Minhāj al-ṭālibīn.",
+      "from": "fiqh_shafii_minhaj_talibin"
+    },
+    {
+      "to": "fiqh_shafii_ujalat_muhtaj",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_minhaj"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies ʿUjālat al-muḥtāj ilā tawjīh al-Minhāj as a commentary of Minhāj al-ṭālibīn.",
+      "from": "fiqh_shafii_minhaj_talibin"
+    },
+    {
+      "to": "fiqh_shafii_umdat_muhtaj",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_minhaj"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies ʿUmdat al-muḥtāj ilā Kitāb al-Minhāj as a commentary of Minhāj al-ṭālibīn.",
+      "from": "fiqh_shafii_minhaj_talibin"
+    },
+    {
+      "to": "fiqh_shafii_qut_muhtaj",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_minhaj"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Qūt al-muḥtāj as a commentary of Minhāj al-ṭālibīn.",
+      "from": "fiqh_shafii_minhaj_talibin"
+    },
+    {
+      "to": "fiqh_shafii_najm_wahhaj",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_minhaj"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Najm al-wahhāj fī sharḥ al-Minhāj as a commentary of Minhāj al-ṭālibīn.",
+      "from": "fiqh_shafii_minhaj_talibin"
+    },
+    {
+      "to": "fiqh_shafii_bidayat_muhtaj",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_minhaj"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Bidāyat al-muḥtāj fī sharḥ al-Minhāj as a commentary of Minhāj al-ṭālibīn.",
+      "from": "fiqh_shafii_minhaj_talibin"
+    },
+    {
+      "to": "fiqh_shafii_siraj_nukat",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_naqib"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Sirāj fī nukat al-Minhāj as a commentary of Minhāj al-ṭālibīn.",
+      "from": "fiqh_shafii_minhaj_talibin"
+    },
+    {
+      "to": "fiqh_shafii_hashiyat_qalyubi",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "SF_minhaj",
+        "SF_waqfeya_hash"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Ḥāshiyat al-Qalyūbī ʿalā Kanz al-rāghibīn as a gloss of Kanz al-rāghibīn fī sharḥ Minhāj al-ṭālibīn.",
+      "from": "fiqh_shafii_kanz_raghibin"
+    },
+    {
+      "to": "fiqh_shafii_hashiyat_umayra",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "SF_minhaj",
+        "SF_waqfeya_hash"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Ḥāshiyat ʿUmayra ʿalā Kanz al-rāghibīn as a gloss of Kanz al-rāghibīn fī sharḥ Minhāj al-ṭālibīn.",
+      "from": "fiqh_shafii_kanz_raghibin"
+    },
+    {
+      "to": "fiqh_shafii_hashiyat_abbadi_tuhfa",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "SF_minhaj",
+        "SF_abbadi"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Ḥāshiyat Ibn Qāsim al-ʿAbbādī ʿalā Tuḥfat al-muḥtāj as a gloss of Tuḥfat al-muḥtāj bi-sharḥ al-Minhāj.",
+      "from": "fiqh_shafii_tuhfat_muhtaj"
+    },
+    {
+      "to": "fiqh_shafii_hashiyat_shirwani",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "SF_minhaj",
+        "SF_abbadi"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Ḥāshiyat al-Shirwānī ʿalā Tuḥfat al-muḥtāj as a gloss of Tuḥfat al-muḥtāj bi-sharḥ al-Minhāj.",
+      "from": "fiqh_shafii_tuhfat_muhtaj"
+    },
+    {
+      "to": "fiqh_shafii_hashiyat_shabramallisi",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "SF_minhaj"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Ḥāshiyat al-Shabramallisī ʿalā Nihāyat al-muḥtāj as a gloss of Nihāyat al-muḥtāj ilā sharḥ al-Minhāj.",
+      "from": "fiqh_shafii_nihayat_muhtaj"
+    },
+    {
+      "to": "fiqh_shafii_hashiyat_rashidi",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "SF_minhaj"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Ḥāshiyat al-Rashīdī ʿalā Nihāyat al-muḥtāj as a gloss of Nihāyat al-muḥtāj ilā sharḥ al-Minhāj.",
+      "from": "fiqh_shafii_nihayat_muhtaj"
+    },
+    {
+      "to": "fiqh_shafii_manhaj_tullab",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "SF_minhaj",
+        "SF_ansari"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Manhaj al-ṭullāb as a abridgment of Minhāj al-ṭālibīn.",
+      "from": "fiqh_shafii_minhaj_talibin"
+    },
+    {
+      "to": "fiqh_shafii_fath_wahhab",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_ansari"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Fatḥ al-Wahhāb bi-sharḥ Manhaj al-ṭullāb as a commentary of Manhaj al-ṭullāb.",
+      "from": "fiqh_shafii_manhaj_tullab"
+    },
+    {
+      "to": "fiqh_shafii_futuhat_wahhab",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "SF_ansari"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Futūḥāt al-Wahhāb bi-tawḍīḥ Sharḥ Manhaj al-ṭullāb as a gloss of Fatḥ al-Wahhāb bi-sharḥ Manhaj al-ṭullāb.",
+      "from": "fiqh_shafii_fath_wahhab"
+    },
+    {
+      "to": "fiqh_shafii_tajrid_bujayrimi",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "SF_ansari",
+        "SF_waqfeya_bujayrimi"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Tajrīd li-nafʿ al-ʿabīd as a gloss of Fatḥ al-Wahhāb bi-sharḥ Manhaj al-ṭullāb.",
+      "from": "fiqh_shafii_fath_wahhab"
+    },
+    {
+      "to": "fiqh_shafii_tanqih_lubab",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "SF_ansari"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Tanqīḥ al-Lubāb as a abridgment of al-Lubāb.",
+      "from": "fiqh_shafii_lubab_mahamili"
+    },
+    {
+      "to": "fiqh_shafii_tahrir_tanqih_lubab",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "SF_ansari"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Taḥrīr Tanqīḥ al-Lubāb as a abridgment of Tanqīḥ al-Lubāb.",
+      "from": "fiqh_shafii_tanqih_lubab"
+    },
+    {
+      "to": "fiqh_shafii_tuhfat_tullab",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_ansari"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Tuḥfat al-ṭullāb bi-sharḥ Taḥrīr Tanqīḥ al-Lubāb as a commentary of Taḥrīr Tanqīḥ al-Lubāb.",
+      "from": "fiqh_shafii_tahrir_tanqih_lubab"
+    },
+    {
+      "to": "fiqh_shafii_hashiyat_sharqawi",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "SF_ansari"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Ḥāshiyat al-Sharqāwī ʿalā Tuḥfat al-ṭullāb as a gloss of Tuḥfat al-ṭullāb bi-sharḥ Taḥrīr Tanqīḥ al-Lubāb.",
+      "from": "fiqh_shafii_tuhfat_tullab"
+    },
+    {
+      "to": "fiqh_shafii_tuhfat_labib",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_abu_shuja"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Tuḥfat al-labīb fī sharḥ al-Taqrīb as a commentary of Ghāyat al-ikhtiṣār (Matn Abī Shujāʿ).",
+      "from": "fiqh_shafii_ghayat_ikhtisar"
+    },
+    {
+      "to": "fiqh_shafii_kifayat_akhyar",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_abu_shuja"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Kifāyat al-akhyār fī ḥall Ghāyat al-ikhtiṣār as a commentary of Ghāyat al-ikhtiṣār (Matn Abī Shujāʿ).",
+      "from": "fiqh_shafii_ghayat_ikhtisar"
+    },
+    {
+      "to": "fiqh_shafii_fath_qarib",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_abu_shuja"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Fatḥ al-qarīb al-mujīb fī sharḥ alfāẓ al-Taqrīb as a commentary of Ghāyat al-ikhtiṣār (Matn Abī Shujāʿ).",
+      "from": "fiqh_shafii_ghayat_ikhtisar"
+    },
+    {
+      "to": "fiqh_shafii_iqna_shirbini",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_abu_shuja"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Iqnāʿ fī ḥall alfāẓ Abī Shujāʿ as a commentary of Ghāyat al-ikhtiṣār (Matn Abī Shujāʿ).",
+      "from": "fiqh_shafii_ghayat_ikhtisar"
+    },
+    {
+      "to": "fiqh_shafii_hashiyat_bajuri",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "SF_abu_shuja"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Ḥāshiyat al-Bājūrī ʿalā sharḥ Ibn Qāsim al-Ghazzī as a gloss of Fatḥ al-qarīb al-mujīb fī sharḥ alfāẓ al-Taqrīb.",
+      "from": "fiqh_shafii_fath_qarib"
+    },
+    {
+      "to": "fiqh_shafii_tuhfat_habib",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "SF_abu_shuja"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Tuḥfat al-ḥabīb ʿalā sharḥ al-Khaṭīb as a gloss of al-Iqnāʿ fī ḥall alfāẓ Abī Shujāʿ.",
+      "from": "fiqh_shafii_iqna_shirbini"
+    },
+    {
+      "to": "fiqh_shafii_nihayat_tadrib",
+      "type": "verse rendering",
+      "evidence_source_ids": [
+        "SF_abu_shuja"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Nihāyat al-tadrīb fī naẓm al-Taqrīb as a verse rendering of Ghāyat al-ikhtiṣār (Matn Abī Shujāʿ).",
+      "from": "fiqh_shafii_ghayat_ikhtisar"
+    },
+    {
+      "to": "fiqh_shafii_fath_rahman_zubad",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_ramli_father"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Fatḥ al-Raḥmān bi-sharḥ Zubad Ibn Raslān as a commentary of Ṣafwat al-zubad.",
+      "from": "fiqh_shafii_safwat_zubad"
+    },
+    {
+      "to": "fiqh_shafii_ghayat_bayan",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_ramli_son"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Ghāyat al-bayān fī sharḥ Zubad Ibn Raslān as a commentary of Ṣafwat al-zubad.",
+      "from": "fiqh_shafii_safwat_zubad"
+    },
+    {
+      "to": "fiqh_shafii_mawahib_samad",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_ramli_son"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Mawāhib al-Ṣamad fī ḥall alfāẓ al-Zubad as a commentary of Ṣafwat al-zubad.",
+      "from": "fiqh_shafii_safwat_zubad"
+    },
+    {
+      "to": "fiqh_shafii_minhaj_qawim",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_haytami",
+        "SF_manhaj_publisher"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Manhaj al-qawīm bi-sharḥ Masāʾil al-taʿlīm as a commentary of al-Muqaddima al-Ḥaḍramiyya.",
+      "from": "fiqh_shafii_muqaddima_hadramiyya"
+    },
+    {
+      "to": "fiqh_shafii_hawashi_madaniyya",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "SF_haytami"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Ḥawāshī al-Madaniyya as a gloss of al-Manhaj al-qawīm bi-sharḥ Masāʾil al-taʿlīm.",
+      "from": "fiqh_shafii_minhaj_qawim"
+    },
+    {
+      "to": "fiqh_shafii_mawhibat_fadl",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "SF_haytami",
+        "SF_mahfuz"
+      ],
+      "note": "Dedicated TDV Mahfuz article identifies the gloss on Ibn Hajar’s commentary on the Hadramiyya; Copenhagen catalogue corroborates author and title.",
+      "from": "fiqh_shafii_minhaj_qawim"
+    },
+    {
+      "to": "fiqh_shafii_fath_muin",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_malibari"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Fatḥ al-muʿīn bi-sharḥ Qurrat al-ʿayn as a commentary of Qurrat al-ʿayn bi-muhimmāt al-dīn.",
+      "from": "fiqh_shafii_qurrat_ayn"
+    },
+    {
+      "to": "fiqh_shafii_ianat_talibin",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "SF_malibari"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Iʿānat al-ṭālibīn ʿalā ḥall alfāẓ Fatḥ al-muʿīn as a gloss of Fatḥ al-muʿīn bi-sharḥ Qurrat al-ʿayn.",
+      "from": "fiqh_shafii_fath_muin"
+    },
+    {
+      "to": "fiqh_shafii_tarshih_mustafidin",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "SF_malibari"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Tarshīḥ al-mustafīdīn as a gloss of Fatḥ al-muʿīn bi-sharḥ Qurrat al-ʿayn.",
+      "from": "fiqh_shafii_fath_muin"
+    },
+    {
+      "to": "fiqh_shafii_nihayat_zayn",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_malibari"
+      ],
+      "note": "TDV Melibari identifies Qurrat al-‘ayn itself as the commentary target; this is not a gloss on Fath al-mu‘in.",
+      "from": "fiqh_shafii_qurrat_ayn"
+    },
+    {
+      "to": "fiqh_shafii_kashifat_saja",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_jawi"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Kāshifat al-sajā as a commentary of Safīnat al-najā.",
+      "from": "fiqh_shafii_safinat_naja"
+    },
+    {
+      "to": "fiqh_shafii_sullam_munajat",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_jawi"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Sullam al-munājāt as a commentary of Safīnat al-ṣalāh.",
+      "from": "fiqh_shafii_safinat_salat"
+    },
+    {
+      "to": "fiqh_shafii_thimar_yania",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_jawi"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies al-Thimār al-yāniʿa as a commentary of al-Riyāḍ al-badīʿa.",
+      "from": "fiqh_shafii_riyad_badia"
+    },
+    {
+      "to": "fiqh_shafii_fayd_allah_malik",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_naqib"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Fayḍ Allāh al-Mālik fī ḥall alfāẓ ʿUmdat al-sālik as a commentary of ʿUmdat al-sālik wa-ʿuddat al-nāsik.",
+      "from": "fiqh_shafii_umdat_salik"
+    },
+    {
+      "to": "fiqh_shafii_anwar_masalik",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "SF_naqib"
+      ],
+      "note": "The cited bibliographical discussion explicitly identifies Anwār al-masālik as a commentary of ʿUmdat al-sālik wa-ʿuddat al-nāsik.",
+      "from": "fiqh_shafii_umdat_salik"
+    },
+    {
+      "to": "fiqh_shafii_ghaya_ikhtisar_nihaya",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "SF_waqfeya",
+        "SF_ibnabdsalam"
+      ],
+      "note": "TDV Ibn Abdusselam, concluding bibliography of works, explicitly calls al-Ghaya an abridgment of Juwayni’s Nihayat al-matlab.",
+      "from": "fiqh_shafii_nihayat_matlab"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "stage": "92",
+  "date": "2026-11-15",
+  "previous": "Stage91 merged",
+  "body_pages": 279,
+  "numbered_positions": 280,
+  "records": 1401,
+  "newly_source_transcribed_records": 17,
+  "new_ruled_notes": 15,
+  "new_lower_notes": 2,
+  "ruled_notes_whole_printed_band_firstpass": 9,
+  "records_with_some_typed_arabic": 1232,
+  "genuine_source_records_still_without_arabic": 168,
+  "retired_editorial_records_without_arabic": 1,
+  "independently_certified_all_register_pages": 0,
+  "manuscript_collation_claimed": false,
+  "source_pdf_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "note": "Entry-level Arabic presence and single-print first-pass complete short marginal notes do NOT certify full page translation."
+}

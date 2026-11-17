@@ -1,0 +1,74 @@
+name: Daruri applications matrix
+on:
+  push:
+    branches: [daruri-applications-matrix-20261110]
+    paths:
+      - '.github/workflows/daruri-applications-matrix.yml'
+      - 'daruri/applications-matrix*'
+      - 'daruri/qa/applications-matrix*'
+permissions:
+  contents: write
+concurrency:
+  group: daruri-applications-matrix
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    container: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 15
+    env:
+      PLAYWRIGHT_BROWSERS_PATH: /ms-playwright
+      NODE_PATH: /tmp/daruri-matrix-tests/node_modules
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install narrow reader change and verify source preservation
+        run: |
+          python3 daruri/qa/applications-matrix-install.py
+          node --check daruri/applications-matrix.js
+          node --check daruri/qa/applications-matrix-browser.js
+          node --check daruri/download-bundle.js
+          node --check daruri/sw.js
+      - name: Install browser driver for the preinstalled browser image
+        run: npm install --prefix /tmp/daruri-matrix-tests --no-audit --no-fund playwright@1.56.1
+      - name: Desktop and mobile application checks
+        run: |
+          python3 -m http.server 8765 >/tmp/daruri-matrix-http.log 2>&1 &
+          node daruri/qa/applications-matrix-layout-probe.js
+          node daruri/qa/applications-matrix-browser.js
+      - name: Retain browser screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-applications-matrix-browser-evidence
+          path: daruri/qa/applications-matrix-screenshots/
+          if-no-files-found: ignore
+      - name: Commit tested integration to this feature branch only
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          test "$(git ls-remote origin refs/heads/daruri-applications-matrix-20261110 | cut -f1)" = "$GITHUB_SHA"
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('daruri/applications-matrix-release.md')
+          p.write_text('''# Darūrī applications at a glance — 10 November 2026
+
+          A compact, collapsible matrix is added only to the existing Darūrī Bidāya applications view, above the unchanged explanations. Eight rows appear initially; Show all exposes all 28. Existing search and book filters apply to both the table and prose. Short legal-question labels jump to the original explanations. Ticks open exact section titles/references and preserve the existing contextual return.
+
+          Nine editorial topic groups organize the columns. A tick denotes a recorded link, not agreement: cautionary and critical parallels retain their existing relationship labels. All links are derived from the current edition's primary section, related sections and explicitly cited prose references; no new case-to-principle relationships are added.
+
+          Integration is limited to two asset tags and the package-loader cache key in index.html, the new isolated JS/CSS, and matching offline/package assets. Canonical edition data, source notes, study lessons and all five reading PDFs are byte-for-byte unchanged. No change to the overall Bidāya website or other books.
+
+          Validation: see qa/applications-matrix-source-check.json and qa/applications-matrix-browser-report.json. Automated Chromium at 1280px/390px and WebKit at 390px/320px check source-derived links, original prose, filters, cell details, return navigation, row jumps, sticky labels, horizontal containment, focus restoration and collapsibility. This is not physical-device testing or a claim of manual screenshot review.
+
+          Branch reservation released after test completion. Publication requires an expected-head-checked merge into master and a separate Pages deployment check.
+          ''',encoding='utf-8')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add daruri/index.html daruri/sw.js daruri/download-bundle.js daruri/applications-matrix-release.md daruri/qa/applications-matrix-source-check.json daruri/qa/applications-matrix-browser-report.json
+          git rm -f --ignore-unmatch daruri/qa/applications-matrix-inspection.json daruri/qa/applications-matrix-integration.txt
+          git diff --cached --stat
+          git diff --cached --quiet || git commit -m 'Integrate tested Daruri applications matrix; preserve source and PDFs'
+          git push origin HEAD:daruri-applications-matrix-20261110

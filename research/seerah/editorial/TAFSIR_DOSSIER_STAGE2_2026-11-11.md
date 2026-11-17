@@ -1,0 +1,340 @@
+# Sīrah · Matn 1 — Cumulative tafsīr edition, stage II
+## From metaphysical possibilities to prophetic formation, judgment and mercy
+
+**11 November 2026 · Research extension of the previous Matn 1 edition**
+
+This file preserves the prior sharḥ and its source notes while incorporating new comparative research on Ṣāliḥ, Lūṭ, Ismāʿīl, Ayyūb, Yūnus, Zakariyyā and Yaḥyā. **Status: an extensively researched provisional edition, not a completed line-by-line collation of all tafsīrs.** Earlier Iblīs, Flood and Lings dossiers remain in the separate cumulative manuscript; their contested readings are not erased by this revised narrative.
+
+## Research delta and changed claims
+
+| Narrative | Deeper meaning established or tested | Concrete exegetical control | Revision consequence |
+|---|---|---|---|
+| Ṣāliḥ | A revealed sign tests limits on appropriation of a common resource | 26:155 apportions water; 27:48–50 identifies conspirators; rock emergence belongs to transmitted elaboration | Add Ṣāliḥ alongside Hūd rather than treating power only as monuments |
+| Lūṭ | Human protection and the ultimate divine refuge are distinct | 11:77–81; Ṭabarī explains the missing clan; Rāzī also records the divine-refuge reading | Add guests, hospitality and dependence instead of generic social corruption |
+| Ismāʿīl | Covenant becomes lived promise and recurring instruction within the household | 19:54–55; Qushayrī and Ibn ʿĀshūr | Make Ismāʿīl a prophet of fidelity, not just a link in ancestry |
+| Ayyūb | Patience includes addressing God with need; trial need not be punishment | 21:83–84; 38:41–44; Qushayrī, Rāzī, Ibn ʿAjība, Kāshānī | Distinguish trial that elevates, psychological temptation, and healing through action |
+| Yūnus | The prophet and his people each receive mercy; their responses differ | 10:98; 21:87–88; 68:48–50; Ṭabarī, Rāzī, Ibn ʿAjība, Kāshānī | Insert Yūnus; explain the direct pedagogical link to Muḥammad ﷺ |
+| Zakariyyā–Yaḥyā | Received continuity, rather than mere descent, joins gift with steadfast practice | 19:2–15; 21:89–90; Rāzī disputes inheritance, commentators differ on early *ḥukm* | Add inherited obligation and hope–fear balance without settling contested inheritance |
+| Grouped wisdoms | The Qurʾān concludes diverse prophetic episodes with responsive worship | 21:83–90: *rāghaban wa rāhaban ... khāshiʿīn* | Use this to sharpen the Iblīs contrast: integration is receptivity, not fixed enthusiasm |
+
+### Governing correction
+
+The revealed narratives do not merely catalogue the failures of societies. They distinguish different ways that divine gifts become operative: preserving the vulnerable, accepting limits on resources, protecting guests without sufficient worldly force, keeping a promise, asking for relief while patient, leaving room for communal repentance, and transmitting guidance through a family without treating descent as a guarantee. **The right relationship among these goods depends upon the actual duty and occasion, not upon choosing one permanently dominant spiritual mood.** The final description of the prophets as people who call in *raghaban wa rahaban* (21:90) provides an explicit Qurʾānic expression of this integration.[^hopefear]
+
+## Revised Matn 1
+
+The Infinite excludes no possibility; creation manifests possibilities of the divine Names without adding to God's perfection. The world differentiates their effects, while human nature gathers faculties capable of recognizing their relations and ends. God teaches Ādam the names and entrusts him with *khilāfa*: to understand creatures, respect their distinct claims and govern action through knowledge rather than independent self-assertion.[^origin][^adam]
+
+The Garden signifies original harmony between created goods and their Source. Satan offers Ādam and his spouse immortality through a forbidden tree, presenting a finite thing as the means to an enduring good against God's command. They acknowledge their lapse and receive the words of return. Iblīs, judging the whole of Ādam by clay and defending his judgment against the divine command, makes his own partial view resistant to correction. His resistance remains within providence without becoming obedient by virtue of its consequences. Descent fulfils the announced earthly vocation, where labour, dependence, repeated action and revelation join the formation of human judgment.[^fall][^repentance]
+
+Prophecy is bestowed, not purchased by suffering. Divine formation trains the reception and exercise of gifts: firmness must admit mercy, intelligence must remain obedient, and spiritual knowledge must govern bodily action without despising means. Some trials expose a corruption; others elevate without preceding fault. Worship and repentance recover the living relation among knowledge, desire, will and action.[^gift][^means][^ayyub]
+
+Nūḥ rejects the chiefs' contempt for poor believers, builds under revelation and learns that paternal affection cannot enlarge the divine promise. The Ark preserves a community across judgment, while the mountain fails to save his son. Hūd rebukes the pretence of permanence through monuments and coercive strength. Ṣāliḥ's she-camel tests whether a prosperous people will honour an allotted share of water and refrain from harming a divine sign; conspirators convert abundance into violence. Lūṭ struggles to protect his guests where earthly supporters fail, and the divine promise supplies the refuge beyond worldly force. Shuʿayb binds prayer and honest exchange, accepting for himself the restraint he requires of others.[^noah][^hud][^salih][^lut][^shuaib]
+
+Ibrāhīm's intimacy with God becomes fidelity in trial and a covenant that excludes injustice from its rightful claim. He and Ismāʿīl establish a House where worship orders settlement, protection and provision; Ismāʿīl fulfils his promise and instructs his household in prayer and giving. Through Isḥāq and Yaʿqūb the same allegiance takes other familial forms. True continuity lies in transmitted faith and conduct, not descent alone.[^khulla][^house][^ismail]
+
+Yūsuf moves from vision through temptation and imprisonment to public vindication, foresight and reconciliation. His knowledge preserves grain across times of scarcity and restores a divided family. Mūsā receives divine formation amid danger, palace life and exile before intimacy with God sends him against oppressive sovereignty; the liberated people must learn covenantal freedom. Dāwūd joins praise, craft and judgment, while Sulaymān receives particular understanding and extensive dominion without ceasing to depend on the Giver.[^yusuf][^office][^musa][^kings]
+
+Ayyūb endures loss without making suffering itself the highest good: he tells God his need and receives healing through an instructed bodily act. Yūnus's departure leads into darkness, confession and mercy; his people repent and escape destruction, while his experience teaches the final Prophet patience without diminishing Yūnus's prophetic dignity. Zakariyyā asks for a worthy successor without treating lineage as a guarantee; Yaḥyā receives wisdom, tenderness and firmness in the Book. Their household joins longing and fear in humble action. Maryam uses created means in perfected trust; ʿĪsā's extraordinary life-giving signs disclose divine agency by God's permission and lead to worship and practical renewal.[^ayyub][^yunus][^zak][^yahya][^means][^isa]
+
+Muḥammad ﷺ gathers these prophetic excellences as living guidance, not as a repetition of every earlier miracle or rule. The Qurʾān confirms and governs previous revelation, while its narratives instruct his patience and form later hearers through recitation, teaching and purification. Its final, universal commission joins diverse peoples and circumstances under an enduring order of knowledge, mercy, justice and worship. Ibrāhīm's House gives believers a common orientation; transmitted revelation and disciplined practice carry the work of realization beyond the succession of prophets.[^gathering][^criterion][^community][^stories][^yunus]
+
+# Expanded Sharḥ 1 (cumulative)
+
+## 1. Knowledge becomes vicegerency
+
+The divine Names explain the world’s differentiated perfections; human comprehensiveness explains the capacity to know their relations. Comprehensiveness is not a mere inventory of faculties. It becomes effective when knowledge distinguishes the nature of things, their capacities, and what is due to them. Government without these distinctions cannot establish justice. The metaphysical vocation therefore reaches directly into knowledge of creatures, practical arts and the ordering of responsibilities.[^origin][^adam]
+
+Teaching the names joins a receptive constitution to received knowledge. Divine teaching need not resemble an external lesson in vocabulary: the commentaries allow the creation of knowledge and inward inspiration, while distinguishing words from the meanings they disclose. Public demonstration follows reception; it reveals a dignity already granted. Adamic precedence is not a wage earned through a greater quantity of prior worship.[^names]
+
+A creature’s received excellence establishes a responsibility, not an independent claim. The same principle governs later prophecy and kingship: knowledge gives the agent something to answer for. The knowledge of a particular right must govern its exercise; a comprehensive vocation does not license judgment without the relevant particulars.
+
+## 2. The lapse, grace and continuing formation
+
+The previous dossier’s distinction remains: the historical Ādam’s episode and the collective spiritual phases represented through him are different registers. The present research does not turn a symbolic history of humanity into a dated biography of his spiritual stations. Nor does it settle the disputed timing of prophetic appointment merely by identifying the teaching of the names with every subsequent prophetic function.[^fall]
+
+Repentance begins through reception as well as initiative. Ādam receives words from his Lord; the capacity to return is itself sustained by the mercy toward which he turns. Correction does not erase human dignity but restores its proper relation. The prophet’s knowledge and office likewise do not remove every occasion for further instruction concerning a particular act, prayer or responsibility.[^repentance]
+
+Iblīs’s retained dossier explains a different response: a restricted apprehension becomes the authority that resists correction. The metaphysical significance of this restriction and the psychological fixation through which it operates describe connected levels. Its providential use does not convert the tempter’s intention into obedient service. None of these propositions requires the assumption that every temporary uncertainty marks the loss of spiritual realization.[^fall]
+
+## 3. Gift, trial and the return to means
+
+Prophecy is a divine bestowal, not the final product of an acquired technique. Trials can prepare, disclose and deepen the service of the elected person without causing God to acquire new knowledge or making the office a payment for suffering. This distinguishes divine generosity from a mechanical sequence in which enough hardship must produce a prophet.[^gift]
+
+The movement toward God also need not terminate in withdrawal from ordinary action. A servant can pass from dependence upon means, through recognition of their insufficiency, to renewed use of them without inward dependence upon them. Return to action then expresses a stronger integration, not a diminished contemplation.[^means]
+
+Maryam supplies an explicit case. Provision first reaches her without ordinary effort; later she must shake the palm trunk. The spiritual interpretation preserved here treats the second condition as more complete: mature certainty permits the return to means. It rejects the explanation that motherhood necessarily divided her love and lowered her station. Immediate human distress also need not destroy patience; sustained rebellion against the trial differs from its first bodily and emotional impact.[^means]
+
+Labour must therefore carry two possible meanings in this chapter. It belongs to embodied dependence, where ends require intermediate causes. It can also express realized servanthood: the person acts without treating either the means or the self as independent. The body’s need for food, the farmer’s work and the ruler’s practical decisions do not measure spiritual distance by themselves.
+
+## 4. Nūḥ: rank, fidelity and the education of affection
+
+Nūḥ’s opponents make social standing a criterion of truth. Their contempt for poor followers attempts to impose an existing hierarchy upon the reception of revelation. Refusing wages and refusing to expel believers belong together: the messenger does not bargain for acceptance through wealth or prestige. He answers to God for those whom the powerful would exclude.[^noahpoor]
+
+The Ark gives obedience a technical form. Instruction does not replace construction, and construction does not make the vessel an independent refuge. Preservation crosses the collapse of a social order without promising the survival of every relationship on its former terms. The paired creatures also admit an inward reading in which bodily and spiritual, sensible and intelligible, revealed law and realization must remain joined.[^ark]
+
+The son’s loss tests more than ancestry. It brings paternal affection into a question about the scope of the divine promise. Nūḥ invokes both kinship and God’s unfailing word; the answer corrects his understanding of who belongs to the promised household. He seeks refuge from asking beyond his knowledge. The prophet who has taught his people now receives instruction in the adab of his own prayer.[^noah]
+
+This does not make affection a fault in itself. It specifies the relation between a genuine affection, the terms of a promise and the knowledge required to invoke it rightly. The narrative therefore links reception, social accountability, preservation and personal correction. The disputed Akbarian readings of the drowned people’s ultimate condition remain in the earlier dossier; they do not displace the Qurʾānic contrast between response and refusal.
+
+## 5. Hūd and Shuʿayb: strength, worship and exchange
+
+Hūd’s warning concerns a relation between monumental achievement, the imagination of permanence and coercive force. Architecture is not itself condemned. The transmitted meanings of *maṣāniʿ* include palaces, fortifications and waterworks; the term does not authorize one exact reconstruction of an ancient city. The narrative judges the purposes and pretensions attached to power rather than all durable construction.[^hud]
+
+Shuʿayb’s opponents ask why his prayer should govern their inherited worship and use of property. Their objection separates devotion from the obligations of exchange. His reply joins them: reverence for the divine command requires care for those whom commercial acts affect. He also refuses to reserve for himself the practices he prohibits to others.[^shuaib]
+
+Reform here requires integrity of action as well as an accurate rule. Neither prophetic authority nor private piety grants an exemption from the standard proclaimed. Lawful provision remains good; its sufficiency challenges the claim that every profitable means is therefore legitimate. Dependence on divine enabling also limits the reformer’s self-claim: he can strive and teach, but cannot manufacture another person’s willing response.
+
+## 6. Ṣāliḥ: the sign, the water share, and collective violence
+
+Ṣāliḥ's people possess gardens, water, crops and houses carved from mountains (26:146–149). The Qurʾān does not condemn their material capacities. It challenges their belief that security and abundance release them from an obligation to respect God's sign and the limits placed upon their use of water. The she-camel has a specified turn to drink; they have another (26:155). The shared source introduces a real, temporal restraint: their entitlement is not the only entitlement. The sign therefore enters the rhythms of provision rather than remaining an abstract spectacle.[^salih]
+
+A powerful minority resists this imposed limit. The narrative of nine corrupting groups conspiring against Ṣāliḥ and his household (27:48–50) distinguishes private envy, coordinated violence and the attempt to conceal responsibility under an oath. The corruption is not the fact that people need water, but the conversion of a legitimate resource interest into the destruction of a protected claim. The Qurʾānic verses do not identify the exact archaeological mechanism by which the camel appeared; reports of emergence from a rock belong to the exegetical tradition. The Ṣāliḥic *Fuṣūṣ* interprets the opening of rock through the wisdom of *fatḥ*, the disclosure of an unforeseen possibility, but that metaphysical reading does not establish a physical history not supplied by the Qurʾān.[^salihfusus]
+
+**Link to the opening:** A comprehensive vocation requires knowledge of claims other than one's own. The sign tests whether a society can limit its exercise of power without regarding that limitation as an intolerable affront. The episode prepares later questions about resource allocation, agreements and the public protection of vulnerable claims.
+
+## 7. Lūṭ: hospitality, limited power, and the refuge that exceeds it
+
+The arrival of guests exposes a community's disorder in the concrete obligations of hospitality and protection (11:77–81). Lūṭ strives to shield those entrusted to him while facing people he cannot repel by his own force. His wish for strength or a protective clan identifies an actual horizontal constraint: righteous intention does not itself supply the means of defence. The commentaries distinguish the ordinary sense of the *rukn shadīd*, a powerful kin group or stronghold, from the Prophetic reminder that God's support is the ultimate refuge.[^lut]
+
+The Lūṭic *Fuṣūṣ* connects *malakiyya* with force and strength, making the episode a meditation on the limits of creaturely power. But divine protection is not a justification for neglecting the duty to resist harm within one's actual capacity. The guests and kinship status matter precisely because a messenger must act among people through means that may be insufficient. Divine rescue does not retroactively make their threatened assault a legitimate use of force.[^lutfusus]
+
+**Link to the opening:** The finite cannot become ultimate security. Unlike Iblīs, Lūṭ's distress and wish for support need not become a self-authorizing refusal of the higher command. The episode adds the protection of others to the practical meanings of vicegerency.
+
+
+## 8. Ibrāhīm: intimacy, tested leadership and the House
+
+Ibrāhīm’s wisdom begins in *khulla*: an intimacy in which attachment to the divine permeates the person rather than remaining one interest among others. Its comprehensiveness is not physical mixture with God. It concerns the depth to which divine knowledge and love govern the servant’s reality. Trial makes that allegiance effective amid relationships and possessions that rightly matter to him.[^khulla]
+
+The tests do not inform an ignorant God. They disclose fidelity in action and qualify the person’s leadership before others. The covenant therefore does not pass automatically through descent; injustice contradicts its demand. The near-sacrifice must not become praise of killing as such: surrender concerns the beloved attachment, while the ransom prevents surrender from being identified simply with the child’s death.[^ibrahim][^sacrifice]
+
+The sanctuary gives this allegiance durable social form. The stated purpose of the settlement is the establishment of prayer; the attraction of hearts and arrival of provisions sustain it. Return to the House, protection, pilgrimage and livelihood become related obligations rather than unrelated advantages. Its custodians cannot convert the goods supporting worship into a property claim against worship’s demands.[^house]
+
+The sacred centre joins distinct lives to a common orientation without containing God or erasing their differences. The petition for a future messenger completes the connection between place and formation: recitation, teaching and purification must make the sanctuary’s purpose living in its people. A sacred building alone cannot do their knowing and acting for them.[^prayer]
+
+## 9. Ismāʿīl: the covenant becomes household fidelity
+
+Ibrāhīm's sanctuary cannot secure its end through stone or descent alone. The Qurʾān independently honours Ismāʿīl for truthfulness to his promise and instruction of his household in prayer and *zakāt* (19:54–55). His agency is not reducible to standing beside his father at the House. The shared building becomes a recurring human task: promises bind conduct across time; household teaching habituates bodies and desires; giving prevents possessions from enclosing the family within private interest. Al-Qushayrī connects the promise to sacrificial trial and joins bodily and financial devotion. Ibn ʿĀshūr emphasizes the passage's independent treatment of Ismāʿīl.[^ismail]
+
+The elevation attributed to Ismāʿīl in the *Fuṣūṣ* concerns a metaphysical station and the servant's utter dependence upon the Lord. It does not make the practical promise dispensable. **Link:** the higher meaning of transmitted covenant is embodied by a faithful person, not inherited automatically by biological descent.
+
+
+## 10. Yūsuf: the light of interpretation and the subtle government of events
+
+Yūsuf’s luminous wisdom concerns the disclosure of meaning through form. An image is not self-interpreting, and the same image need not carry one fixed meaning in every recipient and circumstance. Discernment relates the presented form to the order in which it appears. The imaginal is not therefore arbitrary fantasy, nor does interpretation abolish the distinct realities of dream and waking event.[^yusuf]
+
+The narrative also displays divine subtlety: betrayal, displacement and confinement do not disclose the whole course to their participants. The opening vision and its eventual realization give intervening events a relation that cannot be read from immediate advantage alone. This does not vindicate the brothers’ wrong; providence exceeds their intention rather than making their intention righteous.[^lutf]
+
+The approach to office has a public threshold. Yūsuf seeks clarification of the accusation before accepting release, protecting the trust on which later service will depend. Spiritual integrity is not merely private self-certainty. It can require truthful public acknowledgment when an unresolved charge would compromise the entrusted work.[^exoneration]
+
+Interpretation then becomes practical counsel. Harvest remains in its ears, consumption leaves reserves, and future scarcity qualifies present abundance. The physical property of stored grain belongs inside the explanation: knowledge must address how food actually survives. Trustworthiness governs the beneficiaries; competence secures the means.[^grain][^office]
+
+The conclusion returns authority to the household. Yūsuf speaks of release from prison rather than making the brothers’ violence the centre of the reunion. Reconciliation does not deny the wrong; it prevents regained power from making revenge its end. The narrative joins symbolic discernment, moral endurance, public credibility, temporal foresight and forgiving action.[^reunion]
+
+## 11. Mūsā: divine formation, intimacy and public commission
+
+Mūsā’s mission begins before his confrontation with Pharaoh. The infancy narrative shows preservation through what appears most dangerous: water, separation and reception into an enemy’s household. Later flight and life in Midian enter a formation already held within divine care. The commentary reads subtle favour beneath overpowering circumstances; it does not claim that violence becomes righteous because God frustrates its purpose.[^musa]
+
+The declaration that God has chosen Mūsā for Himself leads directly to his being sent to Pharaoh. Intimacy does not culminate in keeping the messenger away from the world. It equips him to return without making worldly acceptance the source of his authority. His request for assistance and his brother’s participation further distinguish received mission from self-sufficient individual power.[^musa-return]
+
+Deliverance then changes the community’s task. Freedom from a ruler does not automatically form truthful judgment, stable worship or ordered desire. Covenant gives freedom a governing end. The tablets’ comprehensive guidance must not be redescribed as a merely external law awaiting a later religion to supply inwardness.[^mosaic-law]
+
+The al-Khiḍr narrative preserves a further distinction between spiritual dignity and the particular knowledge God discloses to a person. A limited presentation need not yield the whole reason for an act. This does not give ordinary agents authority to set revealed obligations aside through unverified claims to inward knowledge. It places judgment within its actual evidentiary and vocational limits.
+
+## 12. Ayyūb: dependence, patience, and the right to ask for relief
+
+Suffering is not self-interpreting. It can result from several causes and does not prove a prior moral fault. The detailed accounts of Ayyūb's losses and bodily condition vary widely; accusations that he deserved punishment through a specific hidden wrongdoing are neither established by the Qurʾān nor required for its lesson. The spiritual commentary prefers the possibility of affliction that raises rank without preceding fault.[^ayyub]
+
+Ayyūb's invocation combines acknowledgment of harm with recognition of divine mercy (21:83). His statement does not annul patience: complaint **to** God differs from accusation **against** God. His steadfastness belongs to continuing worship and trust rather than to a refusal to ask. The response includes a striking bodily act: strike the ground with the foot, then wash and drink (38:42). A restorative divine gift arrives through created water and an obedient movement. Healing neither proves that suffering was a moral failure nor that using means marks lesser realization.[^ayyub][^ayyubwater]
+
+The oath incident (38:44) adds the relationship between firmness and lenience. The Qurʾān commands a bundle and speaks of not breaking an oath; the surrounding story involving Ayyūb's wife has several disputed details. Its juridical applications have also been contested. The limited but secure point is that the text joins fidelity to a commanded concession rather than equating seriousness with maximum severity.[^ayyuboath]
+
+The Ayyūbic *Fuṣūṣ* treats his wisdom as *ghaybiyya*: trial, patience, provision and restoration emerge from sources not mastered by the sufferer. Ayyūb's proper response is receptive petition and action, not a theory claiming to explain each misfortune. **Link:** providence and psychology meet without making the devil an independent author of disease; spiritual formation uses rather than erases bodily life.[^ayyubfusus]
+
+## 13. Yūnus: the limits of prophetic expectation and the mercy of reprieve
+
+Yūnus's mission reveals a community that responds after a warning, avoiding the fate of destroyed peoples (10:98). The commentaries debate whether repentance occurred after impending signs or after punishment had begun, and compare it to Pharaoh's final response. Those chronologies are not interchangeable. The Qurʾānic result is decisive: God removes the threatened worldly punishment after the community believes. The people's future cannot be read exhaustively from the messenger's expectation of their present refusal.[^yunuspeople]
+
+The messenger's departure and the ordeal of the fish establish another difference. The phrase *lan naqdira ʿalayhi* (21:87) admits readings involving constriction or punishment; it must not be made to assert that a prophet doubted God's omnipotence. Ibn ʿAjība distinguishes the general possibility of withdrawing from hostile people from the specific authorization appropriate to this particular mission. Yūnus recognizes his wrong and calls out from darkness, and God saves him. The spiritual readings describe relief as *tanfīs*: constriction is opened through confession and mercy, without turning the initial impatience into righteousness.[^yunus][^yunusfusus]
+
+The link to the final Prophet is direct rather than imposed. Qurʾān 68:48 instructs Muḥammad ﷺ to remain patient and not repeat the companion of the fish's haste. The prohibition concerns impatient departure, not the excellent act of calling upon God. The Prophet's reported prohibition on claims of superiority over Yūnus also forbids using the episode to discredit a messenger.[^yunuspatience]
+
+The Yūnus chapter of the *Fuṣūṣ* additionally emphasizes preserving human life and judging acts without treating the created human form as worthless. Its legal analogies are author-specific and do not erase the received law of justice. **Link:** mercy can transform a threatened collective outcome, while the prophet must leave room for divine action not contained in his own immediate judgment.[^yunusfusus]
+
+
+## 14. Dāwūd and Sulaymān: gift, particular understanding and the uses of dominion
+
+Prophetic kingship gives vicegerency an outward jurisdiction; it does not produce prophecy through political success. The Davidic discussion emphasizes divine bestowal. The gifts establish gratitude and accountability rather than a claim that the recipient earned an independent power.[^gift]
+
+The damaged-crop judgment makes that accountability concrete. Scripture affirms that God gave both prophets judgment and knowledge while granting Sulaymān a particular understanding. In a widely transmitted explanation, his settlement restores the crop while temporarily compensating its owner through the flock’s benefits, then returns the respective properties. This reported detail illustrates a concern for restoration and both parties’ continuing means; it is not itself the full wording of the Qurʾān.[^kings]
+
+The different judgment does not reduce Dāwūd to an ignorant or spiritually deficient figure. The exegetical debate concerns particular discernment, prophetic judgment and divine correction. The wisdom already bestowed on both remains explicit.[^judgment]
+
+Their relations to the cosmos also differ. Mountains and birds praise with Dāwūd; wind and other powers serve Sulaymān’s command. Praise, craft and ordered action express different relations of the same received gift. Armour-making joins inspired instruction to bodily protection, so technical work belongs within gratitude rather than beneath prophetic dignity.[^kings]
+
+The arrival of the Queen’s throne first tests Sulaymān: will extraordinary power produce gratitude or self-attribution? The Queen’s recognition matters, but it should not conceal this prior trial of the king. His extraordinary command increases his obligation to acknowledge the Giver; it does not suspend that obligation.[^gratitude]
+
+## 15. Zakariyyā and Yaḥyā: continuity without possession of the future
+
+Zakariyyā asks for a successor despite age and infertility. The Qurʾān does not hide this natural impossibility; it makes it the condition of a received gift rather than a denial of embodiment. Yet he ends by acknowledging God as the best of inheritors (21:89). His desire for continuity therefore does not authorize control of the gift. Interpretations of *yarithunī* (19:6) differ—wealth, knowledge, religious office, prophetic vocation, or combinations—and must not be reduced to a single supposedly obvious meaning.[^zak]
+
+Yaḥyā receives *ḥukm* in youth, takes hold of the Book with firmness and receives tenderness, purity and kindness to his parents (19:12–15). Commentators disagree about the exact timing and whether *ḥukm* here means early prophethood or wisdom and understanding. Neither reading makes strength and mercy rivals. A received capacity for firm judgment is perfected through gentle conduct and the absence of tyranny.[^yahya]
+
+The linked conclusion of Sūrat al-Anbiyāʾ identifies the prophets as people who hasten **in** good works, call upon God through hope and fear, and remain humble (21:90). This is an explicit scriptural counterweight to the one-sided spiritual fixation we studied in Iblīs. The different modes of response do not flatten into a fixed sentiment; they remain available to the command appropriate to the occasion. Neither family continuity nor spiritual fervour is complete unless it becomes receptive action.[^hopefear]
+
+
+## 16. Maryam and ʿĪsā: creative Word, means and servanthood
+
+Maryam supplies the clearest correction to an account that equates spiritual ascent with decreasing use of means. Gift without ordinary effort can disclose God’s agency; mature certainty can then return to effort without mistaking effort for an independent cause. Her movement from received provision to shaking the palm is therefore read as completion, not as a punishment for loving her child.[^means]
+
+ʿĪsā’s conception discloses the creative command without an ordinary paternal cause. His signs likewise reveal divine life-giving through a created messenger. The repeated qualification of divine permission maintains the distinction between the instrument and the Source, while the form of the sign makes that Source conspicuous.[^isa]
+
+The mission does not stop at extraordinary effects. Recognition that God is his Lord and theirs leads to worship; confirmation of the Torah and the alteration of certain prohibitions connect revealed knowledge with the community’s conduct. The inward and outward are not successive competitors but coordinated requirements of response.[^isa]
+
+His final address concerning his followers further joins compassion to discernment. He does not make himself the owner of their judgment or impose his preferred outcome upon God. The divine Names of might and wisdom close the appeal, retaining the right of judgment even within the possibility of forgiveness. The passage admits different exegetical explanations of its scope; it does not independently establish an unrestricted doctrine of universal pardon.[^isa-adab]
+
+## 17. The fuller relation among the episodes
+
+The new readings correct the idea that each prophet supplies one isolated virtue and that later history accumulates those virtues mechanically. Ṣāliḥ puts divine right into an actual water schedule; Lūṭ confronts a duty that exceeds his immediate strength; Ismāʿīl turns covenant into an inherited practice; Ayyūb petitions without disowning patience; Yūnus learns that a community may repent beyond his expectation; Zakariyyā seeks religious continuity without possessing its means; and Yaḥyā joins strength to gentleness.
+
+Together they disclose **right responsiveness under changing conditions**: a person must recognize the actual duty, the relevant means, the limits of his knowledge, the good belonging to others, and God's power to act beyond his expectation. The final Qurʾānic recitation gathers these earlier narratives not only as precedents but as continuing education in judgment and spiritual character.[^stories][^hopefear]
+## 18. Muhammadan comprehensiveness as gathered adab
+
+The prophets share worship of God and differ in their missions, laws, circumstances and characteristic disclosures. The differentiation includes gratitude amid sovereignty, endurance under suffering, fidelity through changing fortune, and renunciation of self-importance. No prophet lacks every excellence not especially prominent in his story. Distinct emphasis is not exclusive possession.[^gathering]
+
+Muhammadan gathering joins these modes of servanthood without cancelling their proper differences. Following the earlier guidance cannot mean simultaneously enacting incompatible practical laws. The commentators disagree about the precise authority of preceding laws, but the contrast between common guidance and differentiated legal provisions remains essential.[^gathering][^criterion]
+
+The Akbarian account explains the gathering through the comprehensive Name and the relation between Muhammadan speech and the realities deposited in Adamic humanity. It affirms the earlier prophets’ perfection while distinguishing modes of its manifestation. Principial precedence is not an earthly chronology placing the historical Prophet before Ādam.[^jamii]
+
+The final mission’s historical forms give this account determinate content. Recitation presents the signs; instruction teaches revelation and practical wisdom; purification removes the habits that obstruct a truthful response. The address includes people beyond the first recipients. Its continuance involves teachers and practices that communicate inherited guidance, not new claimants to prophetic revelation.[^community][^prayer]
+
+## 19. The prophetic stories continue to form their hearers
+
+The Qurʾān’s earlier prophets are not merely a genealogy before Muḥammad. Their stories strengthen him in his actual mission and instruct his hearers in endurance, confidence and response. Their narration belongs to the divine act of guidance. The history they relate and the formation they effect are connected but distinguishable functions.[^stories]
+
+Recitation alone does not exhaust this formation. The revealed word accommodates human reception through letters and speech, while its purpose includes understanding and action. Attention, comprehension and transformation therefore remain distinct. One can preserve the wording while failing to let it govern conduct.[^reading]
+
+The same passage may awaken fear, hope, gratitude, restraint or resolve according to its meaning. Comprehensiveness lies in a responsive heart and rightly ordered action, not in a permanent mood or the repetition of one favoured spiritual vocabulary. The reader must receive the claim made by the present address rather than force every address into an existing preference.[^reading]
+
+This supplies the bridge to later history. Institutions can preserve texts, teach judgment, sustain worship and form dispositions, but they do not achieve their end merely by surviving. They inherit responsibilities differentiated from the integrated prophetic example. The end remains living guidance: truth understood, conduct corrected, faculties formed, and created goods returned to their proper relations.
+
+
+
+## Coverage and interpretive controls
+
+**Fresh primary-text work:** The notes identify the exact verses or chapter sections inspected. Especially substantial connected units came from the *Baḥr al-madīd*: 11:45–47; 20:36–41; 21:78–82; 3:45–51; 6:84–90; 62:1–4; and selected extended discussions in Sūrahs 11, 12 and 71. The compact Bayḍāwī and Qushayrī entries cited as complete were read as entries; “selected” identifies a narrower inspection of a longer discussion. The Fuṣūṣ materials are identified by prophet and commentator rather than treated as a single voice.
+
+**Retained framework:** The Lings, Schuon and Guénon foundations and the extended Iblīs comparisons come from the already established dossier. They were not all newly recollated in this pass. *The Study Quran* is not listed as a newly checked source.
+
+**Disagreements that remain visible:** The date of Ādam’s appointment; the pronoun and forgetfulness in Yūsuf 12:42; the relation of earlier revealed laws to the final dispensation; the details and legal basis of the David–Solomon judgment; the Noahic eschatological interpretations; and the scope of ʿĪsā’s appeal at 5:118. None is resolved by treating all commentators as unanimous.
+
+**What changes now:** The proposed matn and sharḥ add the positive movement of received gift, formation and renewed service. They strengthen narrative links and add Maryam’s explicit counterexample to the idea that outward effort invariably indicates diminished realization. The metaphysical framework remains primary, but it now specifies more of the actual acts, judgements, relationships and means through which prophetic wisdom appears.
+
+## Source notes
+
+[^origin]: **Retained foundation, not newly exhaustively collated here.** Guénon, *The Multiple States of the Being*, ch. XVII; Schuon, *Survey of Metaphysics and Esoterism*, pp. 15–18; the Adamic *Fuṣūṣ*. The opening states the established interpretive framework, not a consensus formulation of every school of theology. The new research below develops its exegetical embodiment.
+
+[^adam]: Al-Bayḍāwī, *Anwār al-tanzīl*, [2:31](https://quran-tafsir.net/baidawy/sura2-aya31.html). The whole compact entry was read. It joins created capacities, knowledge of realities and properties, sciences and crafts, and the discernment of capacities and rights needed for just government. The brief wording “معرفة ذوات الأشياء وخواصها” means knowledge of things and their properties. This is not a warrant to attribute every future technical discovery to a prophet.
+
+[^names]: Al-Qushayrī, *Laṭāʾif al-ishārāt*, [2:31](https://quran-tafsir.net/qoshairy/sura2-aya31.html), read in full; al-Rāzī, *Mafātīḥ al-ghayb*, [2:31](https://quran-tafsir.net/alrazy/sura2-aya31.html), relevant opening arguments concerning names and meanings. Qushayrī distinguishes names of creatures and the Names of the Real and interprets the interval before display as settled reception and realization. These interpretations are not interchangeable with every reported literal account.
+
+[^fall]: **Retained dossier, with a fresh check of a disputed locus.** Qurʾān 2:30–38; 7:19–23; 20:115–123. Al-Ālūsī, [20:121](https://quran-tafsir.net/alusy/sura20-aya121.html), on lapse and prophetic protection. Lings, *The Book of Certainty*, chs. III–VI, remains the central symbolic guide. His collective account must not be substituted for a settled personal chronology. The extended Iblīs dossier remains in the previous manuscript; this pass did not newly collate every work in it.
+
+[^repentance]: Al-Qushayrī, [2:37](https://quran-tafsir.net/qoshairy/sura2-aya37.html), read in full. The commentary itself distinguishes its imagined spiritual farewell from a claim to report an otherwise unknown historical dialogue. The point retained here is the received word of return, not every dramatized exchange.
+
+[^gift]: Al-Kāshānī, *Sharḥ Fuṣūṣ al-ḥikam*, Davidic chapter, [opening at p. 244](https://ablibrary.net/book_content/b/5488/244?lang=ar); [chapter transcription](https://ibnalarabi.com/fusus/qashani.php?id=19), opening and bestowal discussion inspected. The commentary connects Dāwūd and Sulaymān with outward vicegerency and explicitly treats prophecy as divine gift rather than acquired achievement. Some later reloads of the transcription returned server errors; the passage was readable earlier in the research session.
+
+[^means]: Ibn ʿAjība, *al-Baḥr al-madīd*, *ishāra* following the Maryam narrative, [online locator](https://books.islam-db.com/book/البحر_المديد_في_تفسير_القران_المجيد/1553). The relevant paragraph quotes Abū al-ʿAbbās al-Mursī: “والحالة الثانية أتم من الحالة الأولى”—the second condition is more complete than the first. It explicitly rejects the claim that motherhood lowered Maryam through divided love. This is the most substantial correction to the draft’s account of means and spiritual progress. The site’s page number is an electronic locator, not a claimed edition page.
+
+[^noahpoor]: Al-Zamakhsharī, *al-Kashshāf*, [11:27](https://quran-tafsir.net/zamakhshary/sura11-aya27.html); al-Rāzī, [11:29](https://quran-tafsir.net/alrazy/sura11-aya29.html). Both entries’ relevant body passages were read: status contempt, rejection of financial dependence, refusal to expel believers, and accountability for hidden faith.
+
+[^noah]: Ibn ʿAjība, [11:45–47](https://www.greattafsirs.com/Tafsir_Library.aspx?AyahNo=45&FromMainTafsir=1&LanguageID=1&MadhabNo=3&SoraNo=11&TafsirNo=37), full pericope commentary; al-Ṭabarī, [11:46](https://quran.ksu.edu.sa/tafseer/tabary/sura11-aya46.html), selected variant reports and readings. The main argument does not depend on the disputed claim that the son was not biologically Nūḥ’s son. It concerns the promise’s scope and Nūḥ’s reception of correction.
+
+[^ark]: Ibn ʿAjība, [Sūrat Nūḥ commentary](https://quranpedia.app/books/b10273/s361.html), the examined blocks on repeated calling, persistence, inherited worship, judgment and prayer; [11:40, printed II:529 in the available reproduction](https://ablibrary.net/book_content/b/12715/529?lang=ar), retained from the prior dossier. The exact dimensions of the Ark, populations, ages and other unverified narrative additions are not used. The extended Noahic *Fuṣūṣ* dispute remains separate.
+
+[^hud]: Al-Ṭabarī, [26:129](https://quran.ksu.edu.sa/tafseer/tabary/sura26-aya129.html), and al-Qurṭubī, [26:128](https://quran.ksu.edu.sa/tafseer/qortobi/sura26-aya128.html). The inspected lexical reports do not identify one archaeologically established architectural form. The Qurʾānic linkage of building, permanence and force remains the governing text, 26:128–130.
+
+[^shuaib]: Al-Zamakhsharī, [11:87](https://quran-tafsir.net/zamakhshary/sura11-aya87.html); al-Rāzī, [11:88](https://quran-tafsir.net/alrazy/sura11-aya88.html), complete main argument; Ibn ʿAjība, [11:84–95](https://quranpedia.net/surah/1/11/book/206), selected blocks, particularly 11:87 and the inward discussion. Al-Rāzī explicitly connects worship and the refusal of fraud with reverence for God’s command and care for creatures. The note does not authenticate every transmitted detail about the people’s commerce.
+
+[^khulla]: Al-Kāshānī, [Abrahamic *Fuṣūṣ* commentary](https://www.ibnalarabi.com/fusus/qashani.php?id=7), opening explanation of *muhayyamiyya* and *khulla*. The site’s transcription contains other material as well; only the clearly identified Kāshānī opening is attributed here. The inner foundation is intimacy and pervasive love, not sanctuary administration alone.
+
+[^ibrahim]: Ibn ʿAjība, [2:124](https://www.greattafsirs.com/Tafsir_Library.aspx?AyahNo=124&LanguageID=1&MadhabNo=3&QuranAyat_Home=1&SoraNo=2&TafsirNo=37), full entry; al-Bayḍāwī, [2:124](https://quran-tafsir.net/baidawy/sura2-aya124.html). The lists of tests differ; no single reconstructed chronological sequence is presented as undisputed. Trial is not the acquisition of new information by God.
+
+[^sacrifice]: Al-Qushayrī, [37:102](https://quran-tafsir.net/qoshairy/sura37-aya102.html), relevant complete discussion; al-Rāzī, [2:260](https://quran-tafsir.net/alrazy/sura2-aya260.html), selected opening arguments on faith and further assurance. The revised text does not resolve the separate disagreement over the son’s identity.
+
+[^house]: Al-Zamakhsharī, [14:37](https://quran-tafsir.net/zamakhshary/sura14-aya37.html); al-Ālūsī, [2:125](https://quran-tafsir.net/alusy/sura2-aya125.html), relevant discussions of *mathāba* and security. Cultic purpose, recurrent return, protection and provision provide the concrete relations within the centre symbolism. Legal security must not be confused with a guarantee that no violence ever occurred in the sanctuary.
+
+[^prayer]: Al-Zamakhsharī, [2:129](https://quran-tafsir.net/zamakhshary/sura2-aya129.html), full entry: recitation, revealed teaching, wisdom and purification. This gives the Abrahamic–Muhammadan connection explicit Qurʾānic and exegetical form rather than analogy alone.
+
+[^yusuf]: Al-Kāshānī, [Josephic *Fuṣūṣ* commentary](https://ibnalarabi.com/fusus/qashani.php?id=11), extended opening and discussion of luminous wisdom, imaginal forms and interpretation. Interpretive meaning depends on relations and circumstances, not a universal dictionary assigning one fixed meaning to each dream image.
+
+[^lutf]: Ibn ʿAjība, [Sūrat Yūsuf](https://quranpedia.net/surah/1/12/book/206), selected extended clusters, especially 12:19–22, 39–42 and the closing recognition. The inspected discussion explicitly connects trial with divine governance and distinguishes passing forgetfulness from an established condition. It is not a verse-by-verse audit of the whole sūrah.
+
+[^exoneration]: Al-Rāzī, [12:50](https://quran-tafsir.net/alrazy/sura12-aya50.html), relevant main discussion. Also [12:24](https://quran-tafsir.net/alrazy/sura12-aya24.html): his rejection of unsupported scandalous reports is material to how the temptation is narrated. On [12:42](https://quran-tafsir.net/alrazy/sura12-aya42.html), he prefers a reading involving Yūsuf’s request; other readings identify the forgetful person as the released prisoner. The disagreement is not silently resolved by combining authors.
+
+[^grain]: Al-Zamakhsharī, [12:47](https://quran-tafsir.net/zamakhshary/sura12-aya47.html), full short entry: directive force of the wording and preserving grain in its ears against deterioration. Agricultural detail gives the ethical principle an actual means.
+
+[^office]: Al-Ālūsī, [12:55](https://quran-tafsir.net/alusy/sura12-aya55.html), relevant opening and legal discussion: preservation, competence, seeking office for a public good, and the debated conditions of service under a non-Muslim or unjust ruler. This does not establish an unrestricted permission for every political appointment.
+
+[^reunion]: Al-Qushayrī, [12:100](https://quran-tafsir.net/qoshairy/sura12-aya100.html), full short commentary: the delicacy of referring to prison rather than making the well and the brothers’ offence the focus of reunion. The detailed narrative remains Qurʾān 12:90–101.
+
+[^musa]: Ibn ʿAjība, [20:36–41](https://www.greattafsirs.com/Tafsir_Library.aspx?AyahNo=38&FromMainTafsir=1&LanguageID=1&MadhabNo=3&SoraNo=20&TafsirNo=37), extended commentary and *ishāra*. Earlier favour precedes the request; apparent danger carries preservation; formation precedes the public commission. Unverified ages, names and detailed chronological additions are not adopted.
+
+[^musa-return]: Al-Qushayrī, [20:41](https://quran-tafsir.net/qoshairy/sura20-aya41.html), full entry. Withdrawal for God and return to Pharaoh explain the conjunction of inward dedication and outward service. This is stronger than describing Mūsā only as an opponent of tyranny.
+
+[^mosaic-law]: Al-Kāshānī, [Mosaic *Fuṣūṣ* commentary](https://ibnalarabi.com/fusus/qashani.php?id=27), inspected opening on *ʿulwiyya*, divine speech and comprehensive guidance; Qurʾān 7:145; retained account of 18:60–82. Selected passages, not a newly complete chapter collation. The narrative of 26:18–22 also remains part of the earlier dossier.
+
+[^kings]: Ibn ʿAjība, [21:78–82](https://www.greattafsirs.com/Tafsir_Library.aspx?AyahNo=79&FromMainTafsir=1&LanguageID=1&MadhabNo=3&SoraNo=21&TafsirNo=37), extended pericope commentary: the reported compensation case, both prophets’ wisdom, praise, technical instruction and service of the wind. Reported procedural details are distinguished from the Qurʾān’s shorter narrative.
+
+[^judgment]: Al-Rāzī, [21:79](https://quran-tafsir.net/alrazy/sura21-aya79.html), examined arguments about prophetic judgment and correction. Also [38:24](https://quran-tafsir.net/alrazy/sura38-aya24.html), relevant discussion: the compressed court scene does not justify confidently importing an illicit-relationship story or declaring a specific procedural fault without considering alternatives.
+
+[^gratitude]: Al-Ālūsī, [27:40](https://quran-tafsir.net/alusy/sura27-aya40.html), relevant discussion of the throne’s arrival, divine favour and gratitude. The king’s test precedes the Queen’s test. Her detailed case remains in the earlier dossier rather than displacing this wider account of dominion.
+
+[^isa]: Ibn ʿAjība, [3:45–51](https://www.greattafsirs.com/Tafsir_Library.aspx?AyahNo=48&FromMainTafsir=1&LanguageID=1&MadhabNo=3&SoraNo=3&TafsirNo=37), extended unit. It connects the creative Word, signs by permission, confirmation and practical renewal, and—quoting Bayḍāwī—knowledge with worship. Al-Kāshānī’s Christic *Fuṣūṣ* opening was inspected as supplementary material, not newly collated in full. Unauthenticated elaborations of individual miracles are not adopted.
+
+[^isa-adab]: Al-Rāzī, [5:118](https://quran-tafsir.net/alrazy/sura5-aya118.html), full main argument. The closing Names *al-ʿAzīz al-Ḥakīm* preserve divine authority and wisdom; the commentary offers alternative explanations of the forgiveness clause’s scope.
+
+[^gathering]: Ibn ʿAjība, [6:84–90](https://www.greattafsirs.com/Tafsir_Library.aspx?AyahNo=89&FromMainTafsir=1&LanguageID=1&MadhabNo=3&SoraNo=6&TafsirNo=37), extended unit, especially common guidance and gathered prophetic adab; al-Rāzī, [6:90](https://quran-tafsir.net/alrazy/sura6-aya90.html), the gathering of characteristic virtues and debate over previous revealed law. Rāzī does not simply deny the continuing relevance of all former laws; his qualified legal position is not flattened into Ibn ʿAjība’s formulation.
+
+[^criterion]: Al-Ālūsī, [5:48](https://quran-tafsir.net/alusy/sura5-aya48.html), extended semantic, legal and teleological discussion of *muhaymin*, *shirʿa* and *minhāj*. Differences of law answer divinely known benefits and circumstances; the final scripture does not indiscriminately accumulate earlier provisions.
+
+[^jamii]: Al-Jāmī, *Sharḥ Fuṣūṣ al-ḥikam*, [p. 508](https://ablibrary.net/book_content/b/9640/508?lang=ar) and [p. 509](https://ablibrary.net/book_content/b/9640/509?lang=ar), both inspected. The argument concerns comprehensive reality and prophetic perfections. Weak or disputed sayings embedded in the commentary are not presented as independently authenticated hadith.
+
+[^community]: Ibn ʿAjība, [62:1–4](https://www.greattafsirs.com/Tafsir_Library.aspx?AyahNo=2&FromMainTafsir=1&LanguageID=1&MadhabNo=3&SoraNo=62&TafsirNo=37), extended unit including *ishāra*; al-Bayḍāwī, [62:2](https://quran-tafsir.net/baidawy/sura62-aya2.html), full short entry. Cosmic praise, recitation, purification, instruction and later hearers are connected. Continued spiritual teaching does not mean continuing law-giving prophethood.
+
+[^stories]: Ibn ʿAjība, [11:120](https://www.greattafsirs.com/Tafsir_Library.aspx?AyahNo=120&FromMainTafsir=1&LanguageID=1&MadhabNo=3&SoraNo=11&TafsirNo=37), complete entry. Earlier prophetic histories actively strengthen the Prophet and instruct believers. This passage changes the architecture of the Sīrah introduction.
+
+[^reading]: Ibn ʿAjība, [38:29](https://www.greattafsirs.com/Tafsir_Library.aspx?AyahNo=29&FromMainTafsir=1&LanguageID=1&MadhabNo=3&SoraNo=38&TafsirNo=37), extended entry quoting the *Iḥyāʾ* on inward adab of recitation. Divine speech reaches human understanding through verbal form; reception includes understanding and varied inward response, not only retained letters. This does not license interpretation without linguistic and transmitted constraints.
+
+
+[^salih]: **Ṣāliḥ: share and conspiracy.** Qurʾān 26:146–158; 27:45–53. Al-Ṭabarī, [26:155](https://quran.ksu.edu.sa/tafseer/tabary/sura26-aya155.html), explains *shِrb* as the camel's appointed portion of water, contrasted with that of the people. Al-Rāzī, [27:48](https://quran-tafsir.net/alrazy/sura27-aya48.html), explains the conspirators and their unmixed corruption. The Qurʾān does not specify the camel's emergence from rock; that belongs to transmitted elaboration.
+
+[^salihfusus]: **The Ṣāliḥic opening.** Al-Kāshānī, [*Sharḥ Fuṣūṣ al-ḥikam*, p. 166](https://ablibrary.net/book_content/b/5488/166?lang=ar), associates *ḥikma fatūḥiyya* with the opening of the rock and the sudden disclosure of the sign. The commentarial reading is spiritual and includes narrative material beyond the Qurʾān.
+
+[^lut]: **Lūṭ's actual predicament.** Qurʾān 11:77–81; al-Ṭabarī, [11:80](https://quran-tafsir.net/tabary/sura11-aya80.html), explains the hoped-for protective clan; al-Rāzī, [11:80](https://quran-tafsir.net/alrazy/sura11-aya80.html), examines worldly strength and refuge in God; al-Zamakhsharī, [11:80](https://quran-tafsir.net/zamakhshary/sura11-aya80.html), supplies the linguistic account. Details of the visitors' identity unfold in the narrative; fanciful reconstructions of the city's geography are not required.
+
+[^lutfusus]: **Lūṭic wisdom and strength.** Al-Kāshānī, [*Sharḥ Fuṣūṣ*, p. 188](https://ablibrary.net/book_content/b/5488/188), connects *ḥikma malakiyya* with power and the 'strong pillar'. Al-Ālūsī, [11:80](https://quran-tafsir.net/alusy/sura11-aya80.html), records a symbolic treatment of *himma* while retaining the distinction from ordinary means.
+
+[^ismail]: **Ismāʿīl, promise and family.** Qurʾān 2:125–129, 19:54–55. Al-Qushayrī, [19:54–55](https://www.greattafsirs.com/Tafsir_Library.aspx?AyahNo=55&FromMainTafsir=1&LanguageID=1&MadhabNo=3&SoraNo=19&TafsirNo=31), connects promise keeping with trial and the instruction of household in bodily and financial worship. Ibn ʿĀshūr, [19:54](https://tafsir.app/ibn-aashoor/19/54), explains Ismāʿīl's separate mention. Al-Kāshānī, [Ismāʿīlic *Fuṣūṣ*, p. 113](https://ablibrary.net/book_content/b/5488/113?lang=ar), develops elevation alongside servanthood.
+
+[^ayyub]: **Ayyūb, patient supplication.** Qurʾān 21:83–84; 38:41–44. Al-Qushayrī, [21:83](https://quran-tafsir.net/qoshairy/sura21-aya83.html), says naming harm does not annul patience. Ibn ʿAjība, [Sūrat Ṣād 38:41–44](https://quranpedia.net/surah/1/38/book/206), prefers trial elevating rank without antecedent culpability to reports assigning specified hidden sins; he distinguishes complaint to God from despair. Al-Rāzī, [38:41](https://quran-tafsir.net/alrazy/sura38-aya41.html), disputes the claim that Satan independently causes physical illness and develops the psychological reading.
+
+[^ayyubwater]: **Restoration through water.** Al-Ṭabarī, [38:42](https://quran-tafsir.net/tabary/sura38-aya42.html), and Ibn ʿĀshūr, [38:42](https://quran-tafsir.net/ashour/sura38-aya42.html), connect the strike, water, washing and drinking. One spring versus two springs is disputed detail.
+
+[^ayyuboath]: **The bundle and oath.** Qurʾān 38:44; Ibn ʿĀshūr, [38:44](https://quran-tafsir.net/ashour/sura38-aya44.html), expressly says no sound report establishes the full cause of the oath. Ibn ʿAjība records historical explanations and later school differences over the legal accommodation. Do not use them to license general domestic violence or claim all details are historically settled.
+
+[^ayyubfusus]: **The unseen wisdom.** Al-Kāshānī, [*Sharḥ Fuṣūṣ*, p. 259](https://ablibrary.net/book_content/b/5488/259?lang=ar), identifies *ḥikma ghaybiyya* with undeserved gifts, trial, steadfastness and received restoration. His extended cosmological symbolism of water is interpretive, not material science.
+
+[^yunuspeople]: **Community repentance and relief.** Qurʾān 10:98; al-Ṭabarī, [10:98](https://quran.ksu.edu.sa/tafseer/tabary/sura10-aya98.html); al-Rāzī, [10:98](https://quran-tafsir.net/alrazy/sura10-aya98.html), compares the repentance with Pharaoh's; disagreement persists over whether visible signs had begun. Unverified precise dates, duration and numbers in narrative reports are not asserted as facts.
+
+[^yunus]: **Departure, constriction and repentance.** Qurʾān 21:87–88; 37:139–148; 68:48–50. Al-Ṭabarī, [21:87](https://quran.ksu.edu.sa/tafseer/tabary/sura21-aya87.html), favours the sense of 'constraining' or punishing and rejects doubting omnipotence. Ibn ʿAjība, [21:87–88](https://quranpedia.net/surah/1/21/book/206), distinguishes a general rule from particular divine leave. The exact occasion and direction of Yūnus's anger are discussed differently in sources.
+
+[^yunuspatience]: **Yūnus teaches Muḥammad ﷺ.** Al-Zamakhsharī, [68:48](https://quran-tafsir.net/zamakhshary/sura68-aya48.html), interprets the warning against impatience, not the praiseworthy supplication. Al-Ṭabarī, [68:48](https://quran-tafsir.net/tabary/sura68-aya48.html), preserves the same contrast; *Ṣaḥīḥ al-Bukhārī* [3412](https://sunnah.com/bukhari:3412) forbids disparaging superiority claims over Yūnus.
+
+[^yunusfusus]: **The Yūnus *Fuṣūṣ*.** Al-Kāshānī, [pp. 254–256](https://ablibrary.net/book_content/b/5488/254?lang=ar), identifies *ḥikma nafsiyya* with relief (*tanfīs*) and explains care for the human form, restraint in judging and the superiority of pardon in particular contexts. The commentarial legal analogies remain author-specific and should not be turned into the indiscriminate abolition of criminal justice.
+
+[^zak]: **Zakariyyā: the gift of an heir.** Qurʾān 19:2–11; 21:89–90. Al-Rāzī, [19:6](https://quran-tafsir.net/alrazy/sura19-aya6.html), surveys inheritance as property, knowledge, office, moral conduct and prophecy, with combinations. Ibn ʿAjība, [21:89–90](https://quranpedia.net/surah/1/21/book/206), notes his submission to God as the best of inheritors. The differences over inheritance should remain visible.
+
+[^yahya]: **Yaḥyā: firmness and tenderness.** Qurʾān 19:12–15. Ibn ʿĀshūr, [19:12](https://quran-tafsir.net/ashour/sura19-aya12.html), takes *al-kitāb* as the Torah and weighs precocious wisdom against immediate childhood prophecy; al-Shawkānī, [19:12](https://quran-tafsir.net/shawkany/sura19-aya12.html), connects taking the Book to a disposition (*malaka*) making action easier. The temporal meaning of *ḥukm* is disputed.
+
+[^hopefear]: **The Qurʾānic conclusion.** Qurʾān 21:90; al-Ṭabarī, [21:90](https://quran-tafsir.net/tabary/sura21-aya90.html), transmits that longing and fear should not be separated; Ibn ʿĀshūr, [21:90](https://quran-tafsir.net/ashour/sura21-aya90.html), understands the characterization as encompassing the prophetic narratives in the passage. The comparison with Iblīs's restricted Sufi portrayal is our synthesis, not a direct assertion by these exegetes.

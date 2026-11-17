@@ -1,0 +1,132 @@
+{
+  "version": "20261110-matrix1",
+  "status": "passed",
+  "testedAt": "2026-11-10T15:51:10.471Z",
+  "results": [
+    {
+      "browser": "chromium-1280",
+      "status": "passed",
+      "applications": 28,
+      "columns": 9,
+      "ticks": 59,
+      "geometry": {
+        "viewport": 1280,
+        "bodyWidth": 1280,
+        "scrollWidth": 928,
+        "clientWidth": 894,
+        "sticky": "sticky",
+        "first": 317.1875,
+        "second": 317.1875
+      },
+      "checks": [
+        "source-derived reference coverage",
+        "unchanged application prose",
+        "compact and expanded views",
+        "existing filters and empty results",
+        "tick detail links",
+        "contextual return",
+        "case-label jumps",
+        "sticky mobile labels",
+        "no outer overflow",
+        "keyboard focus restoration",
+        "collapse control",
+        "Daruri application-view scope"
+      ],
+      "baselineBrowserExceptions": []
+    },
+    {
+      "browser": "chromium-390",
+      "status": "passed",
+      "applications": 28,
+      "columns": 9,
+      "ticks": 59,
+      "geometry": {
+        "viewport": 390,
+        "bodyWidth": 390,
+        "scrollWidth": 864,
+        "clientWidth": 321,
+        "sticky": "sticky",
+        "first": 34.390625,
+        "second": 34.390625
+      },
+      "checks": [
+        "source-derived reference coverage",
+        "unchanged application prose",
+        "compact and expanded views",
+        "existing filters and empty results",
+        "tick detail links",
+        "contextual return",
+        "case-label jumps",
+        "sticky mobile labels",
+        "no outer overflow",
+        "keyboard focus restoration",
+        "collapse control",
+        "Daruri application-view scope"
+      ],
+      "baselineBrowserExceptions": []
+    },
+    {
+      "browser": "webkit-390",
+      "status": "passed",
+      "applications": 28,
+      "columns": 9,
+      "ticks": 59,
+      "geometry": {
+        "viewport": 390,
+        "bodyWidth": 390,
+        "scrollWidth": 864,
+        "clientWidth": 321,
+        "sticky": "sticky",
+        "first": 34.390625,
+        "second": 34.390625
+      },
+      "checks": [
+        "source-derived reference coverage",
+        "unchanged application prose",
+        "compact and expanded views",
+        "existing filters and empty results",
+        "tick detail links",
+        "contextual return",
+        "case-label jumps",
+        "sticky mobile labels",
+        "no outer overflow",
+        "keyboard focus restoration",
+        "collapse control",
+        "Daruri application-view scope"
+      ],
+      "baselineBrowserExceptions": []
+    },
+    {
+      "browser": "webkit-320-dark",
+      "status": "passed",
+      "applications": 28,
+      "columns": 9,
+      "ticks": 59,
+      "geometry": {
+        "viewport": 320,
+        "bodyWidth": 320,
+        "scrollWidth": 864,
+        "clientWidth": 251,
+        "sticky": "sticky",
+        "first": 34.390625,
+        "second": 34.390625
+      },
+      "checks": [
+        "source-derived reference coverage",
+        "unchanged application prose",
+        "compact and expanded views",
+        "existing filters and empty results",
+        "tick detail links",
+        "contextual return",
+        "case-label jumps",
+        "sticky mobile labels",
+        "no outer overflow",
+        "keyboard focus restoration",
+        "collapse control",
+        "Daruri application-view scope"
+      ],
+      "baselineBrowserExceptions": []
+    }
+  ],
+  "physicalDeviceTest": false
+}

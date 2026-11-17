@@ -1,0 +1,132 @@
+{
+  "title": "Targeted external witnesses for N-VI-05 and N-X-02",
+  "scope": "Two targeted reading checks only. No complete external collation of either chapter is claimed. The separate 16-unit local bilingual review is complete against the stored Arabic base.",
+  "completed": "2026-11-10",
+  "witnesses": {
+    "1404": "Qum 1404 printed original, Princeton ACO facsimile served by NYU. Relevant pages were visually inspected from their full-page scans, not inferred from OCR.",
+    "1417": "Rafed digital transcription of the Qum 1417 edition; text inspected in the corresponding numbered page containers.",
+    "1428": "Rafed digital presentation of the fourth edition, edited by Abbas Ali al-Zarii al-Sabzawari, 1428, vols1–2. This is later edited print text in a digital presentation, not a facsimile or independently inspected manuscript."
+  },
+  "cases": [
+    {
+      "id": "N-VI-05",
+      "locus": "The soul’s intensification by union with a higher intellectual degree",
+      "baseReading": "بإضافة المرتبة العالية",
+      "earlierPrintReading": "باضافة المرتبة العالية",
+      "laterReading": "بإفاضة المرتبة العالية",
+      "earlyFacsimileCanvas": 106,
+      "evidence": [
+        {
+          "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000637/106/full/!1600,2200/0/default.jpg",
+          "printedPage": "102",
+          "sourceGrade": "visually inspected 1404 original printed facsimile",
+          "retrievedFileName": "scan-106.jpg",
+          "sha256": "f733dc33fd2c022967f7611c1e8e802b5516a2c04105587f2053e739af91311a"
+        },
+        {
+          "url": "https://lib.rafed.net/view.php?b_id=1642&page=129&type=c_fbook",
+          "printedPage": "129",
+          "sourceGrade": "1417 digital base transcription",
+          "retrievedFileName": "rafed-1642-p129.html",
+          "sha256": "403511e4ea060a7b5bfb46316e005c1d52f9a9ae8a5b19888ef719fed897e37a"
+        },
+        {
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=171&type=c_fbook",
+          "printedPage": "vol1 p171 n1",
+          "sourceGrade": "1428 digital edited print, explicit editorial correction",
+          "retrievedFileName": "rafed-3108-p171.html",
+          "sha256": "4cec8100a12c626df433e7946abdc6d0ae18528ac0b37c5f7fe4a9e90a3245be"
+        }
+      ],
+      "editorialNoteEvidence": "وفي النسخ : «بإضافة المرتبة العالية». والصحيح ما أثبتناه.",
+      "classification": "Explicit later-editor emendation from addition to bestowal; early facsimile and 1417 base agree on the earlier word.",
+      "recommendedArabicCorrection": {
+        "old": "بإضافة المرتبة العالية",
+        "new": "بإفاضة المرتبة العالية"
+      },
+      "englishDecision": {
+        "old": "Rather, calling the soul matter for intelligible forms means that its immaterial existence intensifies, without change or time, through union with an intellectual degree above its own degree of existence, through the bestowal of the higher degree.",
+        "new": "Rather, calling the soul matter for intelligible forms means that its immaterial existence intensifies, without change or time, through union with an intellectual degree above its own degree of existence, through the bestowal of the higher degree.",
+        "changed": false,
+        "reason": "The current English already reflects the later editorial reading; the necessary correction is to align Arabic and disclose the source of the adopted reading, rather than silently translating a conjecture."
+      },
+      "recommendedNote": {
+        "type": "Textual emendation · 1428 AH editor",
+        "text": "The 1404 Qum facsimile, printed p. 102 (NYU canvas 106), and the 1417 transcription, p. 129, read «بإضافة المرتبة العالية» (through the addition of the higher degree). The 1428 editor, vol. 1 p. 171 n. 1, explicitly records that reading and corrects to «بإفاضة المرتبة العالية» (through the bestowal of the higher degree). The Arabic follows this attributed editorial emendation; the existing English already reflects it. No manuscript-attested variant is claimed.",
+        "url": "https://lib.rafed.net/view.php?b_id=3108&page=171&type=c_fbook",
+        "source": "1428 revised editorial print, with targeted early-print facsimile corroboration of the recorded prior reading"
+      },
+      "separateCommentaryCaution": "The following editor’s note disputes the author’s philosophical treatment of immaterial intensification and substantial motion. It is commentary, not additional authorial text and not grounds for silently revising the author’s argument."
+    },
+    {
+      "id": "N-X-02",
+      "locus": "The criterion of priority and posteriority in dahr",
+      "baseReading": "عدم التوقّف",
+      "earlierPrintReading": "عدم التوقف",
+      "laterReading": "عدم المتوقّف",
+      "earlyFacsimileCanvas": 232,
+      "evidence": [
+        {
+          "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000637/232/full/!1600,2200/0/default.jpg",
+          "printedPage": "228",
+          "sourceGrade": "visually inspected 1404 original printed facsimile",
+          "retrievedFileName": "scan-232.jpg",
+          "sha256": "9482b648bbb67ca083c3e415018433caf6e5e59e936813caca518b1e2432cc24"
+        },
+        {
+          "url": "https://lib.rafed.net/view.php?b_id=1642&page=284&type=c_fbook",
+          "printedPage": "284",
+          "sourceGrade": "1417 digital base transcription",
+          "retrievedFileName": "rafed-1642-p284.html",
+          "sha256": "3adb2f62299b76a82491bfbf08ec90a0e25e1c2b786f4d8054257d32b13c36cc"
+        },
+        {
+          "url": "https://lib.rafed.net/view.php?b_id=3109&page=136&type=c_fbook",
+          "printedPage": "vol2 pp136–137",
+          "sourceGrade": "1428 digital edited print, different main-text reading without a dedicated variant footnote",
+          "retrievedFileName": "rafed-3109-p130.html",
+          "sha256": "442cd87049a944c5a1bc5b5866a9d738935f88227edbaf5873d758fa01bcd75f"
+        }
+      ],
+      "laterTextLocation": "The changed word appears in the final main-text line of printed p136, with the sentence continuing at the top of p137.",
+      "laterShortExcerpt": "لكون عدم المتوقّف مأخوذا في مرتبة المتوقّف عليه",
+      "footnoteDistinction": "There is no note at this changed word recording عدم التوقف or claiming a manuscript. Footnote 3 on p136 glosses the immediately preceding non-coexistence claim (“أي : لا يجامع اللاحق السابق.”); it does not identify the variant. Footnote 2 concerns a separate المقتضي/المتقضي correction.",
+      "classification": "Attested later-edition main-text reading, not an explicitly footnoted correction and not a manuscript variant.",
+      "recommendedArabicCorrection": {
+        "old": "عدم التوقّف",
+        "new": "عدم المتوقّف"
+      },
+      "englishCorrection": {
+        "old": "Non-dependence is included at the level of that upon which the other depends.",
+        "new": "The nonexistence of what depends is included at the level of that upon which it depends.",
+        "reason": "The later edition changes the abstract noun dependence to the dependent entity. The English change must be explicitly tied to that adopted later reading, rather than presented as a correction of an English mistranslation of the retained base."
+      },
+      "obsoleteNoteToReplace": "The paragraph on dahr reads ʿadam al-tawaqquf (“non-dependence”) in both the transcription and the Qum 1404 scan, printed p. 228. The wording is retained. Compare X.8, where the effect’s nonexistence at the level of its cause is stated explicitly.",
+      "recommendedNote": {
+        "type": "Textual variant · 1428 AH revised edition",
+        "text": "The 1404 Qum facsimile, printed p. 228 (NYU canvas 232), and the 1417 transcription, p. 284, read «عدم التوقّف» (non-dependence). The 1428 revised edition, vol. 2 pp. 136–137, prints «عدم المتوقّف» (the nonexistence of what depends), without a footnote identifying this particular change. The Arabic and English follow that attested later-edition reading; the earlier reading is preserved here. This is a later printed variant, not an independently verified manuscript reading.",
+        "url": "https://lib.rafed.net/view.php?b_id=3109&page=136&type=c_fbook",
+        "source": "1428 digital edited print; unfootnoted main-text variant compared with 1404 facsimile and 1417 transcription"
+      },
+      "nearbyAdditionalObservations": [
+        {
+          "locus": "The description of temporal existence earlier on the same page",
+          "early1404": "المقتضي",
+          "base1417": "المتقضّي",
+          "later1428": "المتقضّي",
+          "laterNote": "vol2 p136 n2 explicitly records copies المقتضيّ and prints المتقضّيّ.",
+          "decision": "No new correction: the current Arabic base and English “lapsing” already agree with the later reading."
+        },
+        {
+          "locus": "The following phrase about potentiality and actuality",
+          "early1404": "باختلاط القوّة والفعل فيه",
+          "base1417": "باختلاف القوّة والفعل فيه",
+          "later1428": "باختلاف القوّة والفعل فيه",
+          "decision": "Record as an additional targeted witness difference, not an adopted correction. The current English “in which potentiality and actuality differ” matches the base and later edition. The early print reads “through the intermixture of potentiality and actuality.” No dedicated later editorial note for this difference was found."
+        }
+      ]
+    }
+  ],
+  "evidenceHandling": "The HTML files contain the 20-page source blocks returned by Rafed. The specific page numbers above refer to their pg129, pg171, pg284, pg136 and pg137 containers. Source evidence was not inferred solely from search snippets.",
+  "canonicalMutation": "Stage VIII adopts the VI.5 explicit editorial emendation and X.2 attested later-edition variant, updates X.2 English, and preserves the earlier readings in public apparatus."
+}

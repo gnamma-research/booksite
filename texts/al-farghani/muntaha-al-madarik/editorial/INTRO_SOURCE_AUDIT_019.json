@@ -1,0 +1,5079 @@
+{
+  "schema": "gnamma-farghani-xix-english-arabic-source-audit-v1",
+  "date_utc": "2026-11-12T12:52:05.569154+00:00",
+  "arabic_digital_page_count": 128,
+  "english_working_page_count": 128,
+  "arabic_digitized_word_total": 38516,
+  "english_working_word_total": 56942,
+  "pages_with_explicit_editorial_notes": 39,
+  "pages_with_possible_unseparated_notes": 0,
+  "selected_critical_records": 559,
+  "exact_normalized_source_excerpt_matches": 510,
+  "selected_excerpt_match_audit": [
+    {
+      "id": "CR001-001",
+      "page": 18,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-002",
+      "page": 18,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-003",
+      "page": 18,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-004",
+      "page": 18,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-005",
+      "page": 18,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-006",
+      "page": 18,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-007",
+      "page": 18,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-008",
+      "page": 18,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-009",
+      "page": 18,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-010",
+      "page": 18,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": true
+    },
+    {
+      "id": "CR001-011",
+      "page": 18,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-012",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-013",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-014",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": true
+    },
+    {
+      "id": "CR001-015",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-016",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-017",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-018",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-019",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-020",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-021",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-022",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-023",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-024",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": true
+    },
+    {
+      "id": "CR001-025",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-026",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-027",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-028",
+      "page": 19,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-029",
+      "page": 20,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-030",
+      "page": 20,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-031",
+      "page": 20,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-032",
+      "page": 20,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-033",
+      "page": 20,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-034",
+      "page": 20,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-035",
+      "page": 20,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-036",
+      "page": 20,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR001-037",
+      "page": 20,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-001",
+      "page": 21,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-002",
+      "page": 21,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-003",
+      "page": 21,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-004",
+      "page": 21,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-005",
+      "page": 21,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": true
+    },
+    {
+      "id": "CR002-006",
+      "page": 21,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-007",
+      "page": 21,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-008",
+      "page": 21,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-009",
+      "page": 21,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-010",
+      "page": 21,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-011",
+      "page": 21,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-012",
+      "page": 21,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-013",
+      "page": 21,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-014",
+      "page": 22,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-015",
+      "page": 22,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-016",
+      "page": 22,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-017",
+      "page": 22,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-018",
+      "page": 22,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-019",
+      "page": 22,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-020",
+      "page": 22,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-021",
+      "page": 22,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-022",
+      "page": 22,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-023",
+      "page": 22,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.933,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-024",
+      "page": 22,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-025",
+      "page": 22,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-026",
+      "page": 22,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-027",
+      "page": 22,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-028",
+      "page": 22,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-029",
+      "page": 23,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-030",
+      "page": 23,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-031",
+      "page": 23,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": true
+    },
+    {
+      "id": "CR002-032",
+      "page": 23,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": true
+    },
+    {
+      "id": "CR002-033",
+      "page": 23,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-034",
+      "page": 23,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-035",
+      "page": 23,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-036",
+      "page": 23,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-037",
+      "page": 23,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-038",
+      "page": 23,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-039",
+      "page": 23,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-040",
+      "page": 23,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-041",
+      "page": 23,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-042",
+      "page": 23,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR002-043",
+      "page": 23,
+      "grade": "printed-digital-Arabic-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-001",
+      "page": 24,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-002",
+      "page": 24,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-003",
+      "page": 24,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-004",
+      "page": 24,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-005",
+      "page": 24,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-006",
+      "page": 24,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-007",
+      "page": 24,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-008",
+      "page": 24,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-009",
+      "page": 24,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-010",
+      "page": 25,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-011",
+      "page": 25,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-012",
+      "page": 25,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-013",
+      "page": 25,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-014",
+      "page": 25,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-015",
+      "page": 25,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-016",
+      "page": 25,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-017",
+      "page": 25,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-018",
+      "page": 25,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": true
+    },
+    {
+      "id": "CR003-019",
+      "page": 25,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-020",
+      "page": 25,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-021",
+      "page": 25,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-022",
+      "page": 26,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-023",
+      "page": 26,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-024",
+      "page": 26,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-025",
+      "page": 26,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-026",
+      "page": 26,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-027",
+      "page": 26,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-028",
+      "page": 26,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-029",
+      "page": 26,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-030",
+      "page": 26,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-031",
+      "page": 27,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-032",
+      "page": 27,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-033",
+      "page": 27,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-034",
+      "page": 27,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-035",
+      "page": 27,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-036",
+      "page": 27,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-037",
+      "page": 27,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-038",
+      "page": 27,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-039",
+      "page": 27,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-040",
+      "page": 27,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-041",
+      "page": 28,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-042",
+      "page": 28,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-043",
+      "page": 28,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-044",
+      "page": 28,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-045",
+      "page": 28,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-046",
+      "page": 28,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-047",
+      "page": 28,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-048",
+      "page": 28,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-049",
+      "page": 28,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-050",
+      "page": 28,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-051",
+      "page": 28,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-052",
+      "page": 29,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-053",
+      "page": 29,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-054",
+      "page": 29,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-055",
+      "page": 29,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-056",
+      "page": 29,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-057",
+      "page": 29,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-058",
+      "page": 29,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-059",
+      "page": 29,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": true
+    },
+    {
+      "id": "CR003-060",
+      "page": 29,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-061",
+      "page": 29,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR003-062",
+      "page": 29,
+      "grade": "modern-printed-digital-selected-span-checked-v1",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-001",
+      "page": 30,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-002",
+      "page": 30,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-003",
+      "page": 30,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-004",
+      "page": 30,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-005",
+      "page": 30,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-006",
+      "page": 30,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-007",
+      "page": 30,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-008",
+      "page": 30,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-009",
+      "page": 30,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-010",
+      "page": 31,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-011",
+      "page": 31,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 0.929,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-012",
+      "page": 31,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-013",
+      "page": 31,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-014",
+      "page": 31,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-015",
+      "page": 31,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-016",
+      "page": 31,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-017",
+      "page": 31,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-018",
+      "page": 32,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-019",
+      "page": 32,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-020",
+      "page": 32,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-021",
+      "page": 32,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-022",
+      "page": 32,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-023",
+      "page": 32,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-024",
+      "page": 32,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-025",
+      "page": 32,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-026",
+      "page": 33,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.667,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-027",
+      "page": 33,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-028",
+      "page": 33,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-029",
+      "page": 33,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": true
+    },
+    {
+      "id": "CR004-030",
+      "page": 33,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-031",
+      "page": 33,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-032",
+      "page": 33,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-033",
+      "page": 33,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-034",
+      "page": 34,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-035",
+      "page": 34,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-036",
+      "page": 34,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-037",
+      "page": 34,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-038",
+      "page": 34,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-039",
+      "page": 34,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-040",
+      "page": 34,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": true
+    },
+    {
+      "id": "CR004-041",
+      "page": 34,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-042",
+      "page": 34,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-043",
+      "page": 35,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-044",
+      "page": 35,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-045",
+      "page": 35,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-046",
+      "page": 35,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-047",
+      "page": 35,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-048",
+      "page": 35,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-049",
+      "page": 35,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-050",
+      "page": 36,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-051",
+      "page": 36,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-052",
+      "page": 36,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-053",
+      "page": 36,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-054",
+      "page": 36,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-055",
+      "page": 36,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR004-056",
+      "page": 36,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.889,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-001",
+      "page": 37,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-002",
+      "page": 37,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-003",
+      "page": 37,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-004",
+      "page": 37,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-005",
+      "page": 38,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": true
+    },
+    {
+      "id": "CR005-006",
+      "page": 38,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-007",
+      "page": 38,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-008",
+      "page": 38,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-009",
+      "page": 39,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-010",
+      "page": 39,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 0.909,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-011",
+      "page": 39,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-012",
+      "page": 39,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-013",
+      "page": 40,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-014",
+      "page": 40,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-015",
+      "page": 40,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-016",
+      "page": 40,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-017",
+      "page": 41,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-018",
+      "page": 41,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-019",
+      "page": 41,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-020",
+      "page": 42,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-021",
+      "page": 42,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-022",
+      "page": 42,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-023",
+      "page": 42,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-024",
+      "page": 43,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-025",
+      "page": 43,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-026",
+      "page": 43,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-027",
+      "page": 44,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-028",
+      "page": 44,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-029",
+      "page": 44,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-030",
+      "page": 45,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-031",
+      "page": 45,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-032",
+      "page": 45,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-033",
+      "page": 46,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-034",
+      "page": 46,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-035",
+      "page": 46,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-036",
+      "page": 46,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-037",
+      "page": 47,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-038",
+      "page": 47,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-039",
+      "page": 47,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-040",
+      "page": 47,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-041",
+      "page": 50,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-042",
+      "page": 50,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-043",
+      "page": 50,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-044",
+      "page": 50,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR005-045",
+      "page": 50,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-001",
+      "page": 48,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-002",
+      "page": 48,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": true
+    },
+    {
+      "id": "CR006-003",
+      "page": 48,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-004",
+      "page": 48,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-005",
+      "page": 49,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-006",
+      "page": 49,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-007",
+      "page": 49,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-008",
+      "page": 49,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-009",
+      "page": 51,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-010",
+      "page": 51,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-011",
+      "page": 51,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-012",
+      "page": 52,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-013",
+      "page": 52,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-014",
+      "page": 52,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-015",
+      "page": 52,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": true
+    },
+    {
+      "id": "CR006-016",
+      "page": 53,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-017",
+      "page": 53,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-018",
+      "page": 53,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-019",
+      "page": 54,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-020",
+      "page": 54,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-021",
+      "page": 54,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-022",
+      "page": 55,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-023",
+      "page": 55,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-024",
+      "page": 55,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-025",
+      "page": 56,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-026",
+      "page": 56,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-027",
+      "page": 56,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-028",
+      "page": 56,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-029",
+      "page": 57,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.923,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-030",
+      "page": 57,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-031",
+      "page": 57,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-032",
+      "page": 58,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-033",
+      "page": 58,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-034",
+      "page": 58,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-035",
+      "page": 59,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-036",
+      "page": 59,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-037",
+      "page": 59,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-038",
+      "page": 60,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-039",
+      "page": 60,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR006-040",
+      "page": 60,
+      "grade": "modern-printed-digital-selected-locus-checked",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-001",
+      "page": 61,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.923,
+      "requires_manual_review": true,
+      "is_historical_print_checked": true
+    },
+    {
+      "id": "CR007-002",
+      "page": 61,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-003",
+      "page": 61,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-004",
+      "page": 61,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-005",
+      "page": 61,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-006",
+      "page": 61,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-007",
+      "page": 61,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-008",
+      "page": 61,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-009",
+      "page": 62,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-010",
+      "page": 62,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": true
+    },
+    {
+      "id": "CR007-011",
+      "page": 62,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-012",
+      "page": 62,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-013",
+      "page": 62,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-014",
+      "page": 62,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-015",
+      "page": 62,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-016",
+      "page": 63,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-017",
+      "page": 63,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-018",
+      "page": 63,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-019",
+      "page": 63,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-020",
+      "page": 63,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-021",
+      "page": 63,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-022",
+      "page": 63,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-023",
+      "page": 63,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-024",
+      "page": 64,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-025",
+      "page": 64,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-026",
+      "page": 64,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-027",
+      "page": 64,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-028",
+      "page": 64,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-029",
+      "page": 64,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-030",
+      "page": 64,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-031",
+      "page": 65,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-032",
+      "page": 65,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-033",
+      "page": 65,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-034",
+      "page": 65,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-035",
+      "page": 65,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-036",
+      "page": 66,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-037",
+      "page": 66,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-038",
+      "page": 66,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-039",
+      "page": 66,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-040",
+      "page": 66,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-041",
+      "page": 67,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-042",
+      "page": 67,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-043",
+      "page": 67,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-044",
+      "page": 67,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-045",
+      "page": 67,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-046",
+      "page": 68,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.875,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-047",
+      "page": 68,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-048",
+      "page": 68,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-049",
+      "page": 68,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-050",
+      "page": 68,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-051",
+      "page": 68,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-052",
+      "page": 68,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-053",
+      "page": 69,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-054",
+      "page": 69,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-055",
+      "page": 69,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-056",
+      "page": 69,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR007-057",
+      "page": 69,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-001",
+      "page": 70,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-002",
+      "page": 70,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-003",
+      "page": 70,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-004",
+      "page": 70,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-005",
+      "page": 70,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-006",
+      "page": 71,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.583,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-007",
+      "page": 71,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-008",
+      "page": 71,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-009",
+      "page": 71,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-010",
+      "page": 71,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-011",
+      "page": 71,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-012",
+      "page": 72,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-013",
+      "page": 72,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-014",
+      "page": 72,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-015",
+      "page": 72,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-016",
+      "page": 72,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-017",
+      "page": 72,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-018",
+      "page": 72,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-019",
+      "page": 73,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-020",
+      "page": 73,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-021",
+      "page": 73,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-022",
+      "page": 73,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-023",
+      "page": 73,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-024",
+      "page": 73,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-025",
+      "page": 73,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-026",
+      "page": 74,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-027",
+      "page": 74,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-028",
+      "page": 74,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-029",
+      "page": 74,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-030",
+      "page": 74,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-031",
+      "page": 74,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-032",
+      "page": 75,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.111,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-033",
+      "page": 75,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-034",
+      "page": 75,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-035",
+      "page": 75,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-036",
+      "page": 75,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.923,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-037",
+      "page": 76,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-038",
+      "page": 76,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-039",
+      "page": 76,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-040",
+      "page": 76,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-041",
+      "page": 76,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-042",
+      "page": 76,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-043",
+      "page": 77,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-044",
+      "page": 77,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-045",
+      "page": 77,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-046",
+      "page": 77,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-047",
+      "page": 77,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-048",
+      "page": 78,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-049",
+      "page": 78,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-050",
+      "page": 78,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-051",
+      "page": 78,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-052",
+      "page": 78,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-053",
+      "page": 78,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR008-054",
+      "page": 78,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-001",
+      "page": 79,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-002",
+      "page": 79,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-003",
+      "page": 79,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-004",
+      "page": 80,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-005",
+      "page": 80,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-006",
+      "page": 80,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-007",
+      "page": 80,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-008",
+      "page": 81,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-009",
+      "page": 81,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-010",
+      "page": 81,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-011",
+      "page": 82,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-012",
+      "page": 82,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.917,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-013",
+      "page": 82,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-014",
+      "page": 82,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-015",
+      "page": 82,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-016",
+      "page": 83,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.364,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-017",
+      "page": 83,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.9,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-018",
+      "page": 83,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.889,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-019",
+      "page": 84,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-020",
+      "page": 84,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.75,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-021",
+      "page": 84,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-022",
+      "page": 84,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-023",
+      "page": 85,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-024",
+      "page": 85,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.929,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-025",
+      "page": 85,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-026",
+      "page": 86,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-027",
+      "page": 86,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-028",
+      "page": 86,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-029",
+      "page": 87,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-030",
+      "page": 87,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-031",
+      "page": 87,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-032",
+      "page": 88,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-033",
+      "page": 88,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-034",
+      "page": 88,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-035",
+      "page": 89,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-036",
+      "page": 89,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-037",
+      "page": 89,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-038",
+      "page": 90,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-039",
+      "page": 90,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-040",
+      "page": 90,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 0.9,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-041",
+      "page": 90,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-042",
+      "page": 91,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-043",
+      "page": 91,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.929,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-044",
+      "page": 91,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-045",
+      "page": 92,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-046",
+      "page": 92,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.182,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-047",
+      "page": 92,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-048",
+      "page": 93,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-049",
+      "page": 93,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-050",
+      "page": 93,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-051",
+      "page": 94,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-052",
+      "page": 94,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-053",
+      "page": 94,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-054",
+      "page": 95,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.833,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-055",
+      "page": 95,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-056",
+      "page": 95,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-057",
+      "page": 96,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.941,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-058",
+      "page": 96,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-059",
+      "page": 96,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-060",
+      "page": 97,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-061",
+      "page": 97,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-062",
+      "page": 97,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-063",
+      "page": 98,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-064",
+      "page": 98,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-065",
+      "page": 98,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-066",
+      "page": 99,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.692,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-067",
+      "page": 99,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-068",
+      "page": 99,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-069",
+      "page": 100,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-070",
+      "page": 100,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-071",
+      "page": 100,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.467,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-072",
+      "page": 101,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.2,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-073",
+      "page": 101,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR009-074",
+      "page": 101,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-001",
+      "page": 102,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-002",
+      "page": 102,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-003",
+      "page": 103,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-004",
+      "page": 103,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-005",
+      "page": 104,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-006",
+      "page": 104,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-007",
+      "page": 105,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.111,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-008",
+      "page": 105,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-009",
+      "page": 106,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-010",
+      "page": 106,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-011",
+      "page": 107,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-012",
+      "page": 107,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-013",
+      "page": 108,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-014",
+      "page": 108,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-015",
+      "page": 109,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-016",
+      "page": 109,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.9,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-017",
+      "page": 110,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-018",
+      "page": 110,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-019",
+      "page": 111,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-020",
+      "page": 111,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-021",
+      "page": 112,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-022",
+      "page": 112,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-023",
+      "page": 113,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-024",
+      "page": 113,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-025",
+      "page": 114,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-026",
+      "page": 114,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-027",
+      "page": 115,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-028",
+      "page": 115,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-029",
+      "page": 116,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-030",
+      "page": 116,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-031",
+      "page": 117,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.111,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-032",
+      "page": 117,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-033",
+      "page": 118,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-034",
+      "page": 118,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 0.875,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-035",
+      "page": 119,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-036",
+      "page": 119,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-037",
+      "page": 120,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 0.857,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-038",
+      "page": 120,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-039",
+      "page": 121,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-040",
+      "page": 121,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.917,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-041",
+      "page": 122,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-042",
+      "page": 122,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-043",
+      "page": 123,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-044",
+      "page": 123,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-045",
+      "page": 124,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.625,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-046",
+      "page": 124,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-047",
+      "page": 125,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR010-048",
+      "page": 125,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-001",
+      "page": 126,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 0.875,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-002",
+      "page": 126,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-003",
+      "page": 127,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-004",
+      "page": 127,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-005",
+      "page": 128,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-006",
+      "page": 128,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-007",
+      "page": 129,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-008",
+      "page": 129,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-009",
+      "page": 130,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-010",
+      "page": 130,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-011",
+      "page": 131,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-012",
+      "page": 131,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-013",
+      "page": 132,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-014",
+      "page": 132,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-015",
+      "page": 133,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-016",
+      "page": 133,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-017",
+      "page": 134,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-018",
+      "page": 134,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 0.875,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-019",
+      "page": 135,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-020",
+      "page": 135,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-021",
+      "page": 136,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-022",
+      "page": 136,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-023",
+      "page": 137,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-024",
+      "page": 137,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-025",
+      "page": 138,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.3,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-026",
+      "page": 138,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": false,
+      "word_membership_fraction": 0.545,
+      "requires_manual_review": true,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-027",
+      "page": 139,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-028",
+      "page": 139,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-029",
+      "page": 140,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-030",
+      "page": 140,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-031",
+      "page": 141,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-032",
+      "page": 141,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-033",
+      "page": 142,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-034",
+      "page": 142,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-035",
+      "page": 143,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-036",
+      "page": 143,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-037",
+      "page": 144,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-038",
+      "page": 144,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-039",
+      "page": 144,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-040",
+      "page": 145,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-041",
+      "page": 145,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-042",
+      "page": 145,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    },
+    {
+      "id": "CR011-043",
+      "page": 145,
+      "grade": "derivative-Arabic-to-working-English-selected-locus-review",
+      "exact_normalized_digital_match": true,
+      "word_membership_fraction": 1.0,
+      "requires_manual_review": false,
+      "is_historical_print_checked": false
+    }
+  ],
+  "page_level_warning_queue": [],
+  "editorial_footer_reconciliation": {
+    "schema": "farghani-reviewed-trailing-modern-note-separation-v1",
+    "date": "2026-11-12",
+    "targetedPages": 17,
+    "editorNotePagesCorrected": [
+      20,
+      21,
+      23,
+      25,
+      29,
+      47,
+      48,
+      67,
+      83,
+      87,
+      112,
+      115,
+      118,
+      128,
+      130,
+      136
+    ],
+    "falsePositiveVerseNumberPages": [
+      26
+    ],
+    "originalDigitalRawUnchanged": true,
+    "noteTextPreservedInEditorialApparatus": true,
+    "basis": "Manually reviewed digital footnote cues; online structural confirmation of pp.20,21,23,25,29; no independent printed-leaf collation",
+    "limits": "No remaining automatic note flags does not prove manuscript verification or full-text proofreading."
+  },
+  "source_collation_grade": "modern digital source extraction and quantitative comparison, NOT a full line-by-line historic-print collation",
+  "independent_manuscript_variants_verified": 0,
+  "full_print_pages_independently_line_collated": 0
+}

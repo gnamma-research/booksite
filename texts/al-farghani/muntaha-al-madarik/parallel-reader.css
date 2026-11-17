@@ -1,0 +1,114 @@
+/* GNAMMA · Farghani introductory bilingual reader · XIX
+   Page alignment only. Arabic is digital-edition transcription, not verified clause parity. */
+:root{--pr-size:1;--pr-width:1420px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:130px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-en)}
+.pr-header{position:sticky;z-index:25;top:0;display:flex;align-items:center;justify-content:space-between;gap:13px;padding:12px clamp(13px,3vw,34px);background:var(--float);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.pr-header a{color:var(--accent);text-decoration:none;font:600 12px/1.4 ui-sans-serif,system-ui,sans-serif}
+.pr-header nav{display:flex;align-items:center;gap:clamp(8px,2vw,19px);flex-wrap:wrap}
+.pr-front{max-width:var(--pr-width);margin:0 auto;padding:clamp(23px,4vw,49px) 22px 20px}
+.pr-front h1{font:500 clamp(35px,5vw,59px)/1.2 Georgia,serif;letter-spacing:-.035em;margin:10px 0 3px}
+.pr-ar-title{font:clamp(23px,3.5vw,34px)/1.8 var(--font-ar);margin:3px 0 8px;color:var(--accent);text-align:left;direction:rtl}
+.pr-subtitle{max-width:770px;color:var(--muted);font:16px/1.65 Georgia,serif}
+.pr-front details{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:11px 14px;max-width:810px}
+.pr-front summary{cursor:pointer;color:var(--accent);font:600 12px/1.6 ui-sans-serif,system-ui,sans-serif}
+.pr-front details p{color:var(--muted);font:13px/1.6 ui-sans-serif,system-ui,sans-serif}
+.pr-tools{display:flex;position:sticky;z-index:23;top:54px;align-items:center;justify-content:center;flex-wrap:wrap;gap:5px;padding:8px 12px;background:var(--float);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.pr-tools > div{display:flex;flex-wrap:wrap;gap:2px;align-items:center;background:var(--wash);border-radius:10px;padding:3px}
+.pr-tools button{border:1px solid transparent;border-radius:8px;background:transparent;color:var(--accent);font:600 12px/1.5 ui-sans-serif,system-ui,sans-serif;white-space:nowrap;min-height:36px;padding:7px 11px}
+.pr-tools button:hover{background:var(--accent-soft)}
+.pr-tools button[aria-pressed="true"]{background:var(--panel);border-color:var(--line)}
+.pr-tools button:focus-visible,.pr-header a:focus-visible,summary:focus-visible{outline:3px solid #ce9057;outline-offset:2px}
+#pr-reading{max-width:var(--pr-width);margin:0 auto;padding:20px 20px 130px}
+.pr-page{scroll-margin-top:120px;padding:12px 0 24px;border-bottom:1px solid var(--line)}
+.pr-part{font:700 11px/1.6 ui-sans-serif,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:28px 0 10px;border-top:1px solid var(--line);padding-top:20px}
+.pr-page:first-child .pr-part{margin-top:0;border:0;padding:0}
+.pr-page-title{font:600 12px/1.5 ui-sans-serif,system-ui,sans-serif;color:var(--accent);margin:0 0 12px;letter-spacing:.025em}
+.pr-page-title small{font:400 11px/1.6 ui-sans-serif,system-ui,sans-serif;color:var(--muted);margin-left:8px}
+.pr-text{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(22px,3vw,51px);align-items:start}
+.pr-ar,.pr-en{min-width:0;overflow-wrap:break-word}
+.pr-ar{font:calc(23px * var(--pr-size))/2.05 var(--font-ar);direction:rtl;text-align:right;unicode-bidi:isolate;line-break:auto}
+.pr-ar p{margin:0 0 1em}
+.pr-en{font:calc(17px * var(--pr-size))/1.78 Georgia,"Iowan Old Style",serif;direction:ltr;text-align:left}
+.pr-en p{margin:0 0 .95em}
+.pr-en strong{font-weight:650}
+.pr-en blockquote{background:var(--wash);border-inline-start:2px solid var(--accent);margin:10px 0;padding:9px 14px}
+.pr-apparatus{margin:8px 0 0;color:var(--muted);font:12px/1.65 ui-sans-serif,system-ui,sans-serif}
+.pr-apparatus summary{cursor:pointer;color:var(--accent)}
+.pr-apparatus-body{border-inline-start:2px solid var(--accent);padding:8px 15px;background:var(--wash);margin-top:7px}
+.pr-apparatus-body p{margin:5px 0 11px}
+.pr-editorial-notes{color:var(--muted);font-size:12px}
+.pr-variant{border-top:1px solid var(--line);padding:10px 0}
+.pr-variant b{color:var(--ink)}
+.pr-variant span[lang=ar]{font:19px/1.7 var(--font-ar);display:block;direction:rtl;text-align:right;margin:2px 0}
+.pr-variant small{font:600 11px ui-sans-serif,system-ui,sans-serif;color:var(--muted)}
+.pr-caveat{color:var(--muted);font-style:italic}
+body[data-language="ar"] .pr-text,body[data-language="en"] .pr-text{grid-template-columns:1fr;max-width:860px;margin:0 auto}
+body[data-language="ar"] .pr-en,body[data-language="en"] .pr-ar{display:none}
+body[data-language="ar"] .pr-ar{font-size:calc(26px * var(--pr-size))}
+body[data-language="en"] .pr-en{font-size:calc(18px * var(--pr-size))}
+body:not(.pr-show-notes) .pr-apparatus{display:none}
+body.pr-show-notes .pr-apparatus{border-top:1px solid var(--line);padding-top:7px}
+body.pr-show-notes .pr-apparatus[open]{margin-bottom:13px}
+.pr-footer{max-width:var(--pr-width);margin:0 auto;padding:27px 22px 100px;border-top:1px solid var(--line);font:13px/1.7 ui-sans-serif,system-ui,sans-serif;color:var(--muted)}
+.pr-footer a{color:var(--accent)}
+#pr-dialog{width:min(750px,calc(100vw - 20px));max-height:83vh;border-radius:15px;background:var(--panel);border:1px solid var(--line);color:var(--ink);box-shadow:0 20px 70px #0004;padding:0;overflow:hidden}
+#pr-dialog::backdrop{background:#102429a9;backdrop-filter:blur(2px)}
+.pr-dialog-heading{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--float);border-bottom:1px solid var(--line)}
+.pr-dialog-heading h2{font:500 25px Georgia,serif;margin:0}
+.pr-dialog-heading button{border:1px solid var(--line);background:var(--panel);color:var(--accent);border-radius:7px;padding:7px 12px;cursor:pointer}
+#pr-dialog-content{overflow-y:auto;max-height:calc(83vh - 70px);padding:16px 18px 22px}
+#pr-dialog-content input{width:100%;padding:11px 13px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:15px ui-sans-serif,system-ui,sans-serif}
+.pr-matches{display:grid;gap:6px;margin-top:12px}
+.pr-matches button{display:block;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer;text-align:left;border-radius:9px;padding:10px 13px}
+.pr-matches button:hover,.pr-matches button:focus-visible{background:var(--accent-soft)}
+.pr-matches small{display:block;color:var(--muted)}
+.pr-matches .pr-ar-snippet{direction:rtl;text-align:right;font:17px/1.6 var(--font-ar)}
+.pr-foundation{font:700 11px/1.5 ui-sans-serif,system-ui,sans-serif;color:var(--accent);margin:15px 0 5px}
+@media(max-width:800px){
+.pr-tools{top:54px;display:block;text-align:center;white-space:nowrap;overflow-x:auto;scrollbar-width:none;padding:5px 6px}
+.pr-tools > div{display:inline-flex;flex-wrap:nowrap;vertical-align:middle}
+.pr-tools button{padding:6px 9px;font-size:11px}
+.pr-text{grid-template-columns:1fr;gap:15px}
+.pr-ar{font-size:calc(24px * var(--pr-size))}
+.pr-en{font-size:calc(17px * var(--pr-size))}
+.pr-header{flex-wrap:wrap;justify-content:center}
+.pr-header nav{justify-content:center}
+.pr-front{padding:22px 16px 13px}
+#pr-reading{padding:10px 16px 110px}
+.pr-page{padding:12px 0 18px}
+.pr-page-title small{display:block;margin-left:0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+@page{size:A4;margin:14mm 13mm}
+html,body{background:#fff!important;color:#000!important}
+.pr-tools,.pr-header,#pr-dialog,.pr-footer,.pr-front details{display:none!important}
+.pr-front{padding:0 0 12pt}.pr-front h1{font-size:25pt}.pr-front .pr-ar-title{font-size:21pt}.pr-subtitle{font-size:11pt}
+#pr-reading{max-width:none;padding:0}
+.pr-page{break-before:page;break-inside:auto;padding:0;margin:0;border:0}
+.pr-page:first-child{break-before:auto}
+.pr-text,body[data-language] .pr-text{display:grid;grid-template-columns:1fr 1fr;max-width:none;gap:11mm}
+body[data-language] .pr-ar,body[data-language] .pr-en{display:block}
+.pr-ar{font-size:11pt;line-height:1.8}
+.pr-en{font-size:9.4pt;line-height:1.62}
+.pr-page-title{font-size:9pt;border-bottom:1px solid #ccc;padding:0 0 5pt}
+.pr-page-title small{font-size:8pt}
+.pr-part{font-size:8.5pt;margin:0 0 10pt}
+.pr-apparatus{display:none!important}
+}
+
+/* The complete bilingual text remains the primary visual surface.
+   Modern apparatus is only available in Study & sources, never inline. */
+.pr-apparatus{display:none!important}
+.pr-tools #pr-notes-toggle{display:none!important}
+.pr-header nav a[href="critical-edition.html"],.pr-header nav a[href="handoffs.html"]{display:none}
+#pr-study-open{border:1px solid var(--line);background:var(--panel)}
+.pr-study-controls select{width:100%;max-width:360px;background:var(--panel);color:var(--ink);border:1px solid var(--line);padding:9px 12px;border-radius:8px;margin:10px 0}
+.pr-study-help,.pr-study-links{color:var(--muted);font:13px/1.7 system-ui,sans-serif}
+.pr-study-evidence{line-height:1.7;overflow-wrap:anywhere}
+.pr-study-evidence h3{font:600 15px/1.5 system-ui,sans-serif}
+.pr-study-evidence a,.pr-study-links a{color:var(--accent)}
+.pr-study-evidence .pr-apparatus-body{font:13px/1.8 system-ui,sans-serif;border-inline-start:2px solid var(--line);padding:10px 13px;background:var(--wash)}
+@media print{#pr-study-open{display:none!important}}

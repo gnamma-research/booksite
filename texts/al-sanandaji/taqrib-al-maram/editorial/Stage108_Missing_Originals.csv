@@ -1,0 +1,23 @@
+volume,item,status,notes
+Volume II,Original native Stage38 cumulative 100-page JSON/edits,not_received,Renderer-derived files do NOT replace native originals
+Volume II,Original remote Stage51 JS and three II223–230 clause module bytes,not_byte_materialized,"Git blob hashes recorded; page image proof ledger locally available, original remote source code not duplicated"
+Volume II,Remaining source-critical full literal Arabic/English collation for 53 selected IDs,53_unproven,"All 53 first-pass locators inspected; full exact lexical, authorial, second proof still open"
+Volume II,II229 lower G.II.229.21.01 variant print vs remote,print_reading_checked; original unamended,Print ومركباتها القصيرة vs remote وركباتها القصيرة; no second manuscript witness
+Volume II,II224 B6.SHARH.II224.12 remote عندها vs print عقب ظهور المعجزة,proposed_wording_mismatch,"Independently recheck exact lemma, do not alter remote"
+Volume II,II226 B6.S.II226.2010 uncertain subject/connective,unclear_reading,Further legibility pass required
+Volume II,II229 B6.S.II229.2105 بالبلاغة vs ببلاغته,proposed_wording_mismatch,Full clause and independent visual proof required
+Volume I,I026.lower.02 connective preceding فإنه حينئذ,unresolved_from_earlier_stages,Historical uncertainty remains unmodified
+Volume I,I043.ruled.01 versus I043.lower.01 overlapping content,duplicate_layer_alignment_open,Preserve both IDs and check ruled/standard lower register after source segmentation
+Both volumes,Complete all-register literal translations / independent second proof,0_of_615_accepted,"All 1,400 Volume I active records retain independent proof obligations; Volume II no certification"
+Both volumes,Primary manuscript witnesses beyond Būlāq printed scan,unknown_total,Never invent manuscript bibliography or source collations
+Reader and exports,Live Nama browser and responsive interactive reader acceptance,not_verified,Node in-memory corpus regression only; no live QA
+Archive,Earlier chats archive/receipt gate,open,Keep old chats and artifacts intact; separate Tahdhib reader
+
+Stage108,VolumeII,remote Stage51 source JS original bytes,"Known Git blob SHAs; still not materialized locally; do not replace with JSON derived from current reader",OPEN
+Stage108,VolumeII,Stage38 native historical JSON,"Not recovered; renderer-derived 100-position working master preserved but is not original JSON",OPEN
+Stage108,VolumeII,full diplomatic collation of 53 selected clauses,"Three bounded same-print phrases checked Stage108; 53/53 remain without independent complete source proof",OPEN
+Stage108,VolumeI,I045 upper and I046 lower source frontier,"I045.upper.02 next; I046.lower.01/02 after boundary proof; older upper/lower passages not retranslated",OPEN
+Stage108,VolumeI,I026.lower.02 unclear connective before فإنه حينئذ,"Preserve original and outstanding independent second proof obligation",OPEN
+Stage108,VolumeI,I043 ruled/lower potential overlap,"Do not merge or alter until voice/duplicate proof",OPEN
+Stage108,Project,live website/mobile reader QA,"Not verified; Node source-data regression does not certify browser operation",OPEN
+Stage108,Project,entire Volume II historical original-asset denominator,"UNKNOWN; no invented receipt percentage or completeness",UNKNOWN

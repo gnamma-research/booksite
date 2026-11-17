@@ -1,0 +1,106 @@
+name: Daruri critical edition · reported Escorial witness and PDF release
+on:
+  push:
+    branches: [editorial/daruri-escorial-20261105]
+    paths:
+      - 'daruri/critical-review/**'
+      - 'daruri/build/apply_escorial_review_20261105.py'
+      - '.github/workflows/daruri-escorial-editorial-20261105.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: daruri-escorial-20261105
+  cancel-in-progress: false
+jobs:
+  source-and-pdfs:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Arabic typesetting and PDF dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libharfbuzz0b libfribidi0 fonts-dejavu-core
+          python -m pip install --upgrade pip
+          python -m pip install -r daruri/build/requirements.txt "PyMuPDF==1.26.7" "pypdf==5.9.0"
+      - name: Apply source-controlled critical review to the site's canonical text
+        run: |
+          python -m py_compile daruri/build/apply_escorial_review_20261105.py
+          python daruri/build/apply_escorial_review_20261105.py
+          node --check daruri/edition-r3-20261020.js
+          python - <<'PY'
+          import sys
+          sys.path.insert(0,'daruri/build')
+          from build_editions import read_book
+          b=read_book()
+          ss={s['id']:s for s in b['sections']}
+          assert len(ss)==259
+          assert all(len(s['segments'])>0 for s in ss.values())
+          for n in [11,17,23,26,29,64,89,91,97,170,203,204,205,218,224,229]:
+              assert any(x.startswith('CR20261105-') for x in ss[n]['noteIds']),n
+          print('Critical text and apparatus linked to source section IDs')
+          PY
+      - name: Build and structurally verify five canonical source PDFs
+        run: |
+          python daruri/build/build_editions.py --output-dir /tmp/daruri-escorial-pdfs
+          python daruri/build/verify_structure.py --output-dir /tmp/daruri-escorial-pdfs
+          cp /tmp/daruri-escorial-pdfs/daruri.pdf daruri/
+          cp /tmp/daruri-escorial-pdfs/daruri-study.pdf daruri/
+          cp /tmp/daruri-escorial-pdfs/daruri-english.pdf daruri/
+          cp /tmp/daruri-escorial-pdfs/daruri-arabic.pdf daruri/
+          cp /tmp/daruri-escorial-pdfs/daruri-arabic-vowelled.pdf daruri/
+          cp /tmp/daruri-escorial-pdfs/*.metadata.json daruri/build/release/
+      - name: Remap navigation and PDF URLs to verified section locations
+        run: |
+          python daruri/build/update_release.py --rebuilt-dir /tmp/daruri-escorial-pdfs --revision daruri-escorial-20261105 --edition-date 2026-11-05 --apply | tee daruri/build/release/release-update.json
+          python daruri/build/update_release.py --rebuilt-dir /tmp/daruri-escorial-pdfs --revision daruri-escorial-20261105 --edition-date 2026-11-05 --check
+      - name: Generate and validate all twelve A4 reading and study variants
+        run: |
+          python daruri/build/publish_editions.py --output-dir daruri/editions
+          python daruri/build/publish_unvowelled_reading.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('daruri/editions')
+          m=json.loads((root/'manifest.json').read_text())
+          assert len(m['files'])==12
+          for rec in m['files']:
+              fp=root/rec['file']
+              assert fp.exists() and fp.stat().st_size==rec['bytes'],fp
+          print('Twelve PDF files verified')
+          PY
+      - name: Preserve complete portable source and integrity metadata
+        run: |
+          python daruri/build/export_portable_source.py --output-dir /tmp/daruri-escorial-source
+          cp /tmp/daruri-escorial-source/Daruri_Portable_Scholarly_Source.zip daruri/source/
+          cp /tmp/daruri-escorial-source/source-export-report.json daruri/source/
+      - name: Save verified reader and PDF release atomically on editorial branch
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add daruri/edition-r3-20261020.js daruri/index.html daruri/critical-review/
+          git add daruri/daruri.pdf daruri/daruri-study.pdf daruri/daruri-english.pdf daruri/daruri-arabic.pdf daruri/daruri-arabic-vowelled.pdf
+          git add daruri/editions/reading daruri/editions/study daruri/editions/manifest.json
+          git add daruri/pdf-editions-manifest.json daruri/download-bundle.js daruri/sw.js daruri/build/release/ daruri/source/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Publish source-controlled Daruri critical reading and 17 PDF editions [skip ci]"
+          git push origin HEAD:editorial/daruri-escorial-20261105
+      - name: Upload audit evidence even when a gate fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-escorial-20261105-QA
+          path: |
+            daruri/critical-review/2026-11-05-apply-result.json
+            /tmp/daruri-escorial-pdfs/structure-verification.json
+            daruri/build/release/release-update.json
+          if-no-files-found: warn

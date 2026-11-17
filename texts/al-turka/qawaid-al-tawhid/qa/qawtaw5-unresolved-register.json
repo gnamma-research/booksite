@@ -1,0 +1,971 @@
+[
+  {
+    "id": "QT-008",
+    "sourceLocator": "A pp. 67",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/263?lang=ar",
+    "arabicSegmentRange": [
+      1,
+      1
+    ],
+    "arabic": "فلئن قيل: إن الحقيقة الواجبة هي الطبيعة التي هي من ملزومات ما ذُكر من الوجود الذي يشترك فيه جميع الوجودات الخاصّة.",
+    "english": "If it is objected: 'The necessary reality is the nature that is among the necessary correlates of that existence, already mentioned, which is common to all particular existences.'",
+    "arStart": 1,
+    "arEnd": 1,
+    "enStart": 1,
+    "enEnd": 1,
+    "status": "unresolved-reading",
+    "note": "The objection is preserved. Malzūmāt is syntactically and philosophically difficult, and the English remains provisional until comparison with the separate ancestral manuscripts."
+  },
+  {
+    "id": "QT-020",
+    "sourceLocator": "A pp. 95",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/291?lang=ar",
+    "arabicSegmentRange": [
+      12,
+      14
+    ],
+    "arabic": "قلنا: إن تلك الطبيعة لا بدّ وأن يكون مغايرة للوجود العيني وملزومه، لما ذكرنا، دون الوجود الواجب لذاته القائم بنفسه الممتاز عمّا عداه به عين حقيقة.",
+    "english": "If it admits no intellectual instances for any of the reasons given, then either its reality differs from the realities of the particular possible existences in external reality—in which case the term “existence” would apply to them only equivocally—or it does not differ from them, in which case the possible existences themselves would possess intrinsic necessity.’ We reply: the supposed underlying necessary nature must, for the reasons already given, differ from external existence and be its underlying bearer. That does not apply to existence necessary through itself, subsisting through itself, and distinguished from everything else by its very reality.",
+    "arStart": 12,
+    "arEnd": 14,
+    "enStart": 4,
+    "enEnd": 5,
+    "status": "unresolved-reading",
+    "note": "Printed conclusion به عين حقيقة and ملزومه retain textual/grammatical strain; the English follows commentary as provisional rather than establishing a manuscript reading."
+  },
+  {
+    "id": "QT-024",
+    "sourceLocator": "A pp. 109",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/305?lang=ar",
+    "arabicSegmentRange": [
+      4,
+      7
+    ],
+    "arabic": "أو بشرط اتصافه بصفات أُخر عارضة له. ولا اعتبار هاهنا بالموجودية بالفرض التي تعرض المعاني العقلية، مثل عروضها لسائر الماهيات وجميع النسب والصفات والأحوال؛ إذ الكلام هاهنا إنما هو في الوجود الموجود بنفسه الواجب بالذات.",
+    "english": "We are not concerned here with the existentness predicated incidentally to intellectual meanings, as it may be imputed to other quiddities and to relations, attributes, and states; the discussion here concerns existence that exists through itself and is necessary through itself.",
+    "arStart": 4,
+    "arEnd": 7,
+    "enStart": 3,
+    "enEnd": 4,
+    "status": "unresolved-reading",
+    "note": "بالفرض / بالعرض would change suppositional to incidental predication, and the translation explicitly follows the displayed electronic base."
+  },
+  {
+    "id": "QT-025",
+    "sourceLocator": "A pp. 111–112",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/307?lang=ar",
+    "arabicSegmentRange": [
+      10,
+      12
+    ],
+    "arabic": "على أنّا نقول: إنّا نعلم بالضرورة أنّ الكون الذي يشترك فيه الأكوان العينيّة، كون عينيّ تكون طبيعته عن تلك الأكوان في الأعيان والأذهان، وأمّا اختلافها وتعدّدها فهو بالإضافة والنسب والاعتبارات المخصّصة الحقيقيّة لا غير.",
+    "english": "Furthermore, we maintain that the being in which external beings share is itself objective being, and that the nature of that being is the very reality of those external beings, both outside the mind and in thought; their difference and multiplicity come solely from particularizing relations, connections, and considerations.",
+    "arStart": 10,
+    "arEnd": 12,
+    "enStart": 7,
+    "enEnd": 8,
+    "status": "unresolved-reading",
+    "note": "Final كون عينيّ تكون طبيعته عن تلك الأكوان is syntactically unstable; English reports a contextual unity rather than an independently attested emendation."
+  },
+  {
+    "id": "QT-030",
+    "sourceLocator": "A pp. 133",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/329?lang=ar",
+    "arabicSegmentRange": [
+      9,
+      10
+    ],
+    "arabic": "أو حاصلاً للعلّة الفاعليّة الموجبة المباينة له، فلا يصحّ أن يقال إنها مفتقرة إليها بحسب أحد الوجودين غير الفرضيّين.",
+    "english": "It is thus incorrect to say that they depend on that essence in either of the two non-incidental modes of existence.",
+    "arStart": 9,
+    "arEnd": 10,
+    "enStart": 6,
+    "enEnd": 6,
+    "status": "unresolved-reading",
+    "note": "الوجودين غير الفرضيين is retained as non-suppositional modes with a distinct printed العرضي alternative in the commentary; no categorical emendation."
+  },
+  {
+    "id": "QT-052",
+    "sourceLocator": "A pp. 237",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/433?lang=ar",
+    "arabicSegmentRange": [
+      2,
+      3
+    ],
+    "arabic": "فلئن قيل: إنّها من حيث هي موجودات خاصّة أمور ممكنة، ولا يجوز أن يتوقّف الحقّ في الاتّصاف بصفة كماليّة على أمر ممكن — ببعض الصفات الممكنة.",
+    "english": "If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible—even upon certain possible attributes—in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes.",
+    "arStart": 2,
+    "arEnd": 3,
+    "enStart": 2,
+    "enEnd": 2,
+    "status": "unresolved-reading",
+    "note": "Objection concerns possible existents; awkward displaced «ببعض الصفات الممكنة» remains."
+  },
+  {
+    "id": "QT-053",
+    "sourceLocator": "A pp. 243–244",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/439?lang=ar",
+    "arabicSegmentRange": [
+      7,
+      10
+    ],
+    "arabic": "وأمّا نظائر العفاريت والمردة فلا نسلّم أنّها غير موجودة فيه. نعم، القوى التي هي نظائرها لمّا تسخّرت وهربت [هُذّبت: قراءة بديلة] بالمجاهدات المعتبرة عند أصحاب الاستكمال في الأشخاص الكاملة، فقد صارت الأفعال المحمودة الصادرة عنها ملكيّة،",
+    "english": "Nor do we concede that the counterparts of rebellious spirits and demons are absent from the perfected human. Rather, the faculties corresponding to them, having been brought under control and disciplined through the recognised exercises of perfection, perform praiseworthy acts of an angelic character.",
+    "arStart": 7,
+    "arEnd": 10,
+    "enStart": 6,
+    "enEnd": 7,
+    "status": "unresolved-reading",
+    "note": "هربت versus هذّبت remains; English 'disciplined' is contextual."
+  },
+  {
+    "id": "QT-054",
+    "sourceLocator": "A pp. 248",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/444?lang=ar",
+    "arabicSegmentRange": [
+      9,
+      11
+    ],
+    "arabic": "على أنّ الحافظة بتوسّط استخراج الأوساط وتأليفها مع حدّي المطلوب، على أنّ الحافظة والمتوهّمة والمتخيّلة قد لا تطيع العقل الفكري وتنقاد لتلك القوّة، بل تصير من جملة خدمها وآلاتها.",
+    "english": "Memory, estimation, and imagination need not obey the discursive intellect, yet they can submit to the nobler faculty and become its servants and instruments.",
+    "arStart": 9,
+    "arEnd": 11,
+    "enStart": 6,
+    "enEnd": 6,
+    "status": "unresolved-reading",
+    "note": "Duplicated middle-term phrase remains flagged, not silently deleted."
+  },
+  {
+    "id": "QT-055",
+    "sourceLocator": "A pp. 249–250",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/445?lang=ar",
+    "arabicSegmentRange": [
+      4,
+      5
+    ],
+    "arabic": "إمّا بحسب ذاتها أو بوجوب مطاوعتها للهوى، والقوّة الوهميّة أو المتخيّلة البدنيّة إنّما يقهرها على المتابعة والمدافعة عن توجّهها بالكلّيّة نحو البدن وتقيّد انجذابها نحو المادّة والكدورات الماديّة.",
+    "english": "The practitioner resists the tendencies flowing from the restrictions just mentioned, whether these arise from the faculties' own nature or from their habitual submission to appetite. The bodily faculties of estimation and imagination, in particular, can be made to follow the higher faculty and prevented from turning wholly toward the body and becoming bound to matter and its obscuring conditions.",
+    "arStart": 4,
+    "arEnd": 5,
+    "enStart": 2,
+    "enEnd": 3,
+    "status": "unresolved-reading",
+    "note": "Printed variants بوجود/بوجوب and تقيّد/ويفيد; English is contextual."
+  },
+  {
+    "id": "QT-056",
+    "sourceLocator": "A pp. 252–253–254–255",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/448?lang=ar",
+    "arabicSegmentRange": [
+      35,
+      36
+    ],
+    "arabic": "وأمّا كسب الملكات المفيدة للذلّة وقلّة الحميّة والمسكنة وما يشبهها، فلا يجوز بالنسبة إلى المرتاضين الذين غلب على مزاجهم الغضب الشديد والعجب والتكبّر والقهر والسطوة وحبّ الجاه وما يشبهها.",
+    "english": "As for acquiring dispositions that produce abasement, diminished zeal, meekness, and the like, this is not permissible except for practitioners whose temperaments are dominated by intense anger, conceit, pride, coercion, forcefulness, love of rank, and similar traits.",
+    "arStart": 35,
+    "arEnd": 36,
+    "enStart": 15,
+    "enEnd": 15,
+    "status": "unresolved-reading",
+    "note": "The transmitted «فلا يجوز» before anger/pride apparently conflicts with therapy by contraries; no conjectural emendation."
+  },
+  {
+    "id": "QT-059",
+    "sourceLocator": "A pp. 262–263–264",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/458?lang=ar",
+    "arabicSegmentRange": [
+      12,
+      12
+    ],
+    "arabic": "وأمّا الثاني فلما بيّنّاه في كتبنا المعمولة في صناعة الحكمة.",
+    "english": "As for the second claim, its explanation has already been supplied in our works on philosophical science.",
+    "arStart": 12,
+    "arEnd": 12,
+    "enStart": 9,
+    "enEnd": 9,
+    "status": "unresolved-reading",
+    "note": "Referenced missing proof and reported ancestral lacuna not reconstructed."
+  },
+  {
+    "id": "QT-060",
+    "sourceLocator": "A pp. 266–267",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/462?lang=ar",
+    "arabicSegmentRange": [
+      15,
+      17
+    ],
+    "arabic": "فوقع نفسه في لجج الخيالات الفاسدة والأوهام الباطلة، عند تلاطم أمواج الشكوك والشبهات المغرقة. فاضمحلّ نور قلبه وعميت بصيرته بتراكم الكدورات المظلمة والعقائد الفاسدة،",
+    "english": "Tossed into a sea of corrupt imaginings and false suppositions amid overwhelming waves of doubts, the light of his heart fades and his insight is blinded by the accumulation of obscuring conditions and false beliefs.",
+    "arStart": 15,
+    "arEnd": 17,
+    "enStart": 8,
+    "enEnd": 8,
+    "status": "unresolved-reading",
+    "note": "A p267 variants فوقع/فأوقع and المفرفة/المغرقة left open."
+  },
+  {
+    "id": "QT-060",
+    "sourceLocator": "A pp. 266–267",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/462?lang=ar",
+    "arabicSegmentRange": [
+      23,
+      23
+    ],
+    "arabic": "فليتقِ خبث هذه العقيدة ووجه ضررها من لطفه وليستعذ به من مكره وغضبه.",
+    "english": "Let him recognize, through God's grace, the corruption and harm of this belief, and seek refuge in Him from His devising and wrath.",
+    "arStart": 23,
+    "arEnd": 23,
+    "enStart": 13,
+    "enEnd": 13,
+    "status": "unresolved-reading",
+    "note": "A p267 prints فيتقن ... واستعد while adopted Arabic has فليتق ... وليستعذ; the English remains interpretative."
+  },
+  {
+    "id": "QT-061",
+    "sourceLocator": "A pp. 269–270",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/465?lang=ar",
+    "arabicSegmentRange": [
+      10,
+      12
+    ],
+    "arabic": "ومتى عرفت هذا فنقول: لا بدّ للسالكين من أصحاب المجاهدة أن يحصّلوا العلوم الحقيقيّة الفكريّة النظريّة أوّلاً، بعد تصفية القلب بقطع العلائق المكدّرة المظلمة وتهذيب الأخلاق وترتيبها، حتّى تصير هذه العلوم النظريّة التي تكون من جملتها الصناعة الآليّة المميّزة بالنسبة إلى المعارف الذوقيّة كالعلم الآلي المنطقي بالنسبة إلى العلوم النظريّة غير المتّسقة المنتظمة.",
+    "english": "Once this is understood, we say that those who follow the path of spiritual exertion must first acquire the genuine discursive and theoretical sciences, after purifying their hearts by severing darkening attachments and refining and ordering their dispositions, so that those sciences—including the instrumental discipline that discriminates correct from incorrect thinking—will stand in relation to experiential cognitions much as logic stands in relation to theoretical sciences not already coherent and systematically ordered.",
+    "arStart": 10,
+    "arEnd": 12,
+    "enStart": 6,
+    "enEnd": 6,
+    "status": "unresolved-reading",
+    "note": "Purification, prior studies and logic analogy retained; غير المتسقة المنتظمة printed syntax unresolved."
+  },
+  {
+    "id": "SH-INTRO-011",
+    "sourceLocator": "N, printed pp. 26",
+    "sourceUrl": "https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/",
+    "arabicSegmentRange": [
+      9,
+      13
+    ],
+    "arabic": "فإنها بهذا المعنى نفس حقيقة الخصوصيات، وعين تلك الحيثيات؛ إذ تلك إنما هي تصور تعيناتها المتمائزة بمجرد النسب والإضافات وصنوف الاعتبارات، على ما ستطلع عليه، إن شاء الله تعالى.",
+    "english": "In the latter sense, existentness is the very reality of those particularities and those very aspects: they are but the determination-forms distinguished through relations, correlations, and different considerations, as you will come to understand, God willing.",
+    "arStart": 9,
+    "arEnd": 13,
+    "enStart": 6,
+    "enEnd": 6,
+    "status": "unresolved-reading",
+    "note": "Electronic تصور تعيناتها is rendered as determination-forms (as though صور); source reading remains uncertain rather than attested correction."
+  },
+  {
+    "id": "SH-INTRO-025",
+    "sourceLocator": "N, printed pp. 34",
+    "sourceUrl": "https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/",
+    "arabicSegmentRange": [
+      10,
+      11
+    ],
+    "arabic": "إذ محصل هذا التقسيم أن ما يتصوره العقل لا يخلو من أن يكون قابلا للحوق الوجود في نفسه، أو يكن،",
+    "english": "The point of the division is this: whatever intellect conceives either admits existence in itself or does not.",
+    "arStart": 10,
+    "arEnd": 11,
+    "enStart": 6,
+    "enEnd": 6,
+    "status": "unresolved-reading",
+    "note": "N has أو يكن without negative; English supplies or does not contextually."
+  },
+  {
+    "id": "SH-INTRO-035",
+    "sourceLocator": "N, printed pp. 41–42",
+    "sourceUrl": "https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/",
+    "arabicSegmentRange": [
+      9,
+      9
+    ],
+    "arabic": "حتى يتمكن من تميز الأحكام الحقة التي لها بحسب الأمر بعينه المفهمة المقومة لها والمميزة إياها في ذاتها عن غيرها من اللواحق العارضة لها باعتبار المجالي والمراتب؛",
+    "english": "Intellect can thereby distinguish the true judgments that belong to them as they are—the judgments making their constitution intelligible and distinguishing them in themselves—from the other features that accrue to them through their loci of appearance and degrees.",
+    "arStart": 9,
+    "arEnd": 9,
+    "enStart": 5,
+    "enEnd": 5,
+    "status": "unresolved-reading",
+    "note": "Strained sequence بحسب الأمر بعينه المفهمة المقومة is construed as intrinsic intelligible judgements; exact syntax not certified."
+  },
+  {
+    "id": "SH-INTRO-035",
+    "sourceLocator": "N, printed pp. 41–42",
+    "sourceUrl": "https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/",
+    "arabicSegmentRange": [
+      12,
+      12
+    ],
+    "arabic": "وهذه القوة من آثار ما أشير إليه آنفا بأنه أول فعل الحق العقل الأول ومن تصور تعيناته في هذه النشأة،",
+    "english": "This power is among the effects of the First Intellect, of which we said earlier that it is the Real's first act, and among the forms of its determinations in this realm.",
+    "arStart": 12,
+    "arEnd": 12,
+    "enStart": 7,
+    "enEnd": 7,
+    "status": "unresolved-reading",
+    "note": "Retained تصور تعيناته rendered forms of determinations as though صور; source uncertainty remains."
+  },
+  {
+    "id": "SH-001",
+    "sourceLocator": "A, printed pp. 48–49",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/244?lang=ar",
+    "arabicSegmentRange": [
+      14,
+      15
+    ],
+    "arabic": "الذين منهم من اختصَّ في تلك المظهريَّة و المرآتيَّة بمزيَّة الخنم و التمام ، عليه و على آله الصلاة و السلام .",
+    "english": "Among them is the one distinguished within this manifestation and mirroring by the excellence of sealing and completion—blessings and peace upon him and his family.",
+    "arStart": 14,
+    "arEnd": 15,
+    "enStart": 6,
+    "enEnd": 6,
+    "status": "unresolved-reading",
+    "note": "Electronic الخنم rendered sealing as though الختم; invocation retained, no witnessed correction claimed."
+  },
+  {
+    "id": "SH-002",
+    "sourceLocator": "A, printed pp. 49–52",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/245?lang=ar",
+    "arabicSegmentRange": [
+      62,
+      63
+    ],
+    "arabic": "و بيان ذلك ان القطع ببطلان مسألة التوحيد قطع ببطلان جميع اقسام اليقينيّات . من العقليّة المبرهنة و التي قياساتها معها و الحسّية\n\nالتي هي من المشاهدات و الفطريَّة التي هي الأوليّات و العزيزية إلى هي الوجدانيات ،",
+    "english": "The explanation given is that certainty that the doctrine of unity is invalid amounts to certainty in the invalidity of all classes of certain cognition: rational judgments established by demonstration and those carrying their syllogisms with them; sensory judgments belonging to observation; primordial judgments belonging to first principles; and instinctive judgments belonging to immediate awareness.",
+    "arStart": 62,
+    "arEnd": 63,
+    "enStart": 32,
+    "enEnd": 35,
+    "status": "corrected-with-source-crux",
+    "note": "Restores literal ببطلان مسألة التوحيد. Previous bracketed English inverted the received negative to match context; source contradiction now explicit. العزيزية/إلى also corrupt in digital text."
+  },
+  {
+    "id": "SH-008",
+    "sourceLocator": "A, printed pp. 67–68",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/263?lang=ar",
+    "arabicSegmentRange": [
+      8,
+      10
+    ],
+    "arabic": "الا ان الوجودات الممكنات لها ماهيّات معروضة لها دون الطبيعة الخاصَّة الواجبة ، الا ان الوجودات الممكنات لها ماهيّات معروضة له دون الطبيعة الخاصَّة الواجبة ، فان الوجود نفس ماهيَّتها ،",
+    "english": "Possible existences have quiddities that serve as their subjects, whereas the particular necessary nature does not, because existence is its very quiddity.",
+    "arStart": 8,
+    "arEnd": 10,
+    "enStart": 4,
+    "enEnd": 4,
+    "status": "unresolved-reading",
+    "note": "Arabic repeats possible-existence/quiddity clause; English translates once, with duplication explicitly retained in Arabic and apparatus."
+  },
+  {
+    "id": "SH-009",
+    "sourceLocator": "A, printed pp. 68–71",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/264?lang=ar",
+    "arabicSegmentRange": [
+      23,
+      24
+    ],
+    "arabic": "فالحقيقة الخاصَّة الواجبة ، حينئذ - لا يغاير الوجوب المطلق بالذات .",
+    "english": "The particular necessary reality would therefore not differ essentially from unrestricted existence.",
+    "arStart": 23,
+    "arEnd": 24,
+    "enStart": 9,
+    "enEnd": 9,
+    "status": "unresolved-reading",
+    "note": "A string reads الوجوب المطلق while English has unrestricted existence; contextual الوجود reading requires explicit note."
+  },
+  {
+    "id": "SH-011",
+    "sourceLocator": "A, printed pp. 73–74",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/269?lang=ar",
+    "arabicSegmentRange": [
+      14,
+      18
+    ],
+    "arabic": "و على التقدير الأول يلزم ان يكون افراد الطبيعة الواجبة ممكنة بالذات ، امتنعت الافراد الباقية منها ، أو أمكنت ، ضرورة امتناع وجود بها بالذات و امتناعها بها ، و الا يلزم خلاف الفرض .",
+    "english": "In the first, the individuals of the necessary nature must be possible through themselves, whether the remaining individuals are impossible or possible. They cannot be intrinsically necessary or intrinsically impossible without contradicting what has been supposed.",
+    "arStart": 14,
+    "arEnd": 18,
+    "enStart": 7,
+    "enEnd": 8,
+    "status": "unresolved-reading",
+    "note": "Individual intrinsic possibility argument retained; digital وجود بها apparently stands for وجوبها, not independently corrected."
+  },
+  {
+    "id": "SH-011",
+    "sourceLocator": "A, printed pp. 73–74",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/269?lang=ar",
+    "arabicSegmentRange": [
+      35,
+      39
+    ],
+    "arabic": "و ان أريد به الإمكان الخاص ، فمعلوم ان الطبيعة الواجبة لو صحَّ ان يكون ذات افراد ، لزم ان تكون تلك الأفراد ممكنة بالإمكان الخاص ، كيف و بين مفهوميهما تناف في الصدق ! ؟",
+    "english": "But if possibility is understood in the strict sense, it is treated as evident that, were a necessary nature to admit individuals, they would be strictly possible. How, though, could that follow, when the two descriptions cannot both be predicated?",
+    "arStart": 35,
+    "arEnd": 39,
+    "enStart": 17,
+    "enEnd": 18,
+    "status": "unresolved-reading",
+    "note": "English [not established] supplies negative absent from printed فمعلوم; context strongly suggests it but source remains unresolved."
+  },
+  {
+    "id": "SH-018",
+    "sourceLocator": "A, printed pp. 93–94",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/289?lang=ar",
+    "arabicSegmentRange": [
+      10,
+      12
+    ],
+    "arabic": "و لأن سلَّمنا انها غير معقولة لذاتها بالنسبة إلى العقول المفارقة ، لكن مسلّم ، انها ليست معقولة بحسب الاعتبارات و الإضافات ،",
+    "english": "Even if we grant that it is not intelligible in itself to separate intellects, we [do not] grant that it is unintelligible under considerations and relations.",
+    "arStart": 10,
+    "arEnd": 12,
+    "enStart": 5,
+    "enEnd": 5,
+    "status": "unresolved-reading",
+    "note": "Digital لكن مسلّم lacks the negative supplied by English [do not]; surrounding reply suggests conjecture, not established reading."
+  },
+  {
+    "id": "SH-020",
+    "sourceLocator": "A, printed pp. 95–98",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/291?lang=ar",
+    "arabicSegmentRange": [
+      27,
+      33
+    ],
+    "arabic": "فلو لم يقتض بعض افرادها الوجوب و البعض الآخر الامتناع ، لزم ان لا يكون ذلك الاقتضاء بالذات ، بل ، بالغير ، فيلزم ان يكون الواجب في وجوبه محتاجاً إلى الغير ، و ذلك بَيِّن الاستحالة ، و ان لم يمكن ان تكون ذات افراد عقليَّة لشيء ممّا ذكر من الوجوه الأربعة ،",
+    "english": "Thus, if some instances required necessity and others impossibility [the reported alternative reading], that requirement would not arise through themselves but through another. The Necessary would then depend on another for its necessity, which is plainly impossible. If, instead, it cannot have intellectual instances for any of the four reasons previously mentioned, then either this unrestricted reality differs from the reality of particular external existences called possible existences, or it does not.",
+    "arStart": 27,
+    "arEnd": 33,
+    "enStart": 11,
+    "enEnd": 13,
+    "status": "unresolved-reading",
+    "note": "لو لم يقتض is inconsistent with the inferential role; displayed فلو اقتضى alternative remains source-disputed."
+  },
+  {
+    "id": "SH-024",
+    "sourceLocator": "A, printed pp. 109–111",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/305?lang=ar",
+    "arabicSegmentRange": [
+      18,
+      22
+    ],
+    "arabic": "و اما ما تكوَّنت فيها ، فامر آخر غير نفس الصورة انّما اعتبره العقل عند ملاحظته لما ملاحظة تكوُّنها فيه ، و لا شك ان ذلك انّما وقعت في الدرجة الثانية من التعقُّل ، فيمتنع حينئذ ان يكون لها وجود في الخارج ، و يلزم الاختلاف المذكور .",
+    "english": "For we answer that intelligible forms are what accrue to intellects, whereas what constitutes their being there is something else, distinct from the form itself. Intellect considers it when attending to the form's coming to be within intellect. It thus occurs at the second level of intellection, cannot exist externally, and yields the difference just alleged.",
+    "arStart": 18,
+    "arEnd": 22,
+    "enStart": 8,
+    "enEnd": 10,
+    "status": "unresolved-reading",
+    "note": "ما تكوّنت فيها and عند ملاحظته لما are problematic readings; translation provisional."
+  },
+  {
+    "id": "SH-026",
+    "sourceLocator": "A, printed pp. 114–117",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/310?lang=ar",
+    "arabicSegmentRange": [
+      31,
+      33
+    ],
+    "arabic": "شعر\nكلُّ من في حماك ، يهواك لكن * انا وحدي ، لكلّ مَن في حماكا",
+    "english": "‘All within Your sanctuary love You; yet\nI alone [am] for all within Your sanctuary.’",
+    "arStart": 31,
+    "arEnd": 33,
+    "enStart": 25,
+    "enEnd": 26,
+    "status": "unresolved-reading",
+    "note": "Closing elliptical verse has no explicit predicate; English marks [am] rather than falsely completing it."
+  },
+  {
+    "id": "SH-028",
+    "sourceLocator": "A, printed pp. 121–130",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/317?lang=ar",
+    "arabicSegmentRange": [
+      116,
+      135
+    ],
+    "arabic": "و لا يخفى على الفطن المستيقظ ، ان ملخّص هذا الكلام ، هو ان الحقيقة الادراكيَّة ، أي الإدراك العقلي ، المنسوب إلى المجردات ، ليس مطلق الحصول ، بل الحصول الخاص الذي هو عبارة عن استحضار المؤثِّر - اثره المتَّصل به ، و يختلف ذلك حسب اختلاف المدركين في التأثير ، فكلما كان المؤثّر اقوى في التأثير و أقلُّ احتياجاً إلى الوسائط ، كان ذلك الاتصال اقوى ، و كلَّما كان أضعف و اكثر احتياجاً إلى الوسائط كان ذلك الاتِّصاف أضعف . فمنهم من بلغ في قوة التأثير مبلغ الإيجاب الذاتي الذي يُحصِّل الأثر بحيث يصير مع المؤثر كهو مع نفسه في الارتباط بدون الاحتياج إلى غيره من الوسائط و الآلات ، و هذا غاية القوة في التأثير ، لا يمكن ان يتصور لها مزيد ، فيكون النِّسبة الارتباطيّة و الرقيقة الاتحادية الحاصلة له مع المُدرك ايضاً لا يمكن ان يتصور لها مزيد في الوجود أصلًا . و منهم من بلغ في الضعف إلى حيث لا يقدر بدون ارادة و اختيار زايد عليه ، و مع ذلك يحتاج إلى وسائط كثيرة و أسباب شتّى ، و هذا نهاية الضعف في التأثير ، فكذلك النسبة الارتباطيَّة و الرقيقة الاتحاديَّة في غاية الضعف و البعد ، حتى ينتهى إلى المقارنة الفرضيَّة - العرضيَّة - .",
+    "english": "An alert reader will recognize its substance: the reality of cognition—intellectual cognition ascribed to immaterial beings—is not presence without qualification, but a particular presence consisting in an agent's having present its effect connected with it. This varies with the cognizing agents' efficacy. The stronger the agent's influence and the less it needs intermediaries, the stronger that connection; the weaker its influence and the more intermediaries it requires, the weaker the connection. Some agents attain the strength of intrinsic necessitation, producing an effect so that its connection with the agent is like the agent's connection with itself, without any intermediaries or instruments. This is the utmost efficacy, beyond which nothing more can be conceived. The relational connection and subtle unifying link with the cognized object likewise admit no increase. Others are so weak that they cannot act without an additional will and choice and, even then, need many intermediaries and diverse causes. This is the extremity of weakness in efficacy; the relational connection and subtle unifying link are correspondingly weak and remote, eventually reaching merely accidental conjunction [a contextual reading of the displayed alternatives].",
+    "arStart": 116,
+    "arEnd": 135,
+    "enStart": 87,
+    "enEnd": 96,
+    "status": "unresolved-reading",
+    "note": "Strength of linkage varies with efficacy/mediating instruments; final الفرضية versus العرضية variant materially changes 'suppositional' versus 'accidental' conjunction."
+  },
+  {
+    "id": "SH-030",
+    "sourceLocator": "A, printed pp. 133–137",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/329?lang=ar",
+    "arabicSegmentRange": [
+      91,
+      98
+    ],
+    "arabic": "و إذا تقرّر ان الماهيّات و الأعيان باعتبار مغايرتها للذات ، ليس لها حصَّة من الوجود أصلًا ، فلا يمكن اضافة الوجود إليها و اعتبارها معها بهذا الاعتبار ، فلو أضيف إليها اعتبر لها بوجه من الوجوه ، لا يكون ذلك المضاف الا الوجود الذاتي الحقيقي ، فلا يصحُّ حينئذ ان يقال : أنَّها مفتقرة إلى الذات العاقلة بحسب احد الوجودين الغير الفرضيَّين لأنَّ الوجود المضاف إلى الماهيَّة حينئذ ، انّما هو الوجود الذاتي الحقيقي الذي لا يمكن ان يفتقر موصوفه بحسبه إلى شيء ، فان الافتقار انّما يكون للموجود بالوجود الفرضي الذي قد ثبت انتفاؤه مطلقا .",
+    "english": "Once it is established that quiddities and entities, considered as different from the essence, have no share in existence, existence cannot be attributed to or considered with them under that consideration. If existence is nevertheless attributed to them in any respect, it can only be real intrinsic existence. It would then be incorrect to say that they depend on the knowing essence in respect of either of the two non-suppositional modes of existence [the displayed reading]. The existence attributed to the quiddity would be real intrinsic existence, in respect of which its subject cannot depend on anything. Dependence belongs only to something existent through suppositional existence [with ‘incidental existence’ reported as an alternative], whose independent standing has been denied.",
+    "arStart": 91,
+    "arEnd": 98,
+    "enStart": 37,
+    "enEnd": 41,
+    "status": "unresolved-reading",
+    "note": "The closing argument has الفرضي / العرضي alternatives determining whether 'suppositional' or 'accidental' existence carries the dependence. English marks the base reading and variant rather than resolving it."
+  },
+  {
+    "id": "SH-031",
+    "sourceLocator": "A, printed pp. 138–141",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/334?lang=ar",
+    "arabicSegmentRange": [
+      52,
+      54
+    ],
+    "arabic": "لكن للزجاج بدا ، شعاعة ، فترى فيه الوان .",
+    "english": "its radiance becomes apparent in the glass, and colours are seen in it.",
+    "arStart": 52,
+    "arEnd": 54,
+    "enStart": 28,
+    "enEnd": 28,
+    "status": "unresolved-reading",
+    "note": "The electronic Arabic للزجاج بدا شعاعة is syntactically disturbed; English 'radiance appears through the glass' is contextual, not a manuscript-established emendation."
+  },
+  {
+    "id": "SH-033",
+    "sourceLocator": "A, printed pp. 144–148",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/340?lang=ar",
+    "arabicSegmentRange": [
+      4,
+      4
+    ],
+    "arabic": "فما كانت ظاهرة الاعتباري على احكام اطلاق الذات و وجودها الحقيقي .",
+    "english": "I say: after explaining the divine level and the preceding levels determined through disclosure—required by essential perfection, in which the properties of the essence's unrestrictedness and real existence predominate over the determinations of the names and their considered manifestation—the author turns to the levels determined through self-beholding in disclosure. These are required by the perfection of the names, in which determinations and their considered manifestation predominate over the essence's unrestrictedness and real existence.",
+    "arStart": 4,
+    "arEnd": 4,
+    "enStart": 1,
+    "enEnd": 2,
+    "status": "unresolved-reading",
+    "note": "The electronic text repeats part of the preceding contrast in a detached string; English does not duplicate it. Retain as a source-level repetition, not a certified omission."
+  },
+  {
+    "id": "SH-035",
+    "sourceLocator": "A, printed pp. 154–158",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/350?lang=ar",
+    "arabicSegmentRange": [
+      10,
+      10
+    ],
+    "arabic": "من ان الإمكان عبارة عن الوجود بنسبته إلى المعلومات و لا شكَّ ان تلك التعيُّنات عن ظاهر العلم باعتبار تمايزه عن الوجود بنسبة إلى المعلومات ،",
+    "english": "As explained in the prolegomenon, possibility is described in relation to objects of knowledge. The displayed wording speaks of existence in relation to the known, then of the manifest aspect of knowledge distinguished from existence by its relation to the known [the clause is textually disordered; see note].",
+    "arStart": 10,
+    "arEnd": 10,
+    "enStart": 3,
+    "enEnd": 5,
+    "status": "unresolved-reading",
+    "note": "The Arabic sentence beginning الإمكان عبارة عن الوجود is disordered; English explains the received wording and its difficulty rather than purporting to restore continuous authorial syntax."
+  },
+  {
+    "id": "SH-035",
+    "sourceLocator": "A, printed pp. 154–158",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/350?lang=ar",
+    "arabicSegmentRange": [
+      30,
+      35
+    ],
+    "arabic": "و ذلك لأنّ تلك الأحوال عند مقارنة الوجود ايّاها و مقارنتها للوجود ، يصير موجودة بالضرورة ، فلو كان عدم الاستحقاقيَّة مطلقا ، مقتضى طبايعها ، للزم صيرورة الممتنع الذاتي موجوداً بضرورة الوصف ، و ذلك بَيِّن الاستحالة ،",
+    "english": "When existence accompanies those states and they accompany it, they necessarily become existent. If their natures intrinsically required nonbeing without qualification [the reported alternative reading], something intrinsically impossible would become existent through the necessity of an attribute, which is plainly impossible.",
+    "arStart": 30,
+    "arEnd": 35,
+    "enStart": 16,
+    "enEnd": 17,
+    "status": "unresolved-reading",
+    "note": "English follows a reported interpretive alternative concerning intrinsically required nonbeing, not a demonstrated manuscript correction of عدم الاستحقاقية مطلقا."
+  },
+  {
+    "id": "SH-036",
+    "sourceLocator": "A, printed pp. 161–163",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/357?lang=ar",
+    "arabicSegmentRange": [
+      27,
+      32
+    ],
+    "arabic": "- و باعتبار بعض صفات أخر ، انواع أخر ، عينيَّة غير كاملة الذات ، أي غير مستقلة و باعتبار ظهورها بحسب بعض أحوالها الآخر ، انواع آخر عينيَّة غير كاملة الذات ، أي غير مستقلة في الوجود تابعة بشيء فيه يسمّى عندهم بالحقائق التابعة و الصّور الكاينة ،",
+    "english": "Through other attributes, or manifestation according to other states, there result external kinds incomplete in themselves, dependent on something else in existence. They are called dependent realities and occurring forms, such as the divisions of quantity and quality.",
+    "arStart": 27,
+    "arEnd": 32,
+    "enStart": 13,
+    "enEnd": 14,
+    "status": "unresolved-reading",
+    "note": "Received Arabic repeats the incomplete-nature formulation in adjacent forms; English renders the sense once. No authorial deletion is established."
+  },
+  {
+    "id": "SH-038",
+    "sourceLocator": "A, printed pp. 167–172",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/363?lang=ar",
+    "arabicSegmentRange": [
+      47,
+      49
+    ],
+    "arabic": "و اما إدراكه ما يدرك بقواه الجسمانيّات ، فمن حيث الأمداد المذكور ، لكن من مرتبة الاسم الظاهر لا عن مرتبة الاسم الظاهر .",
+    "english": "Apprehension through bodily faculties also occurs through that aid, but from the level of the name Manifest. [The displayed text immediately adds ‘not from the level of the name Manifest’; this repetition or displaced negation leaves the sentence textually unsettled.]\n\nNow suppose that a human being follows the path of the people of realization through detachment, purification, and the other disciplines taught by an experienced traveller.",
+    "arStart": 47,
+    "arEnd": 49,
+    "enStart": 26,
+    "enEnd": 28,
+    "status": "unresolved-reading",
+    "note": "Source says from the level of Manifest and immediately not from that level. English flags the contradiction rather than silently resolving the negation."
+  },
+  {
+    "id": "SH-039",
+    "sourceLocator": "A, printed pp. 173–177",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/369?lang=ar",
+    "arabicSegmentRange": [
+      122,
+      123
+    ],
+    "arabic": "فهذه حقيقته فله المطلق في الحدوث و القدم ، فله الكمال المطلق في الحدوث و القدم ،",
+    "english": "This is his reality. He possesses comprehensive perfection with respect to origination and eternity.",
+    "arStart": 122,
+    "arEnd": 123,
+    "enStart": 58,
+    "enEnd": 59,
+    "status": "unresolved-reading",
+    "note": "Source gives two overlapping formulations of unrestricted perfection in origination and eternity. English renders the complete sense once; possible duplication remains uncollated."
+  },
+  {
+    "id": "SH-040",
+    "sourceLocator": "A, printed pp. 180–184",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/376?lang=ar",
+    "arabicSegmentRange": [
+      16,
+      18
+    ],
+    "arabic": "لأن الامر باصطلاحهم عبارة عن اظهار حكم الوحدة في عين الكثرة ، المعبَّر بالحركة الايجاديَّة تارة و النكاح الساري اخرى ، كما ان النسى عبارة عن اظهار حكم الكثرة و رجوعها إلى الوحدة .",
+    "english": "In their terminology, command means making the governing property of unity manifest within multiplicity. This is expressed at one time as the existential movement and at another as the all-pervading conjunction. The contrasting expression, prohibition (al-nahy), means making multiplicity's governing property manifest and returning it to unity.",
+    "arStart": 16,
+    "arEnd": 18,
+    "enStart": 8,
+    "enEnd": 10,
+    "status": "unresolved-reading",
+    "note": "Command and existential movement are clear; the contrasting printed النسى is explicitly uncertain in English."
+  },
+  {
+    "id": "SH-041",
+    "sourceLocator": "A, printed pp. 186–189",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/382?lang=ar",
+    "arabicSegmentRange": [
+      26,
+      32
+    ],
+    "arabic": "و كلُّ مرئى بالذات برؤية الباصرة ، لا بُدَّ و ان يكون عرضاً جسمانياًّ ، و ذلك لأن الرؤية الباصرة ، لا بُدَّ و ان يكون عرضاً جسمانياًّ ، و ذلك لأن الرؤية اما لخروج الأشعَّة أو بالانطباع ، و الأشعَّة انّما تنتهي إلى السُّطوح الملونة ، كما ان الانطباع لا يكون الا من شأنها ،",
+    "english": "What is seen intrinsically must be a bodily accident, since sight occurs either through the emission of rays or through an impression: rays terminate at coloured surfaces, and those surfaces are what can produce the impression.",
+    "arStart": 26,
+    "arEnd": 32,
+    "enStart": 11,
+    "enEnd": 11,
+    "status": "unresolved-reading",
+    "note": "Bodily-accident clause is repeated in the electronic source; English renders the optical argument once and no textual deletion is certified."
+  },
+  {
+    "id": "SH-041",
+    "sourceLocator": "A, printed pp. 186–189",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/382?lang=ar",
+    "arabicSegmentRange": [
+      86,
+      90
+    ],
+    "arabic": "اعلم ان نسبة هذا الكلام من المصنّف هاهنا ، انّما وقع في معرض التشكيك من حيث انَّه في صدد توجيه المسألة و ايراد الشبهة ، لكن لمَّا لم يكن في تقرير الاجوبة ما يتعلق بهذا الكلام ، وجب التعرُّض لجوابه حتى يتوهم ، انَّه انما ذكر للتحقيق .",
+    "english": "This is impossible.’\n\nKnow that the author's earlier argument occurs here in the course of raising difficulties and formulating objections. Since his subsequent replies do not address this particular argument, it was necessary to answer it here [lest it be mistaken for his settled position].",
+    "arStart": 86,
+    "arEnd": 90,
+    "enStart": 36,
+    "enEnd": 37,
+    "status": "unresolved-reading",
+    "note": "Source حتى يتوهم is rendered as lest it be mistaken, supplying a contextually expected negation. Keep this interpretation marked pending independent witness."
+  },
+  {
+    "id": "SH-045",
+    "sourceLocator": "A, printed pp. 203–206",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/399?lang=ar",
+    "arabicSegmentRange": [
+      17,
+      20
+    ],
+    "arabic": "و لا يخفى انه حينئذ بمعزل في تلك الحالة عن استعمال القوى الجسمانية ، و إذا كان الأمر على هذا الوجه ، فلا اعتبار عندهم به مثل هذه الإدراكات من الحسِّية و الخياليَّة و الوهميَّة و الكفريَّة ، بل هذه الإدراكات كلَّها يكون عندهم مانعاً - مانعة - لحصول ما هو الكمال الحقيقي لديهم .",
+    "english": "In that condition the person is plainly apart from employing bodily faculties. Sensory, imaginative, estimative, and discursive apprehensions therefore count for nothing on their account; indeed, they obstruct genuine perfection.",
+    "arStart": 17,
+    "arEnd": 20,
+    "enStart": 12,
+    "enEnd": 14,
+    "status": "unresolved-reading",
+    "note": "Displayed الكفرية is rendered discursive as though الفكرية in the enumerated faculties. This is contextual interpretation, not witnessed Arabic correction."
+  },
+  {
+    "id": "SH-048",
+    "sourceLocator": "A, printed pp. 218–224",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/414?lang=ar",
+    "arabicSegmentRange": [
+      52,
+      55
+    ],
+    "arabic": "و ما قال السائل هاهنا ، من انَّه يلزم ان يكون ادراك بعض الصُّور و الأسماء تعقُّلًا عينياً تفصيلياً ، فلا يصلح ان يكون مرآة جامعة للجميع ، مردود ،",
+    "english": "The questioner's claim that some forms and names would then be apprehended as an unseen intellection, so that the human being could not mirror the whole, is rejected.",
+    "arStart": 52,
+    "arEnd": 55,
+    "enStart": 27,
+    "enEnd": 27,
+    "status": "unresolved-reading",
+    "note": "Reprised objection reads تعقلا عينيا تفصيليا rather than the earlier unseen cognition wording; English marks the displayed reprise rather than silently harmonizing it."
+  },
+  {
+    "id": "SH-049",
+    "sourceLocator": "A, printed pp. 225–228",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/421?lang=ar",
+    "arabicSegmentRange": [
+      39,
+      40
+    ],
+    "arabic": "فظهر من هذا ، ان الإنسان من حيث هو حاصر لجميع القوابل العلويَّة و السفليَّة من الروحانيَّة و المثاليَّة و الطبيعيَّة الجسمانيَّة بجملتها واحديّة جمعيتها على سبيل الجمع و التركيب الحقيقي الامتزاجى فهو بهذه الحيثيَّة انَّما يصلح ان يصير مظهراً لتلك الصورة بذلك الاعتبار و الحيثيَّة المذكورة بجملتها واحديَّة جمعيتها على سبيل الجمع و التركيب الحقيقي الامتزاجى .",
+    "english": "Thus the human being, insofar as he contains all higher and lower receptivities—spiritual, imaginal, natural, and bodily—in their entirety and comprehensive oneness through genuine combination and intermixture, is suitable to manifest that form under the corresponding consideration, likewise in its entirety and comprehensive oneness.",
+    "arStart": 39,
+    "arEnd": 40,
+    "enStart": 19,
+    "enEnd": 19,
+    "status": "unresolved-reading",
+    "note": "Long received sentence repeats the real-combination/intermixture phrase; English represents the combined sense once. No witnessed deletion is established."
+  },
+  {
+    "id": "SH-051",
+    "sourceLocator": "A, printed pp. 234–237",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/430?lang=ar",
+    "arabicSegmentRange": [
+      4,
+      7
+    ],
+    "arabic": "و بيانه ، ان الأفعال الواقعة في عالم الخلق منها ما هي كمالية شريفة مقصودة\n\nبالذات ، لها مدخل في تكميل الغاية الحقيقيَّة التي هي غاية الغايات ، كالتغذية و الكميَّة و غير ذلك .",
+    "english": "Acts in the created world are of two sorts. Some are noble, perfective, and intended in themselves, contributing to the attainment of the genuine goal which is the end of ends, such as nourishment and growth.",
+    "arStart": 4,
+    "arEnd": 7,
+    "enStart": 2,
+    "enEnd": 3,
+    "status": "unresolved-reading",
+    "note": "Nourishment/growth rendering uses an indicated correction of displayed الكمية; not a newly collated reading."
+  },
+  {
+    "id": "SH-053",
+    "sourceLocator": "A, printed pp. 244–247",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/440?lang=ar",
+    "arabicSegmentRange": [
+      17,
+      20
+    ],
+    "arabic": "لا اعتبر في إطلاقها بالمعنى المذكور ساير انواع إدراكاتها من كليّاتها و جزئيّاتها ، صوراً كانت أو معانى ، غائبة أو حاضرة ، كما اعتبر تصرُّفاتها من التركيبات الواقعة في تلك المدركات و استحال حينئذ ان يكون شيء منها مانعاً لحصول ما هو الكمال الحقيقي عندهم ،",
+    "english": "Unrestrictedness in the stated sense then includes all kinds of their apprehension: universal and particular, forms and meanings, absent and present, as well as their operations combining these objects. None can obstruct genuine perfection.",
+    "arStart": 17,
+    "arEnd": 20,
+    "enStart": 10,
+    "enEnd": 11,
+    "status": "unresolved-reading",
+    "note": "Displayed لا اعتبر is interpreted as conditional لاعتبر; English keeps positive inclusion, but independent text-check is still required."
+  },
+  {
+    "id": "SH-053",
+    "sourceLocator": "A, printed pp. 244–247",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/440?lang=ar",
+    "arabicSegmentRange": [
+      95,
+      106
+    ],
+    "arabic": "و اما عالم النسب ، فمنهم العرض ، نظيره الأسود و الأبيض ، و منهم الكيف نظيره الصحيح و السقيم ، و منهم ، الأين ، نظيره ، رأسى على عينى و عينى على كتفي ، و منهم ، الإضافة ، نظيرها ، هذا أبى و انا ابنه ،",
+    "english": "‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head upon my neck and my neck upon my shoulder; correlation, exemplified by this being my father and my being his son;",
+    "arStart": 95,
+    "arEnd": 106,
+    "enStart": 57,
+    "enEnd": 60,
+    "status": "unresolved-reading",
+    "note": "Place example uses a reported neck/shoulder alternative rather than displayed eye wording; attribution and textual uncertainty remain explicit."
+  },
+  {
+    "id": "SH-053",
+    "sourceLocator": "A, printed pp. 244–247",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/440?lang=ar",
+    "arabicSegmentRange": [
+      107,
+      118
+    ],
+    "arabic": "و منهم ، الوضع ، نظيره ، يمينى - نفسي - ، و منهم ، ان يفعل ، نظيره ، الأكل ، و منهم ، ان ينفعل ، نظيره ، الشبع ،",
+    "english": "position, exemplified by ‘my right [side]’ (يميني); acting, exemplified by eating; and being acted upon, exemplified by satiation.",
+    "arStart": 107,
+    "arEnd": 118,
+    "enStart": 61,
+    "enEnd": 63,
+    "status": "unresolved-reading",
+    "note": "Position example يميني/نفسي remains uncertain; acting/eating and receiving/satiation are clear."
+  },
+  {
+    "id": "SH-053",
+    "sourceLocator": "A, printed pp. 244–247",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/440?lang=ar",
+    "arabicSegmentRange": [
+      119,
+      131
+    ],
+    "arabic": "و منهم ، اختلاف الصور في الايهاب ، كالفيل و الحمار و الأسد و الصرصر ، نظيره ، القوى الانسانيَّة التي يقبل ، الصور المعنويَّة من مذموم و محمود ، هذا فطن فهو فيل ، هذا بليد ، فهو حمار ، هذا شجاع ، فهو اسد ، جبّار ، فهو صرصر .",
+    "english": "There are also different forms in bodily coverings, such as elephant, donkey, lion, and ṣarṣar. These correspond to human faculties receiving praiseworthy and blameworthy forms: this one is discerning, so he is an elephant; this one dull, so a donkey; this one brave, so a lion; this one cowardly [the suggested reading], so a ṣarṣar.",
+    "arStart": 119,
+    "arEnd": 131,
+    "enStart": 64,
+    "enEnd": 68,
+    "status": "unresolved-reading",
+    "note": "Animal images preserved; English cowardly follows a suggested reading rather than displayed جبار. Do not certify the suggested reconstruction as a manuscript reading."
+  },
+  {
+    "id": "SH-054",
+    "sourceLocator": "A, printed pp. 248–249",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/444?lang=ar",
+    "arabicSegmentRange": [
+      13,
+      14
+    ],
+    "arabic": "و اما لأشياء الباقية ، فكلَّما يدرك و يوصل به إليها ،",
+    "english": "As for the remaining things, just as they are apprehended and reached through the higher faculty, they are also apprehended and reached through intellect.",
+    "arStart": 13,
+    "arEnd": 14,
+    "enStart": 6,
+    "enEnd": 6,
+    "status": "unresolved-reading",
+    "note": "Received sentence about remaining objects is incomplete; the fluent English is a contextual construction, not a demonstrated restoration."
+  },
+  {
+    "id": "SH-055",
+    "sourceLocator": "A, printed pp. 250–252",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/446?lang=ar",
+    "arabicSegmentRange": [
+      14,
+      17
+    ],
+    "arabic": "فمهما غلب فيها من الصفات و الأحكام ، وجوبيَّة كانت ، أو امكانيَّة ، يكون ظهور ذلك التجلي فيها بحسبها منصبغاً بذلك الغالب من الأحكام النسبيَّة الاعتباريَّة محققاً بأحكامه و أوصافه الحقيقية\n\nالتي أولها العلم ،",
+    "english": "Whatever attributes predominate in them, necessary or possible, colour its manifestation through those relational considerations, while its own real properties—first among them knowledge—are concealed.",
+    "arStart": 14,
+    "arEnd": 17,
+    "enStart": 10,
+    "enEnd": 10,
+    "status": "unresolved-reading",
+    "note": "English concealed follows a reported alternative to displayed محققا; this affects the polarity and is not independently settled."
+  },
+  {
+    "id": "SH-055",
+    "sourceLocator": "A, printed pp. 250–252",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/446?lang=ar",
+    "arabicSegmentRange": [
+      34,
+      34
+    ],
+    "arabic": "إذ اسعاف المقتضيات القوى و القيود المذكورة انَّما يقهر القوَّة القدسيَّة على المتابعة و المدافعة عن توجُّهها\n\nبالكليَّة نحو البدن و تقيُّد انجذابها نحو المادَّة و الكدورات المظلمة اللازمة لها ،",
+    "english": "Indulging those faculties and restrictions conversely subjects the holy faculty to their direction and draws it toward the body, matter, and its obscuring conditions. The printed construction concerning the sacred faculty’s bodily orientation is compressed, but the ensuing causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands.",
+    "arStart": 34,
+    "arEnd": 34,
+    "enStart": 17,
+    "enEnd": 18,
+    "status": "unresolved-reading",
+    "note": "Disordered source sentence about indulging faculties is interpreted contextually; the English explicitly discloses the defect."
+  },
+  {
+    "id": "SH-058",
+    "sourceLocator": "A, printed pp. 260–262",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/456?lang=ar",
+    "arabicSegmentRange": [
+      16,
+      17
+    ],
+    "arabic": "و هكذا الكلام في النوم و السهو و ما يوجبهما من الجوع و الشبع ، فان الإفراط في شيء من ذلك يوجب كلال القوَّة الفكريَّة و ضعفها عن الحركة الانفعاليَّة المفضية إلى المطالب الكسبيَّة .",
+    "english": "The same applies to sleep and wakefulness, and to the hunger and satiety that can give rise to them. Excess in any of these dulls and weakens the discursive faculty, preventing the transitional movement through which acquired conclusions are reached.",
+    "arStart": 16,
+    "arEnd": 17,
+    "enStart": 9,
+    "enEnd": 10,
+    "status": "unresolved-reading",
+    "note": "Earlier correction following السهو as lapses of attention is preserved; السهر parallel and الانفعالية/الانتقالية remain distinct source questions."
+  },
+  {
+    "id": "SH-059",
+    "sourceLocator": "A, printed pp. 264–266",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/460?lang=ar",
+    "arabicSegmentRange": [
+      52,
+      52
+    ],
+    "arabic": "على انَّه قد اعتبر في طريق التصفية مثل هذه المعدّات كتخيلة المحل و تصفية الباطن و توجّهه إلى المبدأ و غير ذلك من الشروط و الأسباب المعتبرة عندهم على ما سبق بيانه .",
+    "english": "The path of purification itself requires analogous preparations: emptying the receptacle, purifying the inward being, directing it toward the Principle, and the other recognized conditions already described.",
+    "arStart": 52,
+    "arEnd": 52,
+    "enStart": 21,
+    "enEnd": 21,
+    "status": "unresolved-reading",
+    "note": "Emptying renders the contextual sense of displayed تخيلة as if تخلية; no independent correction of Arabic is claimed."
+  },
+  {
+    "id": "SH-061-E",
+    "sourceLocator": "A, printed pp. 271–272",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/467?lang=ar",
+    "arabicSegmentRange": [
+      10,
+      12
+    ],
+    "arabic": "بل لاح له عند الاعتبار بميزانه المميّزة ما فيه من النقص، ما يميّز به بعض ما فيه من البعض، فما اطمأنّ به كلّ الاطمئنان وطلب ما هو أعلى وأتمّ.",
+    "english": "Testing that attainment against the measure would have disclosed its deficiency. He would not have rested in complete assurance but would have sought something higher and more perfect.",
+    "arStart": 10,
+    "arEnd": 12,
+    "enStart": 6,
+    "enEnd": 7,
+    "status": "corrected-with-source-crux",
+    "note": "H2014 II:596 omits A's part-to-part wording here. The present English follows H as a working reading; A remains preserved. No independent original manuscript collation."
+  },
+  {
+    "id": "SH-061-F",
+    "sourceLocator": "A, printed pp. 272–273",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/468?lang=ar",
+    "arabicSegmentRange": [
+      3,
+      3
+    ],
+    "arabic": "حتى يصيرى هذه العلوم النظريّة التي من جملتها الصناعة الآليّة المميّزة بالنسبة إلى المعارف الذوقيّة كالعلم الآليّ المنطقيّ بالنسبة إلى العلوم النظريّة الغير المنسّقة المنتظمة.",
+    "english": "These theoretical sciences, including the instrumental discipline of discrimination, will then stand in relation to experiential cognitions as logic stands in relation to theoretical sciences not already coherent and systematically ordered.",
+    "arStart": 3,
+    "arEnd": 3,
+    "enStart": 2,
+    "enEnd": 2,
+    "status": "unresolved-reading",
+    "note": "يصيرى and الغير المنسقة المنتظمة remain transcription cruxes. English is an expressly provisional construction."
+  },
+  {
+    "id": "SH-061-F",
+    "sourceLocator": "A, printed pp. 272–273",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/468?lang=ar",
+    "arabicSegmentRange": [
+      7,
+      7
+    ],
+    "arabic": "فإذا استحصل السالك المجتهد تلك الملكة فلو تحيّر في أثناء الطلب والملوك وتوقّف في بعض المطالب التي لا يحصل له بالفكر،",
+    "english": "If the diligent traveller acquires that capacity and then encounters perplexity in his seeking and travelling, reaching an impasse on a question not attained through discursive thought, this excellent capacity enables him to bring it to light and explain its truth to a discerning seeker of guidance.",
+    "arStart": 7,
+    "arEnd": 7,
+    "enStart": 5,
+    "enEnd": 5,
+    "status": "unresolved-reading",
+    "note": "الملوك is a problematic base form; travelling reads conjecturally as السلوك, without manuscript confirmation."
+  },
+  {
+    "id": "SH-061-A",
+    "sourceLocator": "A, printed p. 274",
+    "sourceUrl": "https://ablibrary.net/book_content/b/17638/470?lang=ar",
+    "arabicSegmentRange": [
+      1,
+      3
+    ],
+    "arabic": "هذا كلّه إذا لم يكن له شيخ مسلك يرشده، وإمام مكمّل يقتدى به، وبيده مقاليد أقفاله وأحواله.",
+    "english": "All of this applies when the seeker has no master of the path to direct him and no perfecting guide to emulate, one who holds the keys to his actions and states.",
+    "arStart": 1,
+    "arEnd": 3,
+    "enStart": 1,
+    "enEnd": 1,
+    "status": "unresolved-reading",
+    "note": "أقفاله/إقباله/أفعاله variants materially affect metaphor; the principal displayed reading is followed."
+  }
+]

@@ -1,0 +1,80 @@
+name: GNAMMA expanded fiqh, usul, grammar and balagha bibliography browser QA
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - 'research/intellectual-atlas/corpora/**'
+      - 'research/intellectual-atlas/atlas-app.js'
+      - 'research/intellectual-atlas/site.css'
+      - 'research/intellectual-atlas/index.html'
+      - '.github/workflows/gnamma-expanded-bibliography-ui-ci.yml'
+  push:
+    branches: [feature/expanded-fiqh-usul-arabic-bibliography-20261107]
+    paths:
+      - 'research/intellectual-atlas/corpora/**'
+      - 'research/intellectual-atlas/atlas-app.js'
+      - 'research/intellectual-atlas/site.css'
+      - 'research/intellectual-atlas/index.html'
+      - '.github/workflows/gnamma-expanded-bibliography-ui-ci.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          python research/intellectual-atlas/corpora/verify_expansion.py
+          python research/intellectual-atlas/corpora/verify.py
+          node --check research/intellectual-atlas/corpora/expansion.js
+          node --check research/intellectual-atlas/atlas-app.js
+          python research/intellectual-atlas/build.py
+          git diff --exit-code -- research/intellectual-atlas/index.html research/intellectual-atlas/publication.json
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {engine: chromium, width: 1440, height: 900}
+          - {engine: chromium, width: 390, height: 844}
+          - {engine: webkit, width: 390, height: 844}
+          - {engine: chromium, width: 844, height: 390}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install test browsers
+        run: |
+          python -m pip install -q playwright==1.58.0
+          python -m playwright install --with-deps ${{ matrix.engine }}
+      - name: Check actual catalogue controls and main atlas source preview
+        shell: bash
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 >/tmp/gnamma-bib-server.log 2>&1 &
+          server=$!
+          trap 'kill $server || true' EXIT
+          for i in {1..50}; do
+            curl --silent --fail http://127.0.0.1:8123/research/intellectual-atlas/corpora/expansion.html >/dev/null && break
+            sleep .25
+          done
+          python research/intellectual-atlas/corpora/verify_expansion_browser.py --browser ${{ matrix.engine }} --width ${{ matrix.width }} --height ${{ matrix.height }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gn-bibliography-${{ matrix.engine }}-${{ matrix.width }}x${{ matrix.height }}
+          path: |
+            /tmp/gnamma-bibliography-qa/*.png
+            /tmp/gnamma-bibliography-qa/*.json
+            /tmp/gnamma-bib-server.log
+          if-no-files-found: ignore

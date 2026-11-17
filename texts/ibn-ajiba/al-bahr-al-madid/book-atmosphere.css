@@ -1,0 +1,127 @@
+/* Ibn Ajiba: northern Moroccan materials and Mediterranean light. */
+:root[data-palette="tetouan"]:not([data-theme="dark"]){color-scheme:light;--bg:#f5f4ed;--surface:#fffef9;--surface-alt:#eef1e8;--paper:#fffef9;--text:#203b37;--text-soft:#465f58;--muted:#59706a;--border:#c8d4ca;--line:#dce3d8;--accent:#12635f;--accent-soft:#e3efea;--gold:#80602e;--gold-soft:#eee6d4;--cedar:#70513d;--ink:var(--text);--sea:var(--accent);--tint:var(--accent-soft);--gnamma-stone:var(--cedar);--gnamma-hollow:var(--surface);--gnamma-water:var(--accent)}
+:root[data-palette="tetouan"][data-theme="dark"]{color-scheme:dark;--bg:#112c2b;--surface:#183735;--surface-alt:#20413c;--paper:#14312f;--text:#f0eee0;--text-soft:#c7d9d2;--muted:#a6bbb3;--border:#4c6b61;--line:#35574e;--accent:#91d7c5;--accent-soft:#254e45;--gold:#d4b67d;--gold-soft:#3d4836;--cedar:#c8a88b;--ink:var(--text);--sea:var(--accent);--tint:var(--accent-soft);--gnamma-stone:var(--cedar);--gnamma-hollow:var(--surface);--gnamma-water:var(--accent)}
+:root[data-palette="horizon"]:not([data-theme="dark"]){color-scheme:light;--bg:#edf6f4;--surface:#fcfffb;--surface-alt:#e3f0ee;--paper:#fcfffb;--text:#173b4c;--text-soft:#3f5e6b;--muted:#526d77;--border:#b6d0d1;--line:#cedfdd;--accent:#075b83;--accent-soft:#dcecf0;--gold:#82602d;--gold-soft:#eee5ce;--cedar:#6d817b;--ink:var(--text);--sea:var(--accent);--tint:var(--accent-soft);--gnamma-stone:var(--cedar);--gnamma-hollow:var(--surface);--gnamma-water:var(--accent)}
+:root[data-palette="horizon"][data-theme="dark"]{color-scheme:dark;--bg:#082b3e;--surface:#10394b;--surface-alt:#164455;--paper:#0c3042;--text:#eef5e9;--text-soft:#c5deda;--muted:#a7c9c9;--border:#487580;--line:#315b6a;--accent:#8ed9e0;--accent-soft:#1e5364;--gold:#d6c18c;--gold-soft:#3d514c;--cedar:#c1bd9b;--ink:var(--text);--sea:var(--accent);--tint:var(--accent-soft);--gnamma-stone:var(--cedar);--gnamma-hollow:var(--surface);--gnamma-water:var(--accent)}
+:root[data-palette="manuscript"]:not([data-theme="dark"]){color-scheme:light;--bg:#f4ecdc;--surface:#fff8e9;--surface-alt:#eee2cc;--paper:#fff8e9;--text:#3c3027;--text-soft:#64513e;--muted:#79624c;--border:#cfbea2;--line:#dfd0b6;--accent:#81512e;--accent-soft:#efdfc7;--gold:#82612b;--gold-soft:#e9dbc0;--cedar:#764731;--ink:var(--text);--sea:var(--accent);--tint:var(--accent-soft);--gnamma-stone:var(--cedar);--gnamma-hollow:var(--surface);--gnamma-water:var(--accent)}
+:root[data-palette="manuscript"][data-theme="dark"]{color-scheme:dark;--bg:#28231e;--surface:#352d25;--surface-alt:#40362c;--paper:#2e2721;--text:#f1e5cf;--text-soft:#d8c8ac;--muted:#bfae93;--border:#756148;--line:#594b3a;--accent:#e3b785;--accent-soft:#59432f;--gold:#d9c08b;--gold-soft:#51442e;--cedar:#d4a88b;--ink:var(--text);--sea:var(--accent);--tint:var(--accent-soft);--gnamma-stone:var(--cedar);--gnamma-hollow:var(--surface);--gnamma-water:var(--accent)}
+:root[data-palette="indigo"]:not([data-theme="dark"]){color-scheme:light;--bg:#edf0f6;--surface:#fafbfd;--surface-alt:#e4eaf3;--paper:#fafbfd;--text:#24344f;--text-soft:#465674;--muted:#606e86;--border:#c0ccdc;--line:#d6deea;--accent:#345c83;--accent-soft:#e0eaf2;--gold:#82632d;--gold-soft:#eee7d7;--cedar:#716c81;--ink:var(--text);--sea:var(--accent);--tint:var(--accent-soft);--gnamma-stone:var(--cedar);--gnamma-hollow:var(--surface);--gnamma-water:var(--accent)}
+:root[data-palette="indigo"][data-theme="dark"]{color-scheme:dark;--bg:#151e37;--surface:#1c2943;--surface-alt:#25334f;--paper:#18243c;--text:#eeeadd;--text-soft:#c8d4e0;--muted:#aebed1;--border:#52647f;--line:#3d4d69;--accent:#9eced4;--accent-soft:#30475e;--gold:#d0b779;--gold-soft:#494737;--cedar:#c3b198;--ink:var(--text);--sea:var(--accent);--tint:var(--accent-soft);--gnamma-stone:var(--cedar);--gnamma-hollow:var(--surface);--gnamma-water:var(--accent)}
+
+:root{--book-scene:url("ui-assets/aegean-depths.png");--reader-nav-width:230px}
+:root[data-home-scene="first-light"]{--book-scene:url("ui-assets/first-light.png")}
+:root[data-home-scene="night-sea"]{--book-scene:url("ui-assets/night-sea.png")}
+body{background:var(--bg)!important;color:var(--text)}
+body:before,body:after{background-image:none!important}
+body.reading #main,.reader-shell,.passage,.parallel,.language-col{background-image:none!important}
+#leftNav,#topbar{background:var(--surface)!important}
+#reading-dock,#sheet,#jumpOverlay,.gn-copy-menu,.gn-reading-mode-picker{background:var(--surface)}
+.passage-header{background:none;border-radius:0}
+#leftNav .nav-heading{border-bottom:1px solid var(--line);padding-bottom:18px}
+#leftNav .nav-heading cite{color:var(--accent)}
+#leftNav .sidebar-publisher{border-top:1px solid var(--line)}
+/* One desktop control size; intentional narrow halves only for grouped controls. */
+#readingControls{box-sizing:border-box;min-height:62px;padding:8px 16px;gap:12px;align-items:center}
+#readingControls .gn-reader-global-leading,#readingControls .gn-reader-global-trailing,
+#readingControls .reading-tools,#readingControls .reader-action-slot,#readingControls .copy-group{align-items:center;flex-shrink:0}
+#readingControls .reading-tools{gap:12px}
+#readingControls .reader-action-slot{gap:6px}
+#readingControls button{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:44px;min-width:44px;height:44px;min-height:44px;max-height:44px;padding:0;margin:0;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text-soft);line-height:1;box-shadow:none}
+#readingControls button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent)}
+#readingControls button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+#readingControls .icon{box-sizing:border-box;display:block;width:20px;height:20px;flex:0 0 20px;margin:0;fill:none;stroke:currentColor;stroke-width:1.6}
+#readingControls #gnTopHome,#readingControls #gnTopRead{width:auto;min-width:44px;padding-inline:13px;gap:8px;font-size:13px}
+#readingControls:not([hidden]) .gn-reader-global-leading #menuBtn{height:44px!important;min-height:44px!important;background-size:32px 32px!important}
+#readingControls .persistent-languages{box-sizing:border-box;display:inline-flex;align-items:stretch;gap:0;padding:0;border:1px solid var(--border);border-radius:24px;height:44px;overflow:hidden;background:var(--surface)}
+#readingControls .persistent-languages [data-language]{position:relative;box-sizing:border-box;width:38px;min-width:38px;height:42px;min-height:42px;max-height:42px;border:0;border-radius:0;font:600 13px/1 var(--sans);color:var(--muted);background:transparent}
+#readingControls .persistent-languages [data-language]+[data-language]{border-left:1px solid var(--border)}
+#readingControls .persistent-languages [data-language][aria-pressed=true]{color:var(--surface);background:var(--accent)}
+#readingControls .gn-language-label{position:relative;display:inline-block;line-height:1;letter-spacing:0}
+#readingControls [data-language].has-vowels:after{content:none}
+#readingControls .has-vowels .gn-language-label:before{content:"";position:absolute;left:8%;top:-5px;width:84%;height:3px;border-top:2px solid currentColor;border-radius:50% 50% 0 0;pointer-events:none}
+#readingControls .persistent-languages button:focus-visible{outline-offset:-3px}
+#readingControls .copy-group{gap:0}
+#readingControls .copy-group>[data-ui=copy-text]{border-radius:8px 0 0 8px;border-right:0}
+#readingControls .copy-group>[data-ui=copy-menu]{width:28px;min-width:28px;border-radius:0 8px 8px 0}
+#readingControls .copy-group>[data-ui=copy-menu] .icon{width:14px;height:14px;flex-basis:14px}
+#readingControls #readerSaveAction[aria-pressed=true],#readingControls #focusToolbar[aria-pressed=true]{color:var(--accent);background:var(--accent-soft);border-color:var(--accent)}
+#readingControls .gn-reader-global-trailing{gap:6px}
+#readingControls .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+#leftNav .nav-heading>button,#sheet-close{box-sizing:border-box;display:inline-flex;justify-content:center;align-items:center;width:40px;height:40px;min-width:40px;min-height:40px;padding:0;border:0;border-radius:8px;background:transparent;color:var(--muted)}
+#leftNav .nav-heading>button:hover,#sheet-close:hover{background:var(--accent-soft);color:var(--accent)}
+#leftNav .nav-heading>button .icon,#sheet-close .icon{width:20px;height:20px;flex:0 0 20px}
+@media(min-width:941px) and (min-height:541px){
+ .nav-open:not(.nav-modal) #reading-dock{left:calc(50% + var(--reader-nav-width)/2);width:min(1120px,calc(100vw - var(--reader-nav-width) - 48px));max-width:calc(100vw - var(--reader-nav-width) - 32px)}
+}
+/* Moroccan doorway as a quiet threshold; imagery stays outside the book text. */
+.home-hero{box-sizing:border-box;position:relative;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(260px,.88fr);align-items:center;gap:clamp(30px,5vw,76px);min-height:0;max-width:1390px;margin:auto;padding:64px 46px 48px;background:none!important;color:var(--text);overflow:visible;border:0;text-align:left}
+.home-hero:before,.home-hero:after{display:none!important}
+.home-hero .hero-inner{position:relative;max-width:none;margin:0;padding:0;text-align:left}
+.home-hero .hero-ar{font:400 clamp(24px,2.4vw,36px)/1.9 var(--arabic);color:var(--accent);margin:24px 0 10px}
+.home-hero h1{font:400 clamp(48px,5.1vw,78px)/1.06 var(--serif);letter-spacing:-.04em;color:var(--text);margin:16px 0 24px;max-width:660px}
+.home-hero .eyebrow{font-size:10px;line-height:1.8;letter-spacing:.16em;color:var(--text-soft)!important}
+.home-hero .subtitle{font:400 clamp(18px,1.7vw,23px)/1.55 var(--serif);color:var(--text-soft);margin:0 0 24px}
+.home-hero .hero-description{font:400 14px/1.9 var(--sans);color:var(--text-soft);max-width:440px;margin:0 0 28px}
+.home-hero .hero-actions{display:flex;justify-content:flex-start;gap:12px;flex-wrap:wrap;margin:0}
+.home-hero .hero-actions .button{display:inline-flex;align-items:center;justify-content:center;gap:16px;box-sizing:border-box;min-height:46px;padding:12px 18px;font:500 13px/1.4 var(--sans);border-radius:6px;text-decoration:none}
+.home-hero .hero-actions .primary{background:var(--accent);border:1px solid var(--accent);color:var(--surface)}
+.home-hero .hero-actions .secondary{background:var(--surface);border:1px solid var(--border);color:var(--accent)}
+.home-hero .horizon-caption{display:block;font:500 9px/1.6 var(--sans);letter-spacing:.13em;color:var(--muted);margin:32px 0 0}
+.book-seascape{min-width:0;width:100%;max-width:480px;justify-self:center;padding:0 8px}
+.sea-arch{position:relative;min-height:360px;height:clamp(360px,37vw,510px);background-image:var(--book-scene);background-size:cover;background-position:57% center;border-radius:50% 50% 3px 3px / 35% 35% 3px 3px;border:9px solid var(--surface);outline:1px solid var(--gold);box-shadow:0 0 0 7px var(--bg),0 0 0 8px var(--line),0 14px 35px #102f3a12}
+.sea-arch:after{content:"";position:absolute;inset:9px;border:1px solid #ffffff70;border-radius:inherit;pointer-events:none}
+.home-scene-picker{display:flex;justify-content:center;align-items:stretch;gap:6px;margin-top:24px;min-width:0}
+.home-scene-picker button{display:flex;align-items:center;justify-content:center;gap:6px;flex:1;min-width:0;min-height:40px;padding:6px 7px;border:1px solid transparent;border-radius:7px;background:transparent;color:var(--muted);font:500 10px/1.35 var(--sans)}
+.home-scene-picker button[aria-pressed=true]{background:var(--surface);border-color:var(--border);color:var(--accent)}
+.home-scene-picker button:hover{background:var(--accent-soft);color:var(--accent)}
+.scene-swatch{flex:none;width:13px;height:13px;border:1px solid #0002;border-radius:50%}
+.scene-first-light{background:linear-gradient(#f1c69c 45%,#658d9a 49%,#36667e)}
+.scene-night-sea{background:linear-gradient(#152342 45%,#355b7b 49%,#0d244a)}
+.scene-aegean{background:linear-gradient(#83b6d0 45%,#1261a1 49%,#073c78)}
+.book-scene-settings{border:0;border-top:1px solid var(--line);padding:18px 16px 12px;margin:0;min-width:0}
+.book-scene-settings legend{float:left;width:100%;padding:0;margin:0 0 8px;font:600 11px/1.5 var(--sans);color:var(--text)}
+.book-scene-settings .home-scene-picker{clear:both;margin:0}
+.book-scene-settings small{display:block;margin-top:8px;font:11px/1.5 var(--sans);color:var(--muted)}
+#sheet.visuals .palette-option{min-height:68px;background:var(--surface);border:1px solid var(--border);color:var(--text)}
+#sheet.visuals .palette-option strong{font-size:11px;line-height:1.4;font-weight:550}
+#sheet.visuals .palette-option[aria-pressed=true]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);background:var(--accent-soft)}
+#sheet.visuals .palette-swatches{overflow:hidden;border-radius:4px}
+@media(max-width:1150px){
+ .home-hero{padding:42px 30px;gap:32px;grid-template-columns:minmax(0,1fr) minmax(240px,.85fr)}
+ .home-hero h1{font-size:clamp(43px,5vw,64px)}.sea-arch{height:420px}
+}
+@media(max-width:940px){
+ .home-hero{padding:38px 28px;gap:30px}
+ .home-hero h1{font-size:56px}.sea-arch{height:400px}
+}
+@media(max-width:720px){
+ :root{--reader-bar-height:52px;--reading-controls-height:52px}
+ #readingControls{min-height:52px;padding:4px 6px;gap:5px}
+ #readingControls .reading-tools{gap:5px}#readingControls .reader-action-slot{gap:3px}
+ #readingControls button{width:34px;min-width:34px;height:42px;min-height:42px;max-height:42px}
+ #readingControls .icon{width:18px;height:18px;flex-basis:18px}
+ #readingControls .persistent-languages{height:42px}
+ #readingControls .persistent-languages [data-language]{width:29px;min-width:29px;height:40px;min-height:40px;max-height:40px;font-size:11px}
+ #readingControls .has-vowels .gn-language-label:before{top:-4px;border-top-width:1.5px}
+ #readingControls .gn-reader-global-trailing{gap:3px}
+ #readingControls .copy-group>[data-ui=copy-menu]{width:24px;min-width:24px}
+ #readingControls:not([hidden]) .gn-reader-global-leading #menuBtn{height:42px!important;min-height:42px!important;background-size:29px 29px!important}
+ .home-hero{display:flex;flex-direction:column;padding:34px 24px 36px;gap:32px;align-items:stretch}
+ .home-hero h1{font-size:54px;max-width:520px;margin-top:12px}
+ .home-hero .hero-ar{margin-top:18px;font-size:26px}.home-hero .subtitle{font-size:20px;margin-bottom:18px}
+ .home-hero .hero-description{font-size:13px}.home-hero .horizon-caption{margin-top:22px}
+ .book-seascape{align-self:center;max-width:520px;padding:0 8px}
+ .sea-arch{min-height:220px;height:300px;background-position:center 65%;border-radius:46% 46% 3px 3px / 33% 33% 3px 3px}
+ .home-scene-picker{margin-top:20px}.home-scene-picker button{font-size:11px;min-height:42px}
+}
+@media(max-width:359px){
+ #readingControls{gap:3px;padding-inline:3px}
+ #readingControls .reading-tools{gap:3px}#readingControls .reader-action-slot{gap:2px}
+ #readingControls button{width:29px;min-width:29px}
+ #readingControls .persistent-languages [data-language]{width:26px;min-width:26px}
+ #readingControls .copy-group>[data-ui=copy-menu]{width:22px;min-width:22px}
+ #readingControls .gn-reader-global-trailing{gap:2px}
+ .home-hero{padding-inline:20px}.home-hero h1{font-size:46px}
+ .home-scene-picker button{font-size:10px;padding-inline:4px}
+}
+@media print{.book-seascape,.book-scene-settings{display:none!important}body{background:white!important}.home-hero{display:block}}

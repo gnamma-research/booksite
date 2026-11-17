@@ -1,0 +1,27 @@
+{
+  "stage": 103,
+  "browser_test": "partial_or_not_verified",
+  "test_type": "locally hosted static server rendering source HTML/CSS/JS in isolated headless Chromium, not deployed GitHub Pages",
+  "dimensions": [
+    {
+      "width": 390,
+      "browser_error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:34437/index.html\nCall log:\n  - navigating to \"http://127.0.0.1:34437/index.html\", waiting until \"domcontentloaded\"\n",
+      "page_errors": []
+    },
+    {
+      "width": 768,
+      "browser_error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:34437/index.html\nCall log:\n  - navigating to \"http://127.0.0.1:34437/index.html\", waiting until \"domcontentloaded\"\n",
+      "page_errors": []
+    },
+    {
+      "width": 1400,
+      "browser_error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:34437/index.html\nCall log:\n  - navigating to \"http://127.0.0.1:34437/index.html\", waiting until \"domcontentloaded\"\n",
+      "page_errors": []
+    }
+  ],
+  "limitations": [
+    "Local HTTP QA is not a live website deployment check.",
+    "Browser QA is not independent Arabic-English scholarly proof.",
+    "Some selected Arabic/English passages retain explicit ellipses and all 1,400 proof obligations remain open."
+  ]
+}

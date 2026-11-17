@@ -1,0 +1,62 @@
+name: Tahdhib Stage117 seven working Q309 exemplars and cumulative archive
+on:
+  push:
+    branches: ['research/tahdhib-stage117-q309-examples-20261112']
+    paths:
+      - '.github/workflows/tahdhib-stage117-source-reader.yml'
+      - 'tools/tahdhib/build_stage117_cumulative.py'
+      - 'tools/tahdhib/check_stage117_release.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build-verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Assemble full preserved Stage116 source and new five-example supplement
+        run: python tools/tahdhib/build_stage117_cumulative.py
+      - name: Check exact 1090 historical records and seven of twelve working Q309 examples
+        run: python tools/tahdhib/check_stage117_release.py
+      - name: Commit only generated Stage117 outputs, never rewrite translation masters
+        env:
+          TARGET_BRANCH: research/tahdhib-stage117-q309-examples-20261112
+        run: |
+          test "$GITHUB_REF" = "refs/heads/$TARGET_BRANCH"
+          E=texts/al-taftazani/tahdhib-al-mantiq/edition
+          SCRATCH=$(mktemp -d)
+          cp "$E/batches/hawashi-all-sections-cumulative-stage117.md" "$SCRATCH/full.md"
+          cp "$E/STAGE117_CUMULATIVE_FILE_INTEGRITY.json" "$SCRATCH/integrity.json"
+          SOURCE_DIGEST=$(sha256sum "$E/STAGE117_Q309_FIVE_MORE_EXAMPLES.md" "$E/HANDOFF_LATEST.md" | sha256sum | cut -d' ' -f1)
+          git fetch origin "$TARGET_BRANCH"
+          git reset --hard "origin/$TARGET_BRANCH"
+          CURRENT_DIGEST=$(sha256sum "$E/STAGE117_Q309_FIVE_MORE_EXAMPLES.md" "$E/HANDOFF_LATEST.md" | sha256sum | cut -d' ' -f1)
+          test "$SOURCE_DIGEST" = "$CURRENT_DIGEST" || { echo "Stage117 source changed during build; rerun required"; exit 3; }
+          cp "$SCRATCH/full.md" "$E/batches/hawashi-all-sections-cumulative-stage117.md"
+          cp "$SCRATCH/integrity.json" "$E/STAGE117_CUMULATIVE_FILE_INTEGRITY.json"
+          python tools/tahdhib/check_stage117_release.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$E/batches/hawashi-all-sections-cumulative-stage117.md" "$E/STAGE117_CUMULATIVE_FILE_INTEGRITY.json"
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish Stage117 full unchanged source plus five Q309 working examples'
+            git push origin "HEAD:refs/heads/$TARGET_BRANCH"
+          fi
+      - name: Upload complete Stage117 recoverable corpus and scholarly apparatus
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tahdhib-stage117-seven-examples-cumulative-source
+          path: |
+            texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage117.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage116.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE117_Q309_FIVE_MORE_EXAMPLES.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE117_CUMULATIVE_FILE_INTEGRITY.json
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_STAGE116.md
+          if-no-files-found: warn
+          retention-days: 90

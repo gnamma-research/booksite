@@ -1,0 +1,19 @@
+{
+  "version": "20261110-matrix1",
+  "sourceAndPDFsUnchanged": true,
+  "protectedSHA256": {
+    "edition-r3-20261020.js": "15407f495a376bb8be951db5f22e328fe53f558dcd2ae0176fb0b5b4ee57d7a7",
+    "source-reference-data.js": "0bf9589c26fe2340e8df6fa46e7957ab07ed9174eb4ee66e4a6909a1258c2b37",
+    "study-guide-data.js": "642d9772ccc61a31033b6c91ca6abae7f152d0e41ae000c1de6094cd4144166d",
+    "daruri.pdf": "d48c347615dea180645a3d8718643b0d6b24102da4f15e6cb063657207bd8c35",
+    "daruri-study.pdf": "816dff1bb4a21b9d48993b7bf673ccd89c53eba441aabdab5415b8de27c280ca",
+    "daruri-english.pdf": "aff35905337193c2af89c30aab8d0c5be772cd00bf334aa66b42472bf930b5cf",
+    "daruri-arabic.pdf": "6c49ab6c86d66c2c944ca1007350146ae6a355a55c4c0fe7fe336902548c388c",
+    "daruri-arabic-vowelled.pdf": "5d30e6e07441c50d73edeac4f76ec12189571734c89550350948072181965df1"
+  },
+  "readerChange": "Two asset tags and package-loader cache key only",
+  "newAssets": [
+    "applications-matrix.js",
+    "applications-matrix.css"
+  ]
+}

@@ -36,7 +36,17 @@ def read_book():
     s=(DARURI/'edition-r3-20261020.js').read_text()
     m=re.search(r'textContent\s*=\s*("(?:[^"\\]|\\.)*")\s*;',s,re.S)
     if not m:raise ValueError('Reader edition payload not found')
-    return json.loads(json.loads(m[1]))
+    book = json.loads(json.loads(m[1]))
+    # Keep PDF dictionary summaries aligned with the independent, complete
+    # scholarly lexicon without reserializing the 3.5 MB reader HTML.
+    # This is an additive glossary gloss, not an alteration of the Arabic
+    # authorial text or of any historical dictionary quotation.
+    lexicon = json.loads((DARURI / 'build/data/full-headwords.json').read_text(encoding='utf-8'))
+    craft = next(x for x in lexicon['terms'] if x['term'] == 'ṣināʿa')
+    for term in book['glossary']:
+        if term['term'] == craft['term']:
+            term['definition'] = craft['definition']
+    return book
 
 def refs(ids):
     return ' · '.join(f'<a href="#section-{E(str(i))}">§{E(str(i))}</a>' for i in dict.fromkeys(ids))

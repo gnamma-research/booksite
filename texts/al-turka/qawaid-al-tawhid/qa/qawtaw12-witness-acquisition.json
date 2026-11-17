@@ -1,0 +1,110 @@
+{
+  "schema": "gnamma-qawtaw12-witness-acquisition-v1",
+  "date": "2026-11-12",
+  "currentStatus": {
+    "completeBilingualUnits": 171,
+    "reviewedPunctuationSegments": 5520,
+    "unestablishedCruxes": [
+      "SH-002",
+      "QT-059"
+    ],
+    "newSourcePageImagesRead": 0,
+    "lostWordsRecovered": 0,
+    "arabicOrEnglishChanges": 0
+  },
+  "witnessTargets": [
+    {
+      "id": "H-IV",
+      "priority": 1,
+      "kind": "standalone original edited matn",
+      "identity": "Majīd Hādīzādeh, Qawāʿid al-Tawḥīd, Nuṣūṣ wa-Rasāʾil min Turāth Iṣfahān al-ʿIlmī al-Khālid IV, printed pp. 37–72",
+      "locator": "https://bibliography.mk.iq/files/0080f66f58b21603.pdf",
+      "visualProof": "bibliography PDF zero-index page 124, printed p. 521, item 301",
+      "secondary": "https://m.imamhussain.org/lib/15",
+      "availability": "not obtained; accessible al-Feker listing only vols. I–III",
+      "need": [
+        "facsimile of entire original edited text pp. 37–72",
+        "critical preface and apparatus",
+        "reported QT-059 location and support from actual original witnesses"
+      ],
+      "scanVerified": false
+    },
+    {
+      "id": "L-1898-Millet",
+      "priority": 2,
+      "kind": "historical printed commentary",
+      "identity": "Tehran 1315 AH/1898 lithograph, Kitāb al-Tamhīd fī Sharḥ Qawāʿid al-Tawḥīd, 234-page bound printing; Tamhīd pp. 1–181 in Turkish holding",
+      "holding": "Millet Kütüphanesi, Ali Emiri Arabi 01405/1; bibliographic record 148198",
+      "catalogue": "https://portal.yek.gov.tr/works/search/full/15130?lang_id=en",
+      "needs": [
+        "title and imprint of specific copy",
+        "SH-002 at opening commentary (not an invented page number)",
+        "QT-059 / SH-059 near closing sections (not an invented page number)"
+      ],
+      "scanVerified": false
+    },
+    {
+      "id": "L-1898-UW",
+      "priority": 3,
+      "kind": "historical printed commentary",
+      "identity": "1898 Tehran print, University of Washington catalogue listing",
+      "locator": "https://kutuphane.osmanlica.com/ar/search?lang%5B0%5D=ara&library_id%5B0%5D=58&page=38",
+      "catalogueStatus": "book listed, no actual image obtained; may be a copy of same edition as Millet and Google Play",
+      "scanVerified": false
+    },
+    {
+      "id": "L-1898-Google",
+      "priority": 4,
+      "kind": "free digital ebook listing",
+      "identity": "كتاب التمهيد في شرح قواعد التوحيد, 1898, Google Play Books, 234 pages",
+      "locator": "https://play.google.com/store/books/details?id=-Wku6DfHLa8C",
+      "catalogueStatus": "Get for free is advertised but no page image or export accessible in current session",
+      "scanVerified": false
+    },
+    {
+      "id": "BL-Bijapur",
+      "priority": 5,
+      "kind": "earlier manuscript of commentary",
+      "identity": "British Library Bijapur 128/2, Kitāb al-Tamhīd fī Sharḥ Qawāʿid al-Tawḥīd, dated 869–871 AH",
+      "locator": "https://searcharchives.bl.uk/catalog/040-003784927",
+      "catalogueStatus": "no digitized content in viewed catalogue; folio ranges unknown",
+      "scanVerified": false
+    },
+    {
+      "id": "A-HasanZadeh",
+      "priority": 6,
+      "kind": "later edited commentary",
+      "identity": "Ḥasanzādah al-Āmulī edition (Qum Alif Lām Mīm, 1381 HS/2002), secondary potentially variant apparatus",
+      "locator": "https://books.google.com/books/about/%D8%AA%D9%85%D9%87%D9%8A%D8%AF_%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%B9%D8%AF.html?id=FgciAAAACAAJ",
+      "additionalListing": "https://www.shiabooks.net/library.php?catid=22",
+      "scanVerified": false
+    }
+  ],
+  "passages": [
+    {
+      "id": "SH-002",
+      "A": "A printed pp.49–52",
+      "earlierPositive": "القطع بحقيّة هذه المسألة",
+      "immediatelyPrior": "إذ القطع ببطلان جميع الأحكام العقلية",
+      "disputed": "القطع ببطلان مسألة التوحيد",
+      "attestedPrints": [
+        "A",
+        "H2014"
+      ],
+      "hypotheticalAlternative": "القطع بحقيّة مسألة التوحيد",
+      "alternativeAttested": false,
+      "policy": "Retain literal source negative; test hypothesis of attraction/perseveration only after scanning an earlier independent witness."
+    },
+    {
+      "id": "QT-059",
+      "A": "A printed pp.262–264",
+      "incipit": "وما قيل إنّ علوم النظّار مأخوذة من الحواسّ",
+      "explicit": "وأمّا الثاني فلما بيّنّاه في كتبنا المعمولة في صناعة الحكمة",
+      "reportedLacuna": true,
+      "lacunaExtentKnown": false,
+      "originalWordsRecovered": 0,
+      "policy": "Do not attribute descendant's SH-059 commentary to the ancestor; compare full independent original with actual photographs."
+    }
+  ],
+  "note": "Catalogued ≠ collated; printed copies sharing edition do not prove independent manuscript descent. No correction to continuous reading is authorised by this register alone."
+}

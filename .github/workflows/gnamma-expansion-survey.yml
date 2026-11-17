@@ -1,0 +1,87 @@
+name: GNAMMA OpenITI expansion corpus survey
+on:
+  push:
+    branches: [feature/expanded-fiqh-usul-arabic-bibliography-20261107]
+    paths:
+      - '.github/workflows/gnamma-expansion-survey.yml'
+      - 'research/intellectual-atlas/corpora/build_expansion.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  metadata-survey:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download official pinned OpenITI metadata and inspect schema
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, io, json, urllib.request,collections
+          url='https://raw.githubusercontent.com/OpenITI/RELEASE/cfc4157a3cf2054c0888f133970a4eaa3e22e58c/metadata/OpenITI_metadata_2025-1-9.tsv'
+          with urllib.request.urlopen(url,timeout=90) as r:
+              raw=r.read()
+          print('OFFICIAL TSV BYTES',len(raw),flush=True)
+          text=raw.decode('utf-8-sig')
+          reader=csv.DictReader(io.StringIO(text),delimiter='\t')
+          print('COLUMNS',json.dumps(reader.fieldnames,ensure_ascii=False),flush=True)
+          rows=list(reader)
+          print('TOTAL',len(rows),flush=True)
+          for row in rows[:3]:print('ROW',json.dumps(row,ensure_ascii=False)[:1900],flush=True)
+          for term in ['fiqh','usul','nahw','sarf','balagha','grammar','الفروع','النحو','البلاغة','أصول الفقه','حاشية','شرح','حنفي','شافعي']:
+              found=[x for x in rows if term.lower() in ' '.join(str(v) for v in x.values()).lower()]
+              print('TERM',term,len(found),'SAMPLE',json.dumps(found[:2],ensure_ascii=False)[:1600],flush=True)
+
+          pri={r['book']:r for r in rows if r.get('status','').lower()=='pri' and r.get('language')=='ara'}
+          print('PRI WORKS',len(pri))
+          tag_counter=collections.Counter(t.strip() for x in pri.values() for t in (x.get('tags') or '').split('::') if t.strip())
+          print('TOP GENRE TAGS',[(t,n) for t,n in tag_counter.most_common() if any(k in t.lower() for k in ['fiqh','usul','nahw','sarf','balagha','حنفي','مالكي','شافعي','حنبل','بلاغة','نحو','صرف','اصول','أصول'])][:100],flush=True)
+          for tag in ['_FIQH','_USUL','_NAHW','_SARF','_BALAGHA']:
+              matched=[x for x in pri.values() if tag in [t.strip() for t in x.get('tags','').split('::')]]
+              print('EXACT TAG',tag,len(matched),'SAMPLES',[(x['book'],x['title_ar'][:75],x['author_ar'][:40]) for x in matched[:22]],flush=True)
+          for word in ['الحنفي','المالكي','الشافعي','الحنبلي','الحنفية','المالكية','الشافعية','الحنابلة']:
+              matched=[x for x in pri.values() if word in x.get('tags','')]
+              print('TAG SCHOOL',word,len(matched),'SAMPLES',[(x['book'],x['title_ar'][:50]) for x in matched[:8]],flush=True)
+          for word in ['الفقه','أصول الفقه','النحو','الصرف','البلاغة','البديع','البيان','الاستعارة','التلخيص']:
+              matched=[x for x in pri.values() if word in x.get('title_ar','')]
+              print('TITLE',word,len(matched),'SAMPLES',[(x['book'],x['title_ar'][:80]) for x in matched[:15]],flush=True)
+          print('STATUS',collections.Counter(x.get('status','') for x in rows).most_common(12),flush=True)
+          with open('/tmp/gnamma-survey.json','w') as f:json.dump({'columns':reader.fieldnames,'count':len(rows),'samples':rows[:20]},f,ensure_ascii=False,indent=2)
+          PY
+      - name: Survey public Alreq manuscript catalogue access and row structure
+        run: |
+          python -m pip install -q beautifulsoup4
+          python - <<'PY'
+          import urllib.request
+          from bs4 import BeautifulSoup
+          cats={
+            'fiqh_hanafi':'acd46fee-f542-4f08-6c77-08d67d8a208a',
+            'fiqh_maliki':'74b62fc2-b16b-461c-6c78-08d67d8a208a',
+            'fiqh_shafii':'5922d077-e8d0-4608-6c79-08d67d8a208a',
+            'fiqh_hanbali':'f6d7dc4f-b531-4b53-6c7a-08d67d8a208a',
+            'usul':'e118d410-c0f9-4e8d-6c7c-08d67d8a208a',
+            'nahw':'3b74e894-2e5a-486f-3d43-08d79e7d278b',
+            'sarf':'d0e58c8c-0fce-449b-c34f-08d7a2ae1677',
+            'balagha':'2f18127e-8fed-4355-bfd5-08d68928d1ed'
+          }
+          for name,cat in cats.items():
+            url='https://app.alreq.com/ar/Categories/Category/'+cat
+            try:
+              request=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 GNAMMA bibliographic-research/1.0'})
+              with urllib.request.urlopen(request,timeout=45) as response:
+                body=response.read()
+                status=response.status
+              dom=BeautifulSoup(body,'html.parser')
+              trs=dom.select('table tbody tr')
+              tables=dom.select('table')
+              print('ALREQ',name,'http',status,'bytes',len(body),'tables',len(tables),'rows',len(trs),'example',[(x.get_text(' ',strip=True)[:130],x.select_one('a').get('href') if x.select_one('a') else '') for x in trs[:3]],flush=True)
+            except Exception as ex:print('ALREQ ERROR',name,str(ex)[:180],flush=True)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gnamma-openiti-schema-survey
+          path: /tmp/gnamma-survey.json

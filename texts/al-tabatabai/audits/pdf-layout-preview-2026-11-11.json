@@ -1,0 +1,481 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-11",
+  "reviewer": "AI-assisted visual layout review by collate_viii_xii",
+  "status": "sampled-layout-review-complete-final-source-matched-review-pending",
+  "sourceArtifactSha256": "b78e4a51fdc41d3c477c390ff0a62030f0ae721305cc9e060ab643dc1a435174",
+  "sourceArtifactDigestProvenance": "Supplied by parent agent for the preview source artifact; individual PDF digests computed from inspected files.",
+  "previewDirectory": "tmp/pdfs/preview2",
+  "scope": "Corrected-font preview PDFs with 93/136 Nihaya external comparisons incorporated. This is a rendering sample, not a final edition-content certification.",
+  "method": {
+    "visual": "Actual pdftoppm PNG page images opened and inspected; 110 dpi, with selected authorial-note pages at 130 dpi. Text extraction was used to locate samples, not to certify layout.",
+    "font": "pdffonts checked for all nine PDFs; every listed font is embedded, with embedded Unicode-mapped Amiri in every file.",
+    "readOnly": "No PDF, book data, or frozen collation proposal was changed by this layout review."
+  },
+  "sampledFiles": 9,
+  "sampledPages": 42,
+  "totalPagesInNinePreviews": 2431,
+  "conclusion": "No blocking rendering defect observed in the 42 inspected pages. Arabic joining and diacritics, English text, bilingual authorial notes, glossary headwords, inspected diagrams, and reconstructed English tables are readable and within page margins. Findings F01 and F02 are qualified below.",
+  "files": [
+    {
+      "file": "nihayat-al-hikma-reading-A4.pdf",
+      "sha256": "9ffb12ba6675283aed50f50276480a5931a4814528063443de2f6af897e89978",
+      "pageCount": 323,
+      "fonts": {
+        "allListedFontsEmbedded": true,
+        "embeddedAmiriPresent": true,
+        "amiriFontNames": [
+          "BAAAAA+Amiri-Regular"
+        ],
+        "amiriUnicodeMappingPresent": true
+      },
+      "samples": [
+        {
+          "page": 1,
+          "purpose": "Arabic and English cover",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 2,
+          "purpose": "Two-column contents",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 3,
+          "purpose": "Two-column contents continuation",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 4,
+          "purpose": "Two-column contents end",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 5,
+          "purpose": "Editorial method and source descriptions",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 6,
+          "purpose": "Source bibliography continuation",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 23,
+          "purpose": "English authorial footnotes and mixed-script apparatus",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 130
+        },
+        {
+          "page": 227,
+          "purpose": "Dense mixed Arabic-English critical apparatus",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 313,
+          "purpose": "Glossary with Arabic headwords",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        }
+      ]
+    },
+    {
+      "file": "nihayat-al-hikma-study-A4.pdf",
+      "sha256": "7243b67fe729f1aa74c9327f6678493965398b90aec4cff63b4653bd8c2aeac0",
+      "pageCount": 512,
+      "fonts": {
+        "allListedFontsEmbedded": true,
+        "embeddedAmiriPresent": true,
+        "amiriFontNames": [
+          "BAAAAA+Amiri-Regular"
+        ],
+        "amiriUnicodeMappingPresent": true
+      },
+      "samples": [
+        {
+          "page": 7,
+          "purpose": "Parallel Arabic-English introduction and Arabic headings",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 33,
+          "purpose": "Two original authorial notes in Arabic and English",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 130
+        },
+        {
+          "page": 140,
+          "purpose": "Long original authorial bilingual note",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 130
+        },
+        {
+          "page": 310,
+          "purpose": "Original bilingual authorial note on motion",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 130
+        },
+        {
+          "page": 351,
+          "purpose": "Arabic column ending, dense apparatus, next bilingual unit",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 368,
+          "purpose": "Dense mixed-script apparatus and parallel body text",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 502,
+          "purpose": "Glossary with Arabic headwords",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        }
+      ]
+    },
+    {
+      "file": "nihayat-al-hikma-reference-A4.pdf",
+      "sha256": "1c76085d2d8a543d1c81e5ffb4bc29cdcc84a82d4e794395e04c82989a420bed",
+      "pageCount": 366,
+      "fonts": {
+        "allListedFontsEmbedded": true,
+        "embeddedAmiriPresent": true,
+        "amiriFontNames": [
+          "BAAAAA+Amiri-Regular"
+        ],
+        "amiriUnicodeMappingPresent": true
+      },
+      "samples": [
+        {
+          "page": 25,
+          "purpose": "Dense Arabic body and original Arabic authorial notes",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 130
+        },
+        {
+          "page": 189,
+          "purpose": "Dense fully vocalized Arabic body",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 293,
+          "purpose": "Arabic body ending with mixed-script apparatus",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 356,
+          "purpose": "Glossary with Arabic headwords",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        }
+      ]
+    },
+    {
+      "file": "bidayat-al-hikma-reading-A4.pdf",
+      "sha256": "073e1d873e1ac7e9bdaee765b7b831dda3475423d63053de16b34a891496ac3c",
+      "pageCount": 146,
+      "fonts": {
+        "allListedFontsEmbedded": true,
+        "embeddedAmiriPresent": true,
+        "amiriFontNames": [
+          "BAAAAA+Amiri-Regular"
+        ],
+        "amiriUnicodeMappingPresent": true
+      },
+      "samples": [
+        {
+          "page": 35,
+          "purpose": "Dense English with Arabic chapter headings and notes",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 135,
+          "purpose": "Glossary and printed passage identifiers",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        }
+      ]
+    },
+    {
+      "file": "bidayat-al-hikma-study-A4.pdf",
+      "sha256": "29d933045c5eb45fbe481e1f9d7c9888354f325cf907c4c10a67bcf1bcc08bab",
+      "pageCount": 204,
+      "fonts": {
+        "allListedFontsEmbedded": true,
+        "embeddedAmiriPresent": true,
+        "amiriFontNames": [
+          "BAAAAA+Amiri-Regular"
+        ],
+        "amiriUnicodeMappingPresent": true
+      },
+      "samples": [
+        {
+          "page": 90,
+          "purpose": "Dense parallel Arabic-English body",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 193,
+          "purpose": "Glossary and printed passage identifiers",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        }
+      ]
+    },
+    {
+      "file": "bidayat-al-hikma-reference-A4.pdf",
+      "sha256": "2c22a36b2d64434c3962d033a6c503e14cba6ea7e372369c889a8a826ee631c5",
+      "pageCount": 142,
+      "fonts": {
+        "allListedFontsEmbedded": true,
+        "embeddedAmiriPresent": true,
+        "amiriFontNames": [
+          "BAAAAA+Amiri-Regular"
+        ],
+        "amiriUnicodeMappingPresent": true
+      },
+      "samples": [
+        {
+          "page": 97,
+          "purpose": "Dense Arabic body",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 131,
+          "purpose": "Glossary and printed passage identifiers",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        }
+      ]
+    },
+    {
+      "file": "muzaffar-al-mantiq-reading-A4.pdf",
+      "sha256": "04e0a2955109e5f80e480c2d032d2299010342ccb5ffa3008355b3ba5674ad7c",
+      "pageCount": 179,
+      "fonts": {
+        "allListedFontsEmbedded": true,
+        "embeddedAmiriPresent": true,
+        "amiriFontNames": [
+          "BAAAAA+Amiri-Regular"
+        ],
+        "amiriUnicodeMappingPresent": true
+      },
+      "samples": [
+        {
+          "page": 90,
+          "purpose": "English exposition before square of opposition",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 91,
+          "purpose": "Square of opposition diagram and notes",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 110,
+          "purpose": "Table introduction and mixed-script source notes",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 111,
+          "purpose": "Reconstructed English table with complement symbols",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 120,
+          "purpose": "Argument and syllogism summary table",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        }
+      ]
+    },
+    {
+      "file": "muzaffar-al-mantiq-study-A4.pdf",
+      "sha256": "dbecef9ca7c510a5cc472a2ed7fda32e271a89cba08d54d567188479309eb8e3",
+      "pageCount": 315,
+      "fonts": {
+        "allListedFontsEmbedded": true,
+        "embeddedAmiriPresent": true,
+        "amiriFontNames": [
+          "BAAAAA+Amiri-Regular"
+        ],
+        "amiriUnicodeMappingPresent": true
+      },
+      "samples": [
+        {
+          "page": 156,
+          "purpose": "English square of opposition beside Arabic body",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 157,
+          "purpose": "Arabic square of opposition and caption",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 197,
+          "purpose": "Reconstructed English table with complement symbols",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 207,
+          "purpose": "Dense Arabic logical definitions and formulas",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        }
+      ]
+    },
+    {
+      "file": "muzaffar-al-mantiq-reference-A4.pdf",
+      "sha256": "a7a8193f518cdcfd7bac243b266dc219491c778493583f32475a75b694c4d244",
+      "pageCount": 244,
+      "fonts": {
+        "allListedFontsEmbedded": true,
+        "embeddedAmiriPresent": true,
+        "amiriFontNames": [
+          "BAAAAA+Amiri-Regular"
+        ],
+        "amiriUnicodeMappingPresent": true
+      },
+      "samples": [
+        {
+          "page": 93,
+          "purpose": "Dense Arabic discussion of modalities",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 150,
+          "purpose": "Arabic table heading sequence and preceding notes",
+          "visuallyInspected": true,
+          "result": "Glyphs and margins render correctly; pre-existing ungrouped Arabic table presentation remains (F02).",
+          "renderDpi": 110
+        },
+        {
+          "page": 151,
+          "purpose": "Arabic table formula sequence",
+          "visuallyInspected": true,
+          "result": "Glyphs and margins render correctly; pre-existing ungrouped Arabic table presentation remains (F02).",
+          "renderDpi": 110
+        },
+        {
+          "page": 152,
+          "purpose": "Arabic table formula sequence and source notes",
+          "visuallyInspected": true,
+          "result": "Glyphs and margins render correctly; pre-existing ungrouped Arabic table presentation remains (F02).",
+          "renderDpi": 110
+        },
+        {
+          "page": 169,
+          "purpose": "Arabic body, source notes, and next-unit heading",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 170,
+          "purpose": "Dense Arabic exposition of first figure",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        },
+        {
+          "page": 171,
+          "purpose": "Arabic logical examples and mixed-script notes",
+          "visuallyInspected": true,
+          "result": "No clipped glyphs, missing-glyph boxes, overlapping text, or cut table/diagram edges observed.",
+          "renderDpi": 110
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "kind": "stale-preview-metadata",
+      "file": "nihayat-al-hikma-reading-A4.pdf",
+      "pages": [
+        5
+      ],
+      "detail": "The preview reports 93/136 comparisons and the early-print bibliography blurb still says IX.9 was compared in full with other selected passages. This is not final 136-unit metadata.",
+      "disposition": "Parent has added final metadata correction; inspect the rebuilt front matter before final release."
+    },
+    {
+      "id": "F02",
+      "kind": "pre-existing-presentation-limitation",
+      "file": "muzaffar-al-mantiq-reference-A4.pdf",
+      "pages": [
+        150,
+        151,
+        152
+      ],
+      "detail": "The Arabic table is displayed as an ungrouped right-aligned sequence of headings and formulas across three pages. Text and complement marks are visible and not clipped, but the relationships are hard to consult as a table. The apparatus describes preservation of original ordered columns and distinguishes the English reconstruction.",
+      "scope": "Pre-existing limitation of the Muzaffar working selection, not a Nihaya completion issue; Muzaffar retains its explicit source and Book VI gaps.",
+      "disposition": "Recorded; no layout or canonical-text mutation made."
+    }
+  ],
+  "limitations": [
+    "Only listed pages were visually inspected; unviewed pages are not certified.",
+    "The preview PDFs precede the final 136-unit integration. Changed Nihaya sections and final front matter require a separate source-matched sample after rebuild.",
+    "Font embedding does not prove textual accuracy; the content collation is documented separately.",
+    "No independent human specialist certification, manuscript collation, or full Muzaffar completion is claimed."
+  ]
+}

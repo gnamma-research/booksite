@@ -1,0 +1,25 @@
+name: Tahdhib independently checked Lean temporal theorems
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/tahdhib-lean-proof.yml"
+      - "tools/tahdhib/independent_temporal_proofs.lean"
+permissions:
+  contents: read
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean 4, pin exact compiler version
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --default-toolchain leanprover/lean4:v4.24.0
+          "$HOME/.elan/bin/lean" --version
+      - name: Independently check source-qualified arbitrary-domain theorems
+        run: |
+          "$HOME/.elan/bin/lean" tools/tahdhib/independent_temporal_proofs.lean
+          echo "PASS: special-negative conversion, sixth, seventh, eighth fourth-figure temporal consequences, and special-to-particular rule."
+          echo "NOTE: This does not prove historical 46-mix modal necessity or collate any manuscripts."

@@ -1,0 +1,18 @@
+name: Izniqi complete bilingual edition integrity
+on:
+  push:
+    paths:
+      - 'texts/sadr-al-din-al-qunawi/al-nusus/izniqi/**'
+      - '.github/workflows/izniqi-complete-edition-qa.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify complete source sequence, text hashes and counts
+        run: python3 texts/sadr-al-din-al-qunawi/al-nusus/izniqi/edition-20261111/rebuild.py --output /tmp/izniqi
+      - name: Check complete reader JavaScript
+        run: node --check texts/sadr-al-din-al-qunawi/al-nusus/izniqi/edition-reader.js

@@ -1,0 +1,37 @@
+{
+  "stage": 108,
+  "date": "2026-11-17",
+  "total_source_positions": 615,
+  "numbered_volume_I_positions": 280,
+  "numbered_volume_II_positions": 335,
+  "volume_I_stable_records": 1401,
+  "volume_I_active_records": 1400,
+  "volume_I_arabic_bearing": 1300,
+  "volume_I_arabic_empty": 100,
+  "blank_by_layer": {
+    "lower": 88,
+    "upper": 12
+  },
+  "new_bounded_volume_I_records": [
+    "I044.upper.02",
+    "I045.lower.01",
+    "I045.lower.02"
+  ],
+  "volume_II_new_detailed_single_print_source_phrases": 3,
+  "volume_II_fixed_ID_denominator": 53,
+  "volume_II_fixed_locator_review_already_complete": 53,
+  "volume_II_full_independent_proof": 0,
+  "strict_full_translated_printed_positions": 0,
+  "independent_complete_proof_pages": 0,
+  "known_inherited_all_volume_assets_accounted_for": 774,
+  "byte_identical": 772,
+  "reader_entrypoints_updated_with_old_originals_preserved": 2,
+  "original_source_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "source_images_volume_I_verified": 280,
+  "all_record_proof_obligations_open": 1400,
+  "next_first_arabic_blank_volume_I": "I045.upper.02",
+  "next_physical_pdf_page": 58,
+  "volume_II_next": "G.II.229.21.01 full lower gloss alignment then B6.M.II224.2001 overlap",
+  "live_browser_QA": "not verified",
+  "unknown_volume_II_historical_asset_denominator": true
+}

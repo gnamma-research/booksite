@@ -1,0 +1,60 @@
+{
+  "schema": "gnamma-tahdhib-edition-publication-v1",
+  "book": "Tahdhīb al-Manṭiq",
+  "source": "data.js",
+  "source_sha256": "ca99f10c5773c18219ead99f7fee883c8c8042ba0749831b3c6bd13ded61f43b",
+  "source_bytes": 96855,
+  "source_witness": "Cairo 1912 and compared printed logic text; original pagination recorded per unit",
+  "editorial_status": "NAMA working bilingual edition of Taftazani's Tahdhib al-Mantiq: 19 clause-aligned editorial divisions, Cairo 1330/1912 logic pp.3–14; ten documented comparisons with a different printed Tahdhib text (NOT collated manuscript variants). Stage97 has completed a source-typed 46-case register for the three exceptional fourth-figure modal moods (12 sixth, 22 seventh, 12 eighth), drawing from al-Katibi and later Ibn Mubarakshah's tables; bounded temporal tests do NOT prove full historical necessity or all modal entailments. Cairo words, printed witness differences and commentary explanations remain separately attributed; manuscripts and remaining L17 printed connector still require independent verification. Stage100 diagnostic: all 46 exceptional fourth-figure mixes are historically SOURCE-CLASSIFIED; four IEO pairs with referential L/A majors have zero satisfying antecedents in the newly specified two-world/temporal fragment. Not a disproof or full medieval necessity certification. Independent manuscripts and remaining L17 connector unresolved.",
+  "unit_count": 19,
+  "page_or_division_count": 19,
+  "navigation_kind": "division",
+  "unresolved_printed_pages_or_divisions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "files": [
+    {
+      "name": "tahdhib-logic-parallel.pdf",
+      "purpose": "bilingual",
+      "sha256": "737f59de25399225e4c77567539d546fd5b727a4581f7861babfccf040cc08c7",
+      "bytes": 104870,
+      "a4_pages": 22,
+      "href": "pdfs/tahdhib-logic-parallel.pdf"
+    },
+    {
+      "name": "tahdhib-logic-ar-only.pdf",
+      "purpose": "arabic",
+      "sha256": "e1a6b7c4a857675ee18c4c5318509f09889fc6490c85c0173a711da287ff0a7a",
+      "bytes": 70748,
+      "a4_pages": 11,
+      "href": "pdfs/tahdhib-logic-ar-only.pdf"
+    },
+    {
+      "name": "tahdhib-logic-en-only.pdf",
+      "purpose": "english",
+      "sha256": "35b1ee8c63237ab4b582ba4d19066debd57658073a34ed02ac6113b23369984c",
+      "bytes": 50707,
+      "a4_pages": 12,
+      "href": "pdfs/tahdhib-logic-en-only.pdf"
+    }
+  ],
+  "description": "SHA-256 inventories are reproducibility records, NOT certificates of authorial fidelity or independent manuscript collation."
+}

@@ -1,0 +1,213 @@
+{
+  "schema": "gnamma.tahdhib.stage122.sha-difference.v1",
+  "date": "2026-11-12",
+  "snapshotSource": "Tahdhib_Arabic_Source_Cache_127-400.zip",
+  "snapshotZipSHA256": "09e7e979dc937ba3334f0826c0c56215ac1ea53b91f4440a9c6c47702343eada",
+  "snapshotManifestSHA256": "0802b6cf533a2c5e1615f6a46e6269103271fe23474aa9d70ed3f31ad6eca356",
+  "notesTotal": 1090,
+  "matchedHistoricalWordcounts": 1090,
+  "matchedHistoricalSHA256": 1079,
+  "differingUnitHashes": 11,
+  "onePageUnits": 6,
+  "multiPageUnits": 5,
+  "classification": "Unresolved digital reconstruction normalization/text difference, NOT proven historical manuscript variant",
+  "unitSHA256Comparisons": [
+    {
+      "id": "HWN-008",
+      "pages": [
+        128,
+        129
+      ],
+      "stage114CensusSHA256": "b972b46c105a51b39e0acb42fbe32c4b5f5e6ba23bf7d506d59faa950dc86fd5",
+      "stage122RecoverySHA256": "9fe09c45a0ef2e4e7e577fdd2924800492d5249f4454ca62dcf2c50fcc0674f6",
+      "wordCountMatches": true,
+      "sourcePageURLs": [
+        "https://ablibrary.net/book_content/b/12170/128?lang=ar",
+        "https://ablibrary.net/book_content/b/12170/129?lang=ar"
+      ],
+      "requires": [
+        "diff archived page-level extraction and original unit boundaries",
+        "independent photograph for textual variant claims"
+      ]
+    },
+    {
+      "id": "HWN-037",
+      "pages": [
+        139
+      ],
+      "stage114CensusSHA256": "3dd41b79a473966436f280861f978431780bf3890c38262a503a95df8238e587",
+      "stage122RecoverySHA256": "056bb061bf673100173743789443f5bc5885ece4efe3f45bccbe41a365d90832",
+      "wordCountMatches": true,
+      "sourcePageURLs": [
+        "https://ablibrary.net/book_content/b/12170/139?lang=ar"
+      ],
+      "requires": [
+        "diff archived page-level extraction and original unit boundaries",
+        "independent photograph for textual variant claims"
+      ]
+    },
+    {
+      "id": "HWN-084",
+      "pages": [
+        149
+      ],
+      "stage114CensusSHA256": "1c2aee31ebd28983adeff652819a65ae2ac7ac9ec33cb8984356e9f42a375a16",
+      "stage122RecoverySHA256": "dd000336750260327a3602205756b5fa5313854161e01652e22be5cacff2a3c1",
+      "wordCountMatches": true,
+      "sourcePageURLs": [
+        "https://ablibrary.net/book_content/b/12170/149?lang=ar"
+      ],
+      "requires": [
+        "diff archived page-level extraction and original unit boundaries",
+        "independent photograph for textual variant claims"
+      ]
+    },
+    {
+      "id": "HWN-126",
+      "pages": [
+        160
+      ],
+      "stage114CensusSHA256": "6b80ca8c0cd8f101c9cc656da64a2086920daf9b51acdaec96bbc5eb105a4d51",
+      "stage122RecoverySHA256": "412769ba15c1a1ee137131079b9334663d544143ccaf53b705297e942440438c",
+      "wordCountMatches": true,
+      "sourcePageURLs": [
+        "https://ablibrary.net/book_content/b/12170/160?lang=ar"
+      ],
+      "requires": [
+        "diff archived page-level extraction and original unit boundaries",
+        "independent photograph for textual variant claims"
+      ]
+    },
+    {
+      "id": "HWN-INTRO-018",
+      "pages": [
+        168,
+        169
+      ],
+      "stage114CensusSHA256": "9ca2c7e1ab747b16f07b080de4f8279f2d0dce94be19a6d9cbef103410a5aeff",
+      "stage122RecoverySHA256": "6035b3e6ff4e05151501bf08bde48d0f1916431674c5fed8cb6962acee049976",
+      "wordCountMatches": true,
+      "sourcePageURLs": [
+        "https://ablibrary.net/book_content/b/12170/168?lang=ar",
+        "https://ablibrary.net/book_content/b/12170/169?lang=ar"
+      ],
+      "requires": [
+        "diff archived page-level extraction and original unit boundaries",
+        "independent photograph for textual variant claims"
+      ]
+    },
+    {
+      "id": "HWN-DALALA-069",
+      "pages": [
+        206,
+        207
+      ],
+      "stage114CensusSHA256": "a63159e3a156b3d6c73d4a57503b28b9b900b8da31a29a5dfa2f914fc46555da",
+      "stage122RecoverySHA256": "28fc00fb318d1d21ebd2548a5651dedf00afc950d3d512d290d76f73615facc5",
+      "wordCountMatches": true,
+      "sourcePageURLs": [
+        "https://ablibrary.net/book_content/b/12170/206?lang=ar",
+        "https://ablibrary.net/book_content/b/12170/207?lang=ar"
+      ],
+      "requires": [
+        "diff archived page-level extraction and original unit boundaries",
+        "independent photograph for textual variant claims"
+      ]
+    },
+    {
+      "id": "HWN-MAFAHIM-042",
+      "pages": [
+        226
+      ],
+      "stage114CensusSHA256": "28d5bc03cff921b1f22eef285d22284bec140c753ffade0983d31cdabd905170",
+      "stage122RecoverySHA256": "43c6f45ef4704c94e7980478b1c97201bdc0ebe9506f777e2610c1693dcaf824",
+      "wordCountMatches": true,
+      "sourcePageURLs": [
+        "https://ablibrary.net/book_content/b/12170/226?lang=ar"
+      ],
+      "requires": [
+        "diff archived page-level extraction and original unit boundaries",
+        "independent photograph for textual variant claims"
+      ]
+    },
+    {
+      "id": "HWN-PROPOSITIONS-013",
+      "pages": [
+        266,
+        267
+      ],
+      "stage114CensusSHA256": "549017100db5f9e1f166dce48f5e14034c99f29108674594b59c90d38bac22c0",
+      "stage122RecoverySHA256": "fc44e19e3f8edf8c6bcf4586c237ec95561deebdcdc4eecca985d72ba84c97aa",
+      "wordCountMatches": true,
+      "sourcePageURLs": [
+        "https://ablibrary.net/book_content/b/12170/266?lang=ar",
+        "https://ablibrary.net/book_content/b/12170/267?lang=ar"
+      ],
+      "requires": [
+        "diff archived page-level extraction and original unit boundaries",
+        "independent photograph for textual variant claims"
+      ]
+    },
+    {
+      "id": "HWN-SYLLOGISM-043",
+      "pages": [
+        352
+      ],
+      "stage114CensusSHA256": "129a1147285907829d631b2d28237c7cf63b61ef2b40152f86d470a86cc78cdb",
+      "stage122RecoverySHA256": "0b0b681a7a257de342122accb707f709b9c0da16ba84b2457ed2d012cff0ef88",
+      "wordCountMatches": true,
+      "sourcePageURLs": [
+        "https://ablibrary.net/book_content/b/12170/352?lang=ar"
+      ],
+      "requires": [
+        "diff archived page-level extraction and original unit boundaries",
+        "independent photograph for textual variant claims"
+      ]
+    },
+    {
+      "id": "HWN-SYLLOGISM-056",
+      "pages": [
+        354,
+        355
+      ],
+      "stage114CensusSHA256": "48b9dff460ff74bdcb09f148b9bea48f3ae56817e82958e30244884a5357f978",
+      "stage122RecoverySHA256": "d75f755ca85bd7294471015f4f4a4b2e6f47b9240d44c495189263d40696415c",
+      "wordCountMatches": true,
+      "sourcePageURLs": [
+        "https://ablibrary.net/book_content/b/12170/354?lang=ar",
+        "https://ablibrary.net/book_content/b/12170/355?lang=ar"
+      ],
+      "requires": [
+        "diff archived page-level extraction and original unit boundaries",
+        "independent photograph for textual variant claims"
+      ]
+    },
+    {
+      "id": "HWN-SYLLOGISM-150",
+      "pages": [
+        369
+      ],
+      "stage114CensusSHA256": "5c27e5acf861fae83cf9396adc4027dbf7fc2f4722810e2cb3411a8c12bcc88c",
+      "stage122RecoverySHA256": "7f598925a680d34ee447ade6f95f97fbee27d204f5e952abe2de41edac4d7d7b",
+      "wordCountMatches": true,
+      "sourcePageURLs": [
+        "https://ablibrary.net/book_content/b/12170/369?lang=ar"
+      ],
+      "requires": [
+        "diff archived page-level extraction and original unit boundaries",
+        "independent photograph for textual variant claims"
+      ]
+    }
+  ],
+  "specificFinding": {
+    "id": "HWN-037",
+    "historicalStage114EmbeddedArabicLacksCurrentSourceSpeakerSignatures": true,
+    "currentRecoveredDigitalArabicHasDistinctSignatures": [
+      "شيخ عبد الرحيم",
+      "ميرزا محمد على"
+    ],
+    "effect": "This is an attribution discrepancy in an earlier embedded Arabic snippet; it is NOT proof that it caused the old census SHA mismatch."
+  },
+  "noOriginalSourcesModified": true,
+  "noPreviousEnglishFieldsModified": true
+}

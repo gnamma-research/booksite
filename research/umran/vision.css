@@ -1,0 +1,61 @@
+
+/* Higher-purpose architecture for Work, Vocation & Umran, edition v4 */
+.purpose-hero{background:radial-gradient(ellipse at 90% 15%,#e7efe5,transparent 46%),linear-gradient(115deg,#f4ecdf,#faf8f1);border-bottom:1px solid var(--line);padding:70px 0 62px}
+.purpose-hero h1{max-width:980px}
+.purpose-lead{max-width:800px!important}
+.thesis{border-left:3px solid var(--clay);padding:9px 22px;background:rgba(255,255,255,.55);font:19px/1.55 Georgia,serif;max-width:900px;margin:22px 0 26px}
+.purpose-map{display:grid;gap:8px;max-width:940px;margin:28px auto 16px}
+.purpose-layer{display:grid;grid-template-columns:1fr 2.5fr;gap:22px;border:1px solid #d6dacc;background:#fffdf7;border-radius:10px;padding:20px 24px;position:relative}
+.purpose-layer::after{content:"";height:8px;width:1px;background:#c4c9bd;position:absolute;bottom:-9px;left:35px}
+.purpose-layer:last-child::after{display:none}
+.purpose-layer.ultimate{background:#254e4b;color:#fff;border-color:#254e4b}
+.purpose-layer.ultimate .purpose-index,.purpose-layer.ultimate small{color:#d5e4df}
+.purpose-index{font:700 11px system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:#976144}
+.purpose-layer h3{font-size:24px;margin:3px 0 0}
+.purpose-layer p{margin:0;font-size:14px}
+.purpose-layer small{font-size:12px;color:var(--muted)}
+.purpose-axis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:21px 0}
+.purpose-axis .card h3{font-size:23px}
+.purpose-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.aim-card{background:#fffef9;border:1px solid var(--line);border-radius:11px;padding:24px;scroll-margin-top:20px}
+.aim-card.main-aim{border-top:3px solid var(--forest)}
+.aim-card.secondary-aim{border-top:3px solid var(--clay)}
+.aim-card .arabic{font:normal 19px/1.4 "Noto Naskh Arabic","Amiri",serif;color:var(--clay);direction:rtl}
+.aim-card h3{font-size:27px;margin:6px 0 13px}
+.aim-card h4{font:700 11px/1.5 system-ui,sans-serif;color:var(--forest);text-transform:uppercase;letter-spacing:.07em;margin:17px 0 6px}
+.aim-card p{font-size:14px;line-height:1.67;margin:0 0 11px}
+.aim-card .caution{color:var(--muted);border-top:1px solid var(--line);padding-top:13px;margin-top:12px}
+.aim-card .linked-need{font-size:12px;margin:10px 0}
+.aim-card .linked-need a{margin-right:10px;display:inline-block}
+.aim-class{display:inline-block;border-radius:20px;border:1px solid #b8c9be;color:var(--forest);font:600 10px/1.5 system-ui,sans-serif;padding:3px 9px}
+.aim-class.extension{border-color:#d5beaa;color:var(--clay)}
+.purpose-table{width:100%;border-collapse:collapse;margin:20px 0 29px;font-size:14px}
+.purpose-table td,.purpose-table th{border-bottom:1px solid var(--line);padding:16px 14px;vertical-align:top}
+.purpose-table th{font-weight:650;color:var(--forest);background:#f0f2ed}
+.purpose-table tr th:first-child{width:26%}
+.programme-intro{max-width:900px}
+.programme-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}
+.programme-card{padding:26px;border:1px solid var(--line);background:var(--panel);border-radius:11px;min-width:0;scroll-margin-top:20px}
+.programme-card h2{font-size:30px;margin:7px 0 13px}
+.programme-card h3{font:700 11px system-ui,sans-serif;text-transform:uppercase;letter-spacing:.07em;color:var(--clay);margin:18px 0 8px}
+.programme-card ul{padding-left:19px;font-size:14px;margin:8px 0}
+.programme-card li{margin-bottom:8px}
+.programme-card p{font-size:14px;line-height:1.68}
+.programme-card .programme-links{border-top:1px solid var(--line);padding-top:16px;margin-top:18px}
+.programme-card .programme-links a{display:inline-block;margin:3px 10px 3px 0;font:600 12px system-ui,sans-serif}
+.programme-card details{border-top:1px solid var(--line);padding-top:12px;margin-top:16px}
+.programme-card summary{font:650 13px system-ui,sans-serif}
+.programme-card .under-review{font:11px/1.4 system-ui,sans-serif;color:var(--muted)}
+.purpose-roadmap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}
+.purpose-roadmap .card{padding:19px}
+.purpose-roadmap .card h3{font-size:21px}
+.purpose-roadmap .card p{font-size:13px}
+.source-note{margin-top:20px;border-top:1px solid var(--line);padding-top:14px;font-size:13px;color:var(--muted)}
+.subnav-resources{background:#f1eee5;border-top:1px solid #e6e1d6}
+.subnav-resources a{font-size:12px;letter-spacing:.005em;padding:8px 0;color:#69766c}
+.subnav-resources a[aria-current=page]{color:#754f39;border-bottom-color:#945b3b}
+.subnav .shell{scrollbar-width:thin}
+.purpose-quiet{font-size:13px;color:var(--muted);margin-top:14px}
+@media(min-width:1120px){.subnav:not(.subnav-resources) .shell{flex-wrap:wrap;gap:0 22px}.subnav:not(.subnav-resources) a{padding:10px 0}}
+@media(max-width:850px){.purpose-axis{grid-template-columns:1fr 1fr}.programme-grid,.purpose-grid{grid-template-columns:1fr}.purpose-roadmap{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.purpose-hero{padding:43px 0}.purpose-hero h1{font-size:42px}.purpose-layer{grid-template-columns:1fr;gap:6px;padding:17px}.purpose-layer::after{left:25px}.purpose-axis,.purpose-roadmap{grid-template-columns:1fr}.aim-card,.programme-card{padding:20px}.purpose-table{display:block;overflow-x:auto;font-size:12px}.purpose-table td,.purpose-table th{min-width:145px;padding:10px}.purpose-map{margin:25px 0}.purpose-layer h3{font-size:23px}.subnav .shell{gap:16px}.subnav a{font-size:12px}}

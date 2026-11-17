@@ -1,0 +1,22 @@
+{
+  "stage": 106,
+  "inherited_stage105_files_total": 712,
+  "accounted_for": 712,
+  "byte_identical": 710,
+  "updated_reader_entrypoints_with_exact_old_bytes_preserved": 2,
+  "original_combined_source_PDF_SHA256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "original_volume_I_images_hash_verified": 280,
+  "volume_II_historical_library_original_assets": 5,
+  "volume_II_historical_originals_all_inherited": true,
+  "volume_II_historical_required_assets_total": "UNKNOWN",
+  "volume_II_historical_migration_percentage": null,
+  "remote_selected_clause_modules_count": 3,
+  "remote_selected_clause_original_bytes_materialised": 0,
+  "remote_selected_clause_module_sha_references_preserved": 3,
+  "latest_VolumeII_baseline_English_reconciliation_II215_314": {
+    "main_pages_exact": 100,
+    "main_pages_total": 100,
+    "lower_sections_exact": 163
+  },
+  "archive_gates": "ALL OPEN; prior chats unarchived, both volumes separate from Tahdhīb; source/proof not certified"
+}

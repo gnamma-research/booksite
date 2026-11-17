@@ -1,0 +1,6 @@
+{
+  "stage": 110,
+  "status": "unverified",
+  "why": "Local Node corpus script passed, but no independent live deploy or visual browser test",
+  "no_claim_of_live_browser_acceptance": true
+}

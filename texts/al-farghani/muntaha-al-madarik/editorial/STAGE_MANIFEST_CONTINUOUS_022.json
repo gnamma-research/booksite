@@ -1,0 +1,54 @@
+{
+  "schema": "farghani-stage-022-contiguous-digital-source-clause-proof",
+  "date": "2026-11-17",
+  "project": "gnamma-research/booksite",
+  "work": "Muntahā al-madārik four-foundation authorial introduction and concluding preface",
+  "source_siglum": "B2007-digitized",
+  "page_span": [
+    18,
+    23
+  ],
+  "digital_arabic_full_pages_proofed": 6,
+  "new_contiguous_review_units": 76,
+  "source_characters_including_editorial_number_markers": 9459,
+  "reviewed_unit_count_by_page": {
+    "18": 9,
+    "19": 14,
+    "20": 8,
+    "21": 15,
+    "22": 14,
+    "23": 16
+  },
+  "working_english_page_positions_total": 128,
+  "arabic_digitized_page_positions_total": 128,
+  "selected_critical_excerpt_records_unchanged": 560,
+  "selected_grade_origin": {
+    "modern_edited_digitized": 284,
+    "derivative": 276
+  },
+  "synchronized_reader_english_corrections": 3,
+  "full_main_text_commentary_translation_included": false,
+  "independent_original_print_whole_pages_collated": 0,
+  "authenticated_manuscript_variants": 0,
+  "selected_historical_print_photo_loci_prior": 15,
+  "source_files": [
+    "CONTINUOUS_PROOF_P18_20_022.json",
+    "CONTINUOUS_PROOF_P18_20_022.md",
+    "CONTINUOUS_PROOF_P21_23_022.json",
+    "CONTINUOUS_PROOF_P21_23_022.md"
+  ],
+  "review_file": "CONTINUOUS_PROOF_REVIEW_022.md",
+  "handoff_file": "STAGE_HANDOFF_CONTINUOUS_022.md",
+  "next_b2007_page": 24,
+  "next_exact_arabic": "معاني الشأن وهو الأمر",
+  "previous_page_boundary": "اعتبارا لبعض",
+  "unresolved": [
+    "p18 وبطون المشتمل",
+    "p19 modern digitization vs I1876 print variants and unvowelled المقدّر pair",
+    "p23 undetermined matters",
+    "p87 أوجبت محضة",
+    "p138 مشمّة الروح",
+    "physical B2007 p52",
+    "independent manuscripts"
+  ]
+}

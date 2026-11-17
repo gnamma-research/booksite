@@ -1,0 +1,96 @@
+name: Daruri dictionary popup provenance and morphology UX QA
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'daruri/index.html'
+      - 'daruri/headerless-navigation.css'
+      - 'daruri/editions-icons.css'
+      - 'daruri/editions-icons.js'
+      - 'daruri/full-dictionary-context.js'
+      - 'daruri/dictionary-dossier.js'
+      - 'daruri/full-dictionary-data.js'
+      - 'daruri/full-dictionary-index.js'
+      - 'daruri/dictionary.html'
+      - 'daruri/quran-context-ui.js'
+      - 'daruri/gnamma-word-context.js'
+      - 'daruri/gnamma-morphology.js'
+      - 'daruri/morph-lexicon.json'
+      - 'daruri/morph-daruri-v1.json'
+      - 'daruri/sw.js'
+      - 'daruri/download-bundle.js'
+      - 'daruri/qa/verify-full-dictionary-web.js'
+      - 'daruri/qa/verify_full_dictionary_browser.py'
+      - 'daruri/build/export_full_dictionary_web.py'
+      - '.github/workflows/daruri-dictionary-popup-qa.yml'
+  pull_request:
+    branches: [master]
+    paths:
+      - 'daruri/index.html'
+      - 'daruri/headerless-navigation.css'
+      - 'daruri/editions-icons.css'
+      - 'daruri/editions-icons.js'
+      - 'daruri/dictionary-dossier.js'
+      - 'daruri/dictionary.html'
+      - 'daruri/quran-context-ui.js'
+      - 'daruri/qa/verify-full-dictionary-web.js'
+      - 'daruri/qa/verify_full_dictionary_browser.py'
+      - 'daruri/sw.js'
+      - '.github/workflows/daruri-dictionary-popup-qa.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: daruri-dictionary-popup-qa-main
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  source-and-browser-parity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify canonical source integrity and JS syntax
+        run: |
+          node --check daruri/full-dictionary-context.js
+          node --check daruri/dictionary-dossier.js
+          node --check daruri/full-dictionary-index.js
+          node --check daruri/full-dictionary-data.js
+          node --check daruri/quran-context-ui.js
+          node --check daruri/gnamma-word-context.js
+          node --check daruri/gnamma-morphology.js
+          node --check daruri/qa/verify-full-dictionary-web.js
+          python daruri/build/export_full_dictionary_web.py --check
+          node daruri/qa/verify-full-dictionary-web.js
+      - name: Install Chromium and Playwright
+        run: |
+          python -m pip install -q playwright==1.58.0
+          python -m playwright install --with-deps chromium
+      - name: Test dictionary, Editions icons, themes and portrait/landscape
+        shell: bash
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 >/tmp/daruri-dictionary-popup-qa.log 2>&1 &
+          server=$!
+          trap 'kill $server || true' EXIT
+          for i in {1..60}; do
+            if curl --silent --fail http://127.0.0.1:8123/daruri/ > /dev/null; then break; fi
+            sleep 0.25
+          done
+          python daruri/qa/verify_full_dictionary_browser.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-dictionary-popup-provenance-qa
+          path: |
+            /tmp/gnamma-full-dictionary-browser/*.png
+            /tmp/daruri-dictionary-popup-qa.log
+          if-no-files-found: ignore

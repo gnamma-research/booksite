@@ -1,0 +1,81 @@
+name: Tahdhib actual reader and logic verification
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/tahdhib-reader-ci.yml'
+      - 'tools/tahdhib/**'
+      - 'texts/shared/tahdhib-daruri-shell.js'
+      - 'texts/shared/tahdhib-daruri-shell.css'
+      - 'texts/al-taftazani/tahdhib-al-kalam/**'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/**'
+      - 'daruri/bookmark-ui.js'
+  push:
+    paths:
+      - '.github/workflows/tahdhib-reader-ci.yml'
+      - 'tools/tahdhib/**'
+      - 'texts/shared/tahdhib-daruri-shell.js'
+      - 'texts/shared/tahdhib-daruri-shell.css'
+      - 'texts/al-taftazani/tahdhib-al-kalam/**'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/**'
+      - 'daruri/bookmark-ui.js'
+concurrency:
+  group: tahdhib-reader-verification-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  logical-core:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install PyYAML==6.0.2
+      - name: Execute every unchanged logical and source integrity check
+        run: python tools/tahdhib/run_ci_contract.py logical-core
+      - name: Verify Stage114 full English corpus publication and evidence grades
+        run: python tools/tahdhib/check_stage114_publication.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tahdhib-nonmodal-proof-report
+          path: tools/tahdhib/verified*.json
+  reader-chromium:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install PyYAML==6.0.2
+      - name: Execute unchanged Chromium and WebKit dependency and reader checks
+        run: python tools/tahdhib/run_ci_contract.py reader-chromium
+      - name: Verify Stage114 live first-pass reader in Chromium and WebKit
+        run: |
+          python3 -m http.server 8766 --bind 127.0.0.1 >/tmp/tahdhib-stage114-server.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
+          sleep 2
+          TAHDHIB_QA_BASE=http://127.0.0.1:8766/ node tools/tahdhib/handoff_reader_stage114_qa.mjs
+          TAHDHIB_QA_BASE=http://127.0.0.1:8766/ node tools/tahdhib/check_four_layer_quiet_ui.mjs
+  recovery-bundle:
+    needs: [logical-core, reader-chromium]
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Export cumulative text, source files, handoff and checksums
+        run: python tools/tahdhib/build_recovery_bundle.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tahdhib-cumulative-recovery
+          path: tahdhib-recovery-export/
+          retention-days: 30
+          if-no-files-found: error

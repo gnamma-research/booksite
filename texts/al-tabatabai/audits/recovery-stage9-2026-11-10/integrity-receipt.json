@@ -1,0 +1,3604 @@
+{
+  "schema": "nihayat4-recovery-integrity-v1",
+  "recoveryDate": "2026-11-10",
+  "checkedAtUtc": "2026-11-10T20:17:24.827774+00:00",
+  "verificationScope": "Fresh mechanical integrity validation of recovered records and their cited local bytes. The source readings and scholarly judgements are prior AI-assisted work and were not freshly reperformed.",
+  "canonicalInput": {
+    "repositoryPath": "texts/al-tabatabai/nihayat-al-hikma/data/book.json",
+    "sha256": "d1dd963f7a22e2be4ccca4c73c3799a4be6f9b5e4a30415cfc6d12993d07a4fd",
+    "allThreeReportsMatch": true
+  },
+  "summary": {
+    "completedRecordsChecked": 83,
+    "arabicAndEnglishUnitHashPairsChecked": 83,
+    "unitRecordFilesChecked": 83,
+    "distinctEvidenceFilesChecked": 210,
+    "missingEvidenceFiles": 0,
+    "evidenceHashMismatches": 0,
+    "canonicalUnitHashMismatches": 0,
+    "substantiveRecordConflicts": 0,
+    "reportJsonParseErrors": 0,
+    "declaredBoundaryEvidenceCounts": {
+      "explicit-all-boundaries-accounted": 30,
+      "explicit-boundaries-and-paragraph-ledger": 53
+    }
+  },
+  "boundaryInterpretation": "Explicit complete-unit coverage and actual visual-reading declarations were preserved and structurally checked. This receipt authenticates those records; it does not independently certify the historical reading process.",
+  "rangeARecordDifference": "The aggregate report adds index, baseSource, storedArabicParagraphCount and Arabic/English SHA256 metadata; the standalone unit records agree substantively.",
+  "pathRule": "relativePath and unitRecordRelativePath are relative to the restored continuation workspace. Historical absolute paths in the exact original reports are intentionally retained.",
+  "unitHashes": [
+    {
+      "id": "N-INTRO",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "1ca29cd44861a99dcb2bae8603b90e8d8c31806174605a47cabc16c615f80f68",
+      "storedEnglishSha256": "22b7b8f037d23ce8456393c8f3450c63d8172b53dbdd0547a2d701093845f8c1",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-INTRO.json",
+      "unitRecordSha256": "faa649bb0669e3e58d9aef9a60a410a60d3135955d1fe861c69274effa495488",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          32
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          29
+        ],
+        "earlyPrintedPages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "laterPrintedPages": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-I-01",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "bb368d0d7f50dea126e85e0ff06db7f49dc4ab3ace12e180baa37b4278099a72",
+      "storedEnglishSha256": "a649561d22fb399f038d381c27277d0c4e5dfe3dee198af87943e3264a60afbe",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-I-01.json",
+      "unitRecordSha256": "6dd17fdf93b5e95a3bf38d88953b7c36f0db4c0b9163cc9833abc8e4d24d8564",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          10
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          10
+        ],
+        "earlyPrintedPages": [
+          8,
+          9
+        ],
+        "laterPrintedPages": [
+          15,
+          16,
+          17
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-I-02",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "d71cec15477b149d7f45c57649deb7738029172f81b1977c7a2fbf2873e2e96e",
+      "storedEnglishSha256": "75427ca31f9eb958feb64b1946dfd2410348ef2bfeb6461e29982df047b5ee00",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-I-02.json",
+      "unitRecordSha256": "dd90675301357ceec7652f96b62e33e678bd44a12fa98d2313d3d69b77d3c714",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          67
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          59
+        ],
+        "earlyPrintedPages": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "laterPrintedPages": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-I-03",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "abac55e12c23947c508f5c4304346e2fa6a9b6b875e72605733f807160df1792",
+      "storedEnglishSha256": "245837bed65124ae9c7a87de6f195f66dc6118453f077df6d4e93ddb86c66a6b",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-I-03.json",
+      "unitRecordSha256": "33101676014d945586031076daa274f134de313dd990e28f342952ffaa03f6f7",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          22
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          19
+        ],
+        "earlyPrintedPages": [
+          17,
+          18,
+          19,
+          20
+        ],
+        "laterPrintedPages": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-I-04",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "9e00149878a2b688bee06a11b221fed404c509888f918e872561a1e6c8668ecd",
+      "storedEnglishSha256": "b0e1b677bce8626bc90615791cdd995e831b86d80fb75533dd703518832260a9",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-I-04.json",
+      "unitRecordSha256": "ae82d0bf62b0cc2b8caafbbe35b1fbee1fc51f73d3a413fa0c7e6470dc539078",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          14
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          12
+        ],
+        "earlyPrintedPages": [
+          21,
+          22
+        ],
+        "laterPrintedPages": [
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-I-05",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "0550fe4a8e1d8019927874eabc2b6ec8b6b75ad5b86e60672589990a42f3f06a",
+      "storedEnglishSha256": "c29c7d17368414b2be3946cb7ceee7eb1ae4b9eecdebd05180d35c1cafa94837",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-I-05.json",
+      "unitRecordSha256": "8b1c8aba518508708f723f717b01acebf40d0047251db4adb683836de2a88c06",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          26
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          22
+        ],
+        "earlyPrintedPages": [
+          22,
+          23,
+          24,
+          25
+        ],
+        "laterPrintedPages": [
+          43,
+          44,
+          45,
+          46
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-II-01",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "bc58d44f029a3c9771d36ecd5872b7ed1c80d08ca7ee863b42407bbc0f9ef4fc",
+      "storedEnglishSha256": "d81509c5ddb2b240735f84b61b99b38da9867c3447867494e2872a76ffe37cbc",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-II-01.json",
+      "unitRecordSha256": "0bc9468ed72666da1c32aaca02b2aecfe9bae0d65f58e8021e852403d8eb7472",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          16
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          16
+        ],
+        "earlyPrintedPages": [
+          28,
+          29,
+          30
+        ],
+        "laterPrintedPages": [
+          49,
+          50,
+          51
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-II-02",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "9628ea6eb3793a970d6548e078b5e00030cba6cac9996ff8d4dee727020882de",
+      "storedEnglishSha256": "241f227f2b879f6082f0b348abaf4a2ac0857dfe71601e68966e023b4963b54b",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-II-02.json",
+      "unitRecordSha256": "51303e985fef919d09b63e7a901e1735e423e95bd79bdf8efd037d6e78ee2d2c",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          7
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          6
+        ],
+        "earlyPrintedPages": [
+          30,
+          31
+        ],
+        "laterPrintedPages": [
+          52,
+          53
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-II-03",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "dbbbf74cba4ced0865c18eb076543a85f2f49e6a8821535e9ac41e3e42362870",
+      "storedEnglishSha256": "874ac65f6ed8308a58ad70f0142dd1f017a05ebb3752e12a34c8c33bfecc9336",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-II-03.json",
+      "unitRecordSha256": "f4491bf564ca621231dab3499a81cb7e2678b314d4b1ad50099ff023a45a7eb4",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          9
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          8
+        ],
+        "earlyPrintedPages": [
+          31,
+          32
+        ],
+        "laterPrintedPages": [
+          54,
+          55
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-III-01",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "8bca6b39bb7f2115112ef9105bbba8e3622a9f139f3589aff13f5b7fec680913",
+      "storedEnglishSha256": "01876f551a9570c70452fb7bc0b6c7d5e6a175b2764b77c2783be2b2997f9e5a",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-III-01.json",
+      "unitRecordSha256": "fef510077f7f21e1160ced5d8511e18d6f8e9a7779309cd338dca796522bc594",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          47
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          32
+        ],
+        "earlyPrintedPages": [
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "laterPrintedPages": [
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-IV-PRE",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "16899dc5830808ae74ab60ca8ce3364de0bf79d3bb55b1bd50503a70e1416dc4",
+      "storedEnglishSha256": "dbe6f0e53baca7f87c958a73d153bb6c9a5828aaa63ecf7a639142015aa6cccf",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-IV-PRE.json",
+      "unitRecordSha256": "ad4b9841e7a70fdfef8689e754ed00c755a3cb5ad676df0d59493ef0cddd9132",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          5
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          1
+        ],
+        "earlyPrintedPages": [
+          41
+        ],
+        "laterPrintedPages": [
+          69
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-IV-01",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "d4b2167dabfe2814874e8e32c2cfe43f0286c4db93b017af29104a3aa3c133db",
+      "storedEnglishSha256": "51ab28e8c24dfd19b49f75a759825a4bf89aa21c46d2241d973598432d9f70b3",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-IV-01.json",
+      "unitRecordSha256": "08110369d174fa2ee3ab5c5103d0d9357cf0858f5dc71f05f64b896a7a426428",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          62
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          38
+        ],
+        "earlyPrintedPages": [
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ],
+        "laterPrintedPages": [
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-IV-02",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "f54de420963db58ec14944ebd32af6aef5f07995055dc577bd1826c6bccf171b",
+      "storedEnglishSha256": "7c3e68cfe7fdc4b1554562b26f0de18a8e80295acc9cac5c94a70a5d5c9ea1e6",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-IV-02.json",
+      "unitRecordSha256": "cc2887c6a94d4ff2f82b2a75b0a329716be783a7f3cfb6a23a6862392223b6f1",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          22
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          18
+        ],
+        "earlyPrintedPages": [
+          48,
+          49,
+          50,
+          51
+        ],
+        "laterPrintedPages": [
+          82,
+          83,
+          84,
+          85
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-IV-03",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "349f41419557c511f105180ed656f67df763ec4beef5299c043ebfdfdeb3fbac",
+      "storedEnglishSha256": "0f36cbe396500863da3da64ef5f034a2b51cc39e738226b919c98b0624e65d09",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-IV-03.json",
+      "unitRecordSha256": "4fc9e5a418975aabee2e0b223db8d63c33b8c460cfe7a00587dd46412d28ed7d",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          28
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          25
+        ],
+        "earlyPrintedPages": [
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "laterPrintedPages": [
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-IV-04",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "e73f59aa5cc41887fb772af8320c0d4adfc76fd589dc65ff2f6e5ab9cfa7c16d",
+      "storedEnglishSha256": "669bdf635c3714a682c75aff71ec13f5174b8784cb7c1e6f42230fe1c09c53ea",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-IV-04.json",
+      "unitRecordSha256": "4306a63e66602f4a9fa26e286643dd0732c19ee1ef2bef0308021de6909a67ed",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          24
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          21
+        ],
+        "earlyPrintedPages": [
+          55,
+          56,
+          57,
+          58
+        ],
+        "laterPrintedPages": [
+          93,
+          94,
+          95,
+          96,
+          97
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-IV-05",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "a699dca37375ee5b21b7efe0da49827dae77d5d6c4680863b3469f7c5053cd20",
+      "storedEnglishSha256": "ccaef4299bdf9916a7adad61e8782d957fbac1ddfb9f4660bb192f3d337a6f0f",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-IV-05.json",
+      "unitRecordSha256": "7a8992ab709036747cca5ba81ffa94e4337e975a0ef9f09a4fd33da6c553a93e",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          28
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          25
+        ],
+        "earlyPrintedPages": [
+          58,
+          59,
+          60,
+          61
+        ],
+        "laterPrintedPages": [
+          98,
+          99,
+          100,
+          101,
+          102,
+          103
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-IV-06",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "8a7ebab4c9c93665c2de608d17fc2047657cbb0067a0380179b2eb06ca111cf7",
+      "storedEnglishSha256": "e57136ac9eb35c0f3000298b1d29e8329c9c0a7ecc6a186ceb56b3dfa7caa90f",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-IV-06.json",
+      "unitRecordSha256": "c86b89b3969337f45b158921a3e9734b36be3a29cafeb1ae12cfe0760ac078a1",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          30
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          22
+        ],
+        "earlyPrintedPages": [
+          61,
+          62,
+          63,
+          64,
+          65
+        ],
+        "laterPrintedPages": [
+          104,
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-IV-07",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "e65f5c4974dd87de4fd6090dc22ed2d5acf000b752292edf0165a4b54d9a2bbc",
+      "storedEnglishSha256": "333f3b8460ac1bf9e23c479dcca61511235ef0b35d6f614fde75b59472275c26",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-IV-07.json",
+      "unitRecordSha256": "ab4bafe661f09da88c94516981a43b59010ad3c2b3baf471d8b3f9aae81c2cef",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          3
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          3
+        ],
+        "earlyPrintedPages": [
+          65
+        ],
+        "laterPrintedPages": [
+          110
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-IV-08",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "2f87ad55077400361d224119e1d5f4d1064beeb25dcfcf1e792cb4b6c3f14b0a",
+      "storedEnglishSha256": "d5fa567d50efe8f34f683c905756f682d35b49f416be1fe3680e750603ec1897",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-IV-08.json",
+      "unitRecordSha256": "d83b3e39d8d9a803d5f6ee57d592ab5e4a67c698e3613305956f07c4a1497e43",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          36
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          34
+        ],
+        "earlyPrintedPages": [
+          65,
+          66,
+          67,
+          68,
+          69,
+          70
+        ],
+        "laterPrintedPages": [
+          111,
+          112,
+          113,
+          114,
+          115,
+          116
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-V-01",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "87f1e4257d4a7c7be38fd4b9301569be2669f3025b71769692248d7887dee6ae",
+      "storedEnglishSha256": "7692707d77dda646227ae63e3ff0a12822ffd3e1fa04ea787aa71fc832c8f895",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-V-01.json",
+      "unitRecordSha256": "8067da5d4eeb2d81ba9050c2888f144b301f3c5e9e0af021e05398a724147b0e",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          5
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          4
+        ],
+        "earlyPrintedPages": [
+          72,
+          73
+        ],
+        "laterPrintedPages": [
+          119,
+          120,
+          121
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-V-02",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "15a590a53b7303d7bf16a216c0007941d09834436452168f34d35c23990d228d",
+      "storedEnglishSha256": "e5966d8fa674c37ad158cb4902f1a3eefc87cf367dc6a550c3a33a5ecd87efec",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-V-02.json",
+      "unitRecordSha256": "366a6e3119d1b8f7cea0fb371980bef80148e48fe764dee2421dd7fdf40c130a",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          12
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          10
+        ],
+        "earlyPrintedPages": [
+          73,
+          74
+        ],
+        "laterPrintedPages": [
+          122,
+          123,
+          124
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-V-03",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "71d536fd4104eaa72154375c94cb417ce12f55dc904033caa5af999210c70d11",
+      "storedEnglishSha256": "03b35ce03fe4c42438aefc75efe881a211db93e41ff824429f02d2e4babf7f22",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-V-03.json",
+      "unitRecordSha256": "27c6d79d9c2e33a4fca73c9c795df82f7776ff34375d94d69f453fb785614505",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          21
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          15
+        ],
+        "earlyPrintedPages": [
+          74,
+          75,
+          76,
+          77
+        ],
+        "laterPrintedPages": [
+          125,
+          126,
+          127,
+          128,
+          129
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-V-04",
+      "report": "nihaya-external-a.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "8dd07db70dd2463183df145f41b27ecae64f09ecd334237f733dc68cd96e73dc",
+      "storedEnglishSha256": "03d1a25b4ea6f6df815e23b5053b0f32c5d4161b46688923c24efaa5c11f9c3c",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_a/units/N-V-04.json",
+      "unitRecordSha256": "3f288c01f332fb907dc1ccf5d882ae296e9575b01eb2efd926f79403c759eead",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          9
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          9
+        ],
+        "earlyPrintedPages": [
+          77,
+          78
+        ],
+        "laterPrintedPages": [
+          130,
+          131,
+          132
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-VI-PRE",
+      "report": "nihaya-external-c.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "c5389fe638380c9f1780cf441a5bf53ba6cac6008e0e23a6533af748d0e93114",
+      "storedEnglishSha256": "aa31ac08c4b93fc30ced5816e15d0d045b70c33b8c896892cfdbace10ec86c6a",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_c/units/N-VI-PRE.json",
+      "unitRecordSha256": "8d135d6370ecf09814bd3c5e8818a9a25f0bae81875bc3460b9442b75c211640",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          1
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          1
+        ],
+        "earlyPrintedPages": [
+          87
+        ],
+        "laterPrintedPages": [
+          147
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-VI-01",
+      "report": "nihaya-external-c.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "d80a4a71c306d5574023d9ff25a1f04cc43d1c85397a805912f77de9a0441c93",
+      "storedEnglishSha256": "b486e2de73787baf70b8a8dc11f642464cb899d1fba388cd6205d03fc9ec8e77",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_c/units/N-VI-01.json",
+      "unitRecordSha256": "e98f129aa41c6733d519a5f95efaa9034a79c0413a5017a900bae2a636e6ad74",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          19
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          13
+        ],
+        "earlyPrintedPages": [
+          88,
+          89,
+          90
+        ],
+        "laterPrintedPages": [
+          149,
+          150,
+          151,
+          152
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-VI-02",
+      "report": "nihaya-external-c.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "5450d475bbff6e349742e4a65011ea501f4772a54bfcbc8dd939b6fa1a4fb6a8",
+      "storedEnglishSha256": "d8cdc5706c25f31bf604a4204fcb599faa8b8822309078f8da08615598ab92b6",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_c/units/N-VI-02.json",
+      "unitRecordSha256": "0f90d37359246f2e19adf8b679c95ad199f09612a688508b9729e6bc011378cf",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          15
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          10
+        ],
+        "earlyPrintedPages": [
+          90,
+          91,
+          92,
+          93
+        ],
+        "laterPrintedPages": [
+          153,
+          154,
+          155,
+          156
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-VI-03",
+      "report": "nihaya-external-c.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "ceb12d99a256f066d4b682792e13a99f2310fb17929afd13165ef3dc42c25b25",
+      "storedEnglishSha256": "d50bc8f78611b192407ccc2d9c257617511eb3d443336c98b8cf1a19e1e1a9e1",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_c/units/N-VI-03.json",
+      "unitRecordSha256": "a0da16e8e7efca0effc6413baa4b6dc5057c528da3fe8f18e65aff1c04b95a32",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          8
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          6
+        ],
+        "earlyPrintedPages": [
+          92,
+          93,
+          94
+        ],
+        "laterPrintedPages": [
+          157,
+          158,
+          159
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-VI-04",
+      "report": "nihaya-external-c.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "971690f765c70f81df279da930bd9c3b1b38ec06aa5adaccde7a76444536f785",
+      "storedEnglishSha256": "07f803803a54644244deffcbbcde51a457dd3b000fcac3f39fe4b192c7f289e1",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_c/units/N-VI-04.json",
+      "unitRecordSha256": "64dad11f5782c798ca446b8bc1098a30a9cd886aa3f52df42d25b141d46dac62",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          43
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          27
+        ],
+        "earlyPrintedPages": [
+          94,
+          95,
+          96,
+          97,
+          98,
+          99
+        ],
+        "laterPrintedPages": [
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-VI-05",
+      "report": "nihaya-external-c.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "b15305a766f1b77b95542543e264421ea401aca93c4dd30eb4360fd54092d321",
+      "storedEnglishSha256": "67a00d700f66f729d2cf95d05ec5ab3f531eb9c89c658b528ade407e8510bbd9",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_c/units/N-VI-05.json",
+      "unitRecordSha256": "6a60779e1deb3389cd9eb3bbf644f1e93f27c6ad1d14485ae8845dfad3570b07",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          27
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          19
+        ],
+        "earlyPrintedPages": [
+          99,
+          100,
+          101,
+          102,
+          103
+        ],
+        "laterPrintedPages": [
+          167,
+          168,
+          169,
+          170,
+          171,
+          172
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-VI-06",
+      "report": "nihaya-external-c.json",
+      "sourceStatus": "complete",
+      "storedArabicSha256": "5f8b74198d8387b2a9d6a4f67f3d996de6eac5a54382ec68aed240467902d49f",
+      "storedEnglishSha256": "c72f7a36c2f2e9b7afb7b6232cea4d295864336506fdda4e00e6c8ed90a988f9",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_c/units/N-VI-06.json",
+      "unitRecordSha256": "66322b8fea6f60287cb3a942ebf5ea041ffe59501c0a9b914cd3c87348f8b5fb",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "storedArabicParagraphs": [
+          1,
+          24
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          20
+        ],
+        "earlyPrintedPages": [
+          103,
+          104,
+          105
+        ],
+        "laterPrintedPages": [
+          173,
+          174,
+          175,
+          176,
+          177,
+          178
+        ],
+        "allBoundariesAccounted": true
+      }
+    },
+    {
+      "id": "N-VIII-12",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "7bae98b503f5e9d25d2d33eb67cfece0e87982229e9c3eaea92be3ffb1a8675e",
+      "storedEnglishSha256": "70889c2ac276f8840615770e0f9f43f8908d9cfe41a3c6f893c2bc416e8d6736",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-VIII-12.json",
+      "unitRecordSha256": "b87ead8c053bee33301f5503732d39ac64d701e42dbf3c96df69c819511d05da",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 25,
+        "comparisonSegments": 5
+      }
+    },
+    {
+      "id": "N-VIII-13",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "1d6b17eb3a9d0e82157a98ddc4acfff8cedf292fda185a6913d4e5109f0c3942",
+      "storedEnglishSha256": "266bf6b7a01ed2f9a45d91e213012a7b27fea877b9a88ea0786b5150854e5ddc",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-VIII-13.json",
+      "unitRecordSha256": "06ece5dbaecf888c41cbf5a228d00ea10f88a9434ca0a64e2611e895c5e28fcf",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 31,
+        "comparisonSegments": 5
+      }
+    },
+    {
+      "id": "N-VIII-14",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "def80125cc3c827f510240399e60a25121476065241d43e4f0893dcb500a815a",
+      "storedEnglishSha256": "1625611cb32082918ba149103afe67372ac13755fc4d9bb54d1173a5d5cfd259",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-VIII-14.json",
+      "unitRecordSha256": "4b7ee2d17d05d93eb4c8a6d791a3883c1e0878a56a4ea9433b22d5e9d2859661",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 13,
+        "comparisonSegments": 4
+      }
+    },
+    {
+      "id": "N-VIII-15",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "991cf2430421d72943a5445745a906b2a87d1dfdb73727abd63421360a535739",
+      "storedEnglishSha256": "a596ca876481b77075e4f2e15b607fbbeba4eb73a01ed8a67e0aaa9df65b2daf",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-VIII-15.json",
+      "unitRecordSha256": "84ca48a67082dea3718cdad5ee03b92c165d1df60c29765896e43763c3778f19",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 5,
+        "comparisonSegments": 2
+      }
+    },
+    {
+      "id": "N-IX-PRE",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "95c8207e2c33210e26e7bc9611c4cd80768b42f8ffd1b29c8710f03481cf4693",
+      "storedEnglishSha256": "99dae7e832cce5ebce1a274719fbb0c850ba4e03ff40d9339f0fa35d482b562c",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-IX-PRE.json",
+      "unitRecordSha256": "0cd4544a56c3d149564fbb3724c995f624f02eec742f7113b1481d12f8609438",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 6,
+        "comparisonSegments": 3
+      }
+    },
+    {
+      "id": "N-IX-01",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "42f4a58bfaa2107f0bd2f0c9c64e6cd78fae639805306a634a4825aa4d12f743",
+      "storedEnglishSha256": "ff05fd2ff9d2f6275862f8e06fe3ae0c846ac416d9b495168021fa9f5210f121",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-IX-01.json",
+      "unitRecordSha256": "a848558f211a0c9482a4d8ff01f6719824e8019afd31f14467c5a46daae885f1",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 12,
+        "comparisonSegments": 4
+      }
+    },
+    {
+      "id": "N-IX-02",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "fbfd74edb74b7c8090403a059f73ed2936080b5a2a29c80db913481091184cdf",
+      "storedEnglishSha256": "17f6576f0405ab11e81794a5d2ef344e6beaa4a31b53e4f02fe2c4526fe3a9fe",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-IX-02.json",
+      "unitRecordSha256": "15926dad82a8dc8321f947782b41df5c464459986538681ee9a25e0b720d4099",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 24,
+        "comparisonSegments": 4
+      }
+    },
+    {
+      "id": "N-IX-03",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "f7471a6f2bc93a938bdca640aa682fe6cddb6bd75e6a697ad405df28036985bd",
+      "storedEnglishSha256": "73f64894027f954000fa3391e3718e731c4a47fb2b19fc286eaf74d23c056858",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-IX-03.json",
+      "unitRecordSha256": "02bd40e05c67ae81f4d81fdfbe44e34cfe781d0c79d30aaa7a483b57da6a5f6d",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 5,
+        "comparisonSegments": 3
+      }
+    },
+    {
+      "id": "N-IX-04",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "4b988e6fe1538f7479b40be2d9cd583b3bd5d73dfc77be4abde9d998ccd89eea",
+      "storedEnglishSha256": "29ee332d6a2e19f69c316e946fce8dacea17df1635c15dafb96d2425a6b65cfd",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-IX-04.json",
+      "unitRecordSha256": "b4886d79bbeb2d0964ab6210b85712a80cb7a8363477a9a269e5f0393e42b60c",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 9,
+        "comparisonSegments": 3
+      }
+    },
+    {
+      "id": "N-IX-05",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "4a012a05d4006897a3816bc4078f34402569e1b1c5941a180f7ccd5a12faa189",
+      "storedEnglishSha256": "472b162e2e592fd9b1dfcb57fe1d7332879403074ba698b81c4d4630730fd5e6",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-IX-05.json",
+      "unitRecordSha256": "b9ba6a33df8982656eeb1bc23dde280f3d30910855d9fb40c0ac6234d5dd0cf2",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 7,
+        "comparisonSegments": 2
+      }
+    },
+    {
+      "id": "N-IX-06",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "6bac222a053be2e0fd913c96a059fbe4bb5a51f0394b3e50ed198c74c941ef94",
+      "storedEnglishSha256": "fcd40680ac7c5e1dde7f4c282be628569ab28ab6cecc0144039397e490800a3c",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-IX-06.json",
+      "unitRecordSha256": "3b6dcbd044aab36a8954a0f57076f5f6b37acc87a709fc6ca9de83273b3ed68d",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 7,
+        "comparisonSegments": 3
+      }
+    },
+    {
+      "id": "N-IX-07",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "ca43547e77d1500edb650c8c61d69a2ce5c391d27f04d66b4779b5a7f0d44dae",
+      "storedEnglishSha256": "96fea55f3eab790aed38cfb249f4e1524a72d860c2d89e6956fcd813522ca7bc",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-IX-07.json",
+      "unitRecordSha256": "a1cbe6db76a6a9112c5f89a720552d25adda90640d43c09885c243b80edf0e2f",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 20,
+        "comparisonSegments": 4
+      }
+    },
+    {
+      "id": "N-IX-08",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "48d6f2fe7e0ed3a83969af0bf93e6e638ef7035ae04e80f82b2dceeb03b2075b",
+      "storedEnglishSha256": "0081eae02e74b42a3537dfadb2dbb0a487806c7de713b40b9cd81b40969cf7a9",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-IX-08.json",
+      "unitRecordSha256": "6aca4038b06d7c9356e8ba0f099654eb8202056b214bc4dd1333a222c0039ebd",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 27,
+        "comparisonSegments": 6
+      }
+    },
+    {
+      "id": "N-IX-10",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "9fe8f119db4a23dd4791c407b706c18e26905e9663fb8036aac192429674bb89",
+      "storedEnglishSha256": "dad4070c4cb58c8f1afe83f617394fab0ca683a69cba97d3abfb9d449e81e0a6",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-IX-10.json",
+      "unitRecordSha256": "d6df8bea98df6f7c89f7f82178e23dd23ced8056254b462bd2e656fe1ef411a8",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 9,
+        "comparisonSegments": 4
+      }
+    },
+    {
+      "id": "N-IX-11",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "d3014a2ec2e1ebbd235fc6a18c17fecd57e363688e8b8d6a52b721c623b64b72",
+      "storedEnglishSha256": "5de14e5922fe6d3eded0efdf29741f104028a1b15a0b9b2d007df5c3a69a7195",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-IX-11.json",
+      "unitRecordSha256": "46628db3c5dc21f7febc27f3b684b7fb5886b4585031d08a73a3da6b8e17cd8a",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 29,
+        "comparisonSegments": 5
+      }
+    },
+    {
+      "id": "N-IX-12",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "fed763636adff45c7b161e3f9bee508eb0b0db64a147f30f29760b24b535da71",
+      "storedEnglishSha256": "0463d8cc8062994e66751d711d693a27ecba830aefcc6853c13a07d095287faf",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-IX-12.json",
+      "unitRecordSha256": "7e84033a200f3de9cca6679c317d3407b998d124f5797bc764ac459372e47d3c",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 10,
+        "comparisonSegments": 3
+      }
+    },
+    {
+      "id": "N-IX-13",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "86daceb494c0ac447f5e8f6a906f080585dda18f44e845579884322e142bfa44",
+      "storedEnglishSha256": "1d8cd5145982933f135c8ca9a437ceefee71d34c971559b498d376d5a2115223",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-IX-13.json",
+      "unitRecordSha256": "b4fba551fbea66573eeeb7debceef3f6beff35155f758b965a276d1165a97805",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 4,
+        "comparisonSegments": 2
+      }
+    },
+    {
+      "id": "N-IX-14",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "0aa15aae449540c7eabde62e66ab1dc2d4811d9cd1b4db77f0525f423f9112bf",
+      "storedEnglishSha256": "c5a94d8d4b501f5dc9388f56a12498cdbd656c9e628d48080cfa0a4216b9ae7c",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-IX-14.json",
+      "unitRecordSha256": "8258db2b6977765d76755edab4fb3c730509c0f0a355f68732adc9c281299611",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 17,
+        "comparisonSegments": 4
+      }
+    },
+    {
+      "id": "N-X-01",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "02d312eca39826a81bc40c1b5a569d705ffa26e2a0e2fcfc5216481b228761a6",
+      "storedEnglishSha256": "186bd3f7211c83fcc9a8f70e4ffdde1e7a39cd6f1caa73a598316a51d0931e52",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-X-01.json",
+      "unitRecordSha256": "a50cd1ea0d31a3d03be080852b70c0ca113a978953d6c1a01f392646f00f9765",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 18,
+        "comparisonSegments": 4
+      }
+    },
+    {
+      "id": "N-X-02",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "deaaa221a4917c1197581790927608ba6ce50fce6cc864861b593d0bbc575828",
+      "storedEnglishSha256": "98ea02d3d4d47a080d91ec04de071bb8aed7600003d29d5e320f4d997f8d92ca",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-X-02.json",
+      "unitRecordSha256": "d333b7249305b0c447884d35e409d8df0dc0a498c2496b73950cde3bf05e1610",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 18,
+        "comparisonSegments": 4
+      }
+    },
+    {
+      "id": "N-X-03",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "5fb7dd9f655651c3f955badf2cb1034e1e08d564a3ecc74f786b3f911f9b5901",
+      "storedEnglishSha256": "13f48b700c3434ba8b450da33c9f8aa319e8bcd57e6de3db89270d62b9b3dc4b",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-X-03.json",
+      "unitRecordSha256": "d6a6f8de7f970cfa9499b7fb4622d07ef2d7e878f6d2d6bc2f731aa1c7c503af",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 8,
+        "comparisonSegments": 3
+      }
+    },
+    {
+      "id": "N-X-04",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "bfd1f24d7130f314f7f30bdf388a8133e6105ed59eceb16e7e8eb2b5837b2a57",
+      "storedEnglishSha256": "7b5654fd0348b3e346b9cbb7f2efaa4e7dffc032587f94ed448e81a2382646ce",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-X-04.json",
+      "unitRecordSha256": "2454c0a33ee6dfbcb2954a52a2b2f5270ff807196fc9739707417bb1bf233afe",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 6,
+        "comparisonSegments": 2
+      }
+    },
+    {
+      "id": "N-X-05",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "1a68b04344f03cf44688873a6d05c564792b8e4e07f16ef5ba1f7df06957a00a",
+      "storedEnglishSha256": "785aeabf1e767d980134fa69a4baea44c795354968438907edbfe268699ca265",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-X-05.json",
+      "unitRecordSha256": "a5e7832fed727684593ab4e998d4a956fbea380dd20e87b1f9c20c9fc38f7f1d",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 10,
+        "comparisonSegments": 3
+      }
+    },
+    {
+      "id": "N-X-06",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "b549d07c4985567e4ca8edb461af686eee8b4097c5c7aeb3a38fa2a84094e0af",
+      "storedEnglishSha256": "64fc17c187221ff5f79270d99e18b9c36401a3e553775fa05476258c0596b1d6",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-X-06.json",
+      "unitRecordSha256": "05b3c077ae60aaca56828655f368b14365655539989dd45dc9e2410489e02eb4",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 8,
+        "comparisonSegments": 3
+      }
+    },
+    {
+      "id": "N-X-07",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "3e47ab8a89caf0b881675fdb0f3021df9842cc7fe0468fa926916b341815dcdf",
+      "storedEnglishSha256": "190674ce3496a5e2b060c237e4c9bb4706667463e71805c27f1b11dcdea4e869",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-X-07.json",
+      "unitRecordSha256": "93696483bef58c0ee27c5eda5df4f7c60afc32305235fd8bd2ee0222c5644dda",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 3,
+        "comparisonSegments": 2
+      }
+    },
+    {
+      "id": "N-X-08",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "415bb63edc427025c7e404dd1222d49547359acb9452dfde0d74adfafb14c411",
+      "storedEnglishSha256": "2483d74e0ed10ea3a86e0d313a64c6a3ca504717cd2dbe10beb8333fa0b59b62",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-X-08.json",
+      "unitRecordSha256": "19fcecaa9ec900ec5da5f64f4cc015565973f826fb423ff6cb60fb85630b3e01",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 4,
+        "comparisonSegments": 2
+      }
+    },
+    {
+      "id": "N-XI-PRE",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "ea87e30b33d3f4ea6eb8ff85142d5ef4dcc47afd77f9ed2b15cd1637dcba8d56",
+      "storedEnglishSha256": "855c5ddc505417ea81f0b423bf5fe9c5b53c60ae2a7a3d4d4e3e92a4d32fb4d3",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XI-PRE.json",
+      "unitRecordSha256": "e42c23cd718222a2af926b0b2aa5f9416f6291d1db2aa677fbd50e0be66026ae",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 1,
+        "comparisonSegments": 1
+      }
+    },
+    {
+      "id": "N-XI-01",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "55a2b154200ffd858f203e513fa58796630796e935abca2468120ebac83e59c5",
+      "storedEnglishSha256": "b5dae06f95f76015e1a636b9e0cde733c96550a639a7549abdc8ff7c8726fd74",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XI-01.json",
+      "unitRecordSha256": "592df88b7dc60ff39a2f192b692db928da52f53d89317a994fcd1090deec710f",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 28,
+        "comparisonSegments": 6
+      }
+    },
+    {
+      "id": "N-XI-02",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "bec9c1266dbce15500e182b312b1e6701fb7ea3fc02740b2eb35779c69ef0343",
+      "storedEnglishSha256": "3db0cc3687f0ea8b61b01627437cc0cc7c8069ca78698bf06cb66fc01d37c1be",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XI-02.json",
+      "unitRecordSha256": "0ff2097c0c79fe5022f02dca50f18235f1733332a92479cdc82b97f26308d0e7",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 17,
+        "comparisonSegments": 5
+      }
+    },
+    {
+      "id": "N-XI-03",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "9b5d5b353d01aa6295a85177ccbf9ce70d537801d833f916b06856432d9ee564",
+      "storedEnglishSha256": "8bae5daf068cd14056b85ea9a52c9343c848350f945fa9f59dab972cdc18836b",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XI-03.json",
+      "unitRecordSha256": "90c104d097cbb4aaa95d56dcb27bc34ad0d11124bcc824d59157c18d3c08e2d0",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 20,
+        "comparisonSegments": 4
+      }
+    },
+    {
+      "id": "N-XI-04",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "9697fda32618b7747f183dbb2f69a3ead4a210c74c33643d6ced715ba8f135f2",
+      "storedEnglishSha256": "460e1479d072ababf999da116ea3f381abfd416c08d6e7de66e51efa55408d20",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XI-04.json",
+      "unitRecordSha256": "d98c6df98f2db3ae6d4aab8c7ec099838ae08a4cbe90fbb3ca7e324ade35d35c",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 9,
+        "comparisonSegments": 3
+      }
+    },
+    {
+      "id": "N-XI-05",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "8ac7758ab2043f5d036cdebbd9f8193cd34a642558cdd3c00891c2f410b52d98",
+      "storedEnglishSha256": "c4ef18c50c1f99b42ecf3937b0082efadc1079e3076395b62b29d6770156226c",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XI-05.json",
+      "unitRecordSha256": "9e55c273fbad8da4049f1027ebe6a3cf1415bc3e79d514c108f4b50ae1d7c5ef",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 8,
+        "comparisonSegments": 2
+      }
+    },
+    {
+      "id": "N-XI-06",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "6cf1cce5549d59e9dbc4376461ff17c054c96c1c38a266df5278c4fa5e25edf3",
+      "storedEnglishSha256": "6aa7cebf3dd308031d07d2338fec1d976ad401bf0cf5bdf25108cfa672d308f4",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XI-06.json",
+      "unitRecordSha256": "2930a6a93ccebebd0552ace185ab8533b25fce4063ca999107a1b0c6e127ec9a",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 7,
+        "comparisonSegments": 1
+      }
+    },
+    {
+      "id": "N-XI-07",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "5a0222f1e91aa15bf9cf57320dd159202a1158971ed9133ed304300eddb3f583",
+      "storedEnglishSha256": "8a5c46e0aa761f72c2de36c2ac9d226107b314a228091e0cb418749bf5b968fa",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XI-07.json",
+      "unitRecordSha256": "d459f7f17559bad7a3889eef9d1b095aba850bde48f5bb03c4caede203ad8ec9",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 6,
+        "comparisonSegments": 3
+      }
+    },
+    {
+      "id": "N-XI-08",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "80c7adbcd4a1a81e5bbe5ba83be6c9e0d1ac821be1396c1ac1b6629fd062fbb3",
+      "storedEnglishSha256": "4c7ce9d795f5204ee34462aa970fbe04bc198cb3e14b62b9f9307be87c85be53",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XI-08.json",
+      "unitRecordSha256": "48becf24b9e8915b66db066f327a9e09beb723d2dd38accffd4f31c169465965",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 10,
+        "comparisonSegments": 3
+      }
+    },
+    {
+      "id": "N-XI-09",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "bae44f056e5355963e8f3aa339130e879a401785c98647b07c3a29e56761588d",
+      "storedEnglishSha256": "e5ce7d49a3fcdc1eb0ff3e0a54adc4fec9c36ca1d0e51a4489e0068aec82a2df",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XI-09.json",
+      "unitRecordSha256": "d5825b0c5938b9021a158338f4463af02d77efb85ad14010c3f99b126bfb142f",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 30,
+        "comparisonSegments": 5
+      }
+    },
+    {
+      "id": "N-XI-10",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "abcfd660770f2572292ba276d119e21a80b5e3590fbe7d4491682ae76dfe72d6",
+      "storedEnglishSha256": "c9722158b709deee0183ec09ba23347e85c2cc899cff029b6b3a73905458c569",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XI-10.json",
+      "unitRecordSha256": "2b542631d6e9eb7f30ef3f039851d6e5c2fd71fc21e773d037dbc7095f6e2b08",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 23,
+        "comparisonSegments": 4
+      }
+    },
+    {
+      "id": "N-XI-11",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "31b1acc13af4d42f5ed184d4bb7e954612e8b73c60db2fa2e7418f38fdc109aa",
+      "storedEnglishSha256": "79594ddcdf94c69b4feeccae9f83dd50e3c1b7b7ae768cad55e61337389809c2",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XI-11.json",
+      "unitRecordSha256": "aad3ad2e27623d60b3961f43404df62c2d0a1b9f2375a86b1fd6a0ccdf666536",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 3,
+        "comparisonSegments": 3
+      }
+    },
+    {
+      "id": "N-XI-12",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "eaff78d3906af47d48fc199e957c5ccec374e1474f61eb4b150b27df258d5952",
+      "storedEnglishSha256": "f3a2fcf167004a6f52709e88af4c32867f889d4dcb7417f7a8d5056e8cb607d3",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XI-12.json",
+      "unitRecordSha256": "599d68b3b3a2c20b2dd03b64c5af4b845b4fa604b5c2907d01ef02395a24206d",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 7,
+        "comparisonSegments": 3
+      }
+    },
+    {
+      "id": "N-XI-13",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "5f30703e50c882630d764cf8a40ff083f3ec155822eb1fab5ca250367a007a50",
+      "storedEnglishSha256": "a387ba51fd8ba5ec4e7549b0b52c47ca397d923371a18db17c1a1208bcbc55d0",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XI-13.json",
+      "unitRecordSha256": "ad8db0c208c66fc8b61ae9823d0d0e8b3d1e5ddbd7b7de32dd8d02dac12cbb33",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 7,
+        "comparisonSegments": 4
+      }
+    },
+    {
+      "id": "N-XI-14",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "aa554fa95893c1e4b919efc36139588868686f41038a2e2bea740a5f7e2becfb",
+      "storedEnglishSha256": "593442983b19769591bf9c516f925da926f51f83478711d7b7f12992fbecd57b",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XI-14.json",
+      "unitRecordSha256": "22dc862344853331124c91adf4b86da897c28b37d7660c1dea9d88df715027f4",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 6,
+        "comparisonSegments": 2
+      }
+    },
+    {
+      "id": "N-XI-15",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "70e2b0117dfc1442a20222457792d982374f388756914f6e6ba55d8e734fa706",
+      "storedEnglishSha256": "22a8151f7f21c2e7014328aca3b338c7d798d92db60505d04c0057d4dc3b66af",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XI-15.json",
+      "unitRecordSha256": "be29962aa6330ef9e6ed27b758def05130196f1434639c741af456ab3414f646",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 6,
+        "comparisonSegments": 4
+      }
+    },
+    {
+      "id": "N-XII-PRE",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "c1e9659930ec838c85ca964a510ba6ac6d49e8f1efe080bf6da1a111600df9d8",
+      "storedEnglishSha256": "5828e269d1f1637a6e3f73bd421735f12ea1b16471ce9a8a1d9ce9fc064edcfe",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XII-PRE.json",
+      "unitRecordSha256": "1cf5577339519568c7a40034816bb2ae03ed8588e522a3d18c4337d24018a96c",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 4,
+        "comparisonSegments": 1
+      }
+    },
+    {
+      "id": "N-XII-01",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "817e263fa9861602a8a84d766cf6b787589b0c607c528847936ece7c26692736",
+      "storedEnglishSha256": "aa00df6dcad04622aaeabd302f725868081450b301c1d3dcd99d337450c89bbd",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XII-01.json",
+      "unitRecordSha256": "643497d0b4ca9f8bd29095a2487254e5a5e5683536ac2afba36a61645e7249eb",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 11,
+        "comparisonSegments": 4
+      }
+    },
+    {
+      "id": "N-XII-02",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "ea838401ab2b22fff286af86e51634fb142cef65fe505ead4f992b59f9232e92",
+      "storedEnglishSha256": "44630cb9288b5e38472bc5932a9adf861f8366540a3a2f9b15fb6683da3d1b58",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XII-02.json",
+      "unitRecordSha256": "07dcfdc21b051d447cdcfb990c4cf4662c6ccab8e6b530075074d2fc7c13a83a",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 18,
+        "comparisonSegments": 4
+      }
+    },
+    {
+      "id": "N-XII-03",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "be7cb29a399d272abc79694094ac70d9a38550a6205a480e7abf48c2fe10fb88",
+      "storedEnglishSha256": "a37fa6364ea3d60a39855acf5deb8c61c0bef7388be258c09455293ac7e0b591",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XII-03.json",
+      "unitRecordSha256": "8c34a89cb68087fa08d104e363c7465e84c564b41cedab7c263850d7f74b5fb0",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 7,
+        "comparisonSegments": 3
+      }
+    },
+    {
+      "id": "N-XII-04",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "8d7c658685914866ecb5281a808ef5d444c14a0672abb3ded183b86973aea0f6",
+      "storedEnglishSha256": "7acebc148666e4a475c1f190c7ae303a98fd6fce4b4a3b476361bd55252cebb4",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XII-04.json",
+      "unitRecordSha256": "7137dafed6776b17ac4f4515d46ea9e3f2df15f97a710812dd84246828b85192",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 17,
+        "comparisonSegments": 4
+      }
+    },
+    {
+      "id": "N-XII-05",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "cacdb0f19dca70378eaebed5f2454f800ab75a6b8c5f01e59a9681f8b9643bde",
+      "storedEnglishSha256": "7868f62039305c5b630f63440daf8b31ad1b7c637c14be53df6fbc517b821e79",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XII-05.json",
+      "unitRecordSha256": "8b36e2a337891bb014e5561cd84d8126d97cbf6615031420dfa5602fe06d58aa",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 10,
+        "comparisonSegments": 5
+      }
+    },
+    {
+      "id": "N-XII-06",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "6843c760c352be78de6fa8d06408ad0763ec8a064d3440f2179bac29af56b1a3",
+      "storedEnglishSha256": "68c4ae168e8d44bde21676454a177caafc0e77716f4be2fd69410f8199323d0d",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XII-06.json",
+      "unitRecordSha256": "6e1192b2f38d0265ca2ee776d77b9dbc40195793f457930145ebb27fd18ef85a",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 15,
+        "comparisonSegments": 5
+      }
+    },
+    {
+      "id": "N-XII-07",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "ca6717f12a013af6fe29ed599caa38106b529e382bbd5ec5fd7424eaf2dc81e5",
+      "storedEnglishSha256": "3feb0a926baa2ed82727311d7c8504cb28e35323bfa4e82e6b160c5b5319c500",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XII-07.json",
+      "unitRecordSha256": "03d4c855767e368832cfaeb289ef94949ea609fa61f4f0653d1d7f7f8ca32124",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 5,
+        "comparisonSegments": 3
+      }
+    },
+    {
+      "id": "N-XII-08",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "a3ea888eb9fa92920e3138e9f6390ec47a8f197d927b5fc36d43789a4c86e292",
+      "storedEnglishSha256": "e5887532f7f1f8a65425a6342626dc970e42ff2dcc3fe8f9531dbe868277680a",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XII-08.json",
+      "unitRecordSha256": "b1122d2f93269a0f606efc8759e44010a9b6e82d6890329d74353c989fec0af7",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 4,
+        "comparisonSegments": 2
+      }
+    },
+    {
+      "id": "N-XII-09",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "677b93bc476f5d55fdb81a1ce3734a4338dbdbfd0b8e49d1e6a5786140006ab4",
+      "storedEnglishSha256": "7aa76b3bbc2029c64e8bcdd0cfbd317bba96d7bfb414ed0c089687330d6bdcf3",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XII-09.json",
+      "unitRecordSha256": "c814c5b4d19710201c48244549c42aa5e10fd577a2b53492c74a87de30840b60",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 22,
+        "comparisonSegments": 5
+      }
+    },
+    {
+      "id": "N-XII-10",
+      "report": "nihaya-external-b.json",
+      "sourceStatus": "complete-full-unit-external-comparison",
+      "storedArabicSha256": "2679752ff7ee25d2fbbf40db6dcbe217181a39ff07db65798c914971dc8fbfc6",
+      "storedEnglishSha256": "e2b4fa3b3b53a38024db81e23b191a22f55a93f991ed3f3b028d2b862e861f0f",
+      "canonicalHashesMatch": true,
+      "unitRecordRelativePath": "stage9_nihaya_b/units/N-XII-10.json",
+      "unitRecordSha256": "729d951584078c3d995fc677beec7f8a38b12acca9288c55b0d4dc6531829ef3",
+      "substantiveRecordMatchesAggregate": true,
+      "boundaryEvidence": {
+        "hasExplicitBoundaries": true,
+        "arabicParagraphLedgerEntries": 5,
+        "comparisonSegments": 3
+      }
+    }
+  ],
+  "evidenceFiles": [
+    {
+      "relativePath": "nihaya_witnesses/scan-10.jpg",
+      "sha256": "7a7ab1350a40ed8c1645557ce3026fe91ae50cbd6d12b8256e7c6812c964bb0d",
+      "bytes": 182132,
+      "existsAndHashMatches": true,
+      "kind": "full-page facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000637/10/full/!1600,2200/0/default.jpg"
+    },
+    {
+      "relativePath": "nihaya_witnesses/scan-7.jpg",
+      "sha256": "f6573fa5e0f01efb687b37f7e3af265b65d0a012a81211a4ac65df6c0aafa0a7",
+      "bytes": 162747,
+      "existsAndHashMatches": true,
+      "kind": "full-page facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000637/7/full/!1600,2200/0/default.jpg"
+    },
+    {
+      "relativePath": "nihaya_witnesses/scan-8.jpg",
+      "sha256": "f3ed9c1186a86de532599e6db78aa247eac66d43d43ecb95639fbec6e1d8a0e8",
+      "bytes": 220653,
+      "existsAndHashMatches": true,
+      "kind": "full-page facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000637/8/full/!1600,2200/0/default.jpg"
+    },
+    {
+      "relativePath": "nihaya_witnesses/scan-9.jpg",
+      "sha256": "8e8c5593837bcfc2255eabd8b9c072d74c602a9732ef341c49d2f7cd1d882ecd",
+      "bytes": 214578,
+      "existsAndHashMatches": true,
+      "kind": "full-page facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000637/9/full/!1600,2200/0/default.jpg"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/html/1642-7.html",
+      "sha256": "82077c1527aeea933bece8704e638479cc88de422ea8aed2b256ab6104bd1b24",
+      "bytes": 114333,
+      "existsAndHashMatches": true,
+      "kind": "1417 digital base rechecked for proposed corrections",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=1642&page=7&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/html/3108-1.html",
+      "sha256": "54bd9759f6a6938b36a8c60d1f13beb088557eae5644b4a175248b86c48e79e1",
+      "bytes": 88933,
+      "existsAndHashMatches": true,
+      "kind": "1428 edited digital chapter and notes read",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3108&page=18&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/html/3108-101.html",
+      "sha256": "a2a20b9852e797437909ebc86cbf615b4d3289aa0609eb669f414fb8137fca0f",
+      "bytes": 96635,
+      "existsAndHashMatches": true,
+      "kind": "1428 edited digital chapter and notes read",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3108&page=119&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/html/3108-121.html",
+      "sha256": "ce33ce66a9110f6f0d7067040cd34e0402a7acf890535f99b2649a89eb6ec38b",
+      "bytes": 100637,
+      "existsAndHashMatches": true,
+      "kind": "1428 edited digital chapter and notes read",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3108&page=130&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/html/3108-141.html",
+      "sha256": "87523158fefceb5e0bc80c562ddca7f73c2d389bbd5a55b241f2c288a3483491",
+      "bytes": 89269,
+      "existsAndHashMatches": true,
+      "kind": "1428 edited digital chapter and notes read",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3108&page=160&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/html/3108-161.html",
+      "sha256": "e25d640226402ef417bcb483ddd36bf410555620bb5ed6899d34987ed5de3bd0",
+      "bytes": 105257,
+      "existsAndHashMatches": true,
+      "kind": "1428 edited digital chapter and notes read",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3108&page=173&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/html/3108-21.html",
+      "sha256": "a4f42a44b555513a5208ed094f47448ede9c468dab0925b71a1adfc5aa14a70f",
+      "bytes": 108046,
+      "existsAndHashMatches": true,
+      "kind": "1428 edited digital chapter and notes read",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3108&page=38&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/html/3108-41.html",
+      "sha256": "2130c2a20dcf6028d479667c1814a53c819040ea5d46013aad77fc27ac94d898",
+      "bytes": 85597,
+      "existsAndHashMatches": true,
+      "kind": "1428 edited digital chapter and notes read",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3108&page=59&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/html/3108-61.html",
+      "sha256": "6c0af383b4b60f276253be9b6b7ea7018a85ed9e45c8ab132cf8e099bfd517a8",
+      "bytes": 100042,
+      "existsAndHashMatches": true,
+      "kind": "1428 edited digital chapter and notes read",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3108&page=71&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/html/3108-81.html",
+      "sha256": "ba418890779b5b02f391f404978e0672322c763123f97db0ecf5c2493dc52379",
+      "bytes": 100047,
+      "existsAndHashMatches": true,
+      "kind": "1428 edited digital chapter and notes read",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3108&page=98&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/html/3109-61.html",
+      "sha256": "8c10c36edc4a87bb87ba16f7a043478090d32b93109639d8d87c870e2870bc63",
+      "bytes": 93737,
+      "existsAndHashMatches": true,
+      "kind": "later edited digital text HTML",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3109&page=80&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/html/3109-81.html",
+      "sha256": "32c009bd029be4dff32a11047b4cf5340efb2fdefb33920e2266777da52cacae",
+      "bytes": 101435,
+      "existsAndHashMatches": true,
+      "kind": "later edited digital text HTML",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3109&page=100&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/princeton_aco000637_lo.pdf",
+      "sha256": "78389f6e923ac7e7a7028f42abf913b88644e6298a8c1c955f75b9d1fd4e3bba",
+      "bytes": 29589735,
+      "existsAndHashMatches": true,
+      "kind": "early printed witness PDF",
+      "sourceUrl": "https://mc.dlib.nyu.edu/files/books/princeton_aco000637/princeton_aco000637_lo.pdf"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-012.jpg",
+      "sha256": "366c0b7152db161b2da1d71dc8d3e924f0be948eb2090b14b2c29a7a794d7334",
+      "bytes": 396699,
+      "existsAndHashMatches": true,
+      "kind": "full-page early facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/12"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-013.jpg",
+      "sha256": "28a60545f6a838bc9094661a3401a335c97439fb6eb02bbb9c4d6cdcd28fb3e8",
+      "bytes": 438932,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/13"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-014.jpg",
+      "sha256": "6d73f435f11dae4fd99d44bb8e06c3936eb0ba30d0d4d045f56f53904a72b044",
+      "bytes": 481965,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/14"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-015.jpg",
+      "sha256": "e60fa8e57f89b96b87d7c2e51b7821c41eab4f85fb5594d7a22e945d27967312",
+      "bytes": 469492,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/15"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-016.jpg",
+      "sha256": "92014b4a83c5972e6d1b0eafd5cbadf0ff79335cb418724a4d884d75cb3edf94",
+      "bytes": 458655,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/16"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-017.jpg",
+      "sha256": "fd62e93f4994c1f0afd2294e082bea905215f9a3f6262b146c3863d1f27792bd",
+      "bytes": 453083,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/17"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-018.jpg",
+      "sha256": "c9113dd078b1156a200f69aafe215b6493a5bde3d4c991b30ca824cd34368763",
+      "bytes": 482691,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/18"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-019.jpg",
+      "sha256": "09e772aaecc963024a380792edc8a79c2d19f5edb0c66328848c1f8e2a340588",
+      "bytes": 482263,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/19"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-020.jpg",
+      "sha256": "f017b4d2efb321bd5a15892fc1bbe9cea8a78ec7e7dd47a27491fe11419c923d",
+      "bytes": 457333,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/20"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-021.jpg",
+      "sha256": "a7d60521600de9b53515ae1346f70fa129b41c0f8a88237c5e2d108009f9d5ef",
+      "bytes": 426373,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/21"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-022.jpg",
+      "sha256": "a6d913e660c6f639af472e69da3943ce17e79a91ab76f502f4e9db61ec5ae696",
+      "bytes": 464561,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/22"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-023.jpg",
+      "sha256": "4432e58eed9d79edae021c3b1133a7f73a20dfc3c47bf7b450e65cf8ffdba046",
+      "bytes": 445451,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/23"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-024.jpg",
+      "sha256": "fd455df7432ef50e1effaf65fed739773d54d4b05b2e3fbbe7b0af3ce604924a",
+      "bytes": 418801,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/24"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-025.jpg",
+      "sha256": "4f601294c103d062f70167a600302012d0ed9df2de82aa0a1e100c3dd8373684",
+      "bytes": 438732,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/25"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-026.jpg",
+      "sha256": "fec3dcad6619c33594d4bbc42333b69b9fa9e1b954a9e4f40ef16fa6059c148b",
+      "bytes": 441750,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/26"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-027.jpg",
+      "sha256": "e56b236e01a46a7e946f97d272443d657c286d7c3a23593966cdc4c612e97453",
+      "bytes": 464773,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/27"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-028.jpg",
+      "sha256": "f4acfa33110ce7c7c423a998d6ac8350f9a70629380f8e7f8ea0e8b277f02686",
+      "bytes": 472497,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/28"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-029.jpg",
+      "sha256": "6f748d55dd6f7561b63b9a9cbb02a4255ec1190b7f82b3d99cfc0854d419d59f",
+      "bytes": 332873,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/29"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-032.jpg",
+      "sha256": "3f2ad75844a8c2a6aca28ba60eca136a78c6969b8ee1aff628dbbed278561bb3",
+      "bytes": 418304,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/32"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-033.jpg",
+      "sha256": "9cfeb63ffc03c9a45dcef43642d2cd620e751559961e255e6470497d5b34ee1b",
+      "bytes": 453124,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/33"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-034.jpg",
+      "sha256": "3c4b6639255c261bc9d7de45276be04c15bf6c876bf7ae1d3c4db3c3d3b28201",
+      "bytes": 419615,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/34"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-035.jpg",
+      "sha256": "10e5761d3d685ae09d2dc66b77aa6b553ee8c77768b4d9c62088d6df3840c171",
+      "bytes": 424814,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/35"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-036.jpg",
+      "sha256": "485e55b376313f1225cc94d00e4123aacdbe80bcfd51fedae435d108aa690683",
+      "bytes": 375453,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/36"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-038.jpg",
+      "sha256": "5e08ac854f9e9c77215e3691a00eaeb3a33459456f3733325ea66d36565d8f09",
+      "bytes": 396749,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/38"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-039.jpg",
+      "sha256": "b2ade3275edc9feeed7b314fbc96c88a8e004318a713f0e86bfb3a6be29356b8",
+      "bytes": 457090,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/39"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-040.jpg",
+      "sha256": "518f293d897b7e107525abf7a37dd4eda54284b60ddd0bb18b953ebffc8c812c",
+      "bytes": 481117,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/40"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-041.jpg",
+      "sha256": "d3a566726f71eff332d6a118d4b84a2bcaec48720f4832abbdc0ac5bc7952097",
+      "bytes": 462736,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/41"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-042.jpg",
+      "sha256": "38d14b05d679bc352bcac40b5a299490b5b27741d8568519de809ab6187b3d89",
+      "bytes": 470261,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/42"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-043.jpg",
+      "sha256": "121e3e9004a3bcb30ccb9c5be77a289624c04ab71484b8e4b14143a0bed29a15",
+      "bytes": 466196,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/43"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-044.jpg",
+      "sha256": "ae80ed7d9038b06fd73e78ac7705ac21bb2533a6968db50354dc3b29f9921de4",
+      "bytes": 307590,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/44"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-045.jpg",
+      "sha256": "25add1970e393886b6e9c02f711a3b4494d95713477f2eb0ca59b9b048e942a4",
+      "bytes": 351078,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/45"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-046.jpg",
+      "sha256": "cf204a876618d38508875cf553076574ca3b1d23284d4cd8b1734f20d1facef3",
+      "bytes": 420020,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/46"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-047.jpg",
+      "sha256": "08df4bfa00adc6f9093c87a6783ebf2823e0f5560be0aeb6a7a5013d5a90a4ba",
+      "bytes": 472248,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/47"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-048.jpg",
+      "sha256": "e2f602886d8d5212a2156f973a873395ec8a1727499cd2a18fb14594a9967412",
+      "bytes": 466734,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/48"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-049.jpg",
+      "sha256": "38470e51b3f7e0b687691640fab9966b572e7517f9713cf4e95db882b33953a4",
+      "bytes": 488686,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/49"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-050.jpg",
+      "sha256": "e5db098d7bddc9e627f6fa4d1c63079b1ae24349a2cc5bffb001a88d87aa6851",
+      "bytes": 416613,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/50"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-051.jpg",
+      "sha256": "340693c2853bcfc3602cac154022df18a102d3b11aab518326c3231e743d2596",
+      "bytes": 455817,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/51"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-052.jpg",
+      "sha256": "99d5861ecc24e40e64dea5b7e4cfba5137c52b3a3bc2a1f720f64c28832a0756",
+      "bytes": 391925,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/52"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-053.jpg",
+      "sha256": "09bf3682dfc2b9162930c7df0ca496e9ff50b6f812bfbc1e24b0e555d9f1b9b3",
+      "bytes": 457147,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/53"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-054.jpg",
+      "sha256": "ec0119764bfae555d12c49695feb8bd2ac5dc76c9911fcedd97a037afc1075c3",
+      "bytes": 459576,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/54"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-055.jpg",
+      "sha256": "6b5384042cd2844925b8e38a7e440e9837ae763595e508e299dcba0eb3e514e2",
+      "bytes": 433380,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/55"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-056.jpg",
+      "sha256": "1a5b003434e530627966984c36ffbcb83ecc2c72e93268e7f5550b39b3139f24",
+      "bytes": 483847,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/56"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-057.jpg",
+      "sha256": "2d243ebe5c9981ebcc88f4cdf95a3f364555c1afed5e3f1422a43cb3575cbab4",
+      "bytes": 468928,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/57"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-058.jpg",
+      "sha256": "338be3eed82e4a80e9694cfd4451a2b38badf1b8dbe2c4557bc50fde72dbaaca",
+      "bytes": 477743,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/58"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-059.jpg",
+      "sha256": "91855c2362a9c4c5421e8a2d09e1861cf81795dd9ab8269d5fc3bec635946f98",
+      "bytes": 420741,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/59"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-060.jpg",
+      "sha256": "ff0dccffcd0688dca4b67f35df60375383ee72d277fdb97db246a1a6e149da1c",
+      "bytes": 479410,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/60"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-061.jpg",
+      "sha256": "02667676e37137d84a9f005b652ab9e61fae1593535c86a7c0f4aa148c9203d2",
+      "bytes": 452306,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/61"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-062.jpg",
+      "sha256": "004b1151754241bd6c53eabf50d0057e6e9fdd0e908fa6284d873af3b5b54ca7",
+      "bytes": 438063,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/62"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-063.jpg",
+      "sha256": "89a5e715bcd8f9a699bd62103fa5d36e290f8e1bd052d7649b0473088fd3b1cb",
+      "bytes": 452517,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/63"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-064.jpg",
+      "sha256": "af2b56516e9a7a8d89bf4c19814ee0ef5801db8b381b28a10f6879c63dda2eb0",
+      "bytes": 475598,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/64"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-065.jpg",
+      "sha256": "8f903f7861f2f81e495163ac7ec8d19cc8d3d5eb76b3d0a96757146397ab658f",
+      "bytes": 418503,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/65"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-066.jpg",
+      "sha256": "000bb5c37ccc3bda5b6e997563fa04a890b08384ecc30a41cab86fc91ad980d7",
+      "bytes": 476066,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/66"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-067.jpg",
+      "sha256": "8e61600b582af737768f1896e835207971a178ec0d3a8a3fe0481512e53eaaf3",
+      "bytes": 462273,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/67"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-068.jpg",
+      "sha256": "0d18f87f13973f4cf1c26c91dc4c2698e75a8ebb0d5646c9ba6737ef4584ff5b",
+      "bytes": 442278,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/68"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-069.jpg",
+      "sha256": "abf79f6b2fa05ca90edbef9fc2f308c368c4193da88ca73159c5fcc259762fe0",
+      "bytes": 392617,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/69"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-070.jpg",
+      "sha256": "40d0670af4fac97e72e62c2bde6e262868f19fc43a545b2e671635fa607ac283",
+      "bytes": 468395,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/70"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-071.jpg",
+      "sha256": "20ae214cdd00c20262fd7426ff54711ee20f5a7e4b1b3f290ae77bfbcb508451",
+      "bytes": 474314,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/71"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-072.jpg",
+      "sha256": "d01b9a6842ffa833cd6e2a86e57d22a37592f0f9c78d7cafca08a0f09d5bd04c",
+      "bytes": 439352,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/72"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-073.jpg",
+      "sha256": "47ba99bc8a45bb5d6881cf9cf9093d6b989224863e6973ec47fd080855913478",
+      "bytes": 421306,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/73"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-074.jpg",
+      "sha256": "a7712e2c81d9b43517b42b4ec484f1d36599e558e35ce52d89e1d37d6f3ba739",
+      "bytes": 337669,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/74"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-076.jpg",
+      "sha256": "1c3661c40bcd581d707d3358f551029b6dea48a3d459a30cc33fef2c18311a1a",
+      "bytes": 401248,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/76"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-077.jpg",
+      "sha256": "4ba972809820e5f1ddd46d0f044f4c121b595b2b25b4132e3059e97b0cc10095",
+      "bytes": 406333,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/77"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-078.jpg",
+      "sha256": "8c1937dc1de2933f9b14e3d681050b3ea6c2b58d8be05fa875be9841eb9927f4",
+      "bytes": 421621,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/78"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-079.jpg",
+      "sha256": "5de9d5fd070b898b493abe5e4431623285917152364c9e0fa8b1623ec3eaeb9d",
+      "bytes": 464084,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/79"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-080.jpg",
+      "sha256": "cc7b8a78534e714306d8ba3f73fb90c3f5cf947ecb37077329225b47fc069314",
+      "bytes": 473672,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/80"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-081.jpg",
+      "sha256": "25d4b034deabe74d007867e937a6d4e3aff4c9c8b0008a4d7f6f705dcd4701c5",
+      "bytes": 422565,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/81"
+    },
+    {
+      "relativePath": "stage9_nihaya_a/scans/early-082.jpg",
+      "sha256": "b515d539246689232422f483b62c05c7edb3d51de7f8320b693ac005fcf9c4e2",
+      "bytes": 427494,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/82"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/html/3109-101.html",
+      "sha256": "b4a8753a10e328462d3d2bccd8233c4c93888bd0ac35025256052324acc7b6e9",
+      "bytes": 105234,
+      "existsAndHashMatches": true,
+      "kind": "later edited digital text HTML",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3109&page=120&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/html/3109-121.html",
+      "sha256": "a4b5741acf00e3aa80a52f2b4141aa22bfc480ce4d8dda7a3c507e5fbd416d76",
+      "bytes": 93576,
+      "existsAndHashMatches": true,
+      "kind": "later edited digital text HTML",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3109&page=140&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/html/3109-141.html",
+      "sha256": "b40ed5a167b766eff74275a6f75442e1f7a71fc179a4928057c023ba2a12bbfb",
+      "bytes": 96249,
+      "existsAndHashMatches": true,
+      "kind": "later edited digital text HTML",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3109&page=160&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/html/3109-161.html",
+      "sha256": "93d6f007faafb859aa35c7c8cccad054d7ecc02922d94e54c4e68edbde34803e",
+      "bytes": 100786,
+      "existsAndHashMatches": true,
+      "kind": "later edited digital text HTML",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3109&page=180&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/html/3109-181.html",
+      "sha256": "d50c5d922a13ed1b23a1e2be4686e0df90450b97254181e58b257a58f2ff17dc",
+      "bytes": 106124,
+      "existsAndHashMatches": true,
+      "kind": "later edited digital text HTML",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3109&page=200&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/html/3109-201.html",
+      "sha256": "4e63908e3d73b882bdde87b6db7b72fb34ce9c3b6dc4d937512af0b4e5046036",
+      "bytes": 96968,
+      "existsAndHashMatches": true,
+      "kind": "later edited digital text HTML",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3109&page=220&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/html/3109-221.html",
+      "sha256": "e94eb648281923f1b977657ce38409ba847c03fe722c32356ad729a10ba9721f",
+      "bytes": 109654,
+      "existsAndHashMatches": true,
+      "kind": "later edited digital text HTML",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3109&page=240&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/html/3109-241.html",
+      "sha256": "ee8e4bfe64d107c8fb1c52fb16db1e184c416c3d14bf6f2b9e4645b64612d20b",
+      "bytes": 110886,
+      "existsAndHashMatches": true,
+      "kind": "later edited digital text HTML",
+      "sourceUrl": "https://lib.rafed.net/view.php?b_id=3109&page=244&type=c_fbook"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-190.png",
+      "sha256": "7d837f8990022c4ae23c89e94a81c72fdb7778cdfa6ed4db2d87499a687e5662",
+      "bytes": 640312,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/190"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-191.png",
+      "sha256": "f4fc4ad2149f7c3378328df16d270791b28c03da194937ae93545742da3608ec",
+      "bytes": 680279,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/191"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-192.png",
+      "sha256": "bb60b3059790ca3a840fcb26380d85737906813abb3d57814dc22fa00acaa66e",
+      "bytes": 660570,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/192"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-193.png",
+      "sha256": "477e28ffac3b59d8d789a681371f82a4f20e8578e0b9d930e68103b33aa2b2e6",
+      "bytes": 666175,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/193"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-194.png",
+      "sha256": "94ae0e44354ab521864a49e68514b938bccd77e8b153dcd7fd03550be1cac343",
+      "bytes": 688185,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/194"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-195.png",
+      "sha256": "827a9cb3c4af85094690f136ba1b50d838f42ae922ecf5fc7ac8e3d22a18fc3c",
+      "bytes": 686950,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/195"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-196.png",
+      "sha256": "638c4e9d571b878094460f6f14ce185f2dd3912cbba37a152e58a46383c423a2",
+      "bytes": 609823,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/196"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-197.png",
+      "sha256": "915ceea4ac57cd8218c3415e7203b996d896c9bfc558322ecd82266d14cd4408",
+      "bytes": 658883,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/197"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-198.png",
+      "sha256": "4729e6d5599ca753ee15060556c6761fdf8b6bda9c2aa3419dfa38913113d9af",
+      "bytes": 639651,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/198"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-200.png",
+      "sha256": "da16a2b4165ba12f2f622d71d1d307674376136c3b670d41d986a8542b3dafda",
+      "bytes": 570554,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/200"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-201.png",
+      "sha256": "6bd512d50188b4820bebcf2c657ff455c3d19df9d0dd66f922a8cdef180cb342",
+      "bytes": 637258,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/201"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-202.png",
+      "sha256": "fa6fdc7e66c354cabd5223a266608b33ab7800c9e2e8e82f73686b09d3fadf98",
+      "bytes": 636515,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/202"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-203.png",
+      "sha256": "a0578a668845e660c950ee276da3ee22ca12fd38bdbf482644ea070fd3993dab",
+      "bytes": 678593,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/203"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-204.png",
+      "sha256": "9654726ab48e64df42a5581cb7325368711bfa6f6dda06bffe23202c961b39ea",
+      "bytes": 668999,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/204"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-205.png",
+      "sha256": "a79d81cb1ac768f3c380aeff58b0bc43fd3ab0b5ff595550ed13754d5a877ac9",
+      "bytes": 625579,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/205"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-206.png",
+      "sha256": "1ef341d7aa06213331fe9bd226a1dcb48d66ea908b0971b9b444a2fccc5cc1b3",
+      "bytes": 644078,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/206"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-207.png",
+      "sha256": "8d9b362412aec8ec8593860551ca1021773ff8eb1b62ac9e00d8c780e89d6cee",
+      "bytes": 635801,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/207"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-208.png",
+      "sha256": "2a2f00e331f9058466bbc42e57d129bb049e4e8bf47dd18b554ba87400391188",
+      "bytes": 604907,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/208"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-209.png",
+      "sha256": "bde4c47b496a93fd0ef4a399cb277b768e39144aae2602473e93bb717eea513a",
+      "bytes": 608619,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/209"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-210.png",
+      "sha256": "55dce8fb706ae81f6241ff442a14fb2371b7b92328a8d9748d3a8766828ddf7b",
+      "bytes": 650394,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/210"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-211.png",
+      "sha256": "2074c635cf550645716e17cbacb297bc5b8c3f06ef967c0061b66b5564caf3d1",
+      "bytes": 638193,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/211"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-212.png",
+      "sha256": "63b2a1e93054494a0fd07c62d7d2e96ab4d302ad829b9e66b76c2c9886a21607",
+      "bytes": 650292,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/212"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-213.png",
+      "sha256": "e876f265c02f4ce914fd9e0c57f49ded54f901d675dc9ddc502650f0c5fc6e27",
+      "bytes": 646611,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/213"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-214.png",
+      "sha256": "6561a4e438a4ddc6f0b5e8099f5554136fa97bafe8682715c7a81ba2b37a9c5e",
+      "bytes": 648866,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/214"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-216.png",
+      "sha256": "01ebc8e5a17ad327645452438ab403370bc42bb1094baee6b72093b17f258302",
+      "bytes": 635078,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/216"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-217.png",
+      "sha256": "ff7da46520ec568655976aee18d365678355f2e5c2fa16b2ca5f31ed37525e2e",
+      "bytes": 641901,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/217"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-218.png",
+      "sha256": "8b2bbebe0a76e77eb097883c0d4a8def2c606dcf919797c892f4b64c6e524812",
+      "bytes": 631425,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/218"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-219.png",
+      "sha256": "576fb7770e0ea2b555a5f0353803d565cae17c01ab8f17baa28b7c3c8443a5a8",
+      "bytes": 688731,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/219"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-220.png",
+      "sha256": "b95ca4aa1c7fa440f963bb64f907f1f9dbe1e959aa8fcb57d9e44913eb5b460e",
+      "bytes": 609051,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/220"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-221.png",
+      "sha256": "b5e864709d590473297cc712631e31cd097b54bd4668fbb2d242f3fdaa0e84f8",
+      "bytes": 622403,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/221"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-222.png",
+      "sha256": "e20e8bfa3567c02f00477d25b724957dea9d0f6121ff0a1911e6853ea0a3ceac",
+      "bytes": 629312,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/222"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-223.png",
+      "sha256": "ce071ea76cefacb808b9157efaf7bc9a0d5836e713e5a0f52361f6a889a06228",
+      "bytes": 660875,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/223"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-224.png",
+      "sha256": "b445d9a14625718fcc170ad645ddaa1f55b139e264dc9adcd9766fe6751d4d6d",
+      "bytes": 620689,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/224"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-225.png",
+      "sha256": "733eb041c73dad4919626a89c4f5874c7d224c296f0b86d53b9629f41e98b3bc",
+      "bytes": 555334,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/225"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-227.png",
+      "sha256": "8d132334bd91449195ddaf5865b763b312ecfc968b897c66840ba6f229e30f0f",
+      "bytes": 562838,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/227"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-228.png",
+      "sha256": "785c170df681e9faef332c30b02cbe989ffacb8e3c9b53a773f33e706d9249b2",
+      "bytes": 584446,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/228"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-229.png",
+      "sha256": "de5751646aa5f5cf8813f39560dd3c028d7d5acf5303e6150050f83251fbaba2",
+      "bytes": 695531,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/229"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-230.png",
+      "sha256": "3fe50a26e81e94d913d0c71051b45aebd737d0df1c85eff11af58a204d29d7a2",
+      "bytes": 624786,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/230"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-231.png",
+      "sha256": "5b39b6ff8b5b657b1a7f52b610498d39d01efc36cf89699d9dc6a64344c7e572",
+      "bytes": 660169,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/231"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-232.png",
+      "sha256": "5efe45c755e914653e1f1117d14116fffcf03deb06a3f80d5837c1da094ff3a5",
+      "bytes": 666315,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/232"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-233.png",
+      "sha256": "12c14e105edb8672a1761d009f581a859e2462bfee1a611f9b3170653583c3eb",
+      "bytes": 629403,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/233"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-234.png",
+      "sha256": "ad235f9b41af5be2d3df6738aa0416f914bfd156a227ed84b3f532a2878b2f25",
+      "bytes": 594353,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/234"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-235.png",
+      "sha256": "e81871998de2f88401c7d1fbf989d1cb376fb4f7a56ee92322b71b163a2365c0",
+      "bytes": 615147,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/235"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-236.png",
+      "sha256": "6a50cf74c8e0c7efdd2622bc7d2fa8c8b307230028273fdfcc20e4e91545ee93",
+      "bytes": 614847,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/236"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-237.png",
+      "sha256": "d0d82bced0e8a049eb40c60e9330d30a9342079ff16d2de919adf02730cc6f78",
+      "bytes": 622828,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/237"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-238.png",
+      "sha256": "e91c92e9a15833f455bfdecd40f6ad3b1e96d82df9b2580c8125455eab24a500",
+      "bytes": 589420,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/238"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-239.png",
+      "sha256": "d6ec5c9383e038d12a034b26ed2902d8630e93ecd668f7cde4c7855e785c15e6",
+      "bytes": 531115,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/239"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-240.png",
+      "sha256": "caeb614833fcb577c82fca2ab85d879b11f8cea3edcc080d832ba892fa222b9f",
+      "bytes": 615107,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/240"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-241.png",
+      "sha256": "9e7ed6e91d88f403d723ca5c519f6b84ad0e1ac61917a6dff21c1c876f8e895d",
+      "bytes": 695461,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/241"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-242.png",
+      "sha256": "c7f76c74dc696f170af4da1eaf472e0f8fb9bb49f8bc310bbbf490772970c9c2",
+      "bytes": 644047,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/242"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-243.png",
+      "sha256": "422a9b80a9c5d12a1796b97d98b6a8e2a032b5ac6620789469462188827812a9",
+      "bytes": 670200,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/243"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-244.png",
+      "sha256": "b21fa0eeae93e3edef37314394039bfa0f641f0e8c42862313091661e9a9e6d1",
+      "bytes": 630928,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/244"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-245.png",
+      "sha256": "b7530a56ab293984a26c4e5c866392df9708b4c7e375a411b5dae96a749b6504",
+      "bytes": 645950,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/245"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-246.png",
+      "sha256": "69f32afaf32f2ad2123bcedc3e383fdd322f0437be9bc8f7aba9b4c6227eb47b",
+      "bytes": 637305,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/246"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-247.png",
+      "sha256": "6858bfaec1431d9cf1afa93e26eafcbbb299909ee174d31193e85a72b69a8c50",
+      "bytes": 571159,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/247"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-248.png",
+      "sha256": "97b1210099850f9515faf301c38e9b0eed1f6ada1b4857d95a97f1f16cdbed45",
+      "bytes": 614674,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/248"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-249.png",
+      "sha256": "bcbe826091519798539e87ccd619175e6edc5ac12b56c19a6b3eabed843e93fe",
+      "bytes": 655062,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/249"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-250.png",
+      "sha256": "0687edbaea88f9830f3a232c559bc75371e59eac55d2ccccbf496abcf265a939",
+      "bytes": 629290,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/250"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-251.png",
+      "sha256": "3787dcb02d9415eb941cfcb2b8dbf27431d69c1383dd1a669bd702f0f7305ea5",
+      "bytes": 593042,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/251"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-252.png",
+      "sha256": "746f3fc0ef54ed82dde80d18e163d96d8c03d8fc3f723fbcff574baaf0708eec",
+      "bytes": 604657,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/252"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-253.png",
+      "sha256": "f3a1b7cae81fdad308b2a3dff10fc173f0f7b2ff270dc26246b75dd646460f7e",
+      "bytes": 615734,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/253"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-254.png",
+      "sha256": "e4015bec00173fe5af6b9498f1ce95913a8d637020cc160c89725e2aba038379",
+      "bytes": 635984,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/254"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-255.png",
+      "sha256": "68767cec1b81bdbcf3446e3cb9c080785e716f6af585492d67571d232f3bff56",
+      "bytes": 668911,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/255"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-256.png",
+      "sha256": "076ee99390bd6b920972bf9c9e1c64ef03144baaea4d642f0bec4afb7ce3377d",
+      "bytes": 605529,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/256"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-257.png",
+      "sha256": "51ab341706a4d5a7744756e9d7ce5cf14462612b72f21ce6504bcab249f6d951",
+      "bytes": 604870,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/257"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-258.png",
+      "sha256": "597644267a93b403cb3b6cb3ca7f5298311b1445e2e641ac7dc6820626cf36a9",
+      "bytes": 643507,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/258"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-259.png",
+      "sha256": "5048c5916252a13c58bd97a74aed1b94f117928afcd0831a0aeb7ae39a583d56",
+      "bytes": 650125,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/259"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-260.png",
+      "sha256": "5a6f9f927bcd5c399d91e055f947fdec4719a0ab4afe80420a368c4c9b187d2d",
+      "bytes": 586142,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/260"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-261.png",
+      "sha256": "4f30cf140cc7634586a923f7b1a51180c0a23f77941de0b7a479f8102c50b9ae",
+      "bytes": 589124,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/261"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-262.png",
+      "sha256": "a294c1d6cd4e174ff3eac44fa4f5da7f05237f242cc5166e35f6b7458a9f7bdc",
+      "bytes": 610867,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/262"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-263.png",
+      "sha256": "560fc4ba98a3c1111d1dc2e9da2e31caf9b612595a94faaab39183e9ad576d79",
+      "bytes": 622580,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/263"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-264.png",
+      "sha256": "07a7e1f20e7afce1a7dfa85d88cc0e8e80081b4f143fee355c285e09b4c16c12",
+      "bytes": 566289,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/264"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-265.png",
+      "sha256": "6d5e6c0401d98880afd6a51dbc480ecc9d3862a58b31a9ba25439de589ec5180",
+      "bytes": 562156,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/265"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-266.png",
+      "sha256": "48e0fd92043825197a7ab766e5e031324a5a093bb70ca843aadd95631c214877",
+      "bytes": 647299,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/266"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-267.png",
+      "sha256": "a852215ffedccdc18039656678aed5da57c48ab1ee79d7df8a7dcac8e5097cb3",
+      "bytes": 583087,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/267"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-268.png",
+      "sha256": "a029c72fa2c954e2bb1d67ca3d4bd01b3db7d9d9ab087e1aa0cd81d511b232b5",
+      "bytes": 567874,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/268"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-269.png",
+      "sha256": "b0b87d354925bd90bc19083cc6ed9c21cee2eb521d9c7248465d5b7014ada4e5",
+      "bytes": 519277,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/269"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-271.png",
+      "sha256": "7d3114cbe3eacc7587955e8dfb0102fe21d7590abb2f2416637e4065a01058b9",
+      "bytes": 536110,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/271"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-272.png",
+      "sha256": "1d234dbf4d40277316b3c092156d4d62979b14b239528918a1ea04030a4421aa",
+      "bytes": 513507,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/272"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-273.png",
+      "sha256": "0d4848f275cd2afa298655df010d62250f91833e8d3dccb2ee4724aef47d872a",
+      "bytes": 640707,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/273"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-274.png",
+      "sha256": "ae9f71ba03454a457fe6451bd4a47309ce4841e9d3a3903f2deed5212242a58d",
+      "bytes": 603520,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/274"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-275.png",
+      "sha256": "240d1b51ebb70a938b16f3ab778c9eb0d264f8d9e08dad0cc31fdad4a323a373",
+      "bytes": 593948,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/275"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-276.png",
+      "sha256": "0546de0fba2701301167a20a00c81038df7b3972134d9d203021091a38813448",
+      "bytes": 610188,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/276"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-277.png",
+      "sha256": "2001fb6e0bfe911829638aa2ccad7b5560696a28889d8c377fc87f6d17004af0",
+      "bytes": 663444,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/277"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-278.png",
+      "sha256": "13b9744169292dd70f025abfd434a5ebac07aa7bde6dab4850d163f13e52c657",
+      "bytes": 672711,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/278"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-279.png",
+      "sha256": "2ba72285832a763b3c5c76eb5283d91fb3ff485495288164ae3643617fbc62b7",
+      "bytes": 641912,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/279"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-280.png",
+      "sha256": "f1a9ac0816a1dd1f331772758b96d12aae6096d11575bf4babdec07010a06570",
+      "bytes": 678158,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/280"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-281.png",
+      "sha256": "916b07753e9b91a231f44df9d4eac2189cb26c9fa8effd099d3e2873172c8b23",
+      "bytes": 583337,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/281"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-282.png",
+      "sha256": "ea57c97469d39fb6fa7ec32bd7e847c78af0ea620f8fc305e41a03ae37afce59",
+      "bytes": 658866,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/282"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-283.png",
+      "sha256": "5b6f78279d8e26ded26363f6a34a2958a9e67f1e19f27d7d4940545b31e75c80",
+      "bytes": 640428,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/283"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-284.png",
+      "sha256": "a3019133f2570aa0f5a6ba1a486b5b4b5c910669b23a03b74508d4eb8c7777f6",
+      "bytes": 644690,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/284"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-285.png",
+      "sha256": "20111562f9926c0b2001d4e6ff418650deee6b6b82830295a952364c126edac0",
+      "bytes": 666409,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/285"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-286.png",
+      "sha256": "601767f91fa60f45d5661e5a1479157c0b4d32ee986aef4ac6c6f3cf7bb52615",
+      "bytes": 645318,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/286"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-287.png",
+      "sha256": "57b0ac03f37d8afcf257c8bd381a72edc52578e8385befbffe28aaffe77a7010",
+      "bytes": 657921,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/287"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-288.png",
+      "sha256": "c0722cb4b2dc17651c0de6d91d42c3eeb237eb11ebdb25908937c0ef2c01f9fd",
+      "bytes": 595197,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/288"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-289.png",
+      "sha256": "ee2047d1a9f822733d78a1519b917c4145a26059c4f319cded6c4fb1aa7295f2",
+      "bytes": 674118,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/289"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-290.png",
+      "sha256": "7d9d7ae956072382fc0c49ee4252fd046dc9d9a27265aa1e9cefe168a63fee59",
+      "bytes": 697306,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/290"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-291.png",
+      "sha256": "e78f2b50f4c88c9776c233de7db04401f0889e72046984ab0550bbc05ebc7ec9",
+      "bytes": 660424,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/291"
+    },
+    {
+      "relativePath": "stage9_nihaya_b/scans/canvas-292.png",
+      "sha256": "7983063e38fd826096253aaaff6fb37bed2987328edcbab816a6b61b59d39131",
+      "bytes": 632888,
+      "existsAndHashMatches": true,
+      "kind": "early facsimile render recorded as visually read",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/292"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-091.jpg",
+      "sha256": "45586599a5c0a8246555f1e6801cce04e4b49b28154d1ee55ea3111d522deb55",
+      "bytes": 260818,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/91"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-092.jpg",
+      "sha256": "845c84e812b8c67f6ec05973a61c17226741ad722ba942ec3de48336233a5690",
+      "bytes": 307668,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/92"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-093.jpg",
+      "sha256": "2367bd11c6f591d9144acabd592234dc75f109edcbc8851af802c9ffeeba4a4f",
+      "bytes": 376658,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/93"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-094.jpg",
+      "sha256": "07dea2507cc902bd2122230958cb9861765f4e9c4f55b69ce0e625b16d913475",
+      "bytes": 348615,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/94"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-095.jpg",
+      "sha256": "f70018f7ba6bd7ad659452e1d4ced1b1ed027f7f4f925874be3c88f1c550a43f",
+      "bytes": 465973,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/95"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-096.jpg",
+      "sha256": "2067290f35b0f3cf999804227ef08824e488a1ed79133e040cb1d5da4cb8a5e4",
+      "bytes": 427850,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/96"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-097.jpg",
+      "sha256": "4e5095d59fdcc47c004b567dec27101c8ea9f83d06b12d5a06b2fe331c0f8807",
+      "bytes": 454971,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/97"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-098.jpg",
+      "sha256": "09c8529e0b200dfcce51036b40ad4b6310ba706b4876c3068c26002a5d2140ef",
+      "bytes": 420881,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/98"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-099.jpg",
+      "sha256": "7f3f9db1c315ecbfef5f58e5188c5f40091ca6727664cc5e9ab6cd697ec02a89",
+      "bytes": 457760,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/99"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-100.jpg",
+      "sha256": "6dc89465057546a108849573d66a13fcd02ada531edc47493dfda214e19675b3",
+      "bytes": 442405,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/100"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-101.jpg",
+      "sha256": "8ef27cd4fc7f69f1816fb55307d88417204ca667ac77125c56e2991df9e540e5",
+      "bytes": 455215,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/101"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-102.jpg",
+      "sha256": "c577a8c615fe77b11dde2d95b1f5615874342c8aa7fae568253387867197ade0",
+      "bytes": 454323,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/102"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-103.jpg",
+      "sha256": "3f4e2e4b66646d132cea336ae1352b70307609d7d996aeca35df06cf818d6685",
+      "bytes": 446906,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/103"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-104.jpg",
+      "sha256": "53c8648745cda2ff017bbb72d6e5c2b1ad21b9b2f3b30c4a7badf80bb56fcf9b",
+      "bytes": 450344,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/104"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-105.jpg",
+      "sha256": "a3503ac093bfa57e0d53441d0476776809555f33d3c074ba56852d5a5175b421",
+      "bytes": 452438,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/105"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-106.jpg",
+      "sha256": "66f25aaafacfbf0d76235003a63f4056451e8e69e17d24a2b38d7e865d746dbe",
+      "bytes": 472334,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/106"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-107.jpg",
+      "sha256": "e5c080041bd015323e2e6a5895a140c2034f1fd7ffd66bf5e39a7d63ca3456c6",
+      "bytes": 423633,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/107"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-108.jpg",
+      "sha256": "3b9eb10bf5697b160a931137821725ce6c78ceb0986b5be0de1f12af60f10bc9",
+      "bytes": 458532,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/108"
+    },
+    {
+      "relativePath": "stage9_nihaya_c/scans/early-109.jpg",
+      "sha256": "6da3c9784f421600b69314de1fae7a616d409dc5b76aaa70487ec5a3db3e120a",
+      "bytes": 430720,
+      "existsAndHashMatches": true,
+      "kind": "full-page original printed facsimile visually inspected",
+      "sourceUrl": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/109"
+    }
+  ],
+  "limits": [
+    "No new scholarly rereview or specialist certification.",
+    "1404 witness is a printed facsimile, not a manuscript.",
+    "1428 witness is its edited digital presentation, not a second visually collated facsimile.",
+    "Scans, PDFs and cached HTML are preserved separately from these repository recovery records."
+  ]
+}

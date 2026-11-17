@@ -1,0 +1,118 @@
+{
+  "source": {
+    "edition": "al-Manṭiq, Najaf: Maṭbaʿat al-Nuʿmān, 1968",
+    "metadataAuthority": "Princeton University Libraries record in Arabic Collections Online IIIF manifest",
+    "permanentLink": "https://hdl.handle.net/2333.1/q2bvqdn1",
+    "scope": "Targeted visual comparison of the table and final axiom, not a complete collation or verification of the 1402 printed edition.",
+    "manifestUrl": "https://sites.dlib.nyu.edu/viewer/api/presentation/books/princeton_aco000780/manifest.json"
+  },
+  "evidence": [
+    {
+      "canvas": 225,
+      "printedPage": 221,
+      "correspondingRafedDisplayedPage": 193,
+      "pageLabelQualification": "Printed number visible",
+      "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/225/full/!1600,2200/0/default.jpg",
+      "sha256": "05cd7408536b50a8371379111d88e1fb83bb7837e6d5cc1e117cdab77a80942f",
+      "retrievedFileName": "nyu1968-225.jpg"
+    },
+    {
+      "canvas": 226,
+      "printedPage": 222,
+      "correspondingRafedDisplayedPage": 194,
+      "pageLabelQualification": "Number inferred from visibly adjacent printed221 and223; heading page itself has no printed number",
+      "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/226/full/!1600,2200/0/default.jpg",
+      "sha256": "534cc352b6ab6d259514e549c1344915e62037600656cae8a192f95486f5f561",
+      "retrievedFileName": "nyu1968-226.jpg"
+    },
+    {
+      "canvas": 227,
+      "printedPage": 223,
+      "correspondingRafedDisplayedPage": 195,
+      "pageLabelQualification": "Printed number visible",
+      "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/227/full/!1600,2200/0/default.jpg",
+      "sha256": "13ee42d8006d5022482a92e937758db0c86dd96159a95ca0ccb887419c59b392",
+      "retrievedFileName": "nyu1968-227.jpg"
+    }
+  ],
+  "findings": [
+    {
+      "unit": "M-C-46",
+      "location": "Universal-affirmative column / predicate-complemented row",
+      "rafed": "لا ب حـ",
+      "1968": "لا ب حَـ",
+      "interpretation": "The 1968 page supports the C-complement mark supplied by the English reconstruction; the Rafed Arabic remains a diplomatic record."
+    },
+    {
+      "unit": "M-C-46",
+      "location": "Universal-affirmative column / both-terms-complemented row",
+      "rafed": "ع بَ حـ",
+      "1968": "ع بَ حـ",
+      "interpretation": "The 1968 print also lacks the C-complement mark. English I(non-B,non-C) remains a conjectural correction supported by the preceding prose argument, not by this table cell."
+    },
+    {
+      "unit": "M-C-46",
+      "location": "Row and column alignment",
+      "interpretation": "The 1968 printed layout confirms eight source rows (original plus seven relations), four proposition columns ordered A,I,E,O from right to left after the labels, blank inapplicable cells, and a dash for the O simple-converse cell. This supports the English alignment, not all conjectural signs."
+    },
+    {
+      "unit": "M-C-47",
+      "location": "Axiom opening, corresponding to Rafed194",
+      "rafed": "لأنه يستدل في النقض من صدق إحدى القضيتين على كذب الأخرى",
+      "1968": "لأنه يستدل في النقض من صدق إحدى القضيتين على كذب الأخرى",
+      "interpretation": "The potentially misleading term naqḍ is also present in the 1968 print. Its contextual reading as contradiction remains explicitly qualified."
+    },
+    {
+      "unit": "M-C-47",
+      "location": "Division equation, corresponding to Rafed195",
+      "rafed": "ب = حـ",
+      "1968": "ب ÷ ٤ = حـ ÷ ٤",
+      "interpretation": "The 1968 print visibly supplies division by4 on both sides. The full English equation can be identified as supported by this independent earlier edition, while preserving the digital source omission."
+    },
+    {
+      "unit": "M-C-47",
+      "location": "Added verb example, corresponding to Rafed195",
+      "rafed": "يجب / من يجب / يحب",
+      "1968": "يحب / من يحب / يحب",
+      "interpretation": "The 1968 print has the verb loves in all three positions. The English contextual correction now has independent earlier-edition support."
+    }
+  ],
+  "recommendedEnglishChanges": [
+    {
+      "unit": "M-C-46",
+      "field": "english",
+      "old": "This reconstruction is an editorial aid, not a claim that a facsimile has confirmed the missing signs or table layout.",
+      "new": "This remains an editorial reconstruction. A targeted comparison with the independent 1968 Najaf edition (printed p.221, NYU canvas225) confirms the row alignment and the C-complement mark in the predicate-complemented entry, but its entry for both terms complemented also lacks the C-complement mark. That second restoration remains conjectural; the 1402 printed edition has not been image-collated."
+    },
+    {
+      "unit": "M-C-47",
+      "field": "english",
+      "old": "Thus B − 4 = C − 4, and B × 4 = C × 4. **For the division line, the digital source displays only “B = C”; the promised division expressions are absent from that line.**",
+      "new": "Thus B − 4 = C − 4, B × 4 = C × 4, and B ÷ 4 = C ÷ 4. **For the division line, the Rafed digital source displays only “B = C”; the full division equation given here is visible in the independent 1968 Najaf edition, printed p.223.**"
+    },
+    {
+      "unit": "M-C-47",
+      "field": "english",
+      "old": "“loves” in the first two places is a conjectural reconstruction of the matching term required by the example.",
+      "new": "“loves” in the first two places is supported by the independent 1968 Najaf edition, printed p.223, which reads «يحب» in all three positions."
+    }
+  ],
+  "recommendedNotes": {
+    "M-C-46": {
+      "type": "Targeted independent print comparison",
+      "text": "Visual comparison with the independent Najaf: Maṭbaʿat al-Nuʿmān, 1968 edition, printed p.221 (Princeton/NYU canvas225), confirms the table alignment and the C-complement mark in the universal-affirmative predicate-obversion cell. Its both-terms-complemented cell still reads «ع بَ حـ», without the C-complement mark, so that English restoration remains conjectural. The 1402 printed edition itself has not been image-collated.",
+      "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/225/full/!1600,2200/0/default.jpg"
+    },
+    "M-C-47": {
+      "type": "Targeted independent print comparison",
+      "text": "The independent Najaf: Maṭbaʿat al-Nuʿmān, 1968 edition, printed p.223 (Princeton/NYU canvas227), visibly prints «ب ÷ ٤ = حـ ÷ ٤» and «يحب / من يحب / يحب». These support the full division equation and the matching loves example in English. The preceding heading page (canvas226, between printed221 and223) retains «في النقض», so its contextual contradiction reading is still qualified. This is targeted earlier-edition evidence, not a full collation or verification of the 1402 print.",
+      "url": "https://sites.dlib.nyu.edu/viewer/api/image/books/princeton_aco000780/227/full/!1600,2200/0/default.jpg"
+    }
+  },
+  "additionalEditorialChangesRequired": [
+    "For M-C-46 and M-C-47 Source status only, replace “The 1968 institutional scan has not been collated for this unit.” with “A targeted comparison with the independent1968 scan is recorded below; this is not a full collation.”",
+    "Revise M-C-46 Table transcription and reconstruction note so it no longer says both restored C signs and layout are unresolved at every facsimile level; only the second sign remains unconfirmed, while the 1402 print itself is uncollated.",
+    "Rename M-C-47 Three unresolved digital readings to Digital readings and targeted print evidence; keep the digital readings but distinguish the two now-supported repairs from the surviving naqḍ wording issue."
+  ],
+  "integrationStatus": "The three English updates and differentiated source notes are adopted. Arabic preserves the base digital record."
+}

@@ -1,4 +1,4 @@
-name: Daruri full PDF catalogue hyperlink audit
+name: Daruri published PDF and 120 signed-profile hyperlink audit
 on:
   workflow_dispatch:
   pull_request:
@@ -16,7 +16,7 @@ on:
 permissions:
   contents: read
 jobs:
-  verify-all-137-pdfs:
+  verify-published-and-recipes:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -25,11 +25,15 @@ jobs:
         with: {python-version: '3.11'}
       - name: Install PDF structural inspector
         run: python -m pip install -q "PyMuPDF==1.26.7"
-      - name: Validate PDF identity, destinations and 208k+ hyperlinks
-        run: python pdf_parity_ci/published_link_graph.py pdf_parity_ci/link_graph_report.json
+      - name: Validate direct PDF identity, destinations and signed on-demand recipes
+        run: |
+          if test -f daruri/dynamic-pdf/RETIRE_120.json; then
+            python daruri/qa/verify_stage1_retirement.py
+          fi
+          python pdf_parity_ci/published_link_graph.py pdf_parity_ci/link_graph_report.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: gnamma-137-pdf-link-graph
+          name: gnamma-current-published-pdf-graph
           path: pdf_parity_ci/link_graph_report.json
           retention-days: 14

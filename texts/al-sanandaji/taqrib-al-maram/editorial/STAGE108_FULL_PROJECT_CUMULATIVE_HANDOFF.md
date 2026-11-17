@@ -1,0 +1,52 @@
+# Sanandajī — Stage 108 FULL TWO-VOLUME CUMULATIVE PROJECT HANDOFF
+
+**17 November 2026 · ordinary Chat · not an incremental-only handoff.** This document applies to the complete recoverable *Taqrīb al-Marām* project, its Volume I and Volume II, all printed sources, working bilingual masters, historical variants, apparatus, PDF/HTML exports, reader assets, missing-material ledgers and open scholarly proof obligations. The independent *Tahdhīb al-Kalām* project MUST remain separate. Historical Chat conversations and every archive gate remain OPEN; do not archive, delete or merge old sources.
+
+## 1. Authority, original images and two-volume crosswalk
+
+- Primary single printed witness: `Volume_I/Original_Bulaq_1318_AH_Taqrib_al_Maram_scan.pdf` (Būlāq, 1318 AH), **632 physical PDF pages**, SHA-256 `4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134`. This original includes **both** volumes. One-based physical PDF page = printed I page +13, or printed II page +295. Numbered printed I:1–280 and II:1–335 = **615 original printed positions**.
+- All 280 original Volume I `Volume_I/source_images/I001.png` to `I280.png` are retained byte-identically and rehashed against `Volume_I/SOURCE_IMAGE_SHA256.json`.
+- Volume II original source is IN the same complete original PDF. Recovered Stage38 embedded source images for II:215–314, Stage107 page renderings for II:223–230 and three new same-print magnifications are all included. **Derived images are not independent witnesses**.
+
+## 2. FULL cumulative Volume I bilingual master and all source data
+
+- `Volume_I/Stage108_Cumulative_1401_Records.json` (readable current canonical working data), `Volume_I/FULL_CUMULATIVE_STAGE108.json` (compact), and `Volume_I/Volume_I_FULL_CUMULATIVE_BILINGUAL_WORKING_MASTER_Stage108.md` (**all 1,400 active bilingual working records**) are present, in addition to every Stage84–107 cumulative JSON, historic English text, variants and original overlays preserved in their original paths.
+- All **1,401 stable IDs** retained (one retired hidden non-source record; **1,400 active**). Stage108 changes ONLY `I044.upper.02`, `I045.lower.01`, and `I045.lower.02`, previously Arabic-empty. Previous interpretive English, locator anchors, and title/proof state are retained in `stage108_prior_working_*` fields in the same records, with no silent replacement.
+- Printed I044 upper after the previously translated `I044.upper.01` and before unchanged `I045.upper.01` is compared for exact source boundaries: the upper page ends `... مقولة بالتشكيك على` and I045 begins `أفرادها`. Do not retranscribe I045.upper.01 when explaining the join.
+- I045 lower is **one continuous printed lower register** but inherited working IDs `.01` and `.02` remain separate. Bounded selections now preserve the difference between **الماشي** (the walking thing) and **المشي** (walking) alongside **الموجود / الوجود**, which must not be flattened into the older interpretive summary. Independently prove all omitted clauses before definitive publication.
+- Volume I **1,300/1,400** active records now have at least some typed Arabic, **100** Arabic-empty (88 lower, 12 upper). THIS IS SOURCE PRESENCE, NOT FULL TRANSCRIPTION/TRANSLATION. All 1,400 records retain their independent proof obligation in `Volume_I/Stage108_Open_Proof_Obligations.csv`. Earlier unclear I026.lower.02 connective before **فإنه حينئذ** and I043.ruled.01/lower.01 duplicate-layer question remain UNRESOLVED.
+
+## 3. FULL recoverable Volume II bilingual masters and independent source-critical work
+
+- Five verified original historical Library assets from the Stage38 lineage are still present byte-for-byte: the 100-position corrected self-contained Stage38 Arabic facsimile + English reader II:215–314, corrected Stage38 English PDF, Stage36 English PDF, Stage32–34 HTML reader, and entire Stage38 cumulative handoff. All original Volume II source images (full Būlāq PDF; embedded II:215–314 and rendered II:223–230) remain accessible.
+- `Volume_II/VolumeII_Stage38_RENDERER_DERIVED_100_Position_Cumulative_Working_Master.json` and `.md` remain complete **working derived masters** for 100 printed source positions, 163 lower English sections and corresponding source images; they are NOT the missing original Stage38 native JSON. The original separate Wasīm preface remains retained, as do all unassigned marginal voice cautions.
+- Stage105 proved exact English BASELINE agreement with remote Stage51 II:215–314: **100/100** main English drafts and **163/163** lower English sections. Stage108 does NOT retranscribe or alter this already reconciled prose.
+- Stage107 completed first-pass source **location checks for all 53/53 fixed IDs** in II:223–230. Stage108 newly performs three **detailed SINGLE-PRINT bounded phrase comparisons**, `B6.SHARH.II224.12`, `B6.S.II226.2010`, `B6.S.II229.2105`: see `Volume_II/Stage108_VolII_Detailed_Source_Phrase_Proof.json` and `.md`, and expanded 53-ID ledger. These are comparisons with the SAME Būlāq source, **not independent full clause proof**. Remote original scripts remain UNCHANGED and their full original bytes UNRECEIVED locally; known Git blob SHAs remain in earlier manifests. The Stage107 confirmed printed II:229 **ومركباتها القصيرة** vs remote **وركباتها القصيرة** stays in the apparatus without falsely identifying a manuscript variant.
+- Do NOT assign an unnamed ruled/lower gloss to Wasīm by adjacency or combine parenthesized *Tahdhīb* matn lemmas with Sanandajī prose. Further full authorial segmentation and full diplomatic English/Arabic collation are OPEN.
+
+## 4. Strict separately labelled progress and unknown denominators
+
+- **Translation: independently accepted completely literal all-register printed pages**, both volumes: **0/615 (0.00%)**. Partial excerpts are not certified whole pages.
+- **Independent all-register source collation and second proof**, both volumes: **0/615 (0.00%)**. No manuscript witness collation established.
+- Volume I *some source Arabic* records: **1300/1400 (92.86%)**. This is NOT translation completeness.
+- Volume II 53-ID locator review: **53/53 first-pass (100%)**, inherited and NOT repeated.
+- Volume II 53-ID new detailed bounded SAME-PRINT phrase checks: **3/53 (5.66%)**; **independently complete clause proofs 0/53 (0%)**.
+- Migration **KNOWN inherited Stage107 all-volume project files**: **774/774 (100%)** accounted for, **772 byte-identical**; two reader HTML entrypoints intentionally append the Stage108 source layer, with the exact Stage107 original HTML preserved and SHA-checked at `Volume_I/historical_reader_entrypoints/Stage107/`.
+- **Entire historical Volume II original migration denominator: UNKNOWN**, five verified historical originals recovered, no invented percentage. Independent manuscript witness denominator: **UNKNOWN**.
+- Graphical bars and machine-readable exact progress are in `Project_Editorial/Stage108_LABELLED_PROGRESS_BARS.md` and `Stage108_Progress.json`.
+
+## 5. FULL CUMULATIVE archive receipt and integrity manifest
+
+- The Stage108 full ZIP is a complete file-by-file project snapshot, not a delta. It contains ALL **774 original Stage107 project files** by their old paths; **772 are byte-identical**. The other two are the updated HTML entrypoints, and both original Stage107 versions are separately copied and hashed. All cumulative Arabic/English masters, source PDF/images, apparatus and variants, reader CSS/JS and offline assets, recovered Volume II PDFs/HTML, previous scholarly checks, historical migrations and proof registers remain present.
+- The previously released Stage107 original archive remains a separate intact Library asset `/Sanandaji/Stage107/Sanandaji_Stage107_FULL_TWO_VOLUME_CUMULATIVE_RECOVERY.zip` SHA-256 `49a9fad7b466d2a4aaf79604c58b06a526b5501193c86f658d458be2bb3fe1d2`. It is not removed or renamed. Its FULL manifest and all constituent files are included in Stage108 as inherited materials.
+- `Project_Editorial/Stage108_774_Known_Inherited_Asset_Receipt.csv`: exact previous/current SHA-256 and status for every known inherited path. `Project_Editorial/Stage108_FULL_PROJECT_FILE_SHA256_MANIFEST.json` includes SHA-256 and size of EVERY new archive member except the manifest itself (avoids self-reference). Each user-facing ZIP has its own download hash manifest. Source checksum, Node corpus test, all member hashes and ZIP integrity should pass before publication.
+- `Volume_I/Stage108_Open_Proof_Obligations.csv`: **all 1,400 inherited proof rows, with all earlier original fields preserved** and new Stage108 open issues only appended. `Volume_II/Stage108_VolII_53_ID_Detailed_Proof_Queue.csv`: all **53** selected-clause source and attribution obligations with inherited fields preserved. Missing originals and lost receipt risks in `Project_Editorial/Stage108_Missing_And_Open_Project_Materials.csv` (includes earlier inventory); no silent finding of original Stage38 canonical JSON.
+- Browser/mobile/native disclosure, PDF editorial layout and live Nama deployment remain **NOT independently verified**. Passing source hashes and reader script Node tests does not establish publication acceptance.
+
+## 6. Exact next frontier after Stage108
+
+**Volume I:** first Arabic-empty source record **`I045.upper.02`**, printed Volume I p45, physical combined PDF **58**. Check against `I045.upper.01` and `I046.upper.01` boundaries without repeating the completed upper work. Then `I046.lower.01` and `I046.lower.02`, checking I045 lower ending on I:46 in the actual single-copy scan. Old `I044.lower.01/.02` remains only partially transcribed and independently unproven; return for its omitted clauses as a separate proof job.
+
+**Volume II:** complete diplomatic alignment of `G.II.229.21.01`'s entire unassigned lower note from printed II:229 into II:230, keeping printed **ومركباتها القصيرة** and historical remote **وركباتها القصيرة** in two explicitly labelled fields. Then investigate duplicate source lemma `B6.M.II224.2001` vs `B6.MATN.II224.11`. The Stage108 newly compared upper phrases are included as apparatus, NOT overwritten onto historical remote JS. No repetition of the 100/163 matched baseline.
+
+**Archive gates:** all original chats intact, no archiving old work until receipt and independent scholarly QA; no overlap with the independent *Tahdhīb al-Kalām* reader. Remain ordinary Chat, not Work.

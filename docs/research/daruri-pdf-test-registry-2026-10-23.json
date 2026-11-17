@@ -1,0 +1,411 @@
+{
+  "schema": "gnamma-daruri-pdf-experiment-registry-v1",
+  "snapshot_utc_date": "2026-10-23",
+  "scope": "Current known reproducible GitHub tests and recovered issue history. Uncommitted work may be missing.",
+  "repository": "gnamma-research/booksite",
+  "master_sha_at_snapshot": "9bb9f706ee4a6dd8f152a91a6303204fb9bb6d59",
+  "stage2_pr_heads_at_snapshot": {
+    "133": "7bb85a0ae8f4533bbce485b750ea332fc6018ad4",
+    "144": "bc86eeebdb6c9005d03c5db0c4fd779451d1becf"
+  },
+  "canonical_experiment": {
+    "source_sections": 258,
+    "source_passages": 414,
+    "source_lines": 2279,
+    "source_characters": 189886,
+    "unique_unicode_codepoints": 59,
+    "fixture_source_sha256": "e233057d26772249b17b456d9c8aeaf8fd7d5c293c9875c32569d29bb3d9e22e",
+    "noto_font_sha256": "6c042a068e908821b1b5f6665963db5d8a89d0b29adb1b054188f82f27ab81a4",
+    "source_file": "daruri/edition-r3-20261020.js",
+    "native_mupdf_version": "1.26.7",
+    "pypdfium2_version": "4.30.0",
+    "poppler_version": "Runner not pinned: pdftotext missing from 40006394036; local diagnostics previously run"
+  },
+  "release_borders": {
+    "stage1_published": true,
+    "stage2_published": false,
+    "stage1": "12 signed source A4 PDFs + 15 apparatus packets + 120 exact signed recipes; 120 redundant complete PDFs retired; five canonical PDFs preserved",
+    "no_automatic_stage2_merge": true,
+    "current_release_approved": false
+  },
+  "crosschat_handoff_markdown": "docs/research/daruri-pdf-no-repeat-handoff-2026-10-23.md",
+  "original_historical_ledger": "https://github.com/gnamma-research/booksite/issues/75#issuecomment-6356408202",
+  "coordination_issue": "https://github.com/gnamma-research/booksite/issues/50",
+  "research_issue": "https://github.com/gnamma-research/booksite/issues/75",
+  "invariant_requirements": [
+    "No original source Unicode edits, no omitted brackets/harakat, no retranslation to improve tests.",
+    "Do not rebuild old unchanged 120/120 apparatus matrix or reupload retired complete PDFs.",
+    "Do not assume green browser Blob run implies Unicode/PDF/A/UA/source geometry quality.",
+    "Never merge isolated Stage 2 research branches into production without all reader/layout/device/license gates.",
+    "Every future experiment records source/font/fixture SHA, hypothesis, test script, browser/native PDF engine, run ID, output PDF SHA.",
+    "Read current branch heads and latest CI before editing; do not overwrite parallel chats' work.",
+    "Only repeat an experiment if a materially changed input/hypothesis/final integration SHA or missing artifact requires it."
+  ],
+  "existing_experiments": [
+    {
+      "id": "S1-120-PARITY",
+      "area": "published-stage1",
+      "hypothesis": "120 apparatus profiles composed from 12 signed A4 sources and 15 packets",
+      "outcome": "PASS",
+      "metrics": "120/120; 12,888 pages; 187,648 appendix links; 57,180 base links; 30,960 anchors; max delta ~0.000519 pt",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39774573713",
+        "https://github.com/gnamma-research/booksite/actions/runs/39861369212"
+      ],
+      "do_not_repeat": "Exact 120 matrix/engine/manifest combination already proven. Only rerun for changed input SHA or specifically new integration commit."
+    },
+    {
+      "id": "S1-HTML-BASES",
+      "area": "published-stage1",
+      "hypothesis": "HTML→WeasyPrint/Pango A4 original base equivalence",
+      "outcome": "PASS",
+      "metrics": "12/12 A4; 836/836 source page pixel/text/word geometry",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39855143997"
+      ],
+      "do_not_repeat": "Do not re-type all bases while researching pure-browser HTML generation."
+    },
+    {
+      "id": "S1-READER-DOCK",
+      "area": "published-reader",
+      "hypothesis": "Compact saved dock real browser QA",
+      "outcome": "PASS",
+      "metrics": "Two formerly failing workflows passed both Chromium/WebKit; 44px target, 320–430px layouts and one-item chooser",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39984753057",
+        "https://github.com/gnamma-research/booksite/actions/runs/39984753103",
+        "https://github.com/gnamma-research/booksite/actions/runs/39986428836",
+        "https://github.com/gnamma-research/booksite/actions/runs/39986428941"
+      ],
+      "do_not_repeat": "Separate reader issue, already fixed; do not conflate with PDF Arabic."
+    },
+    {
+      "id": "S1-EDITION-QA",
+      "area": "published-stage1",
+      "hypothesis": "Signed retirement QA after 120 complete binary deletion",
+      "outcome": "PASS",
+      "metrics": "Retired 120 complete binaries intentionally absent, 120 signed recipes retained",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39986421654"
+      ],
+      "do_not_repeat": "Do not recreate or reupload 120 deleted variants."
+    },
+    {
+      "id": "H01-CDP",
+      "area": "historical-engine",
+      "hypothesis": "Privileged Chromium print/page.pdf",
+      "outcome": "PROVEN_NOT_ORDINARY_BROWSER",
+      "metrics": "Reading 77 vs published 76 pages; Study 132 vs 131; footnote/nav incomplete",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39877488855"
+      ],
+      "do_not_repeat": "Not ordinary-browser downloadable Blob."
+    },
+    {
+      "id": "H02-PAGEDJS",
+      "area": "historical-engine",
+      "hypothesis": "Paged.js 0.4.3 external typesetter",
+      "outcome": "EXTERNAL_TEST_COMPLETE",
+      "metrics": "130-page specimen and 122-note fixture, duplicated counters and zero bookmarks",
+      "evidence": [],
+      "source": "https://github.com/gnamma-research/booksite/issues/75#issuecomment-6356408202",
+      "do_not_repeat": "CLI benchmark already run; do not pass off as in-browser PDF."
+    },
+    {
+      "id": "H03-VIVLIOSTYLE-CLI",
+      "area": "historical-engine",
+      "hypothesis": "Vivliostyle CLI 11.3.3",
+      "outcome": "EXTERNAL_TEST_COMPLETE",
+      "metrics": "127-page specimen 13.84–16.14s, incomplete correct note numbering",
+      "evidence": [],
+      "source": "https://github.com/gnamma-research/booksite/issues/75#issuecomment-6356408202",
+      "do_not_repeat": "CLI is not a normal JS Blob PDF emitter."
+    },
+    {
+      "id": "H04-JSAFA",
+      "area": "historical-browser",
+      "hypothesis": "jsafa-pdf 0.1.1 ordinary-browser PDF Blob",
+      "outcome": "FAIL_SOURCE_SEMANTICS",
+      "metrics": "0/11 Arabic originals, 0 GoTo annotations",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39874680476"
+      ],
+      "do_not_repeat": "Do not retest unchanged engine/fixture."
+    },
+    {
+      "id": "H05-PAGINATE-TO-PDF",
+      "area": "historical-browser",
+      "hypothesis": "paginate-for-print 1.1.2 + pages-to-pdf 0.4.1",
+      "outcome": "FAIL_TIMEOUT",
+      "metrics": "Six sections >180 seconds; minimal Latin/Arabic >16 second deadline",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39875527493",
+        "https://github.com/gnamma-research/booksite/actions/runs/39876223420"
+      ],
+      "do_not_repeat": "Same integration already stalled; only test after pinpointed dependency fix."
+    },
+    {
+      "id": "H06-VIVLIOSTYLE-PDF",
+      "area": "historical-browser",
+      "hypothesis": "@vivliostyle/print 2.45.3 + pages-to-pdf 0.4.1",
+      "outcome": "FAIL_NATIVE_UNICODE",
+      "metrics": "Full bilingual 93-page Chromium / 91-page WebKit genuine Blob; malformed CID; 0 valid five-word Arabic/English searches",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39876888474",
+        "https://github.com/gnamma-research/booksite/actions/runs/39878539685"
+      ],
+      "do_not_repeat": "Blob generation success is not native scholarly PDF acceptance."
+    },
+    {
+      "id": "H07-DIRECT-PDFLIB",
+      "area": "historical-browser",
+      "hypothesis": "Direct browser pdf-lib 1.17.1 + fontkit 1.1.1",
+      "outcome": "FAIL_ARABIC",
+      "metrics": "0/2 original Arabic phrases found",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39877310349"
+      ],
+      "do_not_repeat": "Basic fontkit PDF text operation already tested."
+    },
+    {
+      "id": "H08-VIVLIOSTYLE-PDFME",
+      "area": "historical-browser",
+      "hypothesis": "Vivliostyle + vivliostyle-pdf 0.3.3 / @pdfme/pdf-lib 6.2.6",
+      "outcome": "FAIL_ARABIC",
+      "metrics": "96-page bilingual prototype; 413/414 English opening but only 18/414 Arabic; §65 fails",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39882892755"
+      ],
+      "related_pr": "https://github.com/gnamma-research/booksite/pull/84",
+      "do_not_repeat": "Do not launch same emitter again without Unicode-source mapping change."
+    },
+    {
+      "id": "H09-EMITTER-SWAP",
+      "area": "historical-browser",
+      "hypothesis": "Swap browser emitter to pages-to-pdf with same pagination",
+      "outcome": "FAIL_ARABIC",
+      "metrics": "2/11 Arabic exact source queries, structural errors",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39883918941"
+      ],
+      "do_not_repeat": "Already tested."
+    },
+    {
+      "id": "H10-PDFUA-ALIAS",
+      "area": "historical-browser",
+      "hypothesis": "PDF/UA-2 tagging and font alias changes alone",
+      "outcome": "FAIL_NATIVE_UNICODE",
+      "metrics": "2/11 source Arabic unchanged for tagged A/B",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39883754171",
+        "https://github.com/gnamma-research/booksite/actions/runs/39884528187"
+      ],
+      "do_not_repeat": "Tags are not a Unicode source fix."
+    },
+    {
+      "id": "H11-PDFNATIVE",
+      "area": "historical-browser",
+      "hypothesis": "pdfnative 1.8.0",
+      "outcome": "FAIL_NATIVE_ARABIC",
+      "metrics": "0/11 Arabic exact native hits",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39884065082"
+      ],
+      "do_not_repeat": "Not current selected path."
+    },
+    {
+      "id": "H12-SECOND-INVISIBLE",
+      "area": "historical-browser",
+      "hypothesis": "Second invisible Unicode text layer over malformed painted text",
+      "outcome": "NOT_ACCEPTABLE",
+      "metrics": "Native excerpt improved 5/11 Chromium and 4/11 WebKit; duplicate clipboard risks",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39888358798"
+      ],
+      "related_pr": "https://github.com/gnamma-research/booksite/pull/86",
+      "do_not_repeat": "Reject invisible duplicate authorial paragraph under unchanged malformed painted text."
+    },
+    {
+      "id": "H13-ACTUALTEXT-REVERSEDCHARS",
+      "area": "historical-native",
+      "hypothesis": "ActualText/ReversedChars/space CID on original bad painted source words",
+      "outcome": "FAIL_MUPDF_QUERY",
+      "metrics": "Zero §65 native phrase hits in six tested ReversedChars cases",
+      "evidence": [],
+      "source": "https://github.com/gnamma-research/booksite/issues/75#issuecomment-6356289541",
+      "do_not_repeat": "Do not repeat wrappers without new glyph-to-original cluster mapping."
+    },
+    {
+      "id": "R01-VECTOR-12",
+      "area": "stage2-research",
+      "hypothesis": "Original Arabic glyph paths + exact CID layer for 11 original two-word snippets plus §65",
+      "outcome": "MECHANISM_PASS_SEMANTIC_MIXED",
+      "metrics": "Reverse scalar sample 4/12 native hits on green CI; phrase-atomic mode subsequently 12/12",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39982668841"
+      ],
+      "related_pr": "https://github.com/gnamma-research/booksite/pull/133",
+      "do_not_repeat": "Already established native scalar reversal fails; don't present workflow success as 12/12."
+    },
+    {
+      "id": "R02-VECTOR-414-OPENING",
+      "area": "stage2-research",
+      "hypothesis": "One atomic Unicode CID per original two-word opening for all passages",
+      "outcome": "PASS_LIMITED_FIXTURE",
+      "metrics": "414/414 two-word openings copy/search and source placement on 35 pages Chromium/WebKit; full paragraphs omitted",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39984897377"
+      ],
+      "related_pr": "https://github.com/gnamma-research/booksite/pull/133",
+      "do_not_repeat": "Do not mistake 414 openings for full Arabic source."
+    },
+    {
+      "id": "R03-MISSING-MATH-BRACKET",
+      "area": "stage2-research",
+      "hypothesis": "First true 414 complete paragraphs with Noto Arabic",
+      "outcome": "FAIL_MISSING_GLYPH",
+      "metrics": "U+27E8 source character causes browser stage error",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39986253371"
+      ],
+      "related_pr": "https://github.com/gnamma-research/booksite/pull/133",
+      "do_not_repeat": "Do not delete U+27E8 from original source."
+    },
+    {
+      "id": "R04-FONT-CMAP-AUDIT",
+      "area": "stage2-research",
+      "hypothesis": "Complete original source codepoints in 3 bundled Noto fonts",
+      "outcome": "PASS_AUDIT",
+      "metrics": "59 unique codepoints; U+27E8 and U+27E9 missing (12 occurrences each)",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39989085644"
+      ],
+      "related_pr": "https://github.com/gnamma-research/booksite/pull/138",
+      "do_not_repeat": "No same font sweep unless font or source SHA changes."
+    },
+    {
+      "id": "R05-FULL-LINE-CID",
+      "area": "stage2-research",
+      "hypothesis": "Single full-line ToUnicode CID + painted bracket outline",
+      "outcome": "FAIL_NATIVE_COPY",
+      "metrics": "190 pages/engine; 133/2279 source lines exact, 1/414 complete paragraphs, 1/414 opening hits; observed ≤32 scalar native limit in MuPDF 1.26.7",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/39989986326"
+      ],
+      "related_pr": "https://github.com/gnamma-research/booksite/pull/139",
+      "do_not_repeat": "Whole-line CID 33–110 scalars cannot be re-used unchanged; not universal standard limit."
+    },
+    {
+      "id": "R06-GRAPHEME-CHUNK",
+      "area": "stage2-research",
+      "hypothesis": "28-scalar chunks split at grapheme boundaries and collocated",
+      "outcome": "FAIL_24_LAMS",
+      "metrics": "Chromium 2255/2279 exact lines; 391/414 whole passages, 414 openings; 24 missing lams at split words",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/40002348077"
+      ],
+      "related_pr": "https://github.com/gnamma-research/booksite/pull/141",
+      "do_not_repeat": "Never split original words, including Allah and al-lafz."
+    },
+    {
+      "id": "R07-WHOLE-WORD-COLLOCATED",
+      "area": "stage2-research",
+      "hypothesis": "28-scalar-bounded original whole words as collocated CIDs",
+      "outcome": "FAIL_GEOMETRY",
+      "metrics": "WebKit 2279/2279 exact lines, 414/414 paragraphs, 414 opening queries, median hitbox ~0.14 of visible phrase width",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/40002886901"
+      ],
+      "related_pr": "https://github.com/gnamma-research/booksite/pull/141",
+      "do_not_repeat": "Native text extraction alone is not valid word geometry."
+    },
+    {
+      "id": "R08-RTL-WORD-CID",
+      "area": "stage2-research",
+      "hypothesis": "Signed Noto natural per-word PDF W advances + negative RTL text matrix + character spacing compensation",
+      "outcome": "PASS_MUPDF_ONLY",
+      "metrics": "Both browsers 190 A4 vector pages, 414/414 whole passages, 2279/2279 exact lines, 414/414 opening native hits, zero raster",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/40004333992",
+        "https://github.com/gnamma-research/booksite/actions/runs/40004946502"
+      ],
+      "related_pr": "https://github.com/gnamma-research/booksite/pull/144",
+      "certifying_sha": "e19a493c04cc06f368bb2625e6c050a2ac547ff7",
+      "do_not_repeat": "Reuse artifacts when testing other native readers."
+    },
+    {
+      "id": "R09-FIRST-LAST-GEOMETRY",
+      "area": "stage2-research",
+      "hypothesis": "Independent native source word rectangle width + location gate",
+      "outcome": "PASS_MUPDF_SAMPLED",
+      "metrics": "414/414 first-two-word +414/414 last-two-word groups in each browser; median native/visible 1.11977 opening 1.05410 ending",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/40004946502"
+      ],
+      "related_pr": "https://github.com/gnamma-research/booksite/pull/144",
+      "do_not_repeat": "Next geometry work must target INTERIOR words / multiword spans, not these same 828 samples."
+    },
+    {
+      "id": "R10-CROSSREADER-LOCAL",
+      "area": "stage2-research",
+      "hypothesis": "Cross-reader exact original 414 opening Arabic Unicode",
+      "outcome": "FAIL_CROSSREADER",
+      "metrics": "MuPDF 414/414, PDFium 188/414 exact (385/414 NFC diagnostic), Poppler raw/layout 0/414; harakat ordering and reversed words remain",
+      "evidence": [],
+      "related_pr": "https://github.com/gnamma-research/booksite/pull/144",
+      "source": "https://github.com/gnamma-research/booksite/pull/144",
+      "do_not_repeat": "Do not re-extract same artifacts without a new reader version/encoding. NFC/stripping harakat not acceptance."
+    },
+    {
+      "id": "R11-CROSSREADER-CI",
+      "area": "stage2-research",
+      "hypothesis": "Automated PDFium+Poppler diagnosis after full MuPDF source/geometry pass",
+      "outcome": "CI_DEPENDENCY_FAILURE",
+      "metrics": "Run 40006394036 two red jobs because pdftotext executable was not available at command -v preflight; no full cross-reader JSON from these jobs",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/40006394036"
+      ],
+      "related_pr": "https://github.com/gnamma-research/booksite/pull/144",
+      "do_not_repeat": "Install/poppler-utils version and reuse existing PDFs rather than rebuilding 190 pages just to fix runner."
+    },
+    {
+      "id": "R12-FULLLINE-ACTUALTEXT-CMAP",
+      "area": "stage2-research-concurrent",
+      "hypothesis": "Sibling PR133 original full-line ActualText + short fallback CMap",
+      "outcome": "VERIFIER_FAIL_NOT_CERTIFIED",
+      "metrics": "Both native steps failed at 'No ToUnicode CMap on authorial text' assertion before full evidence; investigate xref/regex and actual PDF before inferring absent CMap",
+      "evidence": [
+        "https://github.com/gnamma-research/booksite/actions/runs/40005108965"
+      ],
+      "related_pr": "https://github.com/gnamma-research/booksite/pull/133",
+      "do_not_repeat": "Independent advancing branch; do not cherry-pick into PR144 or rerun unchanged entire pipeline."
+    },
+    {
+      "id": "PENDING-INTERIOR-WORDS",
+      "area": "future-not-tested",
+      "hypothesis": "All interior source words incl long/short/vowel clusters in different PDF viewers",
+      "outcome": "NOT_CERTIFIED",
+      "metrics": "Approx 21,647 source word occurrences; 828 edge-group hitboxes alone not sufficient",
+      "evidence": [],
+      "do_not_repeat": "Not a completed test. This is one of the NEW acceptance targets."
+    },
+    {
+      "id": "PENDING-BILINGUAL-STUDY",
+      "area": "future-not-tested",
+      "hypothesis": "Pure-client complete Arabic+English and Study with proper page-bound scholarly footnotes",
+      "outcome": "NOT_CERTIFIED",
+      "metrics": "414 English pairs, 46 source headings, 258 destinations, Study 176 calls and 119 printed note occurrences, 625 note policy",
+      "evidence": [],
+      "do_not_repeat": "Not tested on final browser-only vector architecture."
+    },
+    {
+      "id": "PENDING-MOBILE-NATIVE",
+      "area": "future-not-tested",
+      "hypothesis": "Physical iPhone Safari/PDFKit and Android PDFium plus offline/cancel/privacy",
+      "outcome": "NOT_CERTIFIED",
+      "metrics": "Real device, memory, clipboard, licensing, tagged order not cleared",
+      "evidence": [],
+      "do_not_repeat": "Never claim Linux Playwright WebKit equals a physical iPhone."
+    }
+  ]
+}

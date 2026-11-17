@@ -1,0 +1,160 @@
+{
+  "date": "2026-11-10",
+  "source_method": "Arabic five-token contiguous overlap, normalized, threshold >=15 unique matching sequences. Page 235 limited to p72 for authorial opening.",
+  "notes": "Links demonstrate repeated wording within a shared digital copy of the 2008 publication; they are NOT distinct manuscript witnesses and do not add external collation.",
+  "total_links": 19,
+  "entries": [
+    {
+      "original_id": "QNW-WIT235",
+      "original_page": 235,
+      "commentary_id": "MSH-060",
+      "commentary_page": 72,
+      "shared_unique_arabic_fivegrams": 37,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT236",
+      "original_page": 236,
+      "commentary_id": "MSH-062",
+      "commentary_page": 74,
+      "shared_unique_arabic_fivegrams": 57,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT236",
+      "original_page": 236,
+      "commentary_id": "MSH-063",
+      "commentary_page": 75,
+      "shared_unique_arabic_fivegrams": 64,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT236",
+      "original_page": 236,
+      "commentary_id": "MSH-065",
+      "commentary_page": 77,
+      "shared_unique_arabic_fivegrams": 31,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT236",
+      "original_page": 236,
+      "commentary_id": "MSH-066",
+      "commentary_page": 78,
+      "shared_unique_arabic_fivegrams": 43,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT236",
+      "original_page": 236,
+      "commentary_id": "MSH-067",
+      "commentary_page": 79,
+      "shared_unique_arabic_fivegrams": 21,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT237",
+      "original_page": 237,
+      "commentary_id": "MSH-068",
+      "commentary_page": 80,
+      "shared_unique_arabic_fivegrams": 79,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT237",
+      "original_page": 237,
+      "commentary_id": "MSH-069",
+      "commentary_page": 81,
+      "shared_unique_arabic_fivegrams": 69,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT237",
+      "original_page": 237,
+      "commentary_id": "MSH-070",
+      "commentary_page": 82,
+      "shared_unique_arabic_fivegrams": 33,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT237",
+      "original_page": 237,
+      "commentary_id": "MSH-071",
+      "commentary_page": 83,
+      "shared_unique_arabic_fivegrams": 32,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT237",
+      "original_page": 237,
+      "commentary_id": "MSH-072",
+      "commentary_page": 84,
+      "shared_unique_arabic_fivegrams": 25,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT238",
+      "original_page": 238,
+      "commentary_id": "MSH-073",
+      "commentary_page": 85,
+      "shared_unique_arabic_fivegrams": 71,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT238",
+      "original_page": 238,
+      "commentary_id": "MSH-074",
+      "commentary_page": 86,
+      "shared_unique_arabic_fivegrams": 16,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT238",
+      "original_page": 238,
+      "commentary_id": "MSH-075",
+      "commentary_page": 87,
+      "shared_unique_arabic_fivegrams": 26,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT238",
+      "original_page": 238,
+      "commentary_id": "MSH-P089",
+      "commentary_page": 89,
+      "shared_unique_arabic_fivegrams": 104,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT238",
+      "original_page": 238,
+      "commentary_id": "MSH-P090",
+      "commentary_page": 90,
+      "shared_unique_arabic_fivegrams": 43,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT267",
+      "original_page": 267,
+      "commentary_id": "MSH-P230",
+      "commentary_page": 230,
+      "shared_unique_arabic_fivegrams": 15,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT267",
+      "original_page": 267,
+      "commentary_id": "MSH-P231",
+      "commentary_page": 231,
+      "shared_unique_arabic_fivegrams": 71,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    },
+    {
+      "original_id": "QNW-WIT267",
+      "original_page": 267,
+      "commentary_id": "MSH-P232",
+      "commentary_page": 232,
+      "shared_unique_arabic_fivegrams": 44,
+      "method": "normalized exact five-token overlap of two portions of the 2008 digital transcription; not a separate-manuscript reading"
+    }
+  ]
+}

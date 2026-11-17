@@ -1,0 +1,232 @@
+{
+  "schema": "gnamma.tahdhib.stage119.q294.partial-verbatim-symbols.v1",
+  "date": "2026-11-12",
+  "sourcePage": 294,
+  "originalPhoto": "source-table-excerpts/print1405_Q294_table_excerpt.png",
+  "sourceLegendPage": "https://ablibrary.net/book_content/b/12170/293?lang=ar",
+  "type": "nineteen visually legible historic M/D relation symbols transcribed exactly at an individual coordinate; not proof of any entailment",
+  "counts": {
+    "totalHistoricallyIndexed": 105,
+    "selectedDirectSymbolWorkingReadings": 19,
+    "remainingExactSymbolsNotIndividuallyTranscribed": 86,
+    "selectedOverlap": 14,
+    "selectedDisjoint": 5,
+    "fullModalEntailmentProofsAdded": 0
+  },
+  "entries": [
+    {
+      "id": "Q294-R03-C02",
+      "row": 3,
+      "column": 2,
+      "arabic_source_glyph": "من",
+      "english": "General and particular in one respect (partial overlap)",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R04-C02",
+      "row": 4,
+      "column": 2,
+      "arabic_source_glyph": "من",
+      "english": "General and particular in one respect (partial overlap)",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R05-C02",
+      "row": 5,
+      "column": 2,
+      "arabic_source_glyph": "من",
+      "english": "General and particular in one respect (partial overlap)",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R05-C03",
+      "row": 5,
+      "column": 3,
+      "arabic_source_glyph": "من",
+      "english": "General and particular in one respect (partial overlap)",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R05-C04",
+      "row": 5,
+      "column": 4,
+      "arabic_source_glyph": "من",
+      "english": "General and particular in one respect (partial overlap)",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R06-C03",
+      "row": 6,
+      "column": 3,
+      "arabic_source_glyph": "من",
+      "english": "General and particular in one respect (partial overlap)",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R06-C04",
+      "row": 6,
+      "column": 4,
+      "arabic_source_glyph": "من",
+      "english": "General and particular in one respect (partial overlap)",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R09-C03",
+      "row": 9,
+      "column": 3,
+      "arabic_source_glyph": "من",
+      "english": "General and particular in one respect (partial overlap)",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R09-C04",
+      "row": 9,
+      "column": 4,
+      "arabic_source_glyph": "من",
+      "english": "General and particular in one respect (partial overlap)",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R10-C02",
+      "row": 10,
+      "column": 2,
+      "arabic_source_glyph": "من",
+      "english": "General and particular in one respect (partial overlap)",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R10-C06",
+      "row": 10,
+      "column": 6,
+      "arabic_source_glyph": "من",
+      "english": "General and particular in one respect (partial overlap)",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R10-C09",
+      "row": 10,
+      "column": 9,
+      "arabic_source_glyph": "من",
+      "english": "General and particular in one respect (partial overlap)",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R11-C02",
+      "row": 11,
+      "column": 2,
+      "arabic_source_glyph": "من",
+      "english": "General and particular in one respect (partial overlap)",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R11-C03",
+      "row": 11,
+      "column": 3,
+      "arabic_source_glyph": "من",
+      "english": "General and particular in one respect (partial overlap)",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R09-C01",
+      "row": 9,
+      "column": 1,
+      "arabic_source_glyph": "ين",
+      "english": "Complete exclusion/disjointness",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R09-C05",
+      "row": 9,
+      "column": 5,
+      "arabic_source_glyph": "ين",
+      "english": "Complete exclusion/disjointness",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R10-C01",
+      "row": 10,
+      "column": 1,
+      "arabic_source_glyph": "ين",
+      "english": "Complete exclusion/disjointness",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R10-C05",
+      "row": 10,
+      "column": 5,
+      "arabic_source_glyph": "ين",
+      "english": "Complete exclusion/disjointness",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    },
+    {
+      "id": "Q294-R11-C01",
+      "row": 11,
+      "column": 1,
+      "arabic_source_glyph": "ين",
+      "english": "Complete exclusion/disjointness",
+      "photographic_source": "H1405 printed p294; index295 (zero-based)",
+      "grade": "direct-source-glyph-working",
+      "directional_suffix": "not applicable to these non-inclusion entries",
+      "comparison_print": "H1433 whole-page witness identified; per-cell second-print collation not completed"
+    }
+  ],
+  "limitations": [
+    "All 61 inclusion-family source abbreviations still need full فم/حم direction and ط/ف qualifiers, as applicable.",
+    "Other photographed cells, including 19 exact readings here, are not independently manuscript-collated.",
+    "Historic Stage118 61/33/11 broad family census is inherited unchanged; 19 selected cells advance exact-symbol working transcription only."
+  ]
+}

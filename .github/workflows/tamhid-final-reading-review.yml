@@ -1,0 +1,35 @@
+name: Tamhid final reading integrity (Qawtaw16)
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/tamhid-final-reading-review.yml'
+      - 'texts/al-turka/qawaid-al-tawhid/commentary.html'
+      - 'texts/al-turka/qawaid-al-tawhid/data/commentary-main-020-060.js'
+      - 'texts/al-turka/qawaid-al-tawhid/data/commentary-corpus.json'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/qawtaw16_final_acceptance.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: tamhid-final-reading-integrity
+  cancel-in-progress: true
+jobs:
+  verify-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Explain superseded historical SH-058 rewriter
+        run: |
+          echo 'The old automated correction of SH-058 is retired.'
+          echo 'A transcribes السهو; the modern H2014 comparison supports the preferred السهر.'
+          echo 'The base and printed reading must remain separately attributed, never overwritten by an obsolete script.'
+      - name: Install read-only PDF inspection
+        run: python -m pip install --quiet pypdf
+      - name: Validate canonical commentary and bilingual source sequence
+        run: node texts/al-turka/qawaid-al-tawhid/qa/check-commentary.mjs
+      - name: Verify all Qawtaw16 original/English hashes, review flags and five published PDF bytes
+        run: python texts/al-turka/qawaid-al-tawhid/qa/qawtaw16_final_acceptance.py
+      - name: Do not publish on behalf of obsolete correction routine
+        run: echo 'Integrity checked; no content mutation, translation rewrite or repository push.'

@@ -1,0 +1,20 @@
+{
+  "volume_I": {
+    "prior_stage103_files_accounted_for": 556,
+    "prior_stage103_files_unchanged": 554,
+    "prior_stage103_changed_reader_entrypoints_with_prior_originals_separately_retained": 2,
+    "source_images_sha256_verified": 280,
+    "combined_pdf_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+    "inherited_status": "all 556 predecessor assets accounted for, with both changed entrypoints saved as historical originals"
+  },
+  "volume_II": {
+    "original_Library_assets_recovered": 5,
+    "original_Library_assets_selected_for_receipt": 5,
+    "full_historical_denominator": "unknown",
+    "derived_100_position_master_status": "recovered from source-embedded Stage38 HTML, not original Stage38 canonical JSON",
+    "embedded_images_hashed": 100,
+    "known_missing_native_artifacts": 10
+  },
+  "all_volume_complete_translation_pct": 0.0,
+  "all_volume_complete_proof_pct": 0.0
+}

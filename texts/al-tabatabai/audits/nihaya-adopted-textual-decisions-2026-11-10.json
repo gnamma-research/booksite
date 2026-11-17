@@ -1,0 +1,242 @@
+{
+  "schema": 1,
+  "updated": "2026-11-10",
+  "title": "Nihāya adopted textual decision ledger",
+  "countingPolicy": "One decision is one adopted editorial issue. A single relation-predicate decision in VI.16 requires two string replacements. Spacing repairs are counted separately. The X.2 reading is attested in the later edition without a dedicated variant footnote; it is not counted among explicit editorial emendations.",
+  "summary": {
+    "textualDecisions": 13,
+    "explicitLaterEditorialEmendations": 12,
+    "laterEditionReadingsWithoutSpecificVariantFootnote": 1,
+    "arabicStringReplacements": 14,
+    "spacingNormalizationsThisStage": 2,
+    "newTextualDecisionsThisStage": 6
+  },
+  "decisions": [
+    {
+      "id": "N-ADOPT-01",
+      "passageId": "N-I-02",
+      "criticalNoteId": "N1428-I02-01",
+      "stage": "inherited through VII",
+      "classification": "explicit-later-editor-emendation",
+      "replacements": [
+        {
+          "before": "ولو كانت عين الوجود لم يجز أن تسلب عن نفسها",
+          "after": "ولو كانت عين الوجود لم يجز أن يسلب عنها"
+        }
+      ],
+      "source": "Nihāyat al-Ḥikma, vol. 1 (revised 1428 AH), p. 18 n. 1; compare Qum 1417 AH p. 18, edited by ʿAbbās ʿAlī al-Zāriʿī al-Sabzawārī",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=18&type=c_fbook",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-ADOPT-02",
+      "passageId": "N-II-02",
+      "criticalNoteId": "N1428-II02-01",
+      "stage": "inherited through VII",
+      "classification": "explicit-later-editor-emendation",
+      "replacements": [
+        {
+          "before": "كان جوهراً أو عرضاً ـ موجوداً في نفسه رابطاً",
+          "after": "كان جوهراً أو عرضاً ـ رابطاً"
+        }
+      ],
+      "source": "Nihāyat al-Ḥikma, edited 1428 AH vol. 1 p. 52 n. 6; prior 1417 AH Qum text, II.2",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=52&type=c_fbook",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-ADOPT-03",
+      "passageId": "N-VI-03",
+      "criticalNoteId": "N1428-VI03-01",
+      "stage": "inherited through VII",
+      "classification": "explicit-later-editor-emendation",
+      "replacements": [
+        {
+          "before": "عطف الصور الطبيعيّة",
+          "after": "عطف الصورة الطبيعيّة"
+        }
+      ],
+      "source": "ʿAbbās ʿAlī al-Zāriʿī, 1428 AH revised edition, vol. 1 p. 158 n. 1; 1417 Qum, Stage VI.3",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=158&type=c_fbook",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-ADOPT-04",
+      "passageId": "N-VI-15",
+      "criticalNoteId": "N1428-VI15-01",
+      "stage": "inherited through VII",
+      "classification": "explicit-later-editor-emendation",
+      "replacements": [
+        {
+          "before": "بما أنّها كمالاتها الثانية",
+          "after": "بما أنّها كمالاته الثانية"
+        }
+      ],
+      "source": "Nihāyat al-Ḥikma 1428 revised edition, vol. 1 p. 209 nn. 3–4; compare 1417 base",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=205&type=c_fbook",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-ADOPT-05",
+      "passageId": "N-VI-15",
+      "criticalNoteId": "N1428-VI15-01",
+      "stage": "inherited through VII",
+      "classification": "explicit-later-editor-emendation",
+      "replacements": [
+        {
+          "before": "يتمّيز به الكمال من غيره",
+          "after": "يميّز به الكمال من غيره"
+        }
+      ],
+      "source": "Nihāyat al-Ḥikma 1428 revised edition, vol. 1 p. 209 nn. 3–4; compare 1417 base",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=205&type=c_fbook",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-ADOPT-06",
+      "passageId": "N-VI-16",
+      "criticalNoteId": "N1428-VI16-01",
+      "stage": "inherited through VII",
+      "classification": "explicit-later-editor-emendation",
+      "replacements": [
+        {
+          "before": "المضاف إلى\n\nالابن ـ مثلا ـ",
+          "after": "المضاف إلى\n\nالأب ـ مثلا ـ"
+        }
+      ],
+      "source": "Nihāyat al-Ḥikma 1428 revised edition, vol. 1 p. 218 nn. 1 and 4; compare 1417 base",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=207&type=c_fbook",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-ADOPT-07",
+      "passageId": "N-VI-16",
+      "criticalNoteId": "N1428-VI16-01",
+      "stage": "inherited through VII",
+      "classification": "explicit-later-editor-emendation",
+      "replacements": [
+        {
+          "before": "ينتزع من الموضوعين الواجدين",
+          "after": "ينتزع لكلّ من الموضوعين الواجدين"
+        },
+        {
+          "before": "وصفاً ناعتاً لهما انتزاعاً",
+          "after": "وصفاً ناعتاً له انتزاعاً"
+        }
+      ],
+      "source": "Nihāyat al-Ḥikma 1428 revised edition, vol. 1 p. 218 nn. 1 and 4; compare 1417 base",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=207&type=c_fbook",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-ADOPT-08",
+      "passageId": "N-IX-09",
+      "criticalNoteId": "N1417-IX09-REFERENCE-01",
+      "stage": "VIII",
+      "classification": "explicit-later-editor-emendation",
+      "replacements": [
+        {
+          "before": "كما في القسم الأوّل",
+          "after": "كما في القسم الثاني"
+        }
+      ],
+      "source": "1404 Qum p.211, NYU canvas215; 1417 Qum p.265; 1428 al-Zāriʿī vol.2 p.108 n.4",
+      "url": "https://lib.rafed.net/view.php?b_id=3109&page=108&type=c_fbook",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-ADOPT-09",
+      "passageId": "N-IX-09",
+      "criticalNoteId": "N1428-IX09-SUBJECT-01",
+      "stage": "VIII",
+      "classification": "explicit-later-editor-emendation",
+      "replacements": [
+        {
+          "before": "هي الموضوع بعينه ما تعاقبت",
+          "after": "هي بعينها موضوع ما تعاقبت"
+        }
+      ],
+      "source": "1404 Qum p.211, canvas215; 1417 p.265; 1428 vol.2 p.108 n.3",
+      "url": "https://lib.rafed.net/view.php?b_id=3109&page=108&type=c_fbook",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-ADOPT-10",
+      "passageId": "N-IX-09",
+      "criticalNoteId": "N1428-IX09-POTENTIALITY-01",
+      "stage": "VIII",
+      "classification": "explicit-later-editor-emendation",
+      "replacements": [
+        {
+          "before": "قوّةً لقوّته",
+          "after": "قوّةً لقوّتها"
+        }
+      ],
+      "source": "1404 Qum p.212, canvas216; 1417 p.266; 1428 vol.2 p.109 n.2",
+      "url": "https://lib.rafed.net/view.php?b_id=3109&page=109&type=c_fbook",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-ADOPT-11",
+      "passageId": "N-IX-11",
+      "criticalNoteId": "N1428-IX11-GENDER-01",
+      "stage": "VIII",
+      "classification": "explicit-later-editor-emendation",
+      "replacements": [
+        {
+          "before": "أيّ حركة كانت",
+          "after": "أيّة حركة كانت"
+        }
+      ],
+      "source": "1404 Qum p.215, canvas219; 1428 vol.2 p.115 n.2; 1417 base IX.11",
+      "url": "https://lib.rafed.net/view.php?b_id=3109&page=115&type=c_fbook",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-ADOPT-12",
+      "passageId": "N-VI-05",
+      "criticalNoteId": "N1428-VI05-BESTOWAL-01",
+      "stage": "VIII",
+      "classification": "explicit-later-editor-emendation",
+      "replacements": [
+        {
+          "before": "بإضافة المرتبة العالية",
+          "after": "بإفاضة المرتبة العالية"
+        }
+      ],
+      "source": "1428 revised editorial print, with targeted early-print facsimile corroboration of the recorded prior reading",
+      "url": "https://lib.rafed.net/view.php?b_id=3108&page=171&type=c_fbook",
+      "manuscriptAttestationClaimed": false
+    },
+    {
+      "id": "N-ADOPT-13",
+      "passageId": "N-X-02",
+      "criticalNoteId": "N1428-X02-DEPENDENT-01",
+      "stage": "VIII",
+      "classification": "attested-later-edition-reading-unfootnoted",
+      "replacements": [
+        {
+          "before": "عدم التوقّف",
+          "after": "عدم المتوقّف"
+        }
+      ],
+      "source": "1428 digital edited print; unfootnoted main-text variant compared with 1404 facsimile and 1417 transcription",
+      "url": "https://lib.rafed.net/view.php?b_id=3109&page=136&type=c_fbook",
+      "manuscriptAttestationClaimed": false
+    }
+  ],
+  "spacingNormalizationsThisStage": [
+    {
+      "passageId": "N-IX-09",
+      "old": "الحدّو قوّةُ",
+      "new": "الحدّ وقوّةُ",
+      "reason": "Restore missing word separation; 1404 p212 clearly separates the conjunction and noun."
+    },
+    {
+      "passageId": "N-IX-09",
+      "old": "لا حقة",
+      "new": "لاحقة",
+      "reason": "Restore single word; 1404 p211 and later digital both show لاحقة."
+    }
+  ]
+}

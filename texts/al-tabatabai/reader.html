@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Opening the three-book reader · Gnamma Research</title>
+<link rel="canonical" href="./">
+<meta http-equiv="refresh" content="0;url=./">
+<script>
+(() => {
+  const route = decodeURIComponent(location.hash.slice(1));
+  const old = {logic:'chapter-M-I-1',bidaya:'chapter-B-I-1',nihaya:'chapter-N-I-1'};
+  const target = old[route] || (/^(chapter|passage)-[A-Za-z0-9_-]+$/.test(route) ? route : '');
+  location.replace('./' + (target ? '#' + target : ''));
+})();
+</script></head><body>
+<p>The separate-frame reader has been replaced by the accessible <a href="./">continuous three-book edition</a>.</p>
+</body></html>

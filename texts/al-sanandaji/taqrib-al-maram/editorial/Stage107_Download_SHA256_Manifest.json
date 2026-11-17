@@ -1,0 +1,43 @@
+{
+  "stage": 107,
+  "checksum_method": "SHA-256",
+  "archive_verified_full_member_integrity": true,
+  "original_source_pdf_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "full_archive_member_count": 774,
+  "full_archive_manifest_entry_count": 773,
+  "stage106_original_archive_sha256": "8cd0cec48b8f8422a166a1521e1290507e490a97c95a6cb096cd3e53ead1fa1e",
+  "deliverables": [
+    {
+      "filename": "Sanandaji_Stage107_FULL_TWO_VOLUME_CUMULATIVE_RECOVERY.zip",
+      "bytes": 125940021,
+      "sha256": "49a9fad7b466d2a4aaf79604c58b06a526b5501193c86f658d458be2bb3fe1d2",
+      "members": 774
+    },
+    {
+      "filename": "Sanandaji_VolI_Stage107_Offline_Study_Reader_With_Facsimile.zip",
+      "bytes": 36774788,
+      "sha256": "f323738f7b39982b7c6ce264e32c94a635f5c4490df832de5a2a43dd92ac0ff5",
+      "members": 323
+    },
+    {
+      "filename": "Sanandaji_VolI_Stage107_Study_Reader.zip",
+      "bytes": 1342008,
+      "sha256": "133b0be38a7d926b8f979be924e0c5da8bfa4256e9e250d97141dd0c312407fa",
+      "members": 43
+    },
+    {
+      "filename": "Sanandaji_VolII_Stage107_Recovered_Reader_and_Source_Critical_Audit.zip",
+      "bytes": 20555300,
+      "sha256": "2bd9c3789f3436896d6f7caa758d725742196765c1a5d722c767cbe9eed5f0db",
+      "members": 27
+    },
+    {
+      "filename": "Sanandaji_Stage107_New_Readings_Proof_and_All_Volume_Handoff.zip",
+      "bytes": 112051,
+      "sha256": "e06affcd99ea6802d3970390e31d992a601a650031292760aac082ce0f1cd422",
+      "members": 14
+    }
+  ],
+  "all_archive_member_sha256_verified": true,
+  "full_historical_volumeII_receipt_denominator": "unknown"
+}

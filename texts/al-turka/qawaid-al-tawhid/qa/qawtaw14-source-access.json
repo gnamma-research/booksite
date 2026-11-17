@@ -1,0 +1,64 @@
+{
+  "schema": "gnamma-qawtaw14-nekounam-access-v1",
+  "date": "2026-11-12",
+  "status": {
+    "bilingualUnits": 171,
+    "arabicSegmentsCompared": 5520,
+    "pdfs": 5,
+    "unresolved": [
+      "SH-002",
+      "QT-059"
+    ],
+    "newHistoricalTargetPagesInspected": 0,
+    "newLostAncestralWords": 0,
+    "textAlterations": 0,
+    "pdfRebuilds": 0
+  },
+  "newOnlineEvidence": {
+    "editor": "Muhammad Rida Nekounam",
+    "work": "al-Tamhid fi Sharh Qawaid al-Tawhid",
+    "publication": "Tehran: Subh-i Farda, 1393 Sh / 2014",
+    "isbn": "978-600-7347-97-3",
+    "pages": 280,
+    "source": "https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/",
+    "onlineSection": "editor's preface and edited Arabic pp. 19–42",
+    "selfReportedEditorialMethods": [
+      "compared multiple copies",
+      "repeatedly taught book",
+      "modernized writing/punctuation",
+      "added annotations"
+    ],
+    "manuscriptsIndividuallyIdentifiedInThisExcerpt": false,
+    "targetReadingsPresentInInspectedExcerpt": false,
+    "targets": [
+      {
+        "crux": "SH-002",
+        "chapters": [
+          "amzija and perceptions",
+          "true cognition and healthy temperament"
+        ],
+        "printedPageRange": "49–53",
+        "relevantPagesInspected": false
+      },
+      {
+        "crux": "QT-059",
+        "chapters": [
+          "preference for purification",
+          "objections of purification advocates",
+          "validity of both routes"
+        ],
+        "printedPageRange": "260–269 (approximate chapter locations)",
+        "relevantPagesInspected": false
+      }
+    ]
+  },
+  "additionalCandidate": {
+    "source": "https://mktba.net/library.php?id=9533",
+    "claimedDownloadSizeMB": 6,
+    "claimedUploadDate": "2019-03-12",
+    "pdfFetched": false,
+    "disputedPagesRead": false
+  },
+  "bibliographicConflictStillOpen": true,
+  "editorialPolicy": "Do not revise medieval text or interpret an absent string in a partial webpage as evidence of its absence from the book; require target page + manuscript ancestry."
+}

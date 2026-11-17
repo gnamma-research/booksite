@@ -1,0 +1,51 @@
+name: Tamhid stage13 source
+on:
+  push:
+    branches: [master]
+    paths: ['.github/workflows/tamhid-stage13-source.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  retrieve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - run: python -m pip install --quiet beautifulsoup4
+      - name: Retain exact article boundaries and full medieval text
+        shell: python
+        run: |
+          import urllib.request,pathlib,json,time,hashlib,concurrent.futures
+          from bs4 import BeautifulSoup
+          out=pathlib.Path('stage13-source');out.mkdir()
+          def get(p):
+              url=f'https://ablibrary.net/book_content/b/17638/{p+196}?lang=ar'
+              row={'printed_page':p,'url':url}
+              try:
+                  req=urllib.request.Request(url,headers={'User-Agent':'Gnamma scholarly transcription check; public medieval text'})
+                  with urllib.request.urlopen(req,timeout=25) as r:raw=r.read(1500000)
+                  soup=BeautifulSoup(raw,'html.parser');article=soup.select_one('[itemprop="articleBody"]')
+                  if article is None:raise ValueError('articleBody missing')
+                  row['html_sha256']=hashlib.sha256(raw).hexdigest()
+                  for e in article.select('nav'):e.decompose()
+                  (out/f'page-{p}-article.html').write_text(str(article),encoding='utf-8')
+                  row['remarks']=[e.get_text('\n',strip=True) for e in article.select('[data-abl-content="remark"]')]
+                  for e in article.select('[data-abl-content="remark"]'):e.decompose()
+                  row['text']=article.get_text('\n',strip=True)
+                  row['words']=len(row['text'].split())
+                  row['extraction']='All visible article text; marked editorial remarks excluded, preserved separately for boundary review; includes p and poetry elements.'
+              except Exception as ex:row['error']=str(ex)
+              time.sleep(.6)
+              return row
+          with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:pages=list(pool.map(get,range(95,178)))
+          report={'edition':'A: Ashtiyani electronic transcription','scope':'printed pp.95–177','pages':pages,'failures':[x['printed_page'] for x in pages if 'error' in x]}
+          (out/'source-pages.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+          (out/'source-main.txt').write_text('\n\n'.join('===== '+str(x['printed_page'])+' =====\n'+x.get('text','SOURCE ERROR') for x in pages),encoding='utf-8')
+          print(json.dumps({'pages':len(pages),'failed':report['failures'],'words':sum(x.get('words',0) for x in pages)}))
+          if report['failures']:raise RuntimeError('Source retrieval incomplete')
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tamhid-stage13-source
+          path: stage13-source/
+          retention-days: 3

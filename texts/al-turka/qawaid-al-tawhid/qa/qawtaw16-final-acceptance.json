@@ -1,0 +1,82 @@
+{
+  "schema": "gnamma-qawtaw16-final-source-scoped-acceptance-v1",
+  "date": "2026-11-12",
+  "passed": true,
+  "claim": "Release-ready scholarly working and reading edition of all consulted extant source material; NOT a completed independently manuscript-collated critical edition.",
+  "sourceScope": {
+    "originalMatnUnits": 61,
+    "commentaryIntroUnits": 40,
+    "commentaryMainUnits": 64,
+    "commentaryConcludingUnits": 6,
+    "totalBilingualUnits": 171,
+    "comparedArabicPunctuationSegments": 5520,
+    "sourceManuscriptsIndependentlyCollated": 0,
+    "independentlyHumanCertified": false
+  },
+  "legacyApparatusInventory": {
+    "sourceFlaggedSegmentCount": 218,
+    "sourceFlaggedGroups": 57,
+    "sourceFlaggedUnits": 47,
+    "status": "Original Qawtaw5 flag inventory preserved for consultation; it must not be conflated with the fourteen separately adjudicated cases. Some legacy flags were subsequently interpreted through later printed comparisons."
+  },
+  "selectedFourteenCases": {
+    "workingReadingSettled": 12,
+    "unresolvedHistoricalNegative": 1,
+    "reportedLostAncestralText": 1
+  },
+  "outstandingHistoricalQuestions": {
+    "SH-002": "Retain transmitted ببطلان. Conjectural بحقيّة is not attested at the disputed location by an inspected independent early witness.",
+    "QT-059": "Existing source paragraph translated. Additional original authorial words reported missing cannot be supplied from grandson commentary.",
+    "imprint1315versus1316": "Bibliographic identities of historic prints have conflicting catalogue reports; no title pages or colophons of those objects inspected in Qawtaw16."
+  },
+  "releaseTests": {
+    "noMissingOrPlaceholderUnits": true,
+    "canonicalIdsAndLinksComplete": true,
+    "allCanonicalUnitHashesMatchLedger": true,
+    "reviewHistogramMatches": true,
+    "notesScriptContaminationRemoved": true,
+    "originalArabicNegationPreserved": true,
+    "lostTextNotInvented": true,
+    "dictionaryEntries": 82,
+    "primaryReferenceCards": 18
+  },
+  "PDFs": [
+    {
+      "filename": "qawaid-bilingual-reading.pdf",
+      "pages": 298,
+      "bytes": 920135,
+      "sha256": "60604520d5b33965b4f9234a899e399d6d875792ccceda355862733a5cae5fe7",
+      "linkAnnotations": 2
+    },
+    {
+      "filename": "qawaid-english-reading.pdf",
+      "pages": 138,
+      "bytes": 434268,
+      "sha256": "01cf0f26749d852feb15c732317bcfb141a77260fd1b276274437de11da45ef4",
+      "linkAnnotations": 2
+    },
+    {
+      "filename": "qawaid-arabic-reading.pdf",
+      "pages": 172,
+      "bytes": 521482,
+      "sha256": "5848a5c747ad6533513c69340cba908d9ed1d0e1fe1911f20d69e675d20755ac",
+      "linkAnnotations": 2
+    },
+    {
+      "filename": "qawaid-bilingual-study.pdf",
+      "pages": 322,
+      "bytes": 1022784,
+      "sha256": "552387fb3bf610f977ab3c9542cad657bef3984daf0b0bc8dd9c90a90fc0a539",
+      "linkAnnotations": 478
+    },
+    {
+      "filename": "qawaid-bilingual-reference.pdf",
+      "pages": 368,
+      "bytes": 1214374,
+      "sha256": "6c55df55553fdce4377cac8b233f35a13f2f6e4f5f117fd8fce28353ada524d8",
+      "linkAnnotations": 479
+    }
+  ],
+  "semanticCaution": "Automated checks, source-overlap comparisons and editorial notes do not establish independently certified Arabic-to-English accuracy for every passage.",
+  "OCRCaution": "Existing modern printed comparison pages can be inspected visually; re-OCR of already transcribed or modern PDFs cannot recover an absent ancestral folio. No new historical scan of the disputed words obtained."
+}

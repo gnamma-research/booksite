@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "date": "2026-11-11",
+  "units": 171,
+  "arabicSegments": 5520,
+  "addedComparedUnits": 85,
+  "addedComparedArabicSegments": 3759,
+  "wordingChanges": 36,
+  "arabicUnchanged": true,
+  "matnFilesUnchanged": true,
+  "compiledMarkdownStandaloneParity": true,
+  "independentManuscriptsCollated": 0,
+  "independentHumanCertification": false
+}

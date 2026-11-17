@@ -1,0 +1,24 @@
+{
+  "stage": 88,
+  "date": "2026-11-14",
+  "source_anchors": 1401,
+  "typed_arabic_records": 1187,
+  "no_typed_arabic_records_including_hidden": 214,
+  "untranscribed_source_records_excluding_hidden": 213,
+  "pages_with_some_arabic": 279,
+  "body_pages": 279,
+  "critically_completed_pages": 0,
+  "new_bounded_readings": 9,
+  "newly_partially_typed_ids": [
+    "I008.lower.02",
+    "I009.lower.01",
+    "I010.lower.01",
+    "I011.lower.02",
+    "I017.upper.03",
+    "I018.upper.02",
+    "I018.lower.01",
+    "I019.upper.02",
+    "I022.upper.02"
+  ],
+  "basis": "Bulaq 1318 AH original scan; one image-based pass, NOT independent proof"
+}

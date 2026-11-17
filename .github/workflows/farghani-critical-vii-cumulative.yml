@@ -1,0 +1,55 @@
+name: Farghani Critical VII full cumulative edition and IIIF evidence
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "texts/al-farghani/muntaha-al-madarik/editorial/STAGE_007_BUILD_TRIGGER.md"
+permissions:
+  contents: write
+concurrency:
+  group: farghani-cumulative-vii-build
+  cancel-in-progress: false
+
+jobs:
+  construct-complete-preserved-archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check 128 draft pages, 198 modern clause records and ten photographed I1876 comparisons
+        run: python tools/farghani_build_cumulative_007.py
+      - name: Commit the cumulative edition and precise SHA manifest without overwriting previous archives
+        run: |
+          git config user.name "GNAMMA critical text editor"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_CRITICAL_007.md
+          git add texts/al-farghani/muntaha-al-madarik/editorial/STAGE_MANIFEST_CRITICAL_007.json
+          if git diff --cached --quiet; then
+            echo "Archive already identical"
+            exit 0
+          fi
+          git commit -m "Farghani Stage VII: 128-page working English and all previous editions preserved with ten photographed printed-text loci"
+          for attempt in 1 2 3 4; do
+            git fetch origin master
+            git rebase origin/master
+            if git push origin HEAD:master; then
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "Commit raced with other work; full artifact remains preserved" >&2
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: farghani-critical-vii-complete-archive
+          path: |
+            texts/al-farghani/muntaha-al-madarik/editorial/FULL_CUMULATIVE_CRITICAL_007.md
+            texts/al-farghani/muntaha-al-madarik/editorial/STAGE_MANIFEST_CRITICAL_007.json
+          if-no-files-found: warn
+          retention-days: 30

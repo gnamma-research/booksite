@@ -1,0 +1,8 @@
+{
+  "stage": 108,
+  "source_script_regression": "passed via node",
+  "live_site_QA": "not verified",
+  "native_mobile_tap_and_focus": "not verified",
+  "rendering_of_current_local_reader": "not separately browser tested",
+  "do_not_claim_visual_qa": true
+}

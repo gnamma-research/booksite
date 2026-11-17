@@ -1,0 +1,58 @@
+/* Fail-closed contract checks for stable Darūrī paragraph links and Copy assets. */
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),cp=require('node:child_process');
+const base=path.resolve(__dirname,'..');
+const read=p=>fs.readFileSync(path.join(base,p),'utf8');
+const html=read('index.html'),copy=read('copy-links.js'),css=read('copy-links.css'),sw=read('sw.js'),bundle=read('download-bundle.js');
+assert(html.includes('window.GnammaCopyContext={book:BOOK,state,sections,notes:rdNoteCatalog,rd}'),'Copy context must use authoritative Reader data and Reading Desk');
+// Copy CSS and JS legitimately have separate revision tags: paragraph position
+// repairs can update the stylesheet without changing the Copy JavaScript.
+for(const filename of ['copy-links.js','copy-links.css']){
+ const assetPattern=new RegExp(filename.replace(/\./g,'\\.')+'\\?v=([A-Za-z0-9._-]+)');
+ const linked=html.match(assetPattern);
+ assert(linked,'Current Reader must load '+filename);
+ assert(sw.includes(filename+'?v='+linked[1]),'Offline cache omits current '+filename+' revision');
+ assert(bundle.includes("'daruri/"+filename+"'"),'Complete download omits '+filename);
+}
+const downloader=html.match(/download-bundle\.js\?v=([A-Za-z0-9._-]+)/);
+assert(downloader&&sw.includes('download-bundle.js?v='+downloader[1]),
+ 'Offline package loader must use the current version');
+assert(copy.includes('C.rd?.records?.()'),'Personal annotations must come from Reading Desk only when requested');
+assert(copy.includes('config.personal'),'Personal notes opt-in missing');
+assert(copy.includes('selectionSnapshot()'),'Selected words must require a real browser selection');
+assert(copy.includes('if(config.scope===\'selected\')'),'Exact selections must not be re-expanded to entire paragraphs');
+assert(copy.includes('window.GnammaCopyLinks={'),'Stable URL helper unavailable for regression tests');
+assert(copy.includes('copyMenuSymbols=Object.freeze({'),'Copy icon semantics must be centralized');
+for(const name of ['text','notes','research'])assert(copy.includes(name+':'),'Missing semantic Copy icon for '+name);
+assert(copy.includes('gn-copy-type-mark')&&copy.includes('gn-copy-symbol'),'Text/notes/research cannot share generic Unicode box glyphs');
+assert(!copy.includes("selected:'▤'")&&!copy.includes("research:'▥'"),'Legacy near-identical Copy glyphs remain');
+assert(css.includes('.gn-copy-type-mark')&&css.includes('.gn-copy-symbol'),'Copy icons must have dedicated aligned styles');
+assert(copy.includes('speech annotation bubble')&&copy.includes('three-volume scholarly source collection'),'First three Copy silhouettes must differ by shape');
+assert(copy.includes('M21 15a4 4')&&copy.includes('M10 3.5h4.5V21'),'Missing annotation bubble or research-volume geometry');
+// Paragraph numbers are scholarly locators, not local copy-link controls.
+assert(copy.includes("document.createElement('span');number.className='gn-paragraph-number'"),'Paragraph numerals must be plain spans');
+assert(!copy.includes("document.createElement('button');btn.type='button';btn.className='gn-paragraph-link'"),'Inline paragraph Copy buttons must not return');
+assert(!copy.includes('[data-gn-par-link]'),'Click-to-copy paragraph numbers must not return');
+assert(css.includes('#reader .gn-paragraph-number')&&css.includes('pointer-events:none'),'Paragraph numbers must be visible but noninteractive');
+assert(css.includes('.focus-level-1,.focus-level-2,.focus-level-3'),'Focus modes must use the paired section/paragraph locator instead');
+assert(read('focus-locators.js').includes('locator.append(sectionNode,dot,paragraphNode)'),'Visible Focus section and paragraph numbers disappeared');
+assert(copy.includes("['link','Link','link']"),'Copy top-menu link option must remain');
+assert(copy.includes("isLink?['paragraph','range','section']"),'Copy menu must still offer paragraph, range and section links');
+assert(copy.includes('grid.dataset.gnParagraphId=p.id;'),'Stable paragraph deep links must survive without inline buttons');
+assert(html.includes("location.hash.includes('&paragraph=')"),'Continuous reader must preserve paragraph deep-links');
+const m=copy.match(/const COUNTS=\('([0-9,]+)'\)\.split/);
+assert(m,'Missing immutable baseline paragraph-count registry');
+const counts=m[1].split(',').map(Number);
+assert.equal(counts.length,258);
+assert.equal(counts.reduce((a,b)=>a+b,0),414);
+const editionScript=read('edition-r3-20261020.js');
+const d=editionScript.match(/\.textContent=("[\s\S]+?");\s*$/);
+assert(d,'Edition data not extractable');
+const data=JSON.parse(JSON.parse(d[1]));
+assert.equal(data.sections.length,259);
+for(let s=1;s<=258;s++)assert.equal(data.sections[s-1].segments.length,counts[s-1],`Paragraph count changed in §${s}; assign explicit stable IDs and aliases before release`);
+assert.equal(data.sections[258].id,'colophon');
+assert.equal(data.sections[258].segments.length,2);
+const checker=cp.spawnSync(process.execPath,['--check',path.join(base,'copy-links.js')],{encoding:'utf8'});
+assert.equal(checker.status,0,checker.stderr);
+console.log('PASS Darūrī Copy: 416 stable source paragraphs; clipboard/UI assets, offline ZIP/cache, link routing and selected text contract.');

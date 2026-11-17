@@ -1,0 +1,160 @@
+{
+  "date": "2026-11-12",
+  "edition_source": "1.5.0-integrated-first-pass",
+  "working_edition": "1.6.0-scholarship-pass",
+  "overall_percent": 80,
+  "rule": "Percentages are weighted accomplishment of explicit deliverables, not measures of scholarly truth. Each evidence status must be shown; partial sources never get complete status.",
+  "stages": [
+    {
+      "id": "A",
+      "name": "Akbarian ontology and epistemology",
+      "target": "Verified, attributed prolegomenon linking Muhammadan Reality, first determination, human barzakh and station of no station",
+      "weight": 14,
+      "percent": 85,
+      "status": "research-dossier-complete; witness-collation-pending",
+      "outputs": [
+        "editorial/ONTOLOGICAL_PROLEGOMENON_1_6_20261112.md"
+      ],
+      "remaining": [
+        "Cross-check selected Arabic first-determination loci and textual witnesses before final scholarly certification"
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Miʿrāj source dossier",
+      "target": "Narrative/variant matrix, seven prophetic encounters, Akbarian return, spiritual epistemology and primary-source qualification",
+      "weight": 13,
+      "percent": 80,
+      "status": "research-dossier-written; full-al-Sulami-and-variant-collation-outstanding",
+      "outputs": [
+        "editorial/MIRAJ_CRITICAL_DOSSIER_1_6_20261112.md"
+      ],
+      "remaining": [
+        "Obtain and directly collate all 56 al-Sulamī sayings; expand independent Qurʾānic tafsīr and hadith variant comparison"
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Prophetic encounters atlas",
+      "target": "40–60 indexed encounters, 12–15 deep analyses, direct report-level links and limits",
+      "weight": 14,
+      "percent": 78,
+      "status": "indexed-50-encounters-and-17-deep-studies-drafted; 20 source checks remain",
+      "outputs": [
+        "editorial/encounters-1_6/index.json",
+        "editorial/encounters-1_6/DEEP_STUDIES_01_08.md",
+        "editorial/encounters-1_6/DEEP_STUDIES_09_17.md"
+      ],
+      "remaining": [
+        "20 provisional catalog items require source-level collation",
+        "Deep cases require juristic sharḥ and later reception tracking in one full transmission example"
+      ]
+    },
+    {
+      "id": "D",
+      "name": "Benchmark narrative chapters",
+      "target": "Recompose Chapters 08,11,13,16,19 and 44 from first principles with sources, coherent one-piece sharḥ",
+      "weight": 16,
+      "percent": 86,
+      "status": "six benchmark chapters merged into canonical 1.6; deep primary-text collation pending",
+      "outputs": [
+        "editorial/rewrite-20261112/benchmark-1_6-08-11.json",
+        "editorial/rewrite-20261112/benchmark-1_6-13-16.json",
+        "editorial/rewrite-20261112/benchmark-1_6-19-44.json"
+      ],
+      "remaining": [
+        "Some variant witness and legal-commentary checks outstanding",
+        "Independent specialist assessment of chapter argument"
+      ]
+    },
+    {
+      "id": "E",
+      "name": "Book V living inheritance",
+      "target": "Recompose Chapters 27–33 around work/state/knowledge, ṣuḥba, disciplines and real pedagogy",
+      "weight": 12,
+      "percent": 86,
+      "status": "seven Book V chapters merged into canonical 1.6; specialist/source review pending",
+      "outputs": [
+        "editorial/rewrite-20261112/book-V-1_6-27-29.json",
+        "editorial/rewrite-20261112/book-V-1_6-30-33.json"
+      ],
+      "remaining": [
+        "Arabic primary-text and teaching-chain collation outstanding",
+        "Independent specialist review"
+      ]
+    },
+    {
+      "id": "F",
+      "name": "Evidence ledger and technical fact checks",
+      "target": "46-chapter claim–witness inventory, conflicts and status; historical and doctrinal audit",
+      "weight": 14,
+      "percent": 52,
+      "status": "all-46-chapters-triaged-with-138-claim-ledger; selected-loci-checked-but-full-witness-audit-open",
+      "outputs": [
+        "editorial/CLAIM_WITNESS_LEDGER_1_6_20261112.json"
+      ],
+      "remaining": [
+        "19 high-risk chapters need direct claim-by-claim collation, 46 full chapters require source/witness review",
+        "Verify uncollated reports and replace disputed statements"
+      ]
+    },
+    {
+      "id": "G",
+      "name": "Regional and modern explanatory cases",
+      "target": "Verified named micro–macro cases for Books VI–VII, integrate into relevant shurūḥ",
+      "weight": 10,
+      "percent": 88,
+      "status": "named regional cases merged into canonical 1.6; primary archival case witnesses pending",
+      "outputs": [
+        "editorial/REGIONAL_MICROHISTORIES_1_6_20261112.json"
+      ],
+      "remaining": [
+        "Uncollated deeds, court files and manuscript records remain",
+        "Independent regional historian review"
+      ]
+    },
+    {
+      "id": "H",
+      "name": "Recomposition, test and handoff",
+      "target": "Versioned 1.6 text, canonical/render parity, regression, changed chapters archive, coverage and handoff",
+      "weight": 7,
+      "percent": 90,
+      "status": "canonical-merge, edition labels, archive and content validation passed; browser QA not completed",
+      "outputs": [
+        "research/seerah/data/chapters.json",
+        "research/seerah/read.html",
+        "research/seerah/editorial/current-edition-1.6.0-scholarly.md",
+        "research/seerah/tests/verify.mjs",
+        "research/seerah/editorial/archive-1.5.0-pre1.6-chapters.json"
+      ],
+      "remaining": [
+        "Node test exists but was not run in a separate Node runtime",
+        "Rendered mobile/desktop visual regression and live deployment check still outstanding"
+      ]
+    }
+  ],
+  "notes": [
+    "Edition 1.5 remains canonical until 1.6 text passes checks.",
+    "No work runs asynchronously. This ledger records only current committed work."
+  ],
+  "latest": "1.6.0 canonical edition committed; 46/46 chapter pairs, 26 changed, 50 encounters, 138 claim ledger entries; source/content parity verified, primary witness and rendered UI checks outstanding",
+  "validation": {
+    "date": "2026-11-12",
+    "result": "PASS",
+    "kind": "repository-source parity through connected GitHub files",
+    "checks": [
+      "46 chapter entries, 46 articles, 46 matn and sharh sections",
+      "all chapter token parity: canonical JSON / static reader",
+      "all chapter verbatim inclusion in full manuscript",
+      "versioned 1.5 preservation",
+      "50 encounter entries with 18 deep-linked items",
+      "138 triaged claims, none automatically reclassified as proven"
+    ],
+    "outstanding": [
+      "direct primary manuscripts and variants",
+      "browser visual QA",
+      "independent specialist review",
+      "full 138 claim source audit"
+    ]
+  }
+}

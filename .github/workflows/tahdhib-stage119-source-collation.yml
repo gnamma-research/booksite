@@ -1,0 +1,69 @@
+name: Tahdhib Stage119 source witnesses and lossless cumulative text
+on:
+  workflow_dispatch:
+  push:
+    branches: ['research/tahdhib-stage119-q309-witness-collation-20261112']
+    paths:
+      - '.github/workflows/tahdhib-stage119-source-collation.yml'
+      - 'tools/tahdhib/build_stage119_cumulative.py'
+      - 'tools/tahdhib/check_stage119_source_cumulative.py'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE119_Q309_COMPARATIVE_WORKING_READINGS.md'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE119_Q309_COMPARATIVE_WORKING_READINGS.json'
+permissions:
+  contents: write
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Construct full historical H master as an immutable prefix
+        run: python tools/tahdhib/build_stage119_cumulative.py
+      - name: Check twelve Q309 example drafts and strict source grades
+        run: python tools/tahdhib/check_stage119_source_cumulative.py
+      - name: Publish only generated cumulative files to the research branch
+        env:
+          BRANCH: research/tahdhib-stage119-q309-witness-collation-20261112
+        run: |
+          test "$GITHUB_REF" = "refs/heads/$BRANCH"
+          E=texts/al-taftazani/tahdhib-al-mantiq/edition
+          D=$(mktemp -d)
+          cp "$E/batches/hawashi-all-sections-cumulative-stage119.md" "$D/full.md"
+          cp "$E/STAGE119_CUMULATIVE_FILE_INTEGRITY.json" "$D/manifest.json"
+          SOURCE=$(sha256sum "$E/STAGE119_Q309_COMPARATIVE_WORKING_READINGS.json" "$E/HANDOFF_LATEST.md" | sha256sum | cut -d' ' -f1)
+          git fetch origin "$BRANCH"
+          git reset --hard "origin/$BRANCH"
+          CURRENT=$(sha256sum "$E/STAGE119_Q309_COMPARATIVE_WORKING_READINGS.json" "$E/HANDOFF_LATEST.md" | sha256sum | cut -d' ' -f1)
+          test "$SOURCE" = "$CURRENT" || { echo "Source moved during build"; exit 3; }
+          cp "$D/full.md" "$E/batches/hawashi-all-sections-cumulative-stage119.md"
+          cp "$D/manifest.json" "$E/STAGE119_CUMULATIVE_FILE_INTEGRITY.json"
+          python tools/tahdhib/check_stage119_source_cumulative.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$E/batches/hawashi-all-sections-cumulative-stage119.md" "$E/STAGE119_CUMULATIVE_FILE_INTEGRITY.json"
+          if ! git diff --cached --quiet; then
+            git commit -m 'Tahdhīb Stage119: publish complete source-preserved Q309 edition and checksum manifest'
+            git push origin "HEAD:refs/heads/$BRANCH"
+          fi
+      - name: Export complete working research corpus, source prints, reader and handoffs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tahdhib-stage119-comparative-full-handoff
+          path: |
+            texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage119.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage117.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE119_*
+            texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE118_Q258_49_DEFINITION_SOURCE_PHRASES.json
+            texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE118_Q294_105_SOURCE_SYMBOL_FAMILIES.json
+            texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE118_SOURCE_CELL_RESEARCH.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_*.md
+            texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/print1405_Q309_table_excerpt.png
+            texts/al-taftazani/tahdhib-al-mantiq/edition/source-table-excerpts/PRINT_IMAGE_MANIFEST_STAGE116.json
+            tools/tahdhib/build_stage119_cumulative.py
+            tools/tahdhib/check_stage119_source_cumulative.py
+          if-no-files-found: warn
+          retention-days: 90

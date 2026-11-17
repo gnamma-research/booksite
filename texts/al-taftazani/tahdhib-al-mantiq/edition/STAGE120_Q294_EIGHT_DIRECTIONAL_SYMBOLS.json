@@ -1,0 +1,105 @@
+{
+  "stage": 120,
+  "date": "2026-11-12",
+  "sourceNote": "HWN-PROPOSITIONS-097",
+  "physicalSource": "H1405 photographed Q294",
+  "legend": "H gloss Q293, signed عبد الرحيم",
+  "pdfUrl": "https://archive.org/download/lis_fa12/lis_fa1208.pdf",
+  "pdfSHA256": "696c7b2e2884414f34d90203326f7b07f72e207849080e5069aadd0f12bb5759",
+  "priorExactWorkingSymbols": 19,
+  "newExactWorkingSymbols": 8,
+  "cumulativeSourceGlyphWorkingReadings": 27,
+  "remainingNotIndividuallyRead": 78,
+  "legendMeaning": "مط: unrestricted inclusion of proposition truth conditions. حم: lower proposition has wider truth-condition extension than upper. Neither mark by itself proves a modal necessity theorem.",
+  "secondPrint": "H1433 Q294 whole-page witness exists, but each of these eight cells still needs a separate comparison against it.",
+  "entries": [
+    {
+      "id": "Q294-R03-C01",
+      "row": 3,
+      "column": 1,
+      "sourceAr": "مط حم",
+      "english": "Absolute inclusion: lower proposition is more general than upper proposition, in the sense of the truth conditions under which its content obtains",
+      "sourceGrade": "direct H1405 photographic working transcription, not full semantic proof",
+      "sourcePrintedPage": 294,
+      "pdfIndexZeroBased": 295,
+      "independentManuscriptCertified": false
+    },
+    {
+      "id": "Q294-R04-C01",
+      "row": 4,
+      "column": 1,
+      "sourceAr": "مط حم",
+      "english": "Absolute inclusion: lower proposition is more general than upper proposition, in the sense of the truth conditions under which its content obtains",
+      "sourceGrade": "direct H1405 photographic working transcription, not full semantic proof",
+      "sourcePrintedPage": 294,
+      "pdfIndexZeroBased": 295,
+      "independentManuscriptCertified": false
+    },
+    {
+      "id": "Q294-R04-C03",
+      "row": 4,
+      "column": 3,
+      "sourceAr": "مط حم",
+      "english": "Absolute inclusion: lower proposition is more general than upper proposition, in the sense of the truth conditions under which its content obtains",
+      "sourceGrade": "direct H1405 photographic working transcription, not full semantic proof",
+      "sourcePrintedPage": 294,
+      "pdfIndexZeroBased": 295,
+      "independentManuscriptCertified": false
+    },
+    {
+      "id": "Q294-R05-C01",
+      "row": 5,
+      "column": 1,
+      "sourceAr": "مط حم",
+      "english": "Absolute inclusion: lower proposition is more general than upper proposition, in the sense of the truth conditions under which its content obtains",
+      "sourceGrade": "direct H1405 photographic working transcription, not full semantic proof",
+      "sourcePrintedPage": 294,
+      "pdfIndexZeroBased": 295,
+      "independentManuscriptCertified": false
+    },
+    {
+      "id": "Q294-R06-C01",
+      "row": 6,
+      "column": 1,
+      "sourceAr": "مط حم",
+      "english": "Absolute inclusion: lower proposition is more general than upper proposition, in the sense of the truth conditions under which its content obtains",
+      "sourceGrade": "direct H1405 photographic working transcription, not full semantic proof",
+      "sourcePrintedPage": 294,
+      "pdfIndexZeroBased": 295,
+      "independentManuscriptCertified": false
+    },
+    {
+      "id": "Q294-R06-C02",
+      "row": 6,
+      "column": 2,
+      "sourceAr": "مط حم",
+      "english": "Absolute inclusion: lower proposition is more general than upper proposition, in the sense of the truth conditions under which its content obtains",
+      "sourceGrade": "direct H1405 photographic working transcription, not full semantic proof",
+      "sourcePrintedPage": 294,
+      "pdfIndexZeroBased": 295,
+      "independentManuscriptCertified": false
+    },
+    {
+      "id": "Q294-R07-C01",
+      "row": 7,
+      "column": 1,
+      "sourceAr": "مط حم",
+      "english": "Absolute inclusion: lower proposition is more general than upper proposition, in the sense of the truth conditions under which its content obtains",
+      "sourceGrade": "direct H1405 photographic working transcription, not full semantic proof",
+      "sourcePrintedPage": 294,
+      "pdfIndexZeroBased": 295,
+      "independentManuscriptCertified": false
+    },
+    {
+      "id": "Q294-R08-C01",
+      "row": 8,
+      "column": 1,
+      "sourceAr": "مط حم",
+      "english": "Absolute inclusion: lower proposition is more general than upper proposition, in the sense of the truth conditions under which its content obtains",
+      "sourceGrade": "direct H1405 photographic working transcription, not full semantic proof",
+      "sourcePrintedPage": 294,
+      "pdfIndexZeroBased": 295,
+      "independentManuscriptCertified": false
+    }
+  ]
+}

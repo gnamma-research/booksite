@@ -1,0 +1,94 @@
+{
+  "schema": "gnamma.tahdhib.stage122.expanded-notes.v1",
+  "date": "2026-11-12",
+  "source": "Private 274-page Qum source archive; Stage114 independent census",
+  "scope": "Six full digital-source-facing English working translations, not independent photographic or manuscript certification",
+  "originalHCorpusMutated": false,
+  "modernMaterialRepublished": false,
+  "counts": {
+    "revisedHistoricalNotes": 6,
+    "matchedOldSourceSHA256": 6,
+    "wholeManuscriptCertified": 0,
+    "originalHNotesPreserved": 1090
+  },
+  "notes": [
+    {
+      "id": "HWN-DALALA-067",
+      "section": "H-DALALA",
+      "printedPage": 206,
+      "arabicDigitalWords": 111,
+      "oldEnglishWords": 44,
+      "sourceDigitalSHA256": "177dae10dae7722801e8aae495a0971b3877917cbf38cfe5f9b0a5c221ed2807",
+      "sourceHashMatched": true,
+      "voices": "Mīrzā Muḥammad ʿAlī; Shaykh ʿAbd al-Raḥīm",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/206?lang=ar",
+      "translationDocument": "STAGE122_SIX_EXPANDED_HISTORICAL_NOTES.md",
+      "independentPrintedPageCollation": false
+    },
+    {
+      "id": "HWN-CONVERSION-008",
+      "section": "H-CONVERSION",
+      "printedPage": 325,
+      "arabicDigitalWords": 118,
+      "oldEnglishWords": 52,
+      "sourceDigitalSHA256": "4a625f646ba95667ad0aa28a19bdfc3808efc86274f25378dcb26681a2df8b05",
+      "sourceHashMatched": true,
+      "voices": "Shaykh ʿAbd al-Raḥīm",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/325?lang=ar",
+      "translationDocument": "STAGE122_SIX_EXPANDED_HISTORICAL_NOTES.md",
+      "independentPrintedPageCollation": false
+    },
+    {
+      "id": "HWN-CONVERSION-021",
+      "section": "H-CONVERSION",
+      "printedPage": 328,
+      "arabicDigitalWords": 109,
+      "oldEnglishWords": 50,
+      "sourceDigitalSHA256": "49e5fcb9585923b3701d2dfa703b248475d1b02f84498535a40ca0ef501827c0",
+      "sourceHashMatched": true,
+      "voices": "Mīrzā Muḥammad ʿAlī",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/328?lang=ar",
+      "translationDocument": "STAGE122_SIX_EXPANDED_HISTORICAL_NOTES.md",
+      "independentPrintedPageCollation": false
+    },
+    {
+      "id": "HWN-CONTRAPOSITION-019",
+      "section": "H-CONTRAPOSITION",
+      "printedPage": 339,
+      "arabicDigitalWords": 85,
+      "oldEnglishWords": 39,
+      "sourceDigitalSHA256": "97ebc686d557dcfea6cf2ed113748c80f5023b858689e2340244a620c42d2540",
+      "sourceHashMatched": true,
+      "voices": "Mīrzā Muḥammad ʿAlī",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/339?lang=ar",
+      "translationDocument": "STAGE122_SIX_EXPANDED_HISTORICAL_NOTES.md",
+      "independentPrintedPageCollation": false
+    },
+    {
+      "id": "HWN-MAFAHIM-011",
+      "section": "H-MAFAHIM",
+      "printedPage": 221,
+      "arabicDigitalWords": 154,
+      "oldEnglishWords": 60,
+      "sourceDigitalSHA256": "d1ae3603792d69ba8b58004890eeceb4ad1c9935ac5a5420641f7a9878218629",
+      "sourceHashMatched": true,
+      "voices": "Mīrzā Muḥammad ʿAlī",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/221?lang=ar",
+      "translationDocument": "STAGE122_SIX_EXPANDED_HISTORICAL_NOTES.md",
+      "independentPrintedPageCollation": false
+    },
+    {
+      "id": "HWN-INTRO-081",
+      "section": "H-INTRO",
+      "printedPage": 187,
+      "arabicDigitalWords": 171,
+      "oldEnglishWords": 60,
+      "sourceDigitalSHA256": "77d8e230de85248b8a7a1b3adefc5666c20dcfc1f7ac9a89b717e3e9f261e067",
+      "sourceHashMatched": true,
+      "voices": "Mīrzā Muḥammad ʿAlī",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/187?lang=ar",
+      "translationDocument": "STAGE122_SIX_EXPANDED_HISTORICAL_NOTES.md",
+      "independentPrintedPageCollation": false
+    }
+  ]
+}

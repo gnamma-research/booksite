@@ -1,0 +1,97 @@
+{
+  "schema": "gnamma-qawtaw11-witness-acquisition-v1",
+  "researchDate": "2026-11-12",
+  "workingElectronicComparison": "171/171 bilingual units; 5520/5520 original Arabic punctuation segments",
+  "editorialUnresolved": [
+    "SH-002 negative",
+    "QT-059 ancestral lacuna"
+  ],
+  "actualNewPagesInspected": 0,
+  "newIndependentManuscriptCollations": 0,
+  "arabicEditorialConjectureAdopted": false,
+  "sourceHashes": {
+    "QT-059": {
+      "hashes": {
+        "arabic": "0dd4c71821c5c905c2aabbbaeb242a997563702d80fd52f3256931bfb7cdfe62",
+        "english": "a1f0d003efff666fb384f154bbcdc0bc895a785fb2258293af9b62c539731825"
+      },
+      "readingNotEmended": true,
+      "noteAppended": true
+    },
+    "SH-002": {
+      "hashes": {
+        "arabic": "5d64575198c2659ac2b5d20b4ae7ceedc66caf70e982e1e0a41027f43c81cf66",
+        "english": "5e951cd30bc4c770406e93602d826b50f1c4fc613451fe816f77bd5462664d91",
+        "readingArabic": "abfffc2df4dad45ca5cf0288fdabac90a1cac2e9593137e982e94f5755bf0f95"
+      },
+      "readingNotEmended": true,
+      "noteAppended": true
+    }
+  },
+  "newlyLocatedPrints": [
+    {
+      "id": "L1898",
+      "kind": "historical printed commentary",
+      "title": "Kitab al-Tamhid fi Sharh Qawaid al-Tawhid",
+      "date": "1315 AH / 1898",
+      "extent": "234 pp, Tamhid pp.2-181",
+      "holdingCatalogue": "https://ge.nii.ac.jp/ncid/BB28267336",
+      "secondCatalogue": "https://kias.sakura.ne.jp/ibnarabi/index.php/Sain_al-Din_Turka",
+      "freeEbookListing": "https://play.google.com/store/books/details?id=-Wku6DfHLa8C",
+      "passageImagesExamined": false,
+      "notes": "Google Play free listing and Kyoto catalog attest title/date/extent; not that actual relevant folios have been read or the sources have independent manuscript descent."
+    },
+    {
+      "id": "HIV",
+      "kind": "edited standalone original matn",
+      "title": "Qawaid al-Tawhid, ed. Majid Hadizadeh, Nusus wa-Rasail min Turath Isfahan al-Ilmi al-Khalid IV",
+      "extent": "pp.37-72",
+      "catalogue": "https://m.imamhussain.org/lib/15",
+      "retailer": "https://mahdroo.ir/shop/category/book/author/484480-sl5s",
+      "availablePartialCollection": "https://alfeker.net/b/3875/",
+      "passageImagesExamined": false,
+      "notes": "Available al-Feker volumes are I-III; volume IV missing from public collection verified."
+    },
+    {
+      "id": "BL128/2",
+      "kind": "old commentary manuscript",
+      "date": "869-871 AH",
+      "catalogue": "https://searcharchives.bl.uk/catalog/040-003784927",
+      "passageImagesExamined": false,
+      "notes": "No digital images in viewed catalog; request targeted folios."
+    },
+    {
+      "id": "R2003",
+      "kind": "modern edited commentary",
+      "catalogue": "https://www.shiabooks.net/library.php?id=7969",
+      "passageImagesExamined": false
+    },
+    {
+      "id": "N2014",
+      "kind": "modern edited commentary",
+      "catalogue": "https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/",
+      "passageImagesExamined": false
+    }
+  ],
+  "SH002": {
+    "sourceEvidence": [
+      "A printed pp.49-52 negative",
+      "H2014/1:224 negative"
+    ],
+    "earlierPositive": "القطع بحقيّة هذه المسألة",
+    "adjacentQuotation": "إذ القطع ببطلان جميع الأحكام العقلية",
+    "laterNegative": "القطع ببطلان مسألة التوحيد",
+    "editorialHypothesis": "القطع بحقيّة مسألة التوحيد",
+    "hypothesisCertainty": "unattested conjecture only; plausible attraction from preceding ببطلان",
+    "acceptedArabic": "unchanged negative",
+    "actualNewIndependentReading": false
+  },
+  "QT059": {
+    "beginning": "وما قيل إنّ علوم النظّار مأخوذة من الحواسّ",
+    "end": "وأمّا الثاني فلما بيّنّاه في كتبنا المعمولة في صناعة الحكمة",
+    "lacuna": "reported by earlier editor; exact location, extent and lost wording not verified",
+    "actualNewWordsRecovered": 0,
+    "standaloneOriginalEditionInspected": false
+  },
+  "canonicalHandoff": "editorial/QAWTAW11_INDEPENDENT_WITNESS_REGISTER_2026-11-12.md"
+}

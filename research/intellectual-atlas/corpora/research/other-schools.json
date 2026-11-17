@@ -1,0 +1,838 @@
+{
+  "metadata": {
+    "scope": "Selected historical legal traditions beyond the four Sunni madhhabs; deliberately not exhaustive",
+    "compiled": "2026-11-10",
+    "date_policy": "Author-death chronology only unless a separate qualified label is supplied"
+  },
+  "works": [
+    {
+      "id": "fiqh_zahiri_khisal",
+      "title": "al-Khiṣāl al-jāmiʿa",
+      "title_ar": "الخصال الجامعة",
+      "author": "Ibn Ḥazm",
+      "school": "zahiri",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": 456,
+      "author_death_ce": 1064,
+      "source_ids": [
+        "OT_muhalla"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_zahiri_isal",
+      "title": "al-Īṣāl ilā fahm Kitāb al-Khiṣāl",
+      "title_ar": "الإيصال إلى فهم كتاب الخصال",
+      "author": "Ibn Ḥazm",
+      "school": "zahiri",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "author_death_ah": 456,
+      "author_death_ce": 1064,
+      "source_ids": [
+        "OT_muhalla"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_zahiri_mujalla",
+      "title": "al-Mujallā bi-l-ikhtiṣār",
+      "title_ar": "المجلى بالاختصار",
+      "author": "Ibn Ḥazm",
+      "school": "zahiri",
+      "discipline": "fiqh",
+      "genre": "legal manual",
+      "author_death_ah": 456,
+      "author_death_ce": 1064,
+      "source_ids": [
+        "OT_muhalla"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_zahiri_muhalla",
+      "title": "al-Muḥallā bi-l-āthār",
+      "title_ar": "المحلى بالآثار",
+      "author": "Ibn Ḥazm",
+      "school": "zahiri",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "author_death_ah": 456,
+      "author_death_ce": 1064,
+      "source_ids": [
+        "OT_muhalla"
+      ],
+      "notes": "Bibliographical work identity; survival differs across the four works. Al-Muhalla includes an unfinished completion by Abu Rafiʿ from his father’s al-Isal."
+    },
+    {
+      "id": "fiqh_imami_muqnia",
+      "title": "al-Muqniʿa",
+      "title_ar": "المقنعة",
+      "author": "al-Shaykh al-Mufīd",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": 413,
+      "author_death_ce": 1022,
+      "source_ids": [
+        "OT_cafer"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_imami_intisar",
+      "title": "al-Intiṣār",
+      "title_ar": "الانتصار",
+      "author": "al-Sharīf al-Murtaḍā",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": 436,
+      "author_death_ce": 1044,
+      "source_ids": [
+        "OT_cafer"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_imami_tusi_mabsut",
+      "title": "al-Mabsūṭ fī fiqh al-Imāmiyya",
+      "title_ar": "المبسوط في فقه الإمامية",
+      "author": "Abū Jaʿfar al-Ṭūsī",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": 460,
+      "author_death_ce": 1067,
+      "source_ids": [
+        "OT_tusi"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_imami_tusi_nihaya",
+      "title": "al-Nihāya fī mujarrad al-fiqh wa-l-fatāwā",
+      "title_ar": "النهاية في مجرد الفقه والفتاوى",
+      "author": "Abū Jaʿfar al-Ṭūsī",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": 460,
+      "author_death_ce": 1067,
+      "source_ids": [
+        "OT_tusi"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_imami_tusi_khilaf",
+      "title": "Kitāb al-Khilāf",
+      "title_ar": "كتاب الخلاف",
+      "author": "Abū Jaʿfar al-Ṭūsī",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": 460,
+      "author_death_ce": 1067,
+      "source_ids": [
+        "OT_tusi"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_imami_tusi_jumal",
+      "title": "al-Jumal wa-l-ʿuqūd",
+      "title_ar": "الجمل والعقود",
+      "author": "Abū Jaʿfar al-Ṭūsī",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": 460,
+      "author_death_ce": 1067,
+      "source_ids": [
+        "OT_tusi"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_imami_hilli_sharai",
+      "title": "Sharāʾiʿ al-Islām",
+      "title_ar": "شرائع الإسلام",
+      "author": "al-Muḥaqqiq al-Ḥillī",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": 676,
+      "author_death_ce": 1277,
+      "source_ids": [
+        "OT_hilli"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_imami_hilli_nafi",
+      "title": "al-Mukhtaṣar al-nāfiʿ",
+      "title_ar": "المختصر النافع",
+      "author": "al-Muḥaqqiq al-Ḥillī",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "abridgment",
+      "author_death_ah": 676,
+      "author_death_ce": 1277,
+      "source_ids": [
+        "OT_hilli"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_imami_hilli_mutabar",
+      "title": "al-Muʿtabar fī sharḥ al-Mukhtaṣar",
+      "title_ar": "المعتبر في شرح المختصر",
+      "author": "al-Muḥaqqiq al-Ḥillī",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "author_death_ah": 676,
+      "author_death_ce": 1277,
+      "source_ids": [
+        "OT_hilli"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_imami_hilli_nukat",
+      "title": "Nukat al-Nihāya",
+      "title_ar": "نكت النهاية",
+      "author": "al-Muḥaqqiq al-Ḥillī",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "author_death_ah": 676,
+      "author_death_ce": 1277,
+      "source_ids": [
+        "OT_hilli"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_imami_allama_tahrir",
+      "title": "Taḥrīr al-aḥkām al-sharʿiyya",
+      "title_ar": "تحرير الأحكام الشرعية",
+      "author": "al-ʿAllāma Ibn al-Muṭahhar al-Ḥillī",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": 726,
+      "author_death_ce": 1325,
+      "source_ids": [
+        "OT_cafer"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_imami_allama_muntaha",
+      "title": "Muntahā al-maṭlab fī taḥqīq al-madhhab",
+      "title_ar": "منتهى المطلب في تحقيق المذهب",
+      "author": "al-ʿAllāma Ibn al-Muṭahhar al-Ḥillī",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": 726,
+      "author_death_ce": 1325,
+      "source_ids": [
+        "OT_cafer"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_imami_luma",
+      "title": "al-Lumʿa al-Dimashqiyya",
+      "title_ar": "اللمعة الدمشقية",
+      "author": "al-Shahīd al-Awwal",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "legal manual",
+      "author_death_ah": 786,
+      "author_death_ce": 1384,
+      "source_ids": [
+        "OT_shahid1"
+      ],
+      "notes": "Conflicting composition reports remain in the cited study; the timeline uses author death only."
+    },
+    {
+      "id": "fiqh_imami_sani_rawda",
+      "title": "al-Rawḍa al-bahiyya fī sharḥ al-Lumʿa al-Dimashqiyya",
+      "title_ar": "الروضة البهية في شرح اللمعة الدمشقية",
+      "author": "al-Shahīd al-Thānī",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "author_death_ah": 966,
+      "author_death_ce": 1559,
+      "source_ids": [
+        "OT_shahid2"
+      ],
+      "notes": "",
+      "date_label": "Author d. 966 AH / 1559 CE (?)",
+      "date_note": "Qualified author-death year in the cited biographical source; not a composition date."
+    },
+    {
+      "id": "fiqh_imami_sani_masalik",
+      "title": "Masālik al-afhām ilā tanqīḥ Sharāʾiʿ al-Islām",
+      "title_ar": "مسالك الأفهام إلى تنقيح شرائع الإسلام",
+      "author": "al-Shahīd al-Thānī",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "author_death_ah": 966,
+      "author_death_ce": 1559,
+      "source_ids": [
+        "OT_shahid2"
+      ],
+      "notes": "",
+      "date_label": "Author d. 966 AH / 1559 CE (?)",
+      "date_note": "Qualified author-death year in the cited biographical source; not a composition date."
+    },
+    {
+      "id": "fiqh_imami_madarik",
+      "title": "Madārik al-aḥkām",
+      "title_ar": "مدارك الأحكام",
+      "author": "Muḥammad b. ʿAlī al-Mūsawī al-ʿĀmilī",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "source_ids": [
+        "OT_hilli"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_imami_jawahir",
+      "title": "Jawāhir al-kalām fī sharḥ Sharāʾiʿ al-Islām",
+      "title_ar": "جواهر الكلام في شرح شرائع الإسلام",
+      "author": "Muḥammad Ḥasan al-Najafī",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "author_death_ah": 1266,
+      "author_death_ce": 1850,
+      "source_ids": [
+        "OT_hilli",
+        "OT_cafer",
+        "OT_ansari"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_imami_makasib",
+      "title": "al-Makāsib",
+      "title_ar": "المكاسب",
+      "author": "Murtaḍā al-Anṣārī",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "commercial law",
+      "author_death_ah": 1281,
+      "author_death_ce": 1864,
+      "source_ids": [
+        "OT_ansari"
+      ],
+      "notes": "",
+      "aliases": [
+        "al-Matājir"
+      ]
+    },
+    {
+      "id": "fiqh_imami_manasik",
+      "title": "al-Manāsik",
+      "title_ar": "المناسك",
+      "author": "Murtaḍā al-Anṣārī",
+      "school": "imami",
+      "discipline": "fiqh",
+      "genre": "pilgrimage law",
+      "author_death_ah": 1281,
+      "author_death_ce": 1864,
+      "source_ids": [
+        "OT_ansari"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_zaydi_hadi_ahkam",
+      "title": "al-Aḥkām fī bayān al-ḥalāl wa-l-ḥarām",
+      "title_ar": "الأحكام في بيان الحلال والحرام",
+      "author": "al-Hādī ilā l-Ḥaqq Yaḥyā b. al-Ḥusayn",
+      "school": "zaydi",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": 298,
+      "author_death_ce": 911,
+      "source_ids": [
+        "OT_zaydi",
+        "OT_hadi"
+      ],
+      "notes": "Transmitted legal corpus; the cited bibliography identifies pupil compilation of answers in this textual group."
+    },
+    {
+      "id": "fiqh_zaydi_hadi_muntakhab",
+      "title": "al-Muntakhab",
+      "title_ar": "المنتخب",
+      "author": "al-Hādī ilā l-Ḥaqq Yaḥyā b. al-Ḥusayn",
+      "school": "zaydi",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": 298,
+      "author_death_ce": 911,
+      "source_ids": [
+        "OT_zaydi",
+        "OT_hadi"
+      ],
+      "notes": "Transmitted legal corpus; the cited bibliography identifies pupil compilation of answers in this textual group."
+    },
+    {
+      "id": "fiqh_zaydi_hadi_funun",
+      "title": "al-Funūn",
+      "title_ar": "الفنون",
+      "author": "al-Hādī ilā l-Ḥaqq Yaḥyā b. al-Ḥusayn",
+      "school": "zaydi",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": 298,
+      "author_death_ce": 911,
+      "source_ids": [
+        "OT_zaydi",
+        "OT_hadi"
+      ],
+      "notes": "Transmitted legal corpus; the cited bibliography identifies pupil compilation of answers in this textual group."
+    },
+    {
+      "id": "fiqh_zaydi_azhar",
+      "title": "al-Azhār fī fiqh al-aʾimma al-aṭhār",
+      "title_ar": "الأزهار في فقه الأئمة الأطهار",
+      "author": "Aḥmad b. Yaḥyā Ibn al-Murtaḍā",
+      "school": "zaydi",
+      "discipline": "fiqh",
+      "genre": "legal manual",
+      "author_death_ah": 840,
+      "author_death_ce": 1437,
+      "source_ids": [
+        "OT_zaydi",
+        "OT_bahr"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_zaydi_bahr",
+      "title": "al-Baḥr al-zakhkhār",
+      "title_ar": "البحر الزخار",
+      "author": "Aḥmad b. Yaḥyā Ibn al-Murtaḍā",
+      "school": "zaydi",
+      "discipline": "fiqh",
+      "genre": "comparative legal compendium",
+      "author_death_ah": 840,
+      "author_death_ce": 1437,
+      "source_ids": [
+        "OT_zaydi",
+        "OT_bahr"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_zaydi_ghayat",
+      "title": "Ghāyat al-afkār wa-nihāyat al-anẓār",
+      "title_ar": "غاية الأفكار ونهاية الأنظار",
+      "author": "Aḥmad b. Yaḥyā Ibn al-Murtaḍā",
+      "school": "zaydi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "author_death_ah": 840,
+      "author_death_ce": 1437,
+      "source_ids": [
+        "OT_bahr"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_zaydi_muntaza",
+      "title": "al-Muntazaʿ al-mukhtār min al-Ghayth al-midrār",
+      "title_ar": "المنتزع المختار من الغيث المدرار",
+      "author": "ʿAbd Allāh b. Abī l-Qāsim Ibn Miftāḥ",
+      "school": "zaydi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "source_ids": [
+        "OT_zaydi"
+      ],
+      "notes": "The cited study describes mediation through al-Ghayth al-midrar; no direct authorial commentary edge to al-Azhar is assumed here."
+    },
+    {
+      "id": "fiqh_zaydi_qamar",
+      "title": "al-Qamar al-nawwār ʿalā l-Baḥr al-zakhkhār",
+      "title_ar": "القمر النوار على البحر الزخار",
+      "author": "al-Ḥusayn b. Yaḥyā Ḥanash al-Shahārī",
+      "school": "zaydi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "source_ids": [
+        "OT_bahr"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_zaydi_nafahat",
+      "title": "Nafaḥāt al-anẓār ḥāshiya ʿalā l-Baḥr al-zakhkhār",
+      "title_ar": "نفحات الأنظار حاشية على البحر الزخار",
+      "author": "Hāshim b. Yaḥyā b. Muḥammad al-Shāmī",
+      "school": "zaydi",
+      "discipline": "fiqh",
+      "genre": "gloss",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "source_ids": [
+        "OT_bahr"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_ibadi_mudawwana_kubra",
+      "title": "al-Mudawwana al-kubrā",
+      "title_ar": "المدونة الكبرى",
+      "author": "Abū Ghānim Bishr b. Ghānim al-Khurāsānī",
+      "school": "ibadi",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "source_ids": [
+        "OT_ibadi"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_ibadi_mudawwana_sughra",
+      "title": "al-Mudawwana al-ṣughrā",
+      "title_ar": "المدونة الصغرى",
+      "author": "Abū Ghānim Bishr b. Ghānim al-Khurāsānī",
+      "school": "ibadi",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "source_ids": [
+        "OT_ibadi"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_ibadi_idah",
+      "title": "Kitāb al-Īḍāḥ",
+      "title_ar": "كتاب الإيضاح",
+      "author": "ʿĀmir b. ʿAlī al-Shammākhī",
+      "school": "ibadi",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "source_ids": [
+        "OT_ibadi"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_ibadi_nil",
+      "title": "Kitāb al-Nīl wa-shifāʾ al-ʿalīl",
+      "title_ar": "كتاب النيل وشفاء العليل",
+      "author": "ʿAbd al-ʿAzīz al-Thamīnī",
+      "school": "ibadi",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "source_ids": [
+        "OT_ibadi"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_ibadi_wird",
+      "title": "al-Wird al-bassām fī riyāḍ al-aḥkām",
+      "title_ar": "الورد البسام في رياض الأحكام",
+      "author": "ʿAbd al-ʿAzīz al-Thamīnī",
+      "school": "ibadi",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": null,
+      "author_death_ce": null,
+      "source_ids": [
+        "OT_ibadi"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_ibadi_sharh_nil",
+      "title": "Sharḥ Kitāb al-Nīl wa-shifāʾ al-ʿalīl",
+      "title_ar": "شرح كتاب النيل وشفاء العليل",
+      "author": "Muḥammad b. Yūsuf Aṭfayyish",
+      "school": "ibadi",
+      "discipline": "fiqh",
+      "genre": "commentary",
+      "author_death_ah": 1332,
+      "author_death_ce": 1914,
+      "source_ids": [
+        "OT_ibadi",
+        "OT_atfayyish"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fiqh_ibadi_shamil",
+      "title": "Shāmil al-aṣl wa-l-farʿ",
+      "title_ar": "شامل الأصل والفرع",
+      "author": "Muḥammad b. Yūsuf Aṭfayyish",
+      "school": "ibadi",
+      "discipline": "fiqh",
+      "genre": "legal compendium",
+      "author_death_ah": 1332,
+      "author_death_ce": 1914,
+      "source_ids": [
+        "OT_atfayyish"
+      ],
+      "notes": ""
+    }
+  ],
+  "sources": [
+    {
+      "id": "OT_muhalla",
+      "title": "H. Yunus Apaydın, el-Muhallâ, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/el-muhalla",
+      "kind": "scholarly_reference",
+      "support": "Opening discussion identifies Ibn Hazm’s four legal works and the two direct commentary pairs. Survival and completion must be treated separately.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "OT_cafer",
+      "title": "Hayreddin Karaman, Caʿferiyye, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/caferiyye--sia",
+      "kind": "scholarly_reference",
+      "support": "Section E, Literatür: title–author bibliography. Uṣūl and hadith compilations are excluded from this fiqh subset.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "OT_tusi",
+      "title": "Mustafa Öz, Tûsî, Ebû Caʿfer, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/tusi-ebu-cafer",
+      "kind": "scholarly_reference",
+      "support": "Life and Eserleri / Fıkıh: author death, al-Mabsut, al-Nihaya, al-Khilaf and al-Jumal wa-l-uqud; Nukat commentary.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "OT_hilli",
+      "title": "Mazlum Uyar, Hillî, Muhakkık, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/hilli-muhakkik",
+      "kind": "scholarly_reference",
+      "support": "Eserleri 1–3: Sharaʾiʿ, its abridgment al-Nafiʿ, commentaries, and Nukat on Tusi. Author death distinguished from Allama Hilli.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "OT_shahid1",
+      "title": "Şehîd-i Evvel, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/sehid-i-evvel",
+      "kind": "scholarly_reference",
+      "support": "Life and Eserleri A.1: al-Lumʿa, conflicting composition reports, and al-Rawda commentary.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "OT_shahid2",
+      "title": "Mustafa Öz, Şehîd-i Sânî, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/sehid-i-sani",
+      "kind": "scholarly_reference",
+      "support": "Eserleri 6–7 explicitly identify al-Rawda and Masalik as commentaries. Death year 966/1559 is qualified by the source.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "OT_ansari",
+      "title": "Ahmet Özel, Ensârî, Şeyh Murtaza, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/ensari-seyh-murtaza",
+      "kind": "scholarly_reference",
+      "support": "Author death 1281/1864; Eserleri 2 and 4 identify al-Makasib and al-Manasik. Life gives Najafi’s death 1266/1850.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "OT_zaydi",
+      "title": "Yusuf Gökalp and Fatih Yücel, Zeydiyye, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/zeydiyye",
+      "kind": "scholarly_reference",
+      "support": "Fiqh section, Literatür: al-Hadi’s three works; al-Azhar, al-Bahr and Ibn Miftah’s commentary.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "OT_hadi",
+      "title": "Saffet Köse, Hâdî-İlelhak, Yahyâ b. Hüseyin, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/hadi-ilelhak-yahya-b-huseyin",
+      "kind": "scholarly_reference",
+      "support": "Author death 298/911 and legal bibliography; his pupils’ role in transmitting/compiling answers is distinguished from authorship.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "OT_bahr",
+      "title": "Cengiz Kallek, el-Bahrü’z-Zehhâr, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/el-bahruz-zehhar",
+      "kind": "scholarly_reference",
+      "support": "Author death 840/1437; named commentaries Ghayat al-afkar, al-Qamar al-nawwar and Nafahat al-anzar.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "OT_ibadi",
+      "title": "Ethem Ruhi Fığlalı, İbâzıyye, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/ibaziyye",
+      "kind": "scholarly_reference",
+      "support": "Section E: legal bibliography identifies the two Mudawwanas, al-Idah, al-Nil, al-Wird al-bassam and the Nil commentary.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "OT_atfayyish",
+      "title": "Sabri Hizmetli, Ettafeyyiş, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/ettafeyyis",
+      "kind": "scholarly_reference",
+      "support": "Author death 1332/1914; Eserleri D identifies the Nil commentary and Shamil al-asl wa-l-farʿ.",
+      "accessed": "2026-11-10"
+    }
+  ],
+  "relations": [
+    {
+      "from": "fiqh_zahiri_khisal",
+      "to": "fiqh_zahiri_isal",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "OT_muhalla"
+      ],
+      "note": "The source identifies al-Isal as the expansion/commentary of al-Khisal."
+    },
+    {
+      "from": "fiqh_zahiri_mujalla",
+      "to": "fiqh_zahiri_muhalla",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "OT_muhalla"
+      ],
+      "note": "The title and opening bibliography identify al-Muhalla as commentary on al-Mujalla."
+    },
+    {
+      "from": "fiqh_imami_hilli_sharai",
+      "to": "fiqh_imami_hilli_nafi",
+      "type": "abridgment",
+      "evidence_source_ids": [
+        "OT_hilli"
+      ],
+      "note": "Author’s own abridgment, listed as Eserleri 2."
+    },
+    {
+      "from": "fiqh_imami_hilli_nafi",
+      "to": "fiqh_imami_hilli_mutabar",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "OT_hilli"
+      ],
+      "note": "Author’s incomplete commentary on his abridgment, listed under Eserleri 2."
+    },
+    {
+      "from": "fiqh_imami_tusi_nihaya",
+      "to": "fiqh_imami_hilli_nukat",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "OT_hilli",
+        "OT_tusi"
+      ],
+      "note": "Both biographical studies explicitly identify the base text."
+    },
+    {
+      "from": "fiqh_imami_hilli_sharai",
+      "to": "fiqh_imami_sani_masalik",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "OT_shahid2"
+      ],
+      "note": "Explicitly listed as a commentary on Sharaʾiʿ al-Islam."
+    },
+    {
+      "from": "fiqh_imami_hilli_sharai",
+      "to": "fiqh_imami_madarik",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "OT_hilli"
+      ],
+      "note": "Explicitly listed as a commentary on Sharaʾiʿ al-Islam."
+    },
+    {
+      "from": "fiqh_imami_hilli_sharai",
+      "to": "fiqh_imami_jawahir",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "OT_hilli"
+      ],
+      "note": "Explicitly listed as a commentary on Sharaʾiʿ al-Islam."
+    },
+    {
+      "from": "fiqh_imami_luma",
+      "to": "fiqh_imami_sani_rawda",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "OT_shahid1",
+        "OT_shahid2"
+      ],
+      "note": "Both author articles explicitly identify this commentary."
+    },
+    {
+      "from": "fiqh_zaydi_azhar",
+      "to": "fiqh_zaydi_bahr",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "OT_zaydi"
+      ],
+      "note": "The Zaydiyya legal bibliography explicitly describes al-Bahr within the al-Azhar commentary tradition."
+    },
+    {
+      "from": "fiqh_zaydi_bahr",
+      "to": "fiqh_zaydi_ghayat",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "OT_bahr"
+      ],
+      "note": "Named in the bibliography of works commenting on al-Bahr al-zakhkhar."
+    },
+    {
+      "from": "fiqh_zaydi_bahr",
+      "to": "fiqh_zaydi_qamar",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "OT_bahr"
+      ],
+      "note": "Named in the bibliography of works commenting on al-Bahr al-zakhkhar."
+    },
+    {
+      "from": "fiqh_zaydi_bahr",
+      "to": "fiqh_zaydi_nafahat",
+      "type": "gloss",
+      "evidence_source_ids": [
+        "OT_bahr"
+      ],
+      "note": "Named in the bibliography of works commenting on al-Bahr al-zakhkhar."
+    },
+    {
+      "from": "fiqh_ibadi_nil",
+      "to": "fiqh_ibadi_sharh_nil",
+      "type": "commentary",
+      "evidence_source_ids": [
+        "OT_ibadi",
+        "OT_atfayyish"
+      ],
+      "note": "The Atfayyish article, Eserleri D.1, names al-Thamini’s al-Nil as base text."
+    }
+  ]
+}

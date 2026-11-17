@@ -1,0 +1,113 @@
+{
+  "scope": "Short, reader-facing first-mention and non-editorial phrasing corrections",
+  "changes": {
+    "1": {
+      "matn": [
+        [
+          "In the metaphysical interpretation developed by Guénon, Schuon and the Akbarian masters, manifestation discloses",
+          "Manifestation discloses"
+        ]
+      ],
+      "sharh": [
+        [
+          "The earlier metaphysical account begins from",
+          "The metaphysical account begins from"
+        ]
+      ]
+    },
+    "10": {
+      "sharh": [
+        [
+          "The dialogue reported between Jaʿfar ibn Abī Ṭālib and the Negus illuminates",
+          "The dialogue reported between Jaʿfar ibn Abī Ṭālib, a Muslim emigrant and the Prophet's cousin, and the Negus, the Christian king of Aksum, illuminates"
+        ]
+      ]
+    },
+    "11": {
+      "sharh": [
+        [
+          "The Night Journey and Ascension provide the chapter's vertical depth.",
+          "The Night Journey and Ascension lead from the Prophet's heavenly encounters back to the lived obligations of prayer and communal care."
+        ]
+      ]
+    },
+    "16": {
+      "matn": [
+        [
+          "Abū Jandal arrived from Makkah in chains",
+          "Abū Jandal, the Muslim son of the Meccan negotiator Suhayl ibn ʿAmr, arrived from Makkah in chains"
+        ],
+        [
+          "the Prophet followed Umm Salamah’s counsel",
+          "the Prophet followed the counsel of his wife Umm Salamah"
+        ]
+      ],
+      "sharh": [
+        [
+          "The fullest useful starting point is the extended account of al-Miswar ibn Makhramah and Marwān in Ṣaḥīḥ al-Bukhārī, Book of Conditions, nos. 2731–2732, compared with the related concise report, nos. 2711–2712, and Ibn Hishām's Sīrah. Suhayl ibn ʿAmr contested the treaty wording, Abū Jandal's arrival tested its return clause, ʿUmar objected to the terms, and Umm Salamah counselled the Prophet to begin the concluding rites.",
+          "The extended treaty account in Ṣaḥīḥ al-Bukhārī, Book of Conditions, nos. 2731–2732, can be compared with the concise report, nos. 2711–2712, and with Ibn Hishām's Sīrah. Suhayl ibn ʿAmr, Quraysh's negotiator and Abū Jandal's father, disputed the treaty wording as his son's arrival tested the return clause. ʿUmar ibn al-Khaṭṭāb, a leading Companion, questioned the terms; Umm Salamah, the Prophet's wife, advised him to begin the concluding rites."
+        ]
+      ]
+    },
+    "28": {
+      "sharh": [
+        [
+          "The woman's confession considered earlier illustrates the order of legal reasoning more exactly than a generic appeal to mercy.",
+          "The confession of the woman of Ghāmid, who approached the Prophet concerning adultery, illustrates the order of legal reasoning more exactly than a generic appeal to mercy."
+        ]
+      ]
+    },
+    "33": {
+      "matn": [
+        [
+          "In North Africa and Egypt, al-Mursī and Ibn ʿAṭāʾ Allāh transmitted the teaching of Abū al-Ḥasan al-Shādhilī; Ibn ʿAṭāʾ Allāh connected remembrance and reliance upon God with ordinary work.",
+          "In North Africa and Egypt, the Sufi teacher Abū al-Ḥasan al-Shādhilī's guidance was carried by his successor al-Mursī and by the Egyptian writer Ibn ʿAṭāʾ Allāh, who connected remembrance and reliance upon God with ordinary work."
+        ]
+      ]
+    },
+    "36": {
+      "sharh": [
+        [
+          "Hodgson distinguishes Islam as a religion from the broader Islamicate culture",
+          "The historian Marshall Hodgson distinguishes Islam as a religion from the broader Islamicate culture"
+        ]
+      ]
+    },
+    "37": {
+      "sharh": [
+        [
+          "Peter Jackson's *The Mongols and the Islamic World*",
+          "The historian Peter Jackson's *The Mongols and the Islamic World*"
+        ]
+      ]
+    },
+    "40": {
+      "sharh": [
+        [
+          "Richard Eaton's *The Rise of Islam and the Bengal Frontier, 1204–1760*",
+          "The historian Richard Eaton's *The Rise of Islam and the Bengal Frontier, 1204–1760*"
+        ]
+      ]
+    },
+    "43": {
+      "sharh": [
+        [
+          "Hodgson's 'Great Western Transmutation'",
+          "The historian Marshall Hodgson's 'Great Western Transmutation'"
+        ]
+      ]
+    },
+    "44": {
+      "sharh": [
+        [
+          "Wael Hallaq argues that",
+          "The legal historian Wael Hallaq argues that"
+        ],
+        [
+          "Sohaira Siddiqui examines changes",
+          "The scholar of Islamic law Sohaira Siddiqui examines changes"
+        ]
+      ]
+    }
+  }
+}

@@ -18,11 +18,36 @@ texts:[
  {name:"al-Mustaṣfā min ʿIlm al-Uṣūl",href:"texts/al-ghazali/al-mustasfa/"},
  {name:"al-Ḍarūrī fī Uṣūl al-Fiqh",href:"daruri/"}
  ]},
- {heading:"Tafsīr",items:[{name:"al-Baḥr al-Madīd",href:"texts/ibn-ajiba/al-bahr-al-madid/"}]},
- {heading:"Kalām",items:[{name:"Sharḥ al-Mawāqif",href:"texts/al-jurjani/sharh-al-mawaqif/"}]}
+ {heading:"Tafsīr",items:[{name:"al-Kashshāf · al-Zamakhsharī",href:"texts/al-zamakhshari/al-kashshaf/"},{name:"al-Baḥr al-Madīd",href:"texts/ibn-ajiba/al-bahr-al-madid/"}]},
+ {heading:"ʿIrfān and metaphysics",items:[
+ {name:"al-Nuṣūṣ · Qūnawī",href:"texts/sadr-al-din-al-qunawi/al-nusus/"},
+ {name:"Subḥānaka mā ʿarafnāka · al-Iznīqī",href:"texts/sadr-al-din-al-qunawi/al-nusus/izniqi/"},
+ {name:"Qawāʿid al-Tawḥīd · Matn & commentary",href:"texts/al-turka/qawaid-al-tawhid/"},
+ {name:"Muntahā al-madārik · Farghānī",href:"texts/al-farghani/muntaha-al-madarik/"},
+ {name:"Mashraʿ al-khuṣūṣ · al-Mahāʾimī",href:"texts/al-mahaimi/mashra-al-khusus/"}
+ ]},
+ {heading:"Falsafa · Philosophy",items:[
+ {name:"Bidāyat al-Ḥikma · al-Ṭabāṭabāʾī",href:"texts/al-tabatabai/bidayat-al-hikma/"},
+ {name:"Nihāyat al-Ḥikma · al-Ṭabāṭabāʾī",href:"texts/al-tabatabai/nihayat-al-hikma/"},
+ {name:"Comparative reading room · Philosophy and logic",href:"texts/al-tabatabai/"}
+ ]},
+ {heading:"Manṭiq · Logic",items:[
+ {name:"al-Manṭiq · al-Muẓaffar",href:"texts/al-tabatabai/muzaffar-al-mantiq/"},
+ {name:"Tahdhīb al-Manṭiq",href:"texts/al-taftazani/tahdhib-al-mantiq/edition/"}
+ ]},
+ {heading:"Kalām",items:[{name:"Sharḥ al-Mawāqif",href:"texts/al-jurjani/sharh-al-mawaqif/"},{name:"Tahdhīb al-Kalām",href:"texts/al-taftazani/tahdhib-al-kalam/edition/"},{name:"Taqrīb al-Marām · Commentary",href:"texts/al-sanandaji/taqrib-al-maram/"}]}
 ],
-essays:[{items:[{name:"Ibn Rushd and the craft of legal reasoning",href:"essays/ibn-rushd-method/"}]}],
-research:[{items:[{name:"Bidāya–Ḍarūrī: law and practical discernment",href:"research/usul-law-rushd/"}]}],
+essays:[{items:[
+ {name:"Being in Order · Substance, Relation, and Poinsot’s Modes",href:"essays/being-in-order/"},
+ {name:"Why Ibn Rushd begins with method · Working essay",href:"essays/ibn-rushd-method/"}
+]}],
+research:[{items:[
+ {name:"Bidāyat al-Mujtahid · Edition I: Law and Legal Reasoning",href:"research/bidaya/law/"},
+ {name:"Texts in Time · Islamic Intellectual Atlas",href:"research/intellectual-atlas/"},
+ {name:"Tajrīd · Comparative Critical Sourcebook",href:"research/tajrid/"},
+ {name:"Late Avicennism · After Asfār — Contextual Source Reader",href:"research/avicennism/"},
+ {name:"Sīrah and the Making of Islamic Civilization · Illustrated Matn and Sharḥ",href:"research/seerah/"}
+]}],
 about:[{items:[
  {name:"Purpose & approach",href:"about/purpose/"},
  {name:"Sources & editorial method",href:"docs/source-and-licenses.html"}
@@ -135,3 +160,4 @@ document.addEventListener("pointerdown",e=>{
  if(!dock.contains(e.target)&&!panel.contains(e.target))navigate("home");
 });
 })();
+

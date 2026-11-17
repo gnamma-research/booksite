@@ -1,0 +1,23 @@
+/* Actual open fonts used by the Visuals panel.
+   The saved preference keys remain source-serif/literata for compatibility. */
+@font-face {
+  font-family: 'Source Sans 3';
+  src: url('./source-sans-3-normal.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  src: url('./source-sans-3-italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lexend';
+  src: url('./lexend-normal.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}

@@ -1,0 +1,1536 @@
+{
+  "project": "Nihayat4 Stage IX external collation, range C",
+  "assignedRange": {
+    "indices": [
+      26,
+      47
+    ],
+    "count": 22,
+    "first": "N-VI-PRE",
+    "last": "N-VI-21"
+  },
+  "inputBookSha256": "d1dd963f7a22e2be4ccca4c73c3799a4be6f9b5e4a30415cfc6d12993d07a4fd",
+  "status": "in progress",
+  "completionDefinition": "A unit is complete only after every stored Arabic and English paragraph, every corresponding 1404 printed facsimile page visually, and the entire corresponding 1428 edited authorial text and notes have been read and compared. Machine diff or partial image coverage does not count.",
+  "units": [
+    {
+      "index": 26,
+      "id": "N-VI-PRE",
+      "status": "complete",
+      "sourceGrade": "Complete-unit comparison: every relevant 1404 printed page visually read, full corresponding 1428 edited digital authorial text and notes read, stored Arabic and English read. No manuscript or specialist certification claimed.",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=109&type=c_fbook",
+        "page": "109–109"
+      },
+      "storedArabicSha256": "c5389fe638380c9f1780cf441a5bf53ba6cac6008e0e23a6533af748d0e93114",
+      "storedEnglishSha256": "aa31ac08c4b93fc30ced5816e15d0d045b70c33b8c896892cfdbace10ec86c6a",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          1
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          1
+        ],
+        "earlyPrintedPages": [
+          87
+        ],
+        "earlyCanvases": [
+          91
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          147
+        ],
+        "allBoundariesAccounted": true,
+        "segments": [
+          {
+            "storedParagraphs": [
+              1,
+              1
+            ],
+            "earlyPages": [
+              87
+            ],
+            "laterPages": [
+              147
+            ],
+            "topic": "Stage subtitle defining highest genera"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-091.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/91",
+          "sha256": "45586599a5c0a8246555f1e6801cce04e4b49b28154d1ee55ea3111d522deb55",
+          "printedPage": 87,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_a/html/3108-141.html",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=147&type=c_fbook",
+          "sha256": "87523158fefceb5e0bc80c562ddca7f73c2d389bbd5a55b241f2c288a3483491",
+          "kind": "1428 edited digital chapter and notes read"
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [],
+      "orthographicCorrections": [],
+      "proposedAuthorNotes": [],
+      "argumentFindings": [
+        "The stored subtitle and English match both external witnesses. The full authorial stage heading and chapter count should be retained as structural metadata; the stored label مدخل المرحلة is an editorial navigation label, not the source heading."
+      ],
+      "editorialCommentary": [],
+      "unadoptedVariants": [],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 87,
+          "printedPageInferred": true,
+          "canvas": 91,
+          "ordinal": "المرحلة السادسة",
+          "title": "في المقولات العشر",
+          "chapterCount": "وفيها واحد وعشرون فصلاً"
+        },
+        "later": {
+          "volume": 1,
+          "page": 147,
+          "ordinal": "المرحلة السادسة",
+          "title": "في المقولات العشر",
+          "chapterCount": "وفيها واحد وعشرون فصلاً"
+        }
+      }
+    },
+    {
+      "index": 27,
+      "id": "N-VI-01",
+      "status": "complete",
+      "sourceGrade": "Complete-unit comparison: every relevant 1404 printed page visually read, full corresponding 1428 edited digital authorial text and notes read, stored Arabic and English read. No manuscript or specialist certification claimed.",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=111&type=c_fbook",
+        "page": "111–114"
+      },
+      "storedArabicSha256": "d80a4a71c306d5574023d9ff25a1f04cc43d1c85397a805912f77de9a0441c93",
+      "storedEnglishSha256": "b486e2de73787baf70b8a8dc11f642464cb899d1fba388cd6205d03fc9ec8e77",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          19
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          13
+        ],
+        "earlyPrintedPages": [
+          88,
+          89,
+          90
+        ],
+        "earlyCanvases": [
+          92,
+          93,
+          94
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          149,
+          150,
+          151,
+          152
+        ],
+        "allBoundariesAccounted": true,
+        "segments": [
+          {
+            "storedParagraphs": [
+              1,
+              6
+            ],
+            "earlyPages": [
+              88
+            ],
+            "laterPages": [
+              149,
+              150
+            ],
+            "topic": "Termination at highest genera; simplicity and essential disjunction"
+          },
+          {
+            "storedParagraphs": [
+              7,
+              16
+            ],
+            "earlyPages": [
+              89
+            ],
+            "laterPages": [
+              150,
+              151
+            ],
+            "topic": "Five consequences; ten-category enumeration; nonquiddative general concepts and four-category view"
+          },
+          {
+            "storedParagraphs": [
+              17,
+              19
+            ],
+            "earlyPages": [
+              90
+            ],
+            "laterPages": [
+              151,
+              152
+            ],
+            "topic": "Reply to four categories and to Suhrawardī’s five; chapter ends before chapter II heading"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-092.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/92",
+          "sha256": "845c84e812b8c67f6ec05973a61c17226741ad722ba942ec3de48336233a5690",
+          "printedPage": 88,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-093.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/93",
+          "sha256": "2367bd11c6f591d9144acabd592234dc75f109edcbc8851af802c9ffeeba4a4f",
+          "printedPage": 89,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-094.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/94",
+          "sha256": "07dea2507cc902bd2122230958cb9861765f4e9c4f55b69ce0e625b16d913475",
+          "printedPage": 90,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_a/html/3108-141.html",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=149&type=c_fbook",
+          "sha256": "87523158fefceb5e0bc80c562ddca7f73c2d389bbd5a55b241f2c288a3483491",
+          "kind": "1428 edited digital chapter and notes read"
+        }
+      ],
+      "arabicCorrections": [
+        {
+          "old": "وهو الوجود ، وهو الوجود السيّال",
+          "new": "وهو الوجود السيّال",
+          "locus": "A19",
+          "earlyReading": "وهو الوجود السيال غير القار الثابت",
+          "earlyPage": 90,
+          "earlyCanvas": 94,
+          "laterReading": "وهو الوجود السيّال غير القارّ الثابت",
+          "laterPage": 152,
+          "classification": "jointly witnessed removal of accidental duplicate",
+          "reason": "Both independent external edition witnesses give the phrase once; the stored Arabic duplicates وهو الوجود. English already renders one occurrence.",
+          "confidence": "high"
+        }
+      ],
+      "englishCorrections": [],
+      "orthographicCorrections": [
+        {
+          "old": "خارجيّةٌّ أو عقليّةٌّ",
+          "new": "خارجيّةٌ أو عقليّةٌ",
+          "reason": "Remove duplicated combining shadda in each adjective; no semantic change."
+        }
+      ],
+      "proposedAuthorNotes": [],
+      "argumentFindings": [
+        "All five consequences and the arguments against the four- and five-category enumerations are present in full. The English preserves the contingency restriction, possible isolated-species qualification, inductive status of the ten-category enumeration, and distinction between quiddative categories and abstracted modes of existence. No English repair required.",
+        "No authorial footnotes appear on the 1404 pages corresponding to this chapter."
+      ],
+      "editorialCommentary": [
+        {
+          "laterPages": [
+            149,
+            150,
+            151,
+            152
+          ],
+          "finding": "All notes read. Notes explain category terminology, cross-reference earlier stages and later causal finitude, qualify strict versus broad quiddity, identify Peripatetic sources and the four-category attribution, and cite Suhrawardī and Mīr Dāmād. These later-editor bibliographical and explanatory notes are not authorial omissions."
+        }
+      ],
+      "unadoptedVariants": [
+        {
+          "locus": "A14",
+          "stored": "وشيئيّة الشيء موجودٌ",
+          "earlyReading": "وشيئية الشيء موجود",
+          "earlyPage": 89,
+          "laterReading": "وشيئيّة الشيء موجود",
+          "laterPage": 151,
+          "editorNote": 3,
+          "editorialProposal": "وشيئية الشيء كونه موجودا أو وشيئية الشيء وجوده",
+          "classification": "explicit later-editor proposed rewording, not adopted",
+          "reason": "The main text of both witnesses retains the stored wording. English gives its intelligible intended sense; no authorial text change is warranted."
+        },
+        {
+          "locus": "A17",
+          "stored": "ما تقدّم [من] أنّ",
+          "earlyReading": "ما تقدم أن",
+          "earlyPage": 90,
+          "laterReading": "ما تقدّم [من] أنّ",
+          "laterPage": 151,
+          "classification": "later unfootnoted bracketed grammatical supplement already present in base",
+          "reason": "Retain brackets and disclose; it does not alter the inference."
+        }
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 88,
+          "canvas": 92,
+          "ordinal": "الفصل الأول",
+          "title": "في المقولات وعددها"
+        },
+        "later": {
+          "volume": 1,
+          "page": 149,
+          "ordinal": "الفصل الأوّل",
+          "title": "في المقولات وعددها"
+        }
+      }
+    },
+    {
+      "index": 28,
+      "id": "N-VI-02",
+      "status": "complete",
+      "sourceGrade": "Complete-unit comparison: every relevant 1404 printed page visually read, full corresponding 1428 edited digital authorial text and notes read, stored Arabic and English read. No manuscript or specialist certification claimed.",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=114&type=c_fbook",
+        "page": "114–117"
+      },
+      "storedArabicSha256": "5450d475bbff6e349742e4a65011ea501f4772a54bfcbc8dd939b6fa1a4fb6a8",
+      "storedEnglishSha256": "d8cdc5706c25f31bf604a4204fcb599faa8b8822309078f8da08615598ab92b6",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          15
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          10
+        ],
+        "earlyPrintedPages": [
+          90,
+          91,
+          92,
+          93
+        ],
+        "earlyCanvases": [
+          94,
+          95,
+          96,
+          97
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          153,
+          154,
+          155,
+          156
+        ],
+        "allBoundariesAccounted": true,
+        "segments": [
+          {
+            "storedParagraphs": [
+              1,
+              4
+            ],
+            "earlyPages": [
+              90,
+              91
+            ],
+            "laterPages": [
+              153,
+              154
+            ],
+            "topic": "Definition and the external-existence qualification; exclusion of mental substance"
+          },
+          {
+            "storedParagraphs": [
+              5,
+              9
+            ],
+            "earlyPages": [
+              91
+            ],
+            "laterPages": [
+              155
+            ],
+            "topic": "Substantial forms; existence of substance and accident; genus argument"
+          },
+          {
+            "storedParagraphs": [
+              10,
+              15
+            ],
+            "earlyPages": [
+              91,
+              92
+            ],
+            "laterPages": [
+              155,
+              156
+            ],
+            "topic": "Rejected alternative proof; noncombination of substantiality and accidentality"
+          },
+          {
+            "storedParagraphs": [
+              13,
+              14
+            ],
+            "earlyPages": [
+              92,
+              93
+            ],
+            "laterPages": [
+              156
+            ],
+            "topic": "Omitted authorial explanatory footnote, continued on p93"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-094.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/94",
+          "sha256": "07dea2507cc902bd2122230958cb9861765f4e9c4f55b69ce0e625b16d913475",
+          "printedPage": 90,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-095.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/95",
+          "sha256": "f70018f7ba6bd7ad659452e1d4ced1b1ed027f7f4f925874be3c88f1c550a43f",
+          "printedPage": 91,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-096.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/96",
+          "sha256": "2067290f35b0f3cf999804227ef08824e488a1ed79133e040cb1d5da4cb8a5e4",
+          "printedPage": 92,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-097.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/97",
+          "sha256": "4e5095d59fdcc47c004b567dec27101c8ea9f83d06b12d5a06b2fe331c0f8807",
+          "printedPage": 93,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_a/html/3108-141.html",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=153&type=c_fbook",
+          "sha256": "87523158fefceb5e0bc80c562ddca7f73c2d389bbd5a55b241f2c288a3483491",
+          "kind": "1428 edited digital chapter and notes read"
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [],
+      "orthographicCorrections": [],
+      "proposedAuthorNotes": [
+        {
+          "kind": "omitted substantive authorial footnote",
+          "anchorArabicParagraph": 14,
+          "anchor": "افتقار العرض إلى موضوع يقوم به يستلزم ماهيّة قائمة بنفسها",
+          "earlyPrintedPages": [
+            92,
+            93
+          ],
+          "earlyCanvases": [
+            96,
+            97
+          ],
+          "earlyOriginalText": "كون وجود العرض لغيره (ناعتا للغير) معنى سلبي لا اقتضاء للماهية العرضية بالنسبة إليه ولكن وجود الجوهر وجود لنفسه قائم بنفسه التي هي ماهيته وهو معنى واحد إيجابي تقتضيه الماهية اقتضاء الماهية للوازمها والمعنى الواحد لا ينتزع من ماهيات متباينة وقد أشرنا إليه في قولنا قبلا: وإلا ذهبت سلسلة الافتقار إلى غير النهاية...",
+          "laterVolume": 1,
+          "laterPage": 156,
+          "laterNote": 3,
+          "laterNoteText": "كون وجود العرض لغيره (ناعتا لغيره) معنى سلبيّ لا اقتضاء للماهيّة العرضيّة بالنسبة إليه ، ولكن وجود الجوهر وجود لنفسه قائم بنفسه الّتي هي ماهيّته ، وهو معنى إيجابيّ تقتضيه الماهيّة اقتضاء الماهيّة للوازمها ، والمعنى الواحد لا ينتزع من ماهيّات متباينة ، وقد أشرنا إليه في قولنا قبلا : «وإلّا لذهبت سلسلة الافتقار إلى غير النهاية ...». ـ منه رحمه‌الله ـ.",
+          "proposedArabic": "كون وجود العرض لغيره (ناعتا للغير) معنى سلبي لا اقتضاء للماهية العرضية بالنسبة إليه ولكن وجود الجوهر وجود لنفسه قائم بنفسه التي هي ماهيته وهو معنى واحد إيجابي تقتضيه الماهية اقتضاء الماهية للوازمها والمعنى الواحد لا ينتزع من ماهيات متباينة وقد أشرنا إليه في قولنا قبلا: وإلا ذهبت سلسلة الافتقار إلى غير النهاية...",
+          "proposedEnglish": "The existence of an accident for another (qualifying another) is a negative meaning with respect to which the accidental quiddity has no determining requirement. But the existence of substance is existence for itself, subsisting through its self, which is its quiddity. It is one positive meaning required by the quiddity as a quiddity requires its concomitants. A single meaning is not abstracted from mutually disparate quiddities. We indicated this earlier by saying: “Otherwise the series of dependence would proceed without end …”.",
+          "reason": "This is an original authorial clarification of the rejected proof and the proof actually accepted. It is present in the early printed footnote and explicitly attributed to the author by the later edition, but absent from stored body and notes.",
+          "attribution": "Author; independently present in 1404 and explicitly attributed in 1428",
+          "classification": "jointly witnessed authorial-note restoration",
+          "variantDisclosure": "The 1404 note says ناعتا للغير and معنى واحد إيجابي; 1428 says ناعتا لغيره and omits واحد. The earlier note is transcribed without silently conflating these readings. 1428 also adds ل to the closing quotation وإلا لذهبت."
+        }
+      ],
+      "argumentFindings": [
+        "The complete body matches both witnesses in all substantive arguments. The English preserves the distinction between a descriptive existential definition and a quiddative genus, and correctly distinguishes the author’s adopted proof from the rejected proof based merely on a common existential attribute.",
+        "Preserve existing N1428-VI02-FORM-01 note. Its caveat about the Bidāya parallel remains necessary."
+      ],
+      "editorialCommentary": [
+        {
+          "laterPages": [
+            153,
+            154,
+            155,
+            156
+          ],
+          "finding": "All notes read, including the extended note on whether independence is explanatory or restrictive, explicit Bidāya citation, commentary on the indefiniteness of في الجملة, schools opposing substance as a genus, source attribution to Ṣadrā, and the original authorial note distinguished above."
+        }
+      ],
+      "unadoptedVariants": [],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 90,
+          "canvas": 94,
+          "ordinal": "الفصل الثاني",
+          "title": "في تعريف الجوهر وأنه جنس لما تحته من الماهيات"
+        },
+        "later": {
+          "volume": 1,
+          "page": 153,
+          "ordinal": "الفصل الثاني",
+          "title": "في تعريف الجوهر وأنّه جنس لما تحته من الماهيّات"
+        }
+      },
+      "parallelSuggestion": {
+        "bidayaUnit": "B-VI-01",
+        "nihayaUnit": "N-VI-02",
+        "fullBidayaUnitRead": true,
+        "bidayaQuote": "أو وجدت في موضوع لا يستغني عنها في وجوده كالصور العنصرية المنطبعة في المادة المتقومة بها",
+        "nihayaQuote": "أنّ الصور الجوهريّة ماهيّات بسيطة غير مندرجة تحت مقولة الجوهر ، ولا مجنّسة بجنس",
+        "rationale": "A precise comparison of the subject-independence definition and the distinction between existential predication and categorial inclusion. Bidāya VI.2 explicitly qualifies form’s inclusion as incidental, so this is not an unqualified doctrinal contradiction. Preserve the existing apparatus explaining this qualification.",
+        "qualifyingBidayaUnit": "B-VI-02",
+        "qualifyingBidayaQuote": "ودخول الصورة الجسمية في التقسيم دخول بالعرض ،لأن الصورة هي الفصل مأخوذا بشرط لا ،وفصول الجواهر غير مندرجة تحت مقولة الجوهر"
+      }
+    },
+    {
+      "index": 29,
+      "id": "N-VI-03",
+      "status": "complete",
+      "sourceGrade": "Complete-unit comparison: every relevant 1404 printed page visually read, full corresponding 1428 edited digital authorial text and notes read, stored Arabic and English read. No manuscript or specialist certification claimed.",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=117&type=c_fbook",
+        "page": "117–118"
+      },
+      "storedArabicSha256": "ceb12d99a256f066d4b682792e13a99f2310fb17929afd13165ef3dc42c25b25",
+      "storedEnglishSha256": "d50bc8f78611b192407ccc2d9c257617511eb3d443336c98b8cf1a19e1e1a9e1",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          8
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          6
+        ],
+        "earlyPrintedPages": [
+          92,
+          93,
+          94
+        ],
+        "earlyCanvases": [
+          96,
+          97,
+          98
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          157,
+          158,
+          159
+        ],
+        "allBoundariesAccounted": true,
+        "segments": [
+          {
+            "storedParagraphs": [
+              1,
+              4
+            ],
+            "earlyPages": [
+              92,
+              93
+            ],
+            "laterPages": [
+              157,
+              158
+            ],
+            "topic": "Conventional fivefold division and nonexhaustiveness of its rational division"
+          },
+          {
+            "storedParagraphs": [
+              5,
+              7
+            ],
+            "earlyPages": [
+              93,
+              94
+            ],
+            "laterPages": [
+              158,
+              159
+            ],
+            "topic": "Ṣadrā’s alternative division, rationale, and author’s objection"
+          },
+          {
+            "storedParagraphs": [
+              8,
+              8
+            ],
+            "earlyPages": [
+              94
+            ],
+            "laterPages": [
+              159
+            ],
+            "topic": "Scope of subsequent investigations of body, soul and intellect"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-096.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/96",
+          "sha256": "2067290f35b0f3cf999804227ef08824e488a1ed79133e040cb1d5da4cb8a5e4",
+          "printedPage": 92,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-097.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/97",
+          "sha256": "4e5095d59fdcc47c004b567dec27101c8ea9f83d06b12d5a06b2fe331c0f8807",
+          "printedPage": 93,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-098.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/98",
+          "sha256": "09c8529e0b200dfcce51036b40ad4b6310ba706b4876c3068c26002a5d2140ef",
+          "printedPage": 94,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_a/html/3108-141.html",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=157&type=c_fbook",
+          "sha256": "87523158fefceb5e0bc80c562ddca7f73c2d389bbd5a55b241f2c288a3483491",
+          "kind": "1428 edited digital chapter and notes read"
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [],
+      "orthographicCorrections": [
+        {
+          "old": "تضاعيفما حقّقناه",
+          "new": "تضاعيف ما حقّقناه",
+          "reason": "Restore word boundary present in both external witnesses."
+        }
+      ],
+      "proposedAuthorNotes": [
+        {
+          "kind": "omitted original bibliographical locator",
+          "anchorArabicParagraph": 6,
+          "anchor": "الأنواع المحصّلة الطبيعيّة» ـ إنتهى",
+          "earlyPrintedPage": 94,
+          "earlyCanvas": 98,
+          "earlyOriginalText": "(ج ٤، ص ٢٣٤)",
+          "laterVolume": 1,
+          "laterPage": 158,
+          "laterNote": 6,
+          "laterNoteText": "راجع الأسفار ٤ : ٢٣٤.",
+          "proposedArabic": "الأسفار، ج ٤، ص ٢٣٤.",
+          "proposedEnglish": "Asfār, vol. 4, p. 234.",
+          "reason": "The original prints this locator immediately after the quotation; the later edition retains it as a note. The stored unit names the work but drops its volume and page.",
+          "attribution": "Original authorial citation",
+          "classification": "jointly witnessed authorial citation restoration"
+        }
+      ],
+      "argumentFindings": [
+        "All five branches, the two objections to their purported exhaustive status, the entire Asfār quotation and its explanatory rationale, and all forward references are present and correctly rendered. No English repair required.",
+        "The early chapter III heading starts on p92, not p93 as suggested by the initial page-map upper-bound heuristic."
+      ],
+      "editorialCommentary": [
+        {
+          "laterPages": [
+            157,
+            158,
+            159
+          ],
+          "finding": "All notes read: Peripatetic attribution and sources; inclusion of corporeal and specific forms; editor’s limitation of the author’s objection to a claimed rational enumeration; the intellect/intelligible union explanation; stages IX and XI locators; and the explicit singular-form emendation retained above."
+        }
+      ],
+      "unadoptedVariants": [],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 92,
+          "canvas": 96,
+          "ordinal": "الفصل الثالث",
+          "title": "في أقسام الجوهر الأوّلية"
+        },
+        "later": {
+          "volume": 1,
+          "page": 157,
+          "ordinal": "الفصل الثالث",
+          "title": "في أقسام الجوهر الأوّليّة"
+        }
+      },
+      "preservedAdoptedReadings": [
+        {
+          "id": "N1428-VI03-01",
+          "old": "عطف الصور الطبيعيّة",
+          "adopted": "عطف الصورة الطبيعيّة",
+          "earlyPage": 94,
+          "earlyCanvas": 98,
+          "earlyReading": "عطف الصور الطبيعية",
+          "laterPage": 159,
+          "laterNote": 1,
+          "laterReading": "الصورة الطبيعيّة",
+          "editorNote": "وفي النسخ : «الصور الطبيعيّة» ، ولكن الصحيح ما أثبتناه.",
+          "classification": "explicit later-editor emendation, retained with disclosure"
+        }
+      ],
+      "apparatusCorrections": [
+        {
+          "target": "N1428-VI03-01 and stored unit note",
+          "old": "vol. 1 p. 158 n. 1",
+          "new": "vol. 1 p. 159 n. 1",
+          "oldUrl": "https://lib.rafed.net/view.php?b_id=3108&page=158&type=c_fbook",
+          "newUrl": "https://lib.rafed.net/view.php?b_id=3108&page=159&type=c_fbook",
+          "reason": "The emendation note is inside pg159 and followed by the printed footer ١٥٩. Page158 contains the beginning of the sentence, but not the emendation note."
+        }
+      ],
+      "parallelSuggestion": {
+        "bidayaUnit": "B-VI-02",
+        "nihayaUnit": "N-VI-03",
+        "fullBidayaUnitRead": true,
+        "bidayaQuote": "ومستند هذا التقسيم في الحقيقة استقراء ما قام على وجوده البرهان من الجواهر",
+        "nihayaQuote": "وليس التقسيم عقليّاً دائراً بين النفي والإثبات",
+        "rationale": "Both explicitly restrict the fivefold division’s epistemic force: induction, not an exhaustive rational dichotomy. Nihāya expands the objection and discusses Ṣadrā’s alternative division."
+      }
+    },
+    {
+      "index": 30,
+      "id": "N-VI-04",
+      "status": "complete",
+      "sourceGrade": "Complete-unit comparison: every relevant 1404 printed page visually read, full corresponding 1428 edited digital authorial text and notes read, stored Arabic and English read. No manuscript or specialist certification claimed.",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=119&type=c_fbook",
+        "page": "119–126"
+      },
+      "storedArabicSha256": "971690f765c70f81df279da930bd9c3b1b38ec06aa5adaccde7a76444536f785",
+      "storedEnglishSha256": "07f803803a54644244deffcbbcde51a457dd3b000fcac3f39fe4b192c7f289e1",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          43
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          27
+        ],
+        "earlyPrintedPages": [
+          94,
+          95,
+          96,
+          97,
+          98,
+          99
+        ],
+        "earlyCanvases": [
+          98,
+          99,
+          100,
+          101,
+          102,
+          103
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166
+        ],
+        "allBoundariesAccounted": true,
+        "segments": [
+          {
+            "storedParagraphs": [
+              1,
+              15
+            ],
+            "earlyPages": [
+              94,
+              95,
+              96
+            ],
+            "laterPages": [
+              160,
+              161,
+              162,
+              163
+            ],
+            "topic": "Sensory continuity and seven reported accounts of body"
+          },
+          {
+            "storedParagraphs": [
+              16,
+              29
+            ],
+            "earlyPages": [
+              96,
+              97
+            ],
+            "laterPages": [
+              163,
+              164,
+              165
+            ],
+            "topic": "Full objections to views one through five"
+          },
+          {
+            "storedParagraphs": [
+              30,
+              37
+            ],
+            "earlyPages": [
+              97,
+              98
+            ],
+            "laterPages": [
+              165,
+              166
+            ],
+            "topic": "Substance/quantity distinction, wax example and complete Avicennian quotation"
+          },
+          {
+            "storedParagraphs": [
+              38,
+              43
+            ],
+            "earlyPages": [
+              98,
+              99
+            ],
+            "laterPages": [
+              166
+            ],
+            "topic": "Aristotelian composition, sensory fallibility, atomic bodies and conditional energy classification"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-098.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/98",
+          "sha256": "09c8529e0b200dfcce51036b40ad4b6310ba706b4876c3068c26002a5d2140ef",
+          "printedPage": 94,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-099.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/99",
+          "sha256": "7f3f9db1c315ecbfef5f58e5188c5f40091ca6727664cc5e9ab6cd697ec02a89",
+          "printedPage": 95,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-100.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/100",
+          "sha256": "6dc89465057546a108849573d66a13fcd02ada531edc47493dfda214e19675b3",
+          "printedPage": 96,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-101.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/101",
+          "sha256": "8ef27cd4fc7f69f1816fb55307d88417204ca667ac77125c56e2991df9e540e5",
+          "printedPage": 97,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-102.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/102",
+          "sha256": "c577a8c615fe77b11dde2d95b1f5615874342c8aa7fae568253387867197ade0",
+          "printedPage": 98,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-103.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/103",
+          "sha256": "3f4e2e4b66646d132cea336ae1352b70307609d7d996aeca35df06cf818d6685",
+          "printedPage": 99,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_a/html/3108-141.html",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=160&type=c_fbook",
+          "sha256": "87523158fefceb5e0bc80c562ddca7f73c2d389bbd5a55b241f2c288a3483491",
+          "kind": "1428 edited digital chapter and notes read"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_a/html/3108-161.html",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=161&type=c_fbook",
+          "sha256": "e25d640226402ef417bcb483ddd36bf410555620bb5ed6899d34987ed5de3bd0",
+          "kind": "1428 edited digital chapter and notes read"
+        }
+      ],
+      "arabicCorrections": [
+        {
+          "old": "الأبحاث المتفرّفة",
+          "new": "الأبحاث المتفرّقة",
+          "locus": "A43",
+          "earlyReading": "الأبحاث المتفرقة",
+          "earlyPage": 99,
+          "earlyCanvas": 103,
+          "laterReading": "الأبحاث المتفرّقة",
+          "laterPage": 166,
+          "classification": "jointly witnessed letter-level transcription repair",
+          "reason": "Stored ف replaces the ق printed in both external witnesses.",
+          "confidence": "high"
+        }
+      ],
+      "englishCorrections": [
+        {
+          "old": "and then arrange the derivative discussions in a manner appropriate to this arrangement",
+          "new": "and then arrange the various discussions in a manner appropriate to this arrangement",
+          "locus": "E27",
+          "arabic": "ثمّ ترتيب الأبحاث المتفرّقة على ما يناسب هذا الوضع",
+          "reason": "Both external witnesses read المتفرقة (various/separate), not المتفرعة (derivative). This follows the recommended Arabic transcription repair.",
+          "classification": "source-supported lexical fidelity repair"
+        }
+      ],
+      "orthographicCorrections": [
+        {
+          "old": "الجزءالمفروض",
+          "new": "الجزء المفروض",
+          "reason": "Restore word boundary, A17."
+        }
+      ],
+      "proposedAuthorNotes": [
+        {
+          "kind": "omitted original bibliographical locator",
+          "anchorArabicParagraph": 36,
+          "anchor": "وهذا الاعتبار غير اعتبار الجسميّة التي ذكرناها» ، إنتهى",
+          "earlyPrintedPage": 98,
+          "earlyCanvas": 102,
+          "earlyOriginalText": "(ص ٦٤)",
+          "laterVolume": 1,
+          "laterPage": 166,
+          "laterNote": 1,
+          "laterNoteText": "راجع الفصل الثاني من المقالة الثانية من إلهيّات الشفاء. وتعرّض له صدر المتألّهين في الأسفار ٥ : ٢١.",
+          "proposedArabic": "الشفاء، ص ٦٤.",
+          "proposedEnglish": "al-Shifāʾ, p. 64 (the pagination cited in the original).",
+          "reason": "The 1404 authorial text prints this page citation immediately after the quoted passage. The later editor identifies the chapter but does not repeat the page number. The original citation is missing from the stored unit.",
+          "attribution": "Original authorial inline citation",
+          "classification": "1404-attested authorial citation restoration; 1428 supplies corresponding chapter locator"
+        }
+      ],
+      "argumentFindings": [
+        "All seven attributed views, each reply, and all three indivisible-part arguments are fully present. The English preserves the difference between actual infinite constituents and indefinitely repeatable division.",
+        "The conditional claims about energy remain conditional; no modern scientific reinterpretation has been inserted. The early printing and later text agree on this historical wording.",
+        "The later edition has يقبل القسمة in the seventh-view sentence on p166 where the stored text and early p98 have تقبل القسمة; this agreement/construction difference does not change the claim and does not warrant changing the base."
+      ],
+      "editorialCommentary": [
+        {
+          "laterPages": [
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166
+          ],
+          "finding": "All editorial notes read: complete attribution references; the extended reconciliation of Suhrawardī’s two terminologies; an additional accident-only theory not in the authorial enumeration; references for indivisible-part arguments; and Shifa/Asfar source locators. None is misclassified as an omitted authorial argument."
+        }
+      ],
+      "unadoptedVariants": [],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 94,
+          "canvas": 98,
+          "ordinal": "الفصل الرابع",
+          "title": "في ماهية الجسم"
+        },
+        "later": {
+          "volume": 1,
+          "page": 160,
+          "ordinal": "الفصل الرابع",
+          "title": "في ماهيّة الجسم"
+        }
+      }
+    },
+    {
+      "index": 31,
+      "id": "N-VI-05",
+      "status": "complete",
+      "sourceGrade": "Complete-unit comparison: every relevant 1404 printed page visually read, full corresponding 1428 edited digital authorial text and notes read, stored Arabic and English read. No manuscript or specialist certification claimed.",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=126&type=c_fbook",
+        "page": "126–130"
+      },
+      "storedArabicSha256": "b15305a766f1b77b95542543e264421ea401aca93c4dd30eb4360fd54092d321",
+      "storedEnglishSha256": "67a00d700f66f729d2cf95d05ec5ab3f531eb9c89c658b528ade407e8510bbd9",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          27
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          19
+        ],
+        "earlyPrintedPages": [
+          99,
+          100,
+          101,
+          102,
+          103
+        ],
+        "earlyCanvases": [
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          167,
+          168,
+          169,
+          170,
+          171,
+          172
+        ],
+        "allBoundariesAccounted": true,
+        "segments": [
+          {
+            "storedParagraphs": [
+              1,
+              4
+            ],
+            "earlyPages": [
+              99,
+              100
+            ],
+            "laterPages": [
+              167,
+              168
+            ],
+            "topic": "Proof from distinct aspects of potentiality and actuality"
+          },
+          {
+            "storedParagraphs": [
+              5,
+              14
+            ],
+            "earlyPages": [
+              100,
+              101
+            ],
+            "laterPages": [
+              168,
+              169,
+              170
+            ],
+            "topic": "Accidental preparedness and its cessation: objection and detailed replies"
+          },
+          {
+            "storedParagraphs": [
+              15,
+              22
+            ],
+            "earlyPages": [
+              101,
+              102
+            ],
+            "laterPages": [
+              170,
+              171
+            ],
+            "topic": "Two soul counterexamples and distinctions of noncorporeal receptivity"
+          },
+          {
+            "storedParagraphs": [
+              23,
+              27
+            ],
+            "earlyPages": [
+              102,
+              103
+            ],
+            "laterPages": [
+              171,
+              172
+            ],
+            "topic": "Matter regress and intellect counterexamples; entirety of final replies"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-103.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/103",
+          "sha256": "3f4e2e4b66646d132cea336ae1352b70307609d7d996aeca35df06cf818d6685",
+          "printedPage": 99,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-104.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/104",
+          "sha256": "53c8648745cda2ff017bbb72d6e5c2b1ad21b9b2f3b30c4a7badf80bb56fcf9b",
+          "printedPage": 100,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-105.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/105",
+          "sha256": "a3503ac093bfa57e0d53441d0476776809555f33d3c074ba56852d5a5175b421",
+          "printedPage": 101,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-106.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/106",
+          "sha256": "66f25aaafacfbf0d76235003a63f4056451e8e69e17d24a2b38d7e865d746dbe",
+          "printedPage": 102,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-107.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/107",
+          "sha256": "e5c080041bd015323e2e6a5895a140c2034f1fd7ffd66bf5e39a7d63ca3456c6",
+          "printedPage": 103,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_a/html/3108-161.html",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=167&type=c_fbook",
+          "sha256": "e25d640226402ef417bcb483ddd36bf410555620bb5ed6899d34987ed5de3bd0",
+          "kind": "1428 edited digital chapter and notes read"
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [],
+      "orthographicCorrections": [
+        {
+          "old": "اللاحقةوإمكانها",
+          "new": "اللاحقة وإمكانها",
+          "reason": "Restore word boundary, A3."
+        },
+        {
+          "old": "الامتدادالجوهريّ",
+          "new": "الامتداد الجوهريّ",
+          "reason": "Restore word boundary, A4."
+        }
+      ],
+      "proposedAuthorNotes": [],
+      "argumentFindings": [
+        "The stored Arabic/English preserve every objection and answer, including both soul counterexamples, the matter-of-matter regress and the intellect’s reception of existence. The final distinction between prior preparedness and simple bestowal is correctly maintained. No English correction required."
+      ],
+      "editorialCommentary": [
+        {
+          "laterPage": 171,
+          "note": 2,
+          "quote": "أنّ اشتداد وجود النفس المجرّدة عبارة اخرى عن ثبوت الحركة الجوهريّة فيها ، فكيف ينكر كونه من باب الحركة المعروفة؟!",
+          "finding": "The editor objects that intensification of the immaterial soul is itself substantial motion and cross-refers to IX.2 and VIII.11. This is a substantive criticism of the author, not an alternative original reading; record it without altering the author’s explicit denial of ordinary temporal motion."
+        },
+        {
+          "laterPages": [
+            167,
+            168,
+            169,
+            170,
+            171,
+            172
+          ],
+          "finding": "All remaining notes read: Sabzawārī’s explanation of matter, provenance of the potency argument and objections, two interpretations of الممكن, the soul counterexamples and their sources, and Avicenna’s pure-potentiality reply. No original footnotes appear in the 1404 chapter."
+        }
+      ],
+      "unadoptedVariants": [
+        {
+          "locus": "A1",
+          "earlyReading": "بالصورة النوعية",
+          "earlyPage": 99,
+          "stored": "بالصورة النوعيّة",
+          "laterReading": "بالصور النوعيّة",
+          "laterPage": 167,
+          "classification": "unfootnoted later singular/plural variant",
+          "reason": "Retain the base and early singular; its generic sense already supports the English discussion of specific forms."
+        },
+        {
+          "locus": "A7",
+          "earlyReading": "نثبتها جزءا للجسم",
+          "earlyPage": 100,
+          "stored": "نثبتها جزءاً للجسم",
+          "laterReading": "نثبتهما جزءا للجسم",
+          "laterPage": 168,
+          "laterNote": 5,
+          "editorNote": "وفي النسخ : «نثبته». والصحيح ما أثبتناه.",
+          "classification": "explicit later-editor pronoun emendation not adopted",
+          "reason": "The early facsimile actually reads نثبتها, as the stored base does, whereas the editor reports نثبته for his copies and prints the dual. Preserve all three forms in the record rather than claim the editor’s reported old reading matches the early facsimile. The argument and English are clear without changing the base."
+        },
+        {
+          "locus": "A7",
+          "earlyReading": "القبول والاستعداد مفهوم عرضي",
+          "earlyPage": 100,
+          "stored": "القبول والاستعداد مفهومٌ عَرَضيٌّ",
+          "laterReading": "القبول أو الاستعداد",
+          "laterPage": 169,
+          "laterNote": 1,
+          "editorNote": "وفي النسخ : «والاستعداد». والأولى ما أثبتناه.",
+          "classification": "explicit later-editor connective emendation not adopted",
+          "reason": "Both expressions designate receptivity/preparedness in the objection; the original conjunction is readable and preserved in the stored English."
+        }
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 99,
+          "canvas": 103,
+          "ordinal": "الفصل الخامس",
+          "title": "في ماهية المادة وإثبات وجودها"
+        },
+        "later": {
+          "volume": 1,
+          "page": 167,
+          "ordinal": "الفصل الخامس",
+          "title": "في ماهيّة المادّة وإثبات وجودها"
+        }
+      },
+      "preservedAdoptedReadings": [
+        {
+          "id": "N1428-VI05-BESTOWAL-01",
+          "old": "بإضافة المرتبة العالية",
+          "adopted": "بإفاضة المرتبة العالية",
+          "earlyPage": 102,
+          "earlyCanvas": 106,
+          "earlyReading": "بإضافة المرتبة العالية",
+          "laterPage": 171,
+          "laterNote": 1,
+          "editorNote": "وفي النسخ : «بإضافة المرتبة العالية». والصحيح ما أثبتناه.",
+          "classification": "explicit later-editor emendation, retained; full early-page inspection independently confirms the earlier word"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "id": "N-VI-06",
+      "status": "complete",
+      "sourceGrade": "Complete-unit comparison: every relevant 1404 printed page visually read, full corresponding 1428 edited digital authorial text and notes read, stored Arabic and English read. No manuscript or specialist certification claimed.",
+      "baseSource": {
+        "edition": "Arabic transcription · Qum 1417 AH",
+        "url": "https://lib.rafed.net/view.php?b_id=1642&page=130&type=c_fbook",
+        "page": "130–134"
+      },
+      "storedArabicSha256": "5f8b74198d8387b2a9d6a4f67f3d996de6eac5a54382ec68aed240467902d49f",
+      "storedEnglishSha256": "c72f7a36c2f2e9b7afb7b6232cea4d295864336506fdda4e00e6c8ed90a988f9",
+      "coverage": {
+        "storedArabicParagraphs": [
+          1,
+          24
+        ],
+        "storedEnglishParagraphs": [
+          1,
+          20
+        ],
+        "earlyPrintedPages": [
+          103,
+          104,
+          105
+        ],
+        "earlyCanvases": [
+          107,
+          108,
+          109
+        ],
+        "laterVolume": 1,
+        "laterPrintedPages": [
+          173,
+          174,
+          175,
+          176,
+          177,
+          178
+        ],
+        "allBoundariesAccounted": true,
+        "segments": [
+          {
+            "storedParagraphs": [
+              1,
+              8
+            ],
+            "earlyPages": [
+              103,
+              104
+            ],
+            "laterPages": [
+              173,
+              174,
+              175,
+              176
+            ],
+            "topic": "Matter’s dependence on form, separate cause, numerical/universal unity objection and roof analogy"
+          },
+          {
+            "storedParagraphs": [
+              9,
+              16
+            ],
+            "earlyPages": [
+              104,
+              105
+            ],
+            "laterPages": [
+              176,
+              177
+            ],
+            "topic": "Corporeal form’s dependence on matter and the external-association objection"
+          },
+          {
+            "storedParagraphs": [
+              17,
+              24
+            ],
+            "earlyPages": [
+              105
+            ],
+            "laterPages": [
+              177,
+              178
+            ],
+            "topic": "Restriction to ongoing motion, matter outside the definition, existential rather than quiddative union"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-107.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/107",
+          "sha256": "e5c080041bd015323e2e6a5895a140c2034f1fd7ffd66bf5e39a7d63ca3456c6",
+          "printedPage": 103,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-108.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/108",
+          "sha256": "3b9eb10bf5697b160a931137821725ce6c78ceb0986b5be0de1f12af60f10bc9",
+          "printedPage": 104,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_c/scans/early-109.jpg",
+          "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000637/109",
+          "sha256": "6da3c9784f421600b69314de1fae7a616d409dc5b76aaa70487ec5a3db3e120a",
+          "printedPage": 105,
+          "kind": "full-page original printed facsimile visually inspected"
+        },
+        {
+          "path": "/workspace/scratch/5f05ed215428/stage9_nihaya_a/html/3108-161.html",
+          "url": "https://lib.rafed.net/view.php?b_id=3108&page=173&type=c_fbook",
+          "sha256": "e25d640226402ef417bcb483ddd36bf410555620bb5ed6899d34987ed5de3bd0",
+          "kind": "1428 edited digital chapter and notes read"
+        }
+      ],
+      "arabicCorrections": [],
+      "englishCorrections": [],
+      "orthographicCorrections": [
+        {
+          "old": "والمعلول الواحد لا تكون لها إلاّ علّةً واحدةً",
+          "new": "والمعلول الواحد لا تكون له إلاّ علّةٌ واحدةٌ",
+          "reason": "1404 p103 reads لا تكون له إلا علة واحدة; 1428 p174 has لا يكون له إلا علّة واحدة. Restore masculine pronoun referring to المعلول and nominative predicate while retaining the early/base feminine verb agreement with علّة."
+        }
+      ],
+      "proposedAuthorNotes": [],
+      "argumentFindings": [
+        "The English preserves the important qualification that the impossibility of separation applies during motion, not after the goal of motion and pure actuality are attained. It also correctly distinguishes existential union from inclusion in quiddity. No English correction required."
+      ],
+      "editorialCommentary": [
+        {
+          "laterPages": [
+            173,
+            174,
+            175,
+            176
+          ],
+          "finding": "The editor stresses that form is a condition and partner, not the independent efficient cause. He disputes the author’s statement that matter is temporally prior to form and form existentially prior to matter, proposing co-production by the separate intellect. This is a substantive editorial disagreement, not a source-supported correction of the authorial wording. Both authorial assertions remain intact in Arabic and English.",
+          "quotes": [
+            {
+              "page": 173,
+              "note": 4,
+              "text": "وليست الصورة علّة تامّة ولا علّة فاعليّة لها"
+            },
+            {
+              "page": 175,
+              "note": 1,
+              "text": "ولكنّ الحقّ أن لا معنى لتقدّم المادّة على الصورة زمانا"
+            },
+            {
+              "page": 176,
+              "note": 1,
+              "text": "كما لا معنى تقدّم الصورة على المادّة وجودا"
+            }
+          ]
+        },
+        {
+          "laterPages": [
+            177,
+            178
+          ],
+          "finding": "All notes and references read, including Bahmanyār’s objection/reply, substantial-motion cross-reference, Shifāʾ/Asfār locators, and the editor’s cross-reference objecting to the essential-predicate proof. No footnotes or inline locators are omitted from the early authorial chapter."
+        }
+      ],
+      "unadoptedVariants": [
+        {
+          "locus": "A19",
+          "earlyReading": "بما ذكره الشيخ وصدر المتألهين أن المادة",
+          "earlyPage": 105,
+          "stored": "بما ذكره الشيخ وصدر المتألّهين [من] أنّ المادّة",
+          "laterReading": "بما ذكره الشيخ وصدر المتألّهين [من] أنّ المادّة",
+          "laterPage": 177,
+          "classification": "later unfootnoted bracketed grammatical supplement already in base",
+          "reason": "Retain the visible bracketed supplement; no doctrinal change."
+        }
+      ],
+      "unresolvedIssues": [],
+      "originalHeadings": {
+        "early": {
+          "printedPage": 103,
+          "canvas": 107,
+          "ordinal": "الفصل السادس",
+          "title": "في أن المادة لا تفارق الجسمية والجسمية لا تفارق المادة",
+          "subtitle": "أي أن كل واحدة منها لا تفارق صاحبتها"
+        },
+        "later": {
+          "volume": 1,
+          "page": 173,
+          "ordinal": "الفصل السادس",
+          "title": "في أنّ المادّة لا تفارق الجسميّة ، والجسميّة لا تفارق المادّة",
+          "subtitle": "أي أنّ كلّ واحدة منهما لا تفارق صاحبتها"
+        }
+      },
+      "headingRecommendation": {
+        "old": "الفصل السادس — في أنّ المادّة لا تفارق الجسميّة والجسميّة لا تفارق — المادّة أي أنّ كلّ واحدة منهما لا تفارق صاحبتها",
+        "new": "الفصل السادس — في أنّ المادّة لا تفارق الجسميّة والجسميّة لا تفارق المادّة، أي أنّ كلّ واحدة منهما لا تفارق صاحبتها",
+        "reason": "Remove the spurious em dash between تفارق and its object المادة; retain both complete source heading clauses and the subtitle. The منها/منهما witness difference is recorded separately in originalHeadings."
+      },
+      "parallelSuggestion": {
+        "bidayaUnit": "B-VI-07",
+        "nihayaUnit": "N-VI-06",
+        "fullBidayaUnitRead": true,
+        "bidayaQuote": "فالصورة جزء للعلة التامة ،وشريكة العلة للمادة ،وشرط لفعلية وجودها",
+        "nihayaQuote": "فالصورة شريكةُ العلّة للمادّة",
+        "rationale": "Both distinguish form’s role as a co-condition from the separate intellect’s efficient causality, use the replacement-of-roof-supports analogy, and address numerical matter versus universal form. Bidāya supplies the substantial-motion answer more explicitly; Nihāya defers it."
+      },
+      "crossLinks": [
+        {
+          "bidayaUnit": "B-VI-06",
+          "fullBidayaUnitRead": true,
+          "bidayaQuote": "وما فيه القوة والإمكان لا يخلو من مادة",
+          "nihayaQuote": "وهي جميعاً تتوقّف على إمكان واستعداد سابق لا حاملَ له إلاّ المادّة",
+          "rationale": "The same potency-bearing argument grounds the inseparability claim; Nihāya then adds the scope qualification concerning completion of substantial motion."
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "id": "N-VI-07",
+      "status": "not started"
+    },
+    {
+      "index": 34,
+      "id": "N-VI-08",
+      "status": "not started"
+    },
+    {
+      "index": 35,
+      "id": "N-VI-09",
+      "status": "not started"
+    },
+    {
+      "index": 36,
+      "id": "N-VI-10",
+      "status": "not started"
+    },
+    {
+      "index": 37,
+      "id": "N-VI-11",
+      "status": "not started"
+    },
+    {
+      "index": 38,
+      "id": "N-VI-12",
+      "status": "not started"
+    },
+    {
+      "index": 39,
+      "id": "N-VI-13",
+      "status": "not started"
+    },
+    {
+      "index": 40,
+      "id": "N-VI-14",
+      "status": "not started"
+    },
+    {
+      "index": 41,
+      "id": "N-VI-15",
+      "status": "not started"
+    },
+    {
+      "index": 42,
+      "id": "N-VI-16",
+      "status": "not started"
+    },
+    {
+      "index": 43,
+      "id": "N-VI-17",
+      "status": "not started"
+    },
+    {
+      "index": 44,
+      "id": "N-VI-18",
+      "status": "not started"
+    },
+    {
+      "index": 45,
+      "id": "N-VI-19",
+      "status": "not started"
+    },
+    {
+      "index": 46,
+      "id": "N-VI-20",
+      "status": "not started"
+    },
+    {
+      "index": 47,
+      "id": "N-VI-21",
+      "status": "not started"
+    }
+  ],
+  "completedUnitCount": 7,
+  "notes": [
+    "Existing adopted readings and eighteen critical notes are preserved; no canonical mutations.",
+    "No manuscript or specialist certification claimed."
+  ],
+  "stageHeadings": [],
+  "reassignedUntouched": {
+    "indices": [
+      48,
+      67
+    ],
+    "count": 20,
+    "first": "N-VII-01",
+    "last": "N-VIII-11",
+    "agent": "/root/nihaya_witnesses",
+    "status": "wholly untouched at reassignment"
+  }
+}

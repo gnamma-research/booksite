@@ -1,0 +1,26 @@
+# Farghānī — First photographed historical-print collation (I1876 vs B2007)
+**9 November 2026 · Introductory foundation I · four bounded textual checks on three historical printed pages.**
+
+## Evidence and scope
+Princeton's public-domain **Istanbul 1293/1876 printing**, volume I, was actually downloaded in the form of the 37.30 MB PDF and rendered for direct inspection. The preserved file has SHA-256 `d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87` and 368 scan pages. The readable pages corresponding to the beginning of the first *aṣl* were located at PDF scan 9 = **printed p.5**, scan 10 = **printed p.6**, and scan 11 = **printed p.7**. The facsimile can be opened at [Princeton/NYU](https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en) or [downloaded PDF](https://mc.dlib.nyu.edu/files/books/princeton_aco000264/princeton_aco000264_lo.pdf); for source scan index use the manifest and precise PDF index. Source artifact: [GitHub Actions run 42536981050](https://github.com/gnamma-research/booksite/actions/runs/42536981050/artifacts/13639926426). **Archival update:** The source scans and contact sheets have since been successfully committed to the repository; [scan 9 / printed p5](https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0009.jpg), [scan 10 / printed p6](https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0010.jpg), and [scan 11 / printed p7](https://github.com/gnamma-research/booksite/blob/master/texts/al-farghani/muntaha-al-madarik/facsimile-I1876/images/scan_0011.jpg). The earlier failed GitHub upload is preserved as an independent workflow artifact. Newer repository JPEG encodings have their own SHA-256 values in the accompanying SOURCE_INGEST_MANIFEST.json; their underlying 37.3 MB source PDF SHA-256 is unchanged.
+
+**Method:** Each below is a directly read **historical printed** Arabic phrase, checked against the existing digitized Beirut B2007 lemma. It is *not* collation of the entire three printed pages, let alone medieval codices. The B2007 printed-page references and I1876 pagination must not be conflated.
+
+## Collation table
+| Record | Source locations | B2007 Arabic | I1876 photographed Arabic | Decision |
+| --- | --- | --- | --- | --- |
+| I1876-L01 | Beirut p.18 ↔ 1876 p.5, PDF scan 9 | `وبطون المشتمل` | `وبطون المشتمل` | Retain witnessed awkward reading in the copy-text with sic apparatus note; do not emend without manuscript images. |
+| I1876-L02 | Beirut p.19 ↔ 1876 p.6, PDF scan 10 | `والمطلب الغائبّ` | `والمطلب الغائي` | Prefer I1876 الغائي as the edited reading: 'ultimate/purposive objective'; preserve B2007 الغائب in apparatus. Witnessed PRINT comparison only, not an independently attested manuscript variant. |
+| I1876-L03 | Beirut p.19 ↔ 1876 p.6, PDF scan 10 | `بل عمليّا ووجوديّا أيضا` | `بل علميّا ووجوديّا أيضا` | Prefer I1876 علميا because directly read and supported by close context concerning العلم الذاتي والصفاتي; modern printed digital عمليّا is recorded, not silently changed; this is a PRINT-level correction, not manuscript evidence. |
+| I1876-L04 | Beirut p.21 ↔ 1876 p.7, PDF scan 11 | `من حيث واحديتها` | `من حيث واحديتها` | Corroborates the words omitted in older GNAMMA excerpt. Keep earlier correction and distinguish source transcription error from actual copy variation. |
+
+## Interpretive significance
+The two actual print differences occur on the same photographed 1876 page (printed **p.6**, PDF scan 10). First, `الغائي` (“purposive,” “ultimate”) restores a logical reference to the *ghāya* of articulated name-perfection, rather than a confusing claim that the aim is “absent/hidden” (`الغائب`). Second, `علميا ووجوديا` differentiates determination **in knowledge** and **in existence**, closely matching the surrounding words `العالم الأزلي وعلمه الذاتي والصفاتي الأبدي`. The earlier working English had already used the correct epistemic–ontological distinction, although the first printed-digital audit mistakenly reinterpreted it as `عمليا`. This witnessed print reading therefore warrants correction of the Arabic audit and retention of the earlier better English sense.
+
+The difficult `بطون المشتمل` is present in the older print as well as the digital Beirut text; this suggests B2007 did not merely introduce that awkward sequence in its digital transcription. It cannot, however, settle what the earliest manuscripts actually read. The necessary next witness checks are C1107, R670, K273, F3966, Y706, with actual folio/page photography and internal correction hands recorded.
+
+## Editorial conclusion
+Two **historical-print differences**, two **historical-print agreements**, and **zero verified Farghānī manuscript variants**. The base remains a **source-critically corrected working edition**; claiming a definitive manuscript-critical Arabic text on this evidence alone would be unjustified.
+
+## Restart
+Continue I1876 printed pp8 onward with targeted B2007 p21–36 cruxes, especially I1876 equivalents of p23 “فلم تعلم ولم يحكم” and p33 “في عون هذا” and p34 “الحضرة العملية”. Establish image-to-paragraph concordance before carrying assumptions across different paginations.

@@ -1,0 +1,52 @@
+{
+  "stage": 120,
+  "date": "2026-11-12",
+  "grade": "working source-photographic excerpts, not full critical edition",
+  "originalHHistoricalNotes": 1090,
+  "originalEnglishFirstPass": 1029,
+  "originalTableAffected": 4,
+  "modernReferenceOnly": 57,
+  "priorStage": 119,
+  "priorCumulativeFile": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage119.md",
+  "priorBytes": 1297308,
+  "priorSHA256": "d54d4e3b0c7a88df1b18139f7b13e7bf0331188f04bb4d8ea563d7fa3ee7de8e",
+  "newFile": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage120.md",
+  "newBytes": 1324459,
+  "newSHA256": "f206a6df72e6ff5f6ad18915ae02f7381283fc1bcca875aba38f5cabe2d0db34",
+  "priorCorpusPreservedAsByteIdenticalPrefix": true,
+  "newQ258SelectedSourceFragments": 15,
+  "cumulativeQ258SelectedPhraseLoci": 39,
+  "fullyCertifiedQ258Cells": 0,
+  "newQ294FullDirectionalSourceSigns": 8,
+  "cumulativeQ294IndividuallyReadGlyphs": 27,
+  "remainingQ294NotIndividuallyRead": 78,
+  "newWholePrintedHPagesCertified": 0,
+  "newIndependentManuscriptVariants": 0,
+  "newHistoricallyStrongProofsFor46ModalMixes": 0,
+  "appendices": [
+    {
+      "name": "STAGE120_SOURCE_PHOTO_AUDIT.md",
+      "label": "Stage120 photographed source audit",
+      "bytes": 6899,
+      "sha256": "7d68868323411d85b23b1aed71560be3a521fa1ba5fe0a550d1e779ef48544f0"
+    },
+    {
+      "name": "STAGE120_Q258_FIFTEEN_SOURCE_FRAGMENTS.json",
+      "label": "Fifteen new Q258 source fragments",
+      "bytes": 9516,
+      "sha256": "623af7f50828d5025b23856116e0762db233b3177121e450c4d12f4d24731311"
+    },
+    {
+      "name": "STAGE120_Q294_EIGHT_DIRECTIONAL_SYMBOLS.json",
+      "label": "Eight Q294 source-direction signs",
+      "bytes": 4700,
+      "sha256": "6188a4413e0cf1cd0dd39569e984d94a051364e31c76c917414456f7152b5f49"
+    },
+    {
+      "name": "HANDOFF_LATEST.md",
+      "label": "Stage120 full cumulative handoff",
+      "bytes": 5762,
+      "sha256": "49391082c39d4f6ebfd49e3f3e3cc6f2dd911d0674de32b5f1a212c78fbd98c0"
+    }
+  ]
+}

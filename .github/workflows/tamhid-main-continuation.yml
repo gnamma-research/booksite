@@ -1,0 +1,48 @@
+name: Tamhid main commentary continuation
+on:
+  push:
+    branches: [master]
+    paths: ['.github/workflows/tamhid-main-continuation.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: tamhid-main-continuation-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  assemble-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            texts/al-turka/qawaid-al-tawhid/
+            texts/manifest.json
+      - name: Install source parser
+        run: python -m pip install --quiet beautifulsoup4
+      - name: Verify Arabic against reviewed hashes and assemble bilingual sections
+        run: python texts/al-turka/qawaid-al-tawhid/qa/assemble-main-commentary.py
+      - name: Check corpus and reader interactions
+        run: node texts/al-turka/qawaid-al-tawhid/qa/check-commentary.mjs
+      - name: Export cumulative bilingual text
+        run: node texts/al-turka/qawaid-al-tawhid/qa/export-commentary.mjs
+      - name: Publish only the reviewed work and its catalogue entry
+        run: |
+          git config user.name 'Gnamma editorial build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add texts/al-turka/qawaid-al-tawhid/ texts/manifest.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Publish 65-unit Tamhid commentary: source-checked main QT001–019, full introduction and conclusion'
+          git pull --rebase origin master
+          git push origin HEAD:master
+      - name: Preserve reviewable source, translations and test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tamhid-main-continuation-review
+          path: texts/al-turka/qawaid-al-tawhid/
+          retention-days: 7

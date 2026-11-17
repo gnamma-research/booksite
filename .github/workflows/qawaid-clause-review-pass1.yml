@@ -1,0 +1,92 @@
+name: Qawaid 171-unit clause review and export reconciliation
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/qawaid-clause-review-pass1.yml'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/generate-clause-ledger.mjs'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/clause-review-adjudications-2026-11-09.json'
+      - 'texts/al-turka/qawaid-al-tawhid/data/commentary-introduction-*.js'
+      - 'texts/al-turka/qawaid-al-tawhid/data/commentary-main-*.js'
+      - 'texts/al-turka/qawaid-al-tawhid/data/commentary-conclusion.js'
+      - 'texts/al-turka/qawaid-al-tawhid/data/units.js'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: qawaid-clause-review-pass1
+  cancel-in-progress: true
+jobs:
+  reconcile-and-validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          sparse-checkout: texts/al-turka/qawaid-al-tawhid
+      - name: Compile and check complete bilingual commentary from canonical source modules
+        run: python texts/al-turka/qawaid-al-tawhid/qa/finalize-reading-edition.py
+      - name: Generate exact 171-unit clause ledger and validate all 130 manually adjudicated clauses
+        run: node texts/al-turka/qawaid-al-tawhid/qa/generate-clause-ledger.mjs
+      - name: Confirm corrected wording in compiled HTML and source corpus
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          p=pathlib.Path('texts/al-turka/qawaid-al-tawhid')
+          j=json.loads((p/'data/commentary-corpus.json').read_text())
+          units={x['id']:x for x in j['units']}
+          expected={
+           'SH-014':'whether accidentally or essentially',
+           'SH-INTRO-021':'tawqīfī character',
+           'SH-061-E':'disclosed its deficiency',
+           'SH-058':'sleep and wakefulness'}
+          for uid,needle in expected.items():
+             assert needle in units[uid]['english'],(uid,needle)
+          h=(p/'downloads/Tamhid_Complete_Commentary_Reading_Edition.html').read_text()
+          assert all(s in h for s in expected.values())
+          assert h.count('<style>')==h.count('</style>')
+          assert len(j['units'])==110
+          print('All four currently adopted readings propagated to compiled corpus and single-file reader')
+          PY
+      - name: Preserve generated result before concurrent-master reconciliation
+        run: |
+          mkdir -p /tmp/qawaid-clause-verified
+          tar -cf /tmp/qawaid-clause-verified/generated.tar \
+            texts/al-turka/qawaid-al-tawhid/data/commentary-corpus.json \
+            texts/al-turka/qawaid-al-tawhid/data/parallel-commentary.md \
+            texts/al-turka/qawaid-al-tawhid/data/commentary-english.md \
+            texts/al-turka/qawaid-al-tawhid/downloads/Tamhid_Complete_Commentary_Reading_Edition.html \
+            texts/al-turka/qawaid-al-tawhid/qa/clause-ledger.json \
+            texts/al-turka/qawaid-al-tawhid/editorial/CLAUSE_REVIEW_PASS1_2026-11-09.md \
+            texts/al-turka/qawaid-al-tawhid/qa/final-reading-audit.json
+      - name: Publish verified derived files with guarded retries
+        run: |
+          git config user.name 'Gnamma source-review checks'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3 4 5 6; do
+            git fetch origin master
+            git reset --hard origin/master
+            tar -xf /tmp/qawaid-clause-verified/generated.tar
+            git add texts/al-turka/qawaid-al-tawhid/data/commentary-corpus.json \
+              texts/al-turka/qawaid-al-tawhid/data/parallel-commentary.md \
+              texts/al-turka/qawaid-al-tawhid/data/commentary-english.md \
+              texts/al-turka/qawaid-al-tawhid/downloads/Tamhid_Complete_Commentary_Reading_Edition.html \
+              texts/al-turka/qawaid-al-tawhid/qa/clause-ledger.json \
+              texts/al-turka/qawaid-al-tawhid/editorial/CLAUSE_REVIEW_PASS1_2026-11-09.md \
+              texts/al-turka/qawaid-al-tawhid/qa/final-reading-audit.json
+            if git diff --cached --quiet; then echo 'Edition and clause ledger already current'; exit 0; fi
+            git commit -m 'Publish corrected 171-unit clause ledger and regenerated Tamhid reading editions'
+            if git push origin HEAD:master; then exit 0; fi
+            sleep 2
+          done
+          echo 'Concurrent master updates prevented publication' >&2
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawaid-clause-review-checkpoint
+          path: |
+            texts/al-turka/qawaid-al-tawhid/qa/clause-ledger.json
+            texts/al-turka/qawaid-al-tawhid/editorial/CLAUSE_REVIEW_PASS1_2026-11-09.md
+          retention-days: 30

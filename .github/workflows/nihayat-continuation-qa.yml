@@ -1,0 +1,37 @@
+name: Nihayat continuation accounting
+
+on:
+  push:
+    branches: [master, nihayat-active]
+    paths:
+      - 'texts/al-tabatabai/audits/nihayat4-current-state.json'
+      - 'texts/al-tabatabai/audits/nihaya-external-comparison-register.json'
+      - 'texts/al-tabatabai/tools/resume-current.py'
+      - 'texts/al-tabatabai/tools/tests/test_resume_current.py'
+      - '.github/workflows/nihayat-continuation-qa.yml'
+  pull_request:
+    paths:
+      - 'texts/al-tabatabai/audits/nihayat4-current-state.json'
+      - 'texts/al-tabatabai/audits/nihaya-external-comparison-register.json'
+      - 'texts/al-tabatabai/tools/resume-current.py'
+      - 'texts/al-tabatabai/tools/tests/test_resume_current.py'
+      - '.github/workflows/nihayat-continuation-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nihayat-continuation-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  continuation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Exercise interrupted and stale checkpoints
+        run: python3 -m unittest discover -s texts/al-tabatabai/tools/tests -p test_resume_current.py
+      - name: Verify current continuation against saved text
+        run: python3 texts/al-tabatabai/tools/resume-current.py --check-text

@@ -1,0 +1,120 @@
+/* Tahdhīb al-Manṭiq: source-based Darūrī compact rail (separate from kalām).
+ * UI-only. All book-specific source records and manuscript qualifications survive.
+ * Import the actual Darūrī 64px circular tile token, not an invented substitute. */
+@import url("../../../../daruri/headerless-navigation.css");
+body.gn-logic-parity .site-head,
+body.gn-logic-parity #gn-daruri-toolbar,
+body.gn-logic-parity #gn-experience-controls,
+body.gn-logic-parity .main>.toolbar,
+body.gn-logic-parity .main>.eyebrow,
+body.gn-logic-parity .main>h1,
+body.gn-logic-parity .main>.subtitle,
+body.gn-logic-parity .main>.source-note,
+body.gn-logic-parity .main>.foot {display:none!important}
+body.gn-logic-parity .workspace{display:block!important;width:100%;max-width:none;min-width:0;margin:0!important}
+body.gn-logic-parity .main{box-sizing:border-box;min-width:0;width:min(100%,1240px);max-width:1240px;margin-inline:auto!important;padding:clamp(12px,2.5vw,30px) clamp(14px,4vw,44px) 120px!important}
+body.gn-logic-parity .contents{box-sizing:border-box;display:block!important;position:fixed!important;top:56px!important;bottom:0!important;left:0!important;height:calc(100dvh - 56px)!important;max-height:none!important;width:min(355px,92vw)!important;z-index:110!important;background:var(--paper)!important;border-right:1px solid var(--border)!important;box-shadow:12px 8px 38px #0002!important;transform:translateX(-110%)!important;overflow-y:auto!important;transition:transform .2s ease}
+body.gn-logic-parity .contents.shown{transform:translateX(0)!important}
+body.gn-logic-parity #close-contents{display:inline-flex!important}
+body.gn-logic-parity #passages,
+body.gn-logic-parity #flow-passages{min-width:0;max-width:1080px!important;margin-inline:auto}
+body.gn-logic-parity .page-strip{margin:0 0 18px}
+body.gn-logic-parity .reading-dock{height:62px!important;bottom:max(20px,calc(env(safe-area-inset-bottom) + 17px))!important;width:min(850px,calc(100vw - 16px))!important;grid-template-columns:48px minmax(0,1fr) 48px!important;border-radius:13px!important;box-shadow:0 8px 34px #0002!important}
+body.gn-logic-parity #dock-prev,
+body.gn-logic-parity #dock-next{min-height:48px!important;padding:2px!important;display:flex;flex-flow:column nowrap;align-items:center;justify-content:center;gap:1px}
+body.gn-logic-parity #dock-prev svg,
+body.gn-logic-parity #dock-next svg{width:20px;height:20px;flex:none}
+body.gn-logic-parity #dock-prev span,
+body.gn-logic-parity #dock-next span{font:650 11px/1.2 system-ui}
+body.gn-logic-parity #dock-current{white-space:normal!important;line-height:1.25!important;max-height:58px;padding:4px 7px!important;text-overflow:ellipsis!important;overflow:hidden!important;font:600 12px/1.25 system-ui!important;text-wrap:balance}
+
+/* Darūrī-inspired single 56px rail; never two rows, never horizontal scrolling. */
+.gn-logic-rail{position:sticky;top:0;z-index:120;box-sizing:border-box;width:100%;height:56px;max-width:100%;display:flex;flex-flow:row nowrap;align-items:center;justify-content:space-between;gap:clamp(5px,1vw,13px);margin:0;padding:5px clamp(8px,1.6vw,24px);background:color-mix(in srgb,var(--paper) 97%,transparent);border-bottom:1px solid var(--border);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--ink);font-family:system-ui}
+.gn-logic-group{display:flex;flex:0 0 auto;min-width:0;align-items:center;gap:clamp(3px,.7vw,8px)}
+.gn-logic-centre{margin-left:auto}
+.gn-logic-trailing{margin-left:auto;padding-left:clamp(5px,1vw,12px);border-left:1px solid var(--border)}
+.gn-logic-btn{box-sizing:border-box;display:inline-flex;flex:0 0 39px;align-items:center;justify-content:center;gap:6px;width:39px;height:40px;padding:0;margin:0;border:1px solid var(--border);border-radius:9px;background:var(--paper);color:var(--ink);cursor:pointer;touch-action:manipulation}
+.gn-logic-btn svg{box-sizing:border-box;width:19px;height:19px;flex:none}
+.gn-logic-btn:hover,.gn-logic-btn[aria-pressed="true"]{background:var(--wash);border-color:var(--accent);color:var(--accent-ink)}
+.gn-logic-btn:focus-visible,.gn-logic-lang-button:focus-visible,.gn-logic-menu-item:focus-visible,.gn-logic-layer-choice:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.gn-logic-read{box-sizing:border-box;width:auto;flex:0 0 auto;min-width:62px;padding:0 10px;background:var(--wash);border-color:var(--accent);color:var(--accent-ink);font-weight:650}
+.gn-logic-read-label{font:650 12px/1 system-ui}
+.gn-logic-tile{display:inline-flex;flex:0 0 40px;width:40px;height:40px;background:var(--gn-daruri-tile) center / 38px 38px no-repeat;background-color:var(--paper);border:1px solid var(--border);border-radius:50%;box-sizing:border-box}
+.gn-logic-lang{display:flex;flex:none;align-items:center;gap:2px;padding:2px;border:1px solid var(--border);border-radius:9px;background:var(--bg)}
+.gn-logic-lang-button{box-sizing:border-box;min-width:35px;height:34px;padding:0 6px;border:0;border-radius:7px;background:transparent;color:var(--ink);font:650 12px/1 system-ui;cursor:pointer}
+.gn-logic-lang-button:first-child{font:650 20px/1 'Amiri',serif}
+.gn-logic-lang-button[aria-pressed="true"]{background:var(--accent);color:var(--paper)}
+.gn-logic-layer[data-layer="both"]{border-color:var(--accent);background:var(--wash);color:var(--accent-ink)}
+.gn-logic-layer[data-layer="both"]::after{content:"+";position:absolute;margin-left:23px;margin-top:-24px;font:700 12px/1 system-ui;color:var(--accent-ink)}
+.gn-logic-menu{background:var(--paper)}
+/* Quiet reading: each editorial title belongs to a source location but is NOT authorial. */
+.gn-logic-editorial-header{margin:5px 0 clamp(20px,2.6vw,35px);padding:0 0 10px;border-bottom:1px solid var(--border)}
+.gn-logic-part{margin:0 0 8px;color:var(--muted);font:550 10px/1.5 system-ui;letter-spacing:.025em}
+.gn-logic-editorial-title{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0!important;color:var(--ink);font:500 clamp(17px,1.8vw,23px)/1.4 Georgia,serif}
+.gn-logic-editorial-en{flex:1 1 240px}
+.gn-logic-editorial-ar{flex:1 1 240px;font:500 clamp(21px,2.5vw,28px)/1.5 'Amiri',serif;text-align:right}
+.gn-logic-study-title{display:block;margin:6px 0 0;font:500 21px/1.6 'Amiri',serif;color:var(--ink)}
+/* Commentary sits under the associated matn unit, not in a third standalone reader mode. */
+body.gn-logic-parity .gn-yazdi-layer{padding:16px 0 12px;margin:10px 0 34px;border-top:1px solid var(--border);border-bottom:0}
+body.gn-logic-parity .gn-yazdi-head{margin-bottom:13px}
+body.gn-logic-parity .gn-yazdi-head h3{font:500 17px/1.4 Georgia,serif}
+body.gn-logic-parity .gn-yazdi-excerpt{margin:0 0 15px;padding:0 0 11px;border-bottom:1px solid color-mix(in srgb,var(--border) 70%,transparent)}
+body.gn-logic-parity .gn-yazdi-locator{font:550 10px/1.5 system-ui;letter-spacing:.015em}
+body.gn-logic-parity .gn-yazdi-pair{gap:clamp(28px,4vw,64px)}
+body.gn-logic-parity .gn-yazdi-en{font:calc(18px * var(--reader-scale))/1.82 var(--gn-en-reader,Georgia,serif)}
+body.gn-logic-parity .gn-yazdi-ar{font:calc(25px * var(--reader-scale))/2.02 var(--gn-ar-reader,'Amiri',serif)}
+/* One accessible compact modal; no permanent shelves of menu icons. */
+.gn-logic-scrim[hidden]{display:none!important}
+.gn-logic-scrim{box-sizing:border-box;display:flex;align-items:center;justify-content:center;position:fixed;inset:0;z-index:550;background:#17232699;padding:calc(12px + env(safe-area-inset-top)) 12px calc(12px + env(safe-area-inset-bottom))}
+.gn-logic-sheet{box-sizing:border-box;background:var(--paper);color:var(--ink);width:min(480px,100%);max-height:min(86dvh,820px);overflow:auto;overscroll-behavior:contain;border:1px solid var(--border);border-radius:12px;box-shadow:0 15px 45px #0004}
+.gn-logic-sheet-head{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 16px;background:var(--paper);border-bottom:1px solid var(--border)}
+.gn-logic-sheet-head h2{font:500 21px/1.35 Georgia,serif;margin:0}
+.gn-logic-sheet-body{display:grid;gap:12px;padding:12px 17px 18px}
+.gn-logic-menu-group{display:grid;gap:0}
+.gn-logic-menu-group h3{margin:5px 0 3px;color:var(--muted);font:650 11px/1.45 system-ui;letter-spacing:.025em}
+.gn-logic-menu-item{width:100%;min-height:42px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 2px;border:0;border-bottom:1px solid var(--border);background:transparent;color:var(--ink);text-align:left;cursor:pointer}
+.gn-logic-item-title{flex:1 1 52%;font:550 13px/1.4 system-ui}
+.gn-logic-item-detail{flex:1 1 48%;font:400 11px/1.35 system-ui;color:var(--muted);text-align:right}
+.gn-logic-layer-explainer{font:12px/1.6 system-ui;color:var(--muted);margin:0 0 7px}
+.gn-logic-layer-choice{display:flex;align-items:center;gap:12px;width:100%;min-height:57px;padding:10px 12px;border:1px solid var(--border);border-radius:9px;background:var(--paper);color:var(--ink);text-align:left;cursor:pointer}
+.gn-logic-layer-choice[aria-checked="true"]{border-color:var(--accent);background:var(--wash)}
+.gn-logic-choice-mark{font-size:21px;color:var(--accent)}
+.gn-logic-layer-choice strong,.gn-logic-layer-choice small{display:block}
+.gn-logic-layer-choice strong{font:650 14px/1.35 system-ui}
+.gn-logic-layer-choice small{margin-top:3px;color:var(--muted);font:11px/1.45 system-ui}
+@media(max-width:700px){
+ .gn-logic-rail{gap:3px;padding:5px 6px}
+ .gn-logic-group{gap:3px}
+ .gn-logic-btn{width:37px;flex-basis:37px}
+ .gn-logic-tile{width:36px;flex-basis:36px;height:36px;background-size:35px 35px}
+ .gn-logic-read{min-width:48px;width:auto;flex-basis:auto;padding:0 5px}
+ .gn-logic-lang-button{min-width:32px;padding:0 4px}
+ .gn-logic-trailing{padding-left:5px}
+ .gn-logic-editorial-title{gap:3px}
+ .gn-logic-editorial-en,.gn-logic-editorial-ar{flex-basis:100%}
+ .gn-logic-editorial-ar{font-size:23px}
+ body.gn-logic-parity .gn-yazdi-pair{display:flex;flex-direction:column;gap:10px}
+ body.gn-logic-parity .gn-yazdi-ar{order:-1;font-size:calc(24px * var(--reader-scale))}
+ body.gn-logic-parity .gn-yazdi-en{font-size:calc(17px * var(--reader-scale))}
+}
+@media(max-width:390px){
+ .gn-logic-tile{display:none}
+ .gn-logic-read-label{display:none}
+ .gn-logic-read{min-width:37px;flex-basis:37px;padding:0}
+ .gn-logic-trailing{padding-left:3px}
+}
+@media(max-width:335px){.gn-logic-focus{display:none}}
+@media print{
+ .gn-logic-rail,.gn-logic-scrim{display:none!important}
+ body.gn-logic-parity .gn-yazdi-layer{display:block!important}
+ body.gn-logic-parity:not([data-yazdi="on"]) .gn-yazdi-layer{display:none!important}
+}
+
+/* Printed I13 fine-grained, explicitly editorial, topic navigation. */
+.gn-logic-outline-chapter{border-bottom:1px solid var(--border);padding:4px 0;margin:0}
+.gn-logic-outline-chapter>summary{font:650 12px/1.45 system-ui;color:var(--ink);padding:9px 4px;cursor:pointer}
+.gn-logic-outline-item{display:flex;flex-flow:row wrap;align-items:center;justify-content:space-between;gap:4px;width:100%;min-height:39px;padding:7px 8px;border:0;border-top:1px solid color-mix(in srgb,var(--border) 60%,transparent);background:transparent;color:var(--ink);text-align:left;cursor:pointer}
+.gn-logic-outline-item:hover,.gn-logic-outline-item:focus-visible{background:var(--wash)}
+.gn-logic-outline-item>span{font:500 12px/1.4 system-ui;flex:1 1 55%}
+.gn-logic-outline-item>small{font:500 13px/1.4 var(--gn-ar-reader,'Amiri',serif);color:var(--muted);flex:1 1 38%;text-align:right}
+.gn-logic-outline-source{display:block;padding:9px 2px;font:600 12px/1.5 system-ui;color:var(--accent-ink);text-decoration:underline}

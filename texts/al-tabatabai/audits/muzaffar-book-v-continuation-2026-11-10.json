@@ -1,0 +1,486 @@
+{
+  "date": "2026-11-10",
+  "status": "integrated-working-translation",
+  "scope": "Complete Book V continuation after existing M-V-01, from definition of syllogism at displayed p200 through final exercises p269 and Part Two notice p270.",
+  "unitIds": [
+    "M-V-02",
+    "M-V-40"
+  ],
+  "newUnits": 39,
+  "measurements": {
+    "arabicCharactersTotal": 72827,
+    "arabicBaseCharactersInUnitStrings": 72704,
+    "arabicSupplementCharactersIncludingSeparators": 123,
+    "englishWords": 17441,
+    "wordCountMethod": "Python Unicode regex \\b[\\w]+(?:[’'-][\\w]+)*\\b over English body only; notes not counted."
+  },
+  "coverage": {
+    "expectedSourceBlocks": 798,
+    "coveredSourceBlocks": 798,
+    "missingBlocks": [],
+    "extraBlocks": []
+  },
+  "counts": {
+    "productiveCategoricalMoods": 19,
+    "categoricalFigureExercises": 7,
+    "finalExercises": 18,
+    "attestedSubstantiveEnglishTextDecisions": 9,
+    "recoveredClassificationFigures": 1,
+    "unresolvedPrintedCruxesExplicitlyNoted": 4,
+    "groundedCrosslinkSuggestions": 9
+  },
+  "organization": "Chapter numbers2–17 are editorial navigation groups aligned to meaningful authorial sections; existing chapter1/M-V-01 remains untouched. Each new unit also supplies authorialSection. M-D-01 is not reused or overwritten.",
+  "files": {
+    "units": "muzaffar-al-mantiq/data/book.json",
+    "sourceDecisions": "muzaffar-v-source-decisions.json",
+    "crosslinkSuggestions": "muzaffar-v-crosslink-suggestions.json",
+    "baseSourceProvenance": "muzaffar-v-source-provenance.json",
+    "completeExtractedPages": "muzaffar-v-pages.json",
+    "reproducibleBuilder": "muzaffar-v-build_translation.py"
+  },
+  "sha256": {
+    "muzaffar-v-units.json": "a17ea28cb86a7f0e95a5b54d1b5310ce512cef56be42763f5296ea5c6614a6ed",
+    "source-decisions.json": "ff3c0c6a314dd70a5f0db3ad648be958db2bed9a1b18226f5070bba149aefdf3",
+    "crosslink-suggestions.json": "043d52043d20c676380b451a50a71e1a756c6626ed0bbd0d783924fc9e47bd81",
+    "source-provenance.json": "d80e78a080f73693c1fb3e15c38e65d1ecf5644333338f37015ae15ac0575ca3",
+    "pages.json": "68910fb2f7d33f66ab5147ee43bd1fa748a760fac9d43e724806771a44b8bf90"
+  },
+  "integrationNotes": [
+    "The root output object contains units; per-unit source.blockCoverage and measurements are provenance metadata and may be retained or moved to the audit by the parent.",
+    "M-V-05 uses a safe English Markdown relation table plus sourceFigure metadata, not the existing square-only sourceDiagram schema. The full Arabic tree label/branch transcription is bracketed and attributed.",
+    "The Arabic source retains all substantive base defects; nine English readings have direct print support, and four inherited print cruxes/interpretations are separately disclosed.",
+    "No canonical repository file or remote publication was changed by this agent for Stage IX. Output remains a working translation; no specialist certification or complete independent image collation claimed.",
+    "Do not extend source coverage beyond Book V: Book VI title is displayed274, preface276. Parent plans full Nihāya external collation next."
+  ],
+  "unitIndex": [
+    {
+      "id": "M-V-02",
+      "chapter": 2,
+      "title": "Syllogism: definition and the five qualifications",
+      "authorialSection": "١ ـ القياس / تعريفه",
+      "measurements": {
+        "arabicCharacters": 1289,
+        "englishWords": 364
+      },
+      "sourcePages": "200–201"
+    },
+    {
+      "id": "M-V-03",
+      "chapter": 2,
+      "title": "General terminology of syllogism",
+      "authorialSection": "الاصطلاحات العامة في القياس",
+      "measurements": {
+        "arabicCharacters": 1601,
+        "englishWords": 374
+      },
+      "sourcePages": "201–202"
+    },
+    {
+      "id": "M-V-04",
+      "chapter": 3,
+      "title": "Syllogisms divided by matter and form",
+      "authorialSection": "أقسام القياس بحسب مادته وهيئته",
+      "measurements": {
+        "arabicCharacters": 1900,
+        "englishWords": 466
+      },
+      "sourcePages": "203–204"
+    },
+    {
+      "id": "M-V-05",
+      "chapter": 3,
+      "title": "Summary diagram: argument and the kinds of syllogism",
+      "authorialSection": "خلاصة التقسيم",
+      "measurements": {
+        "arabicCharacters": 138,
+        "englishWords": 42
+      },
+      "sourcePages": "205"
+    },
+    {
+      "id": "M-V-06",
+      "chapter": 4,
+      "title": "Categorical conjunctive syllogism: its three terms",
+      "authorialSection": "الاقتراني الحملي / حدوده",
+      "measurements": {
+        "arabicCharacters": 1439,
+        "englishWords": 351
+      },
+      "sourcePages": "206–207"
+    },
+    {
+      "id": "M-V-07",
+      "chapter": 4,
+      "title": "The five general rules of conjunctive syllogism",
+      "authorialSection": "القواعد العامة للاقتراني",
+      "measurements": {
+        "arabicCharacters": 3574,
+        "englishWords": 886
+      },
+      "sourcePages": "207–210"
+    },
+    {
+      "id": "M-V-08",
+      "chapter": 5,
+      "title": "The four figures and the conditions of the first",
+      "authorialSection": "الأشكال الأربعة / الشكل الأول / شروطه",
+      "measurements": {
+        "arabicCharacters": 2261,
+        "englishWords": 543
+      },
+      "sourcePages": "211–212"
+    },
+    {
+      "id": "M-V-09",
+      "chapter": 5,
+      "title": "The four productive moods of the first figure",
+      "authorialSection": "الشكل الأول / ضروبه",
+      "measurements": {
+        "arabicCharacters": 1628,
+        "englishWords": 364
+      },
+      "sourcePages": "213–214"
+    },
+    {
+      "id": "M-V-10",
+      "chapter": 6,
+      "title": "The second figure and its conditions",
+      "authorialSection": "الشكل الثاني / شروطه",
+      "measurements": {
+        "arabicCharacters": 1968,
+        "englishWords": 460
+      },
+      "sourcePages": "214–216"
+    },
+    {
+      "id": "M-V-11",
+      "chapter": 6,
+      "title": "The four moods of the second figure and their proofs",
+      "authorialSection": "الشكل الثاني / ضروبه / تمرين",
+      "measurements": {
+        "arabicCharacters": 2781,
+        "englishWords": 663
+      },
+      "sourcePages": "216–219"
+    },
+    {
+      "id": "M-V-12",
+      "chapter": 7,
+      "title": "The third figure and its conditions",
+      "authorialSection": "الشكل الثالث / شروطه",
+      "measurements": {
+        "arabicCharacters": 1394,
+        "englishWords": 358
+      },
+      "sourcePages": "219–220"
+    },
+    {
+      "id": "M-V-13",
+      "chapter": 7,
+      "title": "The six moods of the third figure and their proofs",
+      "authorialSection": "الشكل الثالث / ضروبه",
+      "measurements": {
+        "arabicCharacters": 2732,
+        "englishWords": 730
+      },
+      "sourcePages": "220–223"
+    },
+    {
+      "id": "M-V-14",
+      "chapter": 7,
+      "title": "Remarks on reductio",
+      "authorialSection": "تنبيهات / طريقة الخلف",
+      "measurements": {
+        "arabicCharacters": 706,
+        "englishWords": 186
+      },
+      "sourcePages": "224"
+    },
+    {
+      "id": "M-V-15",
+      "chapter": 7,
+      "title": "Proof by assumption: three stages and two worked proofs",
+      "authorialSection": "تنبيهات / دليل الافتراض",
+      "measurements": {
+        "arabicCharacters": 2653,
+        "englishWords": 650
+      },
+      "sourcePages": "224–226"
+    },
+    {
+      "id": "M-V-16",
+      "chapter": 7,
+      "title": "Reduction to the first figure",
+      "authorialSection": "تنبيهات / الرد",
+      "measurements": {
+        "arabicCharacters": 513,
+        "englishWords": 121
+      },
+      "sourcePages": "227"
+    },
+    {
+      "id": "M-V-17",
+      "chapter": 8,
+      "title": "The fourth figure: conditions, moods, and proofs",
+      "authorialSection": "الشكل الرابع / شروطه / ضروبه",
+      "measurements": {
+        "arabicCharacters": 2669,
+        "englishWords": 635
+      },
+      "sourcePages": "227–230"
+    },
+    {
+      "id": "M-V-18",
+      "chapter": 8,
+      "title": "Exercises on the four figures",
+      "authorialSection": "تمرينات",
+      "measurements": {
+        "arabicCharacters": 1098,
+        "englishWords": 228
+      },
+      "sourcePages": "231"
+    },
+    {
+      "id": "M-V-19",
+      "chapter": 9,
+      "title": "Conditional conjunctive syllogism: terms, divisions, and connected premises",
+      "authorialSection": "الاقتراني الشرطي / تعريفه وحدوده / أقسامه / ١ ـ المؤلف من المتصلات",
+      "measurements": {
+        "arabicCharacters": 3543,
+        "englishWords": 838
+      },
+      "sourcePages": "232–234"
+    },
+    {
+      "id": "M-V-20",
+      "chapter": 10,
+      "title": "Disjunctive premises: converting affirmative disjunctions to connected conditionals",
+      "authorialSection": "٢ ـ المؤلف من المنفصلات / تمهيد / تحويل المنفصلة الموجبة إلى متصلة",
+      "measurements": {
+        "arabicCharacters": 2439,
+        "englishWords": 623
+      },
+      "sourcePages": "235–237"
+    },
+    {
+      "id": "M-V-21",
+      "chapter": 10,
+      "title": "Converting negative disjunctions to connected conditionals",
+      "authorialSection": "تحويل المنفصلة السالبة إلى متصلة",
+      "measurements": {
+        "arabicCharacters": 789,
+        "englishWords": 219
+      },
+      "sourcePages": "237"
+    },
+    {
+      "id": "M-V-22",
+      "chapter": 10,
+      "title": "Converting connected conditionals to disjunctions",
+      "authorialSection": "تحويل المتصلة إلى منفصلة",
+      "measurements": {
+        "arabicCharacters": 848,
+        "englishWords": 252
+      },
+      "sourcePages": "238"
+    },
+    {
+      "id": "M-V-23",
+      "chapter": 10,
+      "title": "Combining disjunctive premises: conditions and a worked investigation",
+      "authorialSection": "التأليف من المنفصلات وشروطه / طريقة أخذ النتيجة",
+      "measurements": {
+        "arabicCharacters": 3848,
+        "englishWords": 814
+      },
+      "sourcePages": "238–241"
+    },
+    {
+      "id": "M-V-24",
+      "chapter": 11,
+      "title": "A connected and a disjunctive premise",
+      "authorialSection": "٣ ـ المؤلف من المتصلة والمنفصلة / أصنافه / شروطه وطريقة أخذ النتيجة",
+      "measurements": {
+        "arabicCharacters": 1888,
+        "englishWords": 433
+      },
+      "sourcePages": "241–243"
+    },
+    {
+      "id": "M-V-25",
+      "chapter": 11,
+      "title": "A categorical and a connected premise",
+      "authorialSection": "٤ ـ المؤلف من الحملية والمتصلة / أصنافه / طريقة أخذ النتيجة / الشروط",
+      "measurements": {
+        "arabicCharacters": 2638,
+        "englishWords": 576
+      },
+      "sourcePages": "243–245"
+    },
+    {
+      "id": "M-V-26",
+      "chapter": 11,
+      "title": "A categorical and a disjunctive premise; closing remark on conditional syllogisms",
+      "authorialSection": "٥ ـ المؤلف من الحملية والمنفصلة / خاتمة",
+      "measurements": {
+        "arabicCharacters": 1145,
+        "englishWords": 267
+      },
+      "sourcePages": "245–246"
+    },
+    {
+      "id": "M-V-27",
+      "chapter": 12,
+      "title": "Exceptional syllogism: composition, division, and conditions",
+      "authorialSection": "القياس الاستثنائي / تعريفه وتأليفه / تقسيمه / شروطه",
+      "measurements": {
+        "arabicCharacters": 1230,
+        "englishWords": 281
+      },
+      "sourcePages": "247–248"
+    },
+    {
+      "id": "M-V-28",
+      "chapter": 12,
+      "title": "The connected exceptional syllogism",
+      "authorialSection": "حكم الاتصالي",
+      "measurements": {
+        "arabicCharacters": 881,
+        "englishWords": 269
+      },
+      "sourcePages": "248–249"
+    },
+    {
+      "id": "M-V-29",
+      "chapter": 12,
+      "title": "The disjunctive exceptional syllogism and exhaustive division",
+      "authorialSection": "حكم الانفصالي",
+      "measurements": {
+        "arabicCharacters": 1648,
+        "englishWords": 412
+      },
+      "sourcePages": "249–250"
+    },
+    {
+      "id": "M-V-30",
+      "chapter": 13,
+      "title": "Implicit syllogism and enthymeme",
+      "authorialSection": "خاتمة في لواحق القياس / القياس المضمر أو الضمير",
+      "measurements": {
+        "arabicCharacters": 805,
+        "englishWords": 209
+      },
+      "sourcePages": "251"
+    },
+    {
+      "id": "M-V-31",
+      "chapter": 13,
+      "title": "Acquiring premises by analysis and the five stages of thought",
+      "authorialSection": "كسب المقدمات بالتحليل",
+      "measurements": {
+        "arabicCharacters": 3794,
+        "englishWords": 850
+      },
+      "sourcePages": "251–254"
+    },
+    {
+      "id": "M-V-32",
+      "chapter": 14,
+      "title": "Compound syllogisms: definition and two forms",
+      "authorialSection": "القياسات المركبة / تمهيد وتعريف / أقسام القياس المركب",
+      "measurements": {
+        "arabicCharacters": 2434,
+        "englishWords": 507
+      },
+      "sourcePages": "255–257"
+    },
+    {
+      "id": "M-V-33",
+      "chapter": 14,
+      "title": "Reductio as a compound syllogism",
+      "authorialSection": "قياس الخلف / كيفيته",
+      "measurements": {
+        "arabicCharacters": 2727,
+        "englishWords": 626
+      },
+      "sourcePages": "257–259"
+    },
+    {
+      "id": "M-V-34",
+      "chapter": 14,
+      "title": "The syllogism of equality and its analysis",
+      "authorialSection": "قياس المساواة / تحليل هذا القياس",
+      "measurements": {
+        "arabicCharacters": 1931,
+        "englishWords": 498
+      },
+      "sourcePages": "259–260"
+    },
+    {
+      "id": "M-V-35",
+      "chapter": 15,
+      "title": "Induction: definition, complete and incomplete",
+      "authorialSection": "٢ ـ الاستقراء / تعريفه / أقسامه",
+      "measurements": {
+        "arabicCharacters": 1371,
+        "englishWords": 320
+      },
+      "sourcePages": "261–262"
+    },
+    {
+      "id": "M-V-36",
+      "chapter": 15,
+      "title": "The difficult objection concerning induction and certainty",
+      "authorialSection": "شبهة مستعصية",
+      "measurements": {
+        "arabicCharacters": 975,
+        "englishWords": 206
+      },
+      "sourcePages": "262"
+    },
+    {
+      "id": "M-V-37",
+      "chapter": 15,
+      "title": "The solution: observation, causes, self-evidence, and complete similarity",
+      "authorialSection": "حل الشبهة",
+      "measurements": {
+        "arabicCharacters": 2129,
+        "englishWords": 489
+      },
+      "sourcePages": "262–264"
+    },
+    {
+      "id": "M-V-38",
+      "chapter": 16,
+      "title": "Analogy: definition and its four components",
+      "authorialSection": "٣ ـ التمثيل / تعريفه / أركانه",
+      "measurements": {
+        "arabicCharacters": 1053,
+        "englishWords": 262
+      },
+      "sourcePages": "265–266"
+    },
+    {
+      "id": "M-V-39",
+      "chapter": 16,
+      "title": "The epistemic value of analogy and the complete cause",
+      "authorialSection": "التمثيل / قيمته العلمية",
+      "measurements": {
+        "arabicCharacters": 1833,
+        "englishWords": 446
+      },
+      "sourcePages": "266–267"
+    },
+    {
+      "id": "M-V-40",
+      "chapter": 17,
+      "title": "Final exercises on syllogisms and the close of Part Two",
+      "authorialSection": "تمرينات على الأقيسة / انتهى الجزء الثاني",
+      "measurements": {
+        "arabicCharacters": 2534,
+        "englishWords": 623
+      },
+      "sourcePages": "268–270"
+    }
+  ]
+}

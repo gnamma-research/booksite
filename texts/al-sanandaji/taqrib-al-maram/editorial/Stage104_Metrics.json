@@ -1,0 +1,48 @@
+{
+  "stage": 104,
+  "date": "2026-11-17",
+  "source_stage": 103,
+  "source_pdf_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134",
+  "original_combined_source_pages": 632,
+  "volume_I_numbered_positions": 280,
+  "volume_I_body_pages": 279,
+  "volume_II_numbered_positions": 335,
+  "project_printed_positions": 615,
+  "stable_Volume_I_record_count": 1401,
+  "active_Volume_I_records": 1400,
+  "retired_hidden_records": 1,
+  "revised_record_ids": [
+    "I040.lower.01",
+    "I040.lower.02",
+    "I041.lower.01",
+    "I041.lower.02"
+  ],
+  "new_bounded_first_pass_source_readings": 4,
+  "records_with_some_typed_arabic": 1289,
+  "genuine_records_without_typed_arabic": 111,
+  "blank_by_layer": {
+    "lower": 96,
+    "upper": 15
+  },
+  "all_register_literal_translation_pages_verified_complete_across_both_volumes": 0,
+  "project_printed_positions_total": 615,
+  "independently_second_proofed_pages_across_both_volumes": 0,
+  "open_Volume_I_independent_proof_records": 1400,
+  "volume_II_first_pass_upper_page_drafts_II215_II314": 100,
+  "volume_II_first_pass_upper_page_draft_segment_total": 100,
+  "volume_II_independent_full_page_proofs": 0,
+  "volume_II_total_individual_marginal_notes": "unknown",
+  "volume_II_source_images": "shared_combined_632_page_PDF_in_Volume_I",
+  "volume_II_canonical_latest_full_source_JSON": "NOT_RECOVERED",
+  "volume_II_historical_master_receipt_denominator": "unknown",
+  "next_first_arabic_blank_source_record": "I042.lower.01",
+  "next_source_printed_page": 42,
+  "next_source_physical_pdf_page": 55,
+  "cross_page_joins": [
+    "I039.lower.02 → I040.lower.01: «أعني مغايرة / الماهية»; I039 record unchanged",
+    "I040.lower.02 → I041.lower.01: «فإن الماهية والوجود وإن كانا / متغايرين بالمفهوم والاعتبار»",
+    "I041.lower.02 → I042.lower.01: ending near «وبديهة العقل»; completion not retranslated"
+  ],
+  "proofread_status": "Bounded first-pass source readings only. No independently complete full page. I026.lower.02 unresolved.",
+  "migration_receipt_status": "Volume I predecessor hash receipt + separately recovered Volume II artifacts; total historical Volume II denominator unknown"
+}

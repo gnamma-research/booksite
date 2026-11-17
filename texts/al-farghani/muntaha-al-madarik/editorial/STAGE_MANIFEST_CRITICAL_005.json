@@ -1,0 +1,96 @@
+{
+  "schema": "gnamma-farghani-critical-stage-v-photographic-print-collation",
+  "date": "2026-11-09",
+  "scope": "Arabic introduction B2007 18–145 (English working draft 128 pages); not entire verse-by-verse commentary",
+  "edition_status": "historical-print-corrected working Arabic–English edition; manuscript-critical definitiveness NOT attained",
+  "evidence": {
+    "modern_digital_loci": 198,
+    "unique_ids": 198,
+    "print_loci": 5,
+    "print_differences": 3,
+    "printed_page_numbers": [
+      5,
+      6,
+      7,
+      18
+    ],
+    "scan_archived_count": 59,
+    "ms_variants": 0,
+    "archive_source_pdf_hash": "d2c73c571e869df040f263b5146a1f42ce33f691a9c4a556c1e6eb01f3bf8f87",
+    "canonical_collected_loci": 5,
+    "viewer_script_4_present": true
+  },
+  "critical_decisions": "Three historical PRINT disagreements (الغائي, علميا, العمائية) and two agreements (بطون المشتمل, من حيث واحديتها); adopted provisionally, no manuscript conclusions",
+  "historical_print": "I1876 Princeton/NYU Istanbul 1293/1876, printed pp5,6,7,18; PDF scans 9,10,11,22",
+  "copied_scans": "facsimile-I1876/images/",
+  "current_full_cumulative_master": "editorial/FULL_CUMULATIVE_CRITICAL_005.md",
+  "most_recent_cumulative_print_collation": "editorial/I1876_COLLATION_CUMULATIVE_002.md",
+  "note": "The 1.57MB cumulative master exists in GitHub; GitHub's contents API omits inline content for >1MB. Do not interpret empty API content as an empty file.",
+  "files": [
+    {
+      "path": "editorial/I1876_COLLATION_CUMULATIVE_002.json",
+      "sha": "452f67d982e5a4269f847398b34ddae5606279b1",
+      "characters": 5107
+    },
+    {
+      "path": "editorial/I1876_COLLATION_CUMULATIVE_002.md",
+      "sha": "ed3c14d2e900bb252907423d255c7a90dc485be0",
+      "characters": 2325
+    },
+    {
+      "path": "editorial/I1876_COLLATION_002.json",
+      "sha": "d29c948209cae2fdcfbf7faaaa8c965af03031da",
+      "characters": 5856
+    },
+    {
+      "path": "editorial/WITNESS_REGISTER.json",
+      "sha": "bd17f64746139e8a5478aec3da2c07c45990563f",
+      "characters": 23859
+    },
+    {
+      "path": "editorial/CRITICAL_COVERAGE_REGISTER.json",
+      "sha": "41539779b8408e92403d6a06010e726814fdcd77",
+      "characters": 83604
+    },
+    {
+      "path": "editorial/WORKING_TRANSLATION_18_145.md",
+      "sha": "df1e13a616d97aeb76642fd6ada1d72c2d73334c",
+      "characters": 408979
+    },
+    {
+      "path": "data/critical-pass-001-p18-20.js",
+      "sha": "4c130aad1a2e0a73e0b28e73c62429c836723c4e",
+      "characters": 31519
+    },
+    {
+      "path": "data/critical-pass-002-p21-23.js",
+      "sha": "c6a2ba0686a739ce5eb213eaade994969290921e",
+      "characters": 35046
+    },
+    {
+      "path": "data/critical-pass-003-p24-29.js",
+      "sha": "e5f36566112ad78c4713c1d5ec95347976ad4b77",
+      "characters": 42332
+    },
+    {
+      "path": "data/critical-pass-004-p30-36.js",
+      "sha": "b1a0195fc342152cb6216cf38fd1a7140111d25b",
+      "characters": 36357
+    },
+    {
+      "path": "critical-reader.js",
+      "sha": "35b1734da7398b668055bb0bc3095bc308d46522",
+      "characters": 4138
+    },
+    {
+      "path": "critical-edition.html",
+      "sha": "98a26563330a76375cb4293b12d0e266382e3f0e",
+      "characters": 9963
+    },
+    {
+      "path": "facsimile-I1876/SOURCE_INGEST_MANIFEST.json",
+      "sha": "b7afb45f8aaee84a717f6721e3378955b5747de0",
+      "characters": 41208
+    }
+  ]
+}

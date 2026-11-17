@@ -1,0 +1,21 @@
+name: Qūnawī bilingual source-reader and concordance QA
+on:
+  push:
+    paths:
+      - 'texts/sadr-al-din-al-qunawi/al-nusus/**'
+      - 'texts/al-mahaimi/mashra-al-khusus/index.html'
+      - 'texts/al-mahaimi/mashra-al-khusus/data/parallel.json'
+      - 'tests/qunawi_reader_qa.js'
+      - '.github/workflows/qunawi-reader-qa.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check reader JavaScript syntax
+        run: node --check texts/sadr-al-din-al-qunawi/al-nusus/reader.js
+      - name: Check source rows, work counts and commentary anchors
+        run: node tests/qunawi_reader_qa.js

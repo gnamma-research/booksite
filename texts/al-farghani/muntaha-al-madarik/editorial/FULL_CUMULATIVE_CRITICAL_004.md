@@ -1,0 +1,13384 @@
+# Farghānī · Full cumulative source-critical archive — Pass IV (9 November 2026)
+
+**Single-file handoff** containing the entire prior P145-through-III translation and editorial archive verbatim, 56 new selected clause records on B2007 pp30–36, eleven catalogued manuscript candidates, crux decisions, the complete updated quality/witness registers and exact restart p37. **Not a definitive Arabic critical edition:** no personally compared I1876 print page or historical MS folio, no manuscript variant independently verified. B2007 source-checking is selective, not exhaustive after p23.
+
+## PART A — Entire preserved previous cumulative archive
+
+# Farghānī · Complete cumulative working-and-critical archive through Pass III
+**Latest state: 9 November 2026.** The entire earlier P145 project is embedded in Part A, followed by Pass III's **62 selected** Arabic–English source checks, analytical notes, witness register, full 128-page quality ledger and authoritative latest handoff. **The 1876 historical print and manuscript folios have not been collated; this is not a definitive Arabic edition.** Earlier progress claims within the historical P145 archive are superseded by Parts B–G for current status.
+
+## Part A · Preserved complete P145 working archive
+# FULL CUMULATIVE HANDOFF · Farghānī Muntahā al-madārik · P145
+
+**Latest snapshot:** 9 November 2026 · GNAMMA Research, ʿIrfān and metaphysics. This file preserves the full recoverable working-stage English translation of Farghānī's systematic introduction and concluding preface, the newly initiated source-critical Arabic–English checking layer, critical notes, source register, glossary, comparison, and provenance. No older stage master was replaced.
+
+**Authorial English draft:** Beirut B2007 pp.18–145 inclusive, **128 consecutive source page headings**, four foundations through p143, plus the separate concluding preface on pp144–145. English draft COMPLETE IN SCOPE, not manuscript critically established.
+
+**Critical Arabic-to-English checking:** B2007 pp.18–23, **80 source-checked authorial clauses** with line-level revised English and editorial notes, **5 unresolved digital crux clauses**. All remaining pages are unverified at clause level. Full continuous Arabic copy-text has NOT been constituted; only 32 previously selected bilingual extracts and newly checked 80-clause Arabic are present in the repository.
+
+**Independent 1876 historical print collation:** none. **Medieval manuscript variants established:** zero. The 107-page figure from the 1876 printing cannot be used as the denominator for 128 modern Beirut pages.
+
+**Next exact task:** Arabic–English critical audit at B2007 p24, continuing from p23 `وصفة بقائها وثباتها اعتبارا لبعض`. [Source p24](https://ablibrary.net/book_content/b/9606/24?lang=ar). The poem commentary begins after the preface and is not silently part of this introduction.
+
+**Earlier immutable stage archives:** `FULL_CUMULATIVE_P134.md`, `FULL_CUMULATIVE_P84.md`, `STAGE_HANDOFF.md`, `STAGE_MANIFEST.json`. Current machine-readable source inventory: `STAGE_MANIFEST_P145.json`. Current critical browser view: `../critical-edition.html`.
+
+---
+
+## PART A — Entire 128-page working English introduction and concluding preface
+
+# Farghānī · Muntahā al-madārik — complete working English draft of the four foundations and concluding preface
+
+**Current scope:** B2007 pp.18–145 inclusive, a 128-page consecutive **working** English translation. The systematic four foundations conclude at p.143 and the supplementary preface occupies pp.144–145. The 1876 historical introduction has DIFFERENT pagination. This is NOT a definitive critical edition: full original Arabic, independent sentence-level comparison to its print, manuscript collation, and scholarly verification remain incomplete. A separate Arabic-checked clause audit begins with B2007 pp.18–23; see `CRITICAL_PASS_001_P18_20.md` and `CRITICAL_PASS_002_P21_23.md` / `data/critical-pass-*.js`.
+
+**Preservation:** All material from the P134 master remains verbatim below, followed by new pp.135–145, and earlier P84/P134 master files are preserved unchanged.
+
+---
+
+# Saʿīd al-Dīn al-Farghānī · Muntahā al-madārik
+## Master English working translation · Beirut B2007 pp. 18–134
+
+**Cumulative edition stage: 8 November 2026.** This master preserves the previous translated sequence pp.18–34 unchanged and appends **50 new consecutive pages**, pp.35–84, without replacing earlier work with summaries. The full sequence is **67 sequential numbered pages in the modern Beirut printing**; the distinct 1876 Istanbul pagination must NOT be used to calculate completion. The book's complete four-foundation introduction continues after this stage.
+
+**Evidence grade:** New working English research draft from the linked digital Arabic authorial text, not a constituted manuscript-critical Arabic edition and not independently proofed line-by-line. The 32 existing bilingual Arabic–English excerpt records cover only selected clauses on pp.18–34, not this whole master. Original Arabic remains available through the per-page source links; no full continuous Arabic transcription or manuscript collations are claimed. Editorial sections and source-status labels are distinct from Farghānī's original prose.
+
+**Structure reached:** First foundation finishes at B2007 p.69; second foundation starts p.70; third foundation starts p.79. The Arabic authorial discussion ends this stage within a sentence about the Footstool, continued on p.85.
+
+**Source register:** [Witness and edition register](WITNESS_REGISTER.json) · [Translation status](STATUS.md) · [Scholarly critical introduction](CRITICAL_INTRODUCTION.md) · [Initial eight-stage constituent files](STAGE_HANDOFF.md).
+
+---
+
+# Farghānī — Muntahā al-madārik · Working continuous translation
+
+## First foundation · Beirut printed pages 18–34
+
+**Updated 8 November 2026.** This is a *working English draft* of the author's consecutive textual sequence as transmitted in the modern Beirut digital edition, pp. 18–34. It is **not an established manuscript-critical translation**: continuous clause coverage has not been independently audited and readings have not been collated against the 1876 printing or manuscript witnesses. Modern editorial footnotes are excluded. All page breaks and chapter headings are shown; bracketed text is editorial. The Arabic originals are accessible at page-specific links. GNAMMA's bilingual excerpts remain a separate, shorter, source-verified selection.
+
+**Translating into English is not manuscript collation.** The Arabic authorial text used here is public-domain Farghānī, provisionally transcribed by the digital edition. The separate [editorial critical introduction](CRITICAL_INTRODUCTION.md) develops the historical and philosophical context; its argument is not inserted into Farghānī's text.
+
+---
+
+
+**Editorial standing (8 November 2026):** Continuous-order English draft of the *authorial* argument across B2007 pp. 18–23. Page openings and endings can divide the author's sentences; they are marked explicitly. Modern editor's explanatory footnotes are excluded. The Arabic full text remains linked at each page. This stage has **not** undergone line-by-line independent proofing against the 1876 printing or manuscripts. It is not a definitive critical translation and must not be counted as six independently collated pages.
+
+### B2007 p. 18 — The hidden treasure and first disclosure
+[Read Arabic p. 18](https://ablibrary.net/book_content/b/9606/18?lang=ar)
+
+**First foundation.** Concerning the ranks of the Essence; the differentiation from it of the names and attributes; the manner in which the branches of those names and attributes arise from their roots; an explanation of the meanings of the ninety-nine names; and the arising from them of all the other names, whether subtle or great.
+
+In the name of God, the Compassionate, the Merciful. It is related from the Messenger of God—may God bless him and grant him peace—that he said: God, mighty and exalted, said: “I was a hidden treasure, and I loved to be known; therefore I created creatures so that I might be known.”
+
+Know—may God strengthen you with sound understanding—that in this divine saying the hidden treasure is a figurative designation for the innermost depth of the Unseen, the nondelimitation of the most holy Essence and the inwardness of the eternal divine Identity. The comparison arises because a treasure is something concealed and guarded, a secret held in reserve containing jewels of great worth. Some are so valuable that they are protected, jealously retained, and reserved for their possessor; others, while still precious, may be made available or exchanged privately or publicly.
+
+When a treasure is to be disclosed, it is presented first as a whole, so that it is recognized as a treasure and appears to its finder in its own place. It is then presented a second time in a manner that distinguishes the most precious jewels from the others; some are removed from their place according to a wisdom perceived by their finder—for example, to display a perfection that includes wealth, adornment, and liberality.
+
+Analogically—and God possesses the supreme similitude in the heavens and the earth, while He is the Mighty, the Wise, utterly exalted above any comparison of likeness, configuration, or representation—the innermost reality of the most holy Presence is the concealed Unseen, the safeguarded secret, more inward than anything inward. Its hiddenness comprehends the precious jewels of the essential divine names. Some of these names He reserves in His hidden mystery, known only by Him and by one whose separateness and individual self-standing have been lifted away, among the most perfect of those who attain perfection.
+
+*Textual boundary:* this last sentence continues at the start of p. 19.
+
+### B2007 p. 19 — The names, love, and the negative knowledge of the Essence
+[Read Arabic p. 19](https://ablibrary.net/book_content/b/9606/19?lang=ar)
+
+[Continuing the previous sentence:] Those perfected persons participate in the display of the first determination and first self-disclosure for the realization of the nobler essential perfection signified by “I loved to be known.” The treasure also contains the precious jewels of the names of attributes, disclosure of which is graciously permitted to each suitably prepared person characterized by them or fully realized in them. It further comprehends the names of acts, whose benefit and influence are general, and whose judgments and effects flow through every cosmic rank. These ranks are the loci of the completion of the perfection of the names, the desired aim signified by “I created creatures so that I might be known.”
+
+The expression “I was” tells of a determination preceded by nondelimitation. For the first-person marker implies the speaker's determination within himself and his appearing when he speaks of himself. The description “a hidden treasure,” by contrast, indicates His unseen and unconditioned character. As such, He falls under no determinate judgment with respect to this unseen nondelimitation, nor can knowledge, considered from His determinations, encompass Him in that respect. Absolute hiddenness entails all this. Since hiddenness is predicated of “I was,” the nondelimited and unseen are understood to precede that determination—but this is a **precedence of rank, not a precedence of time**; there is neither morning nor evening for God.
+
+The words “then I loved” announce an original inclination joining the hiddenness and manifestation just mentioned. But there is nothing there beyond the determination that is itself unity; accordingly this inclination is identical with it.
+
+The words “that I might be known” point to the manifestation of what was hidden. The words “I created creatures so that I might be known” make it understood that the determining of determined things, both in knowledge and in existence, follows that inclination and is ordered to its object: the manifestation arising through that determination. This is so that the perfection of manifestation may be realized in distinction and detail, and its effect may extend to the determiner and to what is determined. Such succession is essential rather than temporal; it is also a succession in knowledge and existence, considered in relation to the eternal Determiner who knows, and to His essential and attributive knowledge. For His knowledge is His very existence. Understand, and—if God wills—you will discover the red sulphur and the greatest treasure.
+
+Know also that the innermost reality of the most holy Essence, the unseen depth of Identity, nondelimitation and pre-eternity—which contains within it the character of everlastingness—cannot be witnessed, understood, known or apprehended under the consideration of determination; nor can it come under any determinate judgment whatsoever, except perhaps the negative judgment that it cannot be known. Even such a negative judgment can be arrived at in only one of two ways. The first is a divine report concerning this truth.
+
+*Textual boundary:* the two ways are completed on p. 20.
+
+### B2007 p. 20 — The two limits of knowledge and the first journey
+[Read Arabic p. 20](https://ablibrary.net/book_content/b/9606/20?lang=ar)
+
+The first way is by divine disclosure that no knowledge can encompass Him, as in God's saying, “They do not encompass Him in knowledge” (Qurʾān 20:110), and the expression “I was a hidden treasure,” and similar utterances.
+
+The second way is that the most perfect apprehensions and sciences, and the most expansive acts of witnessing and understanding, are brought to a halt before Him and confess their incapacity, limitation and bewilderment. They acknowledge that beyond the utmost reach of their apprehension and the farthest horizon of their witnessing lie oceans whose currents confound the understanding of every diver who has reached a station, and wildernesses whose depths and innermost secrets bewilder the knowledge of every knowing traveler. These are the highest end and most worthy object of seeking.
+
+The Prophet—may God bless him and grant him peace—indicated as much in his supplication: “I cannot number the praise due to You,” that is, I cannot reach everything that belongs to You. He also spoke in his prayer of names “which You have reserved in the hidden mystery with You,” and was reported to have said, “My Lord, increase me in bewilderment concerning You,” along with similar sayings.
+
+Whenever something belonging to these divine perfections is known, witnessed or apprehended in an outward, inward or all-comprehensive self-disclosure along the journey of love and in the nearness of supererogatory devotion—where disciplined journeying precedes attraction and annihilation precedes abiding—the opening may reveal that the self-disclosing Real is the instrument by which the servant apprehends.
+
+*Textual boundary:* the sentence continues on p. 21. The long printed footnotes about the reports and about *fanāʾ* and *baqāʾ* are **modern editorial commentary**, not Farghānī's own continuation.
+
+### B2007 p. 21 — Two journeys; the two considerations of unity
+[Read Arabic p. 21](https://ablibrary.net/book_content/b/9606/21?lang=ar)
+
+[Continuing p. 20:] This belongs to the sense of the saying “I became his hearing and his sight: by Me he hears and by Me he sees.” In the corresponding journey of the beloved, the nearness of obligatory acts, where attraction precedes disciplined travel and original abiding precedes annihilation, it becomes clear that the servant to whom disclosure occurs is an instrument for the apprehension of the self-disclosing Real, as expressed in the attribution to God, on the tongue of His servant, “God hears the one who praises Him.”
+
+At the consummation of the two journeys, where both judgments are brought together at their beginning and end, each may be apprehender and instrument, either alternately or in a single state together. This is indicated by “You did not throw when you threw, but God threw” (Qurʾān 8:17). In every case, such knowing, witnessing, disclosure and apprehension concern His determination, His will and His sacred knowledge of His most holy Essence **under the consideration of its oneness (*wāḥidiyya*)**, not under the consideration of its nondelimitation and unicity (*aḥadiyya*). Apprehending or witnessing Him under the consideration of His determination and knowledge is not forbidden; rather, it is left to His will: “They encompass nothing of His knowledge except what He wills” (Qurʾān 2:255).
+
+The unity from which unicity and oneness arise is identical with His Essence; it is no added attribute or qualification. This unity has two original, primary considerations. The first is the complete removal of considerations from it. Under this consideration the Essence is named *aḥad*—One in unicity—and the name is related to the Essence's hiddenness, nondelimitation and pre-eternity. Accordingly, the name *aḥad* is more properly associated with negation than with positive affirmation.
+
+The second consideration is the establishment for it of infinitely many considerations while they remain included within it at the first rank of the Essence. The greater part of the differentiation of their determinations is realized at the second rank, both of which will be explained shortly. Examples are the relations of being half, third and quarter, which are included in the one considered here. From such relations the numbers arise in the orders of existence, and the determinate twos, threes and fours arise from these considerations, as when one says that one is half of two, a third of three, a quarter of four, and so on.
+
+Under this second consideration the Essence is called *wāḥid*, a positive rather than a negative name. These considerations cannot be ascribed to the name *aḥad*, either in reality or by ordinary linguistic usage.
+
+*Critical correction:* the GNAMMA F007 text formerly omitted *min ḥayth wāḥidiyyatihā*. This draft includes it, restoring an explicit conceptual distinction. See the editorial correction ED-0001 in the witness register.
+
+### B2007 p. 22 — Inclusion and the first articulation of known things
+[Read Arabic p. 22](https://ablibrary.net/book_content/b/9606/22?lang=ar)
+
+[Continuing p. 21:] The realities of those considerations are established under the name of the truly One at the first rank of the Essence and are essentially included within it, just as their examples and images are included within the numerical one whose effect we observe here. In neither rank does such inclusion damage or contradict the simplicity of the one. What pertains to the consideration of oneness is the Essence's manifestation, existence and everlastingness, just as what pertains to the consideration of unicity is its inwardness and pre-eternity.
+
+There is no difference or otherness between these two considerations, nor between any one consideration of oneness and another at the first rank. Difference and otherness are judgments belonging to multiplicity and its opposition to unity. At that rank there is no multiplicity contrary to unity: this unity is itself the origin of every unity and multiplicity we understand here as different. As stated, no difference, otherness or distinction obtains at the first rank of the most holy Essence.
+
+No one understands the lifting of such otherness at that Presence unless, in state and station, he has risen beyond restriction by ranks whose determinations impose the judgments of multiplicity on those who inhabit them. Because otherness is overcome at the first rank, some of the great realized people of God have judged that *al-wāḥid al-aḥad* is a single compound name, like certain other compound proper names.
+
+Know next that these considerations, established for unity there and included in the one at the first rank, are judged there to be the Essence itself: whatever is ascribed to the Essence in respect of comprehensiveness and containing the whole is ascribed likewise to each of them, according to that rank. If we consider them through their appearances, forms and effects, some prove to be universals and first principles, comparable to supreme genera. They are the meanings denoted by words pointing to the realities of the essential names: the Keys of the Unseen, the One-in-Unicity, the inward meanings of the names Allāh, al-Raḥmān and al-Raḥīm, and the comprehensive meanings of the pronominal names.
+
+Other such considerations, viewed through their manifestations and effects, resemble subordinate genera, species within them, and so on down to individuals and the most narrowly particular levels. On their basis the everlasting Presence is described as having indefinitely many determinations and delimitations. All these are established in intelligible forms at the second rank, some as individuated contents and others by inclusion within classes and species.
+
+Many are also determined and fixed in the Preserved Tablet, where they acquire spiritual existential forms, collectively and in detail, whose manifestation extends to the Resurrection. They are differentiated from it in existential ranks, comprehensively in the Throne and in detail in the Footstool, in one act, and successively from these in the elements and the heavens down to the last ranks.
+
+*Textual boundary:* this final account of the ranks continues on p. 23.
+
+### B2007 p. 23 — Concealed affairs and the limits of manifested knowledge
+[Read Arabic p. 23](https://ablibrary.net/book_content/b/9606/23?lang=ar)
+
+[Continuing p. 22:] The detailed cosmic ranks culminate in the world of being, as imaginal and sensory reality, and in the abodes of the world, the intermediate state and the hereafter. To this point extend all the acts of witnessing, apprehension and unveiling attained by the perfected and the friends of God. The lower and higher among them are alike regarding this limit.
+
+Nevertheless, in the eternal unseen Presence there may perhaps be, with regard to these universals and particulars, concealed things and hidden states which have not yet been determined either in the second rank or in the Preserved Tablet. They are therefore not known or assigned a judgment until they receive determination and occur within the existential ranks gradually, through moments. These belong to the innermost depth of the judgments of the essential Unseen, whose hidden character is overcome and preceded by essential mercy.
+
+For this reason they occasion fear and reverent awe, as indicated by the Qurʾānic saying: “Say: I am no innovation among the messengers, and I do not know what will be done with me or with you” (Qurʾān 46:9). The Prophet's reported statement, uttered out of concern, “Would that Muhammad's Lord had not created Muhammad,” is also taken to allude to them from one perspective.
+
+Yet insofar as his state was determined in the Presence of knowledge and in the Preserved Tablet, he had insight from his Lord. It was with regard to that determination that he could say that Adam and those below him would be under his banner on the Day of Resurrection, and that Moses, were he living, would have to follow him, and that he would be the first to knock upon the gate of Paradise and to open the gate of intercession, together with comparable indications found in transmitted reports.
+
+In fact, many things drawn forth by prayer and supplication from hidden affairs and judgments belong to these concealed matters and states. Apart from them, nothing comes about save what is written, established and allotted in the Presence of knowledge; that cannot be increased or diminished.
+
+Some of those who know God and have stood in the universal Presences call certain considerations of oneness, included at the first rank, “essential affairs” (*shuʾūn dhātiyya*). At the second and lower ranks these appear as fundamental realities and certain stable attendant qualities, such as life and knowledge, or as stable things such as individual substances and essences, and as the properties of endurance and permanence attached to some of the meanings of “affair”.
+
+*Textual boundary:* the discussion of essential affairs and states continues on p. 24.
+
+---
+
+## Editorial notes on Stage 01
+
+**N1 — Transmission.** The “hidden treasure” saying is a major Sufi interpretive motif but is not authenticated as a prophetic ḥadīth. The translation reports Farghānī's own framing without adopting it as an established prophetic attribution.
+
+**N2 — The limits of the Essence.** His denial of exhaustive comprehension in *iṭlāq* is not a denial of self-disclosure under determined modes. The exact mention of *wāḥidiyya* on p. 21 is crucial.
+
+**N3 — Multiple judgments of the Unseen.** On p. 23, the surprising claim about undetermined hidden affairs must not be silently rewritten into a conventional account of divine omniscience; nor does a sentence on that page suffice to settle the issue. The whole first foundation will be necessary.
+
+**N4 — Source stratification.** Editorial explanations of *fanāʾ*, *baqāʾ*, and the authentication of traditions found in printed footnotes are not included among the author's own translated paragraphs.
+
+**N5 — Coverage.** This is one continuous-order *draft* across six B2007 pages, which remain to be audited line by line and collated with independent witnesses. It neither covers the other printed pages nor constitutes a full critical edition.
+
+**References:** [Original B2007 page sequence](https://ablibrary.net/book_content/b/9606/18?lang=ar) · [I1876 historical printing](https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en) · [WITNESS_REGISTER.json](WITNESS_REGISTER.json).
+
+
+---
+
+
+**Scope (8 November 2026):** A consecutive-page translation draft of the authorial Arabic in B2007 pp. 24–29, continuing the p. 18–23 draft. The Arabic text and page number are linked for each unit. It excludes footnotes by the modern editor; it is not a manuscript-collated critical text. Transliterations and English headings are editorial; the Arabic heading *faṣl* is preserved as “Chapter.”
+
+### B2007 p. 24 — The first comprehensive determination
+[Read Arabic p. 24](https://ablibrary.net/book_content/b/9606/24?lang=ar)
+
+[Continuation from p. 23:] These are among the meanings of *shaʾn* (“affair,” “concern”). Some call certain of them “essential states” (*aḥwāl dhātiyya*). They appear as they pass from one form into another, whether intelligible or sensory: contraction and expansion, contentment and anger, and all accidents that do not endure; and likewise thoughts, images, and imaginal and sensory configurations in this world, the intermediate state, and the next. Recall here the transmitted report concerning the Real—exalted and holy—appearing, in the hereafter, in a form in which a people do not recognize Him, and then in a form in which they do recognize Him. God is the Guide.
+
+**Chapter.** Know that the first consideration and determination to become determined from the Unseen is this unity from which *aḥadiyya* and *wāḥidiyya* arise. It thus remains an intermediary (*barzakh*) comprehending both. It is like the reality of love, from which being a lover and being beloved arise, while love comprehends both, removes what stands between them, and unifies them.
+
+Or one may say that it is the exigency of the true inwardness expressed by “I was a hidden treasure”: manifestation is what is expressed by “that I might be known.” This first consideration and determination, which is identical with the Essence under the aspect of intermediacy and comprehensiveness just mentioned, is the Essence's own receptivity to its inwardness, its unseen depth, the negation of considerations from it, and the judgment of its pre-eternity; and equally to its manifestation and to the manifestation of the considerations it contains, which affirm its character of everlastingness for itself—first comprehensively, then in detail.
+
+This receptivity is the origin of every receptivity and also of every activity. Although it is identical with the Essence, it is as though the Essence speaks to itself within itself, informing itself concerning the manifestation demanded by its nature, the disclosure of the considerations of its oneness, and the essential perfection—
+
+*Boundary:* The sentence continues with “and name-related perfection” at p. 25. The extensive printed note concerning the hadith of divine recognition in the hereafter is **a modern editorial footnote**, not part of the translated authorial paragraph.
+
+### B2007 p. 25 — Inward speech, hearing, vision, and the precedence of manifestation
+[Read Arabic p. 25](https://ablibrary.net/book_content/b/9606/25?lang=ar)
+
+—and the name-related perfection that pertains to that manifestation: a speaking and informing transcendent of corporeal articulation, through a transcendent, unitary “letter” identical with the Essence and containing every universal and particular meaning, and all the utterances and words, both spoken and enacted, that indicate them, at the seventh and most inward rank of speech.
+
+This is the speech alluded to in the saying attributed to the Prophet: “The Qurʾān has an outward and an inward; within its inward is another inward, down to seven inward depths.” It resembles our speaking within ourselves without the intermediary of an outward letter or audible sound. Within that same receptivity there is also the capacity of the Essence to incline toward that inward discourse through hearing and attentive listening: this inclination is in truth the effect of the original love. It therefore inclines to listen at the seventh, most inward degree of inclination and hearing.
+
+Within that receptivity, too, is the capacity of the Essence to behold the light of its beauty, which is identical with its oneness and its manifestation, and with the manifestation of its considerations, and to regard the perfection that belongs to them in accordance with this inclination, hearing, and attentiveness. Its beholding accordingly occurs at the seventh, most inward degree of contemplation.
+
+There is also the capacity to be affected by this inward discourse in such a way as to remove the veil created by the predominance of the majesty of the Unseen and hiddenness over beauty and manifestation. This removal is figuratively expressed as the precedence and predominance of mercy over what is called anger, considered as the utmost limit of its judgment in an ascending, not descending, direction. In its most inward character this anger is non-manifestation, bearing the meaning of destruction and nonexistence.
+
+For manifestation and non-manifestation were, in the exigency of this first receptivity, of equal standing. Yet the effect of this discourse, love, and the essential inclination caused the judgment of manifestation to predominate over non-manifestation and assigned it priority. Thus the most holy Essence disclosed itself to itself according to that effect, predominance, and precedence; it appeared to itself in itself—that is, precisely in the first determination and first receptivity. Through that self-disclosure, which is itself knowledge and witnessing, the Essence found itself by way of the mirror just mentioned. That mirror is identical with the Essence, bears the disclosure, and contains within itself the inward discourse, inclination, contemplation, and efficacy of that discourse.
+
+That discourse, directed to itself, is identical with the first self-disclosure and receptivity, but bears the consideration of a meaning that is the inward reality of the attributes of speech, hearing, sight, and power at the seventh inward degree of each—namely, the rank of the first determination. For “speech” is an exhalation issuing from within the speaker, containing a meaning whose appearance the speaker seeks; that exhalation becomes differentiated according to the successive points of articulation. In the same way, original love, which is identical with the first determination and receptivity, contains a meaning of perfection related to manifestation and calling for self-disclosure—
+
+*Boundary:* The explanation of speech, sight, hearing, and power continues on p. 26. The printed footnote explicitly says that the editor could not locate the seven-depth saying in this exact wording; it should not be quoted as an authenticated prophetic report without further study.
+
+### B2007 p. 26 — From undifferentiated meanings to attributes
+[Read Arabic p. 26](https://ablibrary.net/book_content/b/9606/26?lang=ar)
+
+—at the first determination, corresponding to the exhalation itself as it issues from the hidden inwardness of the speaker. “Hearing” is the reception of that meaning, whether outwardly or inwardly. “Sight” is receptivity to its appearance through what becomes manifest to its recipient. “Power” is the capacity to bring about what is intended to appear.
+
+It is this meaning that Shaykh Ibn al-Fāriḍ—may God have mercy on him—intended in his verses, in which he says, approximately:
+
+> My utterance—and wholly within me I am a tongue that speaks;
+> my glance—and wholly within me I am an eye that contemplates.
+>
+> My hearing—wholly I hear the call as I am summoned;
+> and all of me, warding off extinction within me, is a hand of power.
+>
+> Meanings of attributes were established beyond the clothing of appearance;
+> and names of the Essence spread what the senses had related.
+
+[**Editorial note on the poetry:** The Arabic edition prints the hemistichs together without dependable line separation. The English lines are a provisional attempt to preserve the sense, not a collated edition of Ibn al-Fāriḍ's verses.]
+
+That is to say, those meanings were established at the first rank, beyond the rank in which they were clothed with the judgments of plurality and distinction while they were still essential affairs. Once clothed in those judgments, the very same meanings became differentiated attributes in the second rank, according to its law—for example, hearing, sight, power, speech, and the like. At the first rank they had not been attributes, but considerations neither differentiated nor mutually other.
+
+Thus the utterance through which the whole Essence is a tongue speaking inwardly to itself; the glance by which all of it is an observing eye so that what is inward may pass into outward appearance; the hearing by which all of it hears its own discourse; and the hand by which all of it acts to repel non-manifestation—figuratively called “destruction” through its association with concealment and inwardness—toward manifestation and existence: all these are the meanings of the attributes of hearing, sight, power, and speech. They are established as distinct in the second rank of divinity, but the inward realities of those attributes were not different at the first rank, which is their seventh inward depth relative to the outermost end of their manifestation.
+
+The outermost appearance of these attributes is their manifestation in the spoken word issuing from the human tongue, seeing through the eye, hearing through the ear, and acting through the hand—all attributed to the form of the body.
+
+**Its first inward level:** these attributes are attributed to the person's soul, but insofar as it is distinguished from the souls of other animals only by the outward form of an intellect concerned with ordinary livelihood and restricted to worldly affairs. Thus the person's speaking, hearing, looking, and acting concern only the world and do not extend to the hereafter, which should be their ultimate end. This is the condition described in the Qurʾān: “They know an outward aspect of the life of this world, while they are heedless of the Hereafter” (30:7).
+
+*Boundary:* The second through seventh inward degrees follow on pp. 27–28.
+
+### B2007 p. 27 — The seven inward degrees of a human faculty
+[Read Arabic p. 27](https://ablibrary.net/book_content/b/9606/27?lang=ar)
+
+**Its second inward level:** what is attributed to the soul insofar as its intellect is illumined by the light of revealed law and faith in God, His books, His messengers, and the realities of the hereafter. Through sound understanding, right reason, and firm faith, the person moves in speech, hearing, seeing, and action from what concerns the world to what concerns the hereafter.
+
+**Its third inward level:** what is attributed to the person's immaterial spiritual spirit, whose determination and distinction are established in the world of spirits and the Preserved Tablet.
+
+**Its fourth inward level:** what is attributed to concrete existence, assigned to the reality of humanity, delimited by it and revealing its properties within the ranks of the cosmos as spirit, imaginal form, and sensible form. This is the inward level alluded to in the words “I become his hearing, his sight, his tongue, and his hand.”
+
+**Its fifth inward level:** what is attributed to the heart, which receives the self-disclosure of inward existence within it, alluded to in the saying “The heart of My servant encompasses Me.”
+
+**Its sixth inward level:** what is attributed to the comprehensive, merciful, undelimited existence appearing at the second intermediary rank through its overflowing generosity, which extends to all things.
+
+**Its seventh inward level:** these very meanings that are at the first rank, united in reality though possessing distinguishable relative judgments.
+
+Each of these meanings—speech, hearing, sight, and power—has a special effect and judgment at each rank. Its absence from a human person at a given rank renders that person mute, deaf, blind, or weak at that rank. From this one may understand the Qurʾānic statement, “Deaf, dumb, and blind: they do not return” (2:18): that is, from the world to the hereafter, or from the first inward level to the second. At the first level they did hear, see, and speak.
+
+People are at different degrees concerning the opening of the gates of these inward levels. Some have no gate opened at all, such as the insane and infants. Some have only the first gate opened: such is the person who has received good in this world but has no portion in the hereafter. Others have the second opened, namely the ordinary members of the people of Islam and faith.
+
+*Editorial caution:* “The heart of My servant encompasses Me” is cited in the authorial argument, but its authenticity as a divine hadith is not established by the fact that the later edition supplies an attribution note. The seven-level schema is Farghānī's exposition, not a set of authenticated prophetic sayings.
+
+### B2007 p. 28 — The roots of the divine attributes and the seventh gate
+[Read Arabic p. 28](https://ablibrary.net/book_content/b/9606/28?lang=ar)
+
+Others have the third gate opened: these are the elect among the believers. Others have the fourth: these are at the beginning of the station of sainthood (*walāya*) and spiritual excellence (*iḥsān*). Those to whom the fifth is opened are among the intermediates. Those to whom the sixth is opened are among the people of the final stations, the perfected and the singular ones. Not even a small aperture of the seventh gate is opened to anyone except the possessor of the Muhammadan inheritance, for the seventh inward degree is particularly his—may God bless him and grant him peace.
+
+Now the first self-disclosure, insofar as it includes the inward speech and informing described earlier, contains a perfection attributed to it and to its considerations, together with a comprehensive and undifferentiated awareness of that perfection. This is the origin and inward reality of life and of the Living.
+
+Insofar as it involves contemplation, it contains an awareness of the diffusion of that perfection throughout the details of the considerations of oneness: this is the origin and inward reality of knowledge and the Knowing.
+
+Insofar as it involves the inclination to hearing and attentive listening, it entails a consideration that is the origin of will.
+
+Insofar as it involves the effect produced by that unitary discourse within itself, from which the disclosure and finding ensued, it includes a particular orientation of efficacy toward actualizing name-related perfection, removing its impediments, and obtaining its conditions, without introducing otherness. The effective judgment of that particular orientation is the inward reality of power. Its effect of realizing perfection in detail and obtaining its conditions contains the reality of generosity, through the overflowing bestowal of existence upon the reality of each existent. This belongs to the conditions for name-related perfection in detail.
+
+The intermediary character of the first determination, which establishes these considerations, and its receptivity to the first self-disclosure, entails and determines the reality of justice and equitable proportioning. To it belong the assignment of all ranks and the preservation of justice among receptive possibilities between necessity and impossibility.
+
+The seventh inward degree of speech, hearing, sight, and power—each identical with the Essence and with the others under that consideration—is therefore the generative principle of life and the Living; knowledge and the Knowing; and equitable proportioning and the Equitable. Considered as realized at the core of the second intermediacy, the comprehensive aspect includes each of them in all the others, with a hidden trace of their distinction. Yet the whole is a single reality at the first determination, the first rank of the most holy Essence, and the first rank of knowledge insofar as knowledge is the Essence itself, not an attribute or qualification additional to it.
+
+Some of the great masters, considering this intermediary character, call it **the Reality of Realities** (*ḥaqīqat al-ḥaqāʾiq*) because it is universal and is the origin of every consideration—
+
+*Boundary:* The sentence about the Reality of Realities continues on p. 29.
+
+### B2007 p. 29 — The supreme intermediary and two kinds of perfection
+[Read Arabic p. 29](https://ablibrary.net/book_content/b/9606/29?lang=ar)
+
+—and determination, the inward reality of every divine and cosmic reality, and the source from which each arises, permeating it in its entirety so that it is divine in divine realities and cosmic in cosmic realities. All are its manifestations and the forms of its articulated details. Some call it the **Supreme Intermediary** (*al-barzakh al-akbar*), which comprehends all intermediary states and is the origin pervading them.
+
+Revelation alludes to it through the station of “or nearer” (*aw adnā*), which is the inward reality of “the distance of two bows” (*qāb qawsayn*): that is, the nearness of the two bows of unity and multiplicity, or of receptivity and activity, or of necessity and possibility. The two are gathered together as one continuous circle, though in this station a hidden trace of distinction and multiplication remains between them. The inward reality of that station is “or nearer” than the two bows: here no trace of distinction or plurality remains within the encompassing circle between the judgment of unicity and that of oneness.
+
+Some call this the **Aḥmadian Reality**, established in the exact centre of intermediacy and equitable equilibrium, such that no one name or attribute predominates over it. The first self-disclosure determined in and by the first determination is its light, making its rank manifest; the appearance of that light is appointed within the comprehensive intermediary reality. The Prophet's purified and Godwary heart is the form of this determination and intermediacy—not a bodily form, but a comprehensive intelligible one. His noblest elemental temperament, realizing the highest degree of equilibrium, is its corporeal image and manifestation.
+
+That first luminous self-disclosure, as we have said, is thus his light in the first instance—may God bless him and grant him peace—as alluded to in the saying, “The first thing God created was my light.” God speaks the truth and guides to the path.
+
+**Chapter.** The first self-disclosure just described contains *perfection*, whose reality is that what ought to be obtained is obtained in the manner in which it ought to be obtained. This falls into two divisions. The first is an essential, comprehensive, unitary perfection, realized in the first rank. At the beginning of the second rank, life and the name *the Living* become determined, as will be explained if God wills.
+
+Essential self-sufficiency accompanies this perfection. Its meaning is that the Essence witnesses and apprehends itself under the consideration of its oneness together with all its considerations, affairs, and states; with all its intelligible, spiritual, imaginal and sensory forms and manifestations; and with their principles and concomitants, some included within others, some determined and branching from others as roots and branches, genera, species, and individuals, first coming-forth and return, descent and ascent, this world, the intermediate state, and the next. Their possessors witness and apprehend these at the cosmic ranks either together or in succession, as distinct things relative—
+
+*Boundary:* The contrast between distinct witnessing and divine comprehensive witnessing continues at the beginning of p. 30.
+
+---
+
+## Source-critical notes on this stage
+
+1. **Primary text versus editorial footnotes:** the extensive printed hadith of the believer's recognition of God (p. 24) is in a footnote; only Farghānī's short allusion is translated into the authorial text. Likewise, editorial source notices for the seven-depth Qurʾān saying, the heart saying, and “The first thing created was my light” do not form part of his prose.
+2. **Theological semantics:** “original love,” “receptivity,” “speech,” “exhalation,” “seeing,” “hearing,” and “power” are all applied analogically in the argument. Their literal corporeal senses must not be read into the first determination.
+3. **The two registers of names:** *aḥadiyya* (unicity) is not the whole first determination; the first determination is the intermediary gathering both *aḥadiyya* and *wāḥidiyya*.
+4. **The exceptional Muhammadan rank:** Farghānī's qualifications are retained even where they complicate a direct mapping to Guénon's Universal Man or Schuon's Logos.
+5. **Remaining verification:** this working translation needs clause-by-clause Arabic proofing, check of the Ibn al-Fāriḍ lines against a poetic edition, hadith source assessment, and historical print/manuscript collation. Neither the prose paragraphs nor the poem is a constituted critical Arabic text.
+
+[Prior translation: B2007 pp. 18–23](OPENING_TRANSLATION_18_23.md) · [Next: pp. 30–34](CONTINUATION_TRANSLATION_30_34.md) · [Witness register](WITNESS_REGISTER.json)
+
+
+---
+
+
+**Scope (8 November 2026):** Consecutive-page English draft of the authorial text in B2007 pp. 30–34, continuing the two previous sections. The source Arabic is linked at every page; the modern editor's footnotes are excluded. **This is not a manuscript-collated text or a definitive translation.** Printed page boundaries interrupt sentences, which are marked. All English subsection titles are editorial; “Chapter” represents an Arabic *faṣl*.
+
+### B2007 p. 30 — Essential and name-related perfection
+[Read Arabic p. 30](https://ablibrary.net/book_content/b/9606/30?lang=ar)
+
+[Continuing p. 29:] —to their apprehension of distinct things within their particular ranks and their restriction by those ranks; but all are a single reality relative to the witnessing of the One, the One-in-Unicity, in the ranks attributed to Him. This is detailed witnessing within a comprehensive whole, in a single act, as when a person graced with unveiling perceives innumerable palm trees and fruits within a single date-stone.
+
+The **second kind of perfection** is the differentiated perfection through the divine names (*al-kamāl al-asmāʾī al-mufaṣṣal*), extending through the particulars of the names and realities. It is what appears to the Essence when its considerations and the realities of their differentiation are considered in detail, as attributed to particular ranks. It therefore takes place **on condition of something—indeed, of several things**: determination, what is other, a relative otherness, a locus of manifestation, gathering together, an intelligible or formal composition, and other such conditions. Essential perfection, by contrast, is realized without condition of anything at all.
+
+The reality of name-related perfection is that the Essence appears to itself under the consideration of its totality and comprehensive unity: its affairs, considerations and loci of manifestation appear in detail, or comprehensively following their differentiation, as things other than one another. This witnessing, however, must be through a locus displaying a universal affair that comprehends all its individuals in actuality—namely, the **true Perfect Human**. Thus the Essence finds itself through that perfect locus.
+
+It also appears to itself through each distinguished individual among the loci of manifestation of those affairs. Each individual becomes manifest and finds itself and its like, insofar as they are named “others” and restricted by particular ranks.
+
+Consider now **knowledge**, whose reality is the appearance of the very reality of a thing, such that the effect of what appears is obtained in the one to whom it appears, precisely in respect of that appearance. Consider **existence**, whose reality is what enables a thing to find itself in itself, in another, or to find another in another, whether in a locus, a rank, or the like. Consider **light**, which discloses what is concealed, and **witnessing**, which is presence together with what is witnessed.
+
+These all belong to the first self-disclosure and the considerations included within it, insofar as it is one, without difference between the disclosure and those considerations or between one consideration and another, under the aspect of essential perfection. There is no true distinction, except a faint relative distinction when this perfection appears under the name **the Living**, and no other.
+
+But under the consideration of name-related perfection—which belongs to the other universal, original, derivative and particular names—distinction, a locus of manifestation, rank, and relative or actual otherness are among its conditions. The differentiation of all the things just mentioned is therefore established and necessary. It arises, however, **according to the locus and what that locus requires**, not according to the intrinsic realities of the considerations themselves. Understand: a locus has an inescapable effect and a decisive judgment upon what stands and is established within it, whether the locus is formal, as with containers, or intelligible, as with ranks. A container makes its contents follow its colour or its figure, whether round, square, or otherwise—
+
+*Boundary:* The example of the locus and the container is completed on p. 31.
+
+### B2007 p. 31 — What existence means at the first and second ranks
+[Read Arabic p. 31](https://ablibrary.net/book_content/b/9606/31?lang=ar)
+
+—just as the saying reminds us that the colour of water is the colour of its vessel. Similarly, ranks exercise determining judgments over those who inhabit them. The sensory rank requires that nothing appear within it except sensibly; the rank of spirit and that of imaginal form do likewise, each according to its own mode. Nothing appears in the cosmic ranks except what is creaturely, and nothing appears in the ranks of the Real except the Real. Reflect, and you will know a secret: none knows, witnesses, or sees the Real save the Real, or through Him. Hold this in mind and you will attain many mysteries.
+
+Among these matters is that **knowledge**, considered under the first rank and first determination, is the Essence's own reality appearing to itself while the considerations of oneness are contained within it and established. Thus knowledge is related to **one known thing**. Linguistically, therefore, the word “to know” at the first rank takes one object: there the Essence knows only itself.
+
+At the second rank, however, knowledge is the Essence appearing to itself together with its affairs, by means of the loci of manifestation of those affairs, which at that rank are called attributes and realities. Under this consideration the verb “to know” takes two objects: the Essence appears to itself as **possessing life, knowledge, will, power, speech, generosity, and justice**. Accordingly, knowledge at the culmination of the second rank, in respect of the things known there, has real multiplicity and an aggregate, relative unity.
+
+Another matter concerns **existence (*wujūd*)**. At the first rank existence is that through which the Essence finds itself in itself, with the considerations of oneness included within it: a comprehensive finding whose details are contained within it, one of which multiplicity, difference, otherness, and distinction are denied.
+
+At the second rank, existence admits two modes. The first is **insofar as this rank is a locus for the Real's outward manifestation**. Under that consideration existence is what enables the Essence to find its own reality under the aspect of its manifestation, together with the manifestation of its form—named the outward aspect of the name **al-Raḥmān**—and the manifestation of the forms of its determinations, which are called the divine names. The reality of existence remains one, although relational multiplicity may correctly be attributed to it.
+
+Existence thus possesses **real unity and relational multiplicity**. Every divine name is the outward aspect of existence, which is identical with the Essence, but existence considered as determined and restricted by a meaning, or one may say by an attribute. Take **the Living**: it is a name of manifest, determined existence, but its determination and restriction take place through the meaning of *life*.
+
+If we consider the reality of existence itself and the very determination, it is identical with the Essence, so that its unity is real. If, however, we consider its restriction to that meaning, its distinction from other meanings, and its determination according to that meaning, it is different from what the other names signify. It thus possesses a multiplicity of **relational determinations**.
+
+*Boundary:* Farghānī next contrasts this with existence insofar as the second rank is the source of the appearance of the cosmos.
+
+### B2007 p. 32 — Created existence and the incapacity of the first rank to manifest plurality
+[Read Arabic p. 32](https://ablibrary.net/book_content/b/9606/32?lang=ar)
+
+The **second mode of manifest existence** is this rank insofar as it is the locus for the appearance of the cosmos, comprising the cosmic ranks that follow and emerge from the second rank, such as the ranks of spirits, imaginal forms, and sense. Everything that becomes determined as existence within these is necessarily called “creature” and “other.”
+
+Here the meaning and reality of existence is that through which the form of each determination finds itself, and finds its like, as a spiritual, imaginal, or corporeal existent, manifesting at each rank according to the character and judgment of that rank. For what exists at the rank of spirits finds itself and its like only spiritually; what exists in the imaginal rank finds itself only as an imaginal form; and what exists among bodies finds itself and its like only as corporeal and sensible.
+
+On this account **bringing into existence and creating** mean nothing other than that the Creator—exalted and holy—gives cosmic realities that through which they find themselves, by attributing to them a determination from Him. Through the portion so attributed, He makes their properties appear at each rank according to its nature and law.
+
+Thus the efficacy involved in the differences among forms of existential determination, the manner in which they disclose the properties of their respective realities, and the application of the names “same” and “other” to them, belongs to the ranks that function as intelligible loci. These loci are matters and relations that are privative in themselves: they have no existence externally, nor do they possess external existence in their own right. Consider, then, how something non-existent can have an effect—even though its privation is only relative and under one consideration—in the very reality of existence and in what is existent in every respect. You will discover something wondrous beyond the reach of sound intellects and minds.
+
+**Chapter.** The unity from which the aforementioned unicity and oneness arose was, without the condition of anything else, the first determination and consideration of the most holy Essence, and its first rank. As you know, it was the very receptivity to which manifestation and hiddenness were equally related. Consequently, the judgment of pure unicity remained rooted in it and essential to it, to its receptivity to manifestation, and to its being the first rank of the Essence.
+
+It therefore admitted only the **first self-disclosure**, the comprehensive character of essential perfection, its unity, and the negation of multiplicity, distinction, and otherness, while the relations and considerations of oneness remained included within it. It could not receive a self-disclosure admitting multiplicity, even relational multiplicity, nor could it receive the name-related perfection inseparable from such a self-disclosure, which was the ultimate goal of the original orientation.
+
+That is because pure unicity necessarily belongs to this first determination and receptivity, while the realization of name-related perfection depends upon plurality, distinction, and the effect of difference and otherness.
+
+Now original love, expressed by “I loved,” bore that first self-disclosure and impelled it to turn toward the realization of this detailed name-related perfection. Yet it did not find, for that orientation—
+
+*Boundary:* The search for a receptive locus of the second determination is completed on p. 33.
+
+### B2007 p. 33 — The second receptivity and the differentiation of the names
+[Read Arabic p. 33](https://ablibrary.net/book_content/b/9606/33?lang=ar)
+
+—a locus capable of receiving what it sought. By the strength of that longing orientation and amorous inclination, the self-disclosure returned to its origin. It reverted to the state in which manifestation and hiddenness were equally related to it, except that the power of love caused the judgment of manifestation—which is called **essential mercy**, identical with the inward reality of the absolute existence indicated by “that I might be known”—to predominate over the judgment of non-manifestation. The latter, through its association with the reality of inwardness and concealment, is figuratively called the inward reality of anger, preceded and overcome by mercy.
+
+The self-disclosure therefore appeared again, now determined toward this goal by the force of original love that necessarily belonged to and remained inwardly present within it. [The wording of a short transition in the digital Arabic requires print comparison.] It bore a new determination from among the relations of oneness, capable of realizing its final aim—**name-related perfection**. That determination is the **second receptive principle**, which comprehends the opposed judgments of comprehensiveness and unity on the one side and differentiation and plurality on the other. It is related to *wāḥidiyya* and occurs at the second rank of its determinations. The disclosure appeared in this determination.
+
+The second receptive principle, which is the form of the second determination, became the form and shadow of the first receptive principle and the first self-disclosure. It contained the forms of the determinations of oneness and was both their recipient and their agent. This resembles an exhalation that becomes determined and issues from the inwardness of a speaker, just as the first determination and disclosure issued from the innermost hiddenness and nondelimitation. That disclosure carried from the hidden, unconditioned Presence a trace of the darkness of its Unseen and the nondelimitation of its pre-eternity, together with the unending determinations of its everlastingness.
+
+Through this exhalation-like unfolding, the **cosmic realities** were differentiated and distinguished from their original comprehensiveness and unity. Receptivity is attributed to them, in relation to the second determination and its receptivity. The **divine names**, to which efficacy and action belong, were attributed to the reality of the second self-disclosure.
+
+All these cosmic realities and divine names became images and shadows of the affairs and considerations included within oneness—comprehensive and unitary there at the first rank, but differentiated at this second determination, which is the second rank. They became established and fixed there, some as roots and genera, others as branches, species, and particular individuals arising from those roots, genera, branches, or species. Under the judgment of the second rank they differ from one another in one respect and not in another.
+
+The outward aspect of eternal knowledge pertains to them all, encompassing each known reality exactly as it is, **in accordance with the known thing, not in accordance with a limitation in knowledge itself**. Thus the universals comprehended within, and arising from, this second determination and receptive principle are called **universal ranks**, inasmuch as they serve as loci for the establishment of the remaining realities and for the outward existential manifestation of those capable of appearing within them—
+
+*Boundary:* The statement concerning the classes of universal ranks continues on p. 34.
+
+### B2007 p. 34 — Why the second determination bears many names
+[Read Arabic p. 34](https://ablibrary.net/book_content/b/9606/34?lang=ar)
+
+—and because of the Essence's efficacy within and through these ranks. Such are the rank of meanings, the rank of spirits, the rank of imaginal reality, the sensory rank, and the various equilibria within them. Within those are the composite things called generated beings, whose comprehending and differentiating rank is the human rank. In the same way, the universal determinations of the self-disclosure determined within this second determination and receptive principle, with respect to the divine names, are the **seven names** whose explanation will follow.
+
+**Chapter.** This second, breath-like determination bears numerous names according to the considerations established within it, although its own reality is one.
+
+It is called **the rank of Divinity (*martabat al-ulūhiyya*)** because it is the origin and source of the appearance of determinations, the source of every perfection attributed to them, the point toward which their orientations are directed, and the place to which they return. The second self-disclosure appearing through and within this rank is also the origin, totality, and place of return of the divine names. It is accordingly called by the names **Allāh** and **the Deity (*al-ilāh*)**, since all worshippers turn to this rank and its self-disclosure, which is their goal: hearts find rest in it through the amplitude of its mercy, and intellects are kept from intrusive discourse concerning it.
+
+It is called **the world of meanings (*ʿālam al-maʿānī*)** because all universal and particular meanings are realized and differentiated within it from their origin through their middle to their end.
+
+It is called **the Presence of Inscription (*ḥaḍrat al-irtisām*)** because it bears the impressed forms of the relative multiplicity attributed to the divine names and the real multiplicity attributed to the cosmos and its realities.
+
+It is called **the Presence of Eternal Knowledge (*ḥaḍrat al-ʿilm al-azalī*)** because eternal knowledge—the second of its universal determinations, the first being life—relates to all the other determinations, however numerous, and encompasses them in unity and multiplicity, whether real or relational.
+
+It is also called [in the present digital reading] **the Operative Presence (*al-ḥaḍra al-ʿamaliyya*)**, considered as the intermediary between unity and multiplicity. This intermediacy comprehends the original universal realities capable of being attributed primarily to the Real and secondarily to the cosmos. They are differentiated as universal roots and genera, from which branches, species, and particulars emerge within that very intermediacy as differentiated realities. [**Text-critical question:** the digital reading *al-ʿamaliyya* should be checked against the 1876 printing and an independent manuscript; the philosophical context may invite, but does not authorize, a silent emendation.]
+
+It is called **the Reality of Perfected Humanity (*al-ḥaqīqa al-insāniyya al-kamāliyya*)** insofar as those original universal realities are included within this intermediacy, their distinct judgments still present there as a hidden trace.
+
+It is called **the rank of possibility (*martabat al-imkān*)** because the known things to which eternal knowledge relates are distributed among what is necessary in its manifestation and realization through itself, what is impossible in itself in every universal or particular rank, and what stands between these two, being equally related to either.
+
+And because the second determination is the image of the first determination, which was the first rank of the most holy Essence, it is called **the second rank**. Thus all these names designate this—
+
+*Boundary:* The sentence continues at the beginning of B2007 p. 35.
+
+---
+
+## Text-critical and philosophical notes
+
+**N1 — Two kinds of unity.** At the first determination the differentiation is implicit and included; at the second it is formally distinct. *Aḥadiyya* is not an independently existing first deity, nor *wāḥidiyya* a second deity.
+
+**N2 — Two modes of second-rank existence.** The first concerns the Real's manifestation through names with **real unity and relational multiplicity** (p. 31). The second concerns the cosmos, where *each thing finds itself* as spiritual, imaginal, or corporeal under particular ranks (p. 32). These distinctions should control later translations of *wujūd*, *wijdān*, *ʿayn*, and *maḥall*.
+
+**N3 — What is a locus?** Farghānī expressly compares the determination of a spiritual or imaginal rank with the container that determines the figure of its contents (pp. 30–31), but he classifies these ranks as intelligible loci and even as privative relations (p. 32). The metaphysical status of such relational determinations is a problem, not a settled identification with Thomistic accidents.
+
+**N4 — The Perfect Human.** At p. 30 name-related perfection is said to require manifestation through an all-comprehensive locus, expressly identified as the real Perfect Human. This is a major comparison point with Guénon's Universal Man and Schuon's Logos.
+
+**N5 — Philology and emendation.** Two places on p. 33 and p. 34 have been flagged for historical-print collation. There are currently *zero verified alternative manuscript readings*; no alternative is silently adopted as though witnessed.
+
+**N6 — Source and completion.** The English is a continuous-order working draft of these five printed pages; it is not a copy-text-based bilingual critical edition. The paragraphs and chapter boundary must be compared with the 1876 edition and manuscripts before publication as a definitive text.
+
+[Previous translation: pp. 24–29](CONTINUATION_TRANSLATION_24_29.md) · [Source and witness register](WITNESS_REGISTER.json)
+
+
+---
+
+## Cumulative provisional coverage
+
+| Stage | Beirut page range | Status |
+|---|---|---|
+| I | 18–23 | Consecutive-page English draft; initial critical annotations |
+| II | 24–29 | Consecutive-page English draft; cross-page boundaries and attributed reports noted |
+| III | 30–34 | Consecutive-page English draft; two uncertain digital readings flagged |
+| IV onward | 35 to end of the four foundations | Untranslated here; the original 1876 edition has different numbering |
+
+**Current extent:** 17 Beirut printed pages (B2007 pp. 18–34) in a single English draft; 32 Arabic–English *selected* extracts in the parallel reader; **zero complete independent manuscript collations**. No percentage of the 107-page 1876 introductory section may be inferred from the Beirut page count without a verified page concordance.
+
+[Return to GNAMMA Farghānī reader](../) · [Witness register](WITNESS_REGISTER.json) · [Critical scholarly introduction](CRITICAL_INTRODUCTION.md) · [Source status](STATUS.md)
+
+
+---
+
+## New consecutive English working translation · B2007 pp. 35–40
+
+**Coverage:** Six consecutive pages of the digitized 2007 Beirut edition, continuing the earlier draft at p. 35. Translated from the Arabic authorial text displayed on the linked pages, excluding the modern editor’s footnotes. English subsection labels and explanatory qualifications in square brackets are editorial. This is **not manuscript-collated**; page divisions may interrupt sentences.
+
+### B2007 p. 35 · Unity and multiplicity of the second determination
+[Arabic source](https://ablibrary.net/book_content/b/9606/35?lang=ar)
+
+[Continuing the preceding sentence:] —the aforementioned **second, breath-like determination**. This determination, and what became determined by it and within it through the second self-disclosure—which is the outward aspect of existence, named the outward reality of the names *Allāh* and *al-Raḥmān*—possess all the aforementioned principles: unity, multiplicity, and an intermediary which both separates and comprehends the two.
+
+As for its unity, that is attributed to the second self-disclosure, whose relationship to essential unicity is stronger and which is more properly and primarily the locus of its manifestation. Yet the effect of oneness pervades it. The result of the judgment of oneness pervading it is the derivation from it of the relational multiplicity of the names, both negative and affirmative. On the other hand, the effect of its more primary relationship to essential unicity, as its manifestation, is the negation and removal of judgments, relations, and considerations in its negative names.
+
+Thus **the Pre-eternal** is He of whom having a beginning is denied; **the Self-sufficient** is He of whom dependence is entirely denied, both in the subsistence of perfection in Him and its appearance through Him; **the Unique** is He of whom any counterpart conjoined to His Essence is denied—equal, like, rival, peer, or similitude, as though there could be another existence set opposite His existence. **The Odd [without a pair]** is He of whom anything pairing His attributes with another of their kind is denied: for instance, an all-comprehensive life possessing every perfection, and opposed by neither deficiency, death nor passing away, attributed to another so as to make His perfect and comprehensive life one of a pair.
+
+**The All-holy** is He of whom blameworthy attributes are denied, such as injustice, lying, futility, impurity, frivolity, incapacity, and the like. **Peace** is He of whom contention among the manifestations of attributes is denied: anger does not contend when He is pleased, nor haste when He exercises forbearance, nor the will to revenge when He forgives—and conversely.
+
+**The Supremely Transcendent** is He of whom what is excluded in the Unique, All-holy, and Peace is likewise excluded; so too **the Exalted**. God says, “Glory be to God above what they associate [with Him]” and “Glory be to Him, and exalted is He above what they describe”; there are analogous negative names.
+
+The side of **multiplicity** in this second determination, by contrast, manifests essential oneness, but with the effect of unicity pervading it. Its being a manifestation of oneness is the source of the plurality of divine and cosmic determinations, both principal and subordinate, established and distinguished within it, some by real distinction and others by relation.
+
+The effect of unicity pervading it, however, is that every group of those many entities has an all-comprehensive unity that constitutes its origin and source—or, rather, its totality and point of return—or, again, its genus or species. The many entities are first included within that unity, second arise from it, and third return to it. The rank of that unity precedes the rank of the entities arising from it. An example of this—
+
+*Page boundary: the examples continue on p. 36.*
+
+### B2007 p. 36 · Hierarchical unities and the human intermediary
+[Arabic source](https://ablibrary.net/book_content/b/9606/36?lang=ar)
+
+—unity is first the self-disclosure, then the name *Allāh* and *al-Raḥmān*, then the name *the Living*, then the other fundamental names to be discussed, God willing.
+
+Among cosmic entities there is the reality of the Supreme Pen and its existence, then the reality of the Supreme Spirit and its existence, then the reality of Nature, then the reality of Body and its existence, until one reaches Adam, peace be upon him, in his reality and existence. Every one of these comprises the individuals and species branching out and arising from it and attributed to it, arranged and distinguished in relation to one another in eternal knowledge and concrete existence.
+
+A second judgment, arising from the permeation of unicity within this manifestation of oneness, is that each individual of these genera, species, and particular things has within it a **pure, inward unicity** in which no other thing at all resembles or participates with it.
+
+As for the intermediary (*barzakh*) that truly gives rise to these two extremes, first establishing and determining them and then comprehending them, it is the **human reality**. It has two considerations: in one the judgment of unity and comprehensiveness predominates; in the other the judgment of plurality and detailed articulation predominates.
+
+Under the latter, differentiated consideration it is called the **Cloud-like Presence** (*al-ḥaḍra al-ʿamāʾiyya*). It comprises the seven original universal realities mentioned before. Some are included within others; some become determined and branch out from others. They are articulated and distinguished. The first of them in determination, and the most comprehensive in its judgment, is the reality of **life**, meaning receptivity to perfection encompassing every perfection appropriate to a thing, and awareness of that perfection in its comprehensive and universal aspect.
+
+**The name the Living** is the very source of perfection, comprehending every perfection appropriate to it according to its own reality and rank, together with general and comprehensive awareness in which the particulars are included. Since no universal or particular reality, original or derivative, is devoid of a perfection appropriate to itself, the name the Living comprehends all the names by virtue of the perfections they contain, while life comprehends all realities as a whole.
+
+Knowledge is contained within life and derives from it. At this second rank, knowledge relates to differentiated known things that become distinct and manifest to their knower; life, however, is awareness of them collectively, and the articulated details are contained within that collective whole. In this respect, knowledge is therefore included in life. As for will, its meaning is the seeking of what is willed and inclining toward it, whether by specification, arrangement, bringing into manifestation or concealment—
+
+*Page boundary: the account of willing continues on p. 37.*
+
+### B2007 p. 37 · The seven principal names and their mutual inclusion
+[Arabic source](https://ablibrary.net/book_content/b/9606/37?lang=ar)
+
+—**the name the Willing** determined by this reality is the one who seeks and inclines toward assigning a thing its particular judgment, effect, attribute, and a rank for the judgments belonging to that thing and others. The ultimate object of this seeking is the manifestation of perfection through the divine names. What it wills through that arrangement, specification, attribution, and judgment is precisely this manifestation, which belongs to the characteristics of knowledge. Consequently the Willing and will are included within knowledge and arise from it.
+
+Speech, in its reality, is a breath arising from within the one who breathes, containing a meaning whose manifestation is sought. The breath becomes determined at one or more ranks, called externally its points of articulation. With respect to the seeking and inclination involved, speech belongs within will.
+
+Power is the capacity to produce the effect through which what seeks manifestation comes to appear. For that reason it is included in speech and branches from it. Generosity consists in the demand to give preference to another, by virtue of a perfection whether belonging to essence or attribute, by giving one's person, wealth, station, or whatever is beneficial and brings perfection to anyone who deserves it, whether through actual condition or request.
+
+**The Generous** is one who possesses himself sufficiently to receive this demand and act upon it; in respect of such ability, generosity is included in power and derives from it.
+
+**The Equitable** assigns to every thing possessing a share of receptivity the share by virtue of which it may receive what the Generous bestows; hence equity belongs within generosity and comes forth from it.
+
+This explains the ordering of the **seven principal names** in relation to each other, their successive derivation from one another in descent, and their successive inclusion within one another upon return and re-ascent.
+
+The comprehensive gathering point of them all is the outward manifestation of the word *Allāh* in **two respects**: its existence and its reality as the determiner of its names. The reality of divinity, which is identical with the second determination and establishes what the word *Allāh* outwardly signifies, is the place where all the original and derivative realities, divine and cosmic, are gathered, arise, return, and find their point of reference. The outward aspect of the name *Allāh* therefore comprehends the names in both respects.
+
+The outward aspect of **al-Raḥmān**, however, is their gathering point and point of return in **one respect**, namely existence; for *al-Raḥmān* is a name insofar as mercy is all-encompassing, and that is identical with existence.
+
+The name **the Living** gathers them through perfection embracing all perfections; **the Knowing** through the universality of its relationship to known things; **the Willing** through seeking and inclination toward perfection.
+
+*Page boundary: the remaining names and two considerations of the seven continue on p. 38.*
+
+### B2007 p. 38 · The names under comprehensiveness and differentiation
+[Arabic source](https://ablibrary.net/book_content/b/9606/38?lang=ar)
+
+**The Receptive** gathers them because every one of them is a determination of the Breath of the All-merciful. **The Powerful** comprehends them because each is rightly said to possess a capacity to produce an effect appropriate to its own reality. **The Generous** gathers them because each may be said to bestow existence, as the origin of the existence of what falls within its sphere among cosmic realities and existential determinations.
+
+**The Equitable** comprehends them inasmuch as each observes the rule of the intermediate position between real unity and relational multiplicity. The universal principal names under discussion have two aspects.
+
+The **first** is that each contains all the others, but with a hidden trace of each one's distinction through an attribute in that which manifests them, under the consideration of this mutual containment. Their containment is an effect of the unity of the comprehensive human intermediacy, in its undifferentiated form and in the exact middle of its rank. Its true comprehensiveness unites the two judgments: that of the self-disclosure, with real unity and relational multiplicity; and that of the determination, with real multiplicity and relational unity. It thus unifies the judgments of the two extremes.
+
+The appearance of a hidden trace of distinction, on the other hand, is an effect of this second intermediacy's being situated within the second determination and of its powerful connection with everlastingness, one of whose most characteristic judgments is differentiation without end.
+
+The **second aspect** of those original universal names is that they are really distinguished, and the effect proper to each becomes manifest, though a hidden trace of their mutual containment remains—in the reverse of the first aspect. Their distinction results from the differentiation of this second intermediacy, which is identical with the Cloud-like Presence. The remaining trace of mutual containment is an effect of its comprehensive character, its unity, its collective inclusion, and its precise equilibrium, which will be explained shortly, God willing.
+
+### B2007 p. 39 · Prophetic hierarchies and the number of the names
+[Arabic source](https://ablibrary.net/book_content/b/9606/39?lang=ar)
+
+The realities of the perfected ones who are the **messengers of resolute determination** (*ulū al-ʿazm*) are established and included within this comprehensive reality, appearing successively through the judgment of one of the seven original realities—in their mutual inclusion, with the hidden trace of differentiation and inclination toward descent.
+
+The realities of those possessing perfection among the **Muhammadan inheritors** are also established and included in this comprehensive, unitary intermediacy. They manifest as the polar station (*quṭbiyya*) arising from the station of substitution (*badaliyya*) under the judgment of one of the original seven divine realities, in their mutual inclusion and with an even more concealed trace of differentiation, but now through an inclination toward re-ascent and return to their origin, identical with the Keys and first self-disclosure. The realities of the remaining seven substitutes (*abdāl*) are contained within the reality of the Pole. They arise from it and become determined within the Cloud-like Presence insofar as their differentiation predominates and their inclusion becomes concealed.
+
+From these seven original divine realities arose **ninety-two divine realities**, completing the **ninety-nine realities** through which the ninety-nine names are determined. From these there arise **three hundred divine realities**, each inseparably connected with a divine character trait. A report states, “God possesses three hundred characteristics; whoever takes on one of them enters Paradise.” Abū Bakr asked, “Is there any of them in me, Messenger of God?” He answered, “All of them are in you.”
+
+From every reality a divine name becomes determined. Within the Cloud-like Presence the realities of the messengers also arise and become determined from these divine realities. From these divine realities branch **one thousand and one realities**, whose names are determined by this number; and from each divine reality among them arises the reality of a human prophet within the Cloud-like Presence. From these divine realities branch the complete number of **one hundred and twenty-four thousand divine realities**, each corresponding to a divine name. From them arise an equal number of human prophetic realities. From the Muhammadan realities arise multiples of this number of divine realities, both principal and derivative, in this Cloud-like Presence.
+
+All these are articulations of the one **comprehensive Muhammadan reality**, called the Reality of Realities, which permeates all things as a universal permeates its particulars. It is identical with the first, greatest, most primordial intermediacy, which is their origin. From it then branched—
+
+*Page boundary: the branching of the cosmic realities continues on p. 40.*
+
+**Transmission note.** The parenthetic citation to the report about three hundred traits is Farghānī’s. The edition’s modern footnote compares a report about three hundred and sixty traits; its bibliographical discussion has **not** been inserted into the translated authorial text.
+
+### B2007 p. 40 · Divine lordship and the fixed entities
+[Arabic source](https://ablibrary.net/book_content/b/9606/40?lang=ar)
+
+—from these divine realities, themselves differentiated and arising from it, and from the realities attributed to all the prophets—universal principles, origins, genera from genera, and branches of branches—an almost innumerable multiplicity of derivative and particular divine realities. From them arose, in the Cloud-like Presence, at its side named the **Presence of Necessity** and at its other side named the **Presence of Possibility**, innumerable cosmic realities.
+
+Whatever is related to both extremes through comprehensiveness and an analogy with their intermediate character, however slight, constitutes a **human reality**. Whatever has a stronger relationship to the side of necessity is a higher, simple, angelic reality; whatever has a more intense relationship to the side of possibility is a lower reality among generated things.
+
+As for human realities, some incline toward the side of possibility: these are the realities of unbelievers, falling within the scope of misguidance. Others incline toward the middle and comprehensiveness or toward necessity: these are the realities of believers and saints, within the circle of the reality of guidance. The varying intensity or weakness of that inclination discloses the difference of their predispositions and degrees in receiving the light of faith and the effect of guidance.
+
+All these divine and cosmic realities were essential affairs and states among the considerations of oneness, included within one another and giving rise to one another in the forms of universal and particular, original and derivative, generic and specific realities.
+
+Whatever divine reality—whether its roots, branches, or branches of branches, and so on—gives rise to the determination of a thing's reality, **the concrete existence of that thing** through which it manifests at spiritual, imaginal and sensory ranks likewise arises from the divine name determined by that divine reality in accordance with its distinction and attribute. That name is **its Lord**: it receives only from Him, gives only through Him, returns only to Him in every orientation and invocation, by its condition or by speech, in every place, and witnesses only Him. We shall clarify this further shortly, God willing.
+
+Those essential affairs are called **realities** (*ḥaqāʾiq*) here because the judgments of the second rank—where distinctions associated with everlastingness predominate, together with lingering effects of the darkness of the unseen nondelimitation and pre-eternity—surround each affair like an enclosing case (*ḥuqqa*), so that it has its own enclosure. They are called **fixed entities** (*aʿyān thābita*) because they remain established in the second rank and never leave it: **nothing appears in concrete existence except their concomitants, judgments, and accidents** insofar as these pertain to cosmic ranks.
+
+They are also called **quiddities** (*māhiyyāt*) because inquiry asks concerning the identity or *thisness* attributed to a thing: “my soul,” “my spirit,” “my heart,” “my body,” “my whole,” or “my part.” One asks, “What is it?” (*mā hiya?*); the letter *hāʾ* of pausing is added and the consonant doubled—
+
+*Page boundary: the philological explanation continues on p. 41.*
+
+---
+
+**Stage audit:** pp. 35–40 are covered here as a consecutive English draft, not as selected summaries. Unresolved line-by-line proofing, variant collation, hadith authentication and historical-print comparison are separate tasks. The **authorial material** has been separated from bibliographical notes supplied by the modern editor. The draft is not a definitive critical edition.
+
+
+---
+
+## Consecutive English working translation · B2007 pp. 41–46
+
+**Coverage and grade:** Six consecutive Beirut pages, directly following p. 40. The main authorial text is translated in sequence; modern editor’s footnotes are excluded. Source links give the Arabic text. The English is a **provisional research draft**, not independent line-by-line proofing or manuscript collation. Page breaks may divide a continuous sentence.
+
+### B2007 p. 41 · The Cloud-like Presence and the limits of creaturely determination
+[Arabic source](https://ablibrary.net/book_content/b/9606/41?lang=ar)
+
+[Continuation of the philological discussion on p. 40:] —its *yāʾ*, so that the word becomes a name for the identity and thisness in question. All these are **relational matters, nonexistent in themselves**, having no existence except in the knowledge of the knower who knows them.
+
+It is in this **Cloud-like Presence** (*al-ḥaḍra al-ʿamāʾiyya*) that the Real appears with the attributes of creatures, descending [in manifestation] from the rank proper to Him, namely the Presence of Necessity. Thus things ascribed to creatures—wondering, hesitation, laughing, joyous welcome and the like—are also attributed to Him, exalted and holy. Creatures likewise appear in this Presence with attributes of their Lord, when they become freed from the bonds of multiplicity and ascend beyond the lowliest cosmic ranks, as in bringing the dead to life, healing those blind from birth and lepers, assuming the attributes of truth and transcendence, and similar instances.
+
+The Prophet, peace be upon him, had this Cloud-like Presence in view when asked, “Where was our Lord before creating creation?” He replied: “He was in a cloud (*ʿamāʾ*), with no air above it and no air below it.” In Arabic, *ʿamāʾ* is a thin cloud which partly intervenes between the observer and sunlight. This intermediary, by its subtlety and fineness, stands between the reality of outward existential light and a seeing attributed to the fixed entity—a seeing that belongs to the inward existential light constituting the inward reality of every possible thing.
+
+The second, outward, concrete existential self-disclosure pervades this Cloud-like Presence in the form of nurturing and setting aright. In the case of the name-related realities, this is effected by making their influences and requirements appear within cosmic realities; in the case of cosmic realities, by disclosing their proper judgments through the attribution of concrete existence to them.
+
+Under its **comprehensive** consideration this intermediary is identical with human reality and the rank of perfection, which constitutes the measure of perfect reality and the very centre of equilibrium. Under that consideration the seven realities—the determining principles of the seven leading names—are included within it. The realities of perfected prophets and saints other than our Prophet, peace be upon him, are likewise included, appearing successively at the cosmic ranks as the concealed influence of one of these seven realities predominates in each, without excluding the rule of the other six.
+
+The realities of the rest of humanity derive from these principles, their branches, and further branches. They are distinguished and articulated within the Cloud-like Presence according to their respective distances from the original principle and measure: some are nearer, others farther from **perfection**, and likewise from the **supreme perfection** peculiar to the Muhammadan reality. For the influence of this supreme and perfect intermediary pervades—
+
+*Boundary: the next page completes the statement about receptive human realities.*
+
+**Textual note:** The digital print has a modern bibliographical footnote on the *ʿamāʾ* report; the note is not Farghānī's own prose. The rendering “no air” follows the traditional report’s intended form even though the scanned unvowelled Arabic leaves the precise syntax to be controlled against a critical hadith edition.
+
+### B2007 p. 42 · Three classes of realities: divine, cosmic, and shared in attribution
+[Arabic source](https://ablibrary.net/book_content/b/9606/42?lang=ar)
+
+—every reality receptive to it, through which its receptivity subsists and its position between Necessity and real impossibility is maintained. From it arise genera, then species, then individuals established in all their determinations: the nearest and near in the Cloud-like Presence, the distant and more distant in the Presence of Possibility. Reflect carefully on this chapter and, God willing, you will gain the greatest treasure and the red sulphur.
+
+**Chapter.** Know that the universal ranks to be enumerated shortly, called **worlds** and **Presences**, are like the loci, scenes and places of manifestation for the other realities ascribed to the Real or to the cosmos: they encompass and contain them. These ranks themselves are **intelligible realities**, like the realities encompassed by them. All are impressed within the second rank as genera, principles, species, branches and individuals, and there become determined under the aspect of ranks whose names and complete enumeration will be given shortly, God willing.
+
+The realities included within these ranks fall under **three divisions**.
+
+**First:** what is attributed exclusively to the Real. Examples are divinity, the essential mercy embracing all things—which is existence considered under the aspect of overflowing bestowal—essential necessity, self-subsistence (*qayyūmiyya*), meaning subsisting in itself and making another subsist, essential self-sufficiency, and other such realities.
+
+**Second:** what is attributed to the cosmos, such as poverty, essential nonexistence, abjection, possibility, and multiplicity. These are all dependent realities following principal realities: for example, the reality of spirit, angel, celestial sphere, elements, heaven and earth, and generated beings.
+
+**Third:** what is attributed originally to the Real but to the cosmos secondarily through the attribution of existence to it, such as knowledge, will, and similar attributes. They may be ascribed to the Real and are then eternal, or to the cosmos and are then temporally originated.
+
+Among these realities, some are **universal**, such as human reality and knowledge; others are **particular**, such as the reality of Zayd and Zayd's knowledge. Among particulars, some are principal, such as the reality of Zayd, while others are concomitants, attributes, properties and accidents belonging to that principal reality: its life, speech, receptivity, possibility, knowledge, ignorance, its intelligible, spiritual, imaginal or sensory configuration, its outward manifestation and hiddenness, the attribution of existence to it, and the like.
+
+### B2007 p. 43 · The five universal ranks and the sixth comprehensive rank
+[Arabic source](https://ablibrary.net/book_content/b/9606/43?lang=ar)
+
+As for the universal and principal realities, they remain restricted to the beginning of the Presence of Knowledge and the second rank. Their concomitants, attributes, properties and accidents, however, are established throughout its middle and end. Some accompany them in that Presence of Knowledge itself, such as their original unmade receptivity and intelligible configuration. Others fall within the world of spirits: their life and knowledge, their spiritual configuration, their outward appearance in the spiritual world as included within their genus and species or distinguished as individuals there, and their hiddenness with respect to the imaginal and sensory worlds—as also the attribution of existence to them within the spiritual world.
+
+Other concomitants fall within the imaginal world: their imaginal configuration, their manifestation there, and knowledge ascribed to such a configuration, and the like. Still others fall within the sensory world: their sensible configuration, their appearance there, and the attribution of existence to them in it; their existential receptivity for the sciences and actions; and their possession of the **ten categories**, such as quality, quantity and so on.
+
+These universal ranks are restricted to **five**: two attributed to the Real and three attributed to the cosmos; a **sixth** comprehends them all. For these ranks are loci and sites of self-disclosure. Any such rank is either a locus in which things appear **to the Real alone**, and not to cosmic things, or a locus in which things appear to the Real **and** to cosmic things.
+
+The first kind is called the **rank of the Unseen**, because every cosmic thing is concealed there from itself and from its like; nothing appears within it except to the Real. Such non-appearance of things has two forms.
+
+The **first** is the complete negation of their entities: “God was and there was nothing with Him.” Their manifestation in knowledge and finding is therefore absent insofar as their entities are entirely absent. This locus is the **first determination** and the **first rank of the Unseen**.
+
+The **second** consists in the nonexistence of the attribute of outward appearance for things, even though their entities are realized, differentiated and established in eternal knowledge and apparent to the Knower—but **not apparent to themselves or to their likes**. This resembles forms established within our own minds. This locus is the **second determination**, the **world of meanings**, and the **second rank**; it too is called Unseen for the reason given.
+
+As for a locus in which cosmic things also find what appears to them through knowledge and finding, it has **three divisions**. Such a locus can be one in which things appear to cosmic entities—
+
+*Boundary: the three cosmic ranks are distinguished on p. 44.*
+
+### B2007 p. 44 · Spirit, imagination, and sense; names are not their words
+[Arabic source](https://ablibrary.net/book_content/b/9606/44?lang=ar)
+
+—whose existences are simple in themselves. That is called the **rank of spirits**. Or it may be the locus in which things appear to compound existents. These compound existents may be so **subtle** that they do not admit division, partial separation, rupture or rejoining; the locus of their appearance, and of the things appearing to them, is called the **imaginal rank** (*martabat al-mithāl*).
+
+Alternatively, the compound existents may be **dense**, in comparison with such subtleties or actually in themselves, so that they admit division, separation, rupture and rejoining. Their locus, the locus of their attribute of outward manifestation, and that in which things appear to them is called the **sensory rank**, the **world of witnessing**, and the **world of bodies**. The true Perfect Human and the one most perfect comprehends all these by virtue of manifesting the second and first intermediary ranks. Thus, by God's aid, the universal ranks have been comprehensively enumerated.
+
+**Chapter.** Know that the realities of the divine names subsisting in the holy Essence, transcendent of alteration and change, are **not identical with spoken expressions** formed from separate letters which change, are substituted, and vary according to language, construction and pronunciation. The expressions are **names of those names**, signs indicating their meanings; the realities subsisting in the Essence are what the expressions mean and designate.
+
+For the reality of the name *Allāh* is the Essence's self-disclosure and determination as the **One comprehending all self-disclosures and determinations**, subsisting in the Essence. The Arabic word *Allāh* has the meaning of Persian *Khodāy* and Turkish *Tengri*, while the words vary, change and alternate. The reality to which they point transcends such variation; consequently they are names of the names, **not the realities themselves**.
+
+Once this is understood, we say that the divine names are, in reality, of **two kinds**, negative and affirmative. All fall under **three universal degrees**: first, names of the Essence; second, names of the attributes; third, names of the acts.
+
+The ground of this classification is that the **name in reality is the Essence**—or say, existence—but **not under its nondelimitation**; rather, under some consideration and determination. If the consideration and determination are identical with the Essence, as with the first determination, true unity, absolute self-sufficiency, preceding and prevailing essential mercy, and the like, the Essence under that determination is **one of the names of the Essence**. Such are the realities of *Allāh*, *al-Raḥmān*, *al-Raḥīm*, the One Self-sufficient of all worlds, the Keys of the Unseen, and the essentially One and One-in-Unicity. If the consideration and determination are not—
+
+*Boundary: the criterion distinguishing names of attributes from names of acts continues on p. 45.*
+
+### B2007 p. 45 · Negative and affirmative names; levels of divine disclosure
+[Arabic source](https://ablibrary.net/book_content/b/9606/45?lang=ar)
+
+—identical [with the Essence in that way], and no effect extends from that determination to another in any of the cosmic ranks, it is a **name of an attribute**, such as the Knowing and the Willing. If an effect extends from it to another in the rank of spirits, imaginal forms or sense, it is a **name of an act**, such as the Creator, the Originator and the Fashioner.
+
+Moreover, if the determination or consideration signifies the **negation** of a consideration from the Essence, as do the concepts of unicity, everlastingness, pre-eternity, and the like, the name under that aspect is **negative**, such as the One-in-Unicity and the Unique. If it signifies the **affirmation** of some consideration, as with oneness, eternal mercy and the like, the name under that aspect is **affirmative**, such as the One and the names *Allāh*, *al-Raḥmān*, and *al-Raḥīm* attributed to the Essence in “In the name of God, the Compassionate, the Merciful,” and as attributes in “Praise belongs to God, Lord of the worlds, the Compassionate, the Merciful” (Qurʾān 1:2–3).
+
+The locus of disclosure of the **realities of the essential names** is therefore the first rank and the precise centre of the second rank: the human intermediary, containing the seven original realities and leading names, each of which comprehends all the others, though a hidden trace particular to each appears within it.
+
+The locus of disclosure of the **names of attributes** is the Cloud-like Presence, the aspect in which this human intermediary becomes differentiated, and the place where the distinctions of the seven principles and their particular effects become manifest.
+
+The loci of disclosure of the **names of acts** are all the cosmic ranks, insofar as these are impressed within the second rank, since the complete display of the effects of the divine acts depends on them.
+
+Consequently, God's disclosure to His servants **through the acts** occurs only within cosmic manifestations—spiritual, imaginal or sensory. His disclosure **through the attributes** occurs only when one is stripped of all the judgments and manifestations of cosmic ranks. A flash of His **essential self-disclosure** occurs only through solitude from all the judgments of multiplicity and the realities of distinctions among names and attributes.
+
+There may remain, however, a hidden trace manifested precisely in the centre of the second human intermediacy, while the judgment of unification and inclusion predominates. Such isolation is attained through **true annihilation after annihilation** (*al-fanāʾ al-ḥaqīqī baʿd al-fanāʾ*).
+
+The attributive realities determining the names are initially divided into **relative** ones, such as manifestation, hiddenness, firstness and lastness; and **nonrelative** ones, such as knowledge, will, and their fundamental and derivative attributes. The nonrelative realities divide again into two kinds: one having no opposite of its own kind with a contrary effect and property, as with will and power; the other having a counterpart and opposite, as with guidance and leading astray and their concomitants, or satisfaction and anger. Both opposed attributes arise from branches of—
+
+*Boundary: the classification continues on p. 46.*
+
+### B2007 p. 46 · Eight classes of names; manifest and concealed names
+[Arabic source](https://ablibrary.net/book_content/b/9606/46?lang=ar)
+
+—the **unopposed** [attributes]. Among opposed attributes some signify change of state, such as contraction and expansion, and the names determined from them are called **names of states**.
+
+The **names of acts** fall into two categories. One comprises acts mentioned in revelation **without a corresponding name**, such as “God subjected,” “God became angry,” “God cursed,” and “God leads astray,” and similar expressions. The other comprises those of which both **the act and its name** occur, such as “God creates whatever He wills” and “God is Creator of every thing.” These make **eight categories** into which all the divine names are distributed, corresponding to the original gates of Paradise. Understand this.
+
+The name-related realities themselves belong to two kinds. Some have **no outward expression** indicating them as their name in any language, or in some languages. This is intended in the supplication: “O God, I ask You by every name belonging to You, by which You have named Yourself, or which You have sent down in Your Book, or taught to one of Your creatures, or reserved for Yourself within Your knowledge of the Unseen.” In one sense the Keys of the Unseen belong among these.
+
+The second kind has an outward form expressed **in words or in writing** through which we recognize the name. That kind is subdivided into two: first, **pronouns**, such as “He,” “I,” “we,” the second-person *kāf*, the second-person *tāʾ*, and pronouns of third person and plural; and second, **explicit nominal expressions**, such as *Allāh*, the Knowing, the Creator, and their likes.
+
+All pronouns designate **realities of the essential names**, but under differing considerations. The third-person pronoun indicates the Essence insofar as the judgment of hiddenness predominates over that of presence. The second-person pronoun indicates the reverse. The plural pronoun indicates the attachment of one or more names to the self-disclosure, while a singular pronoun indicates the self-disclosure alone, or a single name alone.
+
+The explicit expressions include **all three classes** of names: essential, attributive and act-related. All the names described here are **established through authoritative disclosure** (*tawqīfī*) according to the correct view; they are known only through revelation, genuine unveiling, or explicit divine communication.
+
+After the essential names established at the first rank—such as the inward realities of the names *Allāh*, *al-Raḥmān* and *al-Raḥīm*, the essential One and One-in-Unicity—the principles of the divine names are the **seven leading names**. The first, most comprehensive, and most perfect of them is **the Living**, insofar as it is itself—
+
+*Boundary: the argument resumes at B2007 p. 47.*
+
+---
+
+**Editorial cautions:** The examples of revelation, the divine names, the “seven inward levels,” the eight classes, and the pronunciation and grammatical roles of pronouns are translated as Farghānī presents them; they have not yet been independently verified against an early manuscript or the Istanbul lithograph. Source hadith bibliographies provided in modern footnotes have not been passed off as the author's prose. Philosophical comparison with Guénon and Schuon remains a separate editorial layer.
+
+
+---
+
+## Consecutive English working translation · B2007 pp. 47–52
+
+**Textual status:** Authorial Arabic on six consecutive pages translated in reading order; 2007 editor's bibliographical footnotes excluded. English headings are editorial. Neither the printed text nor translation has been collated against manuscripts. Continue from p. 46 and retain original page breaks.
+
+### B2007 p. 47 · Three modes of enumerating and realizing the ninety-nine names
+[Arabic source](https://ablibrary.net/book_content/b/9606/47?lang=ar)
+
+—perfection and its source, with awareness of the entirety and comprehensive character of that perfection. From these original, leading names branch the remainder needed to complete the number of the **ninety-nine names**. Anyone who enumerates them through **relation** (*taʿalluq*), **adoption of their qualities** (*takhalluq*), or **realization** (*taḥaqquq*) enters Paradise.
+
+Their enumeration by **relation** consists in seeking the effects of each name within one's own soul and body, every faculty, member and part, throughout the totality of one's states and spiritual and corporeal configurations, and through all one's transformations and varied manifestations: sleeping and waking; standing and sitting; obedience and disobedience; contraction and expansion; health and illness; contentment and anger; pleasure and pain; ease and hardship; spaciousness and constriction; wealth and poverty, and so on.
+
+One sees all these as judgments belonging to the divine names, attributing whatever becomes manifest within oneself to those names and their effects. Then one responds to each as appropriate: with gratitude or patience, humble entreaty or excuse, self-abasement or submission, modesty, humbling oneself, recourse and seeking refuge, brokenness, regret, seeking forgiveness, asking for help or guidance, and other descriptions of servanthood, thereby discharging the obligation of the rights of Lordship.
+
+By such enumeration and reckoning, and performance of the due right according to one's greatest capacity and effort, one enters the **Garden of Works**. It is the place where transient and perishing accidents—of speech, action, intention, and belief—are concealed beneath the forms of abiding, fixed entities: heavenly companions, palaces, attendants and gardens.
+
+Enumeration through **adoption of the names' qualities** takes place when the spiritual spirit aspires toward the realities, meanings, and attributes of these names, assuming and being characterized by the reality of each in conformity with the injunction “Take on the character traits of God.” Through this enumeration, followed by such assumption and characterization, one enters the **Garden of Inheritance**, which is higher than the first Garden, or rather its inward aspect, inclined toward the *malakūt* side. It is hidden in the spiritual sovereignty of every thing as it descends into the form of nature, but under the aspect that adjoins the world of spirits, not the sensory world where the Garden of Works appears.
+
+The Prophet, peace be upon him, is cited as saying: “There is none among you but that he has a dwelling in the Garden and a dwelling in the Fire. When an unbeliever dies and enters the Fire, the people of the Garden inherit his dwelling. If you wish, recite: ‘Those are the inheritors, who—’”
+
+*Page boundary: the Qurʾānic quotation continues on p. 48. The saying about adopting God's qualities is Farghānī's attribution and requires independent source criticism; the modern editor's explanatory reference is excluded.*
+
+### B2007 p. 48 · Realization and the Garden of Grace
+[Arabic source](https://ablibrary.net/book_content/b/9606/48?lang=ar)
+
+“—inherit Paradise, in which they shall dwell forever” (Qurʾān 23:10–11). These dwellings arise through the orientation of the *malakūt* toward descent for the manifestation of the worlds of nature and sense.
+
+As for enumeration through **realization** (*taḥaqquq*), this occurs through Godwariness (*taqwā*) and divesting oneself of every form, meaning and effect subsisting within one and appearing through one that is marked by origination, and through being concealed within the clouds of their entities, secrets and lights. One then enters the **Garden of Gracious Bestowal** (*jannat al-imtinān*), the station of concealment within the unseen of the Unseen, alluded to by the words: “Indeed the Godwary are in a secure station, amid gardens and springs” (Qurʾān 44:51–52), prepared with what no eye has seen, no ear heard, and what has not occurred to any human heart.
+
+Let us now return to our subject: identifying how each group of the remaining branches that complete the ninety-nine names belongs to its original principle among the names included in this number.
+
+We say that **the Living**—identical with perfection and its source, apprehending perfection in its universal, comprehensive character—contains and includes every name associated with any perfection, as indicated before. Some perfections concern inwardness; others concern outwardness.
+
+Among the inward perfections is **the Magnificent** (*al-ʿAẓīm*), whose affair fills the cosmos but whose ultimate nature is concealed from creatures, preventing their limited and lowly intellects, imaginations and understandings from grasping the perfection of His affair and the majesty of His rank.
+
+There is also **the Great** (*al-Kabīr*): because the perfection of His rank is remote from attainment, creatures recognize their smallness and innately testify that He is greater than anything which appears great.
+
+There is **the Exalted** (*al-ʿAlī*), whose perfect exaltedness surpasses every means of apprehension; **the Majestic** (*al-Jalīl*), whose majestic unicity transcends the attribution of anything to Him; **the Self-sufficient** (*al-Ghanī*), independent of all worlds by the perfection of His sufficiency in the unseen of His Unseen, contemplating the beauty of His majesty and His considerations within the first determination of His most holy Essence; and **the All-holy** (*al-Quddūs*), perfectly exempt from blameworthy attributes and from attribution to Him of deficiencies of acts and effects, and the like.
+
+### B2007 p. 49 · The Living, the All-comprehending, and the Self-subsisting
+[Arabic source](https://ablibrary.net/book_content/b/9606/49?lang=ar)
+
+With respect to **outward** perfection, all affirmative names are branches of the Living insofar as they involve some perfection. The greatness of His affair becomes apparent through what He brings forth in the cosmos, so that creatures recognize both the smallness of their own measures and His superiority over them. All share in createdness, and their determinate share of existence, judgment and effect is limited: no creature can go beyond the share assigned to it. Thus smallness belongs to them, and none has a right to be great or to boast of greatness. Hence arises the judgment of the name **the Supremely Great** (*al-Mutakabbir*), which belongs to Him alone.
+
+Because He embraces outwardly and inwardly all the names and realities pertaining to every perfection, there arises from Him **the Gatherer** (*al-Jāmiʿ*). Because hidden perfections, diffused from Him and inwardly present in names and realities, are concealed from the cosmos, there arises **the Inward** (*al-Bāṭin*). Because He is the principle from which the details and distinctions of the names arise, there arises **the First** (*al-Awwal*). Because all praises and celebrations of perfection, supremacy, and glory ultimately come to Him, there arise **the Praiseworthy** (*al-Ḥamīd*) and **the Glorious** (*al-Majīd*).
+
+Because every negative name arises from Him, the **forms** of the names the One and One-in-Unicity arise—not their ultimate realities, for those realities belong to the essential names at the first rank. Thus the Living is the source of all the principles, as we have explained. Even the outward aspect of *al-Raḥmān*, in that His bestowal extends generally to created beings, and of *al-Raḥīm*, insofar as His bestowal is specifically related to the rightly guided, are comprehended collectively within the Living.
+
+Yet from the standpoint of **the nondelimitation of existential mercy** and the all-bestowing power of the name *al-Raḥmān*, the Living itself, with every name it contains, is among its branches.
+
+Two names are especially closely associated with the Living: one insofar as He is perfection itself and its source; another insofar as He apprehends perfection as a complete whole. The first is **the Self-subsisting** (*al-Qayyūm*), meaning that He subsists through Himself and every thing subsists through Him. His inseparability from the Living is so strong that His name is mentioned only together with and within it. Some realized investigators therefore regard **the Living, the Self-subsisting** (*al-Ḥayy al-Qayyūm*) as one compound name, like a compound proper name, just as some have said of “the One, the One-in-Unicity.”
+
+### B2007 p. 50 · Subsistence, abiding, truth, and delegated care
+[Arabic source](https://ablibrary.net/book_content/b/9606/50?lang=ar)
+
+The other of the two names is **the Governor** (*al-Mudabbir*), who witnesses the whole and totality of every affair on which its particular parts and details depend.
+
+From **the Self-subsisting** arises **the Abiding** (*al-Bāqī*), who remains established and enduring when destruction and annihilation overtake the descriptions, accidents, determinations and relationships that become attached to the very reality of His existence. All these perish and disappear, while the very reality of His existence remains. It had faced the realities of possible things, and through that confrontation those accidents and relations were attached to it. What had no beginningless reality perishes, and what never ceased to be remains—namely His Face confronting generated things, as explained already. God says, “Do not invoke another deity beside God: there is no deity but Him. Every thing perishes except His Face. His is the judgment, and to Him you return” (Qurʾān 28:88), and “All upon it shall perish; the Face of your Lord, possessed of majesty and honor, remains” (Qurʾān 55:26–27). Hence arises the name **the Last** (*al-Ākhir*).
+
+From the Abiding also arises **the Real** (*al-Ḥaqq*), the one of two things that remains established. Strictly speaking it is a name of existence, which confronts possible reality—that is, nonexistence—with its receptivity and preparedness. Nonexistence vanishes, while what confronts it remains: everlasting, abiding existence. For this reason existence itself, considered as its universal outspread overflowing, is called **the Real through which every thing is created**, as in “We created the heavens, the earth, and what is between them only through truth” (Qurʾān 15:85).
+
+From the name Abiding comes **the Inheritor** (*al-Wārith*), to whom all possessions and disposals ultimately return as independent sovereignty when those to whom they were attributed have perished, in accordance with “Everything perishes except His Face.”
+
+From the Self-subsisting and the Abiding also arise **the Giver of life** and **the Preserver in being**. Among the names dependent on the Living is **the Ever-besought** (*al-Ṣamad*), to whom needs are directed and in whom sovereignty culminates, to whom people turn for the fulfillment of wants, for He is fully able to supply them and needs no other.
+
+Since the Self-subsisting subsists through Himself and makes all else subsist, He independently undertakes every affair. If a servant entrusts his affairs to Him, He undertakes them on the servant's behalf, condescending through mercy and kindness, as He had undertaken them independently. At that point He receives the name **the Trustee** (*al-Wakīl*), a branch of the Self-subsisting.
+
+Know next that the reality of life is the form of the first receptivity: identical with knowledge of the most holy Essence, the first determination, and original love. The manifestation of that original love—
+
+*Page boundary: it is identified with the will-to-bestow on p. 51.*
+
+### B2007 p. 51 · Divine will as the Throne of disclosure
+[Arabic source](https://ablibrary.net/book_content/b/9606/51?lang=ar)
+
+—in the second determination is the reality of **divine will** (*mashīʾa*), which gives all realities the name “thing” and the reality of thinghood. Just as the second determination manifests the first, and life manifests the first receptivity, so divine will is one of the attributes most properly inseparable from life, which is receptivity to every perfection.
+
+The name Living comprehends all names universally and collectively; will, however, assigns to each its specific judgment and perfection and orders all of them, making one prior or posterior to another in nobility, rank, universality or particularity, originality or derivation. Knowledge comprises the things known, while will orders them and assigns some precedence in rank and existence.
+
+Since will is among the most proper concomitants of life, which is—as we have said—receptivity to every appropriate perfection, **the outward, all-merciful existential self-disclosure**, as the source of every perfection and its manifestation in receptive loci according to their capacities, is disclosed only within will. Hence **will is its Throne**.
+
+Shaykh Abū Ṭālib, perceiving that will must universally accompany the locus of disclosure—since it discloses to whomsoever it wishes, wherever and in whatever locus it wishes, or without a locus if it wishes—said: “Its Throne is His will.” Divine will subsists through holy knowledge related to the most holy Essence; it is a form of one of the considerations of oneness, identical with knowledge there. Knowledge, inasmuch as its benefit is universal and its effects all-pervading, is frequently figured by **water** because of their close correspondence.
+
+Do you not see how Ibn ʿAbbās interpreted “He sent down water from the sky, and the valleys flowed according to their capacities” (Qurʾān 13:17), saying: “The water is knowledge and the valleys are hearts”? Thus the Qurʾān says, “His Throne was upon the water” (11:7). His Throne is His will, whose subsistence and realization are in essential knowledge identical with the Essence. Will is a relation with no establishment or actuality except through, from, and within this knowledge. Know this; God is the Guide.
+
+After the Living among the seven original names comes **the Knowing** (*al-ʿAlīm*). Everything that the Living apprehended collectively and universally, the Governor ordered, and divine will made into distinct things among the considerations of oneness and assigned particular judgments and meanings, appears to the Knowing as articulated and distinct.
+
+If what appears to knowledge is the Essence itself through forms of the considerations of oneness, without describing these forms as others, the Knowing is called **the Outward** (*al-Ẓāhir*). If the forms that appear are not qualified as self-identical or other, and their relationship to inwardness is stronger while they appear without intermediary, there arises from the Knowing **the Aware** (*al-Khabīr*). If their relation to outwardness is stronger and they possess an intelligible or formal configuration appearing to the Knowing through a light issuing from Him and connected to them, there arises from Him the name—
+
+*Page boundary: “the Seeing” on p. 52.*
+
+### B2007 p. 52 · Fourteen names branching from the Knowing
+[Arabic source](https://ablibrary.net/book_content/b/9606/52?lang=ar)
+
+—**the Seeing** (*al-Baṣīr*). If what appears to the Knowing has a relation to manifestation, namely breath, and a relation to inwardness, namely the meaning contained within that breath, and a relation of turning toward receptivity for this meaning through something joining them, called speech, there arises **the Hearing** (*al-Samīʿ*).
+
+The Hearing and Seeing, when considered as arising from knowledge insofar as knowledge is identical with the Essence at the first rank, are **essential names and Keys of the Unseen**; when considered as arising from the Knowing at the second rank, they are **names of attributes**. Likewise, the One and One-in-Unicity, when their realization is considered at the first rank, are essential names; otherwise, they are attributive names branching from the Living, as explained earlier. The same applies to the Speaking and the Strong. Keep this well in mind, for it is extremely useful.
+
+Insofar as the Knowing encompasses everything appearing to Him, so that His capacity embraces everything without one thing crowding out another, there arise **the Encompassing** (*al-Muḥīṭ*) and **the Vast** (*al-Wāsiʿ*). When one considers the Knowing's presence alongside what appears to Him, without any possibility of its absence from Him, and the disclosure of another that verifies what is manifest to Him, there is determined in one sense **the Witness** (*al-Shahīd*).
+
+From His encompassing what is outward and inward in what appears to Him, and what belongs to it, so completely that He cannot lose it, there arises **the Finder** (*al-Wājid*). From the appearance to Him of the inward aspect of everything through its all-pervading character, there arises **the Subtle** (*al-Laṭīf*). From the Knowing's unveiling of that which should remain hidden from others among the inner judgments of what appears to Him, there arises **the Light** (*al-Nūr*).
+
+From the full manifestation to Him of every thing, and of its defects, together with the care to safeguard it against those defects, arises **the Watchful** (*al-Raqīb*). By securing the foundation on which what appears to Him becomes manifest, strengthening its manifestation, there branches **the Wise** (*al-Ḥakīm*). From the appearance to Him of a thing and what opposes it, while the consequences and predominance of the opposing thing are warded off, arises **the Preserver** (*al-Ḥafīẓ*).
+
+Inasmuch as what appears to the Knowing is manifest to Him outwardly and inwardly, so that no hidden aspect of a thing's identity nor any outward sign remains concealed, and His witnessing and testimony are complete knowledge, there arises **the Guardian-Witness** (*al-Muhaymin*). Inasmuch as the appearance of what is known gives it security against hiddenness and ignorance and the injuries they bring, there arises **the Giver of Security** (*al-Muʾmin*).
+
+These are **fourteen names** whose relationship and derivation belong specifically to the Knowing, while the other names can also participate in derivation from this and the other principles.
+
+As for **the Willing**, it seeks and inclines toward specifying a thing through existence or nonexistence, through precedence or posteriority, or any meaning and judgment, while what is sought is manifest to it in all the requirements of its reality, such as receptivity, preparedness, beginning and end—
+
+*Page boundary: the attribution of other names to will continues on p. 53.*
+
+---
+
+**Critical-status note:** The varying senses of *ʿilm*, *wujūd*, *mashīʾa*, and names under the first versus the second determination have been retained rather than replaced with a fixed scholastic equivalent. Qurʾānic quotations and reported sayings are translated as they occur; independent hadith authentication and manuscript collation are not claimed.
+
+
+---
+
+## New English working translation of consecutive B2007 pp. 53–60
+
+**Editorial control:** Every page is sourced to the Beirut 2007 digital Arabic and presented in order without replacing the intervening source argument with summaries. Qurʾānic references and the author's attributed reports are preserved, with the modern publisher's footnotes omitted. This remains an **uncollated research translation** rather than a definitive Arabic–English critical text.
+
+### B2007 p. 53 · Guidance, misguidance, awakening, nearness, and determination
+[Arabic source](https://ablibrary.net/book_content/b/9606/53?lang=ar)
+
+Insofar as the Willing inclines to manifest the mark of knowledge amid the darkness of hiddenness, the judgments of possibility or the multiplicity of nature, there arises **the Guide** (*al-Hādī*). That mark of knowledge may be the original disposition upon which human beings are formed, through receptivity; or the discerning intellect that distinguishes the good and evil of an ultimate outcome, perfected by knowledge of revealed law which discloses the ends of matters and their benefit or harm. Such knowledge brings those traveling the path of triumph and salvation to the origin of light and unity.
+
+Insofar as the Willing inclines to conceal these markers, because the judgments of possibility and natural multiplicity or hidden darkness predominate over certain entities, and because their essential receptivity to the manifestation of knowledge is weak, the straight road of return to the origin of light becomes obscure to them. Hence arises **the One Who Leads Astray** (*al-Muḍill*).
+
+From the inclination to bring near the paths of seekers traveling toward Him, in accordance with “To Him the whole affair returns” (Qurʾān 11:123), arises **the Rightly Directing** (*al-Rashīd*).
+
+From the inclination to stir something lying still in a state, quality, or condition—such as sleep, death, or any other—and move it toward a different state or quality, such as waking or life, arises **the Raiser** (*al-Bāʿith*).
+
+From the inclination to bring a thing to perfection by removing impediments and disagreeable matters from it, with an established inclination that does not change when a contrary attribute or judgment appears from it, arises **the Loving** (*al-Wadūd*).
+
+From the inclination to remove intermediaries between one Presence among His comprehensive Presences and a thing, bringing the thing so near that it is immediately next to Him without intermediary, and ultimately showing that nearness to it, arises **the Friend or Protector** (*al-Walī*), in respect of the Real—and also for the thing which receives that witnessing from Him.
+
+From the inclination to cause matters to occur contrary to the sequence suggested by the outward wisdom connected with causes—bringing forward or postponing an event beyond the time in which it would occur when outward causes alone are considered—arise **the One Who Brings Forward** and **the One Who Postpones** (*al-Muqaddim*, *al-Muʾakhkhir*). Among their judgments is “I do not know what will be done with me or with you” (Qurʾān 46:9).
+
+From the inclination to assign the known measure of each thing—its ordering, configuration, time, quality and quantity—so that knowledge relates to it only under that determination, arises **the Determiner** (*al-Muqaddir*).
+
+### B2007 p. 54 · Restraint, harm, abasement, elevation, and acceptance
+[Arabic source](https://ablibrary.net/book_content/b/9606/54?lang=ar)
+
+Strictly speaking, the name **the Determiner** arises from divine will (*mashīʾa*), from which intention or willing (*irāda*) itself arises, and so belongs among the names dependent on the Living.
+
+Insofar as the Willing inclines to repel what opposes the realization of a thing—its contrary, rival, or opponent, whether in substance, attribute, state, or otherwise—and prevent the consequences of opposition from appearing between them, there arises **the Preventer** (*al-Māniʿ*). From the inclination to disclose the effect of that opposition and make one of the opponents predominate over the other arises **the One Who Causes Harm** (*al-Ḍārr*). This judgment is most conspicuous in the contrast between guidance and leading astray.
+
+From the inclination to assign to certain things a lowering of honor, rank, wealth, eminence, condition or means of living, in this world or the next or both, and to others an elevation in these respects, arise **the Abaser** and **the Exalter** (*al-Khāfiḍ*, *al-Rāfiʿ*). The Determiner may also participate in bringing these names forth.
+
+From the inclination to seize and retain the totality of that by which something is sustained and prevent it from freely dispersing—for example, retaining the water and air sustaining a tree instead of letting them diffuse through its parts; holding back the breath instead of releasing it; restraining the soul from diffusing through its outward faculties and from indulging its appetites; or holding the totality of one's wealth back from meeting needs through miserliness—there arises **the Withholder or Constrictor** (*al-Qābiḍ*).
+
+By the contrary inclination to furnish whatever sustains a thing, releasing and spreading it throughout the corresponding cases, there arises **the Expander** (*al-Bāsiṭ*).
+
+From the inclination to single out a thing for a judgment based on the appearance of some goodness under a **specified aspect**, not goodness unqualifiedly, that goodness being a perfection of the thing under that aspect, arise **choosing** and the name **the Chooser** (*al-Mukhtār*). Although the name does not occur in revelation, the act and its effect do.
+
+From the inclination toward something under a judgment whose conformity to the object, or to an existent or quasi-existent judgment, is agreeable according to revelation or nature, arises **contentment** (*riḍā*). In relation to the Real, this belongs under the Guide.
+
+From the inclination to exact recompense for a judgment appearing in one thing through a judgment appearing in another, arises the reality of **anger** (*ghaḍab*), though revelation does not supply a separate name derived from it. It is among the results of the judgments of—
+
+*Boundary: the relation of anger to misguidance and retaliation continues at p. 55.*
+
+### B2007 p. 55 · The Avenger, the Praiseworthy, the Thankful, and the Reckoner
+[Arabic source](https://ablibrary.net/book_content/b/9606/55?lang=ar)
+
+—**the One Who Leads Astray**, whose manifestation is opposed by the judgments of **the Guide**, so that the Willing brings forth an inclination to retaliate, for the sake of the Guide, against what the judgments of the One Who Leads Astray have produced in the one who receives them. This occurs only after excuses have been exhausted and proof established.
+
+From the inclination to take people to account after excuses have been exhausted, using the strongest overpowering force the servant can imagine among punishments, and thereby exacting satisfaction for some judgments of the names from others, arises **the Avenger** (*al-Muntaqim*). These names all depend on the Willing.
+
+As for **the Speaking** (*al-Qāʾil*): insofar as He mentions Himself and all the outward and inward perfections belonging to Him, without any deficiency or blame whatsoever, there arises **the Praiseworthy** (*al-Ḥamīd*) in the sense of *the One Who Praises*. In the sense of *the One Praised*, however, this name branches from the Living, as stated before.
+
+Insofar as He mentions Himself and others, and what extends from Himself to the loci of manifestation of His perfections through favor and beneficence, and those loci receive the capacity to perform the duties owed for them, there arises **the Thankful** (*al-Shakūr*). In reality He thanks none but Himself, in accordance with “Whatever blessing you possess is from God” (Qurʾān 16:53): every blessing, including acceptance and being granted success, falls under this. Thus He is both the One Who Thanks and the One Who Is Thanked.
+
+Insofar as He answers those who ask and responds to their invocations—when they say “My Lord!” answering “At your service, My servant!” as reported—and fulfills their aims sooner or later, inevitably, there arises **the Responsive** (*al-Mujīb*).
+
+Insofar as the Speaking completes the enumeration of numbered things, up to a limit or without limit, in order to deliver various forms of sustaining aid to every one of them in creation and preservation, and to give each, noble or humble, what is due according to its entitlement, there arises **the Enumerator** (*al-Muḥṣī*). Enumeration without limit belongs to Him alone, exalted and holy, while limited enumeration is shared by some creatures in certain respects.
+
+Insofar as He counts every numbered being and describes it minutely and comprehensively so as to supply its due sufficiency and requite its acts appropriately in this world or the next, there arises **the Reckoner** (*al-Ḥasīb*). Considered differently, the Reckoner may be a branch of the Living, if derived from *ḥasab*—honor and eminence—which involves a perfection sustained by the Living.
+
+Insofar as He reports and testifies with perfect knowledge of Himself, saying, “God bears witness that there is no deity but He,” and testifies concerning His angels that they do not disobey Him and do what—
+
+*Boundary: the list of testified realities continues at p. 56.*
+
+### B2007 p. 56 · The Witness, the Creator, and the difference between power and strength
+[Arabic source](https://ablibrary.net/book_content/b/9606/56?lang=ar)
+
+—they are commanded to do; and concerning His books that they are light and guidance; and concerning His messengers that they acknowledged the covenant taken from them, whereupon He said, “Bear witness, and I am with you among the witnesses” (Qurʾān 3:81); and concerning believers, “Among the believers are men who have been true to what they covenanted with God: some have fulfilled their vow and others await, without changing their commitment” (Qurʾān 33:23)—some fulfilled their commitment in this life, discharged what they owed and attained their aim; others await its completion in the hereafter, yet none has altered the covenant. In respect of this reporting and testimony there arises from the Speaking **the Witness** (*al-Shahīd*).
+
+The origin of **bringing into existence** belongs to the Speaking, in accordance with “Our word to a thing when We will it is only to say to it ‘Be!’ and it is” (Qurʾān 16:40). The Powerful contributes to it only the sustaining efficacy of bringing the effect about. Accordingly, insofar as **the Creator** (*al-Khāliq*) signifies the One Who Causes Existence, it is more appropriate to assign it as a branch of the Speaking.
+
+The Arabic word *khalq* has three meanings. First, **measuring or determining**, as when one says “I fashioned the sandal” in the sense of cutting it to a pattern. Second, **bringing together**, whence *khalīqa* for the aggregate of created beings. Third, **cutting**, as in “I fashioned this according to that,” meaning cutting it to a specified measure.
+
+In the first sense, the Creator belongs among the names dependent on divine will, which falls within the Living. In the second, the meaning is the joining of existence with quiddity, or spirit with body, by bringing into existence and formation. Then the Creator branches from the Speaking, since He gathers by saying “Be!”
+
+In the third sense, His action consists in cutting off a measured portion of the rays of the unconditioned light of existence and attributing it to a cosmic reality by removing its unrestricted relation to nondelimitation. In this sense the Creator depends equally on the Powerful, Willing, Speaking, Knowing, Living, Generous, and Equitable; no such existential act can occur at all without the orientation, influence and judgment of them all.
+
+**The Powerful** (*al-Qādir*) possesses power, meaning the ability to produce an effect and perform an action at the moment of undertaking it. Before it is undertaken, however, this is an inward **strength** (*quwwa*). When it is conceived at the second rank in the measure appropriate to the judgment and relation belonging to it, and in accordance with what will has specified, it is called **power** (*qudra*). Power is outward, strength its inward reality.
+
+The reality of power is that through which what is willed becomes manifest from knowledge into concrete actuality, without intermediary or causal means. Strength is that through which the powerful one finds himself able to determine what is willed, even though he has not yet undertaken it. **The Strong** (*al-Qawī*) thus belongs from one aspect among the names dependent on the Living, and in another aspect stands beyond it, as we explained in the second chapter.
+
+Branches of the Powerful include **the Firm** (*al-Matīn*), who is independent and perfectly able to bear every—
+
+*Boundary: the object and consequences of this power continue on p. 57.*
+
+### B2007 p. 57 · The Originator, the Overpowering, and the Compeller
+[Arabic source](https://ablibrary.net/book_content/b/9606/57?lang=ar)
+
+—judgment and effect, and to give firm realization to every affair that is willed to appear through the concerted manifestation of the most beautiful names and their mutual support in the judgment of bringing into being and otherwise, in such a way that no weakness or defect can enter.
+
+Among the names branching from the Powerful is **the Originator** (*al-Bāriʾ*), who is able to bring about an effect while giving exact attention to the determination, joining, and measuring performed, and to completing the inward preparedness to receive the form that **the Fashioner** (*al-Muṣawwir*) undertakes to disclose, in accordance with the determination of will and intention. This involves perfecting the plan, strengthening the parts and their sustaining principles, and giving the form its due. Thus the Creator determines all forms; the Originator provides the spiritual and imaginal forms; and the Fashioner the sensible forms.
+
+**The Originator of the heavens and the earth**, **the Innovator** and **the Inventor** mean the one who brings into existence **without a previously given model**—that is, without a model external to divine knowledge. For every existent is created according to a model already contained within eternal essential knowledge, which is not extracted from another or from anything outside itself, either originally or derivatively. This differs from human innovation and invention: all human knowledge is receptive and derived from what is external. These names accordingly depend from one perspective on the Knowing, and from another on the Powerful.
+
+**The Overpowering** (*al-Qahhār*) possesses complete efficacy and dominance over the outward and inward aspects of every affair, through elevation and causation. All besides God are conquered and overcome by His judgment as He prevails over them in successive states: existence and nonexistence; knowledge and ignorance; life and death; obedience and disobedience; graciousness and overpowering. He acts through and upon them until, in the end, His unity overcomes first their multiplicity of judgments and their imagined ownership, then their plurality of attributes, and finally their plurality of selves and determinations, through His one existence. This is the meaning of “To whom belongs sovereignty today? To God, the One, the Overpowering” (Qurʾān 40:16), and “He is the One, the Overpowering” (13:16). This name derives from the Powerful.
+
+**The Compeller** (*al-Jabbār*) restores things after alteration to their praiseworthy state through a kind of irresistible predominance and efficacy. The element of power and dominance entails reverent dread and greatness, whence *jabarūt*. The report, “Until the Compeller places His foot in it”—that is, Hell—and it says, “Enough, enough,” means that He sets it right and returns it by overpowering from its raging state to stillness, disclosing the greatness concealed within His mercy that prevails over anger—
+
+*Boundary: interpretation of this report continues on p. 58.*
+
+### B2007 p. 58 · The Compeller, Sovereign, Mighty, and All-powerful
+[Arabic source](https://ablibrary.net/book_content/b/9606/58?lang=ar)
+
+—exalted is He. It may be that “His foot” figuratively designates the **last form** among the forms of His perfect determinations and universal, all-comprehensive modes of manifestation—exalted and holy—for the foot is the final member of a form. This may concern fulfillment of the oath in “There is none among you but shall come to it” (Qurʾān 19:71), or the elimination of the most hidden remainder of relative deviating judgments arising at the extremities of His comprehensiveness from the detailed parts that compose the whole, or the granting of what is due to everyone by virtue of the perfection of true comprehensiveness. A similar meaning is suggested by the reported saying on Hell's behalf, “Pass, O believer, for your light has extinguished my flames.”
+
+Understand this. The name Compeller in respect of majesty and reverent awe belongs among the names of the Living; in respect of restoration and rectification it belongs among those of the Powerful.
+
+Another branch is **the Sovereign** (*al-Malik*), who possesses perfect prevalence, dominion and independent governance of His kingdom as He wills, preventing its members from oppressing one another, requiting each according to deeds—good with good and evil with evil—looking after their welfare, giving each what is due and securing it for them.
+
+This world is the **abode of causal means and intermediaries** in all affairs. The attribution of judgments and effects to causes is outward, while the attribution to the One Who Causes Causes remains inward. The Real's exclusive sovereignty and independence are therefore concealed in this world, enabling creatures to claim a share in sovereignty or even independence in it.
+
+The hereafter, however, is the abode of unveiling, where everything appears as it really is. His sovereignty therefore becomes evident, purified from all imagined participation, in the words “To whom belongs sovereignty today? To God, the One, the Overpowering” (Qurʾān 40:16). Thus His kingship is especially associated with the **Day of Judgment**, though no prevalence or sovereignty belongs to anyone but Him in either abode.
+
+Branches of the Sovereign include **the Mighty** (*al-ʿAzīz*), the one who prevails against every opponent, against whom the defeated find no defense or escape; nothing can render Him incapable of enforcing any of His judgments, and He can be approached only through Himself.
+
+Another branch is **the All-powerful** (*al-Muqtadir*), able to influence and act through causes and intermediaries, such as spirits and angels, analogous to a king's power exercised through soldiers and helpers. For this reason *Muqtadir* is joined with *Malīk* in “At a seat of truth, with a Sovereign All-powerful” (Qurʾān 54:55).
+
+### B2007 p. 59 · The Majestic Sovereign and Owner of Sovereignty
+[Arabic source](https://ablibrary.net/book_content/b/9606/59?lang=ar)
+
+Among the names depending on **the Sovereign** is **the Glorious** (*al-Mājid*), who is the utmost limit of honor, kingship and extent of dominion, beyond which no increase is possible. Hence the authentic divine report says that when the servant recites “Master of the Day of Judgment” (Qurʾān 1:4), God replies, “My servant has glorified Me.”
+
+Another dependent name is **the Judge** (*al-Ḥakam*), who decides between disputants, rightfully transferring to one what is in the possession of another, and who is able to satisfy the one against whom judgment is given because He controls the keys to outward and inward things. No other judge can necessarily satisfy both disputants. He alone is Sovereign, Judge and Just.
+
+The Sovereign's branches also include **the Governor** (*al-Wālī*), who directly undertakes governance through all-encompassing knowledge, setting right the condition of those governed, judging accurately and making His judgment effective. No one can reverse His judgment or appeal against it.
+
+Likewise **the Supremely Exalted** (*al-Mutaʿālī*) is He whose judgment cannot be overturned by any argument or contrary ruling supported by proof. Whoever attempts to repel His judgments by a proof finds his proof rendered void in opposition to His. He is exalted beyond every proof that would withstand His argument, or every judgment that would defeat His own.
+
+Another dependent name is **Owner of Sovereignty** (*Mālik al-Mulk*). He owns the very selves of those whose affairs He administers and whose conditions He establishes. He governs them as an **owner** governs both outward and inward reality, unlike worldly kings, who rule only outward forms. All forms belong to Him, as do spirits and hearts. He owns His kingdom as He exercises sovereignty over His kingdom, disposing of hearts as He disposes of forms. This is alluded to in “Glory be to Him in whose hand is the *malakūt* of every thing” (Qurʾān 36:83).
+
+Among these names is **Possessor of Majesty** (*Dhū al-Jalāl*), who possesses inward elevation, so that only whom He wills is chosen for nearness to Him. He is too majestic to be reached through striving or acquisition or for anything to be attributed to Him—
+
+*Boundary: the distinction from Possessor of Honor continues on p. 60.*
+
+### B2007 p. 60 · Descent and return, life and death, patience
+[Arabic source](https://ablibrary.net/book_content/b/9606/60?lang=ar)
+
+—in any respect. Thus He is present with creatures in every condition, existing in attribute yet separate in Essence.
+
+**Possessor of Honor** (*Dhū al-Ikrām*) is another dependent name: He manifests gentleness, blessing, and honor to His servants through bringing into existence, sustaining existence, setting affairs and states right, caring for welfare, and granting good recompense in this world and the next. God says, “For those who do good there is the most beautiful reward and an increase” (Qurʾān 10:26).
+
+Among the names depending on the Powerful is **the Initiator** (*al-Mubdiʾ*). He manifests creation by causing it to descend from the world of power—of manifestation and hiddenness without intermediary—down toward the world of wisdom, where appearance proceeds through intermediaries and causes, stage after stage and rank after rank, crossing the ranks of deposit and settled residence until the attainment of mature age.
+
+He then hands them over to **the Restorer** (*al-Muʿīd*), who returns creation, stage by stage, to the rank from which its descent began. God says, “God created you in weakness, then after weakness gave strength, then after strength gave weakness” (Qurʾān 30:54), and “As He began you, you shall return” (7:29). Every thing returns to the divine name from whose Presence its existence became first determined. The Restorer delivers it back to the name from which the Initiator first received that existence, under the rule of “God commands you to render trusts to those entitled to them” (4:58).
+
+Other dependent names are **the One Who Grants Honor** and **the One Who Humbles** (*al-Muʿizz*, *al-Mudhill*). The former gives prevalence, strength and effective power to those prepared for it, to the highest degree of their competence and predominance. The latter lowers and abases those who deserve it by their reality, action, or acquisition.
+
+Another branch is **the Giver of Death** (*al-Mumīt*), able to withdraw the means by which a thing attains its perfection, at the boundary where its completion has reached its appointed limit. The least of such cases is making the earth die in autumn; then the death of an animal; then that of the human being. Human death has several kinds: the bodily death caused by dying or being killed; the death of the heart through hardness, from the life of the original nature; and the death of the commanding soul through spiritual discipline, opposition, and struggle. In that last case the heart is brought to life with **a life into which death can never enter**.
+
+Another dependent name is **the Patient** (*al-Ṣabūr*), whose perfect power enables Him to persist in bringing every thing undertaken to its completion without weariness or incapacity, and to grant respite to anyone opposing Him, though fully able to repel or remove him, so that proof and excuses may be completed against him.
+
+---
+
+**Terminological remarks:** Farghānī's distinction between an initiating, intermediate descent through causes and the absolute source of existence is retained; it is not silently reduced to modern occasionalism or Thomistic secondary causation. The names related to harm, vengeance, and Hell are interpreted in his own metaphysical vocabulary, not offered as claims independently established by experience. The translations of reported traditions require a separate graded authenticity audit.
+
+
+---
+
+## Consecutive English working translation · B2007 pp. 61–68
+
+**Scope:** Eight consecutive authorial pages of the Beirut 2007 digital text, directly following p. 60. Each page is anchored to the Arabic source; modern editorial footnotes are excluded. Transcription and translation require further historical-print and manuscript collation. Provisional headings are the editor's.
+
+### B2007 p. 61 · The Generous, the Noble, the Forbearing, and the Forgiving
+[Arabic source](https://ablibrary.net/book_content/b/9606/61?lang=ar)
+
+As for the name **the Generous** (*al-Jawād*), it denotes the one who is able to give preference to others and actually bestows every perfection upon anyone deserving it through preparedness and state, or through request and petition.
+
+Such bestowal occurs in seven kinds. **First**, by the gift of existence. **Second**, by the continuance of existence. **Third**, by the breathing forth of spirit and life. **Fourth**, by spiritual sustenance, such as guidance and faith and their degrees—repentance, renunciation and similar stations—knowledge and its degrees, and the gift to a servant of exalted character traits such as pardon, forbearance and mercy. **Fifth**, by making the effects of those character traits appear within him and treating him in accordance with them. **Sixth**, by the psychic sustenance of rank, eminence, dignity in both states of life, acceptance in people's hearts, and the like. **Seventh**, by bodily sustenance: enjoyable food, beautiful garments, fitting spouses, wealth, treasuries, stores and an agreeable life.
+
+All these forms of giving are included within generosity and appear from the Generous, who can also perform excellently in bringing things into being, in speech and deed. What belongs especially to this name among these things is the initial gift of existence and excellence in the original act of bringing into being; the names branching from it participate in the other kinds, each being particular to one or more of them.
+
+**The Noble** (*al-Karīm*) is among the most comprehensive of its branches in judgment and effect. Nobility includes honor and eminence following the performance of good, relief of the distressed, and attainment of what merits praise, as in “A noble messenger came to them” (Qurʾān 44:17). It includes lofty station and distinction, as in “He prepared for them a noble reward” (33:44). It includes taking precedence in benevolence, pardon, overlooking wrongs, forbearance, forgiveness, and every kind of benefit, goodness and favor. One speaks of “noble land,” rich in plants, excellent pasture and sweet water without the toil of anyone; or says “His deeds are noble.” Nobility likewise embraces the skillful performance of every form of good and the assuming of worthy attributes in action and word, as in “The noblest of you before God is the most Godwary” (49:13).
+
+The name Noble—exalted is His magnificence—therefore includes in its meanings all the meanings falling under the Generous, **except the original bestowal of existence and continuance** and the excellent fashioning of created things; those belong specially to the Generous.
+
+Another dependent name is **the Forbearing** (*al-Ḥalīm*), who out of generosity refrains from taking a guilty servant to task although it is deserved, knowing the excuse of the servant's ignorant offense, and grants even a persistent offender respite for a wisdom and interest concealed from everyone but Him.
+
+Another is **the Much-forgiving** (*al-Ghafūr*). The root meaning of *ghafr* is covering a thing to protect it from what would disgrace it. The Much-forgiving continually receives aid from its source, the Generous, so as to confer special mercy—
+
+*Boundary: the function of special mercy continues on p. 62.*
+
+### B2007 p. 62 · Forgiveness as merciful concealment
+[Arabic source](https://ablibrary.net/book_content/b/9606/62?lang=ar)
+
+—derived from the Presence of *al-Raḥīm*, covering the deviation called **sin** (*dhanb*) which has appeared in the servant from whom an evil or ugly action has issued. The word recalls the animal's tail (*dhanab*), the place where shameful parts may be exposed. Mercy thus protects the servant from the disgrace of the appearing consequence of the ugly action, whether sooner or later, in the form of pain, punishment, or the like.
+
+Since creatures, through their selves, natures and the judgment of their possibility, are loci of defects, ugliness and evils, the Real continuously conceals what issues from them outwardly or inwardly, knowingly and intentionally or otherwise, by the effects of His mercy. These effects protect them against the consequences of what they do, whether reproach, blame, suffering or punishment, now or afterward.
+
+For this reason the names most often occur in intensified forms: **al-Ghaffār** for the universality of repeated covering and **al-Ghafūr** for its many instances. One of the judgments of the universality of the Ever-forgiving (*al-Ghaffār*) is that He conceals from sinners His hidden overpowering power so that His wisdom may be completed; from the obedient He conceals His hidden bestowal of success by attributing acts, works and recompense to them in kindness; then from His friends He conceals all these so that they witness everything as a favor from Him. He covers from them the judgments of their own souls and even the effects of their createdness, so that they are realized through Him and appear through Him, not through themselves.
+
+Another branch is **the Pardoner** (*al-ʿAfūw*), who through favor, generosity and concern refrains from holding a servant accountable for offense or injustice whose judgment and effects are evident to Him and others, obliterating the effect and judgment entirely or in most respects.
+
+Another branch is **the Compassionate** (*al-Raʾūf*), who possesses the inward reality of mercy, tender-heartedness and kindness. Compassionate concern is the subtlest inward mercy proceeding from love and care; it inclines toward removing harms that the servant is too weak to bear and toward assisting him to attain desired things, benefits and things loved.
+
+Another branch is **the Ever-returning to Mercy** (*al-Tawwāb*), who repeatedly returns with special mercy, pardon, forgiveness, care, success and acceptance of repentance after having turned away from servants during their repeated sins and violations, when their capacity to receive the effects of that mercy is absent or concealed. Thus, “They forgot God, so He forgot them” (Qurʾān 9:67), meaning that as they turned away from His remembrance in transgressing, their receptivity to His turning toward them disappeared, so He was as one who turned away—
+
+*Boundary: the quotation from Abū Madyan follows on p. 63.*
+
+### B2007 p. 63 · The Bestower and the Opener throughout the ranks
+[Arabic source](https://ablibrary.net/book_content/b/9606/63?lang=ar)
+
+—from them. Shaykh Abū Madyan, may God be pleased with him, said, “The Ever-returning is the one who repeatedly returns to mercy; whenever you return, He returns.” [Farghānī then adduces a verse:] “From whichever direction the cup appeared, I stood to receive it.”
+
+Another dependent name is **the Bestower** (*al-Wahhāb*), who gives initially, without reciprocal payment or recompense, so that the recipient owns the gift once it is received in the most fitting way. Its full realization can occur only in the paradisal life, or in a gift whose consequence endures there, such as faith and success in virtuous action. Everything else in worldly life is a **trust or loan that must be returned**, not something the recipient truly owns.
+
+Another is **the Opener** (*al-Fattāḥ*), who first manifests goodness and amplitude after constriction and the closing of a gate. Opening is bringing goodness from the narrowness of hiddenness, revealing breadth and light from the constriction of the darkness of unarticulated unity.
+
+The first manifestation of this name occurs when the forms of spirits are unfolded in detail within the Preserved Tablet, after having been restricted in comprehensive inclusion: “Nūn, by the Pen” (Qurʾān 68:1). It then opens **imaginal forms** from the matter of the universal dust (*al-habāʾ*); **elemental forms** from the same dust and the supreme element; **mineral forms** from the closure of their first joining and composition from the elements; **plant forms** from the constriction of their material basis; **animal forms** from the narrowness of their materials; and **Adamic human forms** from the constriction of the combination of water and earth.
+
+It opens the receptivity of the womb or placenta of every female animal and human to the seed, after its prior closure. It opens the receptivity to animal or human form from the constriction of the embryonic lump. It opens the determination of the soul and the differentiation of its powers from the constriction of the undifferentiated source out of which its manifestation in the sensory world emerges to govern a balanced temperament. It opens the gate of birth and outward appearance in this world from the constriction of the mother's womb and the darkness of gestation.
+
+It opens the gate of **understanding and discrimination** from the constriction of veiling; the gate of **faith and Islam** from ignorance and the judgments of divine favor; and the gate of intellect, knowledge, and inference from created product to Creator, from the constriction of the dominion of imagination.
+
+Its most complete opening and the most widely beneficial in effect is opening the gate through which **the heart is born from the constricted enclosure of the soul**. Higher and more perfect still is the **manifest opening** (*al-fatḥ al-mubīn*): the opening of divine self-disclosure and unveiling of the lights of the Real from the constriction of the curtains of createdness. There belongs sainthood to the Real. Beyond this, what the attributes reveal and what remains concealed is more worthy and better in my view.
+
+### B2007 p. 64 · Sustenance, sufficiency, enrichment, benefit, and goodness
+[Arabic source](https://ablibrary.net/book_content/b/9606/64?lang=ar)
+
+Another dependent name is **the Provider** (*al-Razzāq*), who supplies every existent form with sustenance derived from that which constitutes its original formation. Spiritual forms are sustained through sciences and acts of witnessing; bodily forms through appropriate nourishment. Every sustenance operates according to its own character, sustaining the form to which it belongs, prolonging it according to the purpose for which it was created, and bringing it to its allotted completion.
+
+Another is **the Sustainer in Due Measure** (*al-Muqīt*), who gives every existent exactly what suffices for its subsistence in nourishment and strength, neither deficient nor excessive. It falls under the Provider, who in turn depends on the Generous.
+
+Another is **the Rich or Self-sufficient** (*al-Ghanī*) when the word signifies the possessor of wealth and sufficiency in the meanings of the essential, attributive and act-related names. In this respect He is rich through those names and their judgments and effects, bringing into manifestation whatever relates to all name-related perfections: “There is nothing whose treasuries are not with Us” (Qurʾān 15:21).
+
+He is **the Enricher** (*al-Mughnī*) of any servants He wills, making those judgments and effects appear through and within them as existence, provision, continuance, knowledge, honor, nearness, eminence, bliss and all other things. Self-sufficiency and enrichment under this meaning thus branch from the Generous. But self-sufficiency understood as **absence of any need whatsoever** is among the negative essential names, not names of attributes.
+
+Another dependent name is **the Beneficial** (*al-Nāfiʿ*), who brings repose and what suits hearts, spirits, souls and bodily natures, collectively or individually, in this world, the next, or both. His benefit to **hearts** is through self-disclosures and acts of witnessing; to **spirits**, through gnoses, knowledge, and unveilings; to **souls**, through the fulfillment of hopes and desires and attainment of pleasures imagined, understood, or known.
+
+His benefit to **natures and bodies** comes through the kinds of sensible pleasure and comfort shared by animals: food, drink, clothing, sexual union, things seen, heard, and smelled. Some of these are mediated, others unmediated.
+
+Another is **the Benevolent** (*al-Barr*), who conveys benefits to His creatures through graciousness, mercy and solicitude without seeking payment, return, or compensation for any right of service, worship or servanthood they might have, but through initiating mercy, kindness and compassion while they do not even recognize it. All these names branch from the Generous.
+
+### B2007 p. 65 · The Equitable preserves comprehensive unity; the universal Lord
+[Arabic source](https://ablibrary.net/book_content/b/9606/65?lang=ar)
+
+**The Equitable** (*al-Muqsiṭ*) safeguards the comprehensiveness of all the names, together with that of the realities determining those names, whether original or derivative. Every name and reality among the roots and branches of the names and realities, down through their further branches, contains many further branches and gathers them into one. Indeed the very reality of the name is the **comprehensive unity of its branches**.
+
+For instance, the name Generous and the reality of generosity comprehensively unite the Noble and nobility; the Much-forgiving and the Ever-forgiving and their realities; the Pardoner and pardon; the Compassionate and compassion; the Ever-returning and repentance; and the Opener, Bestower, Provider, Sustainer, Rich, Enricher, Beneficial and Benevolent, together with opening, bestowal, sustenance, nourishment, wealth, enrichment, benefit and goodness.
+
+When one of these names or realities predominates and its judgment appears within that comprehensive unity, the influence of the Generous and the judgment of generosity remain concealed, while the influence of the prevailing name takes their place. **What preserves the unity of the entire collection is the Equitable**, together with its branch, the Just (*al-ʿAdl*).
+
+Its preservation of comprehensive unity—in which the words for names and their meanings are included—extends to all roots, branches and ranks of the names and realities, and to all cosmic realities and ranks. It preserves their middle position between necessity and impossibility, and the intermediacy between them, indeed even the first intermediacy between *wāḥidiyya* and *aḥadiyya*. Nothing at all falls outside its judgment, just as no name falls outside the judgment of the Living and the perfection it contains.
+
+**The Lord** (*al-Rabb*) includes several meanings that share a single designation. One is **owner**, as one says “lord of the house” for its owner. Another is **master**, as in “He is my lord; he has given me a good lodging” (Qurʾān 12:23). Another is **one who restores or sets right**, as in an expression meaning to repair a well with pitch. Another is **one close by who abides**, as in the verb for remaining at a place. Another is **one who nurtures**, through blessings, sustaining assistance and undertaking what conduces to the well-being of those under his lordship—the commonest usage, as when one says “I raised the child.”
+
+This name is therefore a **universal name**, pervading through all these meanings every universal and particular, original and derivative name down to its farthest branches, appearing within each in a manner appropriate to it. All cosmic realities depend upon divine realities—
+
+*Boundary: the account of general and particular Lordship continues on p. 66.*
+
+### B2007 p. 66 · The proper Lord of every determined reality
+[Arabic source](https://ablibrary.net/book_content/b/9606/66?lang=ar)
+
+—and arise from them, as we have explained. Whenever a person's human reality arises from some original divine reality, or any of its derivative realities through indefinitely many degrees of derivation, the existence ascribed to that person, appearing in spiritual, imaginal and sensory ranks, is determined from the Presence of a name whose determination is related to the divine reality from which the person's human reality came forth.
+
+That name first determines the person's existence, through which he appears in the world of spirits. It thereafter continues supplying him with existence as he descends until he appears as a particular, sensible human individual. **This name is his Lord**, governing his nurturing and the setting right of his affairs and states. It is his Sovereign, Master, near and enduring companion, and the source of his existential assistance at every moment through **continual new creation** (*al-khalq al-jadīd*).
+
+His point of return, final end, utmost aim and spiritual disclosures appropriate to his worldly conditions, together with his vision in the hereafter, pertain to that name and occur through it.
+
+There is, however, a subtle distinction that must be noted. **Lordship has two judgments: general and particular.**
+
+**General Lordship** occurs because the name *Allāh* has a general relation encompassing every world and rank and its inhabitants in both respects—the receptive reality and the existence appearing within it. Lordship attributed to *Allāh* is thus all-inclusive, as in “Praise belongs to God, Lord of the worlds” (Qurʾān 1:2) and “Your Lord is God” (7:54).
+
+Likewise the name *al-Raḥmān*, having a universal relation through existence alone, has a general Lordship, as in “Your Lord is the All-merciful” (20:90). Every subordinate name is under the Lord of its principal name in the general judgment, not in the particular.
+
+The **particular judgment** of Lordship is that every thing whose existence was first determined in the Presence of a name has that name as **its proper Lord**. Hence, according to Farghānī, scriptural reports of divine vision always speak of the vision of a Lord with a relation expressed: “Faces that day shall be radiant, gazing toward **their Lord**” (Qurʾān 75:22–23), and the Prophet's saying, “You shall see **your Lord**,” and analogous passages.
+
+Thus the source from which the existences of perfected prophets, messengers and saints are drawn is the sea of the **second self-disclosure**, insofar as its second intermediary reality includes all the original principles, each of which contains the realities of all the others, but with a concealed trace of its particular distinction. The second self-disclosure, under this specifically distinguishing trace, is the Lord of that—
+
+*Boundary: particular lordship of the perfected and the Muhammadan exception continues on p. 67.*
+
+### B2007 p. 67 · Muhammadan precedence and the image of converging seas
+[Arabic source](https://ablibrary.net/book_content/b/9606/67?lang=ar)
+
+—perfected individual. Those who approach the perfected among prophets, messengers and saints in receptivity, preparedness, comprehensiveness, universality, tasting and witnessing draw the source of their attributed existence from these same original principles, but insofar as their plurality, differentiation and particular effect are established, with a hidden trace of mutual inclusion rather than its complete reality, unlike the situation of the fully perfected. That name in its specific determination is the person's Lord.
+
+Those below this rank draw their existence from **branches of these seas**, or from rivers branching from their branches, or from the rivulets of such rivers, channels, pools, jars and cups, down to indefinitely many drops. As their predisposition determines their first existence, so it determines their final return.
+
+Our Prophet Muḥammad, may God bless him and grant him peace, has **the highest watering place**: the first self-disclosure, which is first his Light and second his Lord. It is the original principle and source, beginning, point of return and final end of every name and of all determinations in knowledge and existence.
+
+God says to him, “To your Lord is the utmost end” (Qurʾān 53:42), and “To your Lord is the return” (96:8). That is, every affair ends and returns to the first self-disclosure, which is your Light first and your Lord second. A similar meaning is indicated by “Say: If the sea were ink for the words of my Lord, the sea would be exhausted before the words of my Lord were exhausted, even if We brought another like it to replenish it” (18:109).
+
+His Lord, whose words are inexhaustible, is the **first self-disclosure**, which is what the pronoun “He” signifies and what the inward reality of the name *Allāh* indicates. All divine and cosmic determinations of names and attributes necessarily return to this end, for God says, “To Him the whole affair returns” (11:123).
+
+The **words** of this Lord are the essential names called the **Keys of the Unseen** and the realities indicated by pronominal names. These Keys are the principles of the seven leading names. The sea that is exhausted before such words are exhausted, and their inward foundation, is the **sea of the second self-disclosure**, from which the seven seas arise; these in turn give rise to rivers and rivulets whose determinations and words have no end in descent, and ascend again toward their origin.
+
+The drops return to the cups, the cups to the jars, the jars to the pools, the pools to the channels, the channels to the rivulets, and the rivulets to the seas—
+
+*Boundary: the ascent to the all-encompassing sea continues on p. 68.*
+
+### B2007 p. 68 · Overflow and return: the two directions of divine words
+[Arabic source](https://ablibrary.net/book_content/b/9606/68?lang=ar)
+
+—and the seven seas return to the sea of the second self-disclosure. They are exhausted and come to an end in returning to the **first self-disclosure**, the all-encompassing sea that is the drinking place of our Prophet Muḥammad, peace be upon him. The determination of this self-disclosure by its supreme names, which are its words, returns and comes to an end in the sea of **nondelimitation** and the innermost hidden pre-eternity.
+
+As for “And were seven seas to replenish it, the words of God would not be exhausted” (Qurʾān 31:27), its meaning—God knows best—concerns **descent**, which realizes the perfection of disclosure. The sea replenished by seven others is the sea of existence, but considered as existence **bestowed on and attributed to creatures**, receiving from the seven seas of the seven original names as they turn toward descent and the completion of disclosure, through the manifestation of the judgments of names and realities at the cosmic ranks.
+
+Existence, identical with the mercy embracing every thing and identical with *al-Raḥmān*, has **two aspects**. In the first, it bestows existence upon cosmic realities, disclosing the perfections relating to them. From it become determined divine names, principal and derivative, to each of which a judgment of bestowal is attributed, without any limit to their number, as we explained.
+
+In the **second**, existence is itself bestowed and attributed to created beings within the cosmic ranks. Existential determinations arise from it, each attributed to a cosmic reality, some principal and some subordinate. All are God's **words** connected with His everlastingness, whose reality is the negation of finality. Consequently God's words in the descending direction, as connected with everlastingness, are inexhaustible.
+
+In the direction of return, however, the bestowed determinations end in the branches of words proceeding from the Bestower: the names. Branches return to their origins; the origins return to the origin of origins, which is the **Lord of Muḥammad**, peace be upon him. The words of this gracious Lord are the Keys of the Unseen, ending in their inward reality, the eternal Presence, and the nondelimited hidden identity.
+
+This is indicated by “To Him is the return of you all” (Qurʾān 10:4). For the letter *hāʾ* joined with *wāw* generally signifies the Essence considered through the outward Presence of Identity, whose comprehensiveness is indicated by *wāw*. Without *wāw* it signifies the Essence considered through pure real unity, the Unseen of the Unseen.
+
+**Objection.** You may say: “The particle *law* (‘if’) expresses the impossibility of one thing on account of the impossibility of another. This would imply that the sea's being exhausted is impossible because the sea's becoming ink for His words is impossible. But on your explanation both occur. How can this be reconciled?”
+
+*Boundary: Farghānī's reply to the objection begins on p. 69; it must be read before assessing his argument.*
+
+---
+
+**Editorial remarks:** Page 68 contains a genuine *if–objection* concerning the particle **law** and the logic of the Qurʾānic counterfactual. It is not a decorative rhetorical question. The answer on p. 69 must be retained in full, not replaced by a generalized idea about infinitude. Throughout pp. 65–68, “its proper Lord” describes the divine name governing a creature's existential determination; it should not be collapsed into a denial of God's general lordship.
+
+
+---
+
+## Consecutive English working translation · Beirut pp. 69–76
+
+**Editorial standing:** New English working translation of the authorial Arabic in the 2007 Beirut digital edition, in printed page order. Modern editor's notes are excluded, while page-spanning sentences are marked. **Not independently proofread against the 1876 printing or manuscripts.** Headings describing topics are editorial; “Second foundation” and “Chapter” reproduce the author's organizational headings.
+
+### B2007 p. 69 · Reply concerning the particle law and the two senses of the sea
+[Arabic source](https://ablibrary.net/book_content/b/9606/69?lang=ar)
+
+**I reply:** We do not concede that the particle *law* expresses the impossibility of one thing merely because another is impossible. It can also express the occurrence of one thing because another occurs. Ibn Fāris says that *law* is a particle of supposition expressing the non-occurrence of something because another does not occur, **and its occurrence because another occurs**.
+
+The Prophet—may God bless him and grant him peace—said, “The Qurʾān has an outward and an inward,” and so on in the report. Each possesses its own special meaning. Under the outward meaning, the verse indicates that the sea commonly understood in its evident sense would not be exhausted before the words of the Lord were exhausted: that common sea cannot become actual ink for visibly writing the Lord's words in an outward script.
+
+Under the inward meaning, however, the particle *law* indicates occurrence on account of occurrence, just as we have explained. Understand and contemplate this difficult-to-attain chapter: you will acquire a treasure whose most precious jewels only the greatest among eminent men have obtained. God is the Self-sufficient, the Great, the Exalted.
+
+**End of the first foundation.** The short printed footnote, “This report was sourced previously,” belongs to the modern editor.
+
+### B2007 p. 70 · Second foundation: spirit and the world of malakūt
+[Arabic source](https://ablibrary.net/book_content/b/9606/70?lang=ar)
+
+**SECOND FOUNDATION: Concerning the judgments of the rank of spirits and the world of malakūt, and explaining how they are realized and determined from the Presence of jabarūt.**
+
+Since the hiddenness metaphorically designated as a treasure precedes in rank the disclosure expressed by “that I might be known”—the final cause of which is the realization of perfection through the names—and since the **original love** expressed by “I loved” joins the two, demanding that disclosure which is the foundation and origin of the determination of the Keys of the Unseen and, indeed, all essential and attributive name-determinations, every thing that becomes determined or disclosed, appearing as a divine or cosmic name, an attribute, or a divine or cosmic reality, at any rank whatever of the Real or the cosmos, becomes determined and disclosed by that original love and its demand.
+
+Original love pervades it and lies concealed inwardly within it. Whatever effect, judgment or orientation toward a perfection—whether conjectured or certain—is attributed to any thing whatever is attributed to it by reason of this permeation and inward presence. For no thing has an effect in another except by something inwardly present in it or proceeding from it. This is a foundation of the science of Reality.
+
+Since original love has as its ultimate end and desired object the entire perfection of **disclosure and self-vision** (*jalāʾ wa-istijlāʾ*), and since the perfection of disclosure concerns the distinct appearance of the divine and cosmic names and attributes, their existential and intelligible differentiations, throughout all ranks and worlds of the Real and creation, nothing is devoid of the effect of love, passionate attachment, seeking and yearning. Their effects accordingly appear in diverse forms: hopes, desires, attachments, aims, purposes and thoughts. In each thing they appear according to its reality, the attribute prevailing over it and the judgment of its particular rank.
+
+Thus, when the first determination and first disclosure, together with the Keys arising from it, had become realized; and thereafter the second determination, second intermediacy, and second self-disclosure were realized in the same manner; and the principal divine names emerged therein; and original love passed through the Keys into these principles and through them determined the remaining divine and cosmic name-branches, as explained in the preceding chapter—then the Keys manifested from within every divine name, attribute and reality according to its power of—
+
+*Printed page boundary: “effecting the intended action” is completed on p. 71.*
+
+### B2007 p. 71 · The second circuit of original love
+[Arabic source](https://ablibrary.net/book_content/b/9606/71?lang=ar)
+
+—causing an effect and performing the intended act; and from within every attributed cosmic reality according to its receptivity and preparedness. Original love emerged from the inward presence of the Keys pervading each of them in the form of seeking and yearning for the perfection concealed within it, whose manifestation in the ranks had been measured precisely for its disclosure. Thus existence, the world, the divine and cosmic names, attributes, and realities, principal and subordinate, became filled with seeking, love, desire, yearning, inclination and orientation toward perfection.
+
+From the names this seeking was directed to the appearance of their requirements and objects: the disclosure of what is known, willed, empowered, created, provided for, and the like. From within the cosmic realities it arose as yearning for the overflowing of concrete existence so that their judgments and the perfections concealed within them might be displayed.
+
+Every reality, through this seeking, yearning and supplication by its condition and preparedness, returns to the principle from which its determination issued, seeking aid from it and approaching through it to secure its objective. These requests and acts of recourse reach the **seven principles** on which the judgment and command to bring things into existence depend, and on which the satisfaction of the petitioners' needs and the success of their desired goal depend.
+
+These seven principles, responding to such requesting, turn back from the Cloud-like Presence toward its interior, the very centre of the second intermediacy, its comprehensive aspect that determines the principles and contains them. Through their own seeking and yearning they also return to their origins—the Keys—awaiting a particular authorization. These return to the Presence of Identity and the inward reality of the name *Allāh*, which returns to the Unseen of the Unseen.
+
+This is the **second intelligible circuit of original love**. Returning with authorization, it hastens downward, penetrating the Keys, then through them the inward reality of the principles, then their outward reality, then both sides of the second intermediacy and all the divine names within them to which influence and action are attributed.
+
+It pervades also the cosmic realities to which being affected, undergoing change and receptivity belong. Thereupon their resurrection, as it were, occurred; their longing doubled and extended toward attaining what they had reached out their wings and necks to seek.
+
+The name **the Living** rose to undertake the manifestation of universal governance and the presentation of the comprehensive affair, for the everlastingness of the original command to create. The name **the Knowing** came forward to articulate the details of that noble governance, presenting the particulars to which the judgment applies and the means completing the inevitable command. The name **the Willing** turned to order what the Knowing had differentiated within eternal knowledge, and to single out the reality of the Supreme Pen and the realities of the enraptured spirits for precedence in the command of witnessing and for readiness to receive the command—
+
+*Printed page boundary: the command to create and the other names follow on p. 72.*
+
+### B2007 p. 72 · The seven names and the first creation
+[Arabic source](https://ablibrary.net/book_content/b/9606/72?lang=ar)
+
+—to bring into being and to appear in the world of spirits **without intermediary**, while determining that the reality of the Preserved Tablet should receive existence **through the mediation of the Pen**, because of the strength of their connection.
+
+The name **the Speaking** undertook to carry the judgment directly into effect by the word “Be,” because the other names are included within it and turn toward it. The name **the Powerful** prepared to display the effect of the Speaking through efficacy, attributing what **the Generous** pours forth from the source of mercy and generosity to the reality of the Pen and the enraptured spirits without intermediary, and to the Tablet and the spirits it contains through the mediation of the Pen. This is by setting the reality of the receiver opposite the ray of the Sun of existence.
+
+The Generous hastened to pour forth existence so that the intended aim might be attained. **The Equitable** hurried to determine the locus and rank in which the created existent should appear, to establish intermediacy for each recipient that is to be witnessed, and to preserve the judgment of justice which assigns the middle position between necessity and impossibility.
+
+Because the permeation of original love extended to both sides—existence, with the divine names determined from it to which influence and action belong; and knowledge, with its relations to knowable contingent realities which receive and undergo change—the issuing of the command “Be” and the receiving of “and it is” can only be attributed to the **Keys**. Yet between them lies the veil of the name Speaking, with the determination of the reality of the receiver from the Keys at the second rank. Thus the command proceeds from Him and returns to Him.
+
+The first to receive the command to create **without intermediary** was the reality of the Supreme Pen, whose initial relation and manifestation to the first intermediacy, first self-disclosure, and affirmative essential names such as **the One** is stronger. At its rank stood the **enraptured spirits** (*al-arwāḥ al-muhayyamūn*), whose relation to the negative essential names such as **the Unique**, arising from the first disclosure, is even more fitting.
+
+Then **through the Pen** came the reality of the Preserved Tablet, whose relation as a manifestation to the second determination, second intermediacy, second disclosure, and their differentiated judgments is stronger and more evident. The realization, determination and differentiation of all of these at the rank of spirits—their designation as Pen, enraptured spirits and Tablet, and the spiritual forms contained within the Tablet—and their being described as created and other arose through the conjunction of the existential share poured forth upon and attributed to their realities. This attribution results from their confrontation with that share in the Cloud-like Presence at the meeting and orientation of the names, outwardly or inwardly, as explained earlier, and from the reflection of the rays of that existential share upon the judgments of the determining realities whose judgments belong to the rank of spirits—
+
+*Printed page boundary: the analogy of reflected rays continues on p. 73.*
+
+### B2007 p. 73 · Reflection, divine freedom, and continuous renewal
+[Arabic source](https://ablibrary.net/book_content/b/9606/73?lang=ar)
+
+—such as the reality of the spirits' awe, simplicity, holiness and purity, and other such determinations attributed to creatures. The combined configuration arising from the bestowed rays and those judgments is called the Supreme Pen, the enraptured spirits and the Preserved Tablet. Their appearance with the realities they contain and their formation resemble the shape of a ray falling upon clear water and being reflected upon a polished wall. The water is an image of the receptive reality, and the polished wall an image of the rank. Understand: the example corresponds to the matter **in some respects, not all**. It is given to make the meaning familiar to one who remains veiled. The matter in its reality is subtler and simpler than all but a few of the great people of spiritual taste and understanding can grasp.
+
+Recall, while considering what we have established, God's words: **“Have you not seen how your Lord extends the shadow?”** (Qurʾān 25:45). This means first the shadow of the essential names at the first rank from the very first self-disclosure, who is the Lord of Muḥammad, peace be upon him; then the extension of the shadow of the second determination, intermediacy and self-disclosure, with all their divine and cosmic names, attributes and realities, original and derivative, from the first determination, intermediacy and self-disclosure, because the latter contain the considerations of oneness and the essential names. Then He extends the shadow of the determinations of existence bestowed upon and attributed to created things, in the ranks of spirit, image and sense, from the outward aspect of all-merciful existence in its character as Bestower, to realize the complete perfection of the names.
+
+**“Had He willed, He would have made it still”** (25:45): that is, He could have kept the first and second shadows at rest instead of extending them through the cosmic ranks by the orientations and conjunctions of the names particular to this extension. The affair would still have been wholly complete with respect to Him, for **He is independent of all worlds**. Thus this extension occurs by **will and choice**, as indicated by “Had He willed,” **not from the necessity of the Essence itself**, as those whom Farghānī criticizes maintain.
+
+“Then We made the sun an indication of it” (25:45) refers to the extension of the shadows, as in God's statement, “The highest similitude belongs to God” (Qurʾān 16:60). **“Then We drew it back to Us in a gentle drawing”** (25:46) means a drawing that is subtle, hidden and sublime, whose manner cannot be apprehended. This drawing resembles existence returning at every instant to its origin, since it is in truth an **accident**, and another like it arises in its place in **new creation**, as alluded to in “Yet they are in confusion about a new creation” (Qurʾān 50:15). It is analogous to nourishment and the oil in a lamp being dissolved from the body and lamp into the elements from which they emerged, while other sustenance replaces what is dissolved. All this occurs by the measure of the Mighty, Wise, Subtle and Knowing.
+
+*Printed page boundary: the different relations of the Pen and Tablet are drawn from the analogy on p. 74.*
+
+### B2007 p. 74 · Three aspects of the Supreme Pen and the two kinds of word
+[Arabic source](https://ablibrary.net/book_content/b/9606/74?lang=ar)
+
+Since the relation of the **reality of the Supreme Pen** to the first determination is the stronger—and unity, comprehensive inclusion and the concealment of differentiated considerations prevail there—the existence bestowed on it appears as one and comprehensive. Since the Preserved Tablet is more clearly related to the second determination, what reaches it through the Pen, in conformity with the command **“Write My knowledge concerning My creatures until the Day of Resurrection,”** becomes differentiated into two classes.
+
+The first class is differentiated in the forms of **words as acts** (*kalimāt fiʿliyya*): the spiritual forms of all spirits and angels, indeed of the spirituality of every thing whatever. The second class appears as **words of utterance** (*kalimāt qawliyya*), such as the divine books and scrolls inscribed in it together in one act but sent down consecutively and separately to prophets and messengers. In reality they explain the states, affairs and measures of their judgments and their effects, in creation, word and deed. Each person understands of them according to his receptivity.
+
+The Supreme Pen possesses **three universal intelligible aspects**. The first is that it receives existence and knowledge comprehensively and without intermediary, apprehending and recording what reaches it from the unseen Presence of its Originator. Under this aspect it is called the **First Intellect** (*al-ʿaql al-awwal*).
+
+Its second aspect is the differentiation of what it receives comprehensively in the Preserved Tablet, under the command “Write My knowledge concerning My creatures,” or “Write what is to occur.” Under this aspect it is named the **Supreme Pen**. This aspect of it is the **Muḥammadan soul**, alluded to in the oath “By Him in whose hand is Muḥammad's soul.”
+
+Its third aspect is its bearing the judgment of the first disclosure and being related to its manifestation in itself. In this consideration it is the reality of the **Greatest Muḥammadan Spirit** and his light, peace be upon him, under the aspect of—
+
+[**Textual caution:** The clause ends abruptly in the digital printed page. The statement appears to anticipate a further qualification, not to supply a complete definition.]
+
+The **Preserved Tablet** likewise possesses **six universal intelligible aspects**. The first is that it constitutes a collective configuration of the ray of bestowed and attributed light together with the judgments of quiddity pertaining to the world of spirits. This configuration comprehends both classes of the words-as-acts and words-as-utterances just mentioned—
+
+*Printed page boundary: the detail follows on p. 75.*
+
+### B2007 p. 75 · Six aspects of the Preserved Tablet
+[Arabic source](https://ablibrary.net/book_content/b/9606/75?lang=ar)
+
+—fully differentiated, such that nothing entering existence up to the termination of the Day of Resurrection escapes it. In this respect it is called the [record of] **every thing**, intended by the Qurʾānic saying, “We wrote for him on the Tablets something of every thing” (Qurʾān 7:145).
+
+Its **second aspect** is its orientation toward its Originator and reception of assistance from Him, in one of two modes. The first is **without intermediary**; in this consideration it is called a spirit attributed to the divine Presence and poured forth from the all-merciful Breath directly. From this spirit the spirits attributed to the perfected are breathed without intermediary, while the spirits of others are breathed through its partial spirit called an angel.
+
+The other mode—which constitutes the **third aspect**—receives assistance through the Supreme Pen. Under this aspect it is called the **Preserved Tablet**.
+
+Its **fourth aspect** is its descent and appearance insofar as part of what its reality and essence contain becomes separated and configured in that descent and appearance as simple and compound imaginal and sensory forms: Throne and Footstool, heavens and earths, and what lies between them, of angels, spheres, stars, elements and generated beings—mineral, plant, animal and human. This realizes the perfection of disclosure and self-vision. Under this consideration it is named **the clear Book as act**, intended in “There is nothing moist or dry but that it is in a clear Book” (Qurʾān 6:59) and “Ṭā-Sīn. These are the signs of the Qurʾān and a clear Book” (27:1).
+
+Its **fifth aspect** is its orientation toward governing and perfecting what became differentiated from it and appeared as the imaginal and sensory existents described. It governs, preserves and perfects the universal in a universal mode, and the particular in a particular mode. Under this consideration it is called the **Universal Soul** (*al-nafs al-kulliyya*).
+
+This aspect is directed toward governance in **two forms**. In the first, it governs in universal form; considered thus it is the soul of all prophets and saints except our Prophet, peace be upon him. For the rational soul governing his purified human form is the aspect through which the Supreme Pen differentiates what it received comprehensively and placed into the Preserved Tablet under the command “Write what is to occur.” It is alluded to in his oath, “By Him in whose hand is Muḥammad's soul.”
+
+The **second form**, completing the **sixth aspect**, is the particular soul governing particular elemental individuals. Since the Preserved Tablet has these six aspects, the directions of the world branching from it number **six**: above and below, right and left, before and behind. Their **seventh** is the Tablet's comprehending all these aspects.
+
+### B2007 p. 76 · Four foundations and three complements of the creative names
+[Arabic source](https://ablibrary.net/book_content/b/9606/76?lang=ar)
+
+**Chapter.** You have learned that the reality of the Preserved Tablet is more closely related to the second determination, called the **rank of Divinity**, while the Pen is more closely related to the first. Unity and comprehensiveness predominate in the first determination, and the same judgment predominates in the Pen; therefore the Pen receives the existence poured forth upon it only in comprehensive form. Because differentiation predominates in the second determination, the Preserved Tablet receives through the Pen that comprehensive existence in differentiated form.
+
+The second determination or rank of Divinity has **four pillars** drawn from divine realities and **three concomitants** that complete and condition the full manifestation of its judgments and effects: these are the seven original leading names already identified.
+
+Its **four pillars** are **life, knowledge, will and power**. For producing an effect proceeds only from one who lives, knows a thing in himself, wills its manifestation and has the power to bring it about. Through knowledge and will he issues to the thing, as it were, a command that it appear, and the thing appears. Speech is thus the form taken by the command addressed to a known thing whose existence is willed. In the bringing forth of spirits, **speech is a pillar** and power a completing condition; in the case of bodies the relationship is reversed. Hence the realm of spirits is called the **world of command** (*ʿālam al-amr*).
+
+**Generosity** is a condition for the effect of speech to become manifest when existence is willed: pouring forth existence by choice can occur only through generosity by which existence is granted. These two—speech and generosity—are conditions of the judgment and command of bringing into being, which proceed from the second determination and the rank of Divinity through the Keys permeating the names and appearing as their active character.
+
+**Equity** is another condition, but through the Keys permeating the receptive realities and appearing within them as the capacity to receive the judgment and command that bring them into being. Accordingly the divine name **the Originator** assigned within the Tablet to each of the pillars a special manifestation and a spiritual form, although each comprehends the effects of the others.
+
+**Isrāfīl** is the manifestation of the pillar of original, universal and comprehensive **life**, containing every perfection and comprehensive awareness of them. Hence everlasting life in the hereafter is connected to his **second blowing in the Trumpet**. The Trumpet is the locus, foundation and gathering point of natural and elemental forms, above and below. His second blast brings creatures to life and causes them to rise, gazing at the shining lights issuing from the Presence of Lordship without intermediaries or causes on the Day of Resurrection.
+
+His **first blast**, by contrast, consists in raising the breath and returning it from outwardness to inwardness so that the judgment of worldly life may come entirely to an end and return to its origin. Then there begins the judgment of—
+
+*Printed page boundary: the nature of the subsequent life is described on p. 77.*
+
+---
+
+**Stage assessment:** B2007 pp. 69–76 are now included as sequential English working translation. **Important conceptual passage:** p. 73 explicitly characterizes cosmic extension as proceeding by divine will and choice, not by a necessity imposed by the divine Essence—an essential constraint on the later comparison with Guénon and Schuon. The 1876 print and early manuscript are not yet collated; this file is not a verified critical edition. Source readings at the p. 74 boundary require further checking, and the translated reports require authentication separately.
+
+
+---
+
+## Consecutive English working translation · Beirut pp. 77–84
+
+**Editorial standing:** New English draft translated in sequence from the modern Beirut Arabic digital witness, excluding its editor's footnotes. The authorial **third foundation begins on p. 79**. Page boundaries are recorded, and source links are provided. No manuscript collation or independently established critical Arabic has yet been completed.
+
+### B2007 p. 77 · The four angels and the principles they manifest
+[Arabic source](https://ablibrary.net/book_content/b/9606/77?lang=ar)
+
+[Continuation of p. 76:] —its appearance and its differentiated forms within the **life of the hereafter**. For this reason **Isrāfīl** is the manifestation of life, as we have said. Equity is included within that life because its comprehensive judgment embraces every thing, original and derivative.
+
+As for **Gabriel (Jibrīl)**, he is a manifestation within the Preserved Tablet of the pillar of **knowledge**. Hence he bears revelation, which comprises the kinds and degrees of knowledge, and he is a teacher, as one interpretation of God's saying has it: “One mighty in power taught him” (Qurʾān 53:5). He is also an intermediary in the formation of Jesus, insofar as Jesus is the Word of the Real and a sign of the Hour. Gabriel is thus a manifestation of both knowledge and speech. Inasmuch as he manifests knowledge he is called the **Holy Spirit** (*Rūḥ al-Qudus*); inasmuch as he manifests speech he is called the **Trustworthy Spirit** (*al-Rūḥ al-Amīn*).
+
+He therefore possesses two aspects and two judgments, like Isrāfīl, peace be upon them. Under the aspect of his outward reality, in which the judgment of existence predominates, Gabriel manifests speech, for speech is the form of breath, which is identical with existence. Under the aspect of his inward reality, in which the judgment of knowledge predominates, he becomes its manifestation. Pay heed to this noble secret and you will attain the treasuries of gnosis. God is the Guide.
+
+As for **Michael (Mīkāʾīl)**, he manifests the pillar of **will**, for he arranges that by which creation is preserved through spiritual and formal sustenance: knowledge, understanding and nourishment; imagined sustenance, such as honor and social standing; and sensible sustenance, such as wealth and blessings. He manifests will, with generosity included within it, since the continued effect of will depends on generosity.
+
+As for **ʿAzrāʾīl**, he manifests the pillar of **power**. He subdues tyrants and causes them, through death and annihilation, to be brought low without resistance or the possibility of averting him, so perfectly does he realize the form of power.
+
+Just as all the divine and cosmic realities are subordinate to these four foundations, all spirits and angels are subordinate to these **four angels and their powers**, after the Pen and the enraptured spirits. These last are the **Exalted Ones** (*al-ʿālūn*), who did not enter under the command to prostrate to Adam because they are wholly enraptured in the majesty of the Real's beauty—glorious is His majesty. This is alluded to by “Were you arrogant, or were you among the Exalted Ones?” (Qurʾān 38:75). The branching of other spirits from these angels corresponds to the branching of other intelligible realities from their principles in the Presence of Knowledge.
+
+All that the Preserved Tablet contains of universal and particular spirits, together with the enraptured spirits above them, falls into **three classes**. One is restricted to having **no natural, imaginal or elemental sensory manifestation**. Another is restricted to possessing a manifestation. A third is not restricted either to possession or non-possession of such a manifestation. Among the first are the enraptured spirits. The second divides into two classes: one to which a manifestation is attributed, but which is not attributed to its manifestation. These are the angels of the heavens and earth to whom affairs and effects are attributed as their powers, intended by the divine words—
+
+*Printed page boundary: Qurʾānic examples and the second kind of manifested spirit follow on p. 78.*
+
+### B2007 p. 78 · Human spirits and the meaning of angels' wings
+[Arabic source](https://ablibrary.net/book_content/b/9606/78?lang=ar)
+
+—“Those who race ahead, and those who govern the affair” (Qurʾān 79:4–5); “By those that scatter” (51:1); and “those who distribute the affair” (51:4), and similar verses.
+
+The **second** class among those tied to a manifestation comprises spirits **attributed to their manifestations**, such as human spirits attributed to their individual bodies and temperaments. Every human spirit becomes determined from the Presence of the Preserved Tablet, either from its own reality, from its determinations that are principal realities, or from what branches from these principles or their branches and further branches, indefinitely. Such a spirit is prior to the determination of the individual's elemental temperament.
+
+Only after that temperament has been determined does the relationship of this spirit's manifestation as **governor** become determined. Under that relationship it is called the **soul at peace** (*al-nafs al-muṭmaʾinna*), breathed into the portion determined from this spirit, which is attributed to the manifestation of the divine Presence. Understand this.
+
+The same applies to the spirituality of every individual, whether mineral, plant or animal. The forms of the jinn, restricted to fiery manifestations, also belong to this class.
+
+The **third main class** comprises spirits neither bound to a manifestation nor bound to its absence. They may appear in whatever manifestation they wish, or without one. They are the messengers and ambassadors between the Real and His creation, intended by God's saying: “Messengers having wings, two, three and four; He increases creation as He wills” (Qurʾān 35:1).
+
+Every one of these spirits necessarily possesses **two powers**, by which they fly in the expanse of the Real's command and nearness. One is a **cognitive power** receiving from the Originator, exalted is He. The second is a **practical power** acting according to that knowledge in order to realize its character in oneself. These two powers are expressed by **the two wings**.
+
+God may give some a **third wing**: teaching to another what He taught them, as in “One mighty in power taught him” (Qurʾān 53:5). He may give some a **fourth wing**: performing an act for the benefit of another by the permission and command of the Lord, as in “They glorify the praise of their Lord, believe in Him and seek forgiveness for those who believe” (Qurʾān 40:7). These four are the universal classes of their powers and wings.
+
+The particular forms referred to by “He increases creation as He wills” (35:1) are without limit. Thus the report that the Prophet, peace be upon him, saw Gabriel with **six hundred wings** is among the ways in which God adds to creation without limit. Reflect on this chapter; you will attain secrets very difficult to obtain. God is the Guide.
+
+### B2007 p. 79 · Third foundation: from the Breath to imaginal and corporeal reality
+[Arabic source](https://ablibrary.net/book_content/b/9606/79?lang=ar)
+
+**THIRD FOUNDATION: On the determination of the imaginal world and the rank of bodies, down to the composition of Adam's form, peace be upon him.**
+
+Know that the **Breath of the All-merciful** (*al-nafas al-raḥmānī*), identical with prior mercy embracing every thing outwardly and inwardly, when it appeared from within the true Unseen by the demand of “then I loved,” was identical with the **first determination, disclosure and intermediacy** at the first rank: one, transcendent and comprehensively undifferentiated.
+
+The Keys of the Unseen and oneness, together with the affairs and states they contained—namely, their relations and considerations—were a kind of **relational, not real, differentiation** of that real comprehensiveness. No judgment of otherness or difference arose between what was comprehended and what was differentiated.
+
+This same all-merciful Breath also appeared in a form of **real differentiation in knowledge**, and **relational differentiation in name-related existence**, and in a form of **real comprehensiveness in existence** and **relational comprehensiveness in knowledge**. It appeared from the hiddenness of that first determination, disclosure and intermediacy, from its real comprehensiveness and the relational differentiation included within it, according to the original demand of love at the second rank.
+
+Thus this all-merciful Breath was also identical with the **second determination, self-disclosure and intermediacy**, through and within which divine and cosmic realities and names appeared. Furthermore, from the standpoint of the second determination, the very shadow of this Breath was the totality of the relational differentiation existing at the first rank.
+
+The pillars of this second disclosure, determination and intermediacy, together with their completing conditions, are the **seven principal names and attributes** established at its centre. From them arise divine and cosmic names and attributes within the Cloud-like Presence and at its two extremes, in a multiplicity and differentiation without limit, as genera, species and individuals. All these become the **differentiation of the comprehensive reality**—but a **real** rather than merely relative differentiation.
+
+This comprehensiveness and its differentiation are both intelligible and existential with respect to the Originator who knows them, exalted and holy—
+
+*Printed page boundary: their status relative to other possible things is clarified on p. 80.*
+
+### B2007 p. 80 · Two aspects of the Breath and the emergence of hābāʾ
+[Arabic source](https://ablibrary.net/book_content/b/9606/80?lang=ar)
+
+—and they are intelligible but not existential relative to the understanding and witnessing of other possible things. The second rank, second determination, second disclosure and intermediacy, with everything they contain comprehensively and in differentiation, are **Unseen and inward** relative to all cosmic ranks and their inhabitants. They are the shadow and image of the first rank and its determination, disclosure and intermediacy. The pillars of the second rank are shadows and manifestations of the Keys of the Unseen; its real differentiation manifests their relational differentiation, as explained.
+
+This all-merciful Breath at the second rank, and insofar as it is **light**, has **two judgments**. First, it **bestows existence through will and choice**. Second, its effect, ray and shadow are **bestowed** by virtue of its willing. As God says, “Had He willed, He would have made it still” (Qurʾān 25:45)—that is, its shadow and ray. Had He not brought any possible thing into existence, He would have remained perfect in His Essence and would have lacked nothing of His perfections.
+
+When He willed, He extended the shadow of His light and the ray of His manifestation through bringing the world into existence, according to the demand of original love, the orientations and conjunctions of the principal names, and the efficacy of the creative command.
+
+An effect or shadow of this all-merciful Breath therefore appeared in the **rank of spirits**, which is more closely related to the Unseen and the Presence of Necessity than the rank of bodies. The latter is more closely related to witnessing and the Presence of Knowledge—or, say, of Possibility. That first effect was the **Supreme Pen** and the spiritual form of its determination. Its existence was a comprehensive totality containing the relational existential differentiations established at the second rank.
+
+Then, from the unseen comprehensiveness of the Pen, an effect of that bestowed Breath appeared, according to the demand of love, the orientations and conjunctions of the names, and the creative command, in the form of the **Preserved Tablet**. It became differentiated through its substance and pillars and through what it contained of words of act and utterance, angelic spiritual forms, and the other spiritual sovereignties of every thing. The pillars of this Tablet, named **Isrāfīl, Gabriel, Michael and ʿAzrāʾīl**, manifest the pillars of the second rank. The existential, spiritual articulations branching from these pillars as words of act and utterance manifest the intelligible differentiation of the second rank.
+
+Thereafter, by virtue of original love, the orientations and conjunctions of the principal divine names, and the orientations of their universal spiritual manifestations, an effect of the bestowed all-merciful Breath appeared **from within the Tablet under its fourth aspect**—the aspect of descent and taking natural and elemental, simple and composite forms.
+
+This further manifestation took the form of **the universal dust or hābāʾ**, a matter receptive to every simple or compound natural and elemental form whatever. This—
+
+*Printed page boundary: the account of hābāʾ and its four principles continues on p. 81.*
+
+### B2007 p. 81 · Four qualities and the imaginal rank as intermediary
+[Arabic source](https://ablibrary.net/book_content/b/9606/81?lang=ar)
+
+—**hābāʾ** was a comprehensive origin and store containing every individual existence and every indivisible part from which subtle and dense bodies and natural and elemental forms are compounded. It possesses **four simple rather than composite principles**: heat, cold, moisture and dryness.
+
+This dust-like reality, through its comprehensiveness and inclusion of the four simple principles, became the first comprehensive manifestation of the Tablet's fourth aspect. These simple principles themselves became existential manifestations of the intelligible pillars attributed to the second rank: **life, knowledge, will and power**.
+
+Thus innate heat belongs especially among the concomitants of animal life; the perfection of knowledge is described as the **coolness and snow of certainty**; inclination, whose form is flowing, belongs among the concomitants of moisture; and overpowering, belonging to the consequences of power, has in dryness its dryness and hardness. Thus each natural principle manifests a spiritual principle inasmuch as the influence of one prevails over those of the others. The dust-like reality constitutes comprehensively the differentiation of the *malakūt* of every thing; the forms, substances and indivisible parts included in its pillars articulate what was comprehended.
+
+This dust-like reality is an effect of the all-merciful Breath, as we have said. Yet it combines **unity and simplicity**, attributed to the side of the Presence of Necessity because it manifests the Tablet—which is dominated by that Presence—with **multiplicity and composition**, special to the Presence of Possibility or Knowledge, because orientations toward descent multiply and it receives manifestation in the clearest, most subtle forms of composition.
+
+Because it combines these two judgments, it has a connection and affinity with the **Cloud-like Presence**. Its first locus of realization was a portion of that Presence equally related to Necessity and Possibility. This portion is called the **rank of image and differentiated imagination** (*martabat al-mithāl wa-l-khayāl al-munfaṣil*). It is equally related to the unseen of the world of spirits, the locus of simple forms, and to the witnessed realm of sense, the locus of composite forms.
+
+Life and knowledge are dominated by the judgment of unity and comprehensive inclusion, since their actuality does not depend on multiplicity and differentiation. Will and power, however, are dominated by multiplicity and differentiation, since their determinations depend upon distinction and efficacy, both of which signify plurality.
+
+Consequently **acting** is attributed to the manifestations of life and knowledge among the principles of hābāʾ—**heat and cold**—while **being affected** is specifically attributed to those of will and power—**moisture**—
+
+*Printed page boundary: the last principle is completed on p. 82.*
+
+### B2007 p. 82 · Nature, spherical form, and three dimensions
+[Arabic source](https://ablibrary.net/book_content/b/9606/82?lang=ar)
+
+—and **dryness**. Through the appearance of the mixing of the effects of original love permeating these qualities, a subtle, light blending occurred among them; **nature** (*al-ṭabīʿa*) is the name of what resulted from that blending. Nature became an intermediary gathering the four principles.
+
+By the demand of love and the orientations of the names and their spiritual manifestations toward the perfection of disclosure, nature became fully and uniformly extended under the judgment of its locus, the **imaginal world**. In that extension it took the form nearest to unity and simplicity, namely **roundness**. The name **the Originator** assigned that spherical form to extended nature, and it became one, relatively simple **Throne**, circular and surrounding the entire world of forms and created dominion.
+
+Because this dust-like reality manifests the fourth aspect of the Tablet, and that aspect has three judgments especially belonging to it, the following were realized. **First**, the judgment of descent into the lowest sensory rank and its composite forms, through which **length** necessarily belongs to body. **Second**, the judgment of differentiation and formal composition, through which **breadth** appears in it. **Third**, the judgment of governance preserving those descending differentiated and compounded forms, through another effect from their source lying inwardly within them, through which **depth** is realized in body.
+
+For this reason some people of unveiling saw the Throne's form as a **triangle**. Others saw it as a **square**, because its determination proceeded from the four natural principles. As it arises from these four principles in the three meanings just mentioned, the Throne's form was divided into **twelve divisions**, which are conceptual rather than sensible.
+
+Because this dust-like reality is the manifestation of the Tablet's fourth aspect, whose judgment descends into the lowest degrees of plurality and composition, the judgment of composition and the collectivity obtained from its principles, peculiar to body, was established inwardly within this Throne-form. The reality of this Throne-configuration, according to the rank where it appeared, was thus **imaginal**.
+
+Then the Originator determined for it another circular configuration according to the judgment of descent into the farthest degrees of multiplicity and composition and its effect within the dust-like reality. This **corporeal configuration** is called **the Throne**, insofar as it is the sphere of spheres, the unstarred sphere, the zodiacal sphere and the rotating sphere.
+
+The three judgments of **length, breadth and depth** belong to this second and derivative configuration. Under this attribution it is the reality of the **Universal Body**. Thus this—
+
+*Printed page boundary: the discussion of the Throne as a locus of lordship continues on p. 83.*
+
+### B2007 p. 83 · Five meanings of istiwāʾ and the Throne
+[Arabic source](https://ablibrary.net/book_content/b/9606/83?lang=ar)
+
+—**Throne** is so named insofar as its determination and realization occur within a portion of the Cloud-like Presence, as explained. That Presence is the place of establishment of the Lord whose judgment of Lordship comprehends all creatures, an attribution particular to the name **al-Raḥmān**, as is reported in the authentic transmitted account. Hence this Throne is the place of establishment of al-Raḥmān under **all the meanings of *istiwāʾ***.
+
+The first is **settling and becoming established**, as when one says that someone settled upon his mount. The second is **taking control**, as in the saying that someone gained mastery over Iraq. The third is **completion and attaining the utmost degree**, as when one says a man attained the full measure of his youth. The fourth is **intending and directing oneself toward**, as in “Then He turned to the heaven” (Qurʾān 2:29), meaning that He intended and directed Himself toward creating it. The fifth is **equilibrium**, as when one says a thing became even or balanced.
+
+Thus “The All-merciful established Himself upon the Throne” (Qurʾān 20:5) means that the command of existence became established through the capacity to bring into being the genera and kinds of the world's forms, because their substances and material for formation became determined within this dust-like reality.
+
+Through it He took mastery over every rank of His kingdom contained therein, composing its substances however He willed and giving its material whatever form He wished, whenever He wished and for as long as He wished. This Throne is the origin of the determination of **forms of time** through its circular motion.
+
+Thus the command of existence attained its full manifestation in respect of the principles of its ranks: **meaning, spirit, form, and the origins of time and place**. It reached its limit with respect to those principles, turned and directed itself toward the composition of substances and the articulation of forms, and maintained an equilibrium between complete manifestation and complete hiddenness, and between comprehensive inclusion and differentiation.
+
+Just as the second determination and disclosure was the first **comprehensive intelligible divine manifestation** of the original all-merciful Breath through the demand of love and the orientation of the divine Keys, and the pillars and original principles of the second disclosure with their derivatives were its first **differentiated intelligible manifestation**, so the Supreme Pen became the second **comprehensive spiritual cosmic manifestation** of that Breath and the Preserved Tablet its **differentiated spiritual cosmic manifestation**.
+
+The Pen is more closely related to the first disclosure, and the Tablet to the second determination and disclosure. Likewise, when the dust-like reality was determined, the **comprehensive imaginal configuration of the Throne**, together with the comprehensive corporeal configuration included within it, became determined—
+
+*Printed page boundary: the correspondence between Throne and Pen continues on p. 84.*
+
+### B2007 p. 84 · Three aspects of the Footstool and the emergence of time
+[Arabic source](https://ablibrary.net/book_content/b/9606/84?lang=ar)
+
+—and its relation as a manifestation of the **Pen** was therefore stronger. The reality of love, through the orientations and conjunctions of the names and their spiritual manifestations, then required that from this dust-like reality and its principles a **natural form receptive to differentiation** be determined, to become the manifestation and natural image of the Preserved Tablet and its articulation, with a stronger relationship to it.
+
+The name **the Originator** assigned it a **spherical form**, a receptive manifestation within which the differentiated details of intelligible, spiritual and sensory forms, subtle and dense, could appear. This is called the **noble Footstool** (*al-Kursī al-Karīm*).
+
+By the judgment of the **threefold character of its intermediaries**, this noble Footstool possesses **three aspects**.
+
+**First:** insofar as the judgment of comprehensive inclusion, unity and simplicity appears within it, the Footstool borders on a portion and judgment of the Presence of Necessity, one of the two aspects of the Cloud-like Presence. This portion is called the **rank of spirits**. That aspect of the Footstool becomes a **mirror** for the manifestation of every spiritual form, which takes an imaginal shape within it denser than its spiritual configuration but subtler than a compounded elemental bodily form.
+
+**Second:** insofar as the judgment of differentiated detail, composition and plurality from the natural principles appears within it, the Footstool borders on a portion of the Presence of Possibility, the other aspect of the Cloud-like Presence. This portion is called the **rank of sensation and witnessing**. This aspect of the Footstool becomes a receptive mirror for every compounded elemental form, and for the actions, words, states, accidents and qualities arising from it. Their forms here are subtler than those they have in the sensory world, and become determined within this mirror only **after** the corresponding forms are determined in the sensory world.
+
+Within its imaginal form under this second aspect, the Footstool possesses a corporeal configuration, as was described of the Throne. Under this corporeal aspect the Footstool is called the **sphere of stars and celestial stations**.
+
+Because the Throne and Footstool both possess these judgments, **circular motion** is attributed to them. From that motion, taking place in relation to the Throne-configuration from a point and centre within the Footstool-configuration, the **daily measure of time** becomes determined; through the motion itself, the reality of **time** becomes determined.
+
+**Third:** the aspect comprehending the first two and bearing their most subtle judgments. It borders on its own world and its very rank, a portion of the Cloud-like Presence which is the precise **intermediacy between Necessity and Possibility** at the second determination—
+
+*Printed page boundary: the third aspect continues at Beirut p. 85.*
+
+---
+
+**End-of-target audit:** This stage reaches **B2007 p. 84**. The 50 newly drafted consecutive printed pages are **pp. 35–84 inclusive**, across seven files; with the inherited pp.18–34, the total cumulative **English working-draft sequence is B2007 pp.18–84 (67 pages)**. This does **not** establish a manuscript-collated Arabic edition, a verified line-by-line bilingual translation, or completion of Farghānī's full introduction. The third foundation begins at B2007 p. 79; its cosmological claims are rendered as Farghānī's system, not asserted as established modern astronomy.
+
+
+---
+
+## Second 50-page translation stage · Beirut B2007 pp. 85–134
+
+**Date 9 November 2026.** Adds 50 consecutive B2007 source pages after the original p.84 stopping point, now based on the independent online transcription of the third and fourth foundations at https://alshrefalm7sy.ahlamontada.com/t3213 and https://alshrefalm7sy.ahlamontada.com/t3214, which show B2007 printed-page markers. The earlier source master pp.18–84 is retained below without substantive rewriting. The full 117-page English sequence remains a research draft, not an independently proofed, manuscript-collated critical text. Each newly added page has a source link to its Arabic witness.
+
+## Working English translation · B2007 pp. 85–92 · Foundation III
+
+**Witness:** Third-foundation Arabic transcription at [alshrefalm7sy forum](https://alshrefalm7sy.ahlamontada.com/t3213), displaying Beirut page markers 85–92 and modern editorial notes. The individual Ahlulbayt Library page links could not be retrieved in this stage. This English text follows the Arabic forum witness rather than guessing the intervening prose; it is a **working translation, not a manuscript-collated critical edition**. Editorial footnotes are excluded from the authorial translation. Page headings are modern editorial aids.
+
+### B2007 p. 85 — The Footstool and the three paradisal Gardens
+
+[Arabic witness, third foundation, p. 85](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+[Continuing the description of the Footstool's third aspect from p. 84:] It borders upon the world of the Unseen and meanings, but under the differentiation of that intermediacy, not its comprehensive inclusion. This noble Footstool is the origin of the Gardens. Its three aspects are the principles of their ranks: the Garden of Works, the Garden of Inheritance, and the Garden of Gracious Bestowal. Their degrees are images and manifestations of the principles of the ninety-nine divine names, whose number is completed to a hundred by the name **Allāh**, comprehending them all. The transmitted report states that Paradise contains a hundred degrees, the distance between each like the distance between heaven and earth; the highest is Firdaws, from which four rivers spring, and above which is the Throne. When asking God, one should ask for Firdaws.
+
+The four rivers refer to the four natural principles. From heat flows the river of wine; from cold, the river of water; from moisture, the river of milk; and from dryness, the river of honey, after their mutual compositions. The near ones drink from them unmixed; the righteous believers drink them mixed and composed.
+
+Within the Footstool's comprehensive aspect all spiritual realities destined to manifest in the sensible, compounded realm had already appeared, and through the material of nature and the imaginal world's condition acquired an imaginal form. In this respect Muslim and unbeliever, indeed human and nonhuman, were alike in having their spiritual realities figured there. The Muslim and the unbeliever alike therefore had a dwelling in it when their existential matter and spirituality descended. Hell, meanwhile, was determined beneath the Footstool as a corporeal form related to whatever descended.
+
+When the seven heavens, earth and the realm between them became distinct, the existential matter and spiritual configuration of believer and unbeliever descended until each appeared in a defined sensible form in one of those places. Thus each had a dwelling in Paradise from the aspect of the Footstool just explained, and in Hell from the other aspect. If an unbeliever dies and his spirit does not ascend from Hell to the Garden, because the dense composition of his form and the corporeal judgment prevailing over his spirituality prevent it, his paradisal dwelling remains unused. It is inherited by someone whose spirit ascends from Hell to Paradise through the prevalence of spirituality over nature, and whose relation to the former possessor involves a praiseworthy characteristic or participation under the—
+
+### B2007 p. 86 — Inheritance, vision, command and prohibition
+
+[Arabic witness, third foundation, p. 86](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+—scope of a divine name. This aspect of the Footstool is called **Firdaws**, the highest Garden, at one of its two sides, and is the Garden of Inheritance. The comprehending aspect between the two is the **Garden of Gracious Bestowal**, which contains the mound of Vision, the locus of seeing and witnessing, and which is also called the Garden of Eden. The Garden of Works belongs to its lower side, neighboring sensation and witnessed reality.
+
+The one divine command expressed as “Our command is only one” descends according to “He inspired into every heaven its command” (Qurʾān 41:12). To establish and preserve the judgment of unity, it appears in the Throne according to that rank as one. In the Footstool, however, because differentiation and multiplicity have appeared, it divides into **command and prohibition**. Command preserves unity's influence in descent toward multiplicity; prohibition induces the observance of unity through return and ascent from multiplicity to unity.
+
+Since the affair of the two worlds is built on descent and ascent; these are traced to the two principles of unity and multiplicity; and their intended purpose is maintained through command and prohibition, the two were designated figuratively as **the two feet** by which a person stands. Hence the saying that the Footstool is the place of the two feet. This noble Footstool is the seat of the name **al-Raḥīm**, as the Throne, which determines time, manifests the name **al-Dahr** and is the seat of **al-Raḥmān**. Know this; God is the One whose help is sought.
+
+**Chapter.** The effect of the all-merciful Breath appeared as universal dust (*habāʾ*), capable of taking subtle, simple sensible forms that admit no separation, fragmentation, rupture or reunion, as well as denser compounded sensible forms that admit division, composition and corruption. The locus of the former simple, subtle forms, either comprehensively or in detail, was a portion of the Cloud-like Presence called the **imaginal world**.
+
+The resulting forms first appeared there comprehensively as the Throne and the sphere of spheres, constellations, unstarred sphere and limiting sphere; in detail they appeared as the Footstool and the sphere of the celestial stations. Their comprehensiveness was the comprehensiveness of the Tablet's differentiation, and their detail articulated that comprehensiveness. With the imaginal world filled by these forms, there remained of the primordial dust what could receive density, composition and dense compound forms capable of partition under the mixing of its principles and their interpenetration.
+
+### B2007 p. 87 — The first undifferentiated cosmic matter
+
+[Arabic witness, third foundation, p. 87](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+The natural principles enter into one another and comprise one another. This composition and mixing arose from the original exigency of love, the orientations and conjunctions of the divine names, and their intelligible, spiritual and imaginal manifestations in the primordial dust and its principles. It took place on the side of the Presence of Possibility called the realm of sensible visibility, for which the shadow of time is in one respect a form and manifestation.
+
+Within that rank the distinctions between the natural principles and their properties were obliterated, so that what had been multiple, distinguishable and detailed at the imaginal rank became **one undifferentiated thing** in the sensible rank. Its comprehensiveness thus corresponded to the detail established in the imaginal rank.
+
+The Qurʾān expresses this composition and mixing as **ratq**, a joining or closing together: “Have those who disbelieve not seen that the heavens and earth were joined, then We split them apart? We made every living thing from water” (21:30). Some call this joined matter the **Supreme Element**, others the **Element of Elements**. It has four principles: fire, air, water and earth, just as primordial dust, its origin, has four principles belonging to nature.
+
+The supreme element and its constituents moved through the original loving impulse pervading them, inseparable from the all-merciful Breath of which that matter is one effect and manifestation. This movement inclined longingly toward the perfection pertaining to its forms and differentiation. Through that movement and yearning an influence [the printed word here is obscure] arose, strong enough to bring out a latent effect of heat.
+
+The subtler portion of the joined matter rose up as **vapor or smoke**, still comprehensive and described through unity: this was the closed state of the heavens. The four principles then became differentiated and the joined condition was opened. Under the quaternary secret descending from the origin and present within every comprehensive rank, they separated into four portions, each dominated by two principles while containing the remaining two. The densest, dominated by cold and dryness, became earth, the joined state of the terrestrial realm. The next, subtler portion, dominated by cold and moisture, became water.
+
+*Textual note:* the forum reproduces a modern editor's note that one word in the description of this strong movement is obscure in the printed original; the translation marks the uncertainty rather than inventing a meaning.
+
+### B2007 p. 88 — Elements and the program of celestial manifestations
+
+[Arabic witness, third foundation, p. 88](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+The third and subtler portion was dominated by heat and moisture, with the remaining principles still present: it became air. The fourth, subtler still, was dominated by heat and dryness while containing the others: it became fire.
+
+The names **Allāh** and **al-Raḥmān**, being directed toward realization of the perfection belonging to their subordinate divine names, realities and effects, were likewise directed to the manifestation of that perfection. Yet this depends upon the appearance of the judgments of cosmic realities that serve as loci of the divine names' effects. Their purpose is based on the existential command, whose governing structure consists in the seven original divine names, their orientations and conjunctions.
+
+These occur first through **intelligible manifestations** determined by the Willing; second through **spiritual manifestations** determined by the Originator; third through **imaginal manifestations** consisting in the natural principles and the three corporeal determinations in comprehension and detail, also determined by the Originator; fourth through the **sensory and corporeal manifestations**.
+
+Making name-related perfection appear in detail at every rank depends on the prior determination of manifestations of these principles so that their orientations and conjunctions can take effect. In primordial dust, what was receptive to bodily forms had already been determined; the material prepared for subtle heavenly forms had risen as a joined, subtle smoke, distinct from what was receptive to earthly forms and the other principles.
+
+The command therefore issued from the names **Allāh** and **al-Raḥmān** to **the Fashioner** (*al-Muṣawwir*) to assign elevated, subtle, corporeal heavenly manifestations and celestial spheres to the seven foundational realities determining the principal names. To those names themselves it assigned luminous **planetary** forms whose orientations, conjunctions, configurations and connections could influence what lay below them in the world of generation and corruption, so that dense terrestrial compound forms—genera, species and individuals of generated beings—might come about.
+
+When the joined matter of the heavens and earth had differentiated into subtle smoke and dense terrestrial composition, the Fashioner assigned each a suitable form. Their matter was addressed: “Come willingly or unwillingly” (Qurʾān 41:11)—that is, receive the form appointed by the Fashioner, willingly in respect of your particular existent mode that recognizes its welfare and perfection in whatever issues—
+
+### B2007 p. 89 — Willing or compelled reception; seven heavens and planets
+
+[Arabic witness, third foundation, p. 89](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+—from its universal principle and chooses its reception without resistance; or unwillingly in respect of your possibility and nonexistence, which are ignorant of their welfare and perfection and receive by compulsion in order that the original perfection appear. Both said, “We come willingly,” because they were near the primordial disposition and because the judgment of unity and comprehensiveness, special to existence, predominated over differentiation and multiplicity, the characteristics of possibility.
+
+Under the original motion of love, the orientations and conjunctions of divine names, and the Fashioner's judgment, the spiritual, joined material established in the sensory rank then moved circularly from its center. It acquired the form of a heaven **first from one consideration and fourth from another**. It manifested the attribute of life and the predominance of heat. The Fashioner assigned to the divine name manifested through it—again, the Living—a luminous manifestation, the star called the **Sun**, like the governing soul of that heavenly form.
+
+Above that heaven the Fashioner determined three further heavens, and three below it. Each was assigned a soul to govern it: a heavenly body particular to the heaven, manifesting a divine name determined by the reality of which that heaven itself was a manifestation.
+
+Thus the **fourth heaven**, central among seven, manifested life; the **third**, will; the **second**, equity and justice; and the **first**, speech. The first is therefore particularly related to the *Bayt al-ʿIzza*, the dwelling of the Qurʾān in its comprehensive descent. The **fifth** manifests power; the **sixth**, knowledge; the **seventh**, generosity. Abraham, characterized by generosity, liberality and fulfilling the duties of hospitality with person, possessions and offspring, was therefore seen in the seventh heaven.
+
+The Sun manifests the name **the Living**, and the supremacy of its dependent name the Life-giver appears especially fully through it. Venus manifests **the Willing**, with its dependent Fashioner's influence predominant. Mercury manifests **the Equitable**, with the effect of the Originator more evident. The Moon manifests **the Speaking**, with its dependent Creator more powerful. Mars manifests **the Powerful**, with the Overpowering especially evident. Jupiter manifests **the Knowing**, and the Wise is most conspicuous through it. Saturn manifests **the Generous**, with the name **Lord** especially powerful in it.
+
+The configurations of the spheres, the forms arising from relations among their parts—
+
+### B2007 p. 90 — Celestial configurations and what really causes effects
+
+[Arabic witness, third foundation, p. 90](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+—and the configurations of the planetary connections and conjunctions, including conjunction, opposition, trine, sextile and similar configurations, arise through the motions of those planets in their spheres. Farghānī takes the outward sense of “Each swims in an orbit” (Qurʾān 36:40) as an allusion to this scheme.
+
+These configurations manifest the judgments and effects of divine names and of their dependents, branches and further branches. The principal and derivative names continually manifest effects in the realm of generation and corruption between heaven and earth, at times **through** these celestial causes and manifestations. In this case, the celestial things are **preparations for receiving the names' effects** in the things to which effects come, and not themselves the agents to whom action and efficacy are attributed. Action and efficacy are attributed rather to the **realities of the divine names**.
+
+This is the arrangement proper to the **world of wisdom**, in which power is included and acts through visible means, as with the other causes perceived in the sensory world. At other times the names act through their own realities **without such mediating manifestations**, and in a way contrary to what the outward judgments of visible causes would ordinarily entail. This is the arrangement proper to the **world of power**, in which wisdom is included.
+
+Hence in the sensible life of this world the genera, species and individuals of generated compound forms appear usually through these causes and sometimes without them. In this way name-related perfection concerned with the completion of disclosure becomes manifest: universals through the universal names and effects of their universal manifestations, and particulars through particulars, according to “Say: Each acts according to its own disposition” (Qurʾān 17:84).
+
+All this occurs through the efficacy of the one, comprehensive divine command pervading the realities of these names and their celestial and planetary manifestations, as alluded to by “He inspired into every heaven its command” (41:12)—that is, the command special to each and colored by its judgment.
+
+Differences among the original and derivative divine names and attributes in breadth, comprehensiveness, universality and particularity are reflected in the things branching from each. Following the opening of the heavens and principles, and under the same primordial movement of love and the divine names' orientations and conjunctions through their spiritual, imaginal and sensory manifestations, the previously joined earthly matter stirred. It opened and became earth. The Fashioner gave it a **spherical form under rational apprehension**, while it appeared **flat to ordinary perception**. Farghānī refers to “The earth He spread thereafter” (Qurʾān 79:30).
+
+### B2007 p. 91 — Time as the measure and condition of movement
+
+[Arabic witness, third foundation, p. 91](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+Through the motion attributed to the Throne's form in its twenty-four degrees, the measure generally recognized as an ordinary **day** was established. Through the motion of the Footstool's form, named the sphere of celestial stations and planets, and the determination of the remaining spheres, elements and spread-out earth, the daily revolution of the Throne was divided into night and day, weeks, months and years, together with the sciences for calculating them. All this occurs by the determination of the Mighty, the Knowing.
+
+**Time**, the measure of the universal and determinate daily motion, becomes the container and locus for the appearance of all the bodies and accidents comprised within the limiting sphere. These therefore fall under its judgment. For, as already explained, anything inhabiting an intelligible or formal locus falls under that locus's condition and can appear only according to it. Accordingly, time may be regarded as a manifestation and form of the **sensory rank**, which governs every sensible thing by making it appear in conformity to its law. The Creator determines this, and the Fashioner gives it form.
+
+**Chapter.** The earlier exposition has shown that the first thing to become determined and manifest from the Unseen of the Unseen was the **divine all-merciful Breath**, unified, including within itself the judgments of activity and efficacy, receptivity and being affected—indeed all names, attributes and acts. The Knower, knowledge, known, agent, receiver and act were then one thing, without differentiation or otherness, at the first rank, which is identical with real unity.
+
+The very same Breath appeared from that Presence and its inwardness at the **second rank**. This is a consideration and determination of the same reality containing, under the aspect of oneness, indefinitely many considerations related to its everlastingness. The first reality or Presence to become differentiated within that second rank was the Presence of **existence**, designated also as the Presence of **Necessity** through a concomitant judgment.
+
+**Real unity and relational multiplicity** are attributed to this Presence. Because of its real unity it and its manifestations belong especially to action and efficacy. All the divine names are attributed to it. Opposite it, within the second rank, became differentiated the Presence of **knowledge related to possible things known**, called the Presence of Possibility after what characterizes its contents.
+
+To that Presence, as containing possible realities, are attributed **real multiplicity and a collected relational unity**. Because multiplicity has so strong an affinity to it, the realities belonging to it are characterized by reception, being affected and undergoing change. Yet within the Presence—
+
+### B2007 p. 92 — Necessity and Possibility as the two hands
+
+[Arabic witness, third foundation, p. 92](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+—of Necessity, because of the relational multiplicity, there is also a kind of reception: the reception associated with the request of preparedness, supplication, and answering what is asked. And within the Presence of things known and Possible things, because of its relational unity, there is efficacy and activity through requesting and supplicating the Presence of Necessity that is addressed.
+
+The **comprehensive human intermediary**, and the **differentiated Cloud-like intermediary**, both join the two and separate them in differing respects. They include divine attributes and cosmic realities and bear the very existential self-disclosure encompassing them all. **Necessity** is thus one of His hands extended in mercy. Given the particular assignment of that mercy in “Write for us good in this world and in the next ... My mercy encompasses all things, and I shall prescribe it for those who are Godwary, give alms, and believe in Our signs” (Qurʾān 7:156), this is **the right hand**, in relation to their receptivities.
+
+The Presence of known things and Possibility is His other hand. Since the blessing of all name-related perfections in their inward identity and outward manifestation concerns both Presences, **both of His hands are blessed right hands** from the standpoint of true, not merely relative, perfection.
+
+Among spiritual and corporeal manifestations, whatever more strongly displays unity, simplicity and subtlety—such as the heavens—is more closely related to manifestation of the Presence of Necessity, its efficacy and action, and is appropriately attributed to the right hand. Whatever more clearly displays multiplicity, composition and density—such as the earth—more fully manifests the Presence of known and possible things, its reception and being affected, and is more fittingly attributed, with reverence, to the hand without further qualification. Farghānī refers to “The whole earth shall be in His grasp on the Day of Resurrection and the heavens folded in His right hand” (Qurʾān 39:67).
+
+This warns against attributing hand, activity and independent existence to another than God. The **fingers**, if one grasps their meaning, are knowing, willing, power, generosity as excellence in fashioning, and equitable ordering. The Living is like the grasp and the hand; their manifestations appear wherever the command descends.
+
+Where simplicity, unity and subtlety are more evident, the equity and comprehensiveness of the intermediary, pervading all created things, are more hidden because the manifestation is akin to the Presence of Necessity. Where composition, gathering and multiplicity are more evident, the intermediary's equity and comprehensiveness are more apparent, because of a stronger relation to Possibility and known things and because of their effect in uniting differences and gathering disparate realities.
+
+**Continuation:** Third-foundation text resumes on p.93 (further composition of mineral, vegetal and animal life). Modern source notes, including a corrupt word at p.87, have been kept outside the translation. The cosmological theory is Farghānī's historical system, not an assertion of contemporary physical astronomy.
+
+
+---
+
+## Working English translation · B2007 pp. 93–100 · Foundation III
+
+**Source:** [Arabic transcription of the third foundation](https://alshrefalm7sy.ahlamontada.com/t3213), retaining page markers from the 2007 Beirut printing. English divisions below follow those markers. This is source-led **provisional translation**, not a critically established bilingual text; modern editorial notes are not Farghānī's text.
+
+### B2007 p. 93 — Generation of minerals from the four principles
+
+[Read Arabic source, p. 93](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+Now that this has become clear, know that when the effect of the all-merciful Breath appeared in the form of the **Supreme Element** under a suitable determination of its intermediary character, and the union of its subtler, simple aspect was opened into the seven divisions already described, its denser, compounded aspect was likewise divided into seven. Four are the elements, and three their compound derivatives, completing them as already indicated in our treatment of the original principles. The three derivatives here are the temperaments composed of the elements, namely the three generated kingdoms: **mineral, plant and animal**.
+
+Nothing appears except in a locus and rank receptive to its existence. Accordingly, from the Presence of the name **the Equitable** three ranks of balanced proportion were determined within the Cloud-like intermediary Presence. Each temperament produced through composition of the elements appears in one such rank, and its existence conforms to that rank and its judgment, as in the case of the inhabitants of every rank.
+
+The basis and material of every elemental temperament is a portion of one particular element. Portions drawn from the other elements come upon that fundamental portion through the permeation of original love within the element and its principles, so that the perfection proper to composition may appear.
+
+First was determined the rank of **mineral equilibrium**. Mineral things most closely resemble their elemental mothers: they are stable, possess relatively few powers, require less protection against dissolution, and are less exposed than the later generations to change and corruption. Their primary portion is **fire**, in view of fire's closeness to simple principles and the strength of simplicity within it. Air, water and earth join it, and mixture and composition arise. The composite receives a mineral form from the Presence of the **Fashioner** and an effect from the **Living** which prevents its composition from dissolving and brings it to its proper perfection.
+
+At the first level of the mineral form, its completion requires considerable work and treatment, as with silver and iron. At the intermediate level it needs less treatment, as with gold. At the highest it needs none, as with gems, rubies and coral. Before the other elements join this fiery portion, fiery portions may also combine with it and acquire fiery configurations and temperaments in the mineral rank. **Jinn-spirits** become attached to them and remain concealed from beings whose forms are composed of another kind. Iblīs is the principle of these jinn. They divide into two classes: some are dominated by dark, smoky parts of fire and become rebellious; others are dominated—
+
+### B2007 p. 94 — Mineral perfections and the vegetal and animal kingdoms
+
+[Read Arabic source, p. 94](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+—by the luminous quality of fire and therefore receive the light of faith. The highest mineral grade is capable of receiving a gold-like form on account of its stability and freedom from destruction through fracture, melting, duration and other deficiencies. The mineral generation accordingly possesses properties and benefits absent from the elemental mothers: color, taste, pleasure, strengthening, nourishment, adornment, and use as a means for attaining needs, either directly or indirectly. Because the earthen portion dominates the rest, the mineral is cast down like the earth.
+
+The divine command then descended through the primordial movement of love permeating the element and its principles toward composition. The rank of **vegetal equilibrium** was determined, with air as the primary portion of what is composed there and the remaining elements entering into it. The composite received vegetal form and sought a vegetal spirit from the name **the Living**, by which its form could live and be sustained until the appropriate perfection was attained through the permeation of original love.
+
+Its vegetal spirit introduced powers absent from the elements and mineral forms: **nutrition, growth, reproduction, attraction, repulsion, digestion and retention**. This temperament has three degrees. Lowest are grasses and trees whose benefit, as ordinarily perceived by people, is relatively slight. The middle gives products whose usefulness is widespread and abundant through fruits and other benefits of taste, scent, medicine and the like. The highest adds to mineral and vegetal benefits a resemblance to the animal in many properties and judgments, as in the date palm.
+
+Then the command descended through original love toward further composition. The rank of **animal equilibrium** was determined, and the primary portion of its temperament was **water**: “We made every living thing from water” (Qurʾān 21:30). The other elements entered into that water. The composite received from the Fashioner the form of an animal, a form oriented horizontally, and sought from the Living Self-subsisting an **animal spirit** governing, caring for and preserving it by its powers, whose roots are appetite and anger.
+
+Above what is found in plants, the animal possesses **external senses and voluntary locomotion** from one place to another. In some animals, the predominance of earth draws them to the ground while water carries them into movement; such a creature—
+
+### B2007 p. 95 — Locomotion, comprehensive equilibrium and the human form
+
+[Read Arabic source, p. 95](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+—moves upon its belly in accordance with those two judgments. In another, earth and water predominate in standing and movement, so that it moves upon two legs, as the human being. In a bird the judgments of water and air predominate, so it moves on its feet and flies with its wings. In yet others, the four elements equally contribute to standing and motion, and the animal moves on four legs. Others stand upon more limbs because more numerous elemental and generated powers participate in their constitution. The Qurʾān mentions the three more common groups: creatures moving on their bellies, on two legs or on four, while God creates what He wills (24:45).
+
+The final limit of the divine command's descent and of the bestowed influence of the all-merciful Breath is the **earthen element** and the constitution in which earth is fundamental while the remaining elements join it. That composite contains all the earlier ranks of temperament, because the command has traversed them and been colored by their judgments.
+
+As we have repeatedly explained, the command is **circular**. Its end is joined to its beginning, or indeed is identical with it under a different consideration. At that final terrestrial limit, therefore, a rank of equilibrium was determined comprehending all three earlier equilibria, and indeed both the higher and lower intermediary ranks. This comprehensive rank is an **intelligible image of the first and second intermediaries**, the inmost aspects of human reality, and the measure, origin and source of the various balanced intermediate ranks.
+
+The fully balanced, compounded **human temperament** is also its image, but a sensible image. The divine spirit breathed into it through divine breathing is the image of the outward existential self-disclosure of the divine all-merciful Breath.
+
+Just as the second intermediary, which gathers existence and knowledge of possible things, divine names and attributes, and divine and cosmic realities, is the true image of the first intermediary which comprehends *wāḥidiyya* and essential *aḥadiyya*, while the second outward existential disclosure is an image and shadow of the first inward, hidden disclosure, so the comprehensive rank of human equilibrium and the human compound formed within it after the spirit was breathed into it became an image of the intermediacy and disclosure with all their outward and inward names, realities and attributes. Farghānī then cites the reported saying that God created Adam in His image, or in the—
+
+### B2007 p. 96 — Adam and Muḥammad: two kinds of comprehensiveness
+
+[Read Arabic source, p. 96](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+—image of **al-Raḥmān**. Thus Adam, in his reality, comprehends all that the second intermediary and disclosure comprehend of divine and cosmic names, attributes and realities. Muḥammad—God bless him and grant him peace—by his reality and form comprehends all that the **first intermediary** comprehends of the Keys, the One and the One-in-Unicity, with a truly unitary comprehensiveness in which no judgment predominates over any other.
+
+Just as angels are among the powers of the hand attributed to the all-merciful image in which Adam was created—indeed manifestations of that form—they are likewise manifestations of the properties of Adam's reality and components of his comprehensive form. Adam's reality and image constitute their whole.
+
+The perfection of a whole becomes manifest in two ways. First, through its universality and the comprehensive gathering of its parts, even if each individual part remains deficient. Second, through making each individual part perfect by removing its deficiency, so that the perfection of the whole becomes manifest through the perfection of its parts and not merely through its collectivity. It may also appear through both.
+
+The Real therefore willed to perfect Adam, and whomever He chose among his exceptional descendants, **from both aspects**. He began by perfecting the components. The opening of that perfection was God's address to the angels, the noblest parts of Adam among created beings, in the manner of consultation: “I am placing a vicegerent on earth” (Qurʾān 2:30). This was in order that the imperfections latent in them through their **possibility and created nature** should be made manifest.
+
+Among these were their criticisms of Adam and the imputation to him of violent wrongdoing and bloodshed without observing any such act issuing from him; imputing a grave offense without proof; testifying before being summoned; harboring ill opinion; searching out faults; voicing them; reasoning from the instruments of appetite and anger to the conclusion that Adam would corrupt and shed blood; neglecting certainty and direct inspection; speaking against Adam in the divine Presence; envy of his virtue and suitability for vicegerency; eagerness for the rank of vicegerent; and the mistaken assumption that they themselves were qualified, even though this rested on an apparent ground.
+
+That ground was their possession of comprehensiveness under three aspects: the **Reality of Realities**, comprehending perfections—
+
+### B2007 p. 97 — The deficiency of angelic understanding and the conditions of vicegerency
+
+[Read Arabic source, p. 97](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+—pervading all parts by its universality; **universal unconditioned existence**, comprehending names and their perfections; and **possibility**, capable of receiving every form and judgment, including vicegerency.
+
+They retained knowledge of some conditions, but others escaped them. A condition of vicegerency is the **actual appearance of all three grounds of comprehensiveness in justice and balance**, so that none dominates or suppresses the judgments of the others. Yet angelic constitution and origin allow the judgments of necessity, simplicity and unity to predominate over possibility, multiplicity and composition.
+
+A further condition is to appear under and undergo **all ranks—spiritual, imaginal and sensory—and their requirements**, giving each its due while remaining unrestricted by any of them. The angels are restricted to one rank and its condition: “None among us but has an appointed station” (Qurʾān 37:164). Another indispensable condition is relationship to **all divine names** by dependence, taking on their attributes, or realization. But angels do not participate, in the requisite way, in the names the Ever-returning, Pardoner, Forgiver, Giver of death, and similar names.
+
+Among the greatest requirements of vicegerency is **knowledge of all ranks, their inhabitants, their rights and judgments**. The vicegerent stands between the one deputizing him and those over whom he is deputized; he receives from the former and gives to the latter. Without knowing the beings governed, their ranks and entitlements, he cannot fulfill the duty of vicegerency. The angels do not possess such knowledge in actuality, as will become clear.
+
+Other faults included self-admiration and declaring themselves free of deficiency; observing their own worship and obedience; attributing sanctifying obedience to their own power rather than to the aid, strength, success and protection of their Lord; and presuming to object to their Lord and King. **Eighteen blameworthy characteristics** thus became manifest, though latent within them and unsuspected by them.
+
+Iblīs was the cause of their manifestation and the one who induced them. The Real wished to purify, reform and perfect the angels by removing these imperfections, since they were parts of the being He wished to perfect, enabling them consciously to participate in bringing forth Adam, the most complete manifestation of perfection. The disclosure “I know what you do not know” (2:30) awakened their receptivity to purification.
+
+Their earlier orientation toward producing the Throne, Footstool, heavens, planets, elements and generated beings, through the divine names' principal and subordinate orientations and conjunctions, before the earthen form of Adam existed, had been colored by their latent imperfections. When the warning awakened their capacity for purification, the original motion of love toward perfect self-vision appeared among the Keys, all principal and derivative names, and their angelic spiritual manifestations. After the celestial and planetary manifestations had become established, the angels turned—
+
+### B2007 p. 98 — Preparation of Adam and the breathing of the spirit
+
+[Read Arabic source, p. 98](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+—through the divine names and through their own realities and spiritual, imaginal and sensible celestial and planetary manifestations to the **equilibration of the human temperament** and the elemental form of Adam.
+
+This form passed through four terrestrial conditions: **earth**, then **mud** when the watery element joined it and displayed its action and properties, then **molded dark clay** when air entered and contributed its qualities, and then **ringing clay** when the fiery element manifested its effects and qualities in the composition.
+
+When its proportioning was complete through the operation of one of the two holy hands—associated with the manifestation of wisdom—the other creation began through the **holy right hand**, associated with the effects of power. Through it God breathed into Adam from His **Supreme Spirit**, directing the aspect of His comprehensive manifestation to govern this fully proportioned human constitution. He employed the angels, who were like the powers and components of that right hand, but without their own deliberate presence, intention or particular orientation being involved. For this reason the act of breathing was attributed to Himself in the **singular**, not the plural: “I breathed into him from My Spirit” (Qurʾān 15:29), not “We breathed into him from Our Spirit.”
+
+When Adam's form and meaning were completed, he became the **spirit of the constitution of the whole world**, high and low, and a complete mirror capable of the Real's seeing His own image and all His beautiful names and lofty attributes through and within him.
+
+The Real then began to perfect him. Before the actual perfection of his parts He perfected the **form of their comprehensiveness through knowledge of the names**. Knowledge of the innermost Essence is impossible, but knowledge of all the names is possible: “He taught Adam all the names” (Qurʾān 2:31).
+
+In reality the divine names are **determinations of the light of existence** realized through meanings and realities, whether what bestows existence or what receives its bestowal. Words composed of letters that signify these existential determinations—
+
+### B2007 p. 99 — Knowledge of the names as knowledge of oneself and one's Lord
+
+[Read Arabic source, p. 99](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+—are **names of those names**. Relative to the spoken and written names the determinations themselves are the things named. By “He taught Adam the names” (2:31), what is meant is these realities as things named; the qualification **“all of them”** includes their spoken and written expressions. Farghānī notes that the Qurʾān uses demonstratives and pronouns proper to rational beings—“these,” “they”—with respect to these real names.
+
+The Real thus made Adam know the reality of his own self: what his reality and existence comprise of names, attributes, divine and created realities, distinct in one respect at the second rank and not identical with the essential names established at the first. They are what those names truly designate, and it is upon them that the existence of the world depends. Through this teaching Adam came to know **himself**, and through self-knowledge, his Lord, in the sense of the saying “Whoever knows himself knows his Lord.” Thus his essence was perfected in respect of its **comprehensiveness**.
+
+The Real then wished to unite in Adam the perfection of the whole and the perfection of its parts. He began perfecting the most particular of his components, the **angels**, now receptive because of the warning “I know what you do not know” (2:30). He presented to them everything He had taught Adam—what his self contained inwardly and outwardly, from creation and the Real—and said, “Tell Me the names of these if you are truthful” (2:31).
+
+That is, if you are truthful in supposing you are qualified for vicegerency and in the inferences you have made from one thing to another, name the **latent judgments of possibility within yourselves** that led you to display factional zeal, reproach, assertion and egoism. Identify what is outward in you and what remains inward, what you have shown and what you have been unable to show because of the dominance of its realities; tell the names of the existential realities of your outwardness and what has been bestowed upon you in your respective worlds of the spiritual sovereignty of each thing.
+
+Name also whatever belongs to the higher and lower worlds visible to you, according to its expression or distinguishing property; and name what is contained in Adam's self of divine perfections and creaturely properties. This knowledge is special to the **vicegerent**, who must be an image of the One who delegates to him.
+
+The angels, restricted by their rank and constitution, were not guided to know what lay beyond them. They confessed incapacity and limitation, declaring in the language of their own formation: **Glory be to You**—no one knows anything outward or inward unless You have taught him, whether by nature or acquired instruction; and no one can oppose Your word, judgment, wisdom or knowledge, or resist the force of Your reproach and the consequences of disobeying You. “We have no knowledge except what You have taught us” (2:32), through our natural constitution—
+
+### B2007 p. 100 — The angels' instruction and the refusal of Iblīs
+
+[Read Arabic source, p. 100](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+—and original disposition. “Indeed You are the Knowing” (2:32), concerning the things You asked us about, by the judgment of placing that knowledge in one qualified to receive it.
+
+When their incapacity became clear and they renounced what they had said and done, God returned to perfecting them through their **origin and whole**, saying to Adam: “Tell them the names of the realities named,” namely those named by Our essential, attributive, act-related, state-related and rank-related names, with the various things they bestow and to which they refer in angelic and other forms of existence.
+
+When Adam informed the angels of them, they learned and became perfect **through their whole**. Their whole, in turn, acquired another perfection through the perfection of the parts. The Real reminded them of the truth of “I know what you do not know” (2:30), repeating, “Did I not tell you that I know the unseen of the heavens and earth” (2:33)—the names whose effects permeate the heavens and earth under the creative command at every instant, through which Adam was formed and made actual.
+
+“And I know what you disclose” (2:33) refers to the judgments of their existence; “and what you concealed” refers to the judgments of their possibility and the demands of their realities. These were all taught to Adam and deposited in his exterior, interior, heart, secret and innermost secret, because of his perfect receptivity, comprehensiveness and constitution. Through that complete receptivity the Real made him **vicegerent** in the perfection of His knowledge of Himself and self-witnessing through Adam, in Adam and every thing; in the love of His Essence unqualifiedly and under qualification; in His showing Himself through essential and name-related perfections comprehensively and in detail; and in His governance of the realm.
+
+The angels submitted as parts submit to their whole and branches to their source. They recognized Adam's comprehensiveness **except Iblīs**, who failed to understand the meaning and failed to be guided because of his deviation and remoteness from truth. His fiery constitution impelled him toward elevation and pride, contrasting with Adam's earthen constitution, apparently the lowest of the low. Thus wisdom and the light of guidance did not affect him, and he refused to submit or recognize Adam's comprehensive reality, thereby passing from perfection to deficiency and abandonment.
+
+He went further than refusal: he opposed, argued obstinately, and advanced **imaginal arguments** appropriate to his nature. He reasoned that, if comprehensiveness qualified Adam for election, he too comprised spirit and sense, while his own fiery nature was higher, older and subtler than earth and clay. How could the higher submit to the lower? His imagination veiled him, and his argument and resistance against the command drove him farther away. Earlier he had cast suspicion among the angels and incited them to dispute Adam's qualification—
+
+**Next original page:** p.101 completes Farghānī's interpretation of Iblīs and the angelic criticism before the fourth foundation begins. This remains a historically situated Akbarian reading of the Qurʾānic narrative, not a claim that all its psychological imputations are established scripture. The source text contains a repeated phrase around p.97–98, noted as a possible transcription duplication pending print collation.
+
+
+---
+
+## Working English translation · B2007 pp. 101–108
+
+**Sources:** [Conclusion of the third foundation](https://alshrefalm7sy.ahlamontada.com/t3213), p.101, and [fourth-foundation Arabic transcription](https://alshrefalm7sy.ahlamontada.com/t3214), pp.102 onward. These are modern digital transcriptions showing Beirut pagination, not manuscript facsimiles; the working translation retains the source's order and does not reproduce the modern editor's footnotes. Page labels mark B2007 printed pages.
+
+### B2007 p. 101 — Iblīs's misguidance and the possibility of angelic growth
+
+[Arabic source, end of third foundation](https://alshrefalm7sy.ahlamontada.com/t3213)
+
+Iblīs had encouraged the angels to be pleased with reproaching and rejecting Adam's vicegerency, making claims for their own rank, and magnifying themselves, as in their saying, “Will You place therein one who will corrupt it and shed blood while we glorify Your praise?” (Qurʾān 2:30). The proof of this reading, Farghānī says, is that Iblīs's special fiery constitution has an aptitude for the appearance of these judgments, whereas the angels' own constitution does not contain the principles of corruption and bloodshed in the same way. Nothing appears from a created being except through what is present within it in actuality or potency. Hence it is appropriate to see Iblīs's suggestions as giving rise to the objection in the angels.
+
+God said that Iblīs “was among the unbelievers” (2:34)—which Farghānī reads also through the literal meaning of *kufr* as **concealing**, in that he concealed the matter and misrepresented it to the angels before Adam's prostration. He led them to join him in thinking vicegerency remote and in criticizing Adam. Thus the impetus for the challenge, in his interpretation, was Iblīs's imagination and the predominance of its judgments.
+
+May God protect us from ignorance that casts one far away, and from fragmented reckoning, and benefit us through knowledge, guidance and Godwariness. He hears and responds.
+
+**This is clear evidence**, Farghānī concludes, that **angels, spirits, and intellects can progress and acquire increase**, contrary to what certain philosophers have maintained. May God guide them.
+
+### B2007 p. 102 — Fourth foundation: the human being and the two disclosures
+
+[Arabic source, fourth foundation](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+**FOURTH FOUNDATION: On the human being's ranks, successive stages, states, and the manner of return to his origin and final destination.**
+
+It has already been established that the first thing determined from the true Unseen was **essential real unity**, equally related to unicity (*aḥadiyya*)—which removes all differentiated considerations—and oneness (*wāḥidiyya*)—which affirms them all. That equal relation is the **first intermediacy**, identified as the **Aḥmadian Reality** and the **Reality of Realities**, receptive to the disclosure of the One-in-Unicity to Himself.
+
+The first self-disclosure, characterized by all-comprehensive unicity bringing those two relations together, is the **Aḥmadian Light**, alluded to in the reported saying, “The first thing God created was my light.” Here Farghānī explains “created” according to an original linguistic sense as **determined** or **measured**. This self-disclosure is the origin of all divine names to which lordship, rectification, kingship and mastery are attributed in relation to cosmic realities; it is their origin, source of their appearance, place of return and final end. Scripture alludes to this through “To your Lord is the return” (Qurʾān 96:8) and “To your Lord is the final end” (53:42).
+
+This first self-disclosure contains **essential perfection** realized at the equal standing of the two relations **without any condition**, belonging to the first rank; and **perfection through the names**, whose outward manifestation, through the predominance of oneness, requires the **second intermediacy**, an image and shadow of the first, receptive to the second self-disclosure which is an image and shadow of the first disclosure. Oneness predominates at this second rank, and its included considerations emerge as differentiated forms, although their very realities were contained within oneness at the first rank.
+
+As for essential perfection, its primary requirement is the complete **disclosure** (*jalāʾ*) of the most holy Essence to itself in all the considerations, consequences and properties of oneness, all included within oneness as the forms detailed in the ranks will appear forever.
+
+### B2007 p. 103 — Disclosure and self-vision; the Aḥmadian and Muḥammadan realities
+
+[Arabic source, fourth foundation, p. 103](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+Through that disclosure and witnessing in the mirror of the first intermediacy at the first rank, the most holy Essence is **independent of the worlds** and of their successive differentiated manifestations, since it knows and witnesses them with all their properties and consequences while they are included within oneness: a witnessing of detail within a comprehensive whole.
+
+The final requirement of essential perfection is **complete self-vision** (*istijlāʾ*) of the One-in-Unicity: its appearance to itself with a unity comprehending all the forms of its considerations after their return to Him—“To Him the entire affair returns” (Qurʾān 11:123)—so that the effect of none predominates over another. As with the earlier complete disclosure, its Essence contemplates itself in all-comprehensive unicity, but now through the **perfected human manifestation** analogous to the first intermediacy in its perfect justice and equilibrium.
+
+This manifestation is both **formal** and **intelligible**. Its formal or corporeal reality is the purified and most balanced **Muḥammadan temperament**. Its intelligible reality is the pure, Godwary **heart**, which comprehends the Real under the first self-disclosure, precisely because of its complete comprehensiveness and correspondence to the first intermediacy. Neither earth nor heavens can contain this manifestation as such, because their determinations restrict them to particular meanings and properties.
+
+The **elemental form** is Muḥammadan. Its inward meaning and reality, identical with the first intermediacy, is the **Aḥmadian Reality** of the Prophet. For the realization of the beloved singularity and uniqueness, the form of the one who inherits the **taste of his sainthood**, though not the reality of his prophethood, may also become a manifestation of this rank.
+
+Perfection through divine names likewise requires complete disclosure and self-vision. Its complete disclosure has two kinds. **First**, the appearance of the second self-disclosure, in which oneness predominates, with the second intermediacy as its receptive mirror, containing seven fundamental attribute-realities determining the seven original divine names. Seven human realities are correspondingly determined: in each the trace of one name is manifest but concealed relative to the whole, while each includes all the others through true comprehensiveness because of its closeness to the first intermediacy.
+
+Seven further human realities arise from them in the detailed, Cloud-like aspect of the second intermediacy. Their judgments are the reverse of the first seven—
+
+### B2007 p. 104 — Divine and cosmic differentiations and the completion of disclosure
+
+[Arabic source, fourth foundation, p. 104](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—from these seven second realities branch, within the Cloud-like Presence and its two sides—the Presences of Necessity and Possibility—divine name-realities to which action and efficacy are attributed, cosmic realities to which reception and being affected belong, and human realities emerging from one another as genera, species and individuals. All are **forms of considerations of oneness**, appearing as intelligible forms to the Real in relation, not as independently other beings appearing to themselves.
+
+The **second kind of complete disclosure through the names** consists in the appearance of those forms as the effects of divine names and cosmic receptivities. The collective configurations resulting from their meeting are called **creatures** and **others**. An effect of the second disclosure, the all-merciful Breath insofar as it is bestowed, appeared as spiritual forms. Each spirit and each thing's spirituality became a manifestation of a consideration included within oneness.
+
+The same effect then took **imaginal forms**, and afterward simple and compound **sensible forms**: Throne, Footstool, Gardens, heavens, fixed and wandering stars, elements and generated beings. The appearance of **Adamic humanity** completed the process of disclosure.
+
+Every universal spirit-form manifests spiritually a universal name among the principal names or their universal derivatives; particular spirits manifest more particular names. Every universal imaginal form manifests one of those universal realities or names. Every universal celestial sphere or heaven manifests a principal universal reality in the sensory order, while its parts manifest their particular correspondences; each principal planet manifests a universal original name and lesser configurations more particular ones.
+
+These cosmic manifestations bear the mark of **otherness and createdness**, so that each apprehends only creation and otherness, whether the object apprehended is itself or another of its kind. Through these forms each divine name realizes its **specific assigned perfection**, as the name's properties and effects become manifest within and through them.
+
+Whatever is compounded from the elements at the various ranks of equilibrium among generated beings results from the effects of divine names and attributes, operating through their celestial and planetary manifestations and configurations under divine wisdom. Since in this sensory world things are predominantly related to their near or remote causes, only rarely does something occur without a perceptible cause. The divine names' effects therefore usually operate through celestial and planetary manifestations, each universal sphere manifesting a universal divine reality—
+
+### B2007 p. 105 — Cycles of particular perfection and the beginning of self-vision
+
+[Arabic source, fourth foundation, p. 105](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—among the original foundations, each moving planet manifesting one of the **seven principal divine names**. Each name and attribute possesses its own manifestation within a sphere through the configurations and connections of celestial bodies. During each period a particular sphere and a governing planet dominate, so that the judgments of the corresponding divine name and reality prevail over those of the others.
+
+During that period, the genera, species and individuals of the generated forms associated with the predominating name arise, sustained also through the assistance of the other names operating through their subordinate celestial manifestations. In this way the **particular perfections** of all seven principal names and attributes are realized through their determinations and distinctions, as are the perfections of their celestial and planetary manifestations.
+
+When the cycles of these seven celestial authorities end, each has manifested the kinds and instances of generated beings belonging within its scope. **Complete disclosure** (*jalāʾ*) thereby reaches its end.
+
+A **second cycle** begins for each celestial and planetary manifestation, including its configurations and connections, this time to realize **complete self-vision** (*istijlāʾ*). The second self-disclosure, in which oneness predominates and which includes all the names and attributes in actuality, is to witness itself through the **heart belonging to perfected human form**.
+
+That human form and its heart are the corresponding formal and intelligible manifestations of the **second intermediacy**, containing all divine names, attributes and cosmic realities and judgments, together with every divine and cosmic rank, while the trace of one of the seven names remains subtly present.
+
+The second disclosure witnesses itself through that human manifestation and its own hearing and sight: **differentiated witnessing within comprehensive unity** when it witnesses itself in that manifestation, and **comprehensive witnessing within differentiation** when it witnesses what extends beyond it through the same faculties.
+
+Such perfected human manifestations enable each of the seven original names, after attaining its specific perfection and the distinction proper to its effect, property and rank, to return to its **principle of comprehensive inclusion**. In this way it becomes a bearer of both sorts of perfection: its particular differentiation and its inclusive unity—
+
+### B2007 p. 106 — Adam and the seven perfect vicegerents
+
+[Arabic source, fourth foundation, p. 106](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—after which the second self-disclosure returns with these perfections to its original, **the first self-disclosure**. That return kindles in the first disclosure a renewed movement toward complete self-vision, and original love seeks its fulfillment.
+
+The uniquely human attribute among all ranks is **speech and articulated expression**, outwardly and inwardly, for other beings share the other attributes in some ranks but not across them all. The first period of the celestial names' second cycles, directed to their name-related self-vision, therefore belonged to the manifestation of **speech and the Speaking**.
+
+Through the original love, which moved the Keys and their subordinate names, spiritual, imaginal, celestial and planetary manifestations—now perfected in their own particular ways—the second self-disclosure, under the name of the Speaking, required the **preparation and tempering of Adam's clay**. All these manifestations were like the faculties and components of the hand to which his proportioning is attributed. Then He breathed into Adam from His Supreme Spirit without intermediary, as explained earlier.
+
+Since the Speaking's influence predominated in Adam, he was singled out to **tell the angels the names**. His position within the intermediary rank was adjacent to the lowest heaven and the Moon, which manifest speech and the Speaking. For that reason the *Bayt al-ʿIzza*, locus of the Qurʾān's comprehensive descent, belongs to that heaven.
+
+Adam's form, comprehending every perfection, became the origin of all **drawn or outward human forms**. The meaning and reality of Muḥammad, as the Reality of Realities, became the source of all **human and nonhuman realities, meanings and spirits**.
+
+Corresponding to the seven original realities contained in the second intermediacy under its comprehensive equilibrium, **seven forms of perfected humanity** were determined: elemental and bodily in form, intelligible and heart-related in meaning, capable of receiving the second self-disclosure in all its comprehensiveness. Each contains all original, universal and particular divine names while bearing a concealed trace of one distinguishing principle.
+
+That trace becomes apparent in the person's **witnessings and spiritual tastes**, belonging to the saintly aspect, and in his reports and the ordering of his earthly constitution, belonging to the prophetic aspect. Each of these seven perfected universal manifestations is called a **vicegerent**, a **perfected one**, and one of **firm resolve**, able to remain patient and steady at the midpoint between Real and creation: receiving assistance from the Real in his reality—
+
+### B2007 p. 107 — Law and scripture as the measure of the vicegerent
+
+[Arabic source, fourth foundation, p. 107](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—and giving to creatures under his creaturely aspect, without leaning toward either and neglecting the judgment of the other.
+
+Every perfected vicegerent requires a **universal measure** coming from the Real, proportioned and balanced, preserving unity and justice on the creaturely side connected with his prophethood: first in himself and then in those who receive comprehensive existential assistance through him. This protects them against the judgments of possibility and the multiplicity of psychic and satanic effects. That measure is called **the revealed Law (sharīʿa)**.
+
+When the measure is a **universal verbal measure**, comprising everything in the vicegerent's reality and existence—attributes, ethics, unveilings and spiritual tastes—in a form by which they may be perfected and brought to the Presence of the Majestic and Beautiful, whether in the comprehensive human form or in the differentiated human forms of his followers, among whom are the unjust, the moderate and those who precede others in excellence, it is the **revealed Book** bestowed upon each perfected vicegerent.
+
+If the measure is more particular and partial by comparison, it is a **particular law** belonging to a prophet or messenger, originating from that universal verbal measure. Likewise, the realities and existence of prophets and messengers other than the perfected vicegerents branch from the realities and existence of those perfected ones. The latter are like **principles and genera**, while groups of prophets and messengers arise as **branches and species**, and their communities stand in a corresponding derivative relation.
+
+The perfected vicegerents themselves, as to reality and existence, stand to the **Reality of Realities**, the Aḥmadian Reality and first intermediacy, and to the first disclosure—the inward aspect of existence and Aḥmadian Light—as genera and species stand to the **highest genus**.
+
+During the sovereign cycle of each celestial and planetary manifestation one of the perfected vicegerents appeared. That cycle did not end before the prophets, messengers and followers branching from the reality of that vicegerent had appeared and attained their proper perfection.
+
+Within each such period of one firmly resolved, perfected vicegerent, **seven manifestations** of the original seven divine realities must appear, with one particular judgment predominating in each, analogous to the seven *abdāl* of this Muhammadan community. Yet a qualification must be made. Whoever manifests the second disclosure while **comprehending all the seven names**, with only a concealed trace of one at the precise centre of the second intermediacy, is a directly appointed perfected vicegerent whose disclosures are essential. Whoever—
+
+### B2007 p. 108 — Perfected and derivative vicegerents; the return toward primordial equilibrium
+
+[Arabic source, fourth foundation, p. 108](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—belongs to the seven derivative followers, manifesting one original name under its distinctive, particular and articulated character in the Cloud-like Presence, is a **vicegerent through** that perfected one rather than directly, and his disclosures are through attributes and names, not through the Essence.
+
+Thus each perfected vicegerent has seven derivative vicegerents; an analogous arrangement applies to the Muhammadan poles (*aqṭāb*). **Every perfected person is a vicegerent, but not every vicegerent is perfected.** Ponder this distinction between the station of perfection and the station of vicegerency. The perfected are few, the vicegerents many; and between two perfected ones there may be vicegerents occupying their place because vicegerency is close to perfection. Other subtleties of this arrangement are known only to the rarest of the great realized ones.
+
+When the **particular complete disclosures and self-visions** of the second disclosure have reached perfection, and the cycles of its differentiated manifestations end by returning to it, that disclosure returns with its perfections to its origin, the **first self-disclosure**. The original love, colored by those perfections, now moves toward the realization of the first disclosure's complete self-vision, as previously explained.
+
+The Keys orient themselves, under this condition, toward that perfection. The original and derivative names descend to the second rank with their special and comprehensive perfections. Together with their spiritual manifestations they turn toward fulfillment. At this point the sovereignty of the particular cycles—the cycles of the seven heavens and their planets—returns to the **original, universal, unified cycle of the limiting Throne**, and its comprehensive and balanced demand for a manifestation corresponding to the **first intermediary**.
+
+The Prophet's reported words, “Time has revolved to the form in which it was on the day God created the heavens and earth,” indicate that return. On the day of their origination, dominion belonged to the unified, balanced cycle of the Throne, and its demand too was one and balanced. What appeared was a single, comprehensive, joined **Supreme Element**, the matter from which heavens and earth were formed and which stood in equilibrium among the four elemental realities—
+
+**Next source page:** B2007 p. 109, continuing the Throne's return to primordially balanced cosmological conditions and the preparation of the Muhammadan temperament. The historical celestial-cycle theory is left in Farghānī's voice and is not presented as established contemporary cosmology.
+
+
+---
+
+## Working English translation · B2007 pp. 109–116 · Foundation IV
+
+**Source:** [Fourth-foundation Arabic transcription with Beirut page labels](https://alshrefalm7sy.ahlamontada.com/t3214). Page headings are editorial and modern printed footnotes are not part of Farghānī's prose. This is provisional English source translation, not manuscript collation or a validated critical edition.
+
+### B2007 p. 109 — Return to the universal cycle and the Muḥammadan temperament
+
+[Original Arabic, p. 109](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—the four elemental realities and their determinations and differentiations. After that joined matter was opened and the heavens and their respective cycles became determined, the sovereignty of the corresponding cycle passed at each period to one of them, for the wisdom already indicated. Differences in the judgments of these cycles, arising from differences in their particular receptivities, produced variations in calendrical reckoning, intercalation and the like.
+
+When their periods came to completion, the judgment of differentiation returned to comprehensiveness and the sovereignty of the cycles returned to the **Throne's universal cycle**, which is the source of time. Thus intercalation and calendar manipulation came to an end, and time and its cycle once again followed the judgment of unity and equilibrium.
+
+The time was therefore ripe for the complete self-vision of the **first disclosure**, the One-in-Unicity who unites *wāḥidiyya* and *aḥadiyya* without distinction. An elemental human constitution, unified and balanced, had to be determined so as to manifest the first intermediacy **in outward form**. A pure, Godwary **heart** then became determined within that constitution to serve as its **intelligible form**.
+
+Under the impulse of original love the Keys moved toward this perfection, and the seven principal names with their universal derivatives, their spiritual manifestations, and their imaginal and celestial manifestations—each having already realized its own comprehensive and particular perfections—were oriented by the return of sovereignty to the unitary Throne toward the determination of the **most balanced Muḥammadan temperament**.
+
+Existence became determined from the Presence of the first self-disclosure, descending through all ranks and their judgments and effects, in the manner proper to their unified, balanced and already perfected constitution, without arrest or impediment. That existential disclosure appeared in the form of appropriately balanced **nourishment**, which ʿAbd Allāh and Āmina consumed in the most suitable manner and at the most favorable time. It became seminal substance under the most balanced conditions; the effect of original love appeared in them as desire in a completely suitable state.
+
+The two came together, and the blessed, auspicious seed was established in the womb at the most favorable hour and fortunate celestial configuration, as required by the original balanced cycle of the Throne, whose judgment pervaded the subordinate cycles. Every divine name, through its spiritual, imaginal and sensible celestial manifestations and their acquired perfections, undertook to nurture and preserve that most complete and balanced constitution throughout its stages.
+
+After its formation, the **Supreme Spirit**, the most primordial and unitary, identical with the Supreme Pen—
+
+### B2007 p. 110 — The Prophet's development and the two cosmic books
+
+[Original Arabic, p. 110](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—under the aspect in which it appears as differentiated within the Tablet through the command “Write what will be,” and turns toward the world for its rectification, governance and nurture, became attached to this most completely proportioned temperament at the most perfect time.
+
+Muḥammad appeared in the sensible world at a most auspicious moment, and at his appearance his light illumined the world from east to west, as his mother Āmina reportedly described at length. The first disclosure and the Keys of the Unseen, through their permeation of every universal and particular name and manifestation, then undertook to raise him from infancy to maturity.
+
+The heat of his being **sought** prompted his withdrawal to the cave of Ḥirāʾ, while the sign of his being **beloved** ordered him to realize the secret of the night journey alluded to in “Glory be to Him who carried His servant by night” (Qurʾān 17:1). He reached the degree of perfection and supreme perfection beyond which no rank, final end, beginning or limit exists in prophethood, messengerhood and sainthood. Praise belongs to God alone for this care, sufficiency and perfect solicitude.
+
+One of its most complete and universally beneficial effects was the determination of a **universal, comprehensive, perfected verbal measure** for him: the noble Book and wise Qurʾān, to which falsehood cannot come from before or behind, a revelation from the Wise and Praiseworthy. It sets out the **revealed law**, universal in its judgment and benefit, summarizing all laws concerned with perfecting bodily states through action and speech.
+
+It also explains the subtleties of the **Path** (*ṭarīqa*), which perfects psychic and spiritual constitution through the rectification of character and knowledge of the soul's afflictions. It also explains the science of **Reality** (*ḥaqīqa*), namely knowledge of the Real, His beautiful names and lofty attributes.
+
+Thus what descends from the Unseen to visible reality comprises **two books**: one of **acts**, the other of **utterance**.
+
+The first, the manifest Book appearing through power and action, is **the world**. Every individual universal reality of it, considered apart from its necessary concomitants and dependents, is like a **letter**. Considered under its original receptivity to existence, it is like a **name**. Considered under its actual reception of existence through the request of preparedness, it is like a **verb**.
+
+When a reality is joined to existence and its concomitants in such a way that createdness, actuality and otherness are signified, it becomes like a **word**. When such a combination expresses coordinated meanings indicating a single reality, as life, knowledge and will attributed to the reality, it is like a **verse**. When it includes the reality together with a whole rank—
+
+### B2007 p. 111 — The world as book and the Qurʾān as comprehensive expression
+
+[Original Arabic, p. 111](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—of divine names or cosmic realities and their judgments, it resembles a **sūra**. When it comprehends every universal and particular divine and cosmic rank included within the second determination and its intermediacy, it is a clear **book**, whose summarized practical image is **Adam**, together with the perfected vicegerents and messengers of firm resolve who preceded Muḥammad.
+
+If that all-comprehensive combination includes **the Reality of Realities**, the first rank and the greatest intermediacy pervading every rank, so that only the single supreme Witness and His true inheritor can witness it, the result is analogous to the **Qurʾān**, whose summary and most comprehensive formal image is **Muḥammad**.
+
+The second, **verbal book**, is the wise revealed Book that establishes the perfection of the aforementioned condensed book of acts. Its articulation differs according to the realities and principles contained in the second intermediacy. From each of these the second self-disclosure has a **descent**, with a universal manifestation governing that descent and a period of sovereignty proper to it. It then has a **return and ascent**, manifested by a comprehensive human reality: one of the perfected vicegerents other than our Prophet.
+
+Each such perfected vicegerent has his own **book**, which establishes the perfection of his constitution and explains his central point of balance in every movement and stillness, action, statement and state, and indeed in those of his followers, people and descendants. Examples include the scrolls and books of Adam, Seth, Idrīs, Abraham, Moses, David and Jesus, peace be upon them.
+
+The **wise Qurʾān**, by contrast, comprehends the judgments of all the original seven realities and governing divine names in an **undivided unity of comprehensiveness**. No characteristic effect of one predominates over the others. It was revealed upon the comprehensive manifestation of that same unity—our Prophet Muḥammad.
+
+The Qurʾān establishes his **supreme perfection** and expresses the essential nature of his mediating equilibrium through all his sayings, actions, attributes and ethical traits, in his comprehensive Muḥammadan form and its differentiated manifestation among his people and followers from beginning to end. This explains ʿĀʾisha's statement when asked about his character: **“His character was the Qurʾān.”** Her knowledge and expert insight came from the lamp-niche of that all-comprehensive, unitary Muḥammadan prophetic Presence.
+
+### B2007 p. 112 — Each divine name has a point of equilibrium: wilāya
+
+[Original Arabic, p. 112](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+**Chapter.** Know that the essential and attributive names, universal in every respect—such as the inward and outward aspects of *Allāh* and *al-Raḥmān*, the Keys of the Unseen and the original principles, each containing all the others—and the names universal under one aspect but not another, such as their derived divine names in the number ninety-nine, then three hundred, one thousand and one, and one hundred twenty-four thousand, corresponding to the prophetic and saintly realities derived from these names: each has a **point of equilibrium** comprehending all that falls within that name's scope.
+
+If such a universal name turns away from that point, it loses its comprehensive intelligible form and even the name by which it was designated; one of the partial names included within it comes to dominate and display its particular form.
+
+This point of equilibrium is the **point of sainthood** (*wilāya*), since it is near to the unicity of the Absolute Unseen. The original linguistic meaning of *wilāya* belongs to the terms for closeness and succession: two or more things are adjacent with nothing alien interposed. Hence it is employed for proximity of place, kinship, religion and other relations; it likewise denotes proximity in the language of the realized masters.
+
+Since all divine names are determinations of the self-disclosure of the all-merciful Breath, descending to realize the complete disclosure and self-vision described earlier, every kind of universal name has a particular manifestation in each cosmic rank: spiritual, imaginal, sensory, celestial and planetary.
+
+Its effects in the world of generation and corruption ordinarily depend on those manifestations and their configurations, as effects depend on causes. Each manifestation possesses an **intermediate, balanced point** that is its **heart**. The judgment of the divine name's unity appears only within and through that heart. Only through that point can the name influence what lies beneath it, govern it, or turn toward perfecting it. Celestial and planetary manifestations determine the nature of time and its conditions and effects—
+
+### B2007 p. 113 — The balance of prophethood and the return from sainthood
+
+[Original Arabic, p. 113](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—time, as explained, resembles a form of the sensory rank, for each serves as the container and locus embracing all sensible things. Every container has a characteristic effect on what it contains, so that the contained thing appears only in conformity to the container's condition. The judgments and effects of time vary according to the governing cycles of the heavenly spheres and planets.
+
+The **unified, balanced central point** of every time-conditioned manifestation of a principal universal divine name is the reality of **prophethood (*nubuwwa*)**. It is elevated beyond the other parts of that manifestation after its unity is established, and it informs others of the unity of the name manifested by that form. If *nubuwwa* is derived from the root meaning **to announce or inform**, it denotes this reporting; under another derivation it denotes **elevation**.
+
+Every human being who serves as a guide to others derives his existence and reality from some universal leading divine name and its reality, from which he originates and to which he must return. Whenever such a human being is released from the bonds of cosmic manifestations—whether by disciplined journeying or by divine attraction—and returns toward his Lord, to the original divine name from which his reality came, attaining its unified **point of equilibrium**, identified as wilāya, he becomes a **saint drawn near**.
+
+When this guide, having become a saint, descends again to the cosmic ranks and attains the temporal point of balance associated with prophethood, he does so to raise people or communicate to them the reality of the unity and justice of the governing divine name. Those whose existence derives from that name can then bring their states, utterances and acts into accord with its judgments and with the governing conditions of their time.
+
+If he is a **perfected vicegerent**, his communication occurs through the wise book particular to him. If he belongs to a lower rank, it occurs through a particular law by which he himself worships or by which followers are authorized to worship through him. His authority comes from the Name from which his prophetic reality is derived.
+
+### B2007 p. 114 — The distinction between saint, prophet, and messenger
+
+[Original Arabic, p. 114](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+If such a prophet is **commanded** to call a particular people and communicate to them the law bestowed upon him, that invitation and communication constitute a **particular message** (*risāla khāṣṣa*), and the one so commanded is a messenger to a particular people, like the messengers before Muḥammad. If he is commanded to address and communicate to **all creatures**, that is a universal message, and he is the universal messenger, like our Prophet.
+
+Thus, in this exposition, the **prophet** possesses divine **permission** to communicate, but not necessarily a command; the **messenger** possesses a divine **command**, and is enjoined to call and convey. The **saint** likewise possesses a particular permission when he has reached the final station of stillness or fixing (*tawqīf*), or a general permission to act in the world when he occupies an intermediate station of directed disposal (*taṣrīf*).
+
+If a saint descends to the cosmic ranks but does **not** appear at the central equilibrium of the manifestation called prophethood, appearing instead at some side or region around it, he is not a prophet or messenger. In proportion to his closeness to that equilibrium he participates in invitation, establishment and effective authority among the Muhammadan inheritors.
+
+The descent of self-disclosure through divine and cosmic ranks has always occurred between **comprehensive gathering and detailed distinction**, or between union and separation. The first determination and disclosure possess real unity, comprehensive gathering and inclusion. Their differentiated aspect is **relational**, consisting of the considerations of oneness included within them.
+
+Those relational considerations are gathered at the second determination and disclosure. Their subsequent differentiation appears as the multiplicity of known things and the relational multiplicity of the divine names. The **Supreme Pen** comprehends this differentiation. The **Preserved Tablet** is its articulated manifestation, including the spirits and angels. The **primordial dust** comprehends that further differentiation, while the Throne, Footstool and imaginal forms articulate it.
+
+The **Supreme Element** comprehends this articulation; its differentiation produces the elements, heavens and generated beings through their kinds, species and individuals. The final, true comprehensive gathering of this differentiation is the form of **Adam**, whose differentiated aspects are the realities of the perfected vicegerents, prophets and messengers.
+
+Every such person likewise serves as a comprehensive whole for those within his particular people, whether receptive or refusing. The true gathering of all this Adamic differentiation belongs to the complete **Muḥammadan form** and the still more comprehensive Muḥammadan reality—
+
+### B2007 p. 115 — Adamic descent versus Muḥammadan return
+
+[Original Arabic, p. 115](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—the differentiated aspects of that all-comprehensive unicity are the perfected vicegerents, poles, substitutes and all those falling under each such person within the Muhammadan community.
+
+Adam, however, is the bearer of **descent**. Thus he manifests all divine names differentiated at the second rank when the inward existential self-disclosure descends there to realize name-related perfection, which requires distinction and plurality. He therefore gathers as source all human forms determined under the judgment of being last: “The human being was the last existent created,” as Farghānī reports.
+
+He was ordered to descend from the Garden—where the whole conceals the parts and their differentiation—and taught the knowledge of the names differentiated at the second rank, the rank of the Real's outward aspect. He did **not** receive knowledge of the essential names proper to the first rank, the inward aspect, whose true realities are what the names taught to Adam ultimately designate. Their knowledge is particular to the **Muḥammadan Presence**.
+
+Since every perfected vicegerent, and all prophets, messengers and communities under their scope, articulate Adam's comprehensiveness in descent, its judgment pervades them as they realize the name-related completion of disclosure and self-vision. Every such human guide first frees himself from cosmic restrictions and realizes the equilibrium of his original divine name; then he descends again into its manifestations at the point proper to **prophethood**, governing his temporal circumstances, showing the unity of his name through his actions, speech, character and states, and through those who follow him.
+
+Thus, from Adam to Muḥammad, **prophethood was outwardly manifest and sainthood hidden within it**. This reflects the sovereignty of forms during descent and the concealed character of the names while their manifestations dominate.
+
+Our Prophet, by contrast, is the bearer of **ascent, return and restoration**, in accord with “He who prescribed the Qurʾān for you will surely return you to a place of return” (Qurʾān 28:85). This means, to those who understand and realize the matter—
+
+### B2007 p. 116 — The Muḥammadan completion of return and the seal of prophethood
+
+[Original Arabic, p. 116](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—that the One who descended through you with the entire command, both Real and creation, comprehensively and in detail, so that through your reality, existence, meaning and form you became the unitary gathering of that whole, as an enacted and spoken Book, must return you to the **highest place of return**, the Presence of your Lord who is the final end of all things: “To your Lord is the final end” (Qurʾān 53:42).
+
+He is thus the comprehensive manifestation of all divine names—essential and attributive—established in the first rank in comprehensive inclusion, and in the second in differentiated forms, together with their manifestations under the equilibrium of each in the descent of his light and its passage through every rank, culminating in the most complete Muḥammadan form.
+
+Muḥammad is a comprehending whole for what became differentiated from Adam in form and meaning, as Adam was for what became differentiated from the cosmos. Through this universal, unitary Muḥammadan manifestation, each reality can be colored by **essential perfection**, comprising all the others without any remainder of the dominance of separate distinction or particularity, after first having received name-related perfection and its special properties and returned to the Presence that is the final end.
+
+In him the realities of **sainthood and prophethood meet in equilibrium**, neither regularly predominating over the other. Farghānī refers to “We have sent you as witness, bringer of good news and warner” (Qurʾān 33:45).
+
+Sometimes **sainthood** predominates, as in “Those who pledge allegiance to you are pledging allegiance only to God” (Qurʾān 48:10), or in the reported saying concerning an hour with God into which no near angel or sent prophet can enter. At other times the judgment of **prophethood** predominates, as in the declarations that he is a warner (Qurʾān 34:46; 46:9).
+
+Since he bears return and ascent as Adam bears descent, the judgment of **descent ends with him**. Prophethood, connected with descent during the reign of the cycles and the communication of the perfection suited to each time, has been fulfilled. **Prophethood is therefore sealed with him; there is no prophet after him.** In his own constitution prophethood and sainthood remain together in equilibrium, corresponding to the primal equality of first and last, outward and inward, without essential dominance.
+
+Sainthood subsequently proceeds from him and becomes distinguishable from prophethood in those nearest to him—
+
+**End of stage segment:** The distinction between the seal of prophethood and later Muhammadan saintly inheritors continues on p.117. Reports cited by Farghānī in p.116 have different authentication status; the translation reports his usage without treating every attribution as established hadith.
+
+
+---
+
+## English working translation · B2007 pp. 117–124 · Fourth foundation
+
+**Source:** [Arabic transcription of the fourth foundation](https://alshrefalm7sy.ahlamontada.com/t3214), corresponding to the modern Beirut printing. The translation excludes the modern publisher's footnotes and marks divisions at the printed page boundaries, even where the authorial sentence continues. It is not yet proofed against the 1876 print or a manuscript.
+
+### B2007 p. 117 — The distinction of sainthood from prophethood
+
+[Arabic source, p. 117](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+When this intelligible differentiation became determined, its meaning required a form within the sensory world. The judgment of that requirement spread among some of the Prophet's community until they asked him for the sensible miracle of **the splitting of the moon**. He supplicated, and through the judgment of his sainthood exerted an effect, so that the moon split outwardly and that intelligible meaning found complete manifestation in this form.
+
+Just as the differentiated particulars of the comprehensive Adamic form were vicegerents, prophets and messengers, with sainthood included within them because theirs was the course of descent, so the differentiated particulars of Muḥammad's comprehensive reality and form, through those appointed as manifestations of his sainthood, are all **saints and poles**, with the judgment of prophethood included within their sainthood. They belong to the course of return and ascent, according to their comprehensive origin, the Muḥammadan reality in form and meaning.
+
+Every universal divine name determined and differentiated at the second, divine rank had attained its particular perfection through the descent of its comprehensive reality within the second descent and self-disclosure; and each had returned with those perfections to the second intermediacy through the manifestation of a perfected vicegerent, prophet or messenger. But when the first self-disclosure, accompanied by its essential names, turned again toward the appearance of the most beautiful temperament, and the most perfect spirit and most equitable Muḥammadan heart became determined, carrying that first self-disclosure—his light in the first instance—and when the Prophet realized essential perfection, every one of those original, comprehensive names thereby acquired **another return**, more perfect and elevated than its first return with respect to its final destination.
+
+That return takes place through a human manifestation, or several such manifestations, in the Muhammadan community. Such a manifestation is called **saint, one brought near, knower, realized person, substitute, pillar, imam, pole or succorer**, all comprehended under the name *walī*. In the first return, by contrast, each human manifestation had been called vicegerent, prophet, or one of the messengers of firm resolve, all comprehended under the name *nabī*.
+
+Corresponding to every earlier vicegerent, messenger and prophet there is a saint among the Muhammadans; to every perfected one a perfected saint; to every seven substitutes associated with one of the perfected vicegerents seven Muhammadan substitutes following a pole; and to the earlier seal a corresponding seal—as Farghānī observes with reference to some unusual transmitted reports.
+
+Since the Muḥammadan Qurʾānic book gathers **all books** and encompasses their meanings, it translates the meanings of all divine and cosmic realities, their states, the judgments of their differentiated details in the first descent for name-related perfection, and—
+
+### B2007 p. 118 — Why the Qurʾān and the Muḥammadan law suffice
+
+[Arabic source, p. 118](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—secondly, the disclosure of their essential perfection through one complete and comprehensive manifestation, together with the differentiated manifestations following it, whose all-comprehensive form is Muḥammadan. It also articulates the judgments of that supremely perfect Muḥammadan manifestation, his states and character traits, and the ways in which his perfection appears. It articulates the conditions and characters of his differentiated followers, and the paths by which each reaches his proper perfection.
+
+It also sets forth a **complete, all-comprehensive revealed Law** that safeguards the equilibrium of all these realities and manifestations, and the unity of the first disclosure and its names during their descent for the aforementioned self-vision. Therefore this book and law, by virtue of their complete comprehensiveness, inclusive exposition and sufficiency, make the establishment of another book or law unnecessary for every manifestation of the universal divine names. This is in accordance with the expression, “We have neglected nothing in the Book” (Qurʾān 6:38).
+
+The Qurʾān thus comprehends every path and ruling, and encompasses every universal or particular matter occurring in existence from beginninglessness to endlessness, since it proceeds from the first determination and disclosure containing all eternal and everlasting judgments. Every rightly directing imam whose intellect, heart, spirit or innermost secret is illuminated by faith and the revealed law, by the light of special guidance, or by the light of witnessing, can understand, infer and draw forth from its expressions, allusions, indications and meanings the subtleties of the **sciences of the Law, the Path and Reality**. Thereby he guides those especially entrusted to him and, more generally, everyone.
+
+As we have established, every comprehensive unity must have an articulation and differentiation. And every differentiated articulation must in turn have a comprehensive whole serving as its **final summation** and collective reckoning. Adam was such a summation of the world's differentiated particulars, and in turn an inclusive source for the differentiated vicegerents, perfected ones, prophets and messengers after him.
+
+Muḥammad was the collective summation of that Adamic articulation, the comprehensive end of its human differentiation; hence **prophethood was sealed through him**. Yet since he, together with those in whom Muḥammadan sainthood became distinguishable from prophethood, is the formal comprehensive whole for the differentiated vicegerents, saints and all his followers, there ought finally to appear a **comprehensive form of this later differentiation**, a final summation through whom their sainthood is sealed, so that the last corresponds to the first.
+
+This seal must gather the judgments of **both modes of being**, manifesting through him the effects of the worldly and next-worldly states, so that the judgments of the pole, vicegerency and perfection are completed through him in worldly existence, and the articulation of his comprehensiveness and the particulars included within his totality—
+
+### B2007 p. 119 — Constant existential renewal and dependence on a divine name
+
+[Arabic source, p. 119](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—become completely outwardly manifest in the life of the hereafter, when judgment, command, sovereignty and predominance return to God, the One, the Overpowering.
+
+**Chapter.** Recall what has been established: the existence of every person, human or otherwise, is grounded in a universal or particular **divine name**. Once that person's quiddity becomes determined, descends through divine and cosmic ranks, and acquires individuality in the sensory rank, he needs at **every instant** an existential assistance (*madad wujūdī*) that makes his continuing existence prevail over his perishing. For perishing is demanded by the nonexistential nature of his quiddity.
+
+The uninterrupted arrival of that assistance, together with the succession of instants, is what revealed language calls **new creation** (*khalq jadīd*), as in “Yet they are in confusion about a new creation” (Qurʾān 50:15). An example of the respective tendencies toward perishing and continuing is the continuous breakdown of bodily nourishment, with what decomposes being replaced at each moment; another is the oil consumed in a lamp's wick.
+
+Divine names differ in the **breadth and perfection of their encompassment**, in narrowness and incompleteness, and in the universality or particularity of what falls under them: genera, species, and individuals. Each name possesses its special **celestial and planetary manifestation**. The universal manifestations possess dominance or subordination according to the sovereignty of their respective cycles.
+
+Suppose a human individual's existence is first determined from the Presence of a name while the manifestation of a **universal name** is dominant through the rule of its cycle. If the name from which that person derives is one of the seven original universal leading names, the person's existence descends through the demand of the original movement of love, pervading the universal names and their manifestations, with their orientations and conjunctions, according to what that cycle requires.
+
+He then passes through every manifestation and rank **without being arrested or impeded** in any rank. His journey is one. He first appears as nourishment eaten by his parents in the most balanced manner; it becomes seed without obstruction, the two seeds unite, and it settles in the womb. It develops through its stages there without impediment as all the names, through all their manifestations, provide assistance and nurture. He is born, reaches maturity and attains the rank of perfected men, becoming a manifestation of the universal name from which his existence first proceeded.
+
+If, by contrast, the name from which his existence is determined is **particular**, the existence descending from it traverses the ranks with delays and impediments arising from the conflicting demands of opposed particular names and from differences in the judgments of their celestial and planetary manifestations. For example, a particular name may demand that an existent human become determined by a particular stellar configuration or conjunction—
+
+### B2007 p. 120 — Impediments during descent and the veils of the soul
+
+[Arabic source, p. 120](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—so that there is prepared a vegetal or animal form from which the temperament of that human person, or part of it, is to arise. Yet an opposing name, whose ruling conflicts with the first, may demand the corruption of the vegetal or animal form. Each then returns to its origin or simple elements. On another occasion, another configuration brings about a determination, only for an opposed ruling to counteract it. This may happen repeatedly for one person.
+
+The determination of that person's existence and temperament is thereby obstructed and delayed until he is finally freed from the effects of those impediments and his constitution appears. Each of the conditions of obstruction leaves within his **human soul and temperament** the predominance of judgments associated with possibility and natural effects. It makes him turn away and become heedless of his true Originator, exalted and holy, of what proceeds from Him in law, command, prohibition and matters of the hereafter, and gives rise to **dark veils**, constricting bonds, and distorted traits of character.
+
+These are out of harmony with his **existential secret, spiritual spirit, comprehensive unitary heart**, and his animal soul and temperament; they stand between them and their origin, their source, and the road to their real perfection.
+
+All naturally arising inclinations, appetites, sensory and imaginative loves, ambitions and hopes; the predominance of imagination, passing thoughts, conjectures, temptations, procrastinations of soul or devil; hatred, envy, greed, withholding possessions; even the inclination to **unbeneficial sciences**, from which the Prophet sought refuge in the words “O God, I seek refuge in You from knowledge that does not benefit”—all arise, in Farghānī's account, among the judgments of these impediments.
+
+So also do distorted beliefs not corresponding to truth, unfitting professions and crafts, and similar conditions. Every one of these deficiencies is related to a particular kind of impediment, and explaining them all would be lengthy.
+
+Differences between seekers—some receiving an opening only after severe struggles, self-discipline and exercises while others do not; some quickly awakening and returning from habitual behavior to the continuous observance of worship, while others are slow; some being arrested at a station or state while others pass swiftly from one to another—all follow from differences in the **number, strength and weakness** of these obstructive judgments.
+
+### B2007 p. 121 — Spiritual pathology, revealed law, and remedies
+
+[Arabic source, p. 121](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+To know these impediments truly, to discern the distinctive property and effect of each in a particular seeker, and to know which **utterances, invocations, inward and bodily actions** will remove or oppose each one, requires a knower of penetrating insight, supported by realized witnessing and certain knowledge of the ranks of creatures and the divine names. Such a person must understand the secrets of the spiritual stages and stations because he has realized them in form and meaning—such as the prophets, messengers, eminent friends of God and great masters.
+
+Everyone who aims for the door of nearness to the Real must remove these veils and their judgments. Just as celestial configurations and planetary conjunctions, insofar as they are manifestations of the Real's names and attributes, have effects in the world of generation and corruption because that world follows them, so **human movements**, as configurations and conjunctions of bodily acts and utterances through the person's limbs and faculties—each of which also manifests a divine name—have effects in the celestial spheres and above them, because the reality of the cosmos originally follows the reality of the human being.
+
+Among these effects is the removal of the obstructive judgments just described; other effects include most forms of the intermediate world, the Gardens and the veils. Understand this.
+
+In general, the **revealed Law** prescribes certain utterances, acts, movements and stillnesses which remove certain veils arising from the impediments and accidental conditions that overtake the existential outpouring, through the power of **unity and equity** pervading divine command and prohibition in those prescribed actions and words.
+
+In particular, those learned in **the Path and Reality**, the eminent spiritual masters and physicians of these inward ailments, see through penetrating insight the sickness present in each seeker. They treat each disease with medicines and compound remedies drawn from **invocations, works, disciplines, struggles, endurance**, resistance to the demands of the soul, relinquishing personal choice, renunciation, divestment, unification and other practices that counteract the particular ailment in that seeker. The effects of these ailments extend from the seeker's soul into his spirit and secret. Treatment continues until the sicknesses disappear and the **equilibrium of the spiritual temperament** becomes manifest: this is the **comprehensive unitary heart**.
+
+Keeping to the provisions of revealed law is like preserving health through an appropriate diet and drink in bodily medicine. But when a harmful quality or humor predominates and diseased material is stirred up, merely observing a regimen for maintaining health and balance does not suffice. Particular remedies opposed in their properties to the cause of the illness must be administered until the humors regain equilibrium. Only afterward can one rely on ordinary measures for preserving health. The same—
+
+### B2007 p. 122 — Why guidance by an experienced master is needed
+
+[Arabic source, p. 122](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—holds of the predominance of the soul's judgments and veils, which are **chronic illnesses**. They require particular medicines of utterance, action, spiritual state and character until the unitary reality of the heart becomes manifest in health and equity. Once that occurs, keeping to the provisions of revealed law is sufficient to preserve the health of the heart through the effect of unity and equity that flows from the one divine command within those provisions—a truth whose determination will be explained shortly, God willing.
+
+Consequently, among the most urgent matters for the seeking traveler, and among the loftiest goals and foremost conditions of the path, is finding a **directing master** and original source of instruction, learned in all three disciplines—**revealed Law, Path and Reality**—and able to discern the real character of the soul's diseases, the medicines that remove them, and the subtle ways in which appetite and greed infiltrate even recommended and permitted practices.
+
+The seeker himself suffers from the illness of ignorance, heedlessness and the many other diseases already enumerated. He resembles a sick person who does not know his disease or its treatment, and who attempts to treat himself through his appetites and inclinations, ignorant of the disease, its cause and the remedy that opposes it. He may therefore suppose that something is a medicine when **it is actually what destroys him**.
+
+We see people who think themselves seekers or realized knowers, filled with self-admiration, imagining that they have tasted or drunk of spiritual witnessing while never having smelled its fragrance or tasted a drop. They display **acquired knowledge as if it were knowledge of unveiling and witnessing**. Their tawḥīd is deficient; they imagine that permission to do as they please is unification, and that heresy is real gnosis.
+
+Some have even supposed or claimed that they were **the Mahdī, Jesus, a pole, a substitute**, or the like. All this results from traveling by oneself without a guiding master, supposing that character discipline, ascetic practice and remembrance carried out under the dictates of personal appetite, desire and choice will benefit one or convey one to a divine Presence. But the Presence of the Real is exalted above becoming a place into which any comer may simply enter, or which anyone may perceive save **one after another**.
+
+“One” refers to being one in oneself after one's attributes have been effaced; “after one” refers to following one person, taking no step on the path before him and placing one's feet after his. Thus a self-guided seeker's medicine can become his illness, and his treatment the very cause of his death. May God protect us and all sincere seekers from the evils of our souls, from their destructive conjectures and overpowering imaginations. Amen, Lord of the worlds.
+
+**Chapter.** Having now understood that the source from which divine names and cosmic realities arise is the **reality of unity**—in its inward aspect, identical with the Reality of Realities at the first rank, and in its outward aspect—
+
+### B2007 p. 123 — Intermediacy within the human constitution
+
+[Arabic source, p. 123](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—the second intermediacy established at the rank of Divinity—know that this intermediacy, by virtue of its universality, centrality and comprehensiveness, pervades every divine name to preserve the gathering of its **real unity and relational multiplicity**. It likewise pervades every cosmic reality to preserve its intermediate position between necessity and impossibility.
+
+The outward aspect of this intermediacy has a judgment of **comprehensive inclusion** and a judgment of **differentiated articulation**. In the first it is the reality of each perfected vicegerent successively. In the second, called the **Cloud-like Presence**, the realities of all other human beings arise from it and remain established within it.
+
+Some of these human realities lean toward its central balance and the predominance of its justice. The realities of earlier prophets, vicegerents and messengers and of Muhammadan vicegerents, saints and believing followers below the perfected ones therefore differ in their degrees according to their nearness to or distance from its equitable intermediate reality. Others incline strongly toward the pole of possibility and the judgment of multiplicity, so that in this account the realities of unbelievers and hypocrites also arise and remain established within it.
+
+Know that the **most balanced Muḥammadan elemental constitution** is the image of the **first intermediacy**, insofar as the comprehensiveness of oneness appears through it. His most perfect, all-embracing **heart** is the image of the very centre of that first intermediacy and its unitive joining of *wāḥidiyya* and *aḥadiyya*.
+
+The constitutions of the remaining perfected vicegerents, messengers of firm resolve and poles among the Muhammadan saints are images of the **second intermediacy**, in its differentiated aspect, which is called the Cloud-like Presence. Their perfected and comprehensive hearts are images of the **second intermediacy** under its comprehensive unity.
+
+The temperaments of those who are not perfected vicegerents are images of the effects of the differentiated Cloud-like intermediacy, insofar as they incline toward the side of possibility in greater or lesser degree. The constitutions of prophets, saints, believers and affirmers of unity are inclined more strongly toward the intermediate balance than those of unbelievers and hypocrites.
+
+The hearts of those below the perfected ones are images of a **particular effect** of the second, comprehensive intermediacy, which through its equity and comprehensiveness pervades every divine or cosmic name and reality.
+
+With this preparatory exposition in mind, recall how the effect of the all-merciful Breath descended from the highest cosmic ranks to the lowest, the **sensory rank**, and from its higher part still farther down to earth and its compounds, culminating in the **human elemental constitution**.
+
+At each rank during its descent it put on a garment appropriate to that rank. In the first cosmic rank it clothed itself in a **spiritual manifestation** and displayed its properties and judgments; in the second it donned—
+
+### B2007 p. 124 — The descent into the human animal soul
+
+[Arabic source, p. 124](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—another, **imaginal manifestation**, and displayed the properties, judgments and effects of that garment; in the third it put on a **sensible manifestation** and became manifest with its descriptions, effects and properties.
+
+At each rank the locus of its descent was an effect of the **intermediacy** that is in reality the heart of the particular form in which the spiritual, breath-like outpouring had become clothed. This outpouring also possesses a **comprehensive unitary heart** embracing all that its particular effects and attributes contain. The reality of that unitary heart remains established and implanted in both the manifestation and what is manifested, even while these bear the judgments of the spiritual, imaginal and sensory ranks and forms.
+
+By that heart the **original disposition** (*fiṭra*) on which all creatures are formed is sustained, so that every thing praises its Lord, and knows its prayer and glorification.
+
+When existential assistance came upon each obedient particle of earth—answering “Yes” and “We come willingly” in its original disposition—for the determination of an elemental temperament within the range of human equilibrium, it traversed the cosmic ranks and took on their forms and judgments, as explained, until it appeared in the form of **nourishment**. That nourishment became a seminal drop in the parents, was established in the womb, and developed through its stages until the **human temperament** was completely proportioned.
+
+Then, from within the **pinecone-shaped physical heart**, through the effect of natural heat within its innermost part, a **subtle vapor** arose. Its subtlety made it receptive to the animal faculty, and the vapor, by virtue of that faculty, was called the **animal spirit** (*rūḥ ḥayawānī*).
+
+At this point, through spiritual breathing, an **intelligible, governing spiritual effect** was breathed into it from the spiritual spirit, either through an intermediary or without one. The result was a **human animal soul**, differentiated from other animal spirits through that spiritual effect.
+
+Yet the effects of this spiritual influx, determined from the higher unitary world with its unity, equity and purity, were overcome by the multiple judgments of possibility and the animal spirit's properties, because of the sensory rank and the sovereignty of nature therein. This spiritual effect therefore became veiled from its origin, source and Lord. The all-merciful breath-like outpouring itself, being clothed in the garments of ranked judgments, properties of compounds, developmental stages and the previously described impediments, became veiled from its origin and original unitive transcendent judgments, and became heedless of them.
+
+The **human soul** is thus a configuration arising from the coming together of the mist-like vapor, animal faculty and spiritual effect, distinguished from other animal souls by this last constituent. Yet even it became veiled from the original disposition of its earthly, corporeal particle, which had answered “Yes,” and from the disposition of the original—
+
+**Continuation:** p.125 resumes with the spiritual origin, the veils of nature, the awakening of faith, and the transition to the three necessary tasks of the spiritual traveler. Source remains provisional; historical-print and manuscript validation are pending.
+
+
+---
+
+## English working translation · B2007 pp. 125–130 · Fourth foundation
+
+**Witness:** [Fourth foundation Arabic transcription with Beirut page boundaries](https://alshrefalm7sy.ahlamontada.com/t3214). The author's textual sequence is preserved, with modern explanatory footnotes excluded and source-page transitions marked. This is a digital-witness-based working translation pending independent collation.
+
+### B2007 p. 125 — The veiling of soul, spirit and existential secret
+
+[Arabic source, p. 125](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—spirituality, whose origins are the spirits and angels who do not disobey what God commands them but carry out what they are ordered to do. The human soul became veiled from both these original dispositions because of the properties of mixture, developmental stages, multiplicity, impediments and the predominance of natural and animal judgments, as the sensory rank requires.
+
+It forgot its two original dispositions, turning away from them toward the pleasures, preferences and appetites proper to the immediate sensory life. Its condition resembles a sleeping person who turns away from stable sensible things toward fleeting images and becomes heedless of what remains through absorption in what passes.
+
+The judgment of this heedlessness, sleep and self-absorption encompassed **three realities**: the reality of the existential outpouring or **existential secret**, the reality of the spiritual effect, and the reality of the human animal soul.
+
+Because the judgments of multiplicity predominated over these three, their attributes and character traits became distorted, inclining either toward **excess** or toward **deficiency**, in accordance with their respective rank and constitution. The influence of the unitary, balanced heart within each of soul, spirit and secret became hidden beneath those judgments and inclinations, its effect absorbed within them. In some people it was virtually consumed, like the human form and meaning in those among the children of Israel who were transformed into another form.
+
+This was connected, in Farghānī's account, with the original inclination of their human reality, when it arose within the Cloud-like intermediary Presence, toward the side of possible reality. He speaks of a rejection not based on an intelligible cause, as expressed in the saying: “Whom He accepts, He accepts without a cause; whom He rejects, He rejects without a cause.”
+
+His interpretation of “Then your hearts became hard thereafter, like stones or even harder” (Qurʾān 2:74) is that “even harder” points to the near extinction of the heart and the loss of receptivity to the removal of its veils, while “like stones” points to concealment of the heart while some capacity remains for it and its effects to appear once the veils are lifted. The rest of the verse describes differing degrees in which that receptivity is manifested.
+
+Whenever the judgment of a **preceding divine care**, termed eternal solicitude and alluded to in “They have a footing of truth with their Lord” (Qurʾān 10:2), appears in a human individual—because the individual's reality inclined only slightly toward possibility or did not incline away from intermediary balance at all—the effect of the innate **light of faith** may become manifest within that person, either through hearing or without intermediary.
+
+He believes in his Lord and submits to His judgment. Thereafter his existential secret, poured forth upon his reality and attributed to it, may become drawn out of the very veils and conditions described—
+
+### B2007 p. 126 — Attraction and the three necessary tasks
+
+[Arabic source, p. 126](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—and freed from their fetters. The spiritual effect and human soul follow it in that attraction and in casting off the clothing of those judgments. This may happen through the effect of the saying “Whom He accepts, He accepts without a cause,” in accordance with the reported maxim that a single attraction of the Real equals the deeds of both kinds of beings. Such a person belongs to the saints whom God draws from darkness to light **without effort or acquisition** of their own.
+
+Alternatively, the light of faith appears within the seeker and he sees his own essence together with its two manifestations, spiritual and psychic, as prisoners in the confinement of natural judgments and the effects of dark veils, clinging to dispersed secondary causes to attain bodily appetites and pleasures.
+
+The **all-merciful existential secret**, the divine outpouring, then addresses its two manifestations and awakens them from their slumber of turning away from the real command and from obedience to the Mighty Compeller, and from their habit of seeking fleeting imaginal things and turning away from their source: **“O my two prison companions, are separate lords better, or God, the One, the Overpowering?”** (Qurʾān 12:39).
+
+The human soul, inwardly and in its inward inwardness, then awakens from sleep and becomes aware of how much time it has wasted. It cries out in regret for its negligence toward God. It also senses the accumulated dark veils and firmly binding natural constraints of possibility enclosing it, arising from habitual actions, pursuit of appetites and personal choices.
+
+It now understands that this awakening entails **three necessary tasks**.
+
+The **first** is to begin the journey and return from the places where habitual judgments hold sway, and from the continual seeking of transient, perishing natural and animal pleasures and desires. This requires adhering to divine command and prohibition in every movement and stillness, in speech and action. Its initial journey relates to **the station of Islam**.
+
+The **second** is for the soul in its inward aspect to enter a state of **estrangement**, leaving its animal residence and familiar appetite-driven home—the place where the multiplicity of its bodily and satanic deviations appears—and connecting with its inward Presence and the judgments of equity and unity belonging to angelic, spiritual attributes and character traits. This corresponds to **the rank of faith (īmān)**.
+
+The **third** is for the soul through its secret to attain a witnessing that draws it toward the reality of tawḥīd, by being effaced from the judgments of veils and restrictions acquired during its descent and association with the various ranks, shaking the dust of its created effects from the hem of its truth. This corresponds to **the station of spiritual excellence (iḥsān)**.
+
+### B2007 p. 127 — The three divisions of the opening journey
+
+[Arabic source, p. 127](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+The first of these tasks—**beginning the journey**—is divided into **three divisions**. Each contains universal, important matters called **stations** (*maqāmāt*), since the soul takes up residence in each station in order to realize everything under its compass. The successive appearances in the soul are called **states** (*aḥwāl*), because they undergo change.
+
+The soul, once affected by the aforementioned veils, possesses **three orientations**.
+
+In the **first**, the soul turns toward governing the body, completing it and bringing it to what benefits it now and hereafter in the best manner, that is, in conformity with the revealed Law, through its faculties, apprehensions and organs. The journey and stations belonging to this orientation are called the division of **Beginnings** (*al-bidāyāt*). They prepare for the journey by correcting the soul's powers, balancing its outward instruments, and acquiring its inward powers and strength.
+
+The **second orientation** is the soul's turning toward its own reality, its self, correcting its qualities, considering their consequences and stilling their instability. It is the threshold of the soul's entry from the outward to the inward; the stations of this orientation are therefore called the **Gates** (*al-abwāb*).
+
+In the **third**, the soul turns toward its inward reality—that is, the spiritual spirit—and toward divine realities, asking its assistance in removing veils and receiving aid corresponding to the removal of each veil. This division is therefore called the **Transactions or Dealings** (*al-muʿāmalāt*).
+
+There are three especially important stations in each division; the remaining stations supplement and correct them.
+
+Within **Beginnings**, the first and principal station is **repentance (tawba)**: returning from disagreement to conformity, from natural inclination to revealed Law, from the outward to the inward, and from creation to the Real. Awakening, turning back and self-accounting are included within it.
+
+The **second** is **holding fast to the cord of God**: attachment to God's command and prohibition, and founding every deed, word and state upon the revealed Law in certainty. It includes reflection, remembering, spiritual audition and holding fast to God by trusting all His names and attributes: through **relation** at the station of Islam, **adoption of their qualities** at the station of faith, and **realization** at the station of iḥsān.
+
+### B2007 p. 128 — Discipline, remembrance, detachment, scrupulousness and sorrow
+
+[Arabic source, p. 128](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+The **third** station of Beginnings is **discipline (riyāḍa)**: removing the unruliness of the soul by cutting off its familiar attachments, interrupting its habits and opposing its whims and desires. One of the greatest pillars of discipline is **continual remembrance (dhikr)**: in general, the remembrance **lā ilāha illā Allāh**, or, for the removal of a particular bond or veil, a specific remembrance taught by a spiritual director so that its effect on the darkness of veils may be stronger.
+
+This remembrance must be accompanied by **presence** and the repelling of every passing thought, even a thought about the Real Himself, forbidding every distraction that crosses the mind and gathering all concern away from anything but the One remembered. It proceeds through a simple, undelimited orientation beyond restricting doctrinal conceptions, while affirming that the Real knows Himself in Himself by Himself, knows every thing, and that the Messenger of God knows and understands his Lord and what comes from Him. The entry into firmness, struggle, and enduring difficulty is included here.
+
+Once repentance, holding fast and discipline have become **firm dispositions** of the soul through realizing what they contain, it becomes ready for the division of **Gates**, whose three principal stations are as follows.
+
+First and most important is **renunciation (zuhd)**: leaving and turning away from what lies outside one's essence, beginning with outward accidents and objectives, then the inward forms of these, and thirdly everything other than the Real. Hope, aspiration and total devotion are included here.
+
+Second is **scrupulous restraint (waraʿ)**: guarding against any matter in which there is a trace of deviation from revealed Law or a spiritually harmful ambiguity in whatever sustains one's sensible or intelligible form within this state of being. Contentment is included in it, and it is the form of Godwariness (*taqwā*).
+
+Third is **sorrow (ḥuzn)** for perfections and their causes that have been missed. This comprises fear, caution, apprehension, humility and abasement before God.
+
+When the soul has taken firm hold of these three, it becomes fit for the division of **Transactions**, in which one grants from the soul what belongs to its legitimate desires and takes from it what is due.
+
+The most important and first station here is **sincerity (ikhlāṣ)**: purifying every inward or bodily act from every admixture. This includes refinement and rectitude.
+
+The **second** is **watchfulness (murāqaba)**: constantly observing what one is directed toward, outwardly and inwardly. Care and reverence are included in it.
+
+### B2007 p. 129 — Entrustment and the initial disclosure of divine action
+
+[Arabic source, p. 129](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+The **third** station of Transactions is **entrustment (tafwīḍ)**: consigning every affair, before and after its occurrence, to the One who brings it about, knowing that He has greater knowledge of what benefits the person and is more merciful and compassionate toward him than he is toward himself. When it occurs **through a cause**, it is trust in God (*tawakkul*); when **without cause**, it is confidence (*thiqa*). In opposition to the jostling of intellect and imagination, it is surrender (*taslīm*).
+
+When the soul realizes these stations while maintaining remembrance, gathering all its concerns and dismissing thoughts, the judgments of its veiling and the multiplicity of their effects begin to depart. Once multiplicity weakens in the soul, the effect of the unity of its gathering, hitherto concealed within the judgments of multiplicity, appears. This is a **relative, partial heart** belonging to the soul—not yet the **true heart**.
+
+Its special **sight and hearing**, colored by the judgment of that unity and its equity, become apparent at the same time. With such sight the person sees whatever he looks upon as beautiful and good, and hears accordingly. Beauty and goodness signify the fitting relation among parts, colors and lights, and among attributes and character traits; they thus include the meaning of **equilibrium** and manifest the presence of the **one divine act and attribute**.
+
+Ugliness, by contrast, manifests concealment of the effect of that unity under the predominance of multiplicity attributed to the object acted upon or described, not to the divine act or attribute in themselves, whether sensible or intelligible.
+
+Through the **heart's newly attained seeing**, the traveler now becomes aware that the act of God is one and pervades every thing, bearing the characterization of beauty. This is the **disclosure through acts (tajallī fiʿlī)**.
+
+At this station the person may experience a special loving inclination toward some beautiful **human sensible form**, the most encompassing manifestation of beauty, gentleness and perfection, when his sight is drawn toward it through affinity between divine action and the comprehensive relation. For the true Beloved, the Real, discloses Himself through His **one act** pervading all apparent causes and effects, in the mirror of the form being contemplated.
+
+The person witnesses through that form a comprehending beauty and perfect loveliness which are the image of the one divine act, attributed to One transcendent of every particular restriction by an act or other quality. Disclosure by way of **acts** never takes place except through a manifestation, as explained earlier.
+
+That manifestation becomes like a cup of love's drink, and the person's gaze conveys it to the mouth of the heart. Thereafter the judgment of love becomes general, because the witnessing of divine beauty in action extends to every sensible, intelligible and fashioned thing. Farghānī says that the point of entry and beginning of **Ibn al-Fāriḍ's Tāʾiyya**, whose commentary is the purpose of this work, lies at this—
+
+### B2007 p. 130 — The soul's ascent and the spirit's estrangement
+
+[Arabic source, p. 130](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—station. The proof is that the poem's love through acts ascends inwardly into **love through attributes**, and under its guidance and influence to the witnessing of the attributes, and beyond them to the highest stations. But we return to completing the exposition of the stations.
+
+When the veils and the judgments of multiplicity described above, and their multiplicity, have been effaced from the seeker's soul through these **three divisions and nine universal stations**, and its unity appears, bringing about the kind of vision just described, the seeker moves from the station of **Islam**, which is like the pupil of the eye of faith, to its inward reality, which is like the **light of that pupil**.
+
+As long as the human being remains manifest in this worldly constitution, the bond between **soul, spirit and secret** is very strong, yet each has a state of being proper to it.
+
+The soul's state is **sensible and witnessed**, corresponding to the station of Islam. The spirit's state is a **relative unseen cosmic rank**, corresponding to the inward reality and secret of faith. The secret's state is the **true unseen belonging to the Real**, whose judgment is iḥsān.
+
+The state proper to any one of these is a place of **estrangement** for the others. Whichever becomes manifest and predominates is at home, drawing the other two along as strangers within its own state.
+
+The soul at the station of Islam has therefore drawn spirit and secret along with it in the journey of return to their Master and the path of arrival, through realization of those stations, removal of the soul's veils and witnessing of the act of its Lord.
+
+When the journey of the soul is complete—its own unity manifest and the judgments of its multiplicity removed—the matter of traveling passes to the **spirit**, which must realize the truths of **faith** by removing concealed traces of distorted judgments remaining within the roots of character traits and qualities.
+
+Their outward effects and branches had previously appeared in the soul and its faculties as deviation, multiplicity and contradiction, and were removed through discipline, repentance, renunciation, entrustment and the like. But a hidden remainder persists in the original roots belonging to the spirit, for the impression left on the mirror is itself affected by what had appeared in it. These remnants must be removed to perfect faith.
+
+The spirit therefore enters upon its own journey, drawing the soul along in order to repel the prospect of evil, and drawing the secret along to seek benefit. The soul now experiences **estrangement**, so this degree of seeking is named **Estrangement** (*ghurba*), in reference to the saying attributed to the Prophet, “Seeking the Real is estrangement.”
+
+For **seeking** that leads to **finding**, as in the saying that seeking and finding are twins, is only realized at this **rank of faith**. It has **two pillars**—
+
+**Textual boundary:** p.131 explains the two kinds of its stations. The nine stations above are translated as Farghānī's own systematic scheme, not recast as general practical advice. The attribution and authentication of “Seeking the Real is estrangement” require independent study.
+
+
+---
+
+## English working translation · B2007 pp. 131–134 · Fourth foundation
+
+**Witness:** [Fourth-foundation Arabic digital transcription](https://alshrefalm7sy.ahlamontada.com/t3214) with Beirut printed page labels. Not proofed against the 1876 historical edition or manuscript. The author's prose and the modern editor's footnotes are kept distinct.
+
+### B2007 p. 131 — Patience, gratitude and contentment in the journey of the spirit
+
+[Arabic source, p. 131](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+Of the two pillars just mentioned, the first is the division of **character traits**, comparable to the conditions of prayer. The second is the division of **fundamentals**, by which I mean the roots of seeking that leads to finding, as we have said. These are comparable to the indispensable pillars of prayer.
+
+The character trait most comprehensive in its judgment and widest in its effects is **patience (ṣabr)**, without which no affair is completed. Its reality is **restraining the soul within obedience** and keeping to the command and prohibition.
+
+Patience also consists in refusing to contemplate one's own deeds and abandoning pretension, while demanding the same of the inward being; turning away from displaying knowledge, states and whatever experiences and secrets arise for the spirit; restraining spirit and secret from turmoil at every inspiration, incoming spiritual influence and divine disclosure, and remaining steady throughout.
+
+Patience also applies to stations of affliction and ordeal, for the seeker sees them as removing the finest, most subtle **luminous veils**. Through such vision every trial and hardship becomes **gift and favor**. The seeker's task and station become gratitude where previously they were patience.
+
+Thus patience extends its judgment over every station, character trait, deed and state. None of these can be realized without compelling the soul, whether followed or leading, to persevere in working toward them and to endure the difficulty of correcting and purifying them. Nothing falls outside patience.
+
+The **second pillar** is **gratitude (shukr)**: first for the blessing of being created; second for guidance and the success that enables one to receive it; third for being supported in discharging the rights of the path; and fourth for reaching the rank of realization. Included within gratitude are truthfulness, humility, modesty, good character, preferring others, generosity and spiritual chivalry (*futuwwa*).
+
+The **third pillar** is **contentment (riḍā)**. Its reality is that the seeker's soul, spirit and secret find everything appearing and occurring in existence, insofar as it issues from God's act, in conformity with what they will and love. They dislike nothing at all except what conflicts with **revealed Law**. They dislike and reject that through the law's language, in order to conform to it, not insofar as it is an act of God, the Wise and Knowing.
+
+When this pillar is realized through these character traits, the burdens of the traveler become light and he enters earnestly upon his journey. In his pursuit of the desired object and arrival at the station of the Beloved he now resembles one who has crossed the deserts until the goal comes into sight. He is ready for the **second pillar of the journey**—the fundamental stations comparable to the pillars of prayer, which comprise **four pillars**.
+
+### B2007 p. 132 — Intention, resolve, direct certainty and the certainty of reality
+
+[Arabic source, p. 132](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+The **first** is **right intention (qaṣd ṣaḥīḥ)** in one's orientation, based upon insight and tranquility through stripping away attachments and cutting off everything that obstructs the journey.
+
+When one has formed this intention, a remnant of yearning and a slight glance back toward a trace of something from which one has separated may nonetheless overtake the traveler in the midst of striving. This remnant, still present within him, drags him backward even while the impulse to travel is strong. He must therefore strengthen that impulse by cutting off the remaining trace. This is called **resolve (ʿazm)**, the **second** pillar of the fundamentals.
+
+These two pillars are strengthened by two things. **Intention** is strengthened by will, which impels the person to strenuous travel; **resolve** is strengthened by spiritual courtesy (*adab*), in which fear appears as **contraction (qabḍ)** and hope as **expansion (basṭ)**, while the traveler preserves an intermediate measure between the two.
+
+Seeing that one's destination has drawn near produces an expansion of the share the seeker hopes to obtain from his goal, and intensifies his forward movement. Yet confronting the Presence of the Beloved and His majesty entails contraction, leading to hesitation and a slackening of the journey. Courtesy maintains equity between them and thereby strengthens resolve.
+
+When resolve is sound, the veils of createdness grow thin, the traces of yearning and of glancing back toward dark cosmic judgments that produce ignorance and hesitation are cut off, and the judgment of the **third pillar** emerges: **certainty (yaqīn)** at its **second rank**, namely **the eye of certainty (ʿayn al-yaqīn)**.
+
+This means tranquility and stability, dispensing with demonstrative proof because the reality of the thing is disclosed through **witnessing the one divine act pervading every thing**. It likewise dispenses with reports and faith in what was believed during the darkness of the unseen, because the star of direct witnessing of that act's own reality has risen.
+
+The **first rank of certainty** is **knowledge of certainty (ʿilm al-yaqīn)**: repose and conviction concerning something unseen based upon the strength of its proof. It belongs to Islam and the beginning of faith while complete veiling still prevails.
+
+The rank of **reality of certainty (ḥaqq al-yaqīn)**, however, pertains first to the breaking dawn of **disclosures through attributes**, and second to the rising of the sun of **essential disclosure** at the station of iḥsān. Included in the intermediate rank of certainty are intimacy and inward remembrance.
+
+The connection of the eye of certainty to witnessing divine disclosure through acts occurring in a **cosmic locus** is indicated by “Then you shall see it with the eye of certainty” (Qurʾān 102:7), for seeing necessarily takes place through a manifestation.
+
+When the traveler reaches this station, the **spirit** is freed from every bond of deviation or distracting orientation. Its unity and simplicity become manifest, distinct from the judgments of the soul and the multiplicity of the faculties and instruments through which the soul governs the body. The spirit's comprehensive unity, and the effect upon it of the disclosure of the **one act** attributed to the Presence of its Lord, become visible. The earlier struggle among **secret, spirit and soul** ceases, and the judgments of each rank become distinct. At that point the judgment of—
+
+### B2007 p. 133 — Poverty and the reconciliation of spirit with soul
+
+[Arabic source, p. 133](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—“My servant continues to draw near to Me through supererogatory acts until I love him,” comes into force. The One approached receives the approaching servant according to “If he comes to Me walking, I come to him running,” with effects of gracious solicitude **until I love him**.
+
+At this point the traveler lays down the staff of his journey. The division of the hardships of his estrangement and of its veils comes to an end. The effects of divine love overtake him and transport him from the rank of createdness and separation to the Presence of protection and assistance.
+
+He now realizes the truth of **poverty (faqr)**, the **fourth pillar** of the fundamentals. Its reality is being empty of every judgment of otherness—even of **witnessing that emptiness**, and even of negating the act of witnessing that emptiness. The word *faqr*, Farghānī explains through an etymological association with *qafr*, calls to mind an utterly barren land on which nothing grows or remains; the letters are regarded as transposed.
+
+The attribution of agency belongs more strongly to the **spiritual spirit**, owing to its close connection with the Presence of Necessity and the appearance in it of the judgments of unity. The attribution of receptivity and being affected belongs more strongly to the **human animal soul**, owing to its connection with the Presence of Possibility and the appearance in it of plurality, one of its characteristic properties.
+
+Each of the **secret, spirit and soul** has now witnessed that the display of its particular perfection depends on the other. The inclination toward perfection is a judgment rooted in each of them through the permeation of original essential love. Now that the effects of gracious care expressed by “until I love him” have appeared, that loving judgment moves each toward its partner.
+
+The spiritual spirit, with its judgments, longs for the human soul like a **contented husband longing for his faithful wife**; the soul, with its judgments and original faculties, longs for the spirit like a **contented, cherished wife longing for the husband who treats her well**. Each inclines toward the other. They join together and intermingle with all that each contains of the unitary effects—
+
+### B2007 p. 134 — Birth of the true heart and the first disclosures through attributes
+
+[Arabic source, p. 134](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—and their balanced qualities, entering into **another union in a different manner**. From their conjunction, within the womb of the soul's comprehensiveness, is born a **true heart**, gathering all their judgments and also those of the secret, as an upright child devoted to both parents.
+
+This comprehensive, unitary heart, Godwary and purified from the judgments of deviation, becomes the **mirror and locus** of the **unitary disclosure through attributes** determined from one of the Presences of the name **the Outward (al-Ẓāhir)**. The soul, with its faculties and instruments, had been the manifestation through which the complete disclosure and self-vision of that Presence appeared.
+
+The judgment of this self-disclosure encompasses all its outward powers. The **fourth inward depth** of hearing, sight and speaking opens for the traveler, revealing that the faculties and attributes previously assigned to him in his veiled state had all, in reality, been attributed to the very disclosure insofar as it descended into the lowest ranks. Their attribution to his **created nature** had been figurative, not real.
+
+The traveler now passes beyond all cosmic ranks and enters the beginning of the **Presences of the Real**, called the **station of iḥsān**. The reality of the authentic report becomes apparent: “When I love him, I become his hearing through which he hears, his sight through which he sees, his tongue through which he speaks,” and the remainder of the report.
+
+Thereafter divine love raises him from the rank of one name to another **higher in comprehensiveness and universality**. It guides him through the valley of a quality and effect belonging to the divine names, the effects of which appear through and within him as knowledge, wisdom and insight belonging to the **heart and its secret**, not merely to rational or spiritual faculties.
+
+He proceeds through the valley of **discernment (firāsa)**, in which his secret immediately grasps hidden matters that evade ordinary understanding, not by inference and deliberation. Then comes the valley of **inspiration (ilhām)** when his secret returns to the judgment of the manifestation and its veiling. Inspiration is a divine knowledge arriving at the heart, colored by the state predominant at that moment.
+
+He then travels through the valley of the **secret's tranquility** after its agitation through awe and astonishment, effects of the majesty of the Unseen; then through the valley of **repose (sakīna)** arising amidst the wavering produced by such effects; then through the valley of **high aspiration (himma)** that stirs an intense rising toward sublime matters and their nondelimitation.
+
+Once these valleys have been traversed, the judgment of this loving reality predominates outwardly over the traveler's secret. In accordance with **“When I love him,”** its specific properties, affairs and effects appear within his heart, secret, spirit and soul, some original and others dependent or derivative. These remove various hidden remainders of the restrictions peculiar to each of them through properties that the traveler himself does not perceive.
+
+Indeed they remove even the **very determination and qualification** through which he is restricted, and the distinction attached to that determination—
+
+**Next original page:** B2007 p.135 continues the effects of divine love through the sequence beginning **jealousy (ghayra)**, longing, agitation, thirst, ecstasy and the stages of divine self-disclosure. The translation has not proceeded past p.134 in this stage.
+
+
+---
+
+## Final introductory installment · B2007 pp. 135–145
+
+## New English working translation · B2007 pp. 135–139
+
+**Witness:** the Arabic of the fourth foundation as displayed with Beirut edition page markers in the online transcription at https://alshrefalm7sy.ahlamontada.com/t3214. **Grade:** new, source-directed English translation; not manuscript-collated or independently proofed against a printed facsimile. Authorial argument is distinguished from the modern editor's footnotes. Page headings are editorial; the page divisions are B2007 rather than authorial paragraph divisions.
+
+### B2007 p. 135 — Eight successive states generated by love
+[Original Arabic with page marker](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+[Continuation from p. 134:] …and the effects of that restriction. Some of the realized masters designate the whole of these properties and effects of love as the **division of states** (*qism al-aḥwāl*).
+
+The first is **jealousy or protective exclusiveness** (*ghayra*), which requires the removal of otherness (*ghayriyya*) and the shaking of the dust of the traces of createdness from the hems of the Real's reality.
+
+Next is **longing** (*shawq*), an effect of jealousy: the stormy blasts of love's overpowering force arising from its intense inclination to join the one who longs with the object of longing, and the lover with the beloved.
+
+Then comes **agitation** (*qalaq*): the effect of longing appears within the one who longs through intense disturbance and movement, issuing from a noncorporeal love directed toward removing the obstacle and intervening barrier—namely, the very determination of the lover and his distinctness through it.
+
+Thereafter comes **thirst** (*ʿaṭash*), arising from this unsettling movement. It brings distress and burning that cannot be quenched save by a drop from the *Salsabīl* of divine care and existential assistance in the affair at hand.
+
+Then the seeker's **secret finds** (*wijdān*) the pain and overpowering caused by that agitation and thirst, so intensely that it nearly causes him to become absent from his very determination.
+
+Next comes **bewildered rapture** (*hayamān*), the actual realization of absence through the effect of ecstasy (*wajd*).
+
+Then comes **lightning** (*barq*): a flash of nondelimited assistance arising upon that absence from the effect of determination, overpowering and wholly concealing the darkness of the latter's trace.
+
+Finally comes **taste** (*dhawq*): the savoring of a drop of rain descending within that flash from the Cloud-like Presence, tending to allay the burning of the thirst mentioned.
+
+These states elevate the traveler's secret and convey it from lower and more particular presences to higher and more comprehensive ones, relative to what is contained within the divine name **the Outward** (*al-Ẓāhir*). Its governing disclosure consists in the vision of existential unity within the multiplicity outwardly manifested through the soul and its faculties and instruments. Each state removes a limitation and determination particular to the presence from which the traveler is raised. With every restriction removed in these successive states, his secret gains strength, universality, power of apprehension, and proximity to the degrees of its final stations.
+
+Some masters call this strengthening through a relationship approaching the final end **the division of saintly powers or stations** (*qism al-wilāyāt*). With that strength, the secret considers its own reality together with all its effects, original and accidental attributes and descriptions, and perfections obtained through or related to them. It also considers its relative or true final end, and the intelligible locus in which such consideration occurs. That locus is the inward dimension—
+
+### B2007 p. 136 — The spiritual present, the secret, and the opening of stabilization
+[Original Arabic with page marker](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—of time, called **the moment** (*al-waqt*) in the terminology of the Sufi masters: the state between past and future that possesses a certain permanence. All things known were related to it and established within it in the Presence of Knowledge. Each known thing belonged to an intelligible portion of it with all its appendages and concomitants; even the attribution of existence to those things was related to it.
+
+Accordingly, the consideration undertaken by the traveler's secret also belongs to his **moment** and to what that moment requires. His state then becomes purified of the turbid admixtures of what is other. **Consideration, the moment, and purity** (*al-laḥẓ, al-waqt, al-ṣafāʾ*) are among his stations; he is thus clothed in **joy** (*surūr*) in his essence, his consideration, his moment, and his purity.
+
+When he is established within a present state that is, relative to witnessing otherness, outside ordinary time, his condition is that of **secrecy** (*isrār*) under the judgment of the moment. No other person can become acquainted with him or his state. Farghānī alludes to the reported saying, “My friends are beneath My domes; none knows them apart from Me.” [Its prophetic attribution requires separate scrutiny.]
+
+The saint who possesses this secret in this condition is master of **one breath**. Its effect appears in himself under the condition of his veiling and concealment, eliminating every form that occasions distance and obscuration and bringing forth one that entails disclosure, self-manifestation and nearness.
+
+The effect may also appear according to his unveiled witnessing and self-disclosure, giving life to dead hearts, producing a form in one place and effacing it elsewhere. “I find the breath of the All-merciful coming from Yemen” points, on one reading, to the first state; “I shall bring it to you before your glance returns to you” (Qurʾān 27:40) points to the second.
+
+One whose state is such remains a stranger among creatures. In bodily form he dwells with them; in meaning and inward secret he is apart from them. He has departed toward his homelands even while remaining outwardly settled among them in the place of his passing life. He is immersed in the vast sea of nearness, absent from the sensations of spirit, soul, and innermost intelligence.
+
+He thereby enters the **gate of stabilization** (*tamkīn*) without being disturbed by **variation** (*talwīn*), meaning the changing self-disclosures of the outward divine names, in which the predominance of one name, together with its effects and judgments, alternates with that of another.
+
+Both variation and stabilization manifest their effects and judgments at **three ranks**. At the first rank, that of outward disclosure, variation is the successive appearance in the traveler's heart and secret of the effects of different names, varying in judgments, changing in effects, and distinguishable by their attributes. Each particular disclosure veils him, through its special determination, from the operation of the others—until a flash of the all-comprehensive character—
+
+### B2007 p. 137 — Stabilization within variation and the transition to the second journey
+[Original Arabic with page marker](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—of the name **the Outward** appears and establishes him at the exact point of its middle or equilibrium, where the relationship of all names to it is equal. That point is the **station of stabilization**, whose occupant can realize any one of the names without being veiled from another by it.
+
+The **second rank** is the rank of inward disclosure, whose judgments concerning variation and stabilization correspond to what we have just said concerning outward disclosure.
+
+The **third rank** is the rank of comprehensiveness and intermediacy between the two—outward and inward. The individual judgments and effects belonging to each would otherwise entail concealment from those of the other. When the traveler occupies the intermediary between them he can **comprehend and distinguish both**, with no affair veiling him from another. This is **stabilization within variation** (*al-tamkīn fī al-talwīn*).
+
+The stabilization just discussed earlier, however, referred to the **first** rank, that of outward disclosure. When the saint realizes its corresponding station, he begins the **division of realities** (*qism al-ḥaqāʾiq*). His first journey—the journey governed by love—has concluded with his realization of all the universal and particular names contained within the name the Outward. He now begins the **second journey**, the journey of the beloved, to witness the multiplicity of relational determinations belonging to inward affairs. Those affairs are a mirror for the unity of concrete existence, whose judgment predominates over the spiritual spirit.
+
+For existence has, as we have said, **two judgments**: one insofar as it **bestows** existence (*mufīḍ*), the other insofar as existence is **bestowed** (*mufāḍ*). The first judgment predominantly affects the spirit, while the second affects the soul.
+
+In the soul, the beam of concrete existence under the aspect of what is bestowed is a mirror for the multiplicity of judgments of cosmic realities associated with their ranks. That multiplicity is impressed upon the mirror of the single existential beam. Hence the reflected multiplicity is visible while the face of the mirror remains hidden, as happens with an ordinary mirror when a form is reflected in it.
+
+In the spiritual spirit, by contrast, the multiplicity of relational affairs belonging to inward intelligible existence—whose images are cosmic realities—forms a mirror for the unity of outward concrete existence. **Unity is visible there, while multiplicity remains inward and concealed.**
+
+In the **first journey**, the veils constituted by the soul's judgments of multiplicity are lifted from the mirror of existential unity, until the unity of outward existence appears and is disclosed in the very multiplicity of the soul and the forms of the world. The perfection that descends from the One Existence and becomes manifest through that multiplicity is then disclosed.
+
+### B2007 p. 138 — The reciprocal mirrors of outward and inward existence
+[Original Arabic with page marker](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+In the **second journey**, however, the traveler pierces the veil constituted by the unity of concrete existence, whose effects predominate in the spirit, so that the mirror of the multiplicity of relational affairs belonging to inward intelligible existence may be disclosed. Inward self-disclosure then appears with the special characteristics of that relational multiplicity: **sciences of the Unseen and divine mysteries**.
+
+After the spirit is opened, its judgments belonging to its cosmic reality, its secret—by which Farghānī means concrete existence attributed to it—and its attributes undergo a mingling, action and reception analogous to what took place earlier between spirit and soul. Here, however, **action is attributed to the secret**, and **reception to the spirit**.
+
+From the womb of the spirit there is thus born a **heart** capable of receiving inward existential self-disclosure. That disclosure contains the inward affairs and their relational multiplicity, with their manifestations, which are the intelligible forms. Through the journey across this inward Presence, the heart realizes the universals of the **negative divine names**. It enters upon the beginnings of inward self-disclosure in the division of realities, and the judgments of that division become manifest upon it, through it, and within it.
+
+Know that the **witness** in this division is an **outward existential secret**, while the **witnessed** is an **inward existential secret**. The outward secret is a mirror for the inward secret, together with its judgments and effects; consequently the inward secret becomes manifest with those judgments and effects upon the outward secret, though its own reality and effects remain hidden from it. Indeed each is a mirror for the other under the judgment described. In their conjunction the reality and secret of everything become manifest as they are in the Presence of Eternal Knowledge, without alteration or substitution.
+
+At first the inward secret appears to the outward secret from behind a thin veil of a divine or cosmic attribute or reality. It is also behind a transparent veil of a divine name qualified by a judgment belonging to a specific attribute. This is called **unveiling** (*mukāshafa*), since the reality of each is disclosed to the other with its judgment and description.
+
+When each appears to the other **without a manifestation of the reality of its attribute**, but with an individual peculiarity and distinction through an intelligible secret included in each, the state is called **witnessing** (*mushāhada*).
+
+When each directly beholds the other's very reality, with no attribute or particularity apart from this one's being outward and that one's inward, it is called **direct vision** (*muʿāyana*).
+
+When each discloses itself to the other together with its own reality, attribute, and distinctive character, but the attribute no longer veils the reality itself, this is **life** pervading both of them, including the attribute and the particularity. It may be a knowledge, or a comprehensive affair between them, or a single existence that colors every relation with its own hue. Through this life each is protected from the death of the equilibrium of spiritual states, from the severing of this actual conjunction, and from the 'death' of absence from beginningless eternity.
+
+### B2007 p. 139 — Contraction, expansion, annihilation within annihilation
+[Original Arabic with page marker](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+If unveiling, witnessing, direct vision, and life are **restricted to the traveler himself**, he is in **contraction** (*qabḍ*). If they expand from him so that another may attain them through his mediation, the traveler is in **expansion** (*basṭ*).
+
+Contraction and expansion have another meaning. When his assistance in these matters comes from the **majesty of the Unseen and its nondelimitation**, the traveler is wrapped in contraction, to the extent that he is not free for apprehension or reflection at all. If the assistance comes from the aspect of **beauty**, he expands, appearing in a posture of intimacy and petition; he may become intoxicated by the strength of tasting and transgress his proper station, but when he becomes sober he repents. This is the highest station of repentance.
+
+Assistance then continuously comes upon him and connects him with the One who supplies it. He subsequently becomes detached from the connections that still imply some manner of separation, and then from seeing either connection or separation, for both are [relative to his new station] one equilibrium.
+
+All this belongs to the branches of the **second rank of variation**, and the judgment of determination continues to accompany them. This can cause each side to be veiled from the other when either becomes separate.
+
+When the traveler reaches the end of this division and realizes its own station of **stabilization**, he transcends the station of inward disclosure and prepares to enter the **Presence of the gathering of gatherings** (*jamʿ al-jamʿ*). He has realized the reality of **gnosis** (*maʿrifa*), which comprehends the reality of the one known and knows what belongs to it and what stands against it. This is the beginning of the stations of **final ends**.
+
+He now recognizes that something of the claims of **annihilation within annihilation** (*fanāʾ fī al-fanāʾ*) remains incumbent on him: removing restriction to the judgment of either one of the two disclosures, outward or inward, so that neither veils the other through its effects. He therefore turns with full determination to the Presence of the gathering of gatherings, seeking assistance from it through his receptivity.
+
+Eternal solicitude then overtakes him: first through the **annihilation of his knowledge** restricted to one of the two disclosures; second through the **annihilation of the specific determination and distinctness** of each in the very Presence of the gathering of gatherings, which is their origin and source; third through **annihilation from witnessing this very annihilation**.
+
+This occurs when the two names, Outward and Inward, display their specific perfections relating to the universals of their determinations, and return with those specific perfections and distinguishing judgments to the reality of the **second determination and intermediacy**. The intermediary exercises its rule over them through conjunction, mingling, activity, and reception. From their conjunction is born the reality of a **vast, comprehensive heart** uniting both Presences. This heart is the real image of the second intermediacy; the judgment of that annihilation then becomes manifest with the degrees already set forth. It is the **annihilation of the particular reality in the particular reality** (*fanāʾ al-ʿayn fī al-ʿayn*). From the rising place of this perfect and all-comprehensive heart dawns the sun of the **essential, comprehensive, perfected self-disclosure**.
+
+*Textual boundary:* The account of the perfected intermediary heart continues on p.140. In the author's terminology, the three forms of annihilation are distinguished and are not to be reduced to a single vague statement about extinction.
+
+
+---
+
+## New English working translation · Beirut B2007 pp. 140–145
+
+**Textual standing (9 November 2026):** This is a working translation of the remaining **six printed pages** of Farghānī's systematic introduction, using the [Arabic fourth-foundation transcription](https://alshrefalm7sy.ahlamontada.com/t3214) which preserves B2007 page labels and clearly marks **تتمة الديباجة** on p.144. The Arabic has not yet been collated against the 1876 historical printing or medieval manuscripts. Printed page divisions do not necessarily correspond to authorial sentence divisions. Translation of the original *authorial introduction* now reaches its conclusion, but neither the English translation nor the underlying Arabic is yet a definitive critical edition. The subsequent verse-by-verse commentary is a separate workstream.
+
+### B2007 p. 140 — The third rank of stabilization and the gathering of gatherings
+
+[Arabic text, page 140](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+This second intermediacy, whose true image is the heart of the perfected one, is itself the **Presence of perfection** and its **measure**. It is the third rank of **stabilization** (*tamkīn*). Nothing remains upon him by way of name, trace, expression or indication to announce an actual separate determination or attribution.
+
+There is nevertheless a concealed trace of the judgment of one of the original universal names. The spiritual traveler is now capable of **assuming whichever garment he wishes**, appearing in whichever locus of manifestation he wishes, and recognizing the One whom he knows in whatever garment He appears and whatever form He discloses, whether Real or creaturely. This is called the **station of assuming garments** (*maqām al-talbīs*). It stands above the stabilization that was termed *stabilization within variation*.
+
+He thereafter realizes the reality of **existence**, which is that through which a determinate reality finds its intended object in every thing, by virtue of its pervasion of all that is called nonexistent and existent. Then he divests himself of all garments and loci of disclosure, witnessing and being witnessed with a heart that is **absent yet present**. This is the highest station of **divestment** (*tajrīd*).
+
+He next becomes singular in seeing nothing except his own reality at the precise middle of the second intermediacy: the highest rank of **singularization** (*tafrīd*).
+
+At that point he realizes the reconciliation of the **negation of differentiation and its affirmation**: seeing the comprehensive whole in its articulation and its articulation in the whole, throughout all the ranks of the Real and of creation. Thus the highest realization of tawḥīd is sound, as what is originated vanishes within what is beginningless, and otherness within the very reality.
+
+The end returns to the beginning and completes the circle. He establishes public signs and testimonies for ordinary followers of revealed Law, rules and principles of guidance for the elect who follow the Path, and renewed gifts of divine care for the elect of the elect, the people of Reality. In this way all recognize by knowledge, direct vision, realization and its ultimate reality that **the entire affair belongs to God**: from Him it begins, in Him it ends, and to Him it returns. He is the First, the Last, the Outward, the Inward, and He knows every thing.
+
+All this belongs to the states and stations of the Presence of **“the distance of two bows”** (*qāba qawsayn*).
+
+The station **“or nearer”** (*aw adnā*), however, belongs especially to the journey of our Prophet Muḥammad, master of the first and last—upon him be peace—whose station the author of the poem undertook to interpret. The journey in that station begins only **after the conclusion of all these stations**. Its secret is **witnessing every thing within every thing**. Such a journey and witnessing arise through a conjunction and mingling between the essential names, including the Keys of the Unseen and their unitive judgments established at the first rank and attributed to the first self-disclosure, and the original universal names determined from the second self-disclosure after the manifestation of their particular perfections and their return bearing those perfections. The conjunction arises through original love, pervading the names and their spiritual and psychic manifestations.
+
+### B2007 p. 141 — The Aḥmadian intermediacy and the Muḥammadan heart
+
+[Arabic text, page 141](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+Through that conjunction and mingling, with the essential realities acting upon the attributive and the originals upon their derivatives, there is born a **Godwary, pure, unitive, all-comprehensive Muḥammadan heart**. This is the true image of the **first intermediacy**. Within it the **first self-disclosure** manifests itself. It possesses a unity encompassing all the universal and particular names, original and derivative, essential and attributive, **without even the least predominance of one over another**.
+
+Thus in the traveler's spiritual taste, witnessing and vision through the eye of the heart, **every name comprehends all the others**. The expression **“or nearer”** alludes to this all-comprehensive unity.
+
+Since original love, as we established at the outset, is identical with original receptivity, with the Aḥmadian **Reality of Realities**, and with the first intermediary between oneness (*wāḥidiyya*) and unicity (*aḥadiyya*), its orientation and attachment must be precisely to the **Aḥmadian temperament and most equitable Muḥammadan heart**—may God's blessings and peace be upon him.
+
+These are the loci in which the first essential self-disclosure attains its complete self-vision at the rank of comprehensive unicity; this self-disclosure was, in the first instance, **his light**. It is for this reason that **Beloved of God** is among the Prophet's most distinctive titles.
+
+The poet, having undertaken to interpret the Prophet's experience and journey through its stations, changes and stages, necessarily began his composition **in the language of love** appropriate to the Prophet and his reality.
+
+**Love** is the judgment of **affinity** (*munāsaba*), through which lover and beloved are connected. The kinds of affinity are restricted to **five**, and these return to two kinds referred to in verses attributed to Rābiʿa al-ʿAdawiyya:
+
+> I love You with two loves: one born of desire,
+> and another because You are worthy of it.
+>
+> In the love of desire, I remember You in secret until I see You;
+> in the love befitting You, remembrance of You consumes me from all besides You.
+>
+> Neither love brings praise to me;
+> in both, the praise is Yours alone.
+
+*The verse division and precise reading require collation against Rābiʿa's poetic transmission; the four English lines are a provisional rendering of the attributed verses, not a constituted critical text.*
+
+The **love born of desire**, he says, indicates **essential affinity** (*munāsaba dhātiyya*) for which no determining cause or origin is known. Therefore she said **“Your remembrance in secret”**, meaning God's remembrance of her.
+
+The second kind of love admits four subdivisions. The complete enumeration is five, as follows.
+
+### B2007 p. 142 — The five sorts of love, and disclosure through action
+
+[Arabic text, page 142](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+Love and affinity are either related to the **very Essence**, without considering any additional meaning or attribute, or relate to the Essence as considered with some meaning or attribute beyond its very identity.
+
+The **first** is **essential affinity and love** (*al-maḥabba al-dhātiyya*).
+
+In the second case, either an effect from that meaning or attribute passes to another, or no such effect passes. If an effect does pass to another, this is **affinity and love through acts** (*al-munāsaba wa-l-maḥabba al-fiʿliyya*), as between a maker and the product of his work, or a writer and what he writes.
+
+If no effect passes to another, either the attribute is stable and enduring in the one in whom it subsists or appears, or it is not. Where it is not stable, the result is **affinity and love through states** (*maḥabba ḥāliyya*), as between two people during a shared state of ecstasy or spiritual audition: the connection becomes apparent while the state lasts, and disappears when the state ends.
+
+If the attribute is stable, it is asked whether, in the occurrence of the relation of love between lover and beloved, the judgment of the **rank** in which the meaning or attribute appears becomes dominant. If so, it is **love through rank** (*maḥabba martabiyya*), as between believers through faith or saints through sainthood—for example, those who love each other in the majesty of God.
+
+If this rank-related judgment is not dominant, it is **love through attribute** (*maḥabba ṣifātiyya*), like other loves based on an enduring attribute.
+
+Thus five kinds are distinguished. The classes of **act, state and rank** are reducible to the broader class of **attribute**; love through acts, in particular, is most readily recognized because the action's effects are conspicuous in its products. Hence the customary division of the divine names into **names of the Essence, attributes, and acts**.
+
+For this reason the first self-disclosures that appear to the traveler are **self-disclosures through acts**. All things first appear beautiful and good to him. Through the majesty of that formal or intelligible beauty—which signifies unity and equity under the judgment of affinity and harmonious correspondence—he discerns the **one act pervading every cause and intermediary** through which agent, recipient and effect appear.
+
+Love is then manifest through the comprehensive unity of the act connecting lover and beloved. This follows the disciplining and balancing of the soul's faculties and outward instruments through correct spiritual training and the observance of its conditions, or through original disposition and divine care, until the soul's veils become thin and transparent.
+
+Thus in the poet whose work we are commenting upon, **love and unification through action** appeared first, as shown by his initial mention of vision within a **sensible manifestation**. At the beginning of the seeker's journey, such a vision occurs for the sake of making the reality familiar. Later, during outward self-disclosure, the locus itself is no longer seen: its appearance is eclipsed by the witnessing of the unity of the outward existential self-disclosure.
+
+At the station of **assuming garments**, however, the one who has reached the end both sees and witnesses **within and outside a manifestation**. Because the poet relates the ascents and the path through the degrees of love, his first experience must be understood as vision through an act—
+
+### B2007 p. 143 — Conclusion of the fourth foundation and transition to the poem
+
+[Arabic text, page 143](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—and **not a vision of the very Essence**. This becomes clear when we begin to set forth his ascents by commenting on the words and meanings of his poem, explaining the ranks and their foundations that are contained within it, bringing out what is deposited in its allusions, establishing the refinements of rhetorical art within its expressions, opening the locked places of its verses, resolving their difficulties, and developing what the poet states only comprehensively and in outline.
+
+We shall undertake this, God willing, seeking help from Him, putting our trust in Him, and entreating Him in humility; confessing our shortcomings and negligence, drawing from the sea of His precious beneficence. For He is the best Patron and Helper. Praise belongs to Him for His favors, and blessings upon His Messenger Muḥammad, peace be upon him.
+
+**The four foundations end here.** B2007 pp.144–145 carry Farghānī's separate heading **“Continuation of the preface”** (*tatimmat al-dībāja*). These two pages belong to the introductory apparatus preceding the actual verse commentary; the authorial organizational distinction should be preserved in both Arabic and English.
+
+### B2007 p. 144 — Continuation of the preface: four degrees of nearness
+
+[Arabic text, concluding preface](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+**Continuation of the preface.** A clarification of the matter intended, which is itself a preparation for beginning the promised commentary.
+
+Know that the degrees of **nearness**—the final cause of spiritual journeying, the wayfaring of the soul and the removal of impediments, whether by divine care through attraction or by guidance through disciplined traveling—are restricted to **four ranks**.
+
+**First** is **love**, which may arise through attraction, as intended by the saying “My servant approaches Me through nothing dearer to Me than what I have made obligatory upon him,” or through disciplined spiritual traveling, as intended by “My servant continues to approach Me through supererogatory acts until I love him.”
+
+**Second** is **tawḥīd**, founded on love, as intended by “When I love him, I become his hearing, his sight and his tongue.”
+
+**Third** is **gnosis** (*maʿrifa*), founded on tawḥīd, as indicated by “Through Me he hears, through Me he sees, and through Me he understands.” The people of the Path call it the station of **subsistence (baqāʾ)**, **gathering (jamʿ)**, and **Reality (ḥaqīqa)**.
+
+**Fourth** is **realization** (*taḥqīq*). Under one aspect it is the station of **vicegerency**, and from every aspect the station of **perfection**. It includes all the previous ranks, joining beginning and end and their judgments; gathering and differentiation; unity and multiplicity; the Real and creation; qualification and nondelimitation. In this rank there is no clear predominance or subjection of one to the other: rather, presence without absence from any of them, and certainty without doubt.
+
+We restrict the degrees of nearness to four because between the servant—possessing essential poverty and lowliness—and his Master—possessing essential sufficiency and dignity—there is a manifest separation which seems to exclude all relation or connection between them. **Love**, however, establishes and manifests between them—
+
+### B2007 p. 145 — Three aspects of the bond and the poem's itinerary
+
+[Arabic text, concluding preface](https://alshrefalm7sy.ahlamontada.com/t3214)
+
+—a **relationship and connection in three respects**.
+
+**First**, through the **act** that joins agent and recipient.
+
+**Second**, through the **attribute** forming the common measure between the one characterized by an attribute and what is so characterized, between what is eternal and what is originated, and between what is determined through itself and what is determined through another or incidentally.
+
+**Third**, through the **Essence**, which is identical with existence.
+
+Love's subtle operation pervades first the act, second the attribute, and third the Essence. It removes the judgments of difference between agent and recipient of the action; then removes the accidental qualities, relations and metaphorical attributions attached to original attributes such as hearing and sight, until they are unified through the removal of such relations and attributions, as expressed in “I become his hearing and his sight.”
+
+Then love leaves no other and no otherness, neither in reality nor in effect. Wherever love appears with sufficient intensity, **tawḥīd** follows; and through tawḥīd, **gnosis** is realized by the effect of the Beloved pervading the lover, as indicated by “Through Me he hears, through Me he sees, through Me he understands.”
+
+Through return from beginning to end and the joining of their judgments, the rank of **perfection and realization** becomes manifest. Above that is the rank of **supreme perfection** (*akmaliyya*) proper to the Muḥammadan Presence, whose meaning the poet undertakes to interpret.
+
+Because the matter is so, he began his poem with the rank of **love** and its stages for two reasons. First, love is the beginning of all the ranks of nearness, union and attainment of the intended goal. Second, beginning here signals the poet's role as interpreter of the possessor of the rank of supreme perfection, who has the station of love **originally**: the Prophet, may peace be upon him, was the target of the arrow signified by “I loved to be known.” Therefore he was the greatest of those who know God, and “Beloved of God” is among his most particular names.
+
+The poet follows his exposition of the stages of love with the ranks of **tawḥīd and gathering**. There he returns to explanation and speaks in the language of guidance, mentioning the universal principles of the stations of spiritual wayfaring in summary.
+
+Upon those ranks of tawḥīd he builds an exposition of the ranks and special properties of **gnosis**, followed by the ranks of **perfection and realization**. Most of those ranks he describes in terms of the pervasion of the judgment of the Muḥammadan station and its unitive comprehensiveness through every rank and every thing. He does so through narration and interpretation, as will gradually become apparent in the explanation of the verses, God willing.
+
+**End of the concluding preface (B2007 p.145).** The systematic introduction and its supplemental preface are now represented to their final known boundary in a continuous English working draft. The actual beginning of commentary on Ibn al-Fāriḍ's poem is a separate text division. Completion of this working English translation is NOT an independently constituted Arabic critical text, and no final critical-edition claim is made.
+
+
+---
+
+## PART B — Source-checked Arabic and revised English, 80 authorial clauses (B2007 pp18–23)
+
+# Farghānī · Muntahā al-madārik — first Arabic–English clause-by-clause review
+
+**B2007 pp.18–23 · 80 source-checked clauses · 9 November 2026**
+
+**Authorial basis:** Beirut digitization of the modern printed edition, pp.18–23, with the modern editor's footnotes excluded from the Arabic matn. The Arabic segmentation is editorial, and page-break-spanning clauses are identified by continuation syntax. Every clause has its source URL. English is freshly checked against the displayed Arabic (not yet against the 1876 lithograph or manuscripts). This is a **precritical verified-reading layer**, NOT a constituted critical Arabic text. Five clauses contain unresolved textual cruxes; manuscript variants established: **zero**.
+
+**The earlier 128-page English working master remains preserved unchanged.** Where this review revises it, the new clause translation and decision are recorded here; corrections are not silently backfilled into the older master.
+
+
+## Source page 18
+
+[Consult the Beirut Arabic source](https://ablibrary.net/book_content/b/9606/18?lang=ar)
+
+### CR001-001 · revise
+
+**Arabic** (B2007)
+
+> الأصل الأول في ذكر رتب الذات وتعيّن الأسماء منها والصفات وذكر كيفية انتشاء الفروع من تلك الأسماء والصفات من أصولها مع تعرّض لشرح الأسماء التسعة والتسعين ، وذكر انتشاء باقي الأسماء منها دقيقها وجليلها
+
+**Revised English**
+
+First foundation: the ranks of the Essence, the determination of names and attributes from it, the derivation of their branches from their roots, an account of the ninety-nine names, and the derivation of the other names, subtle and great.
+
+**Editorial decision:** The older English said 'differentiation' for تعيّن; preserve the technical 'determination'.
+
+### CR001-002 · annotate
+
+**Arabic** (B2007)
+
+> بِسْمِ اللَّهِ الرَّحْمنِ الرَّحِيمِ نقل عن رسول اللّه صلّى اللّه عليه وسلّم أنه قال : « قال اللّه عزّ وجلّ : كنت كنزا مخفيّا فأحببت أن أعرف ، فخلقت الخلق لأعرف »
+
+**Revised English**
+
+In the name of God, the All-merciful, the Especially Merciful. It is transmitted as from the Messenger of God that God said: 'I was a hidden treasure, and I loved to be known, so I created creation in order to be known.'
+
+**Editorial decision:** Farghānī reports an attribution; the 'hidden treasure' saying lacks an established prophetic isnād. Its interpretive importance must not be treated as authentication.
+
+### CR001-003 · retain
+
+**Arabic** (B2007)
+
+> اعلم أيّدك اللّه بالفهم الصحيح أنه قد كنى في هذا الحديث الإلهي عن كنه الغيب وإطلاق الذات الأقدس وباطن الهوية الأزلية بالكنز المخفي
+
+**Revised English**
+
+Know—may God strengthen you with sound understanding—that the hidden treasure in this divine saying figuratively signifies the innermost reality of the Unseen, the nondelimitation of the most holy Essence, and the inward aspect of eternal Identity.
+
+**Editorial decision:** Keep kunh (inner reality) distinct from its iṭlāq (nondelimitation).
+
+### CR001-004 · revise
+
+**Arabic** (B2007)
+
+> وذلك لملابسة أن الكنز عبارة عن عين مغيب مكنون وسرّ مخزون مشتمل على جواهر عظيمة الجدوى مرغوب فيها
+
+**Revised English**
+
+The analogy arises because a treasure is a concealed and guarded thing, a secret held in reserve, comprising precious jewels whose benefits are great and which are much sought after.
+
+**Editorial decision:** The prior paraphrase omitted the explicit 'great benefit' (ʿaẓīmat al-jadwā) and being sought (marghūb fīhā).
+
+### CR001-005 · retain
+
+**Arabic** (B2007)
+
+> ما بين أنفس تصان ويضنّ ويستأثر بها وبين نفيس ، ربما يقع فيه التسامح والتبدّل خصوصا أو عموما
+
+**Revised English**
+
+Some of these are so precious that they are guarded, withheld and reserved to their possessor; others are precious but may be dealt with more freely or exchanged, privately or generally.
+
+**Editorial decision:** The second comparison is between anfas and nafīs, degrees of relative preciousness.
+
+### CR001-006 · retain
+
+**Arabic** (B2007)
+
+> ومهما أريد إظهاره يعرض أولا عرضا مجملا بحيث يبين الكنز ويظهر لواجده في محله
+
+**Revised English**
+
+When it is desired to disclose a treasure, it is first displayed as a whole, so that the treasure becomes evident to its finder in its own place.
+
+**Editorial decision:** Preserve ijmāl (undifferentiated comprehensiveness), not simply a generic presentation.
+
+### CR001-007 · retain
+
+**Arabic** (B2007)
+
+> ثم يعرض ثانيا عرضا يميّز فيه بين الأنفس والنفيس ، وينقل منه عن محله لحكمة يراها الواجد من إظهار كماله الذي يتضمّن غناءه وإظهار التجمّل والجود ونحو ذلك
+
+**Revised English**
+
+It is then shown a second time in a display that differentiates what is most precious from what is merely precious; some is removed from its place according to a wisdom perceived by the finder, to display his perfection, including wealth, adornment, generosity and similar qualities.
+
+**Editorial decision:** A figurative sequence of comprehensive and then differentiated disclosure; not a temporal sequence in the divine Essence.
+
+### CR001-008 · retain
+
+**Arabic** (B2007)
+
+> وكذلك كنه الجناب الأقدس تعالى وتقدّس وله المثل الأعلى في السماوات والأرض وهو العزيز الحكيم ، بلا نسبة تشبيه وتشكيل وتمثيل إليه تعالى عن ذلك علوّا كبيرا
+
+**Revised English**
+
+Likewise with the innermost reality of the most holy Presence—exalted and sanctified is He, to whom belongs the highest similitude in the heavens and earth, the Mighty and Wise—without attributing to Him any likeness, configuration or representation. He is vastly exalted above that.
+
+**Editorial decision:** The anti-anthropomorphic qualification is part of the authorial analogy, not an editorial gloss.
+
+### CR001-009 · retain
+
+**Arabic** (B2007)
+
+> فإنه الغيب المكنون والسرّ المصون الذي هو أبطن كل باطن
+
+**Revised English**
+
+For He is the hidden Unseen and the protected secret, more inward than every inward thing.
+
+**Editorial decision:** This is a divine negative-theological predication in analogy.
+
+### CR001-010 · crux (unresolved text)
+
+**Arabic** (B2007)
+
+> وبطون المشتمل على جواهر أسماء الذات التي هي أنفس نفائس الأسماء
+
+**Revised English**
+
+His inwardness contains the jewels of the essential names, the most precious of all names.
+
+**Editorial decision:** The digital text has the awkward sequence بطون المشتمل. Translation conveys contextual sense but a print/manuscript reading is needed before fixing grammar.
+
+### CR001-011 · retain
+
+**Arabic** (B2007)
+
+> التي منها ما يستأثر في مكنون الغيب عنده ، فلا يعلمها إلّا هو ومن ارتفعت بينونته ورفعت كينونته ممن هو أكمل جميع
+
+**Revised English**
+
+Among them are names He reserves in the hidden mystery with Him; none knows them except He and one whose separateness and individual selfhood have been lifted away, one of the most perfect among all—
+
+**Editorial decision:** The clause continues across B2007 p.18–19; the wording must not be treated as a finished independent proposition.
+
+
+## Source page 19
+
+[Consult the Beirut Arabic source](https://ablibrary.net/book_content/b/9606/19?lang=ar)
+
+### CR001-012 · retain
+
+**Arabic** (B2007)
+
+> الكمّل في عرض التعيّن والتجلّي الأول ، لتحقيق الكمال الذاتي الأشرف المعني بقوله : « فأحببت أن أعرف »
+
+**Revised English**
+
+—the perfected, in the presentation of the first determination and first self-disclosure, for realizing the nobler essential perfection intended by 'I loved to be known'.
+
+**Editorial decision:** Continuation from p18; 'in the presentation' preferred to the slightly ambiguous 'participate in the display'.
+
+### CR001-013 · revise
+
+**Arabic** (B2007)
+
+> وهو المتضمّن أيضا نفائس درر أسماء الصفات التي يسمح بتعريفها لكل من يصلح لتشريفها من كل فرد متخلّق ، أو كامل متحقّق
+
+**Revised English**
+
+It also contains the precious jewels of the names of attributes, acquaintance with which is permitted to anyone suited to be honored by them, whether one who has adopted their character or a perfected person who has realized them.
+
+**Editorial decision:** Distinguish takhalluq (assuming qualities) from taḥaqquq (realizing them).
+
+### CR001-014 · crux (unresolved text)
+
+**Arabic** (B2007)
+
+> والمحتوي أيضا على لآلىء أسماء الأفعال العامّ نفعها وأثرها ، والمستفيض حكمها وخبرها في جميع المراتب الكونيّة التي هي محال تمام الكمال الأسمائي والمطلب الغائبّ المعني بقوله : « فخلقت الخلق لأعرف »
+
+**Revised English**
+
+It also contains the pearls of the names of acts, whose benefits and effects are universal, and whose judgments and reports extend throughout the cosmic ranks—the loci in which the perfection through the names is completed, the intended goal referred to by 'I created creation to be known'.
+
+**Editorial decision:** The digital phrase المطلب الغائبّ appears lexically awkward. A clean print reading is needed before interpreting it as 'hidden' rather than 'intended' goal.
+
+### CR001-015 · retain
+
+**Arabic** (B2007)
+
+> فقوله : « كنت » يخبر عن تعيّن مسبوق بالإطلاق
+
+**Revised English**
+
+Thus 'I was' tells of a determination preceded by nondelimitation.
+
+**Editorial decision:** Priority of rank is explicated later, not of time.
+
+### CR001-016 · revise
+
+**Arabic** (B2007)
+
+> فإن مفهوم تاء المتكلّم عن نفسه يؤذن بتعيّنه في نفسه وظهوره حالة تكلّمه تعيّنا وظهورا
+
+**Revised English**
+
+The first-person tāʾ, by which the speaker speaks of himself, implies his determination in himself and his manifestation when speaking, as determination and manifestation.
+
+**Editorial decision:** More literal account of tāʾ al-mutakallim than the earlier compressed 'first-person marker' paraphrase.
+
+### CR001-017 · retain
+
+**Arabic** (B2007)
+
+> أما قوله : « كنزا مخفيّا » ينبئ عن غيبه وإطلاقه بحيث لا يدخل تحت حكم معيّن يحكم عليه من حيث هذا الغيب والإطلاق
+
+**Revised English**
+
+By contrast, 'a hidden treasure' signifies His unseen character and nondelimitation, in which no determinate judgment can be applied to Him precisely insofar as He is unseen and undelimited.
+
+**Editorial decision:** The qualification min ḥayth is crucial; not an unrestricted negation of divine predication.
+
+### CR001-018 · retain
+
+**Arabic** (B2007)
+
+> ولا تحت إحاطة به علما من حيث تعيّناته أصلا ، فإنّ مطلق الخفاء يحكم بذلك كلّه
+
+**Revised English**
+
+Nor can He be encompassed by knowledge through His determinations in this respect; absolute hiddenness entails all this.
+
+**Editorial decision:** Scope of the negation is the Essence precisely as hidden and undelimited.
+
+### CR001-019 · retain
+
+**Arabic** (B2007)
+
+> وحيث كان الخفاء وقع خبرا « لكنت » عرف سبق الإطلاق والغيب على ذلك التعيّن ، ولكن سبقا رتبيّا لا زمانيّا ، فإنه صحّ أنه ليس عند اللّه صباح ولا مساء
+
+**Revised English**
+
+Since hiddenness is predicated of 'I was', nondelimitation and the Unseen are understood to precede that determination—but by priority of rank, not priority in time; for there is neither morning nor evening with God.
+
+**Editorial decision:** The source explicitly supplies sabqan rutbiyyan lā zamāniyyan.
+
+### CR001-020 · retain
+
+**Arabic** (B2007)
+
+> وقوله : « فأحببت » يخبر عن ميل أصلي هو وصلة بين الخفاء والظهور المذكور
+
+**Revised English**
+
+'Then I loved' tells of an original inclination linking the hiddenness and manifestation just described.
+
+**Editorial decision:** Maḥabba is not a subsequent temporal event.
+
+### CR001-021 · retain
+
+**Arabic** (B2007)
+
+> وما ثمّ إلّا التعيّن الذي هو عين الوحدة ، فكان عينه
+
+**Revised English**
+
+There is nothing there except the determination that is identical with unity; the inclination is therefore identical with it.
+
+**Editorial decision:** The return of ʿaynuhu needs to be kept with its referent, not a second existing subject.
+
+### CR001-022 · retain
+
+**Arabic** (B2007)
+
+> وقوله : « أن أعرف » يشير إلى ظهور ذلك الخافي
+
+**Revised English**
+
+'That I might be known' points to the manifestation of what had been hidden.
+
+**Editorial decision:** An interpretive relation to a reported saying.
+
+### CR001-023 · retain
+
+**Arabic** (B2007)
+
+> وقوله : « فخلقت الخلق لأعرف » يعرف أن تقدير المقدّرات علما ووجودا يعقب ذلك الميل ويترتّب على متعلّقه الذي هو الظهور الحاصل بذلك التعيّن
+
+**Revised English**
+
+'So I created creation to be known' indicates that the determining of what is to be determined, in knowledge and in existence, follows that inclination and is ordered to what it seeks: the manifestation arising through that determination.
+
+**Editorial decision:** This clause has علما ووجودا explicitly, distinct from the uncertain reading of عمليا below.
+
+### CR001-024 · crux (unresolved text)
+
+**Arabic** (B2007)
+
+> ليتحقّق كمال ذلك الظهور مفصّلا متميّزا ويشمل حكمه وأثره المقدّر والمقدّر تعقّبا ذاتيّا لا زمانيّا ، بل عمليّا ووجوديّا أيضا بالنسبة إلى المقدّر العالم الأزلي وعلمه الذاتي والصفاتي الأبدي
+
+**Revised English**
+
+So that the perfection of disclosure may be realized in articulated distinction, and its rule and effect may encompass the determiner and what is determined in essential rather than temporal succession—and also in an operative [text: ʿamaliyyan] and existential order with respect to the eternal Determiner who knows, and His everlasting essential and attributive knowledge.
+
+**Editorial decision:** Previous English silently read 'in knowledge and existence' at the second occurrence, but B2007 and a derivative transcription read عمليّا, not علميّا. The contextual conjecture 'epistemic' requires an independent witness, not a silent correction. The unvowelled identical المقدّر والمقدّر also requires grammatical control.
+
+### CR001-025 · retain
+
+**Arabic** (B2007)
+
+> فإن علمه عين وجوده ، فافهم تقرّ بالكبريت الأحمر والكنز الأكبر إن شاء اللّه تعالى
+
+**Revised English**
+
+For His knowledge is identical with His existence. Understand, and—God willing—you will rejoice in the red sulphur and the greatest treasure.
+
+**Editorial decision:** The independent clause returns to the main metaphysical assertion.
+
+### CR001-026 · retain
+
+**Arabic** (B2007)
+
+> ثم اعلم أن كنه الذات الأقدس وغيب الهوية والإطلاق والأزلية المندرج فيه حكم الأبدية لا يشهد ولا يفهم ولا يعلم ولا يدرك من حيث التعيّن أصلا
+
+**Revised English**
+
+Know further that the innermost reality of the most holy Essence, the hiddenness of Identity, nondelimitation and pre-eternity—in which the determination of everlastingness is included—cannot be witnessed, understood, known or apprehended from the standpoint of any determination whatsoever.
+
+**Editorial decision:** Important: the denial concerns apprehension of the undelimited Essence as such, not all knowledge of God through self-disclosure.
+
+### CR001-027 · retain
+
+**Arabic** (B2007)
+
+> ولا يدخل تحت حكم متعيّن البتّة . نعم اللّهمّ إلا حكما سلبيّا بأنها لا تعلم
+
+**Revised English**
+
+Nor can it fall under any determinate judgment at all—except, perhaps, a negative judgment that it is not knowable.
+
+**Editorial decision:** The limiting exception is not an affirmative grasp of the Essence.
+
+### CR001-028 · retain
+
+**Arabic** (B2007)
+
+> وإنما توجه وتأتى هذا الحكم السلبي أيضا بأحد وجهين ؛ أحدهما : إخبار إلهي عن ذلك
+
+**Revised English**
+
+Even this negative judgment can be directed or attained only in one of two ways. The first is divine report concerning it—
+
+**Editorial decision:** The sentence continues on p20.
+
+
+## Source page 20
+
+[Consult the Beirut Arabic source](https://ablibrary.net/book_content/b/9606/20?lang=ar)
+
+### CR001-029 · annotate
+
+**Arabic** (B2007)
+
+> بقوله تعالى : وَلا يُحِيطُونَ بِهِ عِلْماً [ طه : الآية 110 ] ، وبقوله : « كنت كنزا مخفيّا » ونحو ذلك
+
+**Revised English**
+
+—as in God's words, 'They do not encompass Him in knowledge' (Qurʾān 20:110), and the saying 'I was a hidden treasure', and similar expressions.
+
+**Editorial decision:** Distinguish an actual Qurʾānic verse from the unattested 'hidden treasure' saying, though Farghānī lists both as divine report.
+
+### CR001-030 · retain
+
+**Arabic** (B2007)
+
+> والوجه الثاني : انقطاع أكمل الإدراكات والعلوم وأوسع الشهودات والفهوم إليه واعترافه بالعجز والقصور والحيرة فيه
+
+**Revised English**
+
+The second way is for the most perfect apprehensions and sciences, and the widest witnessings and understandings, to come to their limit before Him and confess their incapacity, limitation and bewilderment concerning Him.
+
+**Editorial decision:** Do not construe 'confession of incapacity' as ignorance of every divine name.
+
+### CR001-031 · retain
+
+**Arabic** (B2007)
+
+> وبأن ما وراء غاية مدركه ونهاية مشهده بحار يحار في تيّارها فهم كل غائص واقف ، ويتيه في تيه كنهها وغور أسرارها علم كل خائض عارف
+
+**Revised English**
+
+They acknowledge that beyond the furthest object of apprehension and the last horizon of witnessing are seas whose currents bewilder every diver's understanding, and deserts whose hidden depths confound the knowledge of every knowing traveler.
+
+**Editorial decision:** Preserves the two images, seas and trackless wilderness.
+
+### CR001-032 · retain
+
+**Arabic** (B2007)
+
+> هي المقصد الأعلى والمطلب الأولى ؛ كما نصّ صلّى اللّه تعالى عليه وسلم بقوله في مناجاته : « لا أحصى ثناء عليك »
+
+**Revised English**
+
+These are the highest end and most worthy object of seeking; the Prophet indicated this in his supplication, 'I cannot enumerate the praise due to You.'
+
+**Editorial decision:** The poetic plural 'these' refers back to inaccessible depths, not a positive list of predicates.
+
+### CR001-033 · annotate
+
+**Arabic** (B2007)
+
+> لا أبلغ كل ما فيك ، وبقوله أيضا في أثناء دعائه : « أو استأثرت به في مكنون الغيب عندك »
+
+**Revised English**
+
+That is, 'I cannot reach all that is in You'; and likewise in his supplication, 'or [a name] that You have reserved in the hidden mystery with You'.
+
+**Editorial decision:** 'I cannot enumerate Your praise' appears in Ṣaḥīḥ Muslim 486; distinguish Farghānī's gloss from the hadith's words. The reserved names phrase comes from another supplication.
+
+### CR001-034 · annotate
+
+**Arabic** (B2007)
+
+> وبقوله : « ربّ زدني فيك تحيّرا » ، وأمثال ذلك
+
+**Revised English**
+
+And in the saying 'My Lord, increase me in bewilderment concerning You', and similar reports.
+
+**Editorial decision:** Modern editor of B2007 p20 explicitly says he did not find this report in his sources; do not imply an established hadith.
+
+### CR001-035 · retain
+
+**Arabic** (B2007)
+
+> ومهما علم أو شوهد أو أدرك شيء منها عند تجلّيها الظاهري أو الباطني أو الجمعي
+
+**Revised English**
+
+Whatever of these realities is known, witnessed or apprehended through their outward, inward or comprehensive self-disclosure—
+
+**Editorial decision:** The clause is conditional and the construction continues over the printed page boundary.
+
+### CR001-036 · retain
+
+**Arabic** (B2007)
+
+> في السير الحبي وقرب النوافل ، وتقدم السلوك على الجذبة وسبق الفناء على البقاء
+
+**Revised English**
+
+—in the journey of love and nearness through supererogatory works, where disciplined journeying precedes attraction and annihilation precedes subsistence—
+
+**Editorial decision:** Keep distinctions: ḥubbī versus maḥbūbī and nawāfil versus farāʾiḍ, developed on p21.
+
+### CR001-037 · revise
+
+**Arabic** (B2007)
+
+> حيث يكون ويظهر لدى الفتح أن الحقّ المتجلّي آلة لإدراك العبد
+
+**Revised English**
+
+—then at the spiritual opening it becomes apparent that the self-disclosing Real is the instrument by which the servant apprehends—
+
+**Editorial decision:** The prior English 'may reveal' weakened the affirmative where Arabic says yakūn wa-yaẓhar. The sentence finishes on B2007 p21.
+
+
+## Source page 21
+
+[Consult the Beirut Arabic source](https://ablibrary.net/book_content/b/9606/21?lang=ar)
+
+### CR002-001 · retain
+
+**Arabic** (B2007)
+
+> المتجلّي له من باب « كنت سمعه وبصره ، فبي يسمع وبي يبصر »
+
+**Revised English**
+
+—the one to whom disclosure occurs, in the sense of 'I become his hearing and sight, so by Me he hears and sees'.
+
+**Editorial decision:** Continuation of B2007 p20; distinguish report from authorial conceptual explanation.
+
+### CR002-002 · retain
+
+**Arabic** (B2007)
+
+> وفي السير المحبوبي وقرب الفرائض وتأخّر السلوك عن الجذبة وتقدم البقاء الأصلي على الفناء
+
+**Revised English**
+
+In the journey of the beloved and the nearness of obligatory acts, where traveling follows attraction and original subsistence precedes annihilation—
+
+**Editorial decision:** A reversal of the order assigned to the ḥubbī journey at p20.
+
+### CR002-003 · retain
+
+**Arabic** (B2007)
+
+> حيث يتبيّن أن العبد المتجلّى له آلة لإدراك الحق المتجلّي من باب « فإن اللّه تعالى قال على لسان عبده : سمع اللّه تعالى لمن حمده »
+
+**Revised English**
+
+—it becomes clear that the servant who receives disclosure is the instrument of the self-disclosing Real's apprehension, in the sense of 'God speaks on His servant's tongue: God hears the one who praises Him.'
+
+**Editorial decision:** Instrument-to-apprehender relation is reversed relative to the earlier sentence.
+
+### CR002-004 · retain
+
+**Arabic** (B2007)
+
+> وعند انتهاء السيرين والجمع بين الحكمين ابتداء وانتهاء حيث يصح أن كل واحد منهما مدركا وآلة على التعاقب أو معا في حالة واحدة من باب وَما رَمَيْتَ إِذْ رَمَيْتَ وَلكِنَّ اللَّهَ رَمى
+
+**Revised English**
+
+At the completion of both journeys and their union in beginning and end, each can be the apprehender and the instrument, successively or together in one state, as in 'You did not throw when you threw, but God threw' (Qurʾān 8:17).
+
+**Editorial decision:** The subject is the reciprocal grammatical distribution of apprehender and instrument, not equality of independent beings.
+
+### CR002-005 · corrected
+
+**Arabic** (B2007)
+
+> فعلى كل حال يكون ذلك العلم والشهود والتجلّي والإدراك من حيث تعينه ومشيئته وعلمه المقدّس بذاته الأقدس تعالى وتقدّس من حيث واحديتها ، لا من حيث إطلاقها وأحديتها
+
+**Revised English**
+
+In every case, this knowing, witnessing, disclosure and apprehension concern His determination, His will and His sacred knowledge of His most holy Essence—exalted and sanctified is He—under the consideration of its oneness (wāḥidiyya), not under that of its nondelimitation and unicity (aḥadiyya).
+
+**Editorial decision:** The older F007 excerpt omitted 'من حيث واحديتها'. The corrected B2007 source is confirmed; the phrase also appears in a later quotation in al-Fanārī's Miṣbāḥ al-uns (modern printed text p183), though this is reception testimony not an independent manuscript witness.
+
+### CR002-006 · retain
+
+**Arabic** (B2007)
+
+> فإن إدراكه وشهوده من حيث تعيّنه وعلمه غير ممنوع ، بل موكول إلى مشيئته تعالى وتقدّس كما قال عزّ من قائل : وَلا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِما شاءَ
+
+**Revised English**
+
+For apprehending and witnessing Him under the consideration of His determination and knowledge is not prohibited; it is dependent upon His will, as He says, 'They encompass none of His knowledge except what He wills' (Qurʾān 2:255).
+
+**Editorial decision:** The scope qualifier is essential to avoid treating the Essence's undelimitation as an object of determined knowledge.
+
+### CR002-007 · retain
+
+**Arabic** (B2007)
+
+> ثم إن وحدته التي انتشئت منها الأحديّة والواحدية هي عين ذاته لا صفة زائدة ولا نعت زائد عليها
+
+**Revised English**
+
+His unity, from which unicity and oneness derive, is identical with His Essence: it is neither an additional attribute nor an additional qualification.
+
+**Editorial decision:** Do not identify two considerations with two distinct divine substances.
+
+### CR002-008 · retain
+
+**Arabic** (B2007)
+
+> لكن للوحدة اعتباران أصليّان أوليّان ، أحدهما : سقوط الاعتبارات عنها بالكلية ، وسمّي الذات أحدا بهذا الاعتبار ومتعلقة بطون الذات وإطلاقها وأزليّتها
+
+**Revised English**
+
+But unity admits two original, primary considerations. The first is the complete dropping away of considerations, under which the Essence is called One in unicity (aḥad), related to its hiddenness, nondelimitation and pre-eternity.
+
+**Editorial decision:** Important to separate first determination (comprehensive intermediary) from aḥadiyya (one consideration).
+
+### CR002-009 · retain
+
+**Arabic** (B2007)
+
+> وعلى هذا يكون نسبة الاسم الأحد إلى السلب أحقّ من نسبته إلى الثبوت والإيجاب
+
+**Revised English**
+
+Thus the name aḥad is more properly related to negation than to establishment and affirmation.
+
+**Editorial decision:** Metaphysical status of the negative consideration.
+
+### CR002-010 · retain
+
+**Arabic** (B2007)
+
+> والاعتبار الثاني : ثبوت الاعتبارات الغير المتناهية لها مع اندراجها فيها في أول رتبة الذات ، وتحقّق أكثر تفصيل تعيّناتها في ثاني الرتبة الآتي بيان كليهما عن قريب إن شاء اللّه تعالى
+
+**Revised English**
+
+The second consideration is the establishment of infinitely many considerations for unity, included within it at the first rank of the Essence, while most of their determinate differentiation is realized at the second rank, as both will shortly be explained.
+
+**Editorial decision:** Do not read second-rank explicit differentiation back into the first-rank inclusion.
+
+### CR002-011 · retain
+
+**Arabic** (B2007)
+
+> كالنصفية والثلثية والربعية الثابتة والمندرجة في هذا الواحد المشهود ههنا ، التي ينتشىء منها الأعداد في المراتب الوجودية
+
+**Revised English**
+
+Like halfness, thirdness and quarterness, established and contained in the one considered here, from which numbers arise in existential ranks.
+
+**Editorial decision:** Numerical analogy illustrates included relations, not arithmetic divisions within the Essence.
+
+### CR002-012 · retain
+
+**Arabic** (B2007)
+
+> وينتشىء من تلك الاعتبارات أعيان الاثنين والثلاثة والأربعة فيها ، كما يقال : الواحد نصف الاثنين ، وثلث الثلاثة ، وربع الأربعة وهلمّ جرّا
+
+**Revised English**
+
+And from these considerations arise the distinct two, three and four: the one is half of two, a third of three, a quarter of four, and so on.
+
+**Editorial decision:** Keep ʿayn as determinate identity here, not the same sense as externally existing individual.
+
+### CR002-013 · retain
+
+**Arabic** (B2007)
+
+> والذات بهذا الاعتبار يسمّى واحدا اسما ثبوتيّا لا سلبيّا ، ولم تصح إضافة هذه الاعتبارات المذكورة إلى الاسم الأحد لا حقيقة ولا وضعا لغويّا
+
+**Revised English**
+
+Under this consideration the Essence is called wāḥid, an affirmative rather than a negative name. These considerations are not properly attributed to the name aḥad, either in reality or by linguistic convention.
+
+**Editorial decision:** The last phrase continues in the next printed page with 'فحقائق هذه الاعتبارات'.
+
+
+## Source page 22
+
+[Consult the Beirut Arabic source](https://ablibrary.net/book_content/b/9606/22?lang=ar)
+
+### CR002-014 · retain
+
+**Arabic** (B2007)
+
+> الاعتبارات في أول رتبة الذات ثابتة للاسم الواحد الحقيقي ، ومندرجة فيه ثبوتا حقيقيّا واندراجا أصليّا
+
+**Revised English**
+
+These considerations at the first rank of the Essence are established for the truly One and included within it by real establishment and original inclusion.
+
+**Editorial decision:** Source presents true thubūt but does not equate it with external existential actuality.
+
+### CR002-015 · retain
+
+**Arabic** (B2007)
+
+> كما أن أمثلتها وصورها ثابتة لهذا الواحد المشهود أثره لنا ههنا ، ومندرجة فيه غير قادحة في الرتبتين في صرافة هذا الواحد ، ولا منافية لها
+
+**Revised English**
+
+As their analogues and forms are established within the one whose effect is witnessed here, their inclusion at either rank neither impairs nor contradicts the simplicity of that one.
+
+**Editorial decision:** The clause explicitly controls the number analogy's ontological limits.
+
+### CR002-016 · retain
+
+**Arabic** (B2007)
+
+> ومتعلق هذا الاعتبار الواحدي ظهور الذات ووجودها وأبديّتها ؛ كما أن متعلق الاعتبار الأحدي بطونها وأزليّتها
+
+**Revised English**
+
+The consideration of oneness concerns the Essence's manifestation, existence and perpetuity; the consideration of unicity concerns its hiddenness and pre-eternity.
+
+**Editorial decision:** Preserve the parallel between ẓuhūr / buṭūn and abad / azal.
+
+### CR002-017 · retain
+
+**Arabic** (B2007)
+
+> ولا مغايرة ولا غيرية بين هذين الاعتبارين ، ولا بين كل اعتبار واعتبار من اعتبارات الواحدية في أول رتبة الذات الآتي بيانه
+
+**Revised English**
+
+There is neither differentiation nor otherness between these two considerations, nor between one consideration of oneness and another at the first rank of the Essence.
+
+**Editorial decision:** Distinguish mughāyara and ghayriyya as both negated, not just simple sameness.
+
+### CR002-018 · retain
+
+**Arabic** (B2007)
+
+> لأن المغايرة والغيرية من أحكام الكثرة والمنافاة الثابتة بينها وبين الوحدة ، ولا كثرة ثمة تنافي الوحدة ، بل تلك الوحدة هي المنشئة لكل وحدة وكثرة مفهومة ههنا متغايرة عندنا
+
+**Revised English**
+
+For difference and otherness are judgments of multiplicity and its opposition to unity. There, no multiplicity exists that opposes unity; that unity is the source of every unity and multiplicity understood here as different.
+
+**Editorial decision:** This does not by itself negate real plurality in subsequent manifested ranks.
+
+### CR002-019 · retain
+
+**Arabic** (B2007)
+
+> ولا يفهم ارتفاع هذه المغايرة في تلك الحضرة إلّا من ارتفع حالا ومقاما عن التقيّد بالمراتب المقيّدة بأحكام الكثرة والمقيّدة لأربابها بها
+
+**Revised English**
+
+None understands the removal of such difference in that Presence unless he has risen, in state and station, beyond restriction by ranks determined by judgments of multiplicity and restricting their occupants through them.
+
+**Editorial decision:** Explicit link between ontological rank and transformed apprehension.
+
+### CR002-020 · retain
+
+**Arabic** (B2007)
+
+> ولارتفاع حكم هذه المغايرة في الرتبة الأولى حكم بها بعض أكابر المحقّقين من أهل اللّه بأن الواحد الأحد اسم واحد مركّب ؛ كبعلبك ومعديكرب
+
+**Revised English**
+
+Because the judgment of difference is absent at the first rank, some eminent realized masters hold that al-wāḥid al-aḥad is one compound name, like Baʿlabakk or Maʿdīkarib.
+
+**Editorial decision:** Grammatical examples are genuine proper-name compounds; not a third ontological rank.
+
+### CR002-021 · retain
+
+**Arabic** (B2007)
+
+> ثم اعلم أن هذه الاعتبارات الثابتة للواحد ثمة ، والمندرجة فيه في أول رتبة الذات المحكوم عليها فيها بأنها عين الذات
+
+**Revised English**
+
+Know, further, that these considerations established for the One and included within it at the first rank of the Essence are judged there to be the Essence itself.
+
+**Editorial decision:** Differentiation at later ranks must not be inserted into this first-rank claim.
+
+### CR002-022 · retain
+
+**Arabic** (B2007)
+
+> بحيث إن كل ما يضاف إلى الذات يضاف إلى كلّ واحد منها من الجمعية والاشتمال على الكلّ في هذه الرتبة الأولى بحسبها
+
+**Revised English**
+
+Thus what is attributed to the Essence under the aspect of comprehensiveness and containing the whole is likewise attributed to each of the considerations at this rank.
+
+**Editorial decision:** The qualifier 'at this rank' is essential.
+
+### CR002-023 · retain
+
+**Arabic** (B2007)
+
+> نظرا من حيث مظاهرها وصورها وآثارها إليها ألفينا بعضها كلّيات وأصولا أول بمثابة أجناس عالية
+
+**Revised English**
+
+If considered through their manifestations, forms and effects, some prove to be universals and primary principles comparable to supreme genera.
+
+**Editorial decision:** Move from first-rank inclusion to what follows upon later manifestation.
+
+### CR002-024 · retain
+
+**Arabic** (B2007)
+
+> هي مسمّى ألفاظ دالّة على حقائق أسماء الذات ومفهوماتها التي منها مفاتح الغيب ، والواحد الأحد وباطن اسم اللّه ، وباطن اسم الرحمن الرحيم ، ومفهوم جمع أسماء الضمائر
+
+**Revised English**
+
+These are the realities named by words designating the essential names and their concepts: the Keys of the Unseen, the One-in-Unicity, the inward aspect of Allāh, the inward aspect of al-Raḥmān and al-Raḥīm, and the comprehensive meaning of pronominal names.
+
+**Editorial decision:** Distinguish name-realities from their linguistic words, elaborated at later source pages.
+
+### CR002-025 · retain
+
+**Arabic** (B2007)
+
+> ووجدنا بعض تلك الاعتبارات المندرجة في الواحدية من حيث النظر في مظاهرها وآثارها بمثابة أجناس تالية وأنواع مندرجة فيها وهلمّ جرّا إلى أشخاص هاوية إلى الدّركات الجزئية جدّا
+
+**Revised English**
+
+Some of the considerations included within oneness, considered through their effects, are like lower genera, species included within them, and so on down to individuals at the most narrowly particular levels.
+
+**Editorial decision:** Avoid treating genera and species here as independent eternally existing substances.
+
+### CR002-026 · retain
+
+**Arabic** (B2007)
+
+> التي بها يحكم على الحضرة الأبدية بعدم التناهي كثرة وتعيّنات وتقيّدات ، والكل ثابتة بصورها المعنوية في الرتبة الثانية بعضها بطريق التشخّص ، وبعضها بطريق الاندراج في الأصناف والأنواع
+
+**Revised English**
+
+These yield the judgment that the perpetual Presence contains endlessly many determinations and restrictions. All are established as intelligible forms at the second rank, some individually, others by inclusion within kinds and species.
+
+**Editorial decision:** Explicit second-rank establishment versus first-rank inclusion.
+
+### CR002-027 · retain
+
+**Arabic** (B2007)
+
+> نعم ، وقد تعيّنت وانضبطت جملة منها في اللّوح المحفوظ ، وتصوّرت صورا وجودية روحانية فيه منتهيا ظهورها بانتهاء يوم القيامة مجملا ومفصّلا
+
+**Revised English**
+
+A group of these is also determined and fixed in the Preserved Tablet, acquiring spiritual existential forms whose display extends to the Resurrection, both comprehensively and in detail.
+
+**Editorial decision:** Not a blanket claim that all eternal knowables manifest in this way.
+
+### CR002-028 · retain
+
+**Arabic** (B2007)
+
+> ويتفصّل منه في المراتب الوجودية مجملا في العرش ومفصّلا في الكرسي دفعة واحدة ، ثم يتفصّل منهما في الأركان والسماوات على التعاقب إلى أنهى مراتب
+
+**Revised English**
+
+From the Tablet it is unfolded within existential ranks, comprehensively in the Throne and in detail in the Footstool in one act, and thereafter successively in the elements and heavens down to the lowest ranks—
+
+**Editorial decision:** The sentence runs across the p22–23 boundary; do not count any stage of manifestation as independent divinity.
+
+
+## Source page 23
+
+[Consult the Beirut Arabic source](https://ablibrary.net/book_content/b/9606/23?lang=ar)
+
+### CR002-029 · retain
+
+**Arabic** (B2007)
+
+> الكون مثالا وحسّا ، وفي المواطن دنيا وبرزخا وآخرة ، وينتهي إلى ههنا جميع الشهودات والإدراكات والمكاشفات الحاصلة للكمّل والأولياء
+
+**Revised English**
+
+—of the cosmos, in imaginal and sensory form and in its worldly, intermediate and hereafter abodes. All witnessing, apprehension and unveiling attained by perfected people and saints end at this limit.
+
+**Editorial decision:** Continues p22 sentence; note distinct metaphysical modes and abodes.
+
+### CR002-030 · retain
+
+**Arabic** (B2007)
+
+> فالأدنى منهم وما فيهم أدنى ، والأعلى في حكم هذا الانتهاء سواء
+
+**Revised English**
+
+The lowest among them and the highest are alike with respect to this limit.
+
+**Editorial decision:** The sentence denies no distinction in actual spiritual rank; only the epistemic horizon.
+
+### CR002-031 · crux (unresolved text)
+
+**Arabic** (B2007)
+
+> إلّا أنه ربما يكون في الحضرة الغيبية الأزليّة نحو هذه الكلّيات والجزئيّات أمور باطنة وأحوال مستورة لم تتعيّن بعد لا في الرتبة الثانية ولا في اللّوح المحفوظ
+
+**Revised English**
+
+Yet in the eternal unseen Presence there may perhaps be, regarding these universals and particulars, hidden things and concealed states not yet determined either at the second rank or in the Preserved Tablet.
+
+**Editorial decision:** The modal 'perhaps' and specific rank of determined knowability must be preserved; cannot simply equate with Guénon's nonmanifestable possibilities.
+
+### CR002-032 · crux (unresolved text)
+
+**Arabic** (B2007)
+
+> فلم تعلم ولم يحكم بشيء منها إلّا بعد تعيّنها ووقوعها في المراتب الوجودية بالتدريج مع الآنات
+
+**Revised English**
+
+Accordingly they are not known or judged until their determination and occurrence in existential ranks, progressively with successive instants.
+
+**Editorial decision:** Strong apparent temporal epistemic claim. Do not silently reformulate as though they were eternally differentiated in divine knowledge; further surrounding context and manuscript comparison required.
+
+### CR002-033 · retain
+
+**Arabic** (B2007)
+
+> وهي أبطن بطون أحكام الغيب الذاتي المغلوب والمسبوق بالرحمة الذاتية
+
+**Revised English**
+
+These belong to the utmost inward depth of the judgments of the essential Unseen, which is preceded and overcome by essential mercy.
+
+**Editorial decision:** Distinguish hiddenness of rank from an event changing the Essence.
+
+### CR002-034 · annotate
+
+**Arabic** (B2007)
+
+> فلهذا أوجبت الرهبة والخشية المشار إليها في قوله تعالى : قُلْ ما كُنْتُ بِدْعاً مِنَ الرُّسُلِ وَما أَدْرِي ما يُفْعَلُ بِي وَلا بِكُمْ
+
+**Revised English**
+
+They therefore occasion awe and fear, as indicated by 'Say: I am no novelty among messengers, and I do not know what will be done with me or with you' (Qurʾān 46:9).
+
+**Editorial decision:** Farghānī's interpretation of the verse is an exegetical move; the verse alone does not prove his exact metaphysical thesis.
+
+### CR002-035 · annotate
+
+**Arabic** (B2007)
+
+> ومن وجه أيضا يشير إليها قوله صلّى اللّه عليه وسلّم شفقا منها : « ليت ربّ محمد لم يخلق محمدا »
+
+**Revised English**
+
+And from another aspect the saying attributed to the Prophet, expressing concern, 'Would that Muḥammad's Lord had not created Muḥammad', is taken as an allusion to them.
+
+**Editorial decision:** The Beirut editor explicitly reports no source found for this statement. Do not attribute it as authenticated hadith.
+
+### CR002-036 · retain
+
+**Arabic** (B2007)
+
+> مع أنه كان من حيث ما تعيّن من حاله صلّى اللّه عليه وسلّم في الحضرة العلمية واللّوح المحفوظ على بصيرة من ربّه
+
+**Revised English**
+
+Yet concerning what had become determined of the Prophet's state in the Presence of Knowledge and the Preserved Tablet, he possessed insight from his Lord.
+
+**Editorial decision:** Distinguish this determined register from the unqualified Unseen of preceding clauses.
+
+### CR002-037 · annotate
+
+**Arabic** (B2007)
+
+> حتى أنه كان يقول اعتمادا عليها ونظرا إليها : « آدم ومن دونه تحت لوائي يوم القيامة ولا فخر » ، « ولو كان موسى حيّا لما وسعه إلّا اتّباعي »
+
+**Revised English**
+
+Thus in reliance on it he could say, 'Adam and those below him are under my banner on the Day of Resurrection, without boasting', and 'Were Moses alive, he would have no option but to follow me'.
+
+**Editorial decision:** Modern editor lists differing hadith collections for reports; do not treat every cited report as identically authenticated.
+
+### CR002-038 · retain
+
+**Arabic** (B2007)
+
+> وقوله : « أنا أول من يقرع باب الجنّة وأول من يفتح باب الشفاعة » ونحو ذلك من الإشارات في أحاديث صحاح
+
+**Revised English**
+
+And 'I am the first to knock at the gate of Paradise and the first to open the gate of intercession', and comparable indications from reports he regards as sound.
+
+**Editorial decision:** Convey the authorial assessment 'aḥādīth ṣiḥāḥ' without issuing an independent authentication judgment.
+
+### CR002-039 · retain
+
+**Arabic** (B2007)
+
+> وعلى الحقيقة كثيرا ما يجرّه الدعاء والسؤال من الأمور والأحكام الغيبية إنما يكون من تلك الأمور والأحوال
+
+**Revised English**
+
+In reality, much of what supplication and petition draw forth from unseen affairs and judgments pertains to those hidden things and states.
+
+**Editorial decision:** The relationship of supplication to hidden affairs needs comparison with his account of fixed divine knowledge.
+
+### CR002-040 · retain
+
+**Arabic** (B2007)
+
+> فإن ما عداها لا يتحصّل إلّا المكتوب الثابت المقسوم في الحضرة العلمية لا يزيد ولا ينقص
+
+**Revised English**
+
+Apart from these, nothing occurs except what is written, established and allotted in the Presence of Knowledge, without increase or decrease.
+
+**Editorial decision:** Sets up tension with 'not known until they occur'; do not resolve by paraphrase.
+
+### CR002-041 · retain
+
+**Arabic** (B2007)
+
+> ثم إنه قد عبّر بعض العلماء باللّه الواقفين على حضراته الكلية عن بعض اعتبارات الواحدية المندرجة فيها في الرتبة الأولى بالشؤون الذاتية
+
+**Revised English**
+
+Some knowers of God, acquainted with His universal Presences, have called certain considerations of oneness, included in it at the first rank, 'essential affairs' (shuʾūn dhātiyya).
+
+**Editorial decision:** Source begins an extended treatment continued p24.
+
+### CR002-042 · retain
+
+**Arabic** (B2007)
+
+> وهي التي تظهر في الرتبة الثانية وما تحتها من المراتب بصور الحقائق المتبوعة وبعض صفاتها التابعة التي لها الثبات ، نحو الحياة والعلم
+
+**Revised English**
+
+These appear at the second and lower ranks as principal realities and certain enduring concomitant attributes, such as life and knowledge.
+
+**Editorial decision:** Thubūt of principal realities versus dependent qualities.
+
+### CR002-043 · retain
+
+**Arabic** (B2007)
+
+> وبصور أمور كائنة ثابتة نحو الذوات والجواهر ، وصفة بقائها وثباتها اعتبارا لبعض
+
+**Revised English**
+
+And as enduring beings such as individual entities and substances, and as properties of their continuance and stability, considered with respect to some—
+
+**Editorial decision:** Sentence continues in p24; do not present as complete.
+
+
+---
+
+## Initial critical register
+
+| Status | Units |
+|---|---:|
+| Arabic–English clauses reviewed | 80 |
+| Beirut printed pages covered | 6 (18–23) |
+| Transcription/translation cruxes needing another witness | 5 |
+| Earlier translation revisions marked | 5 |
+| Prior correction documented | 1 |
+| Independent medieval manuscript variants established | 0 |
+
+**Next digital Arabic checking locus:** B2007 p.24, where the previous author's discussion of essential affairs continues. **Next manuscript-critical operation:** inspect the corresponding I1876 print image, establish a page/line concordance, and compare an actual manuscript reading before designating a constituted text. The previous original English introduction is complete in draft to B2007 p.145; source-critical validation is not.
+
+
+---
+
+## PART C — First critical audit, corrections and open textual problems
+
+# Critical edition — Audit I: Farghānī's opening six pages (Beirut B2007, pp.18–23)
+
+**Date:** 9 November 2026 · **Status:** first *printed-digital Arabic-to-English* critical checking pass, NOT a definitive critical text.
+
+## What was actually checked
+
+The 80 source spans in [CRITICAL_TRANSLATION_18_23.md](CRITICAL_TRANSLATION_18_23.md) were segmented from Farghānī's own Arabic displayed in the Beirut digital edition, excluding modern printed footnotes. They are grouped under the exact B2007 printed-page numbers 18–23. Each has the Arabic, a revised English rendering, a short explanation of its translation decision, and a direct page source link. The same structured data powers [GNAMMA's clause review](../critical-edition.html).
+
+- **37 clauses / pp.18–20**: opening analogy, hidden treasure, rank-priority, limits of comprehending the Essence, first description of the ḥubbī journey.
+- **43 clauses / pp.21–23**: contrast of ḥubbī / maḥbūbī and *wāḥidiyya / aḥadiyya*, first-rank inclusion, second-rank differentiation, extraordinary problem of what is “not yet known.”
+
+These counts measure the **scope of the audit records**, not the existence of 80 independent manuscript readings. They are based on one modern edited witness, not independent early manuscripts.
+
+## Four kinds of evidence—do not conflate them
+
+**B2007:** A digital transcription of a modern Beirut edition of the Arabic. This is the source against which the English clauses have been reviewed. Its orthography and punctuation may be edited or digitally corrupted. The word *source-checked* on GNAMMA means checked against this witness only.
+
+**I1876:** The 1293/1876 Istanbul historical printing, NYU/Princeton Arabic Collections Online, volume 1. The item and full facsimile are catalogued, but the corresponding printed page images have **not** been inspected and compared with these six Beirut pages. The first edition's different pagination cannot simply be mapped by numerals.
+
+**Yeni Camii 706:** Early manuscript in the Süleymaniye collection. The catalogue reports collation with an original, but the leaf bearing this note has not been seen directly. It is not a validated archetype, copy-text, or authority for any variant recorded here.
+
+**Later reception:** The passage around B2007 pp.20–21 is quoted and discussed in *Miṣbāḥ al-uns* attributed to Shams al-Dīn al-Fanārī (modern print, p.183), online at https://ablibrary.net/book_content/b/4696/183?lang=ar. That quotation independently demonstrates later discussion and preserves **min ḥayth wāḥidiyyatihā**. It is **not** a new manuscript of Farghānī. Its printed text also shows a different or possibly corrupt sequence at the negative contrast, and the commentary signals a philosophical dispute about disclosure beyond the conditioned ranks. Treat it as reception / indirect citation, never an independently collated Farghānī variant.
+
+## Substantive findings
+
+### 1. Heading: taʿayyun is *determination*, not merely differentiation
+
+The opening heading reads **تعيّن الأسماء منها**. The previous English compressed this as “the differentiation of names from it.” The new critical rendering preserves *determination*: “the determination of names from the Essence.” Both words can be useful as explanatory English, but *taʿayyun* has a distinct technical function in Farghānī: a thing is considered or becomes determinate in a rank, whereas *tafṣīl*, *imtīyāz*, *mughāyara*, and similar terms specify different forms of differentiation. A definitive lexicon must keep them separate.
+
+### 2. The hidden-treasure report: vital to the argument, unestablished as ḥadīth
+
+B2007 p.18 explicitly says the saying is **transmitted from the Prophet**. The translation must report that authorial attribution faithfully, but the apparatus must say it does not possess an established prophetic chain. The former edition's note “reported divine ḥadīth” should not silently function as authentication. Later ḥadīth specialists reject its established attribution (see the discussion of al-Sakhāwī and al-Suyūṭī in their reported assessments, e.g. https://dorar.net/h/YDhMnewM). By contrast, “I cannot enumerate the praise due to You” at p.20 occurs in **Ṣaḥīḥ Muslim 486** (https://sunnah.com/muslim:486). These sources do not have the same status.
+
+Also, Farghānī carefully denies *tashbīh*, *tashkīl*, and *tamthīl* within the analogy itself. The critic must not remove that anti-assimilationist qualification or call the treasure a literal object hidden inside God.
+
+### 3. P19: B2007 reads ʿamaliyyan, not ʿilmiyyan
+
+The inherited English says that the succession is “also a succession **in knowledge and existence**.” In the **first** relevant clause, Farghānī does say **ʿilman wa-wujūdan** (“in knowledge and existence”). But in the **second** clause the modern digital Arabic reads **عمليّا ووجوديّا** (*ʿamaliyyan wa-wujūdiyyan*)—“operative/practical and existential,” while the context could suggest **علميّا** (*ʿilmiyyan*, epistemic). The first-stage English seems to have resolved this difference silently.
+
+The Arabic edition's spelling is a live **textual crux**; it is not permissible to manufacture a manuscript reading to eliminate it. The verified digital reading is preserved in the new translation with the problem flagged. Another witness is required before amending or settling the sense. The repeated unvowelled **المقدّر والمقدّر** also requires grammatical control of agent and patient.
+
+### 4. P18 and p19: two further digitally awkward readings
+
+The digital source on p.18 contains the expression **بطون المشتمل** (in context, the inwardness containing the jewels of the essential names), whose exact syntax is uncertain. At p.19, **المطلب الغائبّ** appears in a context where “desired aim” seems indicated. Both are recorded as source cruxes rather than silently corrected in the Arabic.
+
+The English expresses a contextually reasonable interpretation but is explicitly provisional until actual printed or manuscript witnesses confirm it. One should not introduce a fabricated alternative and label it “I1876” or “Y706.”
+
+### 5. P21: essential correction of wāḥidiyya / aḥadiyya
+
+The source explicitly opposes witnessing in the determination and knowledge of the Essence **من حيث واحديتها** (“in respect of its oneness”) to apprehension **من حيث إطلاقها وأحديتها** (“in respect of its nondelimitation and unicity”). An earlier extracted clause omitted the affirmative qualification. This has been restored and is preserved in the critical data as a **recorded transcription correction**, not an early variant.
+
+The distinction changes the philosophical argument materially. Farghānī does not simply assert all self-disclosure to be impossible, nor does he affirm full intellectual possession of the undelimited Essence. He differentiates modes of disclosure by their ranks and considerations.
+
+The *Miṣbāḥ al-uns* discussion is especially valuable because its annotator regards certain claims as needing reconciliation: the contrast between revelation *under determination* and discussion of unveiling beyond a special divine-name relationship cannot be handled by simply declaring everything identical.
+
+### 6. P23: the not-yet-known affairs
+
+The Arabic reads **فلم تعلم ولم يحكم بشيء منها إلّا بعد تعيّنها ووقوعها**—“they are not known or assigned any judgment except after becoming determined and occurring.” This is unusually strong language in an author who also states that divine knowledge is identical to divine existence.
+
+It must be translated *as it stands*, preserving **ربما** (“perhaps”), the distinction between determination in the second rank and the Preserved Tablet, and Farghānī's use of Qurʾān 46:9. Whether this speaks only of differentiated knownness, of graded disclosure, of the servant's knowing, or of a stronger thesis about potentiality remains unresolved by these clauses alone. It would be inappropriate either to accuse him summarily of denying omniscience or to rewrite his text to remove the difficulty.
+
+The reported statement “Would that Muḥammad's Lord had not created Muḥammad” is marked unsupported in the printed editor's notes; it must be assigned a different evidentiary status from the Qurʾānic citation.
+
+## Current critical-edition gate
+
+| Operation | Verified stage |
+|---|---|
+| Continuous English *draft* for the original introduction | B2007 pp.18–145, all four foundations plus pp.144–145 concluding preface |
+| B2007 Arabic–English source checking, clause by clause | **80 clauses, B2007 pp.18–23** |
+| Unresolved B2007 lexical / semantic cruxes in first six pages | **5** tagged clauses |
+| Independent direct historical printing collation | **0** source pages certified |
+| Medieval manuscript variants established | **0** |
+| Complete continuous authorial Arabic copy-text | **Not constituted** |
+| Definitive bilingual edition status | **Not achieved** |
+
+“Full English draft” and “critically checked Arabic–English” are **different dimensions of progress**. No percentage of *definitive* completion is reported while the printed / manuscript witnesses remain to be compared.
+
+## Continuation procedure
+
+1. Begin the **next Arabic-to-English checking** at B2007 **p.24**, not at p.135 and not at p.146. The English composition stage for the introduction ends at p.145; the historical critical checking restarts from the beginning and now continues after the opening six pages.
+2. Preserve the inherited English 18–145 master unmodified. Record corrections in a distinct, reviewed critical layer with original and revised English, Arabic locus, rationale, source, and date. Publish a revised master only when the corrections have been auditable across all pages.
+3. Download/inspect a real image of the corresponding I1876 page and establish an exact concordance. Request manuscript images for Y706 or another early witness, record independently visible readings and check their stemmatic value.
+4. Audit every Qurʾānic, prophetic and poetic citation separately. Treat modern editor's apparatus as editorial material, not as Farghānī's prose.
+5. Continue comparing the concepts **iʿtibār / taʿayyun / thubūt / wujūd / wijdān** before assigning Guénonian equivalents. The comparative layer stays separate from the critical Arabic edition.
+6. At each additional critical-pass stage update the cumulative handoff, page/clauses register, GNAMMA critical reader, and repository issue.
+
+## Web source control
+
+- Primary modern Arabic source: https://ablibrary.net/book_content/b/9606/18?lang=ar through /23
+- Later partial quotation and debate: https://ablibrary.net/book_content/b/4696/183?lang=ar
+- Historical print locator: https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en
+- Handoff history: [HANDOFFS.md](HANDOFFS.md)
+
+**This document is a report of checked clauses and unresolved readings, not a complete critical apparatus for the full book.**
+
+
+---
+
+## PART D — Scholarly critical introduction (editorial essay)
+
+# Muntahā al-madārik: Critical introduction to the GNAMMA edition
+**Saʿīd al-Dīn al-Farghānī (d. 699/1300)**
+**Research edition begun 8 November 2026 · Editorial introduction version 1.0**
+
+> **Status.** This is a *critical scholarly introduction to a developing edition*, not a claim that the Arabic authorial introduction has been fully translated, that manuscripts have been collated, or that a definitive Arabic text exists. The completed editorial essay and the partial authorial translation have different coverage registers. Read [STATUS.md](STATUS.md) and [WITNESS_REGISTER.json](WITNESS_REGISTER.json) before citing the text.
+
+## I. The text and its position in the Akbarian tradition
+
+Farghānī's Arabic *Muntahā al-madārik wa-muntahā lubb kull kāmil wa-ʿārif wa-sālik* is a substantial reworking of the author's earlier Persian *Mashāriq al-darārī*, composed around Ibn al-Fāriḍ's long *Tāʾiyya* or *Naẓm al-sulūk*. The work arose from the explanatory setting of Ṣadr al-Dīn al-Qūnawī's lectures on the poem. The early Persian work was presented to Qūnawī and received his approval; the Arabic version is not simply a word-for-word translation but a further composition. To derive Farghānī's distinctive doctrines from the earlier recension requires actual comparison; approval of the Persian book is not equivalent to endorsement of every subsequent formulation in the Arabic book.
+
+The Arabic introduction merits independent study because it explains, before the sequential reading of the poem, the ontological and spiritual architecture within which Farghānī reads Ibn al-Fāriḍ. This gives it two functions which must be distinguished: it is an especially systematic early Akbarian synthesis, *and* it is an interpretive framework applied to poetic testimony which may or may not share that explicit metaphysical scheme. Giuseppe Scattolin argues that this second function has to be scrutinized: the conceptual structure of the commentary cannot simply be attributed to the intention of Ibn al-Fāriḍ without independent evidence from his language. His critique is a methodological caution rather than a reason to neglect Farghānī's independent philosophical achievement.
+
+The 1293/1876 Istanbul printing has two volumes; Scattolin identifies volume I, pp. 1–107, as the introductory division. A modern Beirut edition by ʿĀṣim Ibrāhīm al-Kayyālī and a separate Qom edition edited by Wisām al-Khaṭṭāwī have different pagination. Consequently the same undifferentiated label “p. 30” is unacceptable in a critical edition. This project distinguishes `I1876`, `B2007`, `Q2011`, and manuscript sigla explicitly. At the first stage, source-linked digital excerpts have been checked principally against B2007 pages 18–32. The 1876 facsimile is identified but has not been collated line by line against those passages.
+
+## II. The authorial architecture: four foundations and two movements
+
+Farghānī explicitly says that his introduction rests on four *uṣūl*, each divided into *fuṣūl*. The first concerns the ranks of the Essence, the differentiation of the divine names and attributes, and the derivation of subordinate names from their principles, including the ninety-nine names. The second investigates the spiritual rank and the world of *malakūt*, and how these become determined from *jabarūt*. The third examines the imaginal order and the corporeal realm down to the composition of Adam. The fourth treats the human constitution, its states and transformations, and the straight path of return to its origin (B2007 pp. 16–17).
+
+This is neither a mere list of six worlds nor a uniform deductive chain. The introduction contains an ordered exposition of self-manifestation (*zuhūr*, *tajallī*) from the hidden to the articulated, followed by a corresponding account of self-vision and return (*istijlāʾ*, *rujūʿ*). The final human stage is not an appendix to cosmology: comprehensive human receptivity is precisely the condition under which the differentiated perfections become jointly manifest and known. This makes the ontology inseparable from spiritual anthropology.
+
+The original headings and text sequence must govern the critical segmentation. Short GNAMMA explanatory headings may be added, but they must be recorded as **editorial**, not confused with Farghānī's original chapter names.
+
+## III. The unconditioned Essence is not a first member of a series
+
+The opening treats the famous *hidden treasure* saying as an interpretive starting point. The text interprets a hidden treasure by analogy with a reality whose contents are first disclosed collectively and then in differentiated fashion. It expressly prevents a literal comparison of God to finite treasures. The saying's circulation in Sufi literature is well attested, but it is not an authenticated prophetic ḥadīth: a philological edition must preserve the author's attribution while disclosing the evidence problem in its apparatus.
+
+The relevant question is what is meant by the priority of the Absolute over determination. Farghānī expressly calls it a **priority of rank, not of time** (B2007 p. 19). The absolute Essence cannot have been unmanifest at an earlier temporal instant and manifest at a later one. Nor can hiddenness be construed as a finite psychological state awaiting subsequent knowledge. He assigns the first-person declaration of the traditional saying to a determined mode of self-reference, while the description of concealment points to what does not fall within the constraints of any such reference.
+
+At this point a critical edition must resist a subtle category error. The undelimited Essence, the first determination, and the first manifestation are closely related but need not be interchangeable in every argumentative occurrence. A label's precise function changes with whether Farghānī is considering the Essence without determination, the first comprehensive intelligible relation, or the possibility of a later self-disclosure.
+
+## IV. First determination: one unity, two considerations
+
+The author explains that the unity identical with the Essence admits two primary **considerations** (*iʿtibārāt*). In one, every consideration is dropped; the designation *aḥad* is more appropriately related to negation. In the other, indefinite intelligible considerations are established in unity while remaining comprehended within it; this is the ground of the positive designation *wāḥid*. The well-known number analogy makes a limited point: 'one' is not partitioned by the many relations expressible through its relation to two, three, four, and so on.
+
+The first determination in the following chapter is described as a *barzakh* joining these two considerations. It therefore should not be simplified into *aḥadiyya* alone, nor should *wāḥidiyya* be construed as a second independently existent principle. In the second determination, distinctions that were included without opposition become intelligibly differentiated. The argument about the real unity of divine existence and the **relational multiplicity** of names belongs here. A critical translation must preserve the difference between terms for numerical otherness, relational difference, intelligible distinction, and external actuality.
+
+GNAMMA extract F007 was revised on 8 November 2026 because the earlier transcription omitted the clause **“min ḥayth wāḥidiyyatihā”**. The corrected text explicitly opposes knowledge under the consideration of *wāḥidiyya* to the impossibility of encompassing the Essence in its *iṭlāq* and *aḥadiyya*. This is recorded in the witness register as an *editorial transcription correction*; it is **not** a manuscript variant.
+
+## V. Love, inward speech, and the principial question of manifestation
+
+Farghānī derives an original inclination to disclosure from the hidden-treasure saying: primordial love (*al-maḥabba al-aṣliyya*) is associated with the overcoming of non-manifestation by disclosure. He uses an analogy of inward speech, hearing, sight, and agency, culminating in the emergence of distinct attributes in subsequent ranks. The source's analogies of breath and verbal articulation do not justify projecting physical sound, temporal succession, or an alteration of the divine Essence into the principial order.
+
+This raises a difficult explanatory question. Is manifestation necessary simply because the Infinite contains every possibility, or is the author using 'love' to name a qualified condition of disclosure that is not a necessity imposed on the unconditioned Essence? The first foundation must be translated continuously before the issue can be settled. Farghānī's statement about the essential independence of the Real must be held together with his description of the preponderance of manifestation. One cannot simply select one sentence and make it stand for the entire theory.
+
+## VI. Knowledge, established realities, and the problem of plurality
+
+Farghānī moves from primordial included considerations to the differentiated contents of knowledge, stable realities, and eventually externally appearing effects. Where the tradition uses *aʿyān thābita*, the noun *thubūt* should not be carelessly translated as actual external existence. Nor is the intelligible definiteness of a thing equivalent to nothingness or illusion. Distinct realities are established in divine knowledge and their effects become manifest within the appropriate spiritual, imaginal, or corporeal rank.
+
+A particularly difficult statement on B2007 p. 23 refers to concealed possibilities not yet determined even at the second rank or in the Preserved Tablet. Because the passage speaks of what is not yet known or adjudged until determination, a translator must preserve the local qualification concerning determined knowability. It would be prejudicial either to erase the striking statement or to treat it without further argument as a denial of divine omniscience. The surrounding context concerns the limits of degrees of disclosure, the hidden contents of prayer, and the gradations of possibility.
+
+The passage also mentions reports of uneven authenticity. The apparatus should distinguish Qurʾānic quotations, securely sourced hadith, unattested sayings, and Farghānī's own philosophical inferences. The existence of an editorial footnote in a modern printing is not evidence that the note was present in an early manuscript.
+
+## VII. Wujūd, wijdān, and principial self-presence
+
+Farghānī offers a notable account of *wujūd* through the language of *wijdān*: the actuality of finding or being present, whether a reality finds itself in itself or in some other locus or rank. In the first determination existence is a comprehensive self-presence without differentiating otherness; under subsequent determinations it appears through differentiated names; in cosmic ranks each determination finds itself as spiritual, imaginal, or corporeal reality. These are distinguishable considerations, not necessarily numerically separate independent existences.
+
+The definition of knowledge (*ʿilm*) is also differentiated by rank, and Farghānī relates light (*nūr*) to disclosure and witnessing (*shuhūd*) to presence. The reader should therefore avoid relying on one English equivalent of *wujūd* when the Arabic author is moving between principial being, existential disclosure, and the creature's reception of actuality. To translate the term uniformly as Guénonian 'Being' or 'Existence' would already resolve the very comparison under investigation.
+
+A philosophically sharp comparison with Avicenna and Aquinas likewise requires specifying what is real in the creature: its determinate nature, the existential bestowal, its receptive locus, and any genuine causal capacities. None of these is fully answered by declaring that all things 'have one existence'.
+
+## VIII. Human comprehensiveness and the uniquely Muhammadan rank
+
+The later foundations explain why the human being is the comprehensive locus of divine self-disclosure. Each cosmic level displays only certain names and conditions; a suitably perfected human constitution can synthesize what is distributed among them. Farghānī distinguishes essential perfection from the articulated perfection of the names. The latter is displayed through differentiated loci and, at its fullest, through the all-comprehensive human reality.
+
+The account is not merely a generalized anthropology. The author assigns specific ranks to Adamic human comprehensiveness and to the Muhammadan reality. The original text's distinctions of *qāb qawsayn* and *aw adnā*, the hierarchical degrees of spiritual attainment, and the particular status of the Muhammadan inheritance must be translated rather than silently flattened into an undifferentiated 'Universal Man'. This also makes the historical form of religious realization part of the question being asked.
+
+## IX. Descent, return, and spiritual verification
+
+The fourth foundation recapitulates the descent of determination by examining the reversal from creaturely multiplicity to comprehensive vision. The stages of outward, inward and all-comprehensive disclosure are associated with the transformation of human apprehension and character. The final station refers to a uniquely Muhammadan mode of comprehensive unity, with the undelimited Essence remaining beyond determinate comprehension.
+
+This does not make realization merely subjective. For Farghānī, it is a transformation of the human relation to what is objectively grounded in divine names and existential ranks. But neither does the metaphysical scheme by itself demonstrate that a particular saint has realized the rank claimed for him. The distinction between ontological hierarchy, ethical formation, experiential testimony and the authority of revelation must remain visible in the text and its notes.
+
+## X. Comparison with Guénon and Schuon: criteria rather than equations
+
+The resemblance of the three systems is substantial but ought to be tested by **function**, not by superficial translation equivalents.
+
+| Problem | Farghānī | Guénonian / Schuonian comparison | Required test |
+|---|---|---|---|
+| Beyond determinate predication | undelimited Essence, hidden Identity | Beyond-Being / pure Absolute | Does the same impossibility of formal predication apply? |
+| Principial comprehensiveness | first determination and its two considerations | Being as principle; principial infinity | At which Farghānian rank does manifestation become intelligibly possible? |
+| Differentiation in knowledge | divine names; known and fixed realities | universal possibility; archetypal determinations | Are the classes of possibility coextensive? |
+| Actuality of the world | existential disclosure in different ranks | universal Existence and modalities | Does wujūd name a common reality or a series of formally distinct senses? |
+| Realization | perfected heart and uniquely Muhammadan station | Universal Man; Logos; Supreme Identity | Does final realization transcend determination or culminate at its supreme form? |
+| Causation | divine bestowal and effects through loci | conditioned and unconditioned agency | What intrinsic causal efficacy belongs to a finite thing? |
+
+The mapping must remain deliberately asymmetrical. Guénon allows possibilities of *non-manifestation*, which are not merely possibilities awaiting manifestation. The fixed entities are not, without a demonstration, the entirety of his Universal Possibility. Schuon's Absolute–Infinite–Perfect triad has no one-to-one equivalent demonstrable from Farghānī's labels for essential and name-related perfection. The comparison is fruitful precisely when these distinctions remain unresolved until the original argument supplies an answer.
+
+## XI. Critical methodology and what will count as completion
+
+A **critical** edition cannot be manufactured by calling an English translation 'critical'. This project separates four operations:
+
+1. **Witness description.** Establish exact bibliographic identities and physical/digital access. For this work, the 14th-century Yeni Camii 706 manuscript is catalogued as having an old collation note at fol. 131r; that note is presently *catalogued*, not inspected.
+2. **Constitution of Arabic text.** Choose and justify a copy-text after inspecting witnesses; record substantive variants by siglum, true lacunae, uncertain readings, and editorial emendations. A modern digital transcription alone is insufficient for this stage.
+3. **Continuous English translation.** Translate every authorial clause of the four foundations in sequence, preserving chapter and paragraph divisions; supply a gap register. A collection of source extracts is not continuous translation.
+4. **Interpretation and comparison.** Separate the author's meanings, the translator's decisions, theological source criticism, and Guénon–Schuon hypotheses. Notes should signal where a statement is uncertain rather than replacing it with an easier modern proposition.
+
+The minimum publication gate is *complete paragraph-by-paragraph source coverage* for the original four foundations. A higher critical-edition gate requires comparison against the 1876 facsimile and at least one independent manuscript witness, the justification of an Arabic text, and independent linguistic review.
+
+In this GNAMMA version the completed material is the present editorial essay and a selection of source-anchored English translations and Arabic extracts. **The 107-page original introduction has not been fully transcribed or translated; manuscript collation has not been performed.**
+
+## XII. Sources, audit trail, and research trail
+
+**Primary work and digitizations**
+
+- Istanbul 1293/1876, volume I facsimile, NYU/Princeton Arabic Collections Online: https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en
+- Farghānī, *Muntahā al-madārik*, modern Beirut digitization, beginning of the first foundation: https://ablibrary.net/book_content/b/9606/18?lang=ar
+- Yeni Camii 706 manuscript catalogue, University of St Andrews Islamisation of Anatolia database: https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Yeni_706%3Ba1?hl=Istanbul&hlu=
+- Wisām al-Khaṭṭāwī (ed.), Qom edition, bibliographic record: https://ge.nii.ac.jp/ncid/BB1425879X
+
+**Critical secondary reading**
+
+- Giuseppe Scattolin, “The Key Concepts of al-Farghānī’s Commentary on Ibn al-Fārid’s Sufi Poem, al-Tāʾiyyat al-Kubrā,” *Journal of the Muhyiddin Ibn ʿArabi Society* 39 (2006), pp. 33–80: https://ibnarabisociety.org/wp-content/uploads/PDFs/Scattolin_The-key-concepts.pdf
+- William C. Chittick, “Spectrums of Islamic Thought: Saʿīd al-Dīn Farghānī on the Implications of Oneness and Manyness,” in *The Legacy of Mediaeval Persian Sufism* (1992), pp. 203–17 (reference for targeted further comparison).
+- René Guénon, *Les États multiples de l’être*, especially chapters II and V (for Non-Being, Being and Universal Possibility).
+- Frithjof Schuon, *Survey of Metaphysics and Esoterism* and *In the Face of the Absolute* (for the Absolute, Infinite and the principial degrees of relativity).
+
+**GNAMMA edition data**
+
+- [WITNESS_REGISTER.json](WITNESS_REGISTER.json): source identifications, access, editorial correction, true variant count.
+- [STATUS.md](STATUS.md): what is actually translated and what is missing.
+- [COMPARISON.md](COMPARISON.md): testable conceptual comparisons.
+- [GLOSSARY.md](GLOSSARY.md): context-specific translation equivalents.
+
+*This critical introduction was composed for GNAMMA; interpretive reconstruction and manuscript claims are deliberately separated. The source Arabic belongs to Farghānī; the new English prose belongs to the editorial edition.*
+
+
+---
+
+## PART E — Separate Guénon–Schuon comparative dossier
+
+# Farghānī, René Guénon, and Frithjof Schuon — comparison dossier
+
+**Status:** a set of source-grounded hypotheses, not a claim of doctrinal identity. This document is editorial and does not form part of Farghānī's text. The Arabic evidence is supplied by the numbered extract IDs in the bilingual reader. The comparison is deliberately asymmetric: Farghānī's original formulations control the terms of the comparison.
+
+## 1. Undelimited Essence / Beyond-Being / Absolute
+
+**Farghānī:** `iṭlāq al-dhāt`, `ghayb al-huwiyya` and `aḥadiyya` must be distinguished: the Essence without any delimitation is beyond the possibility of being encompassed by determinate knowledge (F002, F005–F007). The first determination, treated at F012, is the *barzakh* of the two considerations of unity, not simply their unqualified conflation.
+
+**Guénon:** Beyond-Being (Non-Being in his special, nonprivative usage) exceeds Being as the universal principle of manifestation. The universal possibility exceeds manifestable possibility. Reference: *Les États multiples de l'être*, chs. II and V, especially https://oeuvre-de-rene-guenon.org/textes/EME02.php and https://oeuvre-de-rene-guenon.org/textes/EME05.php.
+
+**Schuon:** The pure Absolute is not exhaustively identified with its first relative or principial determination; compare his Absolute–Infinite–Perfect distinctions in *Survey of Metaphysics and Esoterism*.
+
+**Test:** Is Farghānī's first determination equivalent to Guénon's Being, or is the specifically principle-of-manifestation function more properly assigned to his second determination or a further consideration? We must compare formal functions, not identical-sounding terms.
+
+## 2. Unity and multiplicity
+
+**Farghānī:** unity has a consideration excluding differentiation and a consideration in which infinitely many meanings are included without division (F008–F010). The distinction only becomes genuinely articulated at a subsequent rank; the differentiated divine names manifest the one underlying existence (F021–F023).
+
+**Guénon:** the multiple does not issue *outside* of unity: possibilities of manifestation are contained in primordial unity even as manifested multiplicity is developed. See *Les États multiples de l'être*, ch. V, https://oeuvre-de-rene-guenon.org/textes/EME05.php.
+
+**Schuon:** the relative is not another Absolute; degrees of relativity appear within the all-embracing infinitude of Reality.
+
+**Test:** Does Farghānī ground the determinacy of each meaning in *divine knowledge*, in the primordial unity, or in the later form of manifestation? Are these explanatorily distinct?
+
+## 3. Possibility, necessary manifestation, and primordial love
+
+**Farghānī:** the first inclination of love connects hiddenness and disclosure (F003–F004); terms of temporal precedence are explicitly denied. On p. 23, Farghānī says that concealed matters may not yet be determined even at the second rank (F011).
+
+**Guénon:** he states that any *possibility of manifestation* must manifest by virtue of what it is; the *possibilities of non-manifestation* are of a different nature and are not 'unfulfilled' manifestables. See *Les États multiples de l'être*, ch. II, https://oeuvre-de-rene-guenon.org/textes/EME02.php.
+
+**Schuon:** infinitude and the supreme Good are central to his account of principial radiance and manifestation.
+
+**Test:** Farghānī's concealed/unarticulated possibilities on p. 23 cannot be identified uncritically with Guénon's intrinsically nonmanifestable possibilities. Nor does the 'hidden treasure' report itself establish necessary emanation. The remainder of the first foundation must decide this question.
+
+## 4. What does wujūd mean?
+
+**Farghānī:** `wujūd` is explicitly related to `wijdān`: what enables a reality to find itself, either within itself or in a rank/locus (F020). At the first determination it is the Essence's finding of itself without difference (F022); at the second, the divine names have real unity and relational plurality (F023); under cosmic ranks, determinate realities find themselves in spiritual, imaginal, or corporeal modes (F024–F025).
+
+**Guénon:** Being, the principle of manifestation, is explicitly distinguished from universal Existence, the totality of manifested states. Translating Farghānī's `wujūd` invariably as either term would beg the question.
+
+**Test:** Separate (i) absolute self-presence, (ii) principial name-determination, and (iii) finite external appearance, before asking whether the 'one existence' is numerically identical at every rank.
+
+## 5. Archetypes and fixed entities
+
+Farghānī's first foundation distinguishes included considerations, knowledge of their differentiations, and existential appearance. Subsequent first-foundation paragraphs on `aʿyān thābita` (fixed entities; beyond our 32 extracts) are essential to resolve the question.
+
+**Research issue:** Guénonian *possibility* is wider than the subset of determinate known forms that may manifest. A formal mapping between Guénon's universal possibility and Akbarian fixed entities requires demonstration and should not assume that the terms are coextensive.
+
+## 6. Perfect Human, Universal Man, and the Logos
+
+Farghānī situates the rank of the Muhammadan inheritance within a graded hierarchy of spiritual access (F015–F018), and makes perfection through the names dependent upon an all-comprehensive manifestation (F019).
+
+Guénon's *Symbolism of the Cross* and *The Multiple States of Being* make Universal Man a metaphysical account of the integration of possible states. Schuon's accounts of the Logos, intellect and *al-insān al-kāmil* are likewise comparative candidates.
+
+**Test:** Can Guénon's integration of states and Schuon's principial Logos be located within Farghānī's differentiations of first and second determination, the perfected human heart, and specifically Muhammadan reality *without erasing their distinctions*?
+
+## 7. Divine causation and genuine creaturely efficacy
+
+At F025 Farghānī explains creation as bestowal of that through which determinate realities find themselves. This does not by itself prove either occasionalism or intrinsic secondary agency.
+
+A formal comparison to Avicenna and Aquinas should distinguish the cause of a creature's being from causal capacities attributed to the creature. The text's account of the divine names cannot simply be substituted for an analysis of the creature's own principle of action.
+
+## Translation priorities
+
+**Immediate:** finish First Foundation continuously, not just exemplary aphorisms. The decisive problems are emergence of the second determination, the fixed entities, and the precise status of name-differentiation.
+
+**Next:** translate the sections on spirit, image and body; then Perfect Human, descent and return, and the last stations of realization. Compare them with Guénon and Schuon only after the authorial progression is visible.
+
+**Then:** use selective passages in the main Arabic commentary, with a Persian *Mashāriq* concordance, to test whether the initial distinctions remain consistent in their applications.
+
+## Sources used
+
+- Farghānī, Arabic digitized pages 18–32: https://ablibrary.net/book_content/b/9606/18?lang=ar
+- Guénon, *Les États multiples de l'être*, ch. II: https://oeuvre-de-rene-guenon.org/textes/EME02.php
+- Guénon, *Les États multiples de l'être*, ch. V: https://oeuvre-de-rene-guenon.org/textes/EME05.php
+- Schuon, *Survey of Metaphysics and Esoterism*; *In the Face of the Absolute* (bibliographic comparison targets only; no English quotations reproduced)
+- See `STATUS.md` for primary witnesses and state of collation.
+
+
+---
+
+## PART F — Technical glossary
+
+# Farghānī · Technical glossary (working)
+
+These glosses are context-sensitive; they are not universal dictionary substitutions. Terms in Guénon or Schuon are *comparanda*, not assigned as English equivalents by fiat.
+
+| Arabic | Working rendering | Distinction to preserve | Sample sources |
+|---|---|---|---|
+| ذات (*dhāt*) | Essence | Distinguish the undelimited Essence from what is considered at a rank. | F002–F007 |
+| إطلاق (*iṭlāq*) | nondelimitation, absoluteness | Not simply absence of empirically observable limits. | F002, F003, F005 |
+| غيب الهوية (*ghayb al-huwiyya*) | hiddenness of Identity | Not a hidden finite thing; figurative 'treasure' is controlled by transcendence. | F002–F005 |
+| رتبة (*rutba*) | rank | Metaphysical rank, not temporal stage; *sabaq rutbī* ≠ *sabaq zamānī*. | F003 |
+| تعيّن (*taʿayyun*) | determination | Does not automatically mean a separately existing substance. | F003, F012 |
+| التعيّن الأول (*al-taʿayyun al-awwal*) | first determination | Comprehensive first consideration, with aḥadiyya and wāḥidiyya. | F012 |
+| أحدية (*aḥadiyya*) | unicity | Consideration under the dropping of differentiated considerations. | F008 |
+| واحدية (*wāḥidiyya*) | oneness | Consideration under the inclusion of distinct intelligible meanings. | F009–F010 |
+| برزخ (*barzakh*) | intermediary; isthmus | A comprehensive rank between considerations; not necessarily a physical interval. | F012, F018 |
+| تجلٍّ (*tajallī*) | self-disclosure | Not physical migration of the divine. | F013 |
+| اعتبار (*iʿtibār*) | consideration | Distinguish the validity of an aspect from an independently existing thing. | F008–F010, F014 |
+| الأسماء الإلهية (*al-asmāʾ al-ilāhiyya*) | divine names | Real unity of divine existence, multiplicity by relational determinations. | F023 |
+| الوجود (*wujūd*) | existence; existential presence | Examine Farghānī's explicit connection with *wijdān*; do not simply replace with Guénon's Being. | F020, F022–F025 |
+| وجدان (*wijdān*) | finding; being-present-to | Used reflexively, e.g. the Essence's finding of itself. | F020, F022 |
+| الوجود العيني (*al-wujūd al-ʿaynī*) | concrete/external existence | Need not correspond exactly to Thomist *esse*. | F016, F024 |
+| محل (*maḥall*) | locus, receptive site | Can be spiritual or rank-like, not just spatial. | F020 |
+| مثال (*mithāl*) | imaginal realm | Objective imaginal mode, not 'imaginary' in the sense of fictitious. | F024 |
+| الكمال الذاتي (*al-kamāl al-dhātī*) | essential perfection | In the present setting, perfection without a condition of external disclosure. | F019 |
+| الكمال الأسمائي (*al-kamāl al-asmāʾī*) | name-related perfection | Articulated through differentiated names, ranks, and manifestations. | F019 |
+| الإنسان الكامل (*al-insān al-kāmil*) | Perfect Human | The comprehensive theophanic locus; compare Universal Man only argumentatively. | F017–F019 |
+| أو أدنى (*aw adnā*) | or nearer | Allusion to Qurʾān 53:9, with Farghānī's special principial interpretation. | F018 |
+| المحبة الأصلية (*al-maḥabba al-aṣliyya*) | original love | A metaphysical inclination, not temporal affect. | F004 |
+| علم (*ʿilm*) | knowledge | Its formal articulation differs between first and second ranks. | F021 |
+
+**Editorial rule:** A glossary entry's examples refer to extant extracted clauses. No term's mere inclusion implies the whole relevant passage is translated. For full context, follow the source link embedded in the reader.
+
+## The three terminological traps
+
+1. **`wujūd` ≠ always Guénonian 'Existence'.** Guénon distinguishes Being as principle from universal Existence; Farghānī's use spans differing ranks and is tied to `wijdān`.
+2. **`aḥadiyya` ≠ the whole first determination.** Farghānī treats it as one of two original considerations of the first unity, which is itself the intermediary.
+3. **`aʿyān thābita` ≠ all possible possibilities.** The fixed entities are established contents of divine knowing; Guénon's universal possibility includes possibilities of non-manifestation. The status of the relationship is a research question.
+
+## Edition
+
+See [STATUS.md](STATUS.md) and [COMPARISON.md](COMPARISON.md). The primary source base is a modern digital transcription awaiting historical print and manuscript collation.
+
+
+---
+
+## PART G — Textual witness register and correction history
+
+~~~json
+{
+  "schema": "gnamma-farghani-introduction-witness-register-v1",
+  "work": "Saʿīd al-Dīn al-Farghānī, Muntahā al-madārik, introductory four uṣūl",
+  "updated": "2026-11-09",
+  "scope": {
+    "historical_print": "1876 Istanbul volume I, printed pages 1–107 per Scattolin",
+    "notes": "The printed and digital Beirut paginations do not correspond; never copy a number without labelling its witness.",
+    "critical_edition_status": "not-yet-constituted",
+    "continuous_full_arabic_transcription": false,
+    "continuous_full_english_translation": true,
+    "consecutive_english_draft": "Beirut B2007 pp.18–34, 17 pages in working translation; not line-by-line proofed or independently collated",
+    "english_draft_authorial_pages": 128,
+    "complete_full_critical_introduction": false,
+    "critical_scholarly_editorial_essay": "editorial/CRITICAL_INTRODUCTION.md",
+    "cumulative_english_draft": "B2007 pp.18–134 = 117 consecutively numbered English working pages; p85–134 sourced through derivative online re-transcription and not independently collated",
+    "latest_handoff": "editorial/FULL_CUMULATIVE_P145.md",
+    "verified_manuscript_variant_count": 0,
+    "current_english_draft": "B2007 pp18–145, 128 page-labelled English working draft, all four foundations and concluding preface; manuscript-critical edition incomplete",
+    "current_scope_boundary": "Fourth foundation ends at B2007 p143; tatimmat al-dibaja pp144–145; poem commentary begins thereafter",
+    "modern_print_clause_review": {
+      "pages": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "count": 80,
+      "source": "direct B2007 digital page HTML",
+      "status": "source-checked English revision, not historical print or manuscript collation"
+    },
+    "next_critical_audit_beirut_page": 24,
+    "definitive_status": "not-achieved"
+  },
+  "witnesses": [
+    {
+      "siglum": "I1876",
+      "kind": "historical-print",
+      "title": "Muntahā al-madārik, 1293/1876 Istanbul, vol. I",
+      "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en",
+      "pageRange": "1–107: introductory division (Scattolin)",
+      "editor": "Muḥammad Shukrī al-ʿŪfī, reported by Scattolin",
+      "access": "catalogue and public-domain digital facsimile locator verified; individual page images NOT collated",
+      "accessGrade": "catalogued-scan-not-inspected",
+      "role": "intended historical print control; not yet a copy-text",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "B2007",
+      "kind": "modern-edition-digital",
+      "title": "Muntahā al-madārik, ed. ʿĀṣim Ibrāhīm al-Kayyālī, Dār al-Kutub al-ʿIlmiyya",
+      "url": "https://ablibrary.net/book_content/b/9606/18?lang=ar",
+      "printYear": "2007",
+      "pagesSampled": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "access": "Digital page HTML directly examined for first six pages B2007 pp18–23 in 80 clause-level checks; prior source-linked selections through p34, cumulative English draft through p145; full Arabic copy-text remains unconstituted.",
+      "accessGrade": "modern-digital-text-examined; no manuscript-equivalent authority",
+      "role": "modern edited digital reading and first-pass English source checking, not a validated critical copytext",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "Y706",
+      "kind": "manuscript",
+      "title": "Süleymaniye Yazma Eserler Kütüphanesi, Yeni Camii 706",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Yeni_706%3Ba1?hl=Istanbul&hlu=",
+      "date": "14th century (catalogue)",
+      "extent": "291 folios; text catalogued on fols. 1v–131r",
+      "description": "Cataloguer reports an annotation at fol. 131r that the copy was collated against an original; this assertion has not been independently verified by viewing the folio.",
+      "access": "catalogue metadata only; NO manuscript images compared",
+      "accessGrade": "catalogue-only",
+      "role": "high-priority potential witness, not yet proven superior copy-text",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "Q2011",
+      "kind": "modern-edition",
+      "title": "Muntahā al-madārik, ed. Wisām al-Khaṭṭāwī, Qom, Āyat Ishrāq, 1390 SH",
+      "url": "https://ge.nii.ac.jp/ncid/BB1425879X",
+      "date": "2011 or 2012",
+      "extent": "2 volumes, 1116 pages",
+      "access": "bibliographic record only; text not read",
+      "accessGrade": "catalogue-only",
+      "role": "secondary control pending physical/text access",
+      "variantsExamined": 0
+    }
+  ],
+  "relatedNotWitnesses": [
+    {
+      "siglum": "P-Mashariq",
+      "title": "Farghānī, Mashāriq al-darārī (earlier Persian commentary)",
+      "note": "A distinct authorial work rather than an Arabic witness. Its correspondence should be treated as recensional history, not as a simple Arabic variant list.",
+      "access": "known published tradition, no comprehensive collation"
+    },
+    {
+      "siglum": "S2006",
+      "title": "Giuseppe Scattolin, 'The Key Concepts of al-Farghānī’s Commentary'",
+      "url": "https://ibnarabisociety.org/wp-content/uploads/PDFs/Scattolin_The-key-concepts.pdf",
+      "note": "Secondary study providing 1876 pagination and thematic analysis; individual quoted passages should not be treated as independent manuscript witnesses."
+    },
+    {
+      "siglum": "R-FORUM",
+      "title": "Forum re-transcription of Beirut 2007 Arabic third and fourth foundations, labelled with B2007 printed pages",
+      "urls": [
+        "https://alshrefalm7sy.ahlamontada.com/t3213",
+        "https://alshrefalm7sy.ahlamontada.com/t3214"
+      ],
+      "scope": "Third foundation B2007 pp85–101 and fourth foundation pp102–134 consulted for new English P134 working draft; source pages continue after p134",
+      "access": "online text transcription inspected; not a separate medieval or manuscript witness; manuscript copy-text remains uninspected",
+      "note": "Do not count as an independent corroborating witness or as a manuscript variant. Printed-page labels may need control against physical Beirut edition; may contain OCR/transcription errors or modern editorial footnotes."
+    },
+    {
+      "siglum": "R-FANARI",
+      "title": "Al-Fanārī's Miṣbāḥ al-uns, reported quotation of Farghānī's p20–21 on determinate divine witnessing",
+      "url": "https://ablibrary.net/book_content/b/4696/183?lang=ar",
+      "access": "Modern digital printed quotation inspected; shows من حيث واحديتها and a commentator's theological qualifications",
+      "role": "Later reception/indirect quotation, not an independently collated Farghānī manuscript",
+      "status": "verified passage quotation at modern print p183; variant claims not made"
+    }
+  ],
+  "readings": [
+    {
+      "id": "ED-0001",
+      "location": "B2007 p.21, old extract F007",
+      "type": "editorial-transcription-correction",
+      "before": "... بذاته الأقدس، لا من حيث إطلاقها وأحديتها",
+      "after": "... بذاته الأقدس تعالى وتقدّس من حيث واحديتها، لا من حيث إطلاقها وأحديتها",
+      "evidence": "direct inspection of B2007 page 21 online; old GNAMMA unit omitted من حيث واحديتها",
+      "effect": "restores explicit opposition of wāḥidiyya and aḥadiyya",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "corrected-digital-extract; print/manuscript validation pending"
+    },
+    {
+      "id": "ED-0002",
+      "location": "B2007 p.33 second determination, transitional wording near عون هذا",
+      "type": "unresolved-digital-reading",
+      "evidence": "digital Arabic text displays a short syntactically uncertain transition; I1876 and Y706 have not been inspected at this locus",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "no-emendation; retain paraphrastic English flag and check actual witness"
+    },
+    {
+      "id": "ED-0003",
+      "location": "B2007 p.34, الحضرة العملية",
+      "type": "unresolved-digital-reading",
+      "evidence": "the digital print reads al-ḥaḍra al-ʿamaliyya in the second-determination name register; context may suggest a different abstract qualifier, but no second witness has been read",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "no-emendation; literal translation retained with warning"
+    },
+    {
+      "id": "ED-0004",
+      "location": "Online B2007-derived forum transcription p.87, transition describing stirring motion of elemental matter",
+      "type": "unclear-transcription",
+      "evidence": "Website text and embedded modern editor note indicate one word in the phrase concerning strong influence/heat is corrupt or unclear; original printed image not yet inspected",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "translated without conjectural restoration; compare actual printed and manuscript texts"
+    },
+    {
+      "id": "ED-0005",
+      "location": "B2007 p18, بطون المشتمل",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "awkward printed-digital wording in definition of hidden essential-name treasure",
+      "source_linked_audit_unit": "critical-pass-001 CR001-010",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    },
+    {
+      "id": "ED-0006",
+      "location": "B2007 p19, المطلب الغائبّ",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "awkward digital adjective in sentence on ultimate aim of name-perfection",
+      "source_linked_audit_unit": "critical-pass-001 CR001-014",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    },
+    {
+      "id": "ED-0007",
+      "location": "B2007 p19, عمليّا ووجوديّا vs contextual علميّا ووجوديّا",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "digital B2007 and derivative forum read ʿamaliyyan ('operative/practical'), whereas inherited English flattened it to epistemic and existential; no emendation authorized",
+      "source_linked_audit_unit": "critical-pass-001 CR001-024",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    },
+    {
+      "id": "ED-0008",
+      "location": "B2007 p23, فلم تعلم ولم يحكم بشيء منها إلا بعد تعيّنها",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "substantive doctrinal/semantic issue about knowability of unconcretized essential affairs; explicit modal 'perhaps' must not be erased",
+      "source_linked_audit_unit": "critical-pass-002 CR002-032",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    }
+  ],
+  "selectionRule": "Do not create a variant reading or siglum support unless two independent witnesses have actually been inspected in the relevant locus. Orthographic normalization is not a textual variant.",
+  "todo": [
+    "Inspect actual I1876 page images and identify page-by-page concordance with B2007",
+    "Acquire scan/access to Y706 and verify manuscript collation note fol. 131r",
+    "Establish source hierarchy; record lacunae, possible contamination and substantive variants",
+    "Collate alternative printed Q2011 readings if available, without assuming newer equals better",
+    "Separate authorial hadith citations from modern editor's attribution footnotes",
+    "Complete uninterrupted Arabic transcription and independent English translation",
+    "Review and validate all 25 existing bilingual extracts against at least a historical-print witness",
+    "Publish critical text only after substantial witness collation; until then label working text"
+  ]
+}
+
+~~~
+
+---
+
+## PART H — Per-page critical coverage ledger and gap register
+
+~~~json
+{
+  "schema": "gnamma-farghani-page-critical-audit-v1",
+  "date": "2026-11-09",
+  "language": "Arabic and English",
+  "scope": "Introduction systematic four foundations and concluding preface, modern Beirut B2007 pp18–145",
+  "english_working_draft_page_count": 128,
+  "source_checked_modern_digital_page_count": 6,
+  "clause_record_count": 80,
+  "issues_unresolved_digital": 5,
+  "historical_print_independently_collated_pages": 0,
+  "manuscript_variants": 0,
+  "authorial_introduction_english_draft_complete": true,
+  "authorial_introduction_arabic_critical_edition_complete": false,
+  "definitive_grade": false,
+  "source_witness_grade": "modern edited online printed text for pages18–23; remaining draft not yet checked clause-by-clause; 1876 historical print and Yeni Camii 706 uncollated",
+  "next_critical_audit_page": 24,
+  "next_translation_outside_intro": "B2007 p146 poem commentary (must confirm division against scan)",
+  "pages": [
+    {
+      "b2007_page": 18,
+      "source_url": "https://ablibrary.net/book_content/b/9606/18?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 11,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 19,
+      "source_url": "https://ablibrary.net/book_content/b/9606/19?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 17,
+      "digital_crux_count": 2,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 20,
+      "source_url": "https://ablibrary.net/book_content/b/9606/20?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 9,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 21,
+      "source_url": "https://ablibrary.net/book_content/b/9606/21?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 13,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 22,
+      "source_url": "https://ablibrary.net/book_content/b/9606/22?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 15,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 23,
+      "source_url": "https://ablibrary.net/book_content/b/9606/23?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 15,
+      "digital_crux_count": 2,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 24,
+      "source_url": "https://ablibrary.net/book_content/b/9606/24?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 25,
+      "source_url": "https://ablibrary.net/book_content/b/9606/25?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 26,
+      "source_url": "https://ablibrary.net/book_content/b/9606/26?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 27,
+      "source_url": "https://ablibrary.net/book_content/b/9606/27?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 28,
+      "source_url": "https://ablibrary.net/book_content/b/9606/28?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 29,
+      "source_url": "https://ablibrary.net/book_content/b/9606/29?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 30,
+      "source_url": "https://ablibrary.net/book_content/b/9606/30?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 31,
+      "source_url": "https://ablibrary.net/book_content/b/9606/31?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 32,
+      "source_url": "https://ablibrary.net/book_content/b/9606/32?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 33,
+      "source_url": "https://ablibrary.net/book_content/b/9606/33?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 34,
+      "source_url": "https://ablibrary.net/book_content/b/9606/34?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 35,
+      "source_url": "https://ablibrary.net/book_content/b/9606/35?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 36,
+      "source_url": "https://ablibrary.net/book_content/b/9606/36?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 37,
+      "source_url": "https://ablibrary.net/book_content/b/9606/37?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 38,
+      "source_url": "https://ablibrary.net/book_content/b/9606/38?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 39,
+      "source_url": "https://ablibrary.net/book_content/b/9606/39?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 40,
+      "source_url": "https://ablibrary.net/book_content/b/9606/40?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 41,
+      "source_url": "https://ablibrary.net/book_content/b/9606/41?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 42,
+      "source_url": "https://ablibrary.net/book_content/b/9606/42?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 43,
+      "source_url": "https://ablibrary.net/book_content/b/9606/43?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 44,
+      "source_url": "https://ablibrary.net/book_content/b/9606/44?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 45,
+      "source_url": "https://ablibrary.net/book_content/b/9606/45?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 46,
+      "source_url": "https://ablibrary.net/book_content/b/9606/46?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 47,
+      "source_url": "https://ablibrary.net/book_content/b/9606/47?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 48,
+      "source_url": "https://ablibrary.net/book_content/b/9606/48?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 49,
+      "source_url": "https://ablibrary.net/book_content/b/9606/49?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 50,
+      "source_url": "https://ablibrary.net/book_content/b/9606/50?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 51,
+      "source_url": "https://ablibrary.net/book_content/b/9606/51?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 52,
+      "source_url": "https://ablibrary.net/book_content/b/9606/52?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 53,
+      "source_url": "https://ablibrary.net/book_content/b/9606/53?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 54,
+      "source_url": "https://ablibrary.net/book_content/b/9606/54?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 55,
+      "source_url": "https://ablibrary.net/book_content/b/9606/55?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 56,
+      "source_url": "https://ablibrary.net/book_content/b/9606/56?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 57,
+      "source_url": "https://ablibrary.net/book_content/b/9606/57?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 58,
+      "source_url": "https://ablibrary.net/book_content/b/9606/58?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 59,
+      "source_url": "https://ablibrary.net/book_content/b/9606/59?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 60,
+      "source_url": "https://ablibrary.net/book_content/b/9606/60?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 61,
+      "source_url": "https://ablibrary.net/book_content/b/9606/61?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 62,
+      "source_url": "https://ablibrary.net/book_content/b/9606/62?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 63,
+      "source_url": "https://ablibrary.net/book_content/b/9606/63?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 64,
+      "source_url": "https://ablibrary.net/book_content/b/9606/64?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 65,
+      "source_url": "https://ablibrary.net/book_content/b/9606/65?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 66,
+      "source_url": "https://ablibrary.net/book_content/b/9606/66?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 67,
+      "source_url": "https://ablibrary.net/book_content/b/9606/67?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 68,
+      "source_url": "https://ablibrary.net/book_content/b/9606/68?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 69,
+      "source_url": "https://ablibrary.net/book_content/b/9606/69?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 70,
+      "source_url": "https://ablibrary.net/book_content/b/9606/70?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 71,
+      "source_url": "https://ablibrary.net/book_content/b/9606/71?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 72,
+      "source_url": "https://ablibrary.net/book_content/b/9606/72?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 73,
+      "source_url": "https://ablibrary.net/book_content/b/9606/73?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 74,
+      "source_url": "https://ablibrary.net/book_content/b/9606/74?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 75,
+      "source_url": "https://ablibrary.net/book_content/b/9606/75?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 76,
+      "source_url": "https://ablibrary.net/book_content/b/9606/76?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 77,
+      "source_url": "https://ablibrary.net/book_content/b/9606/77?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 78,
+      "source_url": "https://ablibrary.net/book_content/b/9606/78?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 79,
+      "source_url": "https://ablibrary.net/book_content/b/9606/79?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 80,
+      "source_url": "https://ablibrary.net/book_content/b/9606/80?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 81,
+      "source_url": "https://ablibrary.net/book_content/b/9606/81?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 82,
+      "source_url": "https://ablibrary.net/book_content/b/9606/82?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 83,
+      "source_url": "https://ablibrary.net/book_content/b/9606/83?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 84,
+      "source_url": "https://ablibrary.net/book_content/b/9606/84?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 85,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 86,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 87,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 88,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 89,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 90,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 91,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 92,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 93,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 94,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 95,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 96,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 97,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 98,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 99,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 100,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 101,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 102,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 103,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 104,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 105,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 106,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 107,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 108,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 109,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 110,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 111,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 112,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 113,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 114,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 115,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 116,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 117,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 118,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 119,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 120,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 121,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 122,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 123,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 124,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 125,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 126,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 127,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 128,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 129,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 130,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 131,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 132,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 133,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 134,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 135,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 136,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 137,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 138,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 139,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 140,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 141,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 142,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 143,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation",
+      "editorial_note": "Four foundations conclude"
+    },
+    {
+      "b2007_page": 144,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Concluding preface",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation",
+      "editorial_note": "Concluding preface begins"
+    },
+    {
+      "b2007_page": 145,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Concluding preface",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation",
+      "editorial_note": "Concluding preface ends"
+    }
+  ]
+}
+
+~~~
+
+---
+
+## PART I — All 32 inherited bilingual Arabic–English source excerpts
+
+~~~json
+[
+  {
+    "id": "F001",
+    "page": 18,
+    "title": "The hidden treasure and the premise of disclosure",
+    "topic": "Essence",
+    "ar": "كنت كنزا مخفيّا فأحببت أن أعرف، فخلقت الخلق لأعرف",
+    "en": "I was a hidden treasure; I loved to be known, so I created creatures in order to be known.",
+    "note": "Farghānī introduces the treatise through a widely cited Sufi saying. Its attribution as a prophetic report is not established; its function here is an interpretive premise, not authenticated ḥadīth evidence.",
+    "compare": "Compare Schuon's account of principial Good and self-radiation, while keeping the text's attribution problem visible.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/18?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F002",
+    "page": 18,
+    "title": "The treasure as an analogy of concealed plenitude",
+    "topic": "Essence",
+    "ar": "قد كنى في هذا الحديث الإلهي عن كنه الغيب وإطلاق الذات الأقدس وباطن الهوية الأزلية بالكنز المخفي",
+    "en": "In this divine saying he refers figuratively to the innermost mystery of the Unseen, the unconditionedness of the most holy Essence, and the inwardness of eternal Identity as a hidden treasure.",
+    "note": "The comparison with a treasure is analogical; the longer paragraph explicitly rejects assimilation of the divine to created things.",
+    "compare": "Neither Guénon's Beyond-Being nor Schuon's Absolute should be identified with the literal image of a hidden object.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/18?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F003",
+    "page": 19,
+    "title": "Priority of rank, not of time",
+    "topic": "Determination",
+    "ar": "وحيث كان الخفاء وقع خبرا لكنت عرف سبق الإطلاق والغيب على ذلك التعيّن، ولكن سبقا رتبيّا لا زمانيّا",
+    "en": "Since hiddenness is predicated in the expression 'I was', we learn that nondelimitation and the Unseen precede that determination—but by precedence of rank, not by precedence in time.",
+    "note": "The key phrase is sabaqan rutbiyyan lā zamāniyyan. An ordered account of disclosure does not describe chronological divine change.",
+    "compare": "This is a strong analogy with Guénon's principial priority, but not yet a proof that Farghānī's first determination is Guénon's Being.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/19?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F004",
+    "page": 19,
+    "title": "Love as the connection between concealment and disclosure",
+    "topic": "Determination",
+    "ar": "وقوله فأحببت يخبر عن ميل أصلي هو وصلة بين الخفاء والظهور المذكور، وما ثمّ إلا التعيّن الذي هو عين الوحدة، فكان عينه",
+    "en": "The words 'then I loved' tell of an original inclination joining the aforementioned hiddenness to manifestation. There is nothing there but the determination that is identical with unity, and so this inclination is identical with it.",
+    "note": "Maḥabba here is an original principial consideration; interpreting it as a temporal emotion would violate the preceding statement about rank.",
+    "compare": "Test whether this 'original love' performs the role Schuon gives to plenitude or whether it expresses a different account of manifestation.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/19?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F005",
+    "page": 19,
+    "title": "The undelimited Essence exceeds cognition",
+    "topic": "Essence",
+    "ar": "ثم اعلم أن كنه الذات الأقدس وغيب الهوية والإطلاق والأزلية المندرج فيه حكم الأبدية لا يشهد ولا يفهم ولا يعلم ولا يدرك من حيث التعيّن أصلا",
+    "en": "Know next that the inner reality of the most holy Essence, the unseen depth of Identity, nondelimitation, and pre-eternity—which also contains the determination of perpetuity—cannot be witnessed, understood, known, or apprehended through determination at all.",
+    "note": "The qualification min ḥayth al-taʿayyun is decisive: Farghānī denies comprehension of the absolute Essence in its very undelimitedness, not all knowledge through divine self-disclosure.",
+    "compare": "Compare the Absolute/Beyond-Being distinction, without presuming that realized knowledge of a determination exhausts the absolute.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/19?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F006",
+    "page": 20,
+    "title": "The limit of even the highest experience",
+    "topic": "Realization",
+    "ar": "والوجه الثاني: انقطاع أكمل الإدراكات والعلوم وأوسع الشهودات والفهوم إليه واعترافه بالعجز والقصور والحيرة فيه",
+    "en": "The second way is the stopping short of the most perfect apprehensions and sciences, and of the widest witnessing and understanding, before it; such attainment acknowledges incapacity, limitation, and bewilderment concerning it.",
+    "note": "This is not a global skepticism about knowledge. It distinguishes the limits of determinate knowing from the reality of profound spiritual disclosure.",
+    "compare": "The relation to Guénon's 'Supreme Identity' must be examined, not assumed.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/20?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F007",
+    "page": 21,
+    "title": "Knowing God under determination, not in absolute nondelimitation",
+    "topic": "Realization",
+    "ar": "فعلى كل حال يكون ذلك العلم والشهود والتجلّي والإدراك من حيث تعينه ومشيئته وعلمه المقدّس بذاته الأقدس تعالى وتقدّس من حيث واحديتها، لا من حيث إطلاقها وأحديتها",
+    "en": "In every case, this knowing, witnessing, self-disclosure and apprehension concern His determination, will and sacred knowledge of His most holy Essence—exalted and holy is He—under the consideration of its oneness (wāḥidiyya), not under the consideration of its nondelimitation and unicity (aḥadiyya).",
+    "note": "Correction 2026-11-08: the earlier transcription omitted 'من حيث واحديتها' and so concealed an explicit contrast between wāḥidiyya and aḥadiyya. Restored from Beirut digital p. 21. Still requires inspection of the 1876 print and manuscript witnesses.",
+    "compare": "Crucial when comparing the final attainment of the Perfect Human and Guénonian realization beyond Being.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/21?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F008",
+    "page": 21,
+    "title": "Unicity as the dropping of all considerations",
+    "topic": "Determination",
+    "ar": "لكن للوحدة اعتباران أصليّان أوليّان، أحدهما: سقوط الاعتبارات عنها بالكلية، وسمّي الذات أحدا بهذا الاعتبار",
+    "en": "Unity has two primary, original considerations. The first is the complete dropping away of considerations concerning it; under this consideration, the Essence is called One in unicity (aḥad).",
+    "note": "Aḥadiyya here is the negative or exclusive consideration of unity, not a second being.",
+    "compare": "Compare Guénon's principial unity only after distinguishing unicity from the first determination as a whole.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/21?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F009",
+    "page": 21,
+    "title": "Unity containing innumerable considerations",
+    "topic": "Determination",
+    "ar": "والاعتبار الثاني: ثبوت الاعتبارات الغير المتناهية لها مع اندراجها فيها في أول رتبة الذات",
+    "en": "The second consideration is the establishment of infinitely many considerations belonging to it, while they remain included within it at the first rank of the Essence.",
+    "note": "The second consideration does not require externally distinct items at the first rank. The paragraph illustrates this with the numerical relations of one to two, three, four, and so on.",
+    "compare": "The closest parallel is Guénon's multiplicity of possibilities included in principial unity; the status of those possibilities still requires proof.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/21?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F010",
+    "page": 22,
+    "title": "No real otherness at the first rank",
+    "topic": "Determination",
+    "ar": "ولا مغايرة ولا غيرية بين هذين الاعتبارين، ولا بين كل اعتبار واعتبار من اعتبارات الواحدية في أول رتبة الذات",
+    "en": "There is neither difference nor otherness between these two considerations, nor between any one consideration and another among the considerations of oneness at the first rank of the Essence.",
+    "note": "Do not import the distinctiveness of the second determination back into the first. Farghānī distinguishes original inclusion from differentiated articulation.",
+    "compare": "This puts pressure on any attempt to count divine archetypes as multiple independent things.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/22?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F011",
+    "page": 23,
+    "title": "A reserve beyond the second rank of determined knowledge",
+    "topic": "Possibility",
+    "ar": "إلا أنه ربما يكون في الحضرة الغيبية الأزليّة نحو هذه الكلّيات والجزئيّات أمور باطنة وأحوال مستورة لم تتعيّن بعد لا في الرتبة الثانية ولا في اللّوح المحفوظ",
+    "en": "Yet in the eternal unseen presence there may be, in relation to such universals and particulars, concealed matters and hidden states that have not yet become determined, either in the second rank or in the Preserved Tablet.",
+    "note": "The modal 'perhaps' matters. This is not an explicit equivalence with Guénon's universal nonmanifestation. The ensuing discussion concerns what exceeds determinate knowledge and may become disclosed.",
+    "compare": "Compare Guénon's unmanifestable possibilities, but distinguish unmanifested-yet-disclosable from intrinsically nonmanifestable.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/23?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F012",
+    "page": 24,
+    "title": "The first determination as an intermediary comprehending both sides",
+    "topic": "Determination",
+    "ar": "اعلم أن أوّل اعتبار وتعيّن تعيّن من الغيب هذه الوحدة التي انتشأت منها الأحدية والواحدية، فظلّت برزخا جامعا بينهما",
+    "en": "Know that the first consideration and determination issuing from the Unseen is this unity, from which unicity (aḥadiyya) and oneness (wāḥidiyya) arise. It therefore remains an intermediary (barzakh) comprehending them both.",
+    "note": "The first determination is the comprehensive unity within which the two considerations are distinguishable in account; equating its aḥadiyya alone with the entire first determination would be inaccurate.",
+    "compare": "Farghānī's barzakh of the first determination may or may not correspond precisely to Guénon's Being.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/24?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F013",
+    "page": 25,
+    "title": "Self-disclosure and the first inward discourse",
+    "topic": "Determination",
+    "ar": "فتجلّى الذات الأقدس على نفسها بحكم ذلك الأثر والتغليب والسبق وظهر لنفسها في نفسها، أعني في عين ذلك التعيّن والقابلية الأولية",
+    "en": "Thus the most holy Essence disclosed itself to itself, in accordance with that effect, preponderance, and precedence, and appeared to itself in itself—that is, within that very first determination and original receptivity.",
+    "note": "The passage belongs to the extended analogy of inner discourse, hearing, seeing, and the priority of manifestation over nonmanifestation. Such speech does not imply vocal organs or sequential events.",
+    "compare": "The nearest Schuonian analogy is internal principial self-disclosure, not physical emanation.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/25?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F014",
+    "page": 26,
+    "title": "The meanings of attributes prior to their differentiation",
+    "topic": "Names",
+    "ar": "بعد أن لم تكن في تلك الرتبة الأولى صفات، بل اعتبارات غير متميّزة ولا متغايرة فيها بحسبها وحكمها",
+    "en": "At that first rank they were not yet attributes; rather, they were considerations neither differentiated nor mutually distinct, according to the nature and rule of that rank.",
+    "note": "In the second rank, the meanings of hearing, seeing, power and speech become distinguishable as attributes. 'Prior' here remains a rank-order distinction.",
+    "compare": "This preserves a conceptual distinction between principial inclusion and actual differentiation of divine perfections.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/26?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F015",
+    "page": 27,
+    "title": "The second inward level: reason illuminated by revelation",
+    "topic": "Anthropology",
+    "ar": "وباطنها الثاني: ما يضاف إلى نفسه من حيث عقله المنوّر بنور الشرع والإيمان باللّه وكتبه ورسله وبالأمور الأخروية",
+    "en": "Its second inner level is what is attributed to the soul insofar as its intellect has been illumined by the light of revealed law and faith in God, His books, His messengers, and the realities of the hereafter.",
+    "note": "This belongs to Farghānī's graduated account of inward speech, hearing, sight, and action. It links his ontology to a specifically Islamic scheme of human formation.",
+    "compare": "Compare the supra-individual intellect in Guénon, but note Farghānī's explicit revelatory and prophetic setting.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/27?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F016",
+    "page": 27,
+    "title": "The fourth, fifth, and sixth inward levels",
+    "topic": "Anthropology",
+    "ar": "وباطنها الخامس: ما يضاف منها إلى قلبه القابل التجلّي الوجود الباطني فيه",
+    "en": "Its fifth inner level is what is attributed to the heart insofar as the heart is receptive to the self-disclosure of inward existence within it.",
+    "note": "In the surrounding enumerated sequence, the fourth concerns existence assigned to the human reality across the spiritual, imaginal and sensory realms, whereas the sixth concerns all-comprehensive, merciful existence at the second intermediary rank.",
+    "compare": "The heart as a locus of disclosure is not interchangeable with Guénon's geometrical symbolism of Universal Man without further analysis.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/27?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F017",
+    "page": 28,
+    "title": "The Muhammadan restriction at the seventh inward level",
+    "topic": "Anthropology",
+    "ar": "ولا تنفتح خوخة من الباب السابع لأحد إلّا لصاحب الإرث المحمدي، فإن البطن السابع مختصّ به صلى اللّه عليه وسلم",
+    "en": "Not even a small opening of the seventh gate opens to anyone except the bearer of the Muhammadan inheritance, for the seventh inward level belongs especially to him—may God bless him and grant him peace.",
+    "note": "Farghānī distinguishes degrees of access and a uniquely Muhammadan completion; this constrains a purely abstract universalizing reading.",
+    "compare": "A comparison with Schuon's Logos must explain rather than erase the status of prophetic particularity.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/28?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F018",
+    "page": 29,
+    "title": "The supreme intermediary and the two bows",
+    "topic": "Perfect Human",
+    "ar": "وسمّاه بعضهم البرزخ الأكبر الجامع لجميع البرازخ وأصلها الساري فيها، وكنى عنه الشرع بمقام أو أدنى",
+    "en": "Some have called it the greatest intermediary, comprehending every intermediary and forming their pervading origin; revelation alludes to it by the station of 'or nearer' (aw adnā).",
+    "note": "The surrounding passage treats the union of the arcs of unity and multiplicity, receptivity and activity, or necessity and possibility, without erasing every distinction at the lower station.",
+    "compare": "Compare Guénon's metaphysical Universal Man with the distinct Muhammadan symbolic hierarchy, rather than identifying the two names outright.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/29?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F019",
+    "page": 30,
+    "title": "Essential perfection versus perfection through the names",
+    "topic": "Perfection",
+    "ar": "وأمّا القسم الثاني من الكمال، فهو الكمال الأسمائي المفصّل الساري في تفاصيل الأسماء والحقائق",
+    "en": "The second kind of perfection is the differentiated perfection through the divine names, extending throughout the particulars of the names and realities.",
+    "note": "He contrasts this with essential perfection, which is realized without any condition; name-related perfection requires determination, loci, relative otherness and manifestation.",
+    "compare": "Compare Schuon's Absolute–Infinite–Perfect triad, but do not treat 'essential perfection' as a literal translation of Schuon's 'Perfect'.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/30?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F020",
+    "page": 30,
+    "title": "Definitions of knowledge, existence, light, and witnessing",
+    "topic": "Existence",
+    "ar": "واعتبار الوجود الذي حقيقته ما به وجدان العين نفسه في نفسه أو في غيره، أو غيره في غيره من محل ومرتبة ونحوهما",
+    "en": "And the consideration of existence, whose reality is that whereby a reality finds itself in itself or in another—or finds another in another, such as in a locus, a rank, or something similar.",
+    "note": "Wujūd here is tied lexically to wijdān ('finding'). The nearby definitions specify knowledge as a reality's appearing to a reality, light as what discloses the hidden, and witnessing as presence with what is witnessed.",
+    "compare": "This is a vital terminological problem for aligning Farghānī's wujūd with Guénon's Being and universal Existence.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/30?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F021",
+    "page": 31,
+    "title": "Knowledge in the first rank",
+    "topic": "Existence",
+    "ar": "أن العلم بحسب المرتبة الأولى والتعيّن الأول هو ظهور عين الذات لنفسه باندراج اعتبارات الواحدية فيها مع تحقّقها، فكان متعلّقا بمعلوم واحد",
+    "en": "Knowledge at the first rank and first determination is the reality of the Essence appearing to itself while the considerations of oneness are included within it and established; consequently it has one known object.",
+    "note": "The following grammatical observation is precise: in this rank the verb 'to know' is taken with one object; at the second rank, in the relevant construction, divine knowledge concerns the Essence as possessing differentiated perfections.",
+    "compare": "Distinguish principial self-knowledge from knowledge of differentiated names.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/31?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F022",
+    "page": 31,
+    "title": "Existence in the first rank",
+    "topic": "Existence",
+    "ar": "أن الوجود من حيث المرتبة الأولى ما به وجدان الذات نفسها في نفسها باندراج اعتبارات الواحدية فيها وجدان مجمل مندرج فيه تفصيله محكوم عليه بنفي الكثرة والمغايرة والغيرية والتميّز",
+    "en": "Existence at the first rank is that by which the Essence finds itself in itself, the considerations of oneness included within it in an undifferentiated finding that implicitly contains its articulation, while multiplicity, difference, otherness, and distinction are denied of it.",
+    "note": "Here the paired terms wujūd and wijdān should not be flattened into the modern predicate 'exists'.",
+    "compare": "This provides a more exact basis for asking whether the level corresponds to Guénon's Being.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/31?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F023",
+    "page": 31,
+    "title": "The names: true unity and relational multiplicity",
+    "topic": "Names",
+    "ar": "فله حينئذ وحدة حقيقية وكثرة نسبية، فإن كل اسم إلهيّ إنما هو ظاهر الوجود الذي هو عين الذات، لكن من تعيّنه وتقيّده لمعنى أو قل بصفة كالحيّ مثلا",
+    "en": "It therefore has real unity and relational multiplicity. For every divine name is the outward aspect of existence, which is the Essence itself, but insofar as it is determined and qualified by a meaning—or, one may say, by an attribute, such as 'Living'.",
+    "note": "The whole surrounding paragraph distinguishes existence under divine self-disclosure from existence as the manifestation of cosmic realities. Qualitative differences among names do not divide the underlying existence.",
+    "compare": "A precise account of divine predication must distinguish the Real's unity from differentiated meanings; neither simple equivocity nor numerical plurality of divine beings follows.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/31?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F024",
+    "page": 32,
+    "title": "Created appearance under spiritual, imaginal and corporeal ranks",
+    "topic": "Existence",
+    "ar": "فالوجود حينئذ معناه وحقيقته ما به وجدان صورة كل تعين منه نفسها ومثلها موجودا روحانيّا أو مثاليا أو جسمانيا ظاهرا في كل مرتبة بحسبه وحكمه",
+    "en": "Existence, then, means and is in reality that by which the form of each determination finds itself and what is like itself as a spiritual, imaginal, or corporeal existent, appearing in each rank according to its own character and rule.",
+    "note": "Citation checked against a parallel Arabic transcription of p. 32. The distinctions among ranks govern what can appear in each; they cannot be collapsed into the same homogeneous mode of existence.",
+    "compare": "Compare Guénon's formless, subtle, and gross states, carefully separating the criteria governing each taxonomy.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/32?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F025",
+    "page": 32,
+    "title": "Creation as bestowal of existential manifestation",
+    "topic": "Existence",
+    "ar": "فالإيجاد والخلق على هذا ما هو إلّا إعطاء الموجد الخالق تعالى وتقدّس للحقائق الكونيّة ما به وجدانها بإضافة تعيّن منه إليها",
+    "en": "On this account, bringing into existence and creating is nothing other than the Creator's—exalted and holy is He—giving cosmic realities that through which they find themselves, by attributing to them a determination from Him.",
+    "note": "The remainder of this passage attributes the disclosure of their characteristic effects to such existential bestowal at each rank. The ontological status of created causal power is not established by this sentence alone.",
+    "compare": "This is a decisive test case against Thomistic participated esse and for the distinction between divine act and finite manifestation.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/32?lang=ar",
+    "scope": "exact selected source clause, not entire printed page"
+  },
+  {
+    "id": "F026",
+    "page": 32,
+    "title": "The paradox of effective relations without independent existence",
+    "topic": "Existence",
+    "ar": "وهي أمور ونسب عدمية لا وجود لها في الخارج ولا نفسها، فانظر أثرا لمعدوم وإن كان عدميّته بنسبة ووجه ما في عين الوجود وفيما هو موجود من جميع الوجوه ترى العجب العجاب، ومحالا للعقول السليمة والألباب.",
+    "en": "These are privative matters and relations: they possess no existence externally or in themselves. Consider, then, the effect of what is nonexistent—although its nonexistence is only in a particular relation or respect—within existence itself and within that which is existent in every respect. You will behold astonishing wonders, things that seem impossible to sound intellects and minds.",
+    "note": "From the end of the paragraph on p. 32. The privative status belongs to differentiated relations and intelligible loci; it does not straightforwardly deny the reality of the effects. The conceptual distinction demands further collation and commentary.",
+    "compare": "Test how Farghānī accounts for the reality of effects through loci that lack independent external being; this must be compared with Guénonian possibility and Thomist secondary causality.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/32?lang=ar",
+    "scope": "selected clause from Arabic page, not a continuous page translation"
+  },
+  {
+    "id": "F027",
+    "page": 32,
+    "title": "The first determination cannot display differentiated perfection",
+    "topic": "Determination",
+    "ar": "فلا جرم لم تقبل إلا التجلّي الأول وإجمال الكمال الذاتي ووحدته ونفي الكثرة والتميّز والغيرية باندراج نسب الواحدية واعتباراتها فيه، ولم تكن قابلة لتجلّي قابل للكثرة، وإن كانت نسبية ولا لكمال أسمائي لازم لذلك التجلّي الذي هو نهاية المطلب فيه",
+    "en": "Consequently, it can receive only the first self-disclosure: the comprehensiveness and unity of essential perfection, with the exclusion of multiplicity, distinction, and otherness, since the relations and considerations of oneness remain included within it. It cannot receive a self-disclosure that admits multiplicity, even relational multiplicity, nor the name-related perfection that accompanies such a disclosure and constitutes its ultimate aim.",
+    "note": "A selected continuous clause in the paragraph beginning 'ثم اعلم' on p. 32. The incapacity of the first receptivity to exhibit articulated names motivates the subsequent account of the second determination.",
+    "compare": "Which Farghānian rank actually performs the function that Guénon assigns to Being as principle of manifestation? The first determination alone may not suffice.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/32?lang=ar",
+    "scope": "selected clause from Arabic page, not a continuous page translation"
+  },
+  {
+    "id": "F028",
+    "page": 33,
+    "title": "The second determination accommodates unity and plurality",
+    "topic": "Determination",
+    "ar": "وذلك التعيّن هو القابل الثاني الجامع بين طرفي حكم الإجمال والوحدة، ومقابلهما الذي هو التفصيل والكثرة لانتسابه إلى الواحدية ووقوعه في ثاني رتب تعيّناتها، فظهر وتجلّى في هذا التعين.",
+    "en": "That determination is the second receptivity: it comprehends the two sides of undifferentiated comprehensiveness and unity, together with their counterparts, articulation and multiplicity. Because it is related to oneness and occupies the second rank of its determinations, the self-disclosure appears and becomes manifest in this determination.",
+    "note": "Closing clause from the p. 33 paragraph on original love, longing, and the emergence of the second receptivity. The larger argument must be translated continuously before equating its 'necessity' to any Guénonian doctrine.",
+    "compare": "Crucial for differentiating the first principle of inclusive unity from the second rank in which explicit plurality and relational diversity become intelligible.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/33?lang=ar",
+    "scope": "selected clause from Arabic page, not a continuous page translation"
+  },
+  {
+    "id": "F029",
+    "page": 33,
+    "title": "Cosmic essences and divine names at the second rank",
+    "topic": "Possibility",
+    "ar": "وجميع هذه الحقائق الكونية والأسماء الإلهيّة صارت صورا وظلالا للشؤون والاعتبارات المندرجة في الواحدية مجملة وحدانية فيها في المرتبة الأولى، مفصّلة متيّزة في هذا التعين الثاني الذي هو المرتبة الثانية متعيّنة ثابتة فيها بعضها بصورة أصل وجنس، وبعضها بهيئة فرع ونوع أو شخص متفرّع من ذلك الأصل والجنس أو الفرع والنوع",
+    "en": "All these cosmic realities and divine names thus become forms and shadows of the affairs and considerations included in oneness: in the first rank they are comprehended within it undifferentiatedly and as one; in the second determination, which is the second rank, they are articulated, distinguished, determined, and established. Some are in the form of a principle or genus; others are branches, species, or individuals deriving from a principle and genus, or from a subordinate branch and species.",
+    "note": "The following words qualify their differences as obtaining in some respects but not others, while the encompassing divine knowledge remains one. This selected clause is part of a longer paragraph.",
+    "compare": "The appearance of genus/species/individual categories suggests a far more articulated account of known essences than a general appeal to Universal Possibility.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/33?lang=ar",
+    "scope": "selected clause from Arabic page, not a continuous page translation"
+  },
+  {
+    "id": "F030",
+    "page": 34,
+    "title": "The second determination as the rank of divinity",
+    "topic": "Names",
+    "ar": "ثم إن هذا التعيّن الثاني النفسي المذكور سمي بأسماء كثيرة بحسب اعتبارات ثابتة فيه مع توحد عينه، فباعتبار أنّه أصل ظهور التعيّنات ومنشأها ومنشأ جميع الكمالات المضافة إلى كل واحد منها وقبلة توجّهاتها ومرجعها بسبب ذلك، وأن التجلّي الثاني الظاهر به وفيه أيضا أصل جميع الأسماء الإلهيّة وكلها ومرجعها لذلك سمّي بمرتبة الألوهية",
+    "en": "This second determination, described by the analogy of breath, is called by many names according to the considerations established within it, although its reality remains one. Since it is the origin and source of the manifestation of determinations and all the perfections attributed to them, toward which they turn and to which they return—and since the second self-disclosure manifest through and within it is likewise the origin, totality, and return of the divine names—it is called the rank of divinity (ulūhiyya).",
+    "note": "Opening clause of a new section on p. 34. Multiple appellations describe one comprehensive determination according to distinct functions, not many independently existing principles.",
+    "compare": "Directly relevant to whether this rank resembles Guénon's Being or Schuon's principial/divine relativity. Do not simply equate terms.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/34?lang=ar",
+    "scope": "selected clause from Arabic page, not a continuous page translation"
+  },
+  {
+    "id": "F031",
+    "page": 34,
+    "title": "Relational divine plurality and real cosmic plurality",
+    "topic": "Names",
+    "ar": "وباعتبار ارتسام الكثرة النسبية المنسوبة إلى الأسماء الإلهية والكثرة الحقيقية المضافة إلى الكون وحقائقه فيه سمّي بحضرة الارتسام",
+    "en": "Insofar as the relational multiplicity attributed to the divine names and the real multiplicity attributed to the cosmos and its realities are inscribed within it, it is called the Presence of Inscription (ḥaḍrat al-irtisām).",
+    "note": "This sentence sharply contrasts the *relational* multiplicity of names with the *real* multiplicity of cosmic realities; that is an important check against a simplistic assertion that all multiplicity is only conceptual.",
+    "compare": "Can real cosmic plurality be fully explained in a scheme of numerically one wujūd? This is precisely where comparing Farghānī, Guénon and Schuon needs technical work.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/34?lang=ar",
+    "scope": "selected clause from Arabic page, not a continuous page translation"
+  },
+  {
+    "id": "F032",
+    "page": 34,
+    "title": "The rank of possibility between necessity and impossibility",
+    "topic": "Possibility",
+    "ar": "وباعتبار كون المعلومات التي تعلق العلم الأزلي بها ما بين واجب ظهوره وتحقّقه بنفسه، وبين ممتنع ظهوره في نفسه في شيء من المراتب الكلّية والجزئية، وبين متوسّط بينهما نسبته إليهما على السواء سمي المتوسّط مرتبة الإمكان",
+    "en": "Since the objects of eternal knowledge include what must manifest and is realized through itself, what cannot manifest in itself at any universal or particular rank, and what stands between them with an equal relation to both alternatives, this intermediate class is called the rank of possibility.",
+    "note": "One member of the p. 34 classification of the second determination. This is a distinction among what is necessarily manifest, intrinsically impossible to manifest, and merely possible. Do not presume Farghānī's 'intermediate class' is all-encompassing Universal Possibility in Guénon's vocabulary.",
+    "compare": "Guénon's possibilities of non-manifestation are not simply the class of what is impossible in itself; their precise relationship to Farghānī's modal taxonomy must be demonstrated.",
+    "sourceUrl": "https://ablibrary.net/book_content/b/9606/34?lang=ar",
+    "scope": "selected clause from Arabic page, not a continuous page translation"
+  }
+]
+~~~
+
+---
+
+## PART J — Editorial status and staged QA requirements
+
+# Muntahā al-madārik · Editorial and translation register
+
+## Current milestone — completed English draft of introduction; first critical source pass (9 November 2026)
+
+**Authorial English translation:** All four foundations of the introduction plus the concluding two-page preface now have a continuous **working English draft** from Beirut printed B2007 **pp.18–145 (128 consecutively numbered pages)**. The fourth foundation concludes at p.143; the distinct *tatimmat al-dībāja* occupies pp.144–145. **New final installment:** pp.135–145 (11 pages), separately preserved as `TRANSLATION_135_139.md` and `TRANSLATION_140_145.md`. Cumulative draft: [WORKING_TRANSLATION_18_145.md](WORKING_TRANSLATION_18_145.md); compact [English reader](../continuous-translation.html).
+
+**Arabic–English critical review (BEGINNING, not definitive):** 80 authorial clauses from **B2007 pp.18–23** have been compared with the modern Beirut digital Arabic, individually rendered into revised English, and annotated. Full review: [CRITICAL_TRANSLATION_18_23.md](CRITICAL_TRANSLATION_18_23.md); findings: [CRITICAL_AUDIT_STAGE_001.md](CRITICAL_AUDIT_STAGE_001.md); [interactive paired clause review](../critical-edition.html); machine-readable data: `data/critical-pass-001-p18-20.js` and `data/critical-pass-002-p21-23.js`. **Five clause-level cruxes remain open**. Verified manuscript variants remain **zero**.
+
+**Truthful progress dimensions:**
+
+| Workstream | Actually present | NOT yet present |
+|---|---|---|
+| English authorial translation | 128 sequential printed B2007 page headings, pp18–145, *working draft* | Independent clause-by-clause proofreading across remaining 122 pages, specialist critical sign-off |
+| Source-language alignment | 80 source-checked clauses across six opening pages; 32 previously selected Arabic–English excerpts | Continuous full Arabic authorial copy-text and its alignment for pp18–145 |
+| Historical textual criticism | Witness catalogue, four recorded earlier flags plus new crux register; al-Fanārī reception quotation | Independently collated 1876 historical print or any actual manuscript folio; justified copy-text; established variants |
+| Cumulative preservation | Current `FULL_CUMULATIVE_P145.md` and `STAGE_MANIFEST_P145.json`, historical P134/P84/P34 snapshots preserved | The untranslated verse-by-verse commentary, or full manuscript evidence |
+| GNAMMA presentation | Compact 128-page English draft and new Arabic–English critical clause review | Verified public Pages deployment of latest revision; complete bilingual immersive edition |
+
+**Important:** a page heading and a source link do **not** certify page-level translation fidelity. The entire 128-page English draft is **not** labelled definitively checked. The directly checked modern printed Arabic covers only pp.18–23. Do not calculate a definitive percentage from the 1876 edition's 107-page introduction; its pagination differs. The new English draft coverage of the introduction is **structurally complete**, but the critical Arabic–English edition is **not yet constituted**.
+
+**Next exact critical checking locus:** B2007 **p.24**, authorial opening continuing the discussion of essential affairs (*shuʾūn dhātiyya*); see https://ablibrary.net/book_content/b/9606/24?lang=ar. The verse-by-verse poem commentary follows after the introductory preface but belongs to a separate translation project.
+
+**Five currently tagged crux clauses in the opening audit:** B2007 p.18 `بطون المشتمل`, p.19 `المطلب الغائبّ`, p.19 `عمليّا ووجوديّا` (context may suggest `علميّا` but must not be silently emended), p.23 `إلّا أنه ربما يكون` and p.23 `فلم تعلم ولم يحكم بشيء منها إلا بعد تعيّنها`. The p.21 `من حيث واحديتها` correction is preserved, with late secondary quotation in al-Fanārī's `Miṣbāḥ al-uns` p.183. None of these constitutes a verified independent manuscript variant.
+
+
+
+## Historical P134 stage — 9 November 2026 · 50 pages (superseded by P145 milestone)
+
+**NEW English working translation, B2007 pp.85–134 (50 printed pages), plus inherited pp.18–84: 117 consecutively numbered Beirut pages in one cumulative English working draft.**
+
+- **New authorial content:** seven files, `TRANSLATION_85_92.md` (8 pp.), `TRANSLATION_93_100.md` (8), `TRANSLATION_101_108.md` (8), `TRANSLATION_109_116.md` (8), `TRANSLATION_117_124.md` (8), `TRANSLATION_125_130.md` (6), `TRANSLATION_131_134.md` (4). Source-page section count **50**, zero duplicated or missing numbers.
+- **Cumulative master:** `WORKING_TRANSLATION_18_134.md` with **117** page headings, 18–134 inclusive. HTML mirror `../continuous-translation.html` has 117 anchored source sections and a four-foundation contents list, with **compact paragraph and page gaps** introduced in this stage.
+- **Four foundations:** Foundation I ends p.69; II begins p.70, ends p.78; III begins p.79, ends p.101; IV begins p.102 and is **still continuing after p.134**.
+- **New Arabic witness:** for pp.85–101, forum transcription https://alshrefalm7sy.ahlamontada.com/t3213, and for pp.102–134, forum transcription https://alshrefalm7sy.ahlamontada.com/t3214. These show B2007 printed page labels but are **online re-transcriptions, not independently collated manuscripts**. The individual Ahlulbayt pages were inaccessible during the stage, so the editions must not be treated as independently verified simply on the basis of the transcription.
+- **Original bilingual layer:** the **32 selected Arabic–English excerpts on pp.18–34** remain unchanged; full continuous authorial Arabic for all 117 pages and clause-by-clause alignment are **not** complete.
+- **Critical apparatus:** the early Istanbul 1876 print, the Yeni Camii 706 manuscript, and alternative modern edition are identified but remain **uncollated at this stage**. Verified independent manuscript variants: **zero**.
+- **Unresolved source points:** digital B2007 p.33 and p.34 readings recorded in the witness register; p.87 corrupt/uncertain reading in the third foundation; reported hadith attributions; manuscript examination; all English pages still need source-to-English proofreading.
+- **Next untranslated passage:** **B2007 p.135**, which completes the p.134 sentence concerning the removal of determinations; beginning Arabic `والتقيّد وآثارهما والجامع لكلّيات تلك الخواص والآثار الحبّية ...`. Source: https://alshrefalm7sy.ahlamontada.com/t3214.
+- **Cumulative handoff:** `FULL_CUMULATIVE_P134.md` and `STAGE_MANIFEST_P134.json` are the canonical stage archive for the new work. Old P84 and P34 snapshots remain preserved unchanged.
+- **Interpretive highlight, not proof of agreement:** the newly translated fourth foundation differentiates the two ways of perfection and spiritual ascent, and relates Islam, īmān and iḥsān to bodily soul, spirit and secret. These arguments will later be tested against Guénon and Schuon rather than assumed identical.
+
+**Counting rule:** 50 new pages is a check of sequential page-labelled English **working draft output**, not independently audited translation completeness, not 50 manuscript-collated Arabic pages. The 1876 introduction's 107 printed pages do not provide a denominator for the 2007 Beirut pagination. No accurate full-edition percentage is available.
+
+
+
+## Full cumulative handoff and GNAMMA publication (P84)
+
+- **Self-contained current working-stage archive:** [FULL_CUMULATIVE_P84.md](FULL_CUMULATIVE_P84.md) — contains the full 67-page English working draft, all 32 available bilingual Arabic extracts, critical scholarly introduction, Guénon–Schuon comparison, glossary, witness register, corrections, this editorial status, and the prior stage handoff.
+- **Handoff archive index and per-stage preservation rule:** [HANDOFFS.md](HANDOFFS.md); public GNAMMA reading-room entry: [Handoffs and archive](../handoffs.html).
+- **Machine-readable provenance:** [STAGE_MANIFEST_P84.json](STAGE_MANIFEST_P84.json) includes the new archive blob SHA, file inventory and page-integrity checks, and continuation p.85.
+- **Every subsequent stage:** recover the latest complete archive, append newly translated source text without losing older material, produce a new self-contained full cumulative handoff and manifest, expose both from GNAMMA's book landing page and reader, and check the GitHub Pages build independently.
+- **Limits:** The archive is self-contained for what has been produced in the current working stage, but the **full Arabic authorial text**, independent clause-by-clause verification, historic-print/manuscript collation and remaining introduction are not completed. Such missing material is not inside the handoff.
+
+
+
+## Historical P84 translation stage — 50 pages added (2026-11-08)
+
+**New work:** Beirut B2007 pp. **35–84 inclusive** = **50 printed source pages in an English *working* translation**. This stage genuinely continues from the existing p. 34 boundary; it does not simply rephrase or reprint those 17 pages. The new English text is preserved in **seven separate source-linked stage files** and in the cumulative master:
+
+- `TRANSLATION_35_40.md` (6 pages)
+- `TRANSLATION_41_46.md` (6 pages)
+- `TRANSLATION_47_52.md` (6 pages)
+- `TRANSLATION_53_60.md` (8 pages)
+- `TRANSLATION_61_68.md` (8 pages)
+- `TRANSLATION_69_76.md` (8 pages)
+- `TRANSLATION_77_84.md` (8 pages)
+
+**Cumulative English draft:** `WORKING_TRANSLATION_18_84.md`, mirrored at `../continuous-translation.html`, covers **67 consecutive numbered B2007 printed pages (18–84)**. Automated structural validation counted exactly 67 unique, consecutively numbered `B2007 p.` source-page headings, and all 67 source-link targets are represented in the web reader. The number of authorial *Arabic* source characters and the corresponding critically validated percentage are still unknown.
+
+**Precise boundaries:** the **first foundation ends on B2007 p. 69**, the **second begins p. 70 and ends p. 78**, and the **third begins p. 79**; p. 84 ends midway through discussion of the Footstool's third aspect. **Next untranslated page: B2007 p. 85.**
+
+**Not completed:** The full Arabic authorial text is not imported continuously; source-to-translation alignment has not been independently clause-checked; the 1876 printing and manuscript witnesses have not been collated; later introduction beyond p.84 is still unrepresented; the Persian recension remains unchecked. The bilingual extract reader still contains **32 Arabic–English source clauses from pp.18–34**, not a full parallel translation of all 67 pages. There are **zero** verified comparative manuscript variants. This is a working draft, not a definitive critical edition.
+
+**Historical pagination:** The reported 107-page introduction applies to the 1876 Istanbul printing, not to B2007. Do not say “67 of 107 pages completed” or compute a percentage until the edition concordance is established.
+
+**Important arguments added:** p.69 on the double force of `law`; p.73 on *will and choice* rather than necessity at the level of the Essence; p.77–78 on archangelic functions and spiritual manifestations; p.79 first passage of the third foundation; pp.80–84 on the Breath, dust (*habāʾ*), nature, the Throne and Footstool.
+
+**Cumulative master and recovery:** `WORKING_TRANSLATION_18_84.md` and `STAGE_HANDOFF_P84.md`. Work tracker [GitHub #245](https://github.com/gnamma-research/booksite/issues/245).
+
+
+## Historical P34–P84 programme notes (superseded by current P134 report above)
+
+The primary objective is now **a complete, continuous Arabic–English critical edition of the four-foundation introductory division**, not a collection of attractive extracts. The current stages are separate products:
+
+| Workstream | Verifiable present extent | Remaining |
+|---|---|---|
+| Scholarly critical introduction (editorial essay) | `CRITICAL_INTRODUCTION.md`, twelve substantial sections; readable page `critical-introduction.html` | Additional manuscript- and recension-based historical refinement |
+| English authorial translation, provisional | `WORKING_TRANSLATION_18_84.md` = B2007 printed **pp. 18–84**, a 67-page consecutive-order English draft (including 50 new pages 35–84), also in `continuous-translation.html` | Original introduction after B2007 p. 84; full authorial Arabic alignment; independent clause-by-clause proofing; and an I1876 ↔ Beirut concordance |
+| Paired bilingual source extracts | **32 individual Arabic–English clauses** sampled across B2007 pp. 18–34, with direct source links | Uninterrupted *full Arabic* text for every paragraph and bilingual alignment |
+| Textual witness register | `WITNESS_REGISTER.json`: historical printing, two modern editions and one early manuscript identified; F007 transcription correction recorded | Read and collate actual manuscript and historic-print page images; **zero** established manuscript variants so far |
+| Perennialist comparison | Distinct `COMPARISON.md` and authorial-extract toggle in the reader | Detailed passage-level comparison only once the authorial text is full |
+
+**Critical caveat:** 67 pages in the modern Beirut edition are **not equivalent to 67 of the 107 pages** identified for the historical Istanbul introductory division. Those are different paginations; neither the total Beirut introduction page count nor a proper page concordance has been verified. These are provisional English translations, not 67 pages of independently validated critical Arabic.
+
+**Specific problems flagged for collation:** an ambiguous phrase in the second determination discussion (B2007 p. 33), and the reading `الحضرة العملية` (B2007 p. 34), which must not be silently replaced by a conjectural alternative. Other changes, such as restoration of `من حيث واحديتها` at F007, remain transcription corrections, not competing-manuscript variants.
+
+
+
+**Project:** GNAMMA Research — ʿIrfān and metaphysics (sibling of `texts/al-turka/qawaid-al-tawhid/`).
+**Work:** Saʿīd al-Dīn al-Farghānī, *Muntahā al-madārik fī sharḥ Tāʾiyyat Ibn al-Fāriḍ* (منتهى المدارك في شرح تائية ابن الفارض).
+**Updated:** 2026-11-08.
+
+## Actual coverage and quality
+
+- **32 source-matched authorial extracts**, each with Arabic, a new English working translation, exact digital page, and separate editorial explanation.
+- **Pages sampled:** 18–34 of the modern Beirut digitization (`ablibrary.net/book_content/b/9606/{page}`). This is a page *range of sampled text*, **NOT seventeen fully translated pages**. It includes discontinuities and omitted sentences.
+- **Foundation:** first foundation only. Selected clauses concern hiddenness, unity, self-disclosure, names, degrees of inward comprehension, perfection, knowledge, and existential determination.
+- **Not yet fully translated:** the authorial introduction beyond B2007 p. 84, along with the later commentary and earlier Persian *Mashāriq al-darārī*. The draft pp. 18–84 has not undergone critical proofing, and its continuous full Arabic transcription and bilingual alignment are not yet constituted.
+- **Textual basis:** Arabic text of the modern Beirut printed edition, edited by ʿĀṣim Ibrāhīm al-Kayyālī, as digitized by Ahlulbayt Library. Pages 32–34 are verified directly in the same Beirut digital witness (its page-specific source link now works). Editorial footnotes have **not** been incorporated into Farghānī's authorial text.
+- **Collation:** source-anchored transcription only. No manuscript leaf images collated, and no systematic comparison against the 1876 Istanbul print has yet been carried out.
+- **Translation status:** working scholarly translation, not a definitive critical edition. The bilingual extract reader displays 32 selected, source-linked clauses on pp. 18–34. Separately, an 18–84 **consecutive-page English draft** (67 printed pages, including 50 new pages) has been committed without claiming critical verification or manuscript collation.
+- **Comparative layer:** explicitly *modern editorial research*, never Farghānī's Arabic or an attribution of perennialist doctrine to him.
+
+The Arabic has some unvowelled lexical/typographical uncertainty in the digital witness. Any correction requires printed or manuscript control and must be recorded; words cannot simply be silently improved.
+
+## Unit and page register
+
+| Printed page in digital Beirut edition | Verified unit IDs | Coverage |
+|---|---|---|
+| 18 | F001–F002 | Two selected clauses |
+| 19 | F003–F005 | Three selected clauses |
+| 20 | F006 | One selected clause |
+| 21 | F007–F009 | Three selected clauses |
+| 22 | F010 | One selected clause |
+| 23 | F011 | One selected clause |
+| 24 | F012 | One selected clause |
+| 25 | F013 | One selected clause |
+| 26 | F014 | One selected clause |
+| 27 | F015–F016 | Two selected clauses |
+| 28 | F017 | One selected clause |
+| 29 | F018 | One selected clause |
+| 30 | F019–F020 | Two selected clauses |
+| 31 | F021–F023 | Three selected clauses |
+| 32 | F024–F027 | Four selected clauses, directly verified against page-specific Arabic source |
+| 33 | F028–F029 | Two selected clauses from the second determination discussion |
+| 34 | F030–F032 | Three selected clauses on the names, divinity, and the rank of possibility |
+
+**Total:** 32 passage records; there is *no* claim of complete-page coverage anywhere in this register.
+
+## Sources and editions
+
+1. Beirut digital transcription, *Muntahā al-madārik*, first volume, editor ʿĀṣim Ibrāhīm al-Kayyālī: https://ablibrary.net/book_content/b/9606/18?lang=ar (replace terminal `/18` with the page shown in each unit).
+2. Direct page 32 Arabic witness: https://ablibrary.net/book_content/b/9606/32?lang=ar (the authorial paragraph and chapter boundary are visible).
+3. Historical printed Arabic witness: Istanbul 1876, Princeton/NYU scan https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en (not yet line-by-line collated).
+4. Earlier Persian *Mashāriq al-darārī*, edited by Sayyid Jalāl al-Dīn Āshtiyānī: https://ablibrary.net/book_content/b/4366/126 — contextual comparative witness, not collated.
+5. Guénon, *Les États multiples de l'être*, chapters II, V: https://oeuvre-de-rene-guenon.org/textes/EME02.php and https://oeuvre-de-rene-guenon.org/textes/EME05.php. This material informs only our optional comparison.
+6. Schuon, *Survey of Metaphysics and Esoterism*, and *In the Face of the Absolute*: comparison targets, not quoted or reproduced here.
+
+## Scholarly controls
+
+- Authorial text, translation, editorial notes, and Guénon/Schuon parallels are separate fields.
+- The reported divine saying 'I was a hidden treasure' is a Sufi doctrinal starting point **not established as an authenticated prophetic ḥadīth**.
+- `wujūd` must not be glossed indiscriminately as either Guénonian 'Being' or 'Existence'; compare its connection to `wijdān` and each rank.
+- First determination, `aḥadiyya`, and `wāḥidiyya` are distinct considerations in the text; refrain from equating each to a single Guénonian category without an argument.
+- The p. 23 discussion of what has not yet been determined is not by itself a doctrine of Guénonian *possibilities of non-manifestation*.
+- Where a translation excerpt quotes only a clause from a longer paragraph, no English continuation is implied.
+
+## Remaining staged work
+
+1. Preserve and independently proofread the complete first foundation English draft pp. 18–69 against continuous Arabic, with paragraph alignment and a gap audit.
+2. Verify the draft second foundation pp. 70–78; then continue the third foundation from p. 85 and the fourth foundation through its actual end, preserving all original text.
+3. Collate the 1876 original with the Beirut transcription, then inspect available manuscript witnesses and record meaningful variants.
+4. Translate selected long-commentary passages in which Farghānī resolves problems left open in the introduction.
+5. Compare the Persian and Arabic commentaries, maintaining a separate historical-dependence register for Qūnawī.
+6. Only after continuous coverage and collation, issue a print/PDF critical version marked as such.
+
+## Repository locations
+
+- Reader: `texts/al-farghani/muntaha-al-madarik/index.html`
+- Cumulative 67-page English draft: `texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_84.md`
+- Extracts: `data/units.js`
+- Research comparison: `editorial/COMPARISON.md`
+- Technical terms: `editorial/GLOSSARY.md`
+- Library placement: `texts/index.html` and `texts/manifest.json`, collection **ʿIrfān and metaphysics**, beside but separate from Qawāʿid al-Tawḥīd.
+
+
+---
+
+## PART K — Exact cumulative stage handoff for future retrieval
+
+# Farghānī · Muntahā al-madārik — completion of English introduction draft; first clause-based critical check
+
+**9 November 2026 · GNAMMA / Texts → ʿIrfān and metaphysics · P145 milestone**
+
+## What was completed in this turn
+
+1. **Final installment**: B2007 pp.135–145 (11 printed pages), in `TRANSLATION_135_139.md` and `TRANSLATION_140_145.md`. P143 concludes the four foundations; **pp.144–145** are a separate `تتمة الديباجة` ("Continuation of the preface"), before the poem commentary.
+2. **Cumulative English working master**: `WORKING_TRANSLATION_18_145.md` (B2007 pp.18–145; **128** consecutively numbered source pages). Former master `WORKING_TRANSLATION_18_134.md` remains preserved.
+3. **First Arabic source-checking pass**: **80 authorial clauses**, B2007 **pp.18–23**, with Arabic, revised English, source and critical notes. `CRITICAL_TRANSLATION_18_23.md`; `CRITICAL_AUDIT_STAGE_001.md`; structured unit files `data/critical-pass-001-p18-20.js` and `data/critical-pass-002-p21-23.js`; browser-readable `critical-edition.html`. This is a first clause-by-clause **modern printed-digital source** check, **not** an early manuscript collation.
+4. **Page-coverage evidence**: `CRITICAL_COVERAGE_REGISTER.json` covers all 128 source pages as separate records with independently distinguishable fields `english_working_draft`, `english_clause_checked_B2007`, `full_arabic_page_in_repo`, and `actual_manuscript_inspected`.
+5. **GNAMMA**: 128-page compact English reader, critical review page with Arabic/English + note/source controls, collection index, archive, and updated edition status (verify git commits and hosting separately).
+
+## Actual stage quality
+
+The English **working draft** is structurally complete **for the introduction only**; all four foundations (ending p.143) and the concluding two-page preface (pp.144–145) are represented. The independent **source-language critical verification is NOT complete**: only six printed digital pages checked clause by clause (80 records). All 128 page headings in the master are present; the heading audit is an integrity check, not linguistic validation.
+
+No I1876 printed images or medieval manuscript leaves have been compared at corresponding loci; no manuscript variants are established. The new p135–145 translation relies on a derivative Arabic transcript with B2007 printed markers, not a manuscript facsimile. Work on the subsequent verse commentary must not be added as though it belonged to the four foundations.
+
+## Principal textual corrections and issues
+
+- B2007 p.18: `تعيّن الأسماء` should normally be translated *determination of the names*, rather than simply *differentiation*.
+- P18 `بطون المشتمل`, p19 `المطلب الغائبّ`, p19 `عمليّا ووجوديّا` and p23 the modal reference to undetermined hidden affairs are open critical issues.
+- B2007 p.21: missing `من حيث واحديتها` restored in F007; modern print and late quotation in al-Fanārī support the form. This is an earlier **transcription correction**, not a manuscript-derived variant.
+- Farghānī cites the "hidden treasure" saying as a divine report; do not present this as authenticated prophetic hadith. The statement "I cannot enumerate Your praise" is independently attested in Ṣaḥīḥ Muslim 486.
+- P23 `فلم تعلم ولم يحكم بشيء منها إلّا بعد تعيّنها` is the author's wording as printed, a real philosophical problem deserving an apparatus note, not silent harmonization with divine omniscience.
+
+## Primary witness and checkpoint paths
+
+- Modern Arabic: https://ablibrary.net/book_content/b/9606/18?lang=ar and next pages through p23, directly inspected.
+- Intro concluding Arabic: https://alshrefalm7sy.ahlamontada.com/t3214 (p135–145), derivative modern online transcription.
+- 1876 Istanbul print (uncollated) https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en
+- Early manuscript catalogue: Yeni Camii 706 (identified; folio images not inspected).
+- Later quotation: `Miṣbāḥ al-uns`, modern p183, https://ablibrary.net/book_content/b/4696/183?lang=ar.
+- Repository critical issue: https://github.com/gnamma-research/booksite/issues/245.
+
+## Exact next operation — critical checking, not more introductory translation
+
+**Resume B2007 p.24**, continuing the sentence about `شؤون ذاتية` from p23. Arabic source: https://ablibrary.net/book_content/b/9606/24?lang=ar.
+
+**Last reviewed Arabic at end of p23:** `وصفة بقائها وثباتها اعتبارا لبعض`—sentence incomplete until p24. First inspect B2007 p24, delimit the authorial text (not editor's footnotes), compare each clause with the English draft, and record source text, revised English, correction decision, and any crux in `data/critical-pass-003-p24-XX.js`.
+
+**Manuscript-critical priority:** retrieve an actual facsimile leaf for I1876 corresponding to B2007 p18, produce a reliable printed-page concordance, then obtain/inspect Yeni Camii 706 and any independent witness. Record actual readings before claiming a definitive text.
+
+## Full cumulative handoff policy
+
+The canonical entire current-stage text and apparatus will be in `FULL_CUMULATIVE_P145.md`, accompanied by `STAGE_MANIFEST_P145.json`, which must record file SHAs and the exact boundary. Previous P34, P84 and P134 full archives remain immutable and must not be retranslated or replaced.
+
+**Completion categories at P145:** English translation draft complete for introduction; Arabic-to-English clause verification begun; independent historical print/manuscript collation not begun; definitive critical edition NOT complete. Do not blur these distinctions.
+
+
+---
+
+## SNAPSHOT MANIFEST: IMMUTABLE SOURCE FILE HASHES
+
+- `texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_145.md` · Git blob `4fba9c14a5a5d1ed99707638ad7d3f8f7b656590`
+- `texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_TRANSLATION_18_23.md` · Git blob `81dc3da3d1300e69142e918a6b8f57c9f1b1b12f`
+- `texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_AUDIT_STAGE_001.md` · Git blob `f53efa4f6c3131efbb1c0c17f20c038f729e799c`
+- `texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_INTRODUCTION.md` · Git blob `940cb7ab03df02252e7ab34c60dbd48af473e843`
+- `texts/al-farghani/muntaha-al-madarik/editorial/COMPARISON.md` · Git blob `ca88320fcbeaebc4494d24bddc3a522832f8d364`
+- `texts/al-farghani/muntaha-al-madarik/editorial/GLOSSARY.md` · Git blob `dd67a311d42feb85489da32f7704d80bad264543`
+- `texts/al-farghani/muntaha-al-madarik/editorial/WITNESS_REGISTER.json` · Git blob `46926c84b0b96491de9ef30ba6001c5337ba63e4`
+- `texts/al-farghani/muntaha-al-madarik/editorial/CRITICAL_COVERAGE_REGISTER.json` · Git blob `3a8c8e0fd5f8dde567f7fd11af0bca6d2b86dfdb`
+- `texts/al-farghani/muntaha-al-madarik/data/units.js` · Git blob `1f9725df629cd16003083a5ff5002acaf5fb340c`
+- `texts/al-farghani/muntaha-al-madarik/editorial/STATUS.md` · Git blob `491692561b5ed5ebffc5d40a3a8ce68b645e719b`
+- `texts/al-farghani/muntaha-al-madarik/editorial/STAGE_HANDOFF_P145.md` · Git blob `6d6658ea02054618645e68ef91327e3296e0bfe3`
+
+The entire English draft, 80 checked Arabic/English clauses, remaining 32 bilingual extracts, scholarly study, comparison and glossary, witness register, coverage ledger, and exact restart are reproduced above. Source facsimile images from historical print and manuscript repositories are NOT contained here. The present edition is therefore **NOT DEFINITIVE** and NOT a complete manuscript-verified Arabic copytext.
+
+
+---
+## Part B · Added source-checked selected loci, pp24–29
+# Farghānī — Muntahā al-madārik: Critical pass III, Beirut pp. 24–29
+
+**9 November 2026 · 62 selected authorial Arabic–English clause loci.** This is an audit of bounded source spans; it **does not** constitute full-page exhaustive collation. Arabic readings were checked against the B2007 digital printed text. Original editorial footnotes were excluded from the source clauses, though used to flag attributed sayings. **Zero** independent readings have been established from the 1876 print or any manuscript. All unexamined surrounding text remains in working-draft status. Corrections of English, punctuation and textual cruxes are explicitly distinct from manuscript variants.
+
+The verified Arabic pages are [24](https://ablibrary.net/book_content/b/9606/24?lang=ar), [25](https://ablibrary.net/book_content/b/9606/25?lang=ar), [26](https://ablibrary.net/book_content/b/9606/26?lang=ar), [27](https://ablibrary.net/book_content/b/9606/27?lang=ar), [28](https://ablibrary.net/book_content/b/9606/28?lang=ar), [29](https://ablibrary.net/book_content/b/9606/29?lang=ar). p.24 continues a sentence from p.23, p.25 continues the end of p.24, and p.29 continues onto p.30. Existing working translation is in [CONTINUATION_TRANSLATION_24_29.md](CONTINUATION_TRANSLATION_24_29.md).
+
+## Register
+
+### CR003-001 · Beirut p. 24 · revise
+
+**Arabic (B2007):** معاني الشأن وهو الأمر
+
+**Revised or confirmed English:** among the meanings of shaʾn, that is, 'affair' or 'command'.
+
+**Editorial decision:** A grammatical continuation of p.23; do not create a new sentence at the printed page break. Shaʾn is not a temporal event of divine change.
+
+**Source:** https://ablibrary.net/book_content/b/9606/24?lang=ar
+
+### CR003-002 · Beirut p. 24 · retain
+
+**Arabic (B2007):** وعبّر بعضهم عن بعضها بالأحوال الذاتية
+
+**Revised or confirmed English:** Some have designated certain of these as essential states (aḥwāl dhātiyya).
+
+**Editorial decision:** 'Some' is the author's attribution; he is reporting a usage, not necessarily establishing a universal technical definition.
+
+**Source:** https://ablibrary.net/book_content/b/9606/24?lang=ar
+
+### CR003-003 · Beirut p. 24 · annotate
+
+**Arabic (B2007):** كالقبض والبسط ، والرضا والغضب ، وجميع الأعراض التي لا تدوم
+
+**Revised or confirmed English:** such as contraction and expansion, satisfaction and anger, and all accidents that do not endure.
+
+**Editorial decision:** The examples concern appearances and transformations in manifestation; do not infer accidental change in the divine Essence itself.
+
+**Source:** https://ablibrary.net/book_content/b/9606/24?lang=ar
+
+### CR003-004 · Beirut p. 24 · revise
+
+**Arabic (B2007):** تذكر تحوّل الحق تعالى وتقدّس من صورة لم يعرفها قوم في الآخرة إلى صورة يعرفونه بها
+
+**Revised or confirmed English:** Recall the Real's appearing, in the hereafter, in a form they do not recognize, then in a form in which they recognize Him.
+
+**Editorial decision:** The source ties the example to a transmitted report and recognitional difference, not an unqualified doctrine of bodily change.
+
+**Source:** https://ablibrary.net/book_content/b/9606/24?lang=ar
+
+### CR003-005 · Beirut p. 24 · retain
+
+**Arabic (B2007):** اعلم أن أوّل اعتبار وتعيّن تعيّن من الغيب هذه الوحدة التي انتشأت منها الأحدية والواحدية
+
+**Revised or confirmed English:** Know that the first consideration and determination issuing from the Unseen is the unity from which aḥadiyya and wāḥidiyya arise.
+
+**Editorial decision:** Do not identify first determination as already the differentiated second rank; aḥadiyya and wāḥidiyya are two respects of unity.
+
+**Source:** https://ablibrary.net/book_content/b/9606/24?lang=ar
+
+### CR003-006 · Beirut p. 24 · retain
+
+**Arabic (B2007):** فظلّت برزخا جامعا بينهما
+
+**Revised or confirmed English:** It remains an intermediary (barzakh) encompassing both.
+
+**Editorial decision:** Barzakh here denotes a comprehensive mediating respect, not a third material realm inserted between two divine substances.
+
+**Source:** https://ablibrary.net/book_content/b/9606/24?lang=ar
+
+### CR003-007 · Beirut p. 24 · crux
+
+**Arabic (B2007):** كحقيقة المحبة المنتشئة منها المحبّية والمحبوبية وكونها جامعة بينهما ورافعة بينهما موحّدة إياهما
+
+**Revised or confirmed English:** like the reality of love, from which loving and being beloved arise; it encompasses both, removes what divides them, and unites them.
+
+**Editorial decision:** The printed wording ورافعة بينهما is compressed: a missing/elliptical object after rāfiʿa may underlie 'removes what divides them.' Maintain provisional reading; no manuscript emendation.
+
+**Source:** https://ablibrary.net/book_content/b/9606/24?lang=ar
+
+### CR003-008 · Beirut p. 24 · retain
+
+**Arabic (B2007):** هذا الاعتبار والتعيّن الأول الذي هو عين الذات بحكم البرزخية والجمعية المذكورة
+
+**Revised or confirmed English:** this first consideration and determination, which is identical with the Essence under the stated consideration of intermediacy and comprehensiveness.
+
+**Editorial decision:** Identity is predicated 'under the consideration of' (bi-ḥukm), not a claim of a second additional divine entity.
+
+**Source:** https://ablibrary.net/book_content/b/9606/24?lang=ar
+
+### CR003-009 · Beirut p. 24 · revise
+
+**Arabic (B2007):** فكانت هذه القابلية أصل كل قابلية وفاعلية أيضا
+
+**Revised or confirmed English:** This receptivity is the root of every receptivity and also of all activity.
+
+**Editorial decision:** Qābiliyya and fāʿiliyya are correlated active/receptive principial considerations, not created passivity and action.
+
+**Source:** https://ablibrary.net/book_content/b/9606/24?lang=ar
+
+### CR003-010 · Beirut p. 25 · revise
+
+**Arabic (B2007):** والأسمائي المتعلّق بذلك الظهور حديثا وإخبارا نزيها بحرف نزيه وحداني هو عين الذات
+
+**Revised or confirmed English:** and name-related perfection concerning that manifestation: an immaterial discourse and informing through a single transcendent 'letter' identical with the Essence.
+
+**Editorial decision:** Sentence continues p.24. 'Letter' is expressly non-corporeal; not a phonetic sound or a separate divine component.
+
+**Source:** https://ablibrary.net/book_content/b/9606/25?lang=ar
+
+### CR003-011 · Beirut p. 25 · retain
+
+**Arabic (B2007):** متضمّن جميع المعاني كلّياتها وجزئياتها
+
+**Revised or confirmed English:** containing all meanings, universal and particular.
+
+**Editorial decision:** Meaningful totality is predicated of the inward unitary letter before differentiation at articulated levels.
+
+**Source:** https://ablibrary.net/book_content/b/9606/25?lang=ar
+
+### CR003-012 · Beirut p. 25 · retain
+
+**Arabic (B2007):** في سابع رتب أبطن الكلام
+
+**Revised or confirmed English:** at the seventh rank of speech's inward depths.
+
+**Editorial decision:** The ordinal counts inward from the external, articulated expression; do not conflate the seven 'inward depths' with seven historical stages.
+
+**Source:** https://ablibrary.net/book_content/b/9606/25?lang=ar
+
+### CR003-013 · Beirut p. 25 · annotate
+
+**Arabic (B2007):** إن للقرآن ظهرا وبطنّا ، وفي بطنه بطن إلى سبعة أبطن
+
+**Revised or confirmed English:** The Qurʾān has an outward and an inward, and within its inward a further inward, to seven inward depths.
+
+**Editorial decision:** Reported saying appears in Farghānī's authorial text, but the modern editor states this exact wording was not located. Do not mark as authenticated prophetic ḥadīth.
+
+**Source:** https://ablibrary.net/book_content/b/9606/25?lang=ar
+
+### CR003-014 · Beirut p. 25 · retain
+
+**Arabic (B2007):** كما يتحدّث أحدنا في نفسه بلا واسطة حرف وصوت ظاهر
+
+**Revised or confirmed English:** as one of us speaks inwardly without an outward letter or audible sound.
+
+**Editorial decision:** Farghānī explicitly says the comparison is analogical and excludes physical utterance.
+
+**Source:** https://ablibrary.net/book_content/b/9606/25?lang=ar
+
+### CR003-015 · Beirut p. 25 · revise
+
+**Arabic (B2007):** قابلية ميل الذات بالسماع والإصغاء إلى ذلك الحديث هي أثر تلك المحبّة في الحقيقة
+
+**Revised or confirmed English:** the Essence's receptive inclination toward hearing and listening to this discourse is in truth the effect of that love.
+
+**Editorial decision:** Inclination, love, and hearing here name principial relational considerations, not change caused by lack in the Essence.
+
+**Source:** https://ablibrary.net/book_content/b/9606/25?lang=ar
+
+### CR003-016 · Beirut p. 25 · retain
+
+**Arabic (B2007):** ملاحظة الذات نور جمالها الذي هو عين واحديتها وظهورها وظهور اعتباراتها
+
+**Revised or confirmed English:** the Essence's beholding the light of its beauty, which is identical with its oneness, manifestation, and manifestation of its considerations.
+
+**Editorial decision:** Keep the repeated 'manifestation' rather than flattening the subject–object relation.
+
+**Source:** https://ablibrary.net/book_content/b/9606/25?lang=ar
+
+### CR003-017 · Beirut p. 25 · revise
+
+**Arabic (B2007):** ليميط خمار غلبة حكم جلال الغيب والبطون عن الجمال والظهور
+
+**Revised or confirmed English:** so as to remove the veil of the preponderance of the majesty of the Unseen and hiddenness from beauty and manifestation.
+
+**Editorial decision:** The digital source writes ليميط without vocalization; the 'veil' is figurative and must not be literalized.
+
+**Source:** https://ablibrary.net/book_content/b/9606/25?lang=ar
+
+### CR003-018 · Beirut p. 25 · crux
+
+**Arabic (B2007):** بتغليب الرحمة وسبقها على أنها غايات حكم الغضب عارجا لا نازلا
+
+**Revised or confirmed English:** through the preponderance and precedence of mercy, in contrast to the furthest limit of the judgment called anger, upward rather than downward.
+
+**Editorial decision:** The syntactic force of على أنها غايات حكم الغضب عارجا لا نازلا is not settled; previous working English over-smoothed it. Requires 1876/early-witness comparison before fixing an English lemma.
+
+**Source:** https://ablibrary.net/book_content/b/9606/25?lang=ar
+
+### CR003-019 · Beirut p. 25 · retain
+
+**Arabic (B2007):** فإن الظهور واللاظهور كان في حكم اقتضاء هذه القابلية الأولية على السواء
+
+**Revised or confirmed English:** For manifestation and non-manifestation stood on an equal footing with respect to what this primordial receptivity entails.
+
+**Editorial decision:** This is a logical/principial contrast, not a chronological episode when God lacked manifestation.
+
+**Source:** https://ablibrary.net/book_content/b/9606/25?lang=ar
+
+### CR003-020 · Beirut p. 25 · retain
+
+**Arabic (B2007):** فوجدت الذات نفسها بهذا التجلّي الذي هو عين العلم والشهود بحكم مرآته المذكورة
+
+**Revised or confirmed English:** The Essence found itself through this self-disclosure, which itself is knowledge and witnessing, under the consideration of the mirror already mentioned.
+
+**Editorial decision:** 'Mirror' is identical with Essence under a respect, not a second existing object.
+
+**Source:** https://ablibrary.net/book_content/b/9606/25?lang=ar
+
+### CR003-021 · Beirut p. 25 · annotate
+
+**Arabic (B2007):** فإن القول عبارة عن نفس منبعث من باطن المتنفّس
+
+**Revised or confirmed English:** Speech is a breath issuing from the inward aspect of the one breathing.
+
+**Editorial decision:** Analogical lexical analysis of 'speech' and 'breath': do not transfer corporeal exhalation to the Essence.
+
+**Source:** https://ablibrary.net/book_content/b/9606/25?lang=ar
+
+### CR003-022 · Beirut p. 26 · retain
+
+**Arabic (B2007):** والسمع هو قبول ذلك المعنى ظاهرا أو باطنا
+
+**Revised or confirmed English:** Hearing is the reception of that meaning, outwardly or inwardly.
+
+**Editorial decision:** Defines a faculty relative to meaning and its manifestation, not exclusively bodily audition.
+
+**Source:** https://ablibrary.net/book_content/b/9606/26?lang=ar
+
+### CR003-023 · Beirut p. 26 · revise
+
+**Arabic (B2007):** والبصر هو قبول ظهوره بما هو ظاهر من القابل منه
+
+**Revised or confirmed English:** Sight is receptivity to the meaning's appearing in whatever becomes manifest to its recipient.
+
+**Editorial decision:** The printed Arabic is syntactically dense. The object is the appearance of the meaning; further historical witnesses may refine referents.
+
+**Source:** https://ablibrary.net/book_content/b/9606/26?lang=ar
+
+### CR003-024 · Beirut p. 26 · retain
+
+**Arabic (B2007):** والقوة تمكن مما يطلب ظهوره
+
+**Revised or confirmed English:** Power is the capacity for the realization of what seeks to appear.
+
+**Editorial decision:** Quwwa is explicitly defined by the intended appearance, not bare mechanical force.
+
+**Source:** https://ablibrary.net/book_content/b/9606/26?lang=ar
+
+### CR003-025 · Beirut p. 26 · crux
+
+**Arabic (B2007):** فلفظ وكلي بي لسان محدث
+
+**Revised or confirmed English:** My utterance—and my whole being is a tongue speaking through me.
+
+**Editorial decision:** First Ibn al-Fāriḍ hemistich in Beirut. Collateral poetic reading: B2007 p26 gives ولحظ ... عين لعبرة, whereas a separate published Tāʾiyya in the Qayṣarī commentary (verse 545) and Wikisource read لعبرتي. These are parallel poem texts, NOT independent Farghānī manuscript witnesses.
+
+**Source:** https://ablibrary.net/book_content/b/9606/26?lang=ar
+
+### CR003-026 · Beirut p. 26 · revise
+
+**Arabic (B2007):** معاني صفات ما ورى اللّبس أثبتت
+
+**Revised or confirmed English:** The meanings of the attributes were established beyond their clothing in multiplicity.
+
+**Editorial decision:** Lubs ('putting on' or 'clothing') is the metaphor for differentiation of what is not yet distinct at the first rank; previous 'beyond the clothing of appearance' under-specified this.
+
+**Source:** https://ablibrary.net/book_content/b/9606/26?lang=ar
+
+### CR003-027 · Beirut p. 26 · retain
+
+**Arabic (B2007):** صفات متغايرة في الرتبة الثانية بحسبها وحكمها
+
+**Revised or confirmed English:** attributes distinct from one another at the second rank according to that rank's law.
+
+**Editorial decision:** Explicit differentiation occurs at second rank; avoid transferring independent multiplicity to the Essence at first rank.
+
+**Source:** https://ablibrary.net/book_content/b/9606/26?lang=ar
+
+### CR003-028 · Beirut p. 26 · retain
+
+**Arabic (B2007):** بعد أن لم تكن في تلك الرتبة الأولى صفات ، بل اعتبارات غير متميّزة ولا متغايرة فيها
+
+**Revised or confirmed English:** though at that first rank they were not attributes but considerations neither distinct nor mutually divergent.
+
+**Editorial decision:** Critical distinction: shūʾūn/considerations at first rank vs distinct attributes at second rank.
+
+**Source:** https://ablibrary.net/book_content/b/9606/26?lang=ar
+
+### CR003-029 · Beirut p. 26 · retain
+
+**Arabic (B2007):** وباطنها الأول : أن تكون هذه الصفات مضافة إلى نفسه
+
+**Revised or confirmed English:** The first inward level is the attribution of these qualities to the individual's soul.
+
+**Editorial decision:** The 'first inward' degree follows their outward manifestation in bodily faculties, and so is not the initial divine self-disclosure.
+
+**Source:** https://ablibrary.net/book_content/b/9606/26?lang=ar
+
+### CR003-030 · Beirut p. 26 · revise
+
+**Arabic (B2007):** بظاهر العقل المعيشي المقيّد بأمور دنيوية
+
+**Revised or confirmed English:** by the outward appearance of practical intellect restricted to worldly concerns.
+
+**Editorial decision:** ʿAql maʿīshī is livelihood-oriented intellect; 'practical intellect' here is contextual and must not be mistaken for the whole Aristotelian practical intellect.
+
+**Source:** https://ablibrary.net/book_content/b/9606/26?lang=ar
+
+### CR003-031 · Beirut p. 27 · retain
+
+**Arabic (B2007):** وباطنها الثاني : ما يضاف إلى نفسه من حيث عقله المنوّر بنور الشرع والإيمان باللّه
+
+**Revised or confirmed English:** The second inward level pertains to the soul insofar as its intellect is illuminated by revealed law and faith in God.
+
+**Editorial decision:** Law and faith illuminate intellect, enabling reorientation from world to afterlife; do not collapse into generic philosophical insight.
+
+**Source:** https://ablibrary.net/book_content/b/9606/27?lang=ar
+
+### CR003-032 · Beirut p. 27 · retain
+
+**Arabic (B2007):** وباطنها الثالث : ما يضاف منها إلى روحه الروحانية المجرّدة
+
+**Revised or confirmed English:** The third inward level pertains to the individual's immaterial spiritual spirit.
+
+**Editorial decision:** Preserve the doubled expression rūḥuhu al-rūḥāniyya; it differentiates this level from ordinary psychical faculty.
+
+**Source:** https://ablibrary.net/book_content/b/9606/27?lang=ar
+
+### CR003-033 · Beirut p. 27 · retain
+
+**Arabic (B2007):** الثابت تعيّنها وتميّزها في عالم الأرواح واللّوح المحفوظ
+
+**Revised or confirmed English:** whose determination and distinctness are established in the world of spirits and the Preserved Tablet.
+
+**Editorial decision:** That distinctness belongs to a cosmic level; no reason to infer independent divine existence.
+
+**Source:** https://ablibrary.net/book_content/b/9606/27?lang=ar
+
+### CR003-034 · Beirut p. 27 · revise
+
+**Arabic (B2007):** وباطنها الرابع : ما يضاف منها إلى الوجود العيني المضاف إلى حقيقة الإنسانية
+
+**Revised or confirmed English:** The fourth inward level concerns concrete existence as related to the reality of humanity.
+
+**Editorial decision:** ʿAynī is actual/concrete rather than 'eye-like'; at this level the same senses are interpreted as disclosures of existential reality.
+
+**Source:** https://ablibrary.net/book_content/b/9606/27?lang=ar
+
+### CR003-035 · Beirut p. 27 · retain
+
+**Arabic (B2007):** المقيّد بها والمظهر لأحكامها في مراتب الكون روحا ومثالا وحسّا
+
+**Revised or confirmed English:** delimited by it and manifesting its rulings in cosmic ranks as spirit, image, and sense.
+
+**Editorial decision:** The three modalities remain distinguishable even when a single principle is at issue.
+
+**Source:** https://ablibrary.net/book_content/b/9606/27?lang=ar
+
+### CR003-036 · Beirut p. 27 · revise
+
+**Arabic (B2007):** وباطنها الخامس : ما يضاف منها إلى قلبه القابل التجلّي الوجود الباطني فيه
+
+**Revised or confirmed English:** The fifth inward level relates to the heart receptive to the disclosure of inward existence within it.
+
+**Editorial decision:** This is the heart's capacity of reception, not a claim of spatial containment of God.
+
+**Source:** https://ablibrary.net/book_content/b/9606/27?lang=ar
+
+### CR003-037 · Beirut p. 27 · annotate
+
+**Arabic (B2007):** وسعني قلب عبدي
+
+**Revised or confirmed English:** The heart of My servant encompassed Me.
+
+**Editorial decision:** Farghānī cites a well-known spiritual saying; its role in his argument does not authenticate it as a prophetic or divine ḥadīth.
+
+**Source:** https://ablibrary.net/book_content/b/9606/27?lang=ar
+
+### CR003-038 · Beirut p. 27 · retain
+
+**Arabic (B2007):** وباطنها السادس : ما يضاف منها إلى الوجود المطلق الرحمني الجمعي
+
+**Revised or confirmed English:** The sixth inward level relates to comprehensive, merciful, nondelimited existence.
+
+**Editorial decision:** 'Nondelimited' here belongs to the specific sixth-level perspective, not automatically identical with absolutely unconditioned Essence.
+
+**Source:** https://ablibrary.net/book_content/b/9606/27?lang=ar
+
+### CR003-039 · Beirut p. 27 · revise
+
+**Arabic (B2007):** الظاهر في مرتبة البرزخية الثانية بحكم فياضيته التي عمّ كل شيء
+
+**Revised or confirmed English:** appearing at the second intermediary rank through its effusiveness, which extends to all things.
+
+**Editorial decision:** Crucial distinction between first determination and second intermediary, against prematurely equating all references to barzakh.
+
+**Source:** https://ablibrary.net/book_content/b/9606/27?lang=ar
+
+### CR003-040 · Beirut p. 27 · retain
+
+**Arabic (B2007):** وسابع أبطنها : هي هذه المعاني الكائنة في الرتبة الأولى متوحّدة العين متميّزة الحكم بالنسبة
+
+**Revised or confirmed English:** Their seventh inward depth consists of the meanings at the first rank, one in reality and distinguished in ruling only relationally.
+
+**Editorial decision:** Unity of reality and relative distinction of ḥukm, not numerical identity of faculties at their empirical level.
+
+**Source:** https://ablibrary.net/book_content/b/9606/27?lang=ar
+
+### CR003-041 · Beirut p. 28 · retain
+
+**Arabic (B2007):** ومنهم : من انفتح له باب ثالث وهو من خواصّهم
+
+**Revised or confirmed English:** Some have the third gate opened: they are among the elect of the believers.
+
+**Editorial decision:** The ascent concerns differential openings of inward capacities, not simply social class.
+
+**Source:** https://ablibrary.net/book_content/b/9606/28?lang=ar
+
+### CR003-042 · Beirut p. 28 · retain
+
+**Arabic (B2007):** ومنهم : من انفتح له باب رابع ، وهو من أهل بداية مقام الولاية والإحسان
+
+**Revised or confirmed English:** Some have the fourth opened: these are at the beginning of the station of sainthood and excellence (iḥsān).
+
+**Editorial decision:** Keep iḥsān as technical spiritual term.
+
+**Source:** https://ablibrary.net/book_content/b/9606/28?lang=ar
+
+### CR003-043 · Beirut p. 28 · retain
+
+**Arabic (B2007):** ومنهم : من انفتح له باب سادس ، وهو من أهل النهايات ، وهم الكمّل والأفراد
+
+**Revised or confirmed English:** Others have the sixth opened: they are among those of the final stations, the perfected and the singular ones.
+
+**Editorial decision:** al-Afrād is a technical Sufi category; do not paraphrase as merely 'individuals'.
+
+**Source:** https://ablibrary.net/book_content/b/9606/28?lang=ar
+
+### CR003-044 · Beirut p. 28 · revise
+
+**Arabic (B2007):** ولا تنفتح خوخة من الباب السابع لأحد إلّا لصاحب الإرث المحمدي
+
+**Revised or confirmed English:** Not even a small aperture of the seventh gate opens to anyone except one who bears the Muhammadan inheritance.
+
+**Editorial decision:** The aperture/inheritance distinction qualifies the following uniqueness statement; the English should not exclude inheritors absolutely.
+
+**Source:** https://ablibrary.net/book_content/b/9606/28?lang=ar
+
+### CR003-045 · Beirut p. 28 · annotate
+
+**Arabic (B2007):** فإن البطن السابع مختصّ به صلى اللّه عليه وسلم
+
+**Revised or confirmed English:** for the seventh inward depth belongs particularly to him—God bless him and grant him peace.
+
+**Editorial decision:** A Muhammadan inheritor's partial opening differs from the station's proper privilege; do not construe the sentences as a flat contradiction.
+
+**Source:** https://ablibrary.net/book_content/b/9606/28?lang=ar
+
+### CR003-046 · Beirut p. 28 · retain
+
+**Arabic (B2007):** وذلك أصل الحياة والحيّ وباطنه
+
+**Revised or confirmed English:** that is the origin and inward reality of life and the Living.
+
+**Editorial decision:** Farghānī derives attribute concepts as principial considerations; distinction from later attributes remains essential.
+
+**Source:** https://ablibrary.net/book_content/b/9606/28?lang=ar
+
+### CR003-047 · Beirut p. 28 · retain
+
+**Arabic (B2007):** ومن حيث الملاحظة متضمّن إحساسا بسريان ذلك الكمال في تفاصيل اعتبارات الواحدية
+
+**Revised or confirmed English:** insofar as it is contemplation, it includes awareness of that perfection's diffusion through the detailed considerations of oneness.
+
+**Editorial decision:** Here knowledge is indexed to wāḥidiyya and detailed considerations, not bare aḥadiyya.
+
+**Source:** https://ablibrary.net/book_content/b/9606/28?lang=ar
+
+### CR003-048 · Beirut p. 28 · retain
+
+**Arabic (B2007):** ومن حيث ذلك الميل بالسماع والإصغاء تقتضي اعتبارا هو أصل الإرادة
+
+**Revised or confirmed English:** insofar as it involves inclining in hearing and attentive listening, it entails a consideration underlying will.
+
+**Editorial decision:** Do not infer psychological appetite from the term 'inclination'.
+
+**Source:** https://ablibrary.net/book_content/b/9606/28?lang=ar
+
+### CR003-049 · Beirut p. 28 · revise
+
+**Arabic (B2007):** وحكم تحقيق تفصيل الكمال ، وتحصيل شرائطه متضمّن حقيقة الجود بإفاضة الوجود على حقيقة كل موجود
+
+**Revised or confirmed English:** The realization of perfection in detail, with its conditions, entails the reality of generosity through the bestowal of existence on the reality of each existent.
+
+**Editorial decision:** The 'generosity' / 'effusion of existence' linkage is explicit. This is not automatically Guénon's account of principial possibility.
+
+**Source:** https://ablibrary.net/book_content/b/9606/28?lang=ar
+
+### CR003-050 · Beirut p. 28 · retain
+
+**Arabic (B2007):** ورعاية العدالة في القوابل بين الوجوب والاستحالة
+
+**Revised or confirmed English:** and the preservation of due proportion among receptivities between necessity and impossibility.
+
+**Editorial decision:** Justice is the appropriate distribution of ranks according to modalities of receptivity.
+
+**Source:** https://ablibrary.net/book_content/b/9606/28?lang=ar
+
+### CR003-051 · Beirut p. 28 · crux
+
+**Arabic (B2007):** من حيث تحقّقها في حاق البرزخية الثانية
+
+**Revised or confirmed English:** insofar as these are realized at the very core of the second intermediacy.
+
+**Editorial decision:** Attachment of the plural feminine pronoun and transition from the first to second barzakh require punctuation and witness checking. Avoid merging the two levels.
+
+**Source:** https://ablibrary.net/book_content/b/9606/28?lang=ar
+
+### CR003-052 · Beirut p. 29 · retain
+
+**Arabic (B2007):** وباطن كل حقيقة إلهية وكونيّة
+
+**Revised or confirmed English:** the inward reality of every divine and cosmic reality.
+
+**Editorial decision:** Continuation of 'Reality of Realities' from p28; page break must not sever the syntax.
+
+**Source:** https://ablibrary.net/book_content/b/9606/29?lang=ar
+
+### CR003-053 · Beirut p. 29 · retain
+
+**Arabic (B2007):** وهو سار بكليته فيه بحيث يكون في الإلهيّة إلهيّا ، وفي الكونية كونيّا
+
+**Revised or confirmed English:** it permeates each in its entirety, such that it is divine in divine realities and cosmic in cosmic realities.
+
+**Editorial decision:** Do not translate pervasion as literal local diffusion or confusion of creator and creation.
+
+**Source:** https://ablibrary.net/book_content/b/9606/29?lang=ar
+
+### CR003-054 · Beirut p. 29 · retain
+
+**Arabic (B2007):** وسمّاه بعضهم البرزخ الأكبر الجامع لجميع البرازخ وأصلها الساري فيها
+
+**Revised or confirmed English:** Some call it the Supreme Intermediary, encompassing all intermediaries and being their pervasive principle.
+
+**Editorial decision:** Attribution is to 'some'; not an equation automatically accepted across all Akbarī authors.
+
+**Source:** https://ablibrary.net/book_content/b/9606/29?lang=ar
+
+### CR003-055 · Beirut p. 29 · retain
+
+**Arabic (B2007):** وكنى عنه الشرع بمقام أو أدنى ، فإنه باطن مقام قاب قوسين
+
+**Revised or confirmed English:** Revelation alludes to it through the station of 'or nearer,' the inward reality of 'the distance of two bows'.
+
+**Editorial decision:** Qurʾān 53:9 is interpreted through Farghānī's metaphysical hermeneutics; distinguish Qurʾānic wording from that interpretation.
+
+**Source:** https://ablibrary.net/book_content/b/9606/29?lang=ar
+
+### CR003-056 · Beirut p. 29 · retain
+
+**Arabic (B2007):** أي قرب قوسي الوحدة والكثرة ، أو قل القابلية والفاعلية ، أو قل قوسي الوجوب والإمكان
+
+**Revised or confirmed English:** that is, the two bows of unity and multiplicity, or receptivity and activity, or necessity and possibility.
+
+**Editorial decision:** Three alternative relational axes are illustrative of a comprehensive intermediary, not interchangeable logical predicates in every context.
+
+**Source:** https://ablibrary.net/book_content/b/9606/29?lang=ar
+
+### CR003-057 · Beirut p. 29 · revise
+
+**Arabic (B2007):** وباطن هذا المقام هو مقام أو أدنى من قرب القوسين المذكورين لم يدع أثر التميّز والتكثّر
+
+**Revised or confirmed English:** The inward reality of this station is 'or nearer': here no trace of differentiation or multiplicity remains.
+
+**Editorial decision:** The prior 'two bows' station retains a subtle distinction, whereas 'or nearer' excludes even that within the comprehensive circle.
+
+**Source:** https://ablibrary.net/book_content/b/9606/29?lang=ar
+
+### CR003-058 · Beirut p. 29 · retain
+
+**Arabic (B2007):** وكنى عنه بعضهم بالحقيقة الأحمدية الثابتة في حاق الوسطية والبرزخية والعدالة
+
+**Revised or confirmed English:** Some designate it the Aḥmadian Reality, established at the heart of intermediacy and just proportion.
+
+**Editorial decision:** Aḥmadian is a specific Muhammadan metaphysical symbol, not a synonym to be substituted without qualification for the other named realities.
+
+**Source:** https://ablibrary.net/book_content/b/9606/29?lang=ar
+
+### CR003-059 · Beirut p. 29 · crux
+
+**Arabic (B2007):** والتعيّن الأول المذكورة وقلبه المطهّر التقي النقي صورة هذا التعين والبرزخية
+
+**Revised or confirmed English:** and the first determination just mentioned—and his pure, godfearing heart—[are described as] the image of this determination and intermediacy.
+
+**Editorial decision:** Modern digital Arabic has an apparent agreement/syntactic problem (المذكورة and adjacent clauses). The earlier smooth English reading suppressed this. Preserve as a textual crux pending 1876 and manuscript images.
+
+**Source:** https://ablibrary.net/book_content/b/9606/29?lang=ar
+
+### CR003-060 · Beirut p. 29 · annotate
+
+**Arabic (B2007):** أوّل ما خلق اللّه تعالى نوري
+
+**Revised or confirmed English:** The first thing God created was my light.
+
+**Editorial decision:** Quoted within Farghānī's argument; independently established prophetic authenticity is lacking. Keep authorial citation without endorsement.
+
+**Source:** https://ablibrary.net/book_content/b/9606/29?lang=ar
+
+### CR003-061 · Beirut p. 29 · retain
+
+**Arabic (B2007):** ثم إن هذا التجلّي الأول المذكور كما قلنا يتضمّن الكمال الذي حقيقته حصول ما ينبغي على نحو ما ينبغي
+
+**Revised or confirmed English:** The first self-disclosure includes perfection, whose reality is the obtaining of what ought to be, as it ought to be.
+
+**Editorial decision:** Opening of a new chapter on two kinds of perfection; definition concerns appropriate realization, not an undifferentiated 'degree of excellence'.
+
+**Source:** https://ablibrary.net/book_content/b/9606/29?lang=ar
+
+### CR003-062 · Beirut p. 29 · revise
+
+**Arabic (B2007):** ويلازمه الغنى الذاتي الذي معناه شهود الذات وإدراكه نفسه من حيث واحديته
+
+**Revised or confirmed English:** It is accompanied by essential self-sufficiency: the Essence's witnessing and knowing itself under the consideration of its oneness.
+
+**Editorial decision:** Scope qualifier min ḥayth wāḥidiyyatihi essential; not unrestricted self-objectification of the undelimited Essence.
+
+**Source:** https://ablibrary.net/book_content/b/9606/29?lang=ar
+
+
+## Verification limits and immediate continuation
+
+- Verified **selected loci** on six digital Beirut pages; no complete Arabic copy-text or manuscript stemma has been constituted.
+- Collate p.25 *ʿārijan lā nāzilan* and p.29 agreement problem against the I1876 facsimile, then Yeni Camii 706 and a second independent manuscript; retain † cruxes without emending.
+- Compare p.26 Arabic verses with an independently edited Ibn al-Fāriḍ *Tāʾiyya*.
+- Check quotations' hadith provenance separately from Farghānī's authorial quotations.
+- Continue with B2007 p.30, preserving the older P145 full cumulative master unchanged.
+
+
+---
+## Part C · New critical audit
+# Critical Audit II — Farghānī, *Muntahā al-madārik*, Beirut pp. 24–29
+**9 November 2026.** Modern printed-digital source checking of **62 selected clauses**. The preceding audit contains 80 clauses, pp.18–23; the combined register now has 142. B2007 source pages 24–29 were read directly. **No independent copy of Farghānī's 1876 Istanbul print or manuscript has been collated; no manuscript variant is established.** Do not call these six pages exhaustively line-proofread.
+
+## Critical findings
+
+### 1. The page-23/24 continuum and the first determination
+Page 23 ends with the discussion of the permanence and steadfastness of certain *shuʾūn*; p24's opening “معاني الشأن وهو الأمر” continues that syntax, followed by contrasting *aḥwāl dhātiyya* that show themselves in changed appearances. It would be misleading to insert a new doctrinal division simply at the printed page break. The following **faṣl** introduces a new major argument. Farghānī states that the first determination is **the unity from which aḥadiyya and wāḥidiyya arise** and is *barzakh* encompassing them. His argument does not introduce a second essence separate from the Essence itself. The phrase “جامعة بينهما ورافعة بينهما موحّدة إياهما” contains a difficult transitive relationship after rāfiʿa. Existing translation “removes what stands between them” is acceptable only provisionally; no silent conjectural Arabic emendation.
+
+### 2. The first rank's inward discourse is analogical, not physiological
+The breath and the unitary “letter” are described as *nazīh* (transcendent) and as identical to the Essence under a consideration. This excludes the rendering “outward utterance,” and excludes corporeal exhalation. The word *ʿārijan lā nāzilan* in the p25 sentence on mercy's precedence and anger's limiting judgment must be kept in the apparatus: the argumentative direction (ascending rather than descending) is present, but its syntactic attachment in the clause “على أنها غايات حكم الغضب” is not secure in the transcription. **Textual crux, unresolved**, not a proven variant.
+
+### 3. The seven inward degrees must not be flattened
+There is an empirical outward level of bodily speaking/hearing/seeing/action; **first inward** is the animal-like, livelihood-directed soul, **second** soul illumined by revelation, **third** the immaterial spirit in the world of spirits, **fourth** concrete existence as manifesting human reality, **fifth** the heart receiving inward disclosure, **sixth** comprehensive, merciful nondelimited existence at the **second intermediacy**, and **seventh** meanings united in reality at the **first rank**. Confusing the sixth “second intermediary” with the first rank destroys Farghānī's explicit architecture. These terms can be read in successive *phenomenological and ontological registers* of disclosure; this observation is interpretive, not evidence that Guénon's categories are identical.
+
+### 4. The Ibn al-Fāriḍ quotation admits collateral textual control
+B2007 p26 prints the half-verse “ولحظ وكلي فيّ عين **لعبرة**”. A separately published edition of the *Tāʾiyya* printed inside Dāwūd al-Qayṣarī's commentary (verse 545, at https://najafdesertlibrary.com/book/شرح-تائية-ابن-الفارض-الكبرى/v/1/p/1) reads “ولحظ، وكلّي فيّ عين **لعبرتي**”; the independently hosted Arabic Wikisource transcription also has “لعبرتي” (https://ar.wikisource.org/wiki/فلفظ_وكلي_بي_لسان_محدث). The latter is a more plausible rhyming first-person form in the poem, but neither internet text is an examined manuscript of *Farghānī*. Classify as a **collateral poem witness / quoted-text discrepancy**; annotate a possible correction to the quotation only after confirming a reliable poetry edition. The full *Tāʾiyya* verse text and Farghānī's citation are two different text traditions.
+
+### 5. Doctrinal predicates arise at different ranks
+At p26 the author sharply distinguishes the first rank's inward, undifferentiated *iʿtibārāt* from the second rank's differentiated attributes. At p28 he derives life, knowledge, will, power, generosity and justice from distinct relational respects of the primordial disclosure. At p29 “Reality of Realities,” “Supreme Intermediary,” and “Aḥmadian Reality” are not to be asserted as interchangeable across all Akbarī writers: Farghānī explicitly attributes some labels to “some,” and qualifies the Muhammadan heart/body as spiritual and corporeal manifestations respectively.
+
+### 6. Reading at the sixth and seventh inward degrees
+The claim that no aperture of the seventh gate is open except to one holding Muhammadan inheritance is followed by the uniqueness of that degree to the Prophet. The coherence lies in distinguishing **participation through inheritance** from **proper plenitude of the Muhammadan station**. This is an exegetical proposal, not a manuscript correction. The heart saying at p27, the seven-depths Qurʾān report at p25, and “the first thing created was my light” at p29 must be flagged as transmitted material of contested attribution. Farghānī's use of a report is not evidence of its authenticated isnād.
+
+### 7. Apparent solecism and unresolved placement at p29
+The digital text at p29 reads “والتعيّن الأول المذكورة وقلبه المطهّر...” with an apparent agreement/coordination problem (feminine *al-madhkūra* versus masculine *al-taʿayyun*). The prior working translation suppresses the difficulty by choosing a smooth subject relation. Retain **crux** until the 1876 print and an independent manuscript witness can be compared. No invented corrected Arabic text is offered.
+
+## Editorial decisions and counts
+
+- New verified **selected bounded** loci, p24–29: 62 (9, 12, 9, 10, 11, 11).
+- Pass III dispositions: **35** retained, **16** revised English readings, **6** source/attribution annotations, **5** unresolved cruxes. Existing Passes I–II: 80 loci and 5 flagged cruxes; total 142 and 10 respectively.
+- Real readings directly checked against **one modern edited digital text, B2007**, not against independent authorial manuscript witnesses. Historical-print/independent manuscript collations: **0**.
+- The new parallel poetic witness establishes a difference between **texts of the quotation**, not stemmatic priority in the Farghānī tradition.
+- Older P145 full English introductory draft (pp18–145), earlier digital clause checks (18–23), witness register and critical introductory essay are preserved.
+
+## Prioritized next editorial operation
+B2007 p30 is the next **unsampled** page. The next **source-critical** stage should continue pp30–35 while separately obtaining readable images of I1876 introduction's corresponding leaves. Establish a B2007→I1876 page/paragraph concordance **by actual comparison**; inspect Yeni Camii 706 folios before proposing archetypal or authorial readings; register true manuscript variants separately from typo/quotation/translation issues. Maintain cumulative source/English/critical notes in GNAMMA and accurate progress dimensions.
+
+
+---
+## Part D · Full updated witness register (JSON)
+```json
+{
+  "schema": "gnamma-farghani-introduction-witness-register-v1",
+  "work": "Saʿīd al-Dīn al-Farghānī, Muntahā al-madārik, introductory four uṣūl",
+  "updated": "2026-11-09",
+  "scope": {
+    "historical_print": "1876 Istanbul volume I, printed pages 1–107 per Scattolin",
+    "notes": "The printed and digital Beirut paginations do not correspond; never copy a number without labelling its witness.",
+    "critical_edition_status": "not-yet-constituted",
+    "continuous_full_arabic_transcription": false,
+    "continuous_full_english_translation": true,
+    "consecutive_english_draft": "Beirut B2007 pp.18–34, 17 pages in working translation; not line-by-line proofed or independently collated",
+    "english_draft_authorial_pages": 128,
+    "complete_full_critical_introduction": false,
+    "critical_scholarly_editorial_essay": "editorial/CRITICAL_INTRODUCTION.md",
+    "cumulative_english_draft": "B2007 pp.18–134 = 117 consecutively numbered English working pages; p85–134 sourced through derivative online re-transcription and not independently collated",
+    "latest_handoff": "editorial/FULL_CUMULATIVE_CRITICAL_003.md",
+    "verified_manuscript_variant_count": 0,
+    "current_english_draft": "B2007 pp18–145, 128 page-labelled English working draft, all four foundations and concluding preface; manuscript-critical edition incomplete",
+    "current_scope_boundary": "Fourth foundation ends at B2007 p143; tatimmat al-dibaja pp144–145; poem commentary begins thereafter",
+    "modern_print_clause_review": {
+      "pages": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "count": 142,
+      "source": "B2007 digital printed Arabic, selected spans",
+      "status": "80 earlier source-clause records p18–23; 62 selected new p24–29 loci; no complete-page verification assertion for the latter; not historical or manuscript collation"
+    },
+    "next_critical_audit_beirut_page": 30,
+    "definitive_status": "not-achieved",
+    "critical_review_new_stage": "62 selected clause source checks p24–29; total 142 records, ten open digital cruxes"
+  },
+  "witnesses": [
+    {
+      "siglum": "I1876",
+      "kind": "historical-print",
+      "title": "Muntahā al-madārik, 1293/1876 Istanbul, vol. I",
+      "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en",
+      "pageRange": "1–107: introductory division (Scattolin)",
+      "editor": "Muḥammad Shukrī al-ʿŪfī, reported by Scattolin",
+      "access": "catalogue and public-domain digital facsimile locator verified; individual page images NOT collated",
+      "accessGrade": "catalogued-scan-not-inspected",
+      "role": "intended historical print control; not yet a copy-text",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "B2007",
+      "kind": "modern-edition-digital",
+      "title": "Muntahā al-madārik, ed. ʿĀṣim Ibrāhīm al-Kayyālī, Dār al-Kutub al-ʿIlmiyya",
+      "url": "https://ablibrary.net/book_content/b/9606/18?lang=ar",
+      "printYear": "2007",
+      "pagesSampled": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "access": "Digital page HTML directly examined for first six pages B2007 pp18–23 in 80 clause-level checks; prior source-linked selections through p34, cumulative English draft through p145; full Arabic copy-text remains unconstituted.",
+      "accessGrade": "modern-digital-text-examined; no manuscript-equivalent authority",
+      "role": "modern edited digital reading and first-pass English source checking, not a validated critical copytext",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "Y706",
+      "kind": "manuscript",
+      "title": "Süleymaniye Yazma Eserler Kütüphanesi, Yeni Camii 706",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Yeni_706%3Ba1?hl=Istanbul&hlu=",
+      "date": "14th century (catalogue)",
+      "extent": "291 folios; text catalogued on fols. 1v–131r",
+      "description": "Cataloguer reports an annotation at fol. 131r that the copy was collated against an original; this assertion has not been independently verified by viewing the folio.",
+      "access": "catalogue metadata only; NO manuscript images compared",
+      "accessGrade": "catalogue-only",
+      "role": "high-priority potential witness, not yet proven superior copy-text",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "Q2011",
+      "kind": "modern-edition",
+      "title": "Muntahā al-madārik, ed. Wisām al-Khaṭṭāwī, Qom, Āyat Ishrāq, 1390 SH",
+      "url": "https://ge.nii.ac.jp/ncid/BB1425879X",
+      "date": "2011 or 2012",
+      "extent": "2 volumes, 1116 pages",
+      "access": "bibliographic record only; text not read",
+      "accessGrade": "catalogue-only",
+      "role": "secondary control pending physical/text access",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "P-QAYSARI",
+      "kind": "collateral-poetic-print",
+      "title": "Ibn al-Fāriḍ, Tāʾiyya, verse 545, separately printed within Dāwūd al-Qayṣarī commentary",
+      "url": "https://najafdesertlibrary.com/book/%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D9%83%D8%A8%D8%B1%D9%89/v/1/p/1",
+      "access": "Digital text examined for verse 545; reads لعبرتي where B2007 Farghani p26 has لعبرة",
+      "accessGrade": "digital collateral quotation parallel; not a Farghani manuscript witness",
+      "variantsExamined": 0
+    }
+  ],
+  "relatedNotWitnesses": [
+    {
+      "siglum": "P-Mashariq",
+      "title": "Farghānī, Mashāriq al-darārī (earlier Persian commentary)",
+      "note": "A distinct authorial work rather than an Arabic witness. Its correspondence should be treated as recensional history, not as a simple Arabic variant list.",
+      "access": "known published tradition, no comprehensive collation"
+    },
+    {
+      "siglum": "S2006",
+      "title": "Giuseppe Scattolin, 'The Key Concepts of al-Farghānī’s Commentary'",
+      "url": "https://ibnarabisociety.org/wp-content/uploads/PDFs/Scattolin_The-key-concepts.pdf",
+      "note": "Secondary study providing 1876 pagination and thematic analysis; individual quoted passages should not be treated as independent manuscript witnesses."
+    },
+    {
+      "siglum": "R-FORUM",
+      "title": "Forum re-transcription of Beirut 2007 Arabic third and fourth foundations, labelled with B2007 printed pages",
+      "urls": [
+        "https://alshrefalm7sy.ahlamontada.com/t3213",
+        "https://alshrefalm7sy.ahlamontada.com/t3214"
+      ],
+      "scope": "Third foundation B2007 pp85–101 and fourth foundation pp102–134 consulted for new English P134 working draft; source pages continue after p134",
+      "access": "online text transcription inspected; not a separate medieval or manuscript witness; manuscript copy-text remains uninspected",
+      "note": "Do not count as an independent corroborating witness or as a manuscript variant. Printed-page labels may need control against physical Beirut edition; may contain OCR/transcription errors or modern editorial footnotes."
+    },
+    {
+      "siglum": "R-FANARI",
+      "title": "Al-Fanārī's Miṣbāḥ al-uns, reported quotation of Farghānī's p20–21 on determinate divine witnessing",
+      "url": "https://ablibrary.net/book_content/b/4696/183?lang=ar",
+      "access": "Modern digital printed quotation inspected; shows من حيث واحديتها and a commentator's theological qualifications",
+      "role": "Later reception/indirect quotation, not an independently collated Farghānī manuscript",
+      "status": "verified passage quotation at modern print p183; variant claims not made"
+    }
+  ],
+  "readings": [
+    {
+      "id": "ED-0001",
+      "location": "B2007 p.21, old extract F007",
+      "type": "editorial-transcription-correction",
+      "before": "... بذاته الأقدس، لا من حيث إطلاقها وأحديتها",
+      "after": "... بذاته الأقدس تعالى وتقدّس من حيث واحديتها، لا من حيث إطلاقها وأحديتها",
+      "evidence": "direct inspection of B2007 page 21 online; old GNAMMA unit omitted من حيث واحديتها",
+      "effect": "restores explicit opposition of wāḥidiyya and aḥadiyya",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "corrected-digital-extract; print/manuscript validation pending"
+    },
+    {
+      "id": "ED-0002",
+      "location": "B2007 p.33 second determination, transitional wording near عون هذا",
+      "type": "unresolved-digital-reading",
+      "evidence": "digital Arabic text displays a short syntactically uncertain transition; I1876 and Y706 have not been inspected at this locus",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "no-emendation; retain paraphrastic English flag and check actual witness"
+    },
+    {
+      "id": "ED-0003",
+      "location": "B2007 p.34, الحضرة العملية",
+      "type": "unresolved-digital-reading",
+      "evidence": "the digital print reads al-ḥaḍra al-ʿamaliyya in the second-determination name register; context may suggest a different abstract qualifier, but no second witness has been read",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "no-emendation; literal translation retained with warning"
+    },
+    {
+      "id": "ED-0004",
+      "location": "Online B2007-derived forum transcription p.87, transition describing stirring motion of elemental matter",
+      "type": "unclear-transcription",
+      "evidence": "Website text and embedded modern editor note indicate one word in the phrase concerning strong influence/heat is corrupt or unclear; original printed image not yet inspected",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "translated without conjectural restoration; compare actual printed and manuscript texts"
+    },
+    {
+      "id": "ED-0005",
+      "location": "B2007 p18, بطون المشتمل",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "awkward printed-digital wording in definition of hidden essential-name treasure",
+      "source_linked_audit_unit": "critical-pass-001 CR001-010",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    },
+    {
+      "id": "ED-0006",
+      "location": "B2007 p19, المطلب الغائبّ",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "awkward digital adjective in sentence on ultimate aim of name-perfection",
+      "source_linked_audit_unit": "critical-pass-001 CR001-014",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    },
+    {
+      "id": "ED-0007",
+      "location": "B2007 p19, عمليّا ووجوديّا vs contextual علميّا ووجوديّا",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "digital B2007 and derivative forum read ʿamaliyyan ('operative/practical'), whereas inherited English flattened it to epistemic and existential; no emendation authorized",
+      "source_linked_audit_unit": "critical-pass-001 CR001-024",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    },
+    {
+      "id": "ED-0008",
+      "location": "B2007 p23, فلم تعلم ولم يحكم بشيء منها إلا بعد تعيّنها",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "substantive doctrinal/semantic issue about knowability of unconcretized essential affairs; explicit modal 'perhaps' must not be erased",
+      "source_linked_audit_unit": "critical-pass-002 CR002-032",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    }
+  ],
+  "selectionRule": "Do not create a variant reading or siglum support unless two independent witnesses have actually been inspected in the relevant locus. Orthographic normalization is not a textual variant.",
+  "todo": [
+    "Inspect actual I1876 page images and identify page-by-page concordance with B2007",
+    "Acquire scan/access to Y706 and verify manuscript collation note fol. 131r",
+    "Establish source hierarchy; record lacunae, possible contamination and substantive variants",
+    "Collate alternative printed Q2011 readings if available, without assuming newer equals better",
+    "Separate authorial hadith citations from modern editor's attribution footnotes",
+    "Complete uninterrupted Arabic transcription and independent English translation",
+    "Review and validate all 25 existing bilingual extracts against at least a historical-print witness",
+    "Publish critical text only after substantial witness collation; until then label working text"
+  ]
+}
+
+```
+
+---
+## Part E · Full updated 128-page critical quality coverage ledger (JSON)
+```json
+{
+  "schema": "gnamma-farghani-page-critical-audit-v1",
+  "date": "2026-11-09",
+  "language": "Arabic and English",
+  "scope": "Introduction systematic four foundations and concluding preface, modern Beirut B2007 pp18–145",
+  "english_working_draft_page_count": 128,
+  "source_checked_modern_digital_page_count": 12,
+  "clause_record_count": 142,
+  "issues_unresolved_digital": 10,
+  "historical_print_independently_collated_pages": 0,
+  "manuscript_variants": 0,
+  "authorial_introduction_english_draft_complete": true,
+  "authorial_introduction_arabic_critical_edition_complete": false,
+  "definitive_grade": false,
+  "source_witness_grade": "modern edited online printed text for pages18–23; remaining draft not yet checked clause-by-clause; 1876 historical print and Yeni Camii 706 uncollated",
+  "next_critical_audit_page": 30,
+  "next_translation_outside_intro": "B2007 p146 poem commentary (must confirm division against scan)",
+  "pages": [
+    {
+      "b2007_page": 18,
+      "source_url": "https://ablibrary.net/book_content/b/9606/18?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 11,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 19,
+      "source_url": "https://ablibrary.net/book_content/b/9606/19?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 17,
+      "digital_crux_count": 2,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 20,
+      "source_url": "https://ablibrary.net/book_content/b/9606/20?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 9,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 21,
+      "source_url": "https://ablibrary.net/book_content/b/9606/21?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 13,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 22,
+      "source_url": "https://ablibrary.net/book_content/b/9606/22?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 15,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 23,
+      "source_url": "https://ablibrary.net/book_content/b/9606/23?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 15,
+      "digital_crux_count": 2,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 24,
+      "source_url": "https://ablibrary.net/book_content/b/9606/24?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 9,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 25,
+      "source_url": "https://ablibrary.net/book_content/b/9606/25?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 12,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 26,
+      "source_url": "https://ablibrary.net/book_content/b/9606/26?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 9,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 27,
+      "source_url": "https://ablibrary.net/book_content/b/9606/27?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 10,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 28,
+      "source_url": "https://ablibrary.net/book_content/b/9606/28?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 11,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 29,
+      "source_url": "https://ablibrary.net/book_content/b/9606/29?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 11,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 30,
+      "source_url": "https://ablibrary.net/book_content/b/9606/30?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 31,
+      "source_url": "https://ablibrary.net/book_content/b/9606/31?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 32,
+      "source_url": "https://ablibrary.net/book_content/b/9606/32?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 33,
+      "source_url": "https://ablibrary.net/book_content/b/9606/33?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 34,
+      "source_url": "https://ablibrary.net/book_content/b/9606/34?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 35,
+      "source_url": "https://ablibrary.net/book_content/b/9606/35?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 36,
+      "source_url": "https://ablibrary.net/book_content/b/9606/36?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 37,
+      "source_url": "https://ablibrary.net/book_content/b/9606/37?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 38,
+      "source_url": "https://ablibrary.net/book_content/b/9606/38?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 39,
+      "source_url": "https://ablibrary.net/book_content/b/9606/39?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 40,
+      "source_url": "https://ablibrary.net/book_content/b/9606/40?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 41,
+      "source_url": "https://ablibrary.net/book_content/b/9606/41?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 42,
+      "source_url": "https://ablibrary.net/book_content/b/9606/42?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 43,
+      "source_url": "https://ablibrary.net/book_content/b/9606/43?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 44,
+      "source_url": "https://ablibrary.net/book_content/b/9606/44?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 45,
+      "source_url": "https://ablibrary.net/book_content/b/9606/45?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 46,
+      "source_url": "https://ablibrary.net/book_content/b/9606/46?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 47,
+      "source_url": "https://ablibrary.net/book_content/b/9606/47?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 48,
+      "source_url": "https://ablibrary.net/book_content/b/9606/48?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 49,
+      "source_url": "https://ablibrary.net/book_content/b/9606/49?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 50,
+      "source_url": "https://ablibrary.net/book_content/b/9606/50?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 51,
+      "source_url": "https://ablibrary.net/book_content/b/9606/51?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 52,
+      "source_url": "https://ablibrary.net/book_content/b/9606/52?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 53,
+      "source_url": "https://ablibrary.net/book_content/b/9606/53?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 54,
+      "source_url": "https://ablibrary.net/book_content/b/9606/54?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 55,
+      "source_url": "https://ablibrary.net/book_content/b/9606/55?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 56,
+      "source_url": "https://ablibrary.net/book_content/b/9606/56?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 57,
+      "source_url": "https://ablibrary.net/book_content/b/9606/57?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 58,
+      "source_url": "https://ablibrary.net/book_content/b/9606/58?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 59,
+      "source_url": "https://ablibrary.net/book_content/b/9606/59?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 60,
+      "source_url": "https://ablibrary.net/book_content/b/9606/60?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 61,
+      "source_url": "https://ablibrary.net/book_content/b/9606/61?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 62,
+      "source_url": "https://ablibrary.net/book_content/b/9606/62?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 63,
+      "source_url": "https://ablibrary.net/book_content/b/9606/63?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 64,
+      "source_url": "https://ablibrary.net/book_content/b/9606/64?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 65,
+      "source_url": "https://ablibrary.net/book_content/b/9606/65?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 66,
+      "source_url": "https://ablibrary.net/book_content/b/9606/66?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 67,
+      "source_url": "https://ablibrary.net/book_content/b/9606/67?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 68,
+      "source_url": "https://ablibrary.net/book_content/b/9606/68?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 69,
+      "source_url": "https://ablibrary.net/book_content/b/9606/69?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 70,
+      "source_url": "https://ablibrary.net/book_content/b/9606/70?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 71,
+      "source_url": "https://ablibrary.net/book_content/b/9606/71?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 72,
+      "source_url": "https://ablibrary.net/book_content/b/9606/72?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 73,
+      "source_url": "https://ablibrary.net/book_content/b/9606/73?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 74,
+      "source_url": "https://ablibrary.net/book_content/b/9606/74?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 75,
+      "source_url": "https://ablibrary.net/book_content/b/9606/75?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 76,
+      "source_url": "https://ablibrary.net/book_content/b/9606/76?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 77,
+      "source_url": "https://ablibrary.net/book_content/b/9606/77?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 78,
+      "source_url": "https://ablibrary.net/book_content/b/9606/78?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 79,
+      "source_url": "https://ablibrary.net/book_content/b/9606/79?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 80,
+      "source_url": "https://ablibrary.net/book_content/b/9606/80?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 81,
+      "source_url": "https://ablibrary.net/book_content/b/9606/81?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 82,
+      "source_url": "https://ablibrary.net/book_content/b/9606/82?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 83,
+      "source_url": "https://ablibrary.net/book_content/b/9606/83?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 84,
+      "source_url": "https://ablibrary.net/book_content/b/9606/84?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 85,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 86,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 87,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 88,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 89,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 90,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 91,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 92,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 93,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 94,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 95,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 96,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 97,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 98,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 99,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 100,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 101,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 102,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 103,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 104,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 105,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 106,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 107,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 108,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 109,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 110,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 111,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 112,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 113,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 114,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 115,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 116,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 117,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 118,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 119,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 120,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 121,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 122,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 123,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 124,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 125,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 126,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 127,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 128,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 129,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 130,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 131,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 132,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 133,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 134,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 135,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 136,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 137,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 138,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 139,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 140,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 141,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 142,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 143,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation",
+      "editorial_note": "Four foundations conclude"
+    },
+    {
+      "b2007_page": 144,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Concluding preface",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation",
+      "editorial_note": "Concluding preface begins"
+    },
+    {
+      "b2007_page": 145,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Concluding preface",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation",
+      "editorial_note": "Concluding preface ends"
+    }
+  ],
+  "source_pages_with_selected_arabic_english_checks": 12,
+  "check_methodology": "80 previous clause checks pp18–23; 62 selected span checks pp24–29 (NOT all authorial text from these six pages); independent 1876 and manuscript collation 0."
+}
+
+```
+
+---
+## Part F · Latest editorial status and completion distinctions
+# Muntahā al-madārik · Editorial and translation register
+
+## Latest milestone — Critical Pass III · digital source check extended to B2007 pp.24–29 (9 November 2026)
+
+- The **complete English working introduction remains** B2007 pp.18–145 (128 page-labelled source units): four foundations through p143 and *tatimmat al-dībāja* pp144–145. Do not repeat the English translation.
+- **New source-critical work:** 62 **selected** Arabic–English clause spans checked against B2007 pp24–29; 35 retained, 16 translation revisions, 6 attribution/context annotations, 5 open cruxes. Together with earlier pp18–23, **142 individually audited records** from twelve source pages. This is **not exhaustive full-page proofreading** of pp24–29.
+- New [paired reader](../critical-edition.html), [critical passages](CRITICAL_TRANSLATION_24_29.md), [source audit](CRITICAL_AUDIT_STAGE_002.md), and [full cumulative self-contained handoff](FULL_CUMULATIVE_CRITICAL_003.md).
+- **Collateral poetic discrepancy:** B2007 p26 gives `لعبرة`; the separately transmitted poem in al-Qayṣarī's published commentary and in Wikisource gives `لعبرتي`. This does **not** establish a manuscript variant in Farghānī.
+- **Historical collation remains zero:** 1876 Istanbul is located, not examined at corresponding textual loci; Yeni Camii 706 is catalogued, not inspected; no independently attested Farghānī manuscript variants exist in this stage. Five new crux flags make **ten** combined digital cruxes.
+- **Next unsampled Arabic source:** B2007 p30. Critical-edition priority is independent 1876 + manuscript examination alongside modern English correction, not further introductory translation.
+
+## Preserved earlier milestone — completed English draft of introduction; first critical source pass (9 November 2026)
+
+**Authorial English translation:** All four foundations of the introduction plus the concluding two-page preface now have a continuous **working English draft** from Beirut printed B2007 **pp.18–145 (128 consecutively numbered pages)**. The fourth foundation concludes at p.143; the distinct *tatimmat al-dībāja* occupies pp.144–145. **New final installment:** pp.135–145 (11 pages), separately preserved as `TRANSLATION_135_139.md` and `TRANSLATION_140_145.md`. Cumulative draft: [WORKING_TRANSLATION_18_145.md](WORKING_TRANSLATION_18_145.md); compact [English reader](../continuous-translation.html).
+
+**Arabic–English critical review (BEGINNING, not definitive):** 80 authorial clauses from **B2007 pp.18–23** have been compared with the modern Beirut digital Arabic, individually rendered into revised English, and annotated. Full review: [CRITICAL_TRANSLATION_18_23.md](CRITICAL_TRANSLATION_18_23.md); findings: [CRITICAL_AUDIT_STAGE_001.md](CRITICAL_AUDIT_STAGE_001.md); [interactive paired clause review](../critical-edition.html); machine-readable data: `data/critical-pass-001-p18-20.js` and `data/critical-pass-002-p21-23.js`. **Five clause-level cruxes remain open**. Verified manuscript variants remain **zero**.
+
+**Truthful progress dimensions:**
+
+| Workstream | Actually present | NOT yet present |
+|---|---|---|
+| English authorial translation | 128 sequential printed B2007 page headings, pp18–145, *working draft* | Independent clause-by-clause proofreading across remaining 122 pages, specialist critical sign-off |
+| Source-language alignment | 80 source-checked clauses across six opening pages; 32 previously selected Arabic–English excerpts | Continuous full Arabic authorial copy-text and its alignment for pp18–145 |
+| Historical textual criticism | Witness catalogue, four recorded earlier flags plus new crux register; al-Fanārī reception quotation | Independently collated 1876 historical print or any actual manuscript folio; justified copy-text; established variants |
+| Cumulative preservation | Current `FULL_CUMULATIVE_P145.md` and `STAGE_MANIFEST_P145.json`, historical P134/P84/P34 snapshots preserved | The untranslated verse-by-verse commentary, or full manuscript evidence |
+| GNAMMA presentation | Compact 128-page English draft and new Arabic–English critical clause review | Verified public Pages deployment of latest revision; complete bilingual immersive edition |
+
+**Important:** a page heading and a source link do **not** certify page-level translation fidelity. The entire 128-page English draft is **not** labelled definitively checked. The directly checked modern printed Arabic covers only pp.18–23. Do not calculate a definitive percentage from the 1876 edition's 107-page introduction; its pagination differs. The new English draft coverage of the introduction is **structurally complete**, but the critical Arabic–English edition is **not yet constituted**.
+
+**Next exact critical checking locus:** B2007 **p.24**, authorial opening continuing the discussion of essential affairs (*shuʾūn dhātiyya*); see https://ablibrary.net/book_content/b/9606/24?lang=ar. The verse-by-verse poem commentary follows after the introductory preface but belongs to a separate translation project.
+
+**Five currently tagged crux clauses in the opening audit:** B2007 p.18 `بطون المشتمل`, p.19 `المطلب الغائبّ`, p.19 `عمليّا ووجوديّا` (context may suggest `علميّا` but must not be silently emended), p.23 `إلّا أنه ربما يكون` and p.23 `فلم تعلم ولم يحكم بشيء منها إلا بعد تعيّنها`. The p.21 `من حيث واحديتها` correction is preserved, with late secondary quotation in al-Fanārī's `Miṣbāḥ al-uns` p.183. None of these constitutes a verified independent manuscript variant.
+
+
+
+## Historical P134 stage — 9 November 2026 · 50 pages (superseded by P145 milestone)
+
+**NEW English working translation, B2007 pp.85–134 (50 printed pages), plus inherited pp.18–84: 117 consecutively numbered Beirut pages in one cumulative English working draft.**
+
+- **New authorial content:** seven files, `TRANSLATION_85_92.md` (8 pp.), `TRANSLATION_93_100.md` (8), `TRANSLATION_101_108.md` (8), `TRANSLATION_109_116.md` (8), `TRANSLATION_117_124.md` (8), `TRANSLATION_125_130.md` (6), `TRANSLATION_131_134.md` (4). Source-page section count **50**, zero duplicated or missing numbers.
+- **Cumulative master:** `WORKING_TRANSLATION_18_134.md` with **117** page headings, 18–134 inclusive. HTML mirror `../continuous-translation.html` has 117 anchored source sections and a four-foundation contents list, with **compact paragraph and page gaps** introduced in this stage.
+- **Four foundations:** Foundation I ends p.69; II begins p.70, ends p.78; III begins p.79, ends p.101; IV begins p.102 and is **still continuing after p.134**.
+- **New Arabic witness:** for pp.85–101, forum transcription https://alshrefalm7sy.ahlamontada.com/t3213, and for pp.102–134, forum transcription https://alshrefalm7sy.ahlamontada.com/t3214. These show B2007 printed page labels but are **online re-transcriptions, not independently collated manuscripts**. The individual Ahlulbayt pages were inaccessible during the stage, so the editions must not be treated as independently verified simply on the basis of the transcription.
+- **Original bilingual layer:** the **32 selected Arabic–English excerpts on pp.18–34** remain unchanged; full continuous authorial Arabic for all 117 pages and clause-by-clause alignment are **not** complete.
+- **Critical apparatus:** the early Istanbul 1876 print, the Yeni Camii 706 manuscript, and alternative modern edition are identified but remain **uncollated at this stage**. Verified independent manuscript variants: **zero**.
+- **Unresolved source points:** digital B2007 p.33 and p.34 readings recorded in the witness register; p.87 corrupt/uncertain reading in the third foundation; reported hadith attributions; manuscript examination; all English pages still need source-to-English proofreading.
+- **Next untranslated passage:** **B2007 p.135**, which completes the p.134 sentence concerning the removal of determinations; beginning Arabic `والتقيّد وآثارهما والجامع لكلّيات تلك الخواص والآثار الحبّية ...`. Source: https://alshrefalm7sy.ahlamontada.com/t3214.
+- **Cumulative handoff:** `FULL_CUMULATIVE_P134.md` and `STAGE_MANIFEST_P134.json` are the canonical stage archive for the new work. Old P84 and P34 snapshots remain preserved unchanged.
+- **Interpretive highlight, not proof of agreement:** the newly translated fourth foundation differentiates the two ways of perfection and spiritual ascent, and relates Islam, īmān and iḥsān to bodily soul, spirit and secret. These arguments will later be tested against Guénon and Schuon rather than assumed identical.
+
+**Counting rule:** 50 new pages is a check of sequential page-labelled English **working draft output**, not independently audited translation completeness, not 50 manuscript-collated Arabic pages. The 1876 introduction's 107 printed pages do not provide a denominator for the 2007 Beirut pagination. No accurate full-edition percentage is available.
+
+
+
+## Full cumulative handoff and GNAMMA publication (P84)
+
+- **Self-contained current working-stage archive:** [FULL_CUMULATIVE_P84.md](FULL_CUMULATIVE_P84.md) — contains the full 67-page English working draft, all 32 available bilingual Arabic extracts, critical scholarly introduction, Guénon–Schuon comparison, glossary, witness register, corrections, this editorial status, and the prior stage handoff.
+- **Handoff archive index and per-stage preservation rule:** [HANDOFFS.md](HANDOFFS.md); public GNAMMA reading-room entry: [Handoffs and archive](../handoffs.html).
+- **Machine-readable provenance:** [STAGE_MANIFEST_P84.json](STAGE_MANIFEST_P84.json) includes the new archive blob SHA, file inventory and page-integrity checks, and continuation p.85.
+- **Every subsequent stage:** recover the latest complete archive, append newly translated source text without losing older material, produce a new self-contained full cumulative handoff and manifest, expose both from GNAMMA's book landing page and reader, and check the GitHub Pages build independently.
+- **Limits:** The archive is self-contained for what has been produced in the current working stage, but the **full Arabic authorial text**, independent clause-by-clause verification, historic-print/manuscript collation and remaining introduction are not completed. Such missing material is not inside the handoff.
+
+
+
+## Historical P84 translation stage — 50 pages added (2026-11-08)
+
+**New work:** Beirut B2007 pp. **35–84 inclusive** = **50 printed source pages in an English *working* translation**. This stage genuinely continues from the existing p. 34 boundary; it does not simply rephrase or reprint those 17 pages. The new English text is preserved in **seven separate source-linked stage files** and in the cumulative master:
+
+- `TRANSLATION_35_40.md` (6 pages)
+- `TRANSLATION_41_46.md` (6 pages)
+- `TRANSLATION_47_52.md` (6 pages)
+- `TRANSLATION_53_60.md` (8 pages)
+- `TRANSLATION_61_68.md` (8 pages)
+- `TRANSLATION_69_76.md` (8 pages)
+- `TRANSLATION_77_84.md` (8 pages)
+
+**Cumulative English draft:** `WORKING_TRANSLATION_18_84.md`, mirrored at `../continuous-translation.html`, covers **67 consecutive numbered B2007 printed pages (18–84)**. Automated structural validation counted exactly 67 unique, consecutively numbered `B2007 p.` source-page headings, and all 67 source-link targets are represented in the web reader. The number of authorial *Arabic* source characters and the corresponding critically validated percentage are still unknown.
+
+**Precise boundaries:** the **first foundation ends on B2007 p. 69**, the **second begins p. 70 and ends p. 78**, and the **third begins p. 79**; p. 84 ends midway through discussion of the Footstool's third aspect. **Next untranslated page: B2007 p. 85.**
+
+**Not completed:** The full Arabic authorial text is not imported continuously; source-to-translation alignment has not been independently clause-checked; the 1876 printing and manuscript witnesses have not been collated; later introduction beyond p.84 is still unrepresented; the Persian recension remains unchecked. The bilingual extract reader still contains **32 Arabic–English source clauses from pp.18–34**, not a full parallel translation of all 67 pages. There are **zero** verified comparative manuscript variants. This is a working draft, not a definitive critical edition.
+
+**Historical pagination:** The reported 107-page introduction applies to the 1876 Istanbul printing, not to B2007. Do not say “67 of 107 pages completed” or compute a percentage until the edition concordance is established.
+
+**Important arguments added:** p.69 on the double force of `law`; p.73 on *will and choice* rather than necessity at the level of the Essence; p.77–78 on archangelic functions and spiritual manifestations; p.79 first passage of the third foundation; pp.80–84 on the Breath, dust (*habāʾ*), nature, the Throne and Footstool.
+
+**Cumulative master and recovery:** `WORKING_TRANSLATION_18_84.md` and `STAGE_HANDOFF_P84.md`. Work tracker [GitHub #245](https://github.com/gnamma-research/booksite/issues/245).
+
+
+## Historical P34–P84 programme notes (superseded by current P134 report above)
+
+The primary objective is now **a complete, continuous Arabic–English critical edition of the four-foundation introductory division**, not a collection of attractive extracts. The current stages are separate products:
+
+| Workstream | Verifiable present extent | Remaining |
+|---|---|---|
+| Scholarly critical introduction (editorial essay) | `CRITICAL_INTRODUCTION.md`, twelve substantial sections; readable page `critical-introduction.html` | Additional manuscript- and recension-based historical refinement |
+| English authorial translation, provisional | `WORKING_TRANSLATION_18_84.md` = B2007 printed **pp. 18–84**, a 67-page consecutive-order English draft (including 50 new pages 35–84), also in `continuous-translation.html` | Original introduction after B2007 p. 84; full authorial Arabic alignment; independent clause-by-clause proofing; and an I1876 ↔ Beirut concordance |
+| Paired bilingual source extracts | **32 individual Arabic–English clauses** sampled across B2007 pp. 18–34, with direct source links | Uninterrupted *full Arabic* text for every paragraph and bilingual alignment |
+| Textual witness register | `WITNESS_REGISTER.json`: historical printing, two modern editions and one early manuscript identified; F007 transcription correction recorded | Read and collate actual manuscript and historic-print page images; **zero** established manuscript variants so far |
+| Perennialist comparison | Distinct `COMPARISON.md` and authorial-extract toggle in the reader | Detailed passage-level comparison only once the authorial text is full |
+
+**Critical caveat:** 67 pages in the modern Beirut edition are **not equivalent to 67 of the 107 pages** identified for the historical Istanbul introductory division. Those are different paginations; neither the total Beirut introduction page count nor a proper page concordance has been verified. These are provisional English translations, not 67 pages of independently validated critical Arabic.
+
+**Specific problems flagged for collation:** an ambiguous phrase in the second determination discussion (B2007 p. 33), and the reading `الحضرة العملية` (B2007 p. 34), which must not be silently replaced by a conjectural alternative. Other changes, such as restoration of `من حيث واحديتها` at F007, remain transcription corrections, not competing-manuscript variants.
+
+
+
+**Project:** GNAMMA Research — ʿIrfān and metaphysics (sibling of `texts/al-turka/qawaid-al-tawhid/`).
+**Work:** Saʿīd al-Dīn al-Farghānī, *Muntahā al-madārik fī sharḥ Tāʾiyyat Ibn al-Fāriḍ* (منتهى المدارك في شرح تائية ابن الفارض).
+**Updated:** 2026-11-08.
+
+## Actual coverage and quality
+
+- **32 source-matched authorial extracts**, each with Arabic, a new English working translation, exact digital page, and separate editorial explanation.
+- **Pages sampled:** 18–34 of the modern Beirut digitization (`ablibrary.net/book_content/b/9606/{page}`). This is a page *range of sampled text*, **NOT seventeen fully translated pages**. It includes discontinuities and omitted sentences.
+- **Foundation:** first foundation only. Selected clauses concern hiddenness, unity, self-disclosure, names, degrees of inward comprehension, perfection, knowledge, and existential determination.
+- **Not yet fully translated:** the authorial introduction beyond B2007 p. 84, along with the later commentary and earlier Persian *Mashāriq al-darārī*. The draft pp. 18–84 has not undergone critical proofing, and its continuous full Arabic transcription and bilingual alignment are not yet constituted.
+- **Textual basis:** Arabic text of the modern Beirut printed edition, edited by ʿĀṣim Ibrāhīm al-Kayyālī, as digitized by Ahlulbayt Library. Pages 32–34 are verified directly in the same Beirut digital witness (its page-specific source link now works). Editorial footnotes have **not** been incorporated into Farghānī's authorial text.
+- **Collation:** source-anchored transcription only. No manuscript leaf images collated, and no systematic comparison against the 1876 Istanbul print has yet been carried out.
+- **Translation status:** working scholarly translation, not a definitive critical edition. The bilingual extract reader displays 32 selected, source-linked clauses on pp. 18–34. Separately, an 18–84 **consecutive-page English draft** (67 printed pages, including 50 new pages) has been committed without claiming critical verification or manuscript collation.
+- **Comparative layer:** explicitly *modern editorial research*, never Farghānī's Arabic or an attribution of perennialist doctrine to him.
+
+The Arabic has some unvowelled lexical/typographical uncertainty in the digital witness. Any correction requires printed or manuscript control and must be recorded; words cannot simply be silently improved.
+
+## Unit and page register
+
+| Printed page in digital Beirut edition | Verified unit IDs | Coverage |
+|---|---|---|
+| 18 | F001–F002 | Two selected clauses |
+| 19 | F003–F005 | Three selected clauses |
+| 20 | F006 | One selected clause |
+| 21 | F007–F009 | Three selected clauses |
+| 22 | F010 | One selected clause |
+| 23 | F011 | One selected clause |
+| 24 | F012 | One selected clause |
+| 25 | F013 | One selected clause |
+| 26 | F014 | One selected clause |
+| 27 | F015–F016 | Two selected clauses |
+| 28 | F017 | One selected clause |
+| 29 | F018 | One selected clause |
+| 30 | F019–F020 | Two selected clauses |
+| 31 | F021–F023 | Three selected clauses |
+| 32 | F024–F027 | Four selected clauses, directly verified against page-specific Arabic source |
+| 33 | F028–F029 | Two selected clauses from the second determination discussion |
+| 34 | F030–F032 | Three selected clauses on the names, divinity, and the rank of possibility |
+
+**Total:** 32 passage records; there is *no* claim of complete-page coverage anywhere in this register.
+
+## Sources and editions
+
+1. Beirut digital transcription, *Muntahā al-madārik*, first volume, editor ʿĀṣim Ibrāhīm al-Kayyālī: https://ablibrary.net/book_content/b/9606/18?lang=ar (replace terminal `/18` with the page shown in each unit).
+2. Direct page 32 Arabic witness: https://ablibrary.net/book_content/b/9606/32?lang=ar (the authorial paragraph and chapter boundary are visible).
+3. Historical printed Arabic witness: Istanbul 1876, Princeton/NYU scan https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en (not yet line-by-line collated).
+4. Earlier Persian *Mashāriq al-darārī*, edited by Sayyid Jalāl al-Dīn Āshtiyānī: https://ablibrary.net/book_content/b/4366/126 — contextual comparative witness, not collated.
+5. Guénon, *Les États multiples de l'être*, chapters II, V: https://oeuvre-de-rene-guenon.org/textes/EME02.php and https://oeuvre-de-rene-guenon.org/textes/EME05.php. This material informs only our optional comparison.
+6. Schuon, *Survey of Metaphysics and Esoterism*, and *In the Face of the Absolute*: comparison targets, not quoted or reproduced here.
+
+## Scholarly controls
+
+- Authorial text, translation, editorial notes, and Guénon/Schuon parallels are separate fields.
+- The reported divine saying 'I was a hidden treasure' is a Sufi doctrinal starting point **not established as an authenticated prophetic ḥadīth**.
+- `wujūd` must not be glossed indiscriminately as either Guénonian 'Being' or 'Existence'; compare its connection to `wijdān` and each rank.
+- First determination, `aḥadiyya`, and `wāḥidiyya` are distinct considerations in the text; refrain from equating each to a single Guénonian category without an argument.
+- The p. 23 discussion of what has not yet been determined is not by itself a doctrine of Guénonian *possibilities of non-manifestation*.
+- Where a translation excerpt quotes only a clause from a longer paragraph, no English continuation is implied.
+
+## Remaining staged work
+
+1. Preserve and independently proofread the complete first foundation English draft pp. 18–69 against continuous Arabic, with paragraph alignment and a gap audit.
+2. Verify the draft second foundation pp. 70–78; then continue the third foundation from p. 85 and the fourth foundation through its actual end, preserving all original text.
+3. Collate the 1876 original with the Beirut transcription, then inspect available manuscript witnesses and record meaningful variants.
+4. Translate selected long-commentary passages in which Farghānī resolves problems left open in the introduction.
+5. Compare the Persian and Arabic commentaries, maintaining a separate historical-dependence register for Qūnawī.
+6. Only after continuous coverage and collation, issue a print/PDF critical version marked as such.
+
+## Repository locations
+
+- Reader: `texts/al-farghani/muntaha-al-madarik/index.html`
+- Cumulative 67-page English draft: `texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_84.md`
+- Extracts: `data/units.js`
+- Research comparison: `editorial/COMPARISON.md`
+- Technical terms: `editorial/GLOSSARY.md`
+- Library placement: `texts/index.html` and `texts/manifest.json`, collection **ʿIrfān and metaphysics**, beside but separate from Qawāʿid al-Tawḥīd.
+
+
+---
+## Part G · Canonical stage handoff, exact continuation
+# Farghānī · Critical Pass III — complete cumulative stage handoff
+**9 November 2026 — from B2007 p29; next source-audit locus p30.**
+
+## What is completed
+1. The complete **working** English introduction already covered B2007 pp18–145 (128 printed pages); four foundations end p143, concluding preface pp144–145. The verse commentary follows separately.
+2. The first critical checking pass covered 80 authorial Arabic–English clauses against B2007 pp18–23.
+3. **This stage** source-checked 62 *selected authorial spans* on B2007 pp24–29, with 35 retained, 16 revised, 6 attribution/interpretive annotations and 5 textual cruxes.
+4. Critical reader and source-quality register now distinguish 142 selected clause records from the 128 page-labelled English working draft. **pp24–29 are NOT exhaustively line-proofread**.
+5. An external check of the *Tāʾiyya* reveals a collateral poem variant **لعبرة / لعبرتي** in quoted verse, but **no manuscript variant of Farghānī** is thereby established.
+6. The older P145 complete cumulative archive is retained untouched; this new stage is appended in [FULL_CUMULATIVE_CRITICAL_003.md](FULL_CUMULATIVE_CRITICAL_003.md).
+
+## Where the records live
+- [Bilingual Pass III clauses](CRITICAL_TRANSLATION_24_29.md)
+- [Analytical audit II](CRITICAL_AUDIT_STAGE_002.md)
+- [Machine-readable pass III](../data/critical-pass-003-p24-29.js)
+- [Cumulative critical reader](../critical-edition.html)
+- [128-page quality coverage](CRITICAL_COVERAGE_REGISTER.json)
+- [Older full P145 archive](FULL_CUMULATIVE_P145.md)
+
+## Limitations
+**0** historical I1876 print leaves verified independently; **0** manuscript images collated; **0** genuine Farghānī manuscript variants attested. The new source comparison uses one modern digital published text, with collateral poem witnesses restricted to Ibn al-Fāriḍ's verses. The term “critical” in the current reader means *source-critical English verification*, not an established critical Arabic edition.
+
+## Next
+Continue p30 onward, and prioritize real physical textual collation with the 1876 Istanbul printed images and Yeni Camii 706 (plus independent manuscripts); only then adjudicate the 10 digital cruxes. Audit every revised wording against the cumulative working English and update correction notes, keeping previous states immutable.
+
+
+
+---
+
+## PART B — Selected Arabic–English source checks pp30–36 (56 loci)
+
+# Farghānī — Critical Pass IV: B2007 pp. 30–36
+
+**56 selected bounded Arabic–English loci; {"30":9,"31":8,"32":8,"33":8,"34":9,"35":7,"36":7} by source page.** Source: Beirut 2007 edited Arabic transcribed at the Ahlulbayt Library digital pages, directly examined at these URLs. **This remains a printed-digital source check, not comparison against the 1876 facsimile or any actual manuscript.** Neither this collection of excerpts nor its source links constitutes an uninterrupted original Arabic copy-text. Editorial notes distinguish readings actually printed from conjectural alternatives.
+
+### CR004-001 · B2007 p30 · retain
+
+**Arabic:** إلى شهود الأغيار في مراتبهم وتقيّدهم بها
+
+**Verified/revised English:** —to witnessing other things within their own ranks and their determination by those ranks.
+
+**Decision:** Completes the final sentence from p29. Printed-page boundaries are not sentence or conceptual boundaries.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/30?lang=ar)
+
+### CR004-002 · B2007 p30 · revise
+
+**Arabic:** ومن كون الكلّ عينا واحدا بالنسبة إلى شهود الحقّ الواحد الأحد
+
+**Verified/revised English:** and to everything's being one reality relative to the witnessing of the One Real in unicity.
+
+**Decision:** The distinction is between the cosmos' distinct witnessing and a principial witnessing; not an assertion that created entities are unqualifiedly God.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/30?lang=ar)
+
+### CR004-003 · B2007 p30 · retain
+
+**Arabic:** وأمّا القسم الثاني من الكمال ، فهو الكمال الأسمائي المفصّل
+
+**Verified/revised English:** The second division of perfection is differentiated perfection through the names.
+
+**Decision:** Marks the contrast with the first, essentially comprehensive perfection.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/30?lang=ar)
+
+### CR004-004 · B2007 p30 · retain
+
+**Arabic:** وذلك يكون بشرط شيء ، بل أشياء
+
+**Verified/revised English:** This occurs on condition of something—indeed, several conditions.
+
+**Decision:** Name-related perfection is conditioned by modes and loci; essential perfection is not.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/30?lang=ar)
+
+### CR004-005 · B2007 p30 · revise
+
+**Arabic:** بشرط أن يكون ذلك الشهود من حيث مظهر شأن كلّي جامع جميع أفرادها بالفعل وهو الإنسان الكامل الحقيقي
+
+**Verified/revised English:** provided that witnessing occurs through a manifestation of a universal affair encompassing its members in actuality: the real Perfect Human.
+
+**Decision:** Do not generalize 'the Perfect Human' as merely the sum of humans. The Arabic emphasizes universality and actuality.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/30?lang=ar)
+
+### CR004-006 · B2007 p30 · retain
+
+**Arabic:** واعتبار العلم الذي حقيقته ظهور عين العين بحيث يكون أثر الظاهر حاصلا فيمن ظهر له
+
+**Verified/revised English:** and the consideration of knowledge, whose reality is the appearance of the very reality, so that its effect is present in the one to whom it appears.
+
+**Decision:** ʿAyn occurs twice in different syntactic relations; a flat 'object appears' translation hides the self-manifestation terminology.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/30?lang=ar)
+
+### CR004-007 · B2007 p30 · retain
+
+**Arabic:** واعتبار الوجود الذي حقيقته ما به وجدان العين نفسه في نفسه أو في غيره
+
+**Verified/revised English:** and existence, by which a reality finds itself in itself or in another.
+
+**Decision:** Keep the technical verbal link wujūd / wijdān explicit.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/30?lang=ar)
+
+### CR004-008 · B2007 p30 · retain
+
+**Arabic:** واعتبار النور الذي هو الكاشف للمستور واعتبار الشهود الذي هو الحضور مع المشهود
+
+**Verified/revised English:** light as that which discloses the concealed, and witnessing as presence with the witnessed.
+
+**Decision:** These are farghānī's explicit definitions under a particular consideration, not generic modern definitions.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/30?lang=ar)
+
+### CR004-009 · B2007 p30 · retain
+
+**Arabic:** فإن المحل له أثر لازم وحكم جازم فيما قام به وثبت فيه
+
+**Verified/revised English:** A locus exercises an inescapable effect and decisive judgment on whatever is established in it.
+
+**Decision:** Effect of the locus explains form of manifestation without making the absolute itself multiply substantially.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/30?lang=ar)
+
+### CR004-010 · B2007 p31 · corrected
+
+**Arabic:** لون الماءلون إنائه
+
+**Verified/revised English:** The color of water is the color of its vessel.
+
+**Decision:** Digital source concatenates الماءلون without a separator; space 'الماء لون' is a typographic normalization supported by the familiar maxim, NOT a manuscript variant.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/31?lang=ar)
+
+### CR004-011 · B2007 p31 · retain
+
+**Arabic:** مراتب الكون لا يظهر فيها إلّا الخلق ، ومراتب الحق لا يظهر فيها إلّا الحق
+
+**Verified/revised English:** In the ranks of the cosmos only creation appears; in the ranks of the Real only the Real appears.
+
+**Decision:** Preserve the two predicative standpoints; avoid denying divine causal action in the cosmos.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/31?lang=ar)
+
+### CR004-012 · B2007 p31 · retain
+
+**Arabic:** لا يعرف ولا يشهد ولا يرى الحقّ إلا هو أو به
+
+**Verified/revised English:** None knows, witnesses, or sees the Real except the Real Himself or through Him.
+
+**Decision:** Alternative 'through Him' is in the Arabic and indispensable for the experiential register.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/31?lang=ar)
+
+### CR004-013 · B2007 p31 · retain
+
+**Arabic:** فكان متعلّقا بمعلوم واحد
+
+**Verified/revised English:** It thus relates to one thing known.
+
+**Decision:** Knowledge first rank indexed to one object while the second rank has articulated respects.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/31?lang=ar)
+
+### CR004-014 · B2007 p31 · annotate
+
+**Arabic:** فكان لفظه حينئذ متعدّيا بحسب هذه المرتبة الأولى ، بمفعول واحد
+
+**Verified/revised English:** Its expression, at this first rank, is transitive to one object.
+
+**Decision:** Farghānī makes an unusual verbal-transitivity analogy: it is his own grammatical illustration, not a general rule about the verb ʿalima; explicate with caution.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/31?lang=ar)
+
+### CR004-015 · B2007 p31 · retain
+
+**Arabic:** فكان للعلم بحسب انتهاء المرتبة الثانية وحكم معلوماته فيها كثرة حقيقية ووحدة نسبية مجموعية
+
+**Verified/revised English:** Knowledge at the completion of the second rank has real multiplicity and a collective relative unity in respect of its known contents.
+
+**Decision:** Do not ascribe multiplicity to the undelimited Essence without the second-rank qualifier.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/31?lang=ar)
+
+### CR004-016 · B2007 p31 · retain
+
+**Arabic:** فله حينئذ وحدة حقيقية وكثرة نسبيّة
+
+**Verified/revised English:** It therefore has real unity and relational multiplicity.
+
+**Decision:** Key register: unity of wujūd as manifested names, versus real diversity in cosmic modes.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/31?lang=ar)
+
+### CR004-017 · B2007 p31 · retain
+
+**Arabic:** فبالنظر إلى عين الوجود ونفس التعيّن هو عين الذات
+
+**Verified/revised English:** As regards the reality of existence and determination itself, it is identical with the Essence.
+
+**Decision:** Refers to determination qua its intrinsic reality, not every limited predicate.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/31?lang=ar)
+
+### CR004-018 · B2007 p32 · retain
+
+**Arabic:** وأمّا النوع الثاني من الوجود الظاهر من حيث ما هو منها مجلى الظهور للكون
+
+**Verified/revised English:** The second mode of manifest existence concerns a locus of manifestation of the cosmos.
+
+**Decision:** Keep distinct from second rank as the Real's name-bearing manifestation.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/32?lang=ar)
+
+### CR004-019 · B2007 p32 · retain
+
+**Arabic:** كمرتبة الأرواح والمثال والحسّ
+
+**Verified/revised English:** such as the rank of spirits, of imaginal form, and of sense.
+
+**Decision:** Not three chronological stages; three ontological levels of manifestation.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/32?lang=ar)
+
+### CR004-020 · B2007 p32 · retain
+
+**Arabic:** فالوجود حينئذ معناه وحقيقته ما به وجدان صورة كل تعين منه نفسها ومثلها موجودا
+
+**Verified/revised English:** Existence here is what allows the form of each determination to find itself and its like as existent.
+
+**Decision:** The word wujūd changes operative sense under a specified rank: a critical example for a register-sensitive glossary.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/32?lang=ar)
+
+### CR004-021 · B2007 p32 · retain
+
+**Arabic:** فالإيجاد والخلق على هذا ما هو إلّا إعطاء الموجد الخالق تعالى وتقدّس للحقائق الكونيّة ما به وجدانها
+
+**Verified/revised English:** On this account creating consists in the Creator's granting cosmic realities that by which they find themselves.
+
+**Decision:** Do not reduce this to an assertion of autonomous creative causality.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/32?lang=ar)
+
+### CR004-022 · B2007 p32 · revise
+
+**Arabic:** وهي أمور ونسب عدمية لا وجود لها في الخارج ولا نفسها
+
+**Verified/revised English:** These loci are privative affairs and relations possessing no external existence in themselves.
+
+**Decision:** The negative is aimed at ranks as intelligible relations, not a denial that their effects or loci of appearance are experienced.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/32?lang=ar)
+
+### CR004-023 · B2007 p32 · retain
+
+**Arabic:** فانظر أثرا لمعدوم وإن كان عدميّته بنسبة ووجه ما في عين الوجود
+
+**Verified/revised English:** Observe the effect of something non-existent—though non-existence is itself relative and in one respect—within the reality of existence.
+
+**Decision:** This is not the claim that absolute nothingness is an efficient cause; Farghānī expressly qualifies the privation.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/32?lang=ar)
+
+### CR004-024 · B2007 p32 · retain
+
+**Arabic:** ولم تكن قابلة لتجلّي قابل للكثرة ، وإن كانت نسبية
+
+**Verified/revised English:** It could not receive a disclosure admitting plurality, even merely relational plurality.
+
+**Decision:** The first determination's capacity is constrained by the pure-unicity consideration.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/32?lang=ar)
+
+### CR004-025 · B2007 p32 · retain
+
+**Arabic:** ولما كانت المحبة الأصلية المعبّر عنها « بأحببت » حاملة لهذا التجلّي الأول
+
+**Verified/revised English:** Original love, expressed by 'I loved', carried this first disclosure.
+
+**Decision:** Continuation p33 must be kept as one argument.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/32?lang=ar)
+
+### CR004-026 · B2007 p33 · retain
+
+**Arabic:** ولم يصادف توجّهه ذلك محلّا قابلا لما توجه له
+
+**Verified/revised English:** but its orientation did not encounter a locus receptive to what it intended.
+
+**Decision:** Continuation from p32; intended aim is differentiated name-perfection.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/33?lang=ar)
+
+### CR004-027 · B2007 p33 · annotate
+
+**Arabic:** رجع بقوّة ذلك التوجّه الشوقي والميل العشقي إلى أصله
+
+**Verified/revised English:** It returned to its source by the force of its yearning orientation and loving inclination.
+
+**Decision:** 'Return' is a rank-based principial metaphor, not temporal divine movement.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/33?lang=ar)
+
+### CR004-028 · B2007 p33 · retain
+
+**Arabic:** حكم الظهور المعبّر عنه بالرحمة الذاتية
+
+**Verified/revised English:** the judgment of manifestation, expressed as essential mercy.
+
+**Decision:** Distinguish mercy here from a psychological affect and later manifested divine name.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/33?lang=ar)
+
+### CR004-029 · B2007 p33 · crux
+
+**Arabic:** فعاد ذلك التجلّي ظاهرا معيّنا في عون هذا بقوة المحبة الأصلية اللازمة له
+
+**Verified/revised English:** The disclosure appeared again as determined [the phrase 'في عون هذا' remains uncertain], through its inseparable original love.
+
+**Decision:** B2007 prints في عون هذا. The phrase is syntactically difficult; do NOT insert a conjectural عين or emend to a smoother reading without an independent image of I1876 or manuscript.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/33?lang=ar)
+
+### CR004-030 · B2007 p33 · retain
+
+**Arabic:** وذلك التعيّن هو القابل الثاني الجامع بين طرفي حكم الإجمال والوحدة ، ومقابلهما الذي هو التفصيل والكثرة
+
+**Verified/revised English:** That determination is the second receptive principle combining the poles of comprehensive unity and differentiated multiplicity.
+
+**Decision:** Qābil thānī is a determinate receptive principle, not a second eternal substance.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/33?lang=ar)
+
+### CR004-031 · B2007 p33 · retain
+
+**Arabic:** من تلك الحضرة الخفائية الإطلاقية أثرا من ظلمة غيبه وإطلاق أزليّته
+
+**Verified/revised English:** from that concealed, undelimited Presence a trace of the darkness of hiddenness and nondelimitation of pre-eternity.
+
+**Decision:** Trace of hiddenness describes a logical/ontological condition of manifestation, not physical material.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/33?lang=ar)
+
+### CR004-032 · B2007 p33 · retain
+
+**Arabic:** وجميع الأسماء الإلهيّة المنتمي إليها التأثير والفعل ، مضافة إلى عين التجلّي الثاني
+
+**Verified/revised English:** all the divine names, to which efficacy and action pertain, are attributed to the second self-disclosure.
+
+**Decision:** Critical complement to cosmic realities as receptive correlates.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/33?lang=ar)
+
+### CR004-033 · B2007 p33 · retain
+
+**Arabic:** بحسب ما هو كل واحد عليه من هذه المعلومات ، لا بحسب العلم
+
+**Verified/revised English:** according to what each known thing is, not according to [a restriction in] knowledge.
+
+**Decision:** Important qualification for the earlier 'real multiplicity' of objects known; do not make divine knowledge essentially variable.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/33?lang=ar)
+
+### CR004-034 · B2007 p34 · retain
+
+**Arabic:** ومراتب الاعتدالات الموجودة فيها المركّبات المسماة بالمولدات
+
+**Verified/revised English:** the ranks of equilibria in which the composites called generated things arise.
+
+**Decision:** Muwalladāt refers to generated beings; preserve Aristotelian/cosmological technical register.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/34?lang=ar)
+
+### CR004-035 · B2007 p34 · retain
+
+**Arabic:** ثم إن هذا التعيّن الثاني النفسي المذكور سمي بأسماء كثيرة بحسب اعتبارات ثابتة فيه مع توحد عينه
+
+**Verified/revised English:** This second, breath-like determination has many names corresponding to considerations within it while remaining one in reality.
+
+**Decision:** Nafasī is breath-related, not psychical nafsī; must disambiguate transliteration.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/34?lang=ar)
+
+### CR004-036 · B2007 p34 · retain
+
+**Arabic:** سمّي بمرتبة الألوهية
+
+**Verified/revised English:** It is called the rank of divinity.
+
+**Decision:** One of multiple descriptions of a single second determination, not a new rank.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/34?lang=ar)
+
+### CR004-037 · B2007 p34 · retain
+
+**Arabic:** سمّي بعالم المعاني
+
+**Verified/revised English:** It is called the world of meanings.
+
+**Decision:** Same referent, different explanatory iʿtibār.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/34?lang=ar)
+
+### CR004-038 · B2007 p34 · revise
+
+**Arabic:** سمّي بحضرة الارتسام
+
+**Verified/revised English:** It is called the Presence of Inscription.
+
+**Decision:** Rasm/irtisām indicates the inscription or impression of relative multiplicity; avoid an unglossed transliteration.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/34?lang=ar)
+
+### CR004-039 · B2007 p34 · retain
+
+**Arabic:** سمّي بحضرة العلم الأزلي
+
+**Verified/revised English:** It is called the Presence of Eternal Knowledge.
+
+**Decision:** Explicitly named by knowledge's encompassing attachment to plurality, not identification with independent entities.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/34?lang=ar)
+
+### CR004-040 · B2007 p34 · crux
+
+**Arabic:** سمّي بالحضرة العملية
+
+**Verified/revised English:** It is called the 'operative/practical Presence' [printed reading; unresolved].
+
+**Decision:** B2007 p34 unequivocally has العملية in the digital transcript; B2007 p36 has العمائية for the same second-rank Cloud-like Presence. Strong internal pressure for العمائية, but NO independent Farghānī witness has been inspected. Report as conjecture only.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/34?lang=ar)
+
+### CR004-041 · B2007 p34 · revise
+
+**Arabic:** سمّي بالحقيقة الإنسانية الكمالية
+
+**Verified/revised English:** It is called the Perfectional Human Reality.
+
+**Decision:** Not just 'human nature': here specifically the comprehensive intermediate human reality.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/34?lang=ar)
+
+### CR004-042 · B2007 p34 · retain
+
+**Arabic:** سمي المتوسّط مرتبة الإمكان
+
+**Verified/revised English:** The intermediate category is called the rank of possibility.
+
+**Decision:** Possibility lies conceptually between necessary and impossible manifestation, distinct from psychological probabilities.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/34?lang=ar)
+
+### CR004-043 · B2007 p35 · retain
+
+**Arabic:** وحدة وكثرة وبرزخ فاصل وجامع بينهما
+
+**Verified/revised English:** These possess unity, multiplicity, and an intermediary both separating and comprehending them.
+
+**Decision:** The threefold structure must not be conflated with three distinct substances.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/35?lang=ar)
+
+### CR004-044 · B2007 p35 · retain
+
+**Arabic:** أمّا وحدته ، فمضافة إلى التجلّي الثاني المذكور الذي نسبته إلى الأحدية الذاتية أقوى
+
+**Verified/revised English:** Its unity belongs to the second disclosure, whose relation to essential unicity is stronger.
+
+**Decision:** The second level retains an aspect of aḥadiyya despite differentiation.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/35?lang=ar)
+
+### CR004-045 · B2007 p35 · retain
+
+**Arabic:** فانتشاء الكثرة النسبية الأسمائية السلبية والثبوتية منه
+
+**Verified/revised English:** Thus relational multiplicity of negative and affirmative names proceeds from it.
+
+**Decision:** Keep distinction between negative names and affirmative predicates.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/35?lang=ar)
+
+### CR004-046 · B2007 p35 · retain
+
+**Arabic:** والسلام المنفي عنه تنازع ظهور الصفات
+
+**Verified/revised English:** The name Peace excludes contest among the manifestations of the attributes.
+
+**Decision:** Peace is a technical divine name, not merely absence of conflict in general.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/35?lang=ar)
+
+### CR004-047 · B2007 p35 · retain
+
+**Arabic:** وأما طرف كثرة هذا التعين الثاني ، فظهر للواحدية الذاتية لكن بسراية أثر الأحدية فيه
+
+**Verified/revised English:** Its multiplicity manifests essential oneness while bearing the permeating effect of unicity.
+
+**Decision:** Dual perspective explains simultaneous unity and multiplicity without incoherence.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/35?lang=ar)
+
+### CR004-048 · B2007 p35 · retain
+
+**Arabic:** وتميّزها فيه بعضها حقيقة وبعضها نسبيّة
+
+**Verified/revised English:** and their distinctions within it are in some cases real, in others relational.
+
+**Decision:** Do not universalize 'real distinction' to divine Essence.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/35?lang=ar)
+
+### CR004-049 · B2007 p35 · retain
+
+**Arabic:** فإن رتبة تلك الوحدة متقدّمة على رتبة ما انتشأ منها من تلك الأعيان
+
+**Verified/revised English:** The rank of the unity precedes the rank of the entities that proceed from it.
+
+**Decision:** Priority by rank, not temporal creation of a divine attribute.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/35?lang=ar)
+
+### CR004-050 · B2007 p36 · retain
+
+**Arabic:** الوحدة كالتجلّي أولا ، ثم كاسم اللّه والرحمن ، ثم كاسم الحيّ
+
+**Verified/revised English:** Unity is exemplified first by the disclosure, then the names Allāh and al-Raḥmān, then the Living.
+
+**Decision:** Ordering begins with the disclosure rather than a plurality of distinct gods.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/36?lang=ar)
+
+### CR004-051 · B2007 p36 · retain
+
+**Arabic:** فكل واحد مما ذكرنا مشتمل على أشخاصه وأنواعه المتفرّعة والمنتشئة منه
+
+**Verified/revised English:** Each encompasses individuals and kinds that branch from it.
+
+**Decision:** Universal to particular derivation in knowledge and concrete manifestation.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/36?lang=ar)
+
+### CR004-052 · B2007 p36 · annotate
+
+**Arabic:** فإنما هي الحقيقة الإنسانية
+
+**Verified/revised English:** That intermediary is the human reality.
+
+**Decision:** Mixed grammatical gender al-barzakh ... hiya al-ḥaqīqa signals a predicate shift to feminine 'reality', not automatically a corrupt reading.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/36?lang=ar)
+
+### CR004-053 · B2007 p36 · revise
+
+**Arabic:** فمسمى بالحضرة العمائية
+
+**Verified/revised English:** It is called the Cloud-like Presence (al-ḥaḍra al-ʿamāʾiyya).
+
+**Decision:** Important exact same referent as p34's variant-looking 'al-ḥaḍra al-ʿamaliyya'; do not silently harmonize the two.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/36?lang=ar)
+
+### CR004-054 · B2007 p36 · retain
+
+**Arabic:** فأسبقها تعيّنا وأشملها حكما حقيقة الحياة
+
+**Verified/revised English:** The first determined and most comprehensive in rule is the reality of life.
+
+**Decision:** This is a hierarchy of universal names, not chronological birth of divine life.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/36?lang=ar)
+
+### CR004-055 · B2007 p36 · retain
+
+**Arabic:** واسم الحيّ هو عين منبع الكمال الذي يستوعب كل كمال يليق به
+
+**Verified/revised English:** The name the Living is the source of perfection embracing every perfection appropriate to it.
+
+**Decision:** Distinguish life at first determination from detailed naming at second rank.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/36?lang=ar)
+
+### CR004-056 · B2007 p36 · retain
+
+**Arabic:** والعلم في هذه المرتبة الثانية متعلق بمعلومات مفصّلة متميّزة
+
+**Verified/revised English:** At the second rank knowledge relates to differentiated known things.
+
+**Decision:** Index the doctrinal claim by rank; do not infer a new essence of divine knowledge.
+
+[Arabic source](https://ablibrary.net/book_content/b/9606/36?lang=ar)
+
+
+## Critical loci requiring independent witness images
+
+- p31 `لون الماءلون إنائه`: missing whitespace is a trivial digital-word-segmentation issue; correct as `لون الماء لون إنائه` for reading. Do not count as a manuscript variant.
+- p33 `في عون هذا`: **unresolved**. No conjectural restoration is incorporated into the text until an independent photographed witness has been seen.
+- p34 `الحضرة العملية` compared to p36 `الحضرة العمائية`: plausible digitization/printed corruption, with a strong internal parallel and semantic relevance to the Akbarī *ʿamāʾ*; possible corrected form **العمائية** is recorded strictly as a conjecture, not a verified reading of any historical witness.
+- At pp31–32, the shifts in the meanings of *ʿilm* and *wujūd* at first and second ranks are explicit. Interpretive comparison with other systems requires specifying the rank or no translation can be stable.
+
+## Continuation
+
+Next selected English–Arabic audit starts B2007 p37, whose English already exists in the 128-page cumulative working draft. Historical-print and manuscript collation remains the controlling outstanding requirement for a defensible definitive Arabic edition.
+
+
+---
+
+## PART C — Current manuscript census
+
+# Farghānī · *Muntahā al-madārik*: manuscript census and editorial witness policy
+**9 November 2026 — catalogue-and-scholarship audit.** This register is for a proposed edition of the **four-uṣūl Arabic introduction**, not an automatic edition of the entire two-volume verse commentary. **No manuscript images in this register were personally inspected.** Catalogue data about manuscripts and scholarly statements about prior collation are not themselves first-hand variant readings.
+
+## 1. Identified codices and priorities
+
+| Siglum | Repository and shelfmark | Date, scope and reported evidence | Priority / limitations |
+|---|---|---|---|
+| F3966 | Süleymaniye, Fatih 3966 | 14th-century catalogue; S. A. S. Peacock discusses a **724/1324** copy and Persian marginalia. Catalogue lists **116 folios**, copyist Ibrāhīm b. Muḥammad b. al-Ḥājj Ḥamīd and links his name to Konya; separately gives Antalya as place. | **Very high**: verify the actual dated colophon and conflicting Konya/Antalya description. Establish introduction folios, since the codex contains prefatory Persian and other writings. Earliest reported copy date ≠ automatic best text. |
+| C1107 | Süleymaniye, Carullah 1107 | Chittick (2024, 2025) reports **copied 741 AH**; included among **three manuscripts underlying his own established text**. | **Very high**. Seek full introduction facsimiles, copying note, revisions, marginalia. Chittick's published English is secondary indirect control, not accessible verbatim manuscript variants. |
+| R670 | Koca Ragıp Paşa Library, 670 | Chittick reports **copied 763 AH**. St Andrews catalogue assigns it to 14th century, **249 folios** and copyist Muḥammad b. Abī Bakr al-Ṣūfī al-Kāshgharī; reportedly read by the governor of Aydın in Dhū l-Ḥijja **766/1365**. | **Very high**. Historically dated reading note is valuable for reception/provenance but does not certify every reading. Chittick's second principal Arabic witness. |
+| K273 | Süleymaniye, Kadızademehmed 273 | Explicitly identified by Chittick, *Journal of Sufi Studies* 14 (2025), p. 27 n. 12, as the **third manuscript** behind his established text. Date/extent not yet verified here. | **Very high**: newly added; determine date, completeness, scribal relationship to C1107 and R670. |
+| Y706 | Süleymaniye, Yeni Camii 706 | Catalogued 14th century, 291 folios, text 1v–131r; catalogue says **fol. 131r carries a note of collation against an original**. | **High**: inspect collation notice itself, establish what the 'original' was, hands, and applicability to introduction. Do not assert author autograph. |
+| R669 | Koca Ragıp Paşa Library, 669 | St Andrews: **15th-century** copy, **336 folios**; later appended excerpts and a Jāmī quotation. | **Medium**: witness to later circulation and possible text-family control; do not infer direct ancestry to R670 from adjacent shelfmarks. |
+| C1746 | Süleymaniye, Carullah 1746 | St Andrews: **16th-century** copy, **194 folios**, textual foliation 1–184. Catalogue also records gift dated **883/1479**, which seems chronologically earlier than catalogued copy-date. | **Medium; catalogue chronology must be checked in the physical copy**. Gift notice might relate to a component, be misdated, or require correction; do not quietly use it as a copying date. |
+| SA1347 | Süleymaniye, Şehid Ali Paşa 1347 | *Muntahā* occurs as **Work 5** within a composite codex; extent, relevant folios and copy date require explicit verification. | **Low/conditional** until the exact folios and completeness are identified. |
+| H236 | Süleymaniye, Halet Efendi 236 | St Andrews: **20th-century** copy, 240 total folios; Farghānī's entry at **1v–78v**. | **Low/conditional**: possibly extract/abridgment; determine what text it reproduces. |
+
+| H154 | Universitätsbibliothek Heidelberg, **Cod. Heid. Orient. 154** | Undated (*o.D.*) digital catalogue, text identified on **fols. 1v–322r**; openly catalogued online. | **High conditional** for remote comparison, but text leaves are presently inaccessible through the site's Anubis guard in this research session. Binding JPEG is accessible but is not textual evidence; date, hands and the introduction's foliation still need inspection. |
+| G2267 | Gotha Research Library, **MS 2267** (*Muntahā al-madārik*) | Giuseppe Scattolin (2001), appendix on Ibn al-Fāriḍ manuscripts, gives **87 folios, incomplete** (citing Pertsch's Gotha catalogue). | **Conditional/low**: identify which sections survive; cannot assume introduction present or read any variant without leaf images. |
+
+**Additional potential sources:** other catalogues and archives remain to be checked for independently transmitted early copies. The above is a prioritized *known* eleven-codex census, not an exhaustive list of all copies worldwide.
+
+**Additional catalogue sources added:** Heidelberg digilib https://digi.ub.uni-heidelberg.de/diglit/codheidorient154/0001 (folio identification 1v–322r, no date reported). Giuseppe Scattolin, “Towards a Critical Edition of Ibn al-Fārid's Dīwān,” *Annales Islamologiques* 35 (2001), p. 537 (Gotha MS 2267, incomplete 87 fols): https://www.ifao.egnet.net/anisl/035/17 . **Neither has been compared textually.**
+
+## 2. Prints and indirect sources
+
+- **I1876**: first volume digitized by Princeton / NYU Arabic Collections Online, bibliographic record describes **Istanbul, 1293/1876**, low-resolution PDF 37.30 MB and high-resolution 245.67 MB. Chittick (2025, n.12) calls the underlying 1876 printing **Cairo**, while his 2024 discussion calls it **Bulaq**. **Do not silently treat place-of-print records as resolved**: inspect the actual scanned title/colophon and distinguish identical print, reissue, and bibliographical error if necessary. Page images have not been retrieved in this stage.
+- **B2007**: modern Beirut al-Kayyālī edition, used for the **page coordinate** pp18–145 and accessible electronic Arabic. Chittick (2025) judges it as retaining numerous errors from the 1876 print and adding some; not an independently collated manuscript witness.
+- **Q2011/Q2007**: Wisām al-Khaṭṭāwī, Qom, publication date varies among bibliographies (2007 or 2011/12). Chittick says the Qom printing does not substantially rectify 1876 errors. Verify physical colophon before fixing date.
+- **M-Persian**: Farghānī's earlier **Mashāriq al-darārī**, genuinely a distinct *authorial Persian recension*. It provides recensional and conceptual comparison, **not** same-language letter-by-letter independent witness to Arabic wording.
+- **Ch2025**: William C. Chittick, “Farghānī on Waḥdat al-Wujūd in the Four Journeys,” *Journal of Sufi Studies* 14 (2025), 22–49, DOI 10.1163/22105956-12341350, esp. p.27 n.12, pp.27–28, gives **scholarly English translation drawn from his own unpublished manuscript-collated Arabic text**. This helps assess meaning at B2007 pp21 and 31, but is **not** a publication of manuscript transcription/variant table.
+- **Ch2024**: Chittick, “Marātib al-taqwā: Saʿīd al-Dīn Farghānī on the Ontology of Ethics,” in *Mysticism and Ethics in Islam*, p. 141 n.5, dates C1107 741 and R670 763 and warns Beirut/Qom editions reproduce print errors. Cross-check his source citations before editing.
+- **R-Fanārī**: later quotation in *Miṣbāḥ al-uns* p183, evidence of reception but not an independent Farghānī codex.
+- **P-Tāʾiyya**: independent Ibn al-Fāriḍ poetry sources must be separated from *Farghānī's quotation tradition*. **لعبرة / لعبرتي** in p26 may be a poet-text discrepancy.
+
+## 3. Editorial method needed for a definitive edition
+
+1. **Determine scope**: Arabic four-uṣūl introduction B2007 pp18–143, followed by distinct *tatimmat al-dībāja* pp144–145. The verse-by-verse *Tāʾiyya* commentary is not included in this introductory critical text.
+2. **Material description and dating**: inspect at least F3966, C1107, R670, K273, Y706 actual photographs: title, opening, ending, colophon, quire, marginalia, hand, correction layers; check if 724, 741, 763 dates belong to these same relevant text portions.
+3. **Local alignment**: establish corresponding folio/page references to each paragraph of B2007 without assuming B2007 and I1876 print pages align. Document lacunae, rearrangements, interpolations, and orthographic normalization.
+4. **Collation**: each substantial variant requires an actual photo and exact folio/line, a lemma, readings assigned only to seen witnesses, and an explicit editorial decision. Do not promote typographic errors or conjectures to manuscript variants.
+5. **Copy-text selection**: choose an explicit base witness or eclectic edited text only after identifying witness families, shared errors, dependence, contamination, and authorial revision evidence; chronological priority alone is insufficient.
+6. **Three-layer apparatus**: (a) Arabic textual variants, (b) sources/allusions, especially Qurʾān, ḥadīth and the *Tāʾiyya*, and (c) conceptual / translation commentary. Separate source-reported hadith from authentication.
+7. **Edition-proofed output**: complete continuous Arabic from B2007 pp18–145, independently verified English per clause, proper names and lexical concordance, page and folio concordance, stable notes and reader links, external specialist review.
+8. **No premature definitive label**: until photographed witnesses and full copy-text collation are available, publish a source-critical *working edition* and an honest critical-check ledger.
+
+## 4. Source locators
+
+- Fatih 3966: https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Fatih_3966
+- Yeni Camii 706: https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Yeni_706
+- Ragıp 669: https://www.islam-anatolia.ac.uk/data/documents/TK_Koc_669
+- Ragıp 670: https://www.islam-anatolia.ac.uk/data/documents/TK_Koc_670
+- Carullah 1746: https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Carullah_1746%3Ba1
+- Halet 236: https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Halet_236
+- Carullah 1107: https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Carullah_1107
+- Şehid Ali Paşa 1347: https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Sehid_AP_1347%3Ba5
+- Chittick 2025: https://traditionalhikma.com/wp-content/uploads/2025/06/Farghani_on_Wahdat_al_Wujud_in_the_Four.pdf
+- Chittick “Marātib al-taqwā”: https://traditionalhikma.com/wp-content/uploads/2024/03/Maratib_al_Taqwa_Said_al_Din_Farghani_on.pdf
+- Princeton/NYU facsimile: https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en
+
+**Specific limitation:** URLs and catalogue descriptions above are grounded. No one has viewed manuscript images in this stage; `variantsExamined` must remain zero for them.
+
+
+---
+
+## PART D — Exact editorial decision register
+
+```json
+{
+  "schema": "gnamma-farghani-critical-locus-decision-register-v1",
+  "date": "2026-11-09",
+  "method": "No variants from manuscripts/1876 reported unless directly compared with photographed original reading at exact location. All currently examined authorial Arabic is B2007 edited digital text. Chittick published manuscript-based translations are independent scholarly indirect semantic control, NOT literal Arabic witness readings.",
+  "page_system": "B2007 Beirut volume 1 printed page numbers",
+  "loci": [
+    {
+      "id": "FD-001",
+      "page": 19,
+      "lemma": "عمليّا ووجوديّا",
+      "observed": {
+        "B2007": "عمليّا ووجوديّا"
+      },
+      "candidates": [
+        {
+          "reading": "علميّا ووجوديّا",
+          "kind": "unverified contextual conjecture"
+        }
+      ],
+      "decision": "retain B2007 and flag; cannot prefer ilmiyyan without historical/manuscript reading",
+      "witness_readings": [],
+      "status": "open"
+    },
+    {
+      "id": "FD-002",
+      "page": 21,
+      "lemma": "من حيث واحديتها",
+      "observed": {
+        "B2007": "من حيث واحديتها"
+      },
+      "indirect": "Also in al-Fanārī's Miṣbāḥ al-uns later quotation (modern digital edited text p183).",
+      "decision": "restore old GNAMMA omitted wording; this is correction of project transcription, not a manuscript variant",
+      "witness_readings": [],
+      "status": "digital-transcription-fixed"
+    },
+    {
+      "id": "FD-003",
+      "page": 23,
+      "lemma": "فلم تعلم ولم يحكم بشيء منها إلا بعد تعيّنها",
+      "observed": {
+        "B2007": "فلم تعلم ولم يحكم بشيء منها إلا بعد تعيّنها"
+      },
+      "decision": "retain as printed, preserving prior ربما modal and limitation of the referent in translation; theological crux is not a self-evident scribal corruption",
+      "witness_readings": [],
+      "status": "interpretive-open"
+    },
+    {
+      "id": "FD-004",
+      "page": 25,
+      "lemma": "على أنها غايات حكم الغضب عارجا لا نازلا",
+      "observed": {
+        "B2007": "على أنها غايات حكم الغضب عارجا لا نازلا"
+      },
+      "decision": "retain printed words and flag contested syntax/directionality; do not silently re-point",
+      "witness_readings": [],
+      "status": "open"
+    },
+    {
+      "id": "FD-005",
+      "page": 26,
+      "lemma": "ولحظ وكلي فيّ عين لعبرة",
+      "observed": {
+        "B2007": "لعبرة",
+        "separate-taiyya": "لعبرتي"
+      },
+      "decision": "treat as collateral independent POEM-transmission difference only; cannot assert how Farghānī quoted the verse without reading his manuscripts",
+      "witness_readings": [],
+      "status": "poem-parallel-not-farghani-variant"
+    },
+    {
+      "id": "FD-006",
+      "page": 29,
+      "lemma": "والتعيّن الأول المذكورة وقلبه المطهّر",
+      "observed": {
+        "B2007": "المذكورة"
+      },
+      "decision": "apparent agreement/attachment issue; preserve as crux, get manuscript images; cannot assert corrected form",
+      "witness_readings": [],
+      "status": "open"
+    },
+    {
+      "id": "FD-007",
+      "page": 31,
+      "lemma": "لون الماءلون إنائه",
+      "observed": {
+        "B2007": "الماءلون"
+      },
+      "candidates": [
+        {
+          "reading": "الماء لون",
+          "kind": "digital-spacing normalization"
+        }
+      ],
+      "decision": "insert whitespace for reader without making a textual variant or changing word identity",
+      "witness_readings": [],
+      "status": "typographic-correction"
+    },
+    {
+      "id": "FD-008",
+      "page": 33,
+      "lemma": "فعاد ذلك التجلّي ظاهرا معيّنا في عون هذا",
+      "observed": {
+        "B2007": "في عون هذا"
+      },
+      "decision": "retain observed Arabic; do not silently conjecture عين, عون or editorial smoothing. Independent 1876/MS image mandatory",
+      "witness_readings": [],
+      "status": "open"
+    },
+    {
+      "id": "FD-009",
+      "page": 34,
+      "lemma": "سمّي بالحضرة العملية",
+      "observed": {
+        "B2007": "الحضرة العملية",
+        "internal_parallel_B2007_p36": "الحضرة العمائية"
+      },
+      "candidates": [
+        {
+          "reading": "الحضرة العمائية",
+          "kind": "internal-parallel-conjecture, not a verified historical variant"
+        }
+      ],
+      "decision": "retain diplomatic B2007; suggest العمائية in apparatus only. Verify earliest MS and Chittick's collated text if obtainable",
+      "witness_readings": [],
+      "status": "open"
+    },
+    {
+      "id": "FD-010",
+      "page": 36,
+      "lemma": "فمسمى بالحضرة العمائية",
+      "observed": {
+        "B2007": "الحضرة العمائية"
+      },
+      "decision": "retain as printed; internal comparative control for p34, not proof of p34 author's wording",
+      "witness_readings": [],
+      "status": "retained"
+    },
+    {
+      "id": "FD-011",
+      "page": 31,
+      "lemma": "فكان لفظه حينئذ متعدّيا ... بمفعول واحد",
+      "observed": {
+        "B2007": "بمفعول واحد"
+      },
+      "decision": "preserve authorial analogy concerning ʿilm, note its conceptual/grammatical force; no textual emendation warranted",
+      "witness_readings": [],
+      "status": "translation-annotation"
+    },
+    {
+      "id": "FD-012",
+      "page": 30,
+      "lemma": "فحقيقة الكمال الأسمائي ظهور الذات لنفسها ... من حيث مظهر شأن كلّي",
+      "observed": {
+        "B2007": "مظهر شأن كلّي"
+      },
+      "decision": "clarify the perfected human as comprehensive locus under condition, without assimilating it to absolutely unconditioned Essence",
+      "witness_readings": [],
+      "status": "translation-reviewed"
+    }
+  ],
+  "historical_independent_readings_confirmed": 0,
+  "notes": [
+    "Chittick 2025 says modern Beirut/Qom editions reproduce significant errors of 1876, and bases his translation on collated Carullah 1107, Ragip 670, and Kadizademehmed 273.",
+    "Chittick p27–28 uses manuscript-collated English of p21/p31 and agrees in core interpretive opposition aḥadiyya/wāḥidiyya and wujūd/wwijdān; this does not document variant spellings.",
+    "F3966 potentially 724AH, C1107 741AH, R670 763AH; verify original colophons and copyist provenance. K273 date unknown."
+  ],
+  "external_controls": [
+    {
+      "type": "scholarly_manuscript_based_english",
+      "work": "Chittick 2025 Journal of Sufi Studies 14 (2025) 22-49",
+      "url": "https://traditionalhikma.com/wp-content/uploads/2025/06/Farghani_on_Wahdat_al_Wujud_in_the_Four.pdf",
+      "manuscripts": [
+        "Carullah 1107",
+        "Ragip Pasa 670",
+        "Kadizademehmed 273"
+      ]
+    },
+    {
+      "type": "scholarly_manuscript_report",
+      "work": "Chittick Maratib al-taqwa, 2024, note 5",
+      "url": "https://traditionalhikma.com/wp-content/uploads/2024/03/Maratib_al_Taqwa_Said_al_Din_Farghani_on.pdf"
+    }
+  ]
+}
+
+```
+
+---
+
+## PART E — Latest status and quality distinctions
+
+# Muntahā al-madārik · Editorial and translation register
+
+## Current milestone — Critical Pass IV, witness census and collational controls (9 November 2026)
+
+**Definitive-edition scope:** the full introductory four foundations and concluding preface, B2007 printed pp18–145 (128 page-labelled English working draft). The verse-by-verse commentary is a separate phase. The existing translation is preserved, not restarted.
+
+**English–Arabic source checking:** 80 individual loci in Passes I–II (B2007 pp18–23), 62 in Pass III (pp24–29), and **56 new selected loci in Pass IV (pp30–36)**: **198 distinct machine-readable critical records across 19 pages with some checked spans**. All pages after p23 remain incompletely proofread even where selected clauses were examined. This is not an independently constituted critical Arabic copy-text.
+
+**Historical census:** [expanded witness census](WITNESS_CENSUS_CRITICAL_004.md) now records eleven catalogue candidates: Y706, F3966, C1107, R670, K273, R669, C1746, SA1347, H236, H154 (Heidelberg), and G2267 (incomplete Gotha); [witness JSON](WITNESS_REGISTER.json). Chittick's 2025 manuscript-based text used Carullah 1107, Ragıp Paşa 670, Kadızademehmed 273; it is **indirect corroborative scholarship**, not manuscript readings observed here.
+
+**Decision register:** [12-locus editorial decisions](CRITICAL_LOCUS_REGISTER_004.json), particularly B2007 p33 `في عون هذا`, B2007 p34 `الحضرة العملية` vs p36 `الحضرة العمائية`, and p31 missing whitespace in `الماءلون`. No historical text emendation has been made without external manuscript evidence. Independent 1876 or manuscript collation **0 pages**, established independent Farghānī manuscript variants **0**.
+
+**Current Pass IV:** [56 Arabic–English loci](CRITICAL_TRANSLATION_30_36.md), [interactive critical reader](../critical-edition.html), [full cumulative archive](FULL_CUMULATIVE_CRITICAL_004.md), and [handoff](STAGE_HANDOFF_CRITICAL_004.md). The former full archive P145 and later III remain intact. **Next unreviewed source p37**. A truly definitive edition requires photographed manuscript folios, page concordances, variant stemma, complete proof of 128 pages, and scholarly review. Catalogue information is not equivalent to images.
+
+## Historical milestone — Critical Pass III · digital source check extended to B2007 pp.24–29 (9 November 2026)
+
+- The **complete English working introduction remains** B2007 pp.18–145 (128 page-labelled source units): four foundations through p143 and *tatimmat al-dībāja* pp144–145. Do not repeat the English translation.
+- **New source-critical work:** 62 **selected** Arabic–English clause spans checked against B2007 pp24–29; 35 retained, 16 translation revisions, 6 attribution/context annotations, 5 open cruxes. Together with earlier pp18–23, **142 individually audited records** from twelve source pages. This is **not exhaustive full-page proofreading** of pp24–29.
+- New [paired reader](../critical-edition.html), [critical passages](CRITICAL_TRANSLATION_24_29.md), [source audit](CRITICAL_AUDIT_STAGE_002.md), and [full cumulative self-contained handoff](FULL_CUMULATIVE_CRITICAL_003.md).
+- **Collateral poetic discrepancy:** B2007 p26 gives `لعبرة`; the separately transmitted poem in al-Qayṣarī's published commentary and in Wikisource gives `لعبرتي`. This does **not** establish a manuscript variant in Farghānī.
+- **Historical collation remains zero:** 1876 Istanbul is located, not examined at corresponding textual loci; Yeni Camii 706 is catalogued, not inspected; no independently attested Farghānī manuscript variants exist in this stage. Five new crux flags make **ten** combined digital cruxes.
+- **Next unsampled Arabic source:** B2007 p30. Critical-edition priority is independent 1876 + manuscript examination alongside modern English correction, not further introductory translation.
+
+## Preserved earlier milestone — completed English draft of introduction; first critical source pass (9 November 2026)
+
+**Authorial English translation:** All four foundations of the introduction plus the concluding two-page preface now have a continuous **working English draft** from Beirut printed B2007 **pp.18–145 (128 consecutively numbered pages)**. The fourth foundation concludes at p.143; the distinct *tatimmat al-dībāja* occupies pp.144–145. **New final installment:** pp.135–145 (11 pages), separately preserved as `TRANSLATION_135_139.md` and `TRANSLATION_140_145.md`. Cumulative draft: [WORKING_TRANSLATION_18_145.md](WORKING_TRANSLATION_18_145.md); compact [English reader](../continuous-translation.html).
+
+**Arabic–English critical review (BEGINNING, not definitive):** 80 authorial clauses from **B2007 pp.18–23** have been compared with the modern Beirut digital Arabic, individually rendered into revised English, and annotated. Full review: [CRITICAL_TRANSLATION_18_23.md](CRITICAL_TRANSLATION_18_23.md); findings: [CRITICAL_AUDIT_STAGE_001.md](CRITICAL_AUDIT_STAGE_001.md); [interactive paired clause review](../critical-edition.html); machine-readable data: `data/critical-pass-001-p18-20.js` and `data/critical-pass-002-p21-23.js`. **Five clause-level cruxes remain open**. Verified manuscript variants remain **zero**.
+
+**Truthful progress dimensions:**
+
+| Workstream | Actually present | NOT yet present |
+|---|---|---|
+| English authorial translation | 128 sequential printed B2007 page headings, pp18–145, *working draft* | Independent clause-by-clause proofreading across remaining 122 pages, specialist critical sign-off |
+| Source-language alignment | 80 source-checked clauses across six opening pages; 32 previously selected Arabic–English excerpts | Continuous full Arabic authorial copy-text and its alignment for pp18–145 |
+| Historical textual criticism | Witness catalogue, four recorded earlier flags plus new crux register; al-Fanārī reception quotation | Independently collated 1876 historical print or any actual manuscript folio; justified copy-text; established variants |
+| Cumulative preservation | Current `FULL_CUMULATIVE_P145.md` and `STAGE_MANIFEST_P145.json`, historical P134/P84/P34 snapshots preserved | The untranslated verse-by-verse commentary, or full manuscript evidence |
+| GNAMMA presentation | Compact 128-page English draft and new Arabic–English critical clause review | Verified public Pages deployment of latest revision; complete bilingual immersive edition |
+
+**Important:** a page heading and a source link do **not** certify page-level translation fidelity. The entire 128-page English draft is **not** labelled definitively checked. The directly checked modern printed Arabic covers only pp.18–23. Do not calculate a definitive percentage from the 1876 edition's 107-page introduction; its pagination differs. The new English draft coverage of the introduction is **structurally complete**, but the critical Arabic–English edition is **not yet constituted**.
+
+**Next exact critical checking locus:** B2007 **p.24**, authorial opening continuing the discussion of essential affairs (*shuʾūn dhātiyya*); see https://ablibrary.net/book_content/b/9606/24?lang=ar. The verse-by-verse poem commentary follows after the introductory preface but belongs to a separate translation project.
+
+**Five currently tagged crux clauses in the opening audit:** B2007 p.18 `بطون المشتمل`, p.19 `المطلب الغائبّ`, p.19 `عمليّا ووجوديّا` (context may suggest `علميّا` but must not be silently emended), p.23 `إلّا أنه ربما يكون` and p.23 `فلم تعلم ولم يحكم بشيء منها إلا بعد تعيّنها`. The p.21 `من حيث واحديتها` correction is preserved, with late secondary quotation in al-Fanārī's `Miṣbāḥ al-uns` p.183. None of these constitutes a verified independent manuscript variant.
+
+
+
+## Historical P134 stage — 9 November 2026 · 50 pages (superseded by P145 milestone)
+
+**NEW English working translation, B2007 pp.85–134 (50 printed pages), plus inherited pp.18–84: 117 consecutively numbered Beirut pages in one cumulative English working draft.**
+
+- **New authorial content:** seven files, `TRANSLATION_85_92.md` (8 pp.), `TRANSLATION_93_100.md` (8), `TRANSLATION_101_108.md` (8), `TRANSLATION_109_116.md` (8), `TRANSLATION_117_124.md` (8), `TRANSLATION_125_130.md` (6), `TRANSLATION_131_134.md` (4). Source-page section count **50**, zero duplicated or missing numbers.
+- **Cumulative master:** `WORKING_TRANSLATION_18_134.md` with **117** page headings, 18–134 inclusive. HTML mirror `../continuous-translation.html` has 117 anchored source sections and a four-foundation contents list, with **compact paragraph and page gaps** introduced in this stage.
+- **Four foundations:** Foundation I ends p.69; II begins p.70, ends p.78; III begins p.79, ends p.101; IV begins p.102 and is **still continuing after p.134**.
+- **New Arabic witness:** for pp.85–101, forum transcription https://alshrefalm7sy.ahlamontada.com/t3213, and for pp.102–134, forum transcription https://alshrefalm7sy.ahlamontada.com/t3214. These show B2007 printed page labels but are **online re-transcriptions, not independently collated manuscripts**. The individual Ahlulbayt pages were inaccessible during the stage, so the editions must not be treated as independently verified simply on the basis of the transcription.
+- **Original bilingual layer:** the **32 selected Arabic–English excerpts on pp.18–34** remain unchanged; full continuous authorial Arabic for all 117 pages and clause-by-clause alignment are **not** complete.
+- **Critical apparatus:** the early Istanbul 1876 print, the Yeni Camii 706 manuscript, and alternative modern edition are identified but remain **uncollated at this stage**. Verified independent manuscript variants: **zero**.
+- **Unresolved source points:** digital B2007 p.33 and p.34 readings recorded in the witness register; p.87 corrupt/uncertain reading in the third foundation; reported hadith attributions; manuscript examination; all English pages still need source-to-English proofreading.
+- **Next untranslated passage:** **B2007 p.135**, which completes the p.134 sentence concerning the removal of determinations; beginning Arabic `والتقيّد وآثارهما والجامع لكلّيات تلك الخواص والآثار الحبّية ...`. Source: https://alshrefalm7sy.ahlamontada.com/t3214.
+- **Cumulative handoff:** `FULL_CUMULATIVE_P134.md` and `STAGE_MANIFEST_P134.json` are the canonical stage archive for the new work. Old P84 and P34 snapshots remain preserved unchanged.
+- **Interpretive highlight, not proof of agreement:** the newly translated fourth foundation differentiates the two ways of perfection and spiritual ascent, and relates Islam, īmān and iḥsān to bodily soul, spirit and secret. These arguments will later be tested against Guénon and Schuon rather than assumed identical.
+
+**Counting rule:** 50 new pages is a check of sequential page-labelled English **working draft output**, not independently audited translation completeness, not 50 manuscript-collated Arabic pages. The 1876 introduction's 107 printed pages do not provide a denominator for the 2007 Beirut pagination. No accurate full-edition percentage is available.
+
+
+
+## Full cumulative handoff and GNAMMA publication (P84)
+
+- **Self-contained current working-stage archive:** [FULL_CUMULATIVE_P84.md](FULL_CUMULATIVE_P84.md) — contains the full 67-page English working draft, all 32 available bilingual Arabic extracts, critical scholarly introduction, Guénon–Schuon comparison, glossary, witness register, corrections, this editorial status, and the prior stage handoff.
+- **Handoff archive index and per-stage preservation rule:** [HANDOFFS.md](HANDOFFS.md); public GNAMMA reading-room entry: [Handoffs and archive](../handoffs.html).
+- **Machine-readable provenance:** [STAGE_MANIFEST_P84.json](STAGE_MANIFEST_P84.json) includes the new archive blob SHA, file inventory and page-integrity checks, and continuation p.85.
+- **Every subsequent stage:** recover the latest complete archive, append newly translated source text without losing older material, produce a new self-contained full cumulative handoff and manifest, expose both from GNAMMA's book landing page and reader, and check the GitHub Pages build independently.
+- **Limits:** The archive is self-contained for what has been produced in the current working stage, but the **full Arabic authorial text**, independent clause-by-clause verification, historic-print/manuscript collation and remaining introduction are not completed. Such missing material is not inside the handoff.
+
+
+
+## Historical P84 translation stage — 50 pages added (2026-11-08)
+
+**New work:** Beirut B2007 pp. **35–84 inclusive** = **50 printed source pages in an English *working* translation**. This stage genuinely continues from the existing p. 34 boundary; it does not simply rephrase or reprint those 17 pages. The new English text is preserved in **seven separate source-linked stage files** and in the cumulative master:
+
+- `TRANSLATION_35_40.md` (6 pages)
+- `TRANSLATION_41_46.md` (6 pages)
+- `TRANSLATION_47_52.md` (6 pages)
+- `TRANSLATION_53_60.md` (8 pages)
+- `TRANSLATION_61_68.md` (8 pages)
+- `TRANSLATION_69_76.md` (8 pages)
+- `TRANSLATION_77_84.md` (8 pages)
+
+**Cumulative English draft:** `WORKING_TRANSLATION_18_84.md`, mirrored at `../continuous-translation.html`, covers **67 consecutive numbered B2007 printed pages (18–84)**. Automated structural validation counted exactly 67 unique, consecutively numbered `B2007 p.` source-page headings, and all 67 source-link targets are represented in the web reader. The number of authorial *Arabic* source characters and the corresponding critically validated percentage are still unknown.
+
+**Precise boundaries:** the **first foundation ends on B2007 p. 69**, the **second begins p. 70 and ends p. 78**, and the **third begins p. 79**; p. 84 ends midway through discussion of the Footstool's third aspect. **Next untranslated page: B2007 p. 85.**
+
+**Not completed:** The full Arabic authorial text is not imported continuously; source-to-translation alignment has not been independently clause-checked; the 1876 printing and manuscript witnesses have not been collated; later introduction beyond p.84 is still unrepresented; the Persian recension remains unchecked. The bilingual extract reader still contains **32 Arabic–English source clauses from pp.18–34**, not a full parallel translation of all 67 pages. There are **zero** verified comparative manuscript variants. This is a working draft, not a definitive critical edition.
+
+**Historical pagination:** The reported 107-page introduction applies to the 1876 Istanbul printing, not to B2007. Do not say “67 of 107 pages completed” or compute a percentage until the edition concordance is established.
+
+**Important arguments added:** p.69 on the double force of `law`; p.73 on *will and choice* rather than necessity at the level of the Essence; p.77–78 on archangelic functions and spiritual manifestations; p.79 first passage of the third foundation; pp.80–84 on the Breath, dust (*habāʾ*), nature, the Throne and Footstool.
+
+**Cumulative master and recovery:** `WORKING_TRANSLATION_18_84.md` and `STAGE_HANDOFF_P84.md`. Work tracker [GitHub #245](https://github.com/gnamma-research/booksite/issues/245).
+
+
+## Historical P34–P84 programme notes (superseded by current P134 report above)
+
+The primary objective is now **a complete, continuous Arabic–English critical edition of the four-foundation introductory division**, not a collection of attractive extracts. The current stages are separate products:
+
+| Workstream | Verifiable present extent | Remaining |
+|---|---|---|
+| Scholarly critical introduction (editorial essay) | `CRITICAL_INTRODUCTION.md`, twelve substantial sections; readable page `critical-introduction.html` | Additional manuscript- and recension-based historical refinement |
+| English authorial translation, provisional | `WORKING_TRANSLATION_18_84.md` = B2007 printed **pp. 18–84**, a 67-page consecutive-order English draft (including 50 new pages 35–84), also in `continuous-translation.html` | Original introduction after B2007 p. 84; full authorial Arabic alignment; independent clause-by-clause proofing; and an I1876 ↔ Beirut concordance |
+| Paired bilingual source extracts | **32 individual Arabic–English clauses** sampled across B2007 pp. 18–34, with direct source links | Uninterrupted *full Arabic* text for every paragraph and bilingual alignment |
+| Textual witness register | `WITNESS_REGISTER.json`: historical printing, two modern editions and one early manuscript identified; F007 transcription correction recorded | Read and collate actual manuscript and historic-print page images; **zero** established manuscript variants so far |
+| Perennialist comparison | Distinct `COMPARISON.md` and authorial-extract toggle in the reader | Detailed passage-level comparison only once the authorial text is full |
+
+**Critical caveat:** 67 pages in the modern Beirut edition are **not equivalent to 67 of the 107 pages** identified for the historical Istanbul introductory division. Those are different paginations; neither the total Beirut introduction page count nor a proper page concordance has been verified. These are provisional English translations, not 67 pages of independently validated critical Arabic.
+
+**Specific problems flagged for collation:** an ambiguous phrase in the second determination discussion (B2007 p. 33), and the reading `الحضرة العملية` (B2007 p. 34), which must not be silently replaced by a conjectural alternative. Other changes, such as restoration of `من حيث واحديتها` at F007, remain transcription corrections, not competing-manuscript variants.
+
+
+
+**Project:** GNAMMA Research — ʿIrfān and metaphysics (sibling of `texts/al-turka/qawaid-al-tawhid/`).
+**Work:** Saʿīd al-Dīn al-Farghānī, *Muntahā al-madārik fī sharḥ Tāʾiyyat Ibn al-Fāriḍ* (منتهى المدارك في شرح تائية ابن الفارض).
+**Updated:** 2026-11-08.
+
+## Actual coverage and quality
+
+- **32 source-matched authorial extracts**, each with Arabic, a new English working translation, exact digital page, and separate editorial explanation.
+- **Pages sampled:** 18–34 of the modern Beirut digitization (`ablibrary.net/book_content/b/9606/{page}`). This is a page *range of sampled text*, **NOT seventeen fully translated pages**. It includes discontinuities and omitted sentences.
+- **Foundation:** first foundation only. Selected clauses concern hiddenness, unity, self-disclosure, names, degrees of inward comprehension, perfection, knowledge, and existential determination.
+- **Not yet fully translated:** the authorial introduction beyond B2007 p. 84, along with the later commentary and earlier Persian *Mashāriq al-darārī*. The draft pp. 18–84 has not undergone critical proofing, and its continuous full Arabic transcription and bilingual alignment are not yet constituted.
+- **Textual basis:** Arabic text of the modern Beirut printed edition, edited by ʿĀṣim Ibrāhīm al-Kayyālī, as digitized by Ahlulbayt Library. Pages 32–34 are verified directly in the same Beirut digital witness (its page-specific source link now works). Editorial footnotes have **not** been incorporated into Farghānī's authorial text.
+- **Collation:** source-anchored transcription only. No manuscript leaf images collated, and no systematic comparison against the 1876 Istanbul print has yet been carried out.
+- **Translation status:** working scholarly translation, not a definitive critical edition. The bilingual extract reader displays 32 selected, source-linked clauses on pp. 18–34. Separately, an 18–84 **consecutive-page English draft** (67 printed pages, including 50 new pages) has been committed without claiming critical verification or manuscript collation.
+- **Comparative layer:** explicitly *modern editorial research*, never Farghānī's Arabic or an attribution of perennialist doctrine to him.
+
+The Arabic has some unvowelled lexical/typographical uncertainty in the digital witness. Any correction requires printed or manuscript control and must be recorded; words cannot simply be silently improved.
+
+## Unit and page register
+
+| Printed page in digital Beirut edition | Verified unit IDs | Coverage |
+|---|---|---|
+| 18 | F001–F002 | Two selected clauses |
+| 19 | F003–F005 | Three selected clauses |
+| 20 | F006 | One selected clause |
+| 21 | F007–F009 | Three selected clauses |
+| 22 | F010 | One selected clause |
+| 23 | F011 | One selected clause |
+| 24 | F012 | One selected clause |
+| 25 | F013 | One selected clause |
+| 26 | F014 | One selected clause |
+| 27 | F015–F016 | Two selected clauses |
+| 28 | F017 | One selected clause |
+| 29 | F018 | One selected clause |
+| 30 | F019–F020 | Two selected clauses |
+| 31 | F021–F023 | Three selected clauses |
+| 32 | F024–F027 | Four selected clauses, directly verified against page-specific Arabic source |
+| 33 | F028–F029 | Two selected clauses from the second determination discussion |
+| 34 | F030–F032 | Three selected clauses on the names, divinity, and the rank of possibility |
+
+**Total:** 32 passage records; there is *no* claim of complete-page coverage anywhere in this register.
+
+## Sources and editions
+
+1. Beirut digital transcription, *Muntahā al-madārik*, first volume, editor ʿĀṣim Ibrāhīm al-Kayyālī: https://ablibrary.net/book_content/b/9606/18?lang=ar (replace terminal `/18` with the page shown in each unit).
+2. Direct page 32 Arabic witness: https://ablibrary.net/book_content/b/9606/32?lang=ar (the authorial paragraph and chapter boundary are visible).
+3. Historical printed Arabic witness: Istanbul 1876, Princeton/NYU scan https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en (not yet line-by-line collated).
+4. Earlier Persian *Mashāriq al-darārī*, edited by Sayyid Jalāl al-Dīn Āshtiyānī: https://ablibrary.net/book_content/b/4366/126 — contextual comparative witness, not collated.
+5. Guénon, *Les États multiples de l'être*, chapters II, V: https://oeuvre-de-rene-guenon.org/textes/EME02.php and https://oeuvre-de-rene-guenon.org/textes/EME05.php. This material informs only our optional comparison.
+6. Schuon, *Survey of Metaphysics and Esoterism*, and *In the Face of the Absolute*: comparison targets, not quoted or reproduced here.
+
+## Scholarly controls
+
+- Authorial text, translation, editorial notes, and Guénon/Schuon parallels are separate fields.
+- The reported divine saying 'I was a hidden treasure' is a Sufi doctrinal starting point **not established as an authenticated prophetic ḥadīth**.
+- `wujūd` must not be glossed indiscriminately as either Guénonian 'Being' or 'Existence'; compare its connection to `wijdān` and each rank.
+- First determination, `aḥadiyya`, and `wāḥidiyya` are distinct considerations in the text; refrain from equating each to a single Guénonian category without an argument.
+- The p. 23 discussion of what has not yet been determined is not by itself a doctrine of Guénonian *possibilities of non-manifestation*.
+- Where a translation excerpt quotes only a clause from a longer paragraph, no English continuation is implied.
+
+## Remaining staged work
+
+1. Preserve and independently proofread the complete first foundation English draft pp. 18–69 against continuous Arabic, with paragraph alignment and a gap audit.
+2. Verify the draft second foundation pp. 70–78; then continue the third foundation from p. 85 and the fourth foundation through its actual end, preserving all original text.
+3. Collate the 1876 original with the Beirut transcription, then inspect available manuscript witnesses and record meaningful variants.
+4. Translate selected long-commentary passages in which Farghānī resolves problems left open in the introduction.
+5. Compare the Persian and Arabic commentaries, maintaining a separate historical-dependence register for Qūnawī.
+6. Only after continuous coverage and collation, issue a print/PDF critical version marked as such.
+
+## Repository locations
+
+- Reader: `texts/al-farghani/muntaha-al-madarik/index.html`
+- Cumulative 67-page English draft: `texts/al-farghani/muntaha-al-madarik/editorial/WORKING_TRANSLATION_18_84.md`
+- Extracts: `data/units.js`
+- Research comparison: `editorial/COMPARISON.md`
+- Technical terms: `editorial/GLOSSARY.md`
+- Library placement: `texts/index.html` and `texts/manifest.json`, collection **ʿIrfān and metaphysics**, beside but separate from Qawāʿid al-Tawḥīd.
+
+
+---
+
+## PART F — Latest handoff
+
+# Saʿīd al-Dīn al-Farghānī — Muntahā al-madārik · Critical Pass IV
+## Cumulative stage handoff (9 November 2026)
+
+### Deliverable and its exact limits
+The entire original **working English translation** of the Arabic four-uṣūl introduction and two-page closing preface already exists, B2007 pp18–145 inclusive (128 consecutively page-labelled sections). It was preserved without paraphrastic retranslation. This turn added a substantive *selected Arabic–English modern-printed-source check* of **56 loci on B2007 pp30–36** (9,8,8,8,9,7,7), bringing combined passes I–IV to **198 unique clause records** spanning pp18–36. English–Arabic checks on pp24–36 are selected and must **not** be called exhaustive full-page verification.
+
+A second deliverable is [WITNESS_CENSUS_CRITICAL_004.md](WITNESS_CENSUS_CRITICAL_004.md), distinguishing eleven known/candidate codices including Fatih 3966 (reported 724 AH), Carullah 1107 (741 AH in Chittick), Ragıp Paşa 670 (763 AH in Chittick), Kadızademehmed 273, Yeni Camii 706, Ragıp 669, Carullah 1746, Şehid Ali Paşa 1347 and Halet 236. Separate prints B2007, I1876 and Qom are not treated as independent manuscript variants. Chittick 2025 offers a manuscript-based English control from C1107/R670/K273 **but his English quotations are not inspected manuscript readings**.
+
+### Evidence that does NOT exist
+No actual photographed historical printing page (I1876) has been collated at the relevant passages; no manuscript folio images seen; no stemma constructed; 0 authentic Farghānī manuscript variants verified. The NYU catalogue says Istanbul 1876 while Chittick refers to Cairo/Bulaq 1876—settle by reading actual title page. Even the full original Arabic is not in this repository as one continuous proofread bilingual base text. **Therefore the project cannot reasonably be called a definitive Arabic edition** yet.
+
+### Critical decisions
+- B2007 p31 `لون الماءلون إنائه`: normal reading separation `لون الماء لون إنائه` (trivial transcription spacing, **not** a manuscript variant).
+- B2007 p33 `في عون هذا`: do not emend on philosophical expectation.
+- B2007 p34 `الحضرة العملية` contrasts p36 `الحضرة العمائية`; the latter may be an internal solution, but remain explicit **unverified conjecture** until an early codex supports it.
+- Separate *Tāʾiyya* verse quoted p26: B2007 `لعبرة` versus unrelated poem edition `لعبرتي`; not an authorial Farghānī variant.
+- Meaning of `ʿilm`, `wujūd`, `tajallī`, `ḥaḍra` varies across the first rank, second rank, divine-name manifestation and cosmic manifestation; do not flatten phenomenological registers when correcting translation.
+
+### Current files
+- [Complete earlier critical III corpus](FULL_CUMULATIVE_CRITICAL_003.md)
+- [New bilingual source check (56 selected clauses)](CRITICAL_TRANSLATION_30_36.md)
+- [Machine-readable pass IV](../data/critical-pass-004-p30-36.js)
+- [New manuscript census](WITNESS_CENSUS_CRITICAL_004.md)
+- [Critical locus decision register](CRITICAL_LOCUS_REGISTER_004.json)
+- [Full modern-source quality register](CRITICAL_COVERAGE_REGISTER.json)
+- [Full manuscript witness status](WITNESS_REGISTER.json)
+- [GNAMMA Arabic–English critical reader](../critical-edition.html)
+- [Current edition status](STATUS.md)
+
+### Immediate next step, no retranslation
+Resume B2007 p37 for source-to-English audit. In parallel procure readable introduction facsimiles for F3966, C1107, R670, K273 and Y706. Establish B2007–I1876–manuscript folio concordance from real page/folio images, then write a variant table at each crux with lemma, each witnessed reading, locus, scribal-hand changes, and rejection/adoption grounds. Reassess Chittick's manuscript-based text at his specific B2007 p21/p31 examples, without treating English as Arabic variants. Check all 128 pages fully before copy-text decisions or a “definitive” label.
+
+### Preservation
+The previous complete English corpus from P145 and the III cumulative archive are unchanged. The new IV cumulative archive incorporates all older material and append-only new scholarship; the machine manifest lists file SHA references. 
+
+
+---
+
+## PART G — Updated full witness register
+
+```json
+{
+  "schema": "gnamma-farghani-introduction-witness-register-v1",
+  "work": "Saʿīd al-Dīn al-Farghānī, Muntahā al-madārik, introductory four uṣūl",
+  "updated": "2026-11-09",
+  "scope": {
+    "historical_print": "1876 Istanbul volume I, printed pages 1–107 per Scattolin",
+    "notes": "The printed and digital Beirut paginations do not correspond; never copy a number without labelling its witness.",
+    "critical_edition_status": "source-checked working English; Arabic manuscript critical edition NOT constituted",
+    "continuous_full_arabic_transcription": false,
+    "continuous_full_english_translation": true,
+    "consecutive_english_draft": "Beirut B2007 pp.18–34, 17 pages in working translation; not line-by-line proofed or independently collated",
+    "english_draft_authorial_pages": 128,
+    "complete_full_critical_introduction": false,
+    "critical_scholarly_editorial_essay": "editorial/CRITICAL_INTRODUCTION.md",
+    "cumulative_english_draft": "B2007 pp.18–134 = 117 consecutively numbered English working pages; p85–134 sourced through derivative online re-transcription and not independently collated",
+    "latest_handoff": "editorial/FULL_CUMULATIVE_CRITICAL_004.md",
+    "verified_manuscript_variant_count": 0,
+    "current_english_draft": "B2007 pp18–145, 128 page-labelled English working draft, all four foundations and concluding preface; manuscript-critical edition incomplete",
+    "current_scope_boundary": "Fourth foundation ends at B2007 p143; tatimmat al-dibaja pp144–145; poem commentary begins thereafter",
+    "modern_print_clause_review": {
+      "pages": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "count": 198,
+      "source": "B2007 selected digitized Arabic printed source spans",
+      "status": "80 p18–23, 62 p24–29, 56 p30–36; newer spans selected, not exhaustive; ZERO independent manuscript/1876 readings"
+    },
+    "next_critical_audit_beirut_page": 37,
+    "definitive_status": "not-achieved",
+    "critical_review_new_stage": "Critical IV: 56 new selective loci p30–36, 198 total on 19 Beirut pages",
+    "historical_print_imprint_question": "NYU catalogue identifies Istanbul 1293/1876; Chittick 2025 describes Bulaq/Cairo 1876. Establish by reading scanned title page.",
+    "additional_new_candidates_004": "Heidelberg H154 (undated, textual 1v–322r, viewer gated); Gotha G2267 (87ff incomplete via Scattolin 2001); neither read"
+  },
+  "witnesses": [
+    {
+      "siglum": "I1876",
+      "kind": "historical-print",
+      "title": "Muntahā al-madārik, 1293/1876 Istanbul, vol. I",
+      "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000264/1?embed=1&lang=en",
+      "pageRange": "1–107: introductory division (Scattolin)",
+      "editor": "Muḥammad Shukrī al-ʿŪfī, reported by Scattolin",
+      "access": "catalogue and public-domain digital facsimile locator verified; individual page images NOT collated",
+      "accessGrade": "catalogued-scan-not-inspected",
+      "role": "intended historical print control; not yet a copy-text",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "B2007",
+      "kind": "modern-edition-digital",
+      "title": "Muntahā al-madārik, ed. ʿĀṣim Ibrāhīm al-Kayyālī, Dār al-Kutub al-ʿIlmiyya",
+      "url": "https://ablibrary.net/book_content/b/9606/18?lang=ar",
+      "printYear": "2007",
+      "pagesSampled": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "access": "Digital page HTML directly examined for first six pages B2007 pp18–23 in 80 clause-level checks; prior source-linked selections through p34, cumulative English draft through p145; full Arabic copy-text remains unconstituted.",
+      "accessGrade": "modern-digital-text-examined; no manuscript-equivalent authority",
+      "role": "modern edited digital reading and first-pass English source checking, not a validated critical copytext",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "Y706",
+      "kind": "manuscript",
+      "title": "Süleymaniye Yazma Eserler Kütüphanesi, Yeni Camii 706",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Yeni_706%3Ba1?hl=Istanbul&hlu=",
+      "date": "14th century (catalogue)",
+      "extent": "291 folios; text catalogued on fols. 1v–131r",
+      "description": "Cataloguer reports an annotation at fol. 131r that the copy was collated against an original; this assertion has not been independently verified by viewing the folio.",
+      "access": "catalogue metadata only; NO manuscript images compared",
+      "accessGrade": "catalogue-only",
+      "role": "high-priority potential witness, not yet proven superior copy-text",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "Q2011",
+      "kind": "modern-edition",
+      "title": "Muntahā al-madārik, ed. Wisām al-Khaṭṭāwī, Qom, Āyat Ishrāq, 1390 SH",
+      "url": "https://ge.nii.ac.jp/ncid/BB1425879X",
+      "date": "2011 or 2012",
+      "extent": "2 volumes, 1116 pages",
+      "access": "bibliographic record only; text not read",
+      "accessGrade": "catalogue-only",
+      "role": "secondary control pending physical/text access",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "P-QAYSARI",
+      "kind": "collateral-poetic-print",
+      "title": "Ibn al-Fāriḍ, Tāʾiyya, verse 545, separately printed within Dāwūd al-Qayṣarī commentary",
+      "url": "https://najafdesertlibrary.com/book/%D8%B4%D8%B1%D8%AD-%D8%AA%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D9%83%D8%A8%D8%B1%D9%89/v/1/p/1",
+      "access": "Digital text examined for verse 545; reads لعبرتي where B2007 Farghani p26 has لعبرة",
+      "accessGrade": "digital collateral quotation parallel; not a Farghani manuscript witness",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "F3966",
+      "kind": "manuscript",
+      "title": "Süleymaniye Fatih 3966",
+      "date": "reported 724/1324 in scholarship; colophon uninspected",
+      "extent": "116 folios reported",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Fatih_3966",
+      "access": "catalogue and secondary scholarship only; colophon/foliation unverified",
+      "accessGrade": "catalogue-only",
+      "role": "high-priority historical codex; Konya vs Antalya provenance conflict",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "C1107",
+      "kind": "manuscript",
+      "title": "Süleymaniye Carullah 1107",
+      "date": "copied 741 AH per Chittick",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Carullah_1107",
+      "access": "manuscript not examined here; reportedly used by Chittick 2025 in manuscript-collated textual establishment",
+      "accessGrade": "scholarship-only",
+      "role": "high-priority independent codex; must inspect photographs",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "R670",
+      "kind": "manuscript",
+      "title": "Koca Ragıp Paşa 670",
+      "date": "copied 763 AH per Chittick; recorded reading 766/1365",
+      "extent": "249 folios reported",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Koc_670",
+      "access": "catalogue and Chittick scholarship, no images personally compared",
+      "accessGrade": "catalogue-only",
+      "role": "high-priority MS used by Chittick; actual variant list unavailable",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "K273",
+      "kind": "manuscript",
+      "title": "Süleymaniye Kadızademehmed 273",
+      "date": "not verified",
+      "access": "Chittick 2025 identifies it among his three manuscript witnesses; not personally inspected",
+      "accessGrade": "scholarship-only",
+      "role": "high priority third manuscript; catalogue and images needed",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "R669",
+      "kind": "manuscript",
+      "title": "Koca Ragıp Paşa 669",
+      "date": "15th century per catalogue",
+      "extent": "336 folios reported",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Koc_669",
+      "access": "catalogue-only; not collated",
+      "accessGrade": "catalogue-only",
+      "role": "secondary control, no implied relation to adjacent shelfmark 670",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "C1746",
+      "kind": "manuscript",
+      "title": "Süleymaniye Carullah 1746",
+      "date": "16th century per catalogue, but gift notice 883/1479: resolve chronology",
+      "extent": "194 folios reported",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Carullah_1746%3Ba1",
+      "access": "catalogue only",
+      "accessGrade": "catalogue-only",
+      "role": "secondary control and chronology question",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "SA1347",
+      "kind": "manuscript",
+      "title": "Süleymaniye Şehid Ali Paşa 1347, work 5",
+      "date": "not verified",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Sehid_AP_1347%3Ba5",
+      "access": "catalogue only",
+      "accessGrade": "catalogue-only",
+      "role": "composite-codex control, exact folios needed",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "H236",
+      "kind": "manuscript",
+      "title": "Süleymaniye Halet Efendi 236",
+      "date": "20th century per catalogue",
+      "extent": "Farghani section 1v–78v",
+      "url": "https://www.islam-anatolia.ac.uk/data/documents/TK_Sul_Halet_236",
+      "access": "catalogue only",
+      "accessGrade": "catalogue-only",
+      "role": "late control; confirm whether abridged or extracted",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "H154",
+      "kind": "manuscript",
+      "title": "Universitätsbibliothek Heidelberg, Cod. Heid. Orient. 154",
+      "date": "undated in online catalogue",
+      "extent": "Farghānī text fols 1v–322r",
+      "url": "https://digi.ub.uni-heidelberg.de/diglit/codheidorient154/0001",
+      "access": "Catalogue metadata and binding JPEG seen; the actual Farghānī text folios inaccessible in this session (Anubis access guard)",
+      "accessGrade": "digital-catalogue-only-no-text",
+      "role": "high conditional candidate for photographic online collation",
+      "variantsExamined": 0
+    },
+    {
+      "siglum": "G2267",
+      "kind": "manuscript",
+      "title": "Gotha MS 2267, Muntahā al-madārik",
+      "date": "undated in Scattolin appendix",
+      "extent": "87 folios, incomplete",
+      "url": "https://www.ifao.egnet.net/anisl/035/17",
+      "access": "secondary appendix citing manuscript catalogue; actual folios not inspected",
+      "accessGrade": "secondary-catalogue-only",
+      "role": "conditional: determine surviving text and whether introduction included",
+      "variantsExamined": 0
+    }
+  ],
+  "relatedNotWitnesses": [
+    {
+      "siglum": "P-Mashariq",
+      "title": "Farghānī, Mashāriq al-darārī (earlier Persian commentary)",
+      "note": "A distinct authorial work rather than an Arabic witness. Its correspondence should be treated as recensional history, not as a simple Arabic variant list.",
+      "access": "known published tradition, no comprehensive collation"
+    },
+    {
+      "siglum": "S2006",
+      "title": "Giuseppe Scattolin, 'The Key Concepts of al-Farghānī’s Commentary'",
+      "url": "https://ibnarabisociety.org/wp-content/uploads/PDFs/Scattolin_The-key-concepts.pdf",
+      "note": "Secondary study providing 1876 pagination and thematic analysis; individual quoted passages should not be treated as independent manuscript witnesses."
+    },
+    {
+      "siglum": "R-FORUM",
+      "title": "Forum re-transcription of Beirut 2007 Arabic third and fourth foundations, labelled with B2007 printed pages",
+      "urls": [
+        "https://alshrefalm7sy.ahlamontada.com/t3213",
+        "https://alshrefalm7sy.ahlamontada.com/t3214"
+      ],
+      "scope": "Third foundation B2007 pp85–101 and fourth foundation pp102–134 consulted for new English P134 working draft; source pages continue after p134",
+      "access": "online text transcription inspected; not a separate medieval or manuscript witness; manuscript copy-text remains uninspected",
+      "note": "Do not count as an independent corroborating witness or as a manuscript variant. Printed-page labels may need control against physical Beirut edition; may contain OCR/transcription errors or modern editorial footnotes."
+    },
+    {
+      "siglum": "R-FANARI",
+      "title": "Al-Fanārī's Miṣbāḥ al-uns, reported quotation of Farghānī's p20–21 on determinate divine witnessing",
+      "url": "https://ablibrary.net/book_content/b/4696/183?lang=ar",
+      "access": "Modern digital printed quotation inspected; shows من حيث واحديتها and a commentator's theological qualifications",
+      "role": "Later reception/indirect quotation, not an independently collated Farghānī manuscript",
+      "status": "verified passage quotation at modern print p183; variant claims not made"
+    },
+    {
+      "siglum": "CH2025",
+      "title": "William C. Chittick, Farghānī on Waḥdat al-Wujūd in the Four Journeys, Journal of Sufi Studies 14 (2025)",
+      "url": "https://traditionalhikma.com/wp-content/uploads/2025/06/Farghani_on_Wahdat_al_Wujud_in_the_Four.pdf",
+      "access": "Published English based on his manuscript-collated text C1107/R670/K273, but not available as a photographed Arabic witness",
+      "note": "Useful interpretive/indirect secondary text control. No manuscript readings personally attested by this project."
+    },
+    {
+      "siglum": "CH2024",
+      "title": "William C. Chittick, Marātib al-taqwā: Saʿīd al-Dīn Farghānī on the Ontology of Ethics",
+      "url": "https://traditionalhikma.com/wp-content/uploads/2024/03/Maratib_al_Taqwa_Said_al_Din_Farghani_on.pdf",
+      "access": "scholarly secondary",
+      "note": "Reports C1107 741 and R670 763 and published-text errors"
+    }
+  ],
+  "readings": [
+    {
+      "id": "ED-0001",
+      "location": "B2007 p.21, old extract F007",
+      "type": "editorial-transcription-correction",
+      "before": "... بذاته الأقدس، لا من حيث إطلاقها وأحديتها",
+      "after": "... بذاته الأقدس تعالى وتقدّس من حيث واحديتها، لا من حيث إطلاقها وأحديتها",
+      "evidence": "direct inspection of B2007 page 21 online; old GNAMMA unit omitted من حيث واحديتها",
+      "effect": "restores explicit opposition of wāḥidiyya and aḥadiyya",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "corrected-digital-extract; print/manuscript validation pending"
+    },
+    {
+      "id": "ED-0002",
+      "location": "B2007 p.33 second determination, transitional wording near عون هذا",
+      "type": "unresolved-digital-reading",
+      "evidence": "digital Arabic text displays a short syntactically uncertain transition; I1876 and Y706 have not been inspected at this locus",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "no-emendation; retain paraphrastic English flag and check actual witness"
+    },
+    {
+      "id": "ED-0003",
+      "location": "B2007 p.34, الحضرة العملية",
+      "type": "unresolved-digital-reading",
+      "evidence": "the digital print reads al-ḥaḍra al-ʿamaliyya in the second-determination name register; context may suggest a different abstract qualifier, but no second witness has been read",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "no-emendation; literal translation retained with warning"
+    },
+    {
+      "id": "ED-0004",
+      "location": "Online B2007-derived forum transcription p.87, transition describing stirring motion of elemental matter",
+      "type": "unclear-transcription",
+      "evidence": "Website text and embedded modern editor note indicate one word in the phrase concerning strong influence/heat is corrupt or unclear; original printed image not yet inspected",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "translated without conjectural restoration; compare actual printed and manuscript texts"
+    },
+    {
+      "id": "ED-0005",
+      "location": "B2007 p18, بطون المشتمل",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "awkward printed-digital wording in definition of hidden essential-name treasure",
+      "source_linked_audit_unit": "critical-pass-001 CR001-010",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    },
+    {
+      "id": "ED-0006",
+      "location": "B2007 p19, المطلب الغائبّ",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "awkward digital adjective in sentence on ultimate aim of name-perfection",
+      "source_linked_audit_unit": "critical-pass-001 CR001-014",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    },
+    {
+      "id": "ED-0007",
+      "location": "B2007 p19, عمليّا ووجوديّا vs contextual علميّا ووجوديّا",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "digital B2007 and derivative forum read ʿamaliyyan ('operative/practical'), whereas inherited English flattened it to epistemic and existential; no emendation authorized",
+      "source_linked_audit_unit": "critical-pass-001 CR001-024",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    },
+    {
+      "id": "ED-0008",
+      "location": "B2007 p23, فلم تعلم ولم يحكم بشيء منها إلا بعد تعيّنها",
+      "type": "digital-textual-or-semantic-crux",
+      "evidence": "substantive doctrinal/semantic issue about knowability of unconcretized essential affairs; explicit modal 'perhaps' must not be erased",
+      "source_linked_audit_unit": "critical-pass-002 CR002-032",
+      "criticalVariant": false,
+      "manuscriptSupport": null,
+      "status": "retain observed digital reading; alternative manuscript/historical print unexamined"
+    }
+  ],
+  "selectionRule": "Do not create a variant reading or siglum support unless two independent witnesses have actually been inspected in the relevant locus. Orthographic normalization is not a textual variant.",
+  "todo": [
+    "Inspect actual I1876 page images and identify page-by-page concordance with B2007",
+    "Acquire scan/access to Y706 and verify manuscript collation note fol. 131r",
+    "Establish source hierarchy; record lacunae, possible contamination and substantive variants",
+    "Collate alternative printed Q2011 readings if available, without assuming newer equals better",
+    "Separate authorial hadith citations from modern editor's attribution footnotes",
+    "Complete uninterrupted Arabic transcription and independent English translation",
+    "Review and validate all 25 existing bilingual extracts against at least a historical-print witness",
+    "Publish critical text only after substantial witness collation; until then label working text"
+  ]
+}
+
+```
+
+---
+
+## PART H — 128-page source-quality ledger
+
+```json
+{
+  "schema": "gnamma-farghani-page-critical-audit-v1",
+  "date": "2026-11-09",
+  "language": "Arabic and English",
+  "scope": "Introduction systematic four foundations and concluding preface, modern Beirut B2007 pp18–145",
+  "english_working_draft_page_count": 128,
+  "source_checked_modern_digital_page_count": 19,
+  "clause_record_count": 198,
+  "issues_unresolved_digital": 12,
+  "historical_print_independently_collated_pages": 0,
+  "manuscript_variants": 0,
+  "authorial_introduction_english_draft_complete": true,
+  "authorial_introduction_arabic_critical_edition_complete": false,
+  "definitive_grade": false,
+  "source_witness_grade": "modern edited online printed text for pages18–23; remaining draft not yet checked clause-by-clause; 1876 historical print and Yeni Camii 706 uncollated",
+  "next_critical_audit_page": 37,
+  "next_translation_outside_intro": "B2007 p146 poem commentary (must confirm division against scan)",
+  "pages": [
+    {
+      "b2007_page": 18,
+      "source_url": "https://ablibrary.net/book_content/b/9606/18?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 11,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 19,
+      "source_url": "https://ablibrary.net/book_content/b/9606/19?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 17,
+      "digital_crux_count": 2,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 20,
+      "source_url": "https://ablibrary.net/book_content/b/9606/20?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 9,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 21,
+      "source_url": "https://ablibrary.net/book_content/b/9606/21?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 13,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 22,
+      "source_url": "https://ablibrary.net/book_content/b/9606/22?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 15,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 23,
+      "source_url": "https://ablibrary.net/book_content/b/9606/23?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": true,
+      "digital_clause_check_count": 15,
+      "digital_crux_count": 2,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "modern-digital-text-source-checked-clause-draft",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 24,
+      "source_url": "https://ablibrary.net/book_content/b/9606/24?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 9,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 25,
+      "source_url": "https://ablibrary.net/book_content/b/9606/25?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 12,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 26,
+      "source_url": "https://ablibrary.net/book_content/b/9606/26?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 9,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 27,
+      "source_url": "https://ablibrary.net/book_content/b/9606/27?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 10,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 28,
+      "source_url": "https://ablibrary.net/book_content/b/9606/28?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 11,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 29,
+      "source_url": "https://ablibrary.net/book_content/b/9606/29?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 11,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected-checked-arabic-English-spans; rest working-draft only",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 30,
+      "source_url": "https://ablibrary.net/book_content/b/9606/30?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 9,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected digital source clauses checked; other portions unproofed working draft",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 31,
+      "source_url": "https://ablibrary.net/book_content/b/9606/31?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 8,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected digital source clauses checked; other portions unproofed working draft",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 32,
+      "source_url": "https://ablibrary.net/book_content/b/9606/32?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 8,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected digital source clauses checked; other portions unproofed working draft",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 33,
+      "source_url": "https://ablibrary.net/book_content/b/9606/33?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 8,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected digital source clauses checked; other portions unproofed working draft",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 34,
+      "source_url": "https://ablibrary.net/book_content/b/9606/34?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 9,
+      "digital_crux_count": 1,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected digital source clauses checked; other portions unproofed working draft",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 35,
+      "source_url": "https://ablibrary.net/book_content/b/9606/35?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 7,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected digital source clauses checked; other portions unproofed working draft",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 36,
+      "source_url": "https://ablibrary.net/book_content/b/9606/36?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 7,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "selected digital source clauses checked; other portions unproofed working draft",
+      "source_kind": "B2007-main-site-printed-digital",
+      "page_has_selected_clause_checks": true,
+      "selected_arabic_english_checked_B2007": true
+    },
+    {
+      "b2007_page": 37,
+      "source_url": "https://ablibrary.net/book_content/b/9606/37?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 38,
+      "source_url": "https://ablibrary.net/book_content/b/9606/38?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 39,
+      "source_url": "https://ablibrary.net/book_content/b/9606/39?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 40,
+      "source_url": "https://ablibrary.net/book_content/b/9606/40?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 41,
+      "source_url": "https://ablibrary.net/book_content/b/9606/41?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 42,
+      "source_url": "https://ablibrary.net/book_content/b/9606/42?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 43,
+      "source_url": "https://ablibrary.net/book_content/b/9606/43?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 44,
+      "source_url": "https://ablibrary.net/book_content/b/9606/44?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 45,
+      "source_url": "https://ablibrary.net/book_content/b/9606/45?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 46,
+      "source_url": "https://ablibrary.net/book_content/b/9606/46?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 47,
+      "source_url": "https://ablibrary.net/book_content/b/9606/47?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 48,
+      "source_url": "https://ablibrary.net/book_content/b/9606/48?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 49,
+      "source_url": "https://ablibrary.net/book_content/b/9606/49?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 50,
+      "source_url": "https://ablibrary.net/book_content/b/9606/50?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 51,
+      "source_url": "https://ablibrary.net/book_content/b/9606/51?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 52,
+      "source_url": "https://ablibrary.net/book_content/b/9606/52?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 53,
+      "source_url": "https://ablibrary.net/book_content/b/9606/53?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 54,
+      "source_url": "https://ablibrary.net/book_content/b/9606/54?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 55,
+      "source_url": "https://ablibrary.net/book_content/b/9606/55?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 56,
+      "source_url": "https://ablibrary.net/book_content/b/9606/56?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 57,
+      "source_url": "https://ablibrary.net/book_content/b/9606/57?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 58,
+      "source_url": "https://ablibrary.net/book_content/b/9606/58?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 59,
+      "source_url": "https://ablibrary.net/book_content/b/9606/59?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 60,
+      "source_url": "https://ablibrary.net/book_content/b/9606/60?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 61,
+      "source_url": "https://ablibrary.net/book_content/b/9606/61?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 62,
+      "source_url": "https://ablibrary.net/book_content/b/9606/62?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 63,
+      "source_url": "https://ablibrary.net/book_content/b/9606/63?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 64,
+      "source_url": "https://ablibrary.net/book_content/b/9606/64?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 65,
+      "source_url": "https://ablibrary.net/book_content/b/9606/65?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 66,
+      "source_url": "https://ablibrary.net/book_content/b/9606/66?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 67,
+      "source_url": "https://ablibrary.net/book_content/b/9606/67?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 68,
+      "source_url": "https://ablibrary.net/book_content/b/9606/68?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 69,
+      "source_url": "https://ablibrary.net/book_content/b/9606/69?lang=ar",
+      "authorial_section": "Foundation I",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 70,
+      "source_url": "https://ablibrary.net/book_content/b/9606/70?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 71,
+      "source_url": "https://ablibrary.net/book_content/b/9606/71?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 72,
+      "source_url": "https://ablibrary.net/book_content/b/9606/72?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 73,
+      "source_url": "https://ablibrary.net/book_content/b/9606/73?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 74,
+      "source_url": "https://ablibrary.net/book_content/b/9606/74?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 75,
+      "source_url": "https://ablibrary.net/book_content/b/9606/75?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 76,
+      "source_url": "https://ablibrary.net/book_content/b/9606/76?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 77,
+      "source_url": "https://ablibrary.net/book_content/b/9606/77?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 78,
+      "source_url": "https://ablibrary.net/book_content/b/9606/78?lang=ar",
+      "authorial_section": "Foundation II",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 79,
+      "source_url": "https://ablibrary.net/book_content/b/9606/79?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 80,
+      "source_url": "https://ablibrary.net/book_content/b/9606/80?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 81,
+      "source_url": "https://ablibrary.net/book_content/b/9606/81?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 82,
+      "source_url": "https://ablibrary.net/book_content/b/9606/82?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 83,
+      "source_url": "https://ablibrary.net/book_content/b/9606/83?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 84,
+      "source_url": "https://ablibrary.net/book_content/b/9606/84?lang=ar",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-main-site-printed-digital"
+    },
+    {
+      "b2007_page": 85,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 86,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 87,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 88,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 89,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 90,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 91,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 92,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 93,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 94,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 95,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 96,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 97,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 98,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 99,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 100,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 101,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3213",
+      "authorial_section": "Foundation III",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-third-foundation"
+    },
+    {
+      "b2007_page": 102,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 103,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 104,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 105,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 106,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 107,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 108,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 109,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 110,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 111,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 112,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 113,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 114,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 115,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 116,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 117,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 118,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 119,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 120,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 121,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 122,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 123,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 124,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 125,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 126,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 127,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 128,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 129,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 130,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 131,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 132,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 133,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 134,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 135,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 136,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 137,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 138,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 139,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 140,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 141,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 142,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation"
+    },
+    {
+      "b2007_page": 143,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Foundation IV",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation",
+      "editorial_note": "Four foundations conclude"
+    },
+    {
+      "b2007_page": 144,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Concluding preface",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation",
+      "editorial_note": "Concluding preface begins"
+    },
+    {
+      "b2007_page": 145,
+      "source_url": "https://alshrefalm7sy.ahlamontada.com/t3214",
+      "authorial_section": "Concluding preface",
+      "english_working_draft": true,
+      "english_clause_checked_B2007": false,
+      "digital_clause_check_count": 0,
+      "digital_crux_count": 0,
+      "actual_historical_print_inspected": false,
+      "actual_manuscript_inspected": false,
+      "independently_collated_variants": 0,
+      "full_arabic_page_in_repo": false,
+      "source_fidelity_status": "working-English-only-unchecked",
+      "source_kind": "B2007-derived-forum-fourth-foundation",
+      "editorial_note": "Concluding preface ends"
+    }
+  ],
+  "source_pages_with_selected_arabic_english_checks": 19,
+  "check_methodology": "80 earlier digital clause checks pp18–23; 62 selected source spans pp24–29; 56 selected source spans pp30–36 (198 total). Neither printed page nor manuscript has been exhaustively collated. Thirteen cumulative flagged crux records include a resolved p31 digital-spacing typo; no variant from 1876 or MSS is established.",
+  "issues_flagged_including_resolved_typographic": 13
+}
+
+```

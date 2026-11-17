@@ -1,0 +1,83 @@
+{
+  "edition": "1.6.1",
+  "date": "2026-11-12",
+  "status": "Second-pass continuity fixes after assembling all proposed substitutions",
+  "changes": [
+    {
+      "id": 2,
+      "matn_replacements": [
+        [
+          "Human life depends upon water, soil, plants, animals and the labour of other people. Water, soil, animals, plants and the capacities of the human body make provision possible, but their benefits are obtained through knowledge, labour and cooperation.",
+          "Human life depends upon land, water, plants, animals and the labour of others. People use knowledge and practical skill to cultivate, herd and transform the resources on which they depend."
+        ],
+        [
+          "Such work requires observation, skill and cooperation. It also creates obligations among people whose livelihoods depend upon one another.",
+          "These activities require cooperation and give people responsibilities toward those whose work makes their livelihoods possible."
+        ]
+      ]
+    },
+    {
+      "id": 8,
+      "matn_replacements": [
+        [
+          "Khadījah listened, sheltered him and recalled the character she had long witnessed: kinship maintained, the weak supported, visitors received, truthful dealings and assistance to those overwhelmed by hardship. She reassured him on the basis of what she knew of his life.",
+          "Khadījah sheltered and reassured him, recalling his care for relatives, truthful dealings, hospitality and help to those in need."
+        ]
+      ]
+    },
+    {
+      "id": 11,
+      "matn_replacements": [
+        [
+          "Their initial pledge at al-ʿAqabah concerned belief and conduct; a later pledge undertook the Prophet's defence if he joined them. The later pledge placed the people of Yathrib under a new responsibility: they undertook to defend the Prophet and those who would join him, even at risk to themselves.",
+          "The first pledge at al-ʿAqabah concerned belief and conduct. In the later pledge, the people of Yathrib undertook to protect the Prophet and those who would join him, accepting the danger this might bring to their own households."
+        ]
+      ]
+    },
+    {
+      "id": 17,
+      "matn_replacements": [
+        [
+          "The Jewish cultivators of Khaybar continued working its fields under an agreement with the Muslim authorities. An arrangement allowed Jewish cultivators to remain and work for a specified share of produce. The arrangement required continued cultivation and the division of each harvest.",
+          "Under an agreement with the Muslim authorities, Jewish cultivators continued working Khaybar's fields in return for an agreed share of the produce. The settlement required cooperation over successive harvests."
+        ]
+      ]
+    },
+    {
+      "id": 22,
+      "matn_replacements": [
+        [
+          "Stipend registers identified persons entitled to payments, but those payments depended upon cultivated land, revenue collection and the decisions of officials in distant provinces.\n\nThe *dīwān* recorded soldiers and other recipients entitled to stipends.",
+          "Stipend payments depended upon revenue from cultivated land and the decisions of officials in distant provinces.\n\nThe *dīwān* recorded soldiers and other recipients entitled to stipends."
+        ]
+      ]
+    },
+    {
+      "id": 40,
+      "matn_replacements": [
+        [
+          "Later communities remembered some founders as saints; the history of their works and the religious meaning attached to them must be examined from the distinct evidence that survives.",
+          "Later communities remembered some founders as saints. Inscriptions document parts of their historical activity, while local traditions sometimes preserve details first recorded much later."
+        ]
+      ]
+    },
+    {
+      "id": 44,
+      "matn_replacements": [
+        [
+          "The judges heard the appeal through advocates, earlier court records and documents.",
+          "The judges considered the appeal through advocates and the records of earlier proceedings."
+        ]
+      ]
+    },
+    {
+      "id": 1,
+      "matn_replacements": [
+        [
+          "The Qurʾān recounts these prophets not merely as figures of the past but as examples through which the final Messenger, Muḥammad ﷺ, and his community are instructed.",
+          "The Qurʾān recounts these prophets to instruct Muḥammad ﷺ and his community, as well as to remember their earlier missions."
+        ]
+      ]
+    }
+  ]
+}

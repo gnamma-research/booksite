@@ -1,0 +1,20 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: Stage106_MISSING_MATERIALS.csv>index,artifact,Stage106_state_or_unresolved_requirement
+0,artifact,stage38_cumulative_revised_page_drafts_II215_II314.json
+1,artifact,stage38_retained_joined_notes_II281_II314.json
+2,artifact,stage38_wasim_self_identified_preface.json
+3,artifact,stage38_verified_excerpt_audit.json
+4,artifact,Taqrib_Stage38_Original_II215_II222_and_Cairo_1912_Control.pdf
+5,artifact,Taqrib_Stage38_Source_Corrections_II215_II222.pdf
+6,artifact,Taqrib_Stage38_Source_Checked_Corrections_II215_II222.md
+7,artifact,stage51-cumulative-II015-II054.js through II298-II314.js
+8,artifact,Volume II source pages 1–214 and 315–335 full English literal masters
+9,artifact,Full Wasīm ḥāshiya note corpus
+10,artifact,remote Stage51 main JS modules for II215–314
+11,artifact,remote source-selected Arabic-English modules II223–230; Stage106 individually checked 8 selected clause IDs; 45 further ID checks and the p229 lower variant remain
+12,artifact,I026.lower.02 connective before فإنه حينئذ
+13,artifact,I042 lower omitted clauses and upper record I042.upper.02
+14,I043.upper.02 / I044 lower,"Exact next Stage106 source-empty record I043.upper.02, physical p56; then I044.lower.01/.02 while maintaining I043–44 boundaries"
+15,Stage106 p229 lower transcription candidate,Remote G.II.229.21.01 reads وركباتها; facsimile appears ومركباتها. Requires independent second reading. Never overwrite original silently.
+16,Stage106 45 unchecked selected clause IDs,Three remote source-clause modules at II223–230 total 53 distinct IDs; only 8 inspected this stage; authorial segmentation/collation not certified.
+17,Stage105 legacy record-level proof,"All 1,400 Volume I record-level and clause-level independent-proof obligations remain open, including I026.lower.02 before فإنه حينئذ"

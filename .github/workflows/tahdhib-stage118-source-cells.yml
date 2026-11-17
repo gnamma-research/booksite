@@ -1,0 +1,26 @@
+name: Tahdhib Stage118 source-cell and preservation audit
+on:
+  workflow_dispatch:
+  push:
+    branches: ['research/tahdhib-stage118-remaining-source-audit-20261112']
+  pull_request:
+    paths:
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE118_*'
+      - 'tools/tahdhib/check_stage118_source_cells.py'
+permissions:
+  contents: read
+jobs:
+  source-cell-audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify 105 historical modal family codes and 49 ordered definitions
+        run: python tools/tahdhib/check_stage118_source_cells.py
+      - name: Check original logic and source integrity invariants
+        run: |
+          python -m pip install PyYAML==6.0.2
+          python tools/tahdhib/run_ci_contract.py logical-core

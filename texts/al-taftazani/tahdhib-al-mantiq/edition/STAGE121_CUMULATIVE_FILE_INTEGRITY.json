@@ -1,0 +1,58 @@
+{
+  "stage": 121,
+  "date": "2026-11-12",
+  "status": "working H later-gloss source-photo research; full critical edition not yet certified",
+  "originalHistoricalHNotes": 1090,
+  "originalFirstPassEnglish": 1029,
+  "inheritedTableAffected": 4,
+  "inheritedModernReferences": 57,
+  "priorFullCumulative": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage120.md",
+  "priorFullBytes": 1324459,
+  "priorFullSHA256": "f206a6df72e6ff5f6ad18915ae02f7381283fc1bcca875aba38f5cabe2d0db34",
+  "currentFullCumulative": "texts/al-taftazani/tahdhib-al-mantiq/edition/batches/hawashi-all-sections-cumulative-stage121.md",
+  "currentBytes": 1361738,
+  "currentSHA256": "663bd5774b0ff7cdcdad205aebd15b13df8da96f3a66893849a196b92cfb27da",
+  "priorBytePrefixUnchanged": true,
+  "Q258PreviousSelected": 39,
+  "Q258NewSelected": 10,
+  "Q258AllSelected": 49,
+  "Q258CrossReferenceOnlyFullShortCellReadings": 11,
+  "Q258FullSubstantiveCellsStillOpen": 38,
+  "Q258NewPartialNegativeJudgments": 3,
+  "Q294PreviousIndividualGlyphs": 27,
+  "Q294NewDirections": 20,
+  "Q294IndividualGlyphsCumulative": 47,
+  "Q294RemainingIndividualGlyphs": 58,
+  "Q294NewUpperBroader": 10,
+  "Q294NewLowerBroader": 10,
+  "Q294AllQualifiedSourceSymbolsCertified": 0,
+  "newWholeHistoricalHPrintedPagesCertified": 0,
+  "newOriginalTOrYManuscriptVariants": 0,
+  "newHistoricalModal46StrongProofs": 0,
+  "appendices": [
+    {
+      "title": "Ten final Q258 source readings and their grades",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE121_Q258_TEN_LAST_LOCATOR_READINGS.json",
+      "bytes": 5945,
+      "sha256": "5fb863b45bc92cc7e6fa039e520af930d3ac88627e28d7abcc487c7a8bf1f4c3"
+    },
+    {
+      "title": "Twenty additional Q294 directed source glyphs",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE121_Q294_TWENTY_SOURCE_DIRECTIONS.json",
+      "bytes": 14744,
+      "sha256": "0edd7439526e9898818efe624961b6e5be9ebd4b349da9a271a52ea3ae7fe6d4"
+    },
+    {
+      "title": "Stage121 source-photo audit and next exact tasks",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE121_PHOTOGRAPHIC_CELL_AUDIT.md",
+      "bytes": 9897,
+      "sha256": "9cf05471bed5422bacca2413c82cc8c049125630e4e38d04ed677db4de97436b"
+    },
+    {
+      "title": "Stage121 cumulative handoff",
+      "path": "texts/al-taftazani/tahdhib-al-mantiq/edition/HANDOFF_LATEST.md",
+      "bytes": 6378,
+      "sha256": "bba16c92334f4a2f13b411b0517050b2434dd2995e88f3982d601dd6df2aeda4"
+    }
+  ]
+}

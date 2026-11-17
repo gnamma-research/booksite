@@ -1,0 +1,50 @@
+name: Qawtaw12 scholarly acquisition QA
+on:
+  push:
+    branches: [qawtaw12-20261112-independent-source-catalogue]
+    paths: ['.github/workflows/qawtaw12-research-qa.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          ref: qawtaw12-20261112-independent-source-catalogue
+          sparse-checkout: |
+            texts/al-turka/qawaid-al-tawhid
+      - name: Audit acquisition references and unchanged medieval text
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,subprocess
+          p=Path('texts/al-turka/qawaid-al-tawhid')
+          j=json.loads((p/'qa/qawtaw12-witness-acquisition.json').read_text())
+          assert j['currentStatus']['newSourcePageImagesRead']==0
+          assert j['currentStatus']['lostWordsRecovered']==0
+          assert j['currentStatus']['completeBilingualUnits']==171
+          assert j['currentStatus']['reviewedPunctuationSegments']==5520
+          w={v['id']:v for v in j['witnessTargets']}
+          assert w['L-1898-Millet']['holding'].find('01405/1')!=-1
+          assert '148198' in w['L-1898-Millet']['holding']
+          assert '37–72' in w['H-IV']['identity']
+          assert not any(v['scanVerified'] for v in w.values())
+          h=(p/'textual-decisions.html').read_text()
+          assert 'QAWTAW12_WITNESS_ACCESS_2026-11-12.md' in h
+          assert 'qawtaw12-witness-acquisition.json' in h
+          assert h.count('class="case"')==14
+          d=(p/'editorial/QAWTAW12_WITNESS_ACCESS_2026-11-12.md').read_text()
+          assert 'Ali Emiri Arabi' in d and '148198' in d
+          assert 'pp. 37–72' in d
+          assert 'actual photographed pages' not in d.lower() or 'not' in d.lower()
+          changed=set(subprocess.check_output(['git','diff','--name-only','HEAD~1','HEAD'],text=True).splitlines())
+          # This first workflow commit includes only witness material and workflow metadata since source files are deliberately untouched.
+          protected=['data/units.js','data/commentary-main-001-019.js','data/commentary-corpus.json','pdf/manifest.json']
+          for file in protected:
+              assert not any(x.endswith('/'+file) for x in changed)
+          print('PASS: Qawtaw12 archive, 2 primary textual questions, no counterfeit witness, protected text preserved.')
+          PY

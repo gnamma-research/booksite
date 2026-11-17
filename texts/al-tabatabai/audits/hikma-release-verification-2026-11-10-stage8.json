@@ -1,0 +1,694 @@
+{
+  "schema": 1,
+  "continuationKey": "nihayat4",
+  "stage": 8,
+  "verifiedAtUTC": "2026-11-10 15:55:48 UTC",
+  "status": "published-and-verified",
+  "repository": "gnamma-research/booksite",
+  "branch": "master",
+  "sourceCommit": "4a3d35ada523a513ebcd63a4861ef9afaab28ae4",
+  "readerRunnerRepairCommit": "0b1d03da9235c7236159c971dcbe74d0c67b09c6",
+  "pullRequest": {
+    "number": 286,
+    "url": "https://github.com/gnamma-research/booksite/pull/286",
+    "mergeCommit": "93353860a31e528d88a14e7125c99c7fdc97731a"
+  },
+  "pdfPaginationRepairCommit": "91d5ccbddb51812965deac3a76eb8cc13b6293cb",
+  "pdfPublicationCommit": "73cb227ee1d2dd8ae57d32e8b73e3a9d438851dd",
+  "coverage": {
+    "muzaffarPairedUnits": 101,
+    "bidayaPairedUnits": 111,
+    "nihayaPairedUnits": 136,
+    "aggregatePairedUnits": 348,
+    "navigationGroups": 347,
+    "nihayaCompleteLocalReadings": 136,
+    "nihayaCompleteExternalComparisons": 1,
+    "nihayaCompleteExternalUnitIds": [
+      "N-IX-09"
+    ],
+    "nihayaExternalComparisonsRemaining": 135,
+    "independentSpecialistCertifications": 0
+  },
+  "readerVerification": {
+    "runId": 42847941422,
+    "runUrl": "https://github.com/gnamma-research/booksite/actions/runs/42847941422",
+    "jobId": 129940402045,
+    "headSha": "91d5ccbddb51812965deac3a76eb8cc13b6293cb",
+    "conclusion": "success",
+    "checksPassed": 51,
+    "chromiumChecks": 26,
+    "webkitChecks": 25,
+    "artifactId": 13778409665,
+    "artifactDigestReportedByGitHub": "4099d79a007b6037746ff476fe3ec0899cd292b17657bf55ca5269d7a07d4f80",
+    "browserScreenshotReview": {
+      "screenshotsInspected": 12,
+      "sourceRunId": 42843971671,
+      "sourceHeadSha": "0b1d03da9235c7236159c971dcbe74d0c67b09c6",
+      "artifactId": 13778605728,
+      "artifactDownloadedAndSha256Verified": true,
+      "artifactSha256": "38a53d0cad277bd700993525dcb3d12d4d89cda77d29c5eaa985ef9c3b0d50e4",
+      "scope": "Desktop/mobile direct/combined table screenshots in Chromium and WebKit plus general reader views. Reader JavaScript and shared figure/table styles are unchanged between this artifact and the final release. Browser square DOM/containment assertions passed; saved screenshots do not include the square. Its English and Arabic PDF renderings were visually inspected separately."
+    }
+  },
+  "pdfWorkflow": {
+    "runId": 42847941362,
+    "runUrl": "https://github.com/gnamma-research/booksite/actions/runs/42847941362",
+    "jobId": 129940401795,
+    "headSha": "91d5ccbddb51812965deac3a76eb8cc13b6293cb",
+    "conclusion": "success",
+    "artifactId": 13777553733,
+    "artifactBytes": 13921472,
+    "artifactDigestReportedByGitHub": "6812a966fe8d1205a9b6ab500b141f92e3a31433681f58d10182dfbe10c3582e"
+  },
+  "pdfVerification": {
+    "manifestUrl": "https://raw.githubusercontent.com/gnamma-research/booksite/73cb227ee1d2dd8ae57d32e8b73e3a9d438851dd/texts/al-tabatabai/editions/manifest.json",
+    "files": [
+      {
+        "filename": "muzaffar-al-mantiq-reading-A4.pdf",
+        "pages": 110,
+        "bytes": 762830,
+        "sha256": "f46ea46621326ea7f1e970bffbaa1dac14f76d15b259a49cd79f0ae0750c5cb3",
+        "sourceSha256": "96bd6a0c5881e30b5b92564896048d2ae81cc6e7dd7fbc2a6dc42449df0961d4",
+        "samplePages": {
+          "square": 86,
+          "table": 105,
+          "bookV": 108
+        },
+        "allPagesA4": true,
+        "selectableText": true
+      },
+      {
+        "filename": "muzaffar-al-mantiq-study-A4.pdf",
+        "pages": 235,
+        "bytes": 1882831,
+        "sha256": "a7747aff618c31e438b4acf58683cc016c0f3c58aaba7abf8d5b5422f48e11e5",
+        "sourceSha256": "96bd6a0c5881e30b5b92564896048d2ae81cc6e7dd7fbc2a6dc42449df0961d4",
+        "samplePages": {
+          "square": 181,
+          "table": 226,
+          "bookV": 231
+        },
+        "allPagesA4": true,
+        "selectableText": true
+      },
+      {
+        "filename": "muzaffar-al-mantiq-reference-A4.pdf",
+        "pages": 169,
+        "bytes": 1345337,
+        "sha256": "1e2084738767e84c0ae8291685cc79fd2a3c8f9dc4f74175f27bae72ea917956",
+        "sourceSha256": "96bd6a0c5881e30b5b92564896048d2ae81cc6e7dd7fbc2a6dc42449df0961d4",
+        "samplePages": {
+          "bookV": 166
+        },
+        "allPagesA4": true,
+        "selectableText": true
+      },
+      {
+        "filename": "bidayat-al-hikma-reading-A4.pdf",
+        "pages": 131,
+        "bytes": 584622,
+        "sha256": "7ce44377d79693962cad492304a67a936c7fc1fa081e67b437ebe42f0446591b",
+        "sourceSha256": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
+        "samplePages": {},
+        "allPagesA4": true,
+        "selectableText": true
+      },
+      {
+        "filename": "bidayat-al-hikma-study-A4.pdf",
+        "pages": 223,
+        "bytes": 1659045,
+        "sha256": "28fbb72a006fb58acb824780ef00a26dc0129e12ce5625223d29b50b55331c52",
+        "sourceSha256": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
+        "samplePages": {},
+        "allPagesA4": true,
+        "selectableText": true
+      },
+      {
+        "filename": "bidayat-al-hikma-reference-A4.pdf",
+        "pages": 146,
+        "bytes": 1229777,
+        "sha256": "a1ceb086d402f511a94052d52d9f7835e2a9825665a4a31b71200a8ad7bd72ec",
+        "sourceSha256": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
+        "samplePages": {},
+        "allPagesA4": true,
+        "selectableText": true
+      },
+      {
+        "filename": "nihayat-al-hikma-reading-A4.pdf",
+        "pages": 289,
+        "bytes": 1007077,
+        "sha256": "4f3de06e4b6957955696098b64129f943e9baf57d69be146a9c157aed4219b01",
+        "sourceSha256": "d1dd963f7a22e2be4ccca4c73c3799a4be6f9b5e4a30415cfc6d12993d07a4fd",
+        "samplePages": {
+          "IX9": 188,
+          "X2": 202
+        },
+        "allPagesA4": true,
+        "selectableText": true
+      },
+      {
+        "filename": "nihayat-al-hikma-study-A4.pdf",
+        "pages": 562,
+        "bytes": 3775896,
+        "sha256": "389b53821eed558237a83a3bad5e431aac5730f880aa9e2688a33180a47b1c7d",
+        "sourceSha256": "d1dd963f7a22e2be4ccca4c73c3799a4be6f9b5e4a30415cfc6d12993d07a4fd",
+        "samplePages": {
+          "IX9": 366,
+          "X2": 393
+        },
+        "allPagesA4": true,
+        "selectableText": true
+      },
+      {
+        "filename": "nihayat-al-hikma-reference-A4.pdf",
+        "pages": 374,
+        "bytes": 2792891,
+        "sha256": "a247943da189dbe16fd792663420619384407f41f704c096528db4306db6f707",
+        "sourceSha256": "d1dd963f7a22e2be4ccca4c73c3799a4be6f9b5e4a30415cfc6d12993d07a4fd",
+        "samplePages": {},
+        "allPagesA4": true,
+        "selectableText": true
+      }
+    ],
+    "verifiedFiles": 9,
+    "sourceCounts": {
+      "muzaffar-al-mantiq": 101,
+      "bidayat-al-hikma": 111,
+      "nihayat-al-hikma": 136
+    },
+    "totalPages": 2239,
+    "method": "Downloaded all nine files from the publication commit; checked exact bytes and SHA256 against the manifest, source and supplement hashes, paired-unit counts, all page dimensions with pypdf, and selectable text with Poppler. Confirmed the four revised Nihaya English readings and new Muzaffar figure/table/equation/nonempty-class qualifications."
+  },
+  "pdfVisualReview": {
+    "inspectedPageCount": 23,
+    "pdfFilesReviewed": 9,
+    "result": "no observed layout defects in inspected pages",
+    "scope": "Targeted visual inspection of diagrams, table, Book V opening, corrected Nihaya passages, apparatus and repaired chapter transitions; not an exhaustive visual inspection of all 2239 pages.",
+    "renderer": "Poppler pdftoppm",
+    "files": [
+      {
+        "filename": "muzaffar-al-mantiq-reading-A4.pdf",
+        "sha256": "f46ea46621326ea7f1e970bffbaa1dac14f76d15b259a49cd79f0ae0750c5cb3",
+        "inspectedPages": [
+          86,
+          105
+        ],
+        "observations": [
+          {
+            "pdfPage": 86,
+            "result": "pass",
+            "observations": [
+              "All four propositions and six relations are legible, correctly placed, and contained.",
+              "The complete diagram, caption, apparatus, Chapter31 label/title/Arabic heading, and opening paragraph fit without overlap or clipping.",
+              "No orphaned chapter label or title is present."
+            ]
+          },
+          {
+            "pdfPage": 105,
+            "result": "pass",
+            "observations": [
+              "All five columns and seven body rows are visible in full on one page.",
+              "Complement signs and formulas are legible; table borders, caption, source qualification, and apparatus do not overlap.",
+              "No table cell or row is clipped."
+            ]
+          }
+        ]
+      },
+      {
+        "filename": "muzaffar-al-mantiq-study-A4.pdf",
+        "sha256": "a7747aff618c31e438b4acf58683cc016c0f3c58aaba7abf8d5b5422f48e11e5",
+        "inspectedPages": [
+          181,
+          183,
+          224,
+          225,
+          226
+        ],
+        "observations": [
+          {
+            "pdfPage": 181,
+            "result": "pass",
+            "observations": [
+              "The English square stays within the right column; all labels and caption are readable.",
+              "Arabic prose in the left column remains separate, with no cross-column overlap or footer collision.",
+              "The figure is kept whole on this page."
+            ]
+          },
+          {
+            "pdfPage": 183,
+            "result": "pass",
+            "observations": [
+              "The Arabic square and Arabic caption are fully visible in the left column.",
+              "Arabic labels are shaped and readable, including the long subcontrary label; no label is cropped.",
+              "Chapter31 label, English title, Arabic heading, and both opening text columns remain together below the apparatus."
+            ]
+          },
+          {
+            "pdfPage": 224,
+            "result": "pass",
+            "observations": [
+              "Chapter46 label, English title, Arabic heading, and the start of the source transcription remain together.",
+              "The Arabic source table is intentionally preserved as an ordered diplomatic transcription; it is not typeset as the editorial English matrix.",
+              "All visible headings and formulas are within the page margins."
+            ]
+          },
+          {
+            "pdfPage": 225,
+            "result": "pass",
+            "observations": [
+              "The sequential Arabic formulas and complement marks are legible and remain within the right page margin.",
+              "The wide blank region reflects the single-column source transcription in the stacked table passage; no material is hidden behind another column.",
+              "No clipping, glyph overlap, or footer collision is visible."
+            ]
+          },
+          {
+            "pdfPage": 226,
+            "result": "pass",
+            "observations": [
+              "The last Arabic source entries precede the English exposition without overlap.",
+              "The full-width English table shows all five columns and all seven body rows without clipping.",
+              "The caption, complementary terms, and explicit conjectural/source qualification are readable; the table is kept whole."
+            ]
+          }
+        ]
+      },
+      {
+        "filename": "muzaffar-al-mantiq-reference-A4.pdf",
+        "sha256": "1e2084738767e84c0ae8291685cc79fd2a3c8f9dc4f74175f27bae72ea917956",
+        "inspectedPages": [
+          166
+        ],
+        "observations": [
+          {
+            "pdfPage": 166,
+            "result": "pass",
+            "observations": [
+              "The stage/book title, Chapter1 label, bilingual descriptive headings, Arabic authorial opening, and first prose paragraphs remain together.",
+              "Arabic is legible and shaped; the long heading stays within the margins.",
+              "No orphaned chapter label, clipping, overlap, or footer collision is visible."
+            ]
+          }
+        ]
+      },
+      {
+        "filename": "bidayat-al-hikma-reading-A4.pdf",
+        "sha256": "7ce44377d79693962cad492304a67a936c7fc1fa081e67b437ebe42f0446591b",
+        "inspectedPages": [
+          35
+        ],
+        "observations": [
+          {
+            "pdfPage": 35,
+            "result": "pass",
+            "observations": [
+              "English text and source notes have clear separation and fit within the page margins.",
+              "Chapter9 label, English title, Arabic heading, and its opening paragraph are on the same page.",
+              "No orphaned heading, clipping, overlap, or footer collision is visible."
+            ]
+          }
+        ]
+      },
+      {
+        "filename": "bidayat-al-hikma-study-A4.pdf",
+        "sha256": "28fbb72a006fb58acb824780ef00a26dc0129e12ce5625223d29b50b55331c52",
+        "inspectedPages": [
+          35
+        ],
+        "observations": [
+          {
+            "pdfPage": 35,
+            "result": "pass",
+            "observations": [
+              "Arabic and English columns remain distinct and legible.",
+              "Text is contained inside the margins and above the page-number footer, with no clipping or overlap.",
+              "No chapter heading occurs on this sampled continuation page, so heading attachment is not tested here."
+            ]
+          }
+        ]
+      },
+      {
+        "filename": "bidayat-al-hikma-reference-A4.pdf",
+        "sha256": "a1ceb086d402f511a94052d52d9f7835e2a9825665a4a31b71200a8ad7bd72ec",
+        "inspectedPages": [
+          35
+        ],
+        "observations": [
+          {
+            "pdfPage": 35,
+            "result": "pass",
+            "observations": [
+              "Chapter3 label, English title, Arabic heading, and Arabic authorial prose remain together.",
+              "Arabic text and both apparatus blocks are clear and contained, with no overlapping glyphs or clipped lines.",
+              "No orphaned heading or footer collision is visible."
+            ]
+          }
+        ]
+      },
+      {
+        "filename": "nihayat-al-hikma-reading-A4.pdf",
+        "sha256": "4f3de06e4b6957955696098b64129f943e9baf57d69be146a9c157aed4219b01",
+        "inspectedPages": [
+          188,
+          189,
+          202,
+          203,
+          204
+        ],
+        "observations": [
+          {
+            "pdfPage": 188,
+            "visuallyInspected": true,
+            "defects": [],
+            "observation": "IX.9 English body and adopted second-kind correction are legible, with clean margins and footer."
+          },
+          {
+            "pdfPage": 189,
+            "visuallyInspected": true,
+            "defects": [],
+            "observation": "IX.9 conclusion and all seven apparatus notes fit; Chapter 10 label, English title, Arabic title, and opening paragraph remain together without overlap."
+          },
+          {
+            "pdfPage": 202,
+            "visuallyInspected": true,
+            "defects": [],
+            "observation": "X.2 English correction and all three notes fit. No isolated CHAPTER 3 label remains at the foot of this page."
+          },
+          {
+            "pdfPage": 203,
+            "visuallyInspected": true,
+            "defects": [],
+            "observation": "CHAPTER 3, Coexistence, and its Arabic title are together at the top. Body and two notes fit. No isolated CHAPTER 4 label remains at the foot."
+          },
+          {
+            "pdfPage": 204,
+            "visuallyInspected": true,
+            "defects": [],
+            "observation": "CHAPTER 4 and its English and Arabic titles are together at the top. Body and two notes fit. Chapter 5 label, both titles, and opening lines remain together near the foot."
+          }
+        ]
+      },
+      {
+        "filename": "nihayat-al-hikma-study-A4.pdf",
+        "sha256": "389b53821eed558237a83a3bad5e431aac5730f880aa9e2688a33180a47b1c7d",
+        "inspectedPages": [
+          366,
+          367,
+          369,
+          393,
+          395
+        ],
+        "observations": [
+          {
+            "pdfPage": 366,
+            "visuallyInspected": true,
+            "defects": [],
+            "observation": "IX.9 two-column Arabic/English text, including the corrected second-kind English and Arabic subject recast, is legible. Arabic shaping, right-to-left flow, and column gutter are sound."
+          },
+          {
+            "pdfPage": 367,
+            "visuallyInspected": true,
+            "defects": [],
+            "observation": "IX.9 continuation includes corrected Arabic القسم الثاني. Both columns render clearly without clipping or overlap."
+          },
+          {
+            "pdfPage": 369,
+            "visuallyInspected": true,
+            "defects": [],
+            "observation": "IX.9 Arabic conclusion and all seven apparatus notes fit, followed by the next bilingual chapter opening."
+          },
+          {
+            "pdfPage": 393,
+            "visuallyInspected": true,
+            "defects": [],
+            "observation": "X.2 corrected English phrase beginning The nonexistence of what depends is visible. Both columns render cleanly."
+          },
+          {
+            "pdfPage": 395,
+            "visuallyInspected": true,
+            "defects": [],
+            "observation": "X.2 Arabic continuation and three notes fit, followed by Chapter 3 headings and body. Right-column white space corresponds to the English ending earlier; no material is visibly clipped."
+          }
+        ]
+      },
+      {
+        "filename": "nihayat-al-hikma-reference-A4.pdf",
+        "sha256": "a247943da189dbe16fd792663420619384407f41f704c096528db4306db6f707",
+        "inspectedPages": [
+          246,
+          247
+        ],
+        "observations": [
+          {
+            "pdfPage": 246,
+            "visuallyInspected": true,
+            "defects": [],
+            "observation": "IX.9 Arabic concluding argument and apparatus notes 1–3 fit. Arabic shaping and right-to-left flow are sound."
+          },
+          {
+            "pdfPage": 247,
+            "visuallyInspected": true,
+            "defects": [],
+            "observation": "IX.9 apparatus notes 4–7 fit above the Chapter 10 label, English title, Arabic title, and Arabic opening. No clipping, overlap, or isolated chapter label is observed."
+          }
+        ]
+      }
+    ]
+  },
+  "paginationRepair": {
+    "priorPublicationCommit": "75cbbb6c48f1cf3455c0104cf412f54f0cceba04",
+    "priorDefect": "The small CHAPTER 3 and CHAPTER 4 labels were separated from their titles in Nihaya reading pages 202–203.",
+    "change": "The complete .chapter-title header now avoids internal page breaks as well as a break after it.",
+    "finalPagesVerified": [
+      202,
+      203,
+      204
+    ],
+    "result": "Both labels remain with their English and Arabic titles."
+  },
+  "pagesDeployment": {
+    "runId": 42848144933,
+    "runUrl": "https://github.com/gnamma-research/booksite/actions/runs/42848144933",
+    "headSha": "73cb227ee1d2dd8ae57d32e8b73e3a9d438851dd",
+    "conclusion": "success",
+    "completedAtUTC": "2026-11-10T15:50:33Z"
+  },
+  "liveFileVerification": {
+    "baseUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/",
+    "checkedFiles": 24,
+    "matchingFiles": 24,
+    "allMatch": true,
+    "files": [
+      {
+        "path": "editions/manifest.json",
+        "httpStatus": 200,
+        "bytes": 4018,
+        "expectedSha256": "5266c2580e3f2dbbc100c3428999c983e7a5c13c34d2796c54dac39f49ce8315",
+        "liveSha256": "5266c2580e3f2dbbc100c3428999c983e7a5c13c34d2796c54dac39f49ce8315",
+        "match": true
+      },
+      {
+        "path": "editions/muzaffar-al-mantiq-reading-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 762830,
+        "expectedSha256": "f46ea46621326ea7f1e970bffbaa1dac14f76d15b259a49cd79f0ae0750c5cb3",
+        "liveSha256": "f46ea46621326ea7f1e970bffbaa1dac14f76d15b259a49cd79f0ae0750c5cb3",
+        "match": true,
+        "expectedBytes": 762830
+      },
+      {
+        "path": "editions/muzaffar-al-mantiq-study-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 1882831,
+        "expectedSha256": "a7747aff618c31e438b4acf58683cc016c0f3c58aaba7abf8d5b5422f48e11e5",
+        "liveSha256": "a7747aff618c31e438b4acf58683cc016c0f3c58aaba7abf8d5b5422f48e11e5",
+        "match": true,
+        "expectedBytes": 1882831
+      },
+      {
+        "path": "editions/muzaffar-al-mantiq-reference-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 1345337,
+        "expectedSha256": "1e2084738767e84c0ae8291685cc79fd2a3c8f9dc4f74175f27bae72ea917956",
+        "liveSha256": "1e2084738767e84c0ae8291685cc79fd2a3c8f9dc4f74175f27bae72ea917956",
+        "match": true,
+        "expectedBytes": 1345337
+      },
+      {
+        "path": "editions/bidayat-al-hikma-reading-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 584622,
+        "expectedSha256": "7ce44377d79693962cad492304a67a936c7fc1fa081e67b437ebe42f0446591b",
+        "liveSha256": "7ce44377d79693962cad492304a67a936c7fc1fa081e67b437ebe42f0446591b",
+        "match": true,
+        "expectedBytes": 584622
+      },
+      {
+        "path": "editions/bidayat-al-hikma-study-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 1659045,
+        "expectedSha256": "28fbb72a006fb58acb824780ef00a26dc0129e12ce5625223d29b50b55331c52",
+        "liveSha256": "28fbb72a006fb58acb824780ef00a26dc0129e12ce5625223d29b50b55331c52",
+        "match": true,
+        "expectedBytes": 1659045
+      },
+      {
+        "path": "editions/bidayat-al-hikma-reference-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 1229777,
+        "expectedSha256": "a1ceb086d402f511a94052d52d9f7835e2a9825665a4a31b71200a8ad7bd72ec",
+        "liveSha256": "a1ceb086d402f511a94052d52d9f7835e2a9825665a4a31b71200a8ad7bd72ec",
+        "match": true,
+        "expectedBytes": 1229777
+      },
+      {
+        "path": "editions/nihayat-al-hikma-reading-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 1007077,
+        "expectedSha256": "4f3de06e4b6957955696098b64129f943e9baf57d69be146a9c157aed4219b01",
+        "liveSha256": "4f3de06e4b6957955696098b64129f943e9baf57d69be146a9c157aed4219b01",
+        "match": true,
+        "expectedBytes": 1007077
+      },
+      {
+        "path": "editions/nihayat-al-hikma-study-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 3775896,
+        "expectedSha256": "389b53821eed558237a83a3bad5e431aac5730f880aa9e2688a33180a47b1c7d",
+        "liveSha256": "389b53821eed558237a83a3bad5e431aac5730f880aa9e2688a33180a47b1c7d",
+        "match": true,
+        "retriedAfterTransportError": "IncompleteRead(3570454 bytes read, 205442 more expected)"
+      },
+      {
+        "path": "editions/nihayat-al-hikma-reference-A4.pdf",
+        "httpStatus": 200,
+        "bytes": 2792891,
+        "expectedSha256": "a247943da189dbe16fd792663420619384407f41f704c096528db4306db6f707",
+        "liveSha256": "a247943da189dbe16fd792663420619384407f41f704c096528db4306db6f707",
+        "match": true,
+        "retriedAfterTransportError": "IncompleteRead(2641600 bytes read, 151291 more expected)"
+      },
+      {
+        "path": "index.html",
+        "httpStatus": 200,
+        "bytes": 10498,
+        "expectedSha256": "09985566fbb11d5cd60cf3a1bd1b327a369d384febf64bb23a9fadafe1633d4f",
+        "liveSha256": "09985566fbb11d5cd60cf3a1bd1b327a369d384febf64bb23a9fadafe1633d4f",
+        "match": true
+      },
+      {
+        "path": "muzaffar-al-mantiq/index.html",
+        "httpStatus": 200,
+        "bytes": 9702,
+        "expectedSha256": "028d8425714a3c870683c0c4e5d2206fb7d744a41192b6f1a20456617ab7a618",
+        "liveSha256": "028d8425714a3c870683c0c4e5d2206fb7d744a41192b6f1a20456617ab7a618",
+        "match": true
+      },
+      {
+        "path": "bidayat-al-hikma/index.html",
+        "httpStatus": 200,
+        "bytes": 9907,
+        "expectedSha256": "7efd7e5f8c8d0dae554c64063ea349234a5a467801182fbd62f890c1cfa2b201",
+        "liveSha256": "7efd7e5f8c8d0dae554c64063ea349234a5a467801182fbd62f890c1cfa2b201",
+        "match": true
+      },
+      {
+        "path": "nihayat-al-hikma/index.html",
+        "httpStatus": 200,
+        "bytes": 9793,
+        "expectedSha256": "0e9669929b70b90b81d203e1ef15429ae3c1564e3a9800346da2fcafd37a7e1b",
+        "liveSha256": "0e9669929b70b90b81d203e1ef15429ae3c1564e3a9800346da2fcafd37a7e1b",
+        "match": true
+      },
+      {
+        "path": "muzaffar-al-mantiq/data/book.json",
+        "httpStatus": 200,
+        "bytes": 603057,
+        "expectedSha256": "96bd6a0c5881e30b5b92564896048d2ae81cc6e7dd7fbc2a6dc42449df0961d4",
+        "liveSha256": "96bd6a0c5881e30b5b92564896048d2ae81cc6e7dd7fbc2a6dc42449df0961d4",
+        "match": true
+      },
+      {
+        "path": "bidayat-al-hikma/data/book.json",
+        "httpStatus": 200,
+        "bytes": 730660,
+        "expectedSha256": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
+        "liveSha256": "dac0ae9967282c995d47ae99be811cd97bcb479e4b8e964df5802c3e09f5083f",
+        "match": true
+      },
+      {
+        "path": "nihayat-al-hikma/data/book.json",
+        "httpStatus": 200,
+        "bytes": 1591416,
+        "expectedSha256": "d1dd963f7a22e2be4ccca4c73c3799a4be6f9b5e4a30415cfc6d12993d07a4fd",
+        "liveSha256": "d1dd963f7a22e2be4ccca4c73c3799a4be6f9b5e4a30415cfc6d12993d07a4fd",
+        "match": true
+      },
+      {
+        "path": "nihayat-al-hikma/data/editorial-supplement.json",
+        "httpStatus": 200,
+        "bytes": 50731,
+        "expectedSha256": "a37f266bffe62b30ab0c42a958f01b5d1857c78b437fb5e2b10add71e3191fa2",
+        "liveSha256": "a37f266bffe62b30ab0c42a958f01b5d1857c78b437fb5e2b10add71e3191fa2",
+        "match": true
+      },
+      {
+        "path": "muzaffar-al-mantiq/data/authorial-map.json",
+        "httpStatus": 200,
+        "bytes": 32130,
+        "expectedSha256": "940a5f2ab8b108045dc791e661ada488870a0302bea0bc1dd5b770545dba20de",
+        "liveSha256": "940a5f2ab8b108045dc791e661ada488870a0302bea0bc1dd5b770545dba20de",
+        "match": true
+      },
+      {
+        "path": "audits/cross-book-review-register-2026-11-07.json",
+        "httpStatus": 200,
+        "bytes": 571135,
+        "expectedSha256": "290a19aa9b5d323b8a6fd11701d68121c72efd6d9def0861491c465f1ba2be29",
+        "liveSha256": "290a19aa9b5d323b8a6fd11701d68121c72efd6d9def0861491c465f1ba2be29",
+        "match": true
+      },
+      {
+        "path": "audits/nihaya-english-collation-triage-2026-11-09.json",
+        "httpStatus": 200,
+        "bytes": 213778,
+        "expectedSha256": "4b98cfb57afdfd50c58efef0891520ebfc1814c2f7a6ee4f837a6140fbf58a5e",
+        "liveSha256": "4b98cfb57afdfd50c58efef0891520ebfc1814c2f7a6ee4f837a6140fbf58a5e",
+        "match": true
+      },
+      {
+        "path": "assets/hikma-rich-text.js",
+        "httpStatus": 200,
+        "bytes": 9039,
+        "expectedSha256": "e2b5636653e12c3d3638f2eaca7375b208c077beed760484e36424b029e8806f",
+        "liveSha256": "e2b5636653e12c3d3638f2eaca7375b208c077beed760484e36424b029e8806f",
+        "match": true
+      },
+      {
+        "path": "assets/hikma-rich-text.css",
+        "httpStatus": 200,
+        "bytes": 2859,
+        "expectedSha256": "5b67e12b8d3dafb67f19c269616ad94f112480260a94d74ec9c65a2c7dc5195b",
+        "liveSha256": "5b67e12b8d3dafb67f19c269616ad94f112480260a94d74ec9c65a2c7dc5195b",
+        "match": true
+      },
+      {
+        "path": "assets/hikma-pdf.css",
+        "httpStatus": 200,
+        "bytes": 3481,
+        "expectedSha256": "770982981164710e1f66f17b1b423954213ed1c32a03496bad66718afdb61aa3",
+        "liveSha256": "770982981164710e1f66f17b1b423954213ed1c32a03496bad66718afdb61aa3",
+        "match": true
+      }
+    ]
+  },
+  "nonblockingReaderPolishBacklog": [
+    "The table caption scrolls with the horizontally scrolling table, and no explicit scroll cue is shown.",
+    "The combined-reader introduction label concatenates Introduction with a stage title already starting Introduction. This cosmetic label does not affect content coverage."
+  ],
+  "nextMuzaffar": {
+    "unitId": "M-V-02",
+    "locus": "Definition of syllogism",
+    "rafedDisplayedPage": 200,
+    "url": "https://lib.rafed.net/view.php?b_id=1604&page=200&type=c_fbook"
+  }
+}

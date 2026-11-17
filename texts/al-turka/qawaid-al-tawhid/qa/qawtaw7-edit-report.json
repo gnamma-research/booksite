@@ -1,0 +1,14 @@
+{
+  "totalFlags": 57,
+  "supportedPrinted": 42,
+  "interpretivelyResolved": 1,
+  "partiallyResolved": 10,
+  "unresolved": 3,
+  "unrecoveredLacuna": 1,
+  "arabicReadingEdits": 53,
+  "englishEdits": 16,
+  "affectedUnits": 42,
+  "originalArabicPreserved": true,
+  "independentManuscriptsCollated": 0,
+  "validatedOriginalArabicUnchanged": true
+}

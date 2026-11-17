@@ -1,0 +1,24 @@
+/* Two mobile-friendly bilingual translations. The original Tahdhīb main-reader
+   Darūrī shell and its two text-layer states are unchanged. */
+:root{color-scheme:light dark;--bg:#f7f5f0;--paper:#fffefa;--ink:#263530;--muted:#65746c;--line:#dee2db;--accent:#356356;--note:#faf9f4}
+@media(prefers-color-scheme:dark){:root{--bg:#171e1b;--paper:#232c27;--ink:#edf1eb;--muted:#a5b5aa;--line:#455349;--accent:#a8d2be;--note:#202923}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);margin:0;font:15px/1.65 -apple-system,BlinkMacSystemFont,system-ui,sans-serif}
+a{color:var(--accent)}.bar{height:56px;position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:10px;padding:7px max(12px,calc((100vw - 1140px)/2));background:var(--paper);border-bottom:1px solid var(--line)}
+.bar>*{flex-shrink:0}.bar a{font-size:13px;font-weight:600;text-decoration:none}.bar strong{font-size:12px;white-space:nowrap}.bar .grow{flex:1;min-width:4px}.bar select{width:110px;min-width:60px;max-width:23vw;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);padding:7px;font:12px system-ui}
+.bar button{border:1px solid var(--line);border-radius:6px;padding:6px 10px;background:transparent;color:var(--ink);font-size:12px;font-weight:700;cursor:pointer}.bar button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+main{max-width:1160px;margin:auto;padding:24px clamp(12px,2.5vw,30px) 90px}.intro{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:24px clamp(16px,3vw,32px)}
+.kicker{font:600 11px/1.5 system-ui;letter-spacing:.07em;color:var(--muted)}h1{font:500 clamp(24px,3.5vw,40px)/1.25 Georgia,serif;margin:9px 0 12px}h2{font:550 clamp(21px,2.7vw,30px)/1.3 Georgia,serif;margin:0}h3{font:580 clamp(18px,2.2vw,24px)/1.4 Georgia,serif;margin:6px 0 15px}
+.intro p{max-width:850px;margin:8px 0}.intro .meta{color:var(--muted);font-size:13px}.links{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;font-size:13px}#batch-status{font:550 13px/1.5 system-ui;color:var(--muted);margin-top:18px}#batch-status[data-error=true]{color:#a64c46}
+.yazdi-page{scroll-margin-top:75px;border:1px solid var(--line);background:var(--paper);border-radius:10px;margin-top:24px;padding:clamp(14px,2.8vw,28px);box-shadow:0 2px 5px rgba(0,0,0,.018)}
+.yazdi-page-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:19px}.yazdi-page-head span{color:var(--muted);font-size:12px}
+.yazdi-segment+.yazdi-segment{border-top:1px dotted var(--line);margin-top:26px;padding-top:24px}.yazdi-pair{display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:clamp(22px,4vw,55px)}
+.yazdi-ar-col,.yazdi-en-col{min-width:0}.yazdi-lang-label{display:block;color:var(--muted);font:600 10px/1.3 system-ui;letter-spacing:.08em;margin-bottom:9px}
+.yazdi-ar{font:400 clamp(19px,2.05vw,24px)/2.02 "Amiri","Scheherazade New","Geeza Pro",serif;text-align:right;white-space:pre-wrap;margin:0;overflow-wrap:break-word}
+.yazdi-en{font:400 clamp(16px,1.65vw,19px)/1.82 Georgia,"Times New Roman",serif;white-space:pre-wrap;margin:0;overflow-wrap:break-word}
+.yazdi-provenance{display:flex;flex-wrap:wrap;gap:7px 16px;align-items:center;font:11px/1.6 system-ui;color:var(--muted);border-top:1px solid var(--line);margin-top:18px;padding-top:10px}.yazdi-notes{border-top:1px dotted var(--line);margin-top:12px;font:12px/1.7 system-ui}.yazdi-notes summary{padding:9px 0;cursor:pointer;color:var(--accent);font-weight:600}.yazdi-notes p{margin:9px 0}.yazdi-seam{font:11px/1.5 system-ui;color:var(--muted);margin-top:12px}.yazdi-colophon{background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:22px;margin-top:25px}.yazdi-colophon .yazdi-ar,.yazdi-colophon .yazdi-en{margin:14px 0}
+body[data-ar=off] .yazdi-ar-col{display:none}body[data-en=off] .yazdi-en-col{display:none}
+body[data-ar=off] .yazdi-pair,body[data-en=off] .yazdi-pair{grid-template-columns:minmax(0,1fr)}
+.footer{color:var(--muted);margin-top:32px;font:12px/1.6 system-ui;max-width:840px}
+@media(max-width:760px){.yazdi-pair{grid-template-columns:1fr;gap:23px}.bar{gap:7px;padding:6px 10px}.bar select{width:82px;max-width:26vw}.bar button{padding:6px 8px}.bar strong{font-size:11px}.yazdi-page{margin-top:12px;padding:16px}.intro{padding:20px 16px}.yazdi-ar{font-size:21px;line-height:2.0}.yazdi-en{font-size:17px;line-height:1.78}}
+@media(max-width:370px){.bar{gap:5px}.bar a{font-size:11px}.bar select{width:70px}.bar strong{font-size:10px}.bar button{padding:5px 6px}}
+@media print{.bar{display:none}body{background:#fff;color:#000}.intro,.yazdi-page,.yazdi-colophon{border:0;box-shadow:none}.yazdi-page{break-inside:avoid}.yazdi-notes{display:none}main{max-width:none;padding:0}.yazdi-pair{gap:20px}.yazdi-ar{font-size:16px}.yazdi-en{font-size:13px}}

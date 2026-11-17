@@ -1,0 +1,28 @@
+{
+  "stage": 109,
+  "copytext": "Būlāq 1318 AH single print",
+  "printed_volume": "II",
+  "printed_page": 224,
+  "physical_PDF_page": 519,
+  "source_layer": "upper",
+  "source_render": "Stage109_Source_Page_Images/physical_PDF_519_single_Bulaq_print.png",
+  "historical_record_ids": [
+    "B6.MATN.II224.11",
+    "B6.M.II224.2001"
+  ],
+  "historical_broad_record_original": "ووجه دلالتها على صدق دعوى الرسالة أنها عند التحقق بمنزلة صريح التصديق",
+  "historical_narrow_record_original": "بمنزلة صريح التصديق",
+  "shared_printed_substring": "بمنزلة صريح التصديق",
+  "unique_source_substring_occurrence_count": 1,
+  "historical_record_id_count": 2,
+  "count_as_duplicate_new_translation": false,
+  "layer_boundary": "The parenthesised expressions «(ووجه دلالتها)», «(أنها)» and «(بمنزلة صريح التصديق)» are embedded matn lemma units; joining connective words are upper Sanandajī commentary. The broad historical MATN label does not establish that all unparenthesised connective words are Taftāzānī text.",
+  "canonical_single_print_source_span": "upper II224 within the longer evidentiary proposition; retain both historical citations and alias narrow record to the printed substring of broad record",
+  "remote_module_1": "continuous-II223-II224-miracle-source-clauses.js",
+  "remote_module_1_git_blob_sha1": "6eda2da0c0e982b2321c0cb2f8f387bf3e5bbbb9",
+  "remote_module_2": "continuous-II224-II228-miracle-proof-clauses.js",
+  "remote_module_2_git_blob_sha1": "1166ac010fb578669c7df88ee6d8f67691a99f78",
+  "both_remote_modules_preserved_unmodified": true,
+  "independent_full_clauses_proven": 0,
+  "open": "Independent source-layer proof and verification of the full I:223–224 context; do not merge Tahdhīb reader or count duplicate phrase twice."
+}

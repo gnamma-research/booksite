@@ -1,0 +1,462 @@
+{
+  "version": "2026-11-01-distinctive-late-primary-evidence",
+  "status": "Research-grade change questions, not an exhaustive historically established edition",
+  "priority": "After Ṣadrā's Asfār (17th c onward), with post-Tajrīd background (13th c onward). Some later Safavid works are contemporary, not necessarily chronologically later than every Asfār passage.",
+  "sourceMethod": "No conjectural Arabic or Persian quotation: direct record ids link to existing working editions; original witnesses must be checked for full-context translations.",
+  "dossiers": [
+    {
+      "id": "01-making",
+      "title": "What is really made? Quiddity versus particular existence",
+      "phase": "Later Safavid → eighteenth-century Persian",
+      "thesis": "Lāhījī's independent Gawhar treats a produced actual quiddity as the original made thing, while Narāqī's Lamaʿāt gives priority to the particular actuality of existence. The contrast cannot be dissolved into a single stock school label.",
+      "before": "Avicenna's problem of simple/compound making; Ṭūsī's Tajrīd and its glosses develop objections about contingency and relation.",
+      "sources": [
+        {
+          "recordId": "lah-making",
+          "section": 6,
+          "relation": "direct independent Persian argument",
+          "locator": "Gawhar II.3.II p.280",
+          "claim": "Lāhījī calls made quiddity the view of the critical investigators."
+        },
+        {
+          "recordId": "lah-making",
+          "section": 7,
+          "relation": "objection and rebuttal",
+          "locator": "Gawhar II.3.II p.281",
+          "claim": "Why making the relation itself yields regress."
+        },
+        {
+          "recordId": "lah-making",
+          "section": 8,
+          "relation": "reported Avicennian phrase",
+          "locator": "Gawhar II.3.II p.282",
+          "claim": "How Lāhījī interprets the apricot dictum; not an independent Ibn Sīnā witness."
+        },
+        {
+          "recordId": "nara-actual",
+          "section": 1,
+          "relation": "independent later Persian position",
+          "locator": "Lamaʿāt p.72",
+          "claim": "The producer gives a particular actuality rather than external relations among two self-existing things."
+        },
+        {
+          "recordId": "nara-actual",
+          "section": 2,
+          "relation": "separate noncontiguous argument",
+          "locator": "Lamaʿāt p.82",
+          "claim": "Conceptual distinction yet external unity of essence and existence."
+        }
+      ],
+      "change": "Not a universal movement from 'essence' to 'existence': later writers make different commitments about the made object, levels of abstraction and extra-mental grounding.",
+      "unique": "Gawhar pp.278–282 and Narāqī's separate Lamaʿāt passages are not textual copies of the Tajrīd sourcebook.",
+      "tajrid": "Use Tajrīd's Shawāriq p.90–91 and distinct jaʿl glosses only as comparative historical background; avoid re-collating them.",
+      "gap": "Collate complete Narāqī pp.73–81 and later Qajar authors on jaʿl; independently source the Bahmanyār–Ibn Sīnā aphorism.",
+      "status": "partially-established-two-direct-works"
+    },
+    {
+      "id": "02-unity",
+      "title": "Unity of existential ground without collapsing all individuals",
+      "phase": "Later Safavid after Akbarian and Illuminationist debates",
+      "thesis": "Lāhījī reports several meanings of waḥdat al-wujūd, criticizes a universal-being analogy, and distinguishes one unconditioned existential ground from the multiple dependent realities.",
+      "before": "Akbarian expressions of one reality, Sufi witnessing and Avicennian causal dependence offer different possible explanations of unity.",
+      "sources": [
+        {
+          "recordId": "lah-unity",
+          "section": 2,
+          "relation": "reported opponent/other school",
+          "locator": "Gawhar II.3.III p.283",
+          "claim": "The Sufi descent/manifestation claim is reported, not silently endorsed."
+        },
+        {
+          "recordId": "lah-unity",
+          "section": 5,
+          "relation": "specific objection",
+          "locator": "Gawhar p.286",
+          "claim": "Self-existing reality is unlike an indeterminate natural universal needing determination."
+        },
+        {
+          "recordId": "lah-unity",
+          "section": 6,
+          "relation": "alternative philosophical account",
+          "locator": "Gawhar p.287",
+          "claim": "One necessary existential ground, many actual dependent truths."
+        },
+        {
+          "recordId": "lah-unity",
+          "section": 8,
+          "relation": "tentative maxim and limitation",
+          "locator": "Gawhar p.289",
+          "claim": "Collective unity versus identity with each single existent; source attribution remains qualified."
+        }
+      ],
+      "change": "Not straightforwardly Sadrian, Peripatetic or Akbarian: categories are reconciled or distinguished in a new independent Persian argument.",
+      "unique": "A complete seven-page Section III, not a borrowed Tajrīd lemma.",
+      "tajrid": "Tajrīd's *nafs al-amr* / ʿayn material is conceptual backdrop; do not import speculative Sufi conclusions into Ṭūsī's matn.",
+      "gap": "Separate readings from Ṣadrā's Asfār on unity and from Qūnawī/Jāmī; identify the unnamed eminent thinkers cited at p.289.",
+      "status": "direct-contextual-section"
+    },
+    {
+      "id": "03-intellect",
+      "title": "The number and causal function of the intellects remain debatable",
+      "phase": "Later Safavid Persian cosmology",
+      "thesis": "Lāhījī maintains a tenth form-bestowing intellect while conceding the argument does not prove ten is the maximum; the Suhrawardian fixed-star objection is answered by mediated causal combinations.",
+      "before": "Classical Avicennian Rule of One and separate-intellect cosmology, with Suhrawardian objections to fixed celestial principles.",
+      "sources": [
+        {
+          "recordId": "lah-eman-cont",
+          "section": 3,
+          "relation": "revision of numerical conclusion",
+          "locator": "Gawhar IV p.295",
+          "claim": "No proof excludes intellects beyond the standard ten."
+        },
+        {
+          "recordId": "lah-eman-cont",
+          "section": 4,
+          "relation": "objection and combinatorial reply",
+          "locator": "Gawhar IV p.296",
+          "claim": "Twelve possible derivative effects can be described from the simplified third causal level."
+        },
+        {
+          "recordId": "lah-active",
+          "section": 1,
+          "relation": "later causal specification",
+          "locator": "Gawhar VI pp.301–303",
+          "claim": "The tenth intellect is assigned rational souls and species forms in a historically specific cosmology."
+        }
+      ],
+      "change": "Causal hierarchy is preserved but its standard number is not treated as demonstrated maximum; form-bestowal survives without requiring a separate horizontal species-lord for every natural kind.",
+      "unique": "Gawhar Sections IV and VI; earlier Tajrīd commentary must not substitute.",
+      "tajrid": "Cite the sourcebook for earlier cosmological kalām objections; philosophical reconstruction belongs to independent Gawhar and the Ishārāt commentaries.",
+      "gap": "Verify original Ṭūsī commentary and Suhrawardī objection, plus late Ottoman and Indian revisions to cosmic-intellect theory.",
+      "status": "direct-contextual-with-reported-voices"
+    },
+    {
+      "id": "04-form",
+      "title": "Natural form-bestowal survives alongside real material preparation",
+      "phase": "Later Safavid and post-Avicennian natural philosophy",
+      "thesis": "The transition from friction-only elemental generation to matter's preparation and separately received species form is explicit in consecutive Gawhar Sections V–VI.",
+      "before": "Avicenna's Shifāʾ IX.5 refutes bare matter and assigns physical preparation and separate form-bestowal differing roles.",
+      "sources": [
+        {
+          "recordId": "av-ix5",
+          "section": 4,
+          "relation": "original target and reply",
+          "locator": "Ilāhiyyāt IX.5 pp.412–413",
+          "claim": "Friction-only generation is rejected because the theory presupposes body without any determinate form."
+        },
+        {
+          "recordId": "lah-element",
+          "section": 1,
+          "relation": "reported opponent",
+          "locator": "Gawhar V p.298",
+          "claim": "Lāhījī narrates the rejected hypothesis before rejecting it."
+        },
+        {
+          "recordId": "lah-element",
+          "section": 2,
+          "relation": "Lāhījī's reception",
+          "locator": "Gawhar V p.299",
+          "claim": "Intrinsic matter/form and celestial/preparatory causes are distinguished."
+        },
+        {
+          "recordId": "lah-element",
+          "section": 3,
+          "relation": "complete preparation and bridge",
+          "locator": "Gawhar V p.300",
+          "claim": "Mixtures prepare matter for new specific forms."
+        },
+        {
+          "recordId": "lah-active",
+          "section": 1,
+          "relation": "next-chapter answer",
+          "locator": "Gawhar VI pp.301–303",
+          "claim": "Which separate intellect supplies the forms is answered next."
+        }
+      ],
+      "change": "Lāhījī is not simply a critic who abolished separate form-bestowal; the traditional causal levels remain, but their interplay is elaborated.",
+      "unique": "Consecutive Gawhar V–VI natural philosophy is an independent Persian passage, not a duplicate Tajrīd gloss.",
+      "tajrid": "Tajrīd sourcebook concerns scholastic objections to causality; do not copy its entire commentary chain into the natural philosophy reader.",
+      "gap": "Acquire contextual post-Ṣadrian Shifāʾ natural-physics glosses, Jilwa, Khwānsārī and Khayrābādī before extrapolating fate of Giver of Forms.",
+      "status": "direct-contextual-source"
+    },
+    {
+      "id": "05-time",
+      "title": "Ontological dependence does not specify the time of the event",
+      "phase": "Later Safavid → eighteenth-century natural philosophy",
+      "thesis": "A contingent being's existential cause and the additional cause specifying when a temporal event begins are distinct explanatory tasks.",
+      "before": "Avicenna's VI.1–2 differentiates enduring existential causes from successive preparatory motions.",
+      "sources": [
+        {
+          "recordId": "av-vi2",
+          "section": 1,
+          "relation": "Avicennian baseline",
+          "locator": "Ilāhiyyāt VI.2",
+          "claim": "Continuous motion permits changing conditions without an infinite simultaneous essential regress."
+        },
+        {
+          "recordId": "lah-temporal",
+          "section": 1,
+          "relation": "independent later question",
+          "locator": "Gawhar VII p.304",
+          "claim": "Contingency is distinct from temporal beginning."
+        },
+        {
+          "recordId": "lah-temporal",
+          "section": 2,
+          "relation": "later causal distinction",
+          "locator": "Gawhar VII p.305",
+          "claim": "Mubqiya and muḥditha characterize conserving versus time-specifying causes."
+        },
+        {
+          "recordId": "lah-temporal",
+          "section": 3,
+          "relation": "full response",
+          "locator": "Gawhar VII p.306",
+          "claim": "Material preparedness explains why this effect occurs now under classical celestial movements."
+        }
+      ],
+      "change": "A developed late teaching articulation of why-at-all versus why-now, not a new proof that Avicenna lacked vertical dependence.",
+      "unique": "Gawhar VII and Sarmāya as independent writings, not reprinted Tajrīd glosses.",
+      "tajrid": "Only link to Tajrīd for complete-cause/modal preliminaries already collated there.",
+      "gap": "Contemporary physical implementation of celestial assumptions is untenable; reconstruct which causal distinction survives independently.",
+      "status": "direct-contextual-source"
+    },
+    {
+      "id": "06-volition",
+      "title": "Approval, deliberative purpose and necessity through willing",
+      "phase": "Later Safavid → post-Tajrīd scholastic controversies",
+      "thesis": "Lāhījī distinguishes non-acquisitive divine riḍā from goal-seeking qaṣd; later post-Tajrīd reports contest whether necessity through will is compatible with genuine alternatives.",
+      "before": "The complete-cause necessity problem, divine simplicity, free creation and sources such as Qūshjī and Khafrī are debated in Tajrīd commentary chains.",
+      "sources": [
+        {
+          "recordId": "lah-divine",
+          "section": 1,
+          "relation": "independent later authorial question",
+          "locator": "Gawhar VIII p.307",
+          "claim": "Could aiming at another's benefit imply acquisition of perfection in God?"
+        },
+        {
+          "recordId": "lah-divine",
+          "section": 2,
+          "relation": "authorial distinction",
+          "locator": "Gawhar VIII p.308",
+          "claim": "Divine riḍā is contrasted with human qaṣd."
+        },
+        {
+          "recordId": "astar-choice",
+          "section": 2,
+          "relation": "reported post-Tajrīd objection",
+          "locator": "Barāhīn II:97–98",
+          "claim": "Al-Khafrī's doubt is reported through Astarābādī, not read as an independent Khafrī manuscript."
+        },
+        {
+          "recordId": "aq-104b",
+          "section": 1,
+          "relation": "comparative external contrast",
+          "locator": "ST I q.104 a.3",
+          "claim": "Aquinas argues for freedom to withhold conserving action."
+        }
+      ],
+      "change": "The metaphysical notion of necessity is not identical to a thesis about voluntary agency; later authors redefine the question.",
+      "unique": "Gawhar's divine-will chapter is new; Astarābādī volume II is not the same locus as Tajrīd's volume I collation.",
+      "tajrid": "The Tajrīd project remains responsible for original Qūshjī/Khafrī/Jurjānī matn–sharḥ–ḥāshiya collation. Cross-link rather than duplicate.",
+      "gap": "Verify direct original Khafrī, Qūshjī and two Khwānsārī glosses; distinguish actual freedom from conditional power.",
+      "status": "direct-plus-mediated"
+    },
+    {
+      "id": "07-intentions",
+      "title": "Second intentions and the ontology of attributes",
+      "phase": "Eighteenth-century Persian post-Avicennian commentary",
+      "thesis": "Narāqī distinguishes being qua being's general attributes from logical properties that require an intelligible object; he also reports a variant involving a negation.",
+      "before": "Rāzian logical theories, Taftāzānī/Jurjānī mental-existence arguments and Avicenna's claim that metaphysics has the most general subject.",
+      "sources": [
+        {
+          "recordId": "nara-second",
+          "section": 1,
+          "relation": "later original analysis",
+          "locator": "Sharḥ Ilāhiyyāt al-Shifāʾ I:106",
+          "claim": "General attributes of being are not automatically identical with logical second intentions."
+        },
+        {
+          "recordId": "nara-second",
+          "section": 2,
+          "relation": "methodological reply",
+          "locator": "I:107",
+          "claim": "The metaphysical science treats what is common to the special sciences."
+        },
+        {
+          "recordId": "nara-second",
+          "section": 3,
+          "relation": "discrete textual note",
+          "locator": "I:110",
+          "claim": "Narāqī reports the presence or omission of lā in some copies."
+        }
+      ],
+      "change": "Late metaphysical logic develops distinctions between real-grounded abstractions and a hierarchy of conceptual predication.",
+      "unique": "Direct Narāqī Shifāʾ commentary is not among the Tajrīd sourcebook's 47 work inventory.",
+      "tajrid": "Tajrīd's Taftāzānī p.79 and related mental-existence passages are shared background, not new independent collations.",
+      "gap": "Check Avicennian original lemma and Narāqī's alternate witness; collate Abharī/Shamsiyya commentaries and later Indian logic.",
+      "status": "direct-bounded-segments"
+    },
+    {
+      "id": "08-motion",
+      "title": "Substantial motion and its later critics remain undercollated",
+      "phase": "Ṣadrā → post-Ṣadrian Persia/Qajar",
+      "thesis": "A nineteenth-century printed Sabzavārī section explicitly presents the Avicennian dilemma of a persistent subject in substantial change and a later response treating the existence of substance as flowing. The print includes modern Ḥasanzāda notes; direct authorial attribution at each line remains unresolved.",
+      "before": "Classical Avicennian alteration, elemental generation and hylomorphic persistence.",
+      "sources": [
+        {
+          "recordId": "sabz-motion",
+          "section": 2,
+          "relation": "nineteenth-century authorial poetic statement",
+          "locator": "Sabzavārī Sharḥ al-Manẓūma vol. IV, ghurar 111, p.301",
+          "claim": "Source poses the subject/persistence problem through a flowing form and material substrate."
+        },
+        {
+          "recordId": "sabz-motion",
+          "section": 4,
+          "relation": "later printing quotes Avicenna's exact objection",
+          "locator": "vol. IV p.302, reporting Physics II.3",
+          "claim": "Either species remains and only accidents change, or gradual change produces successive substances."
+        },
+        {
+          "recordId": "sabz-motion",
+          "section": 5,
+          "relation": "printed later reply with modern-gloss contamination marked",
+          "locator": "vol. IV pp.302 and 305; pp.303–304 uncollated",
+          "claim": "Later flowing-substance solution and form-as-such argument; (ح.ح) denotes Ḥasanzāda's modern notes."
+        },
+        {
+          "recordId": "ch03",
+          "section": 2,
+          "relation": "editorial argument based on Shawāriq",
+          "locator": "Research chapter 03; Lahiji Shawariq I:52–53",
+          "claim": "Reports Lāhījī's persistence objection; primary source of full rebuttal to be collated."
+        },
+        {
+          "recordId": "ch03",
+          "section": 3,
+          "relation": "Ṣadrā comparator",
+          "locator": "Research chapter 03; Asfār IV:85–87",
+          "claim": "Provides selected Sadrian counterargument but not an independent full Asfār edition."
+        },
+        {
+          "recordId": "khay-fire",
+          "section": 1,
+          "relation": "distinct Indian physical controversy",
+          "locator": "al-Hadiyya original 1904 pp.92–94 through modern quotation",
+          "claim": "Material heat transformation is a different question from continuous substantial motion."
+        }
+      ],
+      "change": "This is a **research question**, not a verified lineage of all critics. Further post-Asfār source acquisition is needed.",
+      "unique": "Exact post-Asfār ghurar 111 with the quoted Physics II.3 objection and later response, not merely Tajrīd's categories of substance and motion.",
+      "tajrid": "Tajrīd is background only; do not retranslate the old matn to substitute for Qajar objections.",
+      "gap": "Printed pp.303–304 were not independently inspected, the original poetic text requires metrical correction, and Ḥasanzāda's twentieth-century notes must be separated from Sabzavārī before declaring this a complete primary edition.",
+      "status": "layered-post-asfar-source-incomplete-middle"
+    },
+    {
+      "id": "09-ottoman",
+      "title": "Ottoman natural-philosophy commentary after the Hidāya",
+      "phase": "Sixteenth–eighteenth-century Ottoman and Kurdish-provincial transmission",
+      "thesis": "The Abharī–Maybudī–Lārī commentary chain became an important vehicle of Ottoman Avicennian natural philosophy; this is not reducible to Tajrīd dogmatics.",
+      "before": "Abharī's Hidāyat al-ḥikma; Maybudī's commentary and Lārī's glosses.",
+      "sources": [],
+      "change": "A possible development in the teaching of place, void, motion, matter and causal power that requires lemma-anchored primary comparison.",
+      "unique": "This natural-philosophy chain is not the same source family as the Tajrīd reader.",
+      "tajrid": "Link to Tajrīd for shared metaphysics only, not its main translated corpus.",
+      "gap": "No direct edition of the full Abharī–Maybudī–Lārī lemma/reply complex is yet acquired; source lead: Cem Türköz 2026 dissertation.",
+      "status": "bibliographical-not-primary"
+    },
+    {
+      "id": "10-india",
+      "title": "South Asian teaching, natural change and the later scholastic network",
+      "phase": "Eighteenth–nineteenth-century India",
+      "thesis": "Different Indian scholarly lines carry later Avicennian, Ṣadrian and kalām arguments through Hidāya, Mīr Zāhid's glosses and Khayrābādī's natural philosophy.",
+      "before": "Shifāʾ and Hidāya commentaries, Ṣadrian commentary on Hidāya, and Arabic–Persian Dars-e-Niẓāmī transmission.",
+      "sources": [
+        {
+          "recordId": "taha-jal",
+          "section": 2,
+          "relation": "Indian lexicographic report",
+          "locator": "Tahānawī I:620–621",
+          "claim": "Mīr Zāhid is cited, not independently collated."
+        },
+        {
+          "recordId": "khay-fire",
+          "section": 1,
+          "relation": "mediated natural-philosophy quotation",
+          "locator": "al-Hadiyya Cairo 1904 pp.92–94 quoted in 2023",
+          "claim": "Five physical counterarguments do not establish his full form-bestowal doctrine."
+        }
+      ],
+      "change": "A distinct reception that cannot be explained by a linear Persian Ṣadrian succession; original source study required.",
+      "unique": "Indian lexicon and al-Hadiyya physics are not identical Tajrīd matn or its Persian gloss.",
+      "tajrid": "Only crosslink where the same Mīr Zāhid/Khwānsārī lemma is already collated, not generic Indian author matches.",
+      "gap": "Direct printed/handwritten Mīr Zāhid, Khayrābādī, Qāḍī Mubārak, original Sadrian Hidāya; Panzeca's manuscript study maps required corpora.",
+      "status": "direct-plus-mediated-large-gap"
+    },
+    {
+      "id": "11-qajar",
+      "title": "Qajar disputes over existence, soul and motion",
+      "phase": "Eighteenth–early twentieth-century Persia",
+      "thesis": "Narratives of a single late Persian school obscure different philosophical responses by Narāqī, ʿAlī Nūrī, Sabzawārī, Jilwa and Zunūzī.",
+      "before": "Ṣadrā's Asfār, later Safavid Avicennism and perennial Shifāʾ–Ishārāt teaching.",
+      "sources": [
+        {
+          "recordId": "nara-actual",
+          "section": 1,
+          "relation": "direct existing late witness",
+          "locator": "Narāqī Lamaʿāt p.72",
+          "claim": "A specific existence-first argument is available, but its whole surrounding chapter is not."
+        }
+      ],
+      "change": "Cannot yet conclude whether named later authors adopt or reject each technical Ṣadrian thesis. The independence of these debates is itself an important historiographical finding.",
+      "unique": "Original independent Qajar treatises will be the main objects; no duplication of Tajrīd chain.",
+      "tajrid": "Tajrīd provides concept genealogy, not the late Tehran question's primary corpus.",
+      "gap": "Collect Jilwa's glosses, Sabzawārī Sharḥ-i manẓūma and Zunūzī Badāyiʿ al-ḥikam with full argument context.",
+      "status": "bibliographical-plus-one-primary-excerpt"
+    },
+    {
+      "id": "12-later-knowledge",
+      "title": "From mental representation to knowledge as a mode of being",
+      "phase": "Ṣadrian synthesis and later reception",
+      "thesis": "Narāqī's Jāmiʿ al-afkār develops a distinct case for presential knowledge: the subject's immediate apprehension of itself and its own faculties does not require another universal image. This lies within a longer proof of God's knowledge rather than being a duplicate of the Tajrīd mental-existence lemma.",
+      "before": "Taftāzānī–Jurjānī's mental-existence objections, the separate epistemic functions of the Active Intellect, and Avicenna's Shifāʾ.",
+      "sources": [
+        {
+          "recordId": "nara-presence",
+          "section": 2,
+          "relation": "direct eighteenth-century author; objections and replies",
+          "locator": "Narāqī Jāmiʿ al-afkār II:25–27, first inquiry on divine knowledge, third proof",
+          "claim": "A stronger material imagination is challenged as sufficient for universals; direct self-awareness motivates knowledge by presence."
+        },
+        {
+          "recordId": "nara-presence",
+          "section": 3,
+          "relation": "argument voice and opponent map",
+          "locator": "II:25–27 objection-and-reply table",
+          "claim": "The self, representational form, pain and its own bodily faculties play distinct epistemic roles."
+        },
+        {
+          "recordId": "nara-second",
+          "section": 1,
+          "relation": "post-Sadrian logical ontology",
+          "locator": "Narāqī Shifāʾ commentary I:106",
+          "claim": "Distinguishes metaphysical attributes and logical second intentions."
+        },
+        {
+          "recordId": "taft-mental",
+          "section": 3,
+          "relation": "older shared background",
+          "locator": "Sharḥ al-Maqāṣid p.79",
+          "claim": "Denial of mental existence through heat/mountain objection."
+        }
+      ],
+      "change": "A distinct problem requiring reception history, not a retroactive claim that every thinker moved from mental form to presential cognition.",
+      "unique": "Contiguous three-page late original discussion with two actual objections/replies, regress and pain/faculty examples, within Narāqī's first divine-knowledge inquiry.",
+      "tajrid": "Tajrīd owns the inherited Taftāzānī/Jurjānī primary collation; no need to re-extract it here.",
+      "gap": "The same historical proof continues beyond p.27 and reaches a second preliminary through Bahmanyār. Do not claim completed divine-knowledge proof or full comparison with Ṣadrā's Asfār until those witnesses are collated.",
+      "status": "partial-direct-eighteenth-century-knowledge-argument"
+    }
+  ]
+}

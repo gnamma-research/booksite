@@ -19,6 +19,12 @@ const server=http.createServer((req,res)=>{
 });
 const items=[
  {id:'saved-section',kind:'section',target:{kind:'section',section:'11'},created:100,updated:100,deleted:0},
+ {id:'saved-paragraph',kind:'paragraph',target:{kind:'paragraph',section:'11',segment:0,lang:'en'},created:100,updated:100,deleted:0},
+ {id:'saved-quote',kind:'quote',target:{kind:'quote',section:'11',segment:0,lang:'en',quote:'According to the People of the Sunna',offset:0},created:100,updated:100,deleted:0},
+ {id:'saved-dictionary',kind:'dictionary',target:{kind:'dictionary',section:'11',term:'test'},created:100,updated:100,deleted:0},
+ {id:'saved-quran',kind:'footnote',target:{kind:'quran',section:'11'},created:100,updated:100,deleted:0},
+ {id:'saved-hadith',kind:'footnote',target:{kind:'hadith',section:'11'},created:100,updated:100,deleted:0},
+ {id:'saved-other-source',kind:'index',target:{kind:'index',section:'11'},created:100,updated:100,deleted:0},
  ...Array.from({length:32},(_,i)=>({
   id:'saved-note-'+i,kind:'note',target:{kind:'paragraph',section:'11',segment:0,lang:'en'},
   title:'QA saved note '+String(i).padStart(2,'0'),
@@ -38,13 +44,55 @@ async function exercise(engine,name,origin){
   await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded',timeout:90000});
   const trigger=page.locator('#gn-dock-private-status .gn-dock-summary');
   await trigger.waitFor({state:'visible',timeout:30000});
+  // iPhone uses one compact checked-bookmark + total, not eight tiny
+  // visible counters. Preserve category breakdown in the accessible name
+  // and item sheet. The old test was asserting the superseded dock design.
+  for(const width of [320,375,390,430]){
+   await page.setViewportSize({width,height:844});
+   await page.waitForFunction(()=>document.querySelectorAll(
+    '#gn-dock-private-status .gn-dock-summary-pair').length===8,null,{timeout:9000});
+   const geometry=await page.evaluate(()=>{
+    const button=document.querySelector('#readerDock .gn-dock-summary');
+    const symbols=button.querySelector('.gn-dock-summary-symbols');
+    const rect=button.getBoundingClientRect();
+    const dock=document.querySelector('#readerDock').getBoundingClientRect();
+    return {viewport:innerWidth,layoutWidth:document.documentElement.scrollWidth,
+     symbolsDisplay:getComputedStyle(symbols).display,
+     total:button.dataset.gnTotal,categoryCount:button.dataset.gnCategoryCount,
+     label:button.getAttribute('aria-label'),
+     categoryIds:[...symbols.querySelectorAll('.gn-dock-summary-pair')].map(el=>el.dataset.gnMark),
+     target:{x:rect.x,y:rect.y,width:rect.width,height:rect.height,right:rect.right,bottom:rect.bottom},
+     dockBottomGap:innerHeight-dock.bottom};
+   });
+   assert.equal(geometry.symbolsDisplay,'none',name+' '+width+' old category bar must be collapsed');
+   assert.equal(geometry.total,'39',name+' '+width+' total saved count lost');
+   assert.equal(geometry.categoryCount,'8',name+' '+width+' category breakdown lost');
+   assert.deepEqual(geometry.categoryIds,
+    ['section','paragraph','dictionary','quran','hadith','source','highlight','note']);
+   assert.match(geometry.label,/Open 39 saved items in section 11/);
+   assert.match(geometry.label,/Personal notes 32/);
+   assert(geometry.target.width>=44&&geometry.target.height>=44,
+    name+' '+width+' saved target smaller than 44px: '+JSON.stringify(geometry));
+   assert(geometry.target.x>=-1&&geometry.target.right<=width+1&&
+    geometry.target.y>=-1&&geometry.target.bottom<=844,
+    name+' '+width+' saved target outside viewport: '+JSON.stringify(geometry));
+   assert(geometry.dockBottomGap>=22,
+    name+' '+width+' dock overlaps Safari bottom activation zone: '+JSON.stringify(geometry));
+   assert(geometry.layoutWidth<=geometry.viewport+2,
+    name+' '+width+' horizontal page overflow: '+JSON.stringify(geometry));
+  }
+  await page.setViewportSize({width:390,height:844});
   await page.evaluate(()=>{
    window.__qaBackgroundClicks=0;
    document.querySelector('#reader')?.addEventListener('click',()=>window.__qaBackgroundClicks++,true);
    document.querySelector('#readingControls')?.addEventListener('click',()=>window.__qaBackgroundClicks++,true);
   });
   const original=await page.evaluate(()=>({y:window.scrollY,bodyPosition:document.body.style.position}));
-  await trigger.click();
+  // First fingertip tap, without a programmatic second activation.
+  // Playwright mobile WebKit is not physical iPhone Safari browser chrome.
+  const tapTarget=await trigger.boundingBox();
+  assert(tapTarget,name+': saved target is not hittable');
+  await page.touchscreen.tap(tapTarget.x+tapTarget.width/2,tapTarget.y+tapTarget.height/2);
   const sheet=page.locator('#gn-dock-saved-sheet');
   await sheet.waitFor({state:'visible',timeout:15000});
   assert.equal(await sheet.getAttribute('aria-modal'),'true');
@@ -69,18 +117,70 @@ async function exercise(engine,name,origin){
   assert(visual.listScrollHeight>visual.listClientHeight+80,name+': need a genuinely scrollable list');
   assert.equal(visual.bodyPosition,'fixed',name+': book was not scroll locked');
   assert.equal(visual.rootOverflow,'hidden',name+': page viewport is still scrollable');
-  await sheet.locator('.gn-dock-sheet-heading h3').click();
-  assert.equal(await sheet.count(),1,name+': touching sheet heading incorrectly dismissed it');
-  const scrolled=await sheet.locator('.gn-dock-sheet-list').evaluate(node=>{
-   node.scrollTop=210;node.dispatchEvent(new Event('scroll',{bubbles:true}));
-   return node.scrollTop;
+  // A real fingertip tap on the sheet heading must not be interpreted as
+  // an outside tap and dismiss it.
+  const heading=await sheet.locator('.gn-dock-sheet-heading h3').boundingBox();
+  await page.touchscreen.tap(heading.x+heading.width/2,heading.y+heading.height/2);
+  assert.equal(await sheet.count(),1,name+': touching sheet heading dismissed it');
+  const list=sheet.locator('.gn-dock-sheet-list');
+  const initialScroll=await list.evaluate(node=>node.scrollTop);
+  if(name==='chromium'){
+   // Real trusted touch sequence (not setting scrollTop in JavaScript).
+   const session=await context.newCDPSession(page);
+   const rect=await list.boundingBox(),x=rect.x+rect.width*.70,
+    startY=rect.y+rect.height*.82;
+   const point=y=>({x,y,radiusX:3,radiusY:3,force:1});
+   await session.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[point(startY)]});
+   for(let i=1;i<=12;i++){
+    await session.send('Input.dispatchTouchEvent',{
+     type:'touchMove',touchPoints:[point(startY-15*i)]});
+    await page.waitForTimeout(12);
+   }
+   await session.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+  }else{
+   // Playwright's mobile WebKit supports real taps but NOT a wheel or swipe
+   // automation API. Exercise touch event propagation and the nested scroller
+   // independently without falsely claiming to synthesize a native swipe.
+   await list.evaluate(el=>{
+    const rect=el.getBoundingClientRect();
+    const before=rect.top+rect.height*.78,after=rect.top+rect.height*.42;
+    // Mobile WebKit exposes Touch in some builds but disallows its
+    // constructor. Use event objects with authentic touch fields in that
+    // environment while retaining native Playwright fingertip taps above.
+    function send(type,y){
+     const e=new Event(type,{bubbles:true,cancelable:true});
+     Object.defineProperty(e,'touches',{value:type==='touchend'?[]:[{clientY:y}]});
+     el.dispatchEvent(e);
+    }
+    send('touchstart',before);
+    send('touchmove',after);
+    el.scrollTop=210;el.dispatchEvent(new Event('scroll',{bubbles:true}));
+    send('touchend',after);
+   });
+  }
+  await page.waitForTimeout(250);
+  const realScroll=await list.evaluate(node=>node.scrollTop);
+  assert(realScroll>initialScroll+30,
+   name+': trusted gesture did not scroll inside sheet: '+initialScroll+' to '+realScroll);
+  assert.equal(await sheet.count(),1,
+   name+': dragging through saved items closed the dialog');
+  // A reader history pulse, storage reindex or repaint is not an intentional
+  // dismissal. This was an overlooked path in the first implementation.
+  await page.evaluate(()=>{
+   window.dispatchEvent(new Event('scroll'));
+   window.dispatchEvent(new Event('hashchange'));
+   document.dispatchEvent(new Event('gnamma-reader-route-change'));
+   document.dispatchEvent(new Event('gnamma-reading-desk-change'));
+   const pulse=document.createElement('span');pulse.hidden=true;
+   document.querySelector('#mainContent')?.append(pulse);
   });
-  assert(scrolled>50,name+': the saved item list would not scroll');
-  // Safari may issue window scroll/resize even when its inner modal owns touch.
-  // Neither signal is permission to dismiss the user's open list.
-  await page.evaluate(()=>window.dispatchEvent(new Event('scroll')));
+  await page.waitForTimeout(250);
   await page.setViewportSize({width:375,height:760});
-  assert.equal(await sheet.count(),1,name+': window scroll/resize dismissed saved items');
+  await page.waitForTimeout(100);
+  assert.equal(await sheet.count(),1,
+   name+': passive history/update/resize closed the dialog');
+  assert(await list.evaluate(node=>node.scrollTop)>0,
+   name+': scroll position reset after background update');
   await sheet.locator('.gn-dock-sheet-close').click();
   assert.equal(await sheet.count(),0);
   assert.equal(await page.locator('#gn-dock-saved-backdrop').count(),0);
@@ -101,6 +201,29 @@ async function exercise(engine,name,origin){
   await page.locator('.gn-rd-page').waitFor({timeout:12000});
   assert.match(await page.locator('.gn-rd-page').innerText(),/QA saved note 15/);
   assert.equal(await page.locator('#gn-dock-saved-backdrop').count(),0);
+  // With exactly ONE saved reference, first tap must still show its item.
+  const solo=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+  try{
+   await solo.addInitScript(item=>{
+    localStorage.setItem('daruri-reader-v2',JSON.stringify({n:'11',lang:'english',focusLevel:0}));
+    localStorage.setItem('gnamma-reading-desk-v1',
+     JSON.stringify({format:'gnamma-reading-desk',version:1,items:[item]}));
+   },items.find(item=>item.id==='saved-note-15'));
+   const singlePage=await solo.newPage();
+   await singlePage.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded',timeout:90000});
+   const one=singlePage.locator('#gn-dock-private-status .gn-dock-summary');
+   await one.waitFor({state:'visible',timeout:30000});
+   assert.equal(await one.getAttribute('data-gn-total'),'1',name+': single-item count incorrect');
+   const hit=await one.boundingBox();
+   await singlePage.touchscreen.tap(hit.x+hit.width/2,hit.y+hit.height/2);
+   const oneSheet=singlePage.locator('#gn-dock-saved-sheet');
+   await oneSheet.waitFor({state:'visible',timeout:12000});
+   assert.equal(await oneSheet.locator('.gn-dock-sheet-item').count(),1);
+   await oneSheet.locator('.gn-dock-sheet-item').click();
+   await singlePage.locator('.gn-rd-page').waitFor({timeout:12000});
+   assert.match(await singlePage.locator('.gn-rd-page').innerText(),/QA saved note 15/);
+   assert.equal(await oneSheet.count(),0);
+  }finally{await solo.close();}
   assert.deepEqual(errors,[],name+': unexpected browser errors');
   console.log('PASS '+name+': solid sheet, isolated touch/scroll, exact page restore, saved-item navigation');
  }finally{await context.close();await browser.close()}
