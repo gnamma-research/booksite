@@ -34,7 +34,7 @@ for(const file of ['index.html','stage84-reader.html']){
  }
  assert(!html.includes('sanandaji-project-progress'),'No editorial stage UI banner');
 }
-const met=JSON.parse(fs.readFileSync(path.join(dir,'Stage93_Metrics.json')));
+const met=JSON.parse(fs.readFileSync(path.join(dir,'editorial/STAGE93_METRICS.json')));
 assert.equal(met.genuine_records_without_typed_arabic,156);
 assert.equal(met.all_register_critically_completed_pages,0);
 console.log('Stage93 PASS: 1401 preserved IDs; 1244 records with Arabic; 156 genuine source blanks; 12 bounded source corrections; zero certified pages; correct reader ordering.');
