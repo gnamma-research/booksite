@@ -119,6 +119,28 @@ async function load(){
          definitionPatches=new Map(v.records.map(x=>[x.id,x]));
      }
    }catch(e){/* Optional English revision: never block the original corpus. */}
+   let stage132=new Map();
+   try{
+     const endpoints=[
+       ['stage132-contraposition-preferred-english.json?v=20261117',5,'H-CONTRAPOSITION'],
+       ['stage132-induction-preferred-english.json?v=20261117',8,'H-INDUCTION']
+     ];
+     for(const [url,expected,sectionId] of endpoints){
+       const resp=await fetch(url,{cache:'force-cache'});
+       if(!resp.ok)continue;
+       const data=await resp.json();
+       if(data.schema!=='gnamma.tahdhib.stage132.preferred-h-english.v1'
+         ||data.section!==sectionId||!Array.isArray(data.records)||data.records.length!==expected)continue;
+       for(const revision of data.records){
+         if(revision.id && typeof revision.english==='string'&&revision.english.trim()){
+           if(stage132.has(revision.id))throw Error('Duplicated Stage132 source unit');
+           stage132.set(revision.id,{...revision,sectionId});
+         }
+       }
+     }
+   }catch(error){/* Reader always falls back to the preserved older bilingual corpus. */}
+   app.stage132EnglishRevisions=0;
+   app.stage132SkippedPatches=[];
    app.stage130EnglishRevisions=0;
    app.stage131DefinitionCorrections=0;
    app.stage131SkippedPatches=[];
@@ -138,6 +160,16 @@ async function load(){
            stage131Review:true};
          app.stage131DefinitionCorrections++;
        }else app.stage131SkippedPatches.push(note.id);
+     }
+     const stage132Update=stage132.get(note.id);
+     if(stage132Update){
+       if(revised.sectionId===stage132Update.sectionId&&typeof revised.english==='string'&&!revised.stage130Review&&!revised.stage131Review){
+         revised={...revised,
+           englishOriginal:revised.englishOriginal??revised.english,
+           english:stage132Update.english,
+           stage132Review:true};
+         app.stage132EnglishRevisions++;
+       }else app.stage132SkippedPatches.push(note.id);
      }
      return revised;
    });
@@ -163,6 +195,6 @@ allTab.onclick=()=>{app.showReferences=false;app.index=0;render()};
 refTab.onclick=()=>{app.showReferences=true;app.index=0;render()};
 prev.onclick=()=>{app.index=Math.max(0,app.index-1);render();scroller.scrollTop=0};
 next.onclick=()=>{app.index++;render();scroller.scrollTop=0};
-function expose(){return {open,close:shut,goTo(id){if(!app.records){open();return}const i=app.records.findIndex(x=>x.id===id);if(i<0)return;app.section='all';section.value='all';app.query='';search.value='';app.showReferences=true;const idx=notes().findIndex(x=>x.id===id);app.index=Math.floor(idx/12);render();open();},counts:()=>({loaded:app.records?.length||0,visible:app.filtered.length,stage130EnglishRevisions:app.stage130EnglishRevisions||0,stage131DefinitionCorrections:app.stage131DefinitionCorrections||0,stage131SkippedPatches:app.stage131SkippedPatches||[]})}}
+function expose(){return {open,close:shut,goTo(id){if(!app.records){open();return}const i=app.records.findIndex(x=>x.id===id);if(i<0)return;app.section='all';section.value='all';app.query='';search.value='';app.showReferences=true;const idx=notes().findIndex(x=>x.id===id);app.index=Math.floor(idx/12);render();open();},counts:()=>({loaded:app.records?.length||0,visible:app.filtered.length,stage130EnglishRevisions:app.stage130EnglishRevisions||0,stage131DefinitionCorrections:app.stage131DefinitionCorrections||0,stage131SkippedPatches:app.stage131SkippedPatches||[],stage132EnglishRevisions:app.stage132EnglishRevisions||0,stage132SkippedPatches:app.stage132SkippedPatches||[]})}}
 window.GnammaTahdhibFourLayers=Object.freeze(expose());
 })();
