@@ -1,0 +1,33 @@
+{
+  "stage": 109,
+  "downloads": [
+    {
+      "filename": "Sanandaji_Stage109_FULL_TWO_VOLUME_CUMULATIVE_RECOVERY.zip",
+      "size_bytes": 125516864,
+      "sha256": "66bc5948e40c2d5555837a9332956d1866880342c3c1e9b8ccda585c412561a4"
+    },
+    {
+      "filename": "Sanandaji_VolI_Stage109_Study_Reader.zip",
+      "size_bytes": 1266852,
+      "sha256": "1ad7e83c7f1eed4c9882554ca9340a5829f4f097e4a4a93399ebd4486e8c436e"
+    },
+    {
+      "filename": "Sanandaji_VolI_Stage109_Offline_Study_Reader_With_Facsimile.zip",
+      "size_bytes": 36559512,
+      "sha256": "3f2b0a38a4935cdd9fb5fbc7199273c8ad884cddff1e322a1e894b54e0570e8d"
+    },
+    {
+      "filename": "Sanandaji_VolII_Stage109_Recovered_Reader_and_Diplomatic_Apparatus.zip",
+      "size_bytes": 37765581,
+      "sha256": "4e6eeef9d689938dc64fc96850367db2f8ef2cdd5a7111c78157504ed9290b94"
+    },
+    {
+      "filename": "Sanandaji_Stage109_New_Readings_Proof_and_Full_Handoff.zip",
+      "size_bytes": 727355,
+      "sha256": "07e30f884e24d2b9d88df8e8976d735e26962a115c451f22a9b36d83f0d9059f"
+    }
+  ],
+  "full_archive_number_of_members": 829,
+  "full_archive_all_member_hashes_verified": true,
+  "primary_original_single_Bulaq_pdf_sha256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134"
+}
