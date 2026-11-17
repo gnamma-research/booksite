@@ -1,0 +1,48 @@
+name: Izniqi seven historical original blobs delivery
+on:
+  push:
+    branches:
+      - research/izniqi-critical-review-20261117
+    paths:
+      - .github/workflows/izniqi-historical-delivery.yml
+  workflow_dispatch:
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Copy seven original Git files and validate original SHA objects
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib,json
+          base=Path('texts/sadr-al-din-al-qunawi/al-nusus/izniqi/edition-20261111/historical')
+          expected={
+            'IZNIQI_EN_CUMULATIVE_DRAFT_20261109.md':'9be98a80f240f54a8eeb97f602591258aa59a052',
+            'IZNIQI_EN_CONTINUOUS_01_pp831-834.md':'b25ddd50543e2a26e4e18dbba903b0b42f0fc53b',
+            'IZNIQI_EN_CONTINUOUS_01B_pp835-838.md':'7c5d0073a027b3d44bce189e87c1cc08febe9ebe',
+            'IZNIQI_EN_CONTINUOUS_02_pp839-843.md':'9af3ab7ce68f9f9a20210eb07e7d0181211d3eff',
+            'IZNIQI_EN_CONTINUOUS_03_pp844-849.md':'5590676e73b81059950a6155815062eb3fc2709b',
+            'IZNIQI_EN_CONTINUOUS_04_pp850-852.md':'df8fe55bb18d6d9048b392a3aeb61c31818d0f6c',
+            'IZNIQI_COVERAGE_STATUS_20261109.json':'2a7b823ff38322d2f543889d046243ed80c21a19'
+          }
+          out=Path('export-originals');out.mkdir()
+          verified=[]
+          for name,want in expected.items():
+            data=(base/name).read_bytes()
+            sha=hashlib.sha1(b'blob '+str(len(data)).encode()+bytes([0])+data).hexdigest()
+            assert sha==want,(name,sha,want)
+            (out/name).write_bytes(data)
+            verified.append({'filename':name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'git_blob_sha1':sha})
+          (out/'ORIGINAL_GIT_HASH_RECEIPT.json').write_text(json.dumps({'status':'PASS','count':7,'files':verified},indent=2)+'\n')
+          print('PASS: seven original byte streams, all original Git blob SHA1 identities verified')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: izniqi-nov09-exact-seven-originals
+          path: export-originals/
+          retention-days: 30
+          if-no-files-found: error
