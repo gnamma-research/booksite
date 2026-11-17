@@ -1,0 +1,16 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: Stage105_MISSING_MATERIALS.csv>index,artifact,Stage105_state
+0,stage38_cumulative_revised_page_drafts_II215_II314.json,"Volume II local Stage38 canonical 100-page JSON; renderer-derived extraction recovered, but exact original JSON unavailable"
+1,stage38_retained_joined_notes_II281_II314.json,"Volume II 97 independently identified note records; text is represented in reader, native JSON missing"
+2,stage38_wasim_self_identified_preface.json,"Separate source-authorised Wasīm preface JSON, reader extraction present, original data file not recovered"
+3,stage38_verified_excerpt_audit.json,Original line-level Stage38 verification ledger; handoff records status but native JSON not recovered
+4,Taqrib_Stage38_Original_II215_II222_and_Cairo_1912_Control.pdf,"Separate Cairo control scan and 8 original leaves, referenced in prior handoff but bytes not recovered"
+5,Taqrib_Stage38_Source_Corrections_II215_II222.pdf,Stage38 correction source apparatus PDF referenced but not recovered
+6,Taqrib_Stage38_Source_Checked_Corrections_II215_II222.md,Stage38 source corrections native Markdown referenced but not recovered
+7,stage51-cumulative-II015-II054.js through II298-II314.js,"Current remote GitHub Stage51 Volume II JS modules: catalogued by Git blob references, not byte-materialised here"
+8,Volume II source pages 1–214 and 315–335 full English literal masters,Numerous online first-pass excerpts; cannot verify all-register full English or independent source proof
+9,Full Wasīm ḥāshiya note corpus,Total note count/attributions unresolved; positively authenticated introduction survives; II117 quotation unresolved
+10,remote Stage51 main JS modules for II215–314,"100/100 Stage38 baseline titles, main English and corresponding 163 lower sections compared exactly through connected GitHub; remote JS original bytes still NOT copied into archive."
+11,remote source-selected Arabic-English modules II223–230,"Three scripts identified by Git blob SHA (12,26,15 IDs), but source text author attribution and independent proof unverified; raw remote JS bytes not part of recovered archive."
+12,I026.lower.02 connective before فإنه حينئذ,Unresolved textual variant inherited unchanged; do not assert a missing or present negation without independent proof.
+13,I042 lower omitted clauses and upper record I042.upper.02,"Two new bounded lower readings, with omitted clauses noted. Upper record remains Arabic-empty and is exact next frontier."
