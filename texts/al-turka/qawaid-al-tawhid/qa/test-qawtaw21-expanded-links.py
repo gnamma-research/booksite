@@ -65,6 +65,13 @@ with sync_playwright() as playwright:
   page.goto("https://gnamma.test"+PREFIX+"#QT-020",wait_until="networkidle")
   check("Qurʾān 24:40 at SH-020 is registered without inventing any unmatched marker",page.evaluate("window.GNAMMA_QAWAID_REFERENCES.items.find(r=>r.id==='q-24-40').units.includes('SH-020')") and page.locator('#SH-020 .gn-source-inline[data-open-source="q-24-40"]').count()<=1)
   page.goto("https://gnamma.test"+PREFIX+"#QT-029",wait_until="networkidle")
+  print("Q42_DIAGNOSTIC",page.evaluate("""() => {
+    const c=document.querySelector('#SH-029'),r=window.GNAMMA_QAWAID_REFERENCES.items.find(x=>x.id==='q-42-11');
+    const a=c?.querySelector('.ar')?.textContent||'',i=a.indexOf('ليس كمثله');
+    return {text:a.slice(i-80,i+110),hasText:i>=0,refUnits:r?.units,refPhrase:r?.inlineAnchors,
+      markers:[...(c?.querySelectorAll('.gn-source-inline')||[])].map(b=>b.dataset.openSource),
+      sourceStat:window.GnammaQawaidCitations?.active(),focus:document.body.dataset.focus};
+  }"""),flush=True)
   check("new Qurʾān 42:11 reference exact",page.locator('#SH-029 .gn-source-inline[data-open-source="q-42-11"]').count()==1)
   page.goto("https://gnamma.test"+PREFIX+"#QT-051",wait_until="networkidle")
   diagnostic=page.evaluate("""() => {
