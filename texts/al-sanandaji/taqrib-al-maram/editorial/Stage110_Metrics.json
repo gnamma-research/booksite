@@ -1,0 +1,24 @@
+{
+  "stage": 110,
+  "stable_record_ids": 1401,
+  "active_records": 1400,
+  "new_bounded_record_ids": [
+    "I046.upper.02",
+    "I047.lower.01",
+    "I047.lower.02"
+  ],
+  "records_with_some_arabic": 1306,
+  "active_arabic_empty": 94,
+  "remaining_blank_by_layer": {
+    "lower": 84,
+    "upper": 10
+  },
+  "independent_complete_proof_records": 0,
+  "strict_completed_all_register_translated_printed_positions": 0,
+  "strict_independently_proofed_all_register_printed_positions": 0,
+  "full_project_printed_position_denominator": 615,
+  "inherited_proof_obligations": 1400,
+  "next_first_arabic_blank": "I047.upper.02",
+  "next_physical_pdf_page": 60,
+  "single_Bulaq_source_SHA256": "4addd660de68794f9d64e062e3b25a2782497b3342eb4580218c3e07e8d12134"
+}
