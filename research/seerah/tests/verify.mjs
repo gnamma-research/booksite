@@ -8,6 +8,7 @@ const baseline = JSON.parse(read('editorial/release-1.8.0-restored-chapters.json
 const original = JSON.parse(read('editorial/archive-20261112-preintegrated-chapters-1.4.1.json'));
 const archived = JSON.parse(read('editorial/archived-1.7.0-pre-restoration-chapters.json'));
 const reader = read('read.html');
+const clarity = JSON.parse(read('editorial/READING_CLARITY_EDITS.json')).changes;
 const landing = read('index.html');
 const manuscript = read('editorial/current-edition-1.9.1-integrated.md');
 const critical = JSON.parse(read('data/dossiers.json'));
@@ -52,10 +53,17 @@ for (let i = 0; i < 46; i++) {
   const bridge = bridges[i + 1];
   assert.equal(ch.id, i + 1, 'Chapter order');
   assert.equal(ch.title, prev.title, 'Chapter title');
-  assert.equal(ch.matn, prev.matn, 'Matn retained');
-  const expected = prev.sharh.split('\n\n');
-  expected.splice(2, 0, bridge);
-  assert.equal(ch.sharh, expected.join('\n\n'), 'Integrated commentary ' + id);
+  const expectedParagraphs = prev.sharh.split('\n\n');
+  expectedParagraphs.splice(2, 0, bridge);
+  const expected = {matn: prev.matn, sharh: expectedParagraphs.join('\n\n')};
+  for (const [layer, pairs] of Object.entries(clarity[i + 1] || {})) {
+    for (const [from, to] of pairs) {
+      assert.ok(expected[layer].includes(from), 'Expected glossary change ' + id + '/' + layer);
+      expected[layer] = expected[layer].replace(from, to);
+    }
+  }
+  assert.equal(ch.matn, expected.matn, 'Narrative/source fidelity ' + id);
+  assert.equal(ch.sharh, expected.sharh, 'Integrated commentary ' + id);
   const start = reader.indexOf('<article class="chapter" id="' + id + '"');
   const end = reader.indexOf('</article>', start);
   assert.ok(start >= 0 && end > start, 'Missing ' + id);
