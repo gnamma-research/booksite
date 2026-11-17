@@ -23,3 +23,11 @@ Both cruxes are UNRESOLVED. Neither has been verified against any original manus
 
 ## Next exact point
 Acquire manuscript folios of the 2023 edition's four witnesses at the location corresponding to printed p848, from وأن انقلاب الحقائق ممتنع through وكان في عينه وشهوده كل الأشياء هالكًا; record diplomatic lines, manuscript shelfmarks, folio sides, correction marks and all variants before deciding either lemma. Then inspect direct Jilani and hadith witness chains and expand an individual quotation ledger across the text. Preserve all older readings. Zero canonical words changed and no files outside Iznīqī edited.
+## Actual witness register from 2023 edition, pp. 824–825
+Direct edition pages: https://dergipark.org.tr/en/download/article-file/3074106#page=11 and #page=12. These are descriptions of copies collated by the 2023 editors, not manuscript pages newly acquired here.
+- **ر — Râgıb Paşa 692** (Süleymaniye): 14 folios, c.21 lines/page; the editors use it as copy-text and report authorial correction/marginal notes. This is the first priority for the two p848 cruxes.
+- **ن — Nuruosmaniye 2398** (Süleymaniye): 14 folios, generally 17 lines/page, some marginalia.
+- **ع — Nuruosmaniye 2888** in heading and bibliography, but **2388** in the same descriptive paragraph; 14 folios, generally 17 lines/page. Treat 2888/2388 as an unresolved catalogue discrepancy until the library record and manuscript image are checked.
+- **م — Hacı Mahmud Efendi 4223** in heading and bibliography; described as 25 folios, generally 17 lines/page, but the paragraph accidentally repeats Nuruosmaniye 2398 as its location. Check the physical catalogue rather than treating it as the same copy.
+The edition's bibliographic list confirms all four as Râgıb Paşa 692, Nuruosmaniye 2398, Nuruosmaniye 2888, Hacı Mahmud Efendi 4223: https://dergipark.org.tr/tr/pub/ihya/article/1280654. TDV also identifies Râgıb Paşa 692 and Hacı Mahmud 4223 and separately notes Yazma Bağışlar 4345, which is a possible additional witness to investigate, not one of the four collated by these editors: https://islamansiklopedisi.org.tr/kutbuddinzade-izniki.
+**Do not infer p848 folio numbers from total folio count**. Determine exact leaf and line by reading each manuscript.
