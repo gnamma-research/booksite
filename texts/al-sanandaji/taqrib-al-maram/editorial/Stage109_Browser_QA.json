@@ -1,0 +1,8 @@
+{
+  "stage": 109,
+  "node_regression": "passed",
+  "local_browser_visual_QA": "not run",
+  "live_website_browser_QA": "not verified",
+  "mobile_interaction": "not verified",
+  "false_claim_of_browse_acceptance": false
+}
